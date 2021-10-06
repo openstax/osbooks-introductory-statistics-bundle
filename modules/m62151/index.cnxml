@@ -1,0 +1,131 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>The Central Limit Theorem for Proportions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m62151</md:content-id>
+  <md:title>The Central Limit Theorem for Proportions</md:title>
+  <md:abstract/>
+  <md:uuid>a10be1fa-e814-44f9-9a18-19e802545723</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-670">The Central Limit Theorem tells us that the point estimate for the sample mean, <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>, comes from a normal distribution of <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>'s. This theoretical distribution is called the sampling distribution of <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>'s. We now investigate the sampling distribution for another important parameter we wish to estimate; p from the binomial probability density function.
+</para><para id="eip-819">If the random variable is discrete, such as for categorical data, then the parameter we wish to estimate is the population proportion. This is, of course, the probability of drawing a success in any one random draw. Unlike the case just discussed for a continuous random variable where we did not know the population 
+distribution of X's, here we actually know the underlying probability density function for these data; it is the binomial. The random variable is X = the number of successes and the parameter we wish to know is p, the probability of drawing a 
+success which is of course the proportion of successes in the population. The question at issue is: from what distribution was the sample proportion, <m:math><m:mi>p'</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>n</m:mi></m:mfrac></m:math> drawn? The sample size is n and X is the number of successes found in that sample. This is a parallel question that was just answered by the Central Limit Theorem: from what distribution was the sample mean, <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>, drawn? We saw that once we knew that the distribution was the Normal distribution then we were able to create confidence intervals for the population parameter, µ. We will also use this same information to test hypotheses about the population mean later. We wish now to be able to develop confidence intervals for the population parameter "p" from the binomial probability density function. </para><para id="eip-378">In order to find the distribution from which sample proportions come we need to develop the sampling distribution of sample proportions just as we did for sample means. So again imagine that we randomly sample say 50 people and ask them if they support the new school bond issue. From this we find a sample proportion, p', and graph it on the axis of p's. We do this again and again etc., etc. until we have the theoretical distribution of p's. Some sample proportions will show high favorability toward the bond issue and others will show low favorability because random sampling will reflect the variation of views within the population. What we have done can be seen in <link target-id="eip-id1163897912024"/>. The top panel is the population distributions of probabilities for each possible value of the random variable X. While we do not know what the specific distribution looks like because we do not know p, the population parameter, we do know that it must look something like this. In reality, we do not know either the mean or the standard deviation of this population distribution, the same difficulty we faced when analyzing the X's previously. </para><figure id="eip-id1163897912024"><media id="eip-id1163897364455" alt=""><image src="../../media/fig-ch07_03_01-21c4.jpg" mime-type="image/png"/></media></figure><para id="eip-162"><link target-id="eip-id1163897912024"/> places the mean on the distribution of population probabilities as <m:math><m:mi>µ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:math> but of course we do not actually know the population mean because we do not know the population probability of success, <m:math><m:mi>p</m:mi></m:math>. Below the distribution of the population values is the sampling distribution of <m:math><m:mi>p</m:mi></m:math>'s. Again the Central Limit Theorem tells us that this distribution is normally distributed just like the case of the sampling distribution for  <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>'s. This sampling distribution also has a mean, the mean of the <m:math><m:mi>p</m:mi></m:math>'s, and a standard deviation, <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>p</m:mi><m:mo>'</m:mo></m:mrow></m:msub></m:math>.</para><para id="eip-684">Importantly, in the case of the analysis of the distribution of sample means, the Central Limit Theorem told us the expected value of the mean of the sample means in the sampling distribution, and the standard deviation of the sampling distribution. Again the Central Limit Theorem provides this information for the sampling distribution for proportions. The answers are:
+<list id="eip-id1170371854198" list-type="enumerated" number-style="arabic"><item>The expected value of the mean of sampling distribution of sample proportions, <m:math><m:msub><m:mi>µ</m:mi><m:mi>p'</m:mi></m:msub></m:math>, is the population proportion, p.</item>
+<item>The standard deviation of the sampling distribution of sample proportions, <m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub></m:math>, is the population standard deviation divided by the square root of the sample size, n.</item>
+</list></para><para id="eip-174">Both these conclusions are the same as we found for the sampling distribution for sample means. However in this case, because the mean and standard deviation of the binomial distribution both rely upon <m:math><m:mi>p</m:mi></m:math>, the formula for the standard deviation of the sampling distribution requires algebraic manipulation to be useful. We will take that up in the next chapter. The proof of these important conclusions from the Central Limit Theorem is provided below.
+<equation class="unnumbered" id="eip-id1878984"><label/><m:math><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo>'</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>E</m:mi><m:mo>(</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac><m:mo>)</m:mo><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac><m:mo>)</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>p</m:mi></m:math></equation>
+(The expected value of X, E(x), is simply the mean of the binomial distribution which we know to be np.) 
+<equation class="unnumbered" id="eip-id3193625"><m:math><m:mrow><m:msup><m:mrow><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mo>=</m:mo><m:mtext>Var</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>p</m:mi><m:mo>'</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mtext>Var</m:mtext><m:mo>(</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo stretchy="false">(</m:mo><m:mtext>Var</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi>n</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:math></equation>The standard deviation of the sampling distribution for proportions is thus:<equation id="eip-id1172103589134"><label/><m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt></m:math></equation></para><table id="eip-693" summary="parameters for formulas">
+<tgroup cols="4"><thead>
+  <row>
+    <entry>Parameter</entry>
+    <entry>Population distribution</entry>
+    <entry>Sample</entry>
+    <entry>Sampling distribution of <emphasis effect="italics">p's</emphasis></entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>Mean</entry>
+    <entry><emphasis effect="italics">µ = np</emphasis></entry>
+    <entry><m:math><m:mi>p</m:mi><m:mi>'</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>x</m:mi><m:mi>n</m:mi></m:mfrac></m:math></entry>
+    <entry><emphasis effect="italics">p' and E(p') = p</emphasis></entry>
+  </row>
+  <row>
+    <entry>Standard Deviation</entry>
+    <entry><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:msqrt></m:math></entry>
+    <entry/>
+    <entry><m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt></m:math></entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table><para id="eip-994"><link target-id="eip-693"/> summarizes these results and shows the relationship between the population, sample and sampling distribution. Notice the parallel between this Table and Table 7.1 for the case where the random variable is continuous and we were developing the sampling distribution for means. </para><para id="eip-403">Reviewing the formula for the standard deviation of the sampling distribution for proportions we see that as n increases the standard deviation decreases. This is the same observation we made for the standard deviation for the sampling distribution for means. Again, as the sample size increases, the point estimate for either <emphasis effect="italics">µ</emphasis> or <emphasis effect="italics">p</emphasis> is found to come from a distribution with a narrower and narrower distribution. We concluded that with a given level of probability, the range from which the point estimate comes is smaller as the sample size, n, increases. Figure 7.8 shows this result for the case of sample means. Simply substitute <m:math><m:mi>p</m:mi><m:mo>'</m:mo></m:math> for <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> and we can see the impact of the sample size on the estimate of the sample proportion. </para><section id="eip-883" class="summary"><title>Chapter Review</title><para id="eip-529">The Central Limit Theorem can also be used to illustrate that the sampling distribution of sample proportions is normally distributed with the expected value of p and a standard deviation of <m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt></m:math>
+</para></section>
+<section id="fs-idm213594112" class="practice">
+
+<exercise id="fs-idm624582464"><problem id="fs-idm260108768"><para id="fs-idm434177216">A question is asked of a class of 200 freshmen, and 23% of the students know the correct answer. If a sample of 50 students is taken
+repeatedly, what is the expected value of the mean of the sampling
+distribution of sample proportions?</para></problem>
+<solution id="fs-idm466092784"><para id="fs-idm403896096">0.23</para></solution></exercise>
+
+<exercise id="fs-idm464568608"><problem id="fs-idm787136848"><para id="fs-idm400546976">A question is asked of a class of 200 freshmen, and 23% of the students know the correct answer. If a sample of 50 students is taken
+repeatedly, what is the standard deviation of the mean of the sampling
+distribution of sample proportions?</para></problem>
+<solution id="fs-idm409765024"><para id="fs-idm490907536">0.060</para></solution></exercise>
+
+
+<exercise id="fs-idm663880304"><problem id="fs-idm727289008"><para id="fs-idm252970384">A game is played repeatedly. A player wins one-fifth of the time. If samples of 40 times the game is played are taken repeatedly, what is
+the expected value of the mean of the sampling distribution of sample
+proportions?</para></problem>
+<solution id="fs-idm260348208"><para id="fs-idm410258432">1/5</para></solution></exercise>
+
+<exercise id="fs-idm416932544"><problem id="fs-idm420631168"><para id="fs-idm645776816">A game is played repeatedly. A player wins one-fifth of the time. If samples of 40 times the game is played are taken repeatedly, what is
+the standard deviation of the mean of the sampling distribution of
+sample proportions?</para></problem>
+<solution id="fs-idm664551040"><para id="fs-idm725795712">0.063</para></solution></exercise>
+
+<exercise id="fs-idm742911360"><problem id="fs-idm629406432"><para id="fs-idm462751664">A virus attacks one in three of the people exposed to it. An entire large city is exposed. If samples of 70 people are taken, what is the
+expected value of the mean of the sampling distribution of sample
+proportions?</para></problem>
+<solution id="fs-idm251544000"><para id="fs-idm652118016">1/3</para></solution></exercise>
+
+<exercise id="fs-idm265496256"><problem id="fs-idm533886784"><para id="fs-idm258055968">A virus attacks one in three of the people exposed to it. An entire large city is exposed. If samples of 70 people are taken, what is the
+standard deviation of the mean of the sampling distribution of sample
+proportions?</para></problem>
+<solution id="fs-idm265260992"><para id="fs-idm446754608">0.056</para></solution></exercise>
+
+<exercise id="fs-idm636067568"><problem id="fs-idm202583744"><para id="fs-idm407035968">A company inspects products coming through its production
+process, and rejects detected products. One-tenth of the items are
+rejected. If samples of 50 items are taken, what is the expected value
+of the mean of the sampling distribution of sample proportions?</para></problem>
+<solution id="fs-idm201077328"><para id="fs-idm787542032">1/10</para></solution></exercise>
+
+<exercise id="fs-idm470132256"><problem id="fs-idm258073696"><para id="fs-idm617877248">A company inspects products coming through its production
+process, and rejects detected products. One-tenth of the items are
+rejected. If samples of 50 items are taken, what is the standard
+deviation of the mean of the sampling distribution of sample
+proportions?</para></problem>
+<solution id="fs-idm602970000"><para id="fs-idm415294272">0.042</para></solution></exercise>
+
+</section>
+
+<section id="fs-idm251302848" class="free-response"><title>Homework</title><exercise id="eip-idm1362406464"><problem id="eip-idm1321777504"><para id="eip-idm305805072">A farmer picks pumpkins from a large field. The farmer makes samples of 260 pumpkins and inspects them. If one in fifty
+pumpkins are not fit to market and will be saved for seeds, what is
+the standard deviation of the mean of the sampling distribution of
+sample proportions?</para></problem>
+<solution id="eip-idm1642350784"><para id="eip-idm1535285264">0.0087</para></solution></exercise>
+
+<exercise id="eip-idm1557690848"><problem id="eip-idm1313465968"><para id="eip-idm1381853136">A store surveys customers to see if they are satisfied with the service they received. Samples of 25 surveys are taken. One in five people are unsatisfied. What is the variance of the mean of
+the sampling distribution of sample proportions for the number of
+unsatisfied customers? What is the variance for satisfied
+customers?</para></problem>
+<solution id="eip-idm304370048"><para id="eip-idm1543540768">0.0064, 0.0064</para></solution></exercise>
+
+
+<exercise id="eip-idm304611648"><problem id="eip-idm1367348384"><para id="eip-idm1642366864">A company gives an anonymous survey to its employees to see what percent of its employees are happy. The company is too large to check each response, so samples of 50 are taken, and the
+tendency is that three-fourths of the employees are happy. For
+the mean of the sampling distribution of sample proportions, answer the following questions, if the sample size is doubled.</para><list id="eip-idm330385904" list-type="enumerated" number-style="lower-alpha"><item>How does this affect the mean?</item><item>How does this affect the standard deviation?</item><item>How does this affect the variance?</item></list></problem><solution id="eip-idm1673700832">
+<list id="eip-idm1656445136" list-type="enumerated" number-style="lower-alpha"><item>It has no effect.</item><item>It is divided by <m:math><m:msqrt><m:mn>2</m:mn></m:msqrt></m:math>.</item><item>It is divided by 2.</item></list></solution></exercise>
+
+<exercise id="eip-idm345517584"><problem id="eip-idm1660185664"><para id="eip-idm1333098128">A pollster asks a single question with only yes and no as answer possibilities. The poll is conducted nationwide, so samples of 100 responses are taken. There are four yes answers for each no
+answer overall. For the mean of the sampling distribution of
+sample proportions, find the following for yes answers.</para><list id="eip-idm1498472752" list-type="enumerated" number-style="lower-alpha"><item>The
+expected value.</item><item>The standard deviation.</item><item>The variance.</item></list></problem><solution id="eip-idm1504857232">
+<list id="eip-idm300651456" list-type="enumerated" number-style="lower-alpha"><item>4/5</item><item>0.04</item><item>0.0016</item></list></solution></exercise>
+
+<exercise id="eip-idm1320710032"><problem id="eip-idm1540817776"><para id="eip-idm1640064416">The mean of the sampling distribution of sample proportions has a value of <emphasis effect="italics">p</emphasis> of 0.3, and sample size of 40.</para><list id="eip-idm1306429744" list-type="enumerated" number-style="lower-alpha"><item>Is there a difference in the expected value if <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> reverse roles?</item><item>Is there a
+difference in the calculation of the standard deviation with the
+same reversal?</item></list></problem><solution id="eip-idm1340936912">
+<list id="eip-idm1399172496" list-type="enumerated" number-style="lower-alpha"><item>Yes</item><item>No</item></list></solution></exercise></section> </content>
+
+</document>

@@ -1,0 +1,756 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>The Regression Equation</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55838</md:content-id>
+  <md:title>The Regression Equation</md:title>
+  <md:abstract/>
+  <md:uuid>f04b5e8d-335d-4d1d-9517-16639ea7eccc</md:uuid>
+</metadata>
+
+<content>
+    <para id="eip-176">Regression analysis is a statistical technique that can test the hypothesis that a variable is dependent upon one or more other variables. Further, regression analysis can provide an estimate of the magnitude of the impact of a change in one variable on another. This last feature, of course, is all important in predicting future values.</para><para id="eip-851">Regression analysis is based upon a functional relationship among variables and further, assumes that the relationship is linear. This linearity assumption is required because, for the most part, the theoretical statistical properties of non-linear estimation are not well worked out yet by the mathematicians and econometricians. This presents us with some difficulties in economic analysis because many of our theoretical models are nonlinear. The marginal cost curve, for example, is decidedly nonlinear as is the total cost function, if we are to believe in the effect of specialization of labor and the Law of Diminishing Marginal Product. There are techniques for overcoming some of these difficulties, exponential and logarithmic transformation of the data for example, but at the outset we must recognize that standard ordinary least squares (OLS) regression analysis will always use a linear function to estimate what might be a nonlinear relationship.</para><para id="eip-80">The general linear regression model can be stated by the equation:</para><equation class="unnumbered" id="eip-773"><label/><m:math>
+<m:msub><m:mi>y</m:mi><m:mi>i</m:mi></m:msub>
+<m:mo>=</m:mo>
+<m:msub><m:mi>β</m:mi><m:mn>0</m:mn></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>β</m:mi><m:mn>1</m:mn></m:msub>
+<m:msub><m:mi>X</m:mi><m:mrow><m:mn>1</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>β</m:mi><m:mn>2</m:mn></m:msub>
+<m:msub><m:mi>X</m:mi><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>+</m:mo>
+<m:mo>⋯</m:mo>
+<m:mo>+</m:mo>
+<m:msub><m:mi>β</m:mi><m:mi>k</m:mi></m:msub>
+<m:msub><m:mi>X</m:mi><m:mrow><m:mi>k</m:mi><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>ε</m:mi><m:mi>i</m:mi></m:msub>
+</m:math></equation><para id="eip-856">where β<sub>0</sub> is the intercept, β<sub>i</sub>'s are the slope between Y and the appropriate X<sub>i</sub>, and ε (pronounced epsilon), is the error term that captures errors in measurement of Y and the effect on Y of any variables missing from the equation that would contribute to 
+explaining variations in Y. This equation is the theoretical population equation and therefore uses Greek letters. The equation we will estimate will have the Roman equivalent symbols. This is parallel to how we kept track of the population 	parameters and sample parameters before. The symbol for the population mean was µ and for the sample mean <m:math><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> and for the population standard deviation was σ and for the sample standard deviation was s. The equation that will be estimated with a sample of data for two independent variables will thus be:  
+</para><equation class="unnumbered" id="eip-363"><label/><m:math>
+<m:msub><m:mi>y</m:mi><m:mi>i</m:mi></m:msub>
+<m:mo>=</m:mo>
+<m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub>
+<m:msub><m:mi>x</m:mi><m:mrow><m:mn>1</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub>
+<m:msub><m:mi>x</m:mi><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>e</m:mi><m:mi>i</m:mi></m:msub>
+</m:math></equation><para id="eip-804">As with our earlier work with probability distributions, this model works only if certain assumptions hold. These are that the Y is normally distributed, the errors are also normally distributed with a mean of zero and a constant standard deviation, and that the error terms are independent of the size of X and independent of each other.</para><section id="eip-201"><title>Assumptions of the Ordinary Least Squares Regression Model</title><para id="eip-24">Each of these assumptions needs a bit more explanation. If one of these assumptions fails to be true, then it will have an effect on the quality of the estimates. Some of the failures of these assumptions can be fixed while others result in estimates that quite simply provide no insight into the questions the model is trying to answer or worse, give biased estimates.
+<list id="eip-id1166531436357" list-type="enumerated" number-style="arabic"><item>The independent variables, <m:math><m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub></m:math> , are all measured without error, and are fixed numbers that are independent of the error term. This assumption is saying in effect that Y is deterministic, the result of a fixed component “X” and a random error component “ϵ.”</item>
+<item>The error term is a random variable with a mean of zero and a constant variance. The meaning of this is that the variances of the independent variables are independent of the value of the variable. Consider the relationship between personal income and the quantity of a good purchased as an example of a case where the variance is dependent upon the value of the independent variable, income. It is plausible that as income increases the variation around the amount purchased will also increase simply because of the flexibility provided with higher levels of income. The assumption is for constant variance with respect to the magnitude of the independent variable called homoscedasticity. If the assumption fails, then it is called heteroscedasticity. <link target-id="eip-id1167111372323"/> shows the case of homoscedasticity where all three distributions have the same variance around the predicted value of Y regardless of the magnitude of X.</item>
+<item>While the independent variables are all fixed values they are from a probability distribution that is normally distributed. This can be seen in <link target-id="eip-id1167111372323"/> by the shape of the distributions placed on the predicted line at the expected value of the relevant value of Y.</item>
+<item>The independent variables are independent of Y, but are also assumed to be independent of the other X variables. The model is designed to estimate the effects of independent variables on some dependent variable in accordance with a proposed theory. The case where some or more of the independent variables are correlated is not unusual. There may be no cause and effect relationship among the independent variables, but nevertheless they move together. Take the case of a simple supply curve where quantity supplied is theoretically related to the price of the product and the prices of inputs. There may be multiple inputs that may over time move together from general inflationary pressure. The input prices will therefore violate this assumption of regression analysis. This condition is called multicollinearity, which will be taken up in detail later.</item>
+<item>The error terms are uncorrelated with each other. This situation arises from an effect on one error term from another error term. While not exclusively a time series problem, it is here that we most often see this case. An X variable in time period one has an effect on the Y variable, but this effect then has an effect in the next time period. This effect gives rise to a relationship among the error terms. This case is called autocorrelation, “self-correlated.” The error terms are now not independent of each other, but rather have their own effect on subsequent error terms.</item>
+</list></para><para id="eip-621"><link target-id="eip-id1167111372323"/> shows the case where the assumptions of the regression model are being satisfied. The estimated line is <m:math><m:mover><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x.</m:mi></m:math> Three values of X are shown. A normal distribution is placed at each point where X equals the estimated line and the associated error at each value of Y. Notice that the three distributions are normally distributed around the point on the line, and further, the variation, variance, around the predicted value is constant indicating homoscedasticity from assumption 2. <link target-id="eip-id1167111372323"/> does not show all the assumptions of the regression model, but it helps visualize these important ones.</para><para id="eip-416"><figure id="eip-id1167111372323"><media id="INSERT_HERE" alt="."><image mime-type="image/jpg" src="../../media/fig-ch13_04_03.jpg"/></media></figure></para><figure id="fs-id1170579415184"><media id="fs-id1170583137613" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_02m.jpg" width="420"/></media></figure></section><para id="fs-id1170588823276">This is the general form that is most often called the multiple regression model.  So-called "simple" regression analysis has only one independent (right-hand) variable rather than many independent variables. Simple regression is just a special case of multiple regression. There is some value in beginning with simple regression: it is easy to graph in two dimensions, difficult to graph in three dimensions, and impossible to graph in more than three dimensions. Consequently, our graphs will be for the simple regression case. <link target-id="fs-id1170579415184"/> presents the regression problem in the form of a scatter plot graph of the data set where it is hypothesized that Y is dependent upon the single independent variable X.</para><para id="eip-649">A basic relationship from Macroeconomic Principles is the consumption function. This theoretical relationship states that as a person's income rises, their consumption rises, but by a smaller amount than the rise in income. If Y is consumption and X is income in the equation below <link target-id="fs-id1170579415184"/>, the regression problem is, first, to establish that this relationship exists, and second, to determine the impact of a change in income on a person's consumption. The parameter β<sub>1</sub> was called the Marginal Propensity to Consume in Macroeconomics Principles.</para><para id="eip-509">Each "dot" in <link target-id="fs-id1170579415184"/> represents the consumption and income of different individuals at some point in time. This was called cross-section data earlier; observations on variables at one point in time across different people or other units of measurement. This analysis is often done with time series data, which would be the consumption and income of one individual or country at different points in time. For macroeconomic problems it is common to use times series aggregated data for a whole country. For this particular theoretical concept these data are readily available in the annual report of the President’s Council of Economic Advisors.</para><para id="eip-885">The regression problem comes down to determining which straight line would best represent the data in <link target-id="fs-id1165019842274"/>. Regression analysis is sometimes called "least squares" analysis because the method of determining which line best "fits" the data is to minimize the sum of the squared residuals of a line put through the data. </para><figure id="fs-id1165019842274"><media id="fs-id1165016065534" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_03m.jpg" width="420"/></media><caption><newline/>Population Equation: C = β<sub>0</sub> + β<sub>1</sub> Income + ε
+<newline/>Estimated Equation:   C = b<sub>0</sub> + b<sub>1</sub> Income + e
+</caption></figure><para id="eip-977">This figure shows the assumed relationship between consumption and income from macroeconomic theory. Here the data are plotted as a scatter plot and an estimated straight line has been drawn. From this graph we can see an error term, e<sub>1</sub>. Each data point also has an error term. Again, the error term is put into the equation to capture effects on consumption that are not caused by income changes. Such other effects might be a person’s savings or wealth, or periods of unemployment. We will see how by minimizing the sum of these errors we can get an estimate for the slope and intercept of this line.</para><para id="eip-870">Consider the graph below. The notation has returned to that for the more general model rather than the specific case of the Macroeconomic consumption function in our example.   </para><figure id="fs-id1165015413810"><media id="fs-id1165015399670" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_04m.jpg" width="420"/></media></figure><para id="eip-929">The ŷ is read <emphasis>"<emphasis effect="italics">y</emphasis> hat"</emphasis> and is the <emphasis>estimated value of <emphasis effect="italics">y</emphasis></emphasis>. (In <link target-id="fs-id1165019842274"/> <m:math><m:mover><m:mi>C</m:mi><m:mo stretchy="false">^</m:mo></m:mover></m:math> represents the estimated value of consumption because it is on the estimated line.) It is the value of <emphasis effect="italics">y</emphasis> obtained using the regression line. ŷ is not generally equal to <emphasis effect="italics">y</emphasis> from the data.</para><para id="eip-775">The term <m:math><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>ŷ</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>e</m:mi><m:mn>0</m:mn></m:msub></m:math> is called the <emphasis>"error" or residual</emphasis>. It is not an error in the sense of a mistake. The error term was put into the estimating equation to capture missing variables and errors in measurement that may have occurred in the dependent variables. The <emphasis>absolute value of a residual</emphasis> measures the vertical distance between the actual value of <emphasis effect="italics">y</emphasis> and the estimated value of <emphasis effect="italics">y</emphasis>. In other words, it measures the vertical distance between the actual data point and the predicted point on the line as can be seen on the graph at point X<sub>0</sub>.</para><para id="eip-535">If the observed data point lies above the line, the residual is positive, and the line underestimates the actual data value for <emphasis effect="italics">y</emphasis>.</para><para id="eip-503">If the observed data point lies below the line, the residual is negative, and the line overestimates that actual data value for <emphasis effect="italics">y</emphasis>.</para><para id="eip-456">In the graph, <m:math><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>ŷ</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>e</m:mi><m:mn>0</m:mn></m:msub></m:math> is the residual for the point shown. Here the point lies above the line and the residual is positive.
+For each data point the residuals, or errors, are calculated <emphasis effect="italics">y<sub>i</sub> – ŷ<sub>i</sub> = e<sub>i</sub></emphasis> for i = 1, 2, 3, ..., n where n is the sample size. Each |e| is a vertical distance.
+
+</para><para id="eip-63">The sum of the errors squared is the term obviously called <term>Sum of Squared Errors (SSE)</term>.</para><para id="eip-789">Using calculus, you can determine the straight line that has the parameter values of b<sub>0</sub> and b<sub>1</sub> that minimizes the <emphasis>SSE</emphasis>. When you make the <emphasis>SSE</emphasis> a minimum, you have determined the points that are on the line of best fit. It turns out that the line of best fit has the equation:</para><equation class="unnumbered" id="eip-398"><label/><m:math>
+<m:mi>ŷ</m:mi>
+<m:mo>=</m:mo>
+<m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub>
+<m:mo>+</m:mo>
+<m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub>
+<m:mi>x</m:mi>
+</m:math>
+</equation><para id="eip-774">where 
+<m:math>
+<m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub>
+<m:mo>=</m:mo>
+<m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover>
+<m:mo>−</m:mo>
+<m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub>
+<m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
+</m:math>
+
+and
+
+<m:math>
+<m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mo>Σ</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo>
+<m:mo>(</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mo>Σ</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac><m:mrow><m:mtext>cov</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac>
+</m:math></para><para id="eip-801">The sample means of the <emphasis effect="italics">x</emphasis> values and the <emphasis effect="italics">y</emphasis> values are <m:math><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math> and <m:math><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>, respectively. The best fit line always passes through the
+point (<m:math><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math>, <m:math><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>) called the points of means.
+</para><para id="eip-508">The slope <emphasis effect="italics">b</emphasis> can also be written as:</para><equation class="unnumbered" id="eip-872"><label/><m:math>
+ <m:msub>
+  <m:mi>b</m:mi>
+  <m:mn>1</m:mn>
+ </m:msub>
+ <m:mo>=</m:mo>
+ <m:msub>
+  <m:mi>r</m:mi>
+   <m:mtext>y,x</m:mtext>
+ </m:msub>
+ <m:mo>(</m:mo>
+  <m:mfrac>
+   <m:mrow> 
+    <m:msub>
+     <m:mi>s</m:mi>
+     <m:mi>y</m:mi>
+    </m:msub>
+    </m:mrow>
+   <m:mrow> 
+    <m:msub>
+     <m:mi>s</m:mi>
+     <m:mi>x</m:mi>
+    </m:msub>
+    </m:mrow>
+ </m:mfrac>
+<m:mo>)</m:mo>  
+</m:math></equation><para id="eip-755">where <emphasis effect="italics">s<sub>y</sub></emphasis> = the standard deviation of the <emphasis effect="italics">y</emphasis> values and <emphasis effect="italics">s<sub>x</sub></emphasis> = the standard deviation
+of the <emphasis effect="italics">x</emphasis> values and <emphasis effect="italics">r</emphasis> is the correlation coefficient between <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis>.
+</para><para id="eip-673">These equations are called the Normal Equations and come from another very important mathematical finding called the Gauss-Markov Theorem without which we could not do regression analysis. The Gauss-Markov Theorem tells us that the estimates we get from using the ordinary least squares (OLS) regression method will result in estimates that have some very important properties. In the Gauss-Markov Theorem it was proved that a least squares line is BLUE, which is, <emphasis>B</emphasis>est, <emphasis>L</emphasis>inear, <emphasis>U</emphasis>nbiased, <emphasis>E</emphasis>stimator. Best is the statistical property that an estimator is the one with the minimum variance. Linear refers to the property of the type of line being estimated. An unbiased estimator is one whose estimating function has an expected mean equal to the mean of the population. (You will remember that the expected value of <m:math><m:msub><m:mi>µ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub></m:math> was equal to the population mean µ in accordance with the Central Limit Theorem. This is exactly the same concept here). </para><para id="eip-645">Both Gauss and Markov were giants in the field of mathematics, and Gauss in physics too, in the 18<sup>th</sup> century and early 19<sup>th</sup> century. They barely overlapped chronologically and never in geography, but Markov’s work on this theorem was based extensively on the earlier work of Carl Gauss. The extensive applied value of this theorem had to wait until the middle of this last century. </para><para id="eip-559">Using the OLS method we can now find the <term>estimate of the error variance</term> which is the variance of the squared errors, e<sup>2</sup>. This is sometimes called the <term>standard error of the estimate</term>. (Grammatically this is probably best said as the estimate of the <emphasis>error’s</emphasis> variance) The formula for the estimate of the error variance is:</para><equation class="unnumbered" id="eip-175"><label/><m:math>
+<m:msubsup>
+<m:mi>s</m:mi>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msubsup>
+
+<m:mo>=</m:mo>
+
+<m:mfrac>
+ <m:mrow>
+  <m:mo>Σ</m:mo> 
+  <m:msup>
+  <m:mrow>
+  <m:mi>(</m:mi>
+   <m:msub>
+   <m:mi>y</m:mi>
+   <m:mi>i</m:mi>
+   </m:msub>
+  <m:mo>−</m:mo>
+  <m:msub>
+  <m:mi>ŷ</m:mi>
+  <m:mi>i</m:mi>
+  </m:msub>
+  <m:mi>)</m:mi>
+  </m:mrow>
+  <m:mn>2</m:mn>
+  </m:msup>
+ </m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>−</m:mo>
+<m:mi>k</m:mi>
+</m:mrow>
+</m:mfrac>
+
+<m:mo>=</m:mo>
+
+<m:mfrac>
+<m:mrow>
+ <m:mo>Σ</m:mo>
+ <m:msup>
+ <m:mrow>
+  <m:msub>
+   <m:mi>e</m:mi>
+   <m:mi>i</m:mi>
+   </m:msub>
+   </m:mrow>
+  <m:mn>2</m:mn> 
+ </m:msup>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>−</m:mo>
+<m:mi>k</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><para id="eip-27">where ŷ is the predicted value of y and y is the observed value, and thus the term <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:msub><m:mi>y</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>ŷ</m:mi><m:mi>i</m:mi></m:msub><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:math>  is the squared errors that are to be minimized to find the estimates of the regression line parameters. This is really just the variance of the error terms and follows our regular variance formula. One important note is that here we are dividing by <m:math><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>k</m:mi><m:mo>)</m:mo></m:math>, which is the degrees of freedom. The degrees of freedom of a regression equation will be the number of observations, n, reduced by the number of estimated parameters, which includes the intercept as a parameter. </para><para id="eip-91">The variance of the errors is fundamental in testing hypotheses for a regression. It tells us just how “tight” the dispersion is about the line. As we will see shortly, the greater the dispersion about the line, meaning the larger the variance of the errors, the less probable that the hypothesized independent variable will be found to have a significant effect on the dependent variable. In short, the theory being tested will more likely fail if the variance of the error term is high. Upon reflection this should not be a surprise. As we tested hypotheses about a mean we observed that large variances reduced the calculated test statistic and thus it failed to reach the tail of the distribution. In those cases, the null hypotheses could not be rejected. If we cannot reject the null hypothesis in a regression problem, we must conclude that the hypothesized independent variable has no effect on the dependent variable. </para><para id="eip-33">A way to visualize this concept is to draw two scatter plots of x and y data along a predetermined line. The first will have little variance of the errors, meaning that all the data points will move close to the line. Now do the same except the data points will have a large estimate of the error variance, meaning that the data points are scattered widely along the line. Clearly the confidence about a relationship between x and y is effected by this difference between the estimate of the error variance.  	</para><section id="eip-933"><title>Testing the Parameters of the Line</title><para id="eip-726">The whole goal of the regression analysis was to test the hypothesis that the dependent variable, Y, was in fact dependent upon the values of the independent variables as asserted by some foundation theory, such as the consumption function example. Looking at the estimated equation under <link target-id="fs-id1165019842274"/>, we see that this amounts to determining the values of b<sub>0</sub> and b<sub>1</sub>. Notice that again we are using the convention of Greek letters for the population parameters and Roman letters for their estimates. 
+</para><para id="eip-685">The regression analysis output provided by the computer software will produce an estimate of b<sub>0</sub> and b<sub>1</sub>, and any other b's for other independent variables that were included in the estimated equation. The issue is how good are these estimates? In order to test a hypothesis concerning any estimate, we have found that we need to know the underlying sampling distribution. It should come as no surprise at his stage in the course that the answer is going to be the normal distribution. This can be seen by remembering the assumption that the error term in the population, ε, is normally distributed. If the error term is normally distributed and the variance of the estimates of the equation parameters, b<sub>0</sub> and b<sub>1</sub>, are determined by the variance of the error term, it follows that the variances of the parameter estimates are also normally distributed. And indeed this is just the case. </para><para id="eip-531">We can see this by the creation of the test statistic for the test of hypothesis for the slope parameter, β<sub>1</sub> in our consumption function equation. To test whether or not Y does indeed depend upon X, or in our example, that consumption depends upon income, we need only test the hypothesis that β<sub>1</sub> equals zero. This hypothesis would be stated formally as:</para><equation class="unnumbered" id="eip-818"><label/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>β</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn>
+</m:math></equation><equation class="unnumbered" id="eip-906"><label/><m:math>
+<m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>β</m:mi><m:mn>1</m:mn></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn></m:math></equation><para id="eip-525">If we cannot reject the null hypothesis, we must conclude that our theory has no validity. If we cannot reject the null hypothesis that β<sub>1</sub> = 0 then b<sub>1</sub>, the coefficient of Income, is zero and zero times anything is zero. Therefore the effect of Income on Consumption is zero. There is no relationship as our theory had suggested. </para><para id="eip-349">Notice that we have set up the presumption, the null hypothesis, as "no relationship". This puts the burden of proof on the alternative hypothesis. In other words, if we are to validate our claim of finding a relationship, we must do so with a level of significance greater than 90, 95, or 99 percent. The <emphasis effect="italics">status quo</emphasis> is ignorance, no relationship exists, and to be able to make the claim that we have actually added to our body of knowledge we must do so with significant probability of being correct. John Maynard Keynes got it right and thus was born Keynesian economics starting with this basic concept in 1936.
+</para><para id="eip-28">The test statistic for this test comes directly from our old friend the standardizing formula:</para><equation class="unnumbered" id="eip-333"><label/><m:math>
+<m:msub>
+ <m:mi>t</m:mi>
+ <m:mi>c</m:mi>
+</m:msub> 
+
+<m:mo>=</m:mo> 
+
+<m:mfrac> 
+ <m:mrow> 
+  <m:msub>
+   <m:mi>b</m:mi>
+   <m:mn>1</m:mn> 
+  </m:msub>
+  <m:mo>−</m:mo>
+  <m:msub> 
+   <m:mi>β</m:mi>
+    <m:mn>1</m:mn> 
+  </m:msub>
+ </m:mrow>
+ <m:mrow> 
+   <m:msub> 
+    <m:mi>S</m:mi> 
+    <m:mrow>
+    <m:msub> 
+    <m:mi>b</m:mi>
+    <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:msub>
+ 
+</m:mrow>
+</m:mfrac>
+</m:math></equation><para id="eip-355">where b<sub>1</sub> is the estimated value of the slope of the regression line, β<sub>1</sub> is the hypothesized value of beta, in this case zero, and <m:math> <m:msub> 
+    <m:mi>S</m:mi> 
+    <m:mrow>
+    <m:msub> 
+    <m:mi>b</m:mi>
+    <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:msub></m:math> is the standard deviation of the estimate of b<sub>1</sub>. In this case we are asking how many standard deviations is the estimated slope away from the hypothesized slope. This is exactly the same question we asked before with respect to a hypothesis about a mean: how many standard deviations is the estimated mean, the sample mean, from the hypothesized mean?</para><para id="eip-488">The test statistic is written as a student's <emphasis effect="italics">t</emphasis>-distribution, but if the sample size is larger enough so that the degrees of freedom are greater than 30 we may again use the normal distribution. To see why we can use the student's t or normal distribution we have only to look at <m:math> <m:msub> 
+    <m:mi>S</m:mi> 
+    <m:mrow>
+    <m:msub> 
+    <m:mi>b</m:mi>
+    <m:mn>1</m:mn>
+    </m:msub>
+    </m:mrow>
+  </m:msub></m:math>,the formula for the standard deviation of the estimate of b<sub>1</sub>:
+</para><equation class="unnumbered" id="eip-786"><label/><m:math>
+ <m:msub>
+ <m:mi>S</m:mi>
+ <m:mrow>
+ <m:msub>
+ <m:mi>b</m:mi>
+ <m:mn>1</m:mn>
+ </m:msub>
+ </m:mrow>
+ </m:msub>
+
+<m:mo>=</m:mo> 
+
+<m:mfrac>
+ <m:mrow> 
+  <m:msubsup>
+   <m:mi>S</m:mi>
+   <m:mi>e</m:mi>
+   <m:mn>2</m:mn>
+  </m:msubsup>
+ </m:mrow>
+ <m:mrow>
+  <m:msqrt>
+   <m:msup>
+   <m:mrow> 
+   <m:mo>(</m:mo>
+   <m:msub>
+    <m:mi>x</m:mi>
+    <m:mi>i</m:mi>
+   </m:msub>
+   <m:mo>−</m:mo>
+   <m:mover>
+   <m:mi>x</m:mi>
+   <m:mi>–</m:mi>
+   </m:mover> 
+   <m:mo>)</m:mo>
+   </m:mrow>
+   <m:mn>2</m:mn>
+   </m:msup> 
+  </m:msqrt>
+ </m:mrow>
+</m:mfrac>  
+</m:math>
+ </equation><equation class="unnumbered" id="eip-288">or</equation><equation id="eip-99"><label/><m:math>
+ <m:msub>
+ <m:mi>S</m:mi>
+ <m:mrow>
+ <m:msub>
+ <m:mi>b</m:mi>
+ <m:mn>1</m:mn>
+ </m:msub>
+ </m:mrow>
+ </m:msub>
+
+<m:mo>=</m:mo> 
+
+<m:mfrac>
+ <m:mrow> 
+  <m:msubsup>
+   <m:mi>S</m:mi>
+   <m:mi>e</m:mi>
+   <m:mn>2</m:mn>
+  </m:msubsup>
+ </m:mrow>
+ <m:mrow>
+  <m:mo>(</m:mo>
+  <m:mi>n</m:mi>
+  <m:mo>−</m:mo>
+  <m:mn>1</m:mn>
+  <m:mo>)</m:mo>
+  <m:msubsup>
+   <m:mi>S</m:mi>
+   <m:mi>x</m:mi>
+   <m:mn>2</m:mn>
+  </m:msubsup>
+ </m:mrow>
+</m:mfrac>  
+</m:math>
+ </equation><para id="eip-679">Where S<sub>e</sub> is the estimate of the error variance and S<sup>2</sup><sub>x</sub> is the variance of x values of the coefficient of the independent variable being tested. </para><para id="eip-962">We see that S<sub>e</sub>, the <emphasis>estimate of the error variance</emphasis>, is part of the computation. Because the estimate of the error variance is based on the assumption of normality of the error terms, we can conclude that the sampling distribution of the b's, the coefficients of our hypothesized regression line, are also normally distributed.</para><para id="eip-971">One last note concerns the degrees of freedom of the test statistic, ν=n-k. Previously we subtracted 1 from the sample size to determine the degrees of freedom in a student's t problem.  Here we must subtract one degree of freedom for each parameter estimated in the equation. For the example of the consumption function we lose 2 degrees of freedom, one for <m:math><m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub></m:math>, the intercept, and one for b<sub>1</sub>, the slope of the consumption function. The degrees of freedom would be n - k - 1, where k is the number of independent variables and the extra one is lost because of the intercept. If we were estimating an equation with three independent variables, we would lose 4 degrees of freedom: three for the independent variables, k, and one more for the intercept.</para><para id="eip-682">The decision rule for acceptance or rejection of the null hypothesis follows exactly the same form as in all our previous test of hypothesis. Namely, if the calculated value of t (or Z) falls into the tails of the distribution, where the tails are defined by α ,the required significance level in the test, we cannot accept the null hypothesis. If on the other hand, the calculated value of the test statistic is within the critical region, we cannot reject the null hypothesis.  </para><para id="eip-920">If we conclude that we cannot accept the null hypothesis, we are able to state with <m:math><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>α</m:mi><m:mo>)</m:mo></m:math> level of confidence that the slope of the line is given by b<sub>1</sub>. This is an extremely important conclusion. Regression analysis not only allows us to test if a cause and effect relationship exists, we can also determine the magnitude of that relationship, if one is found to exist. It is this feature of regression analysis that makes it so valuable. If models can be developed that have statistical validity, we are then able to simulate the effects of changes in variables that may be under our control with some degree of probability , of course. For example, if advertising is demonstrated to effect sales, we can determine the effects of changing the advertising budget and decide if the increased sales are worth the added expense.</para></section><section id="eip-823"><title>Multicollinearity</title><para id="eip-753">
+Our discussion earlier indicated that like all statistical models, the OLS regression model has important assumptions attached. Each assumption, if violated, has an effect on the ability of the model to provide useful and meaningful estimates. The Gauss-Markov Theorem has assured us that the OLS estimates are unbiased and minimum variance, but this is true only under the assumptions of the model. Here we will look at the effects on OLS estimates if the independent variables are correlated. The other assumptions and the methods to mitigate the difficulties they pose if they are found to be violated are examined in Econometrics courses. We take up multicollinearity because it is so often prevalent in Economic models and it often leads to frustrating results.</para>
+<para id="eip-id1165105022157">
+The OLS model assumes that all the independent variables are independent of each other. This assumption is easy to test for a particular sample of data with simple correlation coefficients. Correlation, like much in statistics, is a matter of degree: a little is not good, and a lot is terrible.</para>
+<para id="eip-id1165099256910">The goal of the regression technique is to tease out the independent impacts of each of a set of independent variables on some hypothesized dependent variable. If two 2 independent variables are interrelated, that is, correlated, then we cannot isolate the effects on Y of one from the other. In an extreme case where <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> is a linear combination of <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math>, correlation equal to one, both variables move in identical ways with Y. In this case it is impossible to determine the variable that is the true cause of the effect on Y. (If the two variables were actually perfectly correlated, then mathematically no regression results could actually be calculated.)</para><para id="eip-id1165095788729">The normal equations for the coefficients show the effects of multicollinearity on the
+
+coefficients.
+<equation class="unnumbered" id="eip-id1800408"><label/><m:math><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo>
+
+
+<m:mfrac>
+<m:mrow>
+<m:msub><m:mi>s</m:mi><m:mi>y</m:mi></m:msub><m:mo>(</m:mo><m:msub><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mi>y</m:mi></m:mrow></m:msub>
+
+<m:mo>-</m:mo>
+
+<m:msub><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:msub>
+<m:msub><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub><m:mi>y</m:mi></m:mrow></m:msub><m:mo>)</m:mo>
+</m:mrow>
+
+<m:mrow>
+<m:msub><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub></m:mrow></m:msub>
+<m:mo>(</m:mo>
+<m:mn>1</m:mn><m:mo>-</m:mo>
+<m:msubsup><m:mrow><m:mi>r</m:mi></m:mrow>
+<m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow>
+
+<m:mrow><m:mi>2</m:mi></m:mrow></m:msubsup><m:mo>)</m:mo>
+
+</m:mrow>
+
+</m:mfrac></m:math></equation>
+<equation class="unnumbered" id="eip-id1166515276542"><label/><m:math><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo>
+
+
+<m:mfrac>
+<m:mrow>
+<m:msub><m:mi>s</m:mi><m:mi>y</m:mi></m:msub><m:mo>(</m:mo><m:msub><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub><m:mi>y</m:mi></m:mrow></m:msub>
+
+<m:mo>-</m:mo>
+
+<m:msub><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:msub>
+<m:msub><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mi>y</m:mi></m:mrow></m:msub><m:mo>)</m:mo>
+</m:mrow>
+
+<m:mrow>
+<m:msub><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msub><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:mrow></m:msub>
+<m:mo>(</m:mo>
+<m:mn>1</m:mn><m:mo>-</m:mo>
+<m:msubsup><m:mrow><m:mi>r</m:mi></m:mrow>
+<m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow>
+
+<m:mrow><m:mi>2</m:mi></m:mrow></m:msubsup><m:mo>)</m:mo>
+
+</m:mrow>
+
+</m:mfrac></m:math></equation><equation class="unnumbered" id="eip-id2240412"><label/><m:math><m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo>
+
+
+<m:mover><m:mi>y</m:mi><m:mo>-</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mn>2</m:mn></m:msub>
+
+
+</m:math></equation></para><para id="eip-602">The correlation between <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math>, <m:math><m:msubsup><m:mi>r</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup>
+</m:math>, appears in the denominator of both the estimating
+
+formula for <m:math><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub></m:math>. If the assumption of independence holds, then this term is zero.
+
+This indicates that there is no effect of the correlation on the coefficient. On the
+
+other hand, as the correlation between the two independent variables increases the
+
+denominator decreases, and thus the estimate of the coefficient increases. The
+
+correlation has the same effect on both of the coefficients of these two variables. In
+
+essence, each variable is “taking” part of the effect on Y that should be attributed to
+
+the collinear variable. This results in biased estimates.</para><para id="eip-518">Multicollinearity has a further deleterious impact on the OLS estimates. The
+
+correlation between the two independent variables also shows up in the formulas
+
+for the estimate of the variance for the coefficients.
+<equation class="unnumbered" id="eip-id8134371"><label/><m:math>
+
+
+<m:msubsup><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup><m:mi>s</m:mi><m:mi>e</m:mi><m:mn>2</m:mn></m:msubsup></m:mrow>
+<m:mrow>
+<m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo>
+
+<m:msubsup><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup><m:mo>)</m:mo>
+
+</m:mrow>
+</m:mfrac>
+
+</m:math></equation><equation class="unnumbered" id="eip-id1169336874297"><label/><m:math>
+
+
+<m:msubsup><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup><m:mi>s</m:mi><m:mi>e</m:mi><m:mn>2</m:mn></m:msubsup></m:mrow>
+<m:mrow>
+<m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo>
+
+<m:msubsup><m:mrow><m:mi>r</m:mi></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup><m:mo>)</m:mo>
+
+</m:mrow>
+</m:mfrac>
+
+</m:math></equation></para><para id="eip-787">Here again we see the correlation between <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math> in the denominator of the estimates of the variance for the coefficients for both variables. If the correlation is zero as assumed in the regression model, then the formula collapses to the familiar ratio of the variance of the errors to the variance of the relevant independent variable. If however the two independent variables are correlated, then the variance of the estimate of the coefficient increases. This results in a smaller t-value for the test of hypothesis of the coefficient. In short, multicollinearity results in failing to reject the null hypothesis that the X variable has no impact on Y when in fact X does have a statistically significant impact on Y. Said another way, the large standard errors of the estimated coefficient created by multicollinearity suggest statistical insignificance even when the hypothesized relationship is strong.</para></section><section id="eip-759"><title>How Good is the Equation?</title><para id="eip-8">In the last section we concerned ourselves with testing the hypothesis that the dependent variable did indeed depend upon the hypothesized independent variable or variables. It may be that we find an independent variable that has some effect on the dependent variable, but it may not be the only one, and it may not even be the most important one. Remember that the error term was placed in the model to capture the effects of any missing independent variables. It follows that the error term may be used to give a measure of the "goodness of fit" of the equation taken as a whole in explaining the variation of the dependent variable, Y.
+</para><para id="eip-42">The <term>multiple correlation coefficient</term>, also called the <term>coefficient of multiple determination</term> or the <term>coefficient of determination</term>, is given by the formula:</para><equation class="unnumbered" id="eip-529"><label/><m:math>
+<m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mtext>SSR</m:mtext>
+<m:mtext>SST</m:mtext>
+</m:mfrac>
+</m:math></equation><para id="eip-268">where SSR is the regression sum of squares, the squared deviation of the predicted value of y from the mean value of y<m:math><m:mo>(</m:mo><m:mi>ŷ</m:mi><m:mo>−</m:mo><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo></m:math>,  and SST is the total sum of squares which is the total squared deviation of the dependent variable, y, from its mean value, including the error term, SSE, the sum of squared errors. <link target-id="eip-id1172012809409"/> shows how the total deviation of the dependent variable, y, is partitioned into these two pieces. </para><figure id="eip-id1172012809409"><media id="eip-id1172008066777" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_05m.jpg" width="420"/></media></figure><para id="eip-146"><link target-id="eip-id1172012809409"/> shows the estimated regression line and a single observation, x<sub>1</sub>. Regression analysis tries to explain the variation of the data about the mean value of the dependent variable, y. The question is, why do the observations of y vary from the average level of y? The value of y at observation x<sub>1</sub> varies from the mean of y by the difference (<m:math><m:msub><m:mi>y</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>). The sum of these differences squared is SST, the sum of squares total. The actual value of y at x<sub>1</sub> deviates from the estimated value, ŷ, by the difference between the estimated value and the actual value, (<m:math><m:msub><m:mi>y</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:mi>ŷ</m:mi></m:math>). We recall that this is the error term, e, and the sum of these errors is SSE, sum of squared errors. The deviation of the predicted value of y, ŷ, from the mean value of y is (<m:math><m:mi>ŷ</m:mi><m:mo>−</m:mo><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>) and is the SSR, sum of squares regression. It is called “regression” because it is the deviation explained by the regression. (Sometimes the SSR is called SSM for sum of squares mean because it measures the deviation from the mean value of the dependent variable, y, as shown on the graph.).</para><para id="eip-373">Because the SST = SSR + SSE we see that the multiple correlation coefficient is the percent of the variance, or deviation in y from its mean value, that is explained by the equation when taken as a whole. R<sup>2</sup> will vary between zero and 1, with zero indicating that none of the variation in y was explained by the equation and a value of 1 indicating that 100% of the variation in y was explained by the equation. For time series studies expect a high R<sup>2</sup> and for cross-section data expect low R<sup>2</sup>. </para><para id="eip-651">While a high R<sup>2</sup> is desirable, remember that it is the tests of the hypothesis concerning the existence of a relationship between a set of independent variables and a particular dependent variable that was the motivating factor in using the regression model. It is validating a cause and effect relationship developed by some theory that is the true reason that we chose the regression analysis. Increasing the number of independent variables will have the effect of increasing R<sup>2</sup>. To account for this effect the proper measure of the coefficient of determination is the <m:math><m:msup><m:mrow><m:mover><m:mi>R</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msup></m:math>, adjusted for degrees of freedom, to keep down mindless addition of independent variables. </para><para id="eip-113">There is no statistical test for the R<sup>2</sup> and thus little can be said about the model using R<sup>2</sup> with our characteristic confidence level. Two models that have the same size of SSE, that is sum of squared errors, may have very different R<sup>2</sup>  if the competing models have different SST, total sum of squared deviations. The goodness of fit of the two models is the same; they both have the same sum of squares unexplained, errors squared, but because of the larger total sum of squares on one of the models the R<sup>2</sup> differs. Again, the real value of regression as a tool is to examine hypotheses developed from a model that predicts certain relationships among the variables. These are tests of hypotheses on the coefficients of the model and not a game of maximizing R<sup>2</sup>.</para><para id="eip-243">Another way to test the general quality of the overall model is to test the coefficients
+
+as a group rather than independently. Because this is multiple regression (more
+
+than one X), we use the F-test to determine if our coefficients collectively affect Y.
+
+The hypothesis is: 
+</para><para id="eip-714"><m:math><m:msub><m:mi>H</m:mi><m:mi>o</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>β</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>β</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mo>…</m:mo><m:mo>=</m:mo><m:msub><m:mi>β</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math></para><para id="eip-154"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo></m:math> "at least one of the βi is not equal to 0"</para><para id="eip-766">If the null hypothesis cannot be rejected, then we conclude that none of the
+
+independent variables contribute to explaining the variation in Y. Reviewing <link target-id="eip-id1172012809409"/> we see that SSR, the explained sum of squares, is a measure of just how much of
+
+the variation in Y is explained by all the variables in the model. SSE, the sum of the
+
+errors squared, measures just how much is unexplained. It follows that the ratio of
+
+these two can provide us with a statistical test of the model as a whole.
+
+Remembering that the F distribution is a ratio of Chi squared distributions and that
+
+variances are distributed according to Chi Squared, and the sum of squared errors
+
+and the sum of squares are both variances, we have the test statistic for this
+
+hypothesis as:
+<equation class="unnumbered" id="eip-id1172116267594"><label/><m:math><m:msub><m:mi>F</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mfrac><m:mrow><m:mi>S</m:mi><m:mi>S</m:mi><m:mi>R</m:mi></m:mrow>
+<m:mrow><m:mi>k</m:mi></m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mfrac><m:mrow><m:mi>S</m:mi><m:mi>S</m:mi><m:mi>E</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+</m:mrow>
+</m:mfrac>
+</m:math></equation>where <emphasis effect="italics">n</emphasis> is the number of observations and <emphasis effect="italics">k</emphasis> is the number of independent variables. It can be shown that this is equivalent to:<equation class="unnumbered" id="eip-id1169378145515"><label/><m:math>
+<m:msub><m:mi>F</m:mi><m:mi>c</m:mi></m:msub>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+<m:mrow><m:mi>k</m:mi></m:mrow>
+</m:mfrac>
+<m:mo>·</m:mo>
+<m:mfrac>
+<m:mrow><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow>
+<m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:mrow>
+</m:mfrac>
+</m:math></equation><link target-id="eip-id1172012809409"/> where R<sup>2</sup> is the coefficient of determination which is also a
+
+measure of the “goodness” of the model.</para><para id="eip-814">As with all our tests of hypothesis, we reach a conclusion by comparing the
+
+calculated F statistic with the critical value given our desired level of confidence. If
+
+the calculated test statistic, an F statistic in this case, is in the tail of the distribution,
+
+then we cannot accept the null hypothesis. By not being able to accept the null
+
+hypotheses we conclude that this specification of this model has validity, because at
+
+least one of the estimated coefficients is significantly different from zero.</para><para id="eip-138">An alternative way to reach this conclusion is to use the p-value comparison rule.
+
+The p-value is the area in the tail, given the calculated F statistic. In essence, the
+
+computer is finding the F value in the table for us. The computer regression output
+
+for the calculated F statistic is typically found in the ANOVA table section labeled
+
+“significance F". How to read the output of an Excel regression is presented below. This is the probability of NOT accepting a false null hypothesis. If
+
+this probability is less than our pre-determined alpha error, then the conclusion is
+
+that we cannot accept the null hypothesis.</para></section><section id="eip-97"><title>Dummy Variables</title><para id="eip-302">Thus far the analysis of the OLS regression technique assumed that the independent variables in the models tested were continuous random variables. There are, however, no restrictions in the regression model against independent variables that are binary. This opens the regression model for testing hypotheses concerning categorical variables such as gender, race, region of the country, before a certain data, after a certain date and innumerable others. These categorical variables take on only two values, 1 and 0, success or failure, from the binomial probability distribution.
+The form of the equation becomes:
+</para><equation class="unnumbered" id="eip-219"><label/><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math></equation><figure id="eip-id1169482776676"><media id="eip-id1169456305570" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_06m.jpg" width="420"/></media></figure><para id="eip-191">where <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn></m:math>.  X<sub>2</sub> is the dummy variable and X<sub>1</sub> is some continuous random variable. The constant, b<sub>0</sub>, is the y-intercept, the value where the line crosses the y-axis. When the value of X<sub>2</sub> = 0, the estimated line crosses at b<sub>0</sub>. When the value of X<sub>2</sub> = 1 then the estimated line crosses at b<sub>0</sub> + b<sub>2</sub>. In effect the dummy variable causes the estimated line to shift either up or down by the size of the effect of the characteristic captured by the dummy variable. Note that this is a simple parallel shift and does not affect the impact of the other independent variable; X<sub>1</sub>.This variable is a continuous random variable and predicts different values of y at different values of X<sub>1</sub> holding constant the condition of the dummy variable. </para><para id="eip-13">An example of the use of a dummy variable is the work estimating the impact of gender on salaries. There is a full body of literature on this topic and dummy variables are used extensively. For this example the salaries of elementary and secondary school teachers for a particular state is examined. Using a homogeneous job category, school teachers, and for a single state reduces many of the variations that naturally effect salaries such as differential physical risk, cost of living in a particular state, and other working conditions. The estimating equation in its simplest form specifies salary as a function of various teacher characteristic that economic theory would suggest could affect salary. These would include education level as a measure of potential productivity, age and/or experience to capture on-the-job training, again as a measure of productivity. Because the data are for school teachers employed in a public school districts rather than workers in a for-profit company, the school district’s average revenue per average daily student attendance is included as a measure of ability to pay.  The results of the regression analysis using data on 24,916 school teachers are presented below. </para><table id="eip-844" summary="..."><title>Earnings Estimate for Elementary and Secondary School Teachers</title>
+<tgroup cols="3"><thead>
+  <row>
+    <entry>Variable</entry>
+    <entry>Regression Coefficients (b) </entry>
+    <entry>Standard Errors of the estimates<newline/> for teacher's earnings function (s<sub>b</sub>)</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>Intercept</entry>
+    <entry>4269.9</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry>Gender (male = 1)</entry>
+    <entry>632.38</entry>
+    <entry>13.39</entry>
+  </row>
+  <row>
+    <entry>Total Years of Experience</entry>
+    <entry>52.32</entry>
+    <entry>1.10</entry>
+  </row>
+  <row>
+    <entry>Years of Experience in Current District</entry>
+    <entry>29.97</entry>
+    <entry>1.52</entry>
+  </row>
+  <row>
+    <entry>Education</entry>
+    <entry>629.33</entry>
+    <entry>13.16</entry>
+  </row>
+  <row>
+    <entry>Total Revenue per ADA</entry>
+    <entry>90.24</entry>
+    <entry>3.76</entry>
+  </row>
+  <row>
+    <entry><m:math><m:msup><m:mrow><m:mover><m:mi>R</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msup></m:math></entry>
+    <entry>.725</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry><emphasis effect="italics">n</emphasis></entry>
+    <entry>24,916</entry>
+    <entry/>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="eip-558">The coefficients for all the independent variables are significantly different from zero as indicated by the standard errors. Dividing the standard errors of each coefficient results in a t-value greater than 1.96 which is the required level for 95% significance. The binary variable, our dummy variable of interest in this analysis, is gender where male is given a value of 1 and female given a value of 0. The coefficient is significantly different from zero with a dramatic t-statistic of 47 standard deviations. We thus cannot accept the null hypothesis that the coefficient is equal to zero. Therefore we conclude that there is a premium paid male teachers of $632 after holding constant experience, education and the wealth of the school district in which the teacher is employed. It is important to note that these data are from some time ago and the $632 represents a six percent salary premium at that time. A graph of this example of dummy variables is presented below. </para><figure id="eip-id1170086528305"><media id="eip-id1170086528306" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_07m.jpg" width="420"/></media></figure><para id="eip-693">In two dimensions, salary is the dependent variable on the vertical axis and total years of experience was chosen for the continuous independent variable on horizontal axis. Any of the other independent variables could have been chosen to illustrate the effect of the dummy variable. The relationship between total years of experience has a slope of $52.32 per year of experience and the estimated line has an intercept of $4,269 if the gender variable is equal to zero, for female. If the gender variable is equal to 1, for male, the coefficient for the gender variable is added to the intercept and thus the relationship between total years of experience and salary is shifted upward parallel as indicated on the graph. Also marked on the graph are various points for reference. A female school teacher with 10 years of experience receives a salary of $4,792 on the basis of her experience only, but this is still $109 less than a male teacher with zero years of experience.</para><para id="eip-511">A more complex interaction between a dummy variable and the dependent variable can also be estimated. It may be that the dummy variable has more than a simple shift effect on the dependent variable, but also interacts with one or more of the other continuous independent variables. While not tested in the example above, it could be hypothesized that the impact of gender on salary was not a one-time shift, but impacted the value of additional years of experience on salary also. That is, female school teacher’s salaries were discounted at the start, and further did not grow at the same rate from the effect of experience as for male school teachers. This would show up as a different slope for the relationship between total years of experience for males than for females. If this is so then females school teachers would not just start behind their male colleagues (as measured by the shift in the estimated regression line), but would fall further and further behind as time and experienced increased. </para><para id="eip-476">The graph below shows how this hypothesis can be tested with the use of dummy variables and an interaction variable. </para><figure id="eip-id1169482715033"><media id="eip-id1169459106677" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_08m.jpg" width="420"/></media></figure><para id="eip-610">The estimating equation shows how the slope of X<sub>1</sub>, the continuous random variable experience, contains two parts, b<sub>1</sub> and b<sub>3</sub>. This occurs because of the new variable X<sub>2</sub> X<sub>1</sub>, called the interaction variable, was created to allow for an effect on the slope of X<sub>1</sub> from changes in X<sub>2</sub>, the binary dummy variable.  Note that when the dummy variable, X<sub>2</sub> = 0 the interaction variable has a value of 0, but when X<sub>2</sub> = 1 the interaction variable has a value of X<sub>1</sub>. The coefficient b<sub>3</sub> is an estimate of the difference in the coefficient of X<sub>1</sub> when X<sub>2</sub> = 1 compared to when X<sub>2</sub> = 0. In the example of teacher’s salaries, if there is a premium paid to male teachers that affects the rate of increase in salaries from experience, then the rate at which male teachers’ salaries rises would be b<sub>1</sub> + b<sub>3</sub> and the rate at which female teachers’ salaries rise would be simply b<sub>1</sub>. This hypothesis can be tested with the hypothesis:</para><equation class="unnumbered" id="eip-56"><label/><m:math>
+ <m:msub>
+  <m:mi>H</m:mi>
+  <m:mn>0</m:mn>
+ </m:msub>
+ <m:mo>:</m:mo>
+ <m:msub>
+ <m:mi>β</m:mi>
+ <m:mn>3</m:mn>
+ </m:msub>
+ <m:mo>=</m:mo>
+ <m:mn>0</m:mn>
+ <m:mo>|</m:mo>
+ <m:msub>
+ <m:mi>β</m:mi>
+ <m:mn>1</m:mn>
+ </m:msub>
+ <m:mo>=</m:mo>
+ <m:mn>0</m:mn>
+ <m:mo>,</m:mo>
+ <m:msub>
+ <m:mi>β</m:mi>
+ <m:mn>2</m:mn>
+ </m:msub>
+ <m:mo>=</m:mo>
+ <m:mn>0</m:mn> 
+</m:math>
+ 
+ </equation><equation class="unnumbered" id="eip-195"><label/><m:math>
+ <m:msub>
+  <m:mi>H</m:mi>
+  <m:mi>a</m:mi>
+ </m:msub>
+ <m:mo>:</m:mo>
+ <m:msub>
+ <m:mi>β</m:mi>
+ <m:mn>3</m:mn>
+ </m:msub>
+ <m:mo>≠</m:mo>
+ <m:mn>0</m:mn>
+ <m:mo>|</m:mo>
+ <m:msub>
+ <m:mi>β</m:mi>
+ <m:mn>1</m:mn>
+ </m:msub>
+ <m:mo>≠</m:mo>
+ <m:mn>0</m:mn>
+ <m:mo>,</m:mo>
+ <m:msub>
+ <m:mi>β</m:mi>
+ <m:mn>2</m:mn>
+ </m:msub>
+ <m:mo>≠</m:mo>
+ <m:mn>0</m:mn> 
+</m:math>
+ 
+ </equation><para id="eip-406">This is a t-test using the test statistic for the parameter β<sub>3</sub>. If we cannot accept the null hypothesis that β<sub>3</sub>=0 we conclude there is a difference between the rate of increase for the group for whom the value of the binary variable is set to 1, males in this example. This estimating equation can be combined with our earlier one that tested only a parallel shift in the estimated line. The earnings/experience functions in <link target-id="eip-id1169482715033"/> are drawn for this case with a shift in the earnings function and a difference in the slope of the function with respect to total years of experience.</para></section><example id="element-22">
+<para id="element-998">A random sample of 11 statistics students produced the following data, where <emphasis effect="italics">x</emphasis> is the third exam score out of 80, and <emphasis effect="italics">y</emphasis> is the final exam score out of 200. Can you predict the final exam score of a randomly selected student if you know the third exam score?</para><table id="eip-112" summary="Table showing the scores on the final exam based on scores from the third exam.">
+<tgroup cols="2"><thead>
+  <row>
+    <entry>x (third exam score)</entry>
+    <entry>y (final exam score)</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>65</entry>
+    <entry>175</entry>
+  </row>
+  <row>
+    <entry>67</entry>
+    <entry>133</entry>
+  </row>
+  <row>
+    <entry>71</entry>
+    <entry>185</entry>
+  </row>
+  <row>
+    <entry>71</entry>
+    <entry>163</entry>
+  </row>
+  <row>
+    <entry>66</entry>
+    <entry>126</entry>
+  </row>
+  <row>
+    <entry>75</entry>
+    <entry>198</entry>
+  </row>
+  <row>
+    <entry>67</entry>
+    <entry>153</entry>
+  </row>
+  <row>
+    <entry>70</entry>
+    <entry>163</entry>
+  </row>
+  <row>
+    <entry>71</entry>
+    <entry>159</entry>
+  </row>
+  <row>
+    <entry>69</entry>
+    <entry>151</entry>
+  </row>
+  <row>
+    <entry>69</entry>
+    <entry>159</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup><caption>Table showing the scores on the final exam based on scores from the third exam.</caption>
+</table><figure id="linrgs_regeq1"><media id="id1164262330756" alt="This is a scatter plot of the data provided. The third exam score is plotted on the x-axis, and the final exam score is plotted on the y-axis. The points form a strong, positive, linear pattern."><image src="../../media/fig-ch12_05_01.jpg" mime-type="image/jpeg" width="380"/></media>
+<caption>Scatter plot showing the scores on the final exam based on scores from the third exam.</caption>
+</figure></example>
+
+
+<section id="eip-931" class="practice"><exercise id="eip-507"><problem id="eip-356">
+  <para id="eip-849">
+    Suppose that you have at your disposal the information below for each of 30 drivers.  Propose a model (including a very brief indication of symbols used to represent independent variables) to explain how miles per gallon vary from driver to driver on the basis of the factors measured.
+  </para>
+<list id="eip-idm870391984" list-type="enumerated" number-style="arabic"><title>Information:</title><item>miles driven per day</item>
+<item>weight of car</item>
+<item>number of cylinders in car</item>
+<item>average speed</item>
+<item>miles per gallon</item>
+<item>number of passengers</item>
+</list></problem>
+
+<solution id="eip-763">
+  <para id="eip-644"><m:math><m:msub><m:mi>Y</m:mi><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:mo>⋅</m:mo><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:mo>⋅</m:mo><m:msub><m:mi>X</m:mi><m:mn>2</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>3</m:mn></m:msub><m:mo>⋅</m:mo><m:msub><m:mi>X</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>4</m:mn></m:msub><m:mo>⋅</m:mo><m:msub><m:mi>X</m:mi><m:mn>4</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>5</m:mn></m:msub><m:mo>⋅</m:mo><m:msub><m:mi>X</m:mi><m:mn>6</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>e</m:mi><m:mi>j</m:mi></m:msub></m:math>
+</para></solution>
+</exercise><exercise id="eip-idm1756644288"><problem id="eip-idm1477132096">
+<para id="eip-idm1247255712">Consider a sample least squares regression analysis between a dependent variable (Y) and an independent variable (X).  A sample correlation coefficient of −1 (minus one) tells us that</para><list id="eip-idm1243361472" list-type="enumerated" number-style="lower-alpha">
+<item>there is no relationship between Y and X in the sample</item>
+<item>there is no relationship between Y and X in the population</item>
+<item>there is a perfect negative relationship between Y and X in the population</item>
+<item>there is a perfect negative relationship between Y and X in the sample.</item>
+</list>
+</problem>
+
+<solution id="eip-idm1672410272">
+<para id="eip-idm1570266432">d.  there is a perfect negative relationship between Y and X in the sample.
+</para>
+</solution></exercise>
+
+
+<exercise id="eip-idm291253344"><problem id="eip-idm1243425488">
+<para id="eip-idm1546643168">In correlational analysis, when the points scatter widely about the regression line, this means that the correlation is</para>
+
+<list id="eip-idm344611680" list-type="enumerated" number-style="lower-alpha">
+<item>negative.</item>
+<item>low.</item>
+<item>heterogeneous.</item>
+<item>between two measures that are unreliable.</item>
+</list>
+</problem>
+
+<solution id="eip-idm1248689024">
+<para id="eip-idm1263139952">b. low</para>
+</solution></exercise></section><section id="eip-993" class="summary"><title>Chapter Review</title><para id="eip-id1170036179985">It is hoped that this discussion of regression analysis has demonstrated the tremendous potential value it has as a tool for testing models and helping to better understand the world around us. The regression model has its limitations, especially the requirement that the underlying relationship be approximately linear. To the extent that the true relationship is nonlinear it may be approximated with a linear relationship or nonlinear forms of transformations that can be estimated with linear techniques. Double logarithmic transformation of the data will provide an easy 
+way to test this particular shape of the relationship. A reasonably good quadratic form (the shape of the total cost curve from Microeconomics Principles) can be generated by the equation:
+</para><equation class="unnumbered" id="eip-585"><label/><m:math><m:mi>Y</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:mi>X</m:mi><m:mo>+</m:mo><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:msup><m:mi>X</m:mi><m:mn>2</m:mn></m:msup></m:math></equation><para id="eip-675">where the values of X are simply squared and put into the equation as a separate variable. </para><para id="eip-25">There is much more in the way of econometric "tricks" that can bypass some of the more troublesome assumptions of the general regression model. This statistical technique is so valuable that further study would provide any student significant, statistically significant, dividends.  
+</para></section> </content>
+<glossary>
+<definition id="fs-id1171342481921"><term>Residual or “error”</term>
+<meaning id="fs-id1171348238510">the value calculated from subtracting 
+<m:math><m:msub><m:mi>y</m:mi><m:mn>0</m:mn></m:msub>
+<m:mo>−</m:mo>
+<m:msub><m:mrow><m:mover><m:mi>y</m:mi><m:mo>^</m:mo></m:mover></m:mrow><m:mn>0</m:mn></m:msub>
+<m:mo>=</m:mo>
+<m:msub><m:mi>e</m:mi><m:mn>0</m:mn></m:msub></m:math>. The absolute value of a residual measures the vertical distance between the actual value of <emphasis effect="italics">y</emphasis> and the estimated value of <emphasis effect="italics">y</emphasis> that appears on the best-fit line.
+</meaning>
+</definition>
+
+<definition id="fs-id1171345295516"><term>Sum of Squared Errors (SSE)</term>
+<meaning id="fs-id1171346367514">the calculated value from adding up all the squared residual terms.  The hope is that this value is very small when creating a model.
+</meaning>
+</definition>
+
+<definition id="fs-id4336325"><term><m:math><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup></m:math> – Coefficient of Determination</term>
+<meaning id="fs-id1171349427386">This is a number between 0 and 1 that represents the percentage variation of the dependent variable that can be explained by the variation in the independent variable.  Sometimes calculated by the equation <m:math><m:msup><m:mi>R</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>S</m:mi><m:mi>S</m:mi><m:mi>R</m:mi></m:mrow><m:mrow><m:mi>S</m:mi><m:mi>S</m:mi><m:mi>T</m:mi></m:mrow></m:mfrac></m:math> where SSR is the “Sum of Squares Regression” and SST is the “Sum of Squares Total.” The appropriate coefficient of determination to be reported should always be adjusted for degrees of freedom first. 
+
+
+</meaning>
+</definition>
+
+</glossary>
+</document>

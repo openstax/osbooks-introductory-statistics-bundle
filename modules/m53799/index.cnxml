@@ -1,0 +1,592 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sigma Notation and Calculating the Arithmetic Mean</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53799</md:content-id>
+  <md:title>Sigma Notation and Calculating the Arithmetic Mean</md:title>
+  <md:abstract/>
+  <md:uuid>1e28cd7f-6981-4db3-b3bf-4629a8febc46</md:uuid>
+</metadata>
+
+<content>
+    <para xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-948"><title>Formula for Population Mean</title><equation class="unnumbered" id="eip-id2068065"><label/><m:math>
+<m:mi>μ</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac><m:mn>1</m:mn><m:mi>N</m:mi></m:mfrac>
+<m:munderover><m:mo>∑</m:mo>
+<m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mi>N</m:mi>
+</m:munderover>
+<m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub>
+</m:math></equation></para><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-405"><title>Formula for Sample Mean</title><equation class="unnumbered" id="eip-id1170728866591"><label/><m:math>
+<m:mover>
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac>
+<m:munderover><m:mo>∑</m:mo>
+<m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mi>n</m:mi>
+</m:munderover>
+<m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub>
+</m:math></equation></para><para id="eip-275">This unit is here to remind you of material that you once studied and said at the time “I am sure that I will never need this!”</para><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-21">Here are the formulas for a population mean and the sample mean. The Greek letter μ is the symbol for the population mean and <m:math><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math> is the symbol for the sample mean. Both formulas have a mathematical symbol that tells us how to make the calculations. It is called Sigma notation because the symbol is the Greek capital letter sigma: Σ. Like all mathematical symbols it tells us what to do: just as the plus sign tells us to add and the x tells us to multiply. These are called mathematical operators. The Σ symbol tells us to add a specific list of numbers. </para><para id="eip-489">Let’s say we have a sample of animals from the local animal shelter and we are interested in their average age.  If we list each value, or observation, in a column, you can give each one an index number. The first number will be number 1 and the second number 2  and so on. </para><table id="eip-471" summary="A table with 11 rows and 2 columns. Animal with the age: 1-9; 2-1; 3-8.5; 4-10.5; 5-10; 6-8.5; 7-12; 8-8; 9-1; 10-9.5">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis>Animal</emphasis></entry>
+    <entry><emphasis>Age</emphasis></entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>9</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>1</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>8.5</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>10.5</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>10</entry>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>8.5</entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry>12</entry>
+  </row>
+  <row>
+    <entry>8</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>1</entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>9.5</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="eip-178">Each observation represents a particular animal in the sample. Purr is animal number one and is a 9 year old cat, Toto is animal number 2 and is a 1 year old puppy and so on.</para><para id="eip-299">To calculate the mean we are told by the formula to add up all these numbers, ages in this case, and then divide the sum by 10, the total number of animals in the sample.</para><para id="eip-270">Animal number one, the cat Purr, is designated as X<sub>1</sub>, animal number 2, Toto, is designated as X<sub>2</sub> and so on through Dundee who is animal number 10 and is designated as X<sub>10</sub>.</para><para id="eip-284">The i in the formula tells us which of the observations   to add together. In this case it is X<sub>1</sub> through X<sub>10</sub> which is all of them. We know which ones to add by the indexing notation, the i = 1 and the n or capital N for the population. For this example the indexing notation would be i = 1 and because it is a sample we use a small n on the top of the Σ which would be 10.</para><para id="eip-310">The standard deviation requires the same mathematical operator and so it would be helpful to recall this knowledge from your past. </para><para id="eip-932">The sum of the ages is found to be 78 and dividing by 10 gives us the sample mean age as 7.8 years.</para>
+
+<section id="fs-idm379716000" class="practice"><exercise id="eip-51"><problem id="eip-707">
+  <para id="eip-517">
+    A group of 10 children are on a scavenger hunt to find different color rocks.  The results are shown in the <link target-id="eip-58"/> below.  The column on the right shows the number of colors of rocks each child has. What is the mean number of rocks?
+<table id="eip-58" summary=".">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis>Child</emphasis></entry>
+    <entry><emphasis>Rock colors</emphasis></entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>5</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>5</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>2</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>4</entry>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>3</entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry>7</entry>
+  </row>
+  <row>
+    <entry>8</entry>
+    <entry>2</entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>1</entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>10</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+</problem>
+
+</exercise><exercise id="eip-745"><problem id="eip-9">
+  <para id="eip-503">A group of children are measured to determine the average
+height of the group. The results are in <link target-id="eip-619"/> below. What is
+the mean height of the group to the nearest hundredth of an
+inch?</para>
+<table id="eip-619" summary="---">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis>Child</emphasis></entry>
+    <entry><emphasis>Height in inches</emphasis></entry>
+  </row>
+  <row>
+    <entry>Adam</entry>
+    <entry>45.21</entry>
+  </row>
+  <row>
+    <entry>Betty</entry>
+    <entry>39.45</entry>
+  </row>
+  <row>
+    <entry>Charlie</entry>
+    <entry>43.78</entry>
+  </row>
+  <row>
+    <entry>Donna</entry>
+    <entry>48.76</entry>
+  </row>
+  <row>
+    <entry>Earl</entry>
+    <entry>37.39</entry>
+  </row>
+  <row>
+    <entry>Fran</entry>
+    <entry>39.90</entry>
+  </row>
+  <row>
+    <entry>George</entry>
+    <entry>45.56</entry>
+  </row>
+  <row>
+    <entry>Heather</entry>
+    <entry>46.24</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+<solution id="eip-922">
+  <para id="eip-623">39.48 in.</para>
+</solution>
+</exercise><exercise id="eip-638"><problem id="eip-487">
+  <para id="eip-996">A person compares prices for five automobiles. The results are in
+<link target-id="eip-743"/>. What is the mean price of the cars the person has
+considered?
+  </para>
+<table id="eip-743" summary="---">
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><emphasis>Price</emphasis></entry>
+  </row>
+  <row>
+    <entry>$20,987</entry>
+  </row>
+  <row>
+    <entry>$22,008</entry>
+  </row>
+  <row>
+    <entry>$19,998</entry>
+  </row>
+  <row>
+    <entry>$23,433</entry>
+  </row>
+  <row>
+    <entry>$21,444</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></problem>
+
+<solution id="eip-468">
+  <para id="eip-898">
+   $21,574
+  </para>
+</solution>
+</exercise><exercise id="eip-969"><problem id="eip-580">
+  <para id="eip-254">
+    A customer protection service has obtained 8 bags of candy that
+are supposed to contain 16 ounces of candy each. The candy is
+weighed to determine if the average weight is at least the claimed
+16 ounces. The results are in given in <link target-id="eip-14"/>. What is the
+mean weight of a bag of candy in the sample?
+  </para>
+<table id="eip-14" summary="---">
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><emphasis>Weight in ounces</emphasis></entry>
+  </row>
+  <row>
+    <entry>15.65</entry>
+  </row>
+  <row>
+    <entry>16.09</entry>
+  </row>
+  <row>
+    <entry>16.01</entry>
+  </row>
+  <row>
+    <entry>15.99</entry>
+  </row>
+  <row>
+    <entry>16.02</entry>
+  </row>
+  <row>
+    <entry>16.00</entry>
+  </row>
+  <row>
+    <entry>15.98</entry>
+  </row>
+  <row>
+    <entry>16.08</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+<solution id="eip-800">
+  <para id="eip-668">
+    15.98 ounces
+  </para>
+</solution>
+</exercise><exercise id="eip-508"><problem id="eip-698">
+  <para id="eip-790">
+    A teacher records grades for a class of 70, 72, 79, 81, 82, 82, 83,
+90, and 95. What is the mean of these grades?
+  </para>
+</problem>
+
+<solution id="eip-692">
+  <para id="eip-999">
+81.56
+  </para>
+</solution>
+</exercise><exercise id="eip-720"><problem id="eip-793">
+  <para id="eip-636">
+A family is polled to see the mean of the number of hours per day
+the television set is on. The results, starting with Sunday, are 6, 3,
+2, 3, 1, 3, and 7 hours. What is the average number of hours the
+family had the television set on to the nearest whole number?
+  </para>
+</problem>
+
+<solution id="eip-789">
+  <para id="eip-913">
+    4 hours
+  </para>
+</solution>
+</exercise><exercise id="eip-187"><problem id="eip-20">
+  <para id="eip-100">
+A city received the following rainfall for a recent year. What is the
+mean number of inches of rainfall the city received monthly, to
+the nearest hundredth of an inch? Use <link target-id="eip-696"/>.  </para>
+
+<table id="eip-696" summary="---">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis>Month</emphasis></entry>
+    <entry><emphasis>Rainfall in inches</emphasis></entry>
+  </row>
+  <row>
+    <entry>January</entry>
+    <entry>2.21</entry>
+  </row>
+  <row>
+    <entry>February</entry>
+    <entry>3.12</entry>
+  </row>
+  <row>
+    <entry>March</entry>
+    <entry>4.11</entry>
+  </row>
+  <row>
+    <entry>April</entry>
+    <entry>2.09</entry>
+  </row>
+  <row>
+    <entry>May</entry>
+    <entry>0.99</entry>
+  </row>
+  <row>
+    <entry>June</entry>
+    <entry>1.08</entry>
+  </row>
+  <row>
+    <entry>July</entry>
+    <entry>2.99</entry>
+  </row>
+  <row>
+    <entry>August</entry>
+    <entry>0.08</entry>
+  </row>
+  <row>
+    <entry>September</entry>
+    <entry>0.52</entry>
+  </row>
+  <row>
+    <entry>October</entry>
+    <entry>1.89</entry>
+  </row>
+  <row>
+    <entry>November</entry>
+    <entry>2.00</entry>
+  </row>
+  <row>
+    <entry>December</entry>
+    <entry>3.06</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+<solution id="eip-818">
+  <para id="eip-318">
+2.01 inches  </para>
+</solution>
+</exercise>
+<exercise id="eip-175"><problem id="eip-6">
+  <para id="eip-192">
+A football team scored the following points in its first 8 games of
+the new season. Starting at game 1 and in order the scores are 14,
+14, 24, 21, 7, 0, 38, and 28. What is the mean number of points
+the team scored in these eight games?
+  </para>
+</problem>
+
+<solution id="eip-56">
+  <para id="eip-186">
+18.25  </para>
+</solution>
+</exercise></section><section id="fs-idm1671441216" class="free-response"><title>Homework</title>
+
+<exercise id="fs-idm596700928"><problem id="fs-idm463656864">
+  <para id="fs-idm413391120">A sample of 10 prices is chosen from a population of 100 similar
+items. The values obtained from the sample, and the values for
+the population, are given in <link target-id="eip-idm729318752"/> and <link target-id="eip-idm409530992"/> respectively.
+  </para><list id="fs-idm404995664" list-type="enumerated" number-style="lower-alpha">
+<item>Is the mean of the sample within $1 of the population mean?</item>
+<item>What is the difference in the sample and population means?</item></list>
+<table id="eip-idm729318752" summary="---">
+<tgroup cols="1"><tbody>
+  <row>
+    <entry><emphasis>Prices of the sample</emphasis></entry>
+  </row>
+  <row>
+    <entry>$21</entry>
+  </row>
+  <row>
+    <entry>$23</entry>
+  </row>
+  <row>
+    <entry>$21</entry>
+  </row>
+  <row>
+    <entry>$24</entry>
+  </row>
+  <row>
+    <entry>$22</entry>
+  </row>
+  <row>
+    <entry>$22</entry>
+  </row>
+  <row>
+    <entry>$25</entry>
+  </row>
+  <row>
+    <entry>$21</entry>
+  </row>
+  <row>
+    <entry>$20</entry>
+  </row>
+  <row>
+    <entry>$24</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table><table id="eip-idm409530992" summary="---">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry><emphasis>Prices of the population</emphasis></entry>
+    <entry><emphasis>Frequency</emphasis></entry>
+  </row>
+  <row>
+    <entry>$20</entry>
+    <entry>20</entry>
+  </row>
+  <row>
+    <entry>$21</entry>
+    <entry>35</entry>
+  </row>
+  <row>
+    <entry>$22</entry>
+    <entry>15</entry>
+  </row>
+  <row>
+    <entry>$23</entry>
+    <entry>10</entry>
+  </row>
+  <row>
+    <entry>$24</entry>
+    <entry>18</entry>
+  </row>
+  <row>
+    <entry>$25</entry>
+    <entry>2</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table></problem>
+
+<solution id="fs-idm391154720">
+  <list id="fs-idm572432736" list-type="enumerated" number-style="lower-alpha">
+<item>Yes</item>
+<item>The sample is 0.5 higher.</item></list>
+</solution>
+</exercise><exercise id="fs-idm412528960"><problem id="fs-idm598213584">
+<para id="fs-idm338066656">A standardized test is given to ten people at the beginning of
+the school year with the results given in <link target-id="eip-222"/> below. At
+the end of the year the same people were again tested.</para><list id="fs-idm303378928" list-type="enumerated" number-style="lower-alpha">
+<item>What is the average improvement?</item>
+<item>Does it matter if the means are subtracted, or if the individual values are subtracted?</item>
+</list>
+<table id="eip-222" summary="---">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry><emphasis>Student</emphasis></entry>
+    <entry><emphasis>Beginning score</emphasis></entry>
+    <entry><emphasis>Ending score</emphasis></entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>1100</entry>
+    <entry>1120</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>980</entry>
+    <entry>1030</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>1200</entry>
+    <entry>1208</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>998</entry>
+    <entry>1000</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>893</entry>
+    <entry>948</entry>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>1015</entry>
+    <entry>1030</entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry>1217</entry>
+    <entry>1224</entry>
+  </row>
+  <row>
+    <entry>8</entry>
+    <entry>1232</entry>
+    <entry>1245</entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>967</entry>
+    <entry>988</entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>988</entry>
+    <entry>997</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+<solution id="fs-idm386061328">
+<list id="fs-idm337106784" list-type="enumerated" number-style="lower-alpha"><item>20</item><item>No</item></list>
+</solution>
+</exercise><exercise id="fs-idm470311408"><problem id="fs-idm289435504">
+  <para id="fs-idm611310032">
+    A small class of 7 students has a mean grade of 82 on a test. If
+six of the grades are 80, 82,86, 90, 90, and 95, what is the other grade?
+  </para>
+</problem>
+
+<solution id="fs-idm424179024">
+  <para id="fs-idm576039152">
+    51
+  </para>
+</solution>
+</exercise><exercise id="fs-idm995780112"><problem id="fs-idm377468544">
+  <para id="fs-idm1001012112">
+A class of 20 students has a mean grade of 80 on a test.
+Nineteen of the students has a mean grade between 79 and 82,
+inclusive.</para><list id="fs-idm468963424" list-type="enumerated" number-style="lower-alpha">
+<item>What is the lowest possible grade of the other student?</item>
+<item>What is the highest possible grade of the other student?</item></list>
+</problem>
+
+<solution id="fs-idm331435440">
+  <list id="fs-idm594906912" list-type="enumerated" number-style="lower-alpha">
+<item>42</item>
+<item>99</item></list>
+</solution>
+</exercise><exercise id="fs-idm617219696"><problem id="fs-idm404453792">
+  <para id="fs-idm708974480">
+   If the mean of 20 prices is $10.39, and 5 of the items with a mean of $10.99 are sampled, what is the mean of the other 15 prices?
+  </para>
+</problem>
+
+<solution id="fs-idm394816336">
+  <para id="fs-idm408493440">
+    $10.19
+  </para>
+</solution>
+</exercise>
+</section>
+
+ </content>
+</document>

@@ -1,0 +1,1139 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Calculating the Sample Size n: Continuous and Binary Random Variables</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m56644</md:content-id>
+  <md:title>Calculating the Sample Size n: Continuous and Binary Random Variables</md:title>
+  <md:abstract/>
+  <md:uuid>08cc51f8-512f-4eff-8fb5-543e89fd7da8</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-660"><title>Continuous Random Variables</title>Usually we have no control over the sample size of a data set. However, if we are able to set the sample size, as in cases where we are taking a survey, it is very helpful to know just how large it should be to provide the most information. Sampling can be very costly in both time and product. Simple telephone surveys will cost approximately $30.00 each, for example, and some sampling requires the destruction of the product.</para><para id="eip-715">If we go back to our standardizing formula for the sampling distribution for means, we can see that it is possible to solve it for n. If we do this we have <m:math><m:mo>(</m:mo><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mo>-</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:math>   in the denominator.</para><equation class="unnumbered" id="eip-43"><label/><m:math>
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup>
+<m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+<m:mn>2</m:mn>
+</m:msubsup>
+<m:msup>
+<m:mi>σ</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+<m:mrow>
+<m:mo>(</m:mo>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>-</m:mo>
+<m:mi>μ</m:mi>
+<m:msup>
+<m:mo>)</m:mo>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+
+</m:mfrac>
+
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup>
+<m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+<m:mn>2</m:mn>
+</m:msubsup>
+<m:msup>
+<m:mi>σ</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>e</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+</m:mrow>
+
+
+</m:mfrac>
+
+
+
+
+
+
+</m:math></equation><para id="eip-554">Because we have not taken a sample yet we do not know any of the variables in the formula except that we can set Z<sub>α</sub> to the level of confidence we desire just as we did when determining confidence intervals. If we set a predetermined acceptable error, or tolerance, for the difference between <m:math><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> and μ, called e in the formula, we are much further in solving for the sample size n. We still do not know the population standard deviation, σ.  In practice, a pre-survey is usually done which allows for fine tuning the questionnaire and will give a sample standard deviation that can be used. In other cases, previous information from other surveys may be used for σ in the formula. While crude, this method of determining the sample size may help in reducing cost significantly. It will be the actual data gathered that determines the inferences about the population, so caution in the sample size is appropriate calling for high levels of confidence and small sampling errors.</para><para id="eip-469"><title>Binary Random Variables</title>What was done in cases when looking for the mean of a distribution can also be done when sampling to determine the population parameter p for proportions. Manipulation of the standardizing formula for proportions gives:</para><equation class="unnumbered" id="eip-769"><label/><m:math>
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup><m:mi>Z</m:mi><m:mi>α</m:mi><m:mn>2</m:mn></m:msubsup><m:mi>pq</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><para id="eip-90">where e = (p′-p), and is the acceptable sampling error, or tolerance, for this application. This will be measured in percentage points.</para><para id="eip-975">In this case the very object of our search is in the formula, p, and of course q because q =1-p. This result occurs because the binomial distribution is a one parameter distribution. If we know p then we know the mean and the standard deviation. Therefore, p shows up in the standard deviation of the sampling distribution which is where we got this formula.  If, in an abundance of caution, we substitute 0.5 for p we will draw the largest required sample size that will provide the level of confidence specified by Zα and the tolerance we have selected. This is true because of all combinations of two fractions that add to one, the largest multiple is when each is 0.5. Without any other information concerning the population parameter p, this is the common practice. This may result in oversampling, but certainly not under sampling, thus, this is a cautious approach. </para><para id="eip-720">There is an interesting trade-off between the level of confidence and the sample size that shows up here when considering the cost of sampling. <link target-id="eip-412"/> shows the appropriate sample size at different levels of confidence and different level of the acceptable error, or tolerance.</para><table id="eip-412" summary="Table for module 4">
+<tgroup cols="3"><thead>
+  <row>
+    <entry>Required sample size (90%)</entry>
+    <entry>Required sample size (95%)</entry>
+    <entry>Tolerance level</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>1691</entry>
+    <entry>2401</entry>
+    <entry>2%</entry>
+  </row>
+  <row>
+    <entry>752</entry>
+    <entry>1067</entry>
+    <entry>3%</entry>
+  </row>
+  <row>
+    <entry>271</entry>
+    <entry>384</entry>
+    <entry>5%</entry>
+  </row>
+  <row>
+    <entry>68</entry>
+    <entry>96</entry>
+    <entry>10%</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="eip-777">This table is designed to show the maximum sample size required at different levels of confidence given an assumed p= 0.5 and q=0.5 as discussed above. </para><para id="eip-79">The acceptable error, called tolerance in the table, is measured in plus or minus values from the actual proportion. For example, an acceptable error of 5% means that if the sample proportion was found to be 26 percent, the conclusion would be that the actual population proportion is between 21 and 31 percent with a 90 percent level of confidence if a sample of 271 had been taken. Likewise, if the acceptable error was set at 2%, then the population proportion would be between 24 and 28 percent with a 90 percent level of confidence, but would require that the sample size be increased from 271 to 1,691. If we wished a higher level of confidence, we would require a larger sample size. Moving from a 90 percent level of confidence to a 95 percent level at a plus or minus 5% tolerance requires changing the sample size from 271 to 384. A very common sample size often seen reported in political surveys is 384. With the survey results it is frequently stated that the results are good to a plus or minus 5% level of “accuracy”. </para><example id="element-724"><exercise id="fs-idp171900368">
+<problem id="fs-idp171900624"><para id="eip-843">Suppose a mobile phone company wants to determine the current percentage of customers aged 50+ who use text messaging on their cell phones. How many customers aged 50+ should the company survey in order to be 90% confident that the estimated (sample) proportion is within three percentage points of the true population proportion of customers aged 50+ who use text messaging on their cell phones.</para></problem>
+ <solution id="fs-idp53892304">
+<para id="eip-806">From the problem, we know that the acceptable error, <emphasis effect="italics">e</emphasis>, is <emphasis>0.03</emphasis> (3%=0.03) and
+   <m:math>
+    <m:mrow>
+     <m:msub>
+      <m:mi>z</m:mi>
+      <m:mrow>
+       <m:mfrac>
+        <m:mi>α</m:mi>
+        <m:mn>2</m:mn>
+       </m:mfrac>
+      </m:mrow>
+     </m:msub>
+   </m:mrow>
+   </m:math> <emphasis effect="italics">z</emphasis><sub>0.05</sub> = 1.645 because the confidence level is 90%. The acceptable error, <emphasis effect="italics">e</emphasis>, is the difference between the actual population proportion <emphasis effect="italics">p</emphasis>, and the sample proportion we expect to get from the sample.</para><para id="eip-35">However, in order to find <emphasis effect="italics">n</emphasis>, we need to know the estimated (sample) proportion <emphasis effect="italics">p</emphasis>′. Remember that <emphasis effect="italics">q</emphasis>′ = 1 – <emphasis effect="italics">p</emphasis>′. But, we do not know <emphasis effect="italics">p</emphasis>′ yet. Since we multiply <emphasis effect="italics">p</emphasis>′ and <emphasis effect="italics">q</emphasis>′ together, we make them both equal to 0.5 because <emphasis effect="italics">p</emphasis>′<emphasis effect="italics">q</emphasis>′ = (0.5)(0.5) = 0.25 results in the largest possible product. (Try other products: (0.6)(0.4) = 0.24; (0.3)(0.7) = 0.21; (0.2)(0.8) = 0.16 and so on). The largest possible product gives us the largest <emphasis effect="italics">n</emphasis>. This gives us a large enough sample so that we can be 90% confident that we are within three percentage points of the true population proportion. To calculate the sample size <emphasis effect="italics">n</emphasis>, use the formula and make the substitutions.</para>
+  <para id="eip-812"><m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mi>z</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:msup>
+     <m:mi>p</m:mi>
+     <m:mo>′</m:mo>
+    </m:msup>
+    <m:msup>
+     <m:mi>q</m:mi>
+     <m:mo>′</m:mo>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>e</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> gives <m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mn>1.645</m:mn>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mo stretchy="false">(</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mn>0.03</m:mn>
+     </m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>751.7</m:mn>
+ </m:mrow>
+</m:math></para><para id="eip-979">Round the answer to the next higher value. The sample size should be 752 cell phone customers aged 50+ in order to be 90%  confident that the estimated (sample) proportion is within three percentage points of the true population proportion of all customers aged 50+ who use text messaging on their cell phones.
+</para></solution>
+
+
+ </exercise></example><note id="fs-idp13131184" class="statistics try">
+<label/>
+<title>Try It</title>
+      <exercise id="eip-143">
+    <problem id="eip-26">
+  <para id="eip-803">Suppose an internet marketing company wants to determine the current percentage of customers who click on ads on their smartphones. How many customers should the company survey in order to be 90% confident that the estimated proportion is within five percentage points of the true population proportion of customers who click on ads on their smartphones?
+  </para>
+</problem>
+<solution id="eip-599">
+  <para id="eip-171">271 customers should be surveyed.Check the Real Estate section in your local</para>
+</solution>
+   </exercise>
+ </note>
+<section id="eip-330" class="summary">
+    <title>Chapter Review</title>
+    <para id="eip-211">Sometimes researchers know in advance that they want to estimate a population mean within a specific margin of error for a given level of confidence. In that case, solve the relevant confidence interval formula for <emphasis effect="italics">n</emphasis> to discover the size of the sample that is needed to achieve this goal:</para><para id="fs-idm4091408"><m:math>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
+       <m:mrow>
+        <m:msubsup>
+         <m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+         <m:mn>2</m:mn>
+        </m:msubsup>
+        <m:msup>
+         <m:mi>σ</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+<m:mo>(</m:mo><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mo>-</m:mo><m:mi>μ</m:mi><m:msup><m:mo>)</m:mo><m:mn>2</m:mn>
+
+        </m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:math></para><para id="eip-12">If the random variable is binary then the formula for the appropriate sample size to maintain a particular level of confidence with a specific tolerance level is given by</para><para id="eip-809"><m:math>
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup><m:mi>Z</m:mi><m:mi>α</m:mi><m:mn>2</m:mn></m:msubsup><m:mi>pq</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup>
+</m:mrow>
+</m:mfrac>
+</m:math></para></section>
+
+    <section id="eip-191" class="formula-review">
+    <title>Formula Review</title>
+
+      <para id="eip-709"><emphasis effect="italics">n</emphasis> = <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mi>Z</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+        <m:msup>
+         <m:mi>σ</m:mi>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:mo>(</m:mo><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mo>-</m:mo><m:mi>μ</m:mi><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:math> = the formula used to determine the sample size (<emphasis effect="italics">n</emphasis>) needed to achieve a desired margin of error at a given level of confidence  for a continuous random variable</para><para id="eip-46"><m:math>
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:msubsup><m:mi>Z</m:mi><m:mi>α</m:mi><m:mn>2</m:mn></m:msubsup><m:mi>pq</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup>
+</m:mrow>
+</m:mfrac>
+</m:math>
+= the formula used to determine the sample size if the random variable is binary</para></section>
+    <section id="eip-673" class="practice">
+<para id="eip-93"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> The standard deviation of the weights of elephants is known to be approximately 15 pounds. We wish to construct a 95% confidence interval for the mean weight of newborn elephant calves. Fifty newborn elephants are weighed. The sample mean is 244 pounds. The sample standard deviation is 11 pounds.</para>
+    <exercise id="eip-499">
+    <problem id="eip-759">
+    <para id="eip-836">Identify the following:</para>
+    <list id="fs-idm9196736" list-type="enumerated" number-style="lower-alpha">
+    <item><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> = _____</item>
+      <item><emphasis effect="italics">σ</emphasis> = _____</item>
+      <item><emphasis effect="italics">n</emphasis> = _____</item>
+    </list>
+    </problem>
+    <solution id="eip-837">
+    <list id="fs-idp24073552" list-type="enumerated" number-style="lower-alpha">
+    <item>244</item>
+    <item>15</item>
+    <item>50</item>
+    </list>
+    </solution>
+    </exercise>
+
+
+    <exercise id="eip-681"><problem id="eip-188">
+      <para id="eip-832">In words, define the random variables <emphasis effect="italics">X</emphasis> and <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math>.</para>
+    </problem>
+    </exercise><exercise id="eip-568">
+    <problem id="eip-520">
+    <para id="eip-935">Which distribution should you use for this problem?</para>
+    </problem>
+    <solution id="eip-466">
+      <para id="eip-224"><m:math>
+     <m:mrow>
+      <m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
+       <m:mrow>
+        <m:mn>244</m:mn><m:mo>,</m:mo><m:mfrac>
+         <m:mrow>
+          <m:mn>15</m:mn>
+         </m:mrow>
+         <m:mrow>
+          <m:msqrt>
+           <m:mrow>
+            <m:mn>50</m:mn>
+           </m:mrow>
+          </m:msqrt>
+
+         </m:mrow>
+        </m:mfrac>
+
+       </m:mrow>
+      <m:mo>)</m:mo></m:mrow>
+     </m:mrow>
+    </m:math></para></solution>
+    </exercise>
+
+    <exercise id="eip-815"><problem id="eip-448">
+    <para id="eip-406">Construct a 95% confidence interval for the population mean weight of newborn elephants. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+    </problem>
+    </exercise><exercise id="eip-773">
+    <problem id="eip-306">
+    <para id="eip-619">What will happen to the confidence interval obtained, if 500 newborn elephants are weighed instead of 50? Why?</para>
+    </problem>
+    <solution id="eip-714">
+      <para id="eip-827">As the sample size increases, there will be less variability in the mean, so the interval size decreases.</para>
+    </solution>
+    </exercise>
+<para id="eip-526"><newline/><emphasis effect="italics">Use the following information to answer the next seven exercises:</emphasis> The U.S. Census Bureau conducts a study to determine the time needed to complete the short form. The Bureau surveys 200 people. The sample mean is 8.2 minutes. There is a known standard deviation of 2.2 minutes. The population distribution is assumed to be normal.</para><exercise id="eip-250"><problem id="eip-951">
+    <para id="eip-idm61282736">Identify the following:</para>
+
+    <list id="fs-idm21105152" list-type="enumerated" number-style="lower-alpha">
+    <item><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> = _____</item>
+    <item><emphasis effect="italics">σ</emphasis> = _____</item>
+    <item><emphasis effect="italics">n</emphasis> = _____</item>
+    </list>
+    </problem>
+</exercise><exercise id="eip-322">
+    <problem id="eip-898">
+      <para id="eip-22">In words, define the random variables <emphasis effect="italics">X</emphasis> and <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math>.</para>
+    </problem>
+    <solution id="eip-961">
+    <para id="eip-266"><emphasis effect="italics">X</emphasis> is the time in minutes it takes to complete the U.S. Census short form. <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> is the mean time it took a sample of 200 people to complete the U.S. Census short form.</para></solution>
+    </exercise>
+    <exercise id="eip-818"><problem id="eip-507">
+    <para id="eip-749">Which distribution should you use for this problem?</para>
+    </problem>
+    </exercise><exercise id="eip-899"><problem id="eip-204">
+    <para id="eip-801">Construct a 90% confidence interval for the population mean time to complete the forms. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+    </problem>
+    <solution id="eip-819">
+    <para id="eip-16">CI: (7.9441, 8.4559)</para>
+<figure id="eip-idm5552576">
+      <media id="eip-idm128260720" alt="This is a normal distribution curve. The peak of the curve coincides with the point 8.2 on the horizontal axis.  A central region is shaded between points 7.94 and 8.46.">
+    <image src="../../media/CNX_Stats_C08_M02_item002annoN.jpg" mime-type="image/jpg" width="380"/>
+    </media>
+</figure>
+</solution>
+    </exercise><exercise id="eip-846"><problem id="eip-804">
+    <para id="eip-756">If the Census wants to increase its level of confidence and keep the error bound the same by taking another survey, what changes should it make?</para>
+    </problem>
+    </exercise><exercise id="eip-366">
+    <problem id="eip-478">
+    <para id="eip-583">If the Census did another survey, kept the error bound the same, and surveyed only 50 people instead of 200, what would happen to the level of confidence? Why?</para>
+    </problem>
+    <solution id="eip-707">
+    <para id="eip-615">The level of confidence would decrease because decreasing <emphasis effect="italics">n</emphasis> makes the confidence interval wider, so at the same error bound, the confidence level decreases.</para>
+    </solution>
+    </exercise>
+
+    <exercise id="eip-838"><problem id="eip-429">
+    <para id="eip-193">Suppose the Census needed to be 98% confident of the population mean length of time. Would the Census have to survey more people? Why or why not?</para>
+    </problem>
+    </exercise><para id="eip-98"><newline/><emphasis effect="italics">Use the following information to answer the next ten exercises:</emphasis> A sample of 20 heads of lettuce was selected. Assume that the population distribution of head weight is normal. The weight of each head of lettuce was then recorded. The mean weight was 2.2 pounds with a standard deviation of 0.1 pounds. The population standard deviation is known to be 0.2 pounds.</para><exercise id="eip-924">
+    <problem id="eip-495">
+    <para id="eip-997">Identify the following:</para>
+    <list id="fs-idm74017152" list-type="enumerated" number-style="lower-alpha">
+    <item><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> = ______</item>
+    <item><emphasis effect="italics">σ</emphasis> = ______</item>
+    <item><emphasis effect="italics">n</emphasis> = ______</item>
+    </list>
+    </problem>
+    <solution id="eip-697">
+    <list id="fs-idm35892368" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> = 2.2</item>
+    <item><emphasis effect="italics">σ</emphasis> = 0.2</item>
+    <item><emphasis effect="italics">n</emphasis> = 20</item></list></solution>
+    </exercise>
+    <exercise id="eip-700"><problem id="eip-312">
+      <para id="eip-361">In words, define the random variable <emphasis effect="italics">X</emphasis>.</para>
+    </problem>
+    </exercise><exercise id="eip-64">
+    <problem id="eip-1000">
+      <para id="eip-474">In words, define the random variable <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math>.</para>
+    </problem>
+    <solution id="eip-778">
+    <para id="eip-692">
+    <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> is the mean weight of a sample of 20 heads of lettuce.</para>
+    </solution>
+    </exercise>
+    <exercise id="eip-187"><problem id="eip-508">
+    <para id="eip-925">Which distribution should you use for this problem?</para>
+    </problem>
+    </exercise><exercise id="eip-833">
+    <problem id="eip-640">
+    <para id="eip-422">Construct a 90% confidence interval for the population mean weight of the heads of lettuce. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+    </problem>
+    <solution id="eip-5">
+      <para id="fs-idm25106704"><emphasis effect="italics">EBM</emphasis> = 0.07
+      <newline/>CI: (2.1264, 2.2736)</para>
+
+    <figure id="fs-idp82050400">
+    <media id="eip-idp84209776" alt="This is a normal distribution curve. The peak of the curve coincides with the point 2.2 on the horizontal axis. A central region is shaded between points 2.13 and 2.27.">
+    <image src="../../media/CNX_Stats_C08_M02_item003annoN.jpg" mime-type="image/jpeg" width="380"/>
+    </media></figure>
+    </solution>
+    </exercise>
+
+    <exercise id="eip-342"><problem id="eip-481">
+    <para id="eip-530">Construct a 95% confidence interval for the population mean weight of the heads of lettuce. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+    </problem>
+    </exercise><exercise id="eip-656">
+    <problem id="eip-643">
+      <para id="eip-363">In complete sentences, explain why the confidence interval in <link target-id="eip-833" document=""/> is larger than in <link target-id="eip-342" document=""/>.</para></problem>
+    <solution id="eip-352">
+      <para id="eip-564">The interval is greater because the level of confidence increased. If the only change made in the analysis is a change in confidence level, then all we are doing is changing how much area is being calculated for the normal distribution. Therefore, a larger confidence level results in larger areas and larger intervals.</para>
+    </solution>
+    </exercise>
+    <exercise id="eip-598"><problem id="eip-866">
+      <para id="eip-323">In complete sentences, give an interpretation of what the interval in <link target-id="eip-342" document=""/> means.</para></problem>
+    </exercise><exercise id="eip-909">
+    <problem id="eip-553">
+    <para id="eip-711">What would happen if 40 heads of lettuce were sampled instead of 20, and the error bound remained the same?</para>
+    </problem>
+    <solution id="eip-105">
+      <para id="eip-799">The confidence level would increase.</para>
+    </solution>
+    </exercise>
+    <exercise id="eip-602"><problem id="eip-174">
+    <para id="eip-3">What would happen if 40 heads of lettuce were sampled instead of 20, and the confidence level remained the same?</para>
+    </problem>
+    </exercise><para id="element-797"><emphasis effect="italics">Use the following information to answer the next 14 exercises:</emphasis> The mean age for all Foothill College students for a recent Fall term was 33.2. The population standard deviation has been pretty consistent at 15. Suppose that twenty-five Winter students were randomly selected. The mean age for the sample was 30.4. We are interested in the true mean age for Winter Foothill College students. Let <emphasis effect="italics">X</emphasis> = the age of a Winter Foothill College student.</para><exercise id="element-463"><problem id="id27460377">
+
+      <para id="element-111"><m:math>
+        <m:mover accent="true">
+          <m:mi>x</m:mi>
+          <m:mo>-</m:mo>
+        </m:mover>
+      </m:math> = _____</para>
+    </problem>
+
+    <solution id="id27460420">
+      <para id="element-345">30.4</para>
+    </solution>
+    </exercise>
+
+    <exercise id="fs-idm37850320"><problem id="id24602664">
+      <para id="element-514"><emphasis effect="italics">n</emphasis> = _____</para>
+    </problem>
+    </exercise><exercise id="element-608"><problem id="id24602706">
+      <para id="element-390">________ = 15</para>
+    </problem>
+
+    <solution id="id24602722">
+      <para id="element-253"><emphasis effect="italics">σ</emphasis></para>
+    </solution>
+    </exercise>
+
+    <exercise id="element-440"><problem id="id24602748">
+      <para id="element-266">In words, define the random variable <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math>.</para>
+    </problem>
+
+    </exercise><exercise id="element-917"><problem id="id27453935">
+      <para id="element-875">What is <m:math>
+          <m:mover accent="true">
+            <m:mi>x</m:mi>
+            <m:mo>-</m:mo>
+          </m:mover>
+        </m:math> estimating?</para>
+    </problem>
+
+    <solution id="id27453976">
+      <para id="element-983"><emphasis effect="italics">μ</emphasis></para>
+    </solution>
+    </exercise>
+<exercise id="fs-id1172121229051"><problem id="id27454018">
+      <para id="element-451">Is <m:math>
+    <m:mrow>
+    <m:msub>
+    <m:mi>σ</m:mi>
+    <m:mi>x</m:mi>
+    </m:msub>
+    </m:mrow>
+    </m:math> known?
+
+      </para>
+    </problem>
+
+    </exercise><exercise id="element-524"><problem id="id27077775">
+      <para id="element-334">As a result of your answer to <link target-id="element-440" document=""/>, state the exact distribution to use when calculating the confidence interval.</para>
+    </problem>
+
+    <solution id="id27077795">
+      <para id="element-919">normal</para>
+    </solution>
+    </exercise>
+
+    <para id="element-251"><emphasis effect="italics">Construct a 95% Confidence Interval for the true mean age of Winter Foothill College students  by working out then answering the next seven exercises</emphasis>.</para><exercise id="fs-idm67667568"><problem id="id27077853">
+      <para id="element-1">How much area is in both tails (combined)? <emphasis effect="italics">α</emphasis> =________</para>
+    </problem>
+
+    </exercise><exercise id="element-888"><problem id="id27077926">
+      <para id="element-497">How much area is in each tail? <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>α</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:math> =________</para></problem>
+
+    <solution id="id27077976">
+      <para id="element-748">0.025</para>
+    </solution>
+    </exercise><exercise id="element-74"><problem id="id27078002">
+      <para id="element-402">Identify the following specifications:
+    <list id="list-24352436" list-type="enumerated" number-style="lower-alpha">
+    <item>lower limit</item>
+    <item>upper limit</item>
+    <item>error bound</item>
+    </list>
+      </para>
+    </problem>
+    </exercise><exercise id="element-767"><problem id="id27456560">
+      <para id="element-539">The 95% confidence interval is:__________________.</para>
+    </problem>
+
+    <solution id="id27456579">
+      <para id="element-702">(24.52,36.28)</para>
+    </solution>
+    </exercise><exercise id="fs-idm6858288"><problem id="fs-idm6858032">
+      <para id="eip-810">Fill in the blanks on the graph with the areas, upper and lower limits of the confidence interval, and the sample mean.</para>
+
+    <figure id="five-0"><media id="id27456676" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."><image src="../../media/fig-ch08_06_01.jpg" mime-type="image/jpg" width="380"/></media></figure></problem>
+     </exercise><exercise id="element-158"><problem id="id27481688">
+      <para id="element-46">In one complete sentence, explain what the interval means.</para>
+      </problem>
+<solution id="fs-idm27075232"><para id="fs-idm27075104">We are 95% confident that the true mean age for Winger Foothill College students is between 24.52 and 36.28.</para></solution>
+    </exercise><exercise id="element-449"><problem id="id27481732">
+      <para id="element-992">Using the same mean, standard deviation, and level of confidence, suppose that <emphasis effect="italics">n</emphasis> were 69 instead of 25. Would the error bound become larger or smaller? How do you know?</para>
+    </problem>
+
+    </exercise><exercise id="element-395"><problem id="id27481777">
+      <para id="element-630">Using the same mean, standard deviation, and sample size, how would the error bound change if the confidence level were reduced to 90%? Why?</para>
+    </problem>
+      <solution id="fs-idm23029072"><para id="fs-idm23028944">The error bound for the mean would decrease because as the CL decreases, you need less area under the normal curve (which translates into a smaller interval) to capture the true population mean.</para></solution>
+    </exercise><exercise id="eip-671"><problem id="eip-263">
+  <para id="eip-534">
+    Find the value of the sample size needed to be 90%  confident that the sample proportion and the population proportion are within 4% of each other.  The sample proportion is 0.60.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+  </para>
+</problem>
+
+</exercise><exercise id="eip-958"><problem id="eip-226">
+  <para id="eip-911">
+    Find the value of the sample size needed to be 95% confident that the sample proportion and the population proportion are within 2% of each other.  The sample proportion is 0.650.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+
+  </para>
+</problem>
+
+<solution id="eip-424">
+  <para id="eip-285">2,185
+</para>
+</solution>
+</exercise><exercise id="eip-589"><problem id="eip-425">
+  <para id="eip-750">
+    Find the value of the sample size needed to be 96% confident that the sample proportion and the population proportion are within 5% of each other.  The sample proportion is 0.70.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+
+  </para>
+</problem>
+
+
+</exercise><exercise id="eip-784"><problem id="eip-101">
+  <para id="eip-929">
+Find the value of the sample size needed to be 90% confident that the sample proportion and the population proportion are within 1% of each other.  The sample proportion is 0.50.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+
+  </para>
+</problem>
+
+<solution id="eip-179">
+  <para id="eip-435">
+    6,765
+  </para>
+</solution>
+</exercise><exercise id="eip-734"><problem id="eip-108">
+  <para id="eip-987">
+    Find the value of the sample size needed to be 94% confident that the sample proportion and the population proportion are within 2% of each other.  The sample proportion is 0.65.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+
+  </para>
+</problem>
+</exercise><exercise id="eip-944"><problem id="eip-53">
+  <para id="eip-792">
+   Find the value of the sample size needed to be 95% confident that the sample proportion and the population proportion are within 4% of each other.  The sample proportion is 0.45.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+
+  </para>
+</problem>
+
+<solution id="eip-302">
+  <para id="eip-76">
+    595
+  </para>
+</solution>
+</exercise><exercise id="eip-760"><problem id="eip-355">
+  <para id="eip-590">
+    Find the value of the sample size needed to be 90% confident that the sample proportion and the population proportion are within 2% of each other.  The sample proportion is 0.3.  Note:  Round all fractions up for <emphasis effect="italics">n</emphasis>.
+  </para>
+</problem>
+</exercise></section>
+
+    <section id="fs-idm104841536" class="free-response">
+    <title>Homework</title>
+    <exercise id="exer1">
+    <problem id="id4953529"><para id="para1">Among various ethnic groups, the standard deviation of heights is known to be approximately three inches. We wish to construct a 95% confidence interval for the mean height of male Swedes. Forty-eight male Swedes are surveyed. The sample mean is 71 inches. The sample standard deviation is 2.8 inches.
+
+      <list id="list1" list-type="enumerated" number-style="lower-alpha">
+        <item>
+         <list id="list2" list-type="enumerated" number-style="lower-roman">
+           <item><m:math>
+             <m:mover accent="true">
+               <m:mi>x</m:mi>
+               <m:mo>-</m:mo>
+             </m:mover>
+           </m:math> =________</item>
+          <item><emphasis effect="italics">σ</emphasis> =________</item>
+           <item><emphasis effect="italics">n</emphasis> =________</item>
+         </list></item>
+          <item>In words, define the random variables <emphasis effect="italics">X</emphasis> and <m:math>
+            <m:mover accent="true">
+              <m:mi>X</m:mi>
+              <m:mo>-</m:mo>
+            </m:mover>
+          </m:math>.</item>
+          <item>Which distribution should you use for this problem? Explain your choice.</item>
+          <item>Construct a 95% confidence interval for the population mean height of male Swedes.
+            <list id="list4" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+          <item>Sketch the graph.</item>
+            </list></item>
+    <item>What will happen to the level of confidence obtained if 1,000 male Swedes are surveyed instead of 48? Why?</item>
+    </list></para></problem>
+
+    <solution id="solution1"><para id="paras1">
+    <list id="list_s1" list-type="enumerated" number-style="lower-alpha"><item>
+        <list id="list_s2" list-type="enumerated" number-style="lower-roman"><item>71</item>
+    <item>2.8</item>
+    <item>48</item>
+        </list>
+        </item>
+          <item> X is the height of a male Swede, and <m:math><m:mover><m:mi>x</m:mi><m:mo>_</m:mo></m:mover></m:math> is the mean height from a sample of 48 male Swedes.
+    </item>
+<item>Normal. We know the standard deviation for the population, and the sample size is greater than 30.</item>
+    <item>
+      <list id="list_s3" list-type="enumerated" number-style="lower-roman"><item>CI: (70.151, 71.85)</item>
+        <item><figure id="figure1234"><media id="m1" alt="This is a normal distribution curve. A central region is shaded between points 70.15 and 71.85."><image src="../../media/fig-ch08_09_01.jpg" mime-type="image/jpg" width="380"/></media></figure></item>
+        </list></item>
+    <item> The confidence interval will decrease in size, because the sample size increased. Recall, when all factors remain unchanged, an increase in sample size decreases variability. Thus, we do not need as large an interval to capture the true population mean.</item></list></para>
+    </solution>
+    </exercise>
+
+      <exercise id="exer8"><problem id="id6331607">
+    <para id="para17">Announcements for 84 upcoming engineering conferences were randomly picked from a stack of IEEE Spectrum magazines. The mean length of the conferences was 3.94 days, with a standard deviation of 1.28 days. Assume the underlying population is normal.</para>
+          <list id="list18" list-type="enumerated" number-style="lower-alpha"><item>In words, define the random variables <emphasis effect="italics">X</emphasis> and <m:math>
+     <m:mover accent="true">
+      <m:mi>X</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math>.</item>
+          <item>Which distribution should you use for this problem? Explain your choice.</item>
+          <item>Construct a 95% confidence interval for the population mean length of engineering conferences.
+            <list id="list18_5" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval. </item>
+          <item>Sketch the graph.</item>
+            </list></item>
+          </list>
+      </problem>
+      </exercise><exercise id="exer6"><problem id="id3373222">
+    <para id="para13">Suppose that an accounting firm does a study to determine the time needed to complete one person’s tax forms. It randomly surveys 100 people. The sample mean is 23.6 hours. There is a known standard deviation of 7.0 hours. The population distribution is assumed to be normal.</para>
+
+    <list id="list15a" list-type="enumerated" number-style="lower-alpha">
+        <item>
+          <list id="list16" list-type="enumerated" number-style="lower-roman">
+            <item><m:math>
+              <m:mover accent="true">
+                <m:mi>x</m:mi>
+                <m:mo>-</m:mo>
+              </m:mover>
+            </m:math> =________</item>
+    <item><emphasis effect="italics">σ</emphasis> =________</item>
+            <item><emphasis effect="italics">n</emphasis> =________</item>
+          </list>
+          </item>
+            <item>In words, define the random variables <emphasis effect="italics">X</emphasis> and <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math>.</item>
+          <item>Which distribution should you use for this problem? Explain your choice.</item>
+        <item>Construct a 90% confidence interval for the population mean time to complete the tax forms.
+          <list id="list17" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+           <item>Sketch the graph.</item>
+          </list></item>
+    <item>If the firm wished to increase its level of confidence and keep the error bound the same by taking another survey, what changes should it make?</item>
+          <item>If the firm did another survey, kept the error bound the same, and only surveyed 49 people, what would happen to the level of confidence? Why?</item>
+          <item>Suppose that the firm decided that it needed to be at least 96% confident of the population mean length of time to within one hour. How would the number of people the firm surveys change? Why?</item>
+        </list></problem>
+<solution id="eip-idm99051168">
+    <list id="list15" list-type="enumerated" number-style="lower-alpha"><item>
+<list id="list1a6" list-type="enumerated" number-style="lower-roman">
+<item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>-</m:mo></m:mover></m:math> = 23.6</item>
+<item><m:math><m:mi>σ</m:mi></m:math> =  7</item>
+<item>n =  100</item>
+</list></item>
+<item><emphasis effect="italics">X</emphasis> is the time needed to complete an individual tax form. <m:math>
+<m:mover accent="true"><m:mi>X</m:mi><m:mo>-</m:mo></m:mover></m:math> is the mean time to complete tax forms from a sample of 100 customers.</item>
+<item><m:math><m:mrow><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>23.6</m:mn><m:mo>,</m:mo><m:mfrac>
+     <m:mn>7</m:mn>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>100</m:mn>
+       </m:mrow>
+      </m:msqrt>
+     </m:mrow>
+    </m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow></m:mrow></m:math> because we know sigma.</item>
+<item>
+<list id="list1b6" list-type="enumerated" number-style="lower-roman"><item>(22.228, 24.972)</item>
+<item>
+<figure id="eip-idp4235472"><media id="eip-id1706129a" alt="This is a normal distribution curve. A central region is shaded between points 22.228 and 24.972."><image src="../../media/xx.jpg" mime-type="image/jpg" width="400"/></media>
+</figure></item>
+</list></item>
+<item>It will need to change the sample size. The firm needs to determine what the confidence level should be, then apply the error bound formula to determine the necessary sample size.</item>
+<item>The confidence level would increase as a result of a larger interval. Smaller sample sizes result in more variability. To capture the true population mean, we need to have a larger interval.</item>
+<item>According to the error bound formula, the firm needs to survey 206 people. Since we increase the confidence level, we need to increase either our error bound or the sample size.</item>
+</list></solution></exercise><exercise id="exer9"><problem id="id6216617">
+    <para id="para19">A sample of 16 small bags of the same brand of candies was selected. Assume that the population distribution of bag weights is normal. The weight of each bag was then recorded. The mean weight was two ounces with a standard deviation of 0.12 ounces. The population standard deviation is known to be 0.1 ounce.</para>
+
+        <list id="list19" list-type="enumerated" number-style="lower-alpha"><item>
+        <list id="list35" list-type="enumerated" number-style="lower-roman">
+          <item><m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math> =________
+          </item>
+          <item><emphasis effect="italics">σ</emphasis> =________</item>
+          <item>s<sub>x</sub> =________</item>
+        </list>
+        </item>
+
+
+          <item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
+          <item>In words, define the random variable <m:math>
+            <m:mover accent="true">
+              <m:mi>X</m:mi>
+              <m:mo>-</m:mo>
+            </m:mover>
+          </m:math>.</item>
+          <item>Which distribution should you use for this problem? Explain your choice.</item>
+         <item>Construct a 90% confidence interval for the population mean weight of the candies.
+           <list id="list19_5" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval. </item>
+    <item>Sketch the graph.</item>
+</list></item>
+          <item>Construct a 98% confidence interval for the population mean weight of the candies.
+            <list id="list20_5" list-type="enumerated" number-style="lower-roman">
+              <item>State the confidence interval.</item>
+    <item>Sketch the graph.</item>
+    <item>Calculate the error bound.</item></list></item>
+          <item>In complete sentences, explain why the confidence interval in part f is larger than the confidence interval in part e.</item>
+          <item>In complete sentences, give an interpretation of what the interval in part f means.</item>
+        </list></problem>
+
+    </exercise><exercise id="exerci"><problem id="id6354041">
+      <para id="para39">A camp director is interested in the mean number of letters each child sends during his or her camp session. The population standard deviation is known to be 2.5. A survey of 20 campers is taken. The mean from the sample is 7.9 with a sample standard deviation of 2.8.</para>
+
+    <list id="list39" list-type="enumerated" number-style="lower-alpha">
+        <item>
+        <list id="list39_5" list-type="enumerated" number-style="lower-roman">
+          <item><m:math>
+            <m:mover accent="true">
+              <m:mi>x</m:mi>
+              <m:mo>-</m:mo>
+            </m:mover>
+          </m:math> =________</item>
+          <item><emphasis effect="italics">σ</emphasis> =________</item>
+          <item><emphasis effect="italics">n</emphasis> =________</item>
+        </list>
+          </item>
+          <item>Define the random variables <emphasis effect="italics">X</emphasis> and <m:math>
+            <m:mover accent="true">
+              <m:mi>X</m:mi>
+              <m:mo>-</m:mo>
+            </m:mover>
+          </m:math> in words.</item>
+    <item>Which distribution should you use for this problem? Explain your choice.</item>
+    <item>Construct a 90% confidence interval for the population mean number of letters campers send home.
+      <list id="list40_5" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval. </item>
+        <item>Sketch the graph.</item>
+      </list></item>
+    <item>What will happen to the error bound and confidence interval if 500 campers are surveyed? Why?</item>
+      </list>
+    </problem>
+
+
+      <solution id="id5099589">
+    <para id="solutilllonnnn">
+        <list id="listlll_solution" list-type="enumerated" number-style="lower-alpha"><item>
+        <list id="listaishdaskkdhghdkdlsslskd" list-type="enumerated" number-style="lower-roman">
+    <item>7.9</item>
+    <item>2.5</item>
+    <item>20</item>
+    </list>
+      </item>
+    <item> X is the number of letters a single camper will send home. <m:math><m:mrow><m:mover><m:mi>X</m:mi><m:mo>-</m:mo></m:mover></m:mrow></m:math> is the mean number of letters sent home from a sample of 20 campers.
+    </item>
+    <item><para id="eip-id1168835236326"><emphasis effect="italics">N</emphasis>
+<m:math><m:mrow><m:mn>7.9</m:mn><m:mo>(</m:mo><m:mfrac><m:mn>2.5</m:mn>
+<m:msqrt><m:mn>20</m:mn></m:msqrt></m:mfrac>
+<m:mo>)</m:mo></m:mrow></m:math></para>
+    </item>
+        <item><list id="eip-id1172668181207" list-type="enumerated" number-style="lower-roman"><item>CI: (6.98, 8.82)</item>
+<item><figure id="eip-id1169152005093"><media id="eip-id1169152053385" alt="This is a normal distribution curve. A central region is shaded between points 6.98 and 8.82."><image src="../../media/CNX_Stats_C08_M01_item001.jpg" mime-type="image/png" width="400"/></media>
+</figure></item>
+</list></item>
+<item>The error bound and confidence interval will decrease.</item></list></para>
+      </solution>
+    </exercise><exercise id="exercising"><problem id="id6303452"><para id="para62">What is meant by the term “90% confident” when constructing a confidence interval for a mean? </para>
+
+<list id="list62" list-type="enumerated" number-style="lower-alpha"><item>If we took repeated samples, approximately 90% of the samples would produce the same confidence interval.</item>
+
+    <item>If we took repeated samples, approximately 90% of the confidence intervals calculated from those samples would contain the sample mean.</item>
+
+    <item>If we took repeated samples, approximately 90% of the confidence intervals calculated from those samples would contain the true value of the population mean.</item>
+
+    <item>If we took repeated samples, the sample mean would equal the population mean in approximately 90% of the samples.</item></list>
+    </problem>
+</exercise><exercise id="eip-217"><problem id="eip-629">
+      <para id="eip-315">The Federal Election Commission collects information about campaign contributions and disbursements for candidates and political committees each election cycle. During the 2012 campaign season, there were 1,619 candidates for the House of Representatives across the United States who received contributions from individuals. <link target-id="M02_CH08-tbl003" document=""/> shows the total receipts from individuals for a random selection of 40 House candidates rounded to the nearest $100. The standard deviation for this data to the nearest hundred is <emphasis effect="italics">σ</emphasis> = $909,200.</para>
+      <table id="M02_CH08-tbl003" summary="The total receipts from individuals for a random selection of 40 House candidates rounded to the nearest  00.">
+<tgroup cols="5"><tbody>
+    <row>
+    <entry>$3,600</entry>
+    <entry>$1,243,900</entry>
+    <entry>$10,900</entry>
+    <entry>$385,200</entry>
+    <entry>$581,500</entry>
+    </row>
+    <row>
+    <entry>$7,400</entry>
+    <entry>$2,900</entry>
+    <entry>$400</entry>
+    <entry>$3,714,500</entry>
+    <entry>$632,500</entry>
+    </row>
+    <row>
+    <entry>$391,000</entry>
+    <entry>$467,400</entry>
+    <entry>$56,800</entry>
+    <entry>$5,800</entry>
+    <entry>$405,200</entry>
+    </row>
+    <row>
+    <entry>$733,200</entry>
+    <entry>$8,000</entry>
+    <entry>$468,700</entry>
+    <entry>$75,200</entry>
+    <entry>$41,000</entry>
+    </row>
+    <row>
+    <entry>$13,300</entry>
+    <entry>$9,500</entry>
+    <entry>$953,800</entry>
+    <entry>$1,113,500</entry>
+    <entry>$1,109,300</entry>
+    </row>
+    <row>
+    <entry>$353,900</entry>
+    <entry>$986,100</entry>
+    <entry>$88,600</entry>
+    <entry>$378,200</entry>
+    <entry>$13,200</entry>
+    </row>
+    <row>
+    <entry>$3,800</entry>
+    <entry>$745,100</entry>
+    <entry>$5,800</entry>
+    <entry>$3,072,100</entry>
+    <entry>$1,626,700</entry>
+    </row>
+    <row>
+    <entry>$512,900</entry>
+    <entry>$2,309,200</entry>
+    <entry>$6,600</entry>
+    <entry>$202,400</entry>
+    <entry>$15,800</entry>
+    </row>
+    </tbody>
+
+</tgroup>
+</table><list id="eip-idm150440080" list-type="enumerated" number-style="lower-alpha">
+    <item>Find the point estimate for the population mean.</item>
+    <item>Using 95% confidence, calculate the error bound.</item>
+    <item>Create a 95% confidence interval for the mean total individual contributions.</item>
+    <item>Interpret the confidence interval in the context of the problem.</item>
+    </list>
+    </problem>
+    <solution id="eip-480">
+      <list id="fs-idm93426480" list-type="enumerated" number-style="lower-alpha">
+    <item><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> = $568,873</item>
+    <item><emphasis effect="italics">CL</emphasis> = 0.95 <emphasis effect="italics">α</emphasis> = 1 – 0.95 = 0.05 <m:math>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mfrac>
+         <m:mi>α</m:mi>
+         <m:mn>2</m:mn>
+        </m:mfrac>
+
+       </m:mrow>
+      </m:msub>
+
+     </m:mrow>
+    </m:math> = 1.96
+    <newline/>
+      <emphasis effect="italics">EBM</emphasis> = <m:math>
+     <m:mrow>
+      <m:msub>
+       <m:mi>z</m:mi>
+       <m:mrow>
+        <m:mn>0.025</m:mn>
+       </m:mrow>
+      </m:msub>
+      <m:mfrac>
+       <m:mi>σ</m:mi>
+       <m:mrow>
+        <m:msqrt>
+         <m:mi>n</m:mi>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:math> = 1.96 <m:math>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mn>909200</m:mn>
+       </m:mrow>
+       <m:mrow>
+        <m:msqrt>
+         <m:mrow>
+          <m:mn>40</m:mn>
+         </m:mrow>
+        </m:msqrt>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:math> = $281,764</item>
+    <item><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> − <emphasis effect="italics">EBM</emphasis> = 568,873 − 281,764 = 287,109
+    <newline/><m:math>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>-</m:mo>
+     </m:mover>
+
+    </m:math> + <emphasis effect="italics">EBM</emphasis> = 568,873 + 281,764 = 850,637
+
+      </item>
+    <item>We estimate with 95% confidence that the mean amount of contributions received from all individuals by House candidates is between $287,109 and $850,637.</item>
+    </list>
+
+    </solution>
+    </exercise>
+
+
+      <exercise id="fs-id1172105923120"><problem id="eip-870">
+      <para id="eip-503">The American Community Survey (ACS), part of the United States Census Bureau, conducts a yearly census similar to the one taken every ten years, but with a smaller percentage of participants. The most recent survey estimates with 90% confidence that the mean household income in the U.S. falls between $69,720 and $69,922. Find the point estimate for mean U.S. household income and the error bound for mean U.S. household income.</para>
+    </problem>
+    </exercise><exercise id="eip-580"><problem id="eip-321">
+    <para id="eip-360">The average height of young adult males has a normal distribution with standard deviation of 2.5 inches. You want to estimate the mean height of students at your college or university to within one inch with 93% confidence. How many male students must you measure?</para>
+    </problem>
+</exercise><exercise id="eip-634"><problem id="eip-565">
+  <para id="eip-742">
+    If the confidence interval is change to a higher probability, would this cause a lower, or a higher, minimum sample size?
+
+  </para>
+</problem>
+
+<solution id="eip-13">
+  <para id="eip-863">Higher</para></solution>
+</exercise><exercise id="eip-125"><problem id="eip-575">
+  <para id="eip-82">
+    If the tolerance is reduced by half, how would this affect the minimum sample size?
+  </para>
+</problem>
+
+
+<solution id="eip-idm765953328">
+<para id="eip-idm765953072">It would increase to four times the prior value.
+</para>
+</solution></exercise><exercise id="eip-912"><problem id="eip-721">
+  <para id="eip-807">
+    If the value of <emphasis effect="italics">p</emphasis> is reduced, would this necessarily reduce the sample size needed?
+
+  </para>
+</problem>
+
+<solution id="eip-916">
+  <para id="eip-149">
+    No, It could have no affect if it were to change to 1 – <emphasis effect="italics">p</emphasis>, for example.  If it gets closer to 0.5 the minimum sample size would increase.
+  </para>
+</solution>
+</exercise><exercise id="eip-896"><problem id="eip-274">
+  <para id="eip-752">
+    Is it acceptable to use a higher sample size than the one calculated by <m:math><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mn>2</m:mn></m:msup><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:msup><m:mi>e</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:math>?
+  </para>
+</problem>
+
+<solution id="eip-idm1435021824">
+<para id="eip-idm1193926768">Yes</para>
+</solution></exercise><exercise id="eip-15"><problem id="eip-113">
+  <para id="eip-743">
+    A company has been running an assembly line with 97.42%% of the products made being acceptable.  Then, a critical piece broke down.  After the repairs the decision was made to see if the number of defective products made was still close enough to the long standing production quality.  Samples of 500 pieces were selected at random, and the defective rate was found to be 0.025%.
+<list id="eip-idm378026000" list-type="enumerated" number-style="lower-alpha"><item>Is this sample size adequate to claim the company is checking within the 90% confidence interval?</item><item> The 95% confidence interval?</item></list></para>
+</problem>
+
+<solution id="eip-908">
+  <para id="eip-392">
+    <list id="eip-idm1133407616" list-type="enumerated" number-style="lower-alpha"><item>No</item><item>No</item></list></para>
+</solution>
+</exercise></section>
+ </content>
+
+</document>

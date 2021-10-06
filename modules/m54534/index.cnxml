@@ -1,0 +1,866 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>The Central Limit Theorem for Sample Means</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54534</md:content-id>
+  <md:title>The Central Limit Theorem for Sample Means</md:title>
+  <md:abstract/>
+  <md:uuid>876f6b88-96cc-4ed7-97c2-c157312a1d1a</md:uuid>
+</metadata>
+
+<content>
+<para id="eip-125">The sampling distribution is a theoretical distribution. It is created by taking many samples of size n from a population. Each sample mean is then treated like a single observation of this new distribution, the sampling distribution. The genius of thinking this way is that it recognizes that when we sample we are creating an observation and that observation must come from some particular distribution. The Central Limit Theorem answers the question: from what distribution did a sample mean come? If this is discovered, then we can treat a sample mean just like any other observation and calculate probabilities about what values it might take on. We have effectively moved from the world of statistics where we know only what we have from the sample, to the world of probability where we know the distribution from which the sample mean came and the parameters of that distribution. </para><para id="eip-663">The reasons that one samples a population are obvious. The time and expense of checking every invoice to determine its validity or every shipment to see if it contains all the items may well exceed the cost of errors in billing or shipping. For some products, sampling would require destroying them, called destructive sampling. One such example is measuring the ability of a metal to withstand saltwater corrosion for parts on ocean going vessels.</para><para id="eip-500">Sampling thus raises an important question; just which sample was drawn. Even if the sample were randomly drawn, there are theoretically an almost infinite number of samples. With just 100 items, there are more than 75 million unique samples of size five that can be drawn. If six are in the sample, the number of possible samples increases to just more than one billion.  Of the 75 million possible samples, then, which one did you get? If there is variation in the items to be sampled, there will be variation in the samples. One could draw an "unlucky" sample and make very wrong conclusions concerning the population. This recognition that any sample we draw is really only one from a distribution of samples provides us with what is probably the single most important theorem is statistics: <term>the Central Limit Theorem</term>. Without the Central Limit Theorem it would be impossible to proceed to inferential statistics from simple probability theory. In its most basic form, the Central Limit Theorem states that <emphasis effect="bold">regardless</emphasis> of the underlying probability density function of the population data, the theoretical distribution of the means of samples from the population will be normally distributed. In essence, this says that the mean of a sample should be treated like an observation drawn from a normal distribution. The Central Limit Theorem only holds if the sample size is "large enough" which has been shown to be only 30 observations or more. </para><para id="eip-143"><link target-id="fs-id7367289"/> graphically displays this very important proposition. </para><figure id="fs-id7367289"><media id="fs-id1166512578484" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch07_01_01n.jpg" width="420"/></media></figure><para id="eip-30">Notice that the horizontal axis in the top panel is labeled X. These are the individual observations of the population. This is the <emphasis effect="bold">unknown</emphasis> distribution of the population values. The graph is purposefully drawn all squiggly to show that it does not matter just how odd ball it really is. Remember, we will never know what this distribution looks like, or its mean or standard deviation for that matter.</para><para id="eip-184">The horizontal axis in the bottom panel is labeled <m:math>
+<m:mover><m:mi>X</m:mi><m:mo>–</m:mo>
+</m:mover>
+</m:math>'s.  This is the theoretical distribution called the sampling distribution of the means. Each observation on this distribution is a sample mean. All these sample means were calculated from individual samples with the same sample size.  The theoretical sampling distribution contains all of the sample mean values from all the possible samples that could have been taken from the population. Of course, no one would ever actually take all of these samples, but if they did this is how they would look. And the Central Limit Theorem says that they will be normally distributed.</para><para id="eip-665">The Central Limit Theorem goes even further and tells us the mean and standard deviation of this theoretical distribution. </para><table id="eip-121" summary="Table">
+<tgroup cols="4"><thead>
+  <row>
+    <entry>Parameter</entry>
+    <entry>Population distribution</entry>
+    <entry>Sample</entry>
+    <entry>Sampling distribution of <m:math>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math>'s</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>Mean</entry>
+    <entry>μ</entry>
+    <entry><m:math><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math></entry>
+    <entry><m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub><m:mspace width="1em"/><m:mtext>and E</m:mtext><m:mo>(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>μ</m:mi></m:math></entry>
+  </row>
+  <row>
+    <entry>Standard deviation</entry>
+    <entry>σ</entry>
+    <entry>s</entry>
+    <entry><m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:math></entry>
+  </row>
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tgroup>
+</table><para id="eip-155">The practical significance of The Central Limit Theorem is that now we can compute probabilities for drawing a sample mean, <m:math>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math>, in just the same way as we did for drawing specific observations, X's, when we knew the population mean and standard deviation and that the population data were normally distributed.. The standardizing formula has to be amended to recognize that the mean and standard deviation of the sampling distribution, sometimes, called the standard error of the mean, are different from those of the population distribution, but otherwise nothing has changed. The new standardizing formula is
+</para><para id="eip-584"><equation class="unnumbered" id="eip-id1167359909290"><label/><m:math display="block">
+<m:mrow>
+<m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>−</m:mo><m:msub>
+<m:mi>μ</m:mi>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>σ</m:mi>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:msub>
+</m:mrow>
+
+</m:mfrac>
+</m:mrow>
+
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>-</m:mo>
+<m:mi>μ</m:mi></m:mrow>
+<m:mrow>
+<m:mfrac><m:mrow>
+<m:mi>σ</m:mi>
+</m:mrow><m:mrow>
+<m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac>
+
+</m:math></equation></para><para id="eip-655">Notice that <m:math><m:msub><m:mtext>µ</m:mtext>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover></m:msub>
+</m:math> in the first formula has been changed to simply µ in the second version. The reason is that mathematically it can be shown that the expected value of  <m:math><m:msub><m:mtext>µ</m:mtext>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover></m:msub>
+</m:math> is equal to µ. This was stated in <link target-id="eip-121"/> above. Mathematically, the E(x) symbol read the “expected value of x”.  This formula will be used in the next unit to provide estimates of the <emphasis effect="bold">unknown</emphasis> population parameter μ.</para><section id="fs-idp10661120" class="references">
+<title>References</title>
+<para id="fs-idp64632544">Baran, Daya. “20 Percent of Americans Have Never Used Email.”WebGuild, 2010. Available online at http://www.webguild.org/20080519/20-percent-of-americans-have-never-used-email (accessed May 17, 2013).</para>
+<para id="fs-idp57996496">Data from The Flurry Blog, 2013. Available online at http://blog.flurry.com (accessed May 17, 2013).</para>
+<para id="fs-idp112347536">Data from the United States Department of Agriculture.</para>
+</section>
+
+<section id="fs-idm33599328" class="summary">
+<title>Chapter Review</title>
+<para id="fs-idm66102448">In a population whose distribution may be known or unknown, if the size (<emphasis effect="italics">n</emphasis>) of samples is sufficiently large, the distribution of the sample means will be approximately normal. The mean of the sample means will equal the population mean. The standard deviation of the distribution of the sample means, called the standard error of the mean, is equal to the population standard deviation divided by the square root of the sample size (<emphasis effect="italics">n</emphasis>).</para></section>
+
+
+<section id="fs-idm104045584" class="formula-review">
+<title>Formula Review</title>
+<para id="fs-idm43969232">The Central Limit Theorem for Sample Means: <newline/></para><para id="eip-55"><m:math>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math> ~ <emphasis effect="italics">N</emphasis><m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msub>
+<m:mi>μ</m:mi>
+<m:mover>
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:msub>
+<m:mtext>, </m:mtext><m:mfrac>
+<m:mrow>
+<m:mi>σ</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mi>n</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math></para><para id="eip-218"><m:math>
+<m:mrow>
+<m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>−</m:mo><m:msub>
+<m:mi>μ</m:mi>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:msub>
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>σ</m:mi>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:msub>
+</m:mrow>
+
+</m:mfrac>
+</m:mrow>
+
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>-</m:mo>
+<m:mi>μ</m:mi></m:mrow>
+<m:mrow>
+<m:mi>σ</m:mi>
+<m:mo>/</m:mo>
+<m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac>
+
+</m:math></para><para id="fs-idm14943744">The Mean <m:math>
+ <m:mover>
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+<m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub></m:math></para><para id="fs-idp59416400">Central Limit Theorem for Sample Means z-score <m:math>
+<m:mrow>
+<m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mover>
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub>
+</m:mrow>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+
+<m:mi>σ</m:mi>
+
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mi>n</m:mi>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math></para><para id="fs-idp66400464">Standard Error of the Mean (Standard Deviation (<m:math>
+ <m:mover>
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math>)): <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+
+     <m:mi>σ</m:mi>
+
+
+   </m:mrow>
+   <m:mrow>
+    <m:msqrt>
+     <m:mi>n</m:mi>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></para><para id="eip-69">Finite Population Correction Factor for the sampling distribution of means: <m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt></m:mrow></m:mfrac></m:math></para><para id="eip-225">Finite Population Correction Factor for the sampling distribution of proportions: <m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt></m:math></para></section>
+
+
+<section id="fs-idp66376176" class="free-response">
+<title>Homework</title>
+<exercise id="element-475">
+<problem id="id6273705">
+<para id="element-850">Previously, De Anza statistics students estimated that the amount of change daytime statistics students carry is exponentially distributed with a mean of $0.88. Suppose that we randomly pick 25 daytime statistics students.</para>
+<list id="element-224" list-type="enumerated" number-style="lower-alpha">
+<item>In words, <emphasis effect="italics">Χ</emphasis> = ____________</item>
+<item><emphasis effect="italics">Χ</emphasis> ~ _____(_____,_____)</item>
+<item>In words, <m:math>
+ <m:mover>
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> = ____________</item>
+<item><m:math>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math> ~ ______ (______, ______)</item>
+<item>Find the probability that an individual had between $0.80 and $1.00. Graph the situation, and shade in the area to be determined.</item>
+<item>Find the probability that the average of the 25 students was between $0.80 and $1.00. Graph the situation, and shade in the area to be determined.</item>
+<item>Explain why there is a difference in part e and part f.</item>
+</list></problem>
+<solution id="fs-idp10454080">
+<list id="fs-idm137132816" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">Χ</emphasis> = amount of change students carry</item>
+<item><emphasis effect="italics">Χ</emphasis> ~ <emphasis effect="italics">E</emphasis>(0.88, 0.88)</item>
+<item><m:math>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math> = average amount of change carried by a sample of 25 students.</item>
+<item><m:math>
+<m:mover>
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> ~ <emphasis effect="italics">N</emphasis>(0.88, 0.176)</item>
+<item>0.0819</item>
+<item>0.1882</item>
+<item>The distributions are different. Part a is exponential and part b is normal.</item>
+</list></solution>
+</exercise>
+
+<exercise id="element-51"><problem id="id6273949">
+<para id="element-365">Suppose that the distance of fly balls hit to the outfield (in baseball) is normally distributed with a mean of 250 feet and a standard deviation of 50 feet. We randomly sample 49 fly balls.</para><list id="element-530" list-type="enumerated" number-style="lower-alpha"><item>If <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> = average distance in feet for 49 fly balls, then <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> ~ _______(_______,_______)</item>
+<item>What is the probability that the 49 balls traveled an average of less than 240 feet? Sketch the graph. Scale the horizontal axis for <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math>. Shade the region corresponding to the probability. Find the probability.</item>
+<item>Find the 80<sup>th</sup> percentile of the distribution of the average of 49 fly balls.</item>
+</list></problem>
+
+<!-- <solution id="id6274098">
+<list id="element-804" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>250,&#160;</m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mn>50</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>49</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item>0.0808</item>
+<item>256.01 feet</item></list></solution> -->
+</exercise><exercise id="element-820">
+<problem id="id6533450">
+<para id="element-518">According to the Internal Revenue Service, the average length of time for an individual to complete (keep records for, learn, prepare, copy, assemble, and send) IRS Form 1040 is 10.53 hours (without any attached schedules). The distribution is unknown. Let us assume that the standard deviation is two hours. Suppose we randomly sample 36 taxpayers.</para>
+
+<list id="element-685" list-type="enumerated" number-style="lower-alpha"><item>In words, <emphasis effect="italics">Χ</emphasis> = _____________</item>
+<item>In words, <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> = _____________</item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ _____(_____,_____)</item>
+<item>Would you be surprised if the 36 taxpayers finished their Form 1040s in an average of more than 12 hours? Explain why or why not in complete sentences.</item>
+<item>Would you be surprised if one taxpayer finished his or her Form 1040 in more than 12 hours? In a complete sentence, explain why.</item></list></problem>
+<solution id="fs-idm166717360">
+<list id="fs-idm37918272" list-type="enumerated" number-style="lower-alpha"><item>length of time for an individual to complete IRS form 1040, in hours.</item>
+<item>mean length of time for a sample of 36 taxpayers to complete IRS form 1040, in hours.</item>
+<item><emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>10</m:mtext><m:mtext>.53, </m:mtext><m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>3</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item>Yes. I would be surprised, because the probability is almost 0.</item>
+<item>No. I would not be totally surprised because the probability is 0.2312</item></list></solution>
+</exercise>
+
+<exercise id="element-133"><problem id="id6533652">
+<para id="element-243">Suppose that a category of world-class runners are known to run a marathon (26 miles) in an average of 145 minutes with a standard deviation of 14 minutes. Consider 49 of the races. Let <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> the average of the 49 races.</para>
+
+<list id="element-45" list-type="enumerated" number-style="lower-alpha">
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ _____(_____,_____)</item>
+<item>Find the probability that the runner will average between 142 and 146 minutes in these 49 marathons.</item>
+<item>Find the 80<sup>th</sup> percentile for the average of these 49 marathons.</item>
+<item>Find the median of the average running times.</item></list></problem>
+
+<!-- <solution id="id6533816">
+<list id="element-402" list-type="enumerated" number-style="lower-alpha">
+<item><emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>145,&#160;</m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mn>14</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>49</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item>0.6247</item>
+<item>146.68 </item>
+<item>145 minutes</item></list></solution> -->
+</exercise><exercise id="element-848">
+<problem id="id6534960">
+<para id="element-175">The length of songs in a collector’s iTunes album collection is uniformly distributed from two to 3.5 minutes. Suppose we randomly pick five albums from the collection. There are a total of 43 songs on the five albums.</para>
+<list id="element-118" list-type="enumerated" number-style="lower-alpha"><item>In words, <emphasis effect="italics">Χ</emphasis> = _________</item>
+<item><emphasis effect="italics">Χ</emphasis> ~ _____________</item>
+<item>In words, <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> = _____________</item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ _____(_____,_____)</item>
+<item>Find the first quartile for the average song length.</item>
+<item>The IQR(interquartile range) for the average song length is from _______–_______.</item></list></problem>
+<solution id="fs-idm135637280">
+<list id="fs-idm135637024" list-type="enumerated" number-style="lower-alpha"><item>the length of a song, in minutes, in the collection</item>
+<item><emphasis effect="italics">U</emphasis>(2, 3.5)</item>
+<item>the average length, in minutes, of the songs from a sample of five albums from the collection</item>
+<item><emphasis effect="italics">N</emphasis>(2.75, 0.066)</item>
+<item>2.74 minutes</item>
+<item>0.03 minutes</item>
+</list></solution>
+</exercise>
+
+<exercise id="element-424"><problem id="id6536525">
+<para id="element-799">In 1940 the average size of a U.S. farm was 174 acres. Let’s say that the standard deviation was 55 acres. Suppose we randomly survey 38 farmers from 1940.</para>
+<list id="madeup2" list-type="enumerated" number-style="lower-alpha">
+<item>In words, <emphasis effect="italics">Χ</emphasis> = _____________</item>
+<item>In words, <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math> = _____________</item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ _____(_____,_____)</item>
+<item>The IQR for <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math> is from _______ acres to _______ acres.</item>
+</list></problem>
+
+<!-- <solution id="fs-idm55467904">
+<list id="fs-idm55467648" list-type="enumerated" number-style="lower-alpha"><item>the size of a U.S. farm in 1940</item>
+<item>the average size of a U.S. farm, in acres</item>
+<item><emphasis effect="italics">N</emphasis><m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>174</m:mn><m:mtext>,&#160;</m:mtext><m:mfrac>
+<m:mrow>
+<m:mn>55</m:mn>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mrow>
+<m:mn>38</m:mn>
+</m:mrow>
+</m:msqrt>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math></item>
+<item>168.0, 180.0</item>
+</list></solution> -->
+</exercise><exercise id="element-371">
+<problem id="id6264723">
+<para id="fs-idm19354672">Determine which of the following are true and which are false. Then, in complete sentences, justify your answers.</para>
+
+<list id="fs-idm39736064" list-type="enumerated" number-style="lower-alpha">
+<item>When the sample size is large, the mean of <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> is approximately equal to the mean of <emphasis effect="italics">Χ</emphasis>.</item>
+<item>When the sample size is large, <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> is approximately normally distributed.</item>
+<item>When the sample size is large, the standard deviation of <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> is approximately the same as the standard deviation of <emphasis effect="italics">Χ</emphasis>.</item></list></problem>
+<solution id="fs-idp58516336">
+<list id="fs-idp58516592" list-type="enumerated" number-style="lower-alpha"><item>True. The mean of a sampling distribution of the means is approximately the mean of the data distribution.</item>
+<item>True. According to the Central Limit Theorem, the larger the sample, the closer the sampling distribution of the means becomes normal.</item>
+<item>The standard deviation of the sampling distribution of the means will decrease making it approximately the same as the standard deviation of X as the sample size increases.</item></list></solution>
+</exercise>
+
+<exercise id="element-169"><problem id="id6272391">
+<para id="element-76">The percent of fat calories that a person in America consumes each day is normally distributed with a mean of about 36 and a standard deviation of about ten. Suppose that 16 individuals are randomly chosen. Let <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> = average percent of fat calories.</para>
+<list id="eip-idm27753728" list-type="enumerated" number-style="lower-alpha">
+<item><m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> ~ ______(______, ______)</item>
+<item>For the group of 16, find the probability that the average percent of fat calories consumed is more than five. Graph the situation and shade in the area to be determined.</item>
+<item>Find the first quartile for the average percent of fat calories.</item>
+</list>
+</problem>
+
+<!-- <solution id="id6272525">
+<list id="element-89" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>36,&#160;</m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item>1</item>
+<item>34.31</item>
+</list></solution> -->
+</exercise><exercise id="element-795">
+<problem id="id6535840">
+<para id="fs-idm32345632">The distribution of income in some Third World countries is considered wedge shaped (many very poor people, very few middle income people, and even fewer wealthy people). Suppose we pick a country with a wedge shaped distribution. Let the average salary be $2,000 per year with a standard deviation of $8,000. We randomly survey 1,000 residents of that country.</para>
+
+<list id="element-834" list-type="enumerated" number-style="lower-alpha">
+<item>In words, <emphasis effect="italics">Χ</emphasis> = _____________</item>
+<item>In words, <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math> = _____________</item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math> ~ _____(_____,_____)</item>
+<item>How is it possible for the standard deviation to be greater than the average?</item>
+<item>Why is it more likely that the average of the 1,000 residents will be from $2,000 to $2,100 than from $2,100 to $2,200?</item></list></problem>
+<solution id="fs-idm50399184">
+<list id="fs-idp55008880" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the yearly income of someone in a third world country</item>
+<item>the average salary from samples of 1,000 residents of a third world country</item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ∼ <emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>2000, </m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mtext>8000</m:mtext>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mtext>1000</m:mtext>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item>Very wide differences in data values can have averages smaller than standard deviations.</item>
+<item>The distribution of the sample mean will have higher probabilities closer to the population mean.
+<newline/><emphasis effect="italics">P</emphasis>(2000 &lt; <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math> &lt; 2100) = 0.1537
+<newline/><emphasis effect="italics">P</emphasis>(2100 &lt; <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+</m:math> &lt; 2200) = 0.1317
+</item>
+</list></solution>
+</exercise>
+
+<exercise id="element-338"><problem id="id6538396">
+<para id="element-943">Which of the following is NOT TRUE about the distribution for averages?</para>
+<list id="element-992" list-type="enumerated" number-style="lower-alpha"><item>The mean, median, and mode are equal.</item>
+<item>The area under the curve is one.</item>
+<item>The curve never touches the <emphasis effect="italics">x</emphasis>-axis.</item>
+<item>The curve is skewed to the right.</item>
+</list></problem>
+
+<!-- <solution id="id6538477">
+<para id="element-60">d</para>
+</solution> -->
+</exercise><exercise id="element-680"><problem id="id6538522">
+<para id="fs-idp43800992">The cost of unleaded gasoline in the Bay Area once followed an unknown distribution with a mean of $4.59 and a standard deviation of $0.10. Sixteen gas stations from the Bay Area are randomly chosen. We are interested in the average cost of gasoline for the 16 gas stations. The distribution to use for the average cost of gasoline for the 16 gas stations is:
+<list id="element-728" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math> ~ <emphasis effect="italics">N</emphasis>(4.59, 0.10)</item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>-</m:mo>
+ </m:mover>
+
+</m:math> ~ <emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>4</m:mtext><m:mtext>.59, </m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mn>0.10</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:msqrt>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+      </m:msqrt>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ <emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>4</m:mtext><m:mtext>.59, </m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mn>16</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>0.10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ <emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>4</m:mtext><m:mtext>.59, </m:mtext><m:mfrac>
+     <m:mrow>
+     <m:msqrt>
+       <m:mrow>
+        <m:mn>16</m:mn>
+       </m:mrow>
+      </m:msqrt>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>0.10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+</list></para></problem>
+
+<solution id="id6538759">
+<para id="element-156">b</para>
+</solution>
+</exercise>
+</section>
+
+
+ </content>
+
+<glossary>
+  <definition id="average">
+    <term>Average</term>
+    <meaning id="id16316921">a number that describes the central tendency of the data; there are a number of specialized averages, including the arithmetic mean, weighted mean, median, mode, and geometric mean.</meaning>
+  </definition>
+  <definition id="centlimit">
+    <term>Central Limit Theorem</term>
+    <meaning id="id43867050">Given a random variable with known mean <emphasis effect="italics">μ</emphasis> and known standard deviation, <emphasis effect="italics">σ</emphasis>, we are sampling with size <emphasis effect="italics">n</emphasis>, and we are interested in two new RVs: the sample mean, <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math>. If the size (<emphasis effect="italics">n</emphasis>) of the sample is sufficiently large, then <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> ~ <emphasis effect="italics">N</emphasis>(<emphasis effect="italics">μ</emphasis>, <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>σ</m:mi>
+   <m:mrow>
+    <m:msqrt>
+     <m:mi>n</m:mi>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>). If the size (<emphasis effect="italics">n</emphasis>) of the sample is sufficiently large, then the distribution of the sample means will approximate a normal distributions regardless of the shape of the population. The mean of the sample  means will equal the population mean. The standard deviation of the distribution of the sample means, <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>σ</m:mi>
+   <m:mrow>
+    <m:msqrt>
+     <m:mi>n</m:mi>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>, is called the standard error of the mean.</meaning>
+  </definition>
+
+
+
+<definition id="stdmean">
+    <term>Standard Error of the Mean</term>
+    <meaning id="id6201946">the standard deviation of the distribution of the sample means, or <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>σ</m:mi>
+   <m:mrow>
+    <m:msqrt>
+     <m:mi>n</m:mi>
+    </m:msqrt>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math>.</meaning>
+</definition>
+</glossary>
+</document>

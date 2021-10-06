@@ -1,0 +1,2505 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Display Data</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53791</md:content-id>
+  <md:title>Display Data</md:title>
+  <md:abstract/>
+  <md:uuid>50c33b77-e1f2-4427-965c-fe8abbb260a4</md:uuid>
+</metadata>
+
+<content><section id="fs-id1166876023750">
+<title>Stem-and-Leaf Graphs (Stemplots), Line Graphs, and Bar Graphs</title><para id="id6999853">One simple graph, the <emphasis>stem-and-leaf graph</emphasis> or <emphasis>stemplot</emphasis>, comes from the field of exploratory data analysis. It is a good choice when the data sets are small. To create the plot, divide each observation of data into a stem and a leaf. The leaf consists of a <emphasis>final significant digit</emphasis>. For example, 23 has stem two and leaf three. The number 432 has stem 43 and leaf two. Likewise, the number 5,432 has stem 543 and leaf two. The decimal 9.3 has stem nine and leaf three. Write the stems in a vertical line from smallest to largest. Draw a vertical line to the right of the stems. Then write the leaves in increasing order next to their corresponding stem.</para>
+<example id="element-696">
+<para id="element-948">For Susan Dean's spring pre-calculus class, scores for the first exam were as follows (smallest to largest):
+<newline/>
+ 33; 42; 49; 49; 53; 55; 55; 61; 63; 67; 68; 68; 69; 69; 72; 73; 74; 78; 80; 83; 88; 88; 88; 90; 92; 94; 94; 94; 94; 96; 100</para><table id="element-185" summary="Table displaying stem in first column and leaf in second column for the values listed above."><title>Stem-and-Leaf Graph</title>
+<tgroup cols="2"><thead>
+<row>
+<entry>Stem</entry>
+<entry>Leaf</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+<entry>3</entry><entry>3</entry>
+</row>
+<row>
+<entry>4</entry><entry>2 9 9</entry>
+</row>
+<row>
+<entry>5</entry><entry>3 5 5</entry>
+</row>
+<row>
+<entry>6</entry><entry>1 3 7 8 8 9 9</entry>
+</row>
+<row>
+<entry>7</entry><entry>2 3 4 8</entry>
+</row>
+<row>
+<entry>8</entry><entry>0 3 8 8 8</entry>
+</row>
+<row>
+<entry>9</entry><entry>0 2 4 4 4 4 6</entry>
+</row>
+<row>
+<entry>10</entry><entry>0</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="element-541">The stemplot shows that most scores fell in the 60s, 70s, 80s, and 90s.  Eight out of the 31 scores or approximately 26% <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mn>8</m:mn>
+<m:mrow>
+<m:mn>31</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> were in the 90s or 100, a fairly high number of As.</para>
+</example>
+
+<note id="fs-idp6114880" class="statistics try"><label/><title>Try It</title>
+
+<exercise id="fs-idp3142256">
+<problem id="fs-idm28250320">
+<para id="fs-idp29192512">For the Park City basketball team, scores for the last 30 games were as follows (smallest to largest):
+<newline/>
+ 32; 32; 33; 34; 38; 40; 42; 42; 43; 44; 46; 47; 47; 48; 48; 48; 49; 50; 50; 51; 52; 52; 52; 53; 54; 56; 57; 57; 60; 61
+<newline/>Construct a stem plot for the data.</para></problem>
+<solution id="fs-idm41489584" class="solutions">
+<label/>
+<table id="fs-idm19851440" summary="">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry>Stem</entry><entry>Leaf</entry></row>
+</thead>
+<tbody>
+<row><entry>3</entry><entry>2 2 3 4 8</entry></row>
+<row><entry>4</entry><entry>0 2 2 3 4 6 7 7 8 8 8 9</entry></row>
+<row><entry>5</entry><entry>0 0 1 2 2 2 3 4 6 7 7</entry></row>
+<row><entry>6</entry><entry>0 1</entry></row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></note><para id="eip-522">The stemplot is a quick way to graph data and gives an exact picture of the data. You want to look for an overall pattern and any outliers. An <term>outlier</term> is an observation of data that does not fit the rest of the data. It is sometimes called an <emphasis>extreme value.</emphasis> When you graph an outlier, it will appear not to fit the pattern of the graph. Some outliers are due to mistakes (for example, writing down 50 instead of 500) while others may indicate that something unusual is happening. It takes some background information to explain outliers, so we will cover them in more detail later.</para><example id="element-798">
+<para id="element-534">The data are the distances (in kilometers) from a home to local supermarkets. Create a stemplot using the data:
+<newline/>1.1; 1.5; 2.3; 2.5; 2.7; 3.2; 3.3; 3.3; 3.5; 3.8; 4.0; 4.2; 4.5; 4.5; 4.7; 4.8; 5.5; 5.6; 6.5; 6.7; 12.3</para><exercise id="element-6923"><problem id="id8567884">
+<para id="fs-idp11807920">Do the data seem to have any concentration of values?</para>
+<note id="id8559724"><label/><title>NOTE</title>
+<para id="fs-idp145995424">The leaves are to the right of the decimal.</para>
+</note></problem>
+<solution id="id8559734" print-placement="end">
+<para id="element-23523">The value 12.3 may be an outlier. Values appear to concentrate at three and four kilometers.</para>
+<table id="element-533" summary="This is a Stem-Leaf graph with stems 1, 2, 3, 4, 5, 6, 12 and leaves to the right of the decimal point.">
+<tgroup cols="2"><thead>
+<row>
+<entry>Stem</entry>
+<entry>Leaf</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>1</entry><entry>1 5</entry>
+</row>
+<row>
+<entry>2</entry><entry>3 5 7</entry>
+</row>
+<row>
+<entry>3</entry><entry>2 3 3 5 8</entry>
+</row>
+<row>
+<entry>4</entry><entry>0 2 5 5 7 8</entry>
+</row>
+<row>
+<entry>5</entry><entry>5 6</entry>
+</row>
+<row>
+<entry>6</entry><entry>5 7</entry>
+</row>
+<row>
+<entry>7</entry><entry/>
+</row>
+<row>
+<entry>8</entry><entry/>
+</row>
+<row>
+<entry>9</entry><entry/>
+</row>
+<row>
+<entry>10</entry><entry/>
+</row>
+<row>
+<entry>11</entry><entry/>
+</row>
+<row>
+<entry>12</entry><entry>3</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise></example>
+
+<note id="fs-idp4001472" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm40603312"><problem id="fs-idm28790944">
+<para id="fs-idp73770272">The following data show the distances (in miles) from the homes of off-campus statistics students to the college. Create a stem plot using the data and identify any outliers:</para>
+<para id="fs-idp20460656">0.5; 0.7; 1.1; 1.2; 1.2; 1.3; 1.3; 1.5; 1.5; 1.7; 1.7; 1.8; 1.9; 2.0; 2.2; 2.5; 2.6; 2.8; 2.8; 2.8; 3.5; 3.8; 4.4; 4.8; 4.9; 5.2; 5.5; 5.7; 5.8; 8.0
+</para></problem>
+<solution id="fs-idp22705856" class="solutions">
+<label/>
+<table id="fs-idm52067568" summary="">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry>Stem</entry><entry>Leaf</entry></row>
+</thead>
+<tbody>
+<row><entry>0</entry><entry>5 7</entry></row>
+<row><entry>1</entry><entry>1 2 2 3 3 5 5 7 7 8 9</entry></row>
+<row><entry>2</entry><entry>0 2 5 6 8 8 8</entry></row>
+<row><entry>3</entry><entry>5 8</entry></row>
+<row><entry>4</entry><entry>4 8 9</entry></row>
+<row><entry>5</entry><entry>2 5 7 8</entry></row>
+<row><entry>6</entry><entry/></row>
+<row><entry>7</entry><entry/></row>
+<row><entry>8</entry><entry>0</entry></row>
+</tbody>
+</tgroup>
+</table>
+<para id="fs-idp21819520">The value 8.0 may be an outlier. Values appear to concentrate at one and two miles.</para>
+</solution>
+</exercise></note>
+
+
+<example id="fs-idp11879648"><exercise id="fs-idp161531440"><problem id="fs-idp99219856">
+<para id="fs-idp93832256">A <emphasis>side-by-side stem-and-leaf plot</emphasis> allows a comparison of the two data sets in two columns. In a side-by-side stem-and-leaf plot, two sets of leaves share the same stem. The leaves are to the left and the right of the stems.  <link target-id="M01_Ch02_tbl005"/> and <link target-id="M01_Ch02_tbl006"/> show the ages of presidents at their inauguration and at their death. Construct a side-by-side stem-and-leaf plot using this data.</para>
+</problem>
+<solution id="fs-idp107817952">
+<table id="M01_Ch02_tbl007" summary="stem and leaf plot">
+<tgroup cols="3"><colspec colnum="1" colname="c1" align="right"/>
+<colspec colnum="2" colname="c2" align="center"/>
+<colspec colnum="3" colname="c3" align="left"/>
+<thead>
+<row>
+<entry>Ages at Inauguration</entry>
+<entry/>
+<entry>Ages at Death</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>9 9 8 7 7 7 6 3 2</entry><entry>4</entry><entry>6 9</entry>
+</row>
+<row>
+<entry>8 7 7 7 7 6 6 6 5 5 5 5 4 4 4 4 4 2 2 1 1 1 1 1 0</entry><entry>5</entry><entry>3 6 6 7 7 8</entry>
+</row>
+<row>
+<entry>9 8 5 4 4 2 1 1 1 0</entry><entry>6</entry><entry>0 0 3 3 4 4 5 6 7 7 7 8</entry>
+</row>
+<row>
+<entry/><entry>7</entry><entry>0 0 1 1 1 4 7 8 8 9</entry>
+</row>
+<row>
+<entry/><entry>8</entry><entry>0 1 3 5 8</entry>
+</row>
+<row>
+<entry/><entry>9</entry><entry>0 0 3 3</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise></example>
+<para id="eip-431"><table id="M01_Ch02_tbl005" summary="">
+<title>Presidential Ages at Inauguration</title>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c1"/>
+<colspec colnum="3" colname="c1"/>
+<colspec colnum="4" colname="c1"/>
+<colspec colnum="5" colname="c1"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row><entry>President</entry><entry>Age</entry><entry>President</entry><entry>Age</entry><entry>President</entry><entry>Age</entry></row>
+</thead>
+<tbody>
+<row><entry>Washington</entry><entry>57</entry><entry>Lincoln</entry><entry>52</entry><entry>Hoover</entry><entry>54</entry></row>
+<row><entry>J. Adams</entry><entry>61</entry><entry>A. Johnson</entry><entry>56</entry><entry>F. Roosevelt</entry><entry>51</entry></row>
+<row><entry>Jefferson</entry><entry>57</entry><entry>Grant</entry><entry>46</entry><entry>Truman</entry><entry>60</entry></row>
+<row><entry>Madison</entry><entry>57</entry><entry>Hayes</entry><entry>54</entry><entry>Eisenhower</entry><entry>62</entry></row>
+<row><entry>Monroe</entry><entry>58</entry><entry>Garfield</entry><entry>49</entry><entry>Kennedy</entry><entry>43</entry></row>
+<row><entry>J. Q. Adams</entry><entry>57</entry><entry>Arthur</entry><entry>51</entry><entry>L. Johnson</entry><entry>55</entry></row>
+<row><entry>Jackson</entry><entry>61</entry><entry>Cleveland</entry><entry>47</entry><entry>Nixon</entry><entry>56</entry></row>
+<row><entry>Van Buren</entry><entry>54</entry><entry>B. Harrison</entry><entry>55</entry><entry>Ford</entry><entry>61</entry></row>
+<row><entry>W. H. Harrison</entry><entry>68</entry><entry>Cleveland</entry><entry>55</entry><entry>Carter</entry><entry>52</entry></row>
+<row><entry>Tyler</entry><entry>51</entry><entry>McKinley</entry><entry>54</entry><entry>Reagan</entry><entry>69</entry></row>
+<row><entry>Polk</entry><entry>49</entry><entry>T. Roosevelt</entry><entry>42</entry><entry>G.H.W. Bush</entry><entry>64</entry></row>
+<row><entry>Taylor</entry><entry>64</entry><entry>Taft</entry><entry>51</entry><entry>Clinton</entry><entry>47</entry></row>
+<row><entry>Fillmore</entry><entry>50</entry><entry>Wilson</entry><entry>56</entry><entry>G. W. Bush</entry><entry>54</entry></row>
+<row><entry>Pierce</entry><entry>48</entry><entry>Harding</entry><entry>55</entry><entry>Obama</entry><entry>47</entry></row>
+<row><entry>Buchanan</entry><entry>65</entry><entry>Coolidge</entry><entry>51</entry><entry/><entry/></row>
+</tbody>
+</tgroup>
+</table>
+
+
+<table id="M01_Ch02_tbl006" summary="">
+<title>Presidential Age at Death</title>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row><entry>President</entry><entry>Age</entry><entry>President</entry><entry>Age</entry><entry>President</entry><entry>Age</entry></row>
+</thead>
+<tbody>
+<row><entry>Washington</entry><entry>67</entry><entry>Lincoln</entry><entry>56</entry><entry>Hoover</entry><entry>90</entry></row>
+<row><entry>J. Adams</entry><entry>90</entry><entry>A. Johnson</entry><entry>66</entry><entry>F. Roosevelt</entry><entry>63</entry></row>
+<row><entry>Jefferson</entry><entry>83</entry><entry>Grant</entry><entry>63</entry><entry>Truman</entry><entry>88</entry></row>
+<row><entry>Madison</entry><entry>85</entry><entry>Hayes</entry><entry>70</entry><entry>Eisenhower</entry><entry>78</entry></row>
+<row><entry>Monroe</entry><entry>73</entry><entry>Garfield</entry><entry>49</entry><entry>Kennedy</entry><entry>46</entry></row>
+<row><entry>J. Q. Adams</entry><entry>80</entry><entry>Arthur</entry><entry>56</entry><entry>L. Johnson</entry><entry>64</entry></row>
+<row><entry>Jackson</entry><entry>78</entry><entry>Cleveland</entry><entry>71</entry><entry>Nixon</entry><entry>81</entry></row>
+<row><entry>Van Buren</entry><entry>79</entry><entry>B. Harrison</entry><entry>67</entry><entry>Ford</entry><entry>93</entry></row>
+<row><entry>W. H. Harrison</entry><entry>68</entry><entry>Cleveland</entry><entry>71</entry><entry>Reagan</entry><entry>93</entry></row>
+<row><entry>Tyler</entry><entry>71</entry><entry>McKinley</entry><entry>58</entry><entry/><entry/></row>
+<row><entry>Polk</entry><entry>53</entry><entry>T. Roosevelt</entry><entry>60</entry><entry/><entry/></row>
+<row><entry>Taylor</entry><entry>65</entry><entry>Taft</entry><entry>72</entry><entry/><entry/></row>
+<row><entry>Fillmore</entry><entry>74</entry><entry>Wilson</entry><entry>67</entry><entry/><entry/></row>
+<row><entry>Pierce</entry><entry>64</entry><entry>Harding</entry><entry>57</entry><entry/><entry/></row>
+<row><entry>Buchanan</entry><entry>77</entry><entry>Coolidge</entry><entry>60</entry><entry/><entry/></row>
+</tbody>
+</tgroup>
+</table></para><para id="eip-313">Another type of graph that is useful for specific data values is a <emphasis>line graph</emphasis>. In the particular line graph shown in <link target-id="example4"/>, the <emphasis><emphasis effect="italics">x</emphasis>-axis</emphasis> (horizontal axis) consists of <emphasis>data values</emphasis> and the <emphasis><emphasis effect="italics">y</emphasis>-axis</emphasis> (vertical axis) consists of <emphasis>frequency points</emphasis>. The frequency points are connected  using line segments.</para>
+
+<example id="example4">
+<para id="eip-682">In a survey, 40 mothers were asked how many times per week a teenager must be reminded to do his or her chores. The results are shown in <link target-id="M01_Ch02_tbl008"/> and in <link target-id="M01_Ch02_fig001"/>.</para><table id="M01_Ch02_tbl008" summary="The first column of the table consists of the number of times a teenager must be reminded to do his/her chores and the second column consists of frequency.">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+<entry>Number of times
+teenager is reminded</entry>
+<entry>Frequency</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+<entry>0</entry><entry>2</entry>
+</row>
+<row>
+<entry>1</entry><entry>5</entry>
+</row>
+<row>
+<entry>2</entry><entry>8</entry>
+</row>
+<row>
+<entry>3</entry><entry>14</entry>
+</row>
+<row>
+<entry>4</entry><entry>7</entry>
+</row>
+<row>
+<entry>5</entry><entry>4</entry>
+</row>
+
+</tbody>
+</tgroup>
+</table>
+
+<figure id="M01_Ch02_fig001">
+<media id="fs-idp107902784" display="block" alt="A line graph showing the number of times a teenager needs to be reminded to do chores on the x-axis and  frequency on the y-axis.">
+<image src="../../media/fig-ch_02_03_01.jpg" mime-type="image/jpg" width="380" print-width="4in"/></media>
+</figure>
+</example>
+
+
+<note id="fs-idm28536512" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm95574864"><problem id="fs-idp19862832">
+
+<para id="fs-idp28849584">In a survey, 40 people were asked how many times per year they had their car in the shop for repairs. The results are shown in <link target-id="M01_Ch02_tbl009"/>. Construct a line graph.</para>
+
+<table id="M01_Ch02_tbl009" summary="">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry>Number of times in shop</entry><entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>0</entry><entry>7</entry></row>
+<row><entry>1</entry><entry>10</entry></row>
+<row><entry>2</entry><entry>14</entry></row>
+<row><entry>3</entry><entry>9</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-idp56781792" class="solutions">
+<label/>
+<figure id="eip-idp32593792"><media id="fs-idp61812880" alt="" display="block">
+<image src="../../media/CNX_Stats_C02_M03_tryit003.png" mime-type="image/png" width="380"/>
+</media>
+</figure></solution>
+</exercise></note>
+
+<para id="eip-136"><emphasis>Bar graphs</emphasis> consist of bars that are separated from each other. The bars can be rectangles or they can be rectangular boxes (used in three-dimensional plots), and they can be vertical or horizontal. The <emphasis>bar graph</emphasis> shown in <link target-id="example5"/> has age groups represented on the <emphasis><emphasis effect="italics">x</emphasis>-axis</emphasis> and proportions on the <emphasis><emphasis effect="italics">y</emphasis>-axis</emphasis>.</para><example id="example5">
+<exercise id="fs-idm7260336">
+<problem id="fs-idp99169968">
+<para id="eip-666">By the end of 2011, Facebook had over 146 million users in the United States. <link target-id="M01_Ch02_tbl010"/> shows three age groups, the number of users in each age group, and the proportion (%) of users in each age group. Construct a bar graph using this data.</para><table id="M01_Ch02_tbl010" summary="The information is from Facebook. The first row of the table displays age groups, the second row displays number of Facebook users and the third row displays percentages.">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Age groups</entry>
+<entry>Number of Facebook users</entry>
+<entry>Proportion (%) of Facebook users</entry>
+</row>
+</thead><tbody>
+<row>
+<entry>13–25</entry>
+<entry>65,082,280</entry>
+<entry>45%</entry>
+</row>
+<row>
+<entry>26–44</entry>
+<entry>53,300,200</entry>
+<entry>36%</entry>
+</row>
+<row>
+<entry>45–64</entry>
+<entry>27,885,100</entry>
+<entry>19%</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-idp32850832">
+<figure id="fs-idm25485824"><media id="bar_graph_Facebook" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows age groups,  and the y-axis shows the percentages of Facebook users.">
+<image src="../../media/fig-ch02_03_02.jpg" mime-type="image/jpg" width="380"/></media>
+</figure></solution>
+</exercise>
+</example>
+
+
+<note id="fs-idp2492880" class="statistics try">
+<label/><title>Try It</title>
+<exercise id="fs-idm47906688">
+<problem id="fs-idm7708128">
+
+<para id="fs-idp6746384">The population in Park City is made up of children, working-age adults, and retirees. <link target-id="M01_Ch02_tbl011"/> shows the three age groups, the number of people in the town from each age group, and the proportion (%) of people in each age group. Construct a bar graph showing the proportions.</para>
+
+<table id="M01_Ch02_tbl011" summary="">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row><entry>Age groups</entry><entry>Number of people</entry><entry>Proportion of population</entry></row>
+</thead>
+<tbody>
+<row><entry>Children</entry>	<entry>67,059</entry>	<entry>19%</entry></row>
+<row><entry>Working-age adults</entry>	<entry>152,198</entry>	<entry>43%</entry></row>
+<row><entry>Retirees</entry>	<entry>131,662</entry>	<entry>38%</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+<solution id="fs-idm119263088" class="solutions">
+<label/>
+<figure id="eip-idm94855488"><media id="fs-idm4405616" alt="This is a bar graph that matches the supplied data. The x-axis shows age groups, and the y-axis shows the percentages of Park City's population." display="block">
+<image src="../../media/CNX_Stats_C02_M03_tryit004.png" width="350" mime-type="image/png"/>
+</media>
+</figure></solution>
+</exercise>
+</note>
+
+
+<example id="eip-708">
+<exercise id="fs-idm25526448">
+<problem id="fs-idm19535184">
+<para id="eip-655">The columns in <link target-id="M01_Ch02_tbl012"/> contain: the race or ethnicity of students in U.S. Public Schools for the class of 2011, percentages for the Advanced Placement examine population for that class, and percentages for the overall student population. Create a bar graph with the student race or ethnicity (qualitative data) on the <emphasis effect="italics">x</emphasis>-axis, and the Advanced Placement examinee population percentages on the <emphasis effect="italics">y</emphasis>-axis.</para><table id="M01_Ch02_tbl012" summary="The table shows Race and Ethnicity in the first column, Advanced Placement Examinee Population in the second column and Overall Student Population in the third column.">
+<tgroup cols="3"><thead>
+<row>
+<entry>Race/ethnicity</entry>
+<entry>AP examinee population</entry>
+<entry>Overall student population</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>1 = Asian, Asian American or Pacific Islander</entry>
+<entry>10.3%</entry>
+<entry>5.7%</entry>
+</row>
+<row>
+<entry>2 = Black or African American</entry>
+<entry>9.0%</entry>
+<entry>14.7%</entry>
+</row>
+<row>
+<entry>3 = Hispanic or Latino</entry>
+<entry>17.0%</entry>
+<entry>17.6%</entry>
+</row>
+<row>
+<entry>4 = American Indian or Alaska Native</entry>
+<entry>0.6%</entry>
+<entry>1.1%</entry>
+</row>
+<row>
+<entry>5 = White</entry>
+<entry>57.1%</entry>
+<entry>59.2%</entry>
+</row>
+<row>
+<entry>6 = Not reported/other</entry>
+<entry>6.0%</entry>
+<entry>1.7%</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-idp30402432">
+<figure id="M01_Ch02_fig003"><media id="bar_graph_Ap_Examinee" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows race and ethnicity, and the y-axis shows the percentages of AP examinees.">
+<image src="../../media/fig-ch02_03_03.jpg" mime-type="image/jpg" width="380"/></media>
+</figure></solution>
+</exercise>
+</example>
+
+<note id="fs-idp41522672" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm43065520">
+<problem id="fs-idp3652336">
+
+<para id="fs-idp31379616">Park city is broken down into six voting districts. The table shows the percent of the total registered voter population that lives in each district as well as the percent total of the entire population that lives in each district. Construct a bar graph that shows the registered voter population by district.</para><table id="M01_Ch02_tbl013" summary="">
+<tgroup cols="3" align="left">
+<colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row><entry>District</entry><entry>Registered voter population</entry><entry>Overall city population</entry></row>
+</thead>
+<tbody>
+<row><entry>1</entry><entry>15.5%</entry><entry>19.4%</entry></row>
+<row><entry>2</entry><entry>12.2%</entry><entry>15.6%</entry></row>
+<row><entry>3</entry><entry>9.8%</entry><entry>9.0%</entry></row>
+<row><entry>4</entry><entry>17.4%</entry><entry>18.5%</entry></row>
+<row><entry>5</entry><entry>22.8%</entry><entry>20.7%</entry></row>
+<row><entry>6</entry><entry>22.3%</entry><entry>16.8%</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+
+<solution id="fs-idm7917072" class="solutions">
+<label/>
+<figure id="M01_Ch02_fig004"><media id="fs-idm63847024" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows Park City voting districts, and the y-axis shows the percentages of the registered voter population.">
+<image src="../../media/CNX_Stats_C02_M03_tryit005.png" mime-type="image/png" width="400"/>
+</media>
+</figure></solution>
+</exercise>
+</note><example id="eip-605"><exercise id="eip-20"><problem id="eip-223">
+  <para id="eip-8">Below is a two-way table showing the types of pets owned by men and women:
+  </para>
+<table id="eip-638" summary="This table has four columns labelled dogs, cats, fish, and total. It has three rows labelled men, women, and total. The men row indicates four dogs, two cats, and two fish for a total of eight pets. The women row indicates four dogs, six cats, and two fish for a total of 12 pets. The total row indicates eight dogs, eight cats, and four fish for a total of 20 pets.">
+<tgroup cols="5"><tbody>
+  <row>
+    <entry/>
+    <entry><emphasis>Dogs</emphasis></entry>
+    <entry><emphasis>Cats</emphasis></entry>
+    <entry><emphasis>Fish</emphasis></entry>
+    <entry><emphasis>Total</emphasis></entry>
+  </row>
+  <row>
+    <entry><emphasis>Men</emphasis></entry>
+    <entry>4</entry>
+    <entry>2</entry>
+    <entry>2</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry><emphasis>Women</emphasis></entry>
+    <entry>4</entry>
+    <entry>6</entry>
+    <entry>2</entry>
+    <entry>12</entry>
+  </row>
+  <row>
+    <entry><emphasis>Total</emphasis></entry>
+    <entry>8</entry>
+    <entry>8</entry>
+    <entry>4</entry>
+    <entry>20</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><para id="eip-idm254696528">Given these data, calculate the conditional distributions for the subpopulation of men who own each pet type.</para>
+
+</problem>
+
+<solution id="eip-375">
+  <para id="eip-idm199240784">Men who own dogs = 4/8 = 0.5</para>
+  <para id="eip-idm199240400">Men who own cats = 2/8 = 0.25</para>
+  <para id="eip-idm202631920">Men who own fish = 2/8 = 0.25</para>
+  <para id="eip-idm473413280">Note: The sum of all of the conditional distributions must equal one. In this case, 0.5 + 0.25 + 0.25 = 1; therefore, the solution "checks".</para>
+</solution>
+</exercise></example></section><section id="fs-id1166882611091"><title>Histograms, Frequency Polygons, and Time Series Graphs</title><para id="eip-628">For most of the work you do in this book, you will use a histogram to display the data. One advantage of a histogram is that it can readily display large data sets. A rule of thumb is to use a histogram when the data set consists of 100 values or more.</para><para id="eip-855">A <term>histogram</term> consists of contiguous (adjoining) boxes. It has both a horizontal axis and a vertical axis. The horizontal axis is labeled with what the data represents (for instance, distance from your home to school). The vertical axis is labeled either <term>frequency</term> or <term>relative frequency</term> (or percent frequency or probability). The graph will have the same shape with either label. The histogram (like the stemplot) can give you the shape of the data, the center, and the spread of the data.</para><para id="eip-742">The relative frequency is equal to the frequency for an observed value of the data divided by the total number of data values in the sample.(Remember, frequency is defined as the number of times an answer occurs.) If:</para><list id="eip-189"><item><emphasis effect="italics">f</emphasis> = frequency</item>
+<item><emphasis effect="italics">n</emphasis> = total number of data values (or the sum of the individual frequencies), and</item>
+<item><emphasis effect="italics">RF</emphasis> = relative frequency,</item>
+</list><para id="eip-151">then:
+<equation class="unnumbered" id="element-1000"><label/><m:math>
+<m:semantics>
+<m:mrow>
+<m:mstyle fontsize="12pt">
+<m:mrow>
+<m:mrow>
+<m:mstyle fontstyle="italic">
+<m:mrow>
+<m:mtext>RF</m:mtext>
+</m:mrow>
+</m:mstyle>
+<m:mo stretchy="false">=</m:mo>
+<m:mfrac>
+<m:mstyle fontsize="8pt">
+<m:mrow>
+<m:mi>f</m:mi>
+</m:mrow>
+</m:mstyle>
+<m:mstyle fontsize="8pt">
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mstyle>
+</m:mfrac>
+</m:mrow>
+</m:mrow>
+</m:mstyle>
+<m:mrow/>
+</m:mrow>
+</m:semantics>
+</m:math>
+</equation></para><para id="eip-296">For example, if three students in Mr. Ahab's English class of 40 students received from 90% to 100%, then, <!--<newline count="1"/>--><emphasis effect="italics">f</emphasis> = 3, <emphasis effect="italics">n</emphasis> = 40, and <emphasis effect="italics">RF</emphasis> = <m:math> <m:mrow><m:mfrac><m:mi>f</m:mi><m:mi>n</m:mi></m:mfrac></m:mrow></m:math> = <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:math> = 0.075. 7.5% of the students received 90–100%. 90–100% are quantitative measures.</para><para id="eip-226"><emphasis>To construct a histogram</emphasis>, first decide how many <emphasis>bars</emphasis> or <emphasis>intervals</emphasis>, also called classes, represent the data. Many histograms consist of five to 15 bars or classes for clarity. The number of bars needs to be chosen. Choose a starting point for the first interval to be less than the smallest data value. A <emphasis>convenient starting point</emphasis> is a lower value carried out to one more decimal place than the value with the most decimal places. For example, if the value with the most decimal places is 6.1 and this is the smallest value, a convenient starting point is 6.05 (6.1 – 0.05 = 6.05). We say that 6.05 has more precision. If the value with the most decimal places is 2.23 and the lowest value is 1.5, a convenient starting point is 1.495 (1.5 – 0.005 = 1.495). If the value with the most decimal places is 3.234 and the lowest value is 1.0, a convenient starting point is 0.9995 (1.0 – 0.0005 = 0.9995). If all the data happen to be integers and the smallest value is two, then a convenient starting point is 1.5 (2 – 0.5 = 1.5). Also, when the starting point and other boundaries are carried to one additional decimal place, no data value will fall on a boundary. The next two examples go into detail about how to construct a histogram using continuous data and how to create a histogram using discrete data.</para><example id="eip-266"><para id="eip-id1167909692911">The following data are the heights (in inches to the nearest half inch) of 100 male semiprofessional soccer players. The heights are <emphasis>continuous</emphasis> data, since height is measured.
+<newline/>60; 60.5; 61; 61; 61.5
+<newline/>63.5; 63.5; 63.5
+<newline/>64; 64; 64; 64; 64; 64; 64; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5
+<newline/>66; 66; 66; 66; 66; 66; 66; 66; 66; 66; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5
+<newline/>68; 68; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69.5; 69.5; 69.5; 69.5; 69.5
+<newline/>70; 70; 70; 70; 70; 70; 70.5; 70.5; 70.5; 71; 71; 71
+<newline/>72; 72; 72; 72.5; 72.5; 73; 73.5
+<newline/>74
+</para><para id="eip-id1167906875400">The smallest data value is 60. Since the data with the most decimal places has one decimal (for instance, 61.5), we want our starting point to have two decimal places. Since the numbers 0.5, 0.05, 0.005, etc. are convenient numbers, use 0.05 and subtract it from 60, the smallest value, for the convenient starting point.</para>
+<para id="eip-id1167909600123">60 – 0.05 = 59.95 which is more precise than, say, 61.5 by one decimal place. The starting point is, then, 59.95.</para><para id="eip-id1167909517627">The largest value is 74, so 74 + 0.05 = 74.05 is the ending value.</para><para id="eip-id1167893220376">Next, calculate the width of each bar or class interval. To calculate this width, subtract the starting point from the ending value and divide by the number of bars (you must choose the number of bars you desire). Suppose you choose eight bars.</para>
+<equation class="unnumbered" id="eip-id1167906381248">
+<m:math>
+<m:apply>
+<m:eq/>
+<m:apply>
+<m:divide/>
+<m:apply>
+<m:minus/>
+<m:cn>74.05</m:cn>
+<m:cn>59.95</m:cn>
+</m:apply>
+<m:cn>8</m:cn>
+</m:apply>
+<m:cn>1.76</m:cn>
+</m:apply>
+</m:math>
+</equation>
+
+<note id="eip-id1167908046053">
+<label/><title>NOTE</title>
+<para id="eip-id1167907308537">We will round up to two and make each bar or class interval two units wide. Rounding up to two  is one way to prevent a value from falling on a boundary. Rounding to the next number is often necessary even if it goes against the standard rules of rounding. For this example, using 1.76 as the width would also work. A guideline that is followed by some for the width of a bar or class interval is to take the square root of the number of data values and then round to the nearest whole number, if necessary. For example, if there are 150 values of data, take the square root of 150 and round to 12 bars or intervals.</para></note>
+<para id="eip-id1167912963495">The boundaries are:</para>
+<list id="eip-id1167895853518" list-type="bulleted">
+<item>59.95</item>
+<item>59.95 + 2 = 61.95</item>
+<item>61.95 + 2 = 63.95</item>
+<item>63.95 + 2 = 65.95</item>
+<item>65.95 + 2 = 67.95</item>
+<item>67.95 + 2 = 69.95</item>
+<item>69.95 + 2 = 71.95</item>
+<item>71.95 + 2 = 73.95</item>
+<item>73.95 + 2 = 75.95</item>
+</list>
+<para id="eip-id1167904896496">The heights 60 through 61.5 inches are in the interval 59.95–61.95. The heights that are 63.5 are in the interval 61.95–63.95. The heights that are 64 through 64.5 are in the interval 63.95–65.95. The heights 66 through 67.5 are in the interval 65.95–67.95. The heights 68 through 69.5 are in the interval 67.95–69.95. The heights 70 through 71 are in the interval 69.95–71.95. The heights 72 through 73.5 are in the interval 71.95–73.95. The height 74 is in the interval 73.95–75.95.</para>
+<para id="eip-id1167901580085">The following histogram displays the heights on the <emphasis effect="italics">x</emphasis>-axis and relative frequency on the <emphasis effect="italics">y</emphasis>-axis.</para>
+<figure id="eip-id1167910242965">
+<media id="eip-id8485603" alt="Histogram consists of 8 bars with the y-axis in increments of 0.05 from 0-0.4 and the x-axis in intervals of 2 from 59.95-75.95." display="block"><image src="../../media/fig-ch_02_04_01.jpg" mime-type="image/png" width="350"/></media>
+</figure>
+</example><note id="eip-467" class="statistics try"><label/><title>Try It</title>
+
+<exercise id="eip-id1167302010399">
+<problem id="eip-id1167302034000">
+<para id="eip-id1167305649518">The following data are the shoe sizes of 50 male students. The sizes are continuous data since shoe size is measured. Construct a histogram and calculate the width of each bar or class interval. Suppose you choose six bars.
+<newline/>9; 9; 9.5; 9.5; 10; 10; 10; 10; 10; 10; 10.5; 10.5; 10.5; 10.5; 10.5; 10.5; 10.5; 10.5
+<newline/>11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11; 11.5; 11.5; 11.5; 11.5; 11.5; 11.5; 11.5
+<newline/>12; 12; 12; 12; 12; 12; 12; 12.5; 12.5; 12.5; 12.5; 14</para></problem>
+
+<solution id="eip-id1167295062995" class="solutions">
+<label/>
+<para id="eip-id1167306042977">Smallest value: 9</para>
+<para id="eip-id1167306631262">Largest value: 14</para>
+<para id="eip-id1167309251362">Convenient starting value: 9 – 0.05 = 8.95</para>
+<para id="eip-id1167306585142">Convenient ending value: 14 + 0.05 = 14.05</para>
+<para id="eip-id1167295320191"><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>14.05</m:mn><m:mo>−</m:mo><m:mn>8.95</m:mn>
+</m:mrow>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>0.85</m:mn>
+</m:mrow>
+</m:math></para>
+<para id="eip-id1167314615413">The calculations suggests using 0.85 as the width of each bar or class interval. You can also use an interval with a width equal to one.</para></solution>
+</exercise>
+</note><example id="eip-220"><para id="eip-id1172534582317">Create a histogram for the following data: the number of books bought by 50 part-time college students at ABC College. The number of books is <emphasis>discrete data</emphasis>, since books are counted.
+<newline/>1; 1; 1; 1; 1; 1; 1; 1; 1; 1; 1
+<newline/>2; 2; 2; 2; 2; 2; 2; 2; 2; 2
+<newline/>3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3; 3
+<newline/>4; 4; 4; 4; 4; 4
+<newline/>5; 5; 5; 5; 5
+<newline/>6; 6</para><para id="eip-id1172517659297">Eleven students buy one book. Ten students buy two books. Sixteen students buy three books. Six students buy four books. Five students buy five books. Two students buy six books.</para>
+<para id="eip-id1172523309753">Because the data are integers, subtract 0.5 from 1, the smallest data value and add 0.5 to 6, the largest data value. Then the starting point is 0.5 and the ending value is 6.5.</para>
+
+<exercise id="eip-id1172522842880"><problem id="eip-id1172519384374">
+<para id="eip-id1172517159639">Next, calculate the width of each bar or class interval. If the data are discrete and there are not too many different values, a width that places the data values in the middle of the bar or class interval is the most convenient. Since the data consist of the numbers 1, 2, 3, 4, 5, 6, and the starting point is 0.5, a width of one places the 1 in the middle of the interval from 0.5 to 1.5, the 2 in the middle of the interval from 1.5 to 2.5, the 3 in the middle of the interval from 2.5 to 3.5, the 4 in the middle of the interval from _______ to _______, the 5 in the middle of the interval from _______ to _______, and the _______ in the middle of the interval from _______ to _______ .</para>
+</problem>
+<solution id="eip-id1172530098030" print-placement="end">
+<list id="eip-id1172523021444" list-type="bulleted">
+<item>3.5 to 4.5</item>
+<item>4.5 to 5.5</item>
+<item>6</item>
+<item>5.5 to 6.5</item>
+</list>
+</solution>
+</exercise><para id="eip-id1172519284498">Calculate the number of bars as follows: </para>
+<equation id="eip-id1172520578091">
+<m:math>
+<m:apply>
+<m:eq/>
+<m:apply>
+<m:divide/>
+<m:apply>
+<m:minus/>
+<m:cn>6.5</m:cn>
+<m:cn>0.5</m:cn>
+</m:apply>
+<m:ci>number of bars</m:ci>
+</m:apply>
+<m:cn>1</m:cn>
+</m:apply>
+</m:math>
+</equation>
+<para id="eip-id1172522416147">where 1 is the width of a bar. Therefore, bars = 6.</para>
+<para id="eip-id1172519874453">The following histogram displays the number of books on the <emphasis effect="italics">x</emphasis>-axis and the frequency on the <emphasis effect="italics">y</emphasis>-axis.</para>
+<figure id="eip-id1172535431639">
+<media id="eip-id1172523170158" alt="Histogram consists of 6 bars with the y-axis in increments of 2 from 0-16 and the x-axis in intervals of 1 from 0.5-6.5." display="block"><image src="../../media/fig-ch_02_04_02.jpg" mime-type="image/png" width="380"/></media>
+</figure>
+</example><example id="eip-231"><exercise id="eip-id8875262">
+<problem id="eip-id8875264"><para id="eip-id8875265">Using this data set, construct a histogram.</para>
+<table id="eip-id8875300" summary="---">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry namest="c1" nameend="c5">Number of hours my classmates spent playing video games on weekends</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>9.95</entry>
+<entry>10</entry>
+<entry>2.25</entry>
+<entry>16.75</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry>19.5</entry>
+<entry>22.5</entry>
+<entry>7.5</entry>
+<entry>15</entry>
+<entry>12.75</entry>
+</row>
+<row>
+<entry>5.5</entry>
+<entry>11</entry>
+<entry>10</entry>
+<entry>20.75</entry>
+<entry>17.5</entry>
+</row>
+<row>
+<entry>23</entry>
+<entry>21.9</entry>
+<entry>24</entry>
+<entry>23.75</entry>
+<entry>18</entry>
+</row>
+<row>
+<entry>20</entry>
+<entry>15</entry>
+<entry>22.9</entry>
+<entry>18.8</entry>
+<entry>20.5</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+<solution id="eip-id8878269">
+<figure id="eip-id8878271"><media id="eip-id8878272" alt="This is a histogram that matches the supplied data. The x-axis consists of 5 bars in intervals of 5 from 0 to 25. The y-axis is marked in increments of 1 from 0 to 10. The x-axis shows the number of hours spent playing video games on the weekends, and the y-axis shows the number of students." display="block"><image mime-type="image/png" src="../../media/CNX_Stats_C02_M04_020.jpg" width="400"/></media>
+</figure>
+<para id="eip-id8878311">Some values in this data set fall on boundaries for the class intervals. A value is counted in a class interval if it falls on the left boundary, but not if it falls on the right boundary. Different researchers may set up histograms for the same data in different ways. There is more than one correct way to set up a histogram.</para>
+</solution>
+</exercise>
+</example><section id="eip-454"><title>Frequency Polygons</title><para id="eip-id1166383310686">Frequency polygons are analogous to line graphs, and just as line graphs make continuous data visually easy to interpret, so too do frequency polygons.</para>
+<para id="eip-id1166383311396">To construct a frequency polygon, first examine the data and decide on the number of intervals, or class intervals, to use on the <emphasis effect="italics">x</emphasis>-axis and <emphasis effect="italics">y</emphasis>-axis. After choosing the appropriate ranges, begin plotting the data points. After all the points are plotted, draw line segments to connect them.</para><example id="eip-id1166383300854"><para id="eip-id1166383300640">A frequency polygon was constructed from the frequency table below.</para>
+<table id="eip-id1166383312540" summary="---">
+<tgroup cols="4" align="center"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<thead>
+<row><entry namest="c1" nameend="c4">Frequency distribution for calculus final test scores</entry></row>
+<row><entry>Lower bound</entry><entry>Upper bound</entry>	<entry>Frequency</entry><entry>Cumulative frequency</entry></row>
+</thead>
+<tbody>
+<row>
+<entry>49.5</entry>
+<entry>59.5</entry><entry>5</entry><entry>5</entry>
+</row>
+<row><entry>59.5</entry><entry>69.5</entry><entry>10</entry><entry>15</entry></row><row><entry>69.5</entry><entry>79.5</entry>	<entry>30</entry><entry>45</entry></row><row><entry>79.5</entry><entry>89.5</entry><entry>40</entry><entry>85</entry></row>
+<row><entry>89.5</entry><entry>99.5</entry><entry>15</entry><entry>100</entry></row>
+</tbody>
+
+</tgroup>
+</table><figure id="eip-id1166383322086">
+<media id="eip-id1166383321264" display="block" alt="A frequency polygon was constructed from the frequency table below.">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M05a_001.jpg" width="350"/>
+</media>
+</figure>
+<para id="eip-id1166383324270">The first label on the <emphasis effect="italics">x</emphasis>-axis is 44.5. This represents an interval extending from 39.5 to 49.5. Since the lowest test score is 54.5, this interval is used only to allow the graph to touch the <emphasis effect="italics">x</emphasis>-axis. The point labeled 54.5 represents the next interval, or the first “real” interval from the table, and contains five scores. This reasoning is followed for each of the remaining intervals with the point 104.5 representing the interval from 99.5 to 109.5. Again, this interval contains no data and is only used so that the graph will touch the <emphasis effect="italics">x</emphasis>-axis. Looking at the graph, we say that this distribution is skewed because one side of the graph does not mirror the other side.</para>
+</example>
+
+
+<note id="eip-id1166383329059" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="eip-id1166383494238"><problem id="eip-id1166383496203">
+<para id="eip-id1166383495068">Construct a frequency polygon of U.S. Presidents’ ages at inauguration shown in <link target-id="fs-idp36852784"/>.</para><table id="fs-idp36852784" summary="---">
+<tgroup cols="2" align="center"><thead>
+<row><entry>Age at inauguration</entry><entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>41.5–46.5</entry><entry>4</entry></row>
+<row><entry>46.5–51.5</entry><entry>11</entry></row>
+<row><entry>51.5–56.5</entry><entry>14</entry></row>
+<row><entry>56.5–61.5</entry><entry>9</entry></row>
+<row><entry>61.5–66.5</entry><entry>4</entry></row>
+<row><entry>66.5–71.5</entry><entry>2</entry></row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="eip-id1166383507893" class="solutions">
+<para id="eip-id1166383508108">The first label on the <emphasis effect="italics">x</emphasis>-axis is 39. This represents an interval extending from 36.5 to 41.5. Since there are no ages less than 41.5, this interval is used only to allow the graph to touch the <emphasis effect="italics">x</emphasis>-axis. The point labeled 44 represents the next interval, or the first “real” interval from the table, and contains four scores. This reasoning is followed for each of the remaining intervals with the point 74 representing the interval from 71.5 to 76.5. Again, this interval contains no data and is only used so that the graph will touch the <emphasis effect="italics">x</emphasis>-axis. Looking at the graph, we say that this distribution is skewed because one side of the graph does not mirror the other side.</para><figure id="eip-id1166383322340"><media id="eip-id1166383322232" alt="This figure shows a graph entitled, 'President's Age at Inauguration.' The x-axis is labeled 'Ages' and is marked off at 39, 44, 49, 54, 59, 64, 69 and 74. The y-axis is labeled, 'Frequency,' and is marked off in intervals of 1 from 0 to 15. The following points are plotted and a line connects one to the other to create the frequency polygon: (39, 0), (44, 4), (49, 11), (54, 14), (59, 9), (64, 4), (69, 2), (74, 0).">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M02_001.jpg" width="400"/>
+</media>
+</figure></solution>
+</exercise></note>
+
+<para id="eip-id1166383511149">Frequency polygons are useful for comparing distributions. This is achieved by overlaying the frequency polygons drawn for different data sets.</para>
+
+<example id="eip-id1166383511860"><para id="eip-id1166383512002">We will construct an overlay frequency polygon comparing the scores from <link target-id="eip-id1166383300854"/> with the students’ final numeric grade.</para><table id="eip-id1166383512079" summary="---">
+<tgroup cols="4" align="center"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<thead>
+<row><entry namest="c1" nameend="c4">Frequency distribution for calculus final test scores</entry></row>
+<row><entry>Lower bound</entry><entry>Upper bound</entry>	<entry>Frequency</entry><entry>Cumulative frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>49.5</entry><entry>59.5</entry><entry>5</entry>	<entry>5</entry></row>
+<row><entry>59.5</entry><entry>69.5</entry><entry>10</entry>	<entry>15</entry></row>
+<row><entry>69.5</entry><entry>79.5</entry><entry>30</entry>	<entry>45</entry></row>
+<row><entry>79.5</entry><entry>89.5</entry><entry>40</entry>	<entry>85</entry></row>
+<row><entry>89.5</entry><entry>99.5</entry><entry>15</entry>	<entry>100</entry></row>
+</tbody>
+
+</tgroup>
+</table><table id="eip-id1166383525657" summary="---">
+<tgroup cols="4" align="center"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<thead>
+<row><entry namest="c1" nameend="c4">Frequency distribution for calculus final grades</entry></row>
+<row><entry>Lower bound</entry>	<entry>Upper bound</entry>	<entry>Frequency</entry><entry>Cumulative frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>49.5</entry><entry>59.5</entry><entry>10</entry>	<entry>10</entry></row>
+<row><entry>59.5</entry><entry>69.5</entry><entry>10</entry>	<entry>20</entry></row>
+<row><entry>69.5</entry><entry>79.5</entry><entry>30</entry>	<entry>50</entry></row>
+<row><entry>79.5</entry><entry>89.5</entry><entry>45</entry>	<entry>95</entry></row>
+<row><entry>89.5</entry><entry>99.5</entry><entry>5</entry>	<entry>100</entry></row>
+</tbody>
+
+</tgroup>
+</table><figure id="eip-id2253979">
+<media id="eip-id2606644" display="block" alt="This is an overlay frequency polygon that matches the supplied data. The x-axis shows the grades, and the y-axis shows the frequency.">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M05a_002N.jpg" width="350"/>
+</media></figure>
+</example></section><section id="eip-332"><title>Constructing a Time Series Graph</title><para id="eip-321">Suppose that we want to study the temperature range of a region for an entire month. Every day at noon we note the temperature and write this down in a log. A variety of statistical studies could be done with these data. We could find the mean or the median temperature for the month. We could construct a histogram displaying the number of days that temperatures reach a certain range of values. However, all of these methods ignore a portion of the data that we have collected.</para><para id="eip-946">One feature of the data that we may want to consider is that of time. Since each date is paired with the temperature reading for the day, we don‘t have to think of the data as being random. We can instead use the times given to impose a chronological order on the data. A graph that recognizes this ordering and displays the changing temperature as the month progresses is called a time series graph.</para><para id="eip-id1170175727629">To construct a time series graph, we must look at both pieces of our <term>paired data set</term>. We start with a standard Cartesian coordinate system. The horizontal axis is used to plot the date or time increments, and the vertical axis is used to plot the values of the variable that we are measuring. By doing this, we make each point on the graph correspond to a date and a measured quantity. The points on the graph are typically connected by straight lines in the order in which they occur.</para>
+
+<example id="eip-id1170188982289"><exercise id="eip-id1170176006374">
+<problem id="eip-id1170181274492"><para id="eip-id1170188842575">The following data shows the Annual Consumer Price Index, each month, for ten years. Construct a time series graph for the Annual Consumer Price Index data only.</para><table id="eip-id1170180822728" summary="">
+<tgroup cols="8">
+<colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="1" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<thead>
+<row valign="middle">
+<entry>Year</entry><entry>Jan</entry><entry>Feb</entry><entry>Mar</entry><entry>Apr</entry><entry>May</entry><entry>Jun</entry><entry>Jul</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><emphasis effect="bold">2003</emphasis></entry>
+<entry>181.7</entry><entry>183.1</entry><entry>184.2</entry><entry>183.8</entry>
+<entry>183.5</entry><entry>183.7</entry><entry>183.9</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2004</emphasis></entry>
+<entry>185.2</entry><entry>186.2</entry><entry>187.4</entry><entry>188.0</entry>
+<entry>189.1</entry><entry>189.7</entry><entry>189.4</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2005</emphasis></entry>
+<entry>190.7</entry><entry>191.8</entry><entry>193.3</entry><entry>194.6</entry>
+<entry>194.4</entry><entry>194.5</entry><entry>195.4</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2006</emphasis></entry>
+<entry>198.3</entry><entry>198.7</entry><entry>199.8</entry><entry>201.5</entry>	<entry>202.5</entry><entry>202.9</entry><entry>203.5</entry></row>
+<row>
+<entry><emphasis effect="bold">2007</emphasis></entry>
+<entry>202.416</entry><entry>203.499</entry><entry>205.352</entry>
+<entry>206.686</entry><entry>207.949</entry><entry>208.352</entry>
+<entry>208.299</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2008</emphasis></entry>
+<entry>211.080</entry><entry>211.693</entry><entry>213.528</entry>
+<entry>214.823</entry><entry>216.632</entry><entry>218.815</entry>
+<entry>219.964</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2009</emphasis></entry>
+<entry>211.143</entry><entry>212.193</entry><entry>212.709</entry>
+<entry>213.240</entry><entry>213.856</entry><entry>215.693</entry>
+<entry>215.351</entry></row>
+<row>
+<entry><emphasis effect="bold">2010</emphasis></entry>
+<entry>216.687</entry><entry>216.741</entry><entry>217.631</entry>
+<entry>218.009</entry><entry>218.178</entry><entry>217.965</entry>
+<entry>218.011</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2011</emphasis></entry>
+<entry>220.223</entry><entry>221.309</entry><entry>223.467</entry>
+<entry>224.906</entry><entry>225.964</entry><entry>225.722</entry>
+<entry>225.922</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2012</emphasis></entry>
+<entry>226.665</entry><entry>227.663</entry><entry>229.392</entry>
+<entry>230.085</entry><entry>229.815</entry><entry>229.478</entry>
+<entry>229.104</entry></row>
+</tbody>
+</tgroup>
+</table>
+
+
+<table id="eip-id1170183301471" summary=""><tgroup cols="8">
+<colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="1" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<thead>
+<row>
+<entry>Year</entry>
+<entry>Aug</entry><entry>Sep</entry><entry>Oct</entry><entry>Nov</entry><entry>Dec</entry><entry>Annual</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><emphasis effect="bold">2003</emphasis></entry>
+<entry>184.6</entry>
+<entry>185.2</entry><entry>185.0</entry><entry>184.5</entry><entry>184.3</entry>
+<entry>184.0</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2004</emphasis></entry>
+<entry>189.5</entry>
+<entry>189.9</entry><entry>190.9</entry><entry>191.0</entry><entry>190.3</entry>
+<entry>188.9</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2005</emphasis></entry>
+<entry>196.4</entry>
+<entry>198.8</entry><entry>199.2</entry><entry>197.6</entry><entry>196.8</entry>
+<entry>195.3</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2006</emphasis></entry>
+<entry>203.9</entry>	<entry>202.9</entry><entry>201.8</entry><entry>201.5</entry><entry>201.8</entry>	<entry>201.6</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2007</emphasis></entry>
+<entry>207.917</entry><entry>208.490</entry>
+<entry>208.936</entry><entry>210.177</entry><entry>210.036</entry>
+<entry>207.342</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2008</emphasis></entry>
+<entry>219.086</entry><entry>218.783</entry>
+<entry>216.573</entry><entry>212.425</entry><entry>210.228</entry>
+<entry>215.303</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2009</emphasis></entry>
+<entry>215.834</entry><entry>215.969</entry>
+<entry>216.177</entry><entry>216.330</entry><entry>215.949</entry>
+<entry>214.537</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2010</emphasis></entry>
+<entry>218.312</entry><entry>218.439</entry>
+<entry>218.711</entry><entry>218.803</entry><entry>219.179</entry>
+<entry>218.056</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2011</emphasis></entry>
+<entry>226.545</entry><entry>226.889</entry>
+<entry>226.421</entry><entry>226.230</entry><entry>225.672</entry>
+<entry>224.939</entry>
+</row>
+<row>
+<entry><emphasis effect="bold">2012</emphasis></entry>
+<entry>230.379</entry><entry>231.407</entry>
+<entry>231.317</entry><entry>230.221</entry><entry>229.601</entry>
+<entry>229.594</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+<solution id="eip-id1170177124337">
+<figure id="eip-id1170182607533">
+<media id="eip-id1170191570305" display="block" alt="This is a times series graph that matches the supplied data. The x-axis shows years from 2003 to 2012, and the y-axis shows the annual CPI.">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M05a_026annoN.jpg" width="400"/>
+</media>
+</figure>
+</solution>
+</exercise>
+
+</example>
+
+<note id="eip-id1170178622023" class="statistics try"><label/><title>Try It</title>
+
+<exercise id="eip-id1170189102780"><problem id="eip-id1170190162429">
+<para id="eip-id1170181886526">The following table is a portion of a data set from www.worldbank.org. Use the table to construct a time series graph for CO<sub>2</sub> emissions for the United States.</para>
+
+<table id="eip-id1170194318502" summary=""><tgroup cols="5" align="center">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+
+<thead>
+<row>
+<entry namest="c1" nameend="c4">CO<sub>2</sub> emissions</entry>
+</row>
+<row>
+<entry>Year</entry>
+<entry>Ukraine</entry>
+<entry>United Kingdom</entry>
+<entry>United States</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><emphasis>2003</emphasis></entry>
+<entry>352,259</entry>
+<entry>540,640</entry>
+<entry>5,681,664</entry>
+</row>
+<row>
+<entry><emphasis>2004</emphasis></entry>
+<entry>343,121</entry>
+<entry>540,409</entry>
+<entry>5,790,761</entry>
+</row>
+<row>
+<entry><emphasis>2005</emphasis></entry>
+<entry>339,029</entry>
+<entry>541,990</entry>
+<entry>5,826,394</entry>
+</row>
+<row>
+<entry><emphasis>2006</emphasis></entry>
+<entry>327,797</entry>
+<entry>542,045</entry>
+<entry>5,737,615</entry>
+</row>
+<row>
+<entry><emphasis>2007</emphasis></entry>
+<entry>328,357</entry>
+<entry>528,631</entry>
+<entry>5,828,697</entry>
+</row>
+<row>
+<entry><emphasis>2008</emphasis></entry>
+<entry>323,657</entry>
+<entry>522,247</entry>
+<entry>5,656,839</entry>
+</row>
+<row>
+<entry><emphasis>2009</emphasis></entry>
+<entry>272,176</entry>
+<entry>474,579</entry>
+<entry>5,299,563</entry>
+</row>
+</tbody>
+</tgroup>
+</table></problem>
+
+<solution id="eip-id1170183528009" class="solutions">
+<label/>
+<figure id="eip-id1170193302065"><media id="eip-id1170185012071" display="block" alt="This is a times series graph that matches the supplied data. The x-axis shows years from 2003 to 2012, and the y-axis shows the annual CPI.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C02_M05b_004.png" width="450"/>
+</media>
+</figure></solution>
+</exercise></note>
+
+</section></section><section id="eip-720"><title>Uses of a Time Series Graph</title><para id="eip-id1170191601646">Time series graphs are important tools in various applications of statistics. When recording values of the same variable over an extended period of time, sometimes it is difficult to discern any trend or pattern. However, once the same data points are displayed graphically, some features jump out. Time series graphs make trends easy to spot.</para>
+
+</section><section id="eip-48"><title>How NOT to Lie with Statistics</title><para id="eip-577">It is important to remember that the very reason we develop a variety of methods to present data is to develop insights into the subject of what the observations represent. We want to get a "sense" of the data. Are the observations all very much alike or are they spread across a wide range of values, are they bunched at one end of the spectrum or are they distributed evenly and so on. We are trying to get a visual picture of the numerical data. Shortly we will develop formal mathematical measures of the data, but our visual graphical presentation can say much. It can, unfortunately, also say much that is distracting, confusing and simply wrong in terms of the impression the visual leaves. Many years ago Darrell Huff wrote the book <emphasis effect="italics">How to Lie with Statistics</emphasis>. It has been through 25 plus printings and sold more than one and one-half million copies. His perspective was a harsh one and used many actual examples that were designed to mislead. He wanted to make people aware of such deception, but perhaps more importantly to educate so that others do not make the same errors inadvertently.
+</para><para id="eip-133">Again, the goal is to enlighten with visuals that tell the story of the data. Pie charts have a number of common problems when used to convey the message of the data. Too many pieces of the pie overwhelm the reader. More than perhaps five or six categories ought to give an idea of the relative importance of each piece. This is after all the goal of a pie chart, what subset matters most relative to the others. If there are more components than this then perhaps an alternative approach would be better or perhaps some can be consolidated into an "other" category. Pie charts cannot show changes over time, although we see this attempted all too often. In federal, state, and city finance documents pie charts are often presented to show the components of revenue available to the governing body for appropriation: income tax, sales tax motor vehicle taxes and so on. In and of itself this is interesting information and can be nicely done with a pie chart. The error occurs when two years are set side-by-side. Because the total revenues change year to year, but the size of the pie is fixed, no real information is provided and the relative size of each piece of the pie cannot be meaningfully compared. </para><para id="eip-961">Histograms can be very helpful in understanding the data. Properly presented, they can be a quick visual way to present probabilities of different categories by the simple visual of comparing relative areas in each category. Here the error, purposeful or not, is to vary the width of the categories. This of course makes comparison to the other categories impossible. It does embellish the importance of the category with the expanded width because it has a greater area, inappropriately, and thus visually "says" that that category has a higher probability of occurrence. </para><para id="eip-670">Time series graphs perhaps are the most abused. A plot of some variable across time should never be presented on axes that change part way across the page either in the vertical or horizontal dimension. Perhaps the time frame is changed from years to months. Perhaps this is to save space or because monthly data was not available for early years. In either case this confounds the presentation and destroys any value of the graph. If this is not done to purposefully confuse the reader, then it certainly is either lazy or sloppy work.</para><para id="eip-123">Changing the units of measurement of the axis can smooth out a drop or accentuate one. If you want to show large changes, then measure the variable in small units, penny rather than thousands of dollars. And of course to continue the fraud, be sure that the axis does not begin at zero, zero. If it begins at zero, zero, then it becomes apparent that the axis has been manipulated.</para><para id="eip-958">Perhaps you have a client that is concerned with the volatility of the portfolio you manage. An easy way to present the data is to use long time periods on the time series graph. Use months or better, quarters rather than daily or weekly data. If that doesn't get the volatility down then spread the time axis relative to the rate of return or portfolio valuation axis. If you want to show "quick" dramatic growth, then shrink the time axis. Any positive growth will show visually "high" growth rates. Do note that if the growth is negative then this trick will show the portfolio is collapsing at a dramatic rate.</para><para id="eip-757">Again, the goal of descriptive statistics is to convey meaningful visuals that tell the story of the data. Purposeful manipulation is fraud and unethical at the worst, but even at its best, making these type of errors will lead to confusion on the part of the analysis.</para></section><section id="eip-617" class="references"><title>References</title><para id="fs-idm29098416">Burbary, Ken. <emphasis effect="italics">Facebook Demographics Revisited – 2001 Statistics,</emphasis> 2011. Available online at http://www.kenburbary.com/2011/03/facebook-demographics-revisited-2011-statistics-2/ (accessed August 21, 2013).</para><para id="fs-idm29098160">“9th Annual AP Report to the Nation.” CollegeBoard, 2013. Available online at http://apreport.collegeboard.org/goals-and-findings/promoting-equity (accessed September 13, 2013).</para>
+<para id="eip-id1164114791931">“Overweight and Obesity: Adult Obesity Facts.” Centers for Disease Control and Prevention. Available online at http://www.cdc.gov/obesity/data/adult.html (accessed September 13, 2013).</para>
+
+<para id="eip-id1164117989684">Data on annual homicides in Detroit, 1961–73, from Gunst &amp; Mason’s book ‘Regression Analysis and its Application’, Marcel Dekker</para><para id="eip-id1164130342859">“Timeline: Guide to the U.S. Presidents: Information on every president’s birthplace, political party, term of office, and more.” Scholastic, 2013. Available online at http://www.scholastic.com/teachers/article/timeline-guide-us-presidents (accessed April 3, 2013).</para>
+<para id="eip-id1164136510272">“Presidents.” Fact Monster. Pearson Education, 2007. Available online at http://www.factmonster.com/ipka/A0194030.html (accessed April 3, 2013).</para>
+<para id="eip-id1164128347536">“Food Security Statistics.” Food and Agriculture Organization of the United Nations. Available online at http://www.fao.org/economic/ess/ess-fs/en/ (accessed April 3, 2013).</para>
+<para id="eip-id1164115084428">“Consumer Price Index.” United States Department of Labor: Bureau of Labor Statistics. Available online at http://data.bls.gov/pdq/SurveyOutputServlet (accessed April 3, 2013).</para>
+<para id="eip-id1164130534034">“CO2 emissions (kt).” The World Bank, 2013. Available online at http://databank.worldbank.org/data/home.aspx (accessed April 3, 2013).</para>
+<para id="eip-id1164119394426">“Births Time Series Data.” General Register Office For Scotland, 2013. Available online at http://www.gro-scotland.gov.uk/statistics/theme/vital-events/births/time-series.html (accessed April 3, 2013).</para>
+<para id="eip-id1164137159335">“Demographics: Children under the age of 5 years underweight.” Indexmundi. Available online at http://www.indexmundi.com/g/r.aspx?t=50&amp;v=2224&amp;aml=en (accessed April 3, 2013).</para><para id="eip-id1164129524368">Gunst, Richard, Robert Mason. <emphasis effect="italics">Regression Analysis and Its Application: A Data-Oriented Approach</emphasis>. CRC Press: 1980.</para><para id="eip-id1164119697812">“Overweight and Obesity: Adult Obesity Facts.” Centers for Disease Control and Prevention. Available online at http://www.cdc.gov/obesity/data/adult.html (accessed September 13, 2013).</para>
+</section><section id="eip-397" class="summary"><title>Chapter Review</title><para id="eip-id1169540486867">A <emphasis>stem-and-leaf plot</emphasis> is a way to plot data and look at the distribution. In a stem-and-leaf plot, all data values within a class are visible. The advantage in a stem-and-leaf plot is that all values are listed, unlike a histogram, which gives classes of data values. A <emphasis>line graph</emphasis> is often used to represent a set of data values in which a quantity varies with time. These graphs are useful for finding trends. That is, finding a general pattern in data sets including temperature, sales, employment, company profit or cost over a period of time. A <emphasis>bar graph</emphasis> is a chart that uses either horizontal or vertical bars to show comparisons among categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. Some bar graphs present bars clustered in groups of more than one (grouped bar graphs), and others show the bars divided into subparts to show cumulative effect (stacked bar graphs). Bar graphs are especially useful when categorical data is being used.</para><para id="eip-650">A <emphasis>histogram</emphasis> is a graphic version of a frequency distribution. The graph consists of bars of equal width drawn adjacent to each other. The horizontal scale represents classes of quantitative data values and the vertical scale represents frequencies. The heights of the bars correspond to frequency values. Histograms are typically used for large, continuous, quantitative data sets. A frequency polygon can also be used when graphing large data sets with data points that repeat. The data usually goes on <emphasis effect="italics">y</emphasis>-axis with the frequency being graphed on the <emphasis effect="italics">x</emphasis>-axis. Time series graphs can be helpful when looking at large amounts of data for one variable over a period of time.</para></section><section id="eip-333" class="practice"><title/><para id="eip-488"><newline/><emphasis effect="italics">For the next three exercises, use the data to construct a line graph.</emphasis></para><exercise id="fs-idp113295424">
+<problem id="fs-idp29821584">
+<para id="fs-idp29821712">In a survey, 40 people were asked how many times they visited a store before making a major purchase. The results are shown in <link target-id="M01_Ch02_tbl018"/>.</para><table id="M01_Ch02_tbl018" summary="">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry>Number of times in store</entry><entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>1</entry><entry>4</entry></row>
+<row><entry>2</entry><entry>10</entry></row>
+<row><entry>3</entry><entry>16</entry></row>
+<row><entry>4</entry><entry>6</entry></row>
+<row><entry>5</entry><entry>4</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-idp47635040">
+<figure id="fs-idp29124208"><media id="fs-idp63600976" display="block" alt="This is a line graph that matches the supplied data. The x-axis shows the number of times people reported visiting a store before making a major purchase, and the y-axis shows the frequency.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C02_M03_005.jpg" width="350"/>
+</media>
+</figure></solution>
+</exercise>
+
+<exercise id="fs-idp11360192">
+<problem id="fs-idp6234528">
+<para id="fs-idp6234784">In a survey, several people were asked how many years it has been since they purchased a mattress. The results are shown in <link target-id="M01_Ch02_tbl019"/>.</para><table id="M01_Ch02_tbl019" summary="">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead><row><entry>Years since last purchase</entry>	<entry>Frequency</entry></row></thead>
+<tbody>
+<row><entry>0</entry>	<entry>2</entry></row>
+<row><entry>1</entry>	<entry>8</entry></row>
+<row><entry>2</entry>	<entry>13</entry></row>
+<row><entry>3</entry>	<entry>22</entry></row>
+<row><entry>4</entry>	<entry>16</entry></row>
+<row><entry>5</entry>	<entry>9</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-idp113509472">
+<problem id="fs-idp113509728">
+<para id="fs-idp85802064">Several children were asked how many TV shows they watch each day. The results of the survey are shown in <link target-id="M01_Ch02_tbl020"/>.</para><table id="M01_Ch02_tbl020" summary="---">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead><row><entry>Number of TV shows</entry>	<entry>Frequency</entry></row></thead>
+<tbody>
+<row><entry>0</entry>	<entry>12</entry></row>
+<row><entry>1</entry>	<entry>18</entry></row>
+<row><entry>2</entry>	<entry>36</entry></row>
+<row><entry>3</entry>	<entry>7</entry></row>
+<row><entry>4</entry>	<entry>2</entry></row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-idp49973120">
+<figure id="fs-idm11163840"><media id="fs-idp43437792" display="block" alt="This is a line graph that matches the supplied data. The x-axis shows the number of TV shows a kid watches each day, and the y-axis shows the frequency."><image mime-type="image/png" src="../../media/CNX_Stats_C02_M03_007.jpg" width="350"/></media></figure></solution>
+</exercise>
+
+<exercise id="exercise13">
+<problem id="fs-idp84353344">
+<para id="fs-idp75581568">The students in Ms. Ramirez’s math class have birthdays in each of the four seasons. <link target-id="M01_Ch02_tbl021"/> shows the four seasons, the number of students who have birthdays in each season, and the percentage (%) of students in each group. Construct a bar graph showing the number of students.</para>
+<table id="M01_Ch02_tbl021" summary="">
+<tgroup cols="3" align="left">
+<colspec colnum="1" colname="c1" align="center"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row><entry>Seasons</entry>	<entry align="center">Number of students</entry>	<entry align="center">Proportion of population</entry></row>
+</thead>
+<tbody>
+<row><entry>Spring</entry>	<entry>8</entry>	<entry>24%</entry></row>
+<row><entry>Summer</entry>	<entry>9</entry>	<entry>26%</entry></row>
+<row><entry>Autumn</entry>	<entry>11</entry>	<entry>32%</entry></row>
+<row><entry>Winter</entry>	<entry>6</entry>	<entry>18%</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+
+<exercise id="fs-idp114173136">
+<problem id="fs-idp114173392"><para id="fs-idp114173520">Using the data from Mrs. Ramirez’s math class supplied in <link target-id="exercise13"/>, construct a bar graph showing the percentages.</para></problem>
+<solution id="fs-idp107574416">
+<figure id="fs-idp48344576"><media id="fs-idp74133360" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows the seasons of the year, and the y-axis shows the proportion of birthdays."><image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M03_009.jpg" width="350"/></media></figure></solution>
+</exercise>
+
+<exercise id="exercise10">
+<problem id="fs-idm2655872">
+<para id="fs-idp32116368">David County has six high schools. Each school sent students to participate in a county-wide science competition. <link target-id="M01_Ch02_tbl022"/> shows the percentage breakdown of competitors from each school, and the percentage of the entire student population of the county that goes to each school. Construct a bar graph that shows the population percentage of competitors from each school.</para>
+
+<table id="M01_Ch02_tbl022" summary="---">
+<tgroup cols="3"><colspec colnum="1" align="center"/>
+<colspec colnum="2" align="left"/>
+<colspec colnum="3" align="left"/>
+<thead><row><entry>High school</entry><entry align="center">Science competition population</entry><entry align="center">Overall student population</entry></row></thead>
+<tbody>
+<row><entry>Alabaster</entry><entry>28.9%</entry><entry>8.6%</entry></row>
+<row><entry>Concordia</entry><entry>7.6%</entry><entry>23.2%</entry></row>
+<row><entry>Genoa</entry><entry>12.1%</entry><entry>15.0%</entry></row>
+<row><entry>Mocksville</entry><entry>18.5%</entry><entry>14.3%</entry></row>
+<row><entry>Tynneson</entry><entry>24.2%</entry><entry>10.1%</entry></row>
+<row><entry>West End</entry><entry>8.7%</entry><entry>28.8%</entry></row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="fs-idp107146752">
+<problem id="fs-idp107568048">
+<para id="fs-idp107568176">Use the data from the David County science competition supplied in <link target-id="exercise10"/>. Construct a bar graph that shows the county-wide population percentage of students at each school.</para></problem>
+<solution id="fs-idp4118704">
+<figure id="fs-idp86744448"><media id="fs-idp112012640" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows the county high schools, and the y-axis shows the proportion of county students."><image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M03_011.jpg" width="420"/></media></figure></solution>
+</exercise>
+<exercise id="eip-341">
+<problem id="fs-idp82639856">
+<para id="fs-idp82640112">Sixty-five randomly selected car salespersons were asked the number of cars they generally sell in one week. Fourteen people answered that they generally sell three cars; nineteen generally sell four cars; twelve generally sell five cars; nine generally sell six cars; eleven generally sell seven cars. Complete the table.</para>
+<table id="table001" summary="Blank table where data can be reported with the first column designated for the data value, or number of cars, the second column for frequency, the third column for relative frequency, and the fourth column for cumulative frequency.">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<thead>
+<row>
+<entry>Data value (# cars)</entry>
+<entry>Frequency</entry>
+<entry>Relative frequency</entry>
+<entry>Cumulative relative frequency</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry/><entry/><entry/><entry/>
+</row>
+<row>
+<entry/><entry/><entry/><entry/>
+</row>
+<row>
+<entry/><entry/><entry/><entry/>
+</row>
+<row>
+<entry/><entry/><entry/><entry/>
+</row>
+<row>
+<entry/><entry/><entry/><entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="element-625">
+<problem id="id9456620">
+<para id="element-666">What does the frequency column in <link target-id="table001"/> sum to? Why?</para></problem>
+<solution id="id6523440">
+<para id="element-943">65</para>
+</solution>
+</exercise>
+
+<exercise id="exerciseone">
+<problem id="id6442302">
+<para id="prob_1">What does the relative frequency column in <link target-id="table001"/> sum to? Why?</para></problem>
+</exercise>
+
+<exercise id="exercisetwo"><problem id="id17920864">
+<para id="prob_2">What is the difference between relative frequency and frequency for each data value in <link target-id="table001"/>?</para></problem>
+
+<solution id="eip-idm45288784">
+<para id="eip-idm45288528">The relative frequency shows the <emphasis effect="italics">proportion</emphasis> of data points that have each value. The frequency tells the <emphasis effect="italics">number</emphasis> of data points that have each value.</para>
+</solution></exercise><exercise id="exercisethree">
+<problem id="id11564922">
+
+<para id="prob_3">What is the difference between cumulative relative frequency and relative frequency for each data value?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-idp48667136"><problem id="fs-idp71409056">
+<para id="element-936">To construct the histogram for the data in <link target-id="table001"/>, determine appropriate minimum and maximum <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis> values and the scaling. Sketch the histogram. Label the horizontal and vertical axes with words. Include numerical scaling.</para><figure id="eip-idp57691072">
+<media id="id9045474" alt="An empty graph template for use with this question." display="block">
+<image src="../../media/fig-ch02_11_01.jpg" mime-type="image/jpg" width="350"/>
+</media>
+</figure>
+</problem>
+<solution id="fs-idm9409296">
+<para id="fs-idp4677968">Answers will vary. One possible histogram is shown:</para>
+<figure id="eip-idp746160">
+<media id="eip-idp746416" alt=""><image src="../../media/CNX_Stats_C02_M03_101.jpg" mime-type="image/png" width="380"/></media>
+</figure>
+</solution>
+</exercise>
+
+<exercise id="fs-idm40930928">
+<problem id="fs-idp54569920">
+<para id="fs-idp5729024">Construct a frequency polygon for the following:</para><list id="eip-idm132789024" list-type="enumerated" number-style="lower-alpha"><item><table id="fs-idp20313088" summary="---">
+<tgroup cols="2" align="center"><thead>
+<row><entry>Pulse rates for women</entry>	<entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>60–69</entry><entry>12</entry></row>
+<row><entry>70–79</entry><entry>14</entry></row>
+<row><entry>80–89</entry><entry>11</entry></row>
+<row><entry>90–99</entry><entry>1</entry></row>
+<row><entry>100–109</entry><entry>1</entry></row>
+<row><entry>110–119</entry><entry>0</entry></row>
+<row><entry>120–129</entry><entry>1</entry></row>
+</tbody>
+
+</tgroup>
+</table></item>
+<item><table id="fs-idp49451248" summary="---">
+<tgroup cols="2" align="center"><thead>
+<row><entry>Actual speed in a 30 MPH zone</entry>	<entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>42–45</entry><entry>25</entry></row>
+<row><entry>46–49</entry><entry>14</entry></row>
+<row><entry>50–53</entry><entry>7</entry></row>
+<row><entry>54–57</entry><entry>3</entry></row>
+<row><entry>58–61</entry><entry>1</entry></row>
+</tbody>
+
+</tgroup>
+</table></item>
+<item><table id="fs-idm48042480" summary="---">
+<tgroup cols="2" align="center"><thead>
+<row><entry>Tar (mg) in nonfiltered cigarettes</entry>	<entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>10–13</entry><entry>1</entry></row>
+<row><entry>14–17</entry><entry>0</entry></row>
+<row><entry>18–21</entry><entry>15</entry></row>
+<row><entry>22–25</entry><entry>7</entry></row>
+<row><entry>26–29</entry><entry>2</entry></row>
+</tbody>
+
+</tgroup>
+</table></item>
+</list></problem>
+</exercise>
+
+<exercise id="fs-idp36783568">
+<problem id="fs-idp28008576">
+<para id="fs-idm58193856">Construct a frequency polygon from the frequency distribution for the 50 highest ranked countries for depth of hunger.</para>
+<table id="fs-idp37785744" summary="---">
+<tgroup cols="2" align="center"><thead><row><entry>Depth of hunger</entry>	<entry>Frequency</entry></row></thead>
+<tbody>
+<row><entry>230–259</entry><entry>21</entry></row>
+<row><entry>260–289</entry><entry>13</entry></row>
+<row><entry>290–319</entry><entry>5</entry></row>
+<row><entry>320–349</entry><entry>7</entry></row>
+<row><entry>350–379</entry><entry>1</entry></row>
+<row><entry>380–409</entry><entry>1</entry></row>
+<row><entry>410–439</entry><entry>1</entry></row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-idm33153920">
+<para id="fs-idp608">Find the midpoint for each class. These will be graphed on the <emphasis effect="italics">x</emphasis>-axis. The frequency values will be graphed on the <emphasis effect="italics">y</emphasis>-axis values.</para>
+<figure id="eip-idp56723312"><media id="fs-idp19276976" display="block" alt="This is a frequency polygon that matches the supplied data. The x-axis shows the depth of hunger, and the y-axis shows the frequency.">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M05a_024annoN.jpg" width="420"/>
+</media>
+</figure></solution>
+</exercise>
+
+<exercise id="fs-idm37056320"><problem id="fs-idp1515264">
+<para id="fs-idp2742000">Use the two frequency tables to compare the life expectancy of men and women from 20 randomly selected countries. Include an overlayed frequency polygon and discuss the shapes of the distributions, the center, the spread, and any outliers. What can we conclude about the life expectancy of women compared to men?</para>
+<table id="fs-idm38094912" summary="---">
+<tgroup cols="2" align="center"><thead>
+<row><entry>Life expectancy at birth – women</entry>	<entry>Frequency</entry></row>
+</thead>
+<tbody>
+<row><entry>49–55</entry><entry>3</entry></row>
+<row><entry>56–62</entry><entry>3</entry></row>
+<row><entry>63–69</entry><entry>1</entry></row>
+<row><entry>70–76</entry><entry>3</entry></row>
+<row><entry>77–83</entry><entry>8</entry></row>
+<row><entry>84–90</entry><entry>2</entry></row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idm37006144" summary="---">
+<tgroup cols="2" align="center"><thead>
+<row><entry>Life expectancy at birth – men</entry>	<entry>Frequency</entry>
+</row></thead>
+<tbody>
+<row><entry>49–55</entry><entry>3</entry></row>
+<row><entry>56–62</entry><entry>3</entry></row>
+<row><entry>63–69</entry><entry>1</entry></row>
+<row><entry>70–76</entry><entry>1</entry></row>
+<row><entry>77–83</entry><entry>7</entry></row>
+<row><entry>84–90</entry><entry>5</entry></row>
+</tbody>
+
+</tgroup>
+</table></problem>
+</exercise>
+
+<exercise id="eip-583"><problem id="eip-945">
+  <para id="eip-408">Construct a times series graph for (a) the number of male births, (b) the number of female births, and (c) the total number of births.</para><table id="fs-idp121703664" summary="---">
+<tgroup cols="8"><colspec colnum="1" colname="header_c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<tbody>
+<row>
+<entry>Sex/Year</entry>
+<entry><emphasis>1855</emphasis></entry><entry><emphasis>1856</emphasis></entry><entry><emphasis>1857</emphasis></entry><entry><emphasis>1858</emphasis></entry>
+<entry><emphasis>1859</emphasis></entry><entry><emphasis>1860</emphasis></entry><entry><emphasis>1861</emphasis></entry>
+</row>
+<row><entry>Female</entry>
+<entry>45,545</entry><entry>49,582</entry><entry>50,257</entry><entry>50,324</entry><entry>51,915</entry><entry>51,220</entry><entry>52,403</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>47,804</entry><entry>52,239</entry><entry>53,158</entry><entry>53,694</entry>	<entry>54,628</entry><entry>54,409</entry><entry>54,606</entry></row>
+<row>
+<entry>Total</entry>
+<entry>93,349</entry><entry>101,821</entry><entry>103,415</entry>
+<entry>104,018</entry><entry>106,543</entry><entry>105,629</entry>
+<entry>107,009</entry></row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idp98414384" summary="---">
+<tgroup cols="9"><colspec colnum="1" colname="header_c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+
+<tbody>
+<row>
+<entry>Sex/Year</entry>
+<entry><emphasis>1862</emphasis></entry>
+<entry><emphasis>1863</emphasis></entry>
+<entry><emphasis>1864</emphasis></entry>
+<entry><emphasis>1865</emphasis></entry>
+<entry><emphasis>1866</emphasis></entry>
+<entry><emphasis>1867</emphasis></entry>
+<entry><emphasis>1868</emphasis></entry>
+<entry><emphasis>1869</emphasis></entry></row>
+<row>
+<entry>Female</entry>
+<entry>51,812</entry>
+<entry>53,115</entry>
+<entry>54,959</entry>
+<entry>54,850</entry>
+<entry>55,307</entry>
+<entry>55,527</entry>
+<entry>56,292</entry>
+<entry>55,033</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>55,257</entry>
+<entry>56,226</entry>
+<entry>57,374</entry>
+<entry>58,220</entry>
+<entry>58,360</entry>
+<entry>58,517</entry>
+<entry>59,222</entry>
+<entry>58,321</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>107,069</entry>
+<entry>109,341</entry>
+<entry>112,333</entry>
+<entry>113,070</entry>
+<entry>113,667</entry>
+<entry>114,044</entry>
+<entry>115,514</entry>
+<entry>113,354</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idp108871120" summary="Table">
+<tgroup cols="7"><colspec colnum="1" colname="header_c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<tbody>
+<row><entry>Sex/Year</entry><entry><emphasis>1870</emphasis></entry><entry><emphasis>1871</emphasis></entry><entry><emphasis>1872</emphasis></entry><entry><emphasis>1873</emphasis></entry><entry><emphasis>1874</emphasis></entry><entry><emphasis>1875</emphasis></entry></row>
+<row><entry>Female</entry>
+<entry>56,431</entry>
+<entry>56,099</entry>
+<entry>57,472</entry>
+<entry>58,233</entry>
+<entry>60,109</entry>
+<entry>60,146</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>58,959</entry>
+<entry>60,029</entry>
+<entry>61,293</entry>
+<entry>61,467</entry>
+<entry>63,602</entry>
+<entry>63,432</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>115,390</entry>
+<entry>116,128</entry>
+<entry>118,765</entry>
+<entry>119,700</entry>
+<entry>123,711</entry>
+<entry>123,578</entry></row>
+</tbody>
+
+
+</tgroup>
+</table></problem>
+
+<solution id="eip-246">
+<figure id="eip-idp37153376">
+<media id="eip-idp37153632" display="block" alt="">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C02_M05a_028anno.jpg" width="400"/>
+</media>
+</figure>
+</solution>
+</exercise><exercise id="eip-301"><problem id="eip-753">
+<para id="eip-345">The following data sets list full time police per 100,000 citizens along with homicides per 100,000 citizens for the city of Detroit, Michigan during the period from 1961 to 1973.</para><table id="fs-idm6896512" summary="---">
+<tgroup cols="8"><colspec colnum="1" colname="header_c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+
+<tbody>
+<row><entry>Year</entry><entry><emphasis>1961</emphasis></entry><entry><emphasis>1962</emphasis></entry><entry><emphasis>1963</emphasis></entry><entry><emphasis>1964</emphasis></entry><entry><emphasis>1965</emphasis></entry><entry><emphasis>1966</emphasis></entry><entry><emphasis>1967</emphasis></entry></row>
+<row><entry>Police</entry><entry>260.35</entry><entry>269.8</entry><entry>272.04</entry><entry>272.96</entry><entry>272.51</entry><entry>261.34</entry><entry>268.89</entry></row>
+<row><entry>Homicides</entry><entry>8.6</entry><entry>8.9</entry><entry>8.52</entry>	<entry>8.89</entry><entry>13.07</entry><entry>14.57</entry><entry>21.36</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idp13023344" summary="---">
+<tgroup cols="7"><colspec colnum="1" colname="header_c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+
+<tbody>
+<row>
+<entry>Year</entry><entry><emphasis>1968</emphasis></entry><entry><emphasis>1969</emphasis></entry><entry><emphasis>1970</emphasis></entry>
+<entry><emphasis>1971</emphasis></entry><entry><emphasis>1972</emphasis></entry><entry><emphasis>1973</emphasis></entry></row>
+<row>
+<entry>Police</entry><entry>295.99</entry><entry>319.87</entry><entry>341.43</entry><entry>356.59</entry><entry>376.69</entry><entry>390.19</entry></row>
+<row>
+<entry>Homicides</entry><entry>28.03</entry><entry>31.49</entry><entry>37.39</entry><entry>46.26</entry><entry>47.24</entry><entry>52.33</entry></row>
+</tbody>
+
+</tgroup>
+</table><list id="eip-idm101181648" list-type="enumerated" number-style="lower-alpha">
+<item>Construct a double time series graph using a common <emphasis effect="italics">x</emphasis>-axis for both sets of data.</item>
+<item>Which variable increased the fastest? Explain.</item>
+<item>Did Detroit’s increase in police officers have an impact on the murder rate? Explain.</item>
+</list>
+</problem>
+</exercise></section><section id="eip-616" class="free-response"><title>Homework</title><exercise id="eip-440"><problem id="eip-765">
+<para id="eip-929"><link target-id="M01_Ch02_tbl024"/> contains the 2010 obesity rates in U.S. states and Washington, DC.</para>
+<table id="M01_Ch02_tbl024" summary="The tables represents United States states and Obesity Rates. The first column and third columns list the names of the states and the second and fourth columns list Obesity Rates.">
+<tgroup cols="4">
+<thead>
+<row>
+<entry>State</entry>
+<entry>Percent (%)</entry>
+<entry>State</entry>
+<entry>Percent (%)</entry>
+<entry>State</entry>
+<entry>Percent (%)</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Alabama</entry>
+<entry>32.2</entry>
+<entry>Kentucky</entry>
+<entry>31.3</entry>
+<entry>North Dakota</entry>
+<entry>27.2</entry>
+</row>
+<row>
+<entry>Alaska</entry>
+<entry>24.5</entry>
+<entry>Louisiana</entry>
+<entry>31.0</entry>
+<entry>Ohio</entry>
+<entry>29.2</entry>
+</row>
+<row>
+<entry>Arizona</entry>
+<entry>24.3</entry>
+<entry>Maine</entry>
+<entry>26.8</entry>
+<entry>Oklahoma</entry>
+<entry>30.4</entry>
+</row>
+<row>
+<entry>Arkansas</entry>
+<entry>30.1</entry>
+<entry>Maryland</entry>
+<entry>27.1</entry>
+<entry>Oregon</entry>
+<entry>26.8</entry>
+</row>
+<row>
+<entry>California</entry>
+<entry>24.0</entry>
+<entry>Massachusetts</entry>
+<entry>23.0</entry>
+<entry>Pennsylvania</entry>
+<entry>28.6</entry>
+</row>
+<row>
+<entry>Colorado</entry>
+<entry>21.0</entry>
+<entry>Michigan</entry>
+<entry>30.9</entry>
+<entry>Rhode Island</entry>
+<entry>25.5</entry>
+</row>
+<row>
+<entry>Connecticut</entry>
+<entry>22.5</entry>
+<entry>Minnesota</entry>
+<entry>24.8</entry>
+<entry>South Carolina</entry>
+<entry>31.5</entry>
+</row>
+<row>
+<entry>Delaware</entry>
+<entry>28.0</entry>
+<entry>Mississippi</entry>
+<entry>34.0</entry>
+<entry>South Dakota</entry>
+<entry>27.3</entry>
+</row>
+<row>
+<entry>Washington, DC</entry>
+<entry>22.2</entry>
+<entry>Missouri</entry>
+<entry>30.5</entry>
+<entry>Tennessee</entry>
+<entry>30.8</entry>
+</row>
+<row>
+<entry>Florida</entry>
+<entry>26.6</entry>
+<entry>Montana</entry>
+<entry>23.0</entry>
+<entry>Texas</entry>
+<entry>31.0</entry>
+</row>
+<row>
+<entry>Georgia</entry>
+<entry>29.6</entry>
+<entry>Nebraska</entry>
+<entry>26.9</entry>
+<entry>Utah</entry>
+<entry>22.5</entry>
+</row>
+<row>
+<entry>Hawaii</entry>
+<entry>22.7</entry>
+<entry>Nevada</entry>
+<entry>22.4</entry>
+<entry>Vermont</entry>
+<entry>23.2</entry>
+</row>
+<row>
+<entry>Idaho</entry>
+<entry>26.5</entry>
+<entry>New Hampshire</entry>
+<entry>25.0</entry>
+<entry>Virginia</entry>
+<entry>26.0</entry>
+</row>
+<row>
+<entry>Illinois</entry>
+<entry>28.2</entry>
+<entry>New Jersey</entry>
+<entry>23.8</entry>
+<entry>Washington</entry>
+<entry>25.5</entry>
+</row>
+<row>
+<entry>Indiana</entry>
+<entry>29.6</entry>
+<entry>New Mexico</entry>
+<entry>25.1</entry>
+<entry>West Virginia</entry>
+<entry>32.5</entry>
+</row>
+<row>
+<entry>Iowa</entry>
+<entry>28.4</entry>
+<entry>New York</entry>
+<entry>23.9</entry>
+<entry>Wisconsin</entry>
+<entry>26.3</entry>
+</row>
+<row>
+<entry>Kansas</entry>
+<entry>29.4</entry>
+<entry>North Carolina</entry>
+<entry>27.8</entry>
+<entry>Wyoming</entry>
+<entry>25.1</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list id="Obesity_Rate_Bar_Graphs" list-type="enumerated" number-style="lower-alpha"><item>Use a random number generator to randomly pick eight states.  Construct a bar graph of the obesity rates of those eight states.</item>
+<item>Construct a bar graph for all the states beginning with the letter "A."</item>
+<item>Construct a bar graph for all the states beginning with the letter "M."</item>
+</list></problem>
+<solution id="eip-27">
+<list id="fs-idp52451232" list-type="enumerated" number-style="lower-alpha"><item>Example solution for using the random number generator for the TI-84+ to generate a simple random sample of 8 states. Instructions are as follows.
+<list id="Random_Number_Inst." list-type="labeled-item">
+<item>Number the entries in the table 1–51 (Includes Washington, DC; Numbered vertically)</item>
+<item>Press MATH</item>
+<item>Arrow over to PRB</item>
+<item>Press 5:randInt(</item>
+<item>Enter 51,1,8)</item>
+</list>
+<para id="fs-idp5295728">Eight numbers are generated (use the right arrow key to scroll through the numbers). The numbers correspond to the numbered states (for this example: {47 21 9 23 51 13 25 4}. If any numbers are repeated, generate a different number by using 5:randInt(51,1)). Here, the states (and Washington DC) are {Arkansas, Washington DC, Idaho, Maryland, Michigan, Mississippi, Virginia, Wyoming}.</para>
+<para id="fs-idp5295984">Corresponding percents are {30.1, 22.2, 26.5, 27.1, 30.9, 34.0, 26.0, 25.1}.</para>
+<figure id="eip-idp38340544">
+<media id="States_Obesity" display="block" alt="A bar graph showing 8 states on the x-axis and corresponding obesity rates on the y-axis.">
+<image src="../../media/fig-ch_02_sol_06.jpg" mime-type="image/jpg" width="380"/>
+</media>
+</figure>
+</item>
+<item><newline/>
+<figure id="eip-idp3788400"><media id="fs-idm6698448" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows states, and the y-axis shows percentages.">
+<image src="../../media/CNX_Stats_C02_M02_100N.jpg" mime-type="image/png" width="350"/>
+</media>
+</figure></item>
+<item><figure id="eip-idp2189920">
+<media id="fs-idp3027872" display="block" alt="This is a bar graph that matches the supplied data. The x-axis shows states, and the y-axis shows percentages.">
+<image src="../../media/CNX_Stats_C02_M02_101.jpg" mime-type="image/png" width="350"/>
+</media>
+</figure>
+</item>
+</list></solution>
+</exercise>
+
+<exercise id="fs-idp53668112">
+<problem id="fs-idp53668368">
+<para id="fs-idp71468496">Suppose that three book publishers were interested in the number of fiction paperbacks adult consumers purchase per month. Each publisher conducted a survey. In the survey, adult consumers were asked the number of fiction paperbacks they had purchased the previous month. The results are as follows:</para><table id="fs-idp71816400" summary="The tables presents the number of books purchased by adults by three different publishers. Publisher A is the first table with number of books in the first column, from 0-8, frequency in the second column, and relative frequency in the third column which is blank."><title>Publisher A</title>
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry># of books</entry>
+<entry>Freq.</entry>
+<entry>Rel. freq.</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>0</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>1</entry>
+<entry>12</entry>
+<entry/>
+</row>
+<row>
+<entry>2</entry>
+<entry>16</entry>
+<entry/>
+</row>
+<row>
+<entry>3</entry>
+<entry>12</entry>
+<entry/>
+</row>
+<row>
+<entry>4</entry>
+<entry>8</entry>
+<entry/>
+</row>
+<row>
+<entry>5</entry>
+<entry>6</entry>
+<entry/>
+</row>
+<row>
+<entry>6</entry>
+<entry>2</entry>
+<entry/>
+</row>
+<row>
+<entry>8</entry>
+<entry>2</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idp43657824" summary="Publisher B is the second table with number of books in the first column, from 0-5, 7, 9, frequency in the second column, and relative frequency in the third column which is blank."><title>Publisher B</title>
+<tgroup cols="3"><thead>
+<row>
+<entry># of books</entry>
+<entry>Freq.</entry>
+<entry>Rel. freq.</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>0</entry>
+<entry>18</entry>
+<entry/>
+</row>
+<row>
+<entry>1</entry>
+<entry>24</entry>
+<entry/>
+</row>
+<row>
+<entry>2</entry>
+<entry>24</entry>
+<entry/>
+</row>
+<row>
+<entry>3</entry>
+<entry>22</entry>
+<entry/>
+</row>
+<row>
+<entry>4</entry>
+<entry>15</entry>
+<entry/>
+</row>
+<row>
+<entry>5</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>7</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>9</entry>
+<entry>1</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idm93843856" summary="Publisher C is the first table with number of books in the first column, 0-1, 2-3, 4-5, 6-7, 8-9, frequency in the second column, and relative frequency in the third column which is blank."><title>Publisher C</title>
+<tgroup cols="3"><thead>
+<row>
+<entry># of books</entry>
+<entry>Freq.</entry>
+<entry>Rel. freq.</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>0–1</entry>
+<entry>20</entry>
+<entry/>
+</row>
+<row>
+<entry>2–3</entry>
+<entry>35</entry>
+<entry/>
+</row>
+<row>
+<entry>4–5</entry>
+<entry>12</entry>
+<entry/>
+</row>
+<row>
+<entry>6–7</entry>
+<entry>2</entry>
+<entry/>
+</row>
+<row>
+<entry>8–9</entry>
+<entry>1</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><list id="element-460" mark-suffix="." list-type="enumerated" number-style="lower-alpha"><item>Find the relative frequencies for each survey. Write them in the charts.</item>
+<item>Use the frequency column to construct a histogram for each publisher's survey. For Publishers A and B, make bar widths of one. For Publisher C, make bar widths of two.</item>
+<item>In complete sentences, give two reasons why the graphs for Publishers A and B are not identical.</item>
+<item>Would you have expected the graph for Publisher C to look like the other two graphs? Why or why not?</item>
+<item>Make new histograms for Publisher A and Publisher B. This time, make bar widths of two.</item>
+<item>Now, compare the graph for Publisher C to the new graphs for Publishers A and B.  Are the graphs more similar or more different? Explain your answer.</item></list></problem>
+</exercise>
+
+<exercise id="eip-457"><problem id="fs-idp16459264">
+<para id="fs-idp16459520">Often, cruise ships conduct all on-board transactions, with the exception of gambling, on a cashless basis. At the end of the cruise, guests pay one bill that covers all onboard transactions. Suppose that 60 single travelers and 70 couples were surveyed as to their on-board bills for a seven-day cruise from Los Angeles to the Mexican Riviera. Following is a summary of the bills for each group.</para><table id="fs-idp40233520" summary="This table presents the amount of cruise bills by guest type. The first table is for singles with the first column listing the bill amount, the second column listing the frequency, and the third column labeled for relative frequency which is blank."><title>Singles</title>
+<tgroup cols="3"><thead>
+<row>
+<entry>Amount($)</entry>
+<entry>Frequency</entry>
+<entry>Rel. frequency</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>51–100</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>101–150</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>151–200</entry>
+<entry>15</entry>
+<entry/>
+</row>
+<row>
+<entry>201–250</entry>
+<entry>15</entry>
+<entry/>
+</row>
+<row>
+<entry>251–300</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>301–350</entry>
+<entry>5</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="fs-idp2601840" summary="The second table is for couples with the first column listing the bill amount, the second column listing the frequency, and the third column labeled for relative frequency which is blank."><title>Couples</title>
+<tgroup cols="3"><thead>
+<row>
+<entry>Amount($)</entry>
+<entry>Frequency</entry>
+<entry>Rel. frequency</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>100–150</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>201–250</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>251–300</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>301–350</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>351–400</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>401–450</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>451–500</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>501–550</entry>
+<entry>10</entry>
+<entry/>
+</row>
+<row>
+<entry>551–600</entry>
+<entry>5</entry>
+<entry/>
+</row>
+<row>
+<entry>601–650</entry>
+<entry>5</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><list id="fs-idm19738640" list-type="enumerated" number-style="lower-alpha"><item>Fill in the relative frequency for each group.</item>
+<item>Construct a histogram for the singles group. Scale the <emphasis effect="italics">x</emphasis>-axis by $50 widths. Use relative frequency on the <emphasis effect="italics">y</emphasis>-axis.</item>
+<item>Construct a histogram for the couples group. Scale the <emphasis effect="italics">x</emphasis>-axis by $50 widths. Use relative frequency on the <emphasis effect="italics">y</emphasis>-axis.</item>
+<item>Compare the two graphs:
+<list id="nestlist8" mark-suffix="." list-type="enumerated" number-style="lower-roman"><item>List two similarities between the graphs.</item>
+<item>List two differences between the graphs.</item>
+<item>Overall, are the graphs more similar or different?</item>
+</list></item>
+<item>Construct a new graph for the couples by hand. Since each couple is paying for two individuals, instead of scaling the <emphasis effect="italics">x</emphasis>-axis by $50, scale it by $100. Use relative frequency on the <emphasis effect="italics">y</emphasis>-axis.</item>
+<item>Compare the graph for the singles with the new graph for the couples:<list id="nestlist9" mark-suffix="." list-type="enumerated" number-style="lower-roman"><item>List two similarities between the graphs.</item>
+<item>Overall, are the graphs more similar or different?</item>
+</list></item>
+<item>How did scaling the couples graph differently change the way you compared it to the singles graph?</item>
+<item>Based on the graphs, do you think that individuals spend the same amount, more or less, as singles as they do person by person as a couple? Explain why in one or two complete sentences.</item>
+</list></problem>
+
+<solution id="fs-idp34240">
+<table id="Singles" summary="---"><title>Singles</title>
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Amount($)</entry>
+<entry>Frequency</entry>
+<entry>Relative frequency</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>51–100</entry>
+<entry>5</entry>
+<entry>0.08</entry>
+</row>
+<row>
+<entry>101–150</entry>
+<entry>10</entry>
+<entry>0.17</entry>
+</row>
+<row>
+<entry>151–200</entry>
+<entry>15</entry>
+<entry>0.25</entry>
+</row>
+<row>
+<entry>201–250</entry>
+<entry>15</entry>
+<entry>0.25</entry>
+</row>
+<row>
+<entry>251–300</entry>
+<entry>10</entry>
+<entry>0.17</entry>
+</row>
+<row>
+<entry>301–350</entry>
+<entry>5</entry>
+<entry>0.08</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="Couples" summary="---"><title>Couples</title>
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Amount($)</entry>
+<entry>Frequency</entry>
+<entry>Relative frequency</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>100–150</entry>
+<entry>5</entry>
+<entry>0.07</entry>
+</row>
+<row>
+<entry>201–250</entry>
+<entry>5</entry>
+<entry>0.07</entry>
+</row>
+<row>
+<entry>251–300</entry>
+<entry>5</entry>
+<entry>0.07</entry>
+</row>
+<row>
+<entry>301–350</entry>
+<entry>5</entry>
+<entry>0.07</entry>
+</row>
+<row>
+<entry>351–400</entry>
+<entry>10</entry>
+<entry>0.14</entry>
+</row>
+<row>
+<entry>401–450</entry>
+<entry>10</entry>
+<entry>0.14</entry>
+</row>
+<row>
+<entry>451–500</entry>
+<entry>10</entry>
+<entry>0.14</entry>
+</row>
+<row>
+<entry>501–550</entry>
+<entry>10</entry>
+<entry>0.14</entry>
+</row>
+<row>
+<entry>551–600</entry>
+<entry>5</entry>
+<entry>0.07</entry>
+</row>
+<row>
+<entry>601–650</entry>
+<entry>5</entry>
+<entry>0.07</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><list id="fs-idp1651760" mark-suffix="." list-type="enumerated" number-style="lower-alpha"><item>See <link target-id="Singles" document=""/> and <link target-id="Couples" document=""/>.</item>
+<item>In the following histogram data values that fall on the right boundary are counted in the class interval, while values that fall on the left boundary are not counted (with the exception of the first interval where both boundary values are included).
+<figure id="eip-idp10303088">
+<media id="fs-idp32280736" display="block" alt="This is a histogram that matches the supplied data supplied for singles. The x-axis shows the total charges in intervals of 50 from 50 to 350, and the y-axis shows the relative frequency in increments of 0.05 from 0 to 0.3.">
+<image mime-type="image/jpg" width="350" src="../../media/CNX_Stats_C02_M03_106.jpg"/>
+</media>
+</figure>
+</item>
+<item>In the following histogram, the data values that fall on the right boundary are counted in the class interval, while values that fall on the left boundary are not counted (with the exception of the first interval where values on both boundaries are included).
+<figure id="eip-idp116473376">
+<media id="fs-idm4934000" display="block" alt="This is a histogram that matches the supplied data for couples. The x-axis shows the total charges in intervals of 50 from 100 to 650, and the y-axis shows the relative frequency in increments of 0.02 from 0 to 0.16.">
+<image mime-type="image/jpg" width="350" src="../../media/CNX_Stats_C02_M03_107.jpg"/>
+</media>
+</figure>
+</item>
+<item>Compare the two graphs:
+    <list id="fs-idm1796080" mark-suffix="." list-type="enumerated" number-style="lower-roman"><item>Answers may vary. Possible answers include:
+      <list id="fs-idp12795120" list-type="bulleted">
+      <item>Both graphs have a single peak.</item>
+      <item>Both graphs use class intervals with width equal to $50.</item>
+      </list>
+    </item>
+    <item>Answers may vary. Possible answers include:
+      <list id="fs-idm10655584" list-type="bulleted">
+      <item>The couples graph has a class interval with no values.</item>
+      <item>It takes almost twice as many class intervals to display the data for couples.</item>
+      </list>
+    </item>
+    <item>Answers may vary. Possible answers include: The graphs are more similar than different because the overall patterns for the graphs are the same.</item>
+    </list></item>
+<item>Check student's solution.
+
+</item>
+<item>Compare the graph for the Singles with the new graph for the Couples:
+  <list id="fs-idp17546528" mark-suffix="." list-type="enumerated" number-style="lower-roman"><item><list id="fs-idp13357024" list-type="bulleted">
+    <item>Both graphs have a single peak.</item>
+    <item>Both graphs display 6 class intervals.</item>
+    <item>Both graphs show the same general pattern.</item>
+    </list>
+  </item>
+  <item>Answers may vary. Possible answers include: Although the width of the class intervals for couples is double that of the class intervals for singles, the graphs are more similar than they are different.</item>
+  </list></item>
+<item>Answers may vary. Possible answers include: You are able to compare the graphs interval by interval. It is easier to compare the overall patterns with the new scale on the Couples graph. Because a couple represents two individuals, the new scale leads to a more accurate comparison.</item>
+<item>Answers may vary. Possible answers include: Based on the histograms, it seems that spending does not vary much from singles to individuals who are part of a couple. The overall patterns are the same. The range of spending for couples is approximately double the range for individuals.</item>
+</list></solution></exercise><exercise id="fs-idp73179824"><problem id="fs-idp73180080">
+<para id="fs-idp2917520">Twenty-five randomly selected students were asked the number of movies they watched the previous week. The results are as follows.
+<table id="fs-idp75182816" summary="The table presents the number of movies 25 students watched in the previous week. The first column lists the number of movies from 0-4, the second column lists the frequency with the values of 5, 9, 6, 4, 1, the third column is for relative frequency and is blank, and the fourth column is for cumulative relative frequency and is blank.">
+<tgroup cols="4"><thead>
+ <row>
+    <entry># of movies</entry>
+    <entry>Frequency</entry>
+    <entry>Relative frequency</entry>
+    <entry>Cumulative relative frequency</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>0</entry>
+    <entry>5</entry>
+   <entry/>
+   <entry/>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>9</entry>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>6</entry>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>4</entry>
+   <entry/>
+  <entry/>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>1</entry>
+  <entry/>
+  <entry/>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+<list id="element-113" list-type="enumerated" number-style="lower-alpha">
+<item>Construct a histogram of the data.</item>
+<item>Complete the columns of the chart.</item>
+</list></problem>
+</exercise>
+
+<para id="fs-idp72793344"><emphasis effect="italics">Use the following information to answer the next two exercises:</emphasis> Suppose one hundred eleven people who shopped in a special t-shirt store were asked the number of t-shirts they own costing more than $19 each.</para><para id="fs-idp19635040"><media id="fs-idp52038080" alt="A histogram showing the results of a survey.  Of 111 respondents, 5 own 1 t-shirt costing more than $19, 17 own 2, 23 own 3, 39 own 4, 25 own 5, 2 own 6, and no respondents own 7." display="block">
+<image src="../../media/fig-ch02_13_11.jpg" mime-type="image/JPG" width="350"/>
+</media></para>
+
+<exercise id="fs-idm24292288">
+<problem id="fs-idm24292032">
+<para id="fs-idp64025632">The percentage of  people who own at most three t-shirts costing more than $19 each is approximately:</para><list id="ni6" list-type="enumerated" number-style="lower-alpha"><item>21</item>
+<item>59</item>
+<item>41</item>
+<item>Cannot be determined</item>
+</list></problem>
+<solution id="id6146639">
+  <para id="element-507">c</para>
+</solution>
+</exercise>
+
+<exercise id="element-195">
+<problem id="id3671758">
+  <para id="element-530">If the data were collected by asking the first 111 people who entered the store, then the type of sampling is:</para>
+<list id="ni7" list-type="enumerated" number-style="lower-alpha"><item>cluster</item>
+<item>simple random</item>
+<item>stratified</item>
+<item>convenience</item>
+</list></problem>
+</exercise>
+
+<exercise id="fs-idp13768528">
+<problem id="fs-idm31496800">
+<para id="fs-idm31496544">Following are the 2010 obesity rates by U.S. states and Washington, DC.</para>
+<table id="Obesity_Rates_2008" summary="The tables represents United States states and Obesity Rates. The first column and third columns list the names of the states and the second and fourth columns list Obesity Rates.">
+<tgroup cols="6"><thead>
+        <row>
+          <entry>State</entry>
+          <entry>Percent (%)</entry>
+          <entry>State</entry>
+          <entry>Percent (%)</entry>
+          <entry>State</entry>
+          <entry>Percent (%)</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>Alabama</entry>
+          <entry>32.2</entry>
+          <entry>Kentucky</entry>
+          <entry>31.3</entry>
+          <entry>North Dakota</entry>
+          <entry>27.2</entry>
+        </row>
+        <row>
+          <entry>Alaska</entry>
+          <entry>24.5</entry>
+          <entry>Louisiana</entry>
+          <entry>31.0</entry>
+          <entry>Ohio</entry>
+          <entry>29.2</entry>
+        </row>
+        <row>
+          <entry>Arizona</entry>
+          <entry>24.3</entry>
+          <entry>Maine</entry>
+          <entry>26.8</entry>
+          <entry>Oklahoma</entry>
+          <entry>30.4</entry>
+        </row>
+        <row>
+          <entry>Arkansas</entry>
+          <entry>30.1</entry>
+          <entry>Maryland</entry>
+          <entry>27.1</entry>
+          <entry>Oregon</entry>
+          <entry>26.8</entry>
+        </row>
+        <row>
+          <entry>California</entry>
+          <entry>24.0</entry>
+          <entry>Massachusetts</entry>
+          <entry>23.0</entry>
+          <entry>Pennsylvania</entry>
+          <entry>28.6</entry>
+        </row>
+        <row>
+          <entry>Colorado</entry>
+          <entry>21.0</entry>
+          <entry>Michigan</entry>
+          <entry>30.9</entry>
+          <entry>Rhode Island</entry>
+          <entry>25.5</entry>
+        </row>
+        <row>
+          <entry>Connecticut</entry>
+          <entry>22.5</entry>
+          <entry>Minnesota</entry>
+          <entry>24.8</entry>
+          <entry>South Carolina</entry>
+          <entry>31.5</entry>
+        </row>
+        <row>
+          <entry>Delaware</entry>
+          <entry>28.0</entry>
+          <entry>Mississippi</entry>
+          <entry>34.0</entry>
+          <entry>South Dakota</entry>
+          <entry>27.3</entry>
+        </row>
+        <row>
+          <entry>Washington, DC</entry>
+          <entry>22.2</entry>
+          <entry>Missouri</entry>
+          <entry>30.5</entry>
+          <entry>Tennessee</entry>
+          <entry>30.8</entry>
+        </row>
+        <row>
+          <entry>Florida</entry>
+          <entry>26.6</entry>
+          <entry>Montana</entry>
+          <entry>23.0</entry>
+          <entry>Texas</entry>
+          <entry>31.0</entry>
+        </row>
+        <row>
+          <entry>Georgia</entry>
+          <entry>29.6</entry>
+          <entry>Nebraska</entry>
+          <entry>26.9</entry>
+          <entry>Utah</entry>
+          <entry>22.5</entry>
+        </row>
+        <row>
+          <entry>Hawaii</entry>
+          <entry>22.7</entry>
+          <entry>Nevada</entry>
+          <entry>22.4</entry>
+          <entry>Vermont</entry>
+          <entry>23.2</entry>
+        </row>
+        <row>
+          <entry>Idaho</entry>
+          <entry>26.5</entry>
+          <entry>New Hampshire</entry>
+          <entry>25.0</entry>
+          <entry>Virginia</entry>
+          <entry>26.0</entry>
+        </row>
+        <row>
+          <entry>Illinois</entry>
+          <entry>28.2</entry>
+          <entry>New Jersey</entry>
+          <entry>23.8</entry>
+          <entry>Washington</entry>
+          <entry>25.5</entry>
+        </row>
+        <row>
+          <entry>Indiana</entry>
+          <entry>29.6</entry>
+          <entry>New Mexico</entry>
+          <entry>25.1</entry>
+          <entry>West Virginia</entry>
+          <entry>32.5</entry>
+        </row>
+        <row>
+          <entry>Iowa</entry>
+          <entry>28.4</entry>
+          <entry>New York</entry>
+          <entry>23.9</entry>
+          <entry>Wisconsin</entry>
+          <entry>26.3</entry>
+        </row>
+        <row>
+          <entry>Kansas</entry>
+          <entry>29.4</entry>
+          <entry>North Carolina</entry>
+          <entry>27.8</entry>
+          <entry>Wyoming</entry>
+          <entry>25.1</entry>
+        </row>
+      </tbody>
+</tgroup>
+</table><para id="fs-idp22466816">Construct a bar graph of obesity rates of your state and the four states closest to your state. Hint: Label the <emphasis effect="italics">x</emphasis>-axis with the states.</para></problem>
+<solution id="fs-idp3779952">
+<para id="fs-idm4722176">Answers will vary.
+</para></solution>
+</exercise>
+</section> </content>
+<glossary>
+<definition id="freq">
+<term>Frequency</term>
+<meaning id="id19849552"> the number of times a value of the data occurs</meaning>
+</definition>
+<definition id="fs-idp17399280">
+<term>Histogram</term>
+<meaning id="fs-idp2183136"> a graphical representation in <emphasis effect="italics">x</emphasis>-<emphasis effect="italics">y</emphasis> form of the distribution of data in a data set; <emphasis effect="italics">x</emphasis> represents the data and <emphasis effect="italics">y</emphasis> represents the frequency, or relative frequency. The graph consists of contiguous rectangles.</meaning>
+</definition>
+
+<definition id="relfreq">
+<term>Relative Frequency</term>
+<meaning id="id5747717"> the ratio of the number of times a value of the data occurs in the set of all outcomes to the number of all outcomes</meaning>
+</definition>
+</glossary>
+</document>

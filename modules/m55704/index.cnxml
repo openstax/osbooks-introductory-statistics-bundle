@@ -1,0 +1,1150 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Facts About the F Distribution</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55704</md:content-id>
+  <md:title>Facts About the F Distribution</md:title>
+  <md:abstract/>
+  <md:uuid>662848a9-56e1-4d14-8daa-ae1dde4342c3</md:uuid>
+</metadata>
+
+<content>
+<para id="eip-201"><emphasis>Here are some facts about the <emphasis effect="italics">F</emphasis> distribution.</emphasis></para><list id="list-1" list-type="enumerated"><item>The curve is not symmetrical but skewed to the right.</item>
+<item>There is a different curve for each set of degrees of freedom.</item>
+<item>The <emphasis effect="italics">F</emphasis> statistic is greater than or equal to zero.</item>
+<item>As the degrees of freedom for the numerator and for the denominator get larger, the curve approximates the normal as can be seen in the two figures below. Figure (b) with more degrees of freedom is more closely approaching the normal distribution,  but remember that the <emphasis effect="italics">F</emphasis> cannot ever be less than zero so the distribution does not have a tail that goes to infinity on the left as the normal distribution does.</item>
+<item>Other uses for the <emphasis effect="italics">F</emphasis> distribution include comparing two variances and two-way Analysis of Variance. Two-Way Analysis is beyond the scope of this chapter.</item>
+</list><figure id="fs-idm71247456"><media id="id5185835" alt="This graph has an unmarked Y axis and then an X axis that ranges from 0.00 to 4.00. It has three plot lines. The plot line labelled F subscript 1, 5 starts near the top of the Y axis at the extreme left of the graph and drops quickly to near the bottom at 0.50, at which point is slowly decreases in a curved fashion to the 4.00 mark on the X axis. The plot line labelled F subscript 100, 100 remains at Y = 0 for much of its length, except for a distinct peak between 0.50 and 1.50. The peak is a smooth curve that reaches about half way up the Y axis at its peak. The plot line labelled F subscript 5, 10 increases slightly as it progresses from 0.00 to 0.50, after which it peaks and slowly decreases down the remainder of the X axis. The peak only reaches about one fifth up the height of the Y axis.">
+<image src="../../media/OSX_Spec_StatisticsTEA_Figure_13_03_01.jpg" mime-type="image/png" width="450"/></media></figure><section id="eip-712" class="references">
+<title>References</title><para id="eip-977">Data from a fourth grade classroom in 1994 in a private K – 12 school in San Jose, CA.</para>
+
+<para id="eip-idm43623328">Hand, D.J., F. Daly, A.D. Lunn, K.J. McConway, and E. Ostrowski. <emphasis effect="italics">A Handbook of Small Datasets: Data for Fruitfly Fecundity.</emphasis> London: Chapman &amp; Hall, 1994.</para>
+
+<para id="eip-idm220259024">Hand, D.J., F. Daly, A.D. Lunn, K.J. McConway, and E. Ostrowski. <emphasis effect="italics">A Handbook of Small Datasets.</emphasis> London: Chapman &amp; Hall, 1994, pg. 50.</para>
+
+<para id="eip-idm234386160">Hand, D.J., F. Daly, A.D. Lunn, K.J. McConway, and E. Ostrowski. A Handbook of Small Datasets. London: Chapman &amp; Hall, 1994, pg. 118.</para>
+
+<para id="eip-idm226365104">“MLB Standings – 2012.” Available online at http://espn.go.com/mlb/standings/_/year/2012.</para>
+
+<para id="eip-idm183141328">Mackowiak, P. A., Wasserman, S. S., and Levine, M. M. (1992), "A Critical Appraisal of 98.6 Degrees F, the Upper Limit of the Normal Body Temperature, and Other Legacies of Carl Reinhold August Wunderlich," <emphasis effect="italics">Journal of the American Medical Association</emphasis>, 268, 1578-1580.</para></section>
+<section id="fs-idm51047200" class="summary">
+<title>Chapter Review</title>
+<para id="eip-684">The graph of the <emphasis effect="italics">F</emphasis> distribution is always positive and skewed right, though the shape can be mounded or exponential depending on the combination of numerator and denominator degrees of freedom. The <emphasis effect="italics">F</emphasis> statistic is the ratio of a measure of the variation in the group means to a similar measure of the variation within the groups. If the null hypothesis is correct, then the numerator should be small compared to the denominator. A small <emphasis effect="italics">F</emphasis> statistic will result, and the area under the <emphasis effect="italics">F</emphasis> curve to the right will be large, representing a large <emphasis effect="italics">p</emphasis>-value. When the null hypothesis of equal group means is incorrect, then the numerator should be large compared to the denominator, giving a large <emphasis effect="italics">F</emphasis> statistic and a small area (small <emphasis effect="italics">p</emphasis>-value) to the right of the statistic under the <emphasis effect="italics">F</emphasis> curve.</para>
+
+<para id="eip-833">When the data have unequal group sizes (unbalanced data), then techniques from <link document="m55712"/> need to be used for hand calculations. In the case of balanced data (the groups are the same size) however, simplified calculations based on group means and variances may be used. In practice, of course, software is usually employed in the analysis. As in any analysis, graphs of various sorts should be used in conjunction with numerical techniques. Always look at your data!</para></section>
+
+<section id="fs-idp110212080" class="practice">
+
+<exercise id="eip-388"><problem id="eip-587">
+<para id="eip-772">An <emphasis effect="italics">F</emphasis> statistic can have what values?</para>
+</problem></exercise><exercise id="eip-707">
+<problem id="eip-644">
+<para id="eip-498">What happens to the curves as the degrees of freedom for the numerator and the denominator get larger?</para>
+</problem>
+
+<solution id="eip-748">
+<para id="eip-96">The curves approximate the normal distribution.</para>
+</solution>
+</exercise>
+<para id="eip-365"><emphasis effect="italics">Use the following information to answer the next seven exercise.</emphasis> Four basketball teams took a random sample of players regarding how high each player can jump (in inches). The results are shown in <link target-id="eip-497"/>.</para>
+
+<table id="eip-497" summary="..">
+<tgroup cols="5">
+<thead>
+<row>
+<entry>Team 1</entry>
+<entry>Team 2</entry>
+<entry>Team 3</entry>
+<entry>Team 4</entry>
+<entry>Team 5</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry>36</entry>
+<entry>32</entry>
+<entry>48</entry>
+<entry>38</entry>
+<entry>41</entry>
+</row>
+<row>
+<entry>42</entry>
+<entry>35</entry>
+<entry>50</entry>
+<entry>44</entry>
+<entry>39</entry></row>
+<row>
+<entry>51</entry>
+<entry>38</entry>
+<entry>39</entry>
+<entry>46</entry>
+<entry>40</entry></row>
+</tbody>
+</tgroup>
+</table>
+
+<exercise id="eip-535"><problem id="eip-46">
+<para id="eip-642">What is the <emphasis effect="italics">df(num)</emphasis>?</para>
+</problem></exercise><exercise id="eip-162"><problem id="eip-790">
+<para id="eip-177">What is the <emphasis effect="italics">df(denom)</emphasis>?</para></problem>
+
+<solution id="eip-996">
+<para id="eip-97">ten</para>
+</solution>
+</exercise>
+
+<exercise id="eip-984"><problem id="eip-100">
+<para id="eip-346">What are the Sum of Squares and Mean Squares Factors?</para>
+</problem></exercise><exercise id="eip-213">
+<problem id="eip-514">
+<para id="eip-826">What are the Sum of Squares and Mean Squares Errors?</para>
+</problem>
+
+<solution id="eip-600">
+<para id="eip-406"><emphasis effect="italics">SS</emphasis> = 237.33; <emphasis effect="italics">MS</emphasis> = 23.73</para>
+</solution>
+</exercise>
+
+<exercise id="eip-79"><problem id="eip-948">
+<para id="eip-534">What is the <emphasis effect="italics">F</emphasis> statistic?</para>
+</problem></exercise><exercise id="eip-155"><problem id="eip-123">
+<para id="eip-429">What is the <emphasis effect="italics">p</emphasis>-value?</para>
+</problem>
+
+<solution id="eip-620">
+<para id="eip-753">
+0.1614
+</para>
+</solution>
+</exercise><exercise id="eip-773"><problem id="eip-478">
+<para id="eip-385">At the 5% significance level, is there a difference in the mean jump heights among the teams?</para>
+</problem></exercise><para id="eip-738"><newline/><emphasis effect="italics">Use the following information to answer the next seven exercises.</emphasis> A video game developer is testing a new game on three different groups. Each group represents a different target market for the game. The developer collects scores from a random sample from each group. The results are shown in <link target-id="eip-546"/></para><table id="eip-546" summary="..">
+<tgroup cols="3">
+<thead>
+<row>
+<entry>Group A</entry>	<entry>Group B</entry>	<entry>Group C</entry></row></thead>
+<tbody>
+<row><entry>101</entry>	<entry>151</entry>	<entry>101</entry></row>
+<row><entry>108</entry>	<entry>149</entry>	<entry>109</entry></row>
+<row><entry>98</entry>	<entry>160</entry>	<entry>198</entry></row>
+<row><entry>107</entry>	<entry>112</entry>	<entry>186</entry></row>
+<row><entry>111</entry>	<entry>126</entry>	<entry>160</entry></row>
+</tbody>
+</tgroup>
+</table><exercise id="eip-602"><problem id="eip-158">
+<para id="eip-408">What is the <emphasis effect="italics">df(num)</emphasis>?</para>
+</problem>
+
+<solution id="eip-340">
+<para id="eip-335">two</para>
+</solution>
+</exercise><exercise id="eip-99"><problem id="eip-435">
+<para id="eip-720">What is the <emphasis effect="italics">df(denom)</emphasis>?</para>
+</problem></exercise><exercise id="eip-944">
+<problem id="eip-42">
+<para id="eip-662">What are the <emphasis effect="italics">SS<sub>between</sub></emphasis> and <emphasis effect="italics">MS<sub>between</sub></emphasis>?</para>
+</problem>
+
+<solution id="eip-260">
+<para id="eip-828"><emphasis effect="italics">SS</emphasis> = 5,700.4;</para>
+<para id="eip-idm83859872"><emphasis effect="italics">MS</emphasis> = 2,850.2</para>
+</solution>
+</exercise>
+
+<exercise id="eip-264"><problem id="eip-299">
+<para id="eip-324">What are the <emphasis effect="italics">SS<sub>within</sub></emphasis> and <emphasis effect="italics">MS<sub>within</sub></emphasis>?</para>
+</problem></exercise><exercise id="eip-105">
+<problem id="eip-865">
+<para id="eip-189">What is the <emphasis effect="italics">F</emphasis> Statistic?</para>
+</problem>
+
+<solution id="eip-700">
+<para id="eip-821">3.6101</para>
+</solution>
+</exercise>
+<exercise id="eip-56"><problem id="eip-74">
+<para id="eip-736">What is the <emphasis effect="italics">p</emphasis>-value?</para>
+</problem></exercise><exercise id="eip-920"><problem id="eip-10">
+<para id="eip-933">At the 10% significance level, are the scores among the different groups different?</para>
+</problem>
+
+<solution id="eip-618">
+<para id="eip-988">Yes, there is enough evidence to show that the scores among the groups are statistically significant at the 10% level.</para>
+</solution>
+</exercise>
+
+
+<para id="element-577"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Suppose a group is interested in determining whether teenagers obtain their drivers licenses at approximately the same average age across the country. Suppose that the following data are randomly collected from five teenagers in each region of the country. The numbers represent the age at which teenagers obtained their drivers licenses.
+</para><table id="element-25" summary="">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead><row>
+<entry/>
+<entry>
+Northeast
+</entry>
+<entry>
+South
+</entry>
+<entry>
+West
+</entry>
+<entry>
+Central
+</entry>
+<entry>
+East
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry/>
+<entry>16.3</entry>
+<entry>16.9</entry>
+<entry>16.4</entry>
+<entry>16.2</entry>
+<entry>17.1</entry>
+</row>
+<row>
+<entry/>
+<entry>16.1</entry>
+<entry>16.5</entry>
+<entry>16.5</entry>
+<entry>16.6</entry>
+<entry>17.2</entry>
+</row>
+<row>
+<entry/>
+<entry>16.4</entry>
+<entry>16.4</entry>
+<entry>16.6</entry>
+<entry>16.5</entry>
+<entry>16.6</entry>
+</row>
+<row>
+<entry/>
+<entry>16.5</entry>
+<entry>16.2</entry>
+<entry>16.1</entry>
+<entry>16.4</entry>
+<entry>16.8</entry>
+</row>
+<row>
+<entry>
+  <m:math>
+<m:mrow>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>¯</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+</m:mrow>
+</m:math>
+</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+</row>
+<row>
+<entry>
+  <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+</m:mrow>
+</m:math>
+</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<para id="element-749">Enter the data into your calculator or computer.</para>
+
+<exercise id="fs-idm77454416"><problem id="id47591494">
+<para id="element-801"><emphasis effect="italics">p</emphasis>-value = ______</para></problem></exercise><para id="element-48"><emphasis effect="italics">State the decisions and conclusions (in complete sentences) for the following preconceived levels of α</emphasis>.</para>
+
+<exercise id="fs-idm138666704">
+<problem id="id47591590">
+<para id="element-506"><emphasis effect="italics">α</emphasis> = 0.05</para>
+<para id="element-950">a. Decision: ____________________________</para>
+<para id="element-2384687">b. Conclusion: ____________________________</para>
+</problem>
+</exercise>
+
+<exercise id="exercisemern">
+<problem id="id47591672">
+<para id="element-768"><emphasis effect="italics">α</emphasis> = 0.01</para>
+<para id="element-354">a. Decision: ____________________________</para>
+<para id="element-2307872938759">b. Conclusion: ____________________________</para>
+</problem>
+</exercise>
+</section>
+
+<section id="fs-idp159138080" class="free-response"><title>Homework</title><exercise id="element-240">
+<problem id="id19304316">
+<para id="element-106">Three students, Linda, Tuan, and Javier, are given five laboratory rats each for a nutritional experiment. Each rat's weight is recorded in grams. Linda feeds her rats Formula A, Tuan feeds his rats Formula B, and Javier feeds his rats Formula C. At the end of a specified time period, each rat is weighed again, and the net gain in grams is recorded. Using a significance level of 10%, test the hypothesis that the three formulas produce the same mean weight gain.</para>
+<para id="element-800"><table id="id348a5492" summary="This table presents the net weight in grams of each rat with Linda's rats in the first column, Tuan's rats in the second column, and Javier's rats in the third column."><title>Weights of Student Lab Rats</title>
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Linda's rats</entry>
+<entry>Tuan's rats</entry>
+<entry>Javier's rats</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>43.5</entry>
+<entry>47.0</entry>
+<entry>51.2</entry>
+</row>
+<row>
+<entry>39.4</entry>
+<entry>40.5</entry>
+<entry>40.9</entry>
+</row>
+<row>
+<entry>41.3</entry>
+<entry>38.9</entry>
+<entry>37.9</entry>
+</row>
+<row>
+<entry>46.0</entry>
+<entry>46.3</entry>
+<entry>45.0</entry>
+</row>
+<row>
+<entry>38.2</entry>
+<entry>44.2</entry>
+<entry>48.6</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></para>
+</problem>
+<solution id="id18508040">
+<list id="eip-idp84128112" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">µ<sub>L</sub></emphasis> = <emphasis effect="italics">µ<sub>T</sub></emphasis> = <emphasis effect="italics">µ<sub>J</sub></emphasis></item>
+<item><emphasis effect="italics">H<sub>a</sub></emphasis>: at least any two of the means are different</item>
+<item><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = 2; <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = 12</item>
+<item><emphasis effect="italics">F</emphasis> distribution</item>
+<item>0.67</item>
+<item>0.5305</item>
+<item>Check student’s solution.</item>
+<item>Decision:Cannot reject null hypothesis; Conclusion: There is insufficient evidence to conclude that the means are different.</item>
+</list></solution>
+</exercise>
+
+<exercise id="element-60"><problem id="id18508281">
+<para id="element-987">A grassroots group opposed to a proposed increase in the gas tax claimed that the increase would hurt working-class people the most, since they commute the farthest to work. Suppose that the group randomly surveyed 24 individuals and asked them their daily one-way commuting mileage. The results are in <link target-id="idgh7333173"/>.  Using a 5% significance level, test the hypothesis that the three mean commuting mileages are the same.</para>
+<para id="element-719">
+<table id="idgh7333173" summary=".">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Working-class</entry>
+<entry>Professional (middle incomes)</entry>
+<entry>Professional (wealthy)</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>17.8</entry>
+<entry>16.5</entry>
+<entry>8.5</entry>
+</row>
+<row>
+<entry>26.7</entry>
+<entry>17.4</entry>
+<entry>6.3</entry>
+</row>
+<row>
+<entry>49.4</entry>
+<entry>22.0</entry>
+<entry>4.6</entry>
+</row>
+<row>
+<entry>9.4</entry>
+<entry>7.4</entry>
+<entry>12.6</entry>
+</row>
+<row>
+<entry>65.4</entry>
+<entry>9.4</entry>
+<entry>11.0</entry>
+</row>
+<row>
+<entry>47.1</entry>
+<entry>2.1</entry>
+<entry>28.6</entry>
+</row>
+<row>
+<entry>19.5</entry>
+<entry>6.4</entry>
+<entry>15.4</entry>
+</row>
+<row>
+<entry>51.2</entry>
+<entry>13.9</entry>
+<entry>9.3</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+</problem></exercise>
+
+<para id="element-333"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> <link target-id="id7236751"/> lists the number of pages in four different types of magazines.</para>
+
+<table id="id7236751" summary="This table presents the number of pages in some types of magazines with home decorating in the first column, news in the second column, health in the third column, and computer in the fourth column.">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<thead>
+<row>
+<entry>Home decorating</entry>
+<entry>News</entry>
+<entry>Health</entry>
+<entry>Computer</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>172</entry>
+<entry>87</entry>
+<entry>82</entry>
+<entry>104</entry>
+</row>
+<row>
+<entry>286</entry>
+<entry>94</entry>
+<entry>153</entry>
+<entry>136</entry>
+</row>
+<row>
+<entry>163</entry>
+<entry>123</entry>
+<entry>87</entry>
+<entry>98</entry>
+</row>
+<row>
+<entry>205</entry>
+<entry>106</entry>
+<entry>103</entry>
+<entry>207</entry>
+</row>
+<row>
+<entry>197</entry>
+<entry>101</entry>
+<entry>96</entry>
+<entry>146</entry>
+</row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><exercise id="element-781"><problem id="id19316785">
+<para id="element-632">Using a significance level of 5%, test the hypothesis that the four magazine types have the same mean length.</para>
+</problem></exercise><exercise id="element-219">
+<problem id="id19317090">
+<para id="element-384">Eliminate one magazine type that you now feel has a mean length different from the others. Redo the hypothesis test, testing that the remaining three means are statistically the same. Use a new solution sheet. Based on this test, are the mean lengths for the remaining three magazines statistically the same?
+</para>
+</problem>
+<solution id="eip-idm63675648">
+<list id="eip-idm63675392" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">µ</emphasis><sub>c</sub> = <emphasis effect="italics">µ</emphasis><sub>n</sub> = <emphasis effect="italics">µ</emphasis><sub>h</sub></item>
+<item>At least any two of the magazines have different mean lengths.</item>
+<item><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = 2, <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = 12</item>
+<item><emphasis effect="italics">F</emphasis> distribution</item>
+<item><emphasis effect="italics">F</emphasis> = 15.28</item>
+<item><emphasis effect="italics">p</emphasis>-value = 0.001</item>
+<item>Check student’s solution.</item>
+<item>
+<list id="eip-idm15104944" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
+<item>Decision: Cannot accept the null hypothesis.</item>
+<item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+<item>Conclusion: There is sufficient evidence to conclude that the mean lengths of the magazines are different.</item>
+</list></item>
+</list></solution>
+</exercise>
+
+
+<exercise id="eip-431"><problem id="eip-515">
+<para id="eip-629">A researcher wants to know if the mean times (in minutes) that people watch their favorite news station are the same. Suppose that <link target-id="eip-id2754369"/> shows the results of a study.</para>
+
+<table id="eip-id2754369" summary="The Table consists of 3 columns: CNN, Fox and Local. The table entries are the mean time, in minutes, that people watch their favorite news station on CNN, Fox or the local station.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>CNN</entry>
+<entry>FOX</entry>
+<entry>Local</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>45</entry>
+<entry>15</entry>
+<entry>72</entry>
+</row>
+<row>
+<entry>12</entry>
+<entry>43</entry>
+<entry>37</entry>
+</row>
+<row>
+<entry>18</entry>
+<entry>68</entry>
+<entry>56</entry>
+</row>
+<row>
+<entry>38</entry>
+<entry>50</entry>
+<entry>60</entry>
+</row>
+<row>
+<entry>23</entry>
+<entry>31</entry>
+<entry>51</entry>
+</row>
+<row>
+<entry>35</entry>
+<entry>22</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-idm8691760">Assume that all distributions are normal, the four population standard deviations are approximately the same, and the data were collected independently and randomly. Use a level of significance of 0.05.</para>
+</problem></exercise><exercise id="eip-1000"><problem id="eip-311">
+<para id="eip-13">Are the means for the final exams the same for all statistics class delivery types? <link target-id="eip-id1164473001430"/> shows the scores on final exams from several randomly selected classes that used the different delivery types.</para>
+<table id="eip-id1164473001430" summary="The Table consists of 3 columns: Online, Hybrid and Face-to-Face. The table entries are the mean scores on the final exam for Online, Hybrid and Face-to-Face delivery types for statistics.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Online</entry>
+<entry>Hybrid</entry>
+<entry>Face-to-Face</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>72</entry>
+<entry>83</entry>
+<entry>80</entry>
+</row>
+<row>
+<entry>84</entry>
+<entry>73</entry>
+<entry>78</entry>
+</row>
+<row>
+<entry>77</entry>
+<entry>84</entry>
+<entry>84</entry>
+</row>
+<row>
+<entry>80</entry>
+<entry>81</entry>
+<entry>81</entry>
+</row>
+<row>
+<entry>81</entry>
+<entry/>
+<entry>86</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>79</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>82</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-idm50305264">Assume that all distributions are normal, the four population standard deviations are approximately the same, and the data were collected independently and randomly. Use a level of significance of 0.05.</para>
+</problem>
+<solution id="eip-idm16460784">
+<list id="eip-idm114113136" list-type="enumerated" number-style="lower-alpha">
+<item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>o</sub></emphasis> = <emphasis effect="italics">μ<sub>h</sub></emphasis> = <emphasis effect="italics">μ<sub>f</sub></emphasis></item>
+<item>At least two of the means are different.</item>
+<item><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">n</emphasis>) = 2, <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">d</emphasis>) = 13</item>
+<item><emphasis effect="italics">F</emphasis><sub>2,13</sub></item>
+<item>0.64</item>
+<item>0.5437</item>
+<item>Check student’s solution.</item>
+<item>
+<list id="eip-idm119829920" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
+<item>Decision: Cannot reject the null hypothesis.</item>
+<item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+<item>Conclusion: The mean scores of different class delivery are not different.</item>
+</list></item>
+</list>
+</solution></exercise><exercise id="fs-idm81211824"><problem id="fs-idm81211696">
+<para id="fs-idm81211440">Are the mean number of times a month a person eats out the same for White, Black, Hispanic and Asian people? Suppose that <link target-id="fs-idm13269984"/> shows the results of a study.</para><table id="fs-idm13269984" summary="The Table consists of 4 columns: White, Black, Hispanic and Asian. The table entries are the mean number of times a month that people who are White, Black, Hispanic and Asian eat out.">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>White</entry>
+<entry>Black</entry>
+<entry>Hispanic</entry>
+<entry>Asian</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>6</entry>
+<entry>4</entry>
+<entry>7</entry>
+<entry>8</entry>
+
+</row>
+<row>
+<entry>8</entry>
+<entry>1</entry>
+<entry>3</entry>
+<entry>3</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>5</entry>
+<entry>5</entry>
+<entry>5</entry>
+</row>
+<row>
+<entry>4</entry>
+<entry>2</entry>
+<entry>4</entry>
+<entry>1</entry>
+</row>
+<row>
+<entry>6</entry>
+<entry/>
+<entry>6</entry>
+<entry>7</entry>
+</row>
+
+
+</tbody>
+
+</tgroup>
+</table><para id="fs-idm147998880">Assume that all distributions are normal, the four population standard deviations are approximately the same, and the data were collected independently and randomly. Use a level of significance of 0.05.</para>
+</problem></exercise><exercise id="fs-idp113565584"><problem id="fs-idp113565712">
+<para id="fs-idp113565968">Are the mean numbers of daily visitors to a ski resort the same for the three types of snow conditions? Suppose that <link target-id="fs-idp109843184"/> shows the results of a study.</para>
+
+<table id="fs-idp109843184" summary="The Table consists of 3 columns with snow conditions Powder, Machine Made and Hard Packed. The table entries are the mean number of visitors to a ski resort for the 3 types of snow conditions.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Powder</entry>
+<entry>Machine Made</entry>
+<entry>Hard Packed</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>1,210</entry>
+<entry>2,107</entry>
+<entry>2,846</entry>
+</row>
+<row>
+<entry>1,080</entry>
+<entry>1,149</entry>
+<entry>1,638</entry>
+</row>
+<row>
+<entry>1,537</entry>
+<entry>862</entry>
+<entry>2,019</entry>
+</row>
+<row>
+<entry>941</entry>
+<entry>1,870</entry>
+<entry>1,178</entry>
+</row>
+<row>
+<entry/>
+<entry>1,528</entry>
+<entry>2,233</entry>
+</row>
+<row>
+<entry/>
+<entry>1,382</entry>
+<entry/>
+</row>
+
+
+</tbody>
+
+</tgroup>
+</table><para id="fs-idm146956176">Assume that all distributions are normal, the four population standard deviations are approximately the same, and the data were collected independently and randomly. Use a level of significance of 0.05.</para>
+</problem>
+<solution id="eip-idm119523872">
+<list id="eip-idm119523616" list-type="enumerated" number-style="lower-alpha">
+<item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>p</sub></emphasis> = <emphasis effect="italics">μ<sub>m</sub></emphasis> = <emphasis effect="italics">μ<sub>h</sub></emphasis></item>
+<item>At least any two of the means are different.</item>
+<item><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">n</emphasis>) = 2, <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">d</emphasis>) = 12</item>
+<item><emphasis effect="italics">F</emphasis><sub>2,12</sub></item>
+<item>3.13</item>
+<item>0.0807</item>
+<item>Check student’s solution.</item>
+<item>
+<list id="eip-idm129088112" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
+<item>Decision: Cannot reject the null hypothesis.</item>
+<item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+<item>Conclusion: There is not sufficient evidence  to conclude that the mean numbers of daily visitors are different.</item>
+</list></item>
+</list>
+</solution></exercise><exercise id="eip-88"><problem id="eip-730">
+<para id="eip-165">Sanjay made identical paper airplanes out of three different weights of paper, light, medium and heavy.  He made four airplanes from each of the weights, and launched them himself across the room.  Here are the distances (in meters) that his planes flew.</para>
+
+<table id="eip-729" summary=".."><tgroup cols="3">
+<thead>
+<row>
+<entry>Paper type/Trial</entry>
+<entry>Trial 1</entry>
+<entry>Trial 2</entry>
+<entry>Trial 3</entry>
+<entry>Trial 4</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Heavy</entry>
+<entry>5.1 meters</entry>
+<entry>3.1 meters</entry>
+<entry>4.7 meters</entry>
+<entry>5.3 meters</entry>
+</row>
+<row>
+<entry>Medium</entry>
+<entry>4 meters</entry>
+<entry>3.5 meters</entry>
+<entry>4.5 meters</entry>
+<entry>6.1 meters</entry>
+</row>
+<row>
+<entry>Light</entry>
+<entry>3.1 meters</entry>
+<entry>3.3 meters</entry>
+<entry>2.1 meters</entry>
+<entry>1.9 meters</entry>
+</row>
+</tbody>
+</tgroup>
+</table><figure id="fs-idm82879440"><media id="eip-idm6038640704" alt="the graph is a scatter plot which represents the data provided. The horizontal axis is labeled 'Distance in Meters,' and extends form 2 to 6. The vertical axis is labeled 'Weight of Paper' and has light, medium, and heavy categories.">
+<image src="../../media/CNX_Stats_C13_M04_100.jpg" mime-type="image/jpeg" width="380"/></media>
+</figure><list id="eip-idp36652720" list-type="enumerated" number-style="lower-alpha"><item>Take a look at the data in the graph. Look at the spread of data for each group (light, medium, heavy). Does it seem reasonable to assume a normal distribution with the same variance for each group? Yes or No.</item>
+
+<item>Why is this a balanced design?</item>
+<item>Calculate the sample mean and sample standard deviation for each group.</item>
+<item>Does the weight of the paper have an effect on how far the plane will travel?  Use a 1% level of significance. Complete the test using the method shown in the bean plant example in <link target-id="fs-idm82879440"/>.
+
+<list id="eip-idp94716144">
+<item>variance of the group means __________</item>
+<item><emphasis effect="italics">MS<sub>between</sub></emphasis>= ___________</item>
+<item>mean of the three sample variances ___________</item>
+<item><emphasis effect="italics">MS<sub>within</sub></emphasis> = _____________</item>
+<item><emphasis effect="italics">F</emphasis> statistic = ____________</item>
+<item><emphasis effect="italics">df(num)</emphasis> = __________, <emphasis effect="italics">df(denom)</emphasis> = ___________</item>
+<item>number of groups _______</item>
+<item>number of observations _______</item>
+<item><emphasis effect="italics">p</emphasis>-value = __________ (<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; _______) = __________)</item>
+<item>Graph the <emphasis effect="italics">p</emphasis>-value.</item>
+<item>decision: _______________________</item>
+<item>conclusion: _______________________________________________________________</item>
+</list>
+</item>
+</list></problem></exercise><exercise id="eip-137">
+<problem id="eip-432">
+<para id="eip-864">DDT is a pesticide that has been banned from use in the United States and most other areas of the world. It is quite effective, but persisted in the environment and over time became seen as harmful to higher-level organisms. Famously, egg shells of eagles and other raptors were believed to be thinner and prone to breakage in the nest because of ingestion of DDT in the food chain of the birds.</para>
+
+<para id="eip-idp9520752">An experiment was conducted on the number of eggs (fecundity) laid by female fruit flies.  There are three groups of flies.  One group was bred to be resistant to DDT (the RS group).  Another was bred to be especially susceptible to DDT (SS).  Finally there was a control line of non-selected or typical fruitflies (NS).  Here are the data:
+
+<table id="eip-180" summary="..">
+<tgroup cols="3">
+<thead>
+<row>
+<entry>RS</entry>
+<entry>SS</entry>
+<entry>NS</entry>
+<entry>RS</entry>
+<entry>SS</entry>
+<entry>NS</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>12.8</entry>
+<entry>38.4</entry>
+<entry>35.4</entry>
+<entry>22.4</entry>
+<entry>23.1</entry>
+<entry>22.6</entry>
+</row>
+<row>
+<entry>21.6</entry>
+<entry>32.9</entry>
+<entry>27.4</entry>
+<entry>27.5</entry>
+<entry>29.4</entry>
+<entry>40.4</entry>
+</row>
+<row>
+<entry>14.8</entry>
+<entry>48.5</entry>
+<entry>19.3</entry>
+<entry>20.3</entry>
+<entry>16</entry>
+<entry>34.4</entry>
+</row>
+<row>
+<entry>23.1</entry>
+<entry>20.9</entry>
+<entry>41.8</entry>
+<entry>38.7</entry>
+<entry>20.1</entry>
+<entry>30.4</entry>
+</row>
+<row>
+<entry>34.6</entry>
+<entry>11.6</entry>
+<entry>20.3</entry>
+<entry>26.4</entry>
+<entry>23.3</entry>
+<entry>14.9</entry>
+</row>
+<row>
+<entry>19.7</entry>
+<entry>22.3</entry>
+<entry>37.6</entry>
+<entry>23.7</entry>
+<entry>22.9</entry>
+<entry>51.8</entry>
+</row>
+<row>
+<entry>22.6</entry>
+<entry>30.2</entry>
+<entry>36.9</entry>
+<entry>26.1</entry>
+<entry>22.5</entry>
+<entry>33.8</entry>
+</row>
+<row>
+<entry>29.6</entry>
+<entry>33.4</entry>
+<entry>37.3</entry>
+<entry>29.5</entry>
+<entry>15.1</entry>
+<entry>37.9</entry>
+</row>
+<row>
+<entry>16.4</entry>
+<entry>26.7</entry>
+<entry>28.2</entry>
+<entry>38.6</entry>
+<entry>31</entry>
+<entry>29.5</entry>
+</row>
+<row>
+<entry>20.3</entry>
+<entry>39</entry>
+<entry>23.4</entry>
+<entry>44.4</entry>
+<entry>16.9</entry>
+<entry>42.4</entry>
+</row>
+<row>
+<entry>29.3</entry>
+<entry>12.8</entry>
+<entry>33.7</entry>
+<entry>23.2</entry>
+<entry>16.1</entry>
+<entry>36.6</entry>
+</row>
+<row>
+<entry>14.9</entry>
+<entry>14.6</entry>
+<entry>29.2</entry>
+<entry>23.6</entry>
+<entry>10.8</entry>
+<entry>47.4</entry>
+</row>
+<row>
+<entry>27.3</entry>
+<entry>12.2</entry>
+<entry>41.7</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+</para>
+
+<para id="eip-idm118691088">The values are the average number of eggs laid daily for each of 75 flies (25 in each group) over the first 14 days of their lives.  Using a 1% level of significance, are the mean rates of egg selection for the three strains of fruitfly different?  If so, in what way?  Specifically, the researchers were interested in whether or not the selectively bred strains were different from the nonselected line, and whether the two selected lines were different from each other.</para>
+
+<para id="eip-idp20090240">Here is a chart of the three groups:</para>
+
+<figure id="fs-idm5123296"><media id="eip-idp35835920" alt="This graph is a scatterplot which represents the data provided. The horizontal axis is labeled 'Mean eggs laid per day' and extends from 10 - 50. The vertical axis is labeled 'Fruitflies DDT resistant or susceptible, or not selected.' The vertical axis is labeled with the categories NS, RS, SS.">
+<image src="../../media/CNX_Stats_C13_M04_007.jpg" mime-type="image/jpeg" width="380"/></media></figure></problem>
+
+<solution id="eip-601">
+<para id="eip-313">The data appear normally distributed from the chart and of similar spread. There do not appear to be any serious outliers, so we may proceed with our ANOVA calculations, to see if we have good evidence of a difference between the three groups.</para>
+<para id="eip-idp9408976"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>µ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>µ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>µ</m:mi><m:mn>3</m:mn></m:msub></m:math>;</para><para id="eip-idp2303648"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>µ</m:mi><m:mi>i</m:mi></m:msub><m:mo>≠</m:mo><m:mo>;</m:mo></m:math> some <m:math><m:mi>i</m:mi><m:mo>≠</m:mo><m:mi>j</m:mi></m:math></para><para id="eip-idm63708960">Define <emphasis effect="italics">μ</emphasis><sub>1</sub>, <emphasis effect="italics">μ</emphasis><sub>2</sub>, <emphasis effect="italics">μ</emphasis><sub>3</sub>, as the population mean number of eggs laid by the three groups of fruit flies.</para>
+<para id="eip-idm1853136"><emphasis effect="italics">F</emphasis> statistic = 8.6657;</para>
+<para id="eip-idm1852752"><emphasis effect="italics">p</emphasis>-value = 0.0004 </para>
+
+<figure id="fs-idm155800880"><media id="eip-idp18660496" alt="This graph shows a nonsymmetrical F distribution curve. This curve does not have a peak, but slopes downward from a maximum value at (0, 1.0) and approaches the horizontal axis at the right edge of the graph.">
+<image src="../../media/CNX_Stats_C13_M04_008.jpg" mime-type="image/jpeg" width="380"/>
+</media>
+</figure><para id="eip-idp2564992"><emphasis><emphasis effect="underline">Decision:</emphasis></emphasis>  Since the <emphasis effect="italics">p</emphasis>-value is less than the level of significance of 0.01, we reject the null hypothesis.</para>
+
+<para id="eip-idp38405520"><emphasis><emphasis effect="underline">Conclusion:</emphasis></emphasis> We have good evidence that the average number of eggs laid during the first 14 days of life for these three strains of fruitflies are different.</para>
+
+<para id="eip-idm111067136">Interestingly, if you perform a two sample <emphasis effect="italics">t</emphasis>-test to compare the RS and NS groups they are significantly different (<emphasis effect="italics">p</emphasis> = 0.0013). Similarly, SS and NS are significantly different (<emphasis effect="italics">p</emphasis> = 0.0006). However, the two selected groups, RS and SS are <emphasis effect="italics">not</emphasis> significantly different (<emphasis effect="italics">p</emphasis> = 0.5176). Thus we appear to have good evidence that selection either for resistance or for susceptibility involves a reduced rate of egg production (for these specific strains) as compared to flies that were not selected for resistance or susceptibility to DDT. Here, genetic selection has apparently involved a loss of fecundity.</para></solution>
+</exercise>
+
+<exercise id="eip-178"><problem id="eip-800"><para id="fs-idp79390240">The data shown is the recorded body temperatures of 130 subjects as estimated from available histograms.</para>
+<para id="fs-idm8674144">Traditionally we are taught that the normal human body temperature is 98.6 F. This is not quite correct for everyone. Are the mean temperatures among the four groups different?</para>
+<para id="fs-idm8673568">Calculate 95% confidence intervals for the mean body temperature in each group and comment about the confidence intervals.</para>
+
+<table id="eip-269" summary="..">
+<tgroup cols="4">
+<thead>
+<row>
+<entry>FL</entry>
+<entry>FH</entry>
+<entry>ML</entry>
+<entry>MH</entry>
+<entry>FL</entry>
+<entry>FH</entry>
+<entry>ML</entry>
+<entry>MH</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>96.4</entry>
+<entry>96.8</entry>
+<entry>96.3</entry>
+<entry>96.9</entry>
+<entry>98.4</entry>
+<entry>98.6</entry>
+<entry>98.1</entry>
+<entry>98.6</entry>
+</row>
+<row>
+<entry>96.7</entry>
+<entry>97.7</entry>
+<entry>96.7</entry>
+<entry>97</entry>
+<entry>98.7</entry>
+<entry>98.6</entry>
+<entry>98.1</entry>
+<entry>98.6</entry>
+</row>
+<row>
+<entry>97.2</entry>
+<entry>97.8</entry>
+<entry>97.1</entry>
+<entry>97.1</entry>
+<entry>98.7</entry>
+<entry>98.6</entry>
+<entry>98.2</entry>
+<entry>98.7</entry>
+</row>
+<row>
+<entry>97.2</entry>
+<entry>97.9</entry>
+<entry>97.2</entry>
+<entry>97.1</entry>
+<entry>98.7</entry>
+<entry>98.7</entry>
+<entry>98.2</entry>
+<entry>98.8</entry>
+</row>
+<row>
+<entry>97.4</entry>
+<entry>98</entry>
+<entry>97.3</entry>
+<entry>97.4</entry>
+<entry>98.7</entry>
+<entry>98.7</entry>
+<entry>98.2</entry>
+<entry>98.8</entry>
+</row>
+<row>
+<entry>97.6</entry>
+<entry>98</entry>
+<entry>97.4</entry>
+<entry>97.5</entry>
+<entry>98.8</entry>
+<entry>98.8</entry>
+<entry>98.2</entry>
+<entry>98.8</entry>
+</row>
+<row>
+<entry>97.7</entry>
+<entry>98</entry>
+<entry>97.4</entry>
+<entry>97.6</entry>
+<entry>98.8</entry>
+<entry>98.8</entry>
+<entry>98.3</entry>
+<entry>98.9</entry>
+</row>
+<row>
+<entry>97.8</entry>
+<entry>98</entry>
+<entry>97.4</entry>
+<entry>97.7</entry>
+<entry>98.8</entry>
+<entry>98.8</entry>
+<entry>98.4</entry>
+<entry>99</entry>
+</row>
+<row>
+<entry>97.8</entry>
+<entry>98.1</entry>
+<entry>97.5</entry>
+<entry>97.8</entry>
+<entry>98.8</entry>
+<entry>98.9</entry>
+<entry>98.4</entry>
+<entry>99</entry>
+</row>
+<row>
+<entry>97.9</entry>
+<entry>98.3</entry>
+<entry>97.6</entry>
+<entry>97.9</entry>
+<entry>99.2</entry>
+<entry>99</entry>
+<entry>98.5</entry>
+<entry>99</entry>
+</row>
+<row>
+<entry>97.9</entry>
+<entry>98.3</entry>
+<entry>97.6</entry>
+<entry>98</entry>
+<entry>99.3</entry>
+<entry>99</entry>
+<entry>98.5</entry>
+<entry>99.2</entry>
+</row>
+<row>
+<entry>98</entry>
+<entry>98.3</entry>
+<entry>97.8</entry>
+<entry>98</entry>
+<entry/>
+<entry>99.1</entry>
+<entry>98.6</entry>
+<entry>99.5</entry>
+</row>
+<row>
+<entry>98.2</entry>
+<entry>98.4</entry>
+<entry>97.8</entry>
+<entry>98</entry>
+<entry/>
+<entry>99.1</entry>
+<entry>98.6</entry>
+<entry/>
+</row>
+<row>
+<entry>98.2</entry>
+<entry>98.4</entry>
+<entry>97.8</entry>
+<entry>98.3</entry>
+<entry/>
+<entry>99.2</entry>
+<entry>98.7</entry>
+<entry/>
+</row>
+<row>
+<entry>98.2</entry>
+<entry>98.4</entry>
+<entry>97.9</entry>
+<entry>98.4</entry>
+<entry/>
+<entry>99.4</entry>
+<entry>99.1</entry>
+<entry/>
+</row>
+<row>
+<entry>98.2</entry>
+<entry>98.4</entry>
+<entry>98</entry>
+<entry>98.4</entry>
+<entry/>
+<entry>99.9</entry>
+<entry>99.3</entry>
+<entry/>
+</row>
+<row>
+<entry>98.2</entry>
+<entry>98.5</entry>
+<entry>98</entry>
+<entry>98.6</entry>
+<entry/>
+<entry>100</entry>
+<entry>99.4</entry>
+<entry/>
+</row>
+<row>
+<entry>98.2</entry>
+<entry>98.6</entry>
+<entry>98</entry>
+<entry>98.6</entry>
+<entry/>
+<entry>100.8</entry>
+<entry/>
+<entry/>
+</row>
+</tbody></tgroup>
+</table>
+</problem></exercise></section>
+ </content>
+</document>

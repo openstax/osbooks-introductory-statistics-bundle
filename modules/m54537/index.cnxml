@@ -1,0 +1,460 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Using the Central Limit Theorem</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54537</md:content-id>
+  <md:title>Using the Central Limit Theorem</md:title>
+  <md:abstract/>
+  <md:uuid>323cb760-5f99-4899-a96b-f3919f982a6a</md:uuid>
+</metadata>
+
+<content>
+    <section id="element-733"><title>Examples of the Central Limit Theorem</title><section id="fs-idp5962992"><title>Law of Large Numbers</title><para id="element-349">The <term>law of large numbers</term> says that if you take samples of larger and larger size from any population, then the mean of the sampling distribution,  <m:math><m:msub><m:mi>μ</m:mi>
+ <m:mrow><m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover></m:mrow>
+</m:msub>
+</m:math> tends to get closer and closer to the true population mean, <emphasis effect="italics">μ</emphasis>. From the Central Limit Theorem, we know that as <emphasis effect="italics">n</emphasis> gets larger and larger, the sample means follow a normal distribution. The larger <emphasis effect="italics">n</emphasis> gets, the smaller the standard deviation of the sampling distribution gets. (Remember that the standard deviation for the sampling distribution of <m:math>
+ <m:mover>
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+</m:math> is <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>σ</m:mi>
+   <m:mrow>
+    <m:msqrt>
+     <m:mi>n</m:mi>
+    </m:msqrt>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math>.) This means that the sample mean <m:math>
+ <m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover></m:math> must be closer to the population mean <emphasis effect="italics">μ</emphasis> as <emphasis effect="italics">n</emphasis> increases. We can say that <emphasis effect="italics">μ</emphasis> is the value that the sample means approach as <emphasis effect="italics">n</emphasis> gets larger. The Central Limit Theorem illustrates the law of large numbers.</para><para id="eip-268">This concept is so important and plays such a critical role in what follows it deserves to be developed further. Indeed, there are two critical issues that flow from the Central Limit Theorem and the application of the Law of Large numbers to it. These are</para><list id="eip-950" list-type="enumerated" number-style="arabic"><item>The probability density function of the sampling distribution of means is normally distributed <emphasis effect="bold">regardless</emphasis> of the underlying distribution of the population observations and</item>
+<item>standard deviation of the sampling distribution decreases as the size of the samples that were used to calculate the means for the sampling distribution increases.</item></list><para id="eip-881">Taking these in order. It would seem counterintuitive that the population may have <emphasis effect="bold">any</emphasis> distribution and the distribution of means coming from it would be normally distributed. With the use of computers, experiments can be simulated that show the process by which the sampling distribution changes as the sample size is increased. These simulations show visually the results of the mathematical proof of the Central Limit Theorem.</para><para id="eip-697">Here are three examples of very different population distributions and the evolution of the sampling distribution to a normal distribution as the sample size increases. The top panel in these cases represents the histogram for the original data. The three panels show the histograms for 1,000 randomly drawn samples for different sample sizes: n=10, n= 25 and n=50. As the sample size increases, and the number of samples taken remains constant, the distribution of the 1,000 sample means becomes closer to the smooth line that represents the normal distribution.</para><para id="eip-183"><link target-id="eip-id1169478792440"/> is for a normal distribution of individual observations and we would expect the sampling distribution to converge on the normal quickly. The results show this and show that even at a very small sample size the distribution is close to the normal distribution.    </para><figure id="eip-id1169478792440"><media id="eip-id1169473724931" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch06_07_01m.jpg" width="400"/></media></figure><para id="eip-9"><link target-id="eip-id1170498321883"/> is a uniform distribution which, a bit amazingly, quickly approached the normal distribution even with only a sample of 10.  </para><figure id="eip-id1170498321883"><media id="eip-id1170503521704" alt="..."><image mime-type="image/jpg" src="../../media/fig-ch07_04_01m.jpg" width="400"/></media></figure><para id="eip-61"><link target-id="eip-id7266344"/> is a skewed distribution. This last one could be an exponential, geometric, or binomial with a small probability of success creating the skew in the distribution. For skewed distributions our intuition would say that this will take larger sample sizes to move to a normal distribution and indeed that is what we observe from the simulation. Nevertheless, at a sample size of 50, not considered a very large sample, the distribution of sample means has very decidedly gained the shape of the normal distribution.  </para><figure id="eip-id7266344"><media id="eip-id1689066" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch07_04_02m.jpg" width="400"/></media></figure><para id="eip-79">The Central Limit Theorem provides more than the proof that the sampling distribution of means is normally distributed. It also provides us with the mean and standard deviation of this distribution. Further, as discussed above, the expected value of the mean, <m:math><m:msub><m:mtext>μ</m:mtext><m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover></m:msub>
+</m:math>, is equal to the mean of the population of the original data which is what we are interested in estimating from the sample we took. We have already inserted this conclusion of the Central Limit Theorem into the formula we use for standardizing from the sampling distribution to the standard normal distribution.
+And finally, the Central Limit Theorem has also provided the standard deviation of the sampling distribution, <m:math><m:msub><m:mi>σ</m:mi><m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover></m:msub><m:mo>=</m:mo><m:mfrac><m:mi>σ</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac>
+</m:math>,  and this is critical to have to calculate probabilities of values of the new random variable,  <m:math><m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+</m:math>.
+</para><para id="eip-258"><link target-id="fs-id1168335762577"/> shows a sampling distribution. The mean has been marked on the horizontal axis of the <m:math><m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+</m:math>'s and the standard deviation has been written to the right above the distribution. Notice that the standard deviation of the sampling distribution is the original standard deviation of the population, divided by the sample size. We have already seen that as the sample size increases the sampling distribution becomes closer and closer to the normal distribution. As this happens, the standard deviation of the sampling distribution changes in another way; the standard deviation decreases as n increases. At very large n, the standard deviation of the sampling distribution becomes very small and at infinity it collapses on top of the population mean. This is what it means that the expected value of  <m:math><m:msub><m:mi>µ</m:mi><m:mrow><m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover></m:mrow></m:msub>
+</m:math> is the population mean, µ. </para><figure id="fs-id1168335762577"><media id="fs-id1170967292809" alt=".."><image mime-type="image/jpeg" src="../../media/fig-ch06_02_05n.jpg" width="420"/></media></figure><para id="eip-597">At non-extreme values of n,this relationship between the standard deviation of the sampling distribution and the sample size plays a very important part in our ability to estimate the parameters we are interested in. </para><para id="eip-887"><link target-id="fs-id1171528778810"/> shows three sampling distributions. The only change that was made is the sample size that was used to get the sample means for each distribution. As the sample size increases, n goes from 10 to 30 to 50, the standard deviations of the respective sampling distributions decrease because the sample size is in the denominator of the standard deviations of the sampling distributions. </para><figure id="fs-id1171528778810"><media id="fs-id1171512251668" alt=".."><image mime-type="image/jpeg" src="../../media/fig-ch06_02_07n.jpg" width="420"/></media></figure>
+<para id="eip-551">The implications for this are very important. <link target-id="fs-id1165504658019"/> shows the effect of the sample size on the confidence we will have in our estimates. These are two sampling distributions from the same population. One sampling distribution was created with samples of size 10 and the other with samples of size 50. All other things constant, the sampling distribution with sample size 50 has a smaller standard deviation that causes the graph to be higher and narrower. The important effect of this is that for the same probability of one standard deviation from the mean, this distribution covers much less of a range of possible values than the other distribution. One standard deviation is marked on the <m:math><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> axis for each distribution. This is shown by the two arrows that are plus or minus one standard deviation for each distribution. If the probability that the true mean is one standard deviation away from the mean, then for the sampling distribution with the smaller sample size, the possible range of values is much greater. A simple question is, would you rather have a sample mean from the narrow, tight distribution, or the flat, wide distribution as the estimate of the population mean? Your answer tells us why people intuitively will always choose data from a large sample rather than a small sample. The sample mean they are getting is coming from a more compact distribution. This concept will be the foundation for what will be called level of confidence in the next unit.  </para><figure id="fs-id1165504658019"><media id="fs-id8850305" alt=".."><image mime-type="image/jpeg" src="../../media/fig-ch06_02_08n.jpg" width="420"/></media></figure></section></section><section id="fs-idm72155760" class="summary">
+<title>Chapter Review</title>
+<para id="fs-idm147861760">The Central Limit Theorem can be used to illustrate the law of large numbers. The law of large numbers states that the larger the sample size you take from a population, the closer the sample mean <m:math>
+ <m:mover>
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math> gets to <emphasis effect="italics">μ</emphasis>.</para></section>
+
+<section id="fs-idm65344016" class="practice"><para id="fs-idp5239552"><emphasis effect="italics">Use the following information to answer the next ten exercises:</emphasis> A manufacturer produces 25-pound lifting weights. The lowest actual weight is 24 pounds, and the highest is 26 pounds. Each weight is equally likely so the distribution of weights is uniform. A sample of 100 weights is taken.</para>
+
+<exercise id="exercise4">
+<problem id="fs-idm108112736">
+<list id="fs-idm44419104" list-type="enumerated" number-style="lower-alpha">
+<item>What is the distribution for the weights of one 25-pound lifting weight? What is the mean and standard deviation?</item>
+<item>What is the distribution for the mean weight of 100 25-pound lifting weights?</item>
+<item>Find the probability that the mean actual weight for the 100 weights is less than 24.9.</item>
+</list>
+</problem>
+
+<solution id="fs-idm27647648">
+<list id="fs-idp41045488" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">U</emphasis>(24, 26), 25, 0.5774</item>
+<item><emphasis effect="italics">N</emphasis>(25, 0.0577)</item>
+<item>0.0416</item>
+</list></solution>
+</exercise>
+
+<exercise id="fs-idm84240544"><problem id="fs-idp8363072">
+<para id="fs-idm117442736">Draw the graph from <link target-id="exercise4" document=""/></para></problem>
+
+<!-- <solution id="fs-idm124774096">
+<figure id="fs-idm129645712"><media id="fs-idm66137264" alt="This is a normal distribution curve which extends from 24 to 26. The peak of the curve  coincides with the point 25 on the horizontal axis. An arrow points to 25 showing P(x-bar &lt; 24.9).">
+<image mime-type="image/jpg" src="CNX_Stats_C07_M04_item001annoN.jpg" width="380"/>
+</media>
+</figure></solution> -->
+</exercise><exercise id="exercise6">
+<problem id="fs-idm151567920">
+<para id="fs-idm68403024">Find the probability that the mean actual weight for the 100 weights is greater than 25.2.</para>
+</problem>
+<solution id="fs-idm73291392">
+<para id="fs-idm73292848">0.0003</para>
+</solution>
+</exercise>
+
+
+<exercise id="fs-idm30735600"><problem id="fs-idm87184416">
+<para id="fs-idm68751264">Draw the graph from <link target-id="exercise6" document=""/></para></problem>
+
+<!-- <solution id="fs-idm90694544">
+<figure id="eip-idp936112">
+<media id="fs-idm69192448" alt="This is a normal distribution curve which extends from 24 to 26. The peak of the curve  coincides with the point 25 on the horizontal axis. An arrow points to 25 showing P(x-bar &gt; 25.2).">
+<image mime-type="image/jpg" src="CNX_Stats_C07_M04_item002annoN.jpg" width="380"/>
+</media>
+</figure>
+</solution> -->
+</exercise><exercise id="exercise8">
+<problem id="fs-idm65102048">
+<para id="fs-idm147870912">Find the 90<sup>th</sup> percentile for the mean weight for the 100 weights.</para>
+</problem>
+<solution id="fs-idm110485568">
+<para id="fs-idm150922624">25.07</para>
+</solution>
+</exercise>
+
+
+<exercise id="fs-idm167897040"><problem id="fs-idm61920032">
+<para id="fs-idm111847536">Draw the graph from <link target-id="exercise8" document=""/></para></problem>
+
+<!-- <solution id="fs-idm110267328">
+<figure id="eip-idp3873008"><media id="fs-idm113411344" alt="This is a normal distribution curve which extends from 24 to 26. The peak of the curve  coincides with the point 25 on the horizontal axis. A point, k, is labeled to the right of 25. A vertical line extends from k to the curve. An arrow points to 25 showing P(x-bar &lt; k) = 0.90.">
+<image mime-type="image/jpg" width="380" src="CNX_Stats_C07_M04_item003annoN.jpg"/>
+</media>
+</figure>
+</solution> -->
+</exercise><exercise id="exercise10">
+<problem id="fs-idm111208496">
+<list id="fs-idm21659936" list-type="enumerated" number-style="lower-alpha">
+<item>What is the distribution for the sum of the weights of 100 25-pound lifting weights?</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Σx</emphasis> &lt; 2,450).</item></list>
+</problem>
+<solution id="fs-idm9385136">
+<list id="fs-idp176981200" list-type="enumerated" number-style="lower-alpha">
+<item><emphasis effect="italics">N</emphasis>(2,500, 5.7735)</item>
+<item>0</item></list>
+</solution>
+</exercise>
+
+<exercise id="exercise11"><problem id="fs-idm29117824">
+<para id="fs-idm110263040">Draw the graph from <link target-id="exercise10" document=""/></para></problem>
+
+<!-- <solution id="fs-idp11678144">
+<figure id="eip-idm64321520">
+<media id="fs-idm129935248" alt="This is a normal distribution curve which extends from 2400 to 2600. The peak of the curve  coincides with the point 2500 on the horizontal axis. An arrow points to the left tail of the curve showing P(sum of x &lt; 2450)." display="block">
+<image mime-type="image/jpg" src="CNX_Stats_C07_M04_item004annoN.jpg" width="380"/>
+</media>
+</figure>
+</solution> -->
+</exercise><exercise id="exercise12">
+<problem id="fs-idm115316000">
+<para id="fs-idm15854240">Find the 90<sup>th</sup> percentile for the total weight of the 100 weights.</para>
+</problem>
+<solution id="fs-idm57878688"><para id="fs-idm47977984">2,507.40</para></solution>
+</exercise>
+
+<exercise id="fs-idm54084400"><problem id="fs-idm58526640">
+<para id="fs-idp2153120">Draw the graph from <link target-id="exercise12" document=""/></para></problem>
+
+<!-- <solution id="fs-idm17187952">
+<figure id="eip-idp76755600">
+<media id="fs-idm123631184" alt="This is a normal distribution curve which extends from 24 to 26. The peak of the curve  coincides with the point 25 on the horizontal axis. A point, k, is labeled to the right of 25. A vertical line extends from k to the curve. An arrow points to 25 showing P(sum of x &lt; k) = 0.90.">
+<image mime-type="image/jpg" width="380" src="CNX_Stats_C07_M04_item005annoN.jpg"/>
+</media>
+</figure>
+</solution> -->
+</exercise><para id="fs-idp1747872"><emphasis effect="italics"><newline/>Use the following information to answer the next five exercises:</emphasis> The length of time a particular smartphone's battery lasts follows an exponential distribution with a mean of ten months. A sample of 64 of these smartphones is taken.</para><exercise id="fs-idm110175696">
+<problem id="fs-idp8374016">
+<list id="fs-idp7565520" list-type="enumerated" number-style="lower-alpha">
+<item>What is the standard deviation?</item>
+<item>What is the parameter <emphasis effect="italics">m</emphasis>?</item>
+</list>
+</problem>
+<solution id="fs-idm119290064">
+<list id="fs-idp20993168" list-type="enumerated" number-style="lower-alpha">
+<item>10</item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+</list>
+</solution>
+</exercise>
+
+<exercise id="fs-idm85285856"><problem id="fs-idp955712">
+<para id="fs-idm35104432">What is the distribution for the length of time one battery lasts?</para>
+</problem>
+
+<!-- <solution id="fs-idm75203552">
+<para id="fs-idm4726032"><emphasis effect="italics">Exp</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></para></solution> --></exercise><exercise id="fs-idm151129248">
+<problem id="fs-idm53240800">
+<para id="fs-idm86689744">What is the distribution for the mean length of time 64 batteries last?</para>
+</problem>
+<solution id="fs-idm34212208">
+<para id="fs-idm34212080"><emphasis effect="italics">N</emphasis><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mtext>10, </m:mtext><m:mfrac>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></para></solution>
+</exercise>
+
+<exercise id="fs-idm69924752"><problem id="fs-idm55097344">
+<para id="fs-idp63314112">What is the distribution for the total length of time 64 batteries last?</para>
+</problem>
+
+<!-- <solution id="fs-idm141956784">
+<para id="fs-idm64798960"><emphasis effect="italics">N</emphasis>(640, 80)</para>
+</solution> -->
+</exercise><exercise id="fs-idm1366160">
+<problem id="fs-idm41789648">
+<para id="fs-idm41789520">Find the probability that the sample mean is between seven and 11.</para></problem>
+<solution id="fs-idm51974096">
+<para id="fs-idm51973968">0.7799</para>
+</solution>
+</exercise>
+
+<exercise id="fs-idm28939008"><problem id="fs-idm73034064">
+<para id="fs-idm28887376">Find the 80<sup>th</sup> percentile for the total length of time 64 batteries last.</para></problem>
+
+<!-- <solution id="fs-idm4580720"><para id="fs-idm5410400">707.3</para></solution> -->
+</exercise><exercise id="fs-idm41589104">
+<problem id="fs-idm45566256"><para id="fs-idm45566128">Find the <emphasis effect="italics">IQR</emphasis> for the mean amount of time 64 batteries last.</para></problem>
+<solution id="fs-idm46764496"><para id="fs-idm46764368">1.69</para></solution>
+</exercise>
+
+<exercise id="fs-idm45108016"><problem id="fs-idm4738352">
+<para id="fs-idm53098160">Find the middle 80% for the total amount of time 64 batteries last.</para>
+</problem>
+
+<!-- <solution id="fs-idm72677136"><para id="fs-idm12285840">205.05</para></solution> -->
+</exercise><para id="fs-idm65293824"><emphasis effect="italics"><newline/>Use the following information to answer the next eight exercises:</emphasis> A uniform distribution has a minimum of six and a maximum of ten. A sample of 50 is taken.</para><exercise id="fs-idm1612656">
+<problem id="fs-idm47127360">
+<para id="fs-idm47127232">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Σx</emphasis> &gt; 420).</para>
+</problem>
+<solution id="fs-idm7883840"><para id="fs-idm7883712">0.0072</para></solution>
+</exercise>
+
+
+<exercise id="fs-idm48638032"><problem id="fs-idm30917728">
+<para id="fs-idm132534640">Find the 90<sup>th</sup> percentile for the sums.</para>
+</problem>
+
+<!-- <solution id="fs-idm96012160">
+<para id="fs-idm96012032">410.46</para>
+</solution> -->
+</exercise><exercise id="fs-idm53694544">
+<problem id="fs-idm53230816">
+<para id="fs-idm65302128">Find the 15<sup>th</sup> percentile for the sums.</para></problem>
+<solution id="fs-idm143692576"><para id="fs-idm143692448">391.54</para></solution>
+</exercise>
+
+
+<exercise id="fs-idm16561168"><problem id="fs-idm46777472">
+<para id="fs-idp4806384">Find the first quartile for the sums.</para>
+</problem>
+
+<!-- <solution id="fs-idp5340032"><para id="fs-idm53707024">394.49</para></solution> -->
+</exercise><exercise id="fs-idp10404400">
+<problem id="fs-idm78936016"><para id="fs-idm78935888">Find the third quartile for the sums.</para></problem>
+<solution id="fs-idp671104"><para id="fs-idp671232">405.51</para></solution>
+</exercise>
+
+
+<exercise id="fs-idm111220240"><problem id="fs-idm73987984"><para id="fs-idm65020208">Find the 80<sup>th</sup> percentile for the sums.</para></problem>
+
+<!-- <solution id="fs-idm3823936"><para id="fs-idm70486928">406.87</para></solution> -->
+</exercise>
+
+<exercise id="eip-idm213431328"><problem id="eip-idm209137136"><para id="eip-idm209117104">A population has a mean of 25 and a standard deviation of 2. If it is sampled repeatedly with samples of size 49, what is the mean and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm1860930000"><para id="eip-idm1860892288">Mean = 25, standard deviation = 2/7</para></solution></exercise>
+
+<exercise id="eip-idm239455072"><problem id="eip-idm1892377376"><para id="eip-idm1712221072">A population has a mean of 48 and a standard deviation of 5. If it is sampled repeatedly with samples of size 36, what is the mean and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm1756658528"><para id="eip-idm1753124992">Mean = 48, standard deviation = 5/6</para></solution></exercise>
+
+<exercise id="eip-idm1597462000"><problem id="eip-idm1608055168"><para id="eip-idm1608032320">A population has a mean of 90 and a standard deviation of 6. If it is sampled repeatedly with samples of size 64, what is the mean and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm2138553616"><para id="eip-idm1597457136">Mean = 90, standard deviation = 3/4</para></solution></exercise>
+
+<exercise id="eip-idm1890211360"><problem id="eip-idm1890192944"><para id="eip-idm1890185936">A population has a mean of 120 and a standard deviation of 2.4. If it is sampled repeatedly with samples of size 40, what is the mean and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm1890181936"><para id="eip-idm1887992448">Mean = 120, standard deviation = 0.38</para></solution></exercise>
+
+<exercise id="eip-idm195053216"><problem id="eip-idm209374272"><para id="eip-idm214402256">A population has a mean of 17 and a standard deviation of 1.2. If it is sampled repeatedly with samples of size 50, what is the mean and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm1741716176"><para id="eip-idm1741714608">Mean = 17, standard deviation = 0.17</para></solution></exercise>
+
+<exercise id="eip-idm1711240720"><problem id="eip-idm211733616"><para id="eip-idm1783834336">A population has a mean of 17 and a standard deviation of 0.2. If it is sampled repeatedly with samples of size 16, what is the expected value and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm214570736"><para id="eip-idm195878624">Expected value = 17, standard deviation = 0.05</para></solution></exercise>
+
+<exercise id="eip-idm1892478080"><problem id="eip-idm1917239616"><para id="eip-idm1613039680">A population has a mean of 38 and a standard deviation of 3. If it is sampled repeatedly with samples of size 48, what is the expected value and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm1718198176"><para id="eip-idm1703074656">Expected value = 38, standard deviation = 0.43</para></solution></exercise>
+
+<exercise id="eip-idm1750045488"><problem id="eip-idm1752321840"><para id="eip-idm203069456">A population has a mean of 14 and a standard deviation of 5. If it is sampled repeatedly with samples of size 60, what is the expected value and standard deviation of the sample means?</para></problem>
+
+<solution id="eip-idm1733727664"><para id="eip-idm183670752">Expected value = 14, standard deviation = 0.65</para></solution></exercise></section><section id="eip-94" class="free-response"><title>Homework</title><exercise id="eip-idm1669069152"><problem id="eip-idm1359885776"><para id="eip-idm1515823152">A large population of 5,000 students take a practice test to prepare for a standardized test. The population mean is 140 questions correct, and the standard deviation is 80. What size samples should a researcher take to get a distribution of means of the samples with a standard deviation of 10?</para></problem>
+<solution id="eip-idm1333857104"><para id="eip-idm1553049248">64</para></solution></exercise>
+
+<exercise id="eip-idm1520522960"><problem id="eip-idm1422709648"><para id="eip-idm313216400">A large population has skewed data with a mean of 70 and a
+standard deviation of 6. Samples of size 100 are taken, and the
+distribution of the means of these samples is analyzed.</para>
+<list id="eip-idm1384899600" list-type="enumerated" number-style="lower-alpha"><item>Will the distribution of the means be closer to a normal distribution than the distribution of the population?</item><item>Will the mean of the means of the samples remain close to 70?</item>
+<item> Will the distribution of the means have a smaller standard deviation?</item>
+<item>What is that standard deviation?</item>
+</list></problem>
+<solution id="eip-idm1326135664"><list id="eip-idm1311889552" list-type="enumerated" number-style="lower-alpha">
+<item>Yes</item>
+<item>Yes</item>
+<item>Yes</item>
+<item>0.6</item></list></solution></exercise><exercise id="eip-idm1522679648"><problem id="eip-idm288805264"><para id="eip-idm351915488">A researcher is looking at data from a large population with a standard deviation that is much too large. In order to concentrate the information, the researcher decides to repeatedly sample the data and use the distribution of the means of the samples? The first effort used sample sized of 100. But the standard deviation was about double the value the researcher wanted. What is the smallest size samples the researcher can use to remedy the problem?</para></problem>
+<solution id="eip-idm1385159808"><para id="eip-idm1407059968">400</para></solution></exercise>
+
+<exercise id="eip-idm1389005376"><problem id="eip-idm1523217744"><para id="eip-idm1391162480">A researcher looks at a large set of data, and concludes the population has a standard deviation of 40. Using sample sizes of 64, the researcher is able to focus the mean of the means of the sample to a narrower distribution where the standard deviation is 5. Then, the researcher realizes there was an error in the original calculations, and the initial standard deviation is really 20. Since the standard deviation of the means of the samples was obtained using the original standard deviation, this value is also impacted by the discovery of the error. What is the correct value of the standard deviation of the means of the samples?</para></problem>
+<solution id="eip-idm1306078992"><para id="eip-idm1542276496">2.5</para></solution></exercise>
+
+<exercise id="eip-idm344765376"><problem id="eip-idm1361343792"><para id="eip-idm1312241968">A population has a standard deviation of 50. It is sampled with samples of size 100. What is the variance of the means of the samples?</para></problem>
+<solution id="eip-idm1669855520"><para id="eip-idm343155568">25</para></solution></exercise></section>
+ </content>
+
+<glossary>
+
+
+<definition id="mean">
+    <term>Mean</term>
+    <meaning id="id10578364">a number that measures the central tendency; a common name for mean is "average." The term "mean" is a shortened form of "arithmetic mean." By definition, the mean for a sample (denoted by <m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+
+</m:math>) is <m:math>
+ <m:mrow>
+  <m:mover accent="true">
+   <m:mi>x</m:mi>
+   <m:mo>–</m:mo>
+  </m:mover>
+  <m:mtext> = </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mtext>Sum of all values in the sample</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>Number of values in the sample</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>, and the mean for a population (denoted by <emphasis effect="italics">μ</emphasis>) is <m:math>
+ <m:mrow>
+  <m:mi>μ</m:mi><m:mtext> = </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mtext>Sum of all values in the population</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>Number of values in the population</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>.</meaning>
+  </definition>
+<definition id="fs-id1194328">
+<term>Finite Population Correction Factor</term>
+<meaning id="fs-id1227360">adjusts the variance of the sampling distribution if the population is known and more than 5% of the population is being sampled.</meaning>
+</definition>
+
+<definition id="fs-idm63436704">
+<term>Normal Distribution</term>
+<meaning id="fs-idm63436064">a continuous random variable with pdf <m:math>
+ <m:mrow>
+  <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mtext> = </m:mtext><m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mrow>
+    <m:mi>σ</m:mi><m:msqrt>
+     <m:mrow>
+      <m:mn>2</m:mn><m:mi>π</m:mi>
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+  <m:mo> </m:mo><m:msup>
+   <m:mi>e</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mo>–</m:mo><m:msup>
+       <m:mrow>
+        <m:mtext>(</m:mtext><m:mi>x</m:mi><m:mtext> </m:mtext><m:mo>–</m:mo><m:mtext> </m:mtext><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+     <m:mrow>
+      <m:mn>2</m:mn><m:msup>
+       <m:mi>σ</m:mi>
+       <m:mn>2</m:mn>
+      </m:msup>
+
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msup>
+
+ </m:mrow>
+</m:math>, where <emphasis effect="italics">μ</emphasis> is the mean of the distribution and <emphasis effect="italics">σ</emphasis> is the standard deviation.; notation: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">N</emphasis>(<emphasis effect="italics">μ</emphasis>, <emphasis effect="italics">σ</emphasis>). If <emphasis effect="italics">μ</emphasis> = 0 and <emphasis effect="italics">σ</emphasis> = 1, the random variable, Z, is called the <emphasis>standard normal distribution</emphasis>.</meaning>
+</definition>
+
+<definition id="fs-id1165086719379">
+<term>Standard Error of the Proportion</term>
+<meaning id="fs-id1163898533436"> the standard deviation of the sampling distribution of proportions</meaning>
+</definition>
+
+
+</glossary>
+</document>

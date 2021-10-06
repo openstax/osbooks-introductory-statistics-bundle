@@ -1,0 +1,541 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Hypergeometric Distribution</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54393</md:content-id>
+  <md:title>Hypergeometric Distribution</md:title>
+  <md:abstract/>
+  <md:uuid>a8cc910d-cfb6-4ef7-adfc-a5e727c04160</md:uuid>
+</metadata>
+
+<content>
+<para id="eip-587">The simplest probability density function is the hypergeometric. This is the most basic one because it is created by combining our knowledge of probabilities from Venn diagrams, the addition and multiplication rules, and the combinatorial counting formula.</para><para id="eip-166">To find the number of ways to get 2 aces from the four in the deck we computed:</para><para id="eip-162"><equation class="unnumbered" id="eip-id2102494"><label/><m:math><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>4</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced>
+<m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>!</m:mo><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>6</m:mn></m:math></equation></para><para id="eip-169">And if we did not care what else we had in our hand for the other three cards we would compute:</para><para id="eip-640"><equation class="unnumbered" id="eip-id1166135700017"><label/><m:math><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>48</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced>
+<m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>48</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>!</m:mo><m:mn>45</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>17,296</m:mn></m:math></equation></para><para id="eip-176">Putting this together, we can compute the probability of getting exactly two aces in a 5 card poker hand as:</para><para id="eip-826"><equation id="eip-id1165014254077">
+<m:math><m:mfrac><m:mrow><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>4</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>48</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>3</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>52</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced></m:mfrac><m:mo>=</m:mo><m:mn>.0399</m:mn></m:math>
+</equation></para><para id="eip-201">This solution is really just the probability distribution known as the Hypergeometric. The generalized formula is:</para><para id="eip-541"><equation class="unnumbered" id="eip-id1169130681338"><label/><m:math>
+   <m:mi>h</m:mi><m:mo maxsize="100%">(</m:mo><m:mi>x</m:mi><m:mo maxsize="100%">)</m:mo>
+  <m:mo>=</m:mo>
+ <m:mfrac>
+  <m:mrow>
+   <m:mfenced>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>A</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr> 
+      <m:mtd>
+       <m:mi>x</m:mi>
+      </m:mtd>
+     </m:mtr>
+    </m:mtable>
+   </m:mfenced>
+   <m:mfenced>
+    <m:mtable> 
+     <m:mtr>
+      <m:mtd>
+        <m:mi>N</m:mi><m:mo>-</m:mo><m:mi>A</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi><m:mo>-</m:mo><m:mi>x</m:mi>
+      </m:mtd>
+     </m:mtr>
+    </m:mtable>
+   </m:mfenced>
+  </m:mrow>
+  <m:mfenced>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd><m:mi>N</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced></m:mfrac></m:math>
+</equation></para><para id="eip-441">where <emphasis effect="italics">x</emphasis> = the number we are interested in coming from the group with A objects.</para><para id="eip-610">h(x) is the probability of x successes, in n attempts, 	when A successes (aces in this case) are in a population that contains N elements. 
+The hypergeometric distribution is an example of a discrete probability distribution because there is no possibility of partial success, that is, there can be no poker hands with  2 1/2 aces. Said another way, a discrete random variable has to be a whole, or counting, number only. This probability distribution works in cases where the probability of a success changes with each draw. Another way of saying this is that the events are NOT independent. In using a deck of cards, we are sampling WITHOUT replacement. If we put each card back after it was drawn then the hypergeometric distribution be an inappropriate Pdf.
+</para><para id="eip-974">For the hypergeometric to work, 
+<list id="eip-id1167875672300" list-type="enumerated" number-style="arabic"><item>the population must be dividable into two and only two independent subsets (aces and non-aces in our example). The random variable X = the
+number of items from the group of interest. </item>
+<item>the experiment must have changing probabilities of success with each experiment (the fact that cards are not replaced after the draw in our example makes this true in this case). Another way to say this is that you sample without replacement and therefore each pick is not independent. </item>
+<item>the random variable must be discrete, rather than continuous. 
+</item></list></para>
+<example id="element-84">
+<exercise id="fs-idp41303504"><problem id="fs-idm310432"><para id="element-88">A candy dish contains 30 jelly beans and 20 gumdrops. Ten candies are picked at random. What is the probability that 5 of the 10 are gumdrops? The two groups are jelly beans and gumdrops. Since the probability question asks for the probability of picking gumdrops, the group of interest (first group A in the formula) is gumdrops. The size of the group of interest (first group) is 30. The size of the second group is 20. The size of the sample is 10 (jelly beans or gumdrops). Let <emphasis effect="italics">X</emphasis> = the number of gumdrops in the sample of 10. <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2, ..., 10. a. What is the probability statement written mathematically? b. What is the hypergeometric probability density function written out to solve this problem? c. What is the answer to the question "What is the probability of drawing 5 gumdrops in 10 picks from the dish?"</para></problem>
+<solution id="fs-idm31176384">
+<para id="fs-idm45247120">a. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:math> <newline/> b. <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover><m:mn>5</m:mn><m:mn>30</m:mn></m:mover><m:mo>)</m:mo><m:mo>(</m:mo><m:mover><m:mn>5</m:mn><m:mn>20</m:mn></m:mover><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mover><m:mn>10</m:mn><m:mn>50</m:mn></m:mover><m:mo>)</m:mo></m:mrow></m:mfrac></m:math>
+<newline/> c. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.215</m:mn></m:math></para></solution>
+</exercise> 
+</example>
+
+<note id="fs-idm112699744" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idm3161264"><problem id="fs-idp72756304">
+<para id="fs-idp107407200">A bag contains letter tiles. Forty-four of the tiles are vowels, and 56 are consonants. Seven tiles are picked at random. You want to know the probability that four of the seven tiles are vowels. What is the group of interest, the size of the group of interest, and the size of the sample?</para></problem>
+<solution id="fs-idp36651984" class="solutions">
+<label/>
+<para id="fs-idp8803120">The group of interest is the vowel letter tiles. The size of the group of interest is 44. The size of the sample is seven.</para></solution>
+</exercise></note><section id="fs-idp20462736" class="summary">
+<title>Chapter Review</title>
+<para id="eip-625">The combinatorial formula can provide the number of unique subsets of size x that can be created from n unique objects to help us calculate probabilities. The combinatorial formula is <m:math><m:mfenced><m:mtable><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo> </m:mo><m:mo>=</m:mo>
+<m:msub><m:mtext/><m:mi>n</m:mi></m:msub><m:msub><m:mi>C</m:mi><m:mi>x</m:mi></m:msub>
+<m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac></m:math></para><para id="fs-idm26047632">A <term>hypergeometric experiment</term> is a statistical experiment with the following properties:</para>
+<list id="fs-idp5636464" list-type="enumerated"><item>You take samples from two groups.</item>
+<item>You are concerned with a group of interest, called the first group.</item>
+<item>You sample without replacement from the combined groups.</item>
+<item>Each pick is not independent, since sampling is without replacement.</item>
+
+</list><para id="fs-idm39657744">The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. The random variable <emphasis effect="italics">X</emphasis> = the number of items from the group of interest.  <m:math>
+   <m:mi>h</m:mi><m:mo maxsize="100%">(</m:mo><m:mi>x</m:mi><m:mo maxsize="100%">)</m:mo>
+  <m:mo>=</m:mo>
+ <m:mfrac>
+  <m:mrow>
+   <m:mfenced>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>A</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr> 
+      <m:mtd>
+       <m:mi>x</m:mi>
+      </m:mtd>
+     </m:mtr>
+    </m:mtable>
+   </m:mfenced>
+   <m:mfenced>
+    <m:mtable> 
+     <m:mtr>
+      <m:mtd>
+        <m:mi>N</m:mi><m:mo>-</m:mo><m:mi>A</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi><m:mo>-</m:mo><m:mi>x</m:mi>
+      </m:mtd>
+     </m:mtr>
+    </m:mtable>
+   </m:mfenced>
+  </m:mrow>
+  <m:mfenced>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd><m:mi>N</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced></m:mfrac></m:math>.
+</para></section>
+
+<section id="fs-idm29445280" class="formula-review">
+<title>Formula Review</title>
+<para id="fs-idm63887360"><m:math>
+   <m:mi>h</m:mi><m:mo maxsize="100%">(</m:mo><m:mi>x</m:mi><m:mo maxsize="100%">)</m:mo>
+  <m:mo>=</m:mo>
+ <m:mfrac>
+  <m:mrow>
+   <m:mfenced>
+    <m:mtable>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>A</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr> 
+      <m:mtd>
+       <m:mi>x</m:mi>
+      </m:mtd>
+     </m:mtr>
+    </m:mtable>
+   </m:mfenced>
+   <m:mfenced>
+    <m:mtable> 
+     <m:mtr>
+      <m:mtd>
+        <m:mi>N</m:mi><m:mo>-</m:mo><m:mi>A</m:mi>
+      </m:mtd>
+     </m:mtr>
+     <m:mtr>
+      <m:mtd>
+       <m:mi>n</m:mi><m:mo>-</m:mo><m:mi>x</m:mi>
+      </m:mtd>
+     </m:mtr>
+    </m:mtable>
+   </m:mfenced>
+  </m:mrow>
+  <m:mfenced>
+   <m:mtable>
+    <m:mtr>
+     <m:mtd><m:mi>N</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced></m:mfrac></m:math>
+</para></section>
+
+
+<section id="fs-idp90772672" class="practice">
+<para id="fs-idp25310848"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> Suppose that a group of statistics students is divided into two groups: business majors and non-business majors. There are 16 business majors in the group and seven non-business majors in the group. A random sample of nine students is taken. We are interested in the number of business majors in the sample.</para>
+<exercise id="exerciseone">
+<problem id="fs-idp379600">
+<para id="fs-idm140697232">In words, define the random variable <emphasis effect="italics">X</emphasis>.</para>
+</problem>
+<solution id="fs-idp6558064">
+<para id="fs-idm7320000"><emphasis effect="italics">X</emphasis> = the number of business majors in the sample.</para>
+</solution>
+</exercise>
+
+<exercise id="exercisethree">
+<problem id="fs-idm11748912">
+<para id="fs-idp42646160">What values does <emphasis effect="italics">X</emphasis> take on?</para>
+</problem>
+<solution id="fs-idp37311840">
+<para id="fs-idm22499136">2, 3, 4, 5, 6, 7, 8, 9</para></solution>
+</exercise>
+
+</section>
+
+<section id="fs-idm62349392" class="free-response">
+<title>HOMEWORK</title>
+
+<exercise id="element-194"><problem id="id5899812">
+  <para id="element-438">A group of Martial Arts students is planning on participating in an upcoming demonstration. Six are students of Tae Kwon Do; seven are students of Shotokan Karate. Suppose that eight students are randomly picked to be in the first demonstration. We are interested in the number of Shotokan Karate students in that first demonstration.</para>
+<list id="element-803" list-type="enumerated" number-style="lower-alpha">
+<item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
+<item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
+<item>How many Shotokan Karate students do we expect to be in that first demonstration?</item>
+</list></problem>
+
+<!-- <solution id="fs-idp3312224">
+<list id="fs-idp10897328" list-type="enumerated" number-style="lower-alpha">
+<item><emphasis effect="italics">X</emphasis> = the number of Shotokan Karate students in the first demonstration</item>
+<item>0, 1, 2, 3, 4, 5, 6, 7</item>
+
+<item>4.31</item>
+</list></solution> -->
+</exercise><exercise id="fs-idm49012784"><problem id="fs-idm49012656">
+  <para id="fs-idm22644768">In one of its Spring catalogs, L.L. Bean® advertised footwear on 29 of its 192 catalog pages. Suppose we randomly survey 20 pages. We are interested in the number of pages that advertise footwear. Each page may be picked at most once.</para>
+<list id="fs-idp38152128" list-type="enumerated" number-style="lower-alpha">
+<item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
+<item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
+<item>How many pages do you expect to advertise footwear on them?</item>
+<item>Calculate the standard deviation.</item>
+</list>
+</problem>
+<solution id="eip-idp25780992">
+<list id="eip-idp90664864" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of pages that advertise footwear</item>
+<item>0, 1, 2, 3, ..., 20</item>
+
+<item>3.03</item>
+<item>1.5197</item>
+</list></solution></exercise><exercise id="fs-idp106306576"><problem id="id11679086">
+<para id="element-416">Suppose that a technology task force is being formed to study technology awareness among instructors. Assume that ten people will be randomly chosen to be on the committee from a group of 28 volunteers, 20 who are technically proficient and eight who are not. We are interested in the number on the committee who are <emphasis>not</emphasis> technically proficient.</para>
+
+<list id="element-211" list-type="enumerated" number-style="lower-alpha"><item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
+<item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
+<item>How many instructors do you expect on the committee who are <emphasis>not</emphasis> technically proficient?</item>
+<item>Find the probability that at least five on the committee are not technically proficient.</item>
+<item>Find the probability that at most three on the committee are not technically proficient.</item></list></problem>
+
+<!-- <solution id="eip-idm90541104">
+<list id="eip-idm90540848" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of people on the committee who are not technically proficient</item>
+<item>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</item>
+<item>2.8571</item>
+<item>0.1269</item>
+<item>0.6873</item>
+</list></solution> --></exercise><exercise id="element-755"><problem id="id17019371">
+  <para id="element-515">Suppose that nine Massachusetts athletes are scheduled to appear at a charity benefit. The nine are randomly chosen from eight volunteers from the Boston Celtics and four volunteers from the New England Patriots. We are interested in the number of Patriots picked.</para>
+<list id="element-134" list-type="enumerated" number-style="lower-alpha"><item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
+<item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
+<item>Are you choosing the nine athletes with or without replacement?</item>
+</list></problem>
+<solution id="eip-idp145850256">
+<list id="eip-idp20489040" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of Patriots picked</item>
+<item>0, 1, 2, 3, 4</item>
+
+<item>Without replacement</item></list></solution></exercise>
+
+<exercise id="fs-idm55206656"><problem id="fs-idm5844240">
+<para id="fs-idm61134400">A bridge hand is defined as 13 cards selected at random and without replacement from a deck of 52 cards. In a standard deck of cards, there are 13 cards from each suit: hearts, spades, clubs, and diamonds. What is the probability of being dealt a hand that does not contain a heart?</para>
+
+<list id="fs-idp85797696" list-type="enumerated" number-style="lower-alpha"><item>What is the group of interest?</item>
+<item>How many are in the group of interest?</item>
+<item>How many are in the other group?</item>
+<item>Let <emphasis effect="italics">X</emphasis> = _________. What values does <emphasis effect="italics">X</emphasis> take on?</item>
+<item>The probability question is <emphasis effect="italics">P</emphasis>(_______).</item>
+<item>Find the probability in question.</item>
+<item>Find the (i) mean and (ii) standard deviation of <emphasis effect="italics">X</emphasis>.</item>
+</list>
+</problem>
+
+<!-- <solution id="fs-idp25943152">
+<list id="fs-idm26191744" list-type="enumerated" number-style="lower-alpha"><item>Cards that are not hearts</item>
+<item>52 &#8722; 13 = 39</item>
+<item>Other group = hearts; there are 13 hearts in a deck.</item>
+<item><emphasis effect="italics">X</emphasis> = the number of cards that are not hearts; <emphasis effect="italics">x</emphasis> = 0, 1, 2, 3, &#8230; , 13</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 13)</item>
+<item><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>39</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>52</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>38</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>51</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>37</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>50</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>36</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>49</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>35</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>48</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>34</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>47</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>33</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>46</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>32</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>45</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>31</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>44</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>30</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>43</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>29</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>42</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>28</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>41</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>27</m:mn>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>40</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> &#8776; 0.0128</item>
+
+
+<item>
+<list id="fs-idm150880" list-type="enumerated" number-style="lower-roman"><item>Mean = <emphasis effect="italics">&#956;</emphasis> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mi>r</m:mi>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>r</m:mi><m:mtext>&#160;+&#160;</m:mtext><m:mi>b</m:mi>
+   </m:mrow>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:mn>13</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>39</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>39</m:mn><m:mtext>&#160;+&#160;</m:mtext><m:mn>13</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math> = 9.75</item>
+<item>Standard Deviation = <emphasis effect="italics">&#963;</emphasis> = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>r</m:mi><m:mi>b</m:mi><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mtext>&#160;+&#160;</m:mtext><m:mi>b</m:mi><m:mo>&#8722;</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mtext>&#160;+&#160;</m:mtext><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mtext>&#160;+&#160;</m:mtext><m:mi>b</m:mi><m:mo>&#8722;</m:mo><m:mtext>1)</m:mtext>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mtext>39(13)13(39&#160;+&#160;13</m:mtext><m:mo>&#8211;</m:mo><m:mtext>13)</m:mtext>
+     </m:mrow>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mtext>(39&#160;+&#160;13)</m:mtext>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      <m:mtext>(39&#160;+&#160;13</m:mtext><m:mo>&#8211;</m:mo><m:mtext>1)</m:mtext>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> &#8776; 1.3653</item>
+</list></item>
+</list>
+<para id="fs-idp11825152">Alternate Solution Set Up</para>
+<list id="fs-idp24183888" list-type="enumerated" number-style="lower-alpha"><item>Cards that are hearts</item>
+<item>13</item>
+<item>Other group = non-hearts; <emphasis effect="italics">b</emphasis> = 39</item>
+<item><emphasis effect="italics">X</emphasis> = the number of cards that are hearts; <emphasis effect="italics">x</emphasis> = 0, 1, 2, 3, &#8230; , 13</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 0)</item>
+</list><note id="eip-idp114013328" class="finger"><label/><title>NOTE</title>
+<para id="fs-idm27875232">If you have access to it, use Microsoft Excel HYPERGEOM.DIST function with the following syntax: = HYPGEOM.DIST(x, sample size, size of group of interest, size of total population, FALSE)</para>
+</note></solution> --></exercise></section>
+
+   </content>
+  
+<glossary>
+<definition id="fs-idm65310160">
+<term>Hypergeometric Experiment</term>
+<meaning id="fs-idp17931344">a statistical experiment with the following properties:
+<list id="fs-idp30513360" list-type="enumerated">
+<item>You take samples from two groups.</item>
+<item>You are concerned with a group of interest, called the first group.</item>
+<item>You sample without replacement from the combined groups.</item>
+<item>Each pick is not independent, since sampling is without replacement.</item>
+</list>
+</meaning>
+</definition>
+
+<definition id="hpygeoprob">
+    <term>Hypergeometric Probability</term>
+    <meaning id="id19874231">a discrete random variable (RV) that is characterized by:
+<list id="hyp1" list-type="enumerated">
+<item>A fixed number of trials.</item>
+<item>The probability of success is not the same from trial to trial.</item>
+</list>
+We sample from two groups of items when we are interested in only one group. <emphasis effect="italics">X</emphasis> is defined as the number of successes out of the total number of items chosen. </meaning>
+  </definition>
+</glossary>
+</document>

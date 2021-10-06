@@ -1,0 +1,2154 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Contingency Tables and Probability Trees</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54259</md:content-id>
+  <md:title>Contingency Tables and Probability Trees</md:title>
+  <md:abstract/>
+  <md:uuid>5d65f5d2-c2fb-4af8-940c-d2303f753f4c</md:uuid>
+</metadata>
+
+<content>
+<section id="fs-id4147412"><title>Contingency Tables</title><para id="element-864">A <term>contingency table</term> provides a way of portraying data that can facilitate calculating probabilities. The table helps in determining conditional probabilities quite easily. The table displays sample values in relation to two different variables that may be dependent or contingent on one another. Later on, we will use contingency tables again, but in another manner.</para>
+
+<example id="element-775">
+<para id="element-557">Suppose a study of speeding violations and drivers who use cell phones produced the following fictional data:
+<table id="element-838" summary="A study of speeding violations">
+<tgroup cols="4"><thead>
+<row>
+<entry/>
+<entry>Speeding violation in the last year</entry>
+<entry>No speeding violation in the last year</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Uses cell phone while driving</entry>
+<entry>25</entry>
+<entry>280</entry>
+<entry>305</entry>
+</row>
+<row>
+<entry>Does not use cell phone while driving</entry>
+<entry>45</entry>
+<entry>405</entry>
+<entry>450</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>70</entry>
+<entry>685</entry>
+<entry>755</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></para><para id="element-42">The total number of people in the sample is 755. The row totals are 305 and 450. The column totals are 70 and 685. Notice that 305 + 450 = 755 and 70 + 685 = 755.</para>
+<para id="element-818">Calculate the following probabilities using the table.<newline count="2"/></para>
+<exercise id="element-101">
+<problem id="id41663171">
+  <list id="id41663172" list-type="enumerated" number-style="lower-alpha">
+    <item>Find <emphasis effect="italics">P</emphasis>(Driver is a cell phone user).</item>
+    <item>Find <emphasis effect="italics">P</emphasis>(Driver had no violation in the last year).</item>
+    <item>Find <emphasis effect="italics">P</emphasis>(Driver had no violation in the last year <m:math><m:mo>∩</m:mo></m:math> was a cell phone user).</item>
+    <item>Find <emphasis effect="italics">P</emphasis>(Driver is a cell phone user <m:math><m:mo>∪</m:mo></m:math> driver had no violation in the last year).</item>
+    <item>Find <emphasis effect="italics">P</emphasis>(Driver is a cell phone user <m:math><m:mo>|</m:mo></m:math> driver had a violation in the last year).</item>
+    <item>Find <emphasis effect="italics">P</emphasis>(Driver had no violation last year <m:math><m:mo>|</m:mo></m:math> driver was not a cell phone user)</item>
+  </list>
+</problem>
+<solution id="id41663194">
+  <list id="id41663173" list-type="enumerated" number-style="lower-alpha">
+    <item><m:math>
+    <m:mrow>
+    <m:mfrac>
+    <m:mrow>
+    <m:mtext>number of cell phone users</m:mtext>
+    </m:mrow>
+    <m:mrow>
+    <m:mtext>total number in study</m:mtext>
+    </m:mrow>
+    </m:mfrac>
+    <m:mtext> </m:mtext><m:mo>=</m:mo><m:mtext> </m:mtext><m:mfrac>
+    <m:mrow>
+    <m:mn>305</m:mn>
+    </m:mrow>
+    <m:mrow>
+    <m:mn>755</m:mn>
+    </m:mrow>
+    </m:mfrac>
+
+    </m:mrow>
+    </m:math></item>
+    <item><m:math>
+    <m:mrow>
+    <m:mfrac>
+    <m:mrow>
+    <m:mtext>number that had no violation</m:mtext>
+    </m:mrow>
+    <m:mrow>
+    <m:mtext>total number in study</m:mtext>
+    </m:mrow>
+    </m:mfrac>
+    <m:mtext> </m:mtext><m:mo>=</m:mo><m:mtext> </m:mtext><m:mfrac>
+    <m:mrow>
+    <m:mn>685</m:mn>
+    </m:mrow>
+    <m:mrow>
+    <m:mn>755</m:mn>
+    </m:mrow>
+    </m:mfrac>
+
+    </m:mrow>
+    </m:math></item>
+    <item><m:math><m:mfrac>
+    <m:mn>280</m:mn>
+    <m:mn>755</m:mn>
+    </m:mfrac></m:math></item>
+    <item><m:math>
+    <m:mrow>
+    <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+    <m:mfrac>
+    <m:mrow>
+    <m:mn>305</m:mn>
+    </m:mrow>
+    <m:mrow>
+    <m:mn>755</m:mn>
+    </m:mrow>
+    </m:mfrac>
+    <m:mtext> </m:mtext><m:mo>+</m:mo><m:mtext> </m:mtext><m:mfrac>
+    <m:mrow>
+    <m:mn>685</m:mn>
+    </m:mrow>
+    <m:mrow>
+    <m:mn>755</m:mn>
+    </m:mrow>
+    </m:mfrac>
+
+    </m:mrow>
+    <m:mo>)</m:mo></m:mrow><m:mtext> </m:mtext><m:mo>−</m:mo><m:mtext> </m:mtext><m:mfrac>
+    <m:mrow>
+    <m:mn>280</m:mn>
+    </m:mrow>
+    <m:mrow>
+    <m:mn>755</m:mn>
+    </m:mrow>
+    </m:mfrac>
+    <m:mtext> </m:mtext><m:mo>=</m:mo><m:mtext> </m:mtext><m:mfrac>
+    <m:mrow>
+    <m:mn>710</m:mn>
+    </m:mrow>
+    <m:mrow>
+    <m:mn>755</m:mn>
+    </m:mrow>
+    </m:mfrac>
+
+    </m:mrow>
+    </m:math></item>
+    <item><m:math><m:mfrac>
+    <m:mn>25</m:mn>
+    <m:mn>70</m:mn>
+    </m:mfrac></m:math> (The sample space is reduced to the number of drivers who had a violation.)</item>
+    <item><m:math><m:mfrac>
+    <m:mn>405</m:mn>
+    <m:mn>450</m:mn>
+    </m:mfrac></m:math> (The sample space is reduced to the number of drivers who were not cell phone users.)</item>
+  </list>
+</solution>
+</exercise>
+</example>
+<note id="fs-idm8469088" class="statistics try"><label/><title>Try it</title>
+<exercise id="fs-idm7340080">
+<problem id="fs-idm53303712">
+<para id="fs-idp10168704"><link target-id="M05_ch03-tbl002"/> shows the number of athletes who stretch before exercising and how many had injuries within the past year.
+<table id="M05_ch03-tbl002" summary="">
+<tgroup cols="4">
+<thead>
+<row>
+<entry/>
+<entry>Injury in last year</entry>
+<entry>No injury in last year</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Stretches</entry>
+<entry>55</entry>
+<entry>295</entry>
+<entry>350</entry>
+</row>
+<row>
+<entry>Does not stretch</entry>
+<entry>231</entry>
+<entry>219</entry>
+<entry>450</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>286</entry>
+<entry>514</entry>
+<entry>800</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</para>
+<list id="fs-idm56428944" list-type="enumerated" number-style="lower-alpha"><item>What is <emphasis effect="italics">P</emphasis>(athlete stretches before exercising)?</item>
+<item>What is <emphasis effect="italics">P</emphasis>(athlete stretches before exercising<m:math><m:mo>|</m:mo></m:math>no injury in the last year)?</item>
+</list></problem>
+<solution id="fs-idp74774320">
+<label/>
+<list id="fs-idp34704128" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(athlete stretches before exercising) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>350</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>800</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.4375</item>
+<item><emphasis effect="italics">P</emphasis>(athlete stretches before exercising<m:math><m:mo>|</m:mo></m:math>no injury in the last year) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>295</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>514</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.5739</item></list></solution>
+</exercise>
+</note><example id="element-511">
+<para id="element-98">
+<link target-id="M05_ch03-tbl003"/> shows a random sample of 100 hikers and the areas of hiking they prefer.</para>
+<table id="M05_ch03-tbl003" summary="---"><title>Hiking Area Preference</title>
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Sex</entry>
+<entry>The coastline</entry>
+<entry>Near lakes and streams</entry>
+<entry>On mountain peaks</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Female</entry>
+<entry>18</entry>
+<entry>16</entry>
+<entry>___</entry>
+<entry>45</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>___</entry>
+<entry>___</entry>
+<entry>14</entry>
+<entry>55</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>___</entry>
+<entry>41</entry>
+<entry>___</entry>
+<entry>___</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><exercise id="element-227">
+<problem id="id41647708">
+<para id="element-665">a. Complete the table.</para>
+</problem>
+<solution id="id41647726"><para id="fs-idm12745968">a. <table id="element-850s" summary="---"><title>Hiking Area Preference</title>
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Sex</entry>
+<entry>The coastline</entry>
+<entry>Near lakes and streams</entry>
+<entry>On mountain peaks</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Female</entry>
+<entry>18</entry>
+<entry>16</entry>
+<entry><emphasis>11</emphasis></entry>
+<entry>45</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry><emphasis>16</emphasis></entry>
+<entry><emphasis>25</emphasis></entry>
+<entry>14</entry>
+<entry>55</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry><emphasis>34</emphasis></entry>
+<entry>41</entry>
+<entry><emphasis>25</emphasis></entry>
+<entry><emphasis>100</emphasis></entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></para>
+</solution>
+</exercise>
+<exercise id="element-754"><problem id="id41524865">
+<para id="element-891">b. Are the events "being female" and "preferring the coastline" independent events?</para>
+<para id="element-123">Let <emphasis effect="italics">F</emphasis> = being female and let <emphasis effect="italics">C</emphasis> = preferring the coastline.</para>
+<list id="element-1242" list-type="enumerated"><item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∩</m:mo><m:mi>C</m:mi><m:mo>)</m:mo></m:math>.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>)<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis>)</item>
+</list><para id="element-3532">Are these two numbers the same? If they are, then <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">C</emphasis> are independent. If they are not, then <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">C</emphasis> are not independent.</para>
+</problem>
+<solution id="id41524993" print-placement="end">
+<para id="eip-idp6169056">b.<list id="eip-idm12758816" list-type="enumerated"><item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∩</m:mo><m:mi>C</m:mi><m:mo>)</m:mo><m:mo>=</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.18</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>)<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis>) = <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>45</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>34</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> = (0.45)(0.34) = 0.153</item>
+</list></para><para id="element-404"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∩</m:mo> <m:mi>C</m:mi><m:mo>)</m:mo></m:math> ≠ <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>)<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis>), so the events <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">C</emphasis> are not independent.<newline count="2"/></para></solution>
+</exercise><exercise id="element-414"><problem id="id41525175">
+<para id="element-717">c. Find the probability that a person is male given that the person prefers hiking near lakes and streams. Let <emphasis effect="italics">M</emphasis> = being male, and let <emphasis effect="italics">L</emphasis> = prefers hiking near lakes and streams.</para><list id="element-2341" list-type="enumerated" number-style="arabic"><item>What word tells you this is a conditional? </item>
+<item>Fill in the blanks and calculate the probability: <emphasis effect="italics">P</emphasis>(___<m:math><m:mo>|</m:mo></m:math>___) = ___.</item>
+<item>Is the sample space for this problem all 100 hikers? If not, what is it?</item>
+</list></problem>
+<solution id="id41525272" print-placement="end">
+<para id="fs-idm47502368">c. <list id="element-2341s" list-type="enumerated" number-style="arabic"><item>The word 'given' tells you that this is a conditional.</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">M</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">L</emphasis>) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>41</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</item>
+<item>No, the sample space for this problem is the 41 hikers who prefer lakes and streams.</item>
+</list><newline count="2"/>
+</para></solution>
+</exercise><exercise id="element-402">
+<problem id="id41525358">
+<para id="element-715">d. Find the probability that a person is female or prefers hiking on mountain peaks. Let <emphasis effect="italics">F</emphasis> = being female, and let <emphasis effect="italics">P</emphasis> = prefers mountain peaks.</para>
+<list id="list1213" list-type="enumerated"><item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">P</emphasis>).</item>
+<item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∩</m:mo><m:mi>P</m:mi><m:mo>)</m:mo></m:math>.</item>
+<item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∪</m:mo><m:mi>P</m:mi><m:mo>)</m:mo></m:math>.</item>
+</list></problem>
+<solution id="id41669265" print-placement="end">
+<para id="fs-idm40596864">d. <list id="list1213s" list-type="enumerated"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>45</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">P</emphasis>) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math></item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∩</m:mo><m:mi>P</m:mi><m:mo>)</m:mo></m:math> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math></item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>∪</m:mo><m:mi>P</m:mi><m:mo>)</m:mo></m:math> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>45</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> + <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>25</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> - <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>11</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>59</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>100</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math></item>
+</list></para>
+</solution>
+</exercise>
+</example>
+<note id="fs-idm2360992" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idp7366752">
+<problem id="fs-idm68351312">
+<para id="eip-520"><link target-id="M05_ch03-tbl005"/> shows a random sample of 200 cyclists and the routes they prefer. Let <emphasis effect="italics">M</emphasis> = males and <emphasis effect="italics">H</emphasis> = hilly path.
+<table id="M05_ch03-tbl005" summary="---">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Gender</entry>
+<entry>Lake path</entry>
+<entry>Hilly path</entry>
+<entry>Wooded path</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Female</entry>
+<entry>45</entry>
+<entry>38</entry>
+<entry>27</entry>
+<entry>110</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>26</entry>
+<entry>52</entry>
+<entry>12</entry>
+<entry>90</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>71</entry>
+<entry>90</entry>
+<entry>39</entry>
+<entry>200</entry></row>
+</tbody>
+
+</tgroup>
+</table></para><list id="fs-idm26020880" list-type="enumerated" number-style="lower-alpha"><item>Out of the males, what is the probability that the cyclist prefers a hilly path?</item>
+<item>Are the events “being male” and “preferring the hilly path” independent events?</item>
+</list></problem>
+<solution id="fs-idm34504832">
+<list id="fs-idm37694896" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">M</emphasis>) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>52</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>90</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.5778</item>
+<item>For <emphasis effect="italics">M</emphasis> and <emphasis effect="italics">H</emphasis> to be independent, show <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">M</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>)
+<newline count="2"/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">M</emphasis>) = 0.5778, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>90</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>200</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.45
+<newline count="2"/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">M</emphasis>) does not equal <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) so <emphasis effect="italics">M</emphasis> and <emphasis effect="italics">H</emphasis> are NOT independent.</item>
+</list></solution>
+</exercise>
+</note>
+<example id="element-883">
+<para id="element-700">Muddy Mouse lives in a cage with three doors. If Muddy goes out the first door, the probability that he gets caught by Alissa the cat is <m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math> and the probability he is not caught is <m:math>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math>. If he goes out the second door, the probability he gets caught by Alissa is <m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:math> and the probability he is not caught is <m:math>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>4</m:mn>
+</m:mfrac>
+</m:math>. The probability that Alissa catches Muddy coming out of the third door is <m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math> and the probability she does not catch Muddy is <m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math>. It is equally likely that Muddy will choose any of the three doors so the probability of choosing each door is <m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+</m:math>.</para><table id="element-666" summary="---"><title>Door Choice</title>
+<tgroup cols="5"><thead>
+<row>
+<entry>Caught or not</entry>
+<entry>Door one</entry>
+<entry>Door two</entry>
+<entry>Door three</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Caught</entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>15</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>12</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math></entry>
+<entry>____</entry>
+</row>
+<row>
+<entry>Not caught</entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>15</m:mn>
+</m:mfrac>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>12</m:mn>
+</m:mfrac>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+</m:math></entry>
+<entry>____</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>____</entry>
+<entry>____</entry>
+<entry>____</entry>
+<entry>1</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><list id="element-791" list-type="bulleted"><item>The first entry <m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>15</m:mn>
+</m:mfrac>
+<m:mo> = </m:mo><m:mo>(</m:mo>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>)</m:mo></m:math> is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Door One</m:mtext><m:mo>∩</m:mo><m:mtext>Caught</m:mtext><m:mo>)</m:mo></m:math></item>
+<item>The entry
+<m:math><m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>15</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo> <m:mo>(</m:mo>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>)</m:mo><m:mo>(</m:mo>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>)</m:mo></m:math> is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Door One</m:mtext><m:mo>∩</m:mo><m:mtext>Not Caught</m:mtext><m:mo>)</m:mo></m:math></item>
+</list><para id="element-94">Verify the remaining entries.<newline count="2"/></para><exercise id="element-919">
+<problem id="id41669984">
+<para id="element-910">a. Complete the probability contingency table. Calculate the entries for the totals. Verify that the lower-right corner entry is 1.</para>
+</problem>
+<solution id="id41670004" print-placement="end"><para id="fs-idm19141920">a. <table id="element-6166" summary="Displayed is a contingency table showing all the entries for the Muddy Mouse problem."><title>Door Choice</title>
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Caught or not</entry>
+<entry>Door one</entry>
+<entry>Door two</entry>
+<entry>Door three</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Caught</entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>15</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>12</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+<m:mtext/>
+</m:math></entry>
+<entry><emphasis><m:math><m:mfrac><m:mn>19</m:mn><m:mn>60</m:mn></m:mfrac></m:math></emphasis></entry>
+</row>
+<row>
+<entry>Not caught</entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>4</m:mn>
+<m:mn>15</m:mn>
+</m:mfrac>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>12</m:mn>
+</m:mfrac>
+</m:math></entry>
+<entry><m:math>
+<m:mfrac>
+<m:mn>1</m:mn>
+<m:mn>6</m:mn>
+</m:mfrac>
+</m:math></entry>
+<entry><emphasis><m:math><m:mfrac><m:mn>41</m:mn><m:mn>60</m:mn></m:mfrac></m:math></emphasis></entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry><emphasis><m:math><m:mfrac><m:mn>5</m:mn><m:mn>15</m:mn></m:mfrac></m:math></emphasis></entry>
+<entry><emphasis><m:math><m:mfrac><m:mn>4</m:mn><m:mn>12</m:mn></m:mfrac></m:math></emphasis></entry>
+<entry><emphasis><m:math><m:mfrac><m:mn>2</m:mn><m:mn>6</m:mn></m:mfrac></m:math></emphasis></entry>
+<entry>1</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></para>
+</solution>
+</exercise><exercise id="element-604"><problem id="id41670368">
+<para id="element-117">b. What is the probability that Alissa does not catch Muddy?</para>
+</problem>
+<solution id="id41670388">
+<para id="element-70">b. <m:math><m:mfrac><m:mn>41</m:mn><m:mn>60</m:mn></m:mfrac></m:math><newline count="2"/></para></solution>
+</exercise>
+<exercise id="element-288">
+<problem id="id41670423">
+<para id="element-45">c. What is the probability that Muddy chooses Door One <m:math><m:mo>∪</m:mo></m:math> Door Two given that Muddy is caught by Alissa?</para></problem>
+<solution id="id41670452">
+<para id="element-63">c. <m:math><m:mfrac><m:mn>9</m:mn><m:mn>19</m:mn></m:mfrac></m:math></para>
+</solution>
+</exercise>
+</example>
+<example id="fs-idm73418960">
+<para id="fs-idm37807440"><link target-id="Ch03_M04_tbl007"/> contains the number of crimes per 100,000 inhabitants from 2008 to 2011 in the U.S.</para><table id="Ch03_M04_tbl007" summary="United States Crime Index Rates Per 100,000 Inhabitants 2008 – 2011"><title>United States Crime Index Rates Per 100,000 Inhabitants 2008–2011</title>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry>Year</entry>
+<entry>Robbery</entry>
+<entry>Burglary</entry>
+<entry>Rape</entry>
+<entry>Vehicle</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>2008</entry>
+<entry>145.7</entry>
+<entry>732.1</entry>
+<entry>29.7</entry>
+<entry>314.7</entry>
+<entry/>
+</row>
+<row>
+<entry>2009</entry>
+<entry>133.1</entry>
+<entry>717.7</entry>
+<entry>29.1</entry>
+<entry>259.2</entry>
+<entry/>
+</row>
+<row>
+<entry>2010</entry>
+<entry>119.3</entry>
+<entry>701</entry>
+<entry>27.7</entry>
+<entry>239.1</entry>
+<entry/>
+</row>
+<row>
+<entry>2011</entry>
+<entry>113.7</entry>
+<entry>702.2</entry>
+<entry>26.8</entry>
+<entry>229.6</entry>
+<entry/>
+</row>
+<row>
+<entry>Total</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+</tgroup>
+</table>
+<exercise id="fs-idm29224880">
+<problem id="fs-idm58902352">
+<para id="fs-idp18911776">TOTAL each column and each row. Total data = 4,520.7</para>
+<list id="fs-idm6434864" list-type="enumerated" number-style="lower-alpha"><item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2009</m:mn><m:mo>∩</m:mo><m:mtext>Robbery</m:mtext><m:mo>)</m:mo></m:math>.</item>
+<item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2010</m:mn><m:mo>∩</m:mo><m:mtext>Burglary</m:mtext><m:mo>)</m:mo></m:math>.</item>
+<item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2010</m:mn><m:mo>∪</m:mo><m:mtext>Burglary</m:mtext><m:mo>)</m:mo></m:math>.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(2011<m:math><m:mo>|</m:mo></m:math>Rape).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Vehicle<m:math><m:mo>|</m:mo></m:math>2008).</item>
+</list></problem>
+<solution id="fs-idm46779568">
+<para id="fs-idm37451408">a. 0.0294, b. 0.1551, c. 0.7165, d. 0.2365, e. 0.2575</para></solution>
+</exercise>
+</example>
+<note id="fs-idm31309776" class="statistics try">
+<label/><title>Try It</title>
+<exercise id="fs-idm30200592">
+<problem id="fs-idm54491920">
+<para id="fs-idm50410048"><link target-id="M05_ch03-tbl009"/> relates the weights and heights of a group of individuals participating in an observational study.</para><table id="M05_ch03-tbl009" summary="---">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Weight/height</entry>
+<entry>Tall</entry>
+<entry>Medium</entry>
+<entry>Short</entry>
+<entry>Totals</entry>
+</row></thead>
+<tbody>
+<row>
+<entry>Obese</entry>
+<entry>18</entry>
+<entry>28</entry>
+<entry>14</entry>
+<entry/>
+</row>
+<row>
+<entry>Normal</entry>
+<entry>20</entry>
+<entry>51</entry>
+<entry>28</entry>
+<entry/></row>
+<row>
+<entry>Underweight</entry>
+<entry>12</entry>
+<entry>25</entry>
+<entry>9</entry>
+<entry/>
+</row>
+<row>
+<entry>Totals</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><list id="fs-idm43315168" list-type="enumerated" number-style="lower-alpha">
+<item>Find the total for each row and column</item>
+<item>Find the probability that a randomly chosen individual from this group is Tall.</item>
+<item>Find the probability that a randomly chosen individual from this group is Obese and Tall.</item>
+<item>Find the probability that a randomly chosen individual from this group is Tall given that the individual is Obese.</item>
+<item>Find the probability that a randomly chosen individual from this group is Obese given that the individual is Tall.</item>
+<item>Find the probability a randomly chosen individual from this group is Tall and Underweight.</item>
+<item>Are the events Obese and Tall independent?</item>
+</list></problem>
+<solution id="fs-idm7009168">
+<label/>
+<table id="fs-idm96747024" summary="---">
+<tgroup cols="5"><thead>
+<row>
+<entry>Weight/height</entry>
+<entry>Tall</entry>
+<entry>Medium</entry>
+<entry>Short</entry>
+<entry>Totals</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Obese</entry>
+<entry>18</entry>
+<entry>28</entry>
+<entry>14</entry>
+<entry>60</entry>
+</row>
+<row>
+<entry>Normal</entry>
+<entry>20</entry>
+<entry>51</entry>
+<entry>28</entry>
+<entry>99</entry>
+</row>
+<row>
+<entry>Underweight</entry>
+<entry>12</entry>
+<entry>25</entry>
+<entry>9</entry>
+<entry>46</entry>
+</row>
+<row>
+<entry>Totals</entry>
+<entry>50</entry>
+<entry>104</entry>
+<entry>51</entry>
+<entry>205</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><list id="fs-idm64195888" list-type="enumerated" number-style="lower-alpha"><item>Row Totals: 60, 99, 46. Column totals: 50, 104, 51.</item>
+<item><emphasis effect="italics">P</emphasis>(Tall) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>50</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>205</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> = 0.244</item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Obese</m:mtext><m:mo>∩</m:mo><m:mtext>Tall</m:mtext><m:mo>)</m:mo></m:math> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>205</m:mn>
+</m:mrow>
+</m:mfrac></m:mrow>
+</m:math> = 0.088</item>
+<item><emphasis effect="italics">P</emphasis>(Tall<m:math><m:mo>|</m:mo></m:math>Obese) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>18</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>60</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.3</item>
+<item><emphasis effect="italics">P</emphasis>(Obese<m:math><m:mo>|</m:mo></m:math>Tall) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mn>18</m:mn>
+<m:mrow>
+<m:mn>50</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> = 0.36</item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Tall</m:mtext><m:mo>∩</m:mo><m:mtext>Underweight</m:mtext><m:mo>)</m:mo></m:math> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>12</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>205</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> = 0.0585</item>
+<item>No. <emphasis effect="italics">P</emphasis>(Tall) does not equal <emphasis effect="italics">P</emphasis>(Tall<m:math><m:mo>|</m:mo></m:math>Obese).</item>
+</list></solution>
+</exercise>
+</note></section><section id="eip-325"><title>Tree Diagrams</title><para id="eip-800">Sometimes, when the probability problems are complex, it can be helpful to graph the situation. Tree diagrams can be used to visualize and solve conditional probabilities.
+</para><section id="eip-920"><title>Tree Diagrams</title><para id="fs-idp119305568">A <term>tree diagram</term> is a special type of graph used to determine the outcomes of an experiment. It consists of "branches" that are labeled with either frequencies or probabilities. Tree diagrams can make some probability problems easier to visualize and solve. The following example illustrates how to use a tree diagram.</para>
+<example id="element-192">
+<para id="element-200">In an urn, there are 11 balls. Three balls are red (<emphasis effect="italics">R</emphasis>) and eight balls are blue (<emphasis effect="italics">B</emphasis>). Draw two balls, one at a time, <emphasis>with replacement</emphasis>. "With replacement" means that you put the first ball back in the urn before you select the second ball. The tree diagram using frequencies that show all the possible outcomes follows.</para><figure id="element-325"><media id="id47069242" alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 8B and 3R. The second branch has a set of two lines (8B and 3R) for each line of the first branch. Multiply along each line to find 64BB, 24BR, 24RB, and 9RR."><image src="../../media/fig-ch03_07_01N.jpg" mime-type="image/jpg" width="400" print-width="4in"/></media>
+<caption>Total = 64 + 24 + 24 + 9 = 121</caption></figure><para id="element-54">The first set of branches represents the first draw. The second set of branches represents the second draw. Each of the outcomes is distinct. In fact, we can list each red ball as <emphasis effect="italics">R</emphasis>1, <emphasis effect="italics">R</emphasis>2, and <emphasis effect="italics">R</emphasis>3 and each blue ball as <emphasis effect="italics">B</emphasis>1, <emphasis effect="italics">B</emphasis>2, <emphasis effect="italics">B</emphasis>3, <emphasis effect="italics">B</emphasis>4, <emphasis effect="italics">B</emphasis>5, <emphasis effect="italics">B</emphasis>6, <emphasis effect="italics">B</emphasis>7, and <emphasis effect="italics">B</emphasis>8. Then the nine <emphasis effect="italics">RR</emphasis> outcomes can be written as:</para>
+<para id="element-1255">
+<list list-type="labeled-item" display="inline" id="set-54_1">
+<item><emphasis effect="italics">R</emphasis>1<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">R</emphasis>1<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">R</emphasis>1<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">R</emphasis>2<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">R</emphasis>2<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">R</emphasis>2<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">R</emphasis>3<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">R</emphasis>3<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">R</emphasis>3<emphasis effect="italics">R</emphasis>3</item>
+</list>
+</para>
+<para id="element-5235">The other outcomes are similar.</para>
+<para id="element-767">There are a total of 11 balls in the urn. Draw two balls, one at a time, with replacement. There are 11(11) = 121 outcomes, the size of the <term>sample space</term>.<newline count="2"/></para><exercise id="element-135">
+<problem id="id47069535">
+  <para id="element-638">a. List the 24 <emphasis effect="italics">BR</emphasis> outcomes: <emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>1, <emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>2, <emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>3, ...</para></problem>
+<solution id="id47069675" print-placement="end">
+<para id="element-63435">a. <list id="element-12351" list-type="labeled-item" display="inline">
+<item><emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>2<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>2<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>2<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>3<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>3<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>3<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>4<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>4<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>4<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>5<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>5<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>5<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>6<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>6<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>6<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>7<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>7<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>7<emphasis effect="italics">R</emphasis>3</item>
+<item><emphasis effect="italics">B</emphasis>8<emphasis effect="italics">R</emphasis>1</item>
+<item><emphasis effect="italics">B</emphasis>8<emphasis effect="italics">R</emphasis>2</item>
+<item><emphasis effect="italics">B</emphasis>8<emphasis effect="italics">R</emphasis>3</item>
+</list><newline count="2"/>
+</para></solution>
+</exercise>
+
+<exercise id="element-38"><problem id="id47069956">
+  <para id="element-909">b. Using the tree diagram, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">RR</emphasis>).</para></problem>
+<solution id="id47069979">
+  <para id="element-913">b. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">RR</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mrow>
+    <m:mn>121</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/></para></solution>
+</exercise>
+
+<exercise id="element-492"><problem id="id47070044">
+  <para id="element-865">c. Using the tree diagram, calculate <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi fontstyle="italic">RB</m:mi><m:mo>∪</m:mo><m:mi fontstyle="italic">BR</m:mi><m:mo>)</m:mo></m:math>.</para></problem>
+<solution id="id47070067">
+  <para id="element-968">c. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi fontstyle="italic">RB</m:mi><m:mo>∪</m:mo><m:mi fontstyle="italic">BR</m:mi><m:mo>)</m:mo></m:math> = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> + <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>48</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>121</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/></para></solution>
+</exercise>
+<exercise id="eip-id5788058">
+<problem id="id46124799">
+  <para id="element-972">d. Using the tree diagram, calculate <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>on 1st draw</m:mtext><m:mo>∩</m:mo><m:mi>B</m:mi><m:mspace width="0.2em"/><m:mtext>on 2nd draw</m:mtext><m:mo>)</m:mo></m:math>.</para></problem>
+<solution id="id46124822">
+  <para id="element-989">d. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>on 1st draw</m:mtext><m:mo>∩</m:mo><m:mi>B</m:mi><m:mspace width="0.2em"/><m:mtext>on 2nd draw</m:mtext><m:mo>)</m:mo></m:math> = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>121</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/>
+</para></solution>
+</exercise>
+<exercise id="element-59">
+<problem id="id46124893">
+  <para id="element-239">e. Using the tree diagram, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd draw<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st draw).</para></problem>
+<solution id="id46124917">
+  <para id="eip-id5788235">e. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd draw<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st draw) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>88</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+ = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para><para id="element-307">This problem is a conditional one. The sample space has been reduced to those outcomes that already have a blue on the first draw. There are  24 + 64 = 88 possible outcomes (24 <emphasis effect="italics">BR</emphasis> and 64 <emphasis effect="italics">BB</emphasis>). Twenty-four of the 88 possible outcomes are <emphasis effect="italics">BR</emphasis>. <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>88</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>3</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>.<newline count="2"/></para></solution>
+</exercise>
+<exercise id="element-946">
+<problem id="id46125047">
+  <para id="eip-id5788393">f. Using the tree diagram, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">BB</emphasis>).</para>
+</problem>
+<solution id="id46125071">
+  <para id="element-925">f. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">BB</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>64</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>121</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/>
+</para></solution>
+</exercise>
+<exercise id="element-285">
+<problem id="id46125112">
+  <para id="element-189">g. Using the tree diagram, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis> on the 2nd draw<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis> on the first draw).</para></problem>
+<solution id="id46125136" print-placement="end">
+  <para id="element-602">g. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis> on 2nd draw<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis> on 1st draw) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>8</m:mn>
+   <m:mrow>
+    <m:mn>11</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math></para><para id="element-892">There are 9 + 24 outcomes that have <emphasis effect="italics">R</emphasis> on the first draw (9 <emphasis effect="italics">RR</emphasis> and 24 <emphasis effect="italics">RB</emphasis>). The sample space is then 9 + 24 = 33. 24 of the 33 outcomes have <emphasis effect="italics">B</emphasis> on the second draw. The probability is then <m:math><m:mfrac>
+    <m:mn>24</m:mn>
+    <m:mn>33</m:mn>
+  </m:mfrac></m:math>.</para></solution>
+</exercise>
+</example>
+<note id="fs-idp102479616" class="statistics try">
+<label/><title>Try It</title>
+<exercise id="fs-idm22506096"><problem id="fs-idp17589872">
+<para id="fs-idp67142992">In a standard deck, there are 52 cards. 12 cards are face cards (event <emphasis effect="italics">F</emphasis>) and 40 cards are not face cards (event <emphasis effect="italics">N</emphasis>). Draw two cards, one at a time, with replacement. All possible outcomes are shown in the tree diagram as frequencies. Using the tree diagram, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">FF</emphasis>).</para>
+<figure id="eip-idp41385280"><media id="fs-idm2866400" alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 12F and 40N. The second branch has a set of two lines (12F and 40N) for each line of the first branch. Multiply along each line to find 144FF, 480FN, 480NF, and 1,600NN." display="block"><image src="../../media/CNX_Stats_C03_M07_tryit001N.jpg" mime-type="image/jpg" width="380"/></media>
+</figure>
+</problem>
+<solution id="fs-idp48259824">
+<label/>
+<para id="fs-idp43748400">Total number of outcomes is 144 + 480 + 480 + 1600 = 2,704.</para>
+<para id="fs-idp7078848"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">FF</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>144</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>144 + 480 + 480 + 1,600</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>144</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>,</m:mo><m:mn>704</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mn>9</m:mn>
+   <m:mrow>
+    <m:mn>169</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></para></solution>
+</exercise></note>
+<example id="eip-id5788721"><para id="element-308">An urn has three red marbles and eight blue marbles in it. Draw two marbles, one at a time, this time without replacement, from the urn. <emphasis>"Without replacement"</emphasis> means that you do not put the first ball back before you select the second marble. Following is a tree diagram for this situation. The branches are labeled with probabilities instead of frequencies. The numbers at the ends of the branches are calculated by multiplying the numbers on the two corresponding branches, for example, <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>2</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>.</para>
+<figure id="element-325a"><media id="id47078287" alt="This is a tree diagram with branches showing probabilities of each draw. The first branch shows 2 lines: B 8/11 and R 3/11. The second branch has a set of 2 lines for each first branch line. Below B 8/11 are B 7/10 and R 3/10. Below R 3/11 are B 8/10 and R 2/10. Multiply along each line to find BB 56/110, BR 24/110, RB 24/110, and RR 6/110."><image src="../../media/fig-ch03_07_02.jpg" mime-type="image/jpg" width="400"/></media>
+<caption>Total = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>56</m:mn><m:mo>+</m:mo><m:mn>24</m:mn><m:mo>+</m:mo><m:mn>24</m:mn><m:mo>+</m:mo><m:mn>6</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>1</m:mn>
+ </m:mrow>
+</m:math></caption></figure>
+
+<note id="id47078390">
+<label/>
+<title>NOTE</title>
+<para id="eip-idp61215856">If you draw a red on the first draw from the three red possibilities, there are two red marbles left to draw on the second draw. You do not put back or replace the first marble after you have drawn it. You draw <emphasis>without replacement</emphasis>, so that on the second draw there are ten marbles left in the urn.</para></note>
+<para id="element-993"><newline/>Calculate the following probabilities using the tree diagram.<newline count="2"/></para><exercise id="element-366">
+<problem id="id47078429">
+  <para id="element-452">a. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">RR</emphasis>) = ________</para></problem>
+<solution id="id47078452">
+  <para id="element-659a">a. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">RR</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>2</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/></para></solution>
+</exercise>
+<exercise id="element-238">
+<problem id="id47078522">
+  <para id="element-608">b. Fill in the blanks:</para>
+<para id="element-545"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi fontstyle="italic">RB</m:mi><m:mo>∪</m:mo><m:mi fontstyle="italic">BR</m:mi><m:mo>)</m:mo></m:math> = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mtext> </m:mtext><m:mo>+</m:mo><m:mtext> (___)(___) </m:mtext><m:mo>=</m:mo><m:mtext> </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>48</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></para></problem>
+<solution id="id47078597" print-placement="end">
+  <para id="fs-idm21770224">b. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi fontstyle="italic">RB</m:mi><m:mo>∪</m:mo><m:mi fontstyle="italic">BR</m:mi><m:mo>)</m:mo></m:math> = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> + <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>48</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/></para></solution>
+</exercise>
+<exercise id="element-921">
+<problem id="id46086278">
+  <para id="element-8295">c. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st) = </para></problem>
+<solution id="id46086303" print-placement="end">
+  <para id="element-43">c. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/></para></solution>
+</exercise>
+<exercise id="fs-idm185198528">
+<problem id="id46086349">
+  <para id="element-363">d. Fill in the blanks.</para>
+<para id="element-400"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>on 1st</m:mtext><m:mo>∩</m:mo><m:mi>B</m:mi><m:mspace width="0.2em"/><m:mtext>on 2nd</m:mtext><m:mo>)</m:mo></m:math> = (___)(___) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para></problem>
+<solution id="id46086410">
+  <para id="element-411">d. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>R</m:mi><m:mspace width="0.2em"/><m:mtext>on 1st</m:mtext><m:mo>∩</m:mo><m:mi>B</m:mi><m:mspace width="0.2em"/><m:mtext>on 2nd</m:mtext><m:mo>)</m:mo></m:math> = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>24</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>110</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math><newline count="2"/>
+ </para></solution>
+</exercise>
+<exercise id="element-874">
+<problem id="id46086515">
+  <para id="element-413">e. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">BB</emphasis>).</para>
+</problem>
+<solution id="id46086539">
+  <para id="element-547">e. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">BB</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>8</m:mn>
+     <m:mrow>
+      <m:mn>11</m:mn>
+     </m:mrow>
+    </m:mfrac>
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>7</m:mn>
+     <m:mrow>
+      <m:mn>10</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math><newline count="2"/></para></solution>
+</exercise>
+<exercise id="element-861">
+<problem id="id46086597">
+  <para id="element-64">f. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis> on 1st).</para></problem>
+<solution id="id46086622">
+  <para id="element-851">f. Using the tree diagram, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis> on 1st) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>8</m:mn>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>.</para></solution>
+</exercise>
+<para id="element-47">If we are using probabilities, we can label the tree in the following general way.</para>
+<media id="id46086747" alt="This is a tree diagram for a two-step experiment. The first branch shows first outcome: P(B) and P(R). The second branch has a set of 2 lines for each line of the first branch: the probability of B given B = P(BB), the probability of R given B = P(RB), the probability of B given R = P(BR), and the probability of R given R = P(RR)." display="block">
+<image src="../../media/fig-ch03_07_03N.jpg" mime-type="image/jpg" width="400"/></media>
+<list id="element-425" list-type="bulleted"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis>) here means <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis> on 1st)</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis>) here means <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">R</emphasis> on 1st)</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis>) here means <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st)</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis>) here means <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis> on 2nd<m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">B</emphasis> on 1st)</item>
+</list></example><note id="fs-idp64832640" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idp40630704"><problem id="fs-idp516608">
+<para id="fs-idp47082864">In a standard deck, there are 52 cards. Twelve cards are face cards (<emphasis effect="italics">F</emphasis>) and 40 cards are not face cards (<emphasis effect="italics">N</emphasis>). Draw two cards, one at a time, without replacement. The tree diagram is labeled with all possible probabilities.</para>
+<figure id="eip-idm127200928"><media id="fs-idp88881552" alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows 2 lines: F 12/52 and N 40/52. The second branch has a set of 2 lines (F 11/52 and N 40/51) for each line of the first branch. Multiply along each line to find FF 121/2652, FN 480/2652, NF 480/2652, and NN 1560/2652." display="block"><image src="../../media/CNX_Stats_C03_M07_tryit002.jpg" mime-type="image/jpg" width="400" print-width="4in"/></media></figure>
+<list id="fs-idm44947616" list-type="enumerated" number-style="lower-alpha"><item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi fontstyle="italic">FN</m:mi><m:mo>∪</m:mo><m:mi fontstyle="italic">NF</m:mi><m:mo>)</m:mo></m:math>.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">N</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">F</emphasis>).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(at most one face card).
+<newline/>Hint: "At most one face card" means zero or one face card.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(at least on face card).
+<newline/>Hint: "At least one face card" means one or two face cards.</item>
+</list></problem>
+<solution id="fs-idp73204176">
+<label/>
+<list id="fs-idp96767584" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi fontstyle="italic">FN</m:mi><m:mo>∪</m:mo><m:mi fontstyle="italic">NF</m:mi><m:mo>)</m:mo></m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>480</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>2,652</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext> + </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mtext>480</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>2,652</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext> = </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mtext>960</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>2,652</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext> = </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mtext>80</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>221</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">N</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">F</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>40</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>51</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><emphasis effect="italics">P</emphasis>(at most one face card) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>(480  +  480  +  1,560)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>2,652</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>,</m:mo><m:mn>520</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>2</m:mn><m:mo>,</m:mo><m:mn>652</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><emphasis effect="italics">P</emphasis>(at least one face card) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>(132 + 480 + 480)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>2,652</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>1,092</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>2,652</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+</list></solution>
+</exercise></note>
+<example id="fs-idp72039056">
+<para id="fs-idp127859600">A litter of kittens available for adoption at the Humane Society has four tabby kittens and five black kittens. A family comes in and randomly selects two kittens (without replacement) for adoption.</para>
+<para id="fs-idp43271504"><media id="fs-idp49760160" alt="This is a tree diagram with branches showing probabilities of kitten choices. The first branch shows two lines: T 4/9 and B 5/9. The second branch has a set of 2 lines for each first branch line. Below T 4/9 are T 3/8 and B 5/8. Below B 5/9 are T 4/8 and B 4/8. Multiply along each line to find probabilities of possible combinations." display="block"><image src="../../media/CNX_Stats_C03_M07_001N.jpg" mime-type="image/jpg" width="400" print-width="4in"/></media></para>
+<exercise id="fs-idp40987552">
+<problem id="fs-idp44496224">
+<list id="fs-idm1310240" list-type="enumerated" number-style="lower-alpha">
+<item>What is the probability that both kittens are tabby?
+<newline count="2"/>a.<m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> b.<m:math>
+   <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+  </m:math> c.<m:math>
+ <m:semantics>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>3</m:mn>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+   </m:semantics>
+</m:math> d.<m:math>
+ <m:semantics>
+  <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+   </m:semantics>
+</m:math></item>
+<item>What is the probability that one kitten of each coloring is selected?
+<newline count="2"/>a.<m:math>
+   <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+  </m:math> b.<m:math>
+   <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+  </m:math> c.<m:math>
+   <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+
+</m:math>	d.<m:math>
+   <m:mrow>
+   <m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mo>+</m:mo><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>5</m:mn>
+       <m:mn>9</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+    <m:mrow>
+     <m:mstyle scriptlevel="+1">
+      <m:mfrac>
+       <m:mn>4</m:mn>
+       <m:mn>8</m:mn>
+      </m:mfrac>
+     </m:mstyle>
+
+    </m:mrow>
+   <m:mo>)</m:mo></m:mrow>
+  </m:mrow>
+  </m:math></item>
+<item>What is the probability that a tabby is chosen as the second kitten when a black kitten was chosen as the first?</item>
+<item>What is the probability of choosing two kittens of the same color?</item>
+</list></problem>
+<solution id="fs-idm2776368">
+<para id="fs-idp7489584">a. c, b. d, c. <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>4</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>, d. <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>32</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>72</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para>
+</solution>
+</exercise></example>
+<note id="fs-idp64465776" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm62426848">
+<problem id="fs-idp61299152">
+<para id="fs-idm3074160">Suppose there are four red balls and three yellow balls in a box. Two balls are drawn from the box without replacement. What is the probability that one ball of each coloring is selected?</para></problem>
+<solution id="fs-idp19481824">
+<label/>
+<para id="fs-idp131025616"><m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mn>7</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> + <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>3</m:mn>
+     <m:mn>7</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>4</m:mn>
+     <m:mn>6</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></para>
+</solution>
+</exercise>
+</note></section></section><section id="fs-idm122777312" class="references"><title>References</title><para id="fs-idp25484384">“Blood Types.” American Red Cross, 2013. Available online at http://www.redcrossblood.org/learn-about-blood/blood-types (accessed May 3, 2013).</para>
+<para id="fs-idm90987472">Data from the National Center for Health Statistics, part of the United States Department of Health and Human Services.</para>
+<para id="fs-idm79839440">Data from United States Senate. Available online at www.senate.gov (accessed May 2, 2013).</para>
+<para id="eip-29">“Human Blood Types.” Unite Blood Services, 2011. Available online at http://www.unitedbloodservices.org/learnMore.aspx (accessed May 2, 2013).</para>
+<para id="fs-idm90988000">Haiman, Christopher A., Daniel O. Stram, Lynn R. Wilkens, Malcolm C. Pike, Laurence N. Kolonel, Brien E. Henderson, and Loīc Le Marchand. “Ethnic and Racial Differences in the Smoking-Related Risk of Lung Cancer.” The New England Journal of Medicine, 2013. Available online at http://www.nejm.org/doi/full/10.1056/NEJMoa033250 (accessed May 2, 2013).</para>
+<para id="fs-idm7900000">Samuel, T. M. “Strange Facts about RH Negative Blood.” eHow Health, 2013. Available online at  http://www.ehow.com/facts_5552003_strange-rh-negative-blood.html (accessed May 2, 2013).</para><para id="eip-293">“United States: Uniform Crime Report – State Statistics from 1960–2011.” The Disaster Center. Available online at http://www.disastercenter.com/crime/ (accessed May 2, 2013).</para>
+
+<para id="fs-idm13822272">Data from Clara County Public H.D.</para>
+<para id="fs-idm13821888">Data from the American Cancer Society.</para>
+<para id="fs-idm13822784">Data from The Data and Story Library, 1996. Available online at http://lib.stat.cmu.edu/DASL/ (accessed May 2, 2013).</para>
+<para id="fs-idp46541952">Data from the Federal Highway Administration, part of the United States Department of Transportation.</para>
+<para id="fs-idp46542448">Data from the United States Census Bureau, part of the United States Department of Commerce.</para>
+<para id="fs-idp46541568">Data from USA Today.</para>
+<para id="eip-478">“Environment.” The World Bank, 2013. Available online at http://data.worldbank.org/topic/environment (accessed May 2, 2013).</para><para id="eip-363">“Search for Datasets.” Roper Center: Public Opinion Archives, University of Connecticut., 2013. Available online at https://ropercenter.cornell.edu/?s=Search+for+Datasets (accessed February 6, 2019).</para></section><section id="eip-347" class="summary"><title>Chapter Review</title><para id="fs-idp35891312">There are several tools you can use to help organize and sort data when calculating probabilities. Contingency tables help display data and are particularly useful when calculating probabilities that have multiple dependent variables.</para>
+
+<para id="fs-idp59827120">A tree diagram use branches to show the different outcomes of experiments and makes complex probability questions easy to visualize.</para></section> </content>
+
+<glossary>
+<definition id="treediagram">
+    <term>Tree Diagram</term>
+    <meaning id="id18749941">the useful visual representation of a sample space and events in the form of a “tree” with branches marked by possible outcomes together with associated probabilities (frequencies, relative frequencies)</meaning>
+  </definition>
+<definition id="contintable">
+<term>Contingency Table</term>
+<meaning id="id17487593">the method of displaying a frequency distribution as a table with rows and columns to show how two variables may be dependent (contingent) upon each other; the table provides an easy way to calculate conditional probabilities.</meaning>
+</definition>
+</glossary>
+</document>

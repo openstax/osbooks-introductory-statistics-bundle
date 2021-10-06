@@ -1,0 +1,1647 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Independent and Mutually Exclusive Events</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54219</md:content-id>
+  <md:title>Independent and Mutually Exclusive Events</md:title>
+  <md:abstract/>
+  <md:uuid>db56f9e4-c8b3-43f3-b71c-958321947efb</md:uuid>
+</metadata>
+
+<content>
+<para id="element-755">Independent and mutually exclusive do <emphasis>not</emphasis> mean the same thing.</para>
+
+<section id="element-20">
+<title>Independent Events</title>
+<para id="element-990">Two events are independent if one of the following are true:</para><list id="element-344" list-type="bulleted"><item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:math></item>
+	<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math></item>
+	<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi> <m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math></item>
+</list><para id="eip-8888">Two events <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are <term>independent</term> if the knowledge that one occurred does not affect the chance the other occurs. For example, the outcomes of two roles of a fair die are independent events. The outcome of the first roll does not change the probability for the outcome of the second roll. To show two events are independent, you must show <emphasis>only one</emphasis> of the above conditions. If two events are NOT independent, then we say that they are <emphasis>dependent</emphasis>.</para>
+
+<para id="element-405">Sampling may be done <emphasis>with</emphasis> <term>replacement</term> or <emphasis>without replacement</emphasis>.</para>
+<list id="fs-idm1341072" list-type="bulleted"><item><emphasis>With replacement</emphasis>: If each member of a population is replaced after it is picked, then that member has the possibility of being chosen more than once. When sampling is done with replacement, then events are considered to be independent, meaning the result of the first pick will not change the probabilities for the second pick.</item>
+<item><emphasis>Without replacement</emphasis>: When sampling is done without replacement, each member of a population may be chosen only once. In this case, the probabilities for the second pick are affected by the result of the first pick. The events are considered to be dependent or not independent.</item>
+</list>
+<para id="element-835">If it is not known whether <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are independent or dependent, <emphasis>assume they are dependent until you can show otherwise</emphasis>.</para>
+
+<example id="fs-idm1963392">
+<para id="fs-idm4177088">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <emphasis effect="italics">J</emphasis> (jack), <emphasis effect="italics">Q</emphasis> (queen), <emphasis effect="italics">K</emphasis> (king) of that suit.</para>
+<para id="fs-idm5494304">a. Sampling with replacement:
+<newline count="1"/>Suppose you pick three cards with replacement. The first card you pick out of the 52 cards is the <emphasis effect="italics">Q</emphasis> of spades. You put this card back, reshuffle the cards and pick a second card from the 52-card deck. It is the ten of clubs. You put this card back, reshuffle the cards and pick a third card from the 52-card deck. This time, the card is the <emphasis effect="italics">Q</emphasis> of spades again. Your picks are {<emphasis effect="italics">Q</emphasis> of spades, ten of clubs, <emphasis effect="italics">Q</emphasis> of spades}. You have picked the <emphasis effect="italics">Q</emphasis> of spades twice. You pick each card from the 52-card deck.</para>
+
+<para id="fs-idm176528">b. Sampling without replacement:
+<newline count="1"/>Suppose you pick three cards without replacement. The first card you pick out of the 52 cards is the <emphasis effect="italics">K</emphasis> of hearts. You put this card aside and pick the second card from the 51 cards remaining in the deck. It is the three of diamonds. You put this card aside and pick the third card from the remaining 50 cards in the deck. The third card is the <emphasis effect="italics">J</emphasis> of spades. Your picks are {<emphasis effect="italics">K</emphasis> of hearts, three of diamonds, <emphasis effect="italics">J</emphasis> of spades}. Because you have picked the cards without replacement, you cannot pick the same card twice.   The probability of picking the three of diamonds is called a conditional probability because it is conditioned on what was picked first. This is true also of the probability of picking the J of spades. The probability of picking the J of spades is actually conditioned on <emphasis effect="italics">both</emphasis> the previous picks. </para></example>
+
+<note id="fs-idm17445584" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm1262752">
+<problem id="fs-idm318128">
+<para id="fs-idp52703136">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <emphasis effect="italics">J</emphasis> (jack), <emphasis effect="italics">Q</emphasis> (queen), <emphasis effect="italics">K</emphasis> (king) of that suit. Three cards are picked at random.</para>
+<list id="fs-idm4233984" list-type="enumerated" number-style="lower-alpha">
+<item>Suppose you know that the picked cards are <emphasis effect="italics">Q</emphasis> of spades, <emphasis effect="italics">K</emphasis> of hearts and <emphasis effect="italics">Q</emphasis> of spades. Can you decide if the sampling was with or without replacement?</item>
+<item>Suppose you know that the picked cards are <emphasis effect="italics">Q</emphasis> of spades, <emphasis effect="italics">K</emphasis> of hearts, and <emphasis effect="italics">J</emphasis> of spades. Can you decide if the sampling was with or without replacement?</item></list>
+</problem>
+<solution id="fs-idm1325952">
+<label/>
+<list id="fs-idm4170576" list-type="enumerated" number-style="lower-alpha">
+<item>With replacement</item>
+<item>No</item>
+</list>
+</solution>
+</exercise>
+</note>
+
+<example id="fs-idm1468672">
+<exercise id="fs-idm203264">
+<problem id="fs-idm1147040">
+<para id="fs-idm4186336">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts, and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <emphasis effect="italics">J</emphasis> (jack), <emphasis effect="italics">Q</emphasis> (queen), and <emphasis effect="italics">K</emphasis> (king) of that suit. <emphasis effect="italics">S</emphasis> = spades, <emphasis effect="italics">H</emphasis> = Hearts, <emphasis effect="italics">D</emphasis> = Diamonds, <emphasis effect="italics">C</emphasis> = Clubs.</para><list id="fs-idm2936016" list-type="enumerated" number-style="lower-alpha"><item>Suppose you pick four cards, but do not put any cards back into the deck. Your cards are <emphasis effect="italics">QS</emphasis>, 1<emphasis effect="italics">D</emphasis>, 1<emphasis effect="italics">C</emphasis>, <emphasis effect="italics">QD</emphasis>.</item>
+<item>Suppose you pick four cards and put each card back before you pick the next card. Your cards are <emphasis effect="italics">KH</emphasis>, 7<emphasis effect="italics">D</emphasis>, 6<emphasis effect="italics">D</emphasis>, <emphasis effect="italics">KH</emphasis>.</item>
+</list><para id="fs-idm61714144">Which of a. or b. did you sample with replacement and which did you sample without replacement?</para></problem>
+<solution id="fs-idm4167824">
+<label/>
+<para id="fs-idm4124432">a. Without replacement; b. With replacement</para></solution>
+</exercise>
+</example>
+
+<note id="fs-idm64621712" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm1421520">
+<problem id="fs-idm5372176">
+<para id="fs-idm328320">You have a fair, well-shuffled deck of 52 cards. It consists of four suits. The suits are clubs, diamonds, hearts, and spades. There are 13 cards in each suit consisting of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, <emphasis effect="italics">J</emphasis> (jack), <emphasis effect="italics">Q</emphasis> (queen), and <emphasis effect="italics">K</emphasis> (king) of that suit. <emphasis effect="italics">S</emphasis> = spades, <emphasis effect="italics">H</emphasis> = Hearts, <emphasis effect="italics">D</emphasis> = Diamonds, <emphasis effect="italics">C</emphasis> = Clubs. Suppose that you sample four cards without replacement. Which of the following outcomes are possible? Answer the same question for sampling with replacement.</para><list id="fs-idm5107680" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">QS</emphasis>, 1<emphasis effect="italics">D</emphasis>, 1<emphasis effect="italics">C</emphasis>, <emphasis effect="italics">QD</emphasis></item>
+<item><emphasis effect="italics">KH</emphasis>, 7<emphasis effect="italics">D</emphasis>, 6<emphasis effect="italics">D</emphasis>, <emphasis effect="italics">KH</emphasis></item>
+<item><emphasis effect="italics">QS</emphasis>, 7<emphasis effect="italics">D</emphasis>, 6<emphasis effect="italics">D</emphasis>, <emphasis effect="italics">KS</emphasis></item>
+</list></problem>
+<solution id="fs-idm1424560">
+<para id="fs-idp62238240">without replacement: 1. Possible; 2. Impossible, 3. Possible</para>
+<para id="fs-idp2845296">with replacement: 1. Possible; 2. Possible, 3. Possible</para>
+</solution>
+</exercise>
+</note>
+</section>
+
+<section id="element-462">
+<title>Mutually Exclusive Events</title>
+<para id="element-548"><emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are <term>mutually exclusive</term> events if they cannot occur at the same time. Said another way, If <emphasis effect="italics">A</emphasis> occurred then <emphasis effect="italics">B</emphasis> cannot occur and vise-a-versa. This means that <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> do not share any outcomes and <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>.</para><para id="element-810">For example, suppose the sample space <emphasis effect="italics">S</emphasis> = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Let <emphasis effect="italics">A</emphasis> = {1, 2, 3, 4, 5}, <emphasis effect="italics">B</emphasis> = {4, 5, 6, 7, 8}, and <emphasis effect="italics">C</emphasis> = {7, 9}. A <m:math><m:mo>∩</m:mo></m:math> B = {4, 5}. <m:math>
+	<m:mi>P</m:mi>
+	<m:mo stretchy="false">(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo stretchy="false">)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mfrac>
+	<m:mn>2</m:mn>
+	<m:mn>10</m:mn>
+</m:mfrac>
+</m:math> and is not equal to zero. Therefore, <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are not mutually exclusive. <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">C</emphasis> do not have any numbers in common so <m:math>
+	<m:mi>P</m:mi>
+	<m:mo stretchy="false">(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo stretchy="false">)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>. Therefore, <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">C</emphasis> are mutually exclusive.</para><para id="element-529">If it is not known whether <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are mutually exclusive, <emphasis>assume they are not until you can show otherwise</emphasis>. The following examples illustrate these definitions and terms.</para>
+
+<example id="element-931">
+<para id="element-482">Flip two fair coins. (This is an experiment.)</para>
+<para id="element-956">The sample space is {<emphasis effect="italics">HH</emphasis>, <emphasis effect="italics">HT</emphasis>, <emphasis effect="italics">TH</emphasis>, <emphasis effect="italics">TT</emphasis>} where <emphasis effect="italics">T</emphasis> = tails and <emphasis effect="italics">H</emphasis> = heads. The outcomes are <emphasis effect="italics">HH</emphasis>, <emphasis effect="italics">HT</emphasis>, <emphasis effect="italics">TH</emphasis>, and <emphasis effect="italics">TT</emphasis>. The outcomes HT and TH are different. The <emphasis effect="italics">HT</emphasis> means that the first coin showed heads and the second coin showed tails. The <emphasis effect="italics">TH</emphasis> means that the first coin showed tails and the second coin showed heads.</para>
+
+<list id="element-96" list-type="bulleted"><item>Let <emphasis effect="italics">A</emphasis> = the event of getting <emphasis>at most one tail</emphasis>. (At most one tail means zero or one tail.) Then <emphasis effect="italics">A</emphasis> can be written as {<emphasis effect="italics">HH</emphasis>, <emphasis effect="italics">HT</emphasis>, <emphasis effect="italics">TH</emphasis>}. The outcome <emphasis effect="italics">HH</emphasis> shows zero tails. <emphasis effect="italics">HT</emphasis> and <emphasis effect="italics">TH</emphasis> each show one tail.</item>
+<item>Let <emphasis effect="italics">B</emphasis> = the event of getting all tails. <emphasis effect="italics">B</emphasis> can be written as {<emphasis effect="italics">TT</emphasis>}. <emphasis effect="italics">B</emphasis> is the <emphasis>complement</emphasis> of <emphasis effect="italics">A</emphasis>, so <emphasis effect="italics">B</emphasis> = <emphasis effect="italics">A′</emphasis>. Also, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A′</emphasis>) = 1.</item>
+<item>The probabilities for <emphasis effect="italics">A</emphasis> and for <emphasis effect="italics">B</emphasis> are <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math>.</item>
+<item>Let <emphasis effect="italics">C</emphasis> = the event of getting all heads. <emphasis effect="italics">C</emphasis> = {<emphasis effect="italics">HH</emphasis>}. Since <emphasis effect="italics">B</emphasis> = {<emphasis effect="italics">TT</emphasis>}, <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>. <emphasis effect="italics">B</emphasis> and <emphasis effect="italics">C</emphasis> are mutually exclusive. (<emphasis effect="italics">B</emphasis> and <emphasis effect="italics">C</emphasis> have no members in common because you cannot have all tails and all heads at the same time.)</item>
+<item>Let <emphasis effect="italics">D</emphasis> = event of getting <emphasis>more than one</emphasis> tail. <emphasis effect="italics">D</emphasis> = {<emphasis effect="italics">TT</emphasis>}. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">D</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item>Let <emphasis effect="italics">E</emphasis> = event of getting a head on the first roll. (This implies you can get either a head or tail on the second roll.) <emphasis effect="italics">E</emphasis> = {<emphasis effect="italics">HT</emphasis>, <emphasis effect="italics">HH</emphasis>}. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">E</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item>Find the probability of getting <emphasis>at least one</emphasis> (one or two) tail in two flips. Let <emphasis effect="italics">F</emphasis> = event of getting at least one tail in two flips. <emphasis effect="italics">F</emphasis> = {<emphasis effect="italics">HT</emphasis>, <emphasis effect="italics">TH</emphasis>, <emphasis effect="italics">TT</emphasis>}. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) = <m:math><m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item></list></example>
+<note id="fs-idp18707552" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idp250992">
+<problem id="fs-idm1214672">
+<para id="fs-idm5147344">Draw two cards from a standard 52-card deck with replacement. Find the probability of getting at least one black card.</para></problem>
+<solution id="fs-idm3385856">
+<label/>
+<title>Try It Solutions</title>
+<para id="fs-idm4230560">The sample space of drawing two cards with replacement from a standard 52-card deck with respect to color is {<emphasis effect="italics">BB</emphasis>, <emphasis effect="italics">BR</emphasis>, <emphasis effect="italics">RB</emphasis>, <emphasis effect="italics">RR</emphasis>}.</para><para id="fs-idm3504224">Event <emphasis effect="italics">A</emphasis> = Getting at least one black card = {<emphasis effect="italics">BB</emphasis>, <emphasis effect="italics">BR</emphasis>, <emphasis effect="italics">RB</emphasis>}</para><para id="fs-idm2490704"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) = <m:math><m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math> =  0.75</para>
+</solution>
+</exercise>
+</note>
+<example id="fs-idm3420000">
+<exercise id="fs-idm4639088">
+<problem id="fs-idm173264">
+<para id="fs-idm1266432">Flip two fair coins. Find the probabilities of the events.</para>
+<list id="fs-idm3669424" list-type="enumerated" number-style="lower-alpha">
+<item>Let <emphasis effect="italics">F</emphasis> = the event of getting at most one tail (zero or one tail).</item>
+<item>Let <emphasis effect="italics">G</emphasis> = the event of getting two faces that are the same.</item>
+<item>Let <emphasis effect="italics">H</emphasis> = the event of getting a head on the first flip followed by a head or tail on the second flip.</item>
+<item>Are <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">G</emphasis> mutually exclusive?</item>
+<item>Let <emphasis effect="italics">J</emphasis> = the event of getting all tails. Are <emphasis effect="italics">J</emphasis> and <emphasis effect="italics">H</emphasis> mutually exclusive?</item>
+</list></problem>
+<solution id="fs-idp66096">
+<para id="fs-idm5054528">Look at the sample space in <link target-id="element-931"/>.</para>
+<list id="fs-idm4693632" list-type="enumerated" number-style="lower-alpha"><item>Zero (0) or one (1) tails occur when the outcomes <emphasis effect="italics">HH</emphasis>, <emphasis effect="italics">TH</emphasis>, <emphasis effect="italics">HT</emphasis> show up. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item>Two faces are the same if <emphasis effect="italics">HH</emphasis> or <emphasis effect="italics">TT</emphasis> show up. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></item>
+<item>A head on the first flip followed by a head or tail on the second flip occurs when <emphasis effect="italics">HH</emphasis> or <emphasis effect="italics">HT</emphasis> show up. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math></item>
+<item><emphasis effect="italics">F</emphasis> and <emphasis effect="italics">G</emphasis> share <emphasis effect="italics">HH</emphasis> so <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo></m:math> is not equal to zero (0). <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">G</emphasis> are not mutually exclusive.</item>
+<item>Getting all tails occurs when tails shows up on both coins (<emphasis effect="italics">TT</emphasis>). <emphasis effect="italics">H</emphasis>’s outcomes are <emphasis effect="italics">HH</emphasis> and <emphasis effect="italics">HT</emphasis>.</item>
+</list><para id="fs-idm12598624"><emphasis effect="italics">J</emphasis> and <emphasis effect="italics">H</emphasis> have nothing in common so <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>J</m:mi><m:mo>∩</m:mo><m:mi>H</m:mi><m:mo>)</m:mo></m:math> = 0. <emphasis effect="italics">J</emphasis> and <emphasis effect="italics">H</emphasis> are mutually exclusive.</para></solution>
+</exercise></example>
+<note id="fs-idm101726688" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm3945968">
+<problem id="fs-idm4652384">
+<para id="fs-idm1471712">A box has two balls, one white and one red. We select one ball, put it back in the box, and select a second ball (sampling with replacement). Find the probability of the following events:</para><list id="fs-idm2908208" list-type="enumerated" number-style="lower-alpha">
+<item>Let <emphasis effect="italics">F</emphasis> = the event of getting the white ball twice.</item>
+<item>Let <emphasis effect="italics">G</emphasis> = the event of getting two balls of different colors.</item>
+<item>Let <emphasis effect="italics">H</emphasis> = the event of getting white on the first pick.</item>
+<item>Are <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">G</emphasis> mutually exclusive?</item>
+<item>Are <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis> mutually exclusive?</item>
+</list>
+</problem>
+<solution id="fs-idm4064592">
+<label/>
+<list id="fs-idm2757712" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow>
+</m:math></item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>
+</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></item>
+<item>Yes</item>
+<item>No</item></list></solution>
+</exercise>
+</note>
+<example id="element-56"><para id="example-3-2-para">Roll one fair, six-sided die. The sample space is {1, 2, 3, 4, 5, 6}. Let event <emphasis effect="italics">A</emphasis> = a face is odd. Then <emphasis effect="italics">A</emphasis> = {1, 3, 5}. Let event <emphasis effect="italics">B</emphasis> = a face is even. Then <emphasis effect="italics">B</emphasis> = {2, 4, 6}.</para>
+<list id="element-677" list-type="bulleted"><item>Find the complement of <emphasis effect="italics">A</emphasis>, <emphasis effect="italics">A′</emphasis>. The complement of <emphasis effect="italics">A</emphasis>, <emphasis effect="italics">A′</emphasis>, is <emphasis effect="italics">B</emphasis> because <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> together make up the sample space. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A′</emphasis>) = 1. Also, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math> and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>) = <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math>.</item>
+<item>Let event <emphasis effect="italics">C</emphasis> = odd faces larger than two. Then <emphasis effect="italics">C</emphasis> = {3, 5}. Let event <emphasis effect="italics">D</emphasis> = all even faces smaller than five. Then <emphasis effect="italics">D</emphasis> = {2, 4}. <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math> because you cannot have an odd and even face at the same time. Therefore, <emphasis effect="italics">C</emphasis> and <emphasis effect="italics">D</emphasis> are mutually exclusive events.</item>
+<item>Let event <emphasis effect="italics">E</emphasis> = all faces less than five. <emphasis effect="italics">E</emphasis> = {1, 2, 3, 4}.</item></list><exercise id="element-12341"><problem id="id9852986">
+<para id="element-73455">Are <emphasis effect="italics">C</emphasis> and <emphasis effect="italics">E</emphasis> mutually exclusive events? (Answer yes or no.) Why or why not?</para>
+</problem>
+<solution id="id10118020">
+<label/>
+<para id="element-032545">No. <emphasis effect="italics">C</emphasis> = {3, 5} and <emphasis effect="italics">E</emphasis> = {1, 2, 3, 4}. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>∩</m:mo> <m:mi>E</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:math>. To be mutually exclusive, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>∩</m:mo><m:mi>E</m:mi><m:mo>)</m:mo></m:math> must be zero.</para></solution>
+</exercise><list id="fs-idm67063616" list-type="bulleted"><item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:math>. This is a conditional probability. Recall that the event <emphasis effect="italics">C</emphasis> is {3, 5} and event <emphasis effect="italics">A</emphasis> is {1, 3, 5}. To find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:math>, find the probability of <emphasis effect="italics">C</emphasis> using the sample space <emphasis effect="italics">A</emphasis>. You have reduced the sample space from the original sample space {1, 2, 3, 4, 5, 6} to {1, 3, 5}. So, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+</m:mrow>
+</m:math>.
+</item>
+</list></example><note id="fs-idm51413200" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idm3558336">
+<problem id="fs-idm4126272">
+<para id="fs-idm832352">Let event <emphasis effect="italics">A</emphasis> = learning Spanish. Let event <emphasis effect="italics">B</emphasis> = learning German. Then <m:math><m:mi>A</m:mi> <m:mo>∩</m:mo> <m:mi>B</m:mi> <m:mo>=</m:mo></m:math> learning Spanish and German. Suppose <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.4</m:mn>
+</m:math> and <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.2</m:mn>
+</m:math>. <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.08</m:mn>
+</m:math>. Are events <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> independent? Hint: You must show ONE of the following:</para><list id="fs-idm143307488" list-type="bulleted"><item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo></m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+</m:math></item></list></problem>
+<solution id="fs-idm4021072">
+<label/>
+<para id="fs-idm882096"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext> = </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mn>0.</m:mn><m:mtext>08</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>0.2</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mtext> = 0</m:mtext><m:mtext>.4 = </m:mtext><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">)</m:mo>
+ </m:mrow>
+</m:math></para><para id="fs-idm682208">The events are independent because <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>|<emphasis effect="italics">B</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>).</para>
+</solution>
+</exercise>
+</note><example id="element-579">
+<para id="example-3-3-para">Let event <emphasis effect="italics">G</emphasis> = taking a math class. Let event <emphasis effect="italics">H</emphasis> = taking a science class. Then, G <m:math><m:mo>∩</m:mo></m:math> H = taking a math class and a science class. Suppose
+<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.6</m:mn><m:mo>,</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>H</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.5</m:mn></m:math>, and <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>∩</m:mo><m:mi>H</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.3</m:mn><m:mo>.</m:mo></m:math>
+Are <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis> independent?</para><para id="element-456">If <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis> are independent, then you must show <emphasis>ONE</emphasis> of the following:</para><list id="element-358" list-type="bulleted"><item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>)</m:mo>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>)</m:mo>
+</m:math>
+</item></list><note id="id9660801"><label/>
+<title>NOTE</title>
+<para id="eip-idp52179728"><emphasis>The choice you make depends on the information you have.</emphasis> You could choose any of the methods here because you have the necessary information.</para></note>
+
+<exercise id="element-3525"><problem id="id9660827">
+   <para id="element-52356">a. Show that <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>|</m:mo><m:mi>H</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>)</m:mo></m:math>.</para></problem>
+<solution id="id9660856">
+ <para id="fs-idm4674864"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>|</m:mo><m:mi>H</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>G</m:mi><m:mo> ∩</m:mo><m:mi>H</m:mi><m:mtext>)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>H</m:mi><m:mtext>)</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+<m:mo>= </m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>0</m:mtext><m:mtext>.3</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>0</m:mtext><m:mtext>.5</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+<m:mo>=</m:mo> <m:mn>0.6</m:mn> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>)</m:mo></m:math></para></solution>
+</exercise>
+
+<exercise id="element-32525"><problem id="id9660930">
+   <para id="element-52456">b. Show <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi> <m:mo>∩</m:mo><m:mi>H</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>)</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>H</m:mi><m:mo>)</m:mo></m:math>.</para></problem>
+<solution id="id9660965">
+ <para id="element-3462"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>)</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>H</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mo>(</m:mo><m:mn>0.6</m:mn><m:mo>)</m:mo><m:mn>(</m:mn><m:mn>0.5</m:mn><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.3</m:mn> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi> <m:mo>∩</m:mo><m:mi>H</m:mi><m:mo>)</m:mo></m:math></para></solution>
+</exercise>
+<para id="element-798">Since <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis> are independent, knowing that a person is taking a science class does not change the chance that he or she is taking a math class. If the two events had not been independent (that is, they are dependent) then knowing that a person is taking a science class would change the chance he or she is taking math. For practice, show that <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>H</m:mi><m:mo>|</m:mo><m:mi>G</m:mi><m:mo>)</m:mo><m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>H</m:mi><m:mo>)</m:mo></m:math> to show that <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis> are independent events.</para></example>
+<note id="fs-idm13687712" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm4055200"><problem id="fs-idm3236672">
+<para id="fs-idm3236416">In a bag, there are six red marbles and four green marbles. The red marbles are marked with the numbers 1, 2, 3, 4, 5, and 6. The green marbles are marked with the numbers 1, 2, 3, and 4.</para>
+<list id="fs-idm5437072" list-type="bulleted"><item><emphasis effect="italics">R</emphasis> = a red marble</item>
+<item><emphasis effect="italics">G</emphasis> = a  green marble</item>
+<item><emphasis effect="italics">O</emphasis> = an odd-numbered marble</item>
+<item>The sample space is <emphasis effect="italics">S</emphasis> = {<emphasis effect="italics">R</emphasis>1, <emphasis effect="italics">R</emphasis>2, <emphasis effect="italics">R</emphasis>3, <emphasis effect="italics">R</emphasis>4, <emphasis effect="italics">R</emphasis>5, <emphasis effect="italics">R</emphasis>6, <emphasis effect="italics">G</emphasis>1, <emphasis effect="italics">G</emphasis>2, <emphasis effect="italics">G</emphasis>3, <emphasis effect="italics">G</emphasis>4}.</item></list>
+<para id="eip-idp4935776"><emphasis effect="italics">S</emphasis> has ten outcomes. What is <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>O</m:mi>
+	<m:mo>)</m:mo>
+	</m:math>?</para></problem>
+<solution id="fs-idm4683712">
+<label/>
+<para id="fs-idm4683456">Event <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">O</emphasis> = {<emphasis effect="italics">G</emphasis>1, <emphasis effect="italics">G</emphasis>3}</para>
+<para id="fs-idm1319536"><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>O</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo><m:mrow>
+  <m:mfrac>
+   <m:mtext>2</m:mtext>
+   <m:mrow>
+    <m:mtext>10</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+<m:mo>=</m:mo>
+<m:mn>0.2</m:mn>
+</m:math></para></solution>
+</exercise></note>
+<example id="fs-idm793920">
+<exercise id="fs-idm3514480"><problem id="fs-idm1757104">
+<para id="fs-idm1756848">Let event <emphasis effect="italics">C</emphasis> = taking an English class. Let event <emphasis effect="italics">D</emphasis> = taking a speech class.</para><para id="fs-idm293392">Suppose <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.75</m:mn></m:math>, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>D</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.3</m:mn></m:math>, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>|</m:mo><m:mi>D</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.75</m:mn></m:math> and <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.225</m:mn>
+</m:math>.</para><para id="fs-idm4675792">Justify your answers to the following questions numerically.</para><list id="fs-idm5240736" list-type="enumerated" number-style="lower-alpha"><item>Are <emphasis effect="italics">C</emphasis> and <emphasis effect="italics">D</emphasis> independent?</item>
+<item>Are <emphasis effect="italics">C</emphasis> and <emphasis effect="italics">D</emphasis> mutually exclusive?</item>
+<item>What is <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>)</m:mo></m:math>?</item>
+</list></problem>
+<solution id="fs-idm4625248"><label/>
+<list id="fs-idm316704" list-type="enumerated" number-style="lower-alpha"><item>Yes, because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>)</m:mo>
+</m:math>.</item>
+<item>No, because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo></m:math> is not equal to zero.</item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>C</m:mi><m:mo>∩</m:mo><m:mi>D</m:mi><m:mtext>)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>C</m:mi><m:mtext>)</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+<m:mo>= </m:mo><m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>0</m:mtext><m:mtext>.225</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>0.75</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+<m:mo>=</m:mo> <m:mn>0.3</m:mn></m:math></item></list></solution>
+</exercise></example>
+<note id="fs-idp11259824" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idm3333552"><problem id="fs-idm4100544">
+<para id="fs-idm4100288">A student goes to the library. Let events <emphasis effect="italics">B</emphasis> = the student checks out a book and <emphasis effect="italics">D</emphasis> = the student checks out a DVD. Suppose that <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.40</m:mn>
+</m:math>, <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.30</m:mn>
+</m:math> and <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.20</m:mn>
+</m:math>.</para><list id="fs-idm4647408" list-type="enumerated" number-style="lower-alpha"><item>Find <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+</m:math>.</item>
+<item>Find <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+</m:math>.</item>
+<item>Are <emphasis effect="italics">B</emphasis> and <emphasis effect="italics">D</emphasis> independent?</item>
+<item>Are <emphasis effect="italics">B</emphasis> and <emphasis effect="italics">D</emphasis> mutually exclusive?</item>
+</list></problem>
+<solution id="fs-idm4326480">
+<label/>
+<list id="fs-idm4326224" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.6667</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>D</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.5</m:mn>
+</m:math></item>
+<item>No</item>
+<item>No</item>
+</list></solution>
+</exercise></note><example id="element-184">
+<para id="example-3-4-para">In a box there are three red cards and five blue cards. The red cards are marked with the numbers 1, 2, and 3, and the blue cards are marked with the numbers 1, 2, 3, 4, and 5. The cards are well-shuffled. You reach into the box (you cannot see into it) and draw one card.</para><para id="fs-idm1909360">Let <emphasis effect="italics">R</emphasis> = red card is drawn, <emphasis effect="italics">B</emphasis> = blue card is drawn, <emphasis effect="italics">E</emphasis> = even-numbered card is drawn.</para><para id="element-541">The sample space <emphasis effect="italics">S</emphasis> = <emphasis effect="italics">R</emphasis>1, <emphasis effect="italics">R</emphasis>2, <emphasis effect="italics">R</emphasis>3, <emphasis effect="italics">B</emphasis>1, <emphasis effect="italics">B</emphasis>2, <emphasis effect="italics">B</emphasis>3, <emphasis effect="italics">B</emphasis>4, <emphasis effect="italics">B</emphasis>5. <emphasis effect="italics">S</emphasis> has eight outcomes.</para><list id="element-131" list-type="bulleted"><item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>R</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+ </m:mrow>
+<m:mo>.</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+ </m:mrow>
+<m:mo>.</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>R</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>. (You cannot draw one card that is both red and blue.)</item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>E</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>3</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math>. (There are three even-numbered cards, <emphasis effect="italics">R</emphasis>2, <emphasis effect="italics">B</emphasis>2, and <emphasis effect="italics">B</emphasis>4.)</item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo stretchy="false">(</m:mo>
+	<m:mi>E</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>5</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math>. (There are five blue cards: <emphasis effect="italics">B</emphasis>1, <emphasis effect="italics">B</emphasis>2, <emphasis effect="italics">B</emphasis>3, <emphasis effect="italics">B</emphasis>4, and <emphasis effect="italics">B</emphasis>5. Out of the blue cards, there are two even cards; <emphasis effect="italics">B</emphasis>2 and <emphasis effect="italics">B</emphasis>4.)</item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo stretchy="false">(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>E</m:mi>
+	<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math>. (There are three even-numbered cards: <emphasis effect="italics">R</emphasis>2, <emphasis effect="italics">B</emphasis>2, and <emphasis effect="italics">B</emphasis>4. Out of the even-numbered cards, to are blue; <emphasis effect="italics">B</emphasis>2 and <emphasis effect="italics">B</emphasis>4.)</item>
+<item>The events <emphasis effect="italics">R</emphasis> and <emphasis effect="italics">B</emphasis> are mutually exclusive because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>R</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>.</item>
+<item>Let <emphasis effect="italics">G</emphasis> = card with a number greater than 3. <emphasis effect="italics">G</emphasis> = {<emphasis effect="italics">B</emphasis>4, <emphasis effect="italics">B</emphasis>5}. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>G</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math>. Let <emphasis effect="italics">H</emphasis> = blue card numbered between one and four, inclusive. <emphasis effect="italics">H</emphasis> = {<emphasis effect="italics">B</emphasis>1, <emphasis effect="italics">B</emphasis>2, <emphasis effect="italics">B</emphasis>3, <emphasis effect="italics">B</emphasis>4}. <m:math>
+	<m:mi>P</m:mi>
+	<m:mo stretchy="false">(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo stretchy="false">)</m:mo> <m:mo>=</m:mo>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math>. (The only card in <emphasis effect="italics">H</emphasis> that has a number greater than three is <emphasis effect="italics">B</emphasis>4.) Since <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>4</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math>, <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>)</m:mo>
+</m:math>, which means that <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis> are independent.</item></list></example>
+<note id="fs-idm85337200" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idm4149344"><problem id="fs-idm5137744">
+<para id="fs-idm3390208">In a basketball arena,</para>
+<list id="fs-idm626832" list-type="bulleted">
+<item>70% of the fans are rooting for the home team.</item>
+<item>25% of the fans are wearing blue.</item>
+<item>20% of the fans are wearing blue and are rooting for the away team.</item>
+<item>Of the fans rooting for the away team, 67% are wearing blue.</item>
+</list>
+<para id="fs-idm2657904">Let <emphasis effect="italics">A</emphasis> be the event that a fan is rooting for the away team.
+<newline/>Let <emphasis effect="italics">B</emphasis> be the event that a fan is wearing blue.
+<newline/>Are the events of rooting for the away team and wearing blue independent? Are they mutually exclusive?</para>
+</problem>
+<solution id="fs-idm339216">
+<label/>
+<para id="fs-idm4109904"><m:math>
+
+	<m:mi>P</m:mi><m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.67</m:mn>
+</m:math></para><para id="fs-idm4109520"><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.25</m:mn>
+</m:math></para><para id="fs-idm2944960">So <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+</m:math> does not equal <m:math>
+	<m:mi>P</m:mi><m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+</m:math> which means that <emphasis effect="italics">B</emphasis> and <emphasis effect="italics">A</emphasis> are not independent (wearing blue and rooting for the away team are not independent). They are also not mutually exclusive, because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.20</m:mn>
+</m:math>, not 0.</para></solution>
+</exercise>
+</note>
+<example id="eip-31">
+<para id="eip-311">In a particular college class, 60% of the students are female. Fifty percent of all students in the class have long hair. Forty-five percent of the students are female and have long hair. Of the female students, 75% have long hair. Let <emphasis effect="italics">F</emphasis> be the event that a student is female. Let <emphasis effect="italics">L</emphasis> be the event that a student has long hair. One student is picked randomly. Are the events of being female and having long hair independent?</para><list id="eip-637" list-type="bulleted"><item>The following probabilities are given in this example:</item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mn>=</m:mn>
+	<m:mn>0.60</m:mn>
+	<m:mo>;</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+	<m:mn>=</m:mn>
+	<m:mn>0.50</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.45</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.75</m:mn>
+</m:math></item></list><note id="eip-843"><label/>
+<title>NOTE</title>
+<para id="eip-idm110347232"><emphasis>The choice you make depends on the information you have.</emphasis> You could use the first or last condition on the list for this example. You do not know <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>|<emphasis effect="italics">L</emphasis>) yet, so you cannot use the second condition.</para></note>
+<para id="eip-166">Check whether <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+</m:math>. We are given that <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.45</m:mn>
+</m:math>, but <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mo>(</m:mo>
+	<m:mn>0.60</m:mn>
+	<m:mo>)</m:mo>
+	<m:mo>(</m:mo>
+	<m:mn>0.50</m:mn>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.30</m:mn>
+</m:math>. The events of being female and having long hair are not independent because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+</m:math> does not equal <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+</m:math>.</para>
+
+<para id="eip-669">Check whether <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+</m:math> equals <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+</m:math>. We are given that <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.75</m:mn>
+</m:math>, but <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>L</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.50</m:mn>
+</m:math>; they are not equal. The events of being female and having long hair are not independent.</para><para id="eip-103"><title>Interpretation of Results</title>The events of being female and having long hair are not independent; knowing that a student is female changes the probability that a student has long hair.</para></example>
+<note id="fs-idp15300304" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm4091904">
+<problem id="fs-idm4091648">
+<para id="fs-idm2370976">Mark is deciding which route to take to work. His choices are <emphasis effect="italics">I</emphasis> = the Interstate and <emphasis effect="italics">F</emphasis> = Fifth Street.</para><list id="fs-idm5051536" list-type="bulleted"><item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.44</m:mn>
+</m:math> and <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.56</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math> because Mark will take only one route to work.</item>
+</list><para id="fs-idm1878352">What is the probability of <m:math><m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo></m:math>?</para></problem>
+<solution id="fs-idm3318384">
+<label/>
+<para id="fs-idm3318128">Because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>,</para><para id="fs-idm2323552"><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>+</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>−</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>I</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.44</m:mn>
+	<m:mo>+</m:mo>
+	<m:mn>0.56</m:mn>
+	<m:mo>−</m:mo>
+	<m:mn>0</m:mn>
+	<m:mo>=</m:mo>
+	<m:mn>1</m:mn>
+</m:math></para></solution>
+</exercise>
+</note>
+<example id="fs-idm4667408"><exercise id="fs-idm4667152">
+<problem id="fs-idm336096">
+<list id="fs-idm335840" list-type="enumerated" number-style="lower-alpha"><item>Toss one fair coin (the coin has two sides, <emphasis effect="italics">H</emphasis> and <emphasis effect="italics">T</emphasis>). The outcomes are ________. Count the outcomes. There are ____ outcomes.</item>
+<item>Toss one fair, six-sided die (the die has 1, 2, 3, 4, 5 or 6 dots on a side). The outcomes are ________________. Count the outcomes. There are ___ outcomes.</item>
+<item>Multiply the two numbers of outcomes. The answer is _______.</item>
+<item>If you flip one fair coin and follow it with the toss of one fair, six-sided die, the answer to c is the number of outcomes (size of the sample space). What are the outcomes? (Hint: Two of the outcomes are <emphasis effect="italics">H</emphasis>1 and <emphasis effect="italics">T</emphasis>6.)</item>
+<item>Event <emphasis effect="italics">A</emphasis> = heads (<emphasis effect="italics">H</emphasis>) on the coin followed by an even number (2, 4, 6) on the die.
+<newline/><emphasis effect="italics">A</emphasis> = {_________________}. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>).</item>
+<item>Event <emphasis effect="italics">B</emphasis> = heads on the coin followed by a three on the die. <emphasis effect="italics">B</emphasis> = {________}. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>).</item>
+<item>Are <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> mutually exclusive? (Hint: What is <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+</m:math>? If <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math>, then <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are mutually exclusive.)</item>
+<item>Are <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> independent? (Hint: Is <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+</m:math>? If <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+</m:math>, then <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are independent. If not, then they are dependent).</item></list></problem>
+<solution id="fs-idm3508544"><label/>
+<list id="fs-idm15568720" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H</emphasis> and <emphasis effect="italics">T</emphasis>; 2</item>
+<item>1, 2, 3, 4, 5, 6; 6</item>
+<item>2(6) = 12</item>
+<item><emphasis effect="italics">T</emphasis>1, <emphasis effect="italics">T</emphasis>2, <emphasis effect="italics">T</emphasis>3, <emphasis effect="italics">T</emphasis>4, <emphasis effect="italics">T</emphasis>5, <emphasis effect="italics">T</emphasis>6, <emphasis effect="italics">H</emphasis>1, <emphasis effect="italics">H</emphasis>2, <emphasis effect="italics">H</emphasis>3, <emphasis effect="italics">H</emphasis>4, <emphasis effect="italics">H</emphasis>5, <emphasis effect="italics">H</emphasis>6</item>
+<item><emphasis effect="italics">A</emphasis> = {<emphasis effect="italics">H</emphasis>2, <emphasis effect="italics">H</emphasis>4, <emphasis effect="italics">H</emphasis>6}; <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>) = <m:math><m:mrow>
+  <m:mfrac>
+   <m:mtext>3</m:mtext>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item><emphasis effect="italics">B</emphasis> = {<emphasis effect="italics">H</emphasis>3}; <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mtext>1</m:mtext>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item>Yes, because <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0</m:mn>
+	<m:mo>.</m:mo>
+	<m:mspace width="0.2ems"/>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mo stretchy="false">(</m:mo>
+	<m:mfrac><m:mn>3</m:mn><m:mn>12</m:mn></m:mfrac>
+	<m:mo stretchy="false">)</m:mo>
+	<m:mo>.</m:mo>
+	<m:mspace width="0.2ems"/>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mspace width="0.2ems"/><m:mtext>does not equal</m:mtext><m:mspace width="0.2ems"/>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>A</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>B</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>,</m:mo>
+	<m:mspace width="0.2ems"/><m:mtext>so</m:mtext><m:mspace width="0.2ems"/>
+	<m:mi>A</m:mi>
+	<m:mspace width="0.2ems"/><m:mtext>and</m:mtext><m:mspace width="0.2ems"/>
+	<m:mi>B</m:mi>
+	<m:mspace width="0.2ems"/><m:mtext>are dependent.</m:mtext>
+</m:math></item>
+</list></solution>
+</exercise></example>
+<note id="fs-idp34076080" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm5094416">
+<problem id="fs-idm340208">
+<para id="fs-idm339952">A box has two balls, one white and one red. We select one ball, put it back in the box, and select a second ball (sampling with replacement). Let <emphasis effect="italics">T</emphasis> be the event of getting the white ball twice, <emphasis effect="italics">F</emphasis> the event of picking the white ball first, <emphasis effect="italics">S</emphasis> the event of picking the white ball in the second drawing.</para>
+<list id="fs-idm5499808" list-type="enumerated" number-style="lower-alpha"><item>Compute <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>T</m:mi>
+	<m:mo>)</m:mo>
+</m:math>.</item>
+<item>Compute <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>T</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+</m:math>.</item>
+<item>Are <emphasis effect="italics">T</emphasis> and <emphasis effect="italics">F</emphasis> independent?.</item>
+<item>Are <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">S</emphasis> mutually exclusive?</item>
+<item>Are <emphasis effect="italics">F</emphasis> and <emphasis effect="italics">S</emphasis> independent?</item></list></problem>
+<solution id="fs-idm1927168">
+<list id="fs-idm1926912" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>T</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>T</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>F</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac>
+</m:math></item>
+<item>No</item>
+<item>No</item>
+<item>Yes</item>
+</list></solution>
+</exercise></note>
+</section>
+
+<section id="fs-idm73253936" class="references">
+<title>References</title>
+<para id="fs-idm119965792">Lopez, Shane, Preety Sidhu. “U.S. Teachers Love Their Lives, but Struggle in the Workplace.” Gallup Wellbeing, 2013. http://www.gallup.com/poll/161516/teachers-love-lives-struggle-workplace.aspx (accessed May 2, 2013).</para>
+<para id="fs-idp18246464">Data from Gallup. Available online at www.gallup.com/ (accessed May 2, 2013).</para>
+</section>
+
+<section id="fs-idm1912144" class="summary">
+<title>Chapter Review</title>
+<para id="fs-idm750784">Two events <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are independent if the knowledge that one occurred does not affect the chance the other occurs. If two events are not independent, then we say that they are dependent.</para>
+
+<para id="fs-idm3534560">In sampling with replacement, each member of a population is replaced after it is picked, so that member has the possibility of being chosen more than once, and the events are considered to be independent. In sampling without replacement, each member of a population may be chosen only once, and the events are considered not to be independent. When events do not share outcomes, they are mutually exclusive of each other.</para></section>
+
+<section id="fs-idm4116704" class="formula-review">
+<title>Formula Review</title>
+<para id="eip-551">If <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are independent, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo> <m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>,</m:mo></m:math> <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:math> and <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:math></para><para id="fs-idm2879760">If <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are mutually exclusive, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi> <m:mo>∪</m:mo> <m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo> <m:mo>+</m:mo> <m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math> and <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi> <m:mspace width="0.2ems"/><m:mo>∩</m:mo><m:mspace width="0.2ems"/> <m:mi>B</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0</m:mn><m:mo>.</m:mo></m:math></para></section>
+
+<section id="fs-idp62639840" class="practice">
+<exercise id="element-863">
+<problem id="id43759125">
+  <para id="element-743"><m:math><m:mi>E</m:mi></m:math> and <m:math><m:mi>F</m:mi></m:math> are mutually exclusive events. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>E</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.4</m:mn><m:mo>;</m:mo></m:math> <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.5</m:mn><m:mo>.</m:mo></m:math> Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>E</m:mi><m:mo>∣</m:mo><m:mi>F</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:math></para></problem>
+</exercise>
+
+<exercise id="element-867">
+<problem id="id43759323">
+<para id="element-18"><m:math><m:mi>J</m:mi></m:math> and <m:math><m:mi>K</m:mi></m:math> are independent events. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>J</m:mi><m:mo>|</m:mo><m:mi>K</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo> <m:mn>0.3</m:mn><m:mo>.</m:mo></m:math> Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>J</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:math></para></problem>
+<solution id="fs-idm2098384"><label/>
+<para id="fs-idp3820560"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">J</emphasis>) = 0.3</para>
+</solution>
+</exercise>
+
+<exercise id="element-588">
+<problem id="id43759426">
+<para id="element-226"><emphasis effect="italics">U</emphasis> and <emphasis effect="italics">V</emphasis> are mutually exclusive events. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">U</emphasis>) = 0.26; <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">V</emphasis>) = 0.37. Find:</para>
+<list id="element-896" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>U</m:mi> <m:mspace width="0.2ems"/><m:mo>∩</m:mo><m:mspace width="0.2ems"/> <m:mi>V</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo></m:math></item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>U</m:mi><m:mo>|</m:mo><m:mi>V</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo></m:math></item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>U</m:mi> <m:mo>∪</m:mo><m:mi>V</m:mi><m:mo>)</m:mo> <m:mo>=</m:mo></m:math></item>
+</list></problem>
+</exercise>
+
+<exercise id="element-930">
+<problem id="id43759701">
+<para id="element-445"><m:math>
+<m:mi>Q</m:mi></m:math>
+ and
+<m:math><m:mi>R</m:mi> </m:math> are independent events.
+<m:math><m:mi>P</m:mi>
+<m:mo>(</m:mo>
+<m:mtext>Q</m:mtext>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>0.4</m:mn>
+</m:math> and
+<m:math>
+<m:mi>P</m:mi>
+<m:mo>(</m:mo>
+<m:mi>Q</m:mi>
+<m:mo>∩</m:mo>
+<m:mi>R</m:mi>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>0.1</m:mn>
+<m:mo>.</m:mo> </m:math>
+ Find
+<m:math><m:mi>P</m:mi>
+<m:mo>(</m:mo>
+<m:mi>R</m:mi>
+<m:mo>)</m:mo>
+<m:mo>.</m:mo>
+</m:math></para></problem>
+<solution id="fs-idp48870976"><label/>
+<para id="fs-idp48871360"><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>Q</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>R</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>Q</m:mi>
+	<m:mo>)</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>R</m:mi>
+	<m:mo>)</m:mo>
+</m:math></para><para id="fs-idp19254592">0.1 = (0.4)<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis>)</para><para id="fs-idp19254976"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis>) = 0.25</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-idm88736" class="free-response"><title>Homework</title><para id="eip-idp126196880"><emphasis effect="italics">Use the following information to answer the next 12 exercises.</emphasis> From January through December 2012, Gallup interviewed more than 170,000 employed Americans 18 years of age or order. The graph shown is compiled from data collected by Gallup. The Emotional Health Index Scores are the sample space. We randomly sample one Emotional Health Index Score.</para>
+<figure id="eip-id1171405227589"><media id="eip-id1171388484061" alt="emotional health index score">
+       <image mime-type="image/jpeg" src="../../media/CNX_Stats_C03_RWP_001.jpg" width="500"/>
+     </media>
+   </figure><exercise id="eip-807"><problem id="eip-85">
+  <para id="eip-26">Find the probability that the selected Emotional Health Index Score is 82.7.</para>
+</problem>
+</exercise>
+
+<exercise id="eip-790">
+<problem id="eip-102">
+  <para id="eip-329">Find the probability that the selected Emotional Health Index Score is 81.0.</para>
+</problem>
+<solution id="eip-841">
+  <para id="eip-869">0</para>
+</solution>
+</exercise>
+
+<exercise id="eip-538">
+<problem id="eip-976">
+  <para id="eip-640">Find the probability that the selected Emotional Health Index Score is more than 81?</para>
+</problem>
+</exercise>
+
+<exercise id="eip-42">
+<problem id="eip-714">
+<para id="eip-674">Find the probability that the selected Emotional Health Index Score is between 80.5 and 82?</para>
+</problem>
+<solution id="eip-118">
+  <para id="eip-636">0.3571</para>
+</solution>
+</exercise>
+
+<exercise id="eip-44"><problem id="eip-761">
+  <para id="eip-515">If we know the selected Emotional Health Index Score is 81.5 or more, what is the probability that it is 82.7?</para>
+</problem>
+</exercise>
+
+<exercise id="eip-347"><problem id="eip-479">
+  <para id="eip-134">What is the probability that the selected Emotional Health Index Score is 80.7 or 82.7?</para>
+</problem>
+<solution id="eip-923"><label/>
+  <para id="eip-927">0.2142</para></solution>
+</exercise>
+<exercise id="eip-197"><problem id="eip-299">
+  <para id="eip-147">What is the probability that the selected Emotional Health Index Score is less than 80.2 given that it is already less than 81.</para>
+</problem>
+</exercise>
+
+<exercise id="eip-545"><problem id="eip-62">
+  <para id="eip-901">What occupation has the highest emotional index score?</para>
+</problem>
+<solution id="eip-427"><label/>
+  <para id="eip-420">Physician (83.7)</para>
+</solution>
+</exercise>
+<exercise id="eip-904"><problem id="eip-638">
+  <para id="eip-215">What occupation has the lowest emotional index score?</para>
+</problem>
+</exercise><exercise id="eip-386"><problem id="eip-143">
+  <para id="eip-533">What is the range of the data?</para>
+</problem>
+<solution id="eip-718"><label/>
+  <para id="eip-37">83.7 − 79.6 = 4.1</para></solution>
+</exercise>
+<exercise id="eip-221"><problem id="eip-432">
+  <para id="eip-929">Compute the average EHIS.</para></problem>
+</exercise><exercise id="eip-743"><problem id="eip-520">
+  <para id="eip-314">If all occupations are equally likely for a certain individual, what is the probability that he or she will have an occupation with lower than average EHIS?</para></problem>
+<solution id="eip-983"><label/>
+  <para id="eip-466"><emphasis effect="italics">P</emphasis>(Occupation &lt; 81.3) = 0.5</para>
+</solution>
+</exercise>
+
+
+
+</section><section id="fs-idm4259888" class="bring-together-homework">
+<title>Bringing It Together</title>
+<exercise id="element-738"><problem id="id43569944">
+<para id="element-699">A previous year, the weights of the members of the <emphasis>San Francisco 49ers</emphasis> and the <emphasis>Dallas Cowboys</emphasis> were published in the <cite><cite-title>San Jose Mercury News</cite-title></cite>. The factual data are compiled into <link target-id="ch03_M03-tbl001"/>.
+    </para><table id="ch03_M03-tbl001" summary="This table presents weight in pounds by shirt number. The first column lists the shirt number, the second column lists weight ≤ 210, the third column lists 211-250, fourth column lists 251-290, and the fifth column lists 291 ≤. The first row lists shirt numbers 1-33, second row lists 34-66, and the third row lists 66-99.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <thead>
+    <row>
+      <entry>Shirt #</entry>
+      <entry>≤ 210</entry>
+      <entry>211–250</entry>
+      <entry>251–290</entry>
+      <entry>290≤</entry>
+    </row>
+  </thead>
+  <tbody>
+    <row>
+      <entry>1–33</entry>
+      <entry>21</entry>
+      <entry>5</entry>
+      <entry>0</entry>
+      <entry>0</entry>
+    </row>
+    <row>
+      <entry>34–66</entry>
+      <entry>6</entry>
+      <entry>18</entry>
+      <entry>7</entry>
+      <entry>4</entry>
+    </row>
+    <row>
+      <entry>66–99</entry>
+      <entry>6</entry>
+      <entry>12</entry>
+      <entry>22</entry>
+      <entry>5</entry>
+    </row>
+  </tbody>
+
+</tgroup>
+</table><para id="element-460">For the following, suppose that you randomly select one player from the 49ers or Cowboys.</para>
+<para id="eip-idm15421280">If having a shirt number from one to 33 and weighing at most 210 pounds were independent events, then what should be true about <emphasis effect="italics">P</emphasis>(Shirt# 1–33|≤ 210 pounds)?</para></problem>
+</exercise>
+
+<exercise id="element-750"><problem id="id43570745">
+  <para id="element-88">The probability that a male develops some form of cancer in his lifetime is 0.4567. The probability that a male has at least one false positive test result (meaning the test comes back for cancer when the man does not have it) is 0.51. Some of the following questions do not have enough information for you to answer them. Write “not enough information” for those answers. Let <emphasis effect="italics">C</emphasis> = a man develops cancer in his lifetime and <emphasis effect="italics">P</emphasis> = man has at least one false positive.
+<list id="element-196" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+</m:math> ______</item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>C</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+</m:math> ______</item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>|</m:mo>
+	<m:mi>C'</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+</m:math> ______</item>
+<item>If a test comes up positive, based upon numerical values, can you assume that man has cancer? Justify numerically and explain why or why not.</item>
+</list></para></problem>
+<solution id="fs-idm6556256"><label/>
+<list id="fs-idm62553312" list-type="enumerated" number-style="lower-alpha">
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis>) = 0.4567</item>
+<item>not enough information</item>
+<item>not enough information</item>
+<item>No, because over half (0.51) of men have at least one false positive text</item>
+</list>
+</solution>
+</exercise>
+<exercise id="eip-959"><problem id="eip-582">
+  <para id="eip-801">Given events <emphasis effect="italics">G</emphasis> and <emphasis effect="italics">H</emphasis>: <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G</emphasis>) = 0.43; <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) = 0.26; <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>H</m:mi><m:mo>∩</m:mo><m:mi>G</m:mi><m:mo>)</m:mo></m:math> = 0.14</para><list id="eip-id8377009" list-type="enumerated" number-style="lower-alpha"><item>Find <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>.</m:mo>
+</m:math></item>
+<item>Find the probability of the complement of event <m:math>
+	<m:mo>(</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>.</m:mo>
+</m:math></item>
+<item>Find the probability of the complement of event <m:math>
+	<m:mo>(</m:mo>
+	<m:mi>H</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>G</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>.</m:mo>
+</m:math></item></list></problem>
+</exercise><exercise id="eip-278">
+<problem id="eip-id1164335822550">
+  <para id="element-642">Given events <m:math>
+	<m:mi>J</m:mi>
+</m:math> and <m:math>
+	<m:mi>K</m:mi>
+	<m:mo>:</m:mo>
+	<m:mspace width="0.2ems"/>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.18</m:mn>
+	<m:mo>;</m:mo></m:math> <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.37</m:mn>
+	<m:mo>;</m:mo></m:math>
+<m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.45</m:mn>
+</m:math></para><list id="eip-id1164314961072" list-type="enumerated" number-style="lower-alpha"><item>Find <m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>.</m:mo>
+</m:math></item>
+
+<item>Find the probability of the complement of event <m:math>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>.</m:mo>
+</m:math></item>
+
+<item>Find the probability of the complement of event <m:math>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>.</m:mo>
+</m:math></item></list></problem>
+<solution id="eip-id1164325147049"><label/>
+  <list id="eip-id1164335526487" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mo>J</m:mo>
+	<m:mo>)</m:mo>
+	<m:mo>+</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>−</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>;</m:mo></m:math>
+	<m:math><m:mn>0.45</m:mn>
+	<m:mo>=</m:mo>
+	<m:mn>0.18</m:mn>
+	<m:mo>+</m:mo>
+	<m:mn>0.37</m:mn>
+	<m:mo>−</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>;</m:mo></m:math> solve to find
+<m:math>	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>0.10</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mtext>NOT</m:mtext>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>1</m:mn>
+	<m:mo>−</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∩</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo></m:math>
+<m:math>	<m:mo>=</m:mo>
+	<m:mn>1</m:mn>
+	<m:mo>−</m:mo>
+	<m:mn>0.10</m:mn>
+	<m:mo>=</m:mo>
+	<m:mn>0.90</m:mn>
+</m:math></item>
+<item><m:math>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mtext>NOT</m:mtext>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo>
+	<m:mo>)</m:mo>
+	<m:mo>=</m:mo>
+	<m:mn>1</m:mn>
+	<m:mo>−</m:mo>
+	<m:mi>P</m:mi>
+	<m:mo>(</m:mo>
+	<m:mi>J</m:mi>
+	<m:mo>∪</m:mo>
+	<m:mi>K</m:mi>
+	<m:mo>)</m:mo></m:math>
+	<m:math><m:mo>=</m:mo>
+	<m:mn>1</m:mn>
+	<m:mo>−</m:mo>
+	<m:mn>0.45</m:mn>
+	<m:mo>=</m:mo>
+	<m:mn>0.55</m:mn>
+</m:math></item>
+</list></solution>
+</exercise>
+</section>
+ </content>
+
+<glossary>
+<definition id="fs-idm19024">
+<term>Dependent Events</term> <meaning id="fs-idm18384">If two events are NOT independent, then we say that they are dependent.</meaning>
+</definition>
+<definition id="fs-idm5236464">
+<term>Sampling with Replacement</term>
+<meaning id="fs-idm5235824">If each member of a population is replaced after it is picked, then that member has the possibility of being chosen more than once.</meaning>
+</definition>
+<definition id="fs-idm5235168">
+<term>Sampling without Replacement</term>
+<meaning id="fs-idm5234528">When sampling is done without replacement, each member of a population may be chosen only once.</meaning>
+</definition>
+</glossary>
+</document>

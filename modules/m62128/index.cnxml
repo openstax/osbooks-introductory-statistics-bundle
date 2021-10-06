@@ -1,0 +1,1668 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Venn Diagrams</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m62128</md:content-id>
+  <md:title>Venn Diagrams</md:title>
+  <md:abstract/>
+  <md:uuid>7c269d07-5ce7-4081-933c-b20fc25ee9c0</md:uuid>
+</metadata>
+
+<content>
+ <section id="eip-39"><title>Venn Diagrams</title><para id="eip-8888">A <term>Venn diagram</term> is a picture that represents the outcomes of an experiment. It generally consists of a box that represents the sample space S together with circles or ovals. The circles or ovals represent events. Venn diagrams also help us to convert common English words into mathematical terms that help add precision.</para><para id="eip-842">Venn diagrams are named for their inventor, John Venn, a mathematics professor at Cambridge and an Anglican minister. His main work was conducted during the late 1870's and gave rise to a whole branch of mathematics and a new way to approach issues of logic. We will develop the probability rules just covered using this powerful way to demonstrate the probability postulates including the Addition Rule, Multiplication Rule, Complement Rule, Independence, and Conditional Probability.</para><example id="element-513"><para id="element-756">Suppose an experiment has the outcomes 1, 2, 3, ... , 12 where each outcome has an equal chance of occurring. Let event <emphasis effect="italics">A</emphasis> = {1, 2, 3, 4, 5, 6} and event <emphasis effect="italics">B</emphasis> = {6, 7, 8, 9}. Then <emphasis effect="italics">A</emphasis> intersect <emphasis effect="italics">B</emphasis> = <m:math><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>{6}</m:mtext></m:math> and <emphasis effect="italics">A</emphasis> union <emphasis effect="italics">B</emphasis> = <m:math><m:mi>A</m:mi><m:mo>∪</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>{1, 2, 3, 4, 5, 6, 7, 8, 9}.</m:mtext></m:math>. The Venn diagram is as follows:</para><figure id="eip-idm17287840"><media id="id18119489" alt="A Venn diagram. An oval representing set A contains the values 1, 2, 3, 4, 5, and 6. An oval representing set B also contains the 6, along with 7, 8, and 9. The values 10, 11, and 12 are present but not contained in either set." display="block"><image src="../../media/fig-ch03_06_01.jpg" mime-type="image/png" width="380"/></media>
+</figure></example><para id="eip-968"><link target-id="eip-idm17287840"/> shows the most basic relationship among these numbers. First, the numbers are in groups called sets; set A and set B. Some number are in both sets; we say in set A <m:math><m:mo>∩</m:mo></m:math> in set B. The English word "and" means inclusive, meaning having the characteristics of both A and B, or in this case, being a part of both A and B. This condition is called the INTERSECTION of the two sets. All members that are part of both sets constitute the intersection of the two sets. The intersection is written as <m:math><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi></m:math> where <m:math><m:mo>∩</m:mo></m:math> is the mathematical symbol for intersection. The statement <m:math><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi></m:math> is read as "A intersect B." You can remember this by thinking of the intersection of two streets.</para><para id="eip-540">There are also those numbers that form a group that, for membership, the number must be in either one or the other group. The number does not have to be in BOTH groups, but instead only in either one of the two. These numbers are called the UNION of the two sets and in this case they are the numbers 1-5 (from A exclusively), 7-9 (from set B exclusively) and also 6, which is in both sets A and B. The symbol for the UNION is <m:math><m:mo>∪</m:mo></m:math>, thus <m:math><m:mi>A</m:mi><m:mo>∪</m:mo><m:mi>B</m:mi><m:mo>=</m:mo></m:math> numbers 1-9, but excludes number 10, 11, and 12. The values 10, 11, and 12 are part of the universe, but are not in either of the two sets.</para><para id="eip-73">Translating the English word "AND" into the mathematical logic symbol <m:math><m:mo>∩</m:mo></m:math>, intersection, and the word "OR" into the mathematical symbol <m:math><m:mo>∪</m:mo></m:math>, union, provides a very precise way to discuss the issues of probability and logic. The general terminology for the three areas of the Venn diagram in <link target-id="eip-idm17287840"/> is shown in <link target-id="eip-idm154602320"/>.</para><note id="fs-idp42923984" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idp129832272"><problem id="fs-idp89658416">
+<para id="fs-idp136729728">Suppose an experiment has outcomes black, white, red, orange, yellow, green, blue, and purple, where each outcome has an equal chance of occurring. Let event <emphasis effect="italics">C</emphasis> = {green, blue, purple} and event <emphasis effect="italics">P</emphasis> = {red, yellow, blue}. Then <m:math><m:mi>C</m:mi><m:mo>∩</m:mo><m:mi>P</m:mi><m:mo>=</m:mo><m:mtext>{blue}</m:mtext></m:math> and <m:math><m:mi>C</m:mi><m:mo>∪</m:mo><m:mi>P</m:mi><m:mo>=</m:mo><m:mtext>{green, blue, purple, red, yellow}</m:mtext></m:math>. Draw a Venn diagram representing this situation.</para></problem>
+<solution id="fs-idp82935792">
+<label/>
+<figure id="eip-idp39366912"><media id="fs-idp117955072" alt="">
+<image src="../../media/CNX_Stats_C03_M06_tryit001.jpg" mime-type="image/png" width="400"/></media>
+</figure></solution>
+</exercise></note><example id="element-872"><para id="element-491">Flip two fair coins. Let <emphasis effect="italics">A</emphasis> = tails on the first coin. Let <emphasis effect="italics">B</emphasis> = tails on the second coin. Then <emphasis effect="italics">A</emphasis> = {<emphasis effect="italics">TT</emphasis>, <emphasis effect="italics">TH</emphasis>} and <emphasis effect="italics">B</emphasis> = {<emphasis effect="italics">TT</emphasis>, <emphasis effect="italics">HT</emphasis>}. Therefore, <m:math><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>{TT}</m:mtext></m:math>. <m:math><m:mi>A</m:mi><m:mo>∪</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>{TH, TT, HT}</m:mtext></m:math>.</para><para id="element-245">The sample space when you flip two fair coins is <emphasis effect="italics">X</emphasis> = {<emphasis effect="italics">HH</emphasis>, <emphasis effect="italics">HT</emphasis>, <emphasis effect="italics">TH</emphasis>, <emphasis effect="italics">TT</emphasis>}. The outcome <emphasis effect="italics">HH</emphasis> is in NEITHER <emphasis effect="italics">A</emphasis> NOR <emphasis effect="italics">B</emphasis>. The Venn diagram is as follows:</para>
+<figure id="eip-idm154602320"><media id="id18154607" alt="This is a venn diagram. An oval representing set A contains Tails + Heads and Tails + Tails. An oval representing set B also contains Tails + Tails, along with Heads + Tails. The universe S contains Heads + Heads, but this value is not contained in either set A or B." display="block">
+<image src="../../media/fig-ch03_06_02.jpg" mime-type="image/jpg" width="400"/></media>
+</figure></example><note id="fs-idm20878064" class="statistics try"><label/><title>Try It</title>
+<exercise id="eip-idm77418224">
+<problem id="eip-idm66827488">
+<para id="eip-idp2578208">Roll a fair, six-sided die. Let <emphasis effect="italics">A</emphasis> = a prime number of dots is rolled. Let <emphasis effect="italics">B</emphasis> = an odd number of dots is rolled. Then <emphasis effect="italics">A</emphasis> = {2, 3, 5} and <emphasis effect="italics">B</emphasis> = {1, 3, 5}. Therefore, <m:math><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>{3, 5}</m:mtext></m:math>. <m:math><m:mi>A</m:mi><m:mo>∪</m:mo><m:mi>B</m:mi><m:mo>=</m:mo><m:mtext>{1, 2, 3, 5}</m:mtext></m:math>. The sample space for rolling a fair die is <emphasis effect="italics">S</emphasis> = {1, 2, 3, 4, 5, 6}. Draw a Venn diagram representing this situation.</para></problem>
+<solution id="eip-idm66331712">
+<label/>
+<figure id="eip-idm11530608"><media id="eip-idm84522896" alt="">
+<image src="../../media/CNX_Stats_C03_M06_tryit002.jpg" mime-type="image/jpg" width="400"/></media>
+</figure></solution>
+</exercise>
+</note>
+<example id="fs-idp87467600">
+<exercise id="fs-idp88064048">
+<problem id="fs-idp115024704">
+<para id="fs-idp199220464">A person with type O blood and a negative Rh factor (Rh-) can donate blood to any person with any blood type. Four percent of African Americans have type O blood and a negative RH factor, 5−10% of African Americans have the Rh- factor, and 51% have type O blood.</para><figure id="fs-idp143600032">
+<media id="fs-idp78366192" alt="This is an empty Venn diagram showing two overlapping circles. The left circle is labeled O and the right circle is labeled RH-.">
+<image src="../../media/CNX_Stats_C03_M06_001f.jpg" mime-type="image/jpg" width="400"/></media></figure>
+<para id="fs-idp137061024">The “O” circle represents the African Americans with type O blood. The “Rh-“ oval represents the African Americans with the Rh- factor.</para>
+<para id="fs-idp107178080">We will take the average of 5% and 10% and use 7.5% as the percent of African Americans who have the Rh- factor. Let <emphasis effect="italics">O</emphasis> = African American with Type O blood and <emphasis effect="italics">R</emphasis> = African American with Rh- factor.</para>
+<list id="fs-idp55980272" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">O</emphasis>) = ___________</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">R</emphasis>) = ___________</item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>O</m:mi><m:mo>∩</m:mo><m:mi>R</m:mi><m:mo>)</m:mo><m:mo>=</m:mo></m:math> ___________</item>
+<item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>O</m:mi><m:mo>∪</m:mo><m:mi>R</m:mi><m:mo>)</m:mo><m:mo>=</m:mo></m:math> ____________</item>
+<item>In the Venn Diagram, describe the overlapping area using a complete sentence.</item>
+<item>In the Venn Diagram, describe the area in the rectangle but outside both the circle and the oval using a complete sentence.</item></list></problem>
+<solution id="fs-idp133204112">
+<para id="fs-idp88524560">a. 0.51; b. 0.075; c. 0.04; d. 0.545; e. The area represents the African Americans that have type O blood and the Rh- factor. f. The area represents the African Americans that have neither type O blood nor the Rh- factor.</para></solution>
+</exercise>
+</example>
+
+
+<example id="element-554">
+<para id="element-383"><emphasis>Forty percent</emphasis> of the students at a local college belong to a club and <emphasis>50%</emphasis> work part time. <emphasis>Five percent</emphasis> of the students work part time and belong to a club. Draw a Venn diagram showing the relationships. Let <emphasis effect="italics">C</emphasis> = student belongs to a club and <emphasis effect="italics">PT</emphasis> = student works part time.</para><figure id="fs-idp1123328"><media id="id18154697" alt="This is a venn diagram with one set containing students in clubs and another set containing students working  part-time. Both sets share students who are members of clubs and also work part-time. The universe is labeled S.">
+<image src="../../media/fig-ch03_06_03.jpg" mime-type="image/jpg" width="400"/>
+</media>
+</figure><para id="eip-827">If a student is selected at random, find</para>
+<list id="element-621" list-type="bulleted"><item>the probability that the student belongs to a club. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis>) = 0.40</item>
+<item>the probability that the student works part time. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">PT</emphasis>) = 0.50</item>
+<item>the probability that the student belongs to a club AND works part time. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>∩</m:mo><m:mi>PT</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math></item>
+<item>the probability that the student belongs to a club <emphasis>given</emphasis> that the student works part time. <m:math>
+ <m:mrow>
+  <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>C</m:mi><m:mo stretchy="false">|</m:mo><m:mi>P</m:mi><m:mi>T</m:mi><m:mtext>)</m:mtext><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>C</m:mi><m:mo>∩</m:mo><m:mi>P</m:mi><m:mi>T</m:mi><m:mtext>)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mi>P</m:mi><m:mtext>(</m:mtext><m:mi>P</m:mi><m:mi>T</m:mi><m:mtext>)</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>0.05</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>0.50</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0.1</m:mn>
+ </m:mrow>
+</m:math></item>
+<item>the probability that the student belongs to a club <emphasis>OR</emphasis> works part time. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>∪</m:mo><m:mi>PT</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>PT</m:mi><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>C</m:mi><m:mo>∩</m:mo><m:mi>PT</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.40</m:mn><m:mo>+</m:mo><m:mn>0.50</m:mn><m:mo>-</m:mo><m:mn>0.05</m:mn><m:mo>=</m:mo><m:mn>0.85</m:mn></m:math></item>
+</list></example>
+<para id="eip-109">In order to solve <link target-id="element-554"/> we had to draw upon the concept of conditional probability from the previous section. There we used tree diagrams to track the changes in the probabilities, because the sample space changed as we drew without replacement. In short, conditional probability is the chance that something will happen given that some other event has already happened. Put another way, the probability that something will happen conditioned upon the situation that something else is also true. In <link target-id="element-554"/> the probability <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis><m:math><m:mo> | </m:mo></m:math><emphasis effect="italics">PT</emphasis>) is the conditional probability that the randomly drawn student is a member of the club, conditioned upon the fact that the student also is working part time. This allows us to see the relationship between Venn diagrams and the probability postulates.</para><note id="fs-idm55345616" class="statistics try"><label/><title>Try It</title>
+<exercise id="fs-idp89579120">
+<problem id="fs-idp89636640">
+<para id="fs-idp120162528">Fifty percent of the workers at a factory work a second job, 25% have a spouse who also works, 5% work a second job and have a spouse who also works. Draw a Venn diagram showing the relationships. Let <emphasis effect="italics">W</emphasis> = works a second job and <emphasis effect="italics">S</emphasis> = spouse also works.</para>
+</problem>
+<solution id="fs-idp91665296">
+<label/>
+<figure id="fs-idp77159920"><media id="fs-idp135208336" display="block" alt="This is a venn diagram with one set containing students in clubs and another set containing students working  part-time. Both sets share students who are members of clubs and also work part-time.">
+<image src="../../media/CNX_Stats_C03_M06_tryit003.jpg" mime-type="image/jpg" width="400"/>
+</media></figure></solution>
+</exercise>
+</note>
+<note id="fs-idp47601696" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idp85340096"><problem id="fs-idp129244656">
+<para id="fs-idp200572912">In a bookstore, the probability that the customer buys a novel is 0.6, and the probability that the customer buys a non-fiction book is 0.4. Suppose that the probability that the customer buys both is 0.2.</para>
+<list id="fs-idp93717888" list-type="enumerated" number-style="lower-alpha"><item>Draw a Venn diagram representing the situation.</item>
+<item>Find the probability that the customer buys either a novel or a non-fiction book.</item>
+<item>In the Venn diagram, describe the overlapping area using a complete sentence.</item>
+<item>Suppose that some customers buy only compact disks. Draw an oval in your Venn diagram representing this event.</item>
+</list></problem>
+<solution id="fs-idp85556768">
+<para id="fs-idp128156192">a. and d. In the following Venn diagram below, the blue oval represent customers buying a novel, the red oval represents customer buying non-fiction, and the yellow oval customer who buy compact disks.</para>
+<figure id="fs-idp187403440"><media id="fs-idp85615056" alt="" display="block">
+<image src="../../media/CNX_Stats_C03_M06_002f.jpg" mime-type="image/jpg" width="400" print-width="4in"/>
+</media></figure>
+<para id="fs-idp122745952">b. <emphasis effect="italics">P</emphasis>(novel or non-fiction) = <emphasis effect="italics">P</emphasis>(Blue <m:math><m:mo>∪</m:mo></m:math> Red) = <emphasis effect="italics">P</emphasis>(Blue) + <emphasis effect="italics">P</emphasis>(Red) - <emphasis effect="italics">P</emphasis>(Blue <m:math><m:mo>∩</m:mo></m:math> Red) = 0.6 + 0.4 - 0.2 = 0.8.
+<newline/>c. The overlapping area of the blue oval and red oval represents the customers buying both a novel and a nonfiction book.</para></solution>
+</exercise></note><example id="eip-715"><para id="eip-489">
+  A set of 20 German Shepherd dogs is observed. 12 are male, 8 are female, 10 have some brown coloring, and 5 have some white sections of fur. Answer the following using Venn Diagrams.
+</para>
+<exercise id="eip-id1172109242266"><problem id="eip-id1172117610930">
+<para id="eip-id8336737">Draw a Venn diagram simply showing the sets of male and female dogs.</para>
+
+</problem>
+<solution id="eip-id1172117493319">
+<para id="eip-id8742606">The Venn diagram below demonstrates the situation of mutually exclusive events where the outcomes are independent events. If a dog cannot be both male and female, then there is no intersection. Being male precludes being female and being female precludes being male: in this case, the characteristic gender is therefore mutually exclusive. A Venn diagram shows this as two sets with no intersection. The intersection is said to be the null set using the mathematical symbol ∅.</para><figure id="eip-id1165656136482"><media id="eip-id1165656136483" alt="This is a Venn diagram, two circles inside a rectangle. The circles do not intersect or overlap. One circle is labeled Male. The other circle is labeled Female."><image src="../../media/fig-ch03_11_02.jpg" mime-type="image/png"/></media></figure></solution>
+</exercise>
+
+
+
+<exercise id="eip-id3875739">
+<problem id="eip-id4009695">
+<para id="eip-id3923323"> Draw a second Venn diagram illustrating that 10 of the male dogs have brown coloring.</para>
+</problem>
+<solution id="eip-id3167637">
+<para id="eip-id3873436">The Venn diagram below shows the overlap between male and brown where the number 10 is placed in it. This represents <m:math><m:mtext>Male</m:mtext><m:mo>∩</m:mo><m:mtext>Brown</m:mtext></m:math>: both male and brown. This is the intersection of these two characteristics. To get the union of Male and Brown, then it is simply the two circled areas minus the overlap. In proper terms, <m:math><m:mtext>Male</m:mtext><m:mo>∪</m:mo><m:mtext>Brown</m:mtext><m:mo>=</m:mo><m:mtext>Male</m:mtext><m:mo>+</m:mo><m:mtext>Brown</m:mtext><m:mo>−</m:mo><m:mtext>Male</m:mtext><m:mo>∩</m:mo><m:mtext>Brown</m:mtext></m:math> will give us the number of dogs in the union of these two sets. If we did not subtract the intersection, we would have double counted some of the dogs.</para><figure id="eip-id3278288"><media id="eip-id3278289" alt="This is a Venn diagram, two overlapping circles inside a rectangle. The left circle is labeled Male. The right circle is labeled Brown. The overlapping section shows the number 10."><image src="../../media/fig-ch03_11_03.jpg" mime-type="image/png"/></media></figure></solution>
+</exercise>
+<exercise id="eip-id4457985">
+<problem id="eip-id4471067">
+<para id="eip-id3720552">Now draw a situation depicting a scenario in which the non-shaded region represents "No white fur and female," or <emphasis effect="italics">White fur′ <m:math><m:mo>∩</m:mo></m:math> Female.</emphasis> the prime above "fur" indicates "not white fur." The prime above a set means not in that set, e.g. <m:math><m:mn>A</m:mn><m:mo>′</m:mo></m:math> means not <m:math><m:mn>A</m:mn></m:math>. Sometimes, the notation used is a line above the letter. For example, <m:math><m:mover><m:mi>A</m:mi><m:mo>¯</m:mo></m:mover></m:math> = <m:math><m:mn>A</m:mn><m:mo>′</m:mo></m:math>.</para></problem>
+<solution id="eip-id3692208">
+<figure id="eip-id4576864"><media id="eip-id4576865" alt="This is a Venn diagram, two overlapping circles inside a rectangle. The left circle is labeled Female. The right circle is labeled White Fur. The section of the left Female circle that lies outside the White Fur circle is shaded."><image src="../../media/fig-ch03_11_04.jpg" mime-type="image/png"/></media></figure></solution>
+</exercise></example><section id="eip-89"><title>The Addition Rule of Probability</title><para id="eip-456">
+We met the addition rule earlier but without the help of Venn diagrams. Venn diagrams help visualize the counting process that is inherent in the calculation of probability. To restate the Addition Rule of Probability:
+</para>
+<equation id="eip-id1170394007631" class="unnumbered"><label/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∪</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>A</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math></equation><para id="eip-id5140127">Remember that probability is simply the proportion of the objects we are interested in relative to the total number of objects. This is why we can see the usefulness of the Venn diagrams. <link target-id="eip-715"/> shows how we can use Venn diagrams to count the number of dogs in the union of brown and male by reminding us to subtract the intersection of brown and male. We can see the effect of this directly on probabilities in the addition rule.</para>
+
+<example id="eip-id6560162">
+<para id="eip-id6089332">Let's sample 50 students who are in a statistics class. 20 are freshmen and 30 are sophomores. 15 students get a "B" in the course, and 5 students both get a "B" and are freshmen. </para>
+<exercise id="eip-id3084389"><problem id="eip-id4262027"><para id="eip-id5621102">Find the probability of selecting a student who either earns a "B" OR is a freshmen. We are translating the word OR to the mathematical symbol for the addition rule, which is the union of the two sets.</para></problem>
+
+<solution id="eip-id4498752">
+<para id="eip-id6117546">We know that there are 50 students in our sample, so we know the denominator of our fraction to give us probability. We need only to find the number of students that meet the characteristics we are interested in, i.e. any freshman and any student who earned a grade of "B." With the Addition Rule of probability, we can skip directly to probabilities.</para>
+
+<para id="eip-id4458794">Let "A" = the number of freshmen, and let "B" = the grade of "B." Below we can see the process for using Venn diagrams to solve this.</para>
+
+<para id="eip-id4067776">The <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>20</m:mn><m:mn>50</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.40</m:mn></m:math>, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>15</m:mn><m:mn>50</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.30</m:mn></m:math>, and <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>5</m:mn><m:mn>50</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.10</m:mn></m:math>.</para>
+
+<para id="eip-id6553201">Therefore, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.40</m:mn><m:mo>+</m:mo><m:mn>0.30</m:mn><m:mo>−</m:mo><m:mn>0.10</m:mn><m:mo>=</m:mo><m:mn>0.60</m:mn></m:math>.</para>
+
+<figure id="eip-id4231146"><media id="eip-id4110364" alt="Venn diagrams model the formula for P(A and B). The first Venn diagram shows two overlapping circles inside a rectangle. The left circle is labeled A, the right circle is labeled B, and the overlapping section is labeled A intersect B. This diagram is labeled P(A union B). After this diagram is an equal sign. Below the first diagram is a series of diagrams. Each shows the same arrangement: overlapping circles A and B. The first diagram shows circle A completely shaded. The second diagram shows circle B completely shaded. The third diagram shows the overlapping portion of circles A and B shaded. The expression is first diagram plus second diagram – third diagram."><image src="../../media/fig-ch03_11_05.jpg" mime-type="image/png"/></media></figure><para id="eip-id5944124">If two events are mutually exclusive, then, like the example where we diagram the male and female dogs, the addition rule is simplified to just <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∪</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>A</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>−</m:mo><m:mn>0</m:mn></m:math>. This is true because, as we saw earlier, the union of mutually exclusive events is the null set, ∅. The diagrams below demonstrate this.</para>
+
+<figure id="eip-id5553528"><media id="eip-id6443441" alt="Venn diagrams model the formula for P(A and B) in the special case where A and B do not overlap. P(A union B) is represented by two separate (non-overlapping) circles inside a rectangle. The left circle is labeled Male. The right circle is labeled Female. To the right of this diagram is an equal sign. A sum of diagrams is on the line below. The left diagram shows only the Male circle inside the rectangle and is labeled P(A). Between the diagrams is a plus sign. The right diagram shows only the Female circle inside the rectangle and is labeled P(B)."><image src="../../media/fig-ch03_11_06.jpg" mime-type="image/png"/></media></figure></solution></exercise></example>
+</section><section id="eip-432"><title>The Multiplication Rule of Probability</title><para id="eip-304">Restating the Multiplication Rule of Probability using the notation of Venn diagrams, we have:</para>
+<equation id="eip-id1166521862820" class="unnumbered"><label/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math></equation>
+<para id="eip-id6627769">The multiplication rule can be modified with a bit of algebra into the following conditional rule. Then Venn diagrams can then be used to demonstrate the process.</para>
+<para id="eip-id5737284">The conditional rule: <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">|</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:mrow></m:mfrac></m:math></para>
+<para id="eip-id5495026">Using the same facts from <link target-id="eip-id6560162"/> above, find the probability that someone will earn a "B" if they are a "freshman."</para>
+<equation id="eip-id1166533204187" class="unnumbered"><label/><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo stretchy="false">|</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>0.10</m:mn><m:mn>0.30</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:math></equation><figure id="eip-id2323853"><media id="eip-id4491502" alt="Venn diagrams model the formula for P(A given B). The diagrams used show overlapping circles A (on the left) and B (on the right) inside a rectangle. The equation is P(A | B) = Venn diagram showing P(A intersect B) as the shaded section where left circle A intersects right circle B divided by Venn diagram showing P(B) by shading right circle B completely."><image src="../../media/fig-ch03_11_07.jpg" mime-type="image/png"/></media></figure><para id="eip-id6093052">The multiplication rule must also be altered if the two events are independent. Independent events are defined as a situation where the conditional probability is simply the probability of the event of interest. Formally, independence of events is defined as <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>|</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo></m:math> or <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>|</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math>. When flipping coins, the outcome of the second flip is independent of the outcome of the first flip; coins do not have memory. The Multiplication Rule of Probability for independent events thus becomes:</para>
+<equation id="eip-id1166515670546" class="unnumbered"><label/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>∩</m:mo><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math></equation>
+<para id="eip-id4129512">One easy way to remember this is to consider what we mean by the word "and." We see that the Multiplication Rule has translated the word "and" to the Venn notation for intersection. Therefore, the outcome must meet the two conditions of freshmen and grade of "B" in the above example. It is harder, less probable, to meet two conditions than just one or some other one. We can attempt to see the logic of the Multiplication Rule of probability due to the fact that fractions multiplied times each other become smaller.</para>
+<para id="eip-id4894389">The development of the Rules of Probability with the use of Venn diagrams can be shown to help as we wish to calculate probabilities from data arranged in a contingency table.</para><example id="eip-524"><para id="eip-881"><link target-id="eip-95"/> is from a sample of 200 people who were asked how much education they completed. The columns represent the highest education they completed, and the rows separate the individuals by male and female.
+</para><table id="eip-95" summary="Table of education complete vs. gender">
+<tgroup cols="6"><tbody>
+  <row>
+    <entry/>
+    <entry><emphasis>Less than high school grad</emphasis></entry>
+    <entry><emphasis>High school grad</emphasis></entry>
+    <entry><emphasis>Some college</emphasis></entry>
+    <entry><emphasis>College grad</emphasis></entry>
+    <entry><emphasis>Total</emphasis></entry>
+  </row>
+  <row>
+    <entry>Male</entry>
+    <entry>5</entry>
+    <entry>15</entry>
+    <entry>40</entry>
+    <entry>60</entry>
+    <entry>120</entry>
+  </row>
+  <row>
+    <entry>Female</entry>
+    <entry>8</entry>
+    <entry>12</entry>
+    <entry>30</entry>
+    <entry>30</entry>
+    <entry>80</entry>
+  </row>
+  <row>
+    <entry>Total</entry>
+    <entry>13</entry>
+    <entry>27</entry>
+    <entry>70</entry>
+    <entry>90</entry>
+    <entry>200</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="eip-90">Now, we can use this table to answer probability questions. The following examples are designed to help understand the format above while connecting the knowledge to both Venn diagrams and the probability rules.</para><exercise id="eip-502"><problem id="eip-812">
+  <para id="eip-112">
+    What is the probability that a selected person both finished college and is female?
+  </para>
+</problem>
+
+<solution id="eip-21">
+  <para id="eip-236">
+    This is a simple task of finding the value where the two characteristics intersect on the table, and then applying the postulate of probability, which states that the probability of an event is the proportion of outcomes that match the event in which we are interested as a proportion of all total possible outcomes.</para>
+<para id="eip-id1169409514417"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">College Grad</emphasis> <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">Female</emphasis>) = <m:math><m:mfrac><m:mn>30</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.15</m:mn></m:math></para></solution>
+</exercise><exercise id="eip-138"><problem id="eip-749">
+  <para id="eip-956">
+    What is the probability of selecting either a female or someone who finished college?
+  </para>
+</problem>
+
+<solution id="eip-194">
+  <para id="eip-342">
+    This task involves the use of the addition rule to solve for this probability.
+  </para>
+<para id="eip-id3094731"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">College Grad</emphasis> <m:math><m:mo>∪</m:mo></m:math> <emphasis effect="italics">Female</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">CG</emphasis>)− <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">CG</emphasis>)</para><para id="eip-id1169346246202"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">College Grad</emphasis> <m:math><m:mo>∪</m:mo></m:math> <emphasis effect="italics">Female</emphasis>) = <m:math><m:mfrac><m:mn>80</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>90</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>−</m:mo><m:mfrac><m:mn>30</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>140</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.70</m:mn></m:math></para></solution></exercise><exercise id="eip-934"><problem id="eip-313">
+  <para id="eip-546">
+    What is the probability of selecting a high school graduate if we only select from the group of males?
+  </para>
+</problem>
+
+<solution id="eip-307">
+  <para id="eip-270">
+    Here we must use the conditional probability rule (the modified multiplication rule) to solve for this probability.
+  </para>
+<para id="eip-id1172117136121"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">HS Grad</emphasis> <m:math><m:mo>|</m:mo></m:math> <emphasis effect="italics">Male</emphasis> = <m:math><m:mfrac><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>HS Grad</m:mtext><m:mspace width="0.2em"/><m:mo>∩</m:mo><m:mspace width="0.2em"/><m:mtext>Male</m:mtext><m:mo>)</m:mo></m:mrow><m:mrow><m:mtext>P</m:mtext><m:mo>(</m:mo><m:mtext>Male</m:mtext><m:mo>)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>15</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>120</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>15</m:mn><m:mn>120</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.125</m:mn></m:math></para></solution>
+</exercise><exercise id="eip-902"><problem id="eip-548">
+  <para id="eip-125">
+    Can we conclude that the level of education attained by these 200 people is independent of the gender of the person?
+  </para>
+</problem>
+
+<solution id="eip-650">
+  <para id="eip-686">There are two ways to approach this test. The first method seeks to test if the intersection of two events equals the product of the events separately remembering that if two events are independent than <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>)*<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis> <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">B</emphasis>). For simplicity's sake, we can use calculated values from above. </para><para id="eip-id1171814595079"><emphasis effect="italics">Does P(College Grad <m:math><m:mo>∩</m:mo></m:math> Female) = P(CG) ⋅ P(F)?</emphasis></para><para id="eip-id1171811825350"><m:math><m:mfrac><m:mn>30</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>≠</m:mo><m:mfrac><m:mn>90</m:mn><m:mn>200</m:mn></m:mfrac><m:mo>⋅</m:mo><m:mfrac><m:mn>80</m:mn><m:mn>200</m:mn></m:mfrac></m:math> <emphasis effect="italics">because</emphasis> 0.15 ≠ 0.18.
+  </para>
+<para id="eip-id1171812675493">Therefore, gender and education here are <emphasis>not</emphasis> independent.</para>
+<para id="eip-id2028865"> The second method is to test if the conditional probability of <emphasis effect="italics">A given B</emphasis> is equal to the probability of <emphasis effect="italics">A</emphasis>. Again for simplicity, we can use an already calculated value from above.</para>
+<para id="eip-id2767396"><emphasis effect="italics">Does P(HS Grad <m:math><m:mo>|</m:mo></m:math> Male) = P(HS Grad)?</emphasis></para><para id="eip-id2744789"><m:math><m:mfrac><m:mn>15</m:mn><m:mn>120</m:mn></m:mfrac><m:mo>≠</m:mo><m:mfrac><m:mn>27</m:mn><m:mn>200</m:mn></m:mfrac></m:math><emphasis effect="italics">because</emphasis> 0.125 ≠ 0.135.</para>
+<para id="eip-id1171813955601">Therefore, again gender and education here are <emphasis>not</emphasis> independent.</para>
+</solution>
+</exercise></example></section></section><section id="fs-idm68934880" class="summary"><title>Chapter Review</title><para id="eip-id1168267602065">A Venn diagram is a picture that represents the outcomes of an experiment. It generally consists of a box that represents the sample space S or universe of the objects of interest together with circles or ovals. The circles or ovals represent groups of events called sets. A Venn diagram is especially helpful for visualizing the <m:math><m:mo>∪</m:mo></m:math> event, the <m:math><m:mo>∩</m:mo></m:math> event, and the complement of an event and for understanding conditional probabilities. A Venn diagram is especially helpful for visualizing an Intersection of two events, a Union of two events, or a Complement of one event. A system of Venn diagrams can also help to understand Conditional probabilities. Venn diagrams connect the brain and eyes by matching the literal arithmetic to a picture. It is important to note that more than one Venn diagram is needed to solve the probability rule formulas introduced in <link document="m54220">Section 3.3</link>.</para></section><section id="fs-idp46156576" class="practice"><para id="eip-173"><emphasis effect="italics">Use the following information to answer the next four exercises.</emphasis> <link target-id="M05_ch03-tbl011"/> shows a random sample of musicians and how they learned to play their instruments.</para><table id="M05_ch03-tbl011" summary="The table shows a random sample of musicians and how they learned to play their instruments.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Gender</entry>
+<entry>Self-taught</entry>
+<entry>Studied in school</entry>
+<entry>Private instruction</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Female</entry>
+<entry>12</entry>
+<entry>38</entry>
+<entry>22</entry>
+<entry>72</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>19</entry>
+<entry>24</entry>
+<entry>15</entry>
+<entry>58</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>31</entry>
+<entry>62</entry>
+<entry>37</entry>
+<entry>130</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><exercise id="eip-976"><problem id="eip-917">
+<para id="eip-868">Find <emphasis effect="italics">P</emphasis>(musician is a female).</para>
+</problem>
+</exercise>
+
+<exercise id="eip-388">
+<problem id="eip-950">
+<para id="eip-249">Find <emphasis effect="italics">P</emphasis>(musician is a male <m:math><m:mo>∩</m:mo></m:math> had private instruction).</para></problem>
+<solution id="eip-104">
+<para id="eip-225"><emphasis effect="italics">P</emphasis>(musician is a male <m:math><m:mo>∩</m:mo></m:math> had private instruction) = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>130</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>3</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>26</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> = 0.12</para></solution>
+</exercise>
+
+<exercise id="eip-631"><problem id="eip-500">
+<para id="eip-523">Find <emphasis effect="italics">P</emphasis>(musician is a female <m:math><m:mo>∪</m:mo></m:math> is self taught).</para></problem>
+</exercise>
+
+<exercise id="eip-350"><problem id="eip-647">
+<para id="eip-197">Are the events “being a female musician” and “learning music in school” mutually exclusive events?</para>
+</problem>
+<solution id="eip-649">
+<para id="eip-609">The events are not mutually exclusive. It is possible to be a female musician who learned music in school.</para></solution>
+</exercise>
+
+<exercise id="element-750"><problem id="id43570745">
+<para id="element-88">The probability that a man develops some form of cancer in his lifetime is 0.4567. The probability that a man has at least one false positive test result (meaning the test comes back for cancer when the man does not have it) is 0.51. Let: <emphasis effect="italics">C</emphasis> = a man develops cancer in his lifetime; <emphasis effect="italics">P</emphasis> = man has at least one false positive. Construct a tree diagram of the situation.</para>
+</problem>
+<solution id="fs-idp133440112">
+<figure id="eip-idm83918928"><media id="fs-idp90548816" alt="This is a tree diagram with two branches. The first branch, labeled Cancer, shows two lines: 0.4567 C and 0.5433 C'. The second branch is labeled False Positive. From C, there are two lines: 0 P and 1 P'. From C', there are two lines: 0.51 P and 0.49 P'." display="block">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C03_M07_101N.jpg" width="380"/>
+</media>
+</figure>
+</solution>
+</exercise>
+
+
+</section><section id="fs-idm32828224" class="bring-together-exercises"><title>Bringing It Together</title><para id="element-12">Use the following information to answer the next seven exercises. An article in the <cite><cite-title>New England Journal of Medicine</cite-title></cite>, reported about a study of smokers in California and Hawaii. In one part of the report, the self-reported ethnicity and smoking levels per day were given. Of the people smoking at most ten cigarettes per day, there were 9,886 African American people, 2,745 Native Hawaiian people, 12,831 Latino people, 8,378 Japanese American people, and 7,650 White people. Of the people smoking 11 to 20 cigarettes per day, there were 6,514 African American people, 3,062 Native Hawaiian people, 4,932 Latino people, 10,680 Japanese American people, and 9,877 White people. Of the people smoking 21 to 30 cigarettes per day, there were 1,671 African American people, 1,419 Native Hawaiian people, 1,406 Latino people, 4,715 Japanese American people, and 6,062 White people. Of the people smoking at least 31 cigarettes per day, there were 759 African American people, 788 Native Hawaiian people, 800 Latino people, 2,305 Japanese American people, and 3,970 White people.</para><exercise id="element-841"><problem id="id24840283">
+<para id="element-2314">Complete the table using the data provided.</para><table id="element-762" summary="Partially filled ethnicity by smoking level table with the first column listing the smoking levels (4 rows plus the total), the blank second column lists African American people values, blank third column for Native Hawaiian people, blank fourth column for Latino people, blank fifth column for Japanese American people, blank sixth column for White people, and blank seventh column for the Total."><title>Smoking Levels by Ethnicity</title>
+<tgroup cols="7"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<thead>
+<row>
+<entry>Smoking level</entry>
+<entry>African American</entry>
+<entry>Native Hawaiian</entry>
+<entry>Latino</entry>
+<entry>Japanese American</entry>
+<entry>White</entry>
+<entry>TOTALS</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>1–10</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>11–20</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>21–30</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>31+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>TOTALS</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem></exercise>
+
+<exercise id="eip-892"><problem id="eip-189">
+<para id="eip-241">Suppose that one person from the study is randomly selected. Find the probability that person smoked 11 to 20 cigarettes per day.</para>
+</problem>
+<solution id="id24840301">
+<para id="element-603">
+<m:math><m:mfrac><m:mn>35,065</m:mn><m:mn>100,450</m:mn></m:mfrac></m:math>
+</para>
+</solution></exercise><exercise id="element-120"><problem id="id24840332">
+<para id="element-250">Find the probability that the person was Latino.</para>
+</problem>
+</exercise><exercise id="exercise-124">
+<problem id="id24840396">
+<para id="exercise-124p">In words, explain what it means to pick one person from the study who is “Japanese American <emphasis>AND</emphasis> smokes 21 to 30 cigarettes per day.” Also, find the probability.</para></problem>
+<solution id="id25124759"><para id="exercise-124s">To pick one person from the study who is Japanese American AND smokes 21 to 30 cigarettes per day means that the person has to meet both criteria: both Japanese American and smokes 21 to 30 cigarettes. The sample space should include everyone in the study. The probability is <m:math><m:mfrac><m:mn>4,715</m:mn><m:mn>100,450</m:mn></m:mfrac></m:math>.
+</para></solution>
+</exercise>
+
+<exercise id="exercise-125"><problem id="id25124791"><para id="exercise-125p">In words, explain what it means to pick one person from the study who is “Japanese American <m:math><m:mo>∪</m:mo></m:math> smokes 21 to 30 cigarettes per day.” Also, find the probability.</para></problem>
+</exercise><exercise id="exercise-126">
+<problem id="id25124851"><para id="exercise-126p">In words, explain what it means to pick one person from the study who is “Japanese American <m:math><m:mo>|</m:mo></m:math> that person smokes 21 to 30 cigarettes per day.” Also, find the probability.</para></problem>
+<solution id="id25124879"><para id="exercise-126s">To pick one person from the study who is Japanese American given that person smokes 21-30 cigarettes per day, means that the person must fulfill both criteria and the sample space is reduced to those who smoke 21-30 cigarettes per day. The probability is <m:math><m:mfrac><m:mn>4715</m:mn><m:mn>15,273</m:mn></m:mfrac></m:math>.</para></solution></exercise>
+<exercise id="exercise-127"><problem id="id25124911"><para id="exercise-127p">Prove that smoking level/day and ethnicity are dependent events.</para></problem>
+</exercise>
+
+<para id="fs-idp109849696"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> Suppose that you have eight cards. Five are green and three are yellow. The cards are well shuffled.</para>
+<exercise id="element-194">
+<problem id="eip-idm282416864">
+<para id="element-137">Suppose that you randomly draw two cards, one at a time, <emphasis>with replacement</emphasis>.
+<newline count="1"/>Let <emphasis effect="italics">G</emphasis><sub>1</sub> = first card is green
+<newline count="1"/>Let <emphasis effect="italics">G</emphasis><sub>2</sub> = second card is green</para><list id="fs-idm25585520" list-type="enumerated" number-style="lower-alpha"><item>Draw a tree diagram of the situation.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G</emphasis><sub>1</sub> <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">G</emphasis><sub>2</sub>).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(at least one green).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G</emphasis><sub>2</sub><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">G</emphasis><sub>1</sub>).</item>
+<item>Are <emphasis effect="italics">G</emphasis><sub>2</sub> and <emphasis effect="italics">G</emphasis><sub>1</sub> independent events?  Explain why or why not.</item>
+</list></problem>
+<solution id="fs-idp20236912">
+<list id="fs-idp23896432" list-type="enumerated" number-style="lower-alpha"><item><figure id="eip-idp101566032">
+<media id="fs-idp99953792" alt="This is a tree diagram with branches showing probabilities of each draw. The first branch shows two lines: 5/8 Green and 3/8 Yellow. The second branch has a set of two lines (5/8 Green and 3/8 Yellow) for each line of the first branch." display="block">
+<image mime-type="image/jpg" width="380" src="../../media/CNX_Stats_C03_M07_100.jpg"/>
+</media></figure>
+</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">GG</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>5</m:mn>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mn>5</m:mn>
+     <m:mn>8</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>25</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>64</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><emphasis effect="italics">P</emphasis>(at least one green) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">GG</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">GY</emphasis>) + <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">YG</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>25</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>64</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> + <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>64</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> + <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>64</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>55</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>64</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G</emphasis><m:math><m:mo>|</m:mo></m:math><emphasis effect="italics">G</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>8</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item>Yes, they are independent because the first card is placed back in the bag before the second card is drawn; the composition of cards in the bag remains the same from draw one to draw two.</item>
+</list></solution>
+</exercise>
+<exercise id="element-606"><problem id="eip-idm163410608">
+  <para id="element-138">Suppose that you randomly draw two cards, one at a time, <emphasis>without replacement</emphasis>.
+<newline count="1"/><emphasis effect="italics">G<sub>1</sub></emphasis> = first card is green
+<newline count="1"/><emphasis effect="italics">G<sub>2</sub></emphasis> = second card is green
+</para>
+<list id="element-225" list-type="enumerated" number-style="lower-alpha"><item>Draw a tree diagram of the situation.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G<sub>1</sub></emphasis> <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">G<sub>2</sub></emphasis>).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(at least one green).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">G<sub>2</sub></emphasis> <m:math><m:mo>|</m:mo></m:math> <emphasis effect="italics">G<sub>1</sub></emphasis>).</item>
+<item>Are <emphasis effect="italics">G<sub>2</sub></emphasis> and <emphasis effect="italics">G<sub>1</sub></emphasis> independent events? Explain why or why not.</item>
+</list></problem>
+</exercise><para id="fs-idp143517536"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> The percent of licensed U.S. drivers (from a recent year) that are female is 48.60. Of the females, 5.03% are age 19 and under; 81.36% are age 20–64; 13.61% are age 65 or over. Of the licensed U.S. male drivers, 5.04% are age 19 and under; 81.43% are age 20–64; 13.53% are age 65 or over.</para>
+<exercise id="element-950">
+<problem id="eip-idm29557008">
+  <para id="element-591">Complete the following.</para>
+<list id="element-290" list-type="enumerated" number-style="lower-alpha"><item>Construct a table or a tree diagram of the situation.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(driver is female).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(driver is age 65 or over <m:math><m:mo>|</m:mo></m:math> driver is female).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(driver is age 65 or over <m:math><m:mo>∩</m:mo></m:math> female).</item>
+<item>In words, explain the difference between the probabilities in part c and part d.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(driver is age 65 or over).</item>
+<item>Are being age 65 or over and being female mutually exclusive events? How do you know?</item></list></problem>
+<solution id="fs-idp149290096">
+<list id="fs-idp149290352" list-type="enumerated" number-style="lower-alpha"><item>
+<table id="fs-idp154688496" summary="---">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row><entry/><entry>&lt;20</entry><entry>20–64</entry><entry>&gt;64</entry><entry>Totals</entry></row>
+</thead>
+<tbody>
+<row>
+<entry>Female</entry>
+<entry>0.0244</entry>
+<entry>0.3954</entry>
+<entry>0.0661</entry>
+<entry>0.486</entry>
+</row>
+<row>
+<entry>Male</entry>
+<entry>0.0259</entry>
+<entry>0.4186</entry>
+<entry>0.0695</entry>
+<entry>0.514</entry>
+</row>
+<row>
+<entry>Totals</entry>
+<entry>0.0503</entry>
+<entry>0.8140</entry>
+<entry>0.1356</entry>
+<entry>1</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) = 0.486</item>
+<item><emphasis effect="italics">P</emphasis>(&gt;64 <m:math><m:mo>|</m:mo></m:math> <emphasis effect="italics">F</emphasis>) = 0.1361</item>
+<item><emphasis effect="italics">P</emphasis>(&gt;64 and <emphasis effect="italics">F</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) <emphasis effect="italics">P</emphasis>(&gt;64|<emphasis effect="italics">F</emphasis>) = (0.486)(0.1361) = 0.0661</item>
+<item><emphasis effect="italics">P</emphasis>(&gt;64 <m:math><m:mo>|</m:mo></m:math> <emphasis effect="italics">F</emphasis>) is the percentage of female drivers who are 65 or older and <emphasis effect="italics">P</emphasis>(&gt;64 <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">F</emphasis>) is the percentage of drivers who are female and 65 or older.</item>
+<item><emphasis effect="italics">P</emphasis>(&gt;<emphasis effect="italics">64</emphasis>) = <emphasis effect="italics">P</emphasis>(&gt;64 <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">F</emphasis>) + <emphasis effect="italics">P</emphasis>(&gt;64 <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">M</emphasis>) = 0.1356</item>
+<item>No, being female and 65 or older are not mutually exclusive because they can occur at the same time  P(&gt;64 <m:math><m:mo>∩</m:mo></m:math> <emphasis effect="italics">F</emphasis>) = 0.0661.</item>
+</list></solution>
+</exercise>
+<exercise id="element-175"><problem id="eip-idm102025184">
+  <para id="fs-idm73415264">Suppose that 10,000 U.S. licensed drivers are randomly selected.</para>
+<list id="element-287" list-type="enumerated" number-style="lower-alpha"><item>How many would you expect to be male?</item>
+<item>Using the table or tree diagram, construct a contingency table of gender versus age group.</item>
+<item>Using the contingency table, find the probability that out of the age 20–64 group, a randomly selected driver is female.</item></list></problem>
+</exercise><exercise id="element-974">
+<problem id="eip-idm45711968">
+  <para id="element-261">Approximately 86.5% of Americans commute to work by car, truck, or van. Out of that group, 84.6% drive alone and 15.4% drive in a carpool. Approximately 3.9% walk to work and approximately 5.3% take public transportation.</para>
+<list id="element-742" list-type="enumerated" number-style="lower-alpha">
+<item>Construct a table or a tree diagram of the situation. Include a branch for all other modes of transportation to work.</item>
+<item>Assuming that the walkers walk alone, what percent of all commuters travel alone to work?</item>
+<item>Suppose that 1,000 workers are randomly selected. How many would you expect to travel alone to work?</item>
+<item>Suppose that 1,000 workers are randomly selected. How many would you expect to drive in a carpool?</item></list></problem>
+<solution id="fs-idp100614736">
+<list id="fs-idp77575584" list-type="enumerated" number-style="lower-alpha"><item>
+<table id="fs-idp116055648" summary="---">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry/>
+<entry>Car, truck or van</entry>
+<entry>Walk</entry>
+<entry>Public transportation</entry>
+<entry>Other</entry>
+<entry>Totals</entry></row>
+</thead>
+<tbody>
+<row>
+<entry>Alone</entry>
+<entry>0.7318</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Not alone</entry>
+<entry>0.1332</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Totals</entry>
+<entry>0.8650</entry>
+<entry>0.0390</entry>
+<entry>0.0530</entry>
+<entry>0.0430</entry>
+<entry>1</entry></row>
+</tbody>
+
+
+
+</tgroup>
+</table></item>
+<item>If we assume that all walkers are alone and that none from the other two groups travel alone (which is a big assumption) we have:  <emphasis effect="italics">P</emphasis>(Alone) = 0.7318 + 0.0390 = 0.7708.</item>
+<item>Make the same assumptions as in (b) we have: (0.7708)(1,000) = 771</item>
+<item>(0.1332)(1,000) = 133</item>
+</list></solution>
+</exercise>
+<exercise id="eip-272"><problem id="eip-944">
+  <para id="eip-216">When the Euro coin was introduced in 2002, two math professors had their statistics students test whether the Belgian one Euro coin was a fair coin. They spun the coin rather than tossing it and found that out of 250 spins, 140 showed a head (event <emphasis effect="italics">H</emphasis>) while 110 showed a tail (event <emphasis effect="italics">T</emphasis>). On that basis, they claimed that it is not a fair coin.</para>
+<list id="eip-idp132357088" list-type="enumerated" number-style="lower-alpha">
+<item>Based on the given data, find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis>).</item>
+<item>Use a tree to find the probabilities of each possible outcome for the experiment of tossing the coin twice.</item>
+<item>Use the tree to find the probability of obtaining exactly one head in two tosses of the coin.</item>
+<item>Use the tree to find the probability of obtaining at least one head.</item>
+</list>
+</problem>
+</exercise></section><section id="fs-idp18062160" class="free-response"><title>Homework</title><para id="eip-736"><emphasis effect="italics">Use the information in the <link target-id="M05_ch03-tbl13"/> to answer the next eight exercises.</emphasis> The table shows the political party affiliation of each of 67 members of the US Senate in June 2012, and when they are up for reelection.
+<table id="M05_ch03-tbl13" summary="...">
+<tgroup cols="5"><thead>
+<row>
+<entry>Up for reelection:</entry>
+<entry>Democratic party</entry>
+<entry>Republican party</entry>
+<entry>Other</entry>
+<entry>Total</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>November 2014</entry>
+<entry>20</entry>
+<entry>13</entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry>November 2016</entry>
+<entry>10</entry>
+<entry>24</entry>
+<entry>0</entry>
+<entry/>
+</row>
+<row>
+<entry>Total</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table></para>
+<exercise id="eip-157"><problem id="eip-939">
+<para id="eip-356">What is the probability that a randomly selected senator has an “Other” affiliation?</para>
+</problem>
+<solution id="eip-23">
+<para id="eip-354">0</para></solution>
+</exercise><exercise id="eip-714"><problem id="eip-512">
+<para id="eip-303">What is the probability that a randomly selected senator is up for reelection in November 2016?</para></problem>
+</exercise><exercise id="eip-381"><problem id="eip-589">
+<para id="eip-287">What is the probability that a randomly selected senator is a Democrat and up for reelection in November 2016?</para>
+</problem>
+<solution id="eip-54">
+<para id="eip-496"><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>67</m:mn>
+</m:mrow>
+</m:mfrac></m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="eip-331"><problem id="eip-296">
+<para id="eip-72">What is the probability that a randomly selected senator is a Republican or is up for reelection in November 2014?</para>
+</problem>
+</exercise><exercise id="eip-367">
+<problem id="eip-261">
+<para id="eip-264">Suppose that a member of the US Senate is randomly selected. Given that the randomly selected senator is up for reelection in November 2016, what is the probability that this senator is a Democrat?</para>
+</problem>
+<solution id="eip-492">
+<para id="eip-365"><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>34</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</para></solution>
+</exercise>
+<exercise id="eip-164"><problem id="eip-667">
+<para id="eip-738">Suppose that a member of the US Senate is randomly selected. What is the probability that the senator is up for reelection in November 2014, knowing that this senator is a Republican?</para>
+</problem>
+</exercise><exercise id="eip-88">
+<problem id="eip-832">
+<para id="eip-385">The events “Republican” and “Up for reelection in 2016” are ________</para>
+<list id="eip-idp126651680" list-type="enumerated" number-style="lower-alpha">
+<item>mutually exclusive.</item>
+<item>independent.</item>
+<item>both mutually exclusive and independent.</item>
+<item>neither mutually exclusive nor independent.</item>
+</list>
+</problem>
+<solution id="eip-434">
+<para id="eip-581">d</para></solution>
+</exercise>
+<exercise id="eip-165"><problem id="eip-82">
+<para id="eip-544">The events “Other” and “Up for reelection in November 2016” are ________</para>
+<list id="eip-idp21360256" list-type="enumerated" number-style="lower-alpha">
+<item>mutually exclusive.</item>
+<item>independent.</item>
+<item>both mutually exclusive and independent.</item>
+<item>neither mutually exclusive nor independent.</item>
+</list>
+</problem>
+</exercise><exercise id="tablular-ex">
+<problem id="id43571370">
+<para id="element-563"><link target-id="M05_ch03-tbl020"/> gives the number of participants in the recent National Health Interview Survey who had been treated for cancer in the previous 12 months. The results are sorted by age, race (Black or White), and sex. We are interested in possible relationships between age, race, and sex. We will let suicide victims be our population.
+<table id="M05_ch03-tbl020" summary="This partially filled table presents the data of suicides by age and race and sex. The first column lists the race and sex, the second column lists ages 1-14, third column lists 15-24, fourth column lists 25-64, blank fifth column lists over 64, and the sixth column lists the totals. The first row lists White, male, the second row is White, female, the third row is Black, male, the fourth row is Black, female, the blank fifth row is all others, and the total is on the sixth row.">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry>Race and sex</entry>
+<entry>15–24</entry>
+<entry>25–40</entry>
+<entry>41–65</entry>
+<entry>Over 65</entry>
+<entry>TOTALS</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry>White, male</entry>
+<entry>1,165</entry>
+<entry>2,036</entry>
+<entry>3,703</entry>
+<entry/>
+<entry>8,395</entry>
+</row>
+<row>
+<entry>White, female</entry>
+<entry>1,076</entry>
+<entry>2,242</entry>
+<entry>4,060</entry>
+<entry/>
+<entry>9,129</entry>
+</row>
+<row>
+<entry>Black, male</entry>
+<entry>142</entry>
+<entry>194</entry>
+<entry>384</entry>
+<entry/>
+<entry>824</entry>
+</row>
+<row>
+<entry>Black, female</entry>
+<entry>131</entry>
+<entry>290</entry>
+<entry>486</entry>
+<entry/>
+<entry>1,061</entry>
+</row>
+<row>
+<entry>All others</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>TOTALS</entry>
+<entry>2,792</entry>
+<entry>5,279</entry>
+<entry>9,354</entry>
+<entry/>
+<entry>21,081</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+<para id="eip-idp27013472">Do not include "all others" for parts f and g.
+<list id="element-956" list-type="enumerated" number-style="lower-alpha">
+<item>Fill in the column for cancer treatment for individuals over age 65.</item>
+<item>Fill in the row for all other races.</item>
+<item>Find the probability that a randomly selected individual was a White male.</item>
+<item>Find the probability that a randomly selected individual was a Black female.</item>
+<item>Find the probability that a randomly selected individual was Black</item>
+<item>Find the probability that a randomly selected individual was male.</item>
+<item>Out of the individuals over age 65, find the probability that a randomly selected individual was a Black or White male.</item>
+</list></para></problem>
+<solution id="id43572030">
+<list id="element-271" list-type="enumerated" number-style="lower-alpha"><item>
+<table id="fs-idm9443200" summary="---">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry>Race and sex</entry>
+<entry>1–14</entry>
+<entry>15–24</entry>
+<entry>25–64</entry>
+<entry>Over 64</entry>
+<entry>TOTALS</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>White, male</entry>
+<entry>1,165</entry>
+<entry>2,036</entry>
+<entry>3,703</entry>
+<entry>1,491</entry>
+<entry>8,395</entry>
+</row>
+<row>
+<entry>White, female</entry>
+<entry>1,076</entry>
+<entry>2,242</entry>
+<entry>4,060</entry>
+<entry>1,751</entry>
+<entry>9,129</entry>
+</row>
+<row>
+<entry>Black, male</entry>
+<entry>142</entry>
+<entry>194</entry>
+<entry>384</entry>
+<entry>104</entry>
+<entry>824</entry>
+</row>
+<row>
+<entry>Black, female</entry>
+<entry>131</entry>
+<entry>290</entry>
+<entry>486</entry>
+<entry>154</entry>
+<entry>1,061</entry>
+</row>
+<row>
+<entry>All others</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry>156</entry>
+<entry/>
+</row>
+<row>
+<entry>TOTALS</entry>
+<entry>2,792</entry>
+<entry>5,279</entry>
+<entry>9,354</entry>
+<entry>3,656</entry>
+<entry>21,081</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></item>
+<item>
+<table id="fs-idm74994096" summary="---">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry>Race and sex</entry>
+<entry>1–14</entry>
+<entry>15–24</entry>
+<entry>25–64</entry>
+<entry>Over 64</entry>
+<entry>TOTALS</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>White, male</entry>
+<entry>1,165</entry>
+<entry>2,036</entry>
+<entry>3,703</entry>
+<entry>1,491</entry>
+<entry>8,395</entry>
+</row>
+<row>
+<entry>White, female</entry>
+<entry>1,076</entry>
+<entry>2,242</entry>
+<entry>4,060</entry>
+<entry>1,751</entry>
+<entry>9,129</entry>
+</row>
+<row>
+<entry>Black, male</entry>
+<entry>142</entry>
+<entry>194</entry>
+<entry>384</entry>
+<entry>104</entry>
+<entry>824</entry>
+</row>
+<row>
+<entry>Black, female</entry>
+<entry>131</entry>
+<entry>290</entry>
+<entry>486</entry>
+<entry>154</entry>
+<entry>1,061</entry>
+</row>
+<row>
+<entry>All others</entry>
+<entry>278</entry>
+<entry>517</entry>
+<entry>721</entry>
+<entry>156</entry>
+<entry>1672</entry>
+</row>
+<row>
+<entry>TOTALS</entry>
+<entry>2,792</entry>
+<entry>5,279</entry>
+<entry>9,354</entry>
+<entry>3,656</entry>
+<entry>21,081</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>8,395</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>21,081</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>≈</m:mo>
+<m:mn>0.3982</m:mn>
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>1,061</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>21,081</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>≈</m:mo>
+<m:mn>0.0503</m:mn>
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>1,885</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>21,081</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>≈</m:mo>
+<m:mn>0.0894</m:mn>
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>9,219</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>21,081</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>≈</m:mo>
+<m:mn>0.4373</m:mn>
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>1,595</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>3,656</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mo>≈</m:mo>
+<m:mn>0.4363</m:mn>
+</m:mrow>
+</m:math></item>
+</list></solution>
+</exercise>
+<para id="element-686"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> The table of data obtained from <cite><cite-title>www.baseball-almanac.com</cite-title></cite> shows hit information for four well known baseball players. Suppose that one hit from the table is randomly selected.</para>
+<table id="element-695" summary="This table presents data based on type of hit by baseball player. The first column lists the names of the baseball player, second column lists single hits, third column lists double, fourth column is triple, fifth column is home run, and sixth column is total hits. The first row is Babe Ruth, the second row is Jackie Robinson, third row is Ty Cobb, fourth row is Hank Aaron, and Total is in the fifth row.">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry>Name</entry>
+<entry>Single</entry>
+<entry>Double</entry>
+<entry>Triple</entry>
+<entry>Home run</entry>
+<entry>TOTAL HITS</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Babe Ruth</entry>
+<entry>1,517</entry>
+<entry>506</entry>
+<entry>136</entry>
+<entry>714</entry>
+<entry>2,873</entry>
+</row>
+<row>
+<entry>Jackie Robinson</entry>
+<entry>1,054</entry>
+<entry>273</entry>
+<entry>54</entry>
+<entry>137</entry>
+<entry>1,518</entry>
+</row>
+<row>
+<entry>Ty Cobb</entry>
+<entry>3,603</entry>
+<entry>174</entry>
+<entry>295</entry>
+<entry>114</entry>
+<entry>4,189</entry>
+</row>
+<row>
+<entry>Hank Aaron</entry>
+<entry>2,294</entry>
+<entry>624</entry>
+<entry>98</entry>
+<entry>755</entry>
+<entry>3,771</entry>
+</row>
+<row>
+<entry>TOTAL</entry>
+<entry>8,471</entry>
+<entry>1,577</entry>
+<entry>583</entry>
+<entry>1,720</entry>
+<entry>12,351</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><exercise id="element-680"><problem id="id43574123">
+<para id="element-564">Find <emphasis effect="italics">P</emphasis>(hit was made by Babe Ruth).</para>
+<list id="element-444" list-type="enumerated" number-style="lower-alpha">
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1518</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2873</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>2873</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>12351</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>583</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>12351</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>4189</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>12351</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item></list>
+</problem>
+</exercise><exercise id="element-940"><problem id="id43574389">
+<para id="element-634">Find <emphasis effect="italics">P</emphasis>(hit was made by Ty Cobb|The hit was a Home Run).</para>
+<list id="element-901" list-type="enumerated" number-style="lower-alpha">
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>4189</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>12351</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>114</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>1720</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>1720</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>4189</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>114</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>12351</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item></list>
+</problem>
+<solution id="id43574628">
+<para id="element-707">b</para>
+</solution>
+</exercise>
+<exercise id="element-782"><problem id="id43569269">
+<para id="element-251"><link target-id="M05_ch03-tbl021"/> identifies a group of children by one of four hair colors, and by type of hair.
+<table id="M05_ch03-tbl021" summary="A partially filled table for hair color by hair type. The first column lists hair type, the second column lists brown hair, third column lists blond hair, fourth column lists black hair, fifth column lists red hair, and the sixth column lists totals. The first row lists wavy hair, second row lists straight hair, and the third row lists the total. All values are listed in the brown column except the total, all values are listed in the blond column except for the first row, only the first row of the black column is filled in, all of the red column is filled in except for the total, and the first and third rows of the total column are filled in.">
+<tgroup cols="6"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry>Hair type</entry>
+<entry>Brown</entry>
+<entry>Blond</entry>
+<entry>Black</entry>
+<entry>Red</entry>
+<entry>Totals</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Wavy</entry>
+<entry>20</entry>
+<entry/>
+<entry>15</entry>
+<entry>3</entry>
+<entry>43</entry>
+</row>
+<row>
+<entry>Straight</entry>
+<entry>80</entry>
+<entry>15</entry>
+<entry/>
+<entry>12</entry>
+<entry/>
+</row>
+<row>
+<entry>Totals</entry>
+<entry/>
+<entry>20</entry>
+<entry/>
+<entry/>
+<entry>215</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></para><list id="element-894" list-type="enumerated" number-style="lower-alpha"><item>Complete the table.</item>
+<item>What is the probability that a randomly selected child will have wavy hair?</item>
+<item>What is the probability that a randomly selected child will have either brown or blond hair?</item>
+<item>What is the probability that a randomly selected child will have wavy brown hair?</item>
+<item>What is the probability that a randomly selected child will have red hair, given that he or she has straight hair?</item>
+<item>If <emphasis effect="italics">B</emphasis> is the event of a child having brown hair, find the probability of the complement of <emphasis effect="italics">B</emphasis>.</item>
+<item>In words, what does the complement of <emphasis effect="italics">B</emphasis> represent?</item>
+</list></problem>
+</exercise><exercise id="element-738"><problem id="id43569944">
+<para id="element-699">In a previous year, the weights of the members of the <emphasis>San Francisco 49ers</emphasis> and the <emphasis>Dallas Cowboys</emphasis> were published in the <cite><cite-title>San Jose Mercury News</cite-title></cite>. The factual data were compiled into the following table.
+<table id="element-13" summary="This table presents weight in pounds by shirt number. The first column lists the shirt number, the second column lists weight ≤ 210, the third column lists 211-250, fourth column lists 251-290, and the fifth column lists 291 ≤. The first row lists shirt numbers 1-33, second row lists 34-66, and the third row lists 66-99.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Shirt #</entry>
+<entry>≤ 210</entry>
+<entry>211–250</entry>
+<entry>251–290</entry>
+<entry>&gt; 290</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>1–33</entry>
+<entry>21</entry>
+<entry>5</entry>
+<entry>0</entry>
+<entry>0</entry>
+</row>
+<row>
+<entry>34–66</entry>
+<entry>6</entry>
+<entry>18</entry>
+<entry>7</entry>
+<entry>4</entry>
+</row>
+<row>
+<entry>66–99</entry>
+<entry>6</entry>
+<entry>12</entry>
+<entry>22</entry>
+<entry>5</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></para>
+<para id="element-460">For the following, suppose that you randomly select one player from the 49ers or Cowboys.
+<list id="element-908" list-type="enumerated" number-style="lower-alpha">
+<item>Find the probability that his shirt number is from 1 to 33.</item>
+<item>Find the probability that he weighs at most 210 pounds.</item>
+<item>Find the probability that his shirt number is from 1 to 33 AND he weighs at most 210 pounds.</item>
+<item>Find the probability that his shirt number is from 1 to 33 OR he weighs at most 210 pounds.</item>
+<item>Find the probability that his shirt number is from 1 to 33 GIVEN that he weighs at most 210 pounds.</item>
+</list></para></problem>
+<solution id="fs-idm65248128">
+<list id="fs-idm65247872" list-type="enumerated" number-style="lower-alpha"><item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>26</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>
+</item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>33</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>21</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>26</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> + <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>33</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> - <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>21</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> = <m:math>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>38</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>106</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math></item>
+<item><m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>21</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>33</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math></item>
+</list></solution>
+</exercise>
+
+<para id="fs-idp132890032"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> This tree diagram shows the tossing of an unfair coin followed by drawing one bead from a cup containing three red (<emphasis effect="italics">R</emphasis>), four yellow (<emphasis effect="italics">Y</emphasis>) and five blue (<emphasis effect="italics">B</emphasis>) beads. For the coin, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">H</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis>) = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>1</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> where <emphasis effect="italics">H</emphasis> is heads and <emphasis effect="italics">T</emphasis> is tails.</para><figure id="id43573084"><media id="id43573089" alt="Tree diagram with 2 branches. The first branch consists of 2 lines of H=2/3 and T=1/3. The second branch consists of 2 sets of 3 lines each with the both sets containing R=3/12, Y=4/12, and B=5/12."><image src="../../media/fig-ch03_11_01_new.jpg" mime-type="image/jpg" width="180"/></media></figure><exercise id="element-92"><problem id="id43573133">
+  <para id="element-4">Find <emphasis effect="italics">P</emphasis>(tossing a Head on the coin AND a Red bead)</para>
+<list id="element-67" list-type="enumerated" number-style="lower-alpha">
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>2</m:mn>
+   <m:mn>3</m:mn>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>15</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>6</m:mn>
+   <m:mn>36</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mn>5</m:mn>
+   <m:mn>36</m:mn>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+</list>
+</problem>
+</exercise><exercise id="element-684"><problem id="id43573398">
+  <para id="element-573">Find <emphasis effect="italics">P</emphasis>(Blue bead).</para>
+<list id="element-161" list-type="enumerated" number-style="lower-alpha">
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>15</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>36</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>36</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>12</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>6</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>36</m:mn>
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math></item></list>
+</problem>
+<solution id="id43573635">
+  <para id="element-219">a</para>
+</solution>
+</exercise>
+<exercise id="eip-346"><problem id="eip-id1171744729232">
+  <para id="eip-id1171737024994">A box of cookies contains three chocolate and seven butter cookies. Miguel randomly selects a cookie and eats it. Then he randomly selects another cookie and eats it. (How many cookies did he take?)</para>
+<list id="eip-id1171740927516" list-type="enumerated" number-style="lower-alpha">
+<item>Draw the tree that represents the possibilities for the cookie selections. Write the probabilities along each branch of the tree.</item>
+<item>Are the probabilities for the flavor of the SECOND cookie that Miguel selects independent of his first selection? Explain.</item>
+<item>For each complete path through the tree, write the event it represents and find the probabilities.</item>
+<item>Let S be the event that both cookies selected were the same flavor. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">S</emphasis>).</item>
+<item>Let <emphasis effect="italics">T</emphasis> be the event that the cookies selected were different flavors. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis>) by two different methods: by using the complement rule and by using the branches of the tree. Your answers should be the same with both methods.</item>
+<item>Let <emphasis effect="italics">U</emphasis> be the event that the second cookie selected is a butter cookie. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">U</emphasis>).</item>
+</list></problem>
+</exercise>
+
+
+</section>
+
+
+ </content>
+<glossary>
+<definition id="vendiagram">
+    <term>Venn Diagram</term>
+    <meaning id="id18154967">the visual representation of a sample space and events in the form of circles or ovals showing their intersections</meaning>
+  </definition>
+</glossary>
+
+
+</document>

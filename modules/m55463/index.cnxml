@@ -1,0 +1,1150 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>A Confidence Interval for A Population Proportion</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55463</md:content-id>
+  <md:title>A Confidence Interval for A Population Proportion</md:title>
+  <md:abstract/>
+  <md:uuid>1ccfabdd-66da-49b1-9d12-00381085d66a</md:uuid>
+</metadata>
+
+<content>
+    <para id="eip-494">During an election year, we see articles in the newspaper that state <term>confidence intervals</term> in terms of proportions or percentages. For example, a poll for a particular candidate running for president might show that the candidate has 40% of the vote within three percentage points  (if the sample is large enough). Often, election polls are calculated with 95% confidence, so, the pollsters would be 95% confident that the true proportion of voters who favored the candidate would be between 0.37 and 0.43.</para><para id="element-292">Investors in the stock market are interested in the true proportion of stocks that go up and down each week. Businesses that sell personal computers are interested in the proportion of households in the United States that own personal computers. Confidence intervals can be calculated for the true proportion of stocks that go up or down each week and for the true proportion of households in the United States that own personal computers.</para>
+ <para id="element-918">The procedure to find the confidence interval for a population proportion is similar to that for the population mean, but the formulas are a bit different although conceptually identical. While the formulas are different, they are based upon the same mathematical foundation given to us by the Central Limit Theorem. Because of this we will see the same basic format using the same three pieces of information: the sample value of the parameter in question, the standard deviation of the relevant sampling distribution, and the number of standard deviations we need to have the confidence in our estimate that we desire.</para><para id="element-574"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution has a binary random variable and therefore is a</emphasis> <term>binomial distribution</term>. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(<emphasis effect="italics">n</emphasis>, <emphasis effect="italics">p</emphasis>)  where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. To form a sample proportion, take <emphasis effect="italics">X</emphasis>, the random variable for the number of successes and divide it by <emphasis effect="italics">n</emphasis>, the number of trials (or the sample size). The random variable <emphasis effect="italics">P′</emphasis> (read "P prime") is the sample proportion,
+  </para><para id="element-771"><m:math>
+   <m:mrow>
+    <m:msup>
+     <m:mi>P</m:mi>
+     <m:mo>′</m:mo>
+    </m:msup>
+    <m:mo>=</m:mo><m:mfrac>
+     <m:mi>X</m:mi>
+     <m:mi>n</m:mi>
+    </m:mfrac>
+   </m:mrow>
+  </m:math>
+ </para>
+ <para id="element-596">(Sometimes the random variable is denoted as <m:math>
+  <m:mover accent="true">
+   <m:mi>P</m:mi>
+   <m:mo>^</m:mo>
+  </m:mover>
+ </m:math>, read "P hat".)</para>
+
+
+
+ <para id="element-142"><emphasis effect="italics">p′</emphasis> = the <emphasis>estimated proportion</emphasis> of successes or sample proportion of successes (<emphasis effect="italics">p′</emphasis> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true population proportion, and thus <emphasis effect="italics">q</emphasis> is the probability of a failure in any one trial.)</para><para id="element-818"><emphasis effect="italics">x</emphasis> = the <emphasis>number</emphasis> of successes in the sample</para><para id="element-434"><emphasis effect="italics">n</emphasis> = the size of the sample</para>
+
+<para id="eip-199">The formula for the confidence interval for a population proportion follows the same format as that for an estimate of a population mean. Remembering the sampling distribution for the proportion from <link document="m54530">Chapter 7</link>, the standard deviation was found to be:</para><equation class="unnumbered" id="eip-602"><m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt></m:math></equation><para id="eip-172">The confidence interval for a population proportion, therefore, becomes:</para><equation id="eip-194"><m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>±</m:mo><m:mo>[</m:mo><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo></m:math></equation><para id="eip-973"><m:math><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub></m:math> is set according to our desired degree of confidence and <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math> is the standard deviation of the sampling distribution.</para><para id="element-685">The <emphasis> sample proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are estimates of the unknown population proportions <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis></emphasis>. The estimated proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. </para><para id="eip-247">Remember that as <emphasis effect="italics">p</emphasis> moves further from 0.5 the binomial distribution becomes less symmetrical. Because we are estimating the binomial with the symmetrical normal distribution the further away from symmetrical the binomial becomes the less confidence we have in the estimate.</para><para id="eip-436">This conclusion can be demonstrated through the following analysis. Proportions are based upon the binomial probability distribution. The possible outcomes are binary, either “success” or “failure”. This gives rise to a proportion, meaning the percentage of the outcomes that are “successes”. It was shown that the binomial distribution could be fully understood if we knew only the probability of a success in any one trial, called p. The mean and the standard deviation of the binomial were found to be:</para><equation id="eip-107"><label/><m:math>
+<m:mi>
+μ</m:mi><m:mo> =</m:mo><m:mi> np
+</m:mi>
+</m:math></equation><equation class="unnumbered" id="eip-455"><label/><m:math>
+<m:mi>σ</m:mi>
+<m:mo>=</m:mo>
+<m:msqrt>
+<m:mi>np</m:mi>
+
+<m:mi>q</m:mi>
+
+</m:msqrt>
+</m:math></equation><para id="eip-700">It was also shown that the binomial could be estimated by the normal distribution if BOTH np AND nq were greater than 5. From the discussion above, it was found that the standardizing formula for the binomial distribution is:</para><equation class="unnumbered" id="eip-181"><label/><m:math>
+<m:mi>Z</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+
+<m:mi>p'</m:mi>
+
+<m:mo>-</m:mo>
+<m:mi>p</m:mi>
+</m:mrow>
+<m:mrow>
+<m:msqrt>
+<m:mo>(</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>p</m:mi>
+
+<m:mi>q</m:mi>
+
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>)</m:mo>
+</m:msqrt>
+</m:mrow>
+
+
+
+
+</m:mfrac>
+</m:math></equation><para id="eip-308">which is nothing more than a restatement of the general standardizing formula with appropriate substitutions for μ and σ from the binomial. We can use the standard normal distribution, the reason Z is in the equation, because the normal distribution is the limiting distribution of the binomial. This is another example of the Central Limit Theorem. We have already seen that the sampling distribution of means is normally distributed. Recall the extended discussion in <link document="m54530">Chapter 7</link> concerning the sampling distribution of proportions and the conclusions of the Central Limit Theorem.</para><para id="eip-359">We can now manipulate this formula in just the same way we did for finding the confidence intervals for a mean, but to find the confidence interval for the binomial population parameter,  p.</para><equation class="unnumbered" id="eip-511"><label/><m:math>
+<m:mi>p'</m:mi>
+<m:mo>-</m:mo>
+<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
+<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi></m:mrow>
+
+</m:mfrac>
+</m:msqrt>
+
+<m:mo> ≤ </m:mo><m:mi>p</m:mi>
+<m:mo> ≤ </m:mo>
+<m:mi>p'</m:mi>
+<m:mo>+</m:mo>
+<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
+<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi></m:mrow>
+
+</m:mfrac>
+</m:msqrt>
+
+</m:math></equation><para id="eip-280">Where p′ = x/n, the point estimate of p taken from the sample.   Notice that p′ has replaced p in the formula. This is because we do not know p, indeed, this is just what we are trying to estimate. </para><para id="eip-432">Unfortunately, there is no correction factor for cases where the sample size is small so np′ and nq' must always be greater than 5 to develop an interval estimate for p.</para><example id="element-32">
+<exercise id="element-814"><problem id="id24363103">
+  <para id="element-687">Suppose that a market research firm is hired to estimate the percent of adults living in a large city who have cell phones.  Five hundred randomly selected adult residents in this city are surveyed to determine whether they have cell phones. Of
+  the 500 people sampled, 421 responded yes - they own cell phones. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of adult residents of this city who have cell phones.</para>
+
+</problem>
+<solution id="id24363164">
+<list id="element-757" list-type="bulleted"><item>The solution step-by-step.</item>
+</list><para id="element-386">Let <emphasis effect="italics">X</emphasis> = the number of people in the sample who have cell phones. <emphasis effect="italics">X</emphasis> is binomial: the random variable is binary, people either have a cell phone or they do not. </para><para id="element-985">To calculate the confidence interval, we must find <emphasis effect="italics">p′</emphasis>, <emphasis effect="italics">q′</emphasis>.</para><para id="element-227"><emphasis effect="italics">n</emphasis> = 500</para>
+<para id="eip-idm67964976"><emphasis effect="italics">x</emphasis> = the number of successes in the sample = 421</para><para id="element-513"><m:math>
+  <m:mrow>
+   <m:msup>
+    <m:mi>p</m:mi>
+    <m:mo>′</m:mo>
+   </m:msup>
+   <m:mo>=</m:mo><m:mfrac>
+    <m:mi>x</m:mi>
+    <m:mi>n</m:mi>
+   </m:mfrac>
+   <m:mo>=</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>421</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>500</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>=</m:mo><m:mn>0.842</m:mn>
+  </m:mrow>
+ </m:math>
+  </para>
+<para id="fs-idp54910160"><emphasis effect="italics">p′</emphasis> = 0.842 is the sample proportion; this is the point estimate of the population proportion.</para>
+
+ <para id="element-339"><emphasis effect="italics">q′</emphasis> = 1 – <emphasis effect="italics">p′</emphasis> = 1 – 0.842 = 0.158</para>
+
+ <para id="element-239">Since the requested confidence level is <emphasis effect="italics">CL</emphasis> = 0.95, then <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.95 = 0.05 <m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>α</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = 0.025.</para><para id="element-838a">Then <m:math>
+<m:msub>
+<m:mi>z</m:mi>
+<m:mfrac>
+<m:mrow>
+<m:mi>α</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+</m:msub>
+<m:mo>=</m:mo>
+<m:msub>
+<m:mi>z</m:mi>
+<m:mn>0.025</m:mn>
+</m:msub>
+<m:mo>=</m:mo>
+<m:mn>1.96</m:mn>
+</m:math></para>
+ <para id="element-88" class="finger">This can be found using the Standard Normal probability table in <link document="m56641"/>. This can also be found in the students t table at the 0.025 column and infinity degrees of freedom because at infinite degrees of freedom the students <emphasis effect="italics">t</emphasis>-distribution becomes the standard normal distribution, Z.</para><para id="element-144">The confidence interval for the true binomial population proportion is <equation class="unnumbered" id="eip-id1169963537277"><label/><m:math>
+<m:mi>p'</m:mi>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+</m:msub>
+<m:msqrt>
+<m:mfrac>
+<m:mrow>
+<m:mi>p'q'</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:msqrt>
+<m:mo>≤</m:mo>
+<m:mi>p</m:mi>
+<m:mo>≤</m:mo>
+
+
+
+<m:mi>p'</m:mi>
+<m:mo>+</m:mo>
+<m:msub>
+<m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+</m:msub>
+<m:msqrt>
+<m:mfrac>
+<m:mrow>
+<m:mi>p'q'</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:msqrt>
+</m:math></equation><equation class="unnumbered" id="eip-id1169961103996"><label/><m:math><m:mtext>Substituting in the values from above we find the confidence interval is : </m:mtext><m:mn>0.810</m:mn><m:mo>≤</m:mo><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>0.874</m:mn></m:math></equation></para><para id="element-822">
+<title>Interpretation</title>We estimate with 95% confidence that between 81% and 87.4% of all adult residents of this city have cell phones.</para>
+ <para id="element-415">
+<title>Explanation of 95% Confidence Level</title>Ninety-five percent of the confidence intervals constructed in this way would contain the true value for the population proportion of all adult residents of this city who have cell phones.<newline/></para>
+</solution>
+
+</exercise></example>
+<note id="fs-idp89365680" class="statistics try"><label/><title>Try It</title>
+   <exercise id="eip-890"><problem id="eip-454">
+  <para id="eip-844">
+Suppose 250 randomly selected people are surveyed to determine if they own a tablet. Of the 250 surveyed, 98 reported owning a tablet. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of people who own tablets.
+  </para>
+</problem>
+<solution id="eip-206"><label/>
+  <para id="eip-90">(0.3315, 0.4525)</para>
+</solution>
+   </exercise>
+</note><example id="eip-786"><exercise id="eip-id1172122788985"><problem id="eip-id1172107422772">
+  <para id="eip-id1172117840401">The Dundee Dog Training School has a larger than average proportion of clients who compete in competitive professional events. A confidence interval for the population proportion of dogs that compete in professional events from 150 different training schools is constructed. The lower limit is determined to be 0.08 and the upper limit is determined to be 0.16. Determine the level of confidence used to construct the interval of the population proportion of dogs that compete in professional events.</para></problem>
+<solution id="eip-id1172102325982">
+  <para id="eip-id1172099368827">We begin with the formula for a confidence interval for a proportion because the random variable is binary; either the client competes in professional competitive dog events or they don't.</para><equation class="unnumbered" id="eip-id1172122574035"><label/><m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>±</m:mo><m:mo>[</m:mo><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo></m:math></equation>
+   <para id="eip-id1172100365957">Next we find the sample proportion:</para>
+   <equation class="unnumbered" id="eip-id1172101566261"><label/><m:math><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.08</m:mn><m:mo>+</m:mo><m:mn>0.16</m:mn></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.12</m:mn></m:math></equation>
+   <para id="eip-id6479480">The ± that makes up the confidence interval is thus 0.04; 0.12 + 0.04 = 0.16 and 0.12 − 0.04 = 0.08, the boundaries of the confidence interval. Finally, we solve for <emphasis effect="italics">Z</emphasis>.</para>
+   <para id="eip-id1169335320053"><m:math><m:mo>[</m:mo><m:mi>Z</m:mi><m:mo>⋅</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.12</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.12</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>150</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo><m:mo>=</m:mo><m:mn>0.04</m:mn></m:math>, <emphasis><emphasis effect="italics">therefore Z</emphasis> = 1.51</emphasis></para>
+   <para id="eip-id1169337927448">And then look up the probability for 1.51 standard deviations on the standard normal table.</para><para id="eip-id1166885205984"><m:math><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>=</m:mo><m:mn>1.51</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.4345</m:mn></m:math>, <m:math><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0.8690</m:mn></m:math> <emphasis effect="italics"><emphasis>or</emphasis></emphasis> <m:math><m:mn>86.90</m:mn><m:mo>%</m:mo></m:math>.</para></solution>
+</exercise></example><example id="eip-164"><exercise id="element-2"><problem id="id1164699825510">
+  <para id="element-182">A financial officer for a company wants to estimate the percent of accounts receivable that are more than 30 days overdue. He surveys 500 accounts and finds that 300 are more than 30 days overdue. Compute a 90% confidence interval for the true percent of accounts receivable that are more than 30 days overdue, and interpret the confidence interval.</para></problem>
+<solution id="id1164685709005">
+<list id="eip-id1168006547279"><item>The solution is step-by-step:</item>
+</list><para id="element-829"><emphasis effect="italics">x</emphasis> = 300 and <emphasis effect="italics">n</emphasis> = 500</para>
+ <para id="element-896"><m:math>
+  <m:mrow>
+   <m:msup>
+    <m:mi>p</m:mi>
+    <m:mo>′</m:mo>
+   </m:msup>
+   <m:mo>=</m:mo><m:mfrac>
+    <m:mi>x</m:mi>
+    <m:mi>n</m:mi>
+   </m:mfrac>
+   <m:mo>=</m:mo><m:mfrac>
+    <m:mrow>
+     <m:mn>300</m:mn>
+    </m:mrow>
+    <m:mrow>
+     <m:mn>500</m:mn>
+    </m:mrow>
+   </m:mfrac>
+   <m:mo>=</m:mo><m:mn>0.600</m:mn>
+  </m:mrow>
+ </m:math></para>
+ <para id="element-994"><m:math>
+  <m:mrow>
+   <m:msup>
+    <m:mi>q</m:mi>
+    <m:mo>′</m:mo>
+   </m:msup>
+   <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
+    <m:mi>p</m:mi>
+    <m:mo>′</m:mo>
+   </m:msup>
+   <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0.600</m:mn><m:mo>=</m:mo><m:mn>0.400</m:mn>
+  </m:mrow>
+ </m:math></para>
+<para id="element-702">Since confidence level = 0.90, then <emphasis effect="italics">α</emphasis> = 1 – confidence level = (1 – 0.90) = 0.10<m:math>
+ <m:mrow>
+  <m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>α</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math> = 0.05
+</para><para id="eip-idm146395264"><m:math>
+    <m:msub>
+      <m:mi>Z</m:mi>
+      <m:mfrac>
+        <m:mrow>
+          <m:mi>α</m:mi>
+        </m:mrow>
+        <m:mrow>
+          <m:mn>2</m:mn>
+        </m:mrow>
+      </m:mfrac>
+    </m:msub>
+    </m:math> = <emphasis effect="italics">Z</emphasis><sub>0.05</sub> = 1.645</para>
+ <para id="element-803" class="finger">This Z-value can be found using a standard normal probability table. The student's t-table can also be used by entering the table at the 0.05 column and reading at the line for infinite degrees of freedom. The t-distribution is the normal distribution at infinite degrees of freedom. This is a handy trick to remember in finding Z-values for commonly used levels of confidence. We use this formula  for a confidence interval for a proportion:</para><equation class="unnumbered" id="eip-id1167998436031"><label/><m:math>
+<m:mi>p'</m:mi>
+<m:mo>-</m:mo>
+<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
+<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi></m:mrow>
+
+</m:mfrac>
+</m:msqrt>
+
+<m:mo> ≤ </m:mo><m:mi>p</m:mi>
+<m:mo> ≤ </m:mo>
+<m:mi>p'</m:mi>
+<m:mo>+</m:mo>
+<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
+<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi></m:mrow>
+
+</m:mfrac>
+</m:msqrt>
+
+</m:math></equation>
+
+
+<para id="element-343">Substituting in the values from above we find the confidence interval for the true binomial population proportion is 0.564 ≤ p ≤ 0.636</para><list id="element-523" list-type="bulleted"><title><emphasis>Interpretation</emphasis></title><item>We estimate with 90% confidence that the true percent of all accounts receivable overdue 30 days is between 56.4% and 63.6%.</item>
+<item>Alternate Wording: We estimate with 90% confidence that between 56.4% and 63.6% of ALL accounts are overdue 30 days.</item>
+ </list><para id="element-828"><title>Explanation of 90% Confidence Level</title>Ninety percent of all confidence intervals constructed in this way contain the true value for the population percent of accounts receivable that are overdue 30 days.</para></solution>
+
+ </exercise></example><note id="fs-idp55027792" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm23330928">
+<problem id="eip-165">
+<para id="eip-183">A student polls his school to see if students in the school district are for or against the new legislation regarding school uniforms. She surveys 600 students and finds that 480 are against the new legislation.<newline count="2"/></para><para id="fs-idp17812400">a. Compute a 90% confidence interval for the true percent of students who are against the new legislation, and interpret the confidence interval.</para>
+</problem>
+<solution id="eip-587">
+<label/>
+  <para id="eip-819">
+(0.7731, 0.8269); We estimate with 90% confidence that the true percent of all students in the district who are against the new legislation is between 77.31% and 82.69%.
+  </para>
+</solution>
+</exercise>
+<exercise id="fs-idm29038320"><problem id="eip-882">
+<para id="eip-207">b. In a sample of 300 students, 68% said they own an iPod and a smart phone. Compute a 97% confidence interval for the true percent of students who own an iPod and a smartphone.</para>
+ </problem>
+<solution id="eip-92">
+<label/>
+<title>Solution</title>
+<para id="eip-763">
+Sixty-eight percent (68%) of students own an iPod and a smart phone.</para>
+ <para id="eip-idm4721728"><m:math>
+  <m:mrow>
+   <m:msup>
+    <m:mi>p</m:mi>
+    <m:mo>′</m:mo>
+   </m:msup>
+   <m:mo>=</m:mo><m:mn>0.68</m:mn>
+  </m:mrow>
+ </m:math></para>
+ <para id="eip-idm93260480"><m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>q</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:msup>
+   <m:mi>p</m:mi>
+   <m:mo>′</m:mo>
+  </m:msup>
+  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mn>0.68</m:mn><m:mo>=</m:mo><m:mn>0.32</m:mn>
+ </m:mrow>
+</m:math>
+ </para>
+
+   <para id="eip-idm81288512">Since <emphasis effect="italics">CL</emphasis> = 0.97, we know <emphasis effect="italics">α</emphasis> = 1 – 0.97 = 0.03 and <m:math>
+    <m:mrow>
+     <m:mfrac>
+      <m:mi>α</m:mi>
+      <m:mn>2</m:mn>
+     </m:mfrac>
+     </m:mrow>
+   </m:math> = 0.015.</para>
+
+   <para id="eip-idp73380688">The area to the left of <emphasis effect="italics">z</emphasis><sub>0.015</sub> is 0.015, and the area to the right of <emphasis effect="italics">z</emphasis><sub>0.015</sub> is 1 – 0.015 = 0.985.</para>
+
+    <para id="fs-idm106841376" class="finger">Using the TI 83, 83+, or 84+ calculator function InvNorm(.985,0,1),</para>
+
+ <para id="eip-idm10150800"><m:math>
+  <m:mrow>
+   <m:msub>
+    <m:mi>z</m:mi>
+    <m:mrow>
+     <m:mn>0.015</m:mn>
+    </m:mrow>
+   </m:msub>
+   <m:mo>=</m:mo><m:mn>2.17</m:mn>
+  </m:mrow>
+ </m:math></para>
+
+ <para id="eip-idm64635184"><m:math display="block">
+ <m:mrow>
+  <m:mi>E</m:mi><m:mi>P</m:mi><m:mi>B</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msub>
+     <m:mi>z</m:mi>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>α</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msub>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mi>p</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+      <m:msup>
+       <m:mi>q</m:mi>
+       <m:mo>′</m:mo>
+      </m:msup>
+
+     </m:mrow>
+     <m:mi>n</m:mi>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>2.17</m:mn><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>0.68</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.32</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>300</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>≈</m:mo><m:mn>0.0584</m:mn>
+ </m:mrow>
+</m:math></para>
+
+ <para id="eip-idm42761936"><emphasis effect="italics">p</emphasis>′ – <emphasis effect="italics">EPB</emphasis> = 0.68 – 0.0584 = 0.0584</para>
+
+ <para id="eip-idp45164656"><emphasis effect="italics">p</emphasis>′ + <emphasis effect="italics">EPB</emphasis> = 0.68 + 0.0584 = 0.0584</para>
+
+   <para id="eip-idm6937888">We are 97% confident that the true proportion of all students who own an iPod and a smart phone is between 0.6216 and 0.7384.</para>
+  </solution>
+
+  </exercise></note>
+
+
+ <section id="eip-566" class="references"><title>References</title><para id="eip-idp27535536">Jensen, Tom. “Democrats, Republicans Divided on Opinion of Music Icons.” Public Policy Polling. Available online at http://www.publicpolicypolling.com/Day2MusicPoll.pdf (accessed July 2, 2013).</para>
+<para id="eip-idm28118800">Madden, Mary, Amanda Lenhart, Sandra Coresi, Urs Gasser, Maeve Duggan, Aaron Smith, and Meredith Beaton. “Teens, Social Media, and Privacy.” PewInternet, 2013. Available online at http://www.pewinternet.org/Reports/2013/Teens-Social-Media-And-Privacy.aspx (accessed July 2, 2013).</para>
+<para id="eip-idm28117680">Prince Survey Research Associates International. “2013 Teen and Privacy Management Survey.” Pew Research Center: Internet and American Life Project. Available online at  http://www.pewinternet.org/~/media//Files/Questionnaire/2013/Methods%20and%20Questions_Teens%20and%20Social%20Media.pdf (accessed July 2, 2013).</para>
+<para id="eip-idm58659488">Saad, Lydia. “Three in Four U.S. Workers Plan to Work Pas Retirement Age: Slightly more say they will do this by choice rather than necessity.” Gallup® Economy, 2013. Available online at http://www.gallup.com/poll/162758/three-four-workers-plan-work-past-retirement-age.aspx (accessed July 2, 2013).</para>
+<para id="eip-idm58658768">The Field Poll. Available online at http://field.com/fieldpollonline/subscribers/ (accessed July 2, 2013).</para>
+<para id="eip-idm58658256">Zogby. “New SUNYIT/Zogby Analytics Poll: Few Americans Worry about Emergency Situations Occurring in Their Community; Only one in three have an Emergency Plan; 70% Support Infrastructure ‘Investment’ for National Security.” Zogby Analytics, 2013. Available online at http://www.zogbyanalytics.com/news/299-americans-neither-worried-nor-prepared-in-case-of-a-disaster-sunyit-zogby-analytics-poll (accessed July 2, 2013).</para>
+<para id="eip-idm58656656">“52% Say Big-Time College Athletics Corrupt Education Process.” Rasmussen Reports, 2013. Available online at http://www.rasmussenreports.com/public_content/lifestyle/sports/may_2013/52_say_big_time_college_athletics_corrupt_education_process (accessed July 2, 2013).</para></section><section id="eip-854" class="summary">
+  <title>Chapter Review</title>
+  <para id="eip-idm15657920">Some statistical measures, like many survey questions, measure qualitative rather than quantitative data. In this case, the population parameter being estimated is a proportion. It is possible to create a confidence interval for the true population proportion following procedures similar to those used in creating confidence intervals for population means. The formulas are slightly different, but they follow the same reasoning.</para>
+
+  <para id="eip-idm15657536">Let <emphasis effect="italics">p′</emphasis> represent the sample proportion, <emphasis effect="italics">x/n</emphasis>, where <emphasis effect="italics">x</emphasis> represents the number of successes and <emphasis effect="italics">n</emphasis> represents the sample size. Let <emphasis effect="italics">q′</emphasis> = 1 – <emphasis effect="italics">p′</emphasis>. Then the confidence interval for a population proportion is given by the following formula:</para><para id="eip-idp121742160"><m:math>
+<m:mi>p'</m:mi>
+<m:mo>-</m:mo>
+<m:msub>
+<m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+</m:msub>
+<m:msqrt>
+<m:mfrac>
+<m:mrow>
+<m:mi>p'q'</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:msqrt>
+<m:mo>≤</m:mo>
+<m:mi>p</m:mi>
+<m:mo>≤</m:mo>
+
+
+
+<m:mi>p'</m:mi>
+<m:mo>+</m:mo>
+<m:msub>
+<m:mi>Z</m:mi>
+<m:mi>α</m:mi>
+</m:msub>
+<m:msqrt>
+<m:mfrac>
+<m:mrow>
+<m:mi>p'q'</m:mi>
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi>
+</m:mrow>
+</m:mfrac>
+</m:msqrt>
+</m:math>
+</para>
+</section>
+<section id="eip-826" class="formula-review">
+<title>Formula Review</title>
+ <para id="eip-idm44244000"><emphasis effect="italics">p′= </emphasis> <m:math><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:math> where <emphasis effect="italics">x</emphasis> represents the number of successes in a sample and <emphasis effect="italics">n</emphasis> represents the sample size. The variable <emphasis effect="italics">p</emphasis>′ is the sample proportion and serves as the point estimate for the true population proportion.</para><para id="eip-idm61459360"><emphasis effect="italics">q</emphasis>′ = 1 – <emphasis effect="italics">p</emphasis>′</para>
+ <para id="eip-idm163551632">The variable <emphasis effect="italics">p′</emphasis> has a binomial distribution that can be approximated with the normal distribution shown here. The confidence interval for the true population proportion is given by the formula:</para><para id="eip-idm90817904"><m:math>
+<m:mi>p'</m:mi>
+<m:mo>-</m:mo>
+<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
+<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi></m:mrow>
+
+</m:mfrac>
+</m:msqrt>
+
+<m:mo> ≤ </m:mo><m:mi>p</m:mi>
+<m:mo> ≤ </m:mo>
+<m:mi>p'</m:mi>
+<m:mo>+</m:mo>
+<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
+<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
+<m:mrow><m:mi>n</m:mi></m:mrow>
+
+</m:mfrac>
+</m:msqrt>
+
+</m:math></para>
+ <para id="eip-idm111094496"><m:math>
+ <m:mrow>
+  <m:mi>n</m:mi><m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
+   <m:mrow>
+    <m:msub>
+     <m:mi>Z</m:mi>
+     <m:mrow>
+      <m:mfrac>
+       <m:mi>α</m:mi>
+       <m:mn>2</m:mn>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msub>
+    <m:msup>
+     <m:mrow/>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:msup>
+     <m:mi>p</m:mi>
+     <m:mo>′</m:mo>
+    </m:msup>
+    <m:msup>
+     <m:mi>q</m:mi>
+     <m:mo>′</m:mo>
+    </m:msup>
+
+   </m:mrow>
+   <m:mrow>
+    <m:msup>
+     <m:mi>e</m:mi>
+     <m:mn>2</m:mn>
+    </m:msup>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math> provides the number of observations needed to sample to estimate the population proportion, <emphasis effect="italics">p</emphasis>, with confidence 1 - <emphasis effect="italics">α</emphasis> and margin of error <emphasis effect="italics">e</emphasis>. Where <emphasis effect="italics">e</emphasis> = the acceptable difference between the actual population proportion and the sample proportion.</para></section>
+<section id="eip-515" class="practice">
+  <para id="eip-246"><emphasis effect="italics">Use the following information to answer the next two exercises:</emphasis> Marketing companies are interested in knowing the population percent of women who make the majority of household purchasing decisions.</para>
+<exercise id="eip-506"><problem id="eip-9">
+  <para id="eip-581">
+When designing a study to determine this population proportion, what is the minimum number you would need to survey to be 90% confident that the population proportion is estimated to within 0.05?
+  </para>
+</problem>
+</exercise><exercise id="eip-523"><problem id="eip-263">
+  <para id="eip-924">
+If it were later determined that it was important to be more than 90% confident and a new survey were commissioned, how would it affect the minimum number you need to survey? Why?
+  </para>
+</problem>
+<solution id="eip-204">
+  <para id="eip-269">The sample size needed would increase. As the confidence level increases, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>α</m:mi></m:math> decreases and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub></m:math> increases. To maintain the same error bound, the size of the sample needs to increase.</para>
+</solution>
+</exercise>
+ <para id="eip-471"><newline/><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> Suppose the marketing company did do a survey. They randomly surveyed 200 households and found that in 120 of them, the woman made the majority of the purchasing decisions. We are interested in the population proportion of households where women make the majority of the purchasing decisions.</para><exercise id="eip-616"><problem id="eip-108">
+  <para id="eip-293">
+Identify the following:
+  </para>
+  <list id="fs-idm88953968" list-type="enumerated" number-style="lower-alpha">
+  <item><emphasis effect="italics">x</emphasis> = ______</item>
+  <item><emphasis effect="italics">n</emphasis> = ______</item>
+   <item><emphasis effect="italics">p′</emphasis> = ______</item>
+  </list>
+</problem>
+</exercise><exercise id="eip-55"><problem id="eip-818">
+ <para id="eip-idp4012128">Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P′</emphasis> in words.</para>
+</problem>
+<solution id="eip-907">
+ <para id="eip-idm101446224"><emphasis effect="italics">X</emphasis> is the number of “successes” where the woman makes the majority of the purchasing decisions for the household. <emphasis effect="italics">P</emphasis>′ is the percentage of households sampled where the woman makes the majority of the purchasing decisions for the household.</para>
+</solution>
+</exercise>
+<exercise id="eip-733"><problem id="eip-758">
+<para id="eip-idp9191824">Which distribution should you use for this problem?</para>
+</problem>
+</exercise><exercise id="eip-151"><problem id="eip-216">
+<para id="eip-idp83214256">Construct a 95% confidence interval for the population proportion of households where the women make the majority of the purchasing decisions. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+</problem>
+<solution id="eip-208">
+<para id="eip-idp62067840">CI: (0.5321, 0.6679)</para>
+<figure id="fs-idp73910688"><media id="eip-idp62068224" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.6 on the horizontal axis.  A central region is shaded between points 0.5321 and 0.6679."><image src="../../media/CNX_Stats_C08_M04_item002annoN.jpg" mime-type="image/jpeg" width="380"/></media></figure>
+<para id="eip-idp97751072"><emphasis effect="italics">EBM</emphasis>: 0.0679</para></solution>
+</exercise>
+
+ <exercise id="eip-839"><problem id="eip-166">
+  <para id="eip-idp170819776">List two difficulties the company might have in obtaining random results, if this survey were done by email.</para>
+</problem>
+</exercise><para id="eip-488"><newline/><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> Of 1,050 randomly selected adults, 360 identified themselves as manual laborers, 280 identified themselves as non-manual wage earners, 250 identified themselves as mid-level managers, and 160 identified themselves as executives. In the survey, 82% of manual laborers preferred trucks, 62% of non-manual wage earners preferred trucks, 54% of mid-level managers preferred trucks, and 26% of executives preferred trucks.
+</para><exercise id="eip-115"><problem id="eip-837">
+ <para id="eip-idm93454256">We are interested in finding the 95% confidence interval for the percent of executives who prefer trucks. Define random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′ in words.</para>
+</problem>
+<solution id="eip-307">
+ <para id="eip-idp374416"><emphasis effect="italics">X</emphasis> is the number of “successes” where an executive prefers a truck. <emphasis effect="italics">P</emphasis>′ is the percentage of executives sampled who prefer a truck.</para>
+</solution>
+</exercise>
+<exercise id="eip-47"><problem id="eip-638">
+<para id="eip-idm12643968">Which distribution should you use for this problem?</para>
+</problem>
+</exercise><exercise id="eip-593">
+<problem id="eip-434">
+<para id="eip-idp15976608">Construct a 95% confidence interval. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+</problem>
+<solution id="eip-284">
+<para id="eip-idp28777568">CI: (0.19432, 0.33068)</para>
+<figure id="fs-idm39446528"><media id="eip-idp150796640" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.26 on the horizontal axis.  A central region is shaded between points 0.1943 and 0.3307."><image src="../../media/CNX_Stats_C08_M04_item002anno.jpg" mime-type="image/jpeg" width="380"/></media></figure>
+</solution>
+</exercise>
+<exercise id="eip-218"><problem id="eip-768">
+<para id="eip-idp111500528">Suppose we want to lower the sampling error. What is one way to accomplish that?</para>
+</problem>
+</exercise><exercise id="eip-978"><problem id="eip-261">
+<para id="eip-idm82424912">The sampling error given in the survey is ±2%. Explain what the ±2% means.</para>
+</problem>
+<solution id="eip-188">
+<para id="eip-idp36786320">The sampling error means that the true mean can be 2% above or below the sample mean.</para>
+</solution>
+</exercise>
+ <para id="eip-770"><newline/><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> A poll of 1,200 voters asked what the most significant issue was in the upcoming election. Sixty-five percent answered the economy. We are interested in the population proportion of voters who feel the economy is the most important.</para><exercise id="eip-808"><problem id="eip-294">
+<para id="eip-idp73640048">Define the random variable <emphasis effect="italics">X</emphasis> in words.</para>
+</problem>
+</exercise><exercise id="eip-94"><problem id="eip-929">
+ <para id="eip-idp47473088">Define the random variable <emphasis effect="italics">P</emphasis>′ in words.</para>
+</problem>
+<solution id="eip-944">
+ <para id="eip-idp31035264"><emphasis effect="italics">P</emphasis>′ is the proportion of voters sampled who said the economy is the most important issue in the upcoming election.</para>
+</solution>
+</exercise>
+<exercise id="eip-425"><problem id="eip-398">
+<para id="eip-idm26324624">Which distribution should you use for this problem?</para>
+</problem>
+</exercise><exercise id="eip-820"><problem id="eip-679">
+<para id="eip-idp659904">Construct a 90% confidence interval, and state the confidence interval and the error bound.</para>
+</problem>
+<solution id="eip-87">
+<para id="eip-idp108579488">CI: (0.62735, 0.67265)</para>
+<para id="eip-idp108579872"><emphasis effect="italics">EBM</emphasis>: 0.02265</para>
+</solution>
+</exercise>
+<exercise id="eip-209"><problem id="eip-65">
+<para id="eip-idp87563392">What would happen to the confidence interval if the level of confidence were 95%?</para>
+</problem>
+</exercise><para id="fs-idp85734416"><newline/><emphasis effect="italics">Use the following information to answer the next 16 exercises:</emphasis> The Ice Chalet offers dozens of different beginning ice-skating classes. All of the class names are put into a bucket. The 5 P.M., Monday night, ages 8 to 12, beginning ice-skating class was picked. In that class were 64 girls and 16 boys. Suppose that we are interested in the true proportion of girls, ages 8 to 12, in all beginning ice-skating classes at the Ice Chalet. Assume that the children in the selected class are a random sample of the population.</para><exercise id="element-193"><problem id="id8180231">
+  <para id="element-79">What is being counted?</para>
+</problem>
+ <solution id="fs-idp114007216">
+  <para id="fs-idp114007472">The number of girls, ages 8 to 12, in the 5 P.M. Monday night beginning ice-skating class.</para>
+ </solution>
+</exercise>
+<exercise id="element-708"><problem id="id3220390">
+  <para id="element-976">In words, define the random variable <emphasis effect="italics">X</emphasis>.</para>
+</problem>
+</exercise><exercise id="element-138"><problem id="id9755908">
+<para id="element-23523">
+Calculate the following:
+ <list id="fs-idp23913648" list-type="enumerated" number-style="lower-alpha">
+  <item><emphasis effect="italics">x</emphasis> = _______</item>
+  <item><emphasis effect="italics">n</emphasis> = _______</item>
+  <item><emphasis effect="italics">p</emphasis>′ = _______</item>
+</list></para>
+</problem>
+<solution id="id3263628">
+ <list id="fs-idp45823456" list-type="enumerated" number-style="lower-alpha">
+  <item><emphasis effect="italics">x</emphasis> = 64</item>
+  <item><emphasis effect="italics">n</emphasis> = 80</item>
+  <item><emphasis effect="italics">p</emphasis>′ = 0.8</item>
+ </list>
+</solution>
+</exercise>
+<exercise id="element-296"><problem id="id8027106">
+  <para id="element-99">State the estimated distribution of <emphasis effect="italics">X</emphasis>. <emphasis effect="italics">X</emphasis>~________</para></problem>
+</exercise><exercise id="element-324"><problem id="id3370663">
+ <para id="element-84">Define a new random variable <emphasis effect="italics">P</emphasis>′. What is <emphasis effect="italics">p</emphasis>′ estimating?
+ </para>
+</problem>
+<solution id="id3301619">
+  <para id="element-393"><emphasis effect="italics">p</emphasis></para>
+</solution>
+</exercise>
+<exercise id="element-257"><problem id="id3304622">
+ <para id="element-442">In words, define the random variable <emphasis effect="italics">P</emphasis>′.</para>
+</problem>
+</exercise><exercise id="element-759">
+ <problem id="id9812677">
+ <para id="element-678">State the estimated distribution of <emphasis effect="italics">P</emphasis>′. Construct a 92% Confidence Interval for the true proportion of girls in the ages 8 to 12 beginning ice-skating classes at the Ice Chalet.</para>
+</problem>
+<solution id="fs-idm95519424">
+ <para id="fs-idm36051552"><m:math>
+  <m:mrow>
+   <m:msup>
+    <m:mi>P</m:mi>
+    <m:mo>′</m:mo>
+   </m:msup>
+   <m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="true">(</m:mo><m:mn>0.8</m:mn><m:mo>,</m:mo><m:msqrt>
+    <m:mrow>
+     <m:mfrac>
+      <m:mrow>
+       <m:mo stretchy="true">(</m:mo><m:mn>0.8</m:mn><m:mo stretchy="true">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.2</m:mn><m:mo stretchy="true">)</m:mo>
+      </m:mrow>
+      <m:mrow>
+       <m:mn>80</m:mn>
+      </m:mrow>
+     </m:mfrac>
+
+    </m:mrow>
+   </m:msqrt>
+   <m:mo stretchy="true">)</m:mo>
+  </m:mrow>
+ </m:math>. (0.72171, 0.87829).</para></solution>
+</exercise>
+<exercise id="element-669"><problem id="id9812907">
+  <para id="element-480">How much area is in both tails (combined)?</para>
+</problem>
+</exercise><exercise id="element-364"><problem id="id3366191">
+  <para id="element-382">How much area is in each tail?</para>
+</problem>
+<solution id="id3371993">
+  <para id="element-176">0.04</para>
+</solution>
+</exercise>
+
+ <exercise id="element-709"><problem id="id3722586">
+<para id="element-23487325">Calculate the following:
+ <list id="list-876238746" list-type="enumerated" number-style="lower-alpha">
+  <item>lower limit</item>
+  <item>upper limit</item>
+  <item>error bound</item>
+</list>
+</para>
+</problem>
+</exercise><exercise id="element-846"><problem id="id8490179">
+ <para id="element-622">The 92% confidence interval is _______.
+ </para></problem>
+<solution id="id9759141">
+  <para id="element-255">(0.72; 0.88)
+  </para></solution>
+</exercise>
+ <exercise id="element-592"><problem id="id9759165">
+  <para id="element-373">Fill in the blanks on the graph with the areas, upper and lower limits of the confidence interval, and the sample proportion.</para>
+<figure id="five-Ohno"><media id="id7994111" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."><image src="../../media/fig-ch08_08_01.jpg" mime-type="image/jpg" width="380"/></media></figure>
+</problem>
+ </exercise><exercise id="element-733"><problem id="id9811149">
+  <para id="element-17">
+  In one complete sentence, explain what the interval means.
+  </para>
+ </problem>
+  <solution id="fs-idp27973488"><para id="fs-idp27973616">With 92% confidence, we estimate the proportion of girls, ages 8 to 12, in a beginning ice-skating class at the Ice Chalet to be between 72% and 88%.</para></solution>
+</exercise>
+<exercise id="element-577"><problem id="id5516509">
+ <para id="element-707">Using the same <emphasis effect="italics">p</emphasis>′ and level of confidence, suppose that <emphasis effect="italics">n</emphasis> were increased to 100. Would the error bound become larger or smaller? How do you know?
+ </para>
+</problem>
+
+
+</exercise><exercise id="element-478"><problem id="id9923031">
+  <para id="element-717">Using the same <emphasis effect="italics">p</emphasis>′ and <emphasis effect="italics">n</emphasis> = 80, how would the error bound change if the confidence level were increased to 98%? Why?
+  </para></problem>
+  <solution id="fs-idm19388800"><para id="fs-idm19388672">The error bound would increase.  Assuming all other variables are kept constant, as the confidence level increases, the area under the curve corresponding to the confidence level becomes larger, which creates a wider interval and thus a larger error.</para></solution>
+</exercise><exercise id="element-154"><problem id="id3186484">
+  <para id="element-588">If you decreased the allowable error bound, why would the minimum sample size increase (keeping the same level of confidence)?</para>
+</problem>
+</exercise></section>
+<section id="fs-idm34727072" class="free-response">
+<title>Homework</title>
+<exercise id="eip-77"><problem id="eip-474">
+  <para id="eip-909">
+    Insurance companies are interested in knowing the population percent of drivers who always buckle up before riding in a car.</para>
+ <list id="fs-idm156928880" list-type="enumerated" number-style="lower-alpha">
+<item>When designing a study to determine this population proportion, what is the minimum number you would need to survey to be 95% confident that the population proportion is estimated to within 0.03?</item>
+<item>If it were later determined that it was important to be more than 95% confident and a new survey was commissioned, how would that affect the minimum number you would need to survey? Why?</item>
+</list>
+</problem>
+
+ <solution id="fs-idm22600112">
+  <list id="fs-idm22599856" list-type="enumerated" number-style="lower-alpha">
+   <item>1,068</item>
+   <item>The sample size would need to be increased since the critical value increases as the confidence level increases.</item>
+  </list>
+ </solution>
+
+</exercise>
+  <exercise id="eip-344"><problem id="eip-396">
+  <para id="eip-1">Suppose that the insurance companies did do a survey. They randomly surveyed 400 drivers and found that 320 claimed they always buckle up. We are interested in the population proportion of drivers who claim they always buckle up.</para>
+ <list id="eip-idp159069360" list-type="enumerated" number-style="lower-alpha">
+  <item><list id="eip-idp141224128" list-type="enumerated" number-style="lower-roman">
+<item><emphasis effect="italics">x</emphasis> = __________</item>
+<item><emphasis effect="italics">n</emphasis> = __________</item>
+   <item><emphasis effect="italics">p</emphasis>′ = __________</item>
+  </list>
+  </item>
+  <item>Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′, in words.</item>
+<item>Which distribution should you use for this problem? Explain your choice.</item>
+<item>Construct a 95% confidence interval for the population proportion who claim they always buckle up.
+ <list id="eip-idp7029968" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+<item>Sketch the graph.</item>
+</list></item>
+<item>If this survey were done by telephone, list three difficulties the companies might have in obtaining random results.</item>
+</list>
+</problem>
+ </exercise><exercise id="exerc4"><problem id="id5938058">
+   <para id="para31">According to a recent survey of 1,200 people, 61% feel that the president is doing an acceptable job. We are interested in the population proportion of people who feel the president is doing an acceptable job.</para>
+<list id="list31" list-type="enumerated" number-style="lower-alpha">
+  <item>Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′ in words.</item>
+<item>Which distribution should you use for this problem? Explain your choice.</item>
+<item>Construct a 90% confidence interval for the population proportion of people who feel the president is doing an acceptable job.
+<list id="list32" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+<item>Sketch the graph.</item>
+</list></item>
+</list></problem>
+ <solution id="id6199005">
+<list id="list_solution" list-type="enumerated" number-style="lower-alpha">
+  <item>
+   <para id="fs-idm2730480"><emphasis effect="italics">X</emphasis> = the number of people who feel that the president is doing an acceptable job;</para>
+   <para id="fs-idm2729840"><emphasis effect="italics">P</emphasis>′ = the proportion of people in a sample who feel that the president is doing an acceptable job.</para>
+  </item>
+  <item><m:math>
+ <m:mrow>
+  <m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0.61</m:mn><m:mo>,</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>0.61</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.39</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>1200</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math></item>
+  <item>
+   <list id="list_solution1" list-type="enumerated" number-style="lower-roman"><item>CI: (0.59, 0.63)</item>
+    <item>Check student’s solution</item>
+   </list></item></list></solution>
+ </exercise><exercise id="eip-idp49345824"><problem id="eip-idp49345952">
+ <para id="eip-idp49346080">An article regarding interracial dating and marriage recently appeared in the <cite-title>Washington Post</cite-title>. Of the 1,709 randomly selected adults, 315 identified themselves as Latino, 323 identified themselves as Black, 254 identified themselves as Asian, and 779 identified themselves as White. In this survey, 86% of Blacks said that they would welcome a White person into their families. Among Asians, 77% would welcome a White person into their families, 71% would welcome a Latino, and 66% would welcome a Black person.</para>
+   <list id="eip-idm65104512" list-type="enumerated" number-style="lower-alpha"><item>We are interested in finding the 95% confidence interval for the percent of all Black adults who would welcome a White person into their families. Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′, in words.</item>
+<item>Which distribution should you use for this problem? Explain your choice.</item>
+<item>Construct a 95% confidence interval.
+ <list id="eip-idm5084416" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+<item>Sketch the graph.</item>
+ </list></item>
+  </list></problem>
+ </exercise><exercise id="exe1"><problem id="id5306840">
+   <para id="para37">Refer to  the information in <link target-id="eip-idp49345824"/>.</para><list id="list37" list-type="enumerated" number-style="lower-alpha">
+<item>Construct three 95% confidence intervals.
+ <list id="eip-id1164398498310" list-type="enumerated" number-style="lower-roman">
+  <item>percent of all Asians who would welcome a White person into their families.</item>
+  <item>percent of all Asians who would welcome a Latino into their families.</item>
+  <item>percent of all Asians who would welcome a Black person into their families.</item>
+  </list>
+</item>
+<item>Even though the three point estimates are different, do any of the confidence intervals overlap? Which?</item>
+<item>For any intervals that do overlap, in words, what does this imply about the significance of the differences in the true proportions?</item>
+<item>For any intervals that do not overlap, in words, what does this imply about the significance of the differences in the true proportions?</item>
+</list>
+  </problem>
+  <solution id="fs-idp39314896">
+   <list id="fs-idm25153232" list-type="enumerated" number-style="lower-alpha">
+    <item>
+     <list id="fs-idm25152352" list-type="enumerated" number-style="lower-roman">
+      <item>(0.72, 0.82)</item>
+      <item>(0.65, 0.76)</item>
+      <item>(0.60, 0.72)</item>
+     </list>
+    </item>
+    <item>Yes, the intervals (0.72, 0.82) and (0.65, 0.76) overlap, and the intervals (0.65, 0.76) and (0.60, 0.72) overlap.</item>
+    <item>We can say that there does not appear to be a significant difference between the proportion of Asian adults who say that their families would welcome a White person into their families and the proportion of Asian adults who say that their families would welcome a Latino person into their families.</item>
+    <item>We can say that there is a significant difference between the proportion of Asian adults who say that their families would welcome a White person into their families and the proportion of Asian adults who say that their families would welcome a Black person into their families.</item>
+   </list>
+  </solution>
+</exercise><exercise id="exerr1"><problem id="id5266159">
+<para id="para41">Stanford University conducted a study of whether running is healthy for men and women over age 50. During the first eight years of the study, 1.5% of the 451 members of the 50-Plus Fitness Association died. We are interested in the proportion of people over 50 who ran and died in the same eight-year period.</para>
+<list id="list41_5" list-type="enumerated" number-style="lower-alpha">
+  <item>Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′ in words.</item>
+      <item>Which distribution should you use for this problem? Explain your choice.</item>
+      <item>Construct a 97% confidence interval for the population proportion of people over 50 who ran and died in the same eight–year period.
+       <list id="list42" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+        <item>Sketch the graph.</item>
+       </list></item>
+<item>Explain what a “97% confidence interval” means for this study.</item></list>
+</problem>
+</exercise><para id="id7660223">
+<exercise id="exercise111"><problem id="id5280738">
+  <para id="para45">A telephone poll of 1,000 adult Americans was reported in an issue of <cite-title>Time Magazine</cite-title>. One of the questions asked was “What is the main problem facing the country?” Twenty percent answered “crime.” We are interested in the population proportion of adult Americans who feel that crime is the main problem.</para>
+ <list id="list45" list-type="enumerated" number-style="lower-alpha">
+  <item>Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′ in words.</item>
+      <item>Which distribution should you use for this problem? Explain your choice.</item>
+  <item>Construct a 95% confidence interval for the population proportion of adult Americans who feel that crime is the main problem.
+   <list id="list45_5" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+<item>Sketch the graph.</item>
+  </list></item>
+<item>Suppose we want to lower the sampling error. What is one way to accomplish that?</item>
+<item>The sampling error given by Yankelovich Partners, Inc. (which conducted the poll) is ±3%. In one to three complete sentences, explain what the ±3% represents.</item>
+    </list>
+ </problem>
+ <solution id="fs-idm130896">
+  <list id="fs-idm130640" list-type="enumerated" number-style="lower-alpha"><item> <emphasis effect="italics">X</emphasis> = the number of adult Americans who feel that crime is the main problem; <emphasis effect="italics">P′</emphasis> = the proportion of adult Americans who feel that crime is the main problem</item>
+    <item>Since we are estimating a proportion, given <emphasis effect="italics">P′</emphasis> = 0.2 and <emphasis effect="italics">n</emphasis> = 1000, the distribution we should use is <m:math>
+ <m:mrow>
+  <m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:mn>0.2</m:mn><m:mo>,</m:mo><m:msqrt>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mn>0.2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.8</m:mn><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mrow>
+        <m:mn>1000</m:mn>
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  <m:mo>)</m:mo></m:mrow>
+ </m:mrow>
+</m:math>.</item>
+    <item>
+     <list id="fs-idm23582576" list-type="enumerated" number-style="lower-roman"><item>CI: (0.18, 0.22)</item>
+      <item>Check student’s solution.</item>
+     </list></item>
+    <item>One way to lower the sampling error is to increase the sample size.</item>
+    <item>The stated “± 3%” represents the maximum error bound.  This means that those doing the study are reporting a maximum error of 3%.  Thus, they estimate the percentage of adult Americans who feel that crime is the main problem to be between 18% and 22%.</item>
+  </list></solution>
+</exercise></para>
+<para id="id7660428"><exercise id="exerrrrcise1"><problem id="id5247798">
+  <para id="para47">Refer to <link target-id="exercise111" document=""/>. Another question in the poll was “[How much are] you worried about the quality of education in our schools?” Sixty-three percent responded “a lot”. We are interested in the population proportion of adult Americans who are worried a lot about the quality of education in our schools.</para><list id="list47" list-type="enumerated" number-style="lower-alpha">
+   <item>Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P</emphasis>′ in words.</item>
+      <item>Which distribution should you use for this problem? Explain your choice.</item>
+      <item>Construct a 95% confidence interval for the population proportion of adult Americans who are worried a lot about the quality of education in our schools.
+       <list id="list47_5" list-type="enumerated" number-style="lower-roman"><item>State the confidence interval.</item>
+<item>Sketch the graph.</item>
+       </list></item>
+<item>The sampling error given by Yankelovich Partners, Inc. (which conducted the poll) is ±3%. In one to three complete sentences, explain what the ±3% represents. </item></list>
+
+</problem>
+</exercise></para><para id="id7660726"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> According to a Field Poll, 79% of California adults (actual results are 400 out of 506 surveyed) feel that “education and our schools” is one of the top issues facing California. We wish to construct a 90% confidence interval for the true proportion of California adults who feel that education and the schools is one of the top issues facing California.</para><exercise id="exercise3289720"><problem id="id6273772">
+ <para id="para52">A point estimate for the true population proportion is:</para>
+<list id="list52" list-type="enumerated" number-style="lower-alpha">
+  <item>0.90</item>
+  <item>1.27</item>
+  <item>0.79</item>
+  <item>400</item>
+ </list></problem>
+<solution id="id5608706">
+ <para id="sol11">c</para>
+</solution>
+</exercise><exercise id="eip-idm27625664"><problem id="eip-idm27625536">
+<para id="eip-idm27625408">A 90% confidence interval for the population proportion is _______.</para>
+<list id="eip-idm10149840" list-type="enumerated" number-style="lower-alpha">
+ <item>(0.761, 0.820)</item>
+<item>(0.125, 0.188)</item>
+<item>(0.755, 0.826)</item>
+<item>(0.130, 0.183)</item></list>
+</problem>
+ </exercise><para id="id7661014"><newline/><emphasis effect="italics">Use the following information to answer the next two exercises:</emphasis> Five hundred and eleven (511) homes in a certain southern California community are randomly surveyed to determine if they meet minimal earthquake preparedness recommendations. One hundred seventy-three (173) of the homes surveyed met the minimum recommendations for earthquake preparedness, and 338 did not.</para><exercise id="exercising1"><problem id="id6353916">
+      <para id="para64">Find the confidence interval at the 90% Confidence Level for the true population proportion of southern California community homes meeting at least the minimum recommendations for earthquake preparedness.</para>
+<list id="list64" list-type="enumerated" number-style="lower-alpha"><item>(0.2975, 0.3796)</item>
+<item>(0.6270, 0.6959)</item>
+<item>(0.3041, 0.3730)</item>
+<item>(0.6204, 0.7025)</item></list></problem>
+    </exercise><exercise id="exer12345"><problem id="id5970138"><para id="para66">The point estimate for the population proportion of homes that do not meet the minimum recommendations for earthquake preparedness is ______.</para>
+<list id="list66" list-type="enumerated" number-style="lower-alpha">
+       <item>0.6614</item>
+<item>0.3386</item>
+<item>173</item>
+<item>338</item></list>
+</problem>
+<solution id="id6170513">
+ <para id="sol11jjkkasdf">a</para>
+</solution>
+    </exercise><exercise id="eip-44"><problem id="eip-123">
+  <para id="eip-54">On May 23, 2013, Gallup reported that of the 1,005 people surveyed, 76% of U.S. workers believe that they will continue working past retirement age. The confidence level for this study was reported at 95% with a ±3% margin of error.</para>
+<list id="eip-idp139727584424128" list-type="enumerated" number-style="lower-alpha">
+ <item>Determine the estimated proportion from the sample.</item>
+  <item>Determine the sample size.</item>
+  <item>Identify <emphasis effect="italics">CL</emphasis> and <emphasis effect="italics">α</emphasis>.</item>
+  <item>Calculate the error bound based on the information provided.</item>
+  <item>Compare the error bound in part d to the margin of error reported by Gallup. Explain any differences between the values.</item>
+  <item>Create a confidence interval for the results of this study.</item>
+  <item>A reporter is covering the release of this study for a local news station. How should she explain the confidence interval to her audience?</item>
+</list>
+</problem>
+
+   </exercise><exercise id="eip-126"><problem id="eip-785">
+  <para id="eip-804">A national survey of 1,000 adults was conducted on May 13, 2013 by Rasmussen Reports. It concluded with 95% confidence that 49% to 55% of Americans believe that big-time college sports programs corrupt the process of higher education.</para>
+<list id="eip-idp36043200" list-type="enumerated" number-style="lower-alpha">
+<item>Find the point estimate and the error bound for this confidence interval.</item>
+<item>Can we (with 95% confidence) conclude that more than half of all American adults believe this?</item>
+<item>Use the point estimate from part a and <emphasis effect="italics">n</emphasis> = 1,000 to calculate a 75% confidence interval for the proportion of American adults that believe that major college sports programs corrupt higher education.</item>
+<item>Can we (with 75% confidence) conclude that at least half of all American adults believe this?</item>
+</list>
+</problem>
+<solution id="eip-746">
+ <list id="eip-idp44228944" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">p′</emphasis> = <m:math>
+  <m:mrow>
+   <m:mfrac>
+    <m:mrow>
+     <m:mtext>(0</m:mtext><m:mtext>.55 + 0</m:mtext><m:mtext>.49)</m:mtext>
+    </m:mrow>
+    <m:mtext>2</m:mtext>
+   </m:mfrac>
+
+  </m:mrow>
+ </m:math> = 0.52; <emphasis effect="italics">EBP</emphasis> = 0.55 - 0.52 = 0.03</item>
+<item>No, the confidence interval includes values less than or equal to 0.50. It is possible that less than half of the population believe this.</item>
+<item><emphasis effect="italics">CL</emphasis> = 0.75, so <emphasis effect="italics">α</emphasis> = 1 – 0.75 = 0.25 and <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mi>α</m:mi>
+   <m:mn>2</m:mn>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0.125</m:mn><m:mo> </m:mo><m:msub>
+   <m:mi>z</m:mi>
+   <m:mrow>
+    <m:mfrac>
+     <m:mi>α</m:mi>
+     <m:mn>2</m:mn>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msub>
+  <m:mo>=</m:mo><m:mn>1.150</m:mn>
+ </m:mrow>
+</m:math>. (The area to the right of this <emphasis effect="italics">z</emphasis> is 0.125, so the area to the left is 1 – 0.125 = 0.875.)
+<newline/><m:math>
+ <m:mrow>
+  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.150</m:mn><m:mo stretchy="false">)</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mn>0.52</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.48</m:mn><m:mo stretchy="false">)</m:mo>
+     </m:mrow>
+     <m:mrow>
+      <m:mn>1</m:mn><m:mo>,</m:mo><m:mn>000</m:mn>
+     </m:mrow>
+    </m:mfrac>
+
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>≈</m:mo><m:mn>0.018</m:mn>
+ </m:mrow>
+</m:math>
+
+  <newline/>(<emphasis effect="italics">p</emphasis>′ - <emphasis effect="italics">EBP</emphasis>, <emphasis effect="italics">p</emphasis>′ + <emphasis effect="italics">EBP</emphasis>) = (0.52 – 0.018, 0.52 + 0.018) = (0.502, 0.538)
+</item>
+<item>Yes – this interval does not fall less than 0.50 so we can conclude that at least half of all American adults believe that major sports programs corrupt education – but we do so with only 75% confidence.</item>
+</list></solution>
+</exercise><exercise id="eip-571"><problem id="eip-111">
+  <para id="eip-154">Public Policy Polling recently conducted a survey asking adults across the U.S. about music preferences. When asked, 80 of the 571 participants admitted that they have illegally downloaded music.</para>
+<list id="eip-idm613264" list-type="enumerated" number-style="lower-alpha">
+ <item>Create a 99% confidence interval for the true proportion of American adults who have illegally downloaded music.</item>
+<item>This survey was conducted through automated telephone interviews on May 6 and 7, 2013. The error bound of the survey compensates for sampling error, or natural variability among samples. List some factors that could affect the survey’s outcome that are not covered by the margin of error.</item>
+<item>Without performing any calculations, describe how the confidence interval would change if the confidence level changed from 99% to 90%. </item>
+</list>
+</problem>
+</exercise><exercise id="eip-934"><problem id="eip-507">
+  <para id="eip-754">You plan to conduct a survey on your college campus to learn about the political awareness of students. You want to estimate the true proportion of college students on your campus who voted in the 2012 presidential election with 95% confidence and a margin of error no greater than five percent. How many students must you interview?</para>
+</problem>
+</exercise></section>
+ </content>
+<glossary>
+ <definition id="bidist">
+<term>Binomial Distribution</term>
+  <meaning id="id8181257">a discrete random variable (RV) which arises from Bernoulli trials; there are a fixed number, <emphasis effect="italics">n</emphasis>, of independent trials. “Independent” means that the result of any trial (for example, trial 1) does not affect the results of the following trials, and all trials are conducted under the same conditions. Under these circumstances the binomial RV <emphasis effect="italics">X</emphasis> is defined as the number of successes in <emphasis effect="italics">n</emphasis> trials. The notation is: <emphasis effect="italics">X</emphasis>~<emphasis effect="italics">B</emphasis>(<emphasis>n</emphasis>,<emphasis>p</emphasis>). The mean is <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> and the standard deviation is <emphasis effect="italics">σ</emphasis> = <m:math>
+   <m:msqrt>
+    <m:mrow>
+     <m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi>
+    </m:mrow>
+   </m:msqrt>
+
+  </m:math>. The probability of exactly <emphasis effect="italics">x</emphasis> successes in <emphasis effect="italics">n</emphasis> trials is <m:math>
+  <m:mi>P</m:mi>
+  <m:mo>(</m:mo>
+  <m:mi>X</m:mi>
+  <m:mo>=</m:mo>
+  <m:mi>x</m:mi>
+  <m:mo>)</m:mo>
+  <m:mo>=</m:mo>
+  <m:mfenced><m:mtable><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo> </m:mo>
+  <m:msup>
+    <m:mi>p</m:mi>
+    <m:mi>x</m:mi>
+  </m:msup>
+  <m:msup>
+    <m:mi>q</m:mi>
+    <m:mrow>
+      <m:mi>n</m:mi>
+      <m:mo>−</m:mo>
+      <m:mi>x</m:mi>
+    </m:mrow>
+  </m:msup>
+</m:math>.
+    </meaning>
+  </definition>
+<definition id="ebpbound">
+    <term>Error Bound for a Population Proportion (EBP)</term>
+    <meaning id="fs-id1166722361636">the margin of error; depends on the confidence level, the sample size, and the estimated (from the sample) proportion of successes.
+    </meaning>
+  </definition>
+</glossary>
+
+</document>

@@ -1,0 +1,223 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>The Correlation Coefficient r</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55719</md:content-id>
+  <md:title>The Correlation Coefficient r</md:title>
+  <md:abstract/>
+  <md:uuid>065f8600-39dc-4b26-8957-5c9760c6ae47</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-8888">As we begin this section we note that the type of data we will be working with has changed. Perhaps unnoticed, all the data we have been using is for a single variable. It may be from two samples, but it is still a univariate variable. The type of data described in the examples above and for any model of cause and effect is <term>bivariate</term> data — "bi" for two variables. In reality, statisticians use <term>multivariate</term> data, meaning many variables. </para><para id="eip-964">For our work we can classify data into three broad categories, time series data, cross-section data, and panel data. We met the first two very early on. Time series data measures a single unit of observation; say a person, or a company or a country, as time passes. What are measured will be at least two characteristics, say the person’s income, the quantity of a particular good they buy and the price they paid. This would be three pieces of information in one time period, say 1985. If we followed that person across time we would have those same pieces of information for 1985,1986, 1987, etc. This would constitute a times series data set. If we did this for 10 years we would have 30 pieces of information concerning this person’s consumption habits of this good for the past decade and we would know their income and the price they paid. </para><para id="eip-398">A second type of data set is for cross-section data. Here the variation is not across time for a single unit of observation, but across units of observation during one point in time. For a particular period of time we would gather the price paid, amount purchased, and income of many individual people. </para><para id="eip-940">A third type of data set is panel data. Here a panel of units of observation is followed across time. If we take our example from above we might follow 500 people, the unit of observation, through time, ten years, and observe their income, price paid and quantity of the good purchased. If we had 500 people and data for ten years for price, income and quantity purchased we would have 15,000 pieces of information. These types of data sets are very expensive to construct and maintain. They do, however, provide a tremendous amount of information that can be used to answer very important questions. As an example, what is the effect on the labor force participation rate of women as their family of origin, mother and father, age? Or are there differential effects on health outcomes depending upon the age at which a person started smoking? Only panel data can give answers to these and related questions because we must follow multiple people across time. The work we do here however will not be fully appropriate for data sets such as these. </para><para id="eip-80">Beginning with a set of data with two independent variables we ask the question: are these related? One way to visually answer this question is to create a scatter plot of the data. We could not do that before when we were doing descriptive statistics because those data were univariate. Now we have bivariate data so we can plot in two dimensions. Three dimensions are possible on a flat piece of paper, but become very hard to fully conceptualize. Of course, more than three dimensions cannot be graphed although the relationships can be measured mathematically.  </para><para id="eip-629">To provide mathematical precision to the measurement of what we see we use the correlation coefficient.  The correlation tells us something about the co-movement of two variables, but <emphasis>nothing</emphasis> about why this movement occurred. Formally, correlation analysis assumes that both variables being analyzed are <emphasis>independent</emphasis> variables. This means that neither one causes the movement in the other. Further, it means that neither variable is dependent on the other, or for that matter, on any other variable. Even with these limitations, correlation analysis can yield some interesting results.</para><para id="eip-113">The correlation coefficient, ρ (pronounced rho), is the mathematical statistic for a population that provides us with a measurement of the strength of a linear relationship between the two variables. For a sample of data, the statistic, r, developed by Karl Pearson in the early 1900s, is an estimate of the population correlation and is defined mathematically as:</para><equation class="unnumbered" id="eip-495"><label/><m:math>
+<m:mi>r</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac>
+<m:mo>Σ</m:mo><m:mo>(</m:mo><m:msub><m:mi>X</m:mi><m:mrow><m:mn>1</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>−</m:mo>
+<m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>1</m:mn></m:msub><m:mo>)</m:mo><m:mo>(</m:mo><m:msub><m:mi>X</m:mi><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>−</m:mo>
+<m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msub><m:mo>)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:msub><m:mi>s</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:mrow></m:msub><m:msub><m:mi>s</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow></m:msub>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><equation class="unnumbered" id="eip-936">OR</equation><equation id="eip-158"><label/><m:math>
+<m:mi>r</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mo>Σ</m:mo><m:msub><m:mi>X</m:mi><m:mrow><m:mn>1</m:mn><m:mi>i</m:mi></m:mrow></m:msub><m:msub><m:mi>X</m:mi><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow></m:msub>
+<m:mo>−</m:mo>
+<m:mi>n</m:mi><m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msub>
+</m:mrow>
+
+<m:mrow>
+<m:msqrt><m:mrow>
+<m:mo>(</m:mo><m:mo>Σ</m:mo><m:msub><m:mrow><m:msubsup><m:mi>X</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:mi>n</m:mi><m:msup><m:mrow><m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>1</m:mn></m:msub></m:mrow><m:mn>2</m:mn></m:msup><m:mo>)</m:mo>
+
+<m:mo>(</m:mo><m:mo>Σ</m:mo><m:msub><m:mrow><m:msubsup><m:mi>X</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:mi>n</m:mi><m:msup><m:mrow><m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:mrow><m:mn>2</m:mn></m:msup><m:mo>)</m:mo>
+</m:mrow></m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><para id="eip-441">where s<sub>x1</sub> and s<sub>x2</sub> are the standard deviations of the two independent variables X<sub>1</sub> and X<sub>2</sub>, <m:math><m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mrow><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:math> are the sample means of the two variables, and X<sub>1i</sub> and X<sub>2i</sub>  are the individual observations of X<sub>1</sub> and X<sub>2</sub>. The correlation coefficient r ranges in value from -1 to 1. The second equivalent formula is often used because it may be computationally easier. As scary as these formulas look they are really just the ratio of the covariance between the two variables and the product of their two standard deviations. That is to say, it is a measure of relative variances.</para><para id="eip-688">In practice all correlation and regression analysis will be provided through computer software designed for these purposes. Anything more than perhaps one-half a dozen observations creates immense computational problems. It was because of this fact that correlation, and even more so, regression, were not widely used research tools until after the advent of “computing machines”. Now the computing power required to analyze data using regression packages is deemed almost trivial by comparison to just a decade ago. </para><para id="eip-869">To visualize any <emphasis>linear</emphasis> relationship that may exist review the plot of a scatter diagrams of the standardized data. <link target-id="fs-id1170044566105"/> presents several scatter diagrams and the calculated value of r. In panels (a) and (b) notice that the data generally trend together, (a) upward and (b) downward. Panel (a) is an example of a positive correlation and panel (b) is an example of a negative correlation, or relationship. The sign of the correlation coefficient tells us if the relationship is a positive or negative (inverse) one. If all the values of X<sub>1</sub> and X<sub>2</sub> are on a straight line the correlation coefficient will be either 1 or -1 depending on whether the line has a positive or negative slope and the closer to one or negative one the stronger the relationship between the two variables.  BUT ALWAYS REMEMBER THAT THE CORRELATION COEFFICIENT DOES NOT TELL US THE SLOPE.</para><figure id="fs-id1170044566105"><media id="fs-id1170042278554" alt="...">
+<image mime-type="image/jpeg" src="../../media/fig-ch12_04_01m-46db.jpg" width="550"/></media></figure><para id="eip-783">Remember, all the correlation coefficient tells us is whether or not the data are linearly related. In panel (d) the variables obviously have some type of very specific relationship to each other, but the correlation coefficient is zero, indicating no <emphasis>linear</emphasis> relationship exists. </para><para id="eip-523">If you suspect a linear relationship between X<sub>1</sub> and X<sub>2</sub> then <emphasis effect="italics">r</emphasis> can measure how strong the linear relationship is.</para><list id="eip-781"><title>What the VALUE of <emphasis effect="italics">r</emphasis> tells us:</title><item>The value of <emphasis effect="italics">r</emphasis> is always between –1 and +1: –1 ≤ r ≤ 1.</item>
+<item>The size of the correlation <emphasis effect="italics">r</emphasis> indicates the strength of the <emphasis>linear</emphasis> relationship between X<sub>1</sub> and X<sub>2</sub>. Values of <emphasis effect="italics">r</emphasis> close to –1 or
+to +1 indicate a stronger linear relationship between  X<sub>1</sub> and X<sub>2</sub>.
+</item>
+<item>If <emphasis effect="italics">r</emphasis> = 0 there is absolutely no linear relationship between X<sub>1</sub> and X<sub>2</sub> <emphasis>(no linear correlation)</emphasis>.</item>
+<item>If <emphasis effect="italics">r</emphasis> = 1, there is perfect positive correlation. If <emphasis effect="italics">r</emphasis> = –1, there is perfect negative correlation. In both these cases, all of the original data points lie on a straight line: ANY straight line no matter what the slope. Of course, in the real world, this will not generally happen.</item></list><list id="eip-88"><title>What the SIGN of <emphasis effect="italics">r</emphasis> tells us</title><item>A positive value of <emphasis effect="italics">r</emphasis> means that when X<sub>1</sub> increases, X<sub>2</sub> tends to increase and when X<sub>1</sub> decreases, X<sub>2</sub>  tends to decrease <emphasis>(positive correlation)</emphasis>.</item>
+<item>A negative value of <emphasis effect="italics">r</emphasis> means that when X<sub>1</sub> increases, X<sub>2</sub> tends to decrease and when X<sub>1</sub> decreases, X<sub>2</sub> tends to increase <emphasis>(negative correlation)</emphasis>.</item>
+</list>
+<note id="fs-id1170798796487" class="finger"><title>Note</title>Strong correlation does not suggest that X<sub>1</sub> causes X<sub>2</sub> or X<sub>2</sub> causes X<sub>1</sub>. We say <emphasis>"correlation does not imply causation."</emphasis></note><section id="eip-188" class="practice"><exercise id="eip-idm338257568"><problem id="eip-idm881490176">
+<para id="eip-idm253167264">In order to have a correlation coefficient between traits A and B,  it is necessary to have:</para>
+
+<list id="eip-idm726974816" list-type="enumerated" number-style="lower-alpha"><item>one group of subjects, some of whom possess characteristics of trait A, the remainder possessing those of trait B
+</item>
+<item>measures of trait A on one group of subjects and of trait B on another group</item>
+<item>two groups of subjects, one which could be classified as A or not A, the other as B or not B</item>
+<item>two groups of subjects, one which could be classified as A or not A, the other as B or not B</item></list>
+</problem>
+
+<solution id="eip-idm587305680">
+<para id="eip-idm727088736">d</para>
+</solution></exercise><exercise id="eip-891"><problem id="eip-idm1239017024">
+  <para id="eip-idm1223572880">
+    Define the Correlation Coefficient and give a unique example of its use. 
+  </para>
+</problem>
+
+<solution id="eip-idm173081984">
+<para id="eip-idm188472800">A measure of the degree to which variation of one variable is related to variation in one or more other variables.  The most commonly used correlation coefficient indicates the degree to which variation in one variable is described by a straight line relation with another variable.</para>
+<para id="eip-idm1149933168">Suppose that sample information is available on family income and Years of schooling of the head of the household.  A correlation coefficient = 0 would indicate no linear association at all between these two variables.  A correlation of 1 would indicate perfect linear association (where all variation in family income could be associated with schooling and vice versa).</para>
+
+</solution>
+</exercise><exercise id="eip-153"><problem id="eip-677">
+  <para id="eip-663">
+    If the correlation between age of an auto and money spent for repairs is +.90
+  </para>
+
+<list id="eip-idm494839488" list-type="enumerated" number-style="lower-alpha"><item>81% of the variation in the money spent for repairs is explained by the age of the auto</item>
+<item>81% of money spent for repairs is unexplained by the age of the auto</item>
+<item>90% of the money spent for repairs is explained by the age of the auto</item>
+<item>none of the above</item>
+</list></problem>
+
+<solution id="eip-7">
+  <para id="eip-933">
+    a.  81% of the variation in the money spent for repairs is explained by the age of the auto
+  </para>
+</solution>
+</exercise><exercise id="eip-998"><problem id="eip-227">
+  <para id="eip-711">
+    Suppose that college grade-point average and verbal portion of an IQ test had a correlation of .40.  What percentage of the variance do these two have in common?</para>
+<list id="eip-idm917660256" list-type="enumerated" number-style="lower-alpha">
+<item>20</item>    
+<item>16</item>         
+<item>40</item>         
+<item>80</item> 
+</list>
+</problem>
+
+<solution id="eip-151">
+  <para id="eip-647">
+    b. 16
+  </para>
+</solution>
+</exercise><exercise id="eip-381"><problem id="eip-419">
+  <para id="eip-47">
+    True or false?  If false, explain why: The coefficient of determination can have values between -1 and +1.
+  </para>
+</problem>
+
+<solution id="eip-109">
+  <para id="eip-620">The coefficient of determination is r··2 with 0 ≤ r··2 ≤ 1, since -1 ≤ r ≤ 1.
+
+  </para></solution>
+</exercise><exercise id="eip-574"><problem id="eip-563">
+  <para id="eip-568">
+True or False: Whenever r is calculated on the basis of a sample, the value which we obtain for r is only an estimate of the true correlation coefficient which we would obtain if we calculated it for the entire population.
+  </para>
+</problem>
+
+<solution id="eip-995">
+  <para id="eip-86">
+    True
+  </para>
+</solution>
+</exercise><exercise id="eip-991"><problem id="eip-132">
+  <para id="eip-732">
+Under a "scatter diagram" there is a notation that the coefficient of correlation is .10.  What does this mean?
+  </para>
+<list id="eip-idm1463690576" list-type="enumerated" number-style="lower-alpha">
+<item>plus and minus 10% from the means includes about 68% of the cases</item>
+<item>one-tenth of the variance of one variable is shared with the other variable</item>
+<item>one-tenth of one variable is caused by the other variable</item>
+<item>on a scale from -1 to +1, the degree of linear relationship between the two variables is +.10</item>
+</list>
+
+</problem>
+
+<solution id="eip-557">
+  <para id="eip-756">d.  on a scale from -1 to +1, the degree of linear relationship between the two variables is +.10
+  </para></solution>
+</exercise><exercise id="eip-60"><problem id="eip-664">
+  <para id="eip-356">
+The correlation coefficient for X and Y is known to be zero.  We then can conclude that:
+  </para>
+
+<list id="eip-idm280839712" list-type="enumerated" number-style="lower-alpha">
+<item>X and Y have standard distributions</item>
+<item>the variances of X and Y are equal</item>
+<item>there exists no relationship between X and Y</item>
+<item>there exists no linear relationship between X and Y</item>
+<item>none of these</item>
+</list>
+
+</problem>
+
+<solution id="eip-183">
+  <para id="eip-528">
+d.  there exists no linear relationship between X and Y
+  </para>
+</solution>
+</exercise><exercise id="eip-559"><problem id="eip-40">
+  <para id="eip-393">
+    What would you guess the value of the correlation coefficient to be for the pair of variables: "number of man-hours worked" and  "number  of units of work completed"?
+
+  </para>
+<list id="eip-idm1550513936" list-type="enumerated" number-style="lower-alpha">
+<item>Approximately 0.9</item>
+<item>Approximately 0.4</item>
+<item>Approximately 0.0</item>
+<item>Approximately -0.4</item>
+<item>Approximately -0.9</item>
+</list>
+</problem>
+
+<solution id="eip-596">
+  <para id="eip-405">
+Approximately 0.9
+  </para>
+</solution>
+</exercise><exercise id="eip-564"><problem id="eip-435">
+  <para id="eip-366">
+    In a given group, the correlation between height measured in feet and weight measured in pounds is +.68.  Which of the following would alter the value of r?
+  </para>
+<list id="eip-idm299547328" list-type="enumerated" number-style="lower-alpha">
+<item>height is expressed centimeters.</item>
+<item>weight is expressed in Kilograms.</item>
+<item>both of the above will affect r.</item>
+<item>neither of the above changes will affect r.</item>
+</list>
+
+</problem>
+
+<solution id="eip-179">
+  <para id="eip-29">
+    d. neither of the above changes will affect r.
+  </para>
+</solution>
+</exercise></section> </content>
+<glossary>
+<definition id="fs-id1167000519824"><term>Bivariate</term>
+<meaning id="fs-id1167002660617">two variables are present in the model where one is the “cause” or independent variable and the other is the “effect” of dependent variable.
+</meaning>
+</definition>
+<definition id="fs-id1167006613095"><term>Multivariate</term>
+<meaning id="fs-id1167004847070">a system or model where more than one independent variable is being used to predict an outcome.  There can only ever be one dependent variable, but there is no limit to the number of independent variables.
+</meaning>
+</definition>
+<definition id="fs-id4305412"><term><m:math><m:mi>R</m:mi></m:math> – Correlation Coefficient</term>
+<meaning id="fs-id1167001806914">A number between −1 and 1 that represents the strength and direction of the relationship between “X” and “Y.”  The value for “<emphasis effect="italics">r</emphasis>” will equal 1 or −1 only if all the plotted points form a perfectly straight line.
+</meaning>
+</definition>
+
+<definition id="fs-id2011324"><term>Linear</term>
+<meaning id="fs-id2343270">a model that takes data and regresses it into a straight line equation.
+</meaning>
+</definition></glossary>
+</document>

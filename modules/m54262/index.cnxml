@@ -1,0 +1,258 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" class="introduction">
+  <title>Introduction</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m54262</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract/>
+  <md:uuid>524c11f5-250b-4861-8fbe-121c5f67c9f4</md:uuid>
+</metadata>
+
+<content>
+        <figure id="fs-idp163541072" class="splash"><media id="fs-idp141532880" alt="This photo shows branch lightening coming from a dark cloud and hitting the ground.">
+<image mime-type="image/jpg" src="../../media/CNX_Stats_C04_CON.jpg" width="500"/>
+</media>
+<caption>You can use probability and discrete random variables to calculate the likelihood of lightning striking the ground five times during a half-hour thunderstorm. (Credit: Leszek Leszczynski)</caption></figure><para id="introch04">A student takes a ten-question, true-false quiz. Because the student had such a busy schedule, he or she could not study and guesses randomly at each answer. What is the probability of the student passing the test with at least a 70%?</para><para id="element-804">Small companies might be interested in the number of long-distance phone calls their employees make during the peak time of the day. Suppose the historical average is 20 calls. What is the probability that the employees make more than 20 long-distance phone calls during the peak time?</para><para id="element-919">These two examples illustrate two different types of probability problems involving discrete random variables. Recall that discrete data are data that you can count, that is, the random variable can only take on whole number values. A <term>random variable</term> describes the outcomes of a statistical experiment in words. The values of a random variable can vary with each repetition of an experiment, often called a trial.</para><section id="randvarnot">
+<title>Random Variable Notation</title>
+<para id="element-197">The upper case letter <emphasis effect="italics">X</emphasis> denotes a random variable. Lower case letters like <emphasis effect="italics">x</emphasis> or <emphasis effect="italics">y</emphasis> denote the value of a random variable. If  <emphasis><emphasis effect="italics">X</emphasis> is a random variable, then <emphasis effect="italics">X</emphasis> is written in words, and <emphasis effect="italics">x</emphasis> is given as a number.</emphasis></para><para id="element-109">For example, let <emphasis effect="italics">X</emphasis> = the number of heads you get when you toss three fair coins. The sample space for the toss of three fair coins is <emphasis effect="italics">TTT</emphasis>; <emphasis effect="italics">THH</emphasis>; <emphasis effect="italics">HTH</emphasis>; <emphasis effect="italics">HHT</emphasis>; <emphasis effect="italics">HTT</emphasis>; <emphasis effect="italics">THT</emphasis>; <emphasis effect="italics">TTH</emphasis>; <emphasis effect="italics">HHH</emphasis>. Then, <emphasis effect="italics">x</emphasis> = 0, 1, 2, 3. <emphasis effect="italics">X</emphasis> is in words and <emphasis effect="italics">x</emphasis> is a number. Notice that for this example, the <emphasis effect="italics">x</emphasis> values are countable outcomes. Because you can count the possible values as whole numbers that <emphasis effect="italics">X</emphasis> can take on and the outcomes are random (the <emphasis effect="italics">x</emphasis> values 0, 1, 2, 3), <emphasis effect="italics">X</emphasis> is a discrete random variable.</para></section>
+<section id="fs-id5338192"><title>Probability Density Functions (PDF) for a Random Variable</title><para id="eip-8888">A <term>probability density function</term> or <term>probability distribution function</term> has two characteristics:</para><list id="element-yu2" list-type="enumerated" number-style="arabic"><item>Each probability is between zero and one, inclusive.</item>
+<item>The sum of the probabilities is one.</item>
+</list><para id="eip-677">A probability density function is a mathematical formula that calculates probabilities for specific types of events, what we have been calling experiments. There is a sort of magic to a probability density function (Pdf) partially because the same formula often describes very different types of events. For example, the binomial Pdf will calculate probabilities for flipping coins, yes/no questions on an exam, opinions of voters in an up or down opinion poll, indeed any binary event. Other probability density functions will provide probabilities for the time until a part will fail, when a customer will arrive at the turnpike booth, the number of telephone calls arriving at a central switchboard, the growth rate of a bacterium, and on and on. There are whole families of probability density functions that are used in a wide variety of applications, including medicine, business and finance, physics and engineering, among others. </para><para id="eip-731">For our needs here we will concentrate on only a few probability density functions as we develop the tools of inferential statistics.    </para></section><section id="fs-id1167364106606"><title>Counting Formulas and the Combinational Formula</title>
+<para id="fs-id1169298122566">To repeat, the probability of event A , P(A), is simply the number of ways the experiment will result in A, relative to the total number of possible outcomes of the experiment. </para><para id="eip-935">As an equation this is:
+
+</para><para id="eip-25"><equation class="unnumbered" id="eip-id1166740409179"><m:math><m:mi>P</m:mi><m:mo maxsize="100%">(</m:mo><m:mi>A</m:mi><m:mo maxsize="100%">)</m:mo> <m:mo>=</m:mo><m:mfrac><m:mrow><m:mtext>number of ways to get A</m:mtext></m:mrow><m:mtext>Total number of possible outcomes</m:mtext></m:mfrac></m:math></equation></para><para id="eip-612">When we looked at the sample space for flipping 3 coins we could easily write the full sample space and thus could easily count the number of events that met our desired result, e.g. x = 1 , where X is the random variable defined as the number of heads.</para><para id="eip-61">As we have larger numbers of items in the sample space, such as a full deck of 52 cards, the ability to write out the sample space becomes impossible. </para><para id="eip-566">We see that probabilities are nothing more than counting the events in each group we are interested in and dividing by the number of elements in the universe, or sample space. This is easy enough if we are counting sophomores in a Stat class, but in more complicated cases listing all the possible outcomes may take a life time. There are, for example, 36 possible outcomes from throwing just two six-sided dice where the random variable is the sum of the number of spots on the up-facing sides. If there were four dice then the total number of possible outcomes would become 1,296. There are more than 2.5 MILLION possible 5 card poker hands in a standard deck of 52 cards. Obviously keeping track of all these possibilities and counting them to get at a single probability would be tedious at best. </para><para id="eip-712">An alternative to listing the complete sample space and counting the number of elements we are interested in, is to skip the step of listing the sample space, and simply figuring out the number of elements in it and doing the appropriate division. If we are after a probability we really do not need to see each and every element in the sample space, we only need to know how many elements are there. Counting formulas were invented to do just this. They tell us the number of unordered subsets of a certain size that can be created from a set of unique elements. By unordered it is meant that, for example, when dealing cards, it does not matter if you got {ace, ace, ace, ace, king} or {king, ace, ace, ace, ace} or {ace, king, ace, ace, ace} and so on. Each of these subsets are the same because they each have 4 aces and one king.</para><section id="eip-100"><title>Combinational Formula</title><para id="eip-331"><equation id="eip-id1165013323910"><label/><m:math><m:mfenced><m:mtable><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo> </m:mo><m:mo>=</m:mo>
+<m:msub><m:mtext/><m:mi>n</m:mi></m:msub><m:msub><m:mi>C</m:mi><m:mi>x</m:mi></m:msub>
+<m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>!</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac></m:math></equation></para><para id="eip-604">This is the formula that tells the number of unique unordered subsets of size x that can be created from n unique elements. The formula is read “n combinatorial x”. Sometimes it is read as “n choose x." The exclamation point "!" is called a factorial and tells us to take all the numbers from 1 through the number before the ! and multiply them together thus 4! is 1·2·3·4=24. By definition 0! = 1. The formula is called the Combinatorial Formula. It is also called the Binomial Coefficient, for reasons that will be clear shortly. While this mathematical concept was understood long before 1653, Blaise Pascal is given major credit for his proof that he published in that year. Further, he developed a generalized method of calculating the values for combinatorials known to us as the Pascal Triangle. Pascal was one of the geniuses of an era of extraordinary intellectual advancement which included the work of Galileo, Rene Descartes, Isaac Newton, William Shakespeare and the refinement of the scientific method, the very rationale for the topic of this text. </para><para id="eip-774">Let’s find the hard way the total number of combinations of the four aces in a deck of cards if we were going to take them two at a time. The sample space would be:</para><para id="eip-486">S={Spade,Heart),(Spade, Diamond),(Spade,Club), (Diamond,Club),(Heart,Diamond),(Heart,Club)}</para><para id="eip-516">There are 6 combinations; formally, six unique unordered subsets of size 2 that can be created from 4 unique elements. To use the combinatorial formula we would solve the formula as follows:</para><para id="eip-410"><equation class="unnumbered" id="eip-id1165010727298"><label/><m:math><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>4</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>2</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced>
+<m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>!</m:mo><m:mn>2</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>·</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>1</m:mn><m:mo>·</m:mo><m:mn>2</m:mn><m:mo>·</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac>
+<m:mo>=</m:mo><m:mn>6</m:mn></m:math></equation></para><para id="eip-106">If we wanted to know the number of unique 5 card poker hands that could be created from a 52 card deck we simply compute:</para><para id="eip-959"><equation class="unnumbered" id="eip-id1171827580330"><label/><m:math><m:mfenced><m:mtable><m:mtr><m:mtd><m:mn>52</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>5</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced>
+</m:math></equation></para><para id="eip-927">where 52 is the total number of unique elements from which we are drawing and 5 is the size group we are putting them into.</para><para id="eip-132">With the combinatorial formula we can count the number of elements in a sample space without having to write each one of them down, truly a lifetime's work for just the number of 5 card hands from a deck of 52 cards. We can now apply this tool to a very important probability density function, the hypergeometric distribution. </para></section></section>
+<para id="eip-517">
+Remember, a probability density function computes probabilities for us. We simply put the appropriate numbers in the formula and we get the probability of specific events. However, for these formulas to work they must be applied only to cases for which they were designed. 
+</para><section id="fs-idp97044640" class="summary">
+<title>Chapter Review</title>
+<para id="fs-idm43618304">The characteristics of a probability distribution or density function (PDF) are as follows:</para><list id="fs-idm39706128" list-type="enumerated" number-style="arabic">
+<item>Each probability is between zero and one, inclusive (<emphasis effect="italics">inclusive</emphasis> means to include zero and one).</item>
+<item>The sum of the probabilities is one.</item>
+</list>
+</section>
+
+<section id="fs-idp69020960" class="practice">
+<title/>
+<para id="fs-idm83247344"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> A company wants to evaluate its attrition rate, in other words, how long new hires stay with the company. Over the years, they have established the following probability distribution.</para>
+
+<para id="fs-idm71612400">Let <emphasis effect="italics">X</emphasis> = the number of years a new hire will stay with the company.</para>
+
+<para id="fs-idm48855200">Let <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>) = the probability that a new hire will stay with the company <emphasis effect="italics">x</emphasis> years.</para>
+
+<exercise id="fs-idm11913472">
+<problem id="fs-idm62074368">
+<para id="fs-idm17761312">Complete <link target-id="M02_Ch03_tbl004" document=""/> using the data provided.</para><table id="M02_Ch03_tbl004" summary="">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry><emphasis effect="italics">x</emphasis></entry><entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry></row>
+</thead>
+<tbody>
+<row><entry>0</entry><entry>0.12</entry></row>
+<row><entry>1</entry><entry>0.18</entry></row>
+<row><entry>2</entry><entry>0.30</entry></row>
+<row><entry>3</entry><entry>0.15</entry></row>
+<row><entry>4</entry><entry/></row>
+<row><entry>5</entry><entry>0.10</entry></row>
+<row><entry>6</entry><entry>0.05</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-idp35913488">
+<table id="fs-idm128424048" summary="">
+<tgroup cols="2" align="center">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry><emphasis effect="italics">x</emphasis></entry><entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry></row>
+</thead>
+<tbody>
+<row><entry>0</entry><entry>0.12</entry></row>
+<row><entry>1</entry><entry>0.18</entry></row>
+<row><entry>2</entry><entry>0.30</entry></row>
+<row><entry>3</entry><entry>0.15</entry></row>
+<row><entry>4</entry><entry>0.10</entry></row>
+<row><entry>5</entry><entry>0.10</entry></row>
+<row><entry>6</entry><entry>0.05</entry></row>
+</tbody>
+</tgroup>
+</table>
+</solution>
+</exercise>
+
+<exercise id="fs-idm3556768"><problem id="fs-idm46583824">
+<para id="fs-idm39567616"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 4) = _______</para></problem>
+
+<!-- <solution id="fs-idm8550336">
+<para id="fs-idp109017952">0.10</para></solution> -->
+</exercise><exercise id="fs-idp21614176">
+<problem id="fs-idp34115424">
+<para id="fs-idp9314928"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ 5) = _______</para></problem>
+<solution id="fs-idm43709152"><para id="fs-idp98025120">0.10 + 0.05 = 0.15</para></solution>
+</exercise>
+
+<exercise id="fs-idp88464496"><problem id="fs-idm14331664">
+<para id="fs-idm3848192">On average, how long would you expect a new hire to stay with the company?</para>
+</problem>
+
+<!-- <solution id="fs-idm42046896">
+<para id="fs-idm60500016">0 + 0.18 + 0.60 + 0.45 + 0.40 + 0.50 + 0.30 = 2.43 years</para></solution> -->
+</exercise><exercise id="fs-idp18018320">
+<problem id="fs-idm39505296">
+<para id="fs-idm15015472">What does the column “<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)” sum to?</para></problem>
+<solution id="fs-idm46445984"><para id="fs-idp107818160">1</para></solution>
+</exercise>
+
+<para id="fs-idm61093248"><newline/><emphasis effect="italics">Use the following information to answer the next six exercises:</emphasis> A baker is deciding how many batches of muffins to make to sell in his bakery. He wants to make enough to sell every one and no fewer. Through observation, the baker has established a probability distribution.</para><table id="fs-idm43289680" summary="">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry><emphasis effect="italics">x</emphasis></entry><entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry></row>
+</thead>
+
+<tbody>
+<row><entry>1</entry><entry>0.15</entry></row>
+<row><entry>2</entry><entry>0.35</entry></row>
+<row><entry>3</entry><entry>0.40</entry></row>
+<row><entry>4</entry><entry>0.10</entry></row>
+</tbody>
+</tgroup>
+</table><exercise id="fs-idm2415264"><problem id="fs-idm15926960">
+<para id="fs-idm161865296">Define the random variable <emphasis effect="italics">X</emphasis>.</para></problem>
+
+<!-- <solution id="fs-idm3118640"><para id="fs-idm66349888">Let <emphasis effect="italics">X</emphasis> = the number of batches that the baker will sell.</para></solution> -->
+</exercise><exercise id="fs-idm14204160">
+<problem id="fs-idp91033728">
+<para id="fs-idp57653024">What is the probability the baker will sell more than one batch? <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 1) =  _______</para></problem>
+<solution id="fs-idm77654992">
+<para id="fs-idp67916960">0.35 + 0.40 + 0.10 = 0.85</para>
+</solution>
+</exercise>
+
+<exercise id="fs-idp60250832"><problem id="fs-idm40729216">
+<para id="fs-idm50895232">What is the probability the baker will sell exactly one
+batch? <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 1) =  _______</para>
+</problem>
+
+<!-- <solution id="fs-idp10419040">
+<para id="fs-idm18762736">0.15</para>
+</solution> -->
+</exercise><exercise id="fs-idp100680048">
+<problem id="fs-idm6782176">
+<para id="fs-idm12192384">On average, how many batches should the baker make?</para>
+</problem>
+<solution id="fs-idm19316912">
+<para id="fs-idp105326384">1(0.15) + 2(0.35) + 3(0.40) + 4(0.10) = 0.15 + 0.70 + 1.20 + 0.40 = 2.45</para>
+</solution>
+</exercise>
+
+
+<para id="fs-idp26455296"><newline/><emphasis effect="italics">Use the following information to answer the next four exercises:</emphasis> Ellen has music practice three days a week. She practices for all of the three days 85% of the time, two days 8% of the time, one day 4% of the time, and no days 3% of the time. One week is selected at random.</para><exercise id="fs-idp80631856"><problem id="fs-idm38076272">
+<para id="fs-idp104793536">Define the random variable <emphasis effect="italics">X</emphasis>.</para>
+</problem>
+
+<!-- <solution id="fs-idp17316544">
+<para id="fs-idp31866688">Let <emphasis effect="italics">X</emphasis> = the number of days Ellen attends practice per week.</para>
+</solution> -->
+</exercise><exercise id="fs-idp105752304">
+<problem id="fs-idp98145520">
+<para id="fs-idp107988576">Construct a probability distribution table for the data.</para></problem>
+<solution id="fs-idp99205248">
+<table id="fs-idp25484752" summary="Table...">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead>
+<row><entry><emphasis effect="italics">x</emphasis></entry><entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry></row>
+</thead>
+<tbody>
+<row><entry>0</entry><entry>0.03</entry></row>
+<row><entry>1</entry><entry>0.04</entry></row>
+<row><entry>2</entry><entry>0.08</entry></row>
+<row><entry>3</entry><entry>0.85</entry></row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise>
+
+<exercise id="fs-idm12290976"><problem id="fs-idp102593056">
+<para id="fs-idm54887552">We know that for a probability distribution function to be discrete, it must have two characteristics. One is that the sum of the probabilities is one. What is the other characteristic?</para></problem>
+
+<!-- <solution id="fs-idm2771440">
+<para id="fs-idp5181696">Each probability is between zero and one, inclusive.</para>
+</solution> -->
+</exercise><para id="fs-idp62348192"><newline/><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> Javier volunteers in community events each month. He does not do more than five events in a month. He attends exactly five events 35% of the time, four events 25% of the time, three events 20% of the time, two events 10% of the time, one event 5% of the time, and no events 5% of the time.</para><exercise id="fs-idp45989040">
+<problem id="fs-idp107021152">
+<para id="fs-idp1699120">Define the random variable <emphasis effect="italics">X</emphasis>.</para>
+</problem>
+<solution id="fs-idp75230208">
+<para id="fs-idp99642016">Let <emphasis effect="italics">X</emphasis> = the number of events Javier volunteers for each month.</para>
+</solution>
+</exercise>
+
+<exercise id="fs-idp99208272"><problem id="fs-idp102814688">
+<para id="fs-idm38746304">What values does <emphasis effect="italics">x</emphasis> take on?</para></problem>
+
+<!-- <solution id="fs-idm3527216">
+<para id="fs-idp5781360">0, 1, 2, 3, 4, 5</para>
+</solution> -->
+</exercise><exercise id="fs-idm44182368">
+<problem id="fs-idm60355136">
+<para id="fs-idp106732192">Construct a PDF table.</para>
+</problem>
+<solution id="fs-idp9913600">
+<table id="fs-idm82394208" summary="Table...">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<thead><row><entry><emphasis effect="italics">x</emphasis></entry><entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry></row></thead>
+<tbody>
+<row><entry>0</entry><entry>0.05</entry></row>
+<row><entry>1</entry><entry>0.05</entry></row>
+<row><entry>2</entry><entry>0.10</entry></row>
+<row><entry>3</entry><entry>0.20</entry></row>
+<row><entry>4</entry><entry>0.25</entry></row>
+<row><entry>5</entry><entry>0.35</entry></row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise>
+
+<exercise id="fs-idm51474800"><problem id="fs-idp105026400">
+<para id="fs-idm62777200">Find the probability that Javier volunteers for less than three events each month. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 3) = _______</para></problem>
+
+<!-- <solution id="fs-idp58199168">
+<para id="fs-idm17855008">0.05 + 0.05 + 0.10 = 0.20</para>
+</solution> --></exercise><exercise id="fs-idm38193104">
+<problem id="fs-idm1831824">
+<para id="fs-idp54225264">Find the probability that Javier volunteers for at least one event each month. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 0) = _______</para>
+</problem>
+<solution id="fs-idm39812848">
+<para id="fs-idp75344688">1 – 0.05 = 0.95</para></solution>
+</exercise>
+
+
+</section> </content>
+  
+
+<glossary>
+<definition id="randvar">
+<term>Random Variable (RV)</term>
+<meaning id="id1167466326893">a characteristic of interest in a population being studied; common notation for variables are upper case Latin letters <emphasis effect="italics">X</emphasis>, <emphasis effect="italics">Y</emphasis>, <emphasis effect="italics">Z</emphasis>,...; common notation for a specific value from the domain (set of all possible values of a variable) are lower case Latin letters <emphasis effect="italics">x, y,</emphasis> and <emphasis effect="italics">z</emphasis>. For example, if <emphasis effect="italics">X</emphasis> is the number of children in a family, then <emphasis effect="italics">x</emphasis> represents a specific integer 0, 1, 2, 3,.... Variables in statistics differ from variables in intermediate algebra in the two following ways. 
+<list id="arrvee" list-type="bulleted">
+<item>The domain of the random variable (RV) is not necessarily a numerical set; the domain may be expressed in words; for example, if <emphasis effect="italics">X</emphasis> = hair color then the domain is {black, blond, gray, green, orange}.</item>
+<item>We can tell what specific value <emphasis effect="italics">x</emphasis> the random variable <emphasis effect="italics">X</emphasis> takes only after performing the experiment.</item></list>
+    </meaning>
+  </definition>
+<definition id="pdfelab">
+<term>Probability Distribution Function (PDF)</term>
+<meaning id="id1165407642895">a mathematical description of a discrete random variable (<emphasis effect="italics">RV</emphasis>), given either in the form of an equation (formula) or in the form of a table listing all the possible outcomes of an experiment and the probability associated with each outcome.</meaning></definition>
+</glossary>
+</document>

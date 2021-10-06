@@ -1,0 +1,261 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Predicting with a Regression Equation</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m56649</md:content-id>
+  <md:title>Predicting with a Regression Equation</md:title>
+  <md:abstract/>
+  <md:uuid>2bd93ff3-504b-44b7-907c-d46e3fe57a10</md:uuid>
+</metadata>
+
+<content>
+<para id="eip-49">
+One important value of an estimated regression equation is its ability to predict the effects on Y of a change in one or more values of the independent variables. The value of this is obvious. Careful policy cannot be made without estimates of the effects that may result. Indeed, it is the desire for particular results that drive the formation of most policy. Regression models can be, and have been, invaluable aids in forming such policies.  
+</para><para id="eip-814">The Gauss-Markov theorem assures us that the point estimate of the impact  on the dependent variable derived by putting in the equation the hypothetical values of the independent variables one wishes to simulate will result in an estimate of the dependent variable which is minimum variance and unbiased. That is to say that from this equation comes the best unbiased point estimate of y given the values of x.</para><equation class="unnumbered" id="eip-758"><label/><m:math>
+ <m:mi>ŷ</m:mi>
+ <m:mo>=</m:mo>
+ <m:msub>
+  <m:mi>b</m:mi> 
+  <m:mn>0</m:mn> 
+ </m:msub>
+ <m:mo>+</m:mo>
+ <m:mi>b</m:mi>
+ <m:mo>,</m:mo>
+ <m:msub>
+  <m:mi>X</m:mi>
+  <m:mrow>
+   <m:mn>1</m:mn>
+   <m:mi>i</m:mi> 
+  </m:mrow> 
+ </m:msub> 
+ <m:mo>+</m:mo>
+ <m:mo>⋯</m:mo>
+ <m:mo>+</m:mo>
+ <m:msub>
+  <m:mi>b</m:mi>
+  <m:mi>k</m:mi> 
+ </m:msub>
+ <m:msub>
+  <m:mi>X</m:mi>
+   <m:mrow> 
+     <m:mi>k</m:mi>
+     <m:mi>i</m:mi>
+   </m:mrow>
+  </m:msub>
+ </m:math>
+   
+ 
+ </equation><para id="eip-427">Remember that point estimates do not carry a particular level of probability, or level of confidence, because points have no “width” above which there is an area to measure. This was why we developed confidence intervals for the mean and proportion earlier. The same concern arises here also. There are actually two different approaches to the issue of developing estimates of changes in the independent variable, or variables, on the dependent variable. The first approach wishes to measure the <term>expected mean</term> value of y from a specific change in the value of x: this specific value implies the expected value. Here the question is: what is the <emphasis>mean</emphasis> impact on y that would result from multiple hypothetical experiments on y at this specific value of x. Remember that there is a variance around the estimated parameter of x and thus each experiment will result in a bit of a different estimate of the predicted value of y. </para><para id="eip-915">The second approach to estimate the effect of a specific value of x on y treats the event as a single experiment: you choose x and multiply it times the coefficient and that provides a single estimate of y. Because this approach acts as if there were a single experiment the variance that exists in the parameter estimate is larger than the variance associated with the expected value approach. </para><para id="eip-596">The conclusion is that we have two different ways to predict the effect of values of the independent variable(s) on the dependent variable and thus we have two different intervals. Both are correct answers to the question being asked, but there are two different questions. To avoid confusion, the first case where we are asking for the <term>expected value</term> of the mean of the estimated y, is called a <term>confidence interval</term> as we have named this concept before. The second case, where we are asking for the estimate of the impact on the dependent variable y of a single experiment using a value of x, is called the <term>prediction interval</term>. The test statistics for these two interval measures within which the estimated value of y will fall are:</para><equation class="unnumbered" id="eip-604"><label/><title>Confidence Interval for Expected Value of Mean Value of y for x=x<sub>p</sub></title><m:math>
+ <m:mi>ŷ</m:mi>
+ <m:mo>=</m:mo>
+ <m:mo>±</m:mo>
+ <m:msub>
+  <m:mi>t</m:mi>
+  <m:mrow>
+  <m:mfrac bevelled="true">
+  <m:mi>α</m:mi>
+  <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+ </m:msub>
+
+ <m:msub>
+  <m:mi>s</m:mi>
+  <m:mi>e</m:mi>
+ </m:msub>
+
+ <m:mo>(</m:mo>
+  <m:msqrt>
+   <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>n</m:mi>
+   </m:mfrac>
+   <m:mo>+</m:mo>
+   <m:mfrac>
+    <m:mrow>
+    <m:msup>
+    <m:mrow>
+     <m:mo>(</m:mo>
+     <m:msub>
+     <m:mi>x</m:mi>
+     <m:mi>p</m:mi> 
+     </m:msub>
+     <m:mo>-</m:mo>
+     <m:mover>
+       <m:mi>x</m:mi>
+       <m:mo>–</m:mo>
+     </m:mover>
+     <m:mo>)</m:mo>
+     </m:mrow>
+     <m:mn>2</m:mn>
+     </m:msup>
+    </m:mrow>
+    <m:mrow>
+    <m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub>
+    </m:mrow>
+    </m:mfrac>
+</m:msqrt>
+<m:mo>)</m:mo> 
+</m:math>
+ 
+  </equation><para id="eip-685"><newline/></para><equation class="unnumbered" id="eip-756"><label/><title>Prediction Interval for an Individual y for x = x<sub>p</sub></title><m:math>
+ <m:mi>ŷ</m:mi>
+ <m:mo>=</m:mo>
+ <m:mo>±</m:mo>
+ <m:msub>
+  <m:mi>t</m:mi>
+  <m:mrow>
+  <m:mfrac bevelled="true">
+  <m:mi>α</m:mi>
+  <m:mn>2</m:mn>
+  </m:mfrac>
+  </m:mrow>
+ </m:msub>
+
+ <m:msub>
+  <m:mi>s</m:mi>
+  <m:mi>e</m:mi>
+ </m:msub>
+
+ <m:mo>(</m:mo>
+  <m:msqrt>
+   <m:mn>1</m:mn>
+   <m:mo>+</m:mo>
+   <m:mfrac>
+     <m:mn>1</m:mn>
+     <m:mi>n</m:mi>
+   </m:mfrac>
+   <m:mo>+</m:mo>
+   <m:mfrac>
+    <m:mrow>
+    <m:msup>
+    <m:mrow>
+     <m:mo>(</m:mo>
+     <m:msub>
+     <m:mi>x</m:mi>
+     <m:mi>p</m:mi> 
+     </m:msub>
+     <m:mo>-</m:mo>
+     <m:mover>
+       <m:mi>x</m:mi>
+       <m:mo>–</m:mo>
+     </m:mover>
+     <m:mo>)</m:mo>
+     </m:mrow>
+     <m:mn>2</m:mn>
+     </m:msup>
+    </m:mrow>
+    <m:mrow>
+    <m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub>
+    </m:mrow>
+    </m:mfrac>
+</m:msqrt>
+<m:mo>)</m:mo> 
+</m:math>
+ 
+  </equation><para id="eip-561">Where s<sub>e</sub> is the standard deviation of the error term and s<sub>x</sub> is the standard deviation of the x variable. </para><para id="eip-827">The mathematical computations of these two test statistics are complex.  Various computer regression software packages provide programs within the regression functions to provide answers to inquires of estimated predicted values of y given various values chosen for the x variable(s). It is important to know just which interval is being tested in the computer package because the difference in the size of the standard deviations will change the size of the interval estimated. This is shown in <link target-id="eip-id1169839936561"/>.</para><figure id="eip-id1169839936561"><media id="eip-id1169856507994" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_10m.jpg" width="420"/></media><caption>Prediction and confidence intervals for regression equation; 95% confidence level.</caption></figure><para id="eip-593"><link target-id="eip-id1169839936561"/> shows visually the difference the standard deviation makes in the size of the estimated intervals. The confidence interval, measuring the expected value of the dependent variable, is smaller than the prediction interval for the same level of confidence. The expected value method assumes that the experiment is conducted multiple times rather than just once as in the other method. The logic here is similar, although not identical, to that discussed when developing the relationship between the sample size and the confidence interval using the Central Limit Theorem. There, as the number of experiments increased, the distribution narrowed and the confidence interval became tighter around the expected value of the mean.</para><para id="eip-110">It is also important to note that the intervals around a point estimate are highly dependent upon the range of data used to estimate the equation regardless of which approach is being used for prediction. Remember that all regression equations go through the point of means, that is, the mean value of y and the mean values of all independent variables in the equation. As the value of x chosen to estimate the associated value of y is further from the point of means the width of the estimated interval around the point estimate increases. Choosing values of x beyond the range of the data used to estimate the equation possess even greater danger of creating estimates with little use; very large intervals, and risk of error.  <link target-id="eip-id1168948991273"/> shows this relationship. </para><figure id="eip-id1168948991273"><media id="eip-id1168941583486" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_09m.jpg" width="420"/></media><caption>Confidence interval for an individual value of x, X<sub>p</sub>, at 95% level of confidence</caption></figure><para id="eip-961"><link target-id="eip-id1168948991273"/> demonstrates the concern for the quality of the estimated interval whether it is a prediction interval or a confidence interval. As the value chosen to predict y, X<sub>p</sub> in the graph, is further from the central weight of the data, <m:math><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math>, we see the interval expand in width even while holding constant the level of confidence. This shows that the precision of any estimate will diminish as one tries to predict beyond the largest weight of the data and most certainly will degrade rapidly for predictions beyond the range of the data. Unfortunately, this is just where most predictions are desired. They can be made, but the width of the confidence interval may be so large as to render the prediction useless. Only actual calculation and the particular application can determine this, however.</para><example id="element-438">
+<para id="element-546">Recall the <link document="m55838" target-id="element-22">third exam/final exam example </link>.</para><para id="eip-804">We found the equation of the best-fit line for the final exam grade as a function of the grade on the third-exam. We can now use the least-squares regression line for prediction. Assume the coefficient for X was determined to be significantly different from zero. </para><para id="element-12498">Suppose you want to estimate, or predict, the mean final exam score of statistics students who received 73 on the third exam. The exam scores <emphasis>(<emphasis effect="italics">x</emphasis>-values)</emphasis> range from 65 to 75. Since 73 is between the <emphasis effect="italics">x</emphasis>-values 65 and 75, we feel comfortable to substitute <emphasis effect="italics">x</emphasis> = 73 into the equation. Then:</para><equation class="unnumbered" id="element-735"><label/><m:math>
+ <m:mrow>
+  <m:mover accent="true">
+   <m:mi>y</m:mi>
+   <m:mo>^</m:mo>
+  </m:mover>
+  <m:mo>=</m:mo><m:mo>−</m:mo><m:mn>173.51</m:mn><m:mo>+</m:mo><m:mn>4.83</m:mn><m:mo stretchy="false">(</m:mo><m:mn>73</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>179.08</m:mn>
+ </m:mrow>
+</m:math>
+</equation>
+
+<para id="fs-idm74881792">We predict that statistics students who earn a grade of 73 on the third exam will earn a grade of 179.08 on the final exam, on average.</para><exercise id="element-770">
+<problem id="id1170592391444">
+  <para id="element-464">a. What would you predict the final exam score to be for a student who scored a 66 on the third exam?  </para></problem>
+
+<solution id="id1170583280560">
+  <para id="element-444">a. 145.27<newline count="2"/></para></solution>
+</exercise>
+
+
+<exercise id="element-844">
+<problem id="id1170601334360">
+  <para id="element-306">b. What would you predict the final exam score to be for a student who scored a 90 on the third exam?
+  </para></problem>
+
+<solution id="id3981938" print-placement="end">
+  <para id="element-380">b. The <emphasis effect="italics">x</emphasis> values in the data are between 65 and 75. Ninety is outside of the domain of the observed <emphasis effect="italics">x</emphasis> values in the data (independent variable), so you cannot reliably predict the final exam score for this student. (Even though it is possible to enter 90 into the equation for <emphasis effect="italics">x</emphasis> and calculate a corresponding <emphasis effect="italics">y</emphasis> value, the <emphasis effect="italics">y</emphasis> value that you get will have a confidence interval that may not be meaningful.)
+<newline/><newline/>
+
+To understand really how unreliable the prediction can be outside of the observed <emphasis effect="italics">x</emphasis> values observed in the data, make the substitution <emphasis effect="italics">x</emphasis> = 90 into the equation.
+<newline/><newline/>
+<m:math>
+<m:mover>
+<m:mi>y</m:mi>
+<m:mo>^</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mn>–173.51</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4.83</m:mn>
+<m:mo>(</m:mo>
+<m:mn>90</m:mn>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mn>261.19</m:mn>
+</m:math>
+<newline/><newline/>
+The final-exam score is predicted to be 261.19.  The largest the final-exam score can be is 200.
+<newline/>
+</para></solution>
+</exercise>
+</example><section id="eip-238" class="practice"><exercise id="eip-idm1091365904"><problem id="eip-idm325263152">
+<para id="eip-idm344494560">True or False?  If False, correct it: Suppose you are performing a simple linear regression of Y on X and you test the hypothesis that the slope <emphasis effect="italics">β</emphasis> is zero against a two-sided alternative.  You have <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:math> observations and your computed test (t) statistic is 2.6.  Then your <emphasis effect="italics">P</emphasis>-value is given by .01 &lt; <emphasis effect="italics">P</emphasis> &lt; .02, which gives borderline significance (i.e. you would reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math> at <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>.02</m:mn></m:math> but fail to reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math> at <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>.01</m:mn></m:math>).</para></problem>
+
+<solution id="eip-idm1268218496">
+<para id="eip-idm348148384">True.</para>
+<para id="eip-idm1105280640">t<sub>(critical, df = 23, two-tailed, <emphasis effect="italics">α</emphasis> = .02)</sub> = ± 2.5</para><para id="eip-idm352384464">t<sub>critical, df = 23, two-tailed, <emphasis effect="italics">α</emphasis> = .01</sub> = ± 2.8</para></solution></exercise>
+
+
+<exercise id="eip-idm1306196096"><problem id="eip-idm1104597568">
+<para id="eip-idm1356804336">An economist is interested in the possible influence of "Miracle Wheat" on the average yield of wheat in a district.  To do so he fits a linear regression of average yield per year against year after introduction of "Miracle Wheat" for a ten year period.</para>
+
+<para id="eip-idm1271320608">The fitted trend line is</para>
+<para id="eip-idm362976224"><m:math><m:msub><m:mrow><m:mover><m:mi>y</m:mi><m:mn>^</m:mn></m:mover></m:mrow><m:mi>j</m:mi></m:msub><m:mo>=</m:mo><m:mn>80</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:msub><m:mi>X</m:mi><m:mi>j</m:mi></m:msub></m:math></para><para id="eip-idm328626160">(<m:math><m:msub><m:mi>Y</m:mi><m:mi>j</m:mi></m:msub></m:math>: Average yield in <emphasis effect="italics">j</emphasis> year after introduction)</para><para id="eip-idm1376935968">(<m:math><m:msub><m:mi>X</m:mi><m:mi>j</m:mi></m:msub></m:math>: <emphasis effect="italics">j</emphasis> year after introduction).</para><list id="eip-idm381337072" list-type="enumerated" number-style="lower-alpha">
+<item>What is the estimated average yield for the fourth year after introduction?</item>
+<item>Do you want to use this trend line to estimate yield for, say, 20 years after introduction?  Why?  What would your estimate be?</item>
+</list>
+
+</problem>
+<solution id="eip-idm1066077232">
+<list id="eip-idm1058883680" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mn>80</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mn>4</m:mn><m:mo>=</m:mo><m:mn>86</m:mn></m:math></item>
+<item>No. Most business statisticians would not want to extrapolate that far.  If someone did, the estimate would be 110, but some other factors probably come into play with 20 years.</item>
+</list></solution></exercise>
+
+
+<exercise id="eip-idm1062518032"><problem id="eip-idm374035936">
+<para id="eip-idm1293335856">An interpretation of <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.5</m:mn></m:math> is that the following part of the Y-variation is associated with which variation in X:</para><list id="eip-idm1270814752" list-type="enumerated" number-style="lower-alpha">
+<item>most</item>            
+<item>half</item>                    
+<item>very little</item>     
+<item>one quarter</item>     
+<item>none of these</item>     
+</list>
+
+</problem>
+
+<solution id="eip-idm1538906896">
+<para id="eip-idm1059402944">d. one quarter</para>
+</solution></exercise>
+
+
+<exercise id="eip-idm1101146128"><problem id="eip-idm1083813008">
+<para id="eip-idm1084700592">Which of the following values of <emphasis effect="italics">r</emphasis> indicates the most accurate prediction of one variable from another?</para><list id="eip-idm1333723856" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>1.18</m:mn></m:math></item>            
+<item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−.77</m:mn></m:math></item>                    
+<item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>.68</m:mn></m:math></item>        
+</list></problem>
+
+<solution id="eip-idm1273738416">
+<para id="eip-idm1230933408">b. <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>−.77</m:mn></m:math></para></solution></exercise>
+
+</section>
+
+ </content>
+
+</document>

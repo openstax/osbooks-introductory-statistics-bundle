@@ -1,0 +1,2075 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>The F Distribution and the F-Ratio</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55712</md:content-id>
+  <md:title>The F Distribution and the F-Ratio</md:title>
+  <md:abstract/>
+  <md:uuid>7815fdb7-a74f-4a7a-b352-477c8fe09464</md:uuid>
+</metadata>
+
+<content>
+<para id="me001">The distribution used for the hypothesis test is a new one. It is called the <term><emphasis effect="italics">F</emphasis> distribution</term>, invented by George Snedecor but named in honor of Sir Ronald Fisher, an English statistician. The <emphasis effect="italics">F</emphasis> statistic is a ratio (a fraction). There are two sets of degrees of freedom; one for the numerator and one for the denominator.</para><para id="element-674">For example, if <emphasis effect="italics">F</emphasis> follows an <emphasis effect="italics">F</emphasis> distribution and the number of degrees of freedom for the numerator is four, and the number of degrees of freedom for the denominator is ten, then <emphasis effect="italics">F</emphasis> ~ <emphasis effect="italics">F<sub>4,10</sub></emphasis>.</para>
+
+<para id="element-967">To calculate the <term><emphasis effect="italics">F</emphasis> ratio</term>, two estimates of the variance are made.</para>
+
+<list id="element-236" list-type="enumerated">
+<item><term>Variance between samples</term><emphasis>:</emphasis> An estimate of <emphasis effect="italics">σ</emphasis><sup>2</sup> that is the variance of the sample means multiplied by <emphasis effect="italics">n</emphasis> (when the sample sizes are the same.). If the samples are different sizes, the variance between samples is weighted to account for the different sample sizes. The variance is also called <emphasis>variation due to treatment or explained variation.</emphasis></item>
+<item><term>Variance within samples</term><emphasis>:</emphasis> An estimate of <emphasis effect="italics">σ</emphasis><sup>2</sup> that is the average of the sample variances (also known as a pooled variance). When the sample sizes are different, the variance within samples is weighted. The variance is also called the <emphasis>variation due to error or unexplained variation.</emphasis></item>
+</list>
+
+<list id="eip-197">
+<item><emphasis effect="italics">SS</emphasis><sub>between</sub> = the <term>sum of squares</term> that represents the variation among the different samples</item>
+<item><emphasis effect="italics">SS</emphasis><sub>within</sub> = the sum of squares that represents the variation within samples that is due to chance.</item>
+</list>
+
+<para id="eip-668">To find a "sum of squares" means to add together squared quantities that, in some
+cases, may be weighted. We used sum of squares to calculate the sample variance and
+the sample standard deviation in <link document="m53786"/>.</para><para id="eip-39"><emphasis effect="italics">MS</emphasis> means "<term>mean square</term>." <emphasis effect="italics">MS</emphasis><sub>between</sub> is the variance between groups, and <emphasis effect="italics">MS</emphasis><sub>within</sub> is the variance within groups.</para>
+
+<para id="eip-12"><emphasis>Calculation of Sum of Squares and Mean Square</emphasis>
+<list id="eip-idm81361504" list-type="bulleted"><item><emphasis effect="italics">k</emphasis> = the number of different groups</item>
+<item><emphasis effect="italics">n<sub>j</sub></emphasis> = the size of the <emphasis effect="italics">j<sup>th</sup></emphasis> group</item>
+<item><emphasis effect="italics">s<sub>j</sub></emphasis> = the sum of the values in the <emphasis effect="italics">j<sup>th</sup></emphasis> group</item>
+<item><emphasis effect="italics">n</emphasis> = total number of all the values combined (total sample size: ∑<emphasis effect="italics">n<sub>j</sub></emphasis>)</item>
+<item><emphasis effect="italics">x</emphasis> = one value: ∑<emphasis effect="italics">x</emphasis> = ∑<emphasis effect="italics">s<sub>j</sub></emphasis></item>
+<item>Sum of squares of all values from every group combined: ∑<emphasis effect="italics">x</emphasis><sup>2</sup></item>
+<item>Between group variability: <emphasis effect="italics">SS</emphasis><sub>total</sub> = ∑<emphasis effect="italics">x</emphasis><sup>2</sup> –  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mstyle displaystyle="true">
+<m:mo>∑</m:mo> <m:mrow>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:mstyle>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</item>
+<item>Total sum of squares: ∑<emphasis effect="italics">x</emphasis><sup>2</sup> –  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>∑</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</item>
+<item>Explained variation: sum of squares representing variation among the different samples: <newline/><emphasis effect="italics">SS</emphasis><sub>between</sub> =  <m:math>
+<m:mrow>
+<m:mo>∑</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub><m:mi>s</m:mi><m:mi>j</m:mi></m:msub><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>n</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mo>∑</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</item>
+
+<item>Unexplained variation: sum of squares representing variation within samples due to chance:  <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>total</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>–</m:mo><m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:math> </item>
+<item><emphasis effect="italics">df</emphasis>'s for different groups (<emphasis effect="italics">df</emphasis>'s for the numerator): <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">k</emphasis> – 1</item>
+
+<item>Equation for errors within samples (<emphasis effect="italics">df</emphasis>'s for the denominator): <emphasis effect="italics">df</emphasis><sub>within</sub> = <emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis></item>
+<item>Mean square (variance estimate) explained by the different groups: <emphasis effect="italics">MS</emphasis><sub>between</sub> =  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:msub><m:mi>f</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </item>
+
+<item>Mean square (variance estimate) that is due to chance (unexplained): <emphasis effect="italics">MS</emphasis><sub>within</sub> =  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:msub>
+<m:mi>f</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </item>
+</list></para>
+
+<para id="zx"><emphasis effect="italics">MS</emphasis><sub>between</sub> and <emphasis effect="italics">MS</emphasis><sub>within</sub> can be written as follows:</para>
+<list id="eip-822"><item> <m:math>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:msub>
+<m:mi>f</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </item>
+
+<item> <m:math>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mi>w</m:mi><m:mi>i</m:mi><m:mi>t</m:mi><m:mi>h</m:mi><m:mi>i</m:mi><m:mi>n</m:mi>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mi>w</m:mi><m:mi>i</m:mi><m:mi>t</m:mi><m:mi>h</m:mi><m:mi>i</m:mi><m:mi>n</m:mi>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:msub>
+<m:mi>f</m:mi>
+<m:mrow>
+<m:mi>w</m:mi><m:mi>i</m:mi><m:mi>t</m:mi><m:mi>h</m:mi><m:mi>i</m:mi><m:mi>n</m:mi>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mi>w</m:mi><m:mi>i</m:mi><m:mi>t</m:mi><m:mi>h</m:mi><m:mi>i</m:mi><m:mi>n</m:mi>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>−</m:mo><m:mi>k</m:mi>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</item>
+</list>
+<para id="element-138">The one-way ANOVA test depends on the fact that <emphasis effect="italics">MS</emphasis><sub>between</sub> can be influenced by population differences among means of the several groups. Since <emphasis effect="italics">MS</emphasis><sub>within</sub> compares values of each group to its own group mean, the fact that group means might be different does not affect <emphasis effect="italics">MS</emphasis><sub>within</sub>.</para>
+<para id="element-807">The null hypothesis says that all groups are samples from populations having the same normal distribution. The alternate hypothesis says that at least two of the sample groups come from populations with different normal distributions. If the null hypothesis is true, <emphasis effect="italics">MS</emphasis><sub>between</sub> and <emphasis effect="italics">MS</emphasis><sub>within</sub> should both estimate the same value.</para>
+
+<note id="eip-82">
+<label/>
+<title>Note</title>
+<para id="eip-idp56014144">The null hypothesis says that all the group population means are equal. The hypothesis of equal means implies that the populations have the same normal distribution, because it is assumed that the populations are normal and that they have equal variances.</para></note>
+
+<para id="fs-idp125283568"><title><emphasis effect="italics">F</emphasis>-Ratio or <emphasis effect="italics">F</emphasis> Statistic</title>
+ <m:math>
+<m:mrow>
+<m:mi>F</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</para>
+<para id="element-712">If <emphasis effect="italics">MS</emphasis><sub>between</sub> and <emphasis effect="italics">MS</emphasis><sub>within</sub> estimate the same value (following the belief that <emphasis effect="italics">H<sub>0</sub></emphasis> is true), then the <emphasis effect="italics">F</emphasis>-ratio should be approximately equal to one. Mostly, just sampling errors would contribute to variations away from one. As it turns out, <emphasis effect="italics">MS</emphasis><sub>between</sub> consists of the population variance plus a variance produced from the differences between the samples. <emphasis effect="italics">MS</emphasis><sub>within</sub> is an estimate of the population variance. Since variances are always positive, if the null hypothesis is false, <emphasis effect="italics">MS</emphasis><sub>between</sub> will generally be larger than <emphasis effect="italics">MS</emphasis><sub>within</sub>.Then the <emphasis effect="italics">F</emphasis>-ratio will be larger than one. However, if the population effect is small, it is not unlikely that <emphasis effect="italics">MS</emphasis><sub>within</sub> will be larger in a given sample.</para>
+<para id="eip-611">The foregoing calculations were done with groups of different sizes. If the groups are the same size, the calculations simplify somewhat and the <emphasis effect="italics">F</emphasis>-ratio can be written as:</para>
+
+<para id="fs-idp2223584"><title><emphasis effect="italics">F</emphasis>-Ratio Formula when the groups are the same size</title>
+ <m:math>
+<m:mrow>
+<m:mi>F</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>⋅</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:msub>
+<m:mrow/>
+<m:mrow>
+<m:mtext>pooled</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+<list id="eip-389">
+<title>where ...</title>
+<item><emphasis effect="italics">n</emphasis> = the sample size</item>
+<item> <emphasis effect="italics">df</emphasis><sub>numerator</sub> = <emphasis effect="italics">k</emphasis> – 1</item>
+
+<item> <emphasis effect="italics">df</emphasis><sub>denominator</sub> = <emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis></item>
+
+<item><emphasis effect="italics">s</emphasis><sup>2</sup> pooled = the mean of the sample variances (pooled variance)</item>
+
+<item> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math>  = the variance of the sample means</item>
+</list><para id="eip-580">Data are typically put into a table for easy viewing.  One-Way ANOVA results are often displayed in this manner by computer software.
+
+<table id="eip-id1172021872456" summary="General One-Way ANOVA Table with 3 rows and 4 columns.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Source of variation</entry>
+<entry>Sum of squares (<emphasis effect="italics">SS</emphasis>)</entry>
+<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>
+<entry>Mean square (<emphasis effect="italics">MS</emphasis>)</entry>
+<entry><emphasis effect="italics">F</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Factor <newline/>(Between)</entry>
+<entry><emphasis effect="italics">SS</emphasis>(Factor)</entry>
+<entry><emphasis effect="italics">k</emphasis> – 1</entry>
+<entry><emphasis effect="italics">MS</emphasis>(Factor) = <emphasis effect="italics">SS</emphasis>(Factor)/(<emphasis effect="italics">k</emphasis> – 1)</entry>
+<entry><emphasis effect="italics">F</emphasis> = <emphasis effect="italics">MS</emphasis>(Factor)/<emphasis effect="italics">MS</emphasis>(Error)</entry>
+</row>
+<row>
+<entry>Error <newline/>(Within)</entry>
+<entry><emphasis effect="italics">SS</emphasis>(Error)</entry>
+<entry><emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis></entry>
+<entry><emphasis effect="italics">MS</emphasis>(Error) = <emphasis effect="italics">SS</emphasis>(Error)/(<emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis>)</entry>
+<entry/>   
+</row>
+<row>
+<entry>Total</entry>
+<entry><emphasis effect="italics">SS</emphasis>(Total)</entry>
+<entry><emphasis effect="italics">n</emphasis> – 1</entry>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+
+<example id="eip-546"><para id="eip-125">Three different diet plans are to be tested for mean weight loss.  The entries in the table are the weight losses for the different plans. The one-way ANOVA results are shown in <link target-id="eip-id2754369"/>.</para><table id="eip-id2754369" summary="The Table consists of 3 columns: CNN, Fox and Local. The table entries are the mean time, in minutes, that people watch their favorite news station on CNN, Fox or the local station.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Plan 1: <emphasis effect="italics">n</emphasis><sub>1</sub> = 4</entry>
+<entry>Plan 2: <emphasis effect="italics">n</emphasis><sub>2</sub> = 3</entry>
+<entry>Plan 3: <emphasis effect="italics">n</emphasis><sub>3</sub> = 3</entry> 
+</row>
+</thead>
+<tbody>
+<row>
+<entry>5</entry>
+<entry>3.5</entry>
+<entry>8</entry>
+</row>
+<row>
+<entry>4.5</entry>
+<entry>7</entry>
+<entry>4</entry>
+</row>
+<row>
+<entry>4</entry>
+<entry/>
+<entry>3.5</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>4.5</entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><para id="fs-idp93901056"><emphasis effect="italics">s</emphasis><sub>1</sub> = 16.5, <emphasis effect="italics">s</emphasis><sub>2</sub> =15, <emphasis effect="italics">s</emphasis><sub>3</sub> = 15.5</para><para id="fs-idp76691888">Following are the calculations needed to fill in the one-way ANOVA table. The table is used to conduct a hypothesis test.</para>
+<equation id="fs-idp76692400"> <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>e</m:mi><m:mi>t</m:mi><m:mi>w</m:mi><m:mi>e</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>∑</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>n</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>∑</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</equation>
+<equation id="fs-idm399264">
+ <m:math>
+<m:mrow>
+<m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
+<m:mrow>
+<m:msubsup>
+<m:mi>s</m:mi>
+<m:mn>1</m:mn>
+<m:mn>2</m:mn>
+</m:msubsup>
+
+</m:mrow>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msubsup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+<m:mn>2</m:mn>
+</m:msubsup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msubsup>
+<m:mi>s</m:mi>
+<m:mn>3</m:mn>
+<m:mn>2</m:mn>
+</m:msubsup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msub>
+<m:mi>s</m:mi>
+<m:mn>1</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msub>
+<m:mo>+</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mn>3</m:mn>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</equation>
+
+<para id="eip-idp15158384">where <emphasis effect="italics">n</emphasis><sub>1</sub> = 4, <emphasis effect="italics">n</emphasis><sub>2</sub> = 3, <emphasis effect="italics">n</emphasis><sub>3</sub> = 3  and  <emphasis effect="italics">n</emphasis> = <emphasis effect="italics">n</emphasis><sub>1</sub> + <emphasis effect="italics">n</emphasis><sub>2</sub> + <emphasis effect="italics">n</emphasis><sub>3</sub> = 10</para><equation class="unnumbered" id="fs-idp1558352"><label/><m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>16.5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>15</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>+</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>15.5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mn>3</m:mn>
+</m:mfrac>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mn>16.5</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>15.5</m:mn>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</equation><equation id="fs-idp47211392">
+ <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>e</m:mi><m:mi>t</m:mi><m:mi>w</m:mi><m:mi>e</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2.2458</m:mn>
+</m:mrow>
+</m:math> 
+</equation>
+
+<equation id="fs-idm43777664"> <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mi>o</m:mi><m:mi>t</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>∑</m:mo><m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:mo>∑</m:mo><m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</equation><equation id="fs-idp28622176"> <m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mn>5</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mn>4.5</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mn>3</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mn>3.5</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mn>7</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mn>4.5</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mn>8</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mn>4</m:mn>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>+</m:mo><m:msup>
+<m:mrow>
+<m:mn>3.5</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+</m:math> 
+</equation>
+
+<equation id="fs-idp99714192"> <m:math>
+<m:mrow>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>4.5</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3.5</m:mn><m:mo>+</m:mo><m:mn>7</m:mn><m:mo>+</m:mo><m:mn>4.5</m:mn><m:mo>+</m:mo><m:mn>8</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>3.5</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </equation>
+
+<equation id="fs-idp13819792"> <m:math>
+<m:mrow>
+<m:mo>=</m:mo><m:mn>244</m:mn><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mn>47</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>244</m:mn><m:mo>−</m:mo><m:mn>220.9</m:mn>
+</m:mrow>
+</m:math> 
+</equation>
+
+<equation id="fs-idm45074976">
+ <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mi>o</m:mi><m:mi>t</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>23.1</m:mn>
+</m:mrow>
+</m:math> </equation>
+
+<equation id="fs-idp85849072">
+ <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mi>i</m:mi><m:mi>t</m:mi><m:mi>h</m:mi><m:mi>i</m:mi><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mi>o</m:mi><m:mi>t</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>e</m:mi><m:mi>t</m:mi><m:mi>w</m:mi><m:mi>e</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+</m:math> </equation>
+
+<equation id="fs-idp97238064">
+ <m:math>
+<m:mrow>
+<m:mo>=</m:mo><m:mo> </m:mo><m:mn>23.1</m:mn><m:mo>−</m:mo><m:mn>2.2458</m:mn>
+</m:mrow>
+</m:math> 
+</equation>
+
+<equation id="fs-idp19006144">
+ <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>w</m:mi><m:mi>i</m:mi><m:mi>t</m:mi><m:mi>h</m:mi><m:mi>i</m:mi><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>20.8542</m:mn>
+</m:mrow>
+</m:math> 
+</equation>
+
+
+<table id="eip-id1172005012068" summary="General One-Way ANOVA Table with 3 rows and 4 columns.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Source of variation</entry>
+<entry>Sum of squares (<emphasis effect="italics">SS</emphasis>)</entry>
+<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>
+<entry>Mean square (<emphasis effect="italics">MS</emphasis>)</entry>
+<entry><emphasis effect="italics">F</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Factor <newline/>(Between)</entry>
+<entry><emphasis effect="italics">SS</emphasis>(Factor) <newline/>= <emphasis effect="italics">SS</emphasis>(Between) <newline/>= 2.2458</entry>
+<entry><emphasis effect="italics">k</emphasis> – 1 <newline/>= 3 groups – 1 <newline/>= 2</entry>
+<entry><emphasis effect="italics">MS</emphasis>(Factor) <newline/>= <emphasis effect="italics">SS</emphasis>(Factor)/(<emphasis effect="italics">k</emphasis> – 1)<newline/> = 2.2458/2 <newline/>= 1.1229</entry>
+<entry><emphasis effect="italics">F</emphasis> =<newline/> <emphasis effect="italics">MS</emphasis>(Factor)/<emphasis effect="italics">MS</emphasis>(Error) <newline/>= 1.1229/2.9792 <newline/>= 0.3769</entry>
+</row>
+<row>
+<entry>Error <newline/>(Within)</entry>
+<entry><emphasis effect="italics">SS</emphasis>(Error) <newline/>= <emphasis effect="italics">SS</emphasis>(Within) <newline/>= 20.8542</entry>
+<entry><emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis> <newline/>= 10 total data – 3 groups <newline/>= 7</entry>
+<entry><emphasis effect="italics">MS</emphasis>(Error) <newline/>= <emphasis effect="italics">SS</emphasis>(Error)/(<emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis>) <newline/>= 20.8542/7 <newline/>= 2.9792</entry>
+<entry/>   
+</row>
+<row>
+<entry>Total</entry>
+<entry><emphasis effect="italics">SS</emphasis>(Total) <newline/>= 2.2458 + 20.8542 <newline/>= 23.1</entry>
+<entry><emphasis effect="italics">n</emphasis> – 1 <newline/>= 10 total data – 1 <newline/>= 9</entry>
+<entry/>
+<entry/></row>
+
+
+</tbody>
+
+
+</tgroup>
+</table></example>
+
+<note id="fs-idp19091024" class="statistics try finger">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm48661072">
+<problem id="fs-idp24724224">
+<para id="fs-idp86837680">As part of an experiment to see how different types of soil cover would affect slicing tomato production, Marist College students grew tomato plants under different soil cover conditions. Groups of three plants each had one of the following treatments</para>
+<list id="fs-idp86838320" list-type="bulleted">
+<item>bare soil</item>
+<item>a commercial ground cover</item>
+<item>black plastic</item>
+<item>straw</item>
+<item>compost</item>
+</list>
+<para id="fs-idm49310544">All plants grew under the same conditions and were the same variety.  Students recorded the weight (in grams) of tomatoes produced by each of the <emphasis effect="italics">n</emphasis> = 15 plants:</para>
+
+<table id="fs-idm49309984" summary="">
+<tgroup cols="5">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row><entry>Bare: <emphasis effect="italics">n</emphasis><sub>1</sub> = 3</entry>	<entry>Ground Cover: <emphasis effect="italics">n</emphasis><sub>2</sub> = 3</entry>	<entry>Plastic: <emphasis effect="italics">n</emphasis><sub>3</sub> = 3</entry>	<entry>Straw: <emphasis effect="italics">n</emphasis><sub>4</sub> = 3</entry> <entry>Compost: <emphasis effect="italics">n</emphasis><sub>5</sub> = 3</entry></row>
+</thead>
+<tbody>
+<row><entry>2,625</entry>	<entry>5,348</entry>	<entry>6,583</entry>	<entry>7,285</entry>	<entry>6,277</entry></row>
+<row><entry>2,997</entry>	<entry>5,682</entry>	<entry>8,560</entry>	<entry>6,897</entry>	<entry>7,818</entry></row>
+<row><entry>4,915</entry>	<entry>5,482</entry>	<entry>3,830</entry>	<entry>9,230</entry>	<entry>8,677</entry></row>
+
+</tbody>
+</tgroup>
+</table>
+<para id="fs-idp30767328"><newline/>Create the one-way ANOVA table.</para></problem>
+
+<solution id="fs-idp130292784">
+<label/>
+<para id="fs-idp49360912">Enter the data into lists L1, L2, L3, L4 and L5. Press STAT and arrow over to TESTS. Arrow down to ANOVA. Press ENTER and enter L1, L2, L3, L4, L5). Press ENTER. The table was filled in with the results from the calculator.</para>
+
+
+<para id="fs-idp100345264">One-Way ANOVA table:</para>
+
+<table id="fs-idp5531824" summary="..">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Source of variation</entry>
+<entry>Sum of squares (<emphasis effect="italics">SS</emphasis>)</entry>
+<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>
+<entry>Mean square (<emphasis effect="italics">MS</emphasis>)</entry>
+<entry><emphasis effect="italics">F</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Factor (Between)</entry>
+<entry>36,648,561</entry>
+<entry>5 – 1 = 4</entry>
+<entry> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>36</m:mn><m:mo>,</m:mo><m:mn>648</m:mn><m:mo>,</m:mo><m:mn>561</m:mn>
+</m:mrow>
+<m:mn>4</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>162</m:mn><m:mo>,</m:mo><m:mn>140</m:mn>
+</m:mrow>
+</m:math> 
+</entry>
+<entry> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>9</m:mn><m:mo>,</m:mo><m:mn>162</m:mn><m:mo>,</m:mo><m:mn>140</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn><m:mo>,</m:mo><m:mn>044</m:mn><m:mo>,</m:mo><m:mn>672.6</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>4.4810</m:mn>
+</m:mrow>
+</m:math> 
+</entry>
+</row>
+<row>
+<entry>Error (Within)</entry>
+<entry>20,446,726</entry>
+<entry>15 – 5 = 10</entry>
+<entry> <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>20</m:mn><m:mo>,</m:mo><m:mn>446</m:mn><m:mo>,</m:mo><m:mn>726</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>10</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>044</m:mn><m:mo>,</m:mo><m:mn>672.6</m:mn>
+</m:mrow>
+</m:math> </entry>
+<entry/>
+</row>
+<row>
+<entry>Total</entry>
+<entry>57,095,287</entry>
+<entry>15 – 1 = 14</entry>
+<entry/>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table></solution>
+</exercise>
+</note>
+
+
+<para id="element-260"><emphasis>The one-way ANOVA hypothesis test is always right-tailed</emphasis> because larger <emphasis effect="italics">F</emphasis>-values are way out in the right tail of the <emphasis effect="italics">F</emphasis>-distribution curve and tend to make us reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para><example id="eip-353">
+<exercise id="eip-334">
+<problem id="eip-98">
+<para id="eip-924">Let’s return to the slicing tomato exercise in <link document="m55712" target-id="fs-idp19091024"/>. The means of the tomato yields under the five mulching conditions are represented by <emphasis effect="italics">μ</emphasis><sub>1</sub>, <emphasis effect="italics">μ</emphasis><sub>2</sub>, <emphasis effect="italics">μ</emphasis><sub>3</sub>, <emphasis effect="italics">μ</emphasis><sub>4</sub>, <emphasis effect="italics">μ</emphasis><sub>5</sub>. We will conduct a hypothesis test to determine if all means are the same or at least one is different. Using a significance level of 5%, test the null hypothesis that there is no difference in mean yields among the five groups against the alternative hypothesis that at least one mean is different from the rest.</para></problem>
+
+<solution id="eip-829">
+<para id="dfgfg">The null and alternative hypotheses are:</para>
+
+<para id="eip-idp93603520"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>1</sub></emphasis> = <emphasis effect="italics">μ<sub>2</sub></emphasis> = <emphasis effect="italics">μ<sub>3</sub></emphasis> = <emphasis effect="italics">μ<sub>4</sub></emphasis> = <emphasis effect="italics">μ<sub>5</sub></emphasis></para>
+
+<para id="eip-idp134625200"><emphasis effect="italics">H<sub>a</sub>: μ<sub>i</sub> ≠ μ<sub>j</sub></emphasis> some  <emphasis effect="italics">i ≠ j</emphasis></para><para id="eip-idm22822112">The one-way ANOVA results are shown in <link target-id="eip-632"/></para>
+
+<table id="eip-632" summary="..">
+<tgroup cols="5"><thead>
+<row>
+<entry>Source of variation</entry>
+<entry>Sum of squares (<emphasis effect="italics">SS</emphasis>)</entry>	
+<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>	
+<entry>Mean square (<emphasis effect="italics">MS</emphasis>)</entry>	
+<entry><emphasis effect="italics">F</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row><entry>Factor (Between)</entry><entry>36,648,561</entry><entry>5 – 1 = 4</entry><entry>
+  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>36,648,561</m:mtext>
+</m:mrow>
+<m:mtext>4</m:mtext>
+</m:mfrac>
+<m:mtext> = 9,162,140</m:mtext>
+</m:mrow>
+</m:math>  </entry>
+<entry>  <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>9,162,140</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>2,044,672</m:mtext><m:mtext>.6</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mtext> = 4</m:mtext><m:mtext>.4810</m:mtext>
+</m:mrow>
+</m:math>  </entry>
+</row>
+<row>
+<entry>Error (Within)</entry>
+<entry>20,446,726</entry>
+<entry>15 – 5 = 10</entry>
+<entry>  <m:math display="block">
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>20,446,726</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>10</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mtext> = 2,044,672</m:mtext><m:mtext>.6</m:mtext>
+</m:mrow>
+</m:math>  </entry>
+<entry/></row>
+<row>
+<entry>Total</entry>
+<entry>57,095,287</entry>
+<entry>15 – 1 = 14</entry>
+<entry/><entry/></row>
+</tbody>		
+
+
+</tgroup>
+</table><para id="eip-idm38415936">
+<emphasis>Distribution for the test: <emphasis effect="italics">F</emphasis><sub>4,10</sub></emphasis></para>
+<para id="eip-idm45807632"><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = 5 – 1 = 4</para>
+<para id="eip-idm2595504"><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = 15 – 5 = 10</para>
+<para id="eip-idm4421632"><emphasis>Test statistic:</emphasis>  <emphasis effect="italics">F</emphasis> = 4.4810</para>
+
+<figure id="fs-idm71243968"><media id="eip-idp67270848" alt="This graph shows a nonsymmetrical F distribution curve. The horizontal axis extends from 0 - 5, and the vertical axis ranges from 0 - 0.7. The curve is strongly skewed to the right.">
+<image src="../../media/CNX_Stats_C13_M04_001.jpg" mime-type="image/jpeg" width="380"/>
+</media></figure><para id="eip-idm4421376"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 4.481) = 0.0248.</para>
+
+<para id="eip-idm4421120"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.05, <emphasis effect="italics">p</emphasis>-value = 0.0248</para>
+
+<para id="eip-idm141674128"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, we cannot accept <emphasis effect="italics">H<sub>0</sub></emphasis>.</para><para id="eip-idm156731472"><emphasis>Conclusion:</emphasis> At the 5% significance level, we have reasonably strong evidence that differences in mean yields for slicing tomato plants grown under different mulching conditions are unlikely to be due to chance alone.  We may conclude that at least some of mulches led to different mean yields.</para>
+
+</solution>
+</exercise>
+</example>
+
+
+<note id="fs-idm197200" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="eip-746"><problem id="eip-675">
+<para id="eip-437">MRSA, or <emphasis effect="italics">Staphylococcus aureus</emphasis>, can cause a serious bacterial infections in hospital patients. <link target-id="eip-755"/> shows various colony counts from different patients who may or may not have MRSA. The data from the table is plotted in <link target-id="fs-idm170381520"/>.</para><table id="eip-755" summary="..">
+<tgroup cols="5">
+<thead>
+<row><entry>Conc = 0.6</entry><entry>Conc = 0.8</entry>	<entry>Conc = 1.0</entry>	<entry>Conc = 1.2</entry>	<entry>Conc = 1.4</entry></row>
+</thead>
+<tbody>
+<row><entry>9</entry>	<entry>16</entry>	<entry>22</entry>	<entry>30</entry>	<entry>27</entry></row>
+<row><entry>66</entry>	<entry>93</entry>	<entry>147</entry>	<entry>199</entry>	<entry>168</entry></row>
+<row><entry>98</entry>	<entry>82</entry>	<entry>120</entry>	<entry>148</entry>	<entry>132</entry></row>
+</tbody>
+</tgroup>
+</table>
+<para id="eip-idm75659200">Plot of the data for the different concentrations:</para>
+
+
+<figure id="fs-idm170381520"><media id="eip-idp3797520" alt="This graph is a scatterplot for the data provided. The horizontal axis is labeled 'Colony counts' and extends from 0 - 200. The vertical axis is labeled 'Tryptone concentrations' and extends from 0.6 - 1.4.">
+<image src="../../media/CNX_Stats_C13_M04_003s.png" mime-type="image/png" width="380"/></media></figure><para id="eip-idm75658944" class="finger">Test whether the mean number of colonies are the same or are different. Construct the ANOVA table, find the <emphasis effect="italics">p</emphasis>-value, and state your conclusion. Use a 5% significance level.</para></problem>
+
+<solution id="eip-174">
+<para id="eip-idp40395248">While there are differences in the spreads between the groups (see <link target-id="fig000"/>), the differences do not appear to be big enough to cause concern.</para>
+
+<para id="eip-idp40395776">We test for the equality of mean number of colonies:</para>
+
+<para id="eip-idp40396160"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub></m:math></para><para id="eip-idp11990912"><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ<sup>i</sup></emphasis> ≠ <emphasis effect="italics">μ<sup>j</sup></emphasis> some <emphasis effect="italics">i</emphasis> ≠ <emphasis effect="italics">j</emphasis></para><para id="eip-idm62233696">The one-way ANOVA table results are shown in <link target-id="eip-83"/>.</para>
+
+<table id="eip-83" summary="..">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+<row>
+<entry>Source of variation</entry>
+<entry>Sum of squares (<emphasis effect="italics">SS</emphasis>)</entry>
+<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>
+<entry>Mean square (<emphasis effect="italics">MS</emphasis>)</entry>
+<entry><emphasis effect="italics">F</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Factor (Between)</entry>
+<entry>10,233</entry>
+<entry>5 – 1 = 4</entry>
+<entry>  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>10,233</m:mtext>
+</m:mrow>
+<m:mtext>4</m:mtext>
+</m:mfrac>
+<m:mtext> = 2,558</m:mtext><m:mtext>.25</m:mtext>
+</m:mrow>
+</m:math>  </entry>
+<entry>  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>2,558</m:mtext><m:mtext>.25</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>4,194</m:mtext><m:mtext>.9</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mtext> = 0</m:mtext><m:mtext>.6099</m:mtext>
+</m:mrow>
+</m:math>  </entry>
+</row>
+
+<row>
+<entry>Error (Within)</entry>
+<entry>41,949</entry>
+<entry>15 – 5 = 10</entry>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Total</entry>
+<entry>52,182</entry>
+<entry>15 – 1 = 14</entry>
+<entry>  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>41,949</m:mtext>
+</m:mrow>
+<m:mrow>
+<m:mtext>10</m:mtext>
+</m:mrow>
+</m:mfrac>
+<m:mtext> = 4,194</m:mtext><m:mtext>.9</m:mtext>
+</m:mrow>
+</m:math>  </entry>
+<entry/>
+</row>
+</tbody>
+
+</tgroup>
+</table><figure id="fig000"><media id="eip-idp176119744" alt="This graph shows a nonsymmetrical F distribution curve. The curve is skewed to the right. A vertical upward line extends from 0.6649 to the curve. This line is just to the right of the graph's peak and the region to the right of the line is shaded to represent the p-value.">
+<image src="../../media/CNX_Stats_C13_M04_004.jpg" mime-type="image/jpeg" width="380"/></media></figure><para id="eip-idp119760"><emphasis>Distribution for the test:</emphasis> <emphasis effect="italics">F</emphasis><sub>4,10</sub></para>
+
+<para id="eip-idp2526368"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 0.6099) = 0.6649.</para>
+
+<para id="eip-idp2527424"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.05, <emphasis effect="italics">p</emphasis>-value = 0.669, <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value</para>
+
+<para id="eip-idp3984016"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, we do not reject <emphasis effect="italics">H</emphasis><sub>0</sub>.</para>
+
+<para id="eip-idm35735392"><emphasis>Conclusion:</emphasis> At the 5% significance level, there is insufficient evidence from these data that different levels of tryptone will cause a significant difference in the mean number of bacterial colonies formed.</para>
+</solution>
+</exercise></note>
+
+
+<example id="element-810">
+<para id="element-726">Four sororities took a random sample of sisters regarding their grade means for the past term. The results are shown in <link target-id="table-1"/>.</para>
+
+<table id="table-1" summary="This table presents the grade averages for sororities with the first sorority in the first column, second in the second column, third in the third column, and fourth in the fourth column."><title>Mean grades for four sororities</title>
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<thead>
+<row>
+<entry>Sorority 1</entry>
+<entry>Sorority 2</entry>
+<entry>Sorority 3</entry>
+<entry>Sorority 4</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>2.17</entry> 
+<entry>2.63</entry> 
+<entry>2.63</entry> 
+<entry>3.79</entry>
+</row>
+<row>
+<entry>1.85</entry> <entry>1.77</entry> <entry>3.78</entry> <entry>3.45</entry>
+</row>
+<row>
+<entry>2.83</entry>  <entry>3.25</entry> <entry>4.00</entry>  <entry>3.08</entry>
+</row>
+<row>
+<entry>1.69</entry>  <entry>1.86</entry>  <entry>2.55</entry>  <entry>2.26</entry>
+</row>
+<row>
+<entry>3.33</entry> <entry>2.21</entry> <entry>2.45</entry> <entry>3.18</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><exercise id="element-508">
+<problem id="id3272914">
+<para id="element-863">Using a significance level of 1%, is there a difference in mean grades among the
+sororities?  </para></problem>
+
+<solution id="id3301468">
+<para id="element-75">Let <emphasis effect="italics">μ<sub>1</sub></emphasis>, <emphasis effect="italics">μ<sub>2</sub></emphasis>, <emphasis effect="italics">μ<sub>3</sub></emphasis>, <emphasis effect="italics">μ<sub>4</sub></emphasis> be the population means of the sororities. Remember that the null hypothesis claims that the sorority groups are from the same normal distribution. The alternate hypothesis says that at least two of the sorority groups come from populations with different normal distributions. Notice that the four sample sizes are each five.</para>
+
+<note id="eip-id1170641699184">
+<label/>
+<title>Note</title>
+<para id="eip-idp65526416">This is an example of a <term>balanced design</term>, because each factor (i.e., sorority) has the same number of observations.</para>
+</note>
+
+<para id="element-998"><emphasis effect="italics">H<sub>0</sub></emphasis>: <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub></m:math></para><para id="element-309"><emphasis effect="italics">H<sub>a</sub></emphasis>: Not all of the means <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub></m:math>are equal.</para><para id="element-958"><emphasis>Distribution for the test:</emphasis> <emphasis effect="italics">F</emphasis><sub>3,16</sub></para>
+<para id="element-673">where <emphasis effect="italics">k</emphasis> = 4 groups and <emphasis effect="italics">n</emphasis> = 20 samples in total</para>
+<para id="element-925"><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>)= <emphasis effect="italics">k</emphasis> – 1 = 4 – 1 = 3</para>
+<para id="element-41"><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = <emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis> = 20 – 4 = 16</para>
+
+<para id="element-284"><emphasis>Calculate the test statistic:</emphasis> <emphasis effect="italics">F</emphasis> = 2.23</para>
+
+<para id="element-964"><emphasis>Graph:</emphasis></para>
+
+<figure id="fs-idm73326896"><media id="id4765799" alt="This graph shows a nonsymmetrical F distribution curve with values of 0 and 2.23 on the x-axis representing the test statistic of sorority grade averages. The curve is slightly skewed to the right, but is approximately normal. A vertical upward line extends from 2.23 to the curve and the area to the right of this is shaded to represent the p-value."><image src="../../media/fig-ch13_04_02N.jpg" mime-type="image/png" width="380"/></media></figure><para id="element-484"><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 2.23) = 0.1241</para><para id="element-849"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.01<newline/> <emphasis effect="italics">p</emphasis>-value = 0.1241<newline/> <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value</para>
+
+<para id="element-119"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value, you cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
+
+<para id="element-483"><emphasis>Conclusion:</emphasis> There is not sufficient evidence to conclude that there is a difference among the mean grades for the sororities.</para>
+
+</solution>
+</exercise></example>
+
+
+<note id="fs-idm126089872" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="eip-935"><problem id="eip-188">
+<para id="dfgdgffgh">Four sports teams took a random sample of players regarding their GPAs for the last year. The results are shown in <link target-id="eip-440"/>.</para><table id="eip-440" summary=".."><title>GPAs for four sports teams</title>
+<tgroup cols="4"><colspec colnum="1" colname="col1"/>
+<colspec colnum="2" colname="col2"/>
+<colspec colnum="3" colname="col3"/>
+<colspec colnum="4" colname="col4"/>
+<thead>
+<row><entry>Basketball</entry>	<entry>Baseball</entry>	<entry>Hockey</entry>	<entry>Lacrosse</entry></row>
+</thead>
+<tbody>
+
+<row><entry>3.6</entry>	<entry>2.1</entry>	<entry>4.0</entry>	<entry>2.0</entry></row>
+<row><entry>2.9</entry>	<entry>2.6</entry>	<entry>2.0</entry>	<entry>3.6</entry></row>
+<row><entry>2.5</entry>	<entry>3.9</entry>	<entry>2.6</entry>	<entry>3.9</entry></row>
+<row><entry>3.3</entry>	<entry>3.1</entry>	<entry>3.2</entry> <entry>2.7</entry></row>
+<row><entry>3.8</entry>	<entry>3.4</entry>	<entry>3.2</entry>	<entry>2.5</entry></row>
+</tbody>
+
+
+</tgroup>
+</table><para id="eip-964">Use a significance level of 5%, and determine if there is a difference in GPA among the teams.</para>
+
+</problem>
+
+<solution id="eip-858">
+<para id="eip-176">With a <emphasis effect="italics">p</emphasis>-value of 0.9271, we decline to reject the null hypothesis. There is not sufficient evidence to conclude that there is a difference among the GPAs for the sports teams.</para></solution>
+</exercise></note>
+
+
+<example id="element-349">
+<para id="element-149">A fourth grade class is studying the environment. One of the assignments is to grow bean plants in different soils. Tommy chose to grow his bean plants in soil found outside his classroom mixed with dryer lint. Tara chose to grow her bean plants in potting soil bought at the local nursery. Nick chose to grow his bean plants in soil from his mother's garden. No chemicals were used on the plants, only water. They were grown inside the classroom next to a large window. Each child grew five plants. At the end of the growing period, each plant was measured, producing the data (in inches) in <link target-id="table-234"/>.
+
+<table id="table-234" summary="This table presents Tommy's plant heights in inches in the first column, Tara's plant heights in inches in the second column, and Nick's plant heights in inches in the third column.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead valign="top">
+<row>
+<entry>Tommy's plants</entry>
+<entry>Tara's plants</entry>
+<entry>Nick's plants</entry>
+</row>
+</thead>
+
+<tbody valign="top">
+<row>
+<entry>24</entry>
+<entry>25</entry>
+<entry>23</entry>
+</row>
+<row>
+<entry>21</entry>
+<entry>31</entry>
+<entry>27</entry>
+</row>
+<row>
+<entry>23</entry>
+<entry>23</entry>
+<entry>22</entry>
+</row>
+<row>
+<entry>30</entry>
+<entry>20</entry>
+<entry>30</entry>
+</row>
+<row>
+<entry>23</entry>
+<entry>28</entry>
+<entry>20</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+
+<exercise id="element-769">
+<problem id="id13000852">
+<para id="element-952">Does it appear that the three media in which the bean plants were grown produce the same mean height? Test at a 3% level of significance.</para></problem>
+<solution id="id3319153">
+<para id="element-501">This time, we will perform the calculations that lead to the <emphasis effect="italics">F'</emphasis> statistic. Notice that each group has the same number of plants, so we will use the formula <emphasis effect="italics">F'</emphasis> =   <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi><m:mo>⋅</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:msub>
+<m:mrow/>
+<m:mrow>
+<m:mtext>pooled</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math>  .</para>
+
+<para id="element-599">First, calculate the sample mean and sample variance of each group.</para>
+<table id="table-9634" summary="This table presents Tommy's plant heights in the first column, Tara's plant heights in the second column, and Nick's plant heights in the third column. The first row represents the sample mean and the second row represents the sample variance.">
+<tgroup cols="4"><colspec colnum="1" colname="header_c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+
+<thead valign="top">
+<row>
+<entry/>
+<entry>Tommy's plants</entry>
+<entry>Tara's plants</entry>
+<entry>Nick's plants</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Sample mean</entry>
+<entry>24.2</entry>
+<entry>25.4</entry>
+<entry>24.4</entry>
+</row>
+<row>
+<entry>Sample variance</entry>
+<entry>11.7</entry>
+<entry>18.3</entry>
+<entry>16.3</entry>
+</row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="element-566">Next, calculate the variance of the three group means (Calculate the variance of 24.2, 25.4, and 24.4). <emphasis>Variance of the group means = 0.413</emphasis> =   <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math>  </para>
+
+<para id="element-883">Then <emphasis effect="italics">MS<sub>between</sub></emphasis> =   <m:math>
+<m:mrow>
+<m:mi>n</m:mi><m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math>   = (5)(0.413) where <emphasis effect="italics">n</emphasis> = 5 is the sample size (number of plants each child grew).</para><para id="element-606">Calculate the mean of the three sample variances (Calculate the mean of 11.7, 18.3, and 16.3). <emphasis>Mean of the sample variances = 15.433</emphasis> = <emphasis><emphasis effect="italics">s</emphasis></emphasis><sup>2</sup> <emphasis><emphasis effect="italics">pooled</emphasis></emphasis></para>
+
+<para id="element-877">Then <emphasis effect="italics">MS<sub>within</sub></emphasis> = <emphasis effect="italics">s</emphasis><sup>2</sup><sub><emphasis effect="italics">pooled</emphasis></sub> = 15.433.</para>
+
+<para id="element-649">The <emphasis effect="italics">F</emphasis> statistic (or <emphasis effect="italics">F</emphasis> ratio) is   <m:math>
+<m:mrow>
+<m:mi>F</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi><m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:msub>
+<m:mrow/>
+<m:mrow>
+<m:mi>p</m:mi><m:mi>o</m:mi><m:mi>o</m:mi><m:mi>l</m:mi><m:mi>e</m:mi><m:mi>d</m:mi>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.413</m:mn><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mn>15.433</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo><m:mn>0.134</m:mn>
+</m:mrow>
+</m:math>  </para>
+
+<para id="element-81">The <emphasis effect="italics">dfs</emphasis> for the numerator = the number of groups – 1 = 3 – 1 = 2.</para><para id="element-691">The <emphasis effect="italics">dfs</emphasis> for the denominator = the total number of samples – the number of groups = 15 – 3 = 12</para><para id="element-174">The distribution for the test is <emphasis effect="italics">F</emphasis><sub>2,12</sub> and the <emphasis effect="italics">F</emphasis> statistic is <emphasis effect="italics">F</emphasis> = 0.134</para>
+
+<para id="element-351">The <emphasis effect="italics">p</emphasis>-value is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 0.134) = 0.8759. </para>
+
+<para id="element-528"><emphasis>Decision:</emphasis> Since <emphasis effect="italics">α</emphasis> = 0.03 and the <emphasis effect="italics">p</emphasis>-value = 0.8759, then you cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>. (Why?)</para><para id="element-886"><emphasis>Conclusion:</emphasis> With a 3% level of significance, from the sample data, the evidence is not sufficient to conclude that the mean heights of the bean plants are  different.</para>
+
+</solution>
+</exercise>
+</example>
+
+
+
+<section id="element-628">
+<title>Notation</title>
+<para id="element-999">The notation for the <emphasis effect="italics">F</emphasis> distribution is <emphasis effect="italics">F</emphasis> ~ <emphasis effect="italics">F</emphasis><sub><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>),<emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>)</sub></para>
+
+<para id="element-966">where <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = <emphasis effect="italics">df</emphasis><sub>between</sub> and <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = <emphasis effect="italics">df</emphasis><sub>within</sub> </para>
+
+<para id="element-181">The mean for the <emphasis effect="italics">F</emphasis> distribution is  <m:math>
+<m:mrow>
+<m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac>
+<m:mrow>
+<m:mi>d</m:mi><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>u</m:mi><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mi>o</m:mi><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo><m:mo>–</m:mo><m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para></section>
+
+<section id="eip-957" class="references">
+<title>References</title>
+<para id="eip-405">Tomato Data, Marist College School of Science (unpublished student research)
+</para></section>
+
+<section id="fs-idp65787616" class="summary">
+<title>Chapter Review</title>
+<para id="eip-18">Analysis of variance compares the means of a response variable for several groups. ANOVA compares the variation within each group to the variation of the mean of each group. The ratio of these two is the <emphasis effect="italics">F</emphasis> statistic from an <emphasis effect="italics">F</emphasis> distribution with (number of groups – 1) as the numerator degrees of freedom and (number of observations – number of groups) as the denominator degrees of freedom.  These statistics are summarized in the ANOVA table.
+</para>
+</section>
+
+<section id="fs-idm69171152" class="formula-review">
+<title>Formula Review</title>
+<para id="eip-149"><m:math>
+<m:mrow>
+<m:mo> </m:mo><m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:msup>
+<m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+<m:mtext>​</m:mtext>
+</m:msup>
+<m:mrow><m:mo>[</m:mo> <m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mo stretchy="false">(</m:mo><m:msub>
+<m:mi>s</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+<m:mo stretchy="false">)</m:mo>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:msub>
+<m:mi>n</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow> <m:mo>]</m:mo></m:mrow><m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mstyle mathsize="80%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+<m:mtext>​</m:mtext>
+</m:msup>
+<m:msub>
+<m:mi>s</m:mi>
+<m:mi>j</m:mi>
+</m:msub>
+
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mrow>
+<m:mi>n</m:mi><m:mo> </m:mo>
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para><para id="eip-104"><m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>total</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:msup>
+<m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+<m:mtext>​</m:mtext>
+</m:msup>
+<m:msup>
+<m:mi>x</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>−</m:mo><m:mfrac>
+<m:mrow>
+<m:msup>
+<m:mrow>
+<m:mrow><m:mo>(</m:mo>
+<m:mrow>
+<m:msup>
+<m:mstyle mathsize="80%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+<m:mtext>​</m:mtext>
+</m:msup>
+<m:mi>x</m:mi>
+</m:mrow>
+<m:mo>)</m:mo></m:mrow>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+<m:mi>n</m:mi>
+</m:mfrac>
+
+</m:mrow>
+</m:math> 
+</para><para id="eip-19"> <m:math>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>=</m:mo><m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>total</m:mtext>
+</m:mrow>
+</m:msub>
+<m:mo>−</m:mo><m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:math> </para>
+
+<para id="eip-357"><emphasis effect="italics">df</emphasis><sub>between</sub> = <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = <emphasis effect="italics">k</emphasis> – 1</para><para id="eip-152"><emphasis effect="italics">df</emphasis><sub>within</sub> = <emphasis effect="italics">df(denom)</emphasis> = <emphasis effect="italics">n</emphasis> – <emphasis effect="italics">k</emphasis> </para><para id="eip-135"><emphasis effect="italics">MS</emphasis><sub>between</sub> =  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:msub>
+<m:mi>f</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para><para id="eip-719"><emphasis effect="italics">MS</emphasis><sub>within</sub> =  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>S</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>d</m:mi><m:msub>
+<m:mi>f</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para><para id="eip-714"><emphasis effect="italics">F</emphasis> =  <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>between</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+<m:mrow>
+<m:mi>M</m:mi><m:msub>
+<m:mi>S</m:mi>
+<m:mrow>
+<m:mtext>within</m:mtext>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:mfrac>
+
+</m:mrow>
+</m:math> </para>
+
+<list id="eip-927"><item><emphasis effect="italics">k</emphasis> = the number of groups</item>
+<item><emphasis effect="italics">n<sub>j</sub></emphasis> = the size of the <emphasis effect="italics">j<sup>th</sup></emphasis> group</item>
+<item><emphasis effect="italics">s<sub>j</sub></emphasis> = the sum of the values in the <emphasis effect="italics">j<sup>th</sup></emphasis> group</item>
+<item><emphasis effect="italics">n</emphasis> = the total number of all values (observations) combined</item>
+<item><emphasis effect="italics">x</emphasis> = one value (one observation) from the data</item>
+<item> <m:math>
+<m:mrow>
+<m:msub>
+<m:mi>s</m:mi>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:msub>
+<m:msup>
+<m:mrow/>
+<m:mn>2</m:mn>
+</m:msup>
+
+</m:mrow>
+</m:math>  = the variance of the sample means</item>
+<item> <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:msub>
+<m:mrow/>
+<m:mrow>
+<m:mi>p</m:mi><m:mi>o</m:mi><m:mi>o</m:mi><m:mi>l</m:mi><m:mi>e</m:mi><m:mi>d</m:mi>
+</m:mrow>
+</m:msub>
+
+</m:mrow>
+</m:math> 
+= the mean of the sample variances (pooled variance)</item>
+</list></section>
+
+<section id="fs-idm89796288" class="practice">
+<para id="eip-723"><emphasis effect="italics">Use the following information to answer the next eight exercises.</emphasis> Groups of men from three different areas of the country are to be tested for mean weight. The entries in <link target-id="eip-556" document=""/> are the weights for the different groups.</para><table id="eip-556" summary="..">
+<tgroup cols="3">
+<thead>
+<row><entry>Group 1</entry>	<entry>Group 2</entry>	<entry>Group 3</entry></row>
+</thead>
+<tbody>
+<row><entry>216</entry>	<entry>202</entry>	<entry>170</entry></row>
+<row><entry>198</entry>	<entry>213</entry>	<entry>165</entry></row>
+<row><entry>240</entry>	<entry>284</entry>	<entry>182</entry></row>
+<row><entry>187</entry>	<entry>228</entry>	<entry>197</entry></row>
+<row><entry>176</entry>	<entry>210</entry>	<entry>201</entry></row>
+</tbody>
+</tgroup>
+</table>
+<exercise id="eip-317">
+<problem id="eip-77">
+<para id="eip-342">What is the Sum of Squares Factor?</para>
+</problem>
+
+<solution id="eip-115">
+<para id="eip-242">4,939.2</para>
+</solution>
+</exercise>
+
+<exercise id="eip-394"><problem id="eip-184">
+<para id="eip-338">
+What is the Sum of Squares Error?
+</para>
+</problem>  </exercise>
+
+<exercise id="eip-617">
+<problem id="eip-473">
+<para id="eip-2">What is the <emphasis effect="italics">df</emphasis> for the numerator?</para>
+</problem>
+<solution id="eip-838">
+<para id="eip-777">2</para>
+</solution>
+</exercise>
+
+<exercise id="eip-920"><problem id="eip-47">
+<para id="eip-661">What is the <emphasis effect="italics">df</emphasis> for the denominator?</para>
+</problem></exercise>
+
+<exercise id="eip-297">
+<problem id="eip-609">
+<para id="eip-328">What is the Mean Square Factor?</para>
+</problem>
+
+<solution id="eip-764">
+<para id="eip-400">2,469.6</para>
+</solution>
+</exercise>
+
+<exercise id="eip-869"><problem id="eip-383">
+<para id="eip-944">What is the Mean Square Error?</para>
+</problem>  </exercise><exercise id="eip-485"><problem id="eip-502">
+<para id="eip-44">What is the <emphasis effect="italics">F</emphasis> statistic?</para>
+</problem>
+<solution id="eip-987">
+<para id="eip-573">3.7416</para>
+</solution>
+</exercise>
+
+<para id="eip-938"><newline/><emphasis effect="italics">Use the following information to answer the next eight exercises.</emphasis> Girls from four different soccer teams are to be tested for mean goals scored per game. The entries in <link target-id="eip-461" document=""/> are the goals per game for the different teams.</para><table id="eip-461" summary="..">
+<tgroup cols="4"><thead><row><entry>Team 1</entry>	<entry>Team 2</entry>	<entry>Team 3</entry>	<entry>Team 4</entry></row></thead>
+<tbody>
+<row><entry>1</entry>	<entry>2</entry>	<entry>0</entry>	<entry>3</entry></row>
+<row><entry>2</entry>	<entry>3</entry>	<entry>1</entry>	<entry>4</entry></row>
+<row><entry>0</entry>	<entry>2</entry>	<entry>1</entry>	<entry>4</entry></row>
+<row><entry>3</entry>	<entry>4</entry>	<entry>0</entry>	<entry>3</entry></row>
+<row><entry>2</entry>	<entry>4</entry>	<entry>0</entry>	<entry>2</entry></row>
+</tbody>
+</tgroup>
+</table><exercise id="eip-380"><problem id="eip-915">
+<para id="eip-796">
+What is <emphasis effect="italics">SS<sub>between</sub></emphasis>?
+</para>
+</problem>
+</exercise><exercise id="eip-332">
+<problem id="eip-86">
+<para id="eip-524">What is the <emphasis effect="italics">df</emphasis> for the numerator?</para>
+</problem>
+<solution id="eip-212">
+<para id="eip-79">3</para>
+</solution>
+</exercise>
+
+<exercise id="eip-361"><problem id="eip-211">
+<para id="eip-270">What is <emphasis effect="italics">MS<sub>between</sub></emphasis>?
+</para></problem>  </exercise><exercise id="eip-543">
+<problem id="eip-340">
+<para id="eip-276">
+What is <emphasis effect="italics">SS<sub>within</sub></emphasis>?
+
+</para>
+</problem>
+
+<solution id="eip-60">
+<para id="eip-399">13.2</para>
+</solution>
+</exercise>
+
+<exercise id="eip-200"><problem id="eip-830">
+<para id="eip-564">What is the <emphasis effect="italics">df</emphasis> for the denominator?</para>
+</problem>  </exercise><exercise id="eip-91"><problem id="eip-81">
+<para id="eip-709">What is <emphasis effect="italics">MS<sub>within</sub></emphasis>?
+</para></problem>
+
+<solution id="eip-913">
+<para id="eip-831">0.825</para>
+</solution>
+</exercise>
+
+<exercise id="eip-501"><problem id="eip-955">
+<para id="eip-653">What is the <emphasis effect="italics">F</emphasis> statistic?</para>
+</problem>  </exercise>
+
+<exercise id="eip-23">
+<problem id="eip-715">
+<para id="eip-695">Judging by the <emphasis effect="italics">F</emphasis> statistic, do you think it is likely or unlikely that you will reject the null hypothesis?</para></problem>
+<solution id="eip-61">
+<para id="eip-996">Because a one-way ANOVA test is always right-tailed, a high <emphasis effect="italics">F</emphasis> statistic corresponds to a low <emphasis effect="italics">p</emphasis>-value, so it is likely that we cannot accept the null hypothesis.</para></solution>
+</exercise>
+</section>
+
+<section id="eip-103" class="free-response"><title>Homework</title><para id="eip-434">
+<emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Suppose a group is interested in determining whether teenagers obtain their drivers licenses at approximately the same average age across the country.
+Suppose that the following data are randomly collected from five teenagers in each region of the country. The numbers represent the age at which teenagers obtained their drivers licenses.
+</para>
+<table id="eip-idp64551440" summary="...">
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<thead>
+<row>
+<entry/>
+<entry>Northeast</entry>
+<entry>South</entry>
+<entry>West</entry>
+<entry>Central</entry>
+<entry>East</entry>
+</row>
+</thead>
+<tbody>
+
+<row>
+<entry/>
+<entry>16.3</entry>
+<entry>16.9</entry>
+<entry>16.4</entry>
+<entry>16.2</entry>
+<entry>17.1</entry>
+</row>
+<row>
+<entry/>
+<entry>16.1</entry>
+<entry>16.5</entry>
+<entry>16.5</entry>
+<entry>16.6</entry>
+<entry>17.2</entry>
+</row>
+<row>
+<entry/>
+<entry>16.4</entry>
+<entry>16.4</entry>
+<entry>16.6</entry>
+<entry>16.5</entry>
+<entry>16.6</entry>
+</row>
+<row>
+<entry/>
+<entry>16.5</entry>
+<entry>16.2</entry>
+<entry>16.1</entry>
+<entry>16.4</entry>
+<entry>16.8</entry>
+</row>
+<row>
+<entry>
+ <m:math>
+<m:mrow>
+<m:mover accent="true">
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+</m:mrow>
+</m:math> 
+</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+</row>
+<row>
+<entry>
+ <m:math>
+<m:mrow>
+<m:msup>
+<m:mi>s</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
+<m:mo>=</m:mo>
+</m:mrow>
+</m:math> </entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+<entry>________</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+
+<para id="eip-93"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">µ</emphasis><sub>1</sub> = <emphasis effect="italics">µ</emphasis><sub>2</sub> = <emphasis effect="italics">µ</emphasis><sub>3</sub> = <emphasis effect="italics">µ</emphasis><sub>4</sub> = <emphasis effect="italics">µ</emphasis><sub>5</sub></para>
+<para id="eip-idp81417168"><emphasis effect="italics">Hα</emphasis>: At least any two of the group means <emphasis effect="italics">µ</emphasis><sub>1</sub>, <emphasis effect="italics">µ</emphasis><sub>2</sub>, …, <emphasis effect="italics">µ</emphasis><sub>5</sub> are not equal.</para>
+
+
+<exercise id="fs-idm50760160"><problem id="id47643237"> 
+<para id="element-341">degrees of freedom – numerator: <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = _________</para></problem></exercise>
+
+<exercise id="fs-idp124948560">
+<problem id="id47591322">
+<para id="element-242">degrees of freedom – denominator: <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = ________</para></problem>
+<solution id="id47591380">
+<para id="element-124"><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = 15</para></solution>
+</exercise>
+
+<exercise id="element-115">
+<problem id="id47591432">
+<para id="element-677"><emphasis effect="italics">F</emphasis> statistic = ________</para></problem>
+</exercise>
+
+</section> </content>
+
+</document>

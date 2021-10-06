@@ -1,0 +1,105 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Testing the Significance of the Correlation Coefficient</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55726</md:content-id>
+  <md:title>Testing the Significance of the Correlation Coefficient</md:title>
+  <md:abstract/>
+  <md:uuid>c6d8e1d2-a289-48bd-8a62-2fddd9afa5ee</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-8888">The correlation coefficient, <emphasis effect="italics">r</emphasis>, tells us about the strength and direction of the linear relationship between X<sub>1</sub> and X<sub>2</sub>.</para><para id="eip-392">The sample data are used to compute <emphasis effect="italics">r</emphasis>, the correlation coefficient for the sample. If we had data for the entire population, we could find the population correlation coefficient. But because we have only sample data, we cannot calculate
+the population correlation coefficient. The sample correlation coefficient, <emphasis effect="italics">r</emphasis>, is our estimate of the unknown population correlation coefficient.
+</para><list id="eip-608" list-type="labeled-item"><item><emphasis effect="italics">ρ</emphasis> = population correlation coefficient (unknown)</item>
+<item><emphasis effect="italics">r</emphasis> = sample correlation coefficient (known; calculated from sample data)</item>
+</list><para id="eip-400">The hypothesis test lets us decide whether the value of the population correlation coefficient <emphasis effect="italics">ρ</emphasis> is "close to zero" or "significantly different from zero". We decide this based on the sample correlation coefficient <emphasis effect="italics">r</emphasis> and the sample size <emphasis effect="italics">n</emphasis>.</para><para id="eip-564"><emphasis>If the test concludes that the correlation coefficient is significantly different from zero, we say that the correlation coefficient is "significant."</emphasis></para><list id="eip-681"><item>Conclusion: There is sufficient evidence to conclude that there is a significant linear relationship between X<sub>1</sub> and X<sub>2</sub> because the correlation coefficient is significantly different from zero.</item>
+<item>What the conclusion means: There is a significant linear relationship X<sub>1</sub> and X<sub>2</sub>. 
+If the test concludes that the correlation coefficient is not significantly different from zero (it is close to zero), we say that correlation coefficient is "not significant".</item>
+</list><section id="eip-342"><title>Performing the Hypothesis Test</title><list id="eip-id1171348870847">
+<item><emphasis>Null Hypothesis: <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">ρ</emphasis> = 0</emphasis></item>
+<item><emphasis>Alternate Hypothesis: <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">ρ</emphasis> ≠ 0</emphasis></item>
+</list><list id="eip-819"><title>What the Hypotheses Mean in Words</title><item><emphasis>Null Hypothesis <emphasis effect="italics">H<sub>0</sub></emphasis></emphasis>: The population correlation coefficient IS NOT significantly different from zero. There IS NOT a significant linear relationship (correlation) between X<sub>1</sub> and X<sub>2</sub> in the population.</item>
+<item><emphasis>Alternate Hypothesis <emphasis effect="italics">H<sub>a</sub></emphasis></emphasis>: The population correlation coefficient is significantly different from zero. There is a significant linear relationship (correlation) between X<sub>1</sub> and X<sub>2</sub> in the population.</item>
+</list><para id="eip-911"><title>Drawing a Conclusion</title>There are two methods of making the decision concerning the hypothesis. The test statistic to test this hypothesis is: 
+</para><equation class="unnumbered" id="eip-678"><label/><m:math>
+<m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mi>r</m:mi>
+<m:mrow>
+<m:msqrt>
+<m:mfrac bevelled="true">
+<m:mrow>
+<m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac>
+</m:msqrt>
+</m:mrow>
+</m:mfrac>
+</m:math></equation><equation class="unnumbered" id="eip-525"><m:math><m:mtext>OR</m:mtext></m:math></equation><equation id="eip-193"><label/><m:math>
+<m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow><m:mi>r</m:mi><m:msqrt><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:msqrt></m:mrow>
+<m:mrow><m:msqrt><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:msqrt></m:mrow>
+</m:mfrac>
+</m:math></equation><para id="eip-185">Where the second formula is an equivalent form of the test statistic, n is the sample size and the degrees of freedom are n-2. This is a t-statistic and operates in the same way as other t tests. Calculate the t-value and compare that with the critical value from the t-table at the appropriate degrees of freedom and the level of confidence you wish to maintain. If the calculated value is in the tail then cannot accept the null hypothesis that there is no linear relationship between these two independent random variables. If the calculated t-value is NOT in the tailed then cannot reject the null hypothesis that there is no linear relationship between the two variables.</para><para id="eip-824">A quick shorthand way to test correlations is the relationship between the sample size and the correlation. If:</para>
+<equation class="unnumbered" id="eip-id7124990"><label/><m:math><m:mo stretchy="false">|</m:mo><m:mi>r</m:mi><m:mo stretchy="false">|</m:mo><m:mo>≥</m:mo><m:mfrac><m:mn>2</m:mn><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:math></equation>
+<para id="fs-id1165110291919">then this implies that the correlation between the two variables demonstrates that a linear relationship exists and is statistically significant at approximately the 0.05 level of significance. As the formula indicates, there is an inverse relationship between the sample size and the required correlation for significance of a linear relationship. With only 10 observations, the required correlation for significance is 0.6325, for 30 observations the required correlation for significance decreases to 0.3651 and at 100 observations the required level is only 0.2000.</para><para id="eip-659">Correlations may be helpful in visualizing the data, but are not appropriately used to "explain" a relationship between two variables. Perhaps no single statistic is more misused than the correlation coefficient. Citing correlations between health conditions and everything from place of residence to eye color have the effect of implying a cause and effect relationship. This simply cannot be accomplished with a correlation coefficient. The correlation coefficient is, of course, innocent of this misinterpretation. It is the duty of the analyst to use a statistic that is designed to test for cause and effect relationships and report only those results if they are intending to make such a claim. The problem is that passing this more rigorous test is difficult so lazy and/or unscrupulous "researchers" fall back on correlations when they cannot make their case legitimately.  </para><section id="eip-962" class="practice"><exercise id="eip-856"><problem id="eip-905">
+  <para id="eip-278">Define a t Test of a Regression Coefficient, and give a unique example of its use.
+  </para></problem>
+
+<solution id="eip-181">
+  <para id="eip-533">
+Definition:</para>
+<para id="eip-idm541110016">A t test is obtained by dividing a regression coefficient by its standard error and then comparing the result to critical values for Students' t with Error <emphasis effect="italics">df</emphasis>.  It provides a test of the claim that <m:math><m:msub><m:mi>β</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math> when all other variables have been included in the relevant regression model.</para><para id="eip-idm238218240">Example:</para>
+<para id="eip-idm263480400">Suppose that 4 variables are suspected of influencing some response.  
+Suppose that the results of fitting <m:math><m:msub><m:mi>Y</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>β</m:mi><m:mn>0</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>β</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>X</m:mi><m:mrow><m:mn>1</m:mn><m:mi>i</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>β</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mi>X</m:mi><m:mrow><m:mn>2</m:mn><m:mi>i</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>β</m:mi><m:mn>3</m:mn></m:msub><m:msub><m:mi>X</m:mi><m:mrow><m:mn>3</m:mn><m:mi>i</m:mi></m:mrow></m:msub><m:mo>+</m:mo> <m:msub><m:mi>β</m:mi><m:mn>4</m:mn></m:msub><m:msub><m:mi>X</m:mi><m:mrow><m:mn>4</m:mn><m:mi>i</m:mi></m:mrow></m:msub><m:mo>+</m:mo><m:msub><m:mi>e</m:mi><m:mi>i</m:mi></m:msub></m:math> include:</para><table id="eip-idm563968576" summary="4 variables (.5, .4, .02, and .6), with their regression coefficients (1, 2, 3, and 4) and their standard error of regular coefficients (-3,+2,+1,-.5)">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry><emphasis>Variable</emphasis></entry>
+    <entry><emphasis>Regression coefficient</emphasis></entry>
+    <entry><emphasis>Standard error of regular coefficient</emphasis></entry>
+  </row>
+  <row>
+    <entry>.5</entry>
+    <entry>1</entry>
+    <entry>-3</entry>
+  </row>
+  <row>
+    <entry>.4</entry>
+    <entry>2</entry>
+    <entry>+2</entry>
+  </row>
+  <row>
+    <entry>.02</entry>
+    <entry>3</entry>
+    <entry>+1</entry>
+  </row>
+  <row>
+    <entry>.6</entry>
+    <entry>4</entry>
+    <entry>-.5</entry>
+  </row>
+</tbody>
+
+
+
+</tgroup>
+</table><para id="eip-idm698152704">t calculated for variables 1, 2, and 3 would be 5 or larger in absolute value while that for variable 4 would be less than 1.  For most significance levels, the hypothesis <m:math><m:msub><m:mi>β</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math> would be rejected.  But, notice that this is for the case when <m:math><m:msub><m:mi>X</m:mi><m:mn>2</m:mn></m:msub></m:math>, <m:math><m:msub><m:mi>X</m:mi><m:mn>3</m:mn></m:msub></m:math>, and <m:math><m:msub><m:mi>X</m:mi><m:mn>4</m:mn></m:msub></m:math> have been included in the regression.  For most significance levels, the hypothesis <m:math><m:msub><m:mi>β</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math> would be continued (retained) for the case where <m:math><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub></m:math>, <m:math><m:msub><m:mi>X</m:mi><m:mn>2</m:mn></m:msub></m:math>, and <m:math><m:msub><m:mi>X</m:mi><m:mn>3</m:mn></m:msub></m:math> are in the regression. Often this pattern of results will result in computing another regression involving only <m:math><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub></m:math>, <m:math><m:msub><m:mi>X</m:mi><m:mn>2</m:mn></m:msub></m:math>, <m:math><m:msub><m:mi>X</m:mi><m:mn>3</m:mn></m:msub></m:math>, and examination of the t ratios produced for that case.</para></solution>
+</exercise><exercise id="eip-idm277856128"><problem id="eip-idm403033824">
+<para id="eip-idm570603648">The correlation between scores on a neuroticism test and scores on an anxiety test is high and positive; therefore</para>
+
+<list id="eip-idm465947344" list-type="enumerated" number-style="lower-alpha">
+<item>anxiety causes neuroticism</item>
+<item>those who score low on one test tend to score high on the other.</item>
+<item>those who score low on one test tend to score low on the other.</item>
+<item> no prediction from one test to the other can be meaningfully made.</item>
+</list>
+</problem>
+
+<solution id="eip-idm1049263936">
+<para id="eip-idm760151472">c. those who score low on one test tend to score low on the other.
+</para>
+</solution></exercise></section></section> </content>
+
+</document>

@@ -1,0 +1,757 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Two Population Means with Known Standard Deviations</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m55673</md:content-id>
+  <md:title>Two Population Means with Known Standard Deviations</md:title>
+  <md:abstract/>
+  <md:uuid>08cc30bc-1f82-4d2f-99eb-7522199f3f3b</md:uuid>
+</metadata>
+
+<content>
+<para id="eip-8888">Even though this situation is not likely (knowing the population standard deviations is very unlikely), the following example illustrates hypothesis testing for independent means with known population standard deviations. The sampling distribution for the difference between the means is normal in accordance with the central limit theorem. The random variable is <m:math>
+ <m:mrow>
+  <m:mover accent="true">
+   <m:mrow>
+    <m:msub>
+     <m:mi>X</m:mi>
+     <m:mn>1</m:mn>
+    </m:msub>
+
+   </m:mrow>
+   <m:mo stretchy="true">–</m:mo>
+  </m:mover>
+  <m:mo>–</m:mo><m:mover accent="true">
+   <m:mrow>
+    <m:msub>
+     <m:mi>X</m:mi>
+     <m:mn>2</m:mn>
+    </m:msub>
+
+   </m:mrow>
+   <m:mo stretchy="true">–</m:mo>
+  </m:mover>
+
+ </m:mrow>
+</m:math>. The normal distribution has the following format:
+</para><equation id="element-970">
+  <title><term>The standard deviation</term> is:</title>
+<m:math display="block">
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>σ</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>n</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>σ</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>n</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:math>
+ </equation>
+ <para id="eip-908"><newline/></para><equation class="unnumbered" id="element-465"><label/><title>The <term>test statistic</term> (<emphasis effect="italics">z</emphasis>-score) is:</title><m:math display="block">
+ <m:mrow><m:msub>
+  <m:mi>Z</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msub>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>–</m:mo>
+     </m:mover>
+
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>–</m:mo><m:msub>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>–</m:mo>
+     </m:mover>
+
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo><m:mo>–</m:mo><m:msub><m:mi>δ</m:mi><m:mn>0</m:mn></m:msub>
+   </m:mrow>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>σ</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>n</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>σ</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>n</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</equation><example id="element-364">
+<para id="element-384"><emphasis>Independent groups, population standard deviations known:</emphasis> The
+  mean lasting time of two competing floor waxes is to be compared. <emphasis>Twenty floors</emphasis> are randomly assigned <emphasis>to test each wax</emphasis>. Both populations have a normal distributions. The data are recorded in <link target-id="table-12"/>.
+<table id="table-12" summary="This table has wax in the first column, sample mean in the second column, and standard deviation in the third column. There are two rows.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+<row>
+<entry>Wax</entry>
+<entry>Sample mean number of months floor wax lasts</entry>
+<entry>Population standard deviation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>1</entry>
+<entry>3</entry>
+<entry>0.33</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>2.9</entry>
+<entry>0.36</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></para>
+  <exercise id="element-144"><problem id="id48398874">
+  <para id="element-656">Does the data indicate that <emphasis>wax 1 is more effective than wax 2</emphasis>? Test at a 5% level of
+significance.</para>
+</problem>
+
+<solution id="id48398901">
+  <para id="element-795">This is a test of two independent groups, two population means, population standard deviations known.</para>
+ <para id="element-483"><term>Random Variable</term>: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mover accent="true">
+    <m:mi>X</m:mi>
+    <m:mo>–</m:mo>
+   </m:mover>
+
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mtext>– </m:mtext><m:msub>
+   <m:mover accent="true">
+    <m:mi>X</m:mi>
+    <m:mo>–</m:mo>
+   </m:mover>
+
+   <m:mn>2</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> = difference in the mean number of months the competing floor waxes last.</para><para id="element-735"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math></para><para id="element-608"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math></para><para id="element-696">The words <emphasis>"is more effective"</emphasis> says that <emphasis>wax 1 lasts longer than wax 2</emphasis>, on average. "Longer" is a “&gt;” symbol and goes into <emphasis effect="italics">H<sub>a</sub></emphasis>. Therefore, this is a right-tailed test.</para>
+ <para id="element-690"><emphasis>Distribution for the test:</emphasis> The population standard deviations are known so the distribution is normal. Using the formula for the test statistic we find the calculated value for the problem. </para><equation class="unnumbered" id="element-406"><label/><m:math>
+<m:msub><m:mi>Z</m:mi><m:mi>c</m:mi></m:msub>
+<m:mo>=</m:mo>
+
+<m:mfrac>
+
+<m:mrow><m:mo>(</m:mo>
+<m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub>
+<m:mo>-</m:mo>
+<m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub>
+<m:mo>)</m:mo>
+<m:mo>-</m:mo>
+<m:msub><m:mi>δ</m:mi><m:mn>0</m:mn></m:msub>
+</m:mrow>
+
+<m:mrow>
+<m:msqrt>
+<m:mfrac><m:mrow><m:msubsup><m:mi>σ</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow>
+<m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mrow>
+</m:mfrac>
+<m:mo>+</m:mo>
+<m:mfrac><m:mrow><m:msubsup><m:mi>σ</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow>
+<m:mrow><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mrow>
+</m:mfrac>
+</m:msqrt>
+</m:mrow>
+
+
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>0.1</m:mn>
+</m:math></equation><figure id="hyptest22_cmp_2_1"><media id="id48414007" alt="This is a normal distribution curve with mean equal to zero. The values 0 and 0.1 are labeled on the horiztonal axis. A vertical line extends from 0.1 to the curve. The region under the curve to the right of the line is shaded to represent p-value = 0.1799."><image src="../../media/fig-ch10_01_05n.jpg" mime-type="image/jpg" width="380"/>
+ </media></figure><para id="element-311">The estimated difference between he two means is : <m:math>
+  <m:mrow>
+   <m:msub>
+    <m:mover accent="true">
+     <m:mi>X</m:mi>
+     <m:mo>–</m:mo>
+    </m:mover>
+
+    <m:mn>1</m:mn>
+   </m:msub>
+
+  </m:mrow>
+ </m:math> – <m:math>
+  <m:mrow>
+   <m:msub>
+    <m:mover accent="true">
+     <m:mi>X</m:mi>
+     <m:mo>–</m:mo>
+    </m:mover>
+
+    <m:mn>2</m:mn>
+   </m:msub>
+
+  </m:mrow>
+</m:math> = 3 – 2.9 = 0.1</para><para id="element-803"><emphasis>Compare calculated value and critical value and Z<sub>α</sub>:</emphasis> We mark the calculated value on the graph and find the calculated value is not in the tail therefore we cannot reject the null hypothesis.</para><para id="element-962"><emphasis>Make a decision:</emphasis>  the calculated value of the test statistic is not in the tail, therefore you cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para><para id="element-132"><emphasis>Conclusion:</emphasis> At the 5% level of significance, from the sample data, there is not
+ sufficient evidence to conclude that the mean time wax 1 lasts is longer (wax 1 is more effective) than the mean time wax 2 lasts.</para>
+
+</solution>
+</exercise></example>
+
+
+<note id="fs-idm64723040" class="statistics try">
+<label/>
+<title>Try It</title>
+
+<exercise id="fs-idm106881952">
+<problem id="fs-idm49756528">
+ <para id="fs-idm99590512">The means of the number of revolutions per minute of two competing engines are to be compared. Thirty engines are randomly assigned to be tested. Both populations have normal distributions. <link target-id="fs-idm13177248"/> shows the result. Do the data indicate that Engine 2 has higher RPM than Engine 1? Test at a 5% level of significance.</para><table id="fs-idm13177248" summary=".">
+<tgroup cols="3"><colspec colname="c1" colnum="1"/>
+<colspec colname="c2" colnum="2"/>
+<colspec colname="c3" colnum="3"/>
+<thead><row><entry>Engine</entry><entry>Sample mean number of RPM</entry><entry>Population standard deviation</entry></row></thead>
+<tbody>
+<row><entry>1</entry><entry>1,500</entry><entry>50</entry></row>
+<row><entry>2</entry><entry>1,600</entry><entry>60</entry></row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="fs-idm106451808">
+<para id="fs-idm169041376">The <emphasis effect="italics">p</emphasis>-value is almost zero, so we reject the null hypothesis. There is sufficient evidence to conclude that Engine 2 runs at a higher RPM than Engine 1.</para>
+</solution>
+</exercise></note>
+
+ <example id="fs-idm64896800"><para id="fs-idm105362096">An interested citizen wanted to know if Democratic U. S. senators are older than
+  Republican U.S. senators, on average. On May 26 2013, the mean age of 30 randomly selected Republican Senators was 61 years 247 days old (61.675 years) with a standard deviation of 10.17 years. The mean age of 30 randomly selected Democratic senators was 61 years 257 days old (61.704 years) with a standard deviation of 9.55 years.</para>
+
+<exercise id="fs-idm75569648">
+<problem id="fs-idm112885376">
+ <para id="fs-idm126341728">Do the data indicate that Democratic senators are older than Republican senators, on average? Test at a 5% level of significance.</para>
+</problem>
+<solution id="fs-idm81176960">
+<para id="fs-idm81176832">This is a test of two independent groups, two population means. The population standard deviations are unknown, but the sum of the sample sizes is 30 + 30 = 60, which is greater than 30, so we can use the normal approximation to the Student’s-t distribution.  Subscripts: 1: Democratic senators 2: Republican senators</para>
+
+ <para id="fs-idm127611248"><emphasis>Random variable:</emphasis> <m:math>
+  <m:mrow>
+   <m:msub>
+    <m:mover accent="true">
+     <m:mi>X</m:mi>
+     <m:mo>–</m:mo>
+    </m:mover>
+
+    <m:mn>1</m:mn>
+   </m:msub>
+   <m:mtext> – </m:mtext><m:msub>
+    <m:mover accent="true">
+     <m:mi>X</m:mi>
+     <m:mo>–</m:mo>
+    </m:mover>
+
+    <m:mn>2</m:mn>
+   </m:msub>
+
+  </m:mrow>
+ </m:math> = difference in the mean age of Democratic and Republican U.S. senators.</para>
+
+ <para id="fs-idm49757440"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub>
+</m:math>         <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn>
+</m:math></para><para id="fs-idm175162192"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub>
+</m:math>         <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>&gt;</m:mo><m:mn>0</m:mn>
+</m:math></para><para id="fs-idm173135600">The words "older than" translates as a “&gt;” symbol and goes into <emphasis effect="italics">H<sub>a</sub></emphasis>. Therefore, this is a right-tailed test.</para><para id="fs-idm98812432"><figure id="fs-idp45038880"><media id="fs-idm86987792" alt="This is a normal distribution curve with mean equal to zero. A vertical line to the right of zero extends from the axis to the curve. The region under the curve to the right of the line is shaded representing p-value = 0.4955." display="block">
+<image mime-type="image/jpg" src="../../media/fig-ch10_01_10n.jpg" width="380"/>
+</media></figure></para><para id="fs-idm49745696"><emphasis>Make a decision:</emphasis>   The p-value is larger than 5%, therefore we cannot reject the null hypothesis. By calculating the test statistic we would find that the test statistic does not fall in the tail, therefore we cannot reject the null hypothesis. We reach the same conclusion using either method of a making this statistical decision.</para><para id="fs-idm113348080"><emphasis>Conclusion:</emphasis> At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the mean age of Democratic senators is greater than the mean age of the Republican senators.</para>
+</solution>
+</exercise>
+</example>
+
+
+<section id="eip-752" class="references">
+<title>References</title>
+<para id="eip-193">Data from the United States Census Bureau. Available online at http://www.census.gov/prod/cen2010/briefs/c2010br-02.pdf</para><para id="fs-idp17452848">Hinduja, Sameer. “Sexting Research and Gender Differences.” Cyberbullying Research Center, 2013. Available online at http://cyberbullying.us/blog/sexting-research-and-gender-differences/  (accessed June 17, 2013).</para>
+
+<para id="fs-idp109642176">“Smart Phone Users, By the Numbers.” Visually, 2013. Available online at http://visual.ly/smart-phone-users-numbers (accessed June 17, 2013).</para><para id="fs-idp119668928">Smith, Aaron. “35% of American adults own a Smartphone.” Pew Internet, 2013. Available online at http://www.pewinternet.org/~/media/Files/Reports/2011/PIP_Smartphones.pdf (accessed June 17, 2013).</para>
+
+<para id="fs-idm28346208">“State-Specific Prevalence of Obesity AmongAduls—Unites States, 2007.” MMWR, CDC. Available online at http://www.cdc.gov/mmwr/preview/mmwrhtml/mm5728a1.htm (accessed June 17, 2013).</para><para id="fs-idp77200256">“Texas Crime Rates 1960–1012.” FBI, Uniform Crime Reports, 2013. Available online at: http://www.disastercenter.com/crime/txcrime.htm (accessed June 17, 2013).</para>
+</section>
+
+<section id="fs-idm120175008" class="summary">
+<title>Chapter Review</title>
+<para id="fs-idm9601152">A hypothesis test of two population means from independent samples where the population standard deviations are known will have these characteristics:
+<list id="fs-idm193455088" list-type="bulleted"><item>Random variable: <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mover accent="true">
+    <m:mi>X</m:mi>
+    <m:mo>–</m:mo>
+   </m:mover>
+
+   <m:mn>1</m:mn>
+  </m:msub>
+  <m:mo>−</m:mo><m:msub>
+   <m:mover accent="true">
+    <m:mi>X</m:mi>
+    <m:mo>–</m:mo>
+   </m:mover>
+
+   <m:mn>2</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> = the difference of the means</item>
+<item>Distribution: normal distribution</item>
+</list></para>
+</section>
+
+<section id="fs-idm25139648" class="formula-review">
+<title>Formula Review</title>
+<para id="fs-idm35490512">Test Statistic (<emphasis effect="italics">z</emphasis>-score):<newline count="2"/>
+<m:math>
+ <m:mrow><m:msub>
+  <m:mi>Z</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mo stretchy="false">(</m:mo><m:msub>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>–</m:mo>
+     </m:mover>
+
+     <m:mn>1</m:mn>
+    </m:msub>
+    <m:mo>−</m:mo><m:msub>
+     <m:mover accent="true">
+      <m:mi>x</m:mi>
+      <m:mo>–</m:mo>
+     </m:mover>
+
+     <m:mn>2</m:mn>
+    </m:msub>
+    <m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:msub><m:mi>δ</m:mi><m:mn>0</m:mn></m:msub>
+   </m:mrow>
+   <m:mrow>
+    <m:msqrt>
+     <m:mrow>
+      <m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>σ</m:mi>
+           <m:mn>1</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>n</m:mi>
+         <m:mn>1</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+      <m:mo>+</m:mo><m:mfrac>
+       <m:mrow>
+        <m:msup>
+         <m:mrow>
+          <m:mo stretchy="false">(</m:mo><m:msub>
+           <m:mi>σ</m:mi>
+           <m:mn>2</m:mn>
+          </m:msub>
+          <m:mo stretchy="false">)</m:mo>
+         </m:mrow>
+         <m:mn>2</m:mn>
+        </m:msup>
+
+       </m:mrow>
+       <m:mrow>
+        <m:msub>
+         <m:mi>n</m:mi>
+         <m:mn>2</m:mn>
+        </m:msub>
+
+       </m:mrow>
+      </m:mfrac>
+
+     </m:mrow>
+    </m:msqrt>
+
+   </m:mrow>
+  </m:mfrac>
+
+ </m:mrow>
+</m:math>
+</para><para id="fs-idm51475072"><emphasis>where:</emphasis>
+<newline/><m:math><m:msub><m:mi>σ</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mn>2</m:mn></m:msub></m:math> are the known population standard deviations. <emphasis effect="italics">n</emphasis><sub>1</sub> and <emphasis effect="italics">n</emphasis><sub>2</sub> are the sample sizes. <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mover accent="true">
+    <m:mi>x</m:mi>
+    <m:mo>–</m:mo>
+   </m:mover>
+
+   <m:mn>1</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> and <m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mover accent="true">
+    <m:mi>x</m:mi>
+    <m:mo>–</m:mo>
+   </m:mover>
+
+   <m:mn>2</m:mn>
+  </m:msub>
+
+ </m:mrow>
+</m:math> are the sample means. <emphasis effect="italics">μ</emphasis><sub>1</sub> and <emphasis effect="italics">μ</emphasis><sub>2</sub> are the population means.</para></section>
+
+<section id="fs-idm106403600" class="practice">
+<para id="fs-idm82036368"><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> The mean speeds of fastball pitches from two different baseball pitchers are to be compared. A sample of 14 fastball pitches is measured from each pitcher. The populations have normal distributions. <link target-id="fs-idm34247936"/> shows the result. Scouters believe that Rodriguez pitches a speedier fastball.</para>
+
+<table id="fs-idm34247936" summary=".">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead><row><entry>Pitcher</entry><entry>Sample mean speed of pitches (mph)</entry><entry>Population standard deviation</entry></row></thead>
+<tbody>
+<row><entry>Wesley</entry><entry>86</entry><entry>3</entry></row>
+<row><entry>Rodriguez</entry><entry>91</entry><entry>7</entry></row>
+</tbody>
+
+</tgroup>
+</table><exercise id="fs-idm106340640">
+<problem id="fs-idm94070176">
+<para id="fs-idm94069920">What is the random variable?</para>
+</problem>
+<solution id="fs-idm83376592">
+<para id="fs-idm119559520">The difference in mean speeds of the fastball pitches of the two pitchers</para>
+</solution>
+</exercise>
+
+<exercise id="fs-idm41149200">
+<problem id="fs-idm41148944">
+<para id="fs-idm127287408">State the null and alternative hypotheses.</para>
+</problem>
+</exercise>
+
+<exercise id="fs-idm113366480">
+<problem id="fs-idm3418320">
+<para id="fs-idm3418064">What is the test statistic?</para>
+</problem>
+<solution id="fs-idm125558144">
+<para id="fs-idm56801552">–2.46</para>
+</solution>
+</exercise>
+
+<exercise id="fs-idm126168192">
+<problem id="fs-idm126167936">
+<para id="fs-idm99121104">At the 1% significance level, what is your conclusion?</para>
+</problem>
+<solution id="fs-idm108324064">
+<para id="fs-idm108323808">At the 1% significance level, we can reject the null hypothesis. There is sufficient data to conclude that the mean speed of Rodriguez’s fastball is faster than Wesley’s.</para>
+</solution>
+</exercise>
+
+ <para id="fs-idm29321648"><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> A researcher is testing the effects of plant food on plant growth. Nine plants have been given the plant food. Another nine plants have not been given the plant food. The heights of the plants are recorded after eight weeks. The populations have normal distributions. The following table is the result. The researcher thinks the food makes the plants grow taller.</para><table id="fs-idm112897184" summary=".">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead><row><entry>Plant group</entry>	<entry>Sample mean height of plants (inches)</entry>	<entry>Population standard deviation</entry></row></thead>
+<tbody>
+<row><entry>Food</entry>	<entry>16</entry>	<entry>2.5</entry></row>
+<row><entry>No food</entry>	<entry>14</entry>	<entry>1.5</entry></row>
+</tbody>
+
+</tgroup>
+</table><exercise id="fs-idm6624080">
+<problem id="fs-idm6623824">
+<para id="fs-idm121096704">Is the population standard deviation known or unknown?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-idm92555424">
+<problem id="fs-idm92555168">
+<para id="fs-idm49112064">State the null and alternative hypotheses.</para>
+</problem>
+<solution id="fs-idm150673952">
+<para id="fs-idm150673696">Subscripts: 1 = Food, 2 = No Food
+<newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>
+<newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-idm31661248">
+<problem id="fs-idm165116080">
+<para id="fs-idm165115824">At the 1% significance level, what is your conclusion?</para>
+</problem>
+</exercise>
+
+ <para id="fs-idm129338912"><newline/><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> Two metal alloys are being considered as material for ball bearings. The mean melting point of the two alloys is to be compared. 15 pieces of each metal are being tested. Both populations have normal distributions. The following table is the result. It is believed that Alloy Zeta has a different melting point.</para>
+<table id="fs-idm150132352" summary="table">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead><row><entry/>	<entry>Sample mean melting temperatures (°F)</entry>	<entry>Population standard deviation</entry></row></thead>
+<tbody>
+<row><entry>Alloy Gamma</entry>	<entry>800</entry>	<entry>95</entry></row>
+<row><entry>Alloy Zeta</entry>	<entry>900</entry>	<entry>105</entry></row>
+</tbody>
+
+
+</tgroup>
+</table><exercise id="fs-idm4478224">
+<problem id="fs-idm164950176">
+<para id="fs-idm164949920">State the null and alternative hypotheses.</para>
+ </problem>
+<solution id="fs-idm125096608">
+<para id="fs-idm125096352">Subscripts: 1 = Gamma, 2 = Zeta
+<newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>
+<newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>
+</para></solution>
+</exercise>
+
+<exercise id="fs-idm1600720">
+<problem id="fs-idm1600464">
+<para id="fs-idm108982624">Is this a right-, left-, or two-tailed test?</para>
+</problem>
+</exercise>
+
+<exercise id="fs-idm85314992">
+<problem id="fs-idm85314736">
+<para id="fs-idm170275488">At the 1% significance level, what is your conclusion?</para>
+</problem>
+<solution id="fs-idm68009328">
+<para id="fs-idm68009072">There is sufficient evidence so we cannot accept the null hypothesis. The data support that the melting point for Alloy Zeta is different from the melting point of Alloy Gamma.</para>
+</solution>
+</exercise>
+</section>
+
+<section id="fs-idp58644992" class="free-response">
+<title>Homework</title>
+<note id="fs-idm71956336">
+<label/>
+<title>Note</title>
+<para id="eip-idp76319008">If you are using a Student's <emphasis effect="italics">t</emphasis>-distribution for one of the following homework problems, including for paired data, you may assume that the underlying population is normally distributed. (When using these tests in a real situation, you must first prove that assumption, however.)</para></note>
+
+<exercise id="exer13">
+<problem id="id18237239">
+<para id="id12962478">A study is done to determine if students in the California state university system take longer to graduate, on average, than students enrolled in private universities. One hundred students from both the California state university system and private universities are surveyed. Suppose that from years of research, it is known that the population standard deviations are 1.5811 years and 1 year, respectively. The following data are collected. The California state university system students took on average 4.5 years with a standard deviation of 0.8. The private university students took on average 4.1 years with a standard deviation of 0.3.</para>
+</problem>
+</exercise>
+
+<exercise id="exer29">
+ <problem id="id6099530">
+ <para id="id12115845">Parents of teenage boys often complain that auto insurance costs more, on average, for teenage boys than for teenage girls. A group of concerned parents examines a random sample of insurance bills. The mean annual cost for 36 teenage boys was $679. For 23 teenage girls, it was $559. From past years, it is known that the population standard deviation for each group is $180. Determine whether or not you believe that the mean cost for auto insurance for teenage boys is greater than that for teenage girls.</para></problem>
+
+<solution id="id17616631">
+ <para id="fs-idp33457664">Subscripts: 1 = boys, 2 = girls</para>
+ <list id="fs-idp165211984" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
+    <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
+    <item>The random variable is the difference in the mean auto insurance costs for boys and girls.</item>
+    <item>normal</item>
+    <item>test statistic: <emphasis effect="italics">z</emphasis> = 2.50</item>
+    <item><emphasis effect="italics">p</emphasis>-value: 0.0062</item>
+    <item>Check student’s solution.</item>
+    <item>
+    <list id="fs-idp146441584" list-type="enumerated" number-style="lower-roman">
+     <item>Alpha: 0.05</item>
+     <item>Decision: Cannot accept the null hypothesis.</item>
+     <item>Reason for Decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+     <item>Conclusion: At the 5% significance level, there is sufficient evidence to conclude that the mean cost of auto insurance for teenage boys is greater than that for girls.</item>
+    </list>
+   </item>
+ </list></solution>
+</exercise>
+
+    <exercise id="exer30"><problem id="id16973772"><para id="id12115862">A group of transfer bound students wondered if they will spend the same mean amount on texts and supplies each year at their four-year university as they have at their community college. They conducted a random survey of 54 students at their community college and 66 students at their local four-year university. The sample means were $947 and $1,011, respectively. The population standard deviations are known to be $254 and $87, respectively. Conduct a hypothesis test to determine if the means are statistically the same.</para></problem>
+    </exercise>
+
+<exercise id="exer32"><problem id="id3865334"><para id="id12115899">Some manufacturers claim that non-hybrid sedan cars have a lower mean miles-per-gallon (mpg) than hybrid ones. Suppose that consumers test 21 hybrid sedans and get a mean of 31 mpg with a standard deviation of seven mpg. Thirty-one non-hybrid sedans get a mean of 22 mpg with a standard deviation of four mpg. Suppose that the population standard deviations are known to be six and three, respectively. Conduct a hypothesis test to evaluate the manufacturers claim.</para></problem>
+ <solution id="fs-idp138247120">
+  <para id="fs-idm951328">Subscripts: 1 = non-hybrid sedans, 2 = hybrid sedans</para>
+  <list id="fs-idm950944" list-type="enumerated" number-style="lower-alpha">
+   <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≥</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
+    <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
+
+
+    <item>The random variable is the difference in the mean miles per gallon of non-hybrid sedans and hybrid sedans.</item>
+    <item>normal</item>
+    <item>test statistic: 6.36</item>
+    <item><emphasis effect="italics">p</emphasis>-value: 0</item>
+    <item>Check student’s solution.</item>
+    <item>
+    <list id="fs-idp76801312" list-type="enumerated" number-style="lower-roman">
+     <item>Alpha: 0.05</item>
+     <item>Decision: Cannot accept the null hypothesis.</item>
+     <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+     <item>Conclusion: At the 5% significance level, there is sufficient evidence to conclude that the mean miles per gallon of non-hybrid sedans is less than that of hybrid sedans.</item>
+    </list>
+   </item>
+  </list>
+
+ </solution>
+</exercise>
+
+  <exercise id="fs-idm126682256">
+   <problem id="fs-idm104577968"><para id="fs-idm104577840">A baseball fan wanted to know if there is a difference between the number of games played in a World Series when the American League won the series versus when the National League won the series. From 1922 to 2012, the population standard deviation of games won by the American League was 1.14, and the population standard deviation of games won by the National League was 1.11.  Of 19 randomly selected World Series games won by the American League, the mean number of games won was 5.76.  The mean number of 17 randomly selected games won by the National League was 5.42. Conduct a hypothesis test.</para></problem>
+  </exercise>
+
+<exercise id="eip-267"><problem id="eip-idp3652144">
+<para id="eip-idp3652400">One of the questions in a study of marital satisfaction of dual-career couples was to rate the statement “I’m pleased with the way we divide the responsibilities for childcare.” The ratings went from one (strongly agree) to five (strongly disagree). <link target-id="eip-idm34133008"/> contains ten of the paired responses for husbands and wives. Conduct a hypothesis test to see if the mean difference in the husband’s versus the wife’s satisfaction level is negative (meaning that, within the partnership, the husband is happier than the wife).</para><table id="eip-idm34133008" summary="..">
+<tgroup cols="11"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
+<colspec colnum="7" colname="c7"/>
+<colspec colnum="8" colname="c8"/>
+<colspec colnum="9" colname="c9"/>
+<colspec colnum="10" colname="c10"/>
+<colspec colnum="11" colname="c11"/>
+<tbody>
+<row>
+<entry><emphasis>Wife’s score</emphasis></entry>
+<entry>2</entry>
+<entry>2</entry>
+<entry>3</entry>
+<entry>3</entry>
+<entry>4</entry>
+<entry>2</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>4</entry>
+</row>
+
+<row>
+<entry><emphasis>Husband’s score</emphasis></entry>
+<entry>2</entry>
+<entry>2</entry>
+<entry>1</entry>
+<entry>3</entry>
+<entry>2</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>1</entry>
+<entry>2</entry>
+<entry>4</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table></problem>
+<solution id="eip-idm34213152">
+<list id="eip-idm34212896" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">µ<sub>d</sub></emphasis> = 0</item>
+<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">µ<sub>d</sub></emphasis> &lt; 0</item>
+<item>The random variable <emphasis effect="italics">X<sub>d</sub></emphasis> is the average difference between husband’s and wife’s satisfaction level.</item>
+<item><emphasis effect="italics">t</emphasis><sub>9</sub></item>
+<item>test statistic: <emphasis effect="italics">t</emphasis> = –1.86</item>
+<item><emphasis effect="italics">p</emphasis>-value: 0.0479</item>
+<item>Check student’s solution</item>
+<item><list id="eip-idm9745248" list-type="enumerated" number-style="lower-roman">
+<item>Alpha: 0.05</item>
+<item>Decision: Cannot accept the null hypothesis, but run another test.</item>
+<item>Reason for Decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+<item>Conclusion: This is a weak test because alpha and the <emphasis effect="italics">p</emphasis>-value are close. However, there is insufficient evidence to conclude that the mean difference is negative.</item>
+</list>
+</item>
+</list></solution></exercise>
+
+</section> </content>
+</document>
