@@ -26,7 +26,7 @@
   <m:mo>¯</m:mo>
  </m:mover>
 
-</m:math> as an estimate for <emphasis effect="italics">μ</emphasis> and we need the margin of error. Here, the margin of error (<emphasis effect="italics">EBM</emphasis>) is called the <term>error bound for a population mean</term> (abbreviated <emphasis><emphasis effect="italics">EBM</emphasis></emphasis>). The sample mean <m:math>
+</m:math> as an estimate for <emphasis effect="italics">μ</emphasis> and we need the margin of error. Here, the margin of error (<emphasis effect="italics">EBM</emphasis>) is called the <term id="term-00001">error bound for a population mean</term> (abbreviated <emphasis><emphasis effect="italics">EBM</emphasis></emphasis>). The sample mean <m:math>
 <m:mover accent="true">
 <m:mi>x</m:mi>
 <m:mo>¯</m:mo>
@@ -45,7 +45,7 @@
   </m:mover>
   <m:mtext>+</m:mtext><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi>
  </m:mrow>
-</m:math>)</para><para id="eip-id1171253180187">The margin of error (<emphasis effect="italics">EBM</emphasis>) depends on the <term>confidence level</term> (abbreviated <emphasis><emphasis effect="italics">CL</emphasis></emphasis>). The confidence level is often considered the probability that the calculated confidence interval estimate will contain the true population parameter. However, it is more accurate to state that the confidence level is the percent of confidence intervals that contain the true population parameter when repeated samples are taken. Most often, it is the choice of the person constructing the confidence interval to choose a confidence level of 90% or higher because that person wants to be reasonably certain of his or her conclusions.</para>
+</m:math>)</para><para id="eip-id1171253180187">The margin of error (<emphasis effect="italics">EBM</emphasis>) depends on the <term id="term-00002">confidence level</term> (abbreviated <emphasis><emphasis effect="italics">CL</emphasis></emphasis>). The confidence level is often considered the probability that the calculated confidence interval estimate will contain the true population parameter. However, it is more accurate to state that the confidence level is the percent of confidence intervals that contain the true population parameter when repeated samples are taken. Most often, it is the choice of the person constructing the confidence interval to choose a confidence level of 90% or higher because that person wants to be reasonably certain of his or her conclusions.</para>
 
     <para id="eip-id1171259743972">There is another probability called alpha (<emphasis effect="italics">α</emphasis>). <emphasis effect="italics">α</emphasis> is related to the confidence level, <emphasis effect="italics">CL</emphasis>. <emphasis effect="italics">α</emphasis> is the probability that the interval does not contain the unknown population parameter.
     <newline/>Mathematically, <emphasis effect="italics">α</emphasis> + <emphasis effect="italics">CL</emphasis> = 1.</para>
@@ -1378,20 +1378,7 @@
     <para id="eip-120">In this module, we learned how to calculate the confidence interval for a single population mean where the population standard deviation is known. When estimating a population mean, the margin of error is called the error bound for a population mean (<emphasis effect="italics">EBM</emphasis>). A confidence interval has the general form:</para>
     <para id="fs-idm46112">(lower bound, upper bound) = (point estimate – <emphasis effect="italics">EBM</emphasis>, point estimate + <emphasis effect="italics">EBM</emphasis>)</para>
     <para id="eip-430">The calculation of <emphasis effect="italics">EBM</emphasis> depends on the size of the sample and the level of confidence desired. The confidence level is the percent of all possible samples that can be expected to include the true population parameter. As the confidence level increases, the corresponding <emphasis effect="italics">EBM</emphasis> increases as well. As the sample size increases, the <emphasis effect="italics">EBM</emphasis> decreases. By the central limit theorem,</para>
-    <para id="fs-idm70707712"><m:math>
-     <m:mrow>
-      <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:mi>z</m:mi><m:mfrac>
-       <m:mi>σ</m:mi>
-       <m:mrow>
-        <m:msqrt>
-         <m:mi>n</m:mi>
-        </m:msqrt>
-
-       </m:mrow>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:math></para>
+    <para id="fs-idm70707712"><m:math><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:mfenced><m:mrow><m:mi>z</m:mi><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:mfenced><m:mfenced><m:mfrac><m:mi>δ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mfenced></m:math></para>
     <para id="eip-974">Given a confidence interval, you can work backwards to find the error bound (<emphasis effect="italics">EBM</emphasis>) or the sample mean. To find the error bound, find the difference of the upper bound of the interval and the mean. If you do not know the sample mean, you can find the error bound by calculating half the difference of the upper and lower bounds.  To find the sample mean given a confidence interval, find the difference of the upper bound and the error bound. If the error bound is unknown, then average the upper and lower bounds of the confidence interval to find the sample mean.</para>
      <para id="eip-211">Sometimes researchers know in advance that they want to estimate a population mean within a specific margin of error for a given level of confidence. In that case, solve the <emphasis effect="italics">EBM</emphasis> formula for <emphasis effect="italics">n</emphasis> to discover the size of the sample that is needed to achieve this goal:</para>
     <para id="fs-idm4091408"><m:math>
@@ -1499,20 +1486,7 @@
  </m:mrow>
 </m:math></para>
     <para id="eip-880">
-    <emphasis effect="italics">EBM</emphasis> = <m:math>
-     <m:mrow>
-      <m:mi>z</m:mi><m:mfrac>
-       <m:mi>σ</m:mi>
-       <m:mrow>
-        <m:msqrt>
-         <m:mi>n</m:mi>
-        </m:msqrt>
-
-       </m:mrow>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:math> = the error bound for the mean, or the margin of error for a single population mean; this formula is used when the population standard deviation is known.</para>
+      <m:math><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:mfenced><m:mrow><m:mi>z</m:mi><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:mfenced><m:mfenced><m:mfrac><m:mi>δ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mfenced></m:math> = the error bound for the mean, or the margin of error for a single population mean; this formula is used when the population standard deviation is known.</para>
     <para id="eip-277"><emphasis effect="italics">CL</emphasis> = confidence level, or the proportion of confidence intervals created that are expected to contain the true population parameter</para>
       <para id="eip-401"><emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = the proportion of confidence intervals that will not contain the population parameter</para>
     <para id="eip-468"><m:math>

@@ -12,7 +12,7 @@
 
 <section id="fs-idp113760352">
 <title>Tree Diagrams</title>
-<para id="fs-idp119305568">A <term>tree diagram</term> is a special type of graph used to determine the outcomes of an experiment. It consists of "branches" that are labeled with either frequencies or probabilities. Tree diagrams can make some probability problems easier to visualize and solve. The following example illustrates how to use a tree diagram.</para>
+<para id="fs-idp119305568">A <term id="term-00001">tree diagram</term> is a special type of graph used to determine the outcomes of an experiment. It consists of "branches" that are labeled with either frequencies or probabilities. Tree diagrams can make some probability problems easier to visualize and solve. The following example illustrates how to use a tree diagram.</para>
 <example id="element-192">
 <para id="element-200">In an urn, there are 11 balls. Three balls are red (<emphasis effect="italics">R</emphasis>) and eight balls are blue (<emphasis effect="italics">B</emphasis>). Draw two balls, one at a time, <emphasis>with replacement</emphasis>. "With replacement" means that you put the first ball back in the urn before you select the second ball. The tree diagram using frequencies that show all the possible outcomes follows.</para><figure id="element-325"><media id="id47069242" alt="This is a tree diagram with branches showing frequencies of each draw. The first branch shows two lines: 8B and 3R. The second branch has a set of two lines (8B and 3R) for each line of the first branch. Multiply along each line to find 64BB, 24BR, 24RB, and 9RR."><image src="../../media/fig-ch03_07_01N.jpg" mime-type="image/jpg" width="400" print-width="4in"/></media>
 <caption>Total = 64 + 24 + 24 + 9 = 121</caption></figure><para id="element-54">The first set of branches represents the first draw. The second set of branches represents the second draw. Each of the outcomes is distinct. In fact, we can list each red ball as <emphasis effect="italics">R</emphasis>1, <emphasis effect="italics">R</emphasis>2, and <emphasis effect="italics">R</emphasis>3 and each blue ball as <emphasis effect="italics">B</emphasis>1, <emphasis effect="italics">B</emphasis>2, <emphasis effect="italics">B</emphasis>3, <emphasis effect="italics">B</emphasis>4, <emphasis effect="italics">B</emphasis>5, <emphasis effect="italics">B</emphasis>6, <emphasis effect="italics">B</emphasis>7, and <emphasis effect="italics">B</emphasis>8. Then the nine <emphasis effect="italics">RR</emphasis> outcomes can be written as:</para>
@@ -30,7 +30,7 @@
 </list>
 </para>
 <para id="element-5235">The other outcomes are similar.</para>
-<para id="element-767">There are a total of 11 balls in the urn. Draw two balls, one at a time, with replacement. There are 11(11) = 121 outcomes, the size of the <term>sample space</term>.<newline count="2"/></para><exercise id="element-135">
+<para id="element-767">There are a total of 11 balls in the urn. Draw two balls, one at a time, with replacement. There are 11(11) = 121 outcomes, the size of the <term id="term-00002">sample space</term>.<newline count="2"/></para><exercise id="element-135">
 <problem id="id47069535">
   <para id="element-638">a. List the 24 <emphasis effect="italics">BR</emphasis> outcomes: <emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>1, <emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>2, <emphasis effect="italics">B</emphasis>1<emphasis effect="italics">R</emphasis>3, ...</para>
 <para id="element-909">b. Using the tree diagram, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">RR</emphasis>).</para>
@@ -896,7 +896,7 @@
 
 <section id="eip-922">
 <title>Venn Diagram</title>
-<para id="eip-9222">A <term>Venn diagram</term> is a picture that represents the outcomes of an experiment. It generally consists of a box that represents the sample space S together with circles or ovals. The circles or ovals represent events.</para>
+<para id="eip-9222">A <term id="term-00003">Venn diagram</term> is a picture that represents the outcomes of an experiment. It generally consists of a box that represents the sample space S together with circles or ovals. The circles or ovals represent events.</para>
 <example id="element-513"><para id="element-756">Suppose an experiment has the outcomes 1, 2, 3, ... , 12 where each outcome has an equal chance of occurring. Let event <emphasis effect="italics">A</emphasis> = {1, 2, 3, 4, 5, 6} and event <emphasis effect="italics">B</emphasis> = {6, 7, 8, 9}. Then <emphasis effect="italics">A</emphasis> AND <emphasis effect="italics">B</emphasis> = {6} and <emphasis effect="italics">A</emphasis> OR <emphasis effect="italics">B</emphasis> = {1, 2, 3, 4, 5, 6, 7, 8, 9}.  The Venn diagram is as follows:</para>
 <figure id="eip-idm17287840"><media id="id18119489" alt="A Venn diagram. An oval representing set A contains the values 1, 2, 3, 4, 5, and 6. An oval representing set B also contains the 6, along with 7, 8, and 9. The values 10, 11, and 12 are present but not contained in either set." display="block"><image src="../../media/fig-ch03_06_01.jpg" mime-type="image/png" width="380"/></media>
 </figure></example><note id="fs-idp42923984" class="statistics try"><label/><title>Try It</title>
@@ -1290,7 +1290,7 @@
 <colspec colnum="4" colname="c4"/>
 <colspec colnum="5" colname="c5"/>
 <thead>
-<row><entry/><entry>&lt;20</entry><entry>20–64</entry><entry>&gt;64</entry><entry>Totals</entry></row>
+<row><entry/><entry>&lt;20</entry><entry>20–64</entry><entry>>64</entry><entry>Totals</entry></row>
 </thead>
 <tbody>
 <row>
@@ -1319,11 +1319,11 @@
 </table>
 </item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) = 0.486</item>
-<item><emphasis effect="italics">P</emphasis>(&gt;64|<emphasis effect="italics">F</emphasis>) = 0.1361</item>
-<item><emphasis effect="italics">P</emphasis>(&gt;64 and <emphasis effect="italics">F</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) <emphasis effect="italics">P</emphasis>(&gt;64|<emphasis effect="italics">F</emphasis>) = (0.486)(0.1361) = 0.0661</item>
-<item><emphasis effect="italics">P</emphasis>(&gt;64|<emphasis effect="italics">F</emphasis>) is the percentage of female drivers who are 65 or older and <emphasis effect="italics">P</emphasis>(&gt;64 and <emphasis effect="italics">F</emphasis>) is the percentage of drivers who are female and 65 or older.</item>
-<item><emphasis effect="italics">P</emphasis>(&gt;<emphasis effect="italics">64</emphasis>) = <emphasis effect="italics">P</emphasis>(&gt;64 and <emphasis effect="italics">F</emphasis>) + <emphasis effect="italics">P</emphasis>(&gt;64 and <emphasis effect="italics">M</emphasis>) = 0.1356</item>
-<item>No, being female and 65 or older are not mutually exclusive because they can occur at the same time  P(&gt;64 and <emphasis effect="italics">F</emphasis>) = 0.0661.</item>
+<item><emphasis effect="italics">P</emphasis>(>64|<emphasis effect="italics">F</emphasis>) = 0.1361</item>
+<item><emphasis effect="italics">P</emphasis>(>64 and <emphasis effect="italics">F</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>) <emphasis effect="italics">P</emphasis>(>64|<emphasis effect="italics">F</emphasis>) = (0.486)(0.1361) = 0.0661</item>
+<item><emphasis effect="italics">P</emphasis>(>64|<emphasis effect="italics">F</emphasis>) is the percentage of female drivers who are 65 or older and <emphasis effect="italics">P</emphasis>(>64 and <emphasis effect="italics">F</emphasis>) is the percentage of drivers who are female and 65 or older.</item>
+<item><emphasis effect="italics">P</emphasis>(><emphasis effect="italics">64</emphasis>) = <emphasis effect="italics">P</emphasis>(>64 and <emphasis effect="italics">F</emphasis>) + <emphasis effect="italics">P</emphasis>(>64 and <emphasis effect="italics">M</emphasis>) = 0.1356</item>
+<item>No, being female and 65 or older are not mutually exclusive because they can occur at the same time  P(>64 and <emphasis effect="italics">F</emphasis>) = 0.0661.</item>
 </list></solution>
 </exercise>
 <exercise id="element-175"><problem id="eip-idm102025184">

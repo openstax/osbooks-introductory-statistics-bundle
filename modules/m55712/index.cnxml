@@ -8,23 +8,23 @@
 </metadata>
 
 <content>
-<para id="me001">The distribution used for the hypothesis test is a new one. It is called the <term><emphasis effect="italics">F</emphasis> distribution</term>, invented by George Snedecor but named in honor of Sir Ronald Fisher, an English statistician. The <emphasis effect="italics">F</emphasis> statistic is a ratio (a fraction). There are two sets of degrees of freedom; one for the numerator and one for the denominator.</para><para id="element-674">For example, if <emphasis effect="italics">F</emphasis> follows an <emphasis effect="italics">F</emphasis> distribution and the number of degrees of freedom for the numerator is four, and the number of degrees of freedom for the denominator is ten, then <emphasis effect="italics">F</emphasis> ~ <emphasis effect="italics">F<sub>4,10</sub></emphasis>.</para>
+<para id="me001">The distribution used for the hypothesis test is a new one. It is called the <term id="term-00001"><emphasis effect="italics">F</emphasis> distribution</term>, invented by George Snedecor but named in honor of Sir Ronald Fisher, an English statistician. The <emphasis effect="italics">F</emphasis> statistic is a ratio (a fraction). There are two sets of degrees of freedom; one for the numerator and one for the denominator.</para><para id="element-674">For example, if <emphasis effect="italics">F</emphasis> follows an <emphasis effect="italics">F</emphasis> distribution and the number of degrees of freedom for the numerator is four, and the number of degrees of freedom for the denominator is ten, then <emphasis effect="italics">F</emphasis> ~ <emphasis effect="italics">F<sub>4,10</sub></emphasis>.</para>
 
-<para id="element-967">To calculate the <term><emphasis effect="italics">F</emphasis> ratio</term>, two estimates of the variance are made.</para>
+<para id="element-967">To calculate the <term id="term-00002"><emphasis effect="italics">F</emphasis> ratio</term>, two estimates of the variance are made.</para>
 
 <list id="element-236" list-type="enumerated">
-<item><term>Variance between samples</term><emphasis>:</emphasis> An estimate of <emphasis effect="italics">σ</emphasis><sup>2</sup> that is the variance of the sample means multiplied by <emphasis effect="italics">n</emphasis> (when the sample sizes are the same.). If the samples are different sizes, the variance between samples is weighted to account for the different sample sizes. The variance is also called <emphasis>variation due to treatment or explained variation.</emphasis></item>
-<item><term>Variance within samples</term><emphasis>:</emphasis> An estimate of <emphasis effect="italics">σ</emphasis><sup>2</sup> that is the average of the sample variances (also known as a pooled variance). When the sample sizes are different, the variance within samples is weighted. The variance is also called the <emphasis>variation due to error or unexplained variation.</emphasis></item>
+<item><term id="term-00003">Variance between samples</term><emphasis>:</emphasis> An estimate of <emphasis effect="italics">σ</emphasis><sup>2</sup> that is the variance of the sample means multiplied by <emphasis effect="italics">n</emphasis> (when the sample sizes are the same.). If the samples are different sizes, the variance between samples is weighted to account for the different sample sizes. The variance is also called <emphasis>variation due to treatment or explained variation.</emphasis></item>
+<item><term id="term-00004">Variance within samples</term><emphasis>:</emphasis> An estimate of <emphasis effect="italics">σ</emphasis><sup>2</sup> that is the average of the sample variances (also known as a pooled variance). When the sample sizes are different, the variance within samples is weighted. The variance is also called the <emphasis>variation due to error or unexplained variation.</emphasis></item>
 </list>
 
 <list id="eip-197">
-<item><emphasis effect="italics">SS</emphasis><sub>between</sub> = the <term>sum of squares</term> that represents the variation among the different samples</item>
+<item><emphasis effect="italics">SS</emphasis><sub>between</sub> = the <term id="term-00005">sum of squares</term> that represents the variation among the different samples</item>
 <item><emphasis effect="italics">SS</emphasis><sub>within</sub> = the sum of squares that represents the variation within samples that is due to chance.</item>
 </list>
 
 <para id="eip-668">To find a "sum of squares" means to add together squared quantities that, in some
 cases, may be weighted. We used sum of squares to calculate the sample variance and
-the sample standard deviation in <link document="m53786"/>.</para><para id="eip-39"><emphasis effect="italics">MS</emphasis> means "<term>mean square</term>." <emphasis effect="italics">MS</emphasis><sub>between</sub> is the variance between groups, and <emphasis effect="italics">MS</emphasis><sub>within</sub> is the variance within groups.</para>
+the sample standard deviation in <link document="m53786"/>.</para><para id="eip-39"><emphasis effect="italics">MS</emphasis> means "<term id="term-00006">mean square</term>." <emphasis effect="italics">MS</emphasis><sub>between</sub> is the variance between groups, and <emphasis effect="italics">MS</emphasis><sub>within</sub> is the variance within groups.</para>
 
 <para id="eip-12"><emphasis>Calculation of Sum of Squares and Mean Square</emphasis>
 <list id="eip-idm81361504" list-type="bulleted"><item><emphasis effect="italics">k</emphasis> = the number of different groups</item>
@@ -1084,11 +1084,11 @@ the sample standard deviation in <link document="m53786"/>.</para><para id="eip-
 
 <figure id="fs-idm71243968"><media id="eip-idp67270848" alt="This graph shows a nonsymmetrical F distribution curve. The horizontal axis extends from 0 - 5, and the vertical axis ranges from 0 - 0.7. The curve is strongly skewed to the right.">
 <image src="../../media/CNX_Stats_C13_M04_001.jpg" mime-type="image/jpeg" width="380"/>
-</media></figure><para id="eip-idm4421376"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 4.481) = 0.0248.</para>
+</media></figure><para id="eip-idm4421376"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> > 4.481) = 0.0248.</para>
 
 <para id="eip-idm4421120"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.05, <emphasis effect="italics">p</emphasis>-value = 0.0248</para>
 
-<para id="eip-idm141674128"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, we cannot accept <emphasis effect="italics">H<sub>0</sub></emphasis>.</para><para id="eip-idm156731472"><emphasis>Conclusion:</emphasis> At the 5% significance level, we have reasonably strong evidence that differences in mean yields for slicing tomato plants grown under different mulching conditions are unlikely to be due to chance alone.  We may conclude that at least some of mulches led to different mean yields.</para>
+<para id="eip-idm141674128"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, we cannot accept <emphasis effect="italics">H<sub>0</sub></emphasis>.</para><para id="eip-idm156731472"><emphasis>Conclusion:</emphasis> At the 5% significance level, we have reasonably strong evidence that differences in mean yields for slicing tomato plants grown under different mulching conditions are unlikely to be due to chance alone.  We may conclude that at least some of mulches led to different mean yields.</para>
 
 </solution>
 </exercise>
@@ -1202,11 +1202,11 @@ the sample standard deviation in <link document="m53786"/>.</para><para id="eip-
 </table><figure id="fig000"><media id="eip-idp176119744" alt="This graph shows a nonsymmetrical F distribution curve. The curve is skewed to the right. A vertical upward line extends from 0.6649 to the curve. This line is just to the right of the graph's peak and the region to the right of the line is shaded to represent the p-value.">
 <image src="../../media/CNX_Stats_C13_M04_004.jpg" mime-type="image/jpeg" width="380"/></media></figure><para id="eip-idp119760"><emphasis>Distribution for the test:</emphasis> <emphasis effect="italics">F</emphasis><sub>4,10</sub></para>
 
-<para id="eip-idp2526368"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 0.6099) = 0.6649.</para>
+<para id="eip-idp2526368"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> > 0.6099) = 0.6649.</para>
 
-<para id="eip-idp2527424"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.05, <emphasis effect="italics">p</emphasis>-value = 0.669, <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value</para>
+<para id="eip-idp2527424"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.05, <emphasis effect="italics">p</emphasis>-value = 0.669, <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value</para>
 
-<para id="eip-idp3984016"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, we do not reject <emphasis effect="italics">H</emphasis><sub>0</sub>.</para>
+<para id="eip-idp3984016"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, we do not reject <emphasis effect="italics">H</emphasis><sub>0</sub>.</para>
 
 <para id="eip-idm35735392"><emphasis>Conclusion:</emphasis> At the 5% significance level, there is insufficient evidence from these data that different levels of tryptone will cause a significant difference in the mean number of bacterial colonies formed.</para>
 </solution>
@@ -1267,7 +1267,7 @@ sororities?  </para></problem>
 <note id="eip-id1170641699184">
 <label/>
 <title>Note</title>
-<para id="eip-idp65526416">This is an example of a <term>balanced design</term>, because each factor (i.e., sorority) has the same number of observations.</para>
+<para id="eip-idp65526416">This is an example of a <term id="term-00007">balanced design</term>, because each factor (i.e., sorority) has the same number of observations.</para>
 </note>
 
 <para id="element-998"><emphasis effect="italics">H<sub>0</sub></emphasis>: <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub></m:math></para><para id="element-309"><emphasis effect="italics">H<sub>a</sub></emphasis>: Not all of the means <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub></m:math>are equal.</para><para id="element-958"><emphasis>Distribution for the test:</emphasis> <emphasis effect="italics">F</emphasis><sub>3,16</sub></para>
@@ -1279,7 +1279,7 @@ sororities?  </para></problem>
 
 <para id="element-964"><emphasis>Graph:</emphasis></para>
 
-<figure id="fs-idm73326896"><media id="id4765799" alt="This graph shows a nonsymmetrical F distribution curve with values of 0 and 2.23 on the x-axis representing the test statistic of sorority grade averages. The curve is slightly skewed to the right, but is approximately normal. A vertical upward line extends from 2.23 to the curve and the area to the right of this is shaded to represent the p-value."><image src="../../media/fig-ch13_04_02N.jpg" mime-type="image/png" width="380"/></media></figure><para id="element-484"><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 2.23) = 0.1241</para><para id="element-849"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.01<newline/> <emphasis effect="italics">p</emphasis>-value = 0.1241<newline/> <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value</para>
+<figure id="fs-idm73326896"><media id="id4765799" alt="This graph shows a nonsymmetrical F distribution curve with values of 0 and 2.23 on the x-axis representing the test statistic of sorority grade averages. The curve is slightly skewed to the right, but is approximately normal. A vertical upward line extends from 2.23 to the curve and the area to the right of this is shaded to represent the p-value."><image src="../../media/fig-ch13_04_02N.jpg" mime-type="image/png" width="380"/></media></figure><para id="element-484"><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> > 2.23) = 0.1241</para><para id="element-849"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.01<newline/> <emphasis effect="italics">p</emphasis>-value = 0.1241<newline/> <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value</para>
 
 <para id="element-119"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value, you cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
 
@@ -1545,7 +1545,7 @@ sororities?  </para></problem>
 
 <para id="element-81">The <emphasis effect="italics">dfs</emphasis> for the numerator = the number of groups – 1 = 3 – 1 = 2.</para><para id="element-691">The <emphasis effect="italics">dfs</emphasis> for the denominator = the total number of samples – the number of groups = 15 – 3 = 12</para><para id="element-174">The distribution for the test is <emphasis effect="italics">F</emphasis><sub>2,12</sub> and the <emphasis effect="italics">F</emphasis> statistic is <emphasis effect="italics">F</emphasis> = 0.134</para>
 
-<para id="element-351">The <emphasis effect="italics">p</emphasis>-value is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> &gt; 0.134) = 0.8759. </para>
+<para id="element-351">The <emphasis effect="italics">p</emphasis>-value is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> > 0.134) = 0.8759. </para>
 
 <para id="element-528"><emphasis>Decision:</emphasis> Since <emphasis effect="italics">α</emphasis> = 0.03 and the <emphasis effect="italics">p</emphasis>-value = 0.8759, then you cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>. (Why?)</para><para id="element-886"><emphasis>Conclusion:</emphasis> With a 3% level of significance, from the sample data, the evidence is not sufficient to conclude that the mean heights of the bean plants are  different.</para>
 

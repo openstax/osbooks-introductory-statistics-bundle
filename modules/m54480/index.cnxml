@@ -8,7 +8,7 @@
 </metadata>
 
 <content>
-<para id="fs-idm32858512">The <term>exponential distribution</term> is often concerned with the amount of time until some specific event occurs. For example, the amount of time (beginning now) until an earthquake occurs has an exponential distribution. Other examples include the length of time, in minutes, of long distance business telephone calls, and the amount of time, in months, a car battery lasts. It can be shown, too, that the value of the change that you have in your pocket or purse approximately follows an exponential distribution.</para>
+<para id="fs-idm32858512">The <term id="term-00001">exponential distribution</term> is often concerned with the amount of time until some specific event occurs. For example, the amount of time (beginning now) until an earthquake occurs has an exponential distribution. Other examples include the length of time, in minutes, of long distance business telephone calls, and the amount of time, in months, a car battery lasts. It can be shown, too, that the value of the change that you have in your pocket or purse approximately follows an exponential distribution.</para>
 <para id="fs-idp21035296">Values for an exponential random variable occur in the following way. There are fewer large values and more small values. For example, marketing studies have shown that the amount of money customers spend in one trip to the supermarket follows an exponential distribution. There are more people who spend small amounts of money and fewer people who spend large amounts of money.</para><para id="fs-idp25761408">Exponential distributions are commonly used in calculations of product reliability, or the length of time a product lasts.</para>
 <para id="eip-128">The random variable for the exponential distribution is continuous and often measures a passage of time, although it can be used in other applications. Typical questions may be, “what is the probability that some event will occur within the next <m:math><m:mi>x</m:mi></m:math> hours or days, or what is the probability that some event will occur between <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> hours and <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math> hours, or what is the probability that the event will take more than <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> hours to perform?” In short, the random variable <emphasis effect="italics">X</emphasis> equals (<emphasis effect="italics">a</emphasis>) the time between events or (<emphasis effect="italics">b</emphasis>) the passage of time to complete an action, e.g. wait on a customer. The probability density function is given by:</para><equation class="unnumbered" id="eip-164"><m:math> <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac><m:mi>x</m:mi></m:mrow></m:msup></m:math></equation>
 <para id="eip-825">where μ is the historical average waiting time.</para><para id="eip-5">and has a mean and standard deviation of 1/μ.</para><para id="eip-36">An alternative form of the exponential distribution formula recognizes what is often called the decay factor. The decay factor simply measures how rapidly the probability of an event declines as the random variable <emphasis effect="italics">X</emphasis> increases. When the notation using the decay parameter <emphasis effect="italics">m</emphasis> is used, the probability density function is presented as:</para>
@@ -44,7 +44,7 @@
 <para id="fs-idp171899680">a. Using the information in <link target-id="eip-887"/>, find the probability that a clerk spends four to five minutes with a randomly selected customer.</para></problem>
 <solution id="fs-idm17662704">
 <para id="fs-idp81828496">a. Find <emphasis effect="italics">P</emphasis>(4 &lt; <emphasis effect="italics">x</emphasis> &lt; 5).
-<newline/>The <term>cumulative distribution function (CDF)</term> gives the area to the left.
+<newline/>The <term id="term-00002">cumulative distribution function (CDF)</term> gives the area to the left.
 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">e<sup>–mx</sup></emphasis>
 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 5) = 1 – <emphasis effect="italics">e</emphasis><sup>(–0.25)(5)</sup> = 0.7135 and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 4) = 1 – <emphasis effect="italics">e</emphasis><sup>(–0.25)(4)</sup> = 0.6321<newline/>
 <emphasis effect="italics">P</emphasis>(4 &lt; <emphasis effect="italics">x</emphasis> &lt; 5)= 0.7135 – 0.6321 = 0.0814</para><figure id="fs-idm58174736">
@@ -90,10 +90,10 @@
 <m:mo>=</m:mo><m:mn>0.1</m:mn>
 </m:mrow>
 </m:math>
-<newline/>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 7). Draw the graph.
-<newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 7) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 7).
-<newline/>Since <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">e<sup>–mx</sup></emphasis> then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>) = 1 – ( 1 –<emphasis effect="italics">e<sup>–mx</sup></emphasis>) = <emphasis effect="italics">e<sup>–mx</sup></emphasis>
-<newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 7) = <emphasis effect="italics">e</emphasis><sup>(–0.1)(7)</sup> = 0.4966. The probability that a computer part lasts more than seven years is 0.4966.</para></solution>
+<newline/>Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 7). Draw the graph.
+<newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 7) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 7).
+<newline/>Since <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">e<sup>–mx</sup></emphasis> then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">x</emphasis>) = 1 – ( 1 –<emphasis effect="italics">e<sup>–mx</sup></emphasis>) = <emphasis effect="italics">e<sup>–mx</sup></emphasis>
+<newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 7) = <emphasis effect="italics">e</emphasis><sup>(–0.1)(7)</sup> = 0.4966. The probability that a computer part lasts more than seven years is 0.4966.</para></solution>
 </exercise><figure id="fs-idm49565232">
 <media id="fs-idp119826048" alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (∞, 0). A vertical upward line extends from point 1 to the curved line. The probability area occurs from point 1 to the end of the curve. The x-axis is equal to the amount of time a computer part lasts.">
 <image src="../../media/fig-ch05_04_04N.jpg" mime-type="image/jpg" width="380"/>
@@ -129,7 +129,7 @@
 </problem>
 <solution id="fs-idm139334096">
 <label/>
-<para id="fs-idp64736064"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 15) = 0.4346</para>
+<para id="fs-idp64736064"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 15) = 0.4346</para>
 <para id="fs-idm17449552">Six pairs of running shoes would last 108 months on average.</para>
 <para id="fs-idp120731568">80<sup>th</sup> percentile = 28.97 months</para>
 </solution>
@@ -164,7 +164,7 @@
 <item><emphasis effect="italics">μ</emphasis> = 12</item>
 <item><emphasis effect="italics">σ</emphasis> = 12</item>
 </list>
-<para id="fs-idp112077456"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 5) = 0.6592</para>
+<para id="fs-idp112077456"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 5) = 0.6592</para>
 </solution>
 </exercise>
 </example>
@@ -196,7 +196,7 @@
 </media>
 </figure>
 </item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 5) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; 5) = 1 – (1 – <emphasis effect="italics">e</emphasis><sup>(-0.5)(5)</sup>) = e<sup>–2.5</sup> ≈ 0.0821.
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 5) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; 5) = 1 – (1 – <emphasis effect="italics">e</emphasis><sup>(-0.5)(5)</sup>) = e<sup>–2.5</sup> ≈ 0.0821.
 <figure id="fs-idm13320960">
 <media id="fs-idp101415248" alt="Exponential graph with the graph beginning at point (0, 0.5) and curving down towards the horizontal axis which is an asymptote. A vertical line segment extends from the horizontal axis to the curve at x = 2.41. The area under the curve between the y-axis and this segment is shaded. Text states “Shaded area represents probability 0.70.”">
 <image src="../../media/CNX_Stats_C05_M04_002N.jpg" mime-type="image/jpg" width="380"/>
@@ -210,8 +210,8 @@
 
 <section id="fs-idm4878944">
     <title>Memorylessness of the Exponential Distribution</title>
-<para id="fs-idm15452368">Recall that the amount of time between customers for the postal clerk discussed earlier is exponentially distributed with a mean of two minutes. Suppose that five minutes have elapsed since the last customer arrived. Since an unusually long amount of time has now elapsed, it would seem to be more likely for a customer to arrive within the next minute. With the exponential distribution, this is not the case–the additional time spent waiting for the next customer does not depend on how much time has already elapsed since the last customer. This is referred to as the <emphasis>memoryless property</emphasis>. The exponential and geometric probability density functions are the only probability functions that have the memoryless property. Specifically, the <emphasis>memoryless property</emphasis> says that</para><para id="fs-idp48694608"><emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">r</emphasis> + <emphasis effect="italics">t</emphasis> | <emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">r</emphasis>) = <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">t</emphasis>) for all <emphasis effect="italics">r</emphasis> ≥ 0 and <emphasis effect="italics">t</emphasis> ≥ 0</para>
-<para id="fs-idp98282704">For example, if five minutes have elapsed since the last customer arrived, then the probability that more than one minute will elapse before the next customer arrives is computed by using <emphasis effect="italics">r</emphasis> = 5 and <emphasis effect="italics">t</emphasis> = 1 in the foregoing equation.</para><para id="fs-idm55172592"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 5 + 1 | <emphasis effect="italics">X</emphasis> &gt; 5) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 1) = <m:math>
+<para id="fs-idm15452368">Recall that the amount of time between customers for the postal clerk discussed earlier is exponentially distributed with a mean of two minutes. Suppose that five minutes have elapsed since the last customer arrived. Since an unusually long amount of time has now elapsed, it would seem to be more likely for a customer to arrive within the next minute. With the exponential distribution, this is not the case–the additional time spent waiting for the next customer does not depend on how much time has already elapsed since the last customer. This is referred to as the <emphasis>memoryless property</emphasis>. The exponential and geometric probability density functions are the only probability functions that have the memoryless property. Specifically, the <emphasis>memoryless property</emphasis> says that</para><para id="fs-idp48694608"><emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">r</emphasis> + <emphasis effect="italics">t</emphasis> | <emphasis effect="italics">X</emphasis> > <emphasis effect="italics">r</emphasis>) = <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">t</emphasis>) for all <emphasis effect="italics">r</emphasis> ≥ 0 and <emphasis effect="italics">t</emphasis> ≥ 0</para>
+<para id="fs-idp98282704">For example, if five minutes have elapsed since the last customer arrived, then the probability that more than one minute will elapse before the next customer arrives is computed by using <emphasis effect="italics">r</emphasis> = 5 and <emphasis effect="italics">t</emphasis> = 1 in the foregoing equation.</para><para id="fs-idm55172592"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 5 + 1 | <emphasis effect="italics">X</emphasis> > 5) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 1) = <m:math>
 <m:mrow>
 <m:msup>
 <m:mi>e</m:mi>
@@ -227,7 +227,7 @@
 </m:msup>
 </m:mrow>
 </m:math> = 0.6065.</para><para id="fs-idm9174224"><emphasis effect="italics">This is the same</emphasis> probability as that of waiting more than one minute for a customer to arrive after the previous arrival.</para>
-<para id="fs-idm25008304">The exponential distribution is often used to model the longevity of an electrical or mechanical device. In <link target-id="fs-idp51839440"/>, the lifetime of a certain computer part has the exponential distribution with a mean of ten years. The <emphasis>memoryless property</emphasis> says that knowledge of what has occurred in the past has no effect on future probabilities. In this case it means that an old part is not any more likely to break down at any particular time than a brand new part. In other words, the part stays as good as new until it suddenly breaks. For example, if the part has already lasted ten years, then the probability that it lasts another seven years is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 17|<emphasis effect="italics">X</emphasis> &gt; 10) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 7) = 0.4966, where the vertical line is read as "given".</para></section>
+<para id="fs-idm25008304">The exponential distribution is often used to model the longevity of an electrical or mechanical device. In <link target-id="fs-idp51839440"/>, the lifetime of a certain computer part has the exponential distribution with a mean of ten years. The <emphasis>memoryless property</emphasis> says that knowledge of what has occurred in the past has no effect on future probabilities. In this case it means that an old part is not any more likely to break down at any particular time than a brand new part. In other words, the part stays as good as new until it suddenly breaks. For example, if the part has already lasted ten years, then the probability that it lasts another seven years is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 17|<emphasis effect="italics">X</emphasis> > 10) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 7) = 0.4966, where the vertical line is read as "given".</para></section>
 
 <example id="fs-idm19960800">
 <para id="fs-idp112053216">Refer back to the postal clerk again where the time a postal clerk spends with his or her customer has an exponential distribution with a mean of four minutes. Suppose a customer has spent four minutes with a postal clerk. What is the probability that he or she will spend at least an additional three minutes with the postal clerk?<newline count="2"/></para><para id="fs-idm16550752">The decay parameter of <emphasis effect="italics">X</emphasis> is <emphasis effect="italics">m</emphasis> = <m:math>
@@ -241,11 +241,11 @@
 = 0.25, so <emphasis effect="italics">X</emphasis> ∼ <emphasis effect="italics">Exp</emphasis>(0.25).</para>
 <para id="fs-idp64725296">The cumulative distribution function is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">e</emphasis><sup>–0.25<emphasis effect="italics">x</emphasis></sup>.
 </para>
-<para id="fs-idp127070144">We want to find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 7|<emphasis effect="italics">X</emphasis> &gt; 4). The <emphasis>memoryless property</emphasis> says that <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 7|<emphasis effect="italics">X</emphasis> &gt; 4) = <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> &gt; 3), so we just need to find the probability that a customer spends more than three minutes with a postal clerk.</para>
+<para id="fs-idp127070144">We want to find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 7|<emphasis effect="italics">X</emphasis> > 4). The <emphasis>memoryless property</emphasis> says that <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 7|<emphasis effect="italics">X</emphasis> > 4) = <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> > 3), so we just need to find the probability that a customer spends more than three minutes with a postal clerk.</para>
 
-<para id="fs-idm82829888">This is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 3) = 1 – <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> &lt; 3) = 1 – (1 – <emphasis effect="italics">e</emphasis><sup>–0.25⋅3</sup>) = <emphasis effect="italics">e</emphasis><sup>–0.75</sup> ≈ 0.4724.</para>
+<para id="fs-idm82829888">This is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 3) = 1 – <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> &lt; 3) = 1 – (1 – <emphasis effect="italics">e</emphasis><sup>–0.25⋅3</sup>) = <emphasis effect="italics">e</emphasis><sup>–0.75</sup> ≈ 0.4724.</para>
 <figure id="fs-idm5754752">
-<media id="fs-idp52917248" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.25) on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph to the right of x = 3 is shaded to represent P(x &gt; 3) = 0.4724.">
+<media id="fs-idp52917248" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.25) on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph to the right of x = 3 is shaded to represent P(x > 3) = 0.4724.">
 <image src="../../media/CNX_Stats_C05_M04_005N.jpg" mime-type="image/jpg" width="380"/>
 </media>
 </figure>
@@ -401,7 +401,7 @@ A visual way to show both the similarities and differences between these two dis
 <section id="fs-idp8617136" class="formula-review">
 <title>Formula Review</title>
 
-<list id="fs-idp121046784" list-type="bulleted"><item>pdf: <emphasis effect="italics">f</emphasis>(<emphasis effect="italics">x</emphasis>) = <emphasis effect="italics">me</emphasis><sup>(–<emphasis effect="italics">mx</emphasis>)</sup> where <emphasis effect="italics">x</emphasis> ≥ 0 and <emphasis effect="italics">m</emphasis> &gt; 0</item>
+<list id="fs-idp121046784" list-type="bulleted"><item>pdf: <emphasis effect="italics">f</emphasis>(<emphasis effect="italics">x</emphasis>) = <emphasis effect="italics">me</emphasis><sup>(–<emphasis effect="italics">mx</emphasis>)</sup> where <emphasis effect="italics">x</emphasis> ≥ 0 and <emphasis effect="italics">m</emphasis> > 0</item>
 
 <item>cdf: <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">e</emphasis><sup>(–<emphasis effect="italics">mx</emphasis>)</sup></item>
 
@@ -419,7 +419,7 @@ A visual way to show both the similarities and differences between these two dis
 
 
 <item>Additionally
-<list id="fs-idp34394496" list-type="bulleted"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>) = <emphasis effect="italics">e</emphasis><sup>(–<emphasis effect="italics">mx</emphasis>)</sup></item>
+<list id="fs-idp34394496" list-type="bulleted"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">x</emphasis>) = <emphasis effect="italics">e</emphasis><sup>(–<emphasis effect="italics">mx</emphasis>)</sup></item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">a</emphasis> &lt; <emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">b</emphasis>) = <emphasis effect="italics">e</emphasis><sup>(–<emphasis effect="italics">ma</emphasis>)</sup> – <emphasis effect="italics">e</emphasis><sup>(–<emphasis effect="italics">mb</emphasis>)</sup>
 </item>
 </list>
@@ -521,7 +521,7 @@ A visual way to show both the similarities and differences between these two dis
 
 <exercise id="fs-idm38664656">
 <problem id="fs-idp73440256">
-<para id="fs-idp73440512">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 6).</para>
+<para id="fs-idp73440512">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 6).</para>
 </problem>
 </exercise>
 
@@ -673,7 +673,7 @@ A visual way to show both the similarities and differences between these two dis
 <image src="../../media/fig-ch05_06_01.png" mime-type="png/jpg" width="380"/>
 </media>
 </figure></item>
-<item>Find the probability. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 10,000) = ________</item>
+<item>Find the probability. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 10,000) = ________</item>
 </list></problem>
 </exercise>
 
@@ -906,9 +906,9 @@ A visual way to show both the similarities and differences between these two dis
 
  </m:mrow>
 </m:math> = 3 and <emphasis effect="italics">T</emphasis> ∼ <emphasis effect="italics">Exp</emphasis>(3).</para>
-</note><list id="fs-idm50334880" list-type="enumerated" number-style="lower-alpha"><item>The desired probability is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &gt; 1) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &lt; 1) = 1 – (1 – e<sup>–3</sup>) = e<sup>–3</sup> ≈ 0.0498.</item>
-<item>Let <emphasis effect="italics">T</emphasis> = duration of time between no-hitters. We find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &gt; 2|<emphasis effect="italics">T</emphasis> &gt; 1), and by the <emphasis>memoryless property</emphasis> this is simply <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &gt; 1), which we found to be 0.0498 in part a.</item>
-<item>Let <emphasis effect="italics">X</emphasis> = the <emphasis effect="underline">number</emphasis> of no-hitters is a season. Assume that <emphasis effect="italics">X</emphasis> is Poisson with mean <emphasis effect="italics">λ</emphasis> = 3. Then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 3) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 3) = 0.3528.</item>
+</note><list id="fs-idm50334880" list-type="enumerated" number-style="lower-alpha"><item>The desired probability is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> > 1) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &lt; 1) = 1 – (1 – e<sup>–3</sup>) = e<sup>–3</sup> ≈ 0.0498.</item>
+<item>Let <emphasis effect="italics">T</emphasis> = duration of time between no-hitters. We find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> > 2|<emphasis effect="italics">T</emphasis> > 1), and by the <emphasis>memoryless property</emphasis> this is simply <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> > 1), which we found to be 0.0498 in part a.</item>
+<item>Let <emphasis effect="italics">X</emphasis> = the <emphasis effect="underline">number</emphasis> of no-hitters is a season. Assume that <emphasis effect="italics">X</emphasis> is Poisson with mean <emphasis effect="italics">λ</emphasis> = 3. Then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 3) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 3) = 0.3528.</item>
 </list></solution>
 </exercise>
 
@@ -945,7 +945,7 @@ A visual way to show both the similarities and differences between these two dis
 
  </m:mrow>
 </m:math> = 11.11</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 10) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 10) = 1 – Poissoncdf(11.11, 10) ≈ 0.5532.</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 10) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 10) = 1 – Poissoncdf(11.11, 10) ≈ 0.5532.</item>
 <item>The number of people with Type B blood encountered roughly follows the Poisson distribution, so the number of people <emphasis effect="italics">X</emphasis> who arrive between successive Type B arrivals is roughly exponential with mean <emphasis effect="italics">μ</emphasis> = 9 and <emphasis effect="italics">m</emphasis> = <m:math display="">
  <m:mrow>
   <m:mfrac>
@@ -972,7 +972,7 @@ A visual way to show both the similarities and differences between these two dis
   </m:msup>
 
  </m:mrow>
-</m:math>. Thus hus, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 20) = 1 - <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 20) = <m:math>
+</m:math>. Thus hus, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 20) = 1 - <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 20) = <m:math>
  <m:mrow>
   <m:mn>1</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -1078,7 +1078,7 @@ A visual way to show both the similarities and differences between these two dis
 
  </m:mrow>
 </m:math> ≈ 0.2485.</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &gt; 15) = <m:math>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> > 15) = <m:math>
  <m:mrow>
   <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -1115,7 +1115,7 @@ A visual way to show both the similarities and differences between these two dis
   <m:mo>≈</m:mo><m:mn>0.1173</m:mn>
  </m:mrow>
 </m:math>.</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &gt; 15|<emphasis effect="italics">T</emphasis> &gt; 10) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> &gt; 5) = <m:math>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> > 15|<emphasis effect="italics">T</emphasis> > 10) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis> > 5) = <m:math>
  <m:mrow>
   <m:mn>1</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -1168,7 +1168,7 @@ A visual way to show both the similarities and differences between these two dis
    </m:mrow>
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
-</m:math>. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; 8) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 8) ≈ 0.0311.</item></list></solution>
+</m:math>. Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 8) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 8) ≈ 0.0311.</item></list></solution>
 </exercise>
 
 </section>
@@ -1194,7 +1194,7 @@ A visual way to show both the similarities and differences between these two dis
 
 <definition id="fs-idm87843664">
 <term>memoryless property</term>
-<meaning id="fs-idm76302032">For an exponential random variable <emphasis effect="italics">X</emphasis>, the memoryless property is the statement that knowledge of what has occurred in the past has no effect on future probabilities. This means that the probability that <emphasis effect="italics">X</emphasis> exceeds <emphasis effect="italics">x</emphasis> + <emphasis effect="italics">t</emphasis>, given that it has exceeded <emphasis effect="italics">x</emphasis>, is the same as the probability that <emphasis effect="italics">X</emphasis> would exceed <emphasis effect="italics">t</emphasis> if we had no knowledge about it. In symbols we say that <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis> + <emphasis effect="italics">t</emphasis>|<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">t</emphasis>).</meaning>
+<meaning id="fs-idm76302032">For an exponential random variable <emphasis effect="italics">X</emphasis>, the memoryless property is the statement that knowledge of what has occurred in the past has no effect on future probabilities. This means that the probability that <emphasis effect="italics">X</emphasis> exceeds <emphasis effect="italics">x</emphasis> + <emphasis effect="italics">t</emphasis>, given that it has exceeded <emphasis effect="italics">x</emphasis>, is the same as the probability that <emphasis effect="italics">X</emphasis> would exceed <emphasis effect="italics">t</emphasis> if we had no knowledge about it. In symbols we say that <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">x</emphasis> + <emphasis effect="italics">t</emphasis>|<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">x</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">t</emphasis>).</meaning>
 </definition>
 <definition id="fs-idp21495392">
 <term>Poisson distribution</term>
