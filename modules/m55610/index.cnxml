@@ -110,7 +110,7 @@ Since the problem is about a mean, this is a test of a single population mean.
   </para>
 
 <para id="eip-idm108002480"><emphasis effect="italics">H<sub>0</sub></emphasis> : <emphasis effect="italics">μ</emphasis> = 40</para>
-<para id="eip-idm216373056"><emphasis effect="italics">H<sub>a</sub></emphasis> : <emphasis effect="italics">μ</emphasis> > 40</para><para id="eip-idm58633744"><emphasis effect="italics">p</emphasis> = 0.0062</para>
+<para id="eip-idm216373056"><emphasis effect="italics">H<sub>a</sub></emphasis> : <emphasis effect="italics">μ</emphasis> &gt; 40</para><para id="eip-idm58633744"><emphasis effect="italics">p</emphasis> = 0.0062</para>
 
 <figure id="fs-idm152825344"><media id="eip-idm58633360" alt="">
   <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M11_tryit001annoN.jpg" width="380"/>
@@ -124,7 +124,7 @@ Since the problem is about a mean, this is a test of a single population mean.
 <solution id="eip-186">
   <para id="eip-693">
     <list id="eip-id1168265727937" list-type="enumerated" number-style="arabic"><item>H<sub>0</sub>: µ ≤ 100
-<newline/>H<sub>a</sub>: µ > 100
+<newline/>H<sub>a</sub>: µ &gt; 100
 <newline/>
 The null and alternative hypothesis are for the parameter µ because the number of dollars of the contracts is a continuous random variable. Also, this is a one-tailed test because the company has only an interested if the number of dollars per contact is below a particular number not "too high" a number. This can be thought of as making a claim that the requirement is being met and thus the claim is in the alternative hypothesis.
  </item>
@@ -244,7 +244,7 @@ Now we compare the test statistic and the critical value by placing the test sta
 </para></solution></exercise></example></section>
 
 <section id="eip-100"><title>Hypothesis Test for Proportions</title><para id="eip-493">Just as there were confidence intervals for proportions, or more formally, the population parameter <emphasis effect="italics">p</emphasis> of the binomial distribution, there is the ability to test hypotheses concerning <emphasis effect="italics">p</emphasis>. 
-</para><para id="eip-319">The population parameter for the binomial is <emphasis effect="italics">p</emphasis>. The estimated value (point estimate) for <emphasis effect="italics">p</emphasis> is <emphasis effect="italics">p′</emphasis> where <emphasis effect="italics">p′ = x/n</emphasis>, <emphasis effect="italics">x</emphasis> is the number of successes in the sample and <emphasis effect="italics">n</emphasis> is the sample size.</para><para id="eip-24">When you perform a hypothesis test of a population proportion <emphasis effect="italics">p</emphasis>, you take a simple random sample from the population. The conditions for a <term id="term-00001">binomial distribution</term> must be met, which are: there are a certain number <emphasis effect="italics">n</emphasis> of independent trials meaning random sampling, the outcomes of any trial are binary, success or failure, and each trial has the same probability of a success <emphasis effect="italics">p</emphasis>. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <emphasis effect="italics">np′</emphasis> and <emphasis effect="italics">nq′</emphasis> must both be greater than five (<emphasis effect="italics">np′</emphasis> > 5 and <emphasis effect="italics">nq′</emphasis> > 5). In this case the binomial distribution of a sample (estimated) proportion can be approximated by the normal distribution with <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>np</m:mi></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>npq</m:mi></m:msqrt></m:math>. Remember that <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>p</m:mi></m:math>. There is no distribution that can correct for this small sample bias and thus if these conditions are not met we simply cannot test the hypothesis with the data available at that time. We met this condition when we first were estimating confidence intervals for <emphasis effect="italics">p</emphasis>. 
+</para><para id="eip-319">The population parameter for the binomial is <emphasis effect="italics">p</emphasis>. The estimated value (point estimate) for <emphasis effect="italics">p</emphasis> is <emphasis effect="italics">p′</emphasis> where <emphasis effect="italics">p′ = x/n</emphasis>, <emphasis effect="italics">x</emphasis> is the number of successes in the sample and <emphasis effect="italics">n</emphasis> is the sample size.</para><para id="eip-24">When you perform a hypothesis test of a population proportion <emphasis effect="italics">p</emphasis>, you take a simple random sample from the population. The conditions for a <term>binomial distribution</term> must be met, which are: there are a certain number <emphasis effect="italics">n</emphasis> of independent trials meaning random sampling, the outcomes of any trial are binary, success or failure, and each trial has the same probability of a success <emphasis effect="italics">p</emphasis>. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <emphasis effect="italics">np′</emphasis> and <emphasis effect="italics">nq′</emphasis> must both be greater than five (<emphasis effect="italics">np′</emphasis> &gt; 5 and <emphasis effect="italics">nq′</emphasis> &gt; 5). In this case the binomial distribution of a sample (estimated) proportion can be approximated by the normal distribution with <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>np</m:mi></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>npq</m:mi></m:msqrt></m:math>. Remember that <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>p</m:mi></m:math>. There is no distribution that can correct for this small sample bias and thus if these conditions are not met we simply cannot test the hypothesis with the data available at that time. We met this condition when we first were estimating confidence intervals for <emphasis effect="italics">p</emphasis>. 
 </para><para id="eip-383">Again, we begin with the standardizing formula modified because this is the distribution of a binomial.</para>
 <equation id="fs-id1170343275188" class="unnumbered"><label/><m:math>
 <m:mi>Z</m:mi>
@@ -325,7 +325,7 @@ Now we compare the test statistic and the critical value by placing the test sta
   </row>
   <row>
     <entry align="center">H<sub>a</sub>: p ≠ p<sub>0</sub></entry>
-    <entry align="center">H<sub>a</sub>: p > p<sub>0</sub></entry>
+    <entry align="center">H<sub>a</sub>: p &gt; p<sub>0</sub></entry>
     <entry align="center">H<sub>a</sub>: p &lt; p<sub>0</sub></entry>
   </row>
 </tbody>
@@ -416,7 +416,7 @@ fact, the proportion does differ from 50%. (You fail to reject the null hypothes
 <para id="eip-idp139727615276416"><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p</emphasis> ≠ 0.85</para><para id="eip-idp139727615277216"><emphasis effect="italics">p</emphasis> = 0.7554</para>
 <figure id="fs-idp11874016"><media id="eip-idp139727615277600" alt="">
   <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M11_tryit002annoN.jpg" width="380"/>
-</media></figure><para id="eip-idp95887808">Because <emphasis effect="italics">p</emphasis> > <emphasis effect="italics">α</emphasis>, we fail to reject the null hypothesis. There is not sufficient evidence to suggest that the proportion of students that want to go to the zoo is not 85%.</para>
+</media></figure><para id="eip-idp95887808">Because <emphasis effect="italics">p</emphasis> &gt; <emphasis effect="italics">α</emphasis>, we fail to reject the null hypothesis. There is not sufficient evidence to suggest that the proportion of students that want to go to the zoo is not 85%.</para>
 </solution>
 </exercise></note><example id="element-577"><exercise id="element-312"><problem id="id5318755">
   <para id="element-451">Suppose a consumer group suspects that the proportion of households that have three or more cell phones is 30%. A cell phone company has reason to believe that the proportion is not 30%. Before they start a big advertising campaign, they conduct a hypothesis test. Their marketing people survey 150 households with the result that 43 of the households have three or more cell phones.</para></problem>
@@ -532,7 +532,7 @@ fact, the proportion does differ from 50%. (You fail to reject the null hypothes
 <list id="eip-idp69766512" list-type="enumerated" number-style="arabic"><item><emphasis>State the Question</emphasis>: We need to determine if, at a 0.05 significance level, the average conductivity of the selected glass is greater than one. Our hypotheses will be
 <list id="eip-idp129554720" list-type="enumerated" number-style="lower-alpha">
 <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis> ≤ 1</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> > 1</item>
+<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> &gt; 1</item>
 </list></item>
 <item><emphasis>Plan</emphasis>: We are testing a sample mean without a known population standard deviation with less than 30 observations. Therefore, we need to use a Student's-t distribution. Assume the underlying population is normal.</item>
 <item><emphasis>Do the calculations and draw the graph</emphasis>.
@@ -550,7 +550,7 @@ fact, the proportion does differ from 50%. (You fail to reject the null hypothes
 
 <list id="eip-idp191218624" list-type="enumerated" number-style="arabic"><item>We need to conduct a hypothesis test on the claimed cancer rate. Our hypotheses will be
 <list id="eip-idp171226608" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p</emphasis> ≤ 0.00034</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p</emphasis> > 0.00034</item>
+<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p</emphasis> &gt; 0.00034</item>
 </list><para id="eip-idm39752176" class="finger">If we commit a Type I error, we are essentially accepting a false claim. Since the claim describes cancer-causing environments, we want to minimize the chances of incorrectly identifying causes of cancer.</para>
 </item>
 
@@ -562,7 +562,7 @@ fact, the proportion does differ from 50%. (You fail to reject the null hypothes
 </exercise></example></section>
 <section id="fs-idp69608272" class="summary">
 <title>Chapter Review</title>
-<para id="fs-idp168110512">The <term id="term-00002">hypothesis test</term> itself has an established process. This can be summarized as follows:
+<para id="fs-idp168110512">The <term>hypothesis test</term> itself has an established process. This can be summarized as follows:
 <list id="list-1" list-type="enumerated"><item>Determine <emphasis effect="italics">H<sub>0</sub></emphasis> and <emphasis effect="italics">H<sub>a</sub></emphasis>. Remember, they are contradictory.</item>
 <item>Determine the random variable.</item>
 <item>Determine the distribution for the test.</item>
@@ -594,7 +594,7 @@ Test statistic for a hypothesis test of proportions:
 </exercise>
 
 <exercise id="eip-815"><problem id="eip-286">
-  <para id="eip-480">Assume <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis> ≤ 6 and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> > 6. Is this a left-tailed, right-tailed, or two-tailed test?</para>
+  <para id="eip-480">Assume <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis> ≤ 6 and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> &gt; 6. Is this a left-tailed, right-tailed, or two-tailed test?</para>
 </problem>
 </exercise><exercise id="fs-idp45725152">
 <problem id="eip-116">
@@ -873,7 +873,7 @@ Draw the graph of a two-tailed test.
   </para></problem>
 <solution id="fs-idm11266464">
 <list id="fs-idm126211024" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis> = 69,110</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> > 69,110</item>
+<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> &gt; 69,110</item>
 <item>Let <m:math display="">
  <m:mover accent="true">
   <m:mi>X</m:mi>
@@ -982,7 +982,7 @@ Draw the graph of a two-tailed test.
 </exercise><exercise id="eip-717"><problem id="eip-444">
   <para id="eip-807">A survey in the <emphasis effect="italics">N.Y. Times Almanac</emphasis> finds the mean commute time (one way) is 25.4 minutes for the 15 largest US cities. The Austin, TX chamber of commerce feels that Austin’s commute time is less and wants to publicize this fact.  The mean for 25 randomly selected commuters is 22.1 minutes with a standard deviation of 5.3 minutes. At the α = 0.10 level, is the Austin, TX commute significantly less than the mean commute time for the 15 largest US cities?</para>
 </problem></exercise><exercise id="eip-192"><problem id="eip-426">
-  <para id="eip-326">A report by the Gallup Poll found that a woman visits her doctor, on average, at most 5.8 times each year. A random sample of 20 women results in these yearly visit totals</para><para id="eip-idm37849296"><list list-type="labeled-item" display="inline" mark-suffix="" id="list-00001">
+  <para id="eip-326">A report by the Gallup Poll found that a woman visits her doctor, on average, at most 5.8 times each year. A random sample of 20 women results in these yearly visit totals</para><para id="eip-idm37849296"><list list-type="labeled-item" display="inline" mark-suffix="">
 <item>3</item>
 <item>2</item>
 <item>1</item>
@@ -1009,7 +1009,7 @@ Draw the graph of a two-tailed test.
 
 <solution id="eip-586">
 <list id="eip-idp114932976" list-type="enumerated" number-style="lower-alpha">
-<item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">µ</emphasis> ≤ 5.8 <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">µ</emphasis> > 5.8</item>
+<item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">µ</emphasis> ≤ 5.8 <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">µ</emphasis> &gt; 5.8</item>
 <item><emphasis effect="italics">p</emphasis>-value =  0.9987</item>
 <item>alpha = 0.05</item>
 <item>Do not reject the null hypothesis.</item>
@@ -1019,7 +1019,7 @@ Draw the graph of a two-tailed test.
 </exercise><exercise id="eip-677"><problem id="eip-484">
   <para id="eip-543">According to the <emphasis effect="italics">N.Y. Times Almanac</emphasis> the mean family size in the U.S. is 3.18. A sample of a college math class resulted in the following family sizes:
 <newline/>
-<list list-type="labeled-item" display="inline" id="list-00002">
+<list list-type="labeled-item" display="inline">
 <item>5</item>
 <item>4</item>
 <item>5</item>
