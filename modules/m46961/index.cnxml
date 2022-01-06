@@ -8,7 +8,7 @@
 </metadata>
 
 <content>
-    <para id="fs-idp399448482">There are two main characteristics of a Poisson experiment.</para><list id="element-1" list-type="enumerated"><item>The <term>Poisson probability distribution</term> gives the probability of a number of events occurring in a <emphasis>fixed interval</emphasis> of time or space if these events happen with a known average rate and independently of the time since the last event. For example, a book editor might be interested in the number of words spelled incorrectly in a particular book. It might be that, on the average, there are five words spelled incorrectly in 100 pages. The interval is the 100 pages.</item>
+    <para id="fs-idp399448482">There are two main characteristics of a Poisson experiment.</para><list id="element-1" list-type="enumerated"><item>The <term id="term-00001">Poisson probability distribution</term> gives the probability of a number of events occurring in a <emphasis>fixed interval</emphasis> of time or space if these events happen with a known average rate and independently of the time since the last event. For example, a book editor might be interested in the number of words spelled incorrectly in a particular book. It might be that, on the average, there are five words spelled incorrectly in 100 pages. The interval is the 100 pages.</item>
 <item>The Poisson distribution may be used to approximate the binomial if the probability of success is "small" (such as 0.01) and the number of trials is "large" (such as 1,000). You will verify the relationship in the homework exercises. <emphasis effect="italics">n</emphasis> is the number of trials, and <emphasis effect="italics">p</emphasis> is the probability of a "success."</item>
 </list><para id="fs-idp39944848">The random variable <emphasis effect="italics">X</emphasis> = the number of occurrences in the interval of interest.</para>
 
@@ -69,7 +69,7 @@
   <para id="element-112">c. Let <emphasis effect="italics">X</emphasis> = the number of times the news reporter says "uh" during one broadcast.
 <newline/><emphasis effect="italics">x</emphasis> = 0, 1, 2, 3, ...
   </para>
-  <para id="element-683">d. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 2)</para></solution>
+  <para id="element-683">d. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 2)</para></solution>
 </exercise>
 </example>
 
@@ -110,16 +110,16 @@
 </m:math>(6) = 0.75 calls in 15 minutes, on average. So, <emphasis effect="italics">μ</emphasis> = 0.75 for this problem.</para>
 <para id="element-696"><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(0.75)</para>
 
-<para id="element-697" class="finger">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 1). <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 1) = 0.1734 (calculator or computer)</para>
+<para id="element-697" class="finger">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1). <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1) = 0.1734 (calculator or computer)</para>
 
 <note id="fs-idm23681840" class="statistics calculator"><label/>
 <list id="fs-idp1265216" list-type="bulleted"><item>Press 1 – and then press 2<sup>nd</sup> DISTR.</item>
 <item>Arrow down to poissoncdf. Press ENTER.</item>
 <item>Enter (.75,1).</item>
-<item>The result is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 1) = 0.1734.</item>
+<item>The result is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1) = 0.1734.</item>
 </list><note id="eip-706" class="finger"><label/><title>Note</title>
 <para id="fs-idm154468640">The TI calculators use <emphasis effect="italics">λ</emphasis> (lambda) for the mean.</para>
-</note></note><para id="element-886">The probability that Leah receives more than one telephone call in the next 15 minutes is about 0.1734: <newline count="1"/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 1) = 1 − poissoncdf(0.75, 1).</para><para id="element-89">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(0.75) is:</para>
+</note></note><para id="element-886">The probability that Leah receives more than one telephone call in the next 15 minutes is about 0.1734: <newline count="1"/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1) = 1 − poissoncdf(0.75, 1).</para><para id="element-89">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(0.75) is:</para>
 
 <figure id="fs-idm13011872"><media id="id18951496" display="block" alt="This graphs shows a poisson probability distribution. It has 5 bars that decrease in height from left to right. The x-axis shows values in increments of 1 starting with 0, representing the number of calls Leah receives within 15 minutes. The y-axis ranges from 0 to 0.5 in increments of 0.1.">
 <image src="../../media/fig-ch04_08_01N.jpg" mime-type="image/jpg" width="400"/>
@@ -199,7 +199,7 @@
  </m:mrow>
 </m:math> ≈ 1.7292.</item>
 <item><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(1.7292), so <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 2) = poissonpdf(1.7292, 2) ≈ 0.2653</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 2) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 2) = 1 – poissoncdf(1.7292, 2) ≈ 1 – 0.7495 = 0.2505</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 2) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 2) = 1 – poissoncdf(1.7292, 2) ≈ 1 – 0.7495 = 0.2505</item>
 </list></solution>
 </exercise>
 </example>
@@ -246,7 +246,7 @@
 <para id="fs-idm47256464">“World Earthquakes: Live Earthquake News and Highlights,” World Earthquakes, 2012. http://www.world-earthquakes.com/index.php?option=ethq_prediction (accessed May 15, 2013).</para>
 </section><section id="fs-idm134097152" class="summary">
 <title>Chapter Review</title>
-<para id="fs-idm58971248">A <term>Poisson probability distribution</term> of a discrete random variable gives the probability of a number of events occurring in a fixed interval of time or space, if these events happen at a known average rate and independently of the time since the last event. The Poisson distribution may be used to approximate the binomial, if the probability of success is "small" (less than or equal to 0.05) and the number of trials is "large" (greater than or equal to 20).</para>
+<para id="fs-idm58971248">A <term id="term-00002">Poisson probability distribution</term> of a discrete random variable gives the probability of a number of events occurring in a fixed interval of time or space, if these events happen at a known average rate and independently of the time since the last event. The Poisson distribution may be used to approximate the binomial, if the probability of success is "small" (less than or equal to 0.05) and the number of trials is "large" (greater than or equal to 20).</para>
 </section>
 
 <section id="fs-idm139197072" class="formula-review">
@@ -416,7 +416,7 @@
 </m:math> ≈ 2.3452</item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 6) = poissoncdf(5.5, 6) ≈ 0.6860</item>
 <item>There is a 15.7% probability that the law staff will receive more calls than they can handle.</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 8) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 8) = 1 – poissoncdf(5.5, 8) ≈ 1 – 0.8944 = 0.1056</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 8) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 8) = 1 – poissoncdf(5.5, 8) ≈ 1 – 0.8944 = 0.1056</item>
 </list></solution>
 </exercise>
 

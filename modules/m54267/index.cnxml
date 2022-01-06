@@ -30,7 +30,7 @@
 <item>The random variable, <m:math><m:mi>x</m:mi></m:math>, number of successes, is discrete.</item>
 <item>There are only two possible outcomes, called "success" and "failure," for each trial. The letter <emphasis effect="italics">p</emphasis> denotes the probability of a success on any one trial, and <emphasis effect="italics">q</emphasis> denotes the probability of a failure on any one trial. <emphasis effect="italics">p</emphasis> + <emphasis effect="italics">q</emphasis> = 1.</item>
 <item>The <emphasis effect="italics">n</emphasis> trials are independent and are repeated using identical conditions. Think of this as drawing WITH replacement. Because the <emphasis effect="italics">n</emphasis> trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, <emphasis effect="italics">p</emphasis>, of a success and probability, <emphasis effect="italics">q</emphasis>, of a failure remain the same. For example, randomly guessing at a true-false statistics question has only two outcomes. If a success is guessing correctly, then a failure is guessing incorrectly. Suppose Joe always guesses correctly on any statistics true-false question with a probability <emphasis effect="italics">p</emphasis> = 0.6. Then, <emphasis effect="italics">q</emphasis> = 0.4. This means that for every true-false statistics question Joe answers, his probability of success (<emphasis effect="italics">p</emphasis> = 0.6) and his probability of failure (<emphasis effect="italics">q</emphasis> = 0.4) remain the same.</item>
-</list></para><para id="element-229">The outcomes of a binomial experiment fit a <term>binomial probability distribution</term>. The random variable <emphasis effect="italics">X</emphasis> = the number of successes obtained in the <emphasis effect="italics">n</emphasis> independent trials.</para><para id="element-108">The mean, <emphasis effect="italics">μ</emphasis>, and variance, <emphasis effect="italics">σ</emphasis><sup>2</sup>, for the binomial probability distribution are <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> and <emphasis effect="italics">σ</emphasis><sup>2</sup> = <emphasis effect="italics">npq</emphasis>. The standard deviation, <emphasis effect="italics">σ</emphasis>, is then <emphasis effect="italics">σ</emphasis> = <m:math>
+</list></para><para id="element-229">The outcomes of a binomial experiment fit a <term id="term-00001">binomial probability distribution</term>. The random variable <emphasis effect="italics">X</emphasis> = the number of successes obtained in the <emphasis effect="italics">n</emphasis> independent trials.</para><para id="element-108">The mean, <emphasis effect="italics">μ</emphasis>, and variance, <emphasis effect="italics">σ</emphasis><sup>2</sup>, for the binomial probability distribution are <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> and <emphasis effect="italics">σ</emphasis><sup>2</sup> = <emphasis effect="italics">npq</emphasis>. The standard deviation, <emphasis effect="italics">σ</emphasis>, is then <emphasis effect="italics">σ</emphasis> = <m:math>
  <m:mrow>
   <m:msqrt>
    <m:mrow>
@@ -39,7 +39,7 @@
   </m:msqrt>
   
  </m:mrow>
-</m:math>.</para><para id="element-612">Any experiment that has characteristics three and four and where <emphasis effect="italics">n</emphasis> = 1 is called a <term>Bernoulli Trial</term> (named after Jacob Bernoulli who, in the late 1600s, studied them extensively). A binomial experiment takes place when the number of successes is counted in one or more Bernoulli Trials.</para><example id="fs-idm62623744">
+</m:math>.</para><para id="element-612">Any experiment that has characteristics three and four and where <emphasis effect="italics">n</emphasis> = 1 is called a <term id="term-00002">Bernoulli Trial</term> (named after Jacob Bernoulli who, in the late 1600s, studied them extensively). A binomial experiment takes place when the number of successes is counted in one or more Bernoulli Trials.</para><example id="fs-idm62623744">
 <para id="element-284">Suppose you play a game that you can only either win or lose. The probability that you win any game is 55%, and the probability that you lose is 45%. Each game you play is independent. If you play the game 20 times, write the function that describes the probability that you win 15 of the 20 times. Here, if you define <emphasis effect="italics">X</emphasis> as the number of wins, then <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, ..., 20. The probability of a success is <emphasis effect="italics">p</emphasis> = 0.55. The probability of a failure is <emphasis effect="italics">q</emphasis> = 0.45. The number of trials is <emphasis effect="italics">n</emphasis> = 20. The probability question can be stated mathematically as <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 15).</para></example>
 
 <note id="fs-idm55323584" class="statistics try"><label/><title>Try It</title>
@@ -56,7 +56,7 @@
 <para id="element-104">A fair coin is flipped 15 times. Each flip is independent. What is the probability of getting more than ten heads? Let <emphasis effect="italics">X</emphasis> = the number of heads in 15 flips of the fair coin. <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, ..., 15. Since the coin is fair, <emphasis effect="italics">p</emphasis> = 0.5 and <emphasis effect="italics">q</emphasis> = 0.5. The number of trials is <emphasis effect="italics">n</emphasis> = 15. State the probability question mathematically.</para>
 </problem>
 <solution id="fs-idm23816272">
-<para id="fs-idm59406368"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 10)</para>
+<para id="fs-idm59406368"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 10)</para>
 </solution>
 </exercise>
 </example><example id="element-807">
@@ -139,7 +139,7 @@
 </m:math></item>
 </list></item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 60)= 0.0036</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 50) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 50) = 1 – 0.6282 = 0.3718</item> 
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 50) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 50) = 1 – 0.6282 = 0.3718</item> 
 </list></solution>
 </exercise>
 </note><section id="fs-idm225879408" class="references">
@@ -523,9 +523,9 @@
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
 </m:math></item>
-<item>We are interested in MORE THAN 75% of 32 questions correct. 75% of 32 is 24. We want to find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 24). The event "more than 24" is the complement of "less than or equal to 24."</item>
+<item>We are interested in MORE THAN 75% of 32 questions correct. 75% of 32 is 24. We want to find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 24). The event "more than 24" is the complement of "less than or equal to 24."</item>
 
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 24) = 0</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 24) = 0</item>
 <item>The probability of getting more than 75% of the 32 questions correct when randomly guessing is very small and practically zero.</item>
 </list></solution>
 </exercise>
@@ -755,7 +755,7 @@
  </m:mrow>
 </m:math> = 1.7409</item>
 </list></item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 5)=1 – 0.7754 = 0.2246
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 5)=1 – 0.7754 = 0.2246
 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 3) = 0.1927
 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 4) = 0.2259
 <newline/>It is more likely that four people are literate that three people are.</item>

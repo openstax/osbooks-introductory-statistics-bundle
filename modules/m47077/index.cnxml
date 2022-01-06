@@ -8,8 +8,8 @@
 </metadata>
 
 <content>
-<para id="element-834">Tests of independence involve using a <term>contingency table</term> of observed (data) values.</para>
-<para id="element-230">The test statistic for a <term>test of independence</term> is similar to that of a goodness-of-fit test:</para>
+<para id="element-834">Tests of independence involve using a <term id="term-00001">contingency table</term> of observed (data) values.</para>
+<para id="element-230">The test statistic for a <term id="term-00002">test of independence</term> is similar to that of a goodness-of-fit test:</para>
 <equation class="unnumbered" id="element-164"><label/><m:math>
  <m:mrow>
   <m:munder>
@@ -207,8 +207,8 @@
  </para>
 <para id="element-558" class="finger"><emphasis>Calculate the test statistic:</emphasis> <emphasis effect="italics">χ</emphasis><sup>2</sup> = 12.99 (calculator or computer)</para><para id="element-775"><emphasis>Distribution for the test:</emphasis><m:math><m:msubsup><m:mi>χ</m:mi><m:mn>4</m:mn><m:mn>2</m:mn></m:msubsup></m:math></para>
  <para id="fs-idp19708320"><emphasis effect="italics">df</emphasis> = (3 columns – 1)(3 rows – 1) = (2)(2) = 4</para><para id="element-48"><emphasis>Graph:</emphasis></para>
- <figure id="fs-idm32439392"><media id="id8547662" alt="Nonsymmetrical chi-square curve with values of 0 and 12.99 on the x-axis representing the test statistic of number of hours worked by volunteers of different types. A vertical upward line extends from 12.99 to the curve and the area to the right of this is equal to the p-value." display="block"><image src="../../media/fig-ch11_05_01N.jpg" mime-type="image/jpg" width="380"/></media></figure><para id="element-117"><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value=<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ<sup>2</sup></emphasis> &gt; 12.99) = 0.0113</para><para id="element-347"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> Since no <emphasis effect="italics">α</emphasis> is given, assume <emphasis effect="italics">α</emphasis> = 0.05. <emphasis effect="italics">p</emphasis>-value = 0.0113. <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value.</para>
-<para id="fs-idm62402592"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that the factors are not independent.</para><para id="element-590"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to conclude that the number of hours volunteered and the type of volunteer are dependent on one another.</para>
+ <figure id="fs-idm32439392"><media id="id8547662" alt="Nonsymmetrical chi-square curve with values of 0 and 12.99 on the x-axis representing the test statistic of number of hours worked by volunteers of different types. A vertical upward line extends from 12.99 to the curve and the area to the right of this is equal to the p-value." display="block"><image src="../../media/fig-ch11_05_01N.jpg" mime-type="image/jpg" width="380"/></media></figure><para id="element-117"><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value=<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ<sup>2</sup></emphasis> > 12.99) = 0.0113</para><para id="element-347"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> Since no <emphasis effect="italics">α</emphasis> is given, assume <emphasis effect="italics">α</emphasis> = 0.05. <emphasis effect="italics">p</emphasis>-value = 0.0113. <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value.</para>
+<para id="fs-idm62402592"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that the factors are not independent.</para><para id="element-590"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to conclude that the number of hours volunteered and the type of volunteer are dependent on one another.</para>
  <para id="element-956">For the example in <link target-id="table-73248"/>, if there had been another type of volunteer, teenagers, what would the degrees of freedom be?</para><note id="fs-idp30286464" class="statistics calculator"><label/>
 <para id="element-854">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>3 ENTER 3 ENTER</code>. Enter the table values by row from <link target-id="table-73248"/>. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. If necessary, use the arrow keys to move the cursor after <code>Observed:</code> and press <code>2nd MATRX</code>. Press <code>1:[A]</code> to select matrix A. It is not necessary to enter expected values. The matrix listed after <code>Expected:</code> can be blank. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 12.9909 and the <emphasis effect="italics">p</emphasis>-value = 0.0113. Do the procedure a second time, but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para></note></solution></exercise></example>
 <note id="fs-idm24618832" class="statistics try finger"><label/><title>Try It</title>
@@ -901,7 +901,7 @@ TOTALS
    <list id="fs-idp124357408" list-type="enumerated" number-style="lower-roman">
     <item>Alpha: 0.05</item>
     <item>Decision: Do not reject the null hypothesis.</item>
-    <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+    <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
     <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that car size and family size are dependent.</item>
    </list>
   </item>
@@ -1018,7 +1018,7 @@ TOTALS
     <list id="fs-idm28786192" list-type="enumerated" number-style="lower-roman">
      <item>Alpha: 0.05</item>
      <item>Decision: Do not reject the null hypothesis.</item>
-     <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+     <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
      <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that honeymoon location and bride age are dependent.</item>
     </list>
    </item>
@@ -1392,7 +1392,7 @@ TOTALS
      <list id="fs-idp21843088" list-type="enumerated" number-style="lower-roman">
       <item>Alpha: 0.05</item>
       <item>Decision: Do not reject the null hypothesis.</item>
-      <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+      <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
       <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that age and net worth for the youngest online entrepreneurs are dependent.</item>
      </list>
     </item>
