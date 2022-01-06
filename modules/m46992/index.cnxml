@@ -289,7 +289,7 @@
 
 <para id="element-456">The probability that the total of 75 scores is less than 200 is about zero.</para>
 
-<para id="element-273" class="finger"><code>normalcdf</code> (75,200,(75)(3),<m:math>
+<para id="element-273"><code>normalcdf</code> (75,200,(75)(3),<m:math>
  <m:mrow>
   <m:mo stretchy="false">(</m:mo><m:msqrt>
    <m:mrow>
@@ -462,7 +462,7 @@
 <image src="../../media/fig-ch07_04_05N.jpg" mime-type="image/jpg" width="380"/></media>
 </figure>
 
-<note id="note-5" class="finger" type="Reminder">
+<note id="note-5" type="Reminder">
 <label/>
 <title>Reminder</title>
 <para id="fs-idm69813456"><emphasis>1E99 = 10<sup>99</sup> and –1E99 = –10<sup>99</sup></emphasis>. Press the <code>EE</code> key for E. Or just use 10<sup>99</sup> instead of 1E99.</para></note>
@@ -537,7 +537,7 @@
   <m:mo>¯</m:mo>
  </m:mover>
 </m:math> &lt; <emphasis effect="italics">k</emphasis>) = 0.95</para>
-<para id="eip-id1171180867272" class="finger"><emphasis effect="italics">k</emphasis> = 26.0 using <code>invNorm</code><m:math>
+<para id="eip-id1171180867272"><emphasis effect="italics">k</emphasis> = 26.0 using <code>invNorm</code><m:math>
  <m:mrow>
   <m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -598,7 +598,7 @@
 <item>Find the value that is two standard deviations above the sample mean.</item>
 <item>Find the <emphasis effect="italics">IQR</emphasis> for the sum of the sample times.</item>
 </list></problem>
-<solution id="fs-idm110029216" class="finger">
+<solution id="fs-idm110029216">
 <list id="fs-idm113256736" list-type="enumerated" number-style="lower-alpha"><item>We have, <emphasis effect="italics">μ<sub>x</sub></emphasis> = <emphasis effect="italics">μ</emphasis> = 2 and <emphasis effect="italics">σ<sub>x</sub></emphasis> = <m:math>
  <m:mrow>
   <m:mfrac>
@@ -711,7 +711,7 @@
 <item>Find the 90<sup>th</sup> percentile for the sum of the ages of 65 prostitutes. Interpret the results.</item>
 </list>
 </problem>
-<solution id="fs-idm138994048" class="finger">
+<solution id="fs-idm138994048">
 <list id="fs-idm86323200" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
@@ -778,13 +778,13 @@ and <emphasis effect="italics">nq</emphasis> must both be greater than five (<em
    </m:mrow>
   </m:msqrt>
  </m:mrow>
-</m:math>. The mean is 159 and the standard deviation is 8.6447. The random variable for the normal distribution is <emphasis effect="italics">Y</emphasis>. <emphasis effect="italics">Y</emphasis> ~ <emphasis effect="italics">N</emphasis>(159, 8.6447). See <link document="m46977">The Normal Distribution</link> for help with calculator instructions.</para><para id="eip-214" class="finger">For part a, you <emphasis>include 150</emphasis> so <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≥ 150) has normal approximation <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Y</emphasis> ≥ 149.5) = 0.8641.</para>
+</m:math>. The mean is 159 and the standard deviation is 8.6447. The random variable for the normal distribution is <emphasis effect="italics">Y</emphasis>. <emphasis effect="italics">Y</emphasis> ~ <emphasis effect="italics">N</emphasis>(159, 8.6447). See <link document="m46977">The Normal Distribution</link> for help with calculator instructions.</para><para id="eip-214">For part a, you <emphasis>include 150</emphasis> so <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≥ 150) has normal approximation <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Y</emphasis> ≥ 149.5) = 0.8641.</para>
 <para id="eip-554"><code>normalcdf</code>(149.5,10^99,159,8.6447) = 0.8641.</para><para id="eip-323">For part b, you <emphasis>include 160</emphasis> so <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 160) has normal appraximation <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Y</emphasis> ≤ 160.5) = 0.5689.</para>
 
 <para id="eip-162"><code>normalcdf</code>(0,160.5,159,8.6447) = 0.5689</para><para id="eip-630">For part c, you <emphasis>exclude 155</emphasis> so <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 155) has normal approximation <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">y</emphasis> > 155.5) = 0.6572.</para>
 
 <para id="eip-763"><code>normalcdf</code>(155.5,10^99,159,8.6447) = 0.6572.</para><para id="eip-955">For part d, you <emphasis>exclude 147</emphasis> so <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; 147) has normal approximation <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Y</emphasis> &lt; 146.5) = 0.0741.</para><para id="eip-555"><code>normalcdf</code>(0,146.5,159,8.6447) = 0.0741</para><para id="eip-788">For part e,<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> = 175) has normal approximation <emphasis effect="italics">P</emphasis>(174.5 &lt; <emphasis effect="italics">Y</emphasis> &lt; 175.5) = 0.0083.</para>
-<para id="eip-680"><code>normalcdf</code>(174.5,175.5,159,8.6447) = 0.0083</para><para id="eip-863" class="finger"><emphasis>Because of calculators and computer software</emphasis> that let you calculate binomial probabilities for large values of <emphasis effect="italics">n</emphasis> easily, it is not necessary to use the the normal approximation to the binomial distribution, provided that you have access to these technology tools. Most school labs have Microsoft Excel, an example of computer software that calculates binomial probabilities. Many students have access to the TI-83 or 84 series calculators, and they easily calculate probabilities for the binomial distribution. If you type in "binomial probability distribution calculation" in an Internet browser, you can find at least one online calculator for the binomial.</para>
+<para id="eip-680"><code>normalcdf</code>(174.5,175.5,159,8.6447) = 0.0083</para><para id="eip-863"><emphasis>Because of calculators and computer software</emphasis> that let you calculate binomial probabilities for large values of <emphasis effect="italics">n</emphasis> easily, it is not necessary to use the the normal approximation to the binomial distribution, provided that you have access to these technology tools. Most school labs have Microsoft Excel, an example of computer software that calculates binomial probabilities. Many students have access to the TI-83 or 84 series calculators, and they easily calculate probabilities for the binomial distribution. If you type in "binomial probability distribution calculation" in an Internet browser, you can find at least one online calculator for the binomial.</para>
 
 <para id="eip-251">For <link target-id="fs-idm153949776" document=""/>, the  probabilities are calculated using the following binomial distribution: (<emphasis effect="italics">n</emphasis> = 300 and <emphasis effect="italics">p</emphasis> = 0.53). Compare the binomial and normal distribution answers. See <link document="m46955">Discrete Random Variables</link> for help with calculator instructions for the binomial.</para><para id="eip-67"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≥ 150) :<code>1 - binomialcdf</code>(300,0.53,149) = 0.8641</para><para id="eip-560"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 160) :<code>binomialcdf</code>(300,0.53,160) = 0.5684</para><para id="eip-727"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 155) :<code>1 - binomialcdf</code>(300,0.53,155) = 0.6576</para><para id="eip-122"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; 147) :<code>binomialcdf</code>(300,0.53,146) = 0.0742</para><para id="eip-267"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> = 175) :(You use the binomial pdf.)<code>binomialpdf</code>(300,0.53,175) = 0.0083</para></example>
 
@@ -1398,7 +1398,7 @@ and <emphasis effect="italics">nq</emphasis> must both be greater than five (<em
 <item>Find the probability that there are fewer than 130 that favor a charter school for grades K through 5.</item>
 <item>Find the probability that exactly 150 favor a charter school for grades K through 5.</item>
 </list>
-<para id="fs-idm85678016" class="finger">If you have access to an appropriate calculator or computer software, try calculating these probabilities using the technology.</para>
+<para id="fs-idm85678016">If you have access to an appropriate calculator or computer software, try calculating these probabilities using the technology.</para>
 </problem>
 <solution id="eip-350">
 <list id="Charter_school_answers" list-type="enumerated" number-style="lower-alpha">

@@ -19,12 +19,12 @@ hold valuable information about the population under study and should remain inc
 <title>Identifying Outliers</title>
 <para id="eip-511">We could guess at outliers by looking at a graph of the scatterplot and best fit-line. However, we would like some guideline as to how far away a point needs to be in order to be considered an outlier. <emphasis> As a rough rule of thumb, we can flag any point that is located further than two standard deviations above or below the best-fit line as an outlier</emphasis>. The standard deviation used is the standard deviation of the residuals or errors.</para>
 
-<para id="eip-526" class="finger">We can do this visually in the scatter plot by drawing an extra pair of lines that are two standard deviations above and below the best-fit line. Any data points that are outside this extra pair of lines are flagged as potential outliers. Or we can do this numerically by calculating each residual and comparing it to twice the standard deviation. On the TI-83, 83+, or 84+, the graphical approach is easier. The graphical procedure is shown first, followed by the numerical calculations. You would generally need to use only one of these methods.</para><example id="eip-837"><exercise id="element-12987">
+<para id="eip-526" >We can do this visually in the scatter plot by drawing an extra pair of lines that are two standard deviations above and below the best-fit line. Any data points that are outside this extra pair of lines are flagged as potential outliers. Or we can do this numerically by calculating each residual and comparing it to twice the standard deviation. On the TI-83, 83+, or 84+, the graphical approach is easier. The graphical procedure is shown first, followed by the numerical calculations. You would generally need to use only one of these methods.</para><example id="eip-837"><exercise id="element-12987">
 <problem id="id1170949520848">
 <para id="element-631">In the <link document="m47117" target-id="element-22">third exam/final exam example</link>, you can determine if there is an outlier or not. If there is an outlier, as an exercise, delete it and fit the remaining data to a new line. For this example, the new line ought to fit the remaining data better. This means the <emphasis>SSE</emphasis> should be smaller and the correlation coefficient ought to be closer to 1 or –1.</para></problem>
 
 <solution id="id1170917505276">
-<para id="element-435" class="finger">
+<para id="element-435" >
 <title>Graphical Identification of Outliers</title>With the TI-83, 83+, 84+ graphing calculators, it is easy to  identify the outliers graphically and visually.  If we were to measure the vertical distance from any data point to the corresponding point on the line of best fit and that distance were equal to 2<emphasis effect="italics">s</emphasis> or more, then we would consider the data point to be "too far" from the line of best fit. We need to find and graph the lines that are two standard deviations below and above the regression line.  Any points that are outside these two lines are outliers. We will call these lines Y2 and Y3:</para>
 
 <para id="element-20965">As we did with the equation of the regression line and the correlation coefficient, we will use technology to calculate this standard deviation for us.  Using the <emphasis>LinRegTTest</emphasis> with this data, scroll down through the output screens to find <emphasis><emphasis effect="italics">s</emphasis> = 16.412</emphasis>.</para>
@@ -81,7 +81,7 @@ hold valuable information about the population under study and should remain inc
 <title>Note</title>
 <para id="fs-idp95645280">We divide by (<emphasis effect="italics">n</emphasis> – 2) because the regression model involves two estimates.</para></note>
 
-<para id="element-42" class="finger">Rather than calculate the value of <emphasis effect="italics">s</emphasis> ourselves, we can find <emphasis effect="italics">s</emphasis> using the computer or calculator. For this example, the calculator function LinRegTTest found <emphasis effect="italics">s</emphasis> = 16.4 as the standard deviation of the residuals <list id="set-list2" list-type="labeled-item" display="inline"><item>35</item>
+<para id="element-42" >Rather than calculate the value of <emphasis effect="italics">s</emphasis> ourselves, we can find <emphasis effect="italics">s</emphasis> using the computer or calculator. For this example, the calculator function LinRegTTest found <emphasis effect="italics">s</emphasis> = 16.4 as the standard deviation of the residuals <list id="set-list2" list-type="labeled-item" display="inline"><item>35</item>
 <item>–17</item>
 <item>16</item>
 <item>–6</item>
@@ -192,7 +192,7 @@ hold valuable information about the population under study and should remain inc
 <title>How does the outlier affect the best fit line?</title>
 <para id="element-8021">Numerically and graphically, we have identified the point (65, 175) as an outlier. We should re-examine the data for this point to see if there are any problems with the data. If there is an error, we should fix the error if possible, or delete the data. If the data is correct, we would leave it in the data set. For this problem, we will suppose that we examined the data and found that this outlier data was an error. Therefore we will continue on and delete the outlier, so that we can explore how it affects the results, as a learning experience.</para>
 
-<para id="element-6691" class="finger"><title>Compute a new best-fit line and correlation coefficient using the ten remaining points:</title>
+<para id="element-6691" ><title>Compute a new best-fit line and correlation coefficient using the ten remaining points:</title>
 On the TI-83, TI-83+, TI-84+ calculators, delete the outlier from L1 and L2. Using the LinRegTTest, the new line of best fit and the correlation coefficient are:</para>
 <para id="element-669"><emphasis effect="italics">ŷ</emphasis> = –355.19 + 7.39<emphasis effect="italics">x</emphasis> and <emphasis effect="italics">r</emphasis> = 0.9121</para><para id="element-101">The new line with <emphasis effect="italics">r</emphasis> = 0.9121 is a stronger correlation than the original (<emphasis effect="italics">r</emphasis> = 0.6631) because <emphasis effect="italics">r</emphasis> = 0.9121 is closer to one. This means that the new line is a better fit to the ten remaining data values. The line can better predict the final exam score given the third exam score.</para>
 </section>
@@ -667,7 +667,7 @@ The original line predicted <emphasis effect="italics">ŷ</emphasis> = –173.51
 <para id="eip-idm84868944">Data from the Physician’s Handbook, 1990.</para>
 <para id="eip-idm84868560">Data from the United States Department of Labor, the Bureau of Labor Statistics.</para></section><section id="eip-380" class="summary"><title>Chapter Review</title><para id="eip-idm88717792">
 To determine if a point is an outlier, do one of the following:
-        <list id="eip-idp16278896" list-type="enumerated" number-style="arabic"><item class="finger">Input the following equations into the TI 83, 83+,84, 84+:
+        <list id="eip-idp16278896" list-type="enumerated" number-style="arabic"><item >Input the following equations into the TI 83, 83+,84, 84+:
         <para id="eip-idp42255472"><m:math>
          <m:mrow>
           <m:mtable columnalign="left">
