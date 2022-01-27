@@ -678,68 +678,103 @@ The symbol <m:math>
    </m:math>
 
 <newline/>where <m:math>
-  <m:mrow><m:mi>f</m:mi><m:mo>=</m:mo></m:mrow></m:math> interval frequencies and <emphasis effect="italics">m</emphasis> = interval midpoints.</para><para id="fs-idm98694272">Just as we could not find the exact mean, neither can we find the exact standard deviation. Remember that standard deviation describes numerically the expected deviation a data value has from the mean. In simple English, the standard deviation allows us to compare how “unusual” individual data is compared to the mean.</para><example id="fs-idm67331024"><para id="eip-897">Find the standard deviation for the data in <link target-id="fs-idm67330768"/>.</para><table id="fs-idm67330768" summary="">
-<tgroup cols="7">
+  <m:mrow><m:mi>f</m:mi><m:mo>=</m:mo></m:mrow></m:math> interval frequencies and <emphasis effect="italics">m</emphasis> = interval midpoints.</para><para id="fs-idm98694272">Just as we could not find the exact mean, neither can we find the exact standard deviation. Remember that standard deviation describes numerically the expected deviation a data value has from the mean. In simple English, the standard deviation allows us to compare how “unusual” individual data is compared to the mean.</para><example id="fs-idm67331024"><para id="eip-897">Find the standard deviation for the data in <link target-id="fs-idm67330768"/>.</para>
+<table id="fs-idm67330768" summary="">
+<tgroup cols="8">
 <thead>
 <row>
-<entry>Class</entry>
-<entry>Frequency, <emphasis effect="italics">f</emphasis></entry>
-<entry>Midpoint, <emphasis effect="italics">m</emphasis></entry>
-<entry><emphasis effect="italics">m</emphasis><sup>2</sup></entry>
-<entry><m:math><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo stretchy="true">¯</m:mo>
-   </m:mover></m:mrow>
-</m:math><sup>2</sup></entry><entry><emphasis effect="italics">fm</emphasis><sup>2</sup></entry><entry>Standard Deviation</entry></row>
+  <entry>Class</entry>
+  <entry>Frequency, <m:math><m:mi>f</m:mi></m:math></entry>
+  <entry>Midpoint, <m:math><m:mi>m</m:mi></m:math></entry>
+  <entry><m:math><m:mi>f</m:mi><m:mo>⋅</m:mo><m:mi>m</m:mi></m:math></entry>
+  <entry><m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math></entry>
+  <entry><m:math><m:mi>m</m:mi><m:mo>-</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math></entry>
+  <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>-</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:math></entry>
+  <entry><m:math><m:mi>f</m:mi><m:msup><m:mrow><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>-</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:math></entry>
+</row>
 </thead>
 <tbody>
-<row><entry>0–2</entry><entry>1</entry><entry>1</entry><entry>1</entry><entry>7.58</entry>	<entry>1</entry><entry>3.5</entry></row>
-<row><entry>3–5</entry><entry>6</entry><entry>4</entry><entry>16</entry><entry>7.58</entry>	<entry>96</entry><entry>3.5</entry></row>
-<row><entry>6–8</entry><entry>10</entry><entry>7</entry><entry>49</entry><entry>7.58</entry>	<entry>490</entry><entry>3.5</entry></row>
-<row><entry>9–11</entry><entry>7</entry><entry>10</entry><entry>100</entry><entry>7.58</entry>	<entry>700</entry><entry>3.5</entry></row>
-<row><entry>12–14</entry><entry>0</entry><entry>13</entry><entry>169</entry><entry>7.58</entry>	<entry>0</entry><entry>3.5</entry></row>
-<row><entry>15–17</entry><entry>2</entry><entry>16</entry><entry>256</entry><entry>7.58</entry>	<entry>512</entry><entry>3.5</entry></row>
+<row>
+  <entry>0–2</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>1</entry>
+  <entry>7.58</entry>	
+  <entry>-6.58</entry>
+  <entry>43.2964</entry>
+  <entry>43.2964</entry>
+</row>
+<row>
+  <entry>3–5</entry>
+  <entry>6</entry>
+  <entry>4</entry>
+  <entry>24</entry>
+  <entry>7.58</entry>	
+  <entry>-3.58</entry>
+  <entry>12.8164</entry>
+  <entry>76.8984</entry>
+</row>
+<row>
+  <entry>6–8</entry>
+  <entry>10</entry>
+  <entry>7</entry>
+  <entry>70</entry>
+  <entry>7.58</entry>	
+  <entry>-0.58</entry>
+  <entry>0.3364</entry>
+  <entry>3.364</entry>
+</row>
+<row>
+  <entry>9–11</entry>
+  <entry>7</entry>
+  <entry>10</entry>
+  <entry>70</entry>
+  <entry>7.58</entry>	
+  <entry>2.42</entry>
+  <entry>5.8564</entry>
+  <entry>40.9948</entry>
+</row>
+<row>
+  <entry>12–14</entry>
+  <entry>0</entry>
+  <entry>13</entry>
+  <entry>0</entry>
+  <entry>7.58</entry>	
+  <entry>5.42</entry>
+  <entry>29.3764</entry>
+  <entry>0</entry>
+</row>
+<row>
+  <entry>15–17</entry>
+  <entry>2</entry>
+  <entry>16</entry>
+  <entry>32</entry>
+  <entry>7.58</entry>	
+  <entry>8.42</entry>
+  <entry>70.8964</entry>
+  <entry>141.7928</entry>
+</row>
+<row>
+  <entry><emphasis>SUM</emphasis> (<m:math><m:mi mathvariant="bold-italic">Σ</m:mi></m:math>)</entry>
+  <entry>26</entry>
+  <entry/>
+  <entry>197</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry>43.2964</entry>
+
+</row>
 </tbody></tgroup></table>
 
-<para id="fs-idm109620704">For this data set, we have the mean, <m:math><m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover></m:math> = 7.58 and the standard deviation, <emphasis effect="italics">s<sub>x</sub></emphasis> = 3.5. This means that a randomly selected data value would be expected to be 3.5 units from the mean. If we look at the first class, we see that the class midpoint is equal to one. This is almost two full standard deviations from the mean since 7.58 – 3.5 – 3.5 = 0.58. While the formula for calculating the standard deviation is not complicated, <m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>s</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-  <m:mo>=</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mi>f</m:mi><m:msup>
-       <m:mrow>
-        <m:mo stretchy="false">(</m:mo><m:mi>m</m:mi><m:mo>−</m:mo><m:mover accent="true">
-         <m:mi>x</m:mi>
-         <m:mo>¯</m:mo>
-        </m:mover>
-        <m:mo stretchy="false">)</m:mo>
-       </m:mrow>
-       <m:mn>2</m:mn>
-      </m:msup>
+<para id="fs-idm109620704">The values in the second, third, and fourth columns of <link target-id="fs-idm67330768"/> are used to calculate the mean of the grouped frequency table, the value in the fifth column.</para>
+<equation id="eq-00001"><m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>f</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mi>Σ</m:mi><m:mi>f</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>197</m:mn><m:mn>26</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>7</m:mn><m:mo>.</m:mo><m:mn>58</m:mn><m:mo>.</m:mo></m:math></equation>
+<para id="para-00001">After calculating <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>, find the difference, <m:math><m:mi>m</m:mi><m:mo>-</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>, for each midpoint, <m:math><m:mi>m</m:mi></m:math>. Next, square each difference. In the final column, calculate the product of the frequency and the squared difference for each class.</para>
+<para id="para-00002">The table makes it easy to use the formula for calculating the standard deviation of a grouped frequency table:</para>
+<equation id="eq-00002"><m:math><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>f</m:mi><m:msup><m:mrow><m:mo>(</m:mo><m:mi>m</m:mi><m:mo>-</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mn>43</m:mn><m:mo>.</m:mo><m:mn>2964</m:mn></m:mrow><m:mrow><m:mn>26</m:mn><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt><m:mo>≈</m:mo><m:mn>3</m:mn><m:mo>.</m:mo><m:mn>50</m:mn><m:mo>.</m:mo></m:math></equation>
+<para id="para-00003">Although the formula is not complicated, these calculations are typically performed using technology.</para>
 
-     </m:mrow>
-     <m:mrow>
-      <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msqrt>
-
- </m:mrow>
-</m:math> where <emphasis effect="italics">s<sub>x</sub></emphasis> = sample standard deviation, <m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> = sample mean, the calculations are tedious. It is usually best to use technology when performing the calculations.</para></example>
+</example>
 
 <note id="fs-idm15915776" class="statistics try ">
 <label/><title>Try It</title>
