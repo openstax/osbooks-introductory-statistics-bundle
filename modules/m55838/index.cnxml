@@ -42,7 +42,7 @@ explaining variations in Y. This equation is the theoretical population equation
 </m:math></equation><para id="eip-804">As with our earlier work with probability distributions, this model works only if certain assumptions hold. These are that the Y is normally distributed, the errors are also normally distributed with a mean of zero and a constant standard deviation, and that the error terms are independent of the size of X and independent of each other.</para><section id="eip-201"><title>Assumptions of the Ordinary Least Squares Regression Model</title><para id="eip-24">Each of these assumptions needs a bit more explanation. If one of these assumptions fails to be true, then it will have an effect on the quality of the estimates. Some of the failures of these assumptions can be fixed while others result in estimates that quite simply provide no insight into the questions the model is trying to answer or worse, give biased estimates.
 <list id="eip-id1166531436357" list-type="enumerated" number-style="arabic"><item>The independent variables, <m:math><m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub></m:math> , are all measured without error, and are fixed numbers that are independent of the error term. This assumption is saying in effect that Y is deterministic, the result of a fixed component “X” and a random error component “ϵ.”</item>
 <item>The error term is a random variable with a mean of zero and a constant variance. The meaning of this is that the variances of the independent variables are independent of the value of the variable. Consider the relationship between personal income and the quantity of a good purchased as an example of a case where the variance is dependent upon the value of the independent variable, income. It is plausible that as income increases the variation around the amount purchased will also increase simply because of the flexibility provided with higher levels of income. The assumption is for constant variance with respect to the magnitude of the independent variable called homoscedasticity. If the assumption fails, then it is called heteroscedasticity. <link target-id="eip-id1167111372323"/> shows the case of homoscedasticity where all three distributions have the same variance around the predicted value of Y regardless of the magnitude of X.</item>
-<item>While the independent variables are all fixed values they are from a probability distribution that is normally distributed. This can be seen in <link target-id="eip-id1167111372323"/> by the shape of the distributions placed on the predicted line at the expected value of the relevant value of Y.</item>
+<item>Error terms should be normally distributed. This can be seen in <link target-id="eip-id1167111372323"/> by the shape of the distributions placed on the predicted line at the expected value of the relevant value of Y.</item>
 <item>The independent variables are independent of Y, but are also assumed to be independent of the other X variables. The model is designed to estimate the effects of independent variables on some dependent variable in accordance with a proposed theory. The case where some or more of the independent variables are correlated is not unusual. There may be no cause and effect relationship among the independent variables, but nevertheless they move together. Take the case of a simple supply curve where quantity supplied is theoretically related to the price of the product and the prices of inputs. There may be multiple inputs that may over time move together from general inflationary pressure. The input prices will therefore violate this assumption of regression analysis. This condition is called multicollinearity, which will be taken up in detail later.</item>
 <item>The error terms are uncorrelated with each other. This situation arises from an effect on one error term from another error term. While not exclusively a time series problem, it is here that we most often see this case. An X variable in time period one has an effect on the Y variable, but this effect then has an effect in the next time period. This effect gives rise to a relationship among the error terms. This case is called autocorrelation, “self-correlated.” The error terms are now not independent of each other, but rather have their own effect on subsequent error terms.</item>
 </list></para><para id="eip-621"><link target-id="eip-id1167111372323"/> shows the case where the assumptions of the regression model are being satisfied. The estimated line is <m:math><m:mover><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x.</m:mi></m:math> Three values of X are shown. A normal distribution is placed at each point where X equals the estimated line and the associated error at each value of Y. Notice that the three distributions are normally distributed around the point on the line, and further, the variation, variance, around the predicted value is constant indicating homoscedasticity from assumption 2. <link target-id="eip-id1167111372323"/> does not show all the assumptions of the regression model, but it helps visualize these important ones.</para><para id="eip-416"><figure id="eip-id1167111372323"><media id="INSERT_HERE" alt="."><image mime-type="image/jpg" src="../../media/fig-ch13_04_03.jpg"/></media></figure></para><figure id="fs-id1170579415184"><media id="fs-id1170583137613" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_02m.jpg" width="420"/></media></figure></section><para id="fs-id1170588823276">This is the general form that is most often called the multiple regression model.  So-called "simple" regression analysis has only one independent (right-hand) variable rather than many independent variables. Simple regression is just a special case of multiple regression. There is some value in beginning with simple regression: it is easy to graph in two dimensions, difficult to graph in three dimensions, and impossible to graph in more than three dimensions. Consequently, our graphs will be for the simple regression case. <link target-id="fs-id1170579415184"/> presents the regression problem in the form of a scatter plot graph of the data set where it is hypothesized that Y is dependent upon the single independent variable X.</para><para id="eip-649">A basic relationship from Macroeconomic Principles is the consumption function. This theoretical relationship states that as a person's income rises, their consumption rises, but by a smaller amount than the rise in income. If Y is consumption and X is income in the equation below <link target-id="fs-id1170579415184"/>, the regression problem is, first, to establish that this relationship exists, and second, to determine the impact of a change in income on a person's consumption. The parameter β<sub>1</sub> was called the Marginal Propensity to Consume in Macroeconomics Principles.</para><para id="eip-509">Each "dot" in <link target-id="fs-id1170579415184"/> represents the consumption and income of different individuals at some point in time. This was called cross-section data earlier; observations on variables at one point in time across different people or other units of measurement. This analysis is often done with time series data, which would be the consumption and income of one individual or country at different points in time. For macroeconomic problems it is common to use times series aggregated data for a whole country. For this particular theoretical concept these data are readily available in the annual report of the President’s Council of Economic Advisors.</para><para id="eip-885">The regression problem comes down to determining which straight line would best represent the data in <link target-id="fs-id1165019842274"/>. Regression analysis is sometimes called "least squares" analysis because the method of determining which line best "fits" the data is to minimize the sum of the squared residuals of a line put through the data. </para><figure id="fs-id1165019842274"><media id="fs-id1165016065534" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch12_04_03m.jpg" width="420"/></media><caption><newline/>Population Equation: C = β<sub>0</sub> + β<sub>1</sub> Income + ε
@@ -225,84 +225,8 @@ of the <emphasis effect="italics">x</emphasis> values and <emphasis effect="ital
     </m:msub>
     </m:mrow>
   </m:msub></m:math>,the formula for the standard deviation of the estimate of b<sub>1</sub>:
-</para><equation class="unnumbered" id="eip-786"><label/><m:math>
- <m:msub>
- <m:mi>S</m:mi>
- <m:mrow>
- <m:msub>
- <m:mi>b</m:mi>
- <m:mn>1</m:mn>
- </m:msub>
- </m:mrow>
- </m:msub>
-
-<m:mo>=</m:mo> 
-
-<m:mfrac>
- <m:mrow> 
-  <m:msubsup>
-   <m:mi>S</m:mi>
-   <m:mi>e</m:mi>
-   <m:mn>2</m:mn>
-  </m:msubsup>
- </m:mrow>
- <m:mrow>
-  <m:msqrt>
-   <m:msup>
-   <m:mrow> 
-   <m:mo>(</m:mo>
-   <m:msub>
-    <m:mi>x</m:mi>
-    <m:mi>i</m:mi>
-   </m:msub>
-   <m:mo>−</m:mo>
-   <m:mover>
-   <m:mi>x</m:mi>
-   <m:mi>–</m:mi>
-   </m:mover> 
-   <m:mo>)</m:mo>
-   </m:mrow>
-   <m:mn>2</m:mn>
-   </m:msup> 
-  </m:msqrt>
- </m:mrow>
-</m:mfrac>  
-</m:math>
- </equation><equation class="unnumbered" id="eip-288">or</equation><equation id="eip-99"><label/><m:math>
- <m:msub>
- <m:mi>S</m:mi>
- <m:mrow>
- <m:msub>
- <m:mi>b</m:mi>
- <m:mn>1</m:mn>
- </m:msub>
- </m:mrow>
- </m:msub>
-
-<m:mo>=</m:mo> 
-
-<m:mfrac>
- <m:mrow> 
-  <m:msubsup>
-   <m:mi>S</m:mi>
-   <m:mi>e</m:mi>
-   <m:mn>2</m:mn>
-  </m:msubsup>
- </m:mrow>
- <m:mrow>
-  <m:mo>(</m:mo>
-  <m:mi>n</m:mi>
-  <m:mo>−</m:mo>
-  <m:mn>1</m:mn>
-  <m:mo>)</m:mo>
-  <m:msubsup>
-   <m:mi>S</m:mi>
-   <m:mi>x</m:mi>
-   <m:mn>2</m:mn>
-  </m:msubsup>
- </m:mrow>
-</m:mfrac>  
-</m:math>
+</para><equation class="unnumbered" id="eip-786"><label/><m:math><m:msub><m:mi>S</m:mi><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub></m:msub><m:mo>=</m:mo><m:mfrac><m:msub><m:mi>S</m:mi><m:mi>e</m:mi></m:msub><m:msqrt><m:msup><m:mrow><m:mi>Σ</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:mover><m:mi>x</m:mi><m:mi>–</m:mi></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:msqrt></m:mfrac></m:math>
+ </equation><equation class="unnumbered" id="eip-288">or</equation><equation id="eip-99"><label/><m:math><m:msub><m:mi>S</m:mi><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub></m:msub><m:mo>=</m:mo><m:mfrac><m:msub><m:mi>S</m:mi><m:mi>e</m:mi></m:msub><m:msqrt><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mi>S</m:mi><m:mi>x</m:mi><m:mn>2</m:mn></m:msubsup></m:msqrt></m:mfrac></m:math>
  </equation><para id="eip-679">Where S<sub>e</sub> is the estimate of the error variance and S<sup>2</sup><sub>x</sub> is the variance of x values of the coefficient of the independent variable being tested. </para><para id="eip-962">We see that S<sub>e</sub>, the <emphasis>estimate of the error variance</emphasis>, is part of the computation. Because the estimate of the error variance is based on the assumption of normality of the error terms, we can conclude that the sampling distribution of the b's, the coefficients of our hypothesized regression line, are also normally distributed.</para><para id="eip-971">One last note concerns the degrees of freedom of the test statistic, ν=n-k. Previously we subtracted 1 from the sample size to determine the degrees of freedom in a student's t problem.  Here we must subtract one degree of freedom for each parameter estimated in the equation. For the example of the consumption function we lose 2 degrees of freedom, one for <m:math><m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub></m:math>, the intercept, and one for b<sub>1</sub>, the slope of the consumption function. The degrees of freedom would be n - k - 1, where k is the number of independent variables and the extra one is lost because of the intercept. If we were estimating an equation with three independent variables, we would lose 4 degrees of freedom: three for the independent variables, k, and one more for the intercept.</para><para id="eip-682">The decision rule for acceptance or rejection of the null hypothesis follows exactly the same form as in all our previous test of hypothesis. Namely, if the calculated value of t (or Z) falls into the tails of the distribution, where the tails are defined by α ,the required significance level in the test, we cannot accept the null hypothesis. If on the other hand, the calculated value of the test statistic is within the critical region, we cannot reject the null hypothesis.  </para><para id="eip-920">If we conclude that we cannot accept the null hypothesis, we are able to state with <m:math><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>α</m:mi><m:mo>)</m:mo></m:math> level of confidence that the slope of the line is given by b<sub>1</sub>. This is an extremely important conclusion. Regression analysis not only allows us to test if a cause and effect relationship exists, we can also determine the magnitude of that relationship, if one is found to exist. It is this feature of regression analysis that makes it so valuable. If models can be developed that have statistical validity, we are then able to simulate the effects of changes in variables that may be under our control with some degree of probability , of course. For example, if advertising is demonstrated to effect sales, we can determine the effects of changing the advertising budget and decide if the increased sales are worth the added expense.</para></section><section id="eip-823"><title>Multicollinearity</title><para id="eip-753">
 Our discussion earlier indicated that like all statistical models, the OLS regression model has important assumptions attached. Each assumption, if violated, has an effect on the ability of the model to provide useful and meaningful estimates. The Gauss-Markov Theorem has assured us that the OLS estimates are unbiased and minimum variance, but this is true only under the assumptions of the model. Here we will look at the effects on OLS estimates if the independent variables are correlated. The other assumptions and the methods to mitigate the difficulties they pose if they are found to be violated are examined in Econometrics courses. We take up multicollinearity because it is so often prevalent in Economic models and it often leads to frustrating results.</para>
 <para id="eip-id1165105022157">
