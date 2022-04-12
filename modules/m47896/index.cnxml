@@ -723,14 +723,13 @@ Use the arrows to go to the histogram picture and select the histogram.
 
 <item>
 <m:math>
-<m:ci>r</m:ci>
+<m:mi>r</m:mi>
 </m:math> and
 <m:math>
 
-<m:power/>
-<m:ci>r</m:ci>
-<m:cn>2</m:cn>
-
+<m:msup><m:mi>r</m:mi>
+<m:mn>2</m:mn>
+</m:msup>
 </m:math> will be displayed during regression calculations.
 </item>
 
@@ -1006,44 +1005,20 @@ If <code>[L1]</code> is not selected, press
 </item>
 
 <item>The critical point for an outlier is:
-<m:math>
-
-<m:times/>
-<m:cn>1.9</m:cn>
-<m:ci>V</m:ci>
-
-<m:divide/>
-<m:ci>SSE</m:ci>
-
-<m:minus/>
-<m:ci>n</m:ci>
-<m:cn>2</m:cn>
-
-
-
-</m:math> where:
+  <m:math><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>9</m:mn><m:mi>V</m:mi><m:mfrac><m:mi>SSE</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math> where:
 <list id="fs-id13668874">
 <item>
 <m:math>
-<m:ci>n</m:ci>
+<m:mi>n</m:mi>
 </m:math> = number of pairs of data
 </item>
 <item>
 <m:math>
-<m:ci>SSE</m:ci>
+<m:mi>SSE</m:mi>
 </m:math> = sum of the squared errors
 </item>
 <item>
-<m:math>
-
-<m:sum/>
-
-<m:power/>
-<m:ci>residual</m:ci>
-<m:cn>2</m:cn>
-
-
-</m:math>
+  <m:math><m:mi>Σ</m:mi><m:msup><m:mi>residual</m:mi><m:mn>2</m:mn></m:msup></m:math>
 </item>
 </list>
 </item>
@@ -1064,32 +1039,8 @@ If <code>[L1]</code> is not selected, press
 
 <item>
 <para id="fs-id15734182">Calculate the
-<m:math>
-
-<m:divide/>
-
-<m:power/>
-<m:ci>(residual)</m:ci>
-<m:cn>2</m:cn>
-
-
-<m:minus/>
-<m:ci>n</m:ci>
-<m:cn>2</m:cn>
-
-
-</m:math>. Note that
-<m:math>
-
-<m:eq/>
-
-<m:minus/>
-<m:ci>n</m:ci>
-<m:cn>2</m:cn>
-
-<m:cn>8</m:cn>
-
-</m:math>
+  <m:math><m:mfrac><m:msup><m:mi>Σresidual</m:mi><m:mn>2</m:mn></m:msup><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math>. Note that
+<m:math><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:math>
 <newline/>
 <media id="fs-id15680372" display="inline" alt="2nd key">
 <image mime-type="image/png" src="../../media/ti83-2nd.png"/>
@@ -1191,18 +1142,13 @@ If <code>[L1]</code> is not selected, press
         </list></para>
         <para id="eip-283"><title>Continuous Distributions (general)</title><list id="eip-idp115972320">
 <item>
-            <m:math>
- <m:mrow>
+ <m:math>
   <m:mo>−</m:mo><m:mi>∞</m:mi>
- </m:mrow>
 </m:math> uses the value –1EE99 for left bound</item>
           <item>
             <m:math>
-              
-                <m:plus/>
-                <m:infinity/>
-              
-            </m:math> uses the value 1EE99 for right bound</item>
+              <m:mi>∞</m:mi>
+            </m:math>uses the value 1EE99 for right bound</item>
 </list></para><para id="eip-402"><title>Normal Distribution</title><list id="eip-idp89416480">
 
 <item><code display="inline">normalpdf(<emphasis effect="italics">x</emphasis>,<emphasis effect="italics">μ</emphasis>,<emphasis effect="italics">σ</emphasis>)</code>  yields a probability density function value (only useful to plot the normal curve, in which case "<code display="inline"><emphasis effect="italics">x</emphasis></code>" is the variable)</item>
