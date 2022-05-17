@@ -21,13 +21,13 @@
 <para id="element-895"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis> ≥ 16.43  <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> &lt; 16.43</para><para id="element-241">For Jeffrey to swim faster, his time will be less than 16.43 seconds. The "&lt;" tells you this is left-tailed.</para>
 
 <para id="element-496">Determine the distribution needed:</para>
-<para id="element-67"><emphasis>Random variable: </emphasis><m:math><m:mi>X</m:mi></m:math> = the mean time to swim the 25-yard freestyle.</para>
+<para id="element-67"><emphasis>Random variable: </emphasis><m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> = the mean time to swim the 25-yard freestyle.</para>
 <para id="element-58"><emphasis> Distribution for the test statistic: </emphasis></para>
 <para id="element-681">The sample size is less than 30 and we do not know the population standard deviation so this is a t-test. and the proper formula is: <m:math>
 <m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub>
 <m:mo>=</m:mo>
-<m:mfrac><m:mrow><m:mover><m:mi>X</m:mi><m:mo>-</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub></m:mrow>
-<m:mrow><m:mi>σ</m:mi><m:mo>/</m:mo><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:math></para><para id="eip-id1164384054820"><emphasis effect="italics">μ</emphasis><sub>0</sub> = 16.43 comes from <emphasis effect="italics">H<sub>0</sub></emphasis> and not the data. <m:math><m:mover><m:mi>X</m:mi><m:mo>-</m:mo></m:mover></m:math> = 16. <emphasis effect="italics">s</emphasis> = 0.8, and <emphasis effect="italics">n</emphasis> = 15.</para><para id="element-770">Our step 2, setting the level of significance, has already been determined by the problem, .05 for a 95 % significance level. It is worth thinking about the meaning of this choice.  The Type I error is to conclude that Jeffrey swims the 25-yard freestyle, on average, in less than 16.43 seconds when, in fact, he actually swims the 25-yard freestyle, on average, in 16.43 seconds. (Reject the null hypothesis when the null hypothesis is true.) For this case the only concern with a Type I error would seem to be that Jeffery’s dad may fail to bet on his son’s victory because he does not have appropriate confidence in the effect of the goggles.
+<m:mfrac><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>0</m:mn></m:msub></m:mrow>
+<m:mrow><m:mi>σ</m:mi><m:mo>/</m:mo><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:math></para><para id="eip-id1164384054820"><emphasis effect="italics">μ</emphasis><sub>0</sub> = 16.43 comes from <emphasis effect="italics">H<sub>0</sub></emphasis> and not the data. <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> = 16. <emphasis effect="italics">s</emphasis> = 0.8, and <emphasis effect="italics">n</emphasis> = 15.</para><para id="element-770">Our step 2, setting the level of significance, has already been determined by the problem, .05 for a 95 % significance level. It is worth thinking about the meaning of this choice.  The Type I error is to conclude that Jeffrey swims the 25-yard freestyle, on average, in less than 16.43 seconds when, in fact, he actually swims the 25-yard freestyle, on average, in 16.43 seconds. (Reject the null hypothesis when the null hypothesis is true.) For this case the only concern with a Type I error would seem to be that Jeffery’s dad may fail to bet on his son’s victory because he does not have appropriate confidence in the effect of the goggles.
 </para><para id="element-706">To find the critical value we need to select the appropriate test statistic. We have concluded that this is a t-test on the basis of the sample size and that we are interested in a population mean. We can now draw the graph of the t-distribution and mark the critical value. For this problem the degrees of freedom are n-1, or 14. Looking up 14 degrees of freedom at the 0.05 column of the t-table we find 1.761. This is the critical value and we can put this on our graph.
 </para><para id="element-656">Step 3 is the calculation of the test statistic using the formula we have selected. We find that the calculated test statistic is 2.08, meaning that the sample mean is 2.08 standard deviations away from the hypothesized mean of 16.43. </para><equation id="fs-id1170503119212" class="unnumbered"><label/><m:math>
 
@@ -41,7 +41,7 @@
 <m:mfrac>
 
 <m:mrow>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>-</m:mo>
 <m:msub>
 <m:mi>μ</m:mi>
@@ -128,7 +128,7 @@ Since the problem is about a mean, this is a test of a single population mean.
 <newline/>
 The null and alternative hypothesis are for the parameter µ because the number of dollars of the contracts is a continuous random variable. Also, this is a one-tailed test because the company has only an interested if the number of dollars per contact is below a particular number not "too high" a number. This can be thought of as making a claim that the requirement is being met and thus the claim is in the alternative hypothesis.
  </item>
-<item>Test statistic: <m:math><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>µ</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mfrac><m:mi>s</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>108</m:mn><m:mo>−</m:mo><m:mn>100</m:mn></m:mrow><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>12</m:mn><m:msqrt><m:mn>16</m:mn></m:msqrt></m:mfrac><m:mo>)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.67</m:mn></m:math></item>
+<item>Test statistic: <m:math><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>µ</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:mrow><m:mfrac><m:mi>s</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>108</m:mn><m:mo>−</m:mo><m:mn>100</m:mn></m:mrow><m:mrow><m:mo>(</m:mo><m:mfrac><m:mn>12</m:mn><m:msqrt><m:mn>16</m:mn></m:msqrt></m:mfrac><m:mo>)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.67</m:mn></m:math></item>
 <item>Critical value: <m:math><m:msub><m:mi>t</m:mi><m:mi>a</m:mi></m:msub><m:mo>=</m:mo><m:mn>1.753</m:mn></m:math>  with n-1 degrees of freedom= 15</item>
 </list></para>
 <para id="eip-id1165105401617">The test statistic is a Student's t because the sample size is below 30; therefore, we cannot use the normal distribution. Comparing the calculated value of the test statistic and the critical value of <m:math><m:mi>t</m:mi></m:math> <m:math><m:mo>(</m:mo><m:msub><m:mi>t</m:mi><m:mi>a</m:mi></m:msub><m:mo>)</m:mo></m:math> at a 5% significance level, we see that the calculated value is in the tail of the distribution. Thus, we conclude that 108 dollars per contract is significantly larger than the hypothesized value of 100 and thus we cannot accept the null hypothesis. There is evidence that supports Jane's performance meets company standards.</para><figure id="eip-id1169369014682"><media id="eip-id1169342879021" alt=""><image src="../../media/fig-ch09_01_08.jpg" mime-type="image/png"/></media></figure></solution>
@@ -191,7 +191,7 @@ The sample parameters are provided, the sample mean is 7.91 and the sample varia
 <m:mfrac>
 
 <m:mrow>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>-</m:mo>
 <m:msub>
 <m:mi>μ</m:mi>

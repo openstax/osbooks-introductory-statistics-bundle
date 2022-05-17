@@ -55,7 +55,7 @@
 <item>The mean for the Student's t-distribution is zero and the distribution is symmetric about zero, again like the standard normal distribution.</item>
 <item>The Student's t-distribution has more probability in its tails than the standard normal distribution because the spread of the t-distribution is greater than the spread of the standard normal. So the graph of the Student's t-distribution will be thicker in the tails and shorter in the center than the graph of the standard normal distribution.</item>
 <item>The exact shape of the Student's t-distribution depends on the degrees of freedom. As the degrees of freedom increases, the graph of Student's t-distribution becomes more like the graph of the standard normal distribution.</item>
-<item>The underlying population of individual observations is assumed to be normally distributed with unknown population mean <emphasis effect="italics">μ</emphasis> and unknown population standard deviation <emphasis effect="italics">σ</emphasis>. This assumption comes from the Central Limit theorem because the individual observations in this case are the <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>s of the sampling distribution. The size of the underlying population is generally not relevant unless it is very small. If it is normal then the assumption is met and doesn't need discussion.</item>
+<item>The underlying population of individual observations is assumed to be normally distributed with unknown population mean <emphasis effect="italics">μ</emphasis> and unknown population standard deviation <emphasis effect="italics">σ</emphasis>. This assumption comes from the Central Limit theorem because the individual observations in this case are the <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math>s of the sampling distribution. The size of the underlying population is generally not relevant unless it is very small. If it is normal then the assumption is met and doesn't need discussion.</item>
 </list><para id="eip-647">A probability table for the Student's t-distribution is used to calculate t-values at various commonly-used levels of confidence. The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row). When using a <emphasis effect="italics">t</emphasis>-table, note that some tables are formatted to show the confidence level in the column headings, while the column headings in some tables may show only corresponding area in one or both tails. Notice that at the bottom the table will show the t-value for infinite degrees of freedom. Mathematically, as the degrees of freedom increase, the <emphasis effect="italics">t</emphasis>-distribution approaches the standard normal distribution. You can find familiar Z-values by looking in the relevant alpha column and reading value in the last row.<newline/>
 
  <newline/>A Student's t table (See <link document="m56641"/>) gives <emphasis effect="italics">t</emphasis>-scores given the degrees of freedom and the right-tailed probability.</para>
@@ -63,16 +63,16 @@
 <para id="eip-90">The Student's <emphasis effect="italics">t</emphasis>-distribution has one of the most desirable properties of the normal: it is symmetrical. What the Student's <emphasis effect="italics">t</emphasis>-distribution does is spread out the horizontal axis so it takes a larger number of standard deviations to capture the same amount of probability. In reality there are an infinite number of Student's <emphasis effect="italics">t</emphasis>-distributions, one for each adjustment to the sample size. As the sample size increases, the Student's <emphasis effect="italics">t</emphasis>-distribution become more and more like the normal distribution. When the sample size reaches 30 the normal distribution is usually substituted for the Student's t because they are so much alike. This relationship between the Student's <emphasis effect="italics">t</emphasis>-distribution and the normal distribution is shown in <link target-id="fs-id1169346248939"/>.</para><figure id="fs-id1169346248939"><media id="fs-id1169360091692" alt=""><image src="../../media/fig-ch08_02_03-1c59.jpg" mime-type="image/png"/></media></figure><para id="eip-234">This is another example of one distribution limiting another one, in this case the normal distribution is the limiting distribution of the Student's t when the degrees of freedom in the Student's t approaches infinity. This conclusion comes directly from the derivation of the Student's <emphasis effect="italics">t</emphasis>-distribution by Mr. Gosset. He recognized the problem as having few observations and no estimate of the population standard deviation. He was substituting the sample standard deviation and getting volatile results. He therefore created the Student's <emphasis effect="italics">t</emphasis>-distribution as a ratio of the normal distribution and Chi squared distribution. The Chi squared distribution is itself a ratio of two variances, in this case the sample variance and the unknown population variance. The Student's <emphasis effect="italics">t</emphasis>-distribution thus is tied to the normal distribution, but has degrees of freedom that come from those of the Chi squared distribution. The algebraic solution demonstrates this result.</para><list id="eip-243" list-type="bulleted" bullet-style="none"><title>Development of Student's t-distribution:</title><item><m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>z</m:mi></m:mrow><m:mrow><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>v</m:mi></m:mrow></m:mfrac></m:msqrt></m:mrow></m:mfrac></m:math>
   <para id="eip-id7711465">where <emphasis effect="italics">z</emphasis> is the standard normal variable and <emphasis effect="italics">χ</emphasis><sup>2</sup> is the chi-squared distribution with <emphasis effect="italics">v</emphasis> degrees of freedom. <newline/>Substitute values and simplify:</para>
 </item>
-<item> <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo>
-<m:mfrac><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:mrow><m:mrow><m:msqrt><m:mrow>
+<item> <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo>
+<m:mfrac><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:mrow><m:mrow><m:msqrt><m:mrow>
 <m:mfrac><m:mrow><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow>
 <m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac>
 <m:mo>=</m:mo>
-<m:mfrac><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:mrow><m:mrow>
+<m:mfrac><m:mrow><m:mfrac><m:mrow><m:mo>(</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:mrow><m:mrow>
 <m:mfrac><m:mi>s</m:mi><m:mi>σ</m:mi></m:mfrac>
 </m:mrow></m:mfrac>
 <m:mo>=</m:mo>
-<m:mfrac><m:mrow><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow>
+<m:mfrac><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow>
 <m:mfrac><m:mi>s</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac>
 </m:mrow></m:mfrac>
 </m:math>
@@ -80,7 +80,7 @@
 </item>
 <item>
 <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>s</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:math></item></list><para id="eip-921">Restating the formula for a confidence interval for the mean for cases when the sample size is smaller than 30 and we do not know the population standard deviation, σ:</para><equation id="eip-546" class="unnumbered"><label/><m:math>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>-</m:mo>
 <m:msub>
 <m:mi>t</m:mi>
@@ -97,7 +97,7 @@
 <m:mo>≤</m:mo>
 <m:mi>μ</m:mi>
 <m:mo>≤</m:mo>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>+</m:mo>
 <m:msub>
 <m:mi>t</m:mi>
@@ -112,8 +112,8 @@
 </m:mfrac>
 <m:mo>)</m:mo>
 </m:math></equation><para id="eip-573">Here the point estimate of the population standard deviation, s has been substituted for the population standard deviation, σ, and t<sub>ν</sub>,α has been substituted for Z<sub>α</sub>. The Greek letter ν (pronounced nu) is placed in the general formula in recognition that there are many Student t<sub>v</sub> distributions, one for each sample size. ν is the symbol for the degrees of freedom of the distribution and depends on the size of the sample. Often df is used to abbreviate degrees of freedom. <emphasis>For this type of problem,</emphasis> the degrees of freedom is ν = n-1, where n is the sample size. To look up a probability in the Student's t table we have to know the degrees of freedom in the problem.  </para><example id="fs-id1170684098224"><exercise id="eip-33"><problem id="eip-id4891760">
-<para id="eip-id7764553">The average earnings per share (EPS)  for 10 industrial stocks randomly selected from those listed on the Dow-Jones Industrial Average was found to be <m:math><m:mover><m:mi>X</m:mi><m:mo>-</m:mo></m:mover></m:math>   = 1.85 with a standard deviation of  s=0.395. Calculate a 99% confidence interval for the average EPS of all the industrials listed on the DJIA.</para><equation id="eip-372" class="unnumbered"><label/><m:math>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<para id="eip-id7764553">The average earnings per share (EPS)  for 10 industrial stocks randomly selected from those listed on the Dow-Jones Industrial Average was found to be <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math>   = 1.85 with a standard deviation of  s=0.395. Calculate a 99% confidence interval for the average EPS of all the industrials listed on the DJIA.</para><equation id="eip-372" class="unnumbered"><label/><m:math>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>-</m:mo>
 <m:msub>
 <m:mi>t</m:mi>
@@ -130,7 +130,7 @@
 <m:mo>≤</m:mo>
 <m:mi>μ</m:mi>
 <m:mo>≤</m:mo>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>+</m:mo>
 <m:msub>
 <m:mi>t</m:mi>
@@ -152,9 +152,9 @@
   </media>
 
 </figure>
-  <para id="eip-id1169756770305">To find the appropriate t-value requires two pieces of information, the level of confidence desired and the degrees of freedom. The question asked for a 99% confidence level. On the graph this is shown where (1-α) , the level of confidence , is in the unshaded area. The tails, thus, have .005 probability each, α/2. The degrees of freedom for this type of problem is n-1= 9. From the Student’s t table, at the row marked 9 and column marked .005, is the number of standard deviations to capture 99% of the probability, 3.2498. These are then placed on the graph remembering that the Student’s t is symmetrical and so the t-value is both plus or minus on each side of the mean.</para><para id="eip-id1169966923680">Inserting these values into the formula gives the result. These values can be placed on the graph to see the relationship between the distribution of the sample means, <m:math><m:mover><m:mi>X</m:mi><m:mo>-</m:mo></m:mover></m:math>'s  and the Student’s <emphasis effect="italics">t</emphasis>-distribution.  </para><equation id="eip-id1171263782198" class="unnumbered"><label/><m:math>
+  <para id="eip-id1169756770305">To find the appropriate t-value requires two pieces of information, the level of confidence desired and the degrees of freedom. The question asked for a 99% confidence level. On the graph this is shown where (1-α) , the level of confidence , is in the unshaded area. The tails, thus, have .005 probability each, α/2. The degrees of freedom for this type of problem is n-1= 9. From the Student’s t table, at the row marked 9 and column marked .005, is the number of standard deviations to capture 99% of the probability, 3.2498. These are then placed on the graph remembering that the Student’s t is symmetrical and so the t-value is both plus or minus on each side of the mean.</para><para id="eip-id1169966923680">Inserting these values into the formula gives the result. These values can be placed on the graph to see the relationship between the distribution of the sample means, <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math>'s  and the Student’s <emphasis effect="italics">t</emphasis>-distribution.  </para><equation id="eip-id1171263782198" class="unnumbered"><label/><m:math>
 <m:mi>μ</m:mi><m:mo>=</m:mo>
-<m:mover><m:mi>X</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>±</m:mo>
 <m:msub><m:mi>t</m:mi><m:mi>α/2,df=n-1</m:mi></m:msub>
 
@@ -220,7 +220,7 @@
  </m:mrow>
 </m:math></para>
 
- <para id="eip-305">The <emphasis effect="italics">t</emphasis>-score follows the Student’s t-distribution with <emphasis effect="italics">n</emphasis> – 1 degrees of freedom. The confidence interval under this distribution is calculated with <m:math><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mo>±</m:mo>
+ <para id="eip-305">The <emphasis effect="italics">t</emphasis>-score follows the Student’s t-distribution with <emphasis effect="italics">n</emphasis> – 1 degrees of freedom. The confidence interval under this distribution is calculated with <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>±</m:mo>
  <m:mrow>
   <m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -317,7 +317,7 @@
 <para id="eip-995"><emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> - 1; the degrees of freedom for a Student’s t-distribution where n represents the size of the sample</para>
 <para id="eip-288"><emphasis effect="italics">T</emphasis>~<emphasis effect="italics">t<sub>df</sub></emphasis> the random variable, <emphasis effect="italics">T</emphasis>, has a Student’s t-distribution with <emphasis effect="italics">df</emphasis> degrees of freedom</para>
 <para id="fs-idm169440128">The general form for a confidence interval for a single mean, population standard deviation unknown, and sample size less than 30 Student's t is given by: <m:math>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>-</m:mo>
 <m:msub>
 <m:mi>t</m:mi>
@@ -334,7 +334,7 @@
 <m:mo>≤</m:mo>
 <m:mi>μ</m:mi>
 <m:mo>≤</m:mo>
-<m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>+</m:mo>
 <m:msub>
 <m:mi>t</m:mi>

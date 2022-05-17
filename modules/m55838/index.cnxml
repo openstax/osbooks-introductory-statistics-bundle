@@ -26,7 +26,7 @@
 <m:mo>+</m:mo>
 <m:msub><m:mi>ε</m:mi><m:mi>i</m:mi></m:msub>
 </m:math></equation><para id="eip-856">where β<sub>0</sub> is the intercept, β<sub>i</sub>'s are the slope between Y and the appropriate X<sub>i</sub>, and ε (pronounced epsilon), is the error term that captures errors in measurement of Y and the effect on Y of any variables missing from the equation that would contribute to 
-explaining variations in Y. This equation is the theoretical population equation and therefore uses Greek letters. The equation we will estimate will have the Roman equivalent symbols. This is parallel to how we kept track of the population 	parameters and sample parameters before. The symbol for the population mean was µ and for the sample mean <m:math><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> and for the population standard deviation was σ and for the sample standard deviation was s. The equation that will be estimated with a sample of data for two independent variables will thus be:  
+explaining variations in Y. This equation is the theoretical population equation and therefore uses Greek letters. The equation we will estimate will have the Roman equivalent symbols. This is parallel to how we kept track of the population 	parameters and sample parameters before. The symbol for the population mean was µ and for the sample mean <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math> and for the population standard deviation was σ and for the sample standard deviation was s. The equation that will be estimated with a sample of data for two independent variables will thus be:  
 </para><equation class="unnumbered" id="eip-363"><label/><m:math>
 <m:msub><m:mi>y</m:mi><m:mi>i</m:mi></m:msub>
 <m:mo>=</m:mo>
@@ -65,7 +65,7 @@ For each data point the residuals, or errors, are calculated <emphasis effect="i
 <m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>−</m:mo>
 <m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub>
-<m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
+<m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 </m:math>
 
 and
@@ -75,17 +75,17 @@ and
 <m:mo>=</m:mo>
 <m:mfrac>
 <m:mrow>
-<m:mo>Σ</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo>
+<m:mo>Σ</m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo>
 <m:mo>(</m:mo><m:mi>y</m:mi><m:mo>−</m:mo><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo>
 </m:mrow>
 <m:mrow>
-<m:mo>Σ</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup>
+<m:mo>Σ</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup>
 </m:mrow>
 </m:mfrac>
 <m:mo>=</m:mo>
 <m:mfrac><m:mrow><m:mtext>cov</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>,</m:mo><m:mi>y</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac>
-</m:math></para><para id="eip-801">The sample means of the <emphasis effect="italics">x</emphasis> values and the <emphasis effect="italics">y</emphasis> values are <m:math><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math> and <m:math><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>, respectively. The best fit line always passes through the
-point (<m:math><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math>, <m:math><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>) called the points of means.
+</m:math></para><para id="eip-801">The sample means of the <emphasis effect="italics">x</emphasis> values and the <emphasis effect="italics">y</emphasis> values are <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math> and <m:math><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>, respectively. The best fit line always passes through the
+point (<m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math>, <m:math><m:mover><m:mi>y</m:mi><m:mo>–</m:mo></m:mover></m:math>) called the points of means.
 </para><para id="eip-508">The slope <emphasis effect="italics">b</emphasis> can also be written as:</para><equation class="unnumbered" id="eip-872"><label/><m:math>
  <m:msub>
   <m:mi>b</m:mi>
@@ -114,7 +114,7 @@ point (<m:math><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:math>, <m:ma
 <m:mo>)</m:mo>  
 </m:math></equation><para id="eip-755">where <emphasis effect="italics">s<sub>y</sub></emphasis> = the standard deviation of the <emphasis effect="italics">y</emphasis> values and <emphasis effect="italics">s<sub>x</sub></emphasis> = the standard deviation
 of the <emphasis effect="italics">x</emphasis> values and <emphasis effect="italics">r</emphasis> is the correlation coefficient between <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis>.
-</para><para id="eip-673">These equations are called the Normal Equations and come from another very important mathematical finding called the Gauss-Markov Theorem without which we could not do regression analysis. The Gauss-Markov Theorem tells us that the estimates we get from using the ordinary least squares (OLS) regression method will result in estimates that have some very important properties. In the Gauss-Markov Theorem it was proved that a least squares line is BLUE, which is, <emphasis>B</emphasis>est, <emphasis>L</emphasis>inear, <emphasis>U</emphasis>nbiased, <emphasis>E</emphasis>stimator. Best is the statistical property that an estimator is the one with the minimum variance. Linear refers to the property of the type of line being estimated. An unbiased estimator is one whose estimating function has an expected mean equal to the mean of the population. (You will remember that the expected value of <m:math><m:msub><m:mi>µ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub></m:math> was equal to the population mean µ in accordance with the Central Limit Theorem. This is exactly the same concept here). </para><para id="eip-645">Both Gauss and Markov were giants in the field of mathematics, and Gauss in physics too, in the 18<sup>th</sup> century and early 19<sup>th</sup> century. They barely overlapped chronologically and never in geography, but Markov’s work on this theorem was based extensively on the earlier work of Carl Gauss. The extensive applied value of this theorem had to wait until the middle of this last century. </para><para id="eip-559">Using the OLS method we can now find the <term id="term-00002">estimate of the error variance</term> which is the variance of the squared errors, e<sup>2</sup>. This is sometimes called the <term id="term-00003">standard error of the estimate</term>. (Grammatically this is probably best said as the estimate of the <emphasis>error’s</emphasis> variance) The formula for the estimate of the error variance is:</para><equation class="unnumbered" id="eip-175"><label/><m:math>
+</para><para id="eip-673">These equations are called the Normal Equations and come from another very important mathematical finding called the Gauss-Markov Theorem without which we could not do regression analysis. The Gauss-Markov Theorem tells us that the estimates we get from using the ordinary least squares (OLS) regression method will result in estimates that have some very important properties. In the Gauss-Markov Theorem it was proved that a least squares line is BLUE, which is, <emphasis>B</emphasis>est, <emphasis>L</emphasis>inear, <emphasis>U</emphasis>nbiased, <emphasis>E</emphasis>stimator. Best is the statistical property that an estimator is the one with the minimum variance. Linear refers to the property of the type of line being estimated. An unbiased estimator is one whose estimating function has an expected mean equal to the mean of the population. (You will remember that the expected value of <m:math><m:msub><m:mi>µ</m:mi><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub></m:math> was equal to the population mean µ in accordance with the Central Limit Theorem. This is exactly the same concept here). </para><para id="eip-645">Both Gauss and Markov were giants in the field of mathematics, and Gauss in physics too, in the 18<sup>th</sup> century and early 19<sup>th</sup> century. They barely overlapped chronologically and never in geography, but Markov’s work on this theorem was based extensively on the earlier work of Carl Gauss. The extensive applied value of this theorem had to wait until the middle of this last century. </para><para id="eip-559">Using the OLS method we can now find the <term id="term-00002">estimate of the error variance</term> which is the variance of the squared errors, e<sup>2</sup>. This is sometimes called the <term id="term-00003">standard error of the estimate</term>. (Grammatically this is probably best said as the estimate of the <emphasis>error’s</emphasis> variance) The formula for the estimate of the error variance is:</para><equation class="unnumbered" id="eip-175"><label/><m:math>
 <m:msubsup>
 <m:mi>s</m:mi>
 <m:mi>e</m:mi>
@@ -286,7 +286,7 @@ coefficients.
 </m:mfrac></m:math></equation><equation class="unnumbered" id="eip-id2240412"><label/><m:math><m:msub><m:mi>b</m:mi><m:mn>0</m:mn></m:msub><m:mo>=</m:mo>
 
 
-<m:mover><m:mi>y</m:mi><m:mo>-</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mover><m:mi>x</m:mi><m:mo>-</m:mo></m:mover><m:mn>2</m:mn></m:msub>
+<m:mover><m:mi>y</m:mi><m:mo>-</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>b</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>b</m:mi><m:mn>2</m:mn></m:msub><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mn>2</m:mn></m:msub>
 
 
 </m:math></equation></para><para id="eip-602">The correlation between <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math>, <m:math><m:msubsup><m:mi>r</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msubsup>
