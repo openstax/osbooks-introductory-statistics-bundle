@@ -12,6 +12,10 @@
 
 <para id="fs-idm122105344">You toss a coin and record the result. What is the probability that the result is heads? If you flip a coin two times, does probability tell you that these flips will result in one heads and one tail? You might toss a fair coin ten times and record nine heads. As you learned in <link document="m46938"/>, probability does not describe the short-term results of an experiment. It gives information about what can be expected in the long term. To demonstrate this, Karl Pearson once tossed a fair coin 24,000 times! He recorded the results of each toss, obtaining heads 12,012 times. <emphasis effect="bold">In his experiment, Pearson illustrated the Law of Large Numbers</emphasis>.</para><para id="fs-idm32245968"><emphasis effect="bold">The Law of Large Numbers</emphasis> states that, as the number of trials in a probability experiment increases, the difference between the theoretical probability of an event and the relative frequency approaches zero <emphasis effect="bold">(the theoretical probability and the relative frequency get closer and closer together)</emphasis>. When evaluating the long-term results of statistical experiments, we often want to know the “average” outcome. This “long-term average” is known as the <term id="term-00002">mean</term> or <term id="term-00003">expected value</term> of the experiment and is denoted by the Greek letter <emphasis effect="italics">μ</emphasis>. In other words, after conducting many trials of an experiment, you would expect this average value.</para>
 
+<para id="eip-332">The mean, <emphasis effect="italics">μ</emphasis>, of a discrete probability function is the expected value. </para>
+<equation class="unnumbered" id="eip-226"><label/>
+<m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>∙</m:mo><m:mi>P</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation><para id="eip-436">The standard deviation, Σ, of the PDF is the square root of the variance.</para><equation class="unnumbered" id="eip-365"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>[</m:mo><m:msup><m:mrow><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi><m:mi> </m:mi><m:mo>–</m:mo><m:mi> </m:mi><m:mi>μ</m:mi></m:mrow></m:mfenced></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mi> </m:mi><m:mo>∙</m:mo><m:mi> </m:mi><m:mi>Ρ</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>]</m:mo><m:mi> </m:mi></m:mrow></m:mrow></m:msqrt></m:math></equation><para id="eip-988">When all outcomes in the probability distribution are equally likely, these formulas coincide with the mean and standard deviation of the set of possible outcomes.</para>
+
 <note id="id8737934"><label/><title>NOTE</title>
 <para id="eip-idp95250624">To find the expected value or long term average, <emphasis effect="italics">μ</emphasis>, simply multiply each value of the random variable by its probability and add the products.</para></note>
 
@@ -336,9 +340,9 @@
   </m:msqrt>
  </m:mrow>
 </m:math> ≈ 1.0247
-</para><para id="eip-332">The mean, <emphasis effect="italics">μ</emphasis>, of a discrete probability function is the expected value. </para>
-<equation class="unnumbered" id="eip-226"><label/>
-<m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>∙</m:mo><m:mi>P</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation><para id="eip-436">The standard deviation, Σ, of the PDF is the square root of the variance.</para><equation class="unnumbered" id="eip-365"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>[</m:mo><m:msup><m:mrow><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi><m:mi> </m:mi><m:mo>–</m:mo><m:mi> </m:mi><m:mi>μ</m:mi></m:mrow></m:mfenced></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mi> </m:mi><m:mo>∙</m:mo><m:mi> </m:mi><m:mi>Ρ</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>]</m:mo><m:mi> </m:mi></m:mrow></m:mrow></m:msqrt></m:math></equation><para id="eip-988">When all outcomes in the probability distribution are equally likely, these formulas coincide with the mean and standard deviation of the set of possible outcomes.</para></example>
+</para>
+
+</example>
 
 
 <note id="fs-idm80414512" class="statistics try"><label/><title>Try It</title>
