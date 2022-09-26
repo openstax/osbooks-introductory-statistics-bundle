@@ -55,7 +55,8 @@
 </exercise></example><note id="fs-idp99198384" class="statistics try"><label/><title>Try It</title>
     <exercise id="eip-976">
       <problem id="eip-39">
-        <para id="eip-658">Do families and singles have the same distribution of cars? Use a level of significance of 0.05. Suppose that 100 randomly selected families and 200 randomly selected singles were asked what type of car they drove: sport, sedan, hatchback, truck, van/SUV. The results are shown in <link target-id="eip-idm93309648"/>. Do families and singles have the same distribution of cars? Test at a level of significance of 0.05.</para><table id="eip-idm93309648" summary="">
+        <list list-type="enumerated" id="list-00001"><item>
+        Do families and singles have the same distribution of cars? Use a level of significance of 0.05. Suppose that 100 randomly selected families and 200 randomly selected singles were asked what type of car they drove: sport, sedan, hatchback, truck, van/SUV. The results are shown in <link target-id="eip-idm93309648"/>. Do families and singles have the same distribution of cars? Test at a level of significance of 0.05.<table id="eip-idm93309648" summary="">
 <tgroup cols="6">
 <thead>
   <row>
@@ -87,61 +88,67 @@
 </tbody>
 </tgroup>
 </table>
+</item>
+<item>Ivy League schools receive many applications, but only some can be accepted. At the schools listed in <link target-id="fs-idm19368736"/>, two types of applications are accepted: regular and early decision.
+  <table id="fs-idm19368736" summary="..">
+  <tgroup cols="7"><thead>
+    <row>
+      <entry>Application type accepted</entry>
+      <entry>Brown</entry>
+      <entry>Columbia</entry>
+      <entry>Cornell</entry>
+      <entry>Dartmouth</entry>
+      <entry>Penn</entry>
+      <entry>Yale</entry>
+    </row>
+  </thead>
+  <tbody>
+    <row>
+      <entry>Regular</entry>
+      <entry>2,115</entry>
+      <entry>1,792</entry>
+      <entry>5,306</entry>
+      <entry>1,734</entry>
+      <entry>2,685</entry>
+      <entry>1,245</entry>
+    </row>
+    <row>
+      <entry>Early decision</entry>
+      <entry>577</entry>
+      <entry>627</entry>
+      <entry>1,228</entry>
+      <entry>444</entry>
+      <entry>1,195</entry>
+      <entry>761</entry>
+    </row>
+  </tbody>
+  
+  </tgroup>
+  </table>
+  We want to know if the number of regular applications accepted follows the same distribution as the number of early applications accepted. State the null and alternative hypotheses, the degrees of freedom and the test statistic, sketch the graph of the <emphasis effect="italics">χ</emphasis><sup>2</sup> distribution and show the critical value and the calculated value of the test statistic, and draw a conclusion about the test of homogeneity.</item>
+</list>
 </problem>
 <solution id="eip-idp127134288">
 <label/>
-  <para id="eip-235">With a <emphasis effect="italics">p</emphasis>-value of almost zero, we reject the null hypothesis. The data show that the distribution of cars is not the same for families and singles.</para>
+<list list-type="enumerated" id="list-00002"><item>
+  With a <emphasis effect="italics">p</emphasis>-value of almost zero, we reject the null hypothesis. The data show that the distribution of cars is not the same for families and singles.</item>
+  <item><emphasis effect="italics">H<sub>0</sub></emphasis> : The distribution of regular applications accepted is the same as the distribution of early applications accepted.
+    <para id="eip-824"><emphasis effect="italics">H<sub>a</sub></emphasis> : The distribution of regular applications accepted is not the same as the distribution of early applications accepted.
+    <newline/><emphasis effect="italics">df</emphasis> = 5
+    <newline/><emphasis effect="italics">χ<sup>2</sup></emphasis> test statistic = 430.06</para><figure id="fs-idp12140192"><media id="fs-idp12704" alt="This is a nonsymmetric chi-square curve with df = 5. The values 0, 5, and 430.06 are labeled on the horizontal axis. The value 5 coincides with the peak of the curve. A vertical upward line extends from 430.06 to the curve, and the region to the right of this line is shaded. The shaded area is equal to the p-value." display="block">
+      <image mime-type="image/jpeg" src="../../media/CNX_Stats_C11_M06_tryit001.jpg" width="380"/>
+    </media></figure>
+    
+    <note id="fs-idp12880128" class="statistics calculator"><label/>
+      <para id="eip-idm17817856">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>3 ENTER 3 ENTER</code>. Enter the table values by row. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to<code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 430.06 and the <emphasis effect="italics">p</emphasis>-value = 9.80E-91. Do the procedure a second time but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para></note>
+    </item>
+  </list>
 </solution>
 </exercise>
-</note><note id="fs-idm61233888" class="statistics try "><label/><title>Try It</title>
-    <exercise id="eip-680">
-    <problem id="eip-625">
-      <para id="eip-895">Ivy League schools receive many applications, but only some can be accepted. At the schools listed in <link target-id="fs-idm19368736"/>, two types of applications are accepted: regular and early decision.</para>
-<table id="fs-idm19368736" summary="..">
-<tgroup cols="7"><thead>
-  <row>
-    <entry>Application type accepted</entry>
-    <entry>Brown</entry>
-    <entry>Columbia</entry>
-    <entry>Cornell</entry>
-    <entry>Dartmouth</entry>
-    <entry>Penn</entry>
-    <entry>Yale</entry>
-  </row>
-</thead>
-<tbody>
-  <row>
-    <entry>Regular</entry>
-    <entry>2,115</entry>
-    <entry>1,792</entry>
-    <entry>5,306</entry>
-    <entry>1,734</entry>
-    <entry>2,685</entry>
-    <entry>1,245</entry>
-  </row>
-  <row>
-    <entry>Early decision</entry>
-    <entry>577</entry>
-    <entry>627</entry>
-    <entry>1,228</entry>
-    <entry>444</entry>
-    <entry>1,195</entry>
-    <entry>761</entry>
-  </row>
-</tbody>
+</note>
 
-</tgroup>
-</table><para id="eip-896">We want to know if the number of regular applications accepted follows the same distribution as the number of early applications accepted. State the null and alternative hypotheses, the degrees of freedom and the test statistic, sketch the graph of the <emphasis effect="italics">χ</emphasis><sup>2</sup> distribution and show the critical value and the calculated value of the test statistic, and draw a conclusion about the test of homogeneity.</para></problem>
-<solution id="eip-idp110188800">
-<label/>
-<para id="eip-822"><emphasis effect="italics">H<sub>0</sub></emphasis> : The distribution of regular applications accepted is the same as the distribution of early applications accepted.</para><para id="eip-824"><emphasis effect="italics">H<sub>a</sub></emphasis> : The distribution of regular applications accepted is not the same as the distribution of early applications accepted.
-<newline/><emphasis effect="italics">df</emphasis> = 5
-<newline/><emphasis effect="italics">χ<sup>2</sup></emphasis> test statistic = 430.06</para><figure id="fs-idp12140192"><media id="fs-idp12704" alt="This is a nonsymmetric chi-square curve with df = 5. The values 0, 5, and 430.06 are labeled on the horizontal axis. The value 5 coincides with the peak of the curve. A vertical upward line extends from 430.06 to the curve, and the region to the right of this line is shaded. The shaded area is equal to the p-value." display="block">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C11_M06_tryit001.jpg" width="380"/>
-</media></figure><note id="fs-idp12880128" class="statistics calculator"><label/>
-  <para id="eip-idm17817856">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>3 ENTER 3 ENTER</code>. Enter the table values by row. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to<code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 430.06 and the <emphasis effect="italics">p</emphasis>-value = 9.80E-91. Do the procedure a second time but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para>
-</note></solution>
-</exercise></note><section id="fs-idm80427920" class="references">
+
+<section id="fs-idm80427920" class="references">
 <title>References</title>
 <para id="fs-idm30810032">Data from the Insurance Institute for Highway Safety, 2013. Available online at www.iihs.org/iihs/ratings (accessed May 24, 2013).</para>
 <para id="fs-idp85001856">“Energy use (kg of oil equivalent per capita).” The World Bank, 2013. Available online at http://data.worldbank.org/indicator/EG.USE.PCAP.KG.OE/countries (accessed May 24, 2013).</para>
