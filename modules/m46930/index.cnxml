@@ -245,34 +245,6 @@
 </problem>
 </exercise></note>
 
-
-<example id="element-572">
-<exercise id="element-2353"><problem id="id45288379">
-<para id="element-23532">Using <link target-id="id4431204"/>:</para><list id="element-6" list-type="enumerated" number-style="lower-alpha"><item>Find the 80<sup>th</sup> percentile.</item>
-<item>Find the 90<sup>th</sup> percentile.</item>
-<item>Find the first quartile. What is another name for the first quartile?</item>
-
-</list></problem>
-<solution id="fs-idp60869984">
-<para id="fs-idp15042704">Using the data from the frequency table, we have:</para>
-<list id="fs-idm54301152" list-type="enumerated" number-style="lower-alpha"><item>The 80<sup>th</sup> percentile is between the last eight and the first nine in the table (between the 40<sup>th</sup> and 41<sup>st</sup> values). Therefore, we need to take the mean of the 40<sup>th</sup> an 41<sup>st</sup> values. The 80<sup>th</sup> percentile <m:math>
-<m:mrow>
-<m:mo>=</m:mo><m:mfrac>
-<m:mrow>
-<m:mn>8</m:mn><m:mo>+</m:mo><m:mn>9</m:mn>
-</m:mrow>
-<m:mn>2</m:mn>
-</m:mfrac>
-<m:mo>=</m:mo><m:mn>8.5</m:mn>
-</m:mrow>
-</m:math>
-</item>
-<item>The 90<sup>th</sup> percentile will be the 45<sup>th</sup> data value (location is 0.90(50) = 45) and the 45<sup>th</sup> data value is nine.</item>
-<item><emphasis effect="italics">Q</emphasis><sub>1</sub> is also the 25<sup>th</sup> percentile. The 25<sup>th</sup> percentile location calculation: <emphasis effect="italics">P</emphasis><sub>25</sub> = 0.25(50) = 12.5 ≈ 13 the 13<sup>th</sup> data value. Thus, the 25th percentile is six.</item>
-</list>
-</solution>
-</exercise></example>
-
 <note id="fs-idm56651440" class="statistics try">
 <label/>
 <title>Try It</title>
@@ -383,7 +355,25 @@
  </m:mrow>
 </m:math>)(29 + 1) = 24.9, which is NOT an integer. Round it down to 24 and up to 25. The age in the 24<sup>th</sup> position is 71 and the age in the 25<sup>th</sup> position is 72. Average 71 and 72. The 83<sup>rd</sup> percentile is 71.5 years.</item>
 </list></solution>
-</exercise></example><note id="fs-idm16529696" class="statistics try"><label/><title>Try It</title>
+</exercise></example>
+
+<example id="element-572">
+  <exercise id="element-2353"><problem id="id45288379">
+  <para id="element-23532">Using <link target-id="id4431204"/>:</para><list id="element-6" list-type="enumerated" number-style="lower-alpha"><item>Find the 80<sup>th</sup> percentile.</item>
+  <item>Find the 90<sup>th</sup> percentile.</item>
+  <item>Find the first quartile. What is another name for the first quartile?</item>
+  
+  </list></problem>
+  <solution id="fs-idp60869984">
+  <para id="fs-idp15042704">Using the data from the frequency table, we have:</para>
+  <list id="fs-idm54301152" list-type="enumerated" number-style="lower-alpha"><item>Notice there are 50 data values in the table, so <emphasis effect="italics">n</emphasis> = 50.<newline/>Calculate the index i as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>80</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>40</m:mn><m:mo>.</m:mo><m:mn>8</m:mn></m:math><newline/>Since <emphasis effect="italics">i</emphasis> = 40.8, calculate the mean of the 40<sup>th</sup> and 41<sup>st</sup> data values. The 40<sup>th</sup> data value is 8, the 41<sup>st</sup> data value is 9, and the mean of these two data values is 8.5. Thus, the 80<sup>th</sup> percentile is 8.5.</item>
+  <item>Calculate the index <emphasis effect="italics">i</emphasis> as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>90</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>45</m:mn><m:mo>.</m:mo><m:mn>9</m:mn></m:math><newline/>Since <emphasis effect="italics">i</emphasis> = 45.9, calculate the mean of the 45<sup>th</sup> and 46<sup>th</sup> data values. The 45<sup>th</sup> data value is 9, the 46<sup>th</sup> data value is 9, and the mean of these two data values is 9. Thus, the 90<sup>th</sup> percentile is 9.</item>
+  <item>Another name for the first quartile is the 25<sup>th</sup> percentile. Proceed to calculate the 25<sup>th</sup> percentile:<newline/>Calculate the index <emphasis effect="italics">i</emphasis> as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>25</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:math><newline/>Since <emphasis effect="italics">i</emphasis> = 12.75, calculate the mean of the 12<sup>th</sup> and 13<sup>th</sup> data values. The 12<sup>th</sup> data value is 6, the 13<sup>th</sup> data value is 6, and the mean of these two data values is 6. Thus, the first quartile is 6.</item>
+  </list>
+  </solution>
+  </exercise></example>
+
+<note id="fs-idm16529696" class="statistics try"><label/><title>Try It</title>
 <exercise id="fs-idm3894192">
 <problem id="fs-idp25866864">
 <para id="fs-idp25866992">Listed are 29 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis></para>
