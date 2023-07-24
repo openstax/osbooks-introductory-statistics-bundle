@@ -72,7 +72,25 @@
 <para id="element-109">No house price is less than –201,625. However, 5,500,000 is more than 1,159,375. Therefore, 5,500,000 is a potential <term id="term-00008">outlier</term>.</para></solution>
 </exercise>
 </example>
-
+<note id="fs-idp16250528" class="statistics try">
+  <label/><title>Try It</title>
+  <exercise id="fs-idp63302352">
+  <problem id="fs-idm22548992">
+  <para id="fs-idp42507600">For the following 11 salaries, calculate the <emphasis effect="italics">IQR</emphasis> and determine if any salaries are outliers. The salaries are in dollars.</para><para id="fs-idm25187088"><list list-type="labeled-item" display="inline" id="list-00001a">
+  <item>$33,000</item>
+  <item>$64,500</item>
+  <item>$28,000</item>
+  <item>$54,000</item>
+  <item>$72,000</item>
+  <item>$68,500</item>
+  <item>$69,000</item>
+  <item>$42,000</item>
+  <item>$54,000</item>
+  <item>$120,000</item>
+  <item>$40,500</item>
+  </list></para></problem>
+  </exercise>
+  </note>
 <example id="element-17">
 <exercise id="element-889"><problem id="id45587381">
   <para id="para-00004">Test scores for a college statistics class held during the day are:<newline/>99; 56; 78; 55.5; 32; 90; 80; 81; 56; 59; 45; 77; 84.5; 84; 70; 72; 68; 32; 79; 90</para>
@@ -128,7 +146,14 @@
 </item>
 </list></solution>
 </exercise></example>
-
+<note id="fs-idp58037360" class="statistics try"><label/><title>Try It</title>
+  <exercise id="fs-idp23368176"><problem id="fs-idp23368304">
+  <para id="fs-idp5269648">Find the interquartile range for the following two data sets and compare them.</para>
+  <para id="fs-idp4060048">Test Scores for Class <emphasis effect="italics">A</emphasis>
+  <newline/>69; 96; 81; 79; 65; 76; 83; 99; 89; 67; 90; 77; 85; 98; 66; 91; 77; 69; 80; 94
+  <newline/>Test Scores for Class <emphasis effect="italics">B</emphasis>
+  <newline/>90; 72; 80; 92; 90; 97; 92; 75; 79; 68; 70; 80; 99; 95; 78; 73; 71; 68; 95; 100</para></problem>
+  </exercise></note>
 <example id="element-84">
 <para id="element-913">Fifty statistics students were asked how much sleep they get per school night (rounded to the nearest hour). The results were:</para>
 <table id="id4431204" summary="This table presents the amount of sleep per school night in hours in the first column, from 4-10 hours, frequency in the second column, relative frequency in the third column, and cumulative relative frequency in the fourth column.">
@@ -220,34 +245,6 @@
 </solution>
 </exercise></note>
 
-
-<example id="element-572">
-<exercise id="element-2353"><problem id="id45288379">
-<para id="element-23532">Using <link target-id="id4431204"/>:</para><list id="element-6" list-type="enumerated" number-style="lower-alpha"><item>Find the 80<sup>th</sup> percentile.</item>
-<item>Find the 90<sup>th</sup> percentile.</item>
-<item>Find the first quartile. What is another name for the first quartile?</item>
-
-</list></problem>
-<solution id="fs-idp60869984">
-<para id="fs-idp15042704">Using the data from the frequency table, we have:</para>
-<list id="fs-idm54301152" list-type="enumerated" number-style="lower-alpha"><item>The 80<sup>th</sup> percentile is between the last eight and the first nine in the table (between the 40<sup>th</sup> and 41<sup>st</sup> values). Therefore, we need to take the mean of the 40<sup>th</sup> and 41<sup>st</sup> values. The 80<sup>th</sup> percentile <m:math>
-<m:mrow>
-<m:mo>=</m:mo><m:mfrac>
-<m:mrow>
-<m:mn>8</m:mn><m:mo>+</m:mo><m:mn>9</m:mn>
-</m:mrow>
-<m:mn>2</m:mn>
-</m:mfrac>
-<m:mo>=</m:mo><m:mn>8.5</m:mn>
-</m:mrow>
-</m:math>
-</item>
-<item>The 90<sup>th</sup> percentile will be the 45<sup>th</sup> data value (location is 0.90(50) = 45) and the 45<sup>th</sup> data value is nine.</item>
-<item><emphasis effect="italics">Q</emphasis><sub>1</sub> is also the 25<sup>th</sup> percentile. The 25<sup>th</sup> percentile location calculation: <emphasis effect="italics">P</emphasis><sub>25</sub> = 0.25(50) = 12.5 ≈ 13 the 13<sup>th</sup> data value. Thus, the 25th percentile is six.</item>
-</list>
-</solution>
-</exercise></example>
-
 <section id="fs-idm21580416"><title>A Formula for Finding the <emphasis effect="italics">k</emphasis>th Percentile</title><para id="fs-idp1786064">If you were to do a little research, you would find several formulas for calculating the <emphasis effect="italics">k</emphasis><sup>th</sup> percentile. Here is one of them.</para><para id="fs-idp3096416"><emphasis effect="italics">k</emphasis> = the <emphasis effect="italics">k<sup>th</sup></emphasis> percentile. It may or may not be part of the data.</para>
 <para id="fs-idp1947472"><emphasis effect="italics">i</emphasis> = the index (ranking or position of a data value)</para>
 <para id="fs-idm946480"><emphasis effect="italics">n</emphasis> = the total number of data points, or observations</para><list id="fs-idm9831088" list-type="bulleted"><item>Order the data from smallest to largest.</item>
@@ -332,7 +329,23 @@
  </m:mrow>
 </m:math>)(29 + 1) = 24.9, which is NOT an integer. Round it down to 24 and up to 25. The age in the 24<sup>th</sup> position is 71 and the age in the 25<sup>th</sup> position is 72. Average 71 and 72. The 83<sup>rd</sup> percentile is 71.5 years.</item>
 </list></solution>
-</exercise></example><note id="fs-idm16529696" class="statistics try"><label/><title>Try It</title>
+</exercise></example>
+<example id="element-572">
+  <exercise id="element-2353"><problem id="id45288379">
+  <para id="element-23532">Using <link target-id="id4431204"/>:</para><list id="element-6" list-type="enumerated" number-style="lower-alpha"><item>Find the 80<sup>th</sup> percentile.</item>
+  <item>Find the 90<sup>th</sup> percentile.</item>
+  <item>Find the first quartile. What is another name for the first quartile?</item>
+  
+  </list></problem>
+  <solution id="fs-idp60869984">
+  <para id="fs-idp15042704">Using the data from the frequency table, we have:</para>
+  <list id="fs-idm54301152" list-type="enumerated" number-style="lower-alpha"><item>Notice there are 50 data values in the table, so <emphasis effect="italics">n</emphasis> = 50.<newline/>Calculate the index i as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>80</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>40</m:mn><m:mo>.</m:mo><m:mn>8</m:mn></m:math><newline/>Since <emphasis effect="italics">i</emphasis> = 40.8, calculate the mean of the 40<sup>th</sup> and 41<sup>st</sup> data values. The 40<sup>th</sup> data value is 8, the 41<sup>st</sup> data value is 9, and the mean of these two data values is 8.5. Thus, the 80<sup>th</sup> percentile is 8.5.</item>
+  <item>Calculate the index <emphasis effect="italics">i</emphasis> as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>90</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>45</m:mn><m:mo>.</m:mo><m:mn>9</m:mn></m:math><newline/>Since <emphasis effect="italics">i</emphasis> = 45.9, calculate the mean of the 45<sup>th</sup> and 46<sup>th</sup> data values. The 45<sup>th</sup> data value is 9, the 46<sup>th</sup> data value is 9, and the mean of these two data values is 9. Thus, the 90<sup>th</sup> percentile is 9.</item>
+  <item>Another name for the first quartile is the 25<sup>th</sup> percentile. Proceed to calculate the 25<sup>th</sup> percentile:<newline/>Calculate the index <emphasis effect="italics">i</emphasis> as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>25</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:math><newline/>Since <emphasis effect="italics">i</emphasis> = 12.75, calculate the mean of the 12<sup>th</sup> and 13<sup>th</sup> data values. The 12<sup>th</sup> data value is 6, the 13<sup>th</sup> data value is 6, and the mean of these two data values is 6. Thus, the first quartile is 6.</item>
+  </list>
+  </solution>
+  </exercise></example>
+  <note id="fs-idm16529696" class="statistics try"><label/><title>Try It</title>
 <exercise id="fs-idm3894192">
 <problem id="fs-idp25866864">
 <para id="fs-idp25866992">Listed are 29 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis></para>
@@ -377,7 +390,16 @@
 
  </m:mrow>
 </m:math>(29 + 1) = 16.5. Round down to 16 and up to 17. The age in the 16<sup>th</sup> position is 52 and the age in the 17<sup>th</sup> position is 55. The average of 52 and 55 is 53.5. The 55<sup>th</sup> percentile is 53.5 years.</para></solution>
-</exercise></note></section><section id="fs-idp2972176">
+</exercise></note>
+<note id="fs-idm56651440" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idp38065168">
+  <problem id="fs-idm27880528">
+  <para id="fs-idp54653312">Refer to the <link target-id="fs-idm24649760"/>. Find the third quartile. What is another name for the third quartile?</para></problem>
+  </exercise>
+  </note>
+</section><section id="fs-idp2972176">
 <title>A Formula for Finding the Percentile of a Value in a Data Set</title>
 <list id="fs-idm17756640" list-type="bulleted">
 <item>Order the data from smallest to largest.</item>
@@ -450,7 +472,11 @@ Counting from the bottom of the list, there are three data values less than 25. 
 </list></solution>
 </exercise>
 </example>
-
+<note id="fs-idm170943360" class="statistics try"><label/><title>Try It</title>
+  <exercise id="fs-idm170942864"><problem id="fs-idp35294448"><para id="fs-idp35294576">Listed are 30 ages for Academy Award winning best actors <emphasis effect="underline">in order from smallest to largest.</emphasis></para>
+  <para id="fs-idp13252768">18; 21; 22; 25; 26; 27; 29; 30; 31, 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77
+  <newline/>Find the percentiles for 47 and 31.</para></problem>
+  </exercise></note>
 </section>
 
 
@@ -483,7 +509,13 @@ Counting from the bottom of the list, there are three data values less than 25. 
 </list></solution>
 </exercise>
 </example>
-
+<note id="fs-idp16945648" class="statistics try">
+  <label/><title>Try It</title>
+  <exercise id="fs-idp33388848">
+  <problem id="fs-idm41955616">
+  <para id="fs-idp20699248">For the 100-meter dash, the third quartile for times for finishing the race was 11.5 seconds. Interpret the third quartile in the context of the situation.</para>
+  </problem>
+  </exercise></note>
 <example id="eip-id1170441826663">
 <exercise id="fs-idm148596320">
 <problem id="fs-idm170402432"><para id="eip-id1170436117670">On a 20 question math test, the 70<sup>th</sup> percentile for number of correct answers was 16. Interpret the 70<sup>th</sup> percentile in the context of this situation.</para></problem>
@@ -517,7 +549,14 @@ Counting from the bottom of the list, there are three data values less than 25. 
 </list></solution>
 </exercise>
 </example>
-
+<note id="fs-idp80590208" class="statistics try">
+  <label/><title>Try It</title>
+  <exercise id="fs-idp73731328">
+  <problem id="fs-idp42792528">
+  <para id="fs-idm23433888">During a season, the 40<sup>th</sup> percentile for points scored per player in a game is eight. Interpret the 40<sup>th</sup> percentile in the context of this situation.</para>
+  </problem>
+  </exercise>
+  </note>
 <example id="fs-idp9603904">
 <para id="fs-idp45664304">Sharpe Middle School is applying for a grant that will be used to add fitness equipment to the gym. The principal surveyed 15 anonymous students to determine how many minutes a day the students spend exercising. The results from the 15 anonymous students are shown.</para><para id="fs-idp39768656">0 minutes; 40 minutes; 60 minutes; 30 minutes; 60 minutes</para>
 <para id="fs-idm13969776">10 minutes; 45 minutes; 30 minutes; 300 minutes; 90 minutes;</para>
@@ -538,7 +577,37 @@ Counting from the bottom of the list, there are three data values less than 25. 
 </list>
 <para id="fs-idm6660656">We still have 75% of the students exercising for 60 minutes or less daily and half of the students exercising between 20 and 60 minutes a day. However, 15 students is a small sample and the principal should survey more students to be sure of his survey results.</para>
 </example>
-
+<exercise class="statistics try" id="exer-00001"><label/><title>Try It</title>
+  <problem id="prob-00001">
+  <para id="para-00006">A college statistics instructor is investigating the amount of time students spend working on a final project in the course. The instructor would like students to spend approximately 3 to 4 hours as the typical amount of time to be spent on the project. The instructor collects data from a random sample of 10 students for the number of hours spent working on the final project. The results obtained are as follows:</para>
+  <para id="para-00007">2 hours; 3 hours; 5 hours; 3 hours; 4 hours;</para>
+  <para id="para-00008">4 hours; 3 hours; 11 hours; 3 hours; 2 hours.</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+  <item>Determine the following five values: <emphasis effect="italics">Min</emphasis>, <emphasis effect="italics">Q<sub>1</sub></emphasis>, <emphasis effect="italics">Med</emphasis>, <emphasis effect="italics">Q<sub>3</sub></emphasis>, <emphasis effect="italics">Max</emphasis>.</item>
+  <item>Should the instructor modify the final project or leave as is?</item>
+  </list>
+  </problem>
+  <solution id="sol-00001">
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+  <item>The five values are obtained as follows:
+  <para id="para-00009"><emphasis effect="italics">Min</emphasis> = 2</para>
+  <para id="para-00010"><emphasis effect="italics">Q<sub>1</sub></emphasis> = 3</para>
+  <para id="para-00011"><emphasis effect="italics">Med</emphasis> = 3</para>
+  <para id="para-00012"><emphasis effect="italics">Q<sub>3</sub></emphasis> = 4</para>
+  <para id="para-00013"><emphasis effect="italics">Max</emphasis> = 11</para></item>
+  <item>Given that the 3<sup>rd</sup> quartile is 4 hours, this indicates that 75% of the students spend 4 hours or less on the project. Also for the interquartile range: <emphasis effect="italics">IQR</emphasis> = 4 – 3 = 1, we know that half the students spent between 3 and 4 hours on the project. This seems like a reasonable amount of time for students to spend on the final project.
+  <para id="para-00014">However, the value 11 hours appears to be a potential outlier.</para>
+  <equation class="unnumbered" id="eq-00001"><m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math></equation>
+  <para id="para-00015">The value 11 is greater than 5.5, so it is an outlier. If we delete it and recalculate the five values, we get the following values:</para>
+  <para id="para-00016"><emphasis effect="italics">Min</emphasis> = 2</para>
+  <para id="para-00017"><emphasis effect="italics">Q<sub>1</sub></emphasis> = 2.5</para>
+  <para id="para-00018"><emphasis effect="italics">Q<sub>3</sub></emphasis> = 4</para>
+  <para id="para-00019"><emphasis effect="italics">Max</emphasis> = 5</para>
+  <para id="para-00020">We still have 75% of students spending 4 hours or less on the project. Half of the students spend between 2.5 hours and 4 hours on the project.</para>
+  <para id="para-00021">However, 10 students may be a relatively small sample size. The instructor might consider a larger sample size.</para></item>
+  </list>
+  </solution>
+  </exercise>
 <section id="fs-idm63224784" class="references"><title>References</title><para id="fs-idm63224288">Cauchon, Dennis, Paul Overberg. “Census data shows minorities now a majority of U.S. births.” USA Today, 2012. Available online at http://usatoday30.usatoday.com/news/nation/story/2012-05-17/minority-birthscensus/55029100/1 (accessed April 3, 2013).</para>
 <para id="fs-idm76887104">Data from the United States Department of Commerce: United States Census Bureau. Available online at http://www.census.gov/ (accessed April 3, 2013).</para>
 <para id="fs-idm76886560">“1990 Census.” United States Department of Commerce: United States Census Bureau. Available online at http://www.census.gov/main/www/cen1990.html (accessed April 3, 2013).</para>

@@ -9,11 +9,11 @@
 
 <content>
   <para id="para-00001">The common measures of location are <term id="term-00001">quartiles</term> and <term id="term-00002">percentiles</term>.</para>
-  <para id="para-00002">Quartiles divide an ordered data set into four equal parts. The three quartiles of a data set are labeled as Q1, Q2, and Q3.</para>
+  <para id="para-00002">Quartiles divide an ordered data set into four equal parts. The three quartiles of a data set are labeled as Q<sub>1</sub>, Q<sub>2</sub>, and Q<sub>3</sub>.</para>
   <list id="list-00002">
-  <item>About one-fourth of the data falls on or below the first quartile Q1.</item> 
-  <item>About one-half of the data falls on or below the second quartile Q2.</item>
-  <item>About three-fourths of the data falls on or below the first quartile Q3.</item>
+  <item>About one-fourth of the data falls on or below the first quartile Q<sub>1</sub>.</item> 
+  <item>About one-half of the data falls on or below the second quartile Q<sub>2</sub>.</item>
+  <item>About three-fourths of the data falls on or below the first quartile Q<sub>3</sub>.</item>
   </list>
   <para id="para-00003">In the same way, percentiles divide a data set into 100 equal parts.</para>
 <para id="element-105">To calculate quartiles and percentiles, the data must be ordered from smallest to largest. Quartiles divide ordered data into quarters. Percentiles divide ordered data into hundredths. To score in the 90<sup>th</sup> percentile of an exam does not mean, necessarily, that you received 90% on a test. It means that 90% of test scores are the same or less than your score and 10% of the test scores are the same or greater than your test score.</para>
@@ -492,6 +492,7 @@ Counting from the bottom of the list, there are three data values less than 25. 
 </exercise>
 </example>
 
+
 <note id="fs-idp16945648" class="statistics try">
 <label/><title>Try It</title>
 <exercise id="fs-idp33388848">
@@ -552,7 +553,37 @@ Counting from the bottom of the list, there are three data values less than 25. 
 </list>
 <para id="fs-idm6660656">We still have 75% of the students exercising for 60 minutes or less daily and half of the students exercising between 20 and 60 minutes a day. However, 15 students is a small sample and the principal should survey more students to be sure of his survey results.</para>
 </example>
-
+<exercise class="statistics try" id="exer-00001"><label/><title>Try It</title>
+  <problem id="prob-00001">
+  <para id="para-00006">A college statistics instructor is investigating the amount of time students spend working on a final project in the course. The instructor would like students to spend approximately 3 to 4 hours as the typical amount of time to be spent on the project. The instructor collects data from a random sample of 10 students for the number of hours spent working on the final project. The results obtained are as follows:</para>
+  <para id="para-00007">2 hours; 3 hours; 5 hours; 3 hours; 4 hours;</para>
+  <para id="para-00008">4 hours; 3 hours; 11 hours; 3 hours; 2 hours.</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+  <item>Determine the following five values: <emphasis effect="italics">Min</emphasis>, <emphasis effect="italics">Q<sub>1</sub></emphasis>, <emphasis effect="italics">Med</emphasis>, <emphasis effect="italics">Q<sub>3</sub></emphasis>, <emphasis effect="italics">Max</emphasis>.</item>
+  <item>Should the instructor modify the final project or leave as is?</item>
+  </list>
+  </problem>
+  <solution id="sol-00001">
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+  <item>The five values are obtained as follows:
+  <para id="para-00009"><emphasis effect="italics">Min</emphasis> = 2</para>
+  <para id="para-00010"><emphasis effect="italics">Q<sub>1</sub></emphasis> = 3</para>
+  <para id="para-00011"><emphasis effect="italics">Med</emphasis> = 3</para>
+  <para id="para-00012"><emphasis effect="italics">Q<sub>3</sub></emphasis> = 4</para>
+  <para id="para-00013"><emphasis effect="italics">Max</emphasis> = 11</para></item>
+  <item>Given that the 3<sup>rd</sup> quartile is 4 hours, this indicates that 75% of the students spend 4 hours or less on the project. Also for the interquartile range: <emphasis effect="italics">IQR</emphasis> = 4 – 3 = 1, we know that half the students spent between 3 and 4 hours on the project. This seems like a reasonable amount of time for students to spend on the final project.
+  <para id="para-00014">However, the value 11 hours appears to be a potential outlier.</para>
+  <equation class="unnumbered" id="eq-00001"><m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math></equation>
+  <para id="para-00015">The value 11 is greater than 5.5, so it is an outlier. If we delete it and recalculate the five values, we get the following values:</para>
+  <para id="para-00016"><emphasis effect="italics">Min</emphasis> = 2</para>
+  <para id="para-00017"><emphasis effect="italics">Q<sub>1</sub></emphasis> = 2.5</para>
+  <para id="para-00018"><emphasis effect="italics">Q<sub>3</sub></emphasis> = 4</para>
+  <para id="para-00019"><emphasis effect="italics">Max</emphasis> = 5</para>
+  <para id="para-00020">We still have 75% of students spending 4 hours or less on the project. Half of the students spend between 2.5 hours and 4 hours on the project.</para>
+  <para id="para-00021">However, 10 students may be a relatively small sample size. The instructor might consider a larger sample size.</para></item>
+  </list>
+  </solution>
+  </exercise>
 <section id="fs-idm63224784" class="references"><title>References</title><para id="fs-idm63224288">Cauchon, Dennis, Paul Overberg. “Census data shows minorities now a majority of U.S. births.” USA Today, 2012. Available online at http://usatoday30.usatoday.com/news/nation/story/2012-05-17/minority-birthscensus/55029100/1 (accessed April 3, 2013).</para>
 <para id="fs-idm76887104">Data from the United States Department of Commerce: United States Census Bureau. Available online at http://www.census.gov/ (accessed April 3, 2013).</para>
 <para id="fs-idm76886560">“1990 Census.” United States Department of Commerce: United States Census Bureau. Available online at http://www.census.gov/main/www/cen1990.html (accessed April 3, 2013).</para>
