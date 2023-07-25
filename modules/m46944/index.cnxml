@@ -1395,8 +1395,8 @@
 </problem>
 </exercise><exercise id="element-456">
 <problem id="eip-idp1286960">
-  <para id="fs-idm23436880"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> The following are real data from Santa Clara County, CA. As of a certain time, there had been a total of 3,059 documented cases of AIDS in the county. They were grouped into the following categories:
-<table id="element-436" summary="This table presents data of documented cases of AIDS with risk factor by gender. The first row lists the female values and the second row lists the male values. The first column lists the gender, the second column lists homosexual/bisexual, the third column lists IV drug user, the fourth column lists heterosexual contact, and the fifth column lists other."><title>* includes homosexual/bisexual IV drug users</title>
+  <para id="fs-idm23436880"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> The following data represent the number of new vehicles purchased over a monthly time period in a certain county.
+<table id="element-436" summary=""><title>New Vehicles Purchased by Gender</title>
 <tgroup cols="6"><colspec colnum="1" colname="c1"/>
 <colspec colnum="2" colname="c2"/>
 <colspec colnum="3" colname="c3"/>
@@ -1406,28 +1406,28 @@
 <thead>
   <row>
     <entry/>
-    <entry>Homosexual/Bisexual</entry>
-    <entry>IV Drug User*</entry>
-    <entry>Heterosexual Contact</entry>
+    <entry>Sedan</entry>
+    <entry>SUV</entry>
+    <entry>Minivan</entry>
     <entry>Other</entry>
     <entry>Totals</entry>
   </row>
 </thead>
 <tbody>
   <row>
-    <entry>Female</entry>
-    <entry>0</entry>
-    <entry>70</entry>
-    <entry>136</entry>
-    <entry>49</entry>
+    <entry>Women</entry>
+    <entry>1,135</entry>
+    <entry>290</entry>
+    <entry>583</entry>
+    <entry>158</entry>
     <entry/>
   </row>
   <row>
-    <entry>Male</entry>
-    <entry>2,146</entry>
+    <entry>Men</entry>
+    <entry>1,246</entry>
     <entry>463</entry>
-    <entry>60</entry>
-    <entry>135</entry>
+    <entry>241</entry>
+    <entry>190</entry>
     <entry/>
   </row>
   <row>
@@ -1442,19 +1442,18 @@
 
 </tgroup>
 </table></para>
-<para id="element-406">Suppose a person with AIDS in Santa Clara County is randomly selected.</para>
-<list id="element-232" list-type="enumerated" number-style="lower-alpha"><item>Find <emphasis effect="italics">P</emphasis>(Person is female).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person has a risk factor heterosexual contact).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person is female OR has a risk factor of IV drug user).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person is female AND has a risk factor of homosexual/bisexual).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person is male AND has a risk factor of IV drug user).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person is female GIVEN person got the disease from heterosexual contact).</item>
-<item>Construct a Venn diagram. Make one group females and the other group heterosexual contact.</item>
+<para id="element-406">Suppose a person from this county is randomly selected.</para>
+<list id="element-232" list-type="enumerated" number-style="lower-alpha"><item>Find <emphasis effect="italics">P</emphasis>(Person is a woman).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person purchases minivan).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person is a woman OR purchases an SUV).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person is a woman AND purchases a SEDAN).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person is a man AND purchases an SUV).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person is a woman GIVEN person purchases a minivan).</item>
 </list>
 </problem>
 <solution id="id43568576">
 <para id="element-436p">The completed contingency table is as follows:</para>
-<table id="element-436s" summary="This table is similar to above except all blank values are now filled in."><title>* includes homosexual/bisexual IV drug users</title>
+<table id="element-436s" summary="This table is similar to above except all blank values are now filled in."><title>New Vehicles Purchased by Gender</title>
 <tgroup cols="6"><colspec colnum="1" colname="c1"/>
 <colspec colnum="2" colname="c2"/>
 <colspec colnum="3" colname="c3"/>
@@ -1464,79 +1463,65 @@
 <thead>
   <row>
     <entry/>
-    <entry>Homosexual/Bisexual</entry>
-    <entry>IV Drug User*</entry>
-    <entry>Heterosexual Contact</entry>
+    <entry>Sedan</entry>
+    <entry>SUV</entry>
+    <entry>Minivan</entry>
     <entry>Other</entry>
     <entry>Totals</entry>
   </row>
 </thead>
 <tbody>
   <row>
-    <entry>Female</entry>
-    <entry>0</entry>
-    <entry>70</entry>
-    <entry>136</entry>
-    <entry>49</entry>
-    <entry><emphasis effect="bold">255</emphasis></entry>
+    <entry>Women</entry>
+    <entry>1,135</entry>
+    <entry>290</entry>
+    <entry>583</entry>
+    <entry>158</entry>
+    <entry><emphasis effect="bold">2166</emphasis></entry>
   </row>
   <row>
-    <entry>Male</entry>
-    <entry>2,146</entry>
+    <entry>Men</entry>
+    <entry>1246</entry>
     <entry>463</entry>
-    <entry>60</entry>
-    <entry>135</entry>
-    <entry><emphasis>2,804</emphasis></entry>
+    <entry>241</entry>
+    <entry>190</entry>
+    <entry><emphasis>2140</emphasis></entry>
   </row>
   <row>
     <entry>Totals</entry>
-    <entry><emphasis>2,146</emphasis></entry>
-      <entry><emphasis>533</emphasis></entry>
-    <entry><emphasis>196</emphasis></entry>
-    <entry><emphasis>184</emphasis></entry>
-    <entry><emphasis>3,059</emphasis></entry>
+    <entry><emphasis>2381</emphasis></entry>
+      <entry><emphasis>753</emphasis></entry>
+    <entry><emphasis>824</emphasis></entry>
+    <entry><emphasis>348</emphasis></entry>
+    <entry><emphasis>4306</emphasis></entry>
   </row>
 </tbody>
 
 </tgroup>
-</table><list id="element-424" list-type="enumerated" number-style="lower-alpha"><item><m:math>
- <m:mfrac>
-    <m:mn>255</m:mn>
-    <m:mn>3059</m:mn>
-  </m:mfrac>
-</m:math></item>
-<item><m:math>
- <m:mfrac>
-    <m:mn>196</m:mn>
-    <m:mn>3059</m:mn>
-  </m:mfrac>
-</m:math></item>
-<item><m:math>
- <m:mfrac>
-    <m:mn>718</m:mn>
-    <m:mn>3059</m:mn>
-  </m:mfrac>
-</m:math>
-    </item>
-<item>0</item>
-<item><m:math><m:mfrac>
-    <m:mn>463</m:mn>
-    <m:mn>3059</m:mn>
-  </m:mfrac></m:math></item>
-<item><m:math><m:mfrac>
-    <m:mn>136</m:mn>
-    <m:mn>196</m:mn>
-  </m:mfrac></m:math></item>
+</table>
+<para id="para-00001">Suppose a person from this county is randomly selected.</para>
+<list id="element-424" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(Person is a woman) = 0.5030</item>
+<item><emphasis effect="italics">P</emphasis>(Person purchases minivan) = 0.1914</item>
+<item><emphasis effect="italics">P</emphasis>(Person is a woman OR has purchases an SUV) = 0.6105</item>
+<item><emphasis effect="italics">P</emphasis>(Person is a woman AND purchases a SEDAN) = 0.0673</item>
+<item><emphasis effect="italics">P</emphasis>(Person is man AND has purchases an SUV) = 0.1075</item>
+<item><emphasis effect="italics">P</emphasis>(Person is a woman GIVEN person purchases a minivan) = 0.7075</item>
 </list></solution>
 </exercise>
 <exercise id="element-148s"><problem id="eip-idm140591216">
-<para id="element-532">Answer these questions using probability rules. Do NOT use the contingency table. Three thousand fifty-nine cases of AIDS had been reported in Santa Clara County, CA, through a certain date. Those cases will be our population. Of those cases, 6.4% obtained the disease through heterosexual contact and 7.4% are female. Out of the females with the disease, 53.3% got the disease from heterosexual contact.</para>
+<para id="element-532">Answer these questions using probability rules. Do NOT use the contingency table. A total of 6,481 new vehicles were purchased over a monthly time period in a certain county. These purchases will be our population. Of these purchases, 36% were made by women, and 42% were purchases of sedans. 20% of purchases were for sedans purchased by women.</para>
 <list id="element-664" list-type="enumerated" number-style="lower-alpha">
-<item>Find <emphasis effect="italics">P</emphasis>(Person is female).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person obtained the disease through heterosexual contact).</item>
-<item>Find <emphasis effect="italics">P</emphasis>(Person is female GIVEN person got the disease from heterosexual contact)</item>
-<item>Construct a Venn diagram representing this situation. Make one group females and the other group heterosexual contact. Fill in all values as probabilities.</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person is a woman).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person purchased a sedan).</item>
+<item>Find <emphasis effect="italics">P</emphasis>(Person is a woman GIVEN person purchased a sedan)</item>
 </list></problem>
+<solution id="sol-00001">
+  <list id="element-665" list-type="enumerated" number-style="lower-alpha">
+    <item><emphasis effect="italics">P</emphasis>(Person is a woman) = 0.36.</item>
+    <item><emphasis effect="italics">P</emphasis>(Person purchased a sedan) = 0.42</item>
+    <item><emphasis effect="italics">P</emphasis>(Person is a woman GIVEN person purchased a sedan) = 0.4762</item>
+  </list>
+</solution>
 </exercise>
 </section>
    </content>
