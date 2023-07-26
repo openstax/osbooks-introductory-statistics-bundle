@@ -153,38 +153,17 @@ Therefore, <m:math>
 <para id="element-320"><emphasis>Graph:</emphasis></para>
 <figure id="hyptest11_ex1"><media id="id4282005" alt="Normal distribution curve for the average time to swim the 25-yard freestyle with values 16, as the sample mean, and 16.43 on the x-axis. A vertical upward line extends from 16 on the x-axis to the curve. An arrow points to the left tail of the curve."><image src="../../media/fig-ch09_11_01N.jpg" mime-type="image/jpg" width="380"/></media></figure><para id="element-172"><emphasis effect="italics">μ</emphasis> = 16.43 comes from <emphasis effect="italics">H<sub>0</sub></emphasis>. Our assumption is <emphasis effect="italics">μ</emphasis> = 16.43.</para><para id="element-751"><emphasis>Interpretation of the <emphasis effect="italics">p</emphasis>-value: If <emphasis effect="italics">H<sub>0</sub></emphasis> is true</emphasis>, there is a 0.0187 probability (1.87%)that Jeffrey's mean time to swim the 25-yard freestyle is 16 seconds or less. Because a 1.87% chance is small, the mean time of 16 seconds or less is unlikely to have happened randomly. It is a rare event.</para><para id="element-748">Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</para>
 <para id="element-890"><emphasis effect="italics">α</emphasis> = 0.05 <emphasis effect="italics">p</emphasis>-value = 0.0187 <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value</para>
-<para id="element-543"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
+
+<para id="element-543"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>></m:mo></m:math><emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
 <!-- CONTINUE HERE -->
-<para id="element-826">This means that you reject <emphasis effect="italics">μ</emphasis> = 16.43. In other words, you do not think Jeffrey swims the
-25-yard freestyle in 16.43 seconds but faster with the new goggles.</para>
-<para id="element-942"><emphasis>Conclusion:</emphasis> At the 5% significance level, we conclude that Jeffrey swims faster using the new goggles. The sample data show there is sufficient evidence that Jeffrey's mean time to swim the 25-yard freestyle is less than 16.43 seconds.</para>
-<para id="element-252">The <emphasis effect="italics">p</emphasis>-value can easily be calculated.</para>
+<para id="element-826">This indicates that you reject the null hypothesis that the mean time to swim the 25-yard freestyle is at least 16.43 seconds.</para>
+<para id="element-942"><emphasis>Conclusion:</emphasis> At the 5% significance level, there is sufficient evidence that Jeffrey's mean time to swim the 25-yard freestyle is less than 16.43 seconds. Thus, based on the sample data, we conclude that Jeffrey swims faster using the new goggles.</para>
+<para id="para-00001">The Type I and Type II errors for this problem are as follows:<newline/>The Type I error is to conclude that Jeffrey swims the 25-yard freestyle, on average, in less than 16.43 seconds when, in fact, he actually swims the 25-yard freestyle, on average, in at least 16.43 seconds. (Reject the null hypothesis when the null hypothesis is true.)</para>
+<para id="para-00002">The Type II error is that there is not evidence to conclude that Jeffrey swims the 25-yard freestyle, on average, in less than 16.43 seconds when, in fact, he actually does swim the 25-yard free-style, on average, in less than 16.43 seconds. (Do not reject the null hypothesis when the null hypothesis is false.)</para>
 <note id="fs-idm31641280" class="statistics calculator">
 <label/>
 <para id="element-362">Press <code>STAT</code> and arrow over to <code>TESTS</code>. Press <code>1:Z-Test</code>. Arrow over to <code>Stats</code> and press <code>ENTER</code>. Arrow down and enter 16.43 for <emphasis effect="italics">μ<sub>0</sub></emphasis> (null hypothesis), .8 for <emphasis effect="italics">σ</emphasis>, 16 for the sample mean, and 15 for <emphasis effect="italics">n</emphasis>. Arrow down to <emphasis effect="italics">μ</emphasis> : (alternate hypothesis) and arrow over to &lt; <emphasis effect="italics">μ<sub>0</sub></emphasis>. Press <code>ENTER</code>. Arrow down to <code>Calculate</code> and press <code>ENTER</code>. The calculator not only calculates the <emphasis effect="italics">p</emphasis>-value (<emphasis effect="italics">p</emphasis> = 0.0187) but it also calculates the test statistic (<emphasis effect="italics">z</emphasis>-score) for the sample mean. <emphasis effect="italics">μ</emphasis> &lt; 16.43 is the alternative hypothesis. Do this set of instructions again except arrow to <code>Draw</code>(instead of <code>Calculate</code>). Press <code>ENTER</code>. A shaded graph appears with <emphasis effect="italics">z</emphasis> = -2.08 (test statistic) and <emphasis effect="italics">p</emphasis> = 0.0187 (<emphasis effect="italics">p</emphasis>-value). Make sure when you use <code>Draw</code> that no other equations are highlighted in <emphasis effect="italics">Y</emphasis> = and the plots are turned off.</para></note>
-<para id="element-908">When the calculator does a <emphasis effect="italics">Z</emphasis>-Test, the <code>Z-Test</code> function finds the <emphasis effect="italics">p</emphasis>-value by doing a normal probability calculation using the <term id="term-00004">central limit theorem</term>:</para><para id="fs-idp159988784"><m:math>
- <m:mrow>
-  <m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mo>&lt;</m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo>
- </m:mrow>
-</m:math> <code>2nd DISTR normcdf</code> <m:math>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow> <m:mo>−</m:mo><m:mn>10</m:mn><m:mo>^</m:mo><m:mn>99</m:mn><m:mo>,</m:mo><m:mn>16</m:mn><m:mo>,</m:mo><m:mn>16.43</m:mn><m:mo>,</m:mo><m:mn>0.8</m:mn><m:mo>/</m:mo><m:msqrt>
-     <m:mrow>
-      <m:mn>15</m:mn>
-     </m:mrow>
-    </m:msqrt>
-    </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math>
-.</para><para id="element-822">The Type I and Type II errors for this problem are as follows:</para><para id="element-385">The Type I error is to conclude that Jeffrey swims the 25-yard freestyle, on average, in
-less than 16.43 seconds when, in fact, he actually swims the 25-yard freestyle, on
-average, in 16.43 seconds. (Reject the null hypothesis when the null hypothesis is true.)</para><para id="element-615">The Type II error is that there is not evidence to conclude that Jeffrey swims the 25-yard free-style, on average, in less than 16.43 seconds when, in fact, he actually does swim the 25-yard free-style, on average, in less than 16.43 seconds. (Do not reject the null hypothesis when the null hypothesis is false.)</para></solution>
+</solution>
 </exercise>
 </example>
 
@@ -331,13 +310,36 @@ different weights were (frequencies are in parentheses)
 <figure id="hyptest11_ex3"><media id="id4317824" alt="Normal distribution curve of the average weight lifted by football players with values of 275 and 286.2 on the x-axis. A vertical upward line extends from 286.2 to the curve. The p-value points to the area to the right of 286.2."><image src="../../media/fig-ch09_11_03N.jpg" mime-type="image/jpg" width="380"/></media></figure><para id="element-804">Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</para>
 <para id="element-591"><emphasis effect="italics">α</emphasis> = 0.025 <emphasis effect="italics">p</emphasis>-value = 0.1323</para>
 <para id="element-849"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &lt;<emphasis effect="italics">p</emphasis>-value, do not reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para><para id="element-898"><emphasis>Conclusion:</emphasis> At the 2.5% level of significance, from the sample data, there is not sufficient evidence to conclude that the true mean weight lifted is more than 275 pounds.</para>
-<para id="element-625">The <emphasis effect="italics">p</emphasis>-value can easily be calculated.</para>
 <note id="fs-idm79549936" class="statistics calculator">
 <label/>
 <para id="element-233">Put the data and frequencies into lists. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Press <code>1:Z-Test</code>. Arrow over to <code>Data</code> and press <code>ENTER</code>. Arrow down and enter 275 for <emphasis effect="italics">μ<sub>0</sub></emphasis>, 55 for <emphasis effect="italics">σ</emphasis>, the name of the list where you put the data, and the name of the list where you put the frequencies. Arrow down to <emphasis effect="italics">μ:</emphasis> and arrow over to > <emphasis effect="italics">μ<sub>0</sub></emphasis>. Press <code>ENTER</code>. Arrow down to <code>Calculate</code> and press <code>ENTER</code>. The calculator not only calculates the <emphasis effect="italics">p</emphasis>-value (<emphasis effect="italics">p</emphasis> = 0.1331, a little different from the previous calculation - in it we used the sample mean rounded to one decimal place instead of the data) but it also calculates the test statistic (<emphasis effect="italics">z</emphasis>-score) for the sample mean, the sample mean, and the sample standard deviation. <emphasis effect="italics">μ</emphasis> > 275 is the alternative hypothesis. Do this set of instructions again except arrow to <code>Draw</code> (instead of <code>Calculate</code>). Press <code>ENTER</code>. A shaded graph appears with <emphasis effect="italics">z</emphasis> = 1.112 (test statistic) and <emphasis effect="italics">p</emphasis> = 0.1331 (<emphasis effect="italics">p</emphasis>-value). Make sure when you use <code>Draw</code> that no other equations are highlighted in <emphasis effect="italics">Y</emphasis> = and the plots are turned off.</para></note>
 </solution>
 </exercise>
 </example>
+<note class="statistics try" id="note-00001">
+  <label/><title>Try It</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001"><para id="para-00003">A company records the mean time of employees working in a day. The mean comes out to be 475 minutes, with a standard deviation of 45 minutes. A manager recorded times of 20 employees. The times of working were (frequencies are in parentheses) 460(3); 465(2); 470(3); 475(1); 480(6); 485(3); 490(2).</para>
+  <para id="para-00004">Conduct a hypothesis test using a 2.5% level of significance to determine if the mean time is <emphasis effect="italics">more than 475</emphasis>.</para></problem>
+  <solution id="sol-00001">
+  <para id="para-00005">Set up the Hypothesis Test:</para>
+  <equation class="unnumbered" id="eq-00001"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>475</m:mn></m:math></equation>
+  <equation class="unnumbered" id="eq-00002"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>475</m:mn></m:math></equation>
+  <para id="para-00006">This is a right-tailed test. The random variable <m:math><m:menclose notation="top"><m:mi>X</m:mi></m:menclose></m:math> is the mean time of employees working in a day.</para>
+  <para id="para-00007">Distribution for the test: <m:math><m:mi>σ</m:mi></m:math> is known.</para>
+  <equation class="unnumbered" id="eq-00003"><m:math><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mo>~</m:mo><m:mi>N</m:mi><m:mfenced><m:mrow><m:mn>475</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>45</m:mn><m:msqrt><m:mn>20</m:mn></m:msqrt></m:mfrac></m:mrow></m:mfenced></m:math></equation>
+  <para id="para-00008"><m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mn>475</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math> minutes (from the data).</para>
+  <para id="para-00009"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>45</m:mn></m:math> minutes. We assume <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>475</m:mn></m:math> minutes unless our data shows otherwise.</para>
+  <para id="para-00010">The <emphasis effect="italics">p</emphasis>-value is calculated:
+  <emphasis effect="italics">p</emphasis>-value = <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>></m:mo><m:mn>475</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>5044</m:mn></m:math></para>
+  <para id="para-00011"><emphasis>Interpretation of <emphasis effect="italics">p</emphasis>-value:</emphasis> If <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math> is true, then there is a 0.5044, or 50.44%, chance that the mean time of employees working is 475.5 minutes or more. Since a 50.44% chance is large enough, the mean time of 475.5 is not a rare event.</para>
+  <para id="para-00012"><emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and <emphasis effect="italics">p</emphasis> values:</emphasis></para>
+  <para id="para-00013"><m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>025</m:mn></m:math> and <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>5044</m:mn></m:math></para>
+  <para id="para-00014"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo><m:mi>p</m:mi></m:math> value, do not reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para>
+  <para id="para-00015"><emphasis>Conclusion:</emphasis> At the 2.5% level of significance, from the sample data, there is not sufficient evidence to conclude that the true mean time of employees is more than 475 minutes.</para>
+  </solution>
+  </exercise>
+  </note>
 <example id="element-207">
 <exercise id="element-1">
 <problem id="id4319892">
@@ -380,7 +382,7 @@ probability (3.96%) that the sample mean is 67 or more.</para><figure id="hyptes
 
 <para id="fs-idm21057040">This means you reject <emphasis effect="italics">μ</emphasis> = 65. In other words, you believe the average test score is greater than 65.</para>
 
-<para id="element-573"><emphasis>Conclusion:</emphasis> At a 5% level of significance, the sample data show sufficient evidence that the mean (average) test score is greater than 65, just as the math instructor thinks.</para><para id="element-676">The <emphasis effect="italics">p</emphasis>-value can easily be calculated.</para>
+<para id="element-573"><emphasis>Conclusion:</emphasis> At a 5% level of significance, the sample data show sufficient evidence that the mean (average) test score is greater than 65, just as the math instructor thinks.</para>
 <note id="fs-idm14472336" class="statistics calculator">
 <label/>
 <para id="element-339">Put the data into a list. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Press <code>2:T-Test</code>. Arrow over to <code>Data</code> and press <code>ENTER</code>. Arrow down and enter 65 for <emphasis effect="italics">μ</emphasis><sub>0</sub>, the name of the list where you put the data, and 1 for <code>Freq:</code>. Arrow down to <emphasis effect="italics">μ</emphasis>: and arrow over to > <emphasis effect="italics">μ</emphasis><sub>0</sub>. Press <code>ENTER</code>. Arrow down to <code>Calculate</code> and press <code>ENTER</code>. The calculator not only calculates the <emphasis effect="italics">p</emphasis>-value (<emphasis effect="italics">p</emphasis> = 0.0396) but it also calculates the test statistic (<emphasis effect="italics">t</emphasis>-score) for the sample mean, the sample mean, and the sample standard deviation. <emphasis effect="italics">μ</emphasis> > 65 is the alternative hypothesis. Do this set of instructions again except arrow to <code>Draw</code> (instead of <code>Calculate</code>). Press <code>ENTER</code>. A shaded graph appears with <emphasis effect="italics">t</emphasis> = 1.9781 (test statistic) and <emphasis effect="italics">p</emphasis> = 0.0396 (<emphasis effect="italics">p</emphasis>-value). Make sure when you use <code>Draw</code> that no other equations are highlighted in <emphasis effect="italics">Y</emphasis> =  and the plots are turned off.</para></note>
@@ -477,8 +479,6 @@ the graph in <link target-id="hyptest11_ex5" document=""/>).</para><figure id="h
 <para id="element-360"><emphasis effect="italics">p′</emphasis> = 0.53. Since the curve is symmetrical and the test is two-tailed, the <emphasis effect="italics">p′</emphasis> for the left tail is equal to 0.50 – 0.03 = 0.47 where <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">p</emphasis> = 0.50. (0.03 is the difference between 0.53 and 0.50.)</para><para id="element-140">Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</para>
 <para id="element-576">Since <emphasis effect="italics">α</emphasis> = 0.01 and <emphasis effect="italics">p</emphasis>-value = 0.5485. <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value.</para><para id="element-293"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value, you cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
 <para id="element-962"><emphasis>Conclusion:</emphasis> At the 1% level of significance, the sample data do not show sufficient evidence that the percentage of first-time brides who are younger than their grooms is different from 50%.</para>
-
-<para id="element-990">The <emphasis effect="italics">p</emphasis>-value can easily be calculated.</para>
 <note id="fs-idm35225600" class="statistics calculator">
 <label/>
 
@@ -494,7 +494,7 @@ the graph in <link target-id="hyptest11_ex5" document=""/>).</para><figure id="h
 
 <exercise id="eip-466">
 <problem id="eip-697">
-<para id="eip-idp103490704">A teacher believes that 85% of students in the class will want to go on a field trip to the local zoo. She performs a hypothesis test to determine if the percentage is the same or different from 85%. The teacher samples 50 students and 39 reply that they would want to go to the zoo. For the hypothesis test, use a 1% level of significance.</para>
+<para id="eip-idp103490704">A teacher believes that 85% of students in the class will want to go on a field trip to the local zoo. The teacher performs a hypothesis test to determine if the percentage is the same or different from 85%. The teacher samples 50 students and 39 reply that they would want to go to the zoo. For the hypothesis test, use a 1% level of significance.</para>
 <para id="eip-idp10599024">First, determine what type of test this is, set up the hypothesis test, find the <emphasis effect="italics">p</emphasis>-value, sketch the graph, and state your conclusion.</para></problem>
 </exercise></note><example id="element-577">
 <exercise id="element-312">
@@ -672,7 +672,25 @@ Label the point estimate and the lower and upper bounds of the confidence interv
 
 <note id="id5328435"><label/><title>NOTE</title>
 <para id="eip-idm81920704">This test result is not very definitive since the <emphasis effect="italics">p</emphasis>-value is very close to alpha. In reality, one would probably do more tests by giving the dog another bath after the fleas have had a chance to return.</para></note></solution>
-</exercise></example><example id="eip-295"><exercise id="eip-997"><problem id="eip-361">
+</exercise></example>
+<note class="statistics try" id="note-00002">
+  <label/><title>Try It</title>
+  <exercise id="exer-00002">
+  <problem id="prob-00002"><para id="para-00016">A car soap gets rid of 30% of stains on the car. After adding a new compound to the soap, the soap is used on a car and found to wash 20 stains out of the 50 stains on the car. With the level of significance being 0.01, find out if adding the new compound to soap is beneficial.</para>
+  </problem>
+  <solution id="sol-00002">
+  <para id="para-00017">Set up hypothesis test:</para> <para id="para-00018"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn></m:math>  <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn></m:math></para>
+  <para id="para-00019">The distribution to use for the test is:</para>
+  <para id="para-00020"><emphasis>Normal:</emphasis> <m:math><m:mi>N</m:mi><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:msqrt><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:mrow><m:mn>50</m:mn></m:mfrac></m:msqrt></m:mrow></m:mfenced></m:math></para>
+  <para id="para-00021">The test statistic is obtained to be <emphasis effect="italics">z</emphasis> = 1.543.</para>
+  <para id="para-00022">The <emphasis effect="italics">p</emphasis>-value is obtained to be <emphasis effect="italics">p</emphasis> = 0.0614.</para>
+  <para id="para-00023">If the null hypothesis is true, then there is a 0.0614 probability that the sample proportion is 0.4 <m:math><m:mfenced><m:mfrac><m:mn>20</m:mn><m:mn>50</m:mn></m:mfrac></m:mfenced></m:math> or more.</para>
+  <para id="para-00024">At 1% level of significance, the value of <m:math><m:mi>α</m:mi></m:math> is less than the <emphasis effect="italics">p</emphasis>-value. So, the data does not show sufficient evidence that the percentage of stains removed is more than 30%.</para>
+  <para id="para-00025">The confidence interval is obtained as (0.273, 0.527).</para>
+  </solution>
+  </exercise>
+  </note>  
+<example id="eip-295"><exercise id="eip-997"><problem id="eip-361">
 <para id="eip-idm29000496">The National Institute of Standards and Technology provides exact data on conductivity properties of materials. Following are conductivity measurements for 11 randomly selected pieces of a particular type of glass.</para>
 <para id="eip-idm46067920">1.11; 1.07; 1.11; 1.07; 1.12; 1.08; .98; .98; 1.02; .95; .95
 <newline/>Is there convincing evidence that the average conductivity of this type of glass is greater than one? Use a significance level of 0.05. Assume the population is normal.</para></problem>
@@ -685,20 +703,9 @@ Label the point estimate and the lower and upper bounds of the confidence interv
 <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> > 1</item>
 </list></item>
 <item><emphasis>Plan</emphasis>: We are testing a sample mean without a known population standard deviation. Therefore, we need to use a Student's t-distribution. Assume the underlying population is normal.</item>
-<item><emphasis>Do the calculations</emphasis>: We will input the sample data into the TI-83 as follows.
-
-<figure id="eip-idp122053552"><media id="eip-idp167220912" alt="">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M09_001a.jpg" width="250"/>
-</media></figure>
-<figure id="eip-idp29927184"><media id="eip-idp29927312" alt="">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M09_001b.jpg" width="250"/>
-</media></figure>
-<figure id="eip-idp126675984"><media id="eip-idp156983600" alt="">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M09_001c.jpg" width="250"/>
-</media></figure>
-<figure id="eip-idp154420944"><media id="eip-idp154421072" alt="">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M09_001d.jpg" width="250"/>
-</media></figure>
+<item>Based on the sample of 11 data values shown above, sample mean, sample standard deviation, and test statistic are calculated as follows:
+  <equation class="unnumbered" id="eq-00004"><label/><m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>04</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>s</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0659</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>t</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>014</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation>
+  <para id="para-00026">To calculate the <emphasis effect="italics">p</emphasis>-value, note that this is a right-tailed test. Then, find the area under the <emphasis effect="italics">t</emphasis>-distribution to the right of the test statistic 2.014 (using 10 degrees of freedom). This area in the right tail is 0.036, and thus the <emphasis effect="italics">p</emphasis>-value = 0.036.</para>
 </item>
 
 <item><emphasis>State the Conclusions</emphasis>: Since the <emphasis effect="italics">p</emphasis>-value (<emphasis effect="italics">p</emphasis> = 0.036) is less than our alpha value, we will reject the null hypothesis. It is reasonable to state that the data supports the claim that the average conductivity level is greater than one.</item>
@@ -706,6 +713,30 @@ Label the point estimate and the lower and upper bounds of the confidence interv
 </para></solution>
 </exercise>
 </example>
+<note class="statistics try" id="note-00003">
+  <label/><title>Try It</title>
+  <exercise id="exer-00003">
+  <problem id="prob-00003">
+  <para id="para-00027">The boiling point of a specific liquid is measured for 15 samples, and the boiling points are obtained as follows:</para>
+  <para id="para-00028">205; 206; 206; 202; 199; 194; 197; 198; 198; 201; 201; 202; 207; 211; 205</para>
+  <para id="para-00029">Is there convincing evidence that the average boiling point is greater than 200? Use a significance level of 0.1. Assume the population is normal.</para>
+  </problem>
+  <solution id="sol-00003">
+  <para id="para-00030">The hypotheses, at a significance level of 0.1, will be as follows:</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>200</m:mn></m:math></item>
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>200</m:mn></m:math></item>
+  </list>
+  <para id="para-00031">Since the standard deviation is not known, Student’s <emphasis effect="italics">t</emphasis>-distribution is to be used.</para>
+  <para id="para-00032">The data is input into the TI-83 as follows:</para>
+  <figure id="fig-00001"><media alt="Screenshot of calculator with values matching the supplied data."><image src="../../media/IS2e_UnFigure_09_Ex20_001.png" mime-type="image/png" width="250"/></media></figure>
+  <figure id="fig-00002"><media alt="Screenshot of calculator with values matching the supplied data."><image src="../../media/IS2e_UnFigure_09_Ex20_002.png" mime-type="image/png" width="250"/></media></figure>
+  <figure id="fig-00003"><media alt="Screenshot of calculator with values matching the calculated data."><image src="../../media/IS2e_UnFigure_09_Ex20_003.png" mime-type="image/png" width="250"/></media></figure>
+  <figure id="fig-00004"><media alt="Screenshot of calculator with graph showing values matching the calculated data."><image src="../../media/IS2e_UnFigure_09_Ex20_004.png" mime-type="image/png" width="250"/></media></figure>
+  <para id="para-00033">Since the <emphasis effect="italics">p</emphasis>-value is less than alpha value, we will reject the null hypothesis. It is reasonable to state that the data supports the claim that the average boiling point is greater than 200.</para>
+  </solution>
+  </exercise>
+  </note>
 <example id="eip-767">
 <exercise id="eip-178"><problem id="eip-474">
 <para id="eip-idp173526416">In a study of 420,019 cell phone users, 172 of the subjects developed brain cancer. Test the claim that cell phone users developed brain cancer at a greater rate than that for non-cell phone users (the rate of brain cancer for non-cell phone users is 0.0340%). Since this is a critical issue, use a 0.005 significance level. Explain why the significance level should be so low in terms of a Type I error.</para></problem>
@@ -735,33 +766,63 @@ Label the point estimate and the lower and upper bounds of the confidence interv
 </list></solution>
 
 </exercise></example>
-<example id="eip-829">
-<exercise id="eip-267"><problem id="eip-478">
-<para id="eip-idp47042256">According to the US Census there are approximately 268,608,618 residents aged 12 and older. Statistics from the Rape, Abuse, and Incest National Network indicate that, on average, 207,754 rapes occur each year (male and female) for persons aged 12 and older. This translates into a percentage of sexual assaults of 0.078%. In Daviess County, KY, there were reported 11 rapes for a population of 37,937. Conduct an appropriate hypothesis test to determine if there is a statistically significant difference between the local sexual assault percentage and the national sexual assault percentage. Use a significance level of 0.01.</para></problem>
+<note class="statistics try" id="note-00004">
+  <label/><title>Try It</title>
+  <exercise id="exer-00004">
+  <problem id="prob-00004">
+  <para id="para-00034">In a study of 390,000 moisturizer users, 138 of the subjects developed skin diseases. Test the claim that moisturizer users developed skin diseases at a greater rate than that for non-moisturizer users (the rate of skin diseases for non-moisturizer users is 0.041%). Since this is a critical issue, use a 0.005 significance level. Explain why the significance level should be so low in terms of a Type I error.</para>
+  </problem>
+  <solution id="sol-00004">
+  <para id="para-00035">The test hypotheses are as follows:</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00041</m:mn></m:math></item>
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00041</m:mn></m:math></item>
+  </list>
+  <para id="para-00036">If we commit a Type I error, we are essentially accepting a false claim. Since the claim describes disease-causing environments, we want to minimize the chances of incorrectly identifying causes of diseases.
+  The testing will be done with <emphasis effect="italics">x</emphasis> = 138 and <emphasis effect="italics">n</emphasis> = 390,000. The sample is sufficiently large because we have <emphasis effect="italics">np</emphasis> = 390,000(0.00041) = 159.9, <emphasis effect="italics">nq</emphasis> = 390,000(0.99959) = 389,840.1, two independent outcomes, and a fixed probability of success <emphasis effect="italics">p</emphasis> = 0.00041. Thus, we will be able to generalize our results to the population.</para>
+  <para id="para-00037">The associated TI results are:</para>
+  <figure id="fig-00005"><media alt="Screenshot of calculator with values matching the calculated data."><image src="../../media/IS2e_UnFigure_09_Ex21_001.png" mime-type="image/png" width="250"/></media></figure>
+  <figure id="fig-00006"><media alt="Screenshot of calculator with graph showing values matching the calculated data."><image src="../../media/IS2e_UnFigure_09_Ex21_002.png" mime-type="image/png" width="250"/></media></figure>
+  <para id="para-00038">Since the <emphasis effect="italics">p</emphasis>-value = 0.0832 is greater than alpha value = 0.005, we cannot reject the null. Therefore, we conclude that there is not enough evidence to support the claim of higher skin diseases rates for moisturizer users.</para>
+  </solution>
+  </exercise>
+  </note>
 
-<solution id="eip-659">
-  <para id="eip-910">We will follow the four-step plan.</para>
-
-<list id="eip-idp113522624" list-type="enumerated" number-style="arabic"><item>We need to test whether the proportion of sexual assaults in Daviess County, KY is significantly different from the national average.</item>
-<item>Since we are presented with proportions, we will use a one-proportion <emphasis effect="italics">z</emphasis>-test. The hypotheses for the test will be
-<list id="eip-idp17854992" list-type="enumerated" number-style="lower-alpha">
-<item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p</emphasis> = 0.00078</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p</emphasis> ≠ 0.00078</item>
-</list></item>
-
-<item>The following screen shots display the summary statistics from the hypothesis test.
-
-<figure id="fs-idm3544720"><media id="eip-idp26791072" alt="">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M09_003a.jpg" width="250"/>
-</media></figure>
-<figure id="eip-idp38471600"><media id="eip-idp38471728" alt="">
-  <image mime-type="image/jpeg" src="../../media/CNX_Stats_C09_M09_003b.jpg" width="250"/>
-</media></figure>
-</item>
-<item>Since the <emphasis effect="italics">p</emphasis>-value, <emphasis effect="italics">p</emphasis> = 0.00063, is less than the alpha level of 0.01, the sample data indicates that we should reject the null hypothesis. In conclusion, the sample data support the claim that the proportion of sexual assaults in Daviess County, Kentucky is different from the national average proportion.</item>
-</list></solution>
-</exercise></example>
-
+  <example id="eip-829">
+    <exercise id="eip-267"><problem id="eip-478">
+    <para id="para-00039">Statistical data indicates that in a certain country there are approximately 268,608,618 residents aged 12 and older. For a certain period of time, statistical data also indicates that the percentage of residents with blood type AB negative (AB-) is 207,754 individuals. This translates into a percentage of 0.078% with this rather rare blood type. In a certain province of the country, there were 11 people with blood type AB- out of the population of 37,937. Conduct an appropriate hypothesis test to determine if there is a statistically significant difference between the percentage of residents in the entire country with blood type AB- versus the percentage in the local province. Use a significance level of 0.01.</para>
+    </problem>
+    <solution id="sol-00005">
+    <para id="para-00040">We will follow the four-step plan.</para>
+    <list list-type="enumerated" number-style="arabic" id="list-00005">
+    <item>We need to test whether the proportion of residents with AB- blood type in the local province is statistically different as compared to the proportion in the entire country.</item>
+    <item>Since we are presented with proportions, we will use a one-proportion <emphasis effect="italics">z</emphasis>-test. The hypotheses for the test will be:
+    <equation class="unnumbered" id="eq-00005"><label/><m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>∶</m:mo><m:mi>p</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00078</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>∶</m:mo><m:mi>p</m:mi></m:mtd><m:mtd><m:mo>≠</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00078</m:mn></m:mtd></m:mtr></m:mtable></m:math></equation></item>
+    <item>Note the sample proportion is <m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mfrac><m:mn>11</m:mn><m:mrow><m:mn>37</m:mn><m:mo>,</m:mo><m:mn>937</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00029</m:mn></m:mtd></m:mtr></m:mtable></m:math>. <para id="para-00041">The test statistic is calculated as <emphasis effect="italics">z</emphasis> = -3.4189. To calculate the <emphasis effect="italics">p</emphasis>-value, note that this is a two-tailed test. Find the area under the normal distribution to the left of the test statistic and then double this area. The area to the left of the test statistic is 0.000314, and this area doubled results in the <emphasis effect="italics">p</emphasis>-value of 0.00063.</para></item>
+    <item>Since the <emphasis effect="italics">p</emphasis>-value, <emphasis effect="italics">p</emphasis> = 0.00063, is less than the alpha level of 0.01, the sample data indicates that we should reject the null hypothesis. In conclusion, the sample data support the claim that the proportion of individuals with blood type AB- in the local province is different from the proportion of individuals in the entire country.</item>
+    </list>
+    </solution>
+    </exercise>
+    </example>
+    <note class="statistics try" id="note-00005">
+      <label/><title>Try It</title>
+      <exercise id="exer-00005">
+      <problem id="prob-00005">
+      <para id="para-00042">According to the U.S. Census, there are approximately 201,456,463 residents 20 and older. Statistics from the Criminal National Network indicate that, on average, 104,354 murders occur each year for people aged 20 and older. This translates into a percentage of murder of 0.052%. In Ohio, there were reported 127 murders for a population of 427,648. Conduct an appropriate hypothesis test to determine if there is a statistically significant difference between the local murder percentage and the national murder percentage. Use a significance level of 0.01.</para>
+      </problem>
+      <solution id="sol-00006">
+      <para id="para-00043">The hypotheses for the one-proportion <emphasis effect="italics">z</emphasis>-test are as follow:</para>
+      <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+      <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00052</m:mn></m:math></item>
+      <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>></m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00052</m:mn></m:math></item>
+      </list>
+      <para id="para-00044">The following screenshots display the summary statistics from the hypothesis test:</para>
+      <figure id="fig-00007"><media alt="Screenshot of calculator with values matching the calculated data."><image src="../../media/IS2e_UnFigure_09_Ex22_001.png" mime-type="image/png" width="250"/></media></figure>
+      <figure id="fig-00008"><media alt="Screenshot of calculator with graph showing values matching the calculated data."><image src="../../media/IS2e_UnFigure_09_Ex22_002.png" mime-type="image/png" width="250"/></media></figure>
+      <para id="para-00045">Since the <emphasis effect="italics">p</emphasis>-value = 0 is less than alpha value of 0.01, the sample data includes that we should reject the null hypothesis. In conclusion, the sample data support the claim that the proportion of murders in Ohio is different from the national average population.</para>
+      </solution>
+      </exercise>
+      </note>
 <section id="fs-idp69608272" class="summary">
 <title>Chapter Review</title>
 <para id="fs-idp168110512">The <term id="term-00005">hypothesis test</term> itself has an established process. This can be summarized as follows:
@@ -879,7 +940,7 @@ Draw the graph of a two-tailed test.
         <item>normal distribution</item>
         <item><emphasis effect="italics">z</emphasis> = -2.315</item>
         <item><emphasis effect="italics">p</emphasis>-value = 0.0103</item>
-        <item>Check student’s solution.</item>
+        <item>Answers may vary.</item>
         <item>
           <list id="fs-idm113459088" list-type="enumerated" number-style="lower-roman">
             <item>alpha: 0.05</item>
@@ -910,7 +971,7 @@ Draw the graph of a two-tailed test.
         <item>normal distribution</item>
         <item><emphasis effect="italics">z</emphasis> = –0.866</item>
         <item><emphasis effect="italics">p</emphasis>-value = 0.3865</item>
-        <item>Check student’s solution.</item>
+        <item>Answers may vary.</item>
         <item>
           <list id="fs-idm69728368" list-type="enumerated" number-style="lower-roman">
           <item>Alpha: 0.01</item>
@@ -940,7 +1001,7 @@ Draw the graph of a two-tailed test.
     <item>Student’s <emphasis effect="italics">t</emphasis>-distribution</item>
     <item><emphasis effect="italics">t</emphasis> = –1.12</item>
     <item><emphasis effect="italics">p</emphasis>-value = 0.300</item>
-    <item>Check student’s solution.</item>
+    <item>Answers may vary.</item>
     <item>
     <list id="fs-idm68554224" list-type="enumerated" number-style="lower-roman">
       <item>Alpha: 0.05</item>
@@ -957,7 +1018,7 @@ Draw the graph of a two-tailed test.
   <para id="element-282">In 1955, <emphasis effect="italics">Life Magazine</emphasis> reported that the 25 year-old mother of three worked, on average, an 80 hour week. Recently, many groups have been studying whether or not the women's movement has, in fact, resulted in an increase in the average work week for women (combining employment and at-home work). Suppose a study was done to determine if the mean work week has increased. 81 women were surveyed with the following results. The sample mean was 83; the sample standard deviation was ten. Does it appear that the mean work week has increased for women at the 5% level?
   </para></problem></exercise><exercise id="element-321"><problem id="id9400577">
   <para id="element-828">
-    Your statistics instructor claims that 60 percent of the students who take her Elementary Statistics class go through life feeling more enriched. For some reason that she can't quite figure out, most people don't believe her. You decide to check this out on your own. You randomly survey 64 of her past Elementary Statistics students and find that 34 feel more enriched as a result of her class. Now, what do you think?
+    Your statistics instructor claims that 60 percent of the students who take their Elementary Statistics class go through life feeling more enriched. For some reason that the instructor can't quite figure out, most people don't believe her. You decide to check this out on your own. You randomly survey 64 of their past Elementary Statistics students and find that 34 feel more enriched as a result of taking the class. Now, what do you think?
   </para>
 </problem>
 <solution id="fs-idm68403536">
@@ -967,13 +1028,13 @@ Draw the graph of a two-tailed test.
     <item>normal for a single proportion</item>
     <item>1.12</item>
     <item><emphasis effect="italics">p</emphasis>-value =  0.1308</item>
-    <item>Check student’s solution.</item>
+    <item>Answers may vary.</item>
     <item>
     <list id="fs-idp14435968" list-type="enumerated" number-style="lower-roman">
       <item>Alpha: 0.05</item>
       <item>Decision: Do not reject the null hypothesis.</item>
       <item>Reason for decision: The <emphasis effect="italics">p</emphasis>-value is greater than 0.05.</item>
-      <item>Conclusion: There is insufficient evidence to conclude that less than 60 percent of her students feel more enriched.</item>
+      <item>Conclusion: There is insufficient evidence to conclude that less than 60 percent of the students feel more enriched.</item>
     </list>
     </item>
     <item>Confidence Interval: (0.409,  0.654)<newline/>The “plus-4s” confidence interval is (0.411, 0.648)</item>
@@ -1035,7 +1096,7 @@ Draw the graph of a two-tailed test.
   </list></solution>
     </exercise>
     <exercise id="element-53"><problem id="id9401240">
-  <para id="element-140a">The mean work week for engineers in a start-up company is believed to be about 60 hours. A newly hired engineer hopes that it’s shorter. She asks ten engineering friends in start-ups for the lengths of their mean work weeks. Based on the results that follow, should she count on the mean work week to be shorter than 60 hours?</para>
+  <para id="element-140a">The mean work week for engineers in a start-up company is believed to be about 60 hours. A newly hired engineer hopes that it’s shorter. They ask ten engineering friends in start-ups for the lengths of their mean work weeks. Based on the results that follow, should the engineer count on the mean work week to be shorter than 60 hours?</para>
         <para id="fs-idp187110944">Data (length of mean work week): 70; 45; 55; 60; 65; 55; 55; 60; 50; 55.</para></problem></exercise><!-- LINK -->
     <exercise id="element-761">
 <problem id="id9401488">
@@ -1413,7 +1474,7 @@ Draw the graph of a two-tailed test.
 <para id="eip-idm11005680">Upon thee I hereby implore.</para>
 </problem></exercise><exercise id="element-378">
 <problem id="id9403596">
-  <para id="element-649">Toastmasters International cites a report by Gallop Poll that 40% of Americans fear public speaking. A student believes that less than 40% of students at her school fear public speaking. She randomly surveys 361 schoolmates and finds that 135 report they fear public speaking. Conduct a hypothesis test to determine if the percent at her school is less than 40%.
+  <para id="element-649">Toastmasters International cites a report by Gallup Poll that 40% of Americans fear public speaking. A student believes that less than 40% of students at their school fear public speaking. The student randomly surveys 361 schoolmates and finds that 135 report they fear public speaking. Conduct a hypothesis test to determine if the percent at their school is less than 40%.
   </para></problem>
 <solution id="fs-idm62899616"><list id="fs-idm62899488" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p</emphasis> = 0.40</item>
 <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p</emphasis> &lt; 0.40</item>
@@ -1435,48 +1496,42 @@ Draw the graph of a two-tailed test.
 </exercise>
     <exercise id="element-48"><problem id="id9403657">
   <para id="element-80">Sixty-eight percent of online courses taught at community colleges nationwide were taught by full-time faculty. To test if 68% also represents California’s percent for full-time faculty teaching the online classes, Long Beach City College (LBCC) in California, was randomly selected for comparison. In the same year, 34 of the 44 online courses LBCC offered were taught by full-time faculty. Conduct a hypothesis test to determine if 68% represents California. NOTE: For more accurate results, use more California community colleges and this past year's data.</para></problem></exercise><exercise id="element-874"><problem id="id9403858">
-  <para id="element-214">According to an article in <emphasis effect="italics">Bloomberg Businessweek</emphasis>, New York City's most recent adult smoking rate is 14%. Suppose that a survey is conducted to determine this year’s rate. Nine out of 70 randomly chosen N.Y. City residents reply that they smoke. Conduct a hypothesis test to determine if the rate is still 14% or if it has decreased.</para></problem>
+  <para id="element-214">According to New York City's Community Health Survey, the most recent adult smoking rate is 12%. Suppose that a survey is conducted to determine this year’s rate. Nine out of 70 randomly chosen N.Y. City residents reply that they smoke. Conduct a hypothesis test to determine if the rate is still 12% or if it has decreased.</para></problem>
 <solution id="fs-idp21365712">
-<list id="fs-idp21365968" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p</emphasis> = 0.14</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p</emphasis> &lt; 0.14</item>
-<item>Let <emphasis effect="italics">P′</emphasis> = the proportion of NYC residents that smoke.</item>
-<item>normal for a single proportion</item>
-<item>–0.2756</item>
-<item><emphasis effect="italics">p</emphasis>-value = 0.3914</item>
-<item>Check student’s solution.</item>
+<list id="fs-idp21365968" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>12</m:mn></m:mtd></m:mtr></m:mtable></m:math></item>
+<item><m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:mi>p</m:mi></m:mtd><m:mtd><m:mo>&lt;</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>12</m:mn></m:mtd></m:mtr></m:mtable></m:math></item>
+<item>Let <m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd/></m:mtr></m:mtable></m:math> the proportion of NYC residents that smoke.</item>
+<item>Normal for a single proportion</item>
+<item>0.2207</item>
+<item><emphasis effect="italics">p</emphasis>-value = 0.5873</item>
+<item>Answers may vary</item>
 <item>
 <list id="fs-idm186262784" list-type="enumerated" number-style="lower-roman">
-<item>alpha: 0.05</item>
+<item>alpha 0.05</item>
 <item>Decision: Do not reject the null hypothesis.</item>
-<item>Reason for decision: The <emphasis effect="italics">p</emphasis>-value is greater than 0.05.</item>
+<item>Reason for Decision: The <emphasis effect="italics">p</emphasis>-value is greater than 0.05.</item>
 <item>At the 5% significance level, there is insufficient evidence to conclude that the proportion of NYC residents who smoke is less than 0.14.</item>
 </list>
 </item>
-<item>Confidence Interval: (0.0502, 0.2070): The “plus-4s” confidence interval (see chapter 8) is (0.0676, 0.2297).</item>
+<item>Confidence interval: Confidence Interval: (0.0502, 0.2070): The “plus-4s” confidence interval (see chapter 8) is (0.0676, 0.2297).</item>
 </list></solution>
 </exercise>
     <exercise id="element-767"><problem id="id9403905">
-  <para id="element-528">The mean age of De Anza College students in a previous term was 26.6 years old. An instructor thinks the mean age for online students is older than 26.6. She randomly surveys 56 online students and finds that the sample mean is 29.4 with a standard deviation of 2.1. Conduct a hypothesis test.</para></problem></exercise><exercise id="element-408"><problem id="id9404099">
+  <para id="element-528">The mean age of De Anza College students in a previous term was 26.6 years old. An instructor thinks the mean age for online students is older than 26.6. They randomly survey 56 online students and find that the sample mean is 29.4 with a standard deviation of 2.1. Conduct a hypothesis test.</para></problem></exercise><exercise id="element-408"><problem id="id9404099">
   <para id="element-877">Registered nurses earned an average annual salary of $69,110. For that same year, a survey was conducted of 41 California registered nurses to determine if the annual salary is higher than $69,110 for California nurses. The sample average was $71,121 with a sample standard deviation of $7,489. Conduct a hypothesis test.
   </para></problem>
 <solution id="fs-idm11266464">
-<list id="fs-idm126211024" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis> = 69,110</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis> > 69,110</item>
-<item>Let <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> = the mean salary in dollars for California registered nurses.</item>
-<item>Student's <emphasis effect="italics">t</emphasis>-distribution</item>
-<item><emphasis effect="italics">t</emphasis> = 1.719</item>
-<item><emphasis effect="italics">p</emphasis>-value: 0.0466</item>
-<item>Check student’s solution.</item>
+<list id="fs-idm126211024" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mi>p</m:mi></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>12</m:mn></m:mtd></m:mtr></m:mtable></m:math></item>
+<item><m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:mi>p</m:mi></m:mtd><m:mtd><m:mo>&lt;</m:mo></m:mtd><m:mtd><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>12</m:mn></m:mtd></m:mtr></m:mtable></m:math></item>
+<item>Let <m:math><m:mtable columnspacing="0px" columnalign="right center left"><m:mtr><m:mtd><m:msup><m:mi>P</m:mi><m:mo>'</m:mo></m:msup></m:mtd><m:mtd><m:mo>=</m:mo></m:mtd><m:mtd/></m:mtr></m:mtable></m:math> the proportion of NYC residents that smoke.</item>
+<item>Normal for a single proportion</item>
+<item>0.2207</item>
+<item><emphasis effect="italics">p</emphasis>-value = 0.5873</item>
+<item>Answers may vary</item>
 <item>
 <list id="fs-idm11928480" list-type="enumerated" number-style="lower-roman">
-<item>Alpha: 0.05</item>
-<item>Decision: Reject the null hypothesis.</item>
+<item>alpha 0.05</item>
+<item>Decision: Do not reject the null hypothesis.</item>
 <item>Reason for decision: The <emphasis effect="italics">p</emphasis>-value is less than 0.05.</item>
 <item>Conclusion: At the 5% significance level, there is sufficient evidence to conclude that the mean salary of California registered nurses exceeds $69,110.</item>
 </list>
@@ -1502,12 +1557,12 @@ Draw the graph of a two-tailed test.
 </exercise>
 
 <exercise id="exer14"><problem id="id8184753">
-<para id="eip-idp66540992">A statistics instructor believes that fewer than 20% of Evergreen Valley College (EVC) students attended the opening night midnight showing of the latest Harry Potter movie. She surveys 84 of her students and finds that 11 of them attended the midnight showing.
+<para id="eip-idp66540992">A statistics instructor believes that fewer than 20% of Evergreen Valley College (EVC) students attended the opening night midnight showing of the latest Marvel Universe movie. The instructor surveys 84 students and finds that 11 of them attended the midnight showing.
 <newline/>At a 1% level of significance, an appropriate conclusion is:</para><list id="id6241780" list-type="enumerated" number-style="lower-alpha">
-<item>There is insufficient evidence to conclude that the percent of EVC students who attended the midnight showing of Harry Potter is less than 20%.</item>
-        <item>There is sufficient evidence to conclude that the  percent of EVC students who attended the midnight showing of Harry Potter is more than 20%.</item>
-        <item>There is sufficient evidence to conclude that the percent of EVC students who attended the midnight showing of Harry Potter is less than 20%.</item>
-        <item>There is insufficient evidence to conclude that the percent of EVC students who attended the midnight showing of Harry Potter is at least 20%.</item>
+<item>There is insufficient evidence to conclude that the percent of EVC students who attended the midnight showing of Marvel Universe is less than 20%.</item>
+        <item>There is sufficient evidence to conclude that the  percent of EVC students who attended the midnight showing of Marvel Universe is more than 20%.</item>
+        <item>There is sufficient evidence to conclude that the percent of EVC students who attended the midnight showing of Marvel Universe is less than 20%.</item>
+        <item>There is insufficient evidence to conclude that the percent of EVC students who attended the midnight showing of Marvel Universe is at least 20%.</item>
       </list>
 </problem></exercise><exercise id="exer19"><problem id="id8186196">
 <para id="id11679199">Previously, an organization reported that teenagers spent 4.5 hours per week, on average, on the phone. The organization thinks that, currently, the mean is higher. Fifteen randomly chosen teenagers were asked how many hours per week they spend on the phone. The sample mean was 4.75 hours with a sample standard deviation of 2.0. Conduct a hypothesis test.
@@ -1528,8 +1583,8 @@ Draw the graph of a two-tailed test.
 <item>What is your decision?</item>
 <item>Write a conclusion.</item>
 <item>Answer any other questions asked in the problem.</item></list><exercise id="eip-69"><problem id="eip-459">
-  <para id="eip-971">According to the Center for Disease Control website, in 2011 at least 18% of high school students have smoked a cigarette. An Introduction to Statistics class in Davies County, KY conducted a hypothesis test at the local high school (a medium sized–approximately 1,200 students–small city demographic) to determine if the local high school’s percentage was lower. One hundred fifty students were chosen at random and surveyed. Of the 150 students surveyed, 82 have smoked. Use a significance level of 0.05 and using appropriate statistical evidence, conduct a hypothesis test and state the conclusions.</para></problem></exercise><exercise id="eip-40"><problem id="eip-98">
-  <para id="eip-249">A recent survey in the <emphasis effect="italics">N.Y. Times Almanac</emphasis> indicated that 48.8% of families own stock. A broker wanted to determine if this survey could be valid. He surveyed a random sample of 250 families and found that 142 owned some type of stock. At the 0.05 significance level, can the survey be considered to be accurate?</para>
+  <para id="eip-971">According to the Center for Disease Control website, in 2022 at least 2% of high school students reported they had smoked a cigarette. An Introduction to Statistics class conducted a hypothesis test at the local high school (a medium sized–approximately 1,200 students–small city demographic) to determine if the local high school’s percentage was lower. One hundred fifty students were chosen at random and surveyed. Of the 150 students surveyed, 82 have smoked. Use a significance level of 0.05 and using appropriate statistical evidence, conduct a hypothesis test and state the conclusions.</para></problem></exercise><exercise id="eip-40"><problem id="eip-98">
+  <para id="eip-249">A recent survey in the <emphasis effect="italics">N.Y. Times Almanac</emphasis> indicated that 48.8% of families own stock. A broker wanted to determine if this survey could be valid. They surveyed a random sample of 250 families and found that 142 owned some type of stock. At the 0.05 significance level, can the survey be considered to be accurate?</para>
 </problem>
 
 <solution id="eip-630">
@@ -1556,7 +1611,7 @@ Draw the graph of a two-tailed test.
 </list>
 </solution>
 </exercise><exercise id="eip-835"><problem id="eip-387">
-  <para id="eip-278">For Americans using library services, the American Library Association claims that at most 67% of patrons borrow books. The library director in Owensboro, Kentucky feels this is not true, so she asked a local college statistic class to conduct a survey. The class randomly selected 100 patrons and found that 82 borrowed books. Did the class demonstrate that the percentage was higher in Owensboro, KY?  Use α = 0.01 level of significance. What is the possible proportion of patrons that do borrow books from the Owensboro Library?</para></problem></exercise><exercise id="eip-715"><problem id="eip-374">
+  <para id="eip-278">For Americans using library services, the American Library Association claims that at most 67% of patrons borrow books. The library director in Owensboro, Kentucky feels this is not true, so they asked a local college statistic class to conduct a survey. The class randomly selected 100 patrons and found that 82 borrowed books. Did the class demonstrate that the percentage was higher in Owensboro, KY?  Use α = 0.01 level of significance. What is the possible proportion of patrons that do borrow books from the Owensboro Library?</para></problem></exercise><exercise id="eip-715"><problem id="eip-374">
   <para id="eip-14">The Weather Underground reported that the mean amount of summer rainfall for the northeastern US is at least 11.52 inches. Ten cities in the northeast are randomly selected and the mean rainfall amount is calculated to be 7.42 inches with a standard deviation of 1.3 inches. At the α = 0.05 level, can it be concluded that the mean rainfall was below the reported average? What if α = 0.01? Assume the amount of summer rainfall follows a normal distribution.</para></problem>
 
 <solution id="eip-589">
@@ -1605,7 +1660,7 @@ Draw the graph of a two-tailed test.
 </list>
 </solution>
 </exercise><exercise id="eip-677"><problem id="eip-484">
-  <para id="eip-543">According to the <emphasis effect="italics">N.Y. Times Almanac</emphasis> the mean family size in the U.S. is 3.18. A sample of a college math class resulted in the following family sizes:
+  <para id="eip-543">According to the <emphasis effect="italics">U.S. Census Bureau</emphasis>, the mean family size in the U.S. is 3.13. A sample of a college math class resulted in the following family sizes:
 <newline/>
 <list list-type="labeled-item" display="inline" id="list-00002">
 <item>5</item>
@@ -1635,7 +1690,7 @@ Draw the graph of a two-tailed test.
 </list>
 <newline/>At <emphasis effect="italics">α</emphasis> = 0.05 level, is the class’ mean family size greater than the national average? Does the Almanac result remain valid? Why?
 </para></problem></exercise><exercise id="eip-551"><problem id="eip-45">
-  <para id="eip-127">The student academic group on a college campus claims that freshman students study at least 2.5 hours per day, on average. One Introduction to Statistics class was skeptical. The class took a random sample of 30 freshman students and found a mean study time of 137 minutes with a standard deviation of 45 minutes. At <emphasis effect="italics">α</emphasis> = 0.01 level, is the student academic group’s claim correct?</para>
+  <para id="eip-127">The student academic group on a college campus claims that first-year students study at least 2.5 hours per day, on average. One Introduction to Statistics class was skeptical. The class took a random sample of 30 first-year students and found a mean study time of 137 minutes with a standard deviation of 45 minutes. At <emphasis effect="italics">α</emphasis> = 0.01 level, is the student academic group’s claim correct?</para>
 </problem>
 
 <solution id="eip-175">

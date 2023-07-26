@@ -1,14 +1,60 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
-  <title>Distribution Needed for Hypothesis Testing</title>
+  <title>Probability Distribution Needed for Hypothesis Testing</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m55608</md:content-id>
-  <md:title>Distribution Needed for Hypothesis Testing</md:title>
+  <md:title>Probability Distribution Needed for Hypothesis Testing</md:title>
   <md:abstract/>
   <md:uuid>0ea575be-6eb9-40f8-8996-137f79686925</md:uuid>
 </metadata>
 
 <content>
-  <para id="fs-idm27402752">Earlier, we discussed sampling distributions. Particular distributions are associated with hypothesis testing.We will perform hypotheses tests of a population mean using a <term class="no-emphasis" id="term-00001">normal distribution</term> or a <term class="no-emphasis" id="term-00002">Student's <emphasis effect="italics">t</emphasis>-distribution</term>. (Remember, use a Student's <emphasis effect="italics">t</emphasis>-distribution when the population <term class="no-emphasis" id="term-00003">standard deviation</term> is unknown and the sample size is small, where small is considered to be less than 30 observations.) We perform tests of a population proportion using a normal distribution when we can assume that the distribution is normally distributed. We consider this  to be true if the sample proportion, <m:math><m:mi>p</m:mi><m:mo>'</m:mo></m:math>, times the sample size is greater than 5 and 1-<m:math><m:mi>p</m:mi><m:mo>'</m:mo></m:math> times the sample size is also greater than 5. This is the same rule of thumb we used when developing the formula for the confidence interval for a population proportion.</para><section id="eip-162"><title>Hypothesis Test for the Mean</title><para id="eip-328">
+  <para id="para-00001">Earlier in the course, we discussed sampling distributions. Particular distributions are associated with various types of hypothesis testing.</para>
+  <para id="para-00002">The following table summarizes various hypothesis tests and corresponding probability distributions that will be used to conduct the test (based on the assumptions shown below):</para>
+  <table summary=" " id="table-00001">
+  <title/>
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <thead>
+  <row>
+  <entry align="center">Type of Hypothesis Test</entry>
+  <entry align="center">Population Parameter</entry>
+  <entry align="center">Estimated value (point estimate)</entry>
+  <entry align="center">Probability Distribution Used</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Hypothesis test for the mean, when the population standard deviation is known</entry>
+  <entry>Population mean <m:math><m:mi>μ</m:mi></m:math></entry>
+  <entry>Sample mean <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math></entry>
+  <entry>Normal distribution, 
+  <m:math><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mo>~</m:mo><m:mi>N</m:mi><m:mo>(</m:mo><m:msub><m:mi>μ</m:mi><m:mi>X</m:mi></m:msub><m:mo>,</m:mo><m:mfrac><m:msub><m:mi>σ</m:mi><m:mi>X</m:mi></m:msub><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac><m:mo>)</m:mo></m:math></entry>
+  </row>
+  <row>
+  <entry>Hypothesis test for the mean, when the population standard deviation is unknown and the distribution of the sample mean is approximately normal</entry>
+  <entry>Population mean <m:math><m:mi>μ</m:mi></m:math></entry>
+  <entry>Sample mean <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math></entry>
+  <entry>Student’s t-distribution, <m:math><m:msub><m:msub><m:mi>t</m:mi><m:mi>d</m:mi></m:msub><m:mi>f</m:mi></m:msub></m:math></entry>
+  </row>
+  <row>
+  <entry>Hypothesis test for proportions</entry>
+  <entry>Population proportion <m:math><m:mi>p</m:mi></m:math></entry>
+  <entry>Sample proportion <m:math><m:mi>p</m:mi><m:mo>'</m:mo></m:math></entry>
+  <entry>Normal distribution,
+  <m:math><m:mi>P</m:mi><m:mo>'</m:mo><m:mo>~</m:mo><m:mi>N</m:mi><m:mo>(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>·</m:mo><m:mi>q</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>)</m:mo></m:math></entry>
+  </row>
+</tbody>
+  </tgroup>
+  </table>
+  <section id="fs-idp38268576"><title>Assumptions</title>
+  <para id="para-00003">When you perform a <term id="term-00001">hypothesis test</term> <emphasis>of a single population mean <emphasis effect="italics">μ</emphasis></emphasis> using a normal distribution (often called a z-test), you take a <term id="term-00002">simple random sample</term> from the population. The population you are testing is <term id="term-00003">normally distributed</term>, or your sample size is sufficiently large. You know the value of the population <term id="term-00012">standard deviation</term>, which, in reality, is rarely known.</para>
+  <para id="para-00004">When you perform a <emphasis>hypothesis test of a single population mean <emphasis effect="italics">μ</emphasis></emphasis> using a <term id="term-00013">Student's
+  <emphasis effect="italics">t</emphasis>-distribution</term> (often called a <emphasis effect="italics">t</emphasis>-test), there are fundamental assumptions that need to be met in order for the test to work properly. Your data should be a simple random sample that comes from a population that is approximately normally distributed. You use the sample standard deviation to approximate the population standard deviation. (Note that if the sample size is sufficiently large, a <emphasis effect="italics">t</emphasis>-test will work even if the population is not approximately normally distributed).</para>
+  <para id="para-00005">When you perform a hypothesis test of a single population proportion <emphasis effect="italics">p</emphasis>, you take a simple random sample from the population. You must meet the conditions for a <term id="term-00014">binomial distribution</term>: there are a certain number <emphasis effect="italics">n</emphasis> of independent trials, the outcomes of any trial are success or failure, and each trial has the same probability of a success <emphasis effect="italics">p</emphasis>. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <emphasis effect="italics">np</emphasis> and <emphasis effect="italics">nq</emphasis> must both be greater than five (<m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn><m:mo> </m:mo></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn><m:mo> </m:mo></m:math>). Then the binomial distribution of a sample (estimated) proportion can be approximated by the normal distribution with <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>p</m:mi><m:mo> </m:mo></m:math>  and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt></m:math>. Remember that <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:mi>q</m:mi></m:math>.</para>
+  </section>
+  <section id="eip-162"><title>Hypothesis Test for the Mean</title><para id="eip-328">
 Going back to the standardizing formula we can derive the <term id="term-00004">test statistic</term> for testing hypotheses concerning means.
 </para><equation id="eip-255" class="unnumbered"><label/><m:math>
 <m:msub><m:mi>Z</m:mi><m:mi>c</m:mi></m:msub>
@@ -61,7 +107,9 @@ Going back to the standardizing formula we can derive the <term id="term-00004">
 
 
 </tgroup>
-</table><para id="eip-771">This rule will always be the same no matter what hypothesis we are testing or what formulas we are using to make the test. The only change will be to change the Z<sub>c</sub> to the appropriate symbol for the test statistic for the parameter being tested. Stating the decision rule another way: if the sample mean is unlikely to have come from the distribution with the hypothesized mean we cannot accept the null hypothesis. Here we define "unlikely" as having a probability less than alpha of occurring.</para></section><section id="fs-idm257750672"><title>P-Value Approach</title><para id="eip-470">An alternative decision rule can be developed by calculating the probability that a sample mean could be found that would give a test statistic larger than the test statistic found from the current sample data assuming that the null hypothesis is true. Here the notion of "likely" and "unlikely" is defined by the probability of drawing a sample with a mean from a population with the hypothesized mean that is either larger or smaller than that found in the sample data. Simply stated, the p-value approach compares the desired significance level, α, to the p-value which is the probability of drawing a sample mean further from the hypothesized value than the actual sample mean. A large <emphasis effect="italics">p</emphasis>-value calculated from the data indicates that we should not reject the <term id="term-00006">null hypothesis</term>. The smaller the <emphasis effect="italics">p</emphasis>-value, the more unlikely the outcome, and the stronger the evidence is against the null hypothesis. We would reject the null hypothesis if the evidence is strongly against it. The relationship between the decision rule of comparing the calculated test statistics, Z<sub>c</sub>, and the Critical Value, Z<sub>α</sub> , and using the <emphasis effect="italics">p</emphasis>-value can be seen in <link target-id="eip-id1169346631895"/>.</para><figure id="eip-id1169346631895"><media id="eip-id1169348081431" alt="...">
+</table><para id="eip-771">This rule will always be the same no matter what hypothesis we are testing or what formulas we are using to make the test. The only change will be to change the Z<sub>c</sub> to the appropriate symbol for the test statistic for the parameter being tested. Stating the decision rule another way: if the sample mean is unlikely to have come from the distribution with the hypothesized mean we cannot accept the null hypothesis. Here we define "unlikely" as having a probability less than alpha of occurring.</para></section>
+
+<section id="fs-idm257750672"><title>P-Value Approach</title><para id="eip-470">An alternative decision rule can be developed by calculating the probability that a sample mean could be found that would give a test statistic larger than the test statistic found from the current sample data assuming that the null hypothesis is true. Here the notion of "likely" and "unlikely" is defined by the probability of drawing a sample with a mean from a population with the hypothesized mean that is either larger or smaller than that found in the sample data. Simply stated, the p-value approach compares the desired significance level, α, to the p-value which is the probability of drawing a sample mean further from the hypothesized value than the actual sample mean. A large <emphasis effect="italics">p</emphasis>-value calculated from the data indicates that we should not reject the <term id="term-00006">null hypothesis</term>. The smaller the <emphasis effect="italics">p</emphasis>-value, the more unlikely the outcome, and the stronger the evidence is against the null hypothesis. We would reject the null hypothesis if the evidence is strongly against it. The relationship between the decision rule of comparing the calculated test statistics, Z<sub>c</sub>, and the Critical Value, Z<sub>α</sub> , and using the <emphasis effect="italics">p</emphasis>-value can be seen in <link target-id="eip-id1169346631895"/>.</para><figure id="eip-id1169346631895"><media id="eip-id1169348081431" alt="...">
 
   <image mime-type="image/jpeg" src="../../media/fig-ch09_01_02m.jpg"/>
 
@@ -155,7 +203,8 @@ Going back to the standardizing formula we can derive the <term id="term-00004">
 </section>
 
 
-  <section id="eip-772" class="formula-review"><title>Formula Review</title><table id="fs-id1171148550728" summary="..."><title>Test Statistics for Test of Means, Varying Sample Size, Population Known or Unknown</title>
+  <section id="eip-772" class="formula-review"><title>Formula Review</title>
+    <table id="fs-id1171148550728" summary="..."><title>Test Statistics for Test of Means, Varying Sample Size, Population Known or Unknown</title>
 <tgroup cols="2"><thead>
   <row>
     <entry>Sample size</entry>
