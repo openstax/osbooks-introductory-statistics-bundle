@@ -229,9 +229,8 @@ Verify these values.</para><para id="element-700">Let <m:math>
 
 <para id="element-543"><emphasis>Distribution for the test:</emphasis> The distribution is a Student's <emphasis effect="italics">t</emphasis> with <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1 = 8 – 1 = 7. Use <emphasis effect="italics">t</emphasis><sub>7</sub>. <emphasis>(Notice that the test is for a single population mean.)</emphasis></para>
 
-<para id="element-94"><emphasis>Calculate the <emphasis effect="italics">p</emphasis>-value using the Student's t-distribution:</emphasis> <emphasis effect="italics">p</emphasis>-value = 0.0095</para>
-<para id="element-562"><emphasis>Graph:</emphasis></para>
-
+<para id="element-94">Calculate the test statistic and <emphasis effect="italics">p</emphasis>-value using the Student's <emphasis effect="italics">t</emphasis>-distribution:<newline/>test statistic, t = –3.036, <emphasis effect="italics">p</emphasis>-value = 0.0095</para>
+<para id="element-94a">Change Figure 10.10 as follows:</para>
 <figure id="hyptest22_samp1"><media id="id11476386" alt="Normal distribution curve of the average difference of sensory measurements with values of -3.13 and 0. A vertical upward line extends from -3.13 to the curve, and the p-value is indicated in the area to the left of this value.">
 <image src="../../media/fig-ch10_05_01.jpg" mime-type="image/jpg" width="380"/>
 </media>
@@ -416,7 +415,7 @@ Verify these values.</para><para id="element-700">Let <m:math>
 <para id="element-931"><emphasis>Decision:</emphasis> If the level of significance is 5%, the decision is not to reject the null hypothesis, because α &lt; <emphasis effect="italics">p</emphasis>-value.</para>
 <para id="element-802"><emphasis>What is the conclusion?</emphasis></para>
 
-<para id="e106soln">At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class helped to make the players stronger, on average.</para>
+<para id="e106soln">At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class helped to make the players stronger, on average. It should be noted that this data set consists of a very small sample size, with the possibility of an outlier data value. It is important to confirm that the matched pairs have differences that come from a population that is normal. The coach may want to consider increasing the sample size of players in the study.</para>
 </example>
 
 <note id="fs-idm13751200" class="statistics try"><label/><title>Try It</title>
@@ -998,7 +997,7 @@ Verify these values.</para><para id="element-700">Let <m:math>
 </solution>
 </exercise>
 
-<para id="eip-637"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> A new AIDS prevention drug was tried on a group of 224 HIV positive patients. Forty-five patients developed AIDS after four years. In a control group of 224 HIV positive patients, 68 developed AIDS after four years. We want to test whether the method of treatment reduces the proportion of patients that develop AIDS after four years or if the proportions of the treated group and the untreated group stay the same.</para>
+<para id="eip-637"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> A new heart disease prevention drug was tried on a group of 224 patients. Forty-five patients developed heart disease after four years. In a control group of 224 patients, 68 developed heart disease after four years. We want to test whether the method of treatment reduces the proportion of patients that develop heart disease after four years or if the proportions of the treated group and the untreated group stay the same.</para>
 
 <para id="eip-793">Let the subscript <emphasis effect="italics">t</emphasis> = treated patient and <emphasis effect="italics">ut</emphasis> = untreated patient.</para><exercise id="element-719"><problem id="id17683497">
 <para id="element-505">The appropriate hypotheses are:</para>
@@ -1016,9 +1015,9 @@ Verify these values.</para><para id="element-700">Let <m:math>
 <para id="element-849">If the <emphasis effect="italics">p</emphasis>-value is 0.0062 what is the conclusion (use <emphasis effect="italics">α</emphasis> = 0.05)?</para>
 <list id="list1111" list-type="enumerated" number-style="lower-alpha">
 <item>The method has no effect.</item>
-<item>There is sufficient evidence to conclude that the method reduces the proportion of HIV positive patients who develop AIDS after four years.</item>
-<item>There is sufficient evidence to conclude that the method increases the proportion of HIV positive patients who develop AIDS after four years.</item>
-<item>There is insufficient evidence to conclude that the method reduces the proportion of HIV positive patients who develop AIDS after four years. </item>
+<item>There is sufficient evidence to conclude that the method reduces the proportion of patients who develop heart disease after four years.</item>
+<item>There is sufficient evidence to conclude that the method increases the proportion of patients who develop heart disease after four years.</item>
+<item>There is insufficient evidence to conclude that the method reduces the proportion of patients who develop heart disease after four years. </item>
 </list>
 </problem>
 <solution id="id7050591">
@@ -1122,13 +1121,13 @@ The correct decision is:
 
 <exercise id="fs-idp31663264">
 <problem id="fs-idp31663520">
-<para id="fs-idm44180368">A local cancer support group believes that the estimate for new female breast cancer cases in the south is higher in 2013 than in 2012.  The group compared the estimates of new female breast cancer cases by southern state in 2012 and in 2013.  The results are in <link target-id="fs-idp20856160"/>.</para><table id="fs-idp20856160" summary="">
+<para id="fs-idm44180368">A local cancer support group believes that the estimate for new female breast cancer cases in the south is higher in Year 2 than in Year 1.  The group compared the estimates of new female breast cancer cases by southern state in Year 1 and in Year 2.  The results are in <link target-id="fs-idp20856160"/>.</para><table id="fs-idp20856160" summary="">
 <tgroup cols="3">
 <thead>
 <row>
 <entry>Southern States</entry>
-<entry>2012</entry>
-<entry>2013</entry>
+<entry>Year 1</entry>
+<entry>Year 2</entry>
 </row>
 </thead>
 <tbody>
@@ -1215,14 +1214,14 @@ The correct decision is:
 </m:math></para>
 <para id="fs-idp45658064">Distribution: <emphasis effect="italics">t</emphasis><sub>12</sub></para>
 <para id="fs-idp85679904"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis><emphasis effect="italics"><sub>d</sub></emphasis> = 0   <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis><emphasis effect="italics"><sub>d</sub></emphasis> > 0</para>
-<para id="fs-idm70033392">The mean of the differences of new female breast cancer cases in the south between 2013 and 2012 is greater than zero. The estimate for new female breast cancer cases in the south is higher in 2013 than in 2012.</para>
+<para id="fs-idm70033392">The mean of the differences of new female breast cancer cases in the south between Year 2 and Year 1 is greater than zero. The estimate for new female breast cancer cases in the south is higher in Year 2 than in Year 1.</para>
 <para id="fs-idp16018656">Graph: right-tailed</para>
 <para id="fs-idp14099296"><emphasis effect="italics">p</emphasis>-value: 0.0004</para>
 <figure id="fs-idp14099680"><media id="fs-idm6747376" alt="This is a normal distribution curve with mean equal to zero. A vertical line near the tail of the curve to the right of zero extends from the axis to the curve. The region under the curve to the right of the line is shaded representing p-value = 0.0004.">
 <image mime-type="image/jpg" src="../../media/CNX_Stats_C10_M05_002annoN.jpg" width="380"/>
 </media>
 </figure><para id="fs-idp11877696">Decision: Reject <emphasis effect="italics">H<sub>0</sub></emphasis></para>
-<para id="fs-idp84781280">Conclusion: At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that there was a higher estimate of new female breast cancer cases in 2013 than in 2012.</para>
+<para id="fs-idp84781280">Conclusion: At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that there was a higher estimate of new female breast cancer cases in Year 2 than in Year 1.</para>
 </solution>
 </exercise>
 
@@ -1297,14 +1296,14 @@ The correct decision is:
 
 <exercise id="fs-idp111440192">
 <problem id="fs-idp111440448">
-<para id="fs-idp14986256">A politician asked his staff to determine whether the underemployment rate in the northeast decreased from 2011 to 2012.  The results are in <link target-id="fs-idp10131504"/>.</para>
+<para id="fs-idp14986256">A politician asked their staff to determine whether the underemployment rate in the northeast decreased year over year. The results are in <link target-id="fs-idp10131504"/>.</para>
 <table id="fs-idp10131504" summary="">
 <tgroup cols="3">
 <thead>
 <row>
 <entry>Northeastern States</entry>
-<entry>2011</entry>
-<entry>2012</entry>
+<entry>Year 1</entry>
+<entry>Year 2</entry>
 </row>
 </thead>
 <tbody>
@@ -1393,7 +1392,7 @@ The correct decision is:
 </m:mrow>
 </m:math></para>
 <para id="fs-idm32460304">Distribution: <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> = 0 <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> &lt; 0</para>
-<para id="fs-idp91580896">The mean of the differences of the rate of underemployment in the northeastern states between 2012 and 2011 is less than zero.  The underemployment rate went down from 2011 to 2012.</para>
+<para id="fs-idp91580896">The mean of the differences of the rate of underemployment in the northeastern states between Year 2 and Year 1 is less than zero. The underemployment rate went down from Year 1 to Year 2.</para>
 <para id="fs-idp91581472">Graph: left-tailed.
 <figure id="fs-idm60026752"><media id="fs-idm60026496" alt="This is a normal distribution curve with mean equal to zero. A vertical line near the tail of the curve to the right of zero extends from the axis to the curve. The region under the curve to the right of the line is shaded representing p-value = 0.1207.">
 <image mime-type="image/jpg" src="../../media/CNX_Stats_C10_M05_004annoN.jpg" width="380"/>
@@ -1401,7 +1400,7 @@ The correct decision is:
 </figure></para>
 <para id="fs-idm57153840"><emphasis effect="italics">p</emphasis>-value: 0.1207</para>
 <para id="fs-idm57153456">Decision: Do not reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
-<para id="fs-idp36520624">Conclusion: At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that there was a decrease in the underemployment rates of the northeastern states from 2011 to 2012.</para>
+<para id="fs-idp36520624">Conclusion: At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that there was a decrease in the underemployment rates of the northeastern states from Year 1 to Year 2.</para>
 </solution>
 </exercise>
 
@@ -1435,7 +1434,7 @@ The correct decision is:
 
 <exercise id="fs-idm66474352">
 <problem id="fs-idm151765440">
-<para id="fs-idm151765184">The mean number of English courses taken in a two–year time period by male and female college students is believed to be about the same. An experiment is conducted and data are collected from nine males and 16 females.</para>
+<para id="fs-idm151765184">The mean number of English courses taken in a two–year time period by men and women college students is believed to be about the same. An experiment is conducted and data are collected from nine males and 16 females.</para>
 </problem>
 </exercise>
 <exercise id="fs-idm53146784">
@@ -1585,7 +1584,7 @@ The correct decision is:
 
 <exercise id="fs-idp144471136">
 <problem id="fs-idp144471392">
-<para id="eip-407">A golf instructor is interested in determining if her new technique for improving players’ golf scores is effective. She takes four (4) new students. She records their 18-hole scores before learning the technique and then after having taken her class. She conducts a hypothesis test. The data are as <link target-id="fs-idp136885584"/>.</para><table id="fs-idp136885584" summary="table question">
+<para id="eip-407">A golf instructor is interested in determining if a new technique for improving players’ golf scores is effective. The instructor takes four (4) new students and records their 18-hole scores before learning the technique and then after having taken the class. The instructor conducts a hypothesis test. The data are as <link target-id="fs-idp136885584"/>.</para><table id="fs-idp136885584" summary="table question">
 <tgroup cols="5"><thead>
 <row>
 <entry/>
