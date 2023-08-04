@@ -87,18 +87,12 @@
   <m:mfrac>
    <m:mrow>
     <m:mtext>(</m:mtext><m:msub>
-     <m:mover accent="true">
-      <m:mi>x</m:mi>
-      <m:mo>¯</m:mo>
-     </m:mover>
+      <m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 
      <m:mn>1</m:mn>
     </m:msub>
     <m:mo>–</m:mo><m:msub>
-     <m:mover accent="true">
-      <m:mi>x</m:mi>
-      <m:mo>¯</m:mo>
-     </m:mover>
+      <m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 
      <m:mn>2</m:mn>
     </m:msub>
@@ -338,7 +332,8 @@ are the sample means. <emphasis effect="italics">μ</emphasis><sub>1</sub> and <
   </m:mfrac>
 
  </m:mrow>
-</m:math></equation></para><para id="element-316">When both sample sizes <emphasis effect="italics">n</emphasis><sub>1</sub> and <emphasis effect="italics">n</emphasis><sub>2</sub> are 30 or larger, the Student's <emphasis effect="italics">t</emphasis> approximation is very good. If each sample has more than 30 observations then the degrees of freedom can be calculated as n1 + n2 - 2. </para><para id="eip-617">The format of the sampling distribution, differences in sample means,  specifies that the format of the null and alternative hypothesis is:</para><equation class="unnumbered" id="eip-253"><label/><m:math>
+</m:math></equation></para><para id="element-316">When both sample sizes <emphasis effect="italics">n</emphasis><sub>1</sub> and <emphasis effect="italics">n</emphasis><sub>2</sub> are 30 or larger, the Student's <emphasis effect="italics">t</emphasis> approximation is very good. If each sample has more than 30 observations.</para><para id="eip-617">The format of the sampling distribution, differences in sample means,  specifies that the format of the null and alternative hypothesis is:</para>
+<equation class="unnumbered" id="eq_df1"><label/><title>The test hypothesis for differences between two means</title><m:math display="block">
 <m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo>
 <m:msub><m:mi>µ</m:mi><m:mn>1</m:mn></m:msub>
@@ -960,7 +955,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 
 <exercise id="fs-idm22935904">
 <problem id="fs-idm124875424">
-<para id="fs-idm84013008">It is believed that 70% of males pass their drivers test in the first attempt, while 65% of females pass the test in the first attempt. Of interest is whether the proportions are in fact equal.</para>
+<para id="fs-idm84013008">It is believed that 70% of men pass their drivers test in the first attempt, while 65% of women pass the test in the first attempt. Of interest is whether the proportions are in fact equal.</para>
 </problem>
 <solution id="fs-idm235455488">
 <para id="fs-idm173588752">two proportions</para>
@@ -1003,7 +998,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 
 <exercise id="fs-idp3576048">
 <problem id="fs-idm27505984">
-<para id="fs-idm27505728">It is believed that the average grade on an English essay in a particular school system for females is higher than for males.  A random sample of 31 females had a mean score of 82 with a standard deviation of three, and a random sample of 25 males had a mean score of 76 with a standard deviation of four.</para>
+<para id="fs-idm27505728">It is believed that the average grade on an English essay in a particular school system for women is higher than for men. A random sample of 31 women had a mean score of 82 with a standard deviation of three, and a random sample of 25 men had a mean score of 76 with a standard deviation of four.</para>
 </problem>
 <solution id="fs-idm27710704">
 <para id="fs-idm54785888">independent group means, population standard deviations and/or variances unknown</para>
@@ -1084,7 +1079,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 </problem>
 </exercise>
 
- <para id="eip-356"><emphasis effect="italics">Use the following information to answer the next 12 exercises:</emphasis> The U.S. Center for Disease Control reports that the mean life expectancy was 47.6 years for White people born in 1900 and 33.0 years for non-White people. Suppose that you randomly survey death records for people born in 1900 in a certain county. Of the 124 White people, the mean life span was 45.3 years with a standard deviation of 12.7 years. Of the 82 non-White people, the mean life span was 34.1 years with a standard deviation of 15.6 years. Conduct a hypothesis test to see if the mean life spans in the county were the same for White and non-White people.</para><exercise id="fs-idm77134224">
+ <para id="eip-356"><emphasis effect="italics">Use the following information to answer the next 12 exercises:</emphasis> The U.S. Center for Disease Control reports that the mean life expectancy was 47.6 years for White people born in 1900 and 33.0 years for non-White people. Suppose that you randomly survey death records for people born in 1900 in a certain county. Of the 124 White people, the mean life span was 45.3 years with a standard deviation of 12.7 years. Of the 82 non-White people, the mean life span was 34.1 years with a standard deviation of 15.6 years. Conduct a hypothesis test to see if the mean life spans in the county were the same for White people and non-White people.</para><exercise id="fs-idm77134224">
 <problem id="fs-idm77133968">
 <para id="fs-idm82811296">Is this a test of means or proportions?</para>
 </problem>
@@ -1150,7 +1145,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 <para id="fs-idm120924176">Sketch a graph of the situation. Label the horizontal axis. Mark the hypothesized difference and the sample difference. Shade the area corresponding to the <emphasis effect="italics">p</emphasis>-value.</para>
 </problem>
   <solution id="fs-idp104610560">
-    <para id="fs-idp104610816">Check student’s solution.</para>
+    <para id="fs-idp104610816">Answers may vary.</para>
   </solution>
 </exercise>
 
@@ -1182,7 +1177,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 <section id="fs-idm173509824" class="free-response">
 <title>Homework</title>
 <exercise id="fs-idm164128"><problem id="fs-idm163872">
-<para id="fs-idm163616">The mean number of English courses taken in a two–year time period by male and female college students is believed to be about the same. An experiment is conducted and data are collected from 29 males and 16 females. The males took an average of three English courses with a standard deviation of 0.8. The females took an average of four English courses with a standard deviation of 1.0. Are the means statistically the same?</para>
+<para id="fs-idm163616">The mean number of English courses taken in a two–year time period by men and women college students is believed to be about the same. An experiment is conducted and data are collected from 29 men and 16 women. The men took an average of three English courses with a standard deviation of 0.8. The women took an average of four English courses with a standard deviation of 1.0. Are the means statistically the same?</para>
 </problem>
 </exercise>
 
@@ -1218,7 +1213,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
     <item>Student’s-<emphasis effect="italics">t</emphasis></item>
     <item>test statistic: -0.2480</item>
     <item><emphasis effect="italics">p</emphasis>-value: 0.4019</item>
-    <item>Check student’s solution.</item>
+    <item>Answers may vary.</item>
     <item>
       <list id="fs-idp113692848" list-type="enumerated" number-style="lower-roman">
         <item>Alpha: 0.05</item>
@@ -1314,7 +1309,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
     <item><emphasis effect="italics">t</emphasis><sub>108</sub></item>
     <item>test statistic: <emphasis effect="italics">t</emphasis> = –0.82</item>
     <item><emphasis effect="italics">p</emphasis>-value: 0.2061</item>
-    <item>Check student’s solution.</item>
+    <item>Answers may vary.</item>
     <item>
     <list id="fs-idp3469344" list-type="enumerated" number-style="lower-roman">
       <item>Alpha: 0.05</item>
@@ -1329,7 +1324,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 
  <exercise id="fs-idm62206688">
 <problem id="fs-idm62206432">
-<para id="fs-idm105723088">Marketing companies have collected data implying that teenage girls use more ring tones on their cellular phones than teenage boys do. In one particular study of 40 randomly chosen teenage girls and boys (20 of each) with cellular phones, the mean number of ring tones for the girls was 3.2 with a standard deviation of 1.5. The mean for the boys was 1.7 with a standard deviation of 0.8. Conduct a hypothesis test to determine if the means are approximately the same or if the girls’ mean is higher than the boys’ mean.</para>
+<para id="fs-idm105723088">Marketing companies have collected data implying that teenage girls use more social media apps on their smartphones than teenage boys do. In one particular study of 40 randomly chosen teenage girls and boys (20 of each) with smartphones, the mean number of social media apps for the girls was 3.2 with a standard deviation of 1.5. The mean for the boys was 1.7 with a standard deviation of 0.8. Conduct a hypothesis test to determine if the means are approximately the same or if the girls’ mean is higher than the boys’ mean.</para>
 </problem>
   </exercise>
 
@@ -1365,7 +1360,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
       <item><emphasis effect="italics">t</emphasis><sub>20.32</sub></item>
       <item>test statistic: –4.70</item>
       <item><emphasis effect="italics">p</emphasis>-value: 0.0001</item>
-      <item>Check student’s solution. </item>
+      <item>Answers may vary.</item>
       <item>
         <list id="fs-idp173433584" list-type="enumerated" number-style="lower-roman">
           <item>Alpha: 0.05</item>
@@ -1393,7 +1388,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
       <item><emphasis effect="italics">t</emphasis><sub>40.94</sub></item>
       <item>test statistic: –5.08</item>
       <item><emphasis effect="italics">p</emphasis>-value: zero</item>
-      <item>Check student’s solution.</item>
+      <item>Answers may vary.</item>
       <item>
       <list id="fs-idp77676896" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
         <item>Decision: Cannot accept the null hypothesis.</item>
@@ -1473,7 +1468,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 </exercise>
 
 <exercise id="fs-idm108118736"><problem id="fs-idm122622576">
-<para id="eip-idp273849808">Suppose a statistics instructor believes that there is no significant difference between the mean class scores of statistics day students on Exam 2 and statistics night students on Exam 2. She takes random samples from each of the populations. The mean and standard deviation for 35 statistics day students were 75.86 and 16.91. The mean and standard deviation for 37 statistics night students were 75.41 and 19.73. The “day” subscript refers to the statistics day students. The “night” subscript refers to the statistics night students. A concluding statement is:</para><list id="fs-idm122621936" list-type="enumerated" number-style="lower-alpha">
+<para id="eip-idp273849808">Suppose a statistics instructor believes that there is no significant difference between the mean class scores of statistics day students on Exam 2 and statistics night students on Exam 2. They take random samples from each of the populations. The mean and standard deviation for 35 statistics day students were 75.86 and 16.91. The mean and standard deviation for 37 statistics night students were 75.41 and 19.73. The “day” subscript refers to the statistics day students. The “night” subscript refers to the statistics night students. A concluding statement is:</para><list id="fs-idm122621936" list-type="enumerated" number-style="lower-alpha">
     <item>There is sufficient evidence to conclude that  statistics night students' mean on Exam 2 is better than the statistics day  students' mean on Exam 2.</item>
     <item>There is insufficient evidence to conclude that the statistics day  students' mean on Exam 2 is better than the statistics night students' mean on Exam 2.</item>
     <item>There is insufficient evidence to conclude that there is a significant difference between the means of the statistics day students and night students on Exam 2.</item>
@@ -1507,7 +1502,7 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
 
     <exercise id="eip-17">
       <problem id="eip-334">
-        <para id="eip-853">Suppose a statistics instructor believes that there is no significant difference between the mean class scores of statistics day students on Exam 2 and statistics night students on Exam 2. She takes random samples from each of the populations. The mean and standard deviation for 35 statistics day students were 75.86 and 16.91, respectively. The mean and standard deviation for 37 statistics night students were 75.41 and 19.73. The “day” subscript refers to the statistics day students. The “night” subscript refers to the statistics night students. An appropriate alternative hypothesis for the hypothesis test is:</para>
+        <para id="eip-853">Suppose a statistics instructor believes that there is no significant difference between the mean class scores of statistics day students on Exam 2 and statistics night students on Exam 2. They take random samples from each of the populations. The mean and standard deviation for 35 statistics day students were 75.86 and 16.91, respectively. The mean and standard deviation for 37 statistics night students were 75.41 and 19.73. The “day” subscript refers to the statistics day students. The “night” subscript refers to the statistics night students. An appropriate alternative hypothesis for the hypothesis test is:</para>
 
         <list id="eip-idp47881856" list-type="enumerated" number-style="lower-alpha">
           <item><emphasis effect="italics">μ</emphasis><sub>day</sub> > <emphasis effect="italics">μ</emphasis><sub>night</sub></item>

@@ -12,8 +12,8 @@
 <item>Sample sizes are often small.</item>
 <item>Two measurements (samples) are drawn from the same pair of individuals or objects.</item>
 <item>Differences are calculated from the matched or paired samples.</item>
-<item>The differences form the sample that is used for the hypothesis test.</item>
-<item>Either the matched pairs have differences that come from a population that is normal or the number of differences is sufficiently large so that distribution of the sample mean of differences is approximately normal.</item>
+<item>The differences the sample that is used for the hypothesis test.</item>
+<item>Either the matched pairs have differences that come from a population that is normal or the number of differences is sufficiently large so that distribution of the sample mean of differences is approximately normal, as has been the case using the Central Limit Theorem.</item>
 </list><para id="eip-8888">In a hypothesis test for matched or paired samples, subjects are matched in pairs and differences are calculated. The differences are the data. The population mean for the differences, <emphasis effect="italics">μ<sub>d</sub></emphasis>, is then tested using a Student's-t test for a single population mean with <emphasis effect="italics">n</emphasis> – 1 degrees of freedom, where <emphasis effect="italics">n</emphasis> is the number of differences, that is, the number of pairs not the number of observations.</para><equation class="unnumbered" id="eip-467"><label/><title>The null and alternative hypotheses for this test are:</title><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo> 
 <m:msub><m:mi>µ</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:mn>0</m:mn>
@@ -65,7 +65,7 @@
 </m:mrow>
 </m:math></equation><example id="eip-825"><exercise id="eip-id4058037">
 <problem id="eip-id4058042">
-<para id="eip-id4058073">A company has developed a training program for its entering employees because they have become concerned with the results of the six-month employee review. They hope that the training program can result in better six-month reviews. Each trainee constitutes a “pair”, the entering score the employee received when first entering the firm and the score given at the six-month review. The difference in the two scores were calculated for each employee and the means for before and after the training program was calculated. The sample mean before the training program was 20.4 and the sample mean after the training program was 23.9. The standard deviation of the differences in the two scores across the 20 employees was 3.8 points. Test at the 10% significance level the null hypothesis that the two population means are equal against the alternative that the training program helps improve the employees’ scores.   </para></problem>
+<para id="eip-id4058073">A company has developed a training program for its entering employees because management has become concerned with the results of the six-month employee review. They hope that the training program can result in better six-month reviews. Each trainee constitutes a “pair”, the entering score the employee received when first entering the firm and the score given at the six-month review. The difference in the two scores were calculated for each employee and the means for before and after the training program was calculated. The sample mean before the training program was 20.4 and the sample mean after the training program was 23.9. The standard deviation of the differences in the two scores across the 20 employees was 3.8 points. Test at the 10% significance level the null hypothesis that the two population means are equal against the alternative that the training program helps improve the employees’ scores.   </para></problem>
 <solution id="eip-id4058108">
 <para id="eip-id4058113"><emphasis/>The first step is to identify this as a two sample case: before the training and after the training. This differentiates this problem from simple one sample issues. Second, we determine that the two samples are "paired." Each observation in the first sample has a paired observation in the second sample. This information tells us that the null and alternative hypotheses should be:
 <equation id="eip-id1171814090314">
@@ -102,11 +102,11 @@ Because the experiment was conducted as a matched paired sample rather than simp
 </equation>
 In order to solve this equation, the individual scores, pre-training course and post-training course need to be used to calculate the individual differences. These scores are then averaged and the average difference is calculated:
 <equation id="eip-id2017645">
-<m:math><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mn>2</m:mn></m:msub></m:math>
+<m:math><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>2</m:mn></m:msub></m:math>
 </equation>
 From these differences we can calculate the standard deviation across the individual differences:
 <equation class="unnumbered" id="eip-id4727950"><label/><m:math><m:msub><m:mi>S</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo>
-<m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mo>(</m:mo><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup></m:mrow>
+<m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mo>(</m:mo><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup></m:mrow>
 <m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac>
 <m:mtext> where </m:mtext><m:mspace width="0.2em"/>
 <m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>x</m:mi><m:mi>1i</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>x</m:mi><m:mi>2i</m:mi></m:msub></m:math>
@@ -380,9 +380,9 @@ Verify these values.</para><para id="element-700">Let <m:math>
 
 <figure id="hyptest22_samp2"><media id="id11476943" alt="Normal distribution curve with values of 0 and 21.3. A vertical upward line extends from 21.3 to the curve and the p-value is indicated in the area to the right of this value.">
 <image src="../../media/fig-ch10_01_12n.jpg" mime-type="image/jpg" width="380"/></media>
-</figure><para id="element-147"><emphasis>Calculate the test statistic look up the critical value:</emphasis> Critical value of the test statistic is 0.91. The critical value of the student's t at 5% level of significance and 3 degrees of freedom is 2.353.</para><para id="element-931"><emphasis>Decision:</emphasis> If the level of significance is 5%, we cannot reject the null hypothesis, because the calculated value of the test statistic is not in the tail.</para><para id="element-802"><emphasis>What is the conclusion?</emphasis></para>
+</figure><para id="element-147"><emphasis>Calculate the test statistic look up the critical value:</emphasis> The calculated value of the test statistic is 0.91. The critical value of the student's t at 5% level of significance and 3 degrees of freedom is 2.353.</para><para id="element-931"><emphasis>Decision:</emphasis> If the level of significance is 5%, we cannot reject the null hypothesis, because the calculated value of the test statistic is not in the tail.</para><para id="element-802"><emphasis>What is the conclusion?</emphasis></para>
 
-<para id="e106soln">At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class helped to make the players stronger, on average.</para>
+<para id="e106soln">At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class helped to make the players stronger, on average. Be sure to note in your conclusion that a sample size of only 4 leaves a degree of freedom of only 3 and sets the critical value very large. In short, sample size so small cannot result in always meaningful conclusions.</para>
 </example>
 
 <section id="fs-idp51883760" class="summary">
@@ -722,9 +722,9 @@ Verify these values.</para><para id="element-700">Let <m:math>
 </solution>
 </exercise>
 
-<para id="eip-637"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> A new AIDS prevention drug was tried on a group of 224 HIV positive patients. Forty-five patients developed AIDS after four years. In a control group of 224 HIV positive patients, 68 developed AIDS after four years. We want to test whether the method of treatment reduces the proportion of patients that develop AIDS after four years or if the proportions of the treated group and the untreated group stay the same.</para>
+<exercise id="element-719"><problem id="id17683497"><para id="eip-637">A new heart disease prevention drug was tried on a group of 224 patients. Forty-five patients developed heart disease after four years. In a control group of 224 patients, 68 developed heart disease after four years. We want to test whether the method of treatment reduces the proportion of patients that develop heart disease after four years or if the proportions of the treated group and the untreated group stay the same.</para>
 
-<para id="eip-793">Let the subscript <emphasis effect="italics">t</emphasis> = treated patient and <emphasis effect="italics">ut</emphasis> = untreated patient.</para><exercise id="element-719"><problem id="id17683497">
+<para id="eip-793">Let the subscript <emphasis effect="italics">t</emphasis> = treated patient and <emphasis effect="italics">ut</emphasis> = untreated patient.</para>
 <para id="element-505">The appropriate hypotheses are:</para>
 <list id="element-722" list-type="enumerated" number-style="lower-alpha">
 <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> &lt; <emphasis effect="italics">p<sub>ut</sub></emphasis> and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> ≥ <emphasis effect="italics">p<sub>ut</sub></emphasis></item>
@@ -736,7 +736,7 @@ Verify these values.</para><para id="element-700">Let <m:math>
 </problem>
 </exercise>
 
-<para id="eip-338"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> An experiment is conducted to show that blood pressure can be consciously reduced in people trained in a “biofeedback exercise program.” Six subjects were randomly selected and blood pressure measurements were recorded before and after the training. The difference between blood pressures was calculated (after - before) producing the following results: <m:math>
+<exercise id="element-38"><problem id="id4488558"><para id="eip-338">An experiment is conducted to show that blood pressure can be consciously reduced in people trained in a “biofeedback exercise program.” Six subjects were randomly selected and blood pressure measurements were recorded before and after the training. The difference between blood pressures was calculated (after - before) producing the following results: <m:math>
 <m:mrow>
 <m:msub>
 <m:mover accent="true">
@@ -748,7 +748,7 @@ Verify these values.</para><para id="element-700">Let <m:math>
 </m:msub>
 
 </m:mrow>
-</m:math> = −10.2 <emphasis effect="italics">s<sub>d</sub></emphasis> = 8.4. Using the data, test the hypothesis that the blood pressure has decreased after the training.</para><exercise id="element-38"><problem id="id4488558">
+</m:math> = −10.2 <emphasis effect="italics">s<sub>d</sub></emphasis> = 8.4. Using the data, test the hypothesis that the blood pressure has decreased after the training.</para>
 <para id="element-865">The distribution for the test is:</para>
 <list id="element-492" list-type="enumerated" number-style="lower-alpha">
 <item><emphasis effect="italics">t<sub>5</sub></emphasis></item>
@@ -776,7 +776,7 @@ Verify these values.</para><para id="element-700">Let <m:math>
 
 <exercise id="element-841">
 <problem id="id4419960">
-<para id="eip-961">A golf instructor is interested in determining if her new technique for improving players’ golf scores is effective. She takes four new students. She records their 18-hole scores before learning the technique and then after having taken her class. She conducts a hypothesis test. The data are as follows.</para>
+<para id="eip-961">A golf instructor is interested in determining if their new technique for improving players’ golf scores is effective. The instructor takes four new students and records their 18-hole scores before learning the technique and then after having taken the class. The instructor conducts a hypothesis test. The data are as follows.</para>
 <table id="eip-526" summary="...">
 <tgroup cols="5">
 <thead>
@@ -819,12 +819,12 @@ The correct decision is:
 
 <exercise id="fs-idp31663264">
 <problem id="fs-idp31663520">
-<para id="fs-idm44180368">A local cancer support group believes that the estimate for new female breast cancer cases in the south is higher in 2013 than in 2012.  The group compared the estimates of new female breast cancer cases by southern state in 2012 and in 2013.  The results are in <link target-id="fs-idp20856160"/>.</para><table id="fs-idp20856160" summary=".">
+<para id="fs-idm44180368">A local cancer support group believes that the estimate for new female breast cancer cases in the south is higher in Year 2 than in Year 1.  The group compared the estimates of new female breast cancer cases by southern state in Year 1 and in Year 2. The results are in <link target-id="fs-idp20856160"/>.</para><table id="fs-idp20856160" summary=".">
 <tgroup cols="3"><thead>
 <row>
 <entry>Southern states</entry>
-<entry>2012</entry>
-<entry>2013</entry>
+<entry>Year 1</entry>
+<entry>Year 2</entry>
 </row>
 </thead>
 <tbody>
@@ -911,11 +911,11 @@ The correct decision is:
 </m:math></para>
 <para id="fs-idp45658064">Distribution: <emphasis effect="italics">t</emphasis><sub>12</sub></para>
 <para id="fs-idp85679904"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ</emphasis><emphasis effect="italics"><sub>d</sub></emphasis> = 0   <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ</emphasis><emphasis effect="italics"><sub>d</sub></emphasis> > 0</para>
-<para id="fs-idm70033392">The mean of the differences of new female breast cancer cases in the south between 2013 and 2012 is greater than zero. The estimate for new female breast cancer cases in the south is higher in 2013 than in 2012.</para>
+<para id="fs-idm70033392">The mean of the differences of new female breast cancer cases in the south between Year 2 and Year 1 is greater than zero. The estimate for new female breast cancer cases in the south is higher in Year 2 than in Year 1.</para>
 <para id="fs-idp16018656">Graph: right-tailed</para>
 <para id="fs-idp14099296"><emphasis effect="italics">p</emphasis>-value: 0.0004</para>
 <para id="fs-idp11877696">Decision: Cannot accept <emphasis effect="italics">H<sub>0</sub></emphasis></para>
-<para id="fs-idp84781280">Conclusion: At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that there was a higher estimate of new female breast cancer cases in 2013 than in 2012.</para>
+<para id="fs-idp84781280">Conclusion: At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that there was a higher estimate of new female breast cancer cases in Year 2 than in Year 1.</para>
 </solution>
 </exercise>
 
@@ -990,13 +990,13 @@ The correct decision is:
 
 <exercise id="fs-idp111440192">
 <problem id="fs-idp111440448">
-<para id="fs-idp14986256">A politician asked his staff to determine whether the underemployment rate in the northeast decreased from 2011 to 2012.  The results are in <link target-id="fs-idp10131504"/>.</para>
+<para id="fs-idp14986256">A politician asked their staff to determine whether the underemployment rate in the northeast decreased year over year. The results are in <link target-id="fs-idp10131504"/>.</para>
 <table id="fs-idp10131504" summary=".">
 <tgroup cols="3"><thead>
 <row>
 <entry>Northeastern states</entry>
-<entry>2011</entry>
-<entry>2012</entry>
+<entry>Year 1</entry>
+<entry>Year 2</entry>
 </row>
 </thead>
 <tbody>
@@ -1085,12 +1085,12 @@ The correct decision is:
 </m:mrow>
 </m:math></para>
 <para id="fs-idm32460304">Distribution: <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> = 0 <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> &lt; 0</para>
-<para id="fs-idp91580896">The mean of the differences of the rate of underemployment in the northeastern states between 2012 and 2011 is less than zero.  The underemployment rate went down from 2011 to 2012.</para>
+<para id="fs-idp91580896">The mean of the differences of the rate of underemployment in the northeastern states between Year 2 and Year 1 is less than zero. The underemployment rate went down from Year 1 to Year 2.</para>
 <para id="fs-idp91581472">Graph: left-tailed.
 </para>
 
 <para id="fs-idm57153456">Decision: Cannot reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</para>
-<para id="fs-idp36520624">Conclusion: At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that there was a decrease in the underemployment rates of the northeastern states from 2011 to 2012.</para>
+<para id="fs-idp36520624">Conclusion: At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that there was a decrease in the underemployment rates of the northeastern states from Year 1 to Year 2.</para>
 </solution>
 </exercise>
 
@@ -1124,7 +1124,7 @@ The correct decision is:
 
 <exercise id="fs-idm66474352">
 <problem id="fs-idm151765440">
-<para id="fs-idm151765184">The mean number of English courses taken in a two–year time period by male and female college students is believed to be about the same. An experiment is conducted and data are collected from nine males and 16 females.</para>
+<para id="fs-idm151765184">The mean number of English courses taken in a two–year time period by men and women college students is believed to be about the same. An experiment is conducted and data are collected from nine men and 16 women.</para>
 </problem>
 </exercise>
 <exercise id="fs-idm53146784">
@@ -1274,7 +1274,7 @@ The correct decision is:
 
 <exercise id="fs-idp144471136">
 <problem id="fs-idp144471392">
-<para id="eip-407">A golf instructor is interested in determining if her new technique for improving players’ golf scores is effective. She takes four (4) new students. She records their 18-hole scores before learning the technique and then after having taken her class. She conducts a hypothesis test. The data are as <link target-id="fs-idp136885584"/>.</para><table id="fs-idp136885584" summary="table question">
+<para id="eip-407">A golf instructor is interested in determining if a new technique for improving players’ golf scores is effective. The instructor takes four (4) new students and records their 18-hole scores before learning the technique and then after having taken the class. The instructor conducts a hypothesis test. The data are as <link target-id="fs-idp136885584"/>.</para><table id="fs-idp136885584" summary="table question">
 <tgroup cols="5"><thead>
 <row>
 <entry/>
