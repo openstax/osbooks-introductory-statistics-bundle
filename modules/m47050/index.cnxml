@@ -845,6 +845,96 @@ second sample mean, <code>1</code> for Sx2, and <code>16</code> for n2. Arrow do
 </solution>
 </exercise>
 </example>
+<note class="statistics try" id="note-00001">
+  <label/><title>Try It</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001">
+  <para id="para-00001">Two professors, A and B, teach classes on the same subjects. Scores of 10 students from each class are selected randomly. The final exam scores of the students are as follows:</para>
+  <para id="para-00002"><title>Professor A:</title></para>
+  <table summary="" id="table-00001">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center">97</entry>
+  <entry align="center">62</entry>
+  <entry align="center">73</entry>
+  <entry align="center">58</entry>
+  <entry align="center">84</entry>
+  </row>
+  <row>
+  <entry align="center">74</entry>
+  <entry align="center">66</entry>
+  <entry align="center">93</entry>
+  <entry align="center">73</entry>
+  <entry align="center">85</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00003"><title>Professor B:</title></para>
+  <table summary="" id="table-00002">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center">85</entry>
+  <entry align="center">64</entry>
+  <entry align="center">74</entry>
+  <entry align="center">55</entry>
+  <entry align="center">76</entry>
+  </row>
+  <row>
+  <entry align="center">67</entry>
+  <entry align="center">72</entry>
+  <entry align="center">84</entry>
+  <entry align="center">71</entry>
+  <entry align="center">98</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00004">Professor A says that the mean score of their class is more than the mean of professor B’s class. Is professor A correct? Test at a 5% significance level. Answer the following questions:</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00001">
+  <item>Is this a test of two means or two proportions?</item>
+  <item>Are the population standard deviations known or unknown?</item>
+  <item>Which distribution do you use to perform the test?</item>
+  <item>What is the random variable?</item>
+  <item>What are the null and alternative hypotheses? Write the null and alternative hypotheses in words and in symbols.</item>
+  <item>Is this test right-, left-, or two-tailed?</item>
+  <item>What is the <emphasis effect="italics">p</emphasis>-value?</item>
+  <item>Do you reject or not reject the null hypothesis?</item>
+  <item>At the ___ level of significance, from the sample data, there ___ (is/is not) sufficient evidence to conclude that ___.</item>
+  </list>
+  </problem>
+  <solution id="sol-00001">
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+  <item>two means</item>
+  <item>unknown</item>
+  <item>Student’s <emphasis effect="italics">t</emphasis></item>
+  <item><m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>2</m:mn></m:msub></m:math></item>
+  <item><list list-type="enumerated" number-style="arabic" id="list-00003">
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>Null hypothesis: the means of final exam scores are equal for both professors.</item>
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub></m:math> Alternative hypothesis: the mean of final exam scores for class of professor B is less than mean of final exam scores for class of professor A.</item>
+  </list></item>
+  <item>left-tailed</item>
+  <item><emphasis effect="italics">p</emphasis>-value = 0.03</item>
+  <item>Reject the null hypothesis.</item>
+  <item>Professor A is correct. The evidence shows that the mean of final exam scores of the class of professor A is more than that of the class of professor B.<newline/>At the 5% level of significance, from the sample data, there is (is/is not) sufficient evidence to conclude that the mean of final exam scores of the class of professor A is more than that of the class of professor B.</item>
+  </list>
+  </solution>
+  </exercise>
+  </note>
 <para id="eip-358"><title>Cohen's Standards for Small, Medium, and Large Effect Sizes</title><term id="term-00004">Cohen's <emphasis effect="italics">d</emphasis></term> is a measure of effect size based on the differences between two means. Cohen’s <emphasis effect="italics">d</emphasis>, named for United States statistician Jacob Cohen, measures the relative strength of the differences between the means of two populations based on sample data. The calculated value of effect size is then compared to Cohen’s standards of small, medium, and large effect sizes.</para><table id="fs-idp93235584" summary="">
 <title>Cohen's Standard Effect Sizes</title>
 <tgroup cols="2">
@@ -967,6 +1057,20 @@ second sample mean, <code>1</code> for Sx2, and <code>16</code> for n2. Arrow do
 </exercise>
 </example>
 
+<note class="statistics try" id="note-00002">
+  <label/><title>Try It</title>
+  <exercise id="exer-00002">
+  <problem id="prob-00002">
+  <para id="para-00005">Calculate Cohen’s <emphasis effect="italics">d</emphasis> for Try It 10.4. Is the size of the effect small, medium, or large? Explain what the size of the effect means for this problem.</para>
+  </problem>
+  <solution id="sol-00002">
+  <para id="para-00006"><m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>5</m:mn></m:math> <m:math><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>2</m:mn></m:math> <m:math><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>15</m:mn></m:math></para>
+  <para id="para-00007"><m:math><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math> <m:math><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8</m:mn></m:math> <m:math><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>20</m:mn></m:math></para>
+  <para id="para-00008"><emphasis effect="italics">d</emphasis> = 0.49</para>
+  <para id="para-00009">The effect is medium because 0.49 is very close to Cohen’s value of 0.5 for medium effect size. The size of the differences of the means for the two companies is small, indicating that there is not a significant difference between them.</para>
+  </solution>
+  </exercise>
+  </note>
 <example id="fs-idm112602048">
 <exercise id="fs-idm163588752">
 <problem id="fs-idm118829104"><para id="fs-idm174261728">Calculate Cohen’s <emphasis effect="italics">d</emphasis> for <link target-id="fs-idm22935408"/>. Is the size of the effect small, medium or large? Explain what the size of the effect means for this problem.</para></problem>

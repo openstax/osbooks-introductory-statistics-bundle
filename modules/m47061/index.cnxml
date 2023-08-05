@@ -536,7 +536,26 @@ significance.</para>
 </solution>
 </exercise>
 </example>
-
+<note class="statistics try" id="note-00001">
+  <label/><title>Try It</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001">
+  <para id="para-00001">The average age of 10 professors selected randomly in university A is 46.672 with a standard deviation of 8.53. The average age of 10 professors selected randomly in university B is 47.531 with a standard deviation of 7.83.</para>
+  <para id="para-00002">Does the data indicate that university A has older professors than university B, on average? Test at a 5% level of significance.</para>
+  </problem>
+  <solution id="sol-00001">
+  <para id="para-00003">The total sample size is 10 + 10 = 20., which is greater than 10, so we can use the Student’s <emphasis effect="italics">t</emphasis>-distribution.</para>
+  <para id="para-00004">The random variable is <m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>2</m:mn></m:msub></m:math> = difference between the mean age of universities A and B.</para>
+  <para id="para-00005"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>  <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math></para>
+  <para id="para-00006"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>></m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>  <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math></para>
+  <para id="para-00007">The phrase “older than” translates as a “>” symbol and goes into <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. Therefore, this is a right-tailed test.</para>
+  <para id="para-00008">The distribution is: <m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>2</m:mn></m:msub><m:mo>~</m:mo><m:mi>N</m:mi><m:mfenced open="[" close="]"><m:mrow><m:mn>0</m:mn><m:mo>,</m:mo><m:msqrt><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>8</m:mn><m:mo>.</m:mo><m:mn>53</m:mn><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>7</m:mn><m:mo>.</m:mo><m:mn>83</m:mn><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup></m:mrow><m:mn>10</m:mn></m:mfrac></m:msqrt></m:mrow></m:mfenced></m:math></para>
+  <para id="para-00009">The mean for the normal distribution is 0 since <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math> and<m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math>.</para>
+  <para id="para-00010">The <emphasis effect="italics">p</emphasis>-value is obtained as 0.4258. Since alpha is less than the <emphasis effect="italics">p</emphasis>-value, do not reject the <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para>
+  <para id="para-00011">At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the mean age of professors in university A is more than the mean age of professors in university B.</para>
+  </solution>
+  </exercise>
+  </note>
 
 <section id="eip-752" class="references">
 <title>References</title>
