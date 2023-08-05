@@ -8,7 +8,7 @@
 </metadata>
 
 <content>
-<para id="eip-8888">The comparison of two independent population means is very common and provides a way to test the hypothesis that the two groups differ from each other. Is the night shift less productive than the day shift, are the rates of return from fixed asset investments different from those from common stock investments, and so on? An observed difference between two sample means depends on both the means and the sample standard deviations. Very different means can occur by chance if there is great variation among the individual samples. The test statistic will have to account for this fact. The test comparing two independent population means with unknown and possibly unequal population standard deviations is called the Aspin-Welch t-test.  The degrees of freedom formula we will see later was developed by Aspin-Welch.</para><para id="eip-808">When we developed the hypothesis test for the mean and proportions we began with the Central Limit Theorem. We recognized that a sample mean came from a distribution of sample means, and sample proportions came from the sampling distribution of sample proportions. This made our sample parameters, the sample means and sample proportions, into random variables. It was important for us to know the distribution that these random variables came from. The Central Limit Theorem gave us the answer: the normal distribution. Our Z and t statistics came from this theorem. This provided us with the solution to our question of how to measure the probability that a sample mean came from a distribution with a particular hypothesized value of the mean or proportion. In both cases that was the question: what is the probability that the mean (or proportion) from our sample data came from a population distribution with the hypothesized value we are interested in? </para><para id="eip-725">Now we are interested in whether or not two samples have the same mean. Our question has not changed: Do these two samples come from the same population distribution? To approach this problem we create a new random variable. We recognize that we have two sample means, one from each set of data, and thus we have two random variables coming from two unknown distributions. To solve the problem we create a new random variable, the difference between the sample means. This new random variable also has a distribution and, again, the Central Limit Theorem tells us that this new distribution is normally distributed, regardless of the underlying distributions of the original data. A graph may help to understand this concept.  </para><figure id="fs-id1166777206486"><media id="fs-id1166779043303" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch10_01_01m.jpg" width="500"/></media></figure><para id="eip-942">Pictured are two distributions of data, X<sub>1</sub> and X<sub>2</sub>, with unknown means and standard deviations. The second panel shows the sampling distribution of the newly created random variable (<m:math><m:msub><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:mrow><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:math>). This distribution is the theoretical distribution of many sample means from population 1 minus sample means from population 2. The Central Limit Theorem tells us that this theoretical sampling distribution of differences in sample means is normally distributed, regardless of the distribution of the actual population data shown in the top panel. Because the sampling distribution is normally distributed, we can develop a standardizing formula and calculate probabilities from the standard normal distribution in the bottom panel, the Z distribution. We have seen this same analysis before in Chapter 7 <link document="m54534" target-id="fs-id7367289"> Figure 7.2 </link>.</para><para id="eip-83">The Central Limit Theorem, as before, provides us with the standard deviation of the sampling distribution, and further, that the expected value of the mean of the distribution of differences in sample means is equal to the differences in the population means.   Mathematically this can be stated:</para><equation class="unnumbered" id="eip-413"><label/><m:math>
+<para id="eip-8888">The comparison of two independent population means is very common and provides a way to test the hypothesis that the two groups differ from each other. Is the night shift less productive than the day shift, are the rates of return from fixed asset investments different from those from common stock investments, and so on? An observed difference between two sample means depends on both the means and the sample standard deviations. Very different means can occur by chance if there is great variation among the individual samples. The test statistic will have to account for this fact. The test comparing two independent population means with unknown and possibly unequal population standard deviations is called the Aspin-Welch t-test.  The degrees of freedom formula we will see later was developed by Aspin-Welch.</para><para id="eip-808">When we developed the hypothesis test for the mean and proportions we began with the Central Limit Theorem. We recognized that a sample mean came from a distribution of sample means, and sample proportions came from the sampling distribution of sample proportions. This made our sample parameters, the sample means and sample proportions, into random variables. It was important for us to know the distribution that these random variables came from. The Central Limit Theorem gave us the answer: the normal distribution. Our Z and t statistics came from this theorem. This provided us with the solution to our question of how to measure the probability that a sample mean came from a distribution with a particular hypothesized value of the mean or proportion. In both cases that was the question: what is the probability that the mean (or proportion) from our sample data came from a population distribution with the hypothesized value we are interested in? </para><para id="eip-725">Now we are interested in whether or not two samples have the same mean. Our question has not changed: Do these two samples come from the same population distribution? To approach this problem we create a new random variable. We recognize that we have two sample means, one from each set of data, and thus we have two random variables coming from two unknown distributions. To solve the problem we create a new random variable, the difference between the sample means. This new random variable also has a distribution and, again, the Central Limit Theorem tells us that this new distribution is normally distributed, regardless of the underlying distributions of the original data. A graph may help to understand this concept.  </para><figure id="fs-id1166777206486"><media id="fs-id1166779043303" alt="..."><image mime-type="image/png" src="../../media/fig-ch10_01_01n.png" width="500"/></media></figure><para id="eip-942">Pictured are two distributions of data, X<sub>1</sub> and X<sub>2</sub>, with unknown means and standard deviations. The second panel shows the sampling distribution of the newly created random variable (<m:math><m:msub><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:mrow><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:mrow><m:mn>2</m:mn></m:msub></m:math>). This distribution is the theoretical distribution of many sample means from population 1 minus sample means from population 2. The Central Limit Theorem tells us that this theoretical sampling distribution of differences in sample means is normally distributed, regardless of the distribution of the actual population data shown in the top panel. Because the sampling distribution is normally distributed, we can develop a standardizing formula and calculate probabilities from the standard normal distribution in the bottom panel, the Z distribution. We have seen this same analysis before in Chapter 7 <link document="m54534" target-id="fs-id7367289"> Figure 7.2 </link>.</para><para id="eip-83">The Central Limit Theorem, as before, provides us with the standard deviation of the sampling distribution, and further, that the expected value of the mean of the distribution of differences in sample means is equal to the differences in the population means.   Mathematically this can be stated:</para><equation class="unnumbered" id="eip-413"><label/><m:math>
 <m:mi>E</m:mi>
 <m:mo>(</m:mo>
 <m:msub><m:mi>µ</m:mi><m:mrow><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mn>1</m:mn></m:msub></m:mrow></m:msub>
@@ -157,10 +157,7 @@
   <item><emphasis effect="italics">σ</emphasis><sub>1</sub> and <emphasis effect="italics">σ</emphasis><sub>2</sub> are the unknown population standard deviations.</item>
 <item><m:math>
   <m:msub>
-   <m:mover accent="true">
-    <m:mi>x</m:mi>
-    <m:mo>¯</m:mo>
-   </m:mover>
+    <m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 
    <m:mn>1</m:mn>
   </m:msub>
@@ -168,16 +165,18 @@
 and
 <m:math>
   <m:msub>
-   <m:mover accent="true">
-    <m:mi>x</m:mi>
-    <m:mo>¯</m:mo>
-   </m:mover>
+    <m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover>
 
    <m:mn>2</m:mn>
   </m:msub>
 </m:math>
 are the sample means. <emphasis effect="italics">μ</emphasis><sub>1</sub> and <emphasis effect="italics">μ</emphasis><sub>2</sub> are the unknown population means.</item>
-</list></para><para id="element-256">The number of <term id="term-00002">degrees of freedom (<emphasis effect="italics">df</emphasis>)</term> requires a somewhat complicated calculation. The <emphasis effect="italics">df</emphasis> are not always a whole number. The test statistic above is approximated by the Student's <emphasis effect="italics">t</emphasis>-distribution with <emphasis effect="italics">df</emphasis> as follows:
+</list></para>
+<para id="para-00005"><m:math><m:mi>δ</m:mi></m:math> = the hypothesized differences between the two populations means.</para>
+<para id="para-00006">Substituting the sample variances of the two sample groups when the populations variances are unknown and the sample size is large, the <emphasis effect="italic">t</emphasis>-distribution will provide good estimates using degrees of freedom:</para>
+<para id="para-00007"><m:math><m:mi>ν</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mi>n</m:mi><m:mn>1</m:mn><m:mo> </m:mo><m:mo>+</m:mo><m:mo> </m:mo><m:mi>n</m:mi><m:mn>2</m:mn><m:mo> </m:mo><m:mo>–</m:mo><m:mo> </m:mo><m:mn>2</m:mn></m:math>.</para>
+<para id="para-00008">Large in this case would be greater than 100 observations from the combined two groups (<m:math><m:mi>n</m:mi><m:mn>1</m:mn><m:mo> </m:mo><m:mo>+</m:mo><m:mo> </m:mo><m:mi>n</m:mi><m:mn>2</m:mn></m:math>) although other statisticians suggest that the definition of large is greater than 30 observations for each of the two groups.</para>
+<para id="element-256">The number of <term id="term-00002">degrees of freedom (<emphasis effect="italics">df</emphasis>)</term> requires a somewhat complicated calculation. The <emphasis effect="italics">df</emphasis> are not always a whole number. The test statistic above is approximated by the Student's <emphasis effect="italics">t</emphasis>-distribution with <emphasis effect="italics">df</emphasis> as follows:
 <equation class="unnumbered" id="eq_df"><label/><title>The standard error is:</title><m:math display="block">
  <m:mrow>
   <m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mfrac>
@@ -332,7 +331,10 @@ are the sample means. <emphasis effect="italics">μ</emphasis><sub>1</sub> and <
   </m:mfrac>
 
  </m:mrow>
-</m:math></equation></para><para id="element-316">When both sample sizes <emphasis effect="italics">n</emphasis><sub>1</sub> and <emphasis effect="italics">n</emphasis><sub>2</sub> are 30 or larger, the Student's <emphasis effect="italics">t</emphasis> approximation is very good. If each sample has more than 30 observations.</para><para id="eip-617">The format of the sampling distribution, differences in sample means,  specifies that the format of the null and alternative hypothesis is:</para>
+</m:math></equation></para><para id="element-316">When both sample sizes <emphasis effect="italics">n</emphasis><sub>1</sub> and <emphasis effect="italics">n</emphasis><sub>2</sub> are 30 or larger, the Student's <emphasis effect="italics">t</emphasis> approximation is very good. If each sample has more than 30 observations then the degrees of freedom can be calculated as <m:math><m:mi>n</m:mi><m:mn>1</m:mn><m:mo> </m:mo><m:mo>+</m:mo><m:mo> </m:mo><m:mi>n</m:mi><m:mn>2</m:mn><m:mo> </m:mo><m:mo>–</m:mo><m:mo> </m:mo><m:mn>2</m:mn></m:math>.</para>
+
+
+<para id="eip-617">The format of the sampling distribution, differences in sample means,  specifies that the format of the null and alternative hypothesis is:</para>
 <equation class="unnumbered" id="eq_df1"><label/><title>The test hypothesis for differences between two means</title><m:math display="block">
 <m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo>
@@ -432,7 +434,7 @@ are the sample means. <emphasis effect="italics">μ</emphasis><sub>1</sub> and <
 </para><para id="element-529"><emphasis>Distribution for the test:</emphasis>
 Use <emphasis effect="italics">t<sub>df</sub></emphasis> where <emphasis effect="italics">df</emphasis> is calculated using the <emphasis effect="italics">df</emphasis> formula for independent groups, two population means above. Using a calculator, <emphasis effect="italics">df</emphasis> is approximately 18.8462. </para><para id="element-90"><emphasis>Graph:</emphasis></para>
 <para id="element-210"><figure id="hyptest22_cmp1"><media id="id18963169" alt="This is a normal distribution curve representing the difference in the average amount of time girls and boys play sports all day. The mean is equal to zero, and the values -1.2, 0, and 1.2 are labeled on the horizontal axis. Two vertical lines extend from -1.2 and 1.2 to the curve. The region to the left of x = -1.2 and the region to the right of x = 1.2 are shaded to represent the p-value. The area of each region is 0.0028.">
-<image mime-type="image/jpg" src="../../media/fig-ch10_01_02m.jpg" width="380"/>
+<image mime-type="image/png" src="../../media/fig-ch10_01_02n.png" width="380"/>
 </media>
 </figure><equation class="unnumbered" id="eip-id1166871343209"><label/><m:math><m:msub><m:mtext>t</m:mtext><m:mtext>c</m:mtext></m:msub>
 <m:mo>=</m:mo>
@@ -450,7 +452,50 @@ Use <emphasis effect="italics">t<sub>df</sub></emphasis> where <emphasis effect=
 
 <m:mn>-3.01</m:mn>
 </m:math></equation></para><para id="eip-id1163882983053">We next find the critical value on the t-table using the degrees of freedom from above. The critical value, 2.093, is found in the .025 column, this is α/2, at 19 degrees of freedom. (The convention is to round up the degrees of freedom to make the conclusion more conservative.) Next we calculate the test statistic and mark this on the t-distribution graph. </para><para id="element-823"><emphasis>Make a decision:</emphasis> Since the calculated t-value is in the tail we cannot accept the null hypothesis that there is no difference between the two groups. The means are different.</para><para id="eip-id1168432132959">The graph has included the sampling distribution of the differences in the sample means to show how the t-distribution aligns with the sampling distribution data. We see in the top panel that the calculated difference in the two means is -1.2 and the bottom panel shows that this is 3.01 standard deviations from the mean. Typically we do not need to show the sampling distribution graph and can rely on the graph of the test statistic, the t-distribution in this case, to reach our conclusion.</para><para id="element-914"><emphasis>Conclusion:</emphasis> At the 5% level of significance, the sample data show there is sufficient evidence to conclude that the mean number of hours that the G Shift takes to process 100 pounds of coconuts is different from the B Shift (mean number of hours for the B Shift is greater than the mean number of hours for the G Shift).</para></solution>
-</exercise></example><note id="fs-idm50414208">
+</exercise></example>
+<note id="fs-idp67783984" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idm235264144">
+  <problem id="fs-idm162906288">
+    <para id="fs-idm193306272">Two samples are shown in <link target-id="fs-idm99631856"/>. Both have normal distributions. The means for the two populations are thought to be the same. Is there a difference in the means? Test at the 5% level of significance.</para>
+  
+  <table id="fs-idm99631856" summary="">
+  <tgroup cols="4">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <thead>
+  <row>
+  <entry/>
+  <entry>Sample Size</entry>
+  <entry>Sample Mean</entry>
+  <entry>Sample Standard Deviation</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Population A</entry>
+  <entry>25</entry>
+  <entry>5</entry>
+  <entry>1</entry>
+  </row>
+  <row>
+  <entry>Population B</entry>
+  <entry>16</entry>
+  <entry>4.7</entry>
+  <entry>1.2</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  
+  </problem>
+  </exercise>
+  
+  </note>
+<note id="fs-idm50414208">
 <label/>
 <title>NOTE</title>
 <para id="fs-idm204425680">When the sum of the sample sizes is larger than 30 (<emphasis effect="italics">n</emphasis><sub>1</sub> + <emphasis effect="italics">n</emphasis><sub>2</sub> > 30) you can use the normal distribution to approximate the Student's <emphasis effect="italics">t</emphasis>.</para></note>
@@ -543,7 +588,7 @@ Use <emphasis effect="italics">t<sub>df</sub></emphasis> where <emphasis effect=
 <para id="fs-idm154517056">f. Is this test right-, left-, or two-tailed?</para></problem>
 <solution id="fs-idm168558752"><para id="fs-idm168558624">f. right one-tailed test
 <figure id="eip-idm29208032"><media id="eip-idm4786768" alt="This is a normal distribution curve with mean equal to 0. A vertical line near the tail of the curve to the right of zero extends from the axis to the curve. The region under the curve to the right of the line is shaded.">
-<image mime-type="image/jpg" src="../../media/fig-ch10_01_03n.jpg" width="380"/>
+<image mime-type="image/png" src="../../media/fig-ch10_01_03n.png" width="380"/>
 </media>
 </figure><equation id="eip-id1165389054927"/></para></solution>
 </exercise>
@@ -576,7 +621,18 @@ Use <emphasis effect="italics">t<sub>df</sub></emphasis> where <emphasis effect=
 <exercise id="fs-idm65144592">
 <problem id="fs-idm153855872"><para id="fs-idm41056320">i. <emphasis>Conclusion:</emphasis></para></problem>
 <solution id="fs-idm31976880"><para id="fs-idm31976752">i. At the 1% level of significance, from the sample data, there is not sufficient evidence to conclude that the retention of workers at Company A is longer than Company B, on average.</para></solution>
-</exercise></example><example id="fs-id1166111878381"><exercise id="eip-417"><problem id="eip-121">
+</exercise></example>
+<note id="fs-idp145514592" class="statistics try"><label/><title>Try It</title>
+  <exercise id="eip-idp166826064">
+  <problem id="eip-idp166826320">
+    <para id="fs-idm170467472">A study is done to determine if Company A retains its workers longer than Company B. Company A samples 15 workers, and their average time with the company is five years with a standard deviation of 1.2. Company B samples 20 workers, and their average time with the company is 4.5 years with a standard deviation of 0.8. The populations are normally distributed.</para>
+      <list id="fs-idp55515664" list-type="enumerated" number-style="lower-alpha">
+      <item>Are the population standard deviations known?</item>
+      <item>Conduct an appropriate hypothesis test. At the 5% significance level, what is your conclusion?</item>
+  </list>
+  </problem>
+  </exercise></note>
+<example id="fs-id1166111878381"><exercise id="eip-417"><problem id="eip-121">
   <para id="eip-708">An interesting research question is the effect, if any, that different types of teaching formats have on the grade outcomes of students. To investigate this issue one sample of students' grades was taken from a hybrid class and another sample taken from a standard lecture format class. Both classes were for the same subject. The mean course grade in percent for the 35 hybrid students is 74 with a standard deviation of 16. The mean grades of the 40 students form the standard lecture class was 76 percent with a standard deviation of 9. Test at 5% to see if there is any significant difference in the population mean grades between standard lecture course and hybrid class.
   </para></problem>
 
@@ -592,7 +648,98 @@ Use <emphasis effect="italics">t<sub>df</sub></emphasis> where <emphasis effect=
 To determine the critical value of the Student's t we need the degrees of freedom. For this case we use:
 df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the normal distribution thus t<sub>a/2</sub> = 1.96. Again as always we determine if the calculated value is in the tail determined by the critical value. In this case we do not even need to look up the critical value: the calculated value of the difference in these two average grades is not even one standard deviation apart. Certainly not in the tail.
 </para><para id="eip-id5325128"><emphasis>Conclusion: Cannot reject the null at α=5%. Therefore, evidence does not exist to prove that the grades in hybrid and standard classes differ.</emphasis></para></solution>
-</exercise></example><section id="eip-137" class="references">
+</exercise></example>
+<note class="statistics try" id="note-00001">
+  <label/><title>Try It</title>
+  <exercise id="exer-00001">
+  <problem id="prob-00001">
+  <para id="para-00001">Two professors, A and B, teach classes on the same subjects. Scores of 10 students from each class are selected randomly. The final exam scores of the students are as follows:</para>
+  <para id="para-00002"><title>Professor A:</title></para>
+  <table summary="" id="table-00001">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center">97</entry>
+  <entry align="center">62</entry>
+  <entry align="center">73</entry>
+  <entry align="center">58</entry>
+  <entry align="center">84</entry>
+  </row>
+  <row>
+  <entry align="center">74</entry>
+  <entry align="center">66</entry>
+  <entry align="center">93</entry>
+  <entry align="center">73</entry>
+  <entry align="center">85</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00003"><title>Professor B:</title></para>
+  <table summary="" id="table-00002">
+  <title/>
+  <tgroup cols="5">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <tbody>
+  <row>
+  <entry align="center">85</entry>
+  <entry align="center">64</entry>
+  <entry align="center">74</entry>
+  <entry align="center">55</entry>
+  <entry align="center">76</entry>
+  </row>
+  <row>
+  <entry align="center">67</entry>
+  <entry align="center">72</entry>
+  <entry align="center">84</entry>
+  <entry align="center">71</entry>
+  <entry align="center">98</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00004">Professor A says that the mean score of their class is more than the mean of professor B’s class. Is professor A correct? Test at a 5% significance level. Answer the following questions:</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00001">
+  <item>Is this a test of two means or two proportions?</item>
+  <item>Are the population standard deviations known or unknown?</item>
+  <item>Which distribution do you use to perform the test?</item>
+  <item>What is the random variable?</item>
+  <item>What are the null and alternative hypotheses? Write the null and alternative hypotheses in words and in symbols.</item>
+  <item>Is this test right-, left-, or two-tailed?</item>
+  <item>What is the <emphasis effect="italics">p</emphasis>-value?</item>
+  <item>Do you reject or not reject the null hypothesis?</item>
+  <item>At the ___ level of significance, from the sample data, there ___ (is/is not) sufficient evidence to conclude that ___.</item>
+  </list>
+  </problem>
+  <solution id="sol-00001">
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+  <item>two means</item>
+  <item>unknown</item>
+  <item>Student’s <emphasis effect="italics">t</emphasis></item>
+  <item><m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>2</m:mn></m:msub></m:math></item>
+  <item><list list-type="enumerated" number-style="arabic" id="list-00003">
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math>Null hypothesis: the means of final exam scores are equal for both professors.</item>
+  <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub></m:math> Alternative hypothesis: the mean of final exam scores for class of professor B is less than mean of final exam scores for class of professor A.</item>
+  </list></item>
+  <item>left-tailed</item>
+  <item><emphasis effect="italics">p</emphasis>-value = 0.03</item>
+  <item>Reject the null hypothesis.</item>
+  <item>Professor A is correct. The evidence shows that the mean of final exam scores of the class of professor A is more than that of the class of professor B.<newline/>At the 5% level of significance, from the sample data, there is (is/is not) sufficient evidence to conclude that the mean of final exam scores of the class of professor A is more than that of the class of professor B.</item>
+  </list>
+  </solution>
+  </exercise>
+  </note>
+<section id="eip-137" class="references">
 <title>References</title>
 <para id="eip-204">Data from Graduating Engineer + Computer Careers. Available online at http://www.graduatingengineer.com</para><para id="fs-idp6735712">Data from <emphasis effect="italics">Microsoft Bookshelf</emphasis>.</para><para id="fs-idm54110288">Data from the United States Senate website, available online at www.Senate.gov (accessed June 17, 2013).</para>
 <para id="fs-idp26924704">“List of current United States Senators by Age.” Wikipedia. Available online at http://en.wikipedia.org/wiki/List_of_current_United_States_Senators_by_age (accessed June 17, 2013).</para>
@@ -1479,20 +1626,23 @@ df = n1 + n2 - 2 = 35 + 40 -2 = 73. This is large enough to consider it the norm
   </exercise>
 
   <exercise id="fs-idm81478720">
-        <problem id="fs-idp12884432">
-          <para id="fs-idp12884688">Elijah wants to know whether textbook costs are different for different courses of study. He selects a random sample of 33 sociology textbooks offered on a popular online site. The mean price of his sample is $74.64 with a standard deviation of $49.36. He then selects a random sample of 33 math and science textbooks from the same site. The mean price of this sample is $111.56 with a standard deviation of $66.90. Is the mean price of a sociology textbook lower than the mean price of a math or science textbook? Test at a 1% significance level.</para></problem>
-        <solution id="fs-idm189266736">
-          <para id="fs-idm189266480">Test: two independent sample means, population standard deviations unknown.</para>
-          <para id="fs-idm7792944"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub></m:math> = the mean price of a sociology text on the selected site.</para>
-          <para id="fs-idm77929441"><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math> = the mean price of a math/science text on the selected site.</para>
-          <para id="fs-idm77929442">Random variable: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mover><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub><m:mo>¯</m:mo></m:mover><m:mo>-</m:mo><m:mover><m:msub><m:mi>X</m:mi><m:mn>1</m:mn></m:msub><m:mo>¯</m:mo></m:mover></m:math> = the difference in the sample mean textbook price between sociology texts and math/science texts.</para>
-          <para id="fs-idm77929443">Hypotheses: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo> </m:mo><m:mo>:</m:mo><m:mo> </m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo> </m:mo><m:mo>:</m:mo><m:mo> </m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo> </m:mo><m:mo>-</m:mo><m:mo> </m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo> </m:mo><m:mo>&lt;</m:mo><m:mo> </m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math> which can be expressed as <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi mathvariant="normal">H</m:mi><m:mn>0</m:mn><m:mi mathvariant="normal">s</m:mi><m:mo>:</m:mo><m:mo> </m:mo><m:mi mathvariant="normal">μ</m:mi><m:mn>1</m:mn><m:mo>-</m:mo><m:mi mathvariant="normal">μ</m:mi><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>Ha</m:mi><m:mo> </m:mo><m:mi mathvariant="normal">μ</m:mi><m:mn>1</m:mn><m:mo> </m:mo><m:mo>&lt;</m:mo><m:mo> </m:mo><m:mi mathvariant="normal">μ</m:mi><m:mn>2</m:mn></m:math>.</para>
-          <para id="fs-idm77929444">Distribution for the test: Use <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>t</m:mi><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow></m:msub></m:math>; because each sample has more than 30 observations, <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>33</m:mn><m:mo>+</m:mo><m:mn>33</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>64</m:mn></m:math>.</para>
-          <para id="fs-idm77929445">Estimate the critical value on the <m:math><m:mi>t</m:mi></m:math>-table using the nearest available degrees of freedom, 60. The critical value, 2.660, is found in the .0005 column. </para>
-          <para id="fs-idm77929446">Calculate the test statistic: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mn>2</m:mn></m:msub><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow><m:msqrt><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:msub><m:mi>s</m:mi><m:mn>1</m:mn></m:msub><m:mn>2</m:mn></m:msup><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:msup><m:msub><m:mi>s</m:mi><m:mn>2</m:mn></m:msub><m:mn>2</m:mn></m:msup><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mstyle></m:msqrt></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>74</m:mn><m:mo>.</m:mo><m:mn>64</m:mn><m:mo>-</m:mo><m:mn>111</m:mn><m:mo>.</m:mo><m:mn>56</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow><m:msqrt><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>49</m:mn><m:mo>.</m:mo><m:msup><m:mn>36</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mn>33</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>66</m:mn><m:mo>.</m:mo><m:msup><m:mn>90</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mn>33</m:mn></m:mfrac></m:mstyle></m:msqrt></m:mfrac><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>55</m:mn></m:math>.</para>
-          <para id="fs-idm77929447">Using a calculator with <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>55</m:mn></m:math> and <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>64</m:mn></m:math>, the left-tailed <m:math><m:mi>p</m:mi></m:math>-value: Decision: Reject <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. Conclusion: At the 1% level of significance, from the sample data, there is sufficient evidence to conclude that the mean price of sociology textbooks is less than the mean price of textbooks for math/science.</para>
-        </solution>
-      </exercise>
+    <problem id="fs-idp12884432">
+      <para id="fs-idp12884688">Elijah wants to know whether textbook costs are different for different courses of study. He selects a random sample of 33 sociology textbooks offered on a popular online site. The mean price of his sample is $74.64 with a standard deviation of $49.36. He then selects a random sample of 33 math and science textbooks from the same site. The mean price of this sample is $111.56 with a standard deviation of $66.90. Is the mean price of a sociology textbook lower than the mean price of a math or science textbook? Test at a 1% significance level.</para>
+</problem>
+    <solution id="fs-idm189266736">
+      <para id="fs-idm189266480">Test: two independent sample means, population standard deviations unknown.<newline/><m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub></m:math> = the mean price of a sociology text on the selected site<newline/><m:math><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub></m:math> = the mean
+price of a math/science text on the selected site<newline/>Random variable: <m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>1</m:mn></m:msub><m:mo>-</m:mo>
+<m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>2</m:mn></m:msub></m:math> = the difference
+in the sample mean textbook price between sociology texts and math/science texts.<newline/>Hypotheses: <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:mo> </m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:mo> </m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math><newline/>which can be expressed as <m:math><m:mi>H</m:mi><m:mn>0</m:mn><m:mi>s</m:mi><m:mo>:</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mn>1</m:mn><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>H</m:mi><m:mi>a</m:mi><m:mo>:</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mn>1</m:mn><m:mo> </m:mo><m:mo>&lt;</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mn>2</m:mn></m:math><newline/>Distribution for the test: Use <emphasis effect="italic">tdf</emphasis>; because each sample has more than 30 observations, <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>33</m:mn><m:mo>+</m:mo><m:mn>33</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>64</m:mn></m:math>.</para>
+<para id="para-00009">Estimate the critical value on the <emphasis effect="italic">t</emphasis>-table using the nearest available degrees of freedom, 60. The critical value, 2.660, is found in the .0005 column.</para>
+<para id="para-00010">Calculate the test statistic: <m:math><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac>
+<m:mrow><m:mo>(</m:mo><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>1</m:mn></m:msub> <m:mo>-</m:mo><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mn>2</m:mn></m:msub><m:mo>) </m:mo><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow><m:msqrt><m:mstyle displaystyle="true"><m:mfrac><m:msubsup><m:mi>s</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:msubsup><m:mi>s</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mfrac></m:mstyle></m:msqrt></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>74</m:mn><m:mo>.</m:mo><m:mn>64</m:mn><m:mo>-</m:mo><m:mn>111</m:mn><m:mo>.</m:mo><m:mn>56</m:mn><m:mo>)</m:mo><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow><m:msqrt><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>49</m:mn><m:mo>.</m:mo><m:msup><m:mn>36</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mn>33</m:mn></m:mfrac></m:mstyle><m:mo>+</m:mo><m:mstyle displaystyle="true"><m:mfrac><m:mrow><m:mn>66</m:mn><m:mo>.</m:mo><m:msup><m:mn>90</m:mn><m:mn>2</m:mn></m:msup></m:mrow><m:mn>33</m:mn></m:mfrac></m:mstyle></m:msqrt></m:mfrac><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>55</m:mn></m:math></para>
+<para id="para-00011">Using a calculator with <m:math><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mo>-</m:mo>
+<m:mn>2</m:mn><m:mo>.</m:mo><m:mn>55</m:mn></m:math> and <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo>
+<m:mn>64</m:mn></m:math>, the left-tailed <emphasis effect="italic">p</emphasis>-value: 0.0066. Decision: 
+Reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. Conclusion: At the 1% level of significance, from the sample data, there is sufficient evidence to conclude that the mean price of sociology textbooks is less than the mean price of textbooks for math/science.</para>
+</solution>
+</exercise>
 
     <exercise id="fs-idm65734896">
       <problem id="fs-idm65734640">

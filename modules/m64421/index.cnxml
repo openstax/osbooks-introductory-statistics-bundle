@@ -11,8 +11,7 @@
 <content>
   <para id="eip-8888"><!-- Insert module text here -->
   Typically we can never expect to know any of the population parameters, mean, proportion, or standard deviation. When testing hypotheses concerning differences in means we are faced with the difficulty of two unknown variances that play a critical role in the test statistic. We have been substituting the sample variances just as we did when testing hypotheses for a single mean. And as we did before, we used a Student's t to compensate for this lack of information on the population variance. There may be situations, however, when we do not know the population variances, but we can assume that the two populations have the same variance. If this is true then the pooled sample variance will be smaller than the individual sample variances. This will give more precise estimates and reduce the probability of discarding a good null. The null and alternative hypotheses remain the same, but the test statistic changes to: </para><equation class="unnumbered" id="eip-983"><label/><m:math><m:msub><m:mi>t</m:mi><m:mi>c</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:msub><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>x</m:mi><m:mo>–</m:mo></m:mover><m:mn>2</m:mn></m:msub><m:mo>)</m:mo><m:mo>−</m:mo><m:msub><m:mi>δ</m:mi><m:mn>0</m:mn></m:msub></m:mrow><m:msqrt><m:mrow><m:mi>S</m:mi><m:mover><m:mi>p</m:mi><m:mn>2</m:mn></m:mover><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub></m:mfrac><m:mo>)</m:mo></m:mrow></m:msqrt></m:mfrac></m:math></equation><para id="eip-837">where <m:math><m:mi>S</m:mi><m:mover><m:mi>p</m:mi><m:mn>2</m:mn></m:mover></m:math> is the pooled variance given by the formula:
-</para><equation class="unnumbered" id="eip-964"><label/><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>S</m:mi><m:mover><m:mi>p</m:mi><m:mn>2</m:mn></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mi>s</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>-</m:mo><m:mo>(</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mi>s</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math>
-</equation><example id="eip-339"><exercise id="eip-588"><problem id="eip-923">
+</para><equation class="unnumbered" id="eq-00001"><m:math><m:mfrac><m:mrow><m:msubsup><m:mi>s</m:mi><m:mi>p</m:mi><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mo>(</m:mo><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mi>s</m:mi><m:mn>1</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>+</m:mo><m:mo>(</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msubsup><m:mi>s</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:mrow><m:mrow><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:math></equation><example id="eip-339"><exercise id="eip-588"><problem id="eip-923">
   <para id="eip-269">A drug trial is attempted using a real drug and a pill made of just sugar. 18 people are given the real drug in hopes of increasing the production of endorphins. The increase in endorphins is found to be on average 8 micrograms per person, and the sample standard deviation is 5.4 micrograms. 11 people are given the sugar pill, and their average endorphin increase is 4 micrograms with a standard deviation of 2.4. From previous research on endorphins it is determined that it can be assumed that the variances within the two samples can be assumed to be the same. Test at 5% to see if the population mean for the real drug had a significantly greater impact on the endorphins than the population mean with the sugar pill.
   </para></problem>
 
@@ -47,6 +46,111 @@ This is set up as a one-tailed test with the claim in the alternative hypothesis
 <equation class="unnumbered" id="eip-id1171335842701"><label/><m:math><m:msub><m:mi>t</m:mi><m:mi>α</m:mi></m:msub><m:mo>=</m:mo><m:mn>1.703</m:mn> <m:mspace width="0.2em"/><m:mtext>at</m:mtext> <m:mspace width="0.2em"/><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:msub><m:mi>n</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>n</m:mi><m:mn>2</m:mn></m:msub><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>11</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>27</m:mn></m:math></equation></para><para id="fs-id1163663599065">The test statistic is clearly in the tail, 2.31 is larger than the critical value of 1.703, and therefore we cannot maintain the null hypothesis. Thus, we conclude that there is significant evidence at the 95% level of confidence that the new medicine produces the effect desired.</para></solution>
 </exercise>
 </example>
+<note id="fs-idp145071264" class="statistics try"><label/><title>Try It</title>
+  <para id="fs-idm62120944">Weighted alpha is a measure of risk-adjusted performance of stocks over a period of a year. A high positive weighted alpha signifies a stock whose price has risen while a small positive weighted alpha indicates an unchanged stock price during the time period. Weighted alpha is used to identify companies with strong upward or downward trends. The weighted alpha for the top 30 stocks of banks in the northeast and in the west as identified by Nasdaq on May 24, 2013 are listed in <link target-id="fs-idm242901296"/> and <link target-id="fs-idm167801152"/>, respectively.</para>
+  <table id="fs-idm242901296" summary="">
+  <title>Northeast</title>
+  <tgroup cols="10">
+  <tbody>
+  <row>
+  <entry>94.2</entry>
+  <entry>75.2</entry>
+  <entry>69.6</entry>
+  <entry>52.0</entry>
+  <entry>48.0</entry>
+  <entry>41.9</entry>
+  <entry>36.4</entry>
+  <entry>33.4</entry>
+  <entry>31.5</entry>
+  <entry>27.6</entry>
+  </row>
+  <row>
+  <entry>77.3</entry>
+  <entry>71.9</entry>
+  <entry>67.5</entry>
+  <entry>50.6</entry>
+  <entry>46.2</entry>
+  <entry>38.4</entry>
+  <entry>35.2</entry>
+  <entry>33.0</entry>
+  <entry>28.7</entry>
+  <entry>26.5</entry>
+  </row>
+  <row>
+  <entry>76.3</entry>
+  <entry>71.7</entry>
+  <entry>56.3</entry>
+  <entry>48.7</entry>
+  <entry>43.2</entry>
+  <entry>37.6</entry>
+  <entry>33.7</entry>
+  <entry>31.8</entry>
+  <entry>28.5</entry>
+  <entry>26.0</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <table id="fs-idm167801152" summary="">
+  <title>West</title>
+  <tgroup cols="10">
+  <tbody>
+  <row>
+  <entry>126.0</entry>
+  <entry>70.6</entry>
+  <entry>65.2</entry>
+  <entry>51.4</entry>
+  <entry>45.5</entry>
+  <entry>37.0</entry>
+  <entry>33.0</entry>
+  <entry>29.6</entry>
+  <entry>23.7</entry>
+  <entry>22.6</entry>
+  </row>
+  <row>
+  <entry>116.1</entry>
+  <entry>70.6</entry>
+  <entry>58.2</entry>
+  <entry>51.2</entry>
+  <entry>43.2</entry>
+  <entry>36.0</entry>
+  <entry>31.4</entry>
+  <entry>28.7</entry>
+  <entry>23.5</entry>
+  <entry>21.6</entry>
+  </row>
+  <row>
+  <entry>78.2</entry>
+  <entry>68.2</entry>
+  <entry>55.6</entry>
+  <entry>50.3</entry>
+  <entry>39.0</entry>
+  <entry>34.1</entry>
+  <entry>31.0</entry>
+  <entry>25.3</entry>
+  <entry>23.4</entry>
+  <entry>21.5</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  
+  <exercise id="fs-idm120507648">
+  <problem id="eip-idp51089200">
+  <para id="fs-idm100910544">Is there a difference in the weighted alpha of the top 30 stocks of banks in the northeast and in the west? Test at a 5% significance level. Answer the following questions:</para>
+    <list id="fs-idp33249296" list-type="enumerated" number-style="lower-alpha"><item>Is this a test of two means or two proportions?</item>
+  <item>Are the population standard deviations known or unknown?</item>
+  <item>Which distribution do you use to perform the test?</item>
+  <item>What is the random variable?</item>
+  <item>What are the null and alternative hypotheses? Write the null and alternative hypotheses in words and in symbols.</item>
+  <item>Is this test right, left, or two tailed?</item>
+  <item>What is the <emphasis effect="italics">p</emphasis>-value?</item>
+  <item>Do you reject or not reject the null hypothesis?</item>
+  <item>At the ___ level of significance, from the sample data, there ______ (is/is not) sufficient evidence to conclude that ______.</item>
+  <item>Calculate Cohen’s <emphasis effect="italics">d</emphasis> and interpret it.</item>
+  </list></problem>
+  </exercise>
+  </note>
 <section id="fs-idm473869440" class="summary"><title>Chapter Review</title><para id="fs-idm285385376">In situations when we do not know the population variances but assume the variances are the same, the pooled sample variance will be smaller than the individual sample variances. </para>
 <para id="fs-idm460296528">
 This will give more precise estimates and reduce the probability of discarding a good null. </para>

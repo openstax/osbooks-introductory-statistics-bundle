@@ -8,7 +8,7 @@
 </metadata>
 
 <content>
-<para id="eip-772">In most cases of economic or business data we have little or no control over the process of how the data are gathered. In this sense the data are not the result of a planned controlled experiment. In some cases, however, we can develop data that are part of a controlled experiment. This situation occurs frequently in quality control situations. Imagine that the production rates of two machines built to the same design, but at different manufacturing plants, are being tested for differences in some production metric such as speed of output or meeting some production specification such as strength of the product. The test is the same in format to what we have been testing, but here we can have matched pairs for which we can test if differences exist. Each observation has its matched pair against which differences are calculated. First, the differences in the metric to be tested between the two lists of observations must be calculated, and this is typically labeled with the letter "d." Then, the average of these matched differences, <m:math><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub></m:math> is calculated as is its standard deviation, <emphasis effect="italics">S</emphasis><sub>d</sub>. We expect that the standard deviation of the differences of the matched pairs will be smaller than unmatched pairs because presumably fewer differences should exist because of the correlation between the two groups.</para><para id="fs-idp164310080">When using a hypothesis test for matched or paired samples, the following characteristics may be present:</para><list id="element-139" list-type="enumerated"><item>Simple random sampling is used.</item>
+<para id="eip-772">In most cases of economic or business data we have little or no control over the process of how the data are gathered. In this sense the data are not the result of a planned controlled experiment. In some cases, however, we can develop data that are part of a controlled experiment. This situation occurs frequently in quality control situations. Imagine that the production rates of two machines built to the same design, but at different manufacturing plants, are being tested for differences in some production metric such as speed of output or meeting some production specification such as strength of the product. The test is the same in format to what we have been testing, but here we can have matched pairs for which we can test if differences exist. Each observation has its matched pair against which differences are calculated. First, the differences in the metric to be tested between the two lists of observations must be calculated, and this is typically labeled with the letter "d." Then, the average of these matched differences, <m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:mfrac></m:math> is calculated as is its standard deviation, <emphasis effect="italics">S</emphasis><sub>d</sub>. We expect that the standard deviation of the differences of the matched pairs will be smaller than unmatched pairs because presumably fewer differences should exist because of the correlation between the two groups.</para><para id="fs-idp164310080">When using a hypothesis test for matched or paired samples, the following characteristics may be present:</para><list id="element-139" list-type="enumerated"><item>Simple random sampling is used.</item>
 <item>Sample sizes are often small.</item>
 <item>Two measurements (samples) are drawn from the same pair of individuals or objects.</item>
 <item>Differences are calculated from the matched or paired samples.</item>
@@ -102,19 +102,60 @@ Because the experiment was conducted as a matched paired sample rather than simp
 </equation>
 In order to solve this equation, the individual scores, pre-training course and post-training course need to be used to calculate the individual differences. These scores are then averaged and the average difference is calculated:
 <equation id="eip-id2017645">
-<m:math><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>2</m:mn></m:msub></m:math>
+<m:math><m:msub><m:mover><m:mi>x</m:mi><m:mo>&#xAF;</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>2</m:mn></m:msub></m:math>
 </equation>
 From these differences we can calculate the standard deviation across the individual differences:
-<equation class="unnumbered" id="eip-id4727950"><label/><m:math><m:msub><m:mi>S</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo>
-<m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mo>(</m:mo><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup></m:mrow>
-<m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac>
-<m:mtext> where </m:mtext><m:mspace width="0.2em"/>
-<m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>x</m:mi><m:mi>1i</m:mi></m:msub><m:mo>−</m:mo><m:msub><m:mi>x</m:mi><m:mi>2i</m:mi></m:msub></m:math>
+<equation class="unnumbered" id="eip-id4727950"><label/><m:math><m:msub><m:mi>S</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:msup><m:mfenced><m:mrow><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>-</m:mo><m:menclose notation="top"><m:msub><m:mi>X</m:mi><m:mi>d</m:mi></m:msub></m:menclose></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt><m:mi>w</m:mi><m:mi>h</m:mi><m:mi>e</m:mi><m:mi>r</m:mi><m:mi>e</m:mi><m:mo>&#xA0;</m:mo><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mi>i</m:mi></m:msub><m:mo>-</m:mo><m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mi>i</m:mi></m:msub></m:math>
 </equation>
 We can now compare the calculated value of the test statistic, 4.12, with the critical value. The critical value is a Student's t with degrees of freedom equal to the number of pairs, not observations, minus 1. In this case 20 pairs and at 90% confidence level t<sub>a/2</sub> = ±1.729 at <emphasis effect="italics">df</emphasis> = 20 - 1 = 19. The calculated test statistic is most certainly in the tail of the distribution and thus we cannot accept the null hypothesis that there is no difference from the training program. Evidence seems indicate that the training aids employees in gaining higher scores.</para></solution>
 </exercise>
 
-</example><example id="element-457"><exercise id="element-366"><problem id="id24601264">
+</example>
+<note id="fs-idp98011888" class="statistics try">
+  <label/>
+  <title>Try-It</title>
+  <exercise id="fs-idm3639952">
+  <problem id="fs-idp119669552">
+  <para id="fs-idp119669808">Five ball players think they can throw the same distance with their dominant hand (throwing) and off-hand (catching hand). The data were collected and recorded in <link target-id="fs-idp26621360"/>. Conduct a hypothesis test to determine whether the mean difference in distances between the dominant and off-hand is significant. Test at the 5% level.</para>
+  
+  <table id="fs-idp26621360" summary="">
+  <tgroup cols="6">
+  <thead>
+  <row>
+  <entry/>
+  <entry>Player 1</entry>
+  <entry>Player 2</entry>
+  <entry>Player 3</entry>
+  <entry>Player 4</entry>
+  <entry>Player 5</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Dominant Hand</entry>
+  <entry>120</entry>
+  <entry>111</entry>
+  <entry>135</entry>
+  <entry>140</entry>
+  <entry>125</entry>
+  </row>
+  <row>
+  <entry>Off-hand</entry>
+  <entry>105</entry>
+  <entry>109</entry>
+  <entry>98</entry>
+  <entry>111</entry>
+  <entry>99</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  
+  </problem>
+  </exercise>
+  </note>
+
+<example id="element-457"><exercise id="element-366"><problem id="id24601264">
 <para id="element-889"><emphasis/> A study was conducted to investigate the effectiveness of hypnotism in reducing pain. Results for randomly selected subjects are shown in <link target-id="table-2345"/>. A lower score indicates less pain. The "before" value is matched to an "after" value and the differences are calculated. Are the sensory measurements, on average, lower after hypnotism? Test at a 5% significance level.</para><table id="table-2345" summary="This table presents results of subjects and effect of hypnotism in reducing pain. The second through ninth column are all subjects. The first row is for before and the second row is for after.">
 <tgroup cols="9">
 <colspec colnum="1" colname="header_c1"/>
@@ -277,7 +318,7 @@ Verify these values.</para><para id="element-700">Let <m:math>
 
 
 <figure id="hyptest22_samp1"><media id="id11476386" alt="Normal distribution curve of the average difference of sensory measurements with values of -3.13 and 0. A vertical upward line extends from -3.13 to the curve, and the p-value is indicated in the area to the left of this value.">
-<image src="../../media/fig-ch10_01_11n.jpg" mime-type="image/jpg"/>
+<image src="../../media/fig-ch10_01_11n.png" mime-type="image/png"/>
 </media>
 </figure><para id="element-281"><m:math>
 <m:mrow>
@@ -318,7 +359,60 @@ Verify these values.</para><para id="element-700">Let <m:math>
 </m:mrow>
 </m:math> = 2.91</para><para id="eip-id1163737464957"><emphasis>Compare the critical value for alpha against the calculated test statistic.</emphasis></para><para id="eip-id1172373959280">The conclusion from using the comparison of the calculated test statistic and the critical value will gives us the result. In this question the calculated test statistic is 3.06 and the critical value is 1.895. The test statistic is clearly in the tail and thus we cannot accept the null hypotheses that there is no difference between the two situations, hypnotized and not hypnotized.</para><para id="element-269"><emphasis>Make a decision:</emphasis> Cannot accept the null hypothesis, <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that <emphasis effect="italics">μ<sub>d</sub></emphasis> &lt; 0 and there is a statistically significant improvement.</para><para id="element-795"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the sample data, there is sufficient evidence to conclude that the sensory measurements, on average, are lower after hypnotism. Hypnotism appears to be effective in reducing pain.</para>
 </solution>
-</exercise></example><example id="element-752">
+</exercise></example>
+<note id="fs-idp46905536" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idp1097104">
+  <problem id="fs-idp1097360">
+  <para id="fs-idm54581328">A study was conducted to investigate how effective a new diet was in lowering cholesterol. Results for the randomly selected subjects are shown in the table. The differences have a normal distribution. Are the subjects’ cholesterol levels lower on average after the diet? Test at the 5% level.</para><table id="fs-idm36821616" summary="">
+  <tgroup cols="10">
+  <tbody>
+  <row>
+  <entry>Subject</entry>
+  <entry>A</entry>
+  <entry>B</entry>
+  <entry>C</entry>
+  <entry>D</entry>
+  <entry>E</entry>
+  <entry>F</entry>
+  <entry>G</entry>
+  <entry>H</entry>
+  <entry>I</entry>
+  </row>
+  <row>
+  <entry>Before</entry>
+  <entry>209</entry>
+  <entry>210</entry>
+  <entry>205</entry>
+  <entry>198</entry>
+  <entry>216</entry>
+  <entry>217</entry>
+  <entry>238</entry>
+  <entry>240</entry>
+  <entry>222</entry>
+  </row>
+  <row>
+  <entry>After</entry>
+  <entry>199</entry>
+  <entry>207</entry>
+  <entry>189</entry>
+  <entry>209</entry>
+  <entry>217</entry>
+  <entry>202</entry>
+  <entry>211</entry>
+  <entry>223</entry>
+  <entry>201</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  
+  </problem>
+  </exercise>
+  </note>
+
+<example id="element-752">
 <para id="element-486">A college football coach was interested in whether the college's strength development class increased his players' maximum lift (in pounds) on the bench press exercise. He asked four of his players to participate in a study. The amount of weight they could each lift was recorded before they took the strength development class. After completing the class, the amount of weight they could each lift was again measured. The data are as follows:</para>
 <table id="table-234678" summary="This table shows players and the amount of weight they are able to lift. The first column is the weight lifted and the second through the sixth columns represent the players. The first row is the amount of weight lifted before the class and the second row is the amount of weight lifted after the class.">
 <tgroup cols="5"><colspec colnum="1" colname="c1"/>
@@ -379,12 +473,49 @@ Verify these values.</para><para id="element-700">Let <m:math>
 </m:math> mean difference in the maximum lift per player.</para><para id="element-320">The distribution for the hypothesis test is a student's t with 3 degrees of freedom.</para><para id="element-3201"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> ≤ 0, <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> > 0</para>
 
 <figure id="hyptest22_samp2"><media id="id11476943" alt="Normal distribution curve with values of 0 and 21.3. A vertical upward line extends from 21.3 to the curve and the p-value is indicated in the area to the right of this value.">
-<image src="../../media/fig-ch10_01_12n.jpg" mime-type="image/jpg" width="380"/></media>
+<image src="../../media/fig-ch10_01_12n.png" mime-type="image/jpg" width="380"/></media>
 </figure><para id="element-147"><emphasis>Calculate the test statistic look up the critical value:</emphasis> The calculated value of the test statistic is 0.91. The critical value of the student's t at 5% level of significance and 3 degrees of freedom is 2.353.</para><para id="element-931"><emphasis>Decision:</emphasis> If the level of significance is 5%, we cannot reject the null hypothesis, because the calculated value of the test statistic is not in the tail.</para><para id="element-802"><emphasis>What is the conclusion?</emphasis></para>
 
 <para id="e106soln">At a 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class helped to make the players stronger, on average. Be sure to note in your conclusion that a sample size of only 4 leaves a degree of freedom of only 3 and sets the critical value very large. In short, sample size so small cannot result in always meaningful conclusions.</para>
 </example>
+<note id="fs-idm13751200" class="statistics try"><label/><title>Try It</title>
 
+  <exercise id="fs-idp4946544"><problem id="fs-idp4946672">
+  <para id="fs-idp112606336">A new prep class was designed to improve SAT test scores. Five students were selected at random. Their scores on two practice exams were recorded, one before the class and one after. The data recorded in <link target-id="fs-idp42085840"/>. Are the scores, on average, higher after the class? Test at a 5% level.</para>
+  
+  <table id="fs-idp42085840" summary="">
+  <tgroup cols="5">
+  <thead>
+  <row>
+  <entry>SAT Scores</entry>
+  <entry>Student 1</entry>
+  <entry>Student 2</entry>
+  <entry>Student 3</entry>
+  <entry>Student 4</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Score before class</entry>
+  <entry>1840</entry>
+  <entry>1960</entry>
+  <entry>1920</entry>
+  <entry>2150</entry>
+  </row>
+  <row>
+  <entry>Score after class</entry>
+  <entry>1920</entry>
+  <entry>2160</entry>
+  <entry>2200</entry>
+  <entry>2100</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  </problem>
+  
+  </exercise>
+  </note>
 <section id="fs-idp51883760" class="summary">
 <title>Chapter Review</title>
 <para id="fs-idp192128">A hypothesis test for matched or paired samples (t-test) has these characteristics:</para>
