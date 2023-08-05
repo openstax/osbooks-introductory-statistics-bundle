@@ -10,39 +10,39 @@
 <content>
     <para id="element-38110">Before we take up the discussion of linear regression and correlation, we need to examine a way to display the relation between two variables <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">y</emphasis>. The most common and easiest way is a <emphasis>scatter plot</emphasis>. The following example illustrates a scatter plot.</para>
 
-<example id="element-777"><para id="element-622">In Europe and Asia, m-commerce is popular. M-commerce users have special mobile phones that work like electronic wallets as well as provide phone and Internet services. Users can do everything from paying for parking to buying a TV set or soda from a machine to banking to checking sports scores on the Internet. For the years 2000 through 2004, was
-there a relationship between the year and the number of m-commerce users? Construct a scatter plot. Let <emphasis effect="italics">x</emphasis> = the year and let <emphasis effect="italics">y</emphasis> = the number of m-commerce users, in millions.</para>
-<table id="linrgs_scater1" summary="">
-<tgroup cols="2"><thead>
+<example id="element-777"><para id="para-00001">An educational researcher collects data on the vocabulary size of children as a function of age. The data is shown in Table 12.1. Is there a relationship between age and vocabulary size for young children? Construct a scatter plot. Let <emphasis effect="italics">x</emphasis> = Child’s Age, and let <emphasis effect="italics">y</emphasis> = Vocabulary Size.</para>
+  <table summary=".." id="table-00001">
+  <title/>
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <thead>
   <row>
-    <entry><m:math><m:mi>x</m:mi></m:math> (year)</entry>
-    <entry><m:math><m:mi>y</m:mi></m:math> (# of users)</entry>
+  <entry>Age (years)</entry>
+  <entry>Vocabulary Size (number of words)</entry>
   </row>
-</thead>
-<tbody>
+  </thead>
+  <tbody>
   <row>
-    <entry>2000</entry>
-    <entry>0.5</entry>
-  </row>
-  <row>
-    <entry>2002</entry>
-    <entry>20.0</entry>
-  </row>
-  <row>
-    <entry>2003</entry>
-    <entry>33.0</entry>
+  <entry>3</entry>
+  <entry>655</entry>
   </row>
   <row>
-    <entry>2004</entry>
-    <entry>47.0</entry>
+  <entry>4</entry>
+  <entry>1098</entry>
   </row>
-</tbody>
-
-
-
-</tgroup>
-<caption>Table showing the number of m-commerce users (in millions) by year.</caption>
-</table>
+  <row>
+  <entry>6</entry>
+  <entry>2463</entry>
+  </row>
+  <row>
+  <entry>7</entry>
+  <entry>3195</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
 
 <figure id="linrgs_scater12">
   <media id="id1171452159644" alt="This is a scatter plot for the data provided. The x-axis represents the year and the y-axis represents the number of m-commerce users in millions. There are four points plotted, at (2000, 0.5), (2002, 20.0), (2003, 33.0), (2004, 47.0)."><image src="../../media/fig-ch12_04_01.jpg" mime-type="image/jpeg" width="380"/></media>
@@ -213,31 +213,31 @@ then we can use a regression line to predict <emphasis effect="italics">y</empha
 <colspec colnum="3" colname="c3"/>
 <thead>
 <row>
-<entry>Year</entry>
-<entry>Poverty Rate</entry>
-<entry>Cellular Usage per Capita</entry>
+<entry>College</entry>
+<entry>Faculty</entry>
+<entry>Students</entry>
 </row>
 </thead>
 <tbody>
 <row>
-<entry>2003</entry>
-<entry>12.7</entry>
-<entry>54.67</entry>
+<entry>College A</entry>
+<entry>47</entry>
+<entry>940</entry>
 </row>
 <row>
-<entry>2005</entry>
-<entry>12.6</entry>
-<entry>74.19</entry>
+<entry>College B</entry>
+<entry>58</entry>
+<entry>1102</entry>
 </row>
 <row>
-<entry>2007</entry>
-<entry>12</entry>
-<entry>84.86</entry>
+<entry>College C</entry>
+<entry>26</entry>
+<entry>533</entry>
 </row>
 <row>
-<entry>2009</entry>
-<entry>12</entry>
-<entry>90.82</entry>
+<entry>College D</entry>
+<entry>63</entry>
+<entry>1244</entry>
 </row>
 </tbody>
 </tgroup>
@@ -262,17 +262,17 @@ then we can use a regression line to predict <emphasis effect="italics">y</empha
 <row>
 <entry>Princeton</entry>
 <entry>137</entry>
-<entry>28,540</entry>
+<entry>57,410</entry>
 </row>
 <row>
 <entry>Harvey Mudd</entry>
 <entry>135</entry>
-<entry>40,133</entry>
+<entry>62,817</entry>
 </row>
 <row>
 <entry>CalTech</entry>
 <entry>127</entry>
-<entry>39,900</entry>
+<entry>60,864</entry>
 </row>
 <row>
 <entry>US Naval Academy</entry>
@@ -287,27 +287,27 @@ then we can use a regression line to predict <emphasis effect="italics">y</empha
 <row>
 <entry>MIT</entry>
 <entry>118</entry>
-<entry>42,050</entry>
+<entry>57,986</entry>
 </row>
 <row>
 <entry>Lehigh University</entry>
 <entry>118</entry>
-<entry>43,220</entry>
+<entry>59,930</entry>
 </row>
 <row>
 <entry>NYU-Poly</entry>
 <entry>117</entry>
-<entry>39,565</entry>
+<entry>58,168</entry>
 </row>
 <row>
 <entry>Babson College</entry>
 <entry>117</entry>
-<entry>40,400</entry>
+<entry>56,576</entry>
 </row>
 <row>
 <entry>Stanford</entry>
 <entry>114</entry>
-<entry>54,506</entry>
+<entry>56,169</entry>
 </row>
 </tbody>
 </tgroup>

@@ -1099,116 +1099,87 @@ the sample standard deviation in <link document="m53786"/>.</para><para id="eip-
 <label/>
 <title>Try It</title>
 <exercise id="eip-746"><problem id="eip-675">
-<para id="eip-437">MRSA, or <emphasis effect="italics">Staphylococcus aureus</emphasis>, can cause a serious bacterial infections in hospital patients. <link target-id="eip-755"/> shows various colony counts from different patients who may or may not have MRSA. The data from the table is plotted in <link target-id="fs-idm170381520"/>.</para><table id="eip-755" summary="..">
+  <para id="para-00001">There are multiple variants of the virus that causes COVID-19. The length of hospital stays for patients afflicted with various strains of COVID-19 is shown in <link target-id="eip-755"/>.</para>
+<table id="eip-755" summary="..">
 <tgroup cols="5">
 <thead>
-<row><entry>Conc = 0.6</entry><entry>Conc = 0.8</entry>	<entry>Conc = 1.0</entry>	<entry>Conc = 1.2</entry>	<entry>Conc = 1.4</entry></row>
+<row><entry>Delta Strain</entry><entry>Omicron Strain</entry>	<entry>Alpha Strain</entry>	<entry>Gamma Strain</entry>	<entry>Beta Strain</entry></row>
 </thead>
 <tbody>
-<row><entry>9</entry>	<entry>16</entry>	<entry>22</entry>	<entry>30</entry>	<entry>27</entry></row>
-<row><entry>66</entry>	<entry>93</entry>	<entry>147</entry>	<entry>199</entry>	<entry>168</entry></row>
-<row><entry>98</entry>	<entry>82</entry>	<entry>120</entry>	<entry>148</entry>	<entry>132</entry></row>
+<row><entry>13.9</entry>	<entry>11.7</entry>	<entry>18.2</entry>	<entry>16.9</entry>	<entry>9.3</entry></row>
+<row><entry>14.9</entry>	<entry>15.1</entry>	<entry>14.6</entry>	<entry>12.8</entry>	<entry>15.8</entry></row>
+<row><entry>16.8</entry>	<entry>9.9</entry>	<entry>10.1</entry>	<entry>11.2</entry>	<entry>16.4</entry></row>
 </tbody>
 </tgroup>
 </table>
-<para id="eip-idm75659200">Plot of the data for the different concentrations:</para>
-
-
-<figure id="fs-idm170381520"><media id="eip-idp3797520" alt="This graph is a scatterplot for the data provided. The horizontal axis is labeled 'Colony counts' and extends from 0 - 200. The vertical axis is labeled 'Tryptone concentrations' and extends from 0.6 - 1.4.">
-<image src="../../media/CNX_Stats_C13_M04_003s.png" mime-type="image/png" width="380"/></media></figure><para id="eip-idm75658944">Test whether the mean number of colonies are the same or are different. Construct the ANOVA table, find the <emphasis effect="italics">p</emphasis>-value, and state your conclusion. Use a 5% significance level.</para></problem>
-
+<para id="para-00002">Test whether the mean length of hospital stay is the same or different for the various strains of COVID-19. Construct the ANOVA table, find the <emphasis effect="italics">p</emphasis>-value, and state your conclusion. Use a 5% significance level.</para>
+</problem>
 <solution id="eip-174">
-<para id="eip-idp40395248">While there are differences in the spreads between the groups (see <link target-id="fig000"/>), the differences do not appear to be big enough to cause concern.</para>
-
-<para id="eip-idp40395776">We test for the equality of mean number of colonies:</para>
-
-<para id="eip-idp40396160"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub></m:math></para><para id="eip-idp11990912"><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ<sup>i</sup></emphasis> ≠ <emphasis effect="italics">μ<sup>j</sup></emphasis> some <emphasis effect="italics">i</emphasis> ≠ <emphasis effect="italics">j</emphasis></para><para id="eip-idm62233696">The one-way ANOVA table results are shown in <link target-id="eip-83"/>.</para>
+  <para id="para-00003">We test for equality of mean length of hospital stay:</para>
+  <para id="para-00004"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>5</m:mn></m:msub></m:math></para>
+  <para id="para-00005"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mi>i</m:mi></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mi>j</m:mi></m:msub><m:mo>,</m:mo><m:mi>some</m:mi><m:mo> </m:mo><m:mi mathvariant="normal">i</m:mi><m:mo>≠</m:mo><m:mi>j</m:mi></m:math></para>
+  <para id="para-00006">The one-way ANOVA table results are shown:</para>
 
 <table id="eip-83" summary="..">
-<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<tgroup cols="6">
+<colspec colnum="1" colname="c1"/>
 <colspec colnum="2" colname="c2"/>
 <colspec colnum="3" colname="c3"/>
 <colspec colnum="4" colname="c4"/>
 <colspec colnum="5" colname="c5"/>
+<colspec colnum="6" colname="c6"/>
 <thead>
 <row>
-<entry>Source of variation</entry>
-<entry>Sum of squares (<emphasis effect="italics">SS</emphasis>)</entry>
-<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>
-<entry>Mean square (<emphasis effect="italics">MS</emphasis>)</entry>
+<entry><emphasis effect="italics">Source of Variation</emphasis></entry>
+<entry><emphasis effect="italics">Sum of Squares (SS)</emphasis></entry>
+<entry><emphasis effect="italics">Degrees of Freedom (df)</emphasis></entry>
+<entry><emphasis effect="italics">Mean Square (MS)</emphasis></entry>
 <entry><emphasis effect="italics">F</emphasis></entry>
+<entry><emphasis effect="italics">P-value</emphasis></entry>
 </row>
 </thead>
 <tbody>
 <row>
 <entry>Factor (Between)</entry>
-<entry>10,233</entry>
+<entry>14.056</entry>
 <entry>5 – 1 = 4</entry>
-<entry>  <m:math>
-<m:mrow>
-<m:mfrac>
-<m:mrow>
-<m:mtext>10,233</m:mtext>
-</m:mrow>
-<m:mtext>4</m:mtext>
-</m:mfrac>
-<m:mtext> = 2,558</m:mtext><m:mtext>.25</m:mtext>
-</m:mrow>
-</m:math>  </entry>
-<entry>  <m:math>
-<m:mrow>
-<m:mfrac>
-<m:mrow>
-<m:mtext>2,558</m:mtext><m:mtext>.25</m:mtext>
-</m:mrow>
-<m:mrow>
-<m:mtext>4,194</m:mtext><m:mtext>.9</m:mtext>
-</m:mrow>
-</m:mfrac>
-<m:mtext> = 0</m:mtext><m:mtext>.6099</m:mtext>
-</m:mrow>
-</m:math>  </entry>
+<entry>3.514</entry>
+<entry>0.353095</entry>
+<entry>0.8362</entry>
 </row>
 
 <row>
 <entry>Error (Within)</entry>
-<entry>41,949</entry>
+<entry>99.52</entry>
 <entry>15 – 5 = 10</entry>
+<entry>9.952</entry>
 <entry/>
 <entry/>
 </row>
 <row>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+  <entry/>
+</row>
+<row>
 <entry>Total</entry>
-<entry>52,182</entry>
+<entry>113.576</entry>
 <entry>15 – 1 = 14</entry>
-<entry>  <m:math>
-<m:mrow>
-<m:mfrac>
-<m:mrow>
-<m:mtext>41,949</m:mtext>
-</m:mrow>
-<m:mrow>
-<m:mtext>10</m:mtext>
-</m:mrow>
-</m:mfrac>
-<m:mtext> = 4,194</m:mtext><m:mtext>.9</m:mtext>
-</m:mrow>
-</m:math>  </entry>
+<entry/>
+<entry/>
 <entry/>
 </row>
 </tbody>
 
 </tgroup>
-</table><figure id="fig000"><media id="eip-idp176119744" alt="This graph shows a nonsymmetrical F distribution curve. The curve is skewed to the right. A vertical upward line extends from 0.6649 to the curve. This line is just to the right of the graph's peak and the region to the right of the line is shaded to represent the p-value.">
-<image src="../../media/CNX_Stats_C13_M04_004.jpg" mime-type="image/jpeg" width="380"/></media></figure><para id="eip-idp119760"><emphasis>Distribution for the test:</emphasis> <emphasis effect="italics">F</emphasis><sub>4,10</sub></para>
-
-<para id="eip-idp2526368"><emphasis>Probability Statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> > 0.6099) = 0.6649.</para>
-
-<para id="eip-idp2527424"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <emphasis effect="italics">α</emphasis> = 0.05, <emphasis effect="italics">p</emphasis>-value = 0.669, <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value</para>
-
-<para id="eip-idp3984016"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, we do not reject <emphasis effect="italics">H</emphasis><sub>0</sub>.</para>
-
-<para id="eip-idm35735392"><emphasis>Conclusion:</emphasis> At the 5% significance level, there is insufficient evidence from these data that different levels of tryptone will cause a significant difference in the mean number of bacterial colonies formed.</para>
+</table>
+<para id="para-00007"><emphasis effect="bold">Distribution for the test:</emphasis> <m:math><m:mi>F</m:mi><m:mn>4</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>10</m:mn></m:math></para>
+<para id="para-00008"><emphasis effect="bold">Probability Statement:</emphasis> <m:math><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3531</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8362</m:mn></m:math></para>
+<para id="para-00009"><emphasis effect="bold">Compare  and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <m:math><m:mi>α</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>05</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>08362</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>α</m:mi><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi></m:math></para>
+<para id="para-00010"><emphasis effect="bold">Make a decision:</emphasis> Since  > <emphasis effect="italics">p</emphasis>-value, we do not reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para>
+<para id="para-00011"><emphasis effect="bold">Conclusion:</emphasis> At the 5% significance level, there is insufficient evidence from these data that different strains of COVID-19 virus will cause a significant difference in the length of a hospital stay.</para>
 </solution>
 </exercise></note>
 
@@ -1573,7 +1544,18 @@ sororities?  </para></problem>
 </m:mfrac>
 
 </m:mrow>
-</m:math> </para></section>
+</m:math> </para>
+<note id="fs-idm141365552" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="element-3252">
+  <problem id="id6378299">
+  <para id="element-146">Another fourth grader also grew bean plants, but this time in a jelly-like mass. The heights were (in inches) 24, 28, 25, 30, and 32. Do a one-way ANOVA test on the four groups. Are the heights of the bean plants different? Use the same method as shown in <link target-id="element-349"/>.</para>
+  </problem>
+  </exercise>
+  </note>
+  
+</section>
 
 <section id="eip-957" class="references">
 <title>References</title>

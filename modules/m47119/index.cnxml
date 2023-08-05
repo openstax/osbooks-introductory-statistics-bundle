@@ -24,7 +24,7 @@
 
 <para id="eip-idp93603520"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>1</sub></emphasis> = <emphasis effect="italics">μ<sub>2</sub></emphasis> = <emphasis effect="italics">μ<sub>3</sub></emphasis> = <emphasis effect="italics">μ<sub>4</sub></emphasis> = <emphasis effect="italics">μ<sub>5</sub></emphasis></para>
 
-<para id="eip-idp134625200"><emphasis effect="italics">H<sub>a</sub>: μ<sub>i</sub> ≠ μ<sub>j</sub></emphasis> some  <emphasis effect="italics">i ≠ j</emphasis></para><para id="eip-idm22822112">The one-way ANOVA results are shown in <link target-id="fs-idm170381520"/></para><table id="eip-632" summary="..">
+<para id="eip-idp134625200"><emphasis effect="italics">H<sub>a</sub>: μ<sub>i</sub> ≠ μ<sub>j</sub></emphasis> some  <emphasis effect="italics">i ≠ j</emphasis></para><para id="eip-idm22822112">The one-way ANOVA results are shown in <link target-id="eip-632"/></para><table id="eip-632" summary="..">
 <tgroup cols="5"><thead>
 <row>
 <entry align="center">Source of Variation</entry>
@@ -123,27 +123,92 @@
 
 
 <note id="fs-idm197200" class="statistics try">
-<label/>
-<title>Try It</title>
-<exercise id="eip-746"><problem id="eip-675">
-<para id="eip-437">MRSA, or <emphasis effect="italics">Staphylococcus aureus</emphasis>, can cause a serious bacterial infections in hospital patients. <link target-id="eip-755"/> shows various colony counts from different patients who may or may not have MRSA. The data from the table is plotted in Figure 13.5.</para><table id="eip-755" summary="..">
-<tgroup cols="5">
-<thead>
-<row><entry>Conc = 0.6</entry><entry>Conc = 0.8</entry>	<entry>Conc = 1.0</entry>	<entry>Conc = 1.2</entry>	<entry>Conc = 1.4</entry></row>
-</thead>
-<tbody>
-<row><entry>9</entry>	<entry>16</entry>	<entry>22</entry>	<entry>30</entry>	<entry>27</entry></row>
-<row><entry>66</entry>	<entry>93</entry>	<entry>147</entry>	<entry>199</entry>	<entry>168</entry></row>
-<row><entry>98</entry>	<entry>82</entry>	<entry>120</entry>	<entry>148</entry>	<entry>132</entry></row>
-</tbody>
-</tgroup>
-</table>
-<para id="eip-idm75659200">Plot of the data for the different concentrations:</para>
-
-
-<figure id="fs-idm170381520"><media id="eip-idp3797520" alt="This graph is a scatterplot for the data provided. The horizontal axis is labeled 'Colony counts' and extends from 0 - 200. The vertical axis is labeled 'Tryptone concentrations' and extends from 0.6 - 1.4.">
-<image src="../../media/CNX_Stats_C13_M04_003s.png" mime-type="image/png" width="380"/></media></figure><para id="eip-idm75658944">Test whether the mean number of colonies are the same or are different. Construct the ANOVA table (by hand or by using a TI-83, 83+, or 84+ calculator), find the <emphasis effect="italics">p</emphasis>-value, and state your conclusion. Use a 5% significance level.</para></problem>
-</exercise></note>
+  <label/>
+  <title>Try It</title>
+  <exercise id="eip-746"><problem id="eip-675">
+    <para id="para-00001">There are multiple variants of the virus that causes COVID-19. The length of hospital stays for patients afflicted with various strains of COVID-19 is shown in <link target-id="eip-755"/>.</para>
+  <table id="eip-755" summary="..">
+  <tgroup cols="5">
+  <thead>
+  <row><entry>Delta Strain</entry><entry>Omicron Strain</entry>	<entry>Alpha Strain</entry>	<entry>Gamma Strain</entry>	<entry>Beta Strain</entry></row>
+  </thead>
+  <tbody>
+  <row><entry>13.9</entry>	<entry>11.7</entry>	<entry>18.2</entry>	<entry>16.9</entry>	<entry>9.3</entry></row>
+  <row><entry>14.9</entry>	<entry>15.1</entry>	<entry>14.6</entry>	<entry>12.8</entry>	<entry>15.8</entry></row>
+  <row><entry>16.8</entry>	<entry>9.9</entry>	<entry>10.1</entry>	<entry>11.2</entry>	<entry>16.4</entry></row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00002">Test whether the mean length of hospital stay is the same or different for the various strains of COVID-19. Construct the ANOVA table, find the <emphasis effect="italics">p</emphasis>-value, and state your conclusion. Use a 5% significance level.</para>
+  </problem>
+  <solution id="eip-174">
+    <para id="para-00003">We test for equality of mean length of hospital stay:</para>
+    <para id="para-00004"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>5</m:mn></m:msub></m:math></para>
+    <para id="para-00005"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mi>i</m:mi></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mi>j</m:mi></m:msub><m:mo>,</m:mo><m:mi>some</m:mi><m:mo> </m:mo><m:mi mathvariant="normal">i</m:mi><m:mo>≠</m:mo><m:mi>j</m:mi></m:math></para>
+    <para id="para-00006">The one-way ANOVA table results are shown:</para>
+  
+  <table id="eip-83" summary="..">
+  <tgroup cols="6">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <thead>
+  <row>
+  <entry><emphasis effect="italics">Source of Variation</emphasis></entry>
+  <entry><emphasis effect="italics">Sum of Squares (SS)</emphasis></entry>
+  <entry><emphasis effect="italics">Degrees of Freedom (df)</emphasis></entry>
+  <entry><emphasis effect="italics">Mean Square (MS)</emphasis></entry>
+  <entry><emphasis effect="italics">F</emphasis></entry>
+  <entry><emphasis effect="italics">P-value</emphasis></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>Factor (Between)</entry>
+  <entry>14.056</entry>
+  <entry>5 – 1 = 4</entry>
+  <entry>3.514</entry>
+  <entry>0.353095</entry>
+  <entry>0.8362</entry>
+  </row>
+  
+  <row>
+  <entry>Error (Within)</entry>
+  <entry>99.52</entry>
+  <entry>15 – 5 = 10</entry>
+  <entry>9.952</entry>
+  <entry/>
+  <entry/>
+  </row>
+  <row>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+    <entry/>
+  </row>
+  <row>
+  <entry>Total</entry>
+  <entry>113.576</entry>
+  <entry>15 – 1 = 14</entry>
+  <entry/>
+  <entry/>
+  <entry/>
+  </row>
+  </tbody>
+  
+  </tgroup>
+  </table>
+  <para id="para-00007"><emphasis effect="bold">Distribution for the test:</emphasis> <m:math><m:mi>F</m:mi><m:mn>4</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>10</m:mn></m:math></para>
+  <para id="para-00008"><emphasis effect="bold">Probability Statement:</emphasis> <m:math><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3531</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8362</m:mn></m:math></para>
+  <para id="para-00009"><emphasis effect="bold">Compare  and the <emphasis effect="italics">p</emphasis>-value:</emphasis> <m:math><m:mi>α</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>05</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>08362</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>α</m:mi><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi></m:math></para>
+  <para id="para-00010"><emphasis effect="bold">Make a decision:</emphasis> Since  > <emphasis effect="italics">p</emphasis>-value, we do not reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para>
+  <para id="para-00011"><emphasis effect="bold">Conclusion:</emphasis> At the 5% significance level, there is insufficient evidence from these data that different strains of COVID-19 virus will cause a significant difference in the length of a hospital stay.</para>
+  </solution>
+  </exercise></note>
 
 
 <example id="element-810">
