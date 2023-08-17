@@ -8,11 +8,14 @@
 </metadata>
 
 <content>
-<para id="eip-772">In most cases of economic or business data we have little or no control over the process of how the data are gathered. In this sense the data are not the result of a planned controlled experiment. In some cases, however, we can develop data that are part of a controlled experiment. This situation occurs frequently in quality control situations. Imagine that the production rates of two machines built to the same design, but at different manufacturing plants, are being tested for differences in some production metric such as speed of output or meeting some production specification such as strength of the product. The test is the same in format to what we have been testing, but here we can have matched pairs for which we can test if differences exist. Each observation has its matched pair against which differences are calculated. First, the differences in the metric to be tested between the two lists of observations must be calculated, and this is typically labeled with the letter "d." Then, the average of these matched differences, <m:math><m:msub><m:menclose notation="top"><m:mi>X</m:mi></m:menclose><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:mfrac></m:math> is calculated as is its standard deviation, <emphasis effect="italics">S</emphasis><sub>d</sub>. We expect that the standard deviation of the differences of the matched pairs will be smaller than unmatched pairs because presumably fewer differences should exist because of the correlation between the two groups.</para><para id="fs-idp164310080">When using a hypothesis test for matched or paired samples, the following characteristics may be present:</para><list id="element-139" list-type="enumerated"><item>Simple random sampling is used.</item>
+<para id="eip-772">In most cases of economic or business data we have little or no control over the process of how the data are gathered. In this sense the data are not the result of a planned controlled experiment. In some cases, however, we can develop data that are part of a controlled experiment. This situation occurs frequently in quality control situations. Imagine that the production rates of two machines built to the same design, but at different manufacturing plants, are being tested for differences in some production metric such as speed of output or meeting some production specification such as strength of the product. The test is the same in format to what we have been testing, but here we can have matched pairs for which we can test if differences exist. Each observation has its matched pair against which differences are calculated. First, the differences in the metric to be tested between the two lists of observations must be calculated, and this is typically labeled with the letter "d." Then, the average of these matched differences, <m:math><m:msub><m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+  </m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:mfrac></m:math> is calculated as is its standard deviation, <emphasis effect="italics">S</emphasis><sub>d</sub>. We expect that the standard deviation of the differences of the matched pairs will be smaller than unmatched pairs because presumably fewer differences should exist because of the correlation between the two groups.</para><para id="fs-idp164310080">When using a hypothesis test for matched or paired samples, the following characteristics may be present:</para><list id="element-139" list-type="enumerated"><item>Simple random sampling is used.</item>
 <item>Sample sizes are often small.</item>
 <item>Two measurements (samples) are drawn from the same pair of individuals or objects.</item>
 <item>Differences are calculated from the matched or paired samples.</item>
-<item>The differences the sample that is used for the hypothesis test.</item>
+<item>The differences from the sample that is used for the hypothesis test.</item>
 <item>Either the matched pairs have differences that come from a population that is normal or the number of differences is sufficiently large so that distribution of the sample mean of differences is approximately normal, as has been the case using the Central Limit Theorem.</item>
 </list><para id="eip-8888">In a hypothesis test for matched or paired samples, subjects are matched in pairs and differences are calculated. The differences are the data. The population mean for the differences, <emphasis effect="italics">μ<sub>d</sub></emphasis>, is then tested using a Student's-t test for a single population mean with <emphasis effect="italics">n</emphasis> – 1 degrees of freedom, where <emphasis effect="italics">n</emphasis> is the number of differences, that is, the number of pairs not the number of observations.</para><equation class="unnumbered" id="eip-467"><label/><title>The null and alternative hypotheses for this test are:</title><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo> 
@@ -68,7 +71,7 @@
 <para id="eip-id4058073">A company has developed a training program for its entering employees because management has become concerned with the results of the six-month employee review. They hope that the training program can result in better six-month reviews. Each trainee constitutes a “pair”, the entering score the employee received when first entering the firm and the score given at the six-month review. The difference in the two scores were calculated for each employee and the means for before and after the training program was calculated. The sample mean before the training program was 20.4 and the sample mean after the training program was 23.9. The standard deviation of the differences in the two scores across the 20 employees was 3.8 points. Test at the 10% significance level the null hypothesis that the two population means are equal against the alternative that the training program helps improve the employees’ scores.   </para></problem>
 <solution id="eip-id4058108">
 <para id="eip-id4058113"><emphasis/>The first step is to identify this as a two sample case: before the training and after the training. This differentiates this problem from simple one sample issues. Second, we determine that the two samples are "paired." Each observation in the first sample has a paired observation in the second sample. This information tells us that the null and alternative hypotheses should be:
-<equation id="eip-id1171814090314">
+<equation class="unnumbered" id="eip-id1171814090314">
 <m:math>
 <m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo> 
@@ -77,7 +80,7 @@
 <m:mn>0</m:mn>
 </m:math>
 </equation>
-<equation id="eip-id1166400026916">
+<equation class="unnumbered" id="eip-id1166400026916">
 <m:math>
 <m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub>
 <m:mo>:</m:mo> 
@@ -101,11 +104,11 @@ Because the experiment was conducted as a matched paired sample rather than simp
 </m:math>
 </equation>
 In order to solve this equation, the individual scores, pre-training course and post-training course need to be used to calculate the individual differences. These scores are then averaged and the average difference is calculated:
-<equation id="eip-id2017645">
-<m:math><m:msub><m:mover><m:mi>x</m:mi><m:mo>&#xAF;</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mn>2</m:mn></m:msub></m:math>
+<equation class="unnumbered" id="eip-id2017645">
+  <m:math><m:msub><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:mfrac></m:math>
 </equation>
 From these differences we can calculate the standard deviation across the individual differences:
-<equation class="unnumbered" id="eip-id4727950"><label/><m:math><m:msub><m:mi>S</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:msup><m:mfenced><m:mrow><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>-</m:mo><m:menclose notation="top"><m:msub><m:mi>X</m:mi><m:mi>d</m:mi></m:msub></m:menclose></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt><m:mi>w</m:mi><m:mi>h</m:mi><m:mi>e</m:mi><m:mi>r</m:mi><m:mi>e</m:mi><m:mo>&#xA0;</m:mo><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mi>i</m:mi></m:msub><m:mo>-</m:mo><m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mi>i</m:mi></m:msub></m:math>
+<equation class="unnumbered" id="eip-id4727950"><label/><m:math><m:msub><m:mi>S</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mo>&#x2211;</m:mo><m:msup><m:mfenced><m:mrow><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>-</m:mo><m:mover accent="true"><m:msub><m:mi>X</m:mi><m:mi>d</m:mi></m:msub></m:mover></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:msqrt><m:mi>w</m:mi><m:mi>h</m:mi><m:mi>e</m:mi><m:mi>r</m:mi><m:mi>e</m:mi><m:mo>&#xA0;</m:mo><m:msub><m:mi>d</m:mi><m:mi>i</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mi>i</m:mi></m:msub><m:mo>-</m:mo><m:msub><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mi>i</m:mi></m:msub></m:math>
 </equation>
 We can now compare the calculated value of the test statistic, 4.12, with the critical value. The critical value is a Student's t with degrees of freedom equal to the number of pairs, not observations, minus 1. In this case 20 pairs and at 90% confidence level t<sub>a/2</sub> = ±1.729 at <emphasis effect="italics">df</emphasis> = 20 - 1 = 19. The calculated test statistic is most certainly in the tail of the distribution and thus we cannot accept the null hypothesis that there is no difference from the training program. Evidence seems indicate that the training aids employees in gaining higher scores.</para></solution>
 </exercise>
@@ -314,11 +317,11 @@ Verify these values.</para><para id="element-700">Let <m:math>
 
 <para id="element-543"><emphasis>Distribution for the test:</emphasis> The distribution is a Student's <emphasis effect="italics">t</emphasis> with <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1 = 8 – 1 = 7. Use <emphasis effect="italics">t</emphasis><sub>7</sub>. <emphasis>(Notice that the test is for a single population mean.)</emphasis></para>
 
-<para id="element-94"><emphasis>Calculate the test statistic and look up the critical value using the Student's-t distribution:</emphasis> The calculated value of the test statistic is 3.06 and the critical value of the <emphasis effect="italics">t</emphasis>-distribution with 7 degrees of freedom at the 5% level of confidence is  1.895 with a one-tailed test.</para>
+<para id="element-94"><emphasis>Calculate the test statistic and look up the critical value using the Student's-t distribution:</emphasis> The calculated value of the test statistic is 3.06 and the critical value of the <emphasis effect="italics">t</emphasis>-distribution with 7 degrees of freedom at the 5% level of confidence is 1.895 with a one-tailed test.</para>
 
 
 <figure id="hyptest22_samp1"><media id="id11476386" alt="Normal distribution curve of the average difference of sensory measurements with values of -3.13 and 0. A vertical upward line extends from -3.13 to the curve, and the p-value is indicated in the area to the left of this value.">
-<image src="../../media/fig-ch10_01_11n.png" mime-type="image/png"/>
+<image src="../../media/fig-ch10_01_11n.png" mime-type="image/png" width="250"/>
 </media>
 </figure><para id="element-281"><m:math>
 <m:mrow>
