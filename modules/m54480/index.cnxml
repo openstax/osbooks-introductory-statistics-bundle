@@ -168,6 +168,24 @@
 </solution>
 </exercise>
 </example>
+<note id="fs-idp114002624" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idp171920384">
+  <problem id="fs-idp50292576">
+  <para id="fs-idp164776016">Suppose that the distance, in miles, that people are willing to commute to work is an exponential random variable with a decay parameter <m:math>
+  <m:mrow>
+  <m:mfrac>
+  <m:mn>1</m:mn>
+  <m:mrow>
+  <m:mn>20</m:mn>
+  </m:mrow>
+  </m:mfrac>
+  </m:mrow>
+  </m:math>. Let <emphasis effect="italics">X</emphasis> = the distance people are willing to commute in miles. What is <emphasis effect="italics">m</emphasis>, <emphasis effect="italics">μ</emphasis>, and <emphasis effect="italics">σ</emphasis>? What is the probability that a person is willing to commute more than 25 miles?</para>
+  </problem>
+  </exercise>
+  </note>
 <example id="fs-idm3585936">
 <para id="fs-idp124120288">The time spent waiting between events is often modeled using the exponential distribution. For example, suppose that an average of 30 customers per hour arrive at a store and the time between arrivals is exponentially distributed.</para>
 <exercise id="fs-idm3860128"><problem id="fs-idp104702752"><list id="fs-idp122384032" list-type="enumerated" number-style="lower-alpha"><item>On average, how many minutes elapse between two successive arrivals?</item>
@@ -206,8 +224,21 @@
 <item>This model assumes that a single customer arrives at a time, which may not be reasonable since people might shop in groups, leading to several customers arriving at the same time. It also assumes that the flow of customers does not change throughout the day, which is not valid if some times of the day are busier than others.</item>
 </list></solution>
 </exercise></example>
-
-
+<note id="fs-idm8049696" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idm82243888">
+  <problem id="fs-idm82243632">
+  <para id="fs-idp88700464">Suppose that on a certain stretch of highway, cars pass at an average rate of five cars per minute. Assume that the duration of time between successive cars follows the exponential distribution.</para>
+  <list id="fs-idm57552288" list-type="enumerated" number-style="lower-alpha">
+  <item>On average, how many seconds elapse between two successive cars?</item>
+  <item>After a car passes by, how long on average will it take for another seven cars to pass by?</item>
+  <item>Find the probability that after a car passes by, the next car will pass within the next 20 seconds.</item>
+  <item>Find the probability that after a car passes by, the next car will not pass for at least another 15 seconds.</item>
+  </list>
+  </problem>
+  </exercise>
+  </note>
 <section id="fs-idm4878944">
     <title>Memorylessness of the Exponential Distribution</title>
 <para id="fs-idm15452368">Recall that the amount of time between customers for the postal clerk discussed earlier is exponentially distributed with a mean of two minutes. Suppose that five minutes have elapsed since the last customer arrived. Since an unusually long amount of time has now elapsed, it would seem to be more likely for a customer to arrive within the next minute. With the exponential distribution, this is not the case–the additional time spent waiting for the next customer does not depend on how much time has already elapsed since the last customer. This is referred to as the <emphasis>memoryless property</emphasis>. The exponential and geometric probability density functions are the only probability functions that have the memoryless property. Specifically, the <emphasis>memoryless property</emphasis> says that</para><para id="fs-idp48694608"><emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">r</emphasis> + <emphasis effect="italics">t</emphasis> | <emphasis effect="italics">X</emphasis> > <emphasis effect="italics">r</emphasis>) = <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> > <emphasis effect="italics">t</emphasis>) for all <emphasis effect="italics">r</emphasis> ≥ 0 and <emphasis effect="italics">t</emphasis> ≥ 0</para>
@@ -230,7 +261,7 @@
 <para id="fs-idm25008304">The exponential distribution is often used to model the longevity of an electrical or mechanical device. In <link target-id="fs-idp51839440"/>, the lifetime of a certain computer part has the exponential distribution with a mean of ten years. The <emphasis>memoryless property</emphasis> says that knowledge of what has occurred in the past has no effect on future probabilities. In this case it means that an old part is not any more likely to break down at any particular time than a brand new part. In other words, the part stays as good as new until it suddenly breaks. For example, if the part has already lasted ten years, then the probability that it lasts another seven years is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 17|<emphasis effect="italics">X</emphasis> > 10) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 7) = 0.4966, where the vertical line is read as "given".</para></section>
 
 <example id="fs-idm19960800">
-<para id="fs-idp112053216">Refer back to the postal clerk again where the time a postal clerk spends with his or her customer has an exponential distribution with a mean of four minutes. Suppose a customer has spent four minutes with a postal clerk. What is the probability that he or she will spend at least an additional three minutes with the postal clerk?<newline count="2"/></para><para id="fs-idm16550752">The decay parameter of <emphasis effect="italics">X</emphasis> is <emphasis effect="italics">m</emphasis> = <m:math>
+<para id="fs-idp112053216">Refer back to the postal clerk again where the time a postal clerk spends with a customer has an exponential distribution with a mean of four minutes. Suppose a customer has spent four minutes with a postal clerk. What is the probability that the customer will spend at least an additional three minutes with the postal clerk?<newline count="2"/></para><para id="fs-idm16550752">The decay parameter of <emphasis effect="italics">X</emphasis> is <emphasis effect="italics">m</emphasis> = <m:math>
 <m:mrow>
 <m:mfrac>
 <m:mn>1</m:mn>
@@ -250,6 +281,15 @@
 </media>
 </figure>
 </example>
+<note id="fs-idm77006064" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idm127426368">
+  <problem id="fs-idp1742048">
+  <para id="fs-idp1742304">Suppose that the longevity of a light bulb is exponential with a mean lifetime of eight years. If a bulb has already lasted 12 years, find the probability that it will last a total of over 19 years.</para>
+  </problem>
+  </exercise>
+  </note>
 <section id="fs-idp112021200">
 <title>Relationship between the Poisson and the Exponential Distribution</title>
 <para id="fs-idp96158416">There is an interesting relationship between the exponential distribution and the Poisson distribution. Suppose that the time that elapses between two successive events follows the exponential distribution with a mean of <emphasis effect="italics">μ</emphasis> units of time. Also assume that these times are independent, meaning that the time between events is not affected by the times between previous events. If these assumptions hold, then the number of events per unit time follows a Poisson distribution with mean <emphasis effect="italics">μ</emphasis>. Recall that if <emphasis effect="italics">X</emphasis> has the Poisson distribution with mean <emphasis effect="italics">μ</emphasis>, then <m:math>
@@ -374,7 +414,21 @@ A visual way to show both the similarities and differences between these two dis
 <m:mn>0.7769</m:mn>
 </m:math>
 </equation></para><para id="eip-83">The probability that a customer will spend 9 minutes or less checking out is 0.7769. </para><para id="eip-461">We see that we have a high probability of getting out in less than nine minutes and a tiny probability of having 15 customers arriving in the next hour.
-</para></section>
+</para>
+<note id="fs-idp97352064" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idm15154880">
+  <problem id="fs-idm15154624">
+  <para id="fs-idm15154368">In a small city, the number of automobile accidents occur with a Poisson distribution at an average of three per week.</para>
+  <list id="fs-idp53070848" list-type="enumerated" number-style="lower-alpha">
+  <item>Calculate the probability that there are at most 2 accidents occur in any given week.</item>
+  <item>What is the probability that there is at least two weeks between any 2 accidents?</item>
+  </list>
+  </problem>
+  </exercise>
+  </note>
+</section>
 <section id="fs-idp72211680" class="summary">
 <title>Chapter Review</title>
 <para id="fs-idp72212448">If <emphasis effect="italics">X</emphasis> has an <emphasis>exponential distribution</emphasis> with mean <emphasis effect="italics">μ</emphasis>, then the <emphasis>decay parameter</emphasis> is <emphasis effect="italics">m</emphasis> = <m:math>
@@ -659,7 +713,7 @@ A visual way to show both the similarities and differences between these two dis
 </problem>
 <solution id="fs-idp5358432">
 <list id="fs-idp5358688" list-type="enumerated" number-style="lower-alpha">
-<item>Check student's solution</item>
+<item>Answers may vary.</item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 5,730) = 0.5001</item>
 </list>
 </solution>
@@ -688,7 +742,7 @@ A visual way to show both the similarities and differences between these two dis
 <item>Find the value <emphasis effect="italics">k</emphasis> such that <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; <emphasis effect="italics">k</emphasis>) = 0.30.</item></list></problem>
 <solution id="fs-idp45651680">
 <list id="fs-idp22046624" list-type="enumerated" number-style="lower-alpha">
-<item>Check student's solution.</item>
+<item>Answers may vary.</item>
 <item><emphasis effect="italics">k</emphasis> = 2947.73</item>
 </list>
 </solution>
@@ -736,7 +790,7 @@ A visual way to show both the similarities and differences between these two dis
 
 <exercise id="fs-idm20022272">
 <problem id="fs-idm20022016">
-<para id="fs-idm19086640">The percent of persons (ages five and older) in each state who speak a language at home other than English is approximately exponentially distributed with a mean of 9.848. Suppose we randomly pick a state.</para><list id="fs-idm19085984" list-type="enumerated" number-style="lower-alpha"><item>Define the random variable. <emphasis effect="italics">X</emphasis> = _________________________________.</item>
+<para id="fs-idm19086640">At one point in time, the percent of persons (ages five and older) in each state who speak a language at home other than English is approximately exponentially distributed with a mean of 9.848. Suppose we randomly pick a state.</para><list id="fs-idm19085984" list-type="enumerated" number-style="lower-alpha"><item>Define the random variable. <emphasis effect="italics">X</emphasis> = _________________________________.</item>
 <item>Is <emphasis effect="italics">X</emphasis> continuous or discrete?</item>
 
 <item><emphasis effect="italics">μ</emphasis> = ________</item>
@@ -771,7 +825,7 @@ A visual way to show both the similarities and differences between these two dis
 
 <item>five</item>
 <item>five</item>
-<item>Check student’s solution.</item>
+<item>Answers may vary.</item>
 <item>0.1353</item>
 <item>before</item>
 <item>18.3</item>
@@ -790,7 +844,7 @@ A visual way to show both the similarities and differences between these two dis
 </list></problem>
 </exercise>
 
-<para id="fs-idp25410160"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> The average lifetime of a certain new cell phone is three years. The manufacturer will replace any cell phone failing within two years of the date of purchase. The lifetime of these cell phones is known to follow an exponential distribution.</para><exercise id="fs-idp164419184">
+<para id="fs-idp25410160"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> The average lifetime of a certain new smartphone is three years. The manufacturer will replace any smartphone failing within two years of the date of purchase. The lifetime of these smartphone is known to follow an exponential distribution.</para><exercise id="fs-idp164419184">
 <problem id="fs-idp164419440">
 <para id="fs-idp164419696">The decay rate is:</para><list id="fs-idp164420080" list-type="enumerated" number-style="lower-alpha">
 <item>0.3333</item>
@@ -805,7 +859,7 @@ A visual way to show both the similarities and differences between these two dis
 </exercise>
 <exercise id="fs-idp147488160">
 <problem id="fs-idp147488416">
-<para id="fs-idp147488672">What is the probability that a phone will fail within two years of the date of purchase?</para>
+<para id="fs-idp147488672">What is the probability that a smartphones will fail within two years of the date of purchase?</para>
 <list id="fs-idp147489168" list-type="enumerated" number-style="lower-alpha">
 <item>0.8647</item>
 <item>0.4866</item>
@@ -817,7 +871,7 @@ A visual way to show both the similarities and differences between these two dis
 
 <exercise id="fs-idm3440688">
 <problem id="fs-idm3440432">
-<para id="fs-idm3440176">What is the median lifetime of these phones (in years)?</para>
+<para id="fs-idm3440176">What is the median lifetime of these smartphones (in years)?</para>
 <list id="fs-idp138734432" list-type="enumerated" number-style="lower-alpha">
 <item>0.1941</item>
 <item>1.3863</item>
@@ -926,11 +980,11 @@ A visual way to show both the similarities and differences between these two dis
 
 <exercise id="fs-idp35197296">
 <problem id="fs-idp35197552">
-<para id="fs-idp68624880">According to the American Red Cross, about one out of nine people in the U.S. have Type B blood. Suppose the blood types of people arriving at a blood drive are independent. In this case, the number of Type B blood types that arrive roughly follows the Poisson distribution.</para>
+<para id="fs-idp68624880">According to the American Red Cross, about one out of nine people in the U.S. have Type B positive blood. Suppose the blood types of people arriving at a blood drive are independent. In this case, the number of Type B positive blood types that arrive roughly follows the Poisson distribution.</para>
 <list id="fs-idm17505088" list-type="enumerated" number-style="lower-alpha">
-<item>If 100 people arrive, how many on average would be expected to have Type B blood?</item>
-<item>What is the probability that over 10 people out of these 100 have type B blood?</item>
-<item>What is the probability that more than 20 people arrive before a person with type B blood is found?</item>
+<item>If 100 people arrive, how many on average would be expected to have Type B positive blood?</item>
+<item>What is the probability that over 10 people out of these 100 have type B positive blood?</item>
+<item>What is the probability that more than 20 people arrive before a person with type B positive blood is found?</item>
 </list>
 </problem>
 <solution id="fs-idm172049056">
@@ -946,7 +1000,7 @@ A visual way to show both the similarities and differences between these two dis
  </m:mrow>
 </m:math> = 11.11</item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 10) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ 10) = 1 – Poissoncdf(11.11, 10) ≈ 0.5532.</item>
-<item>The number of people with Type B blood encountered roughly follows the Poisson distribution, so the number of people <emphasis effect="italics">X</emphasis> who arrive between successive Type B arrivals is roughly exponential with mean <emphasis effect="italics">μ</emphasis> = 9 and <emphasis effect="italics">m</emphasis> = <m:math>
+<item>The number of people with Type B positive blood encountered roughly follows the Poisson distribution, so the number of people <emphasis effect="italics">X</emphasis> who arrive between successive Type B arrivals is roughly exponential with mean <emphasis effect="italics">μ</emphasis> = 9 and <emphasis effect="italics">m</emphasis> = <m:math>
  <m:mrow>
   <m:mfrac>
    <m:mn>1</m:mn>
@@ -994,7 +1048,7 @@ A visual way to show both the similarities and differences between these two dis
  </m:mrow>
 </m:math></item>
 </list><note id="fs-idm18595152"><label/><title>NOTE</title>
-<para id="fs-idm44681536">We could also deduce that each person arriving has a 8/9 chance of not having Type B blood. So the probability that none of the first 20 people arrive have Type B blood is <m:math>
+<para id="fs-idm44681536">We could also deduce that each person arriving has a 8/9 chance of not having Type B positive blood. So the probability that none of the first 20 people arrive have Type B positive blood is <m:math>
  <m:mrow>
   <m:msup>
    <m:mrow>
@@ -1014,7 +1068,7 @@ A visual way to show both the similarities and differences between these two dis
   </m:msup>
   <m:mo>≈</m:mo><m:mn>0.0948</m:mn>
  </m:mrow>
-</m:math>. (The geometric distribution is more appropriate than the exponential because the number of people between Type B people is discrete instead of continuous.)</para></note></solution>
+</m:math>. (The geometric distribution is more appropriate than the exponential because the number of people between Type B positive people is discrete instead of continuous.)</para></note></solution>
 </exercise>
 
 <exercise id="fs-idm65311088">

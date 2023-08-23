@@ -21,7 +21,8 @@
   <para id="fs-idm58849136">The difference of two proportions follows an approximate normal distribution. Generally, the null hypothesis states that the two proportions are the same. That is, <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p<sub>A</sub></emphasis> = <emphasis effect="italics">p<sub>B</sub></emphasis>. To conduct the test, we use a <term id="term-00001">pooled proportion</term>, <emphasis effect="italics">p<sub>c</sub></emphasis>. </para>
 
 <equation class="unnumbered" id="element-845"><label/>
-  <title>The pooled proportion is calculated as follows:</title><m:math>
+  <title>The pooled proportion is calculated as follows:</title>
+  <m:math>
     <m:mrow>
       <m:msub>
         <m:mi>p</m:mi>
@@ -522,12 +523,15 @@ Random Variable:
 
 <para id="fs-idp51077664"><emphasis>Conclusion:</emphasis> At the 1% level of significance, from the sample data, there is not sufficient evidence to conclude that the proportion of women not wearing seat belts is less than the proportion of men not wearing seat belts.
 </para>
+</solution>
+</exercise>
+</example>
 
 <note class="statistics try" id="note-00001">
   <label/><title>Try It</title>
   <exercise id="exer-00001">
   <problem id="prob-00001">
-  <para id="para-00004">A survey was conducted about the favorable beverage as tea. The data collected is summarized in the table. Is the proportion of males favoring tea more than women favoring tea? Test at a 1% level of significance.</para>
+  <para id="para-00004">A survey was conducted about the favorable beverage as tea. The data collected is summarized in the table. Is the proportion of men favoring tea more than women favoring tea? Test at a 1% level of significance.</para>
   <table summary="" id="table-00001">
   <title/>
   <tgroup cols="2">
@@ -573,14 +577,11 @@ Random Variable:
   </exercise>
   </note>
 
-<note id="fs-idm151141472" class="statistics calculator">
-<label/>
-<para id="fs-idm112689104">Press STAT. Arrow over to TESTS and press 6:2-PropZTest. Arrow down and enter 156 for x1, 2169 for n1, 183 for x2, and 2231 for n2. Arrow down to p1: and arrow to less than p2. Press <code>ENTER</code>. Arrow down to Calculate and press ENTER. The <emphasis effect="italics">p</emphasis>-value is <emphasis effect="italics">P</emphasis> = 0.1045 and the test statistic is <emphasis effect="italics">z</emphasis> = -1.256.</para>
-</note>
-</solution>
-</exercise>
-</example>
-
+  <note id="fs-idm151141472" class="statistics calculator">
+    <label/>
+    <para id="fs-idm112689104">Press STAT. Arrow over to TESTS and press 6:2-PropZTest. Arrow down and enter 156 for x1, 2169 for n1, 183 for x2, and 2231 for n2. Arrow down to p1: and arrow to less than p2. Press <code>ENTER</code>. Arrow down to Calculate and press ENTER. The <emphasis effect="italics">p</emphasis>-value is <emphasis effect="italics">P</emphasis> = 0.1045 and the test statistic is <emphasis effect="italics">z</emphasis> = -1.256.</para>
+    </note>
+    
 <example id="exam-00001"><exercise id="exer-00002">
   <problem id="prob-00002">
   <para id="para-00018">A marketing firm claims that the proportion of younger adults who own electric vehicles is greater than the proportion of older adults who own electric vehicles. A random sample of U.S. adults was taken, and the results of the survey indicate the following:</para>
@@ -607,13 +608,13 @@ Random Variable:
   <figure id="id12575638"><media id="id12575642" alt="This is a normal distribution curve with mean equal to zero. A vertical line near the tail of the curve to the right of zero extends from the axis to the curve. The region under the curve to the right of the line is shaded representing p-value = 0.00004."><image src="../../media/IS2e_Figure_10_00_009.png" mime-type="image/png" width="380"/></media></figure>
   <para id="para-00031"><emphasis effect="bold">Decision:</emphasis> Since  > <emphasis effect="italics">p</emphasis>-value, reject the <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para>
   <para id="para-00032"><emphasis effect="bold">Conclusion:</emphasis> At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that a larger proportion of younger adults own electric vehicles as compared to older adults.</para>
-  <note id="fs-idp15799920" class="statistics calculator">
-<label/>
-    <para id="fs-idm46927376">TI-83+ and TI-84: Press STAT. Arrow over to TESTS and press 6:2-PropZTest. Arrow down and enter 135 for x1, 1343 for n1, 12 for x2, and 232 for n2. Arrow down to p1: and arrow to greater than p2. Press ENTER. Arrow down to Calculate and press ENTER. The P-value is P = 0.0092 and the test statistic is Z = 2.33.</para>
-  </note>
 </solution></exercise>
 </example>
-
+<note id="fs-idp15799920" class="statistics calculator">
+  <label/>
+      <para id="fs-idm46927376">TI-83+ and TI-84: Press STAT. Arrow over to TESTS and press 6:2-PropZTest. Arrow down and enter 135 for x1, 1343 for n1, 12 for x2, and 232 for n2. Arrow down to p1: and arrow to greater than p2. Press ENTER. Arrow down to Calculate and press ENTER. The P-value is P = 0.0092 and the test statistic is Z = 2.33.</para>
+    </note>
+  
 <note class="statistics try" id="note-00002">
   <label/><title>Try It</title>
   <para id="para-00033">A government researcher is investigating whether there is a difference in the use of helmets by motorcyclists in different geographic regions for those states where use of helmets is required by law. The research shows that for motorcyclists in the northeast U.S., 7622 out of 113,231 motorcyclists did not wear helmets. In the southeast U.S., 7439 out of 104,873 motorcyclists did not wear helmets. Test at a 5% significance level. Answer the following questions:</para>
