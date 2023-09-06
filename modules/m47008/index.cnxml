@@ -11,7 +11,7 @@
 <figure id="fs-idp38862000" class="splash"><media id="fs-idm31074784" alt="This is a photo of M&amp;Ms piled together. The M&amp;Ms are red, blue, green, yellow, orange and brown.">
 <image src="../../media/CNX_Stats_C08_CO.jpg" width="500" mime-type="image/jpeg"/></media>
 
-<caption>Have you ever wondered what the average number of M&amp;Ms in a bag at the grocery store is? You can use confidence intervals to answer this question. (credit: comedy_nose/flickr)</caption></figure><note id="fs-idp115342032" class="chapter-objectives"><label/><title>Chapter Objectives</title>
+<caption>Have you ever wondered what the average number of M&amp;Ms in a bag at the grocery store is? You can use confidence intervals to answer this question. (credit: modification of work “sweet, orange, food, green, red, color, brown, blue, colorful, yellow, chocolate, snack, dessert, toy, plain, candy, sweetness, treat, confectionery, coated, m ms, hard shell, snack food, jelly bean”/ Pxhere, Public Domain)</caption></figure><note id="fs-idp115342032" class="chapter-objectives"><label/><title>Chapter Objectives</title>
 <para id="element-281">By the end of this chapter, the student should be able to:</para>
 <list id="list12315"><item>Calculate and interpret confidence intervals for estimating a population mean and a population proportion.</item>
 <item>Interpret the Student's t probability distribution as the sample size changes.</item>
@@ -20,7 +20,7 @@
 </list></note><para id="element-2812">Suppose you were trying to determine the mean rent of a two-bedroom apartment in your town. You might look in the classified section of the newspaper, write down several rents listed, and average them together. You would have obtained a point estimate of the true mean. If you are trying to determine the percentage of times you make a basket when shooting a basketball, you might count the number of shots you make and divide that by the number of shots you attempted. In this case, you would have obtained a point estimate for the true proportion.</para>
 <para id="element-550">We use sample data to make generalizations about an unknown population. This part of statistics is called <term id="term-00001">inferential statistics</term>.  <emphasis>The sample data help us to make an estimate of a population <term id="term-00002">parameter</term></emphasis>. We realize that the point estimate is most likely not the exact value of the population parameter, but close to it. After calculating point estimates, we construct interval estimates, called confidence intervals.</para>
 <para id="element-667">In this chapter, you will learn to construct and interpret confidence intervals. You will also learn a new distribution, the Student's-t, and how it is used with these intervals. Throughout the chapter, it is important to keep in mind that the confidence interval is a random variable. It is the population parameter that is fixed.</para>
-<para id="element-560">If you worked in the marketing department of an entertainment company, you might be interested in the mean number of songs a consumer downloads a month from iTunes. If so, you could conduct a survey and calculate the sample mean, <m:math>
+<para id="element-560">If you worked in the marketing department of an entertainment company, you might be interested in the mean number of songs a consumer downloads a month from Apple Music. If so, you could conduct a survey and calculate the sample mean, <m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
   <m:mo>¯</m:mo>
@@ -47,7 +47,7 @@
 
 </m:math> and <emphasis effect="italics">s</emphasis> is called a statistic.</para>
 
-<para id="element-510">A <term id="term-00004">confidence interval</term> is another type of estimate but, instead of being just one number, it is an interval of numbers. It provides a range of reasonable values in which we expect the population parameter to fall. There is no guarantee that a given confidence interval does capture the parameter, but there is a predictable probability of success.</para><para id="element-53">Suppose, for the iTunes example, we do not know the population mean <emphasis effect="italics">μ</emphasis>, but we do know that the population standard deviation is <emphasis effect="italics">σ</emphasis> = 1 and our sample size is 100. Then, by the central limit theorem, the standard deviation for the sample mean is</para>
+<para id="element-510">A <term id="term-00004">confidence interval</term> is another type of estimate but, instead of being just one number, it is an interval of numbers. It provides a range of reasonable values in which we expect the population parameter to fall. There is no guarantee that a given confidence interval does capture the parameter, but there is a predictable probability of success.</para><para id="element-53">Suppose, for the Apple Music example, we do not know the population mean <emphasis effect="italics">μ</emphasis>, but we do know that the population standard deviation is <emphasis effect="italics">σ</emphasis> = 1 and our sample size is 100. Then, by the central limit theorem, the standard deviation for the sample mean is</para>
 <para id="element-624"><m:math>
  <m:mrow>
   <m:mfrac>
@@ -79,7 +79,7 @@
   <m:mo>¯</m:mo>
  </m:mover>
 
-</m:math>, will be within two standard deviations of the population mean <emphasis effect="italics">μ</emphasis>. For our iTunes example, two standard deviations is (2)(0.1) = 0.2. The sample mean <m:math>
+</m:math>, will be within two standard deviations of the population mean <emphasis effect="italics">μ</emphasis>. For our Apple Music example, two standard deviations is (2)(0.1) = 0.2. The sample mean <m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
   <m:mo>¯</m:mo>
@@ -114,7 +114,7 @@ of <m:math>
   </m:mover>
   <m:mtext> </m:mtext><m:mo>+</m:mo><m:mtext> 0</m:mtext><m:mtext>.2</m:mtext>
  </m:mrow>
-</m:math> in 95% of all the samples.</para><para id="element-433">For the iTunes example, suppose that a sample produced a sample mean <m:math>
+</m:math> in 95% of all the samples.</para><para id="element-433">For the Apple Music example, suppose that a sample produced a sample mean <m:math>
  <m:mrow>
   <m:mover accent="true">
    <m:mi>x</m:mi>
@@ -139,7 +139,7 @@ of <m:math>
   <m:mo>+</m:mo><m:mn>0.2</m:mn><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>0.2</m:mn><m:mo>=</m:mo><m:mn>2.2</m:mn>
  </m:mrow>
 </m:math></para>
-<para id="element-567">We say that we are <emphasis>95% confident</emphasis> that the unknown population mean number of songs downloaded from iTunes per month is between 1.8 and 2.2. <emphasis>The 95% confidence interval is (1.8, 2.2).</emphasis></para>
+<para id="element-567">We say that we are <emphasis>95% confident</emphasis> that the unknown population mean number of songs downloaded from Apple Music per month is between 1.8 and 2.2. <emphasis>The 95% confidence interval is (1.8, 2.2).</emphasis></para>
 <para id="element-484">The 95% confidence interval implies two possibilities. Either the interval (1.8, 2.2) contains the true mean <emphasis effect="italics">μ</emphasis> or our sample produced an <m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
