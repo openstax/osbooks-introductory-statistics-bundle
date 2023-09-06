@@ -14,7 +14,7 @@
 
 <para id="eip-332">The mean, <emphasis effect="italics">μ</emphasis>, of a discrete probability function is the expected value. </para>
 <equation class="unnumbered" id="eip-226"><label/>
-<m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>∙</m:mo><m:mi>P</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation><para id="eip-436">The standard deviation, Σ, of the PDF is the square root of the variance.</para><equation class="unnumbered" id="eip-365"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>[</m:mo><m:msup><m:mrow><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi><m:mi> </m:mi><m:mo>–</m:mo><m:mi> </m:mi><m:mi>μ</m:mi></m:mrow></m:mfenced></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mi> </m:mi><m:mo>∙</m:mo><m:mi> </m:mi><m:mi>Ρ</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>]</m:mo><m:mi> </m:mi></m:mrow></m:mrow></m:msqrt></m:math></equation><para id="eip-988">When all outcomes in the probability distribution are equally likely, these formulas coincide with the mean and standard deviation of the set of possible outcomes.</para>
+<m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>∙</m:mo><m:mi>P</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>)</m:mo></m:mrow></m:mrow></m:math></equation><para id="eip-436">The standard deviation, , of the PDF is the square root of the variance.</para><equation class="unnumbered" id="eip-365"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mo stretchy="false">∑</m:mo><m:mrow><m:mo>[</m:mo><m:msup><m:mrow><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi><m:mi> </m:mi><m:mo>–</m:mo><m:mi> </m:mi><m:mi>μ</m:mi></m:mrow></m:mfenced></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mi> </m:mi><m:mo>∙</m:mo><m:mi> </m:mi><m:mi>Ρ</m:mi><m:mfenced separators="|"><m:mrow><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>]</m:mo><m:mi> </m:mi></m:mrow></m:mrow></m:msqrt></m:math></equation><para id="eip-988">When all outcomes in the probability distribution are equally likely, these formulas coincide with the mean and standard deviation of the set of possible outcomes.</para>
 
 <note id="id8737934"><label/><title>NOTE</title>
 <para id="eip-idp95250624">To find the expected value or long term average, <emphasis effect="italics">μ</emphasis>, simply multiply each value of the random variable by its probability and add the products.</para></note>
@@ -55,7 +55,47 @@
 
 </tgroup>
 </table><para id="fs-idm87467792">Add the last column <emphasis effect="italics">x</emphasis>*<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>) to find the long term average or expected value: (0)(0.2) + (1)(0.5) + (2)(0.3) = 0 + 0.5 + 0.6 = 1.1.</para><para id="element-353">The expected value is 1.1. The soccer team would, on the average, expect to play soccer 1.1 days per week. The number 1.1 is the long-term average or expected value if the soccer team plays soccer week after week after week. We say <emphasis effect="italics">μ</emphasis> = 1.1.</para></example>
-
+<note class="statistics try" id="note-00001"><label/><title>Try It</title>
+  <exercise id="exer-00001"><problem id="prob-00001">
+   <para id="para-00001">A customer orders 1, 2, or 3 bottles of water. The probability of ordering 1 bottle is 0.6, the probability of ordering 2 bottles is 0.3, and the probability of ordering 3 bottles is 0.1. Find the long-term average or expected value, μ, of the number of bottles a customer will order.</para>
+   </problem>
+   <solution id="sol-00001">
+  <para id="para-00002">Let random variable <emphasis effect="italics">X</emphasis> = the number of bottles of water a customer orders. <emphasis effect="italics">X</emphasis> can take values 1, 2, 3. Construct a PDF table.</para>
+  <table summary="" id="table-00001">
+  
+  <tgroup cols="3">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <thead>
+  <row>
+  <entry><emphasis effect="italics">x</emphasis></entry>
+  <entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry>	<entry><m:math><m:mi>x</m:mi><m:mo>*</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math></entry>
+  </row>
+  </thead>
+  <tbody>
+    <row>
+  <entry>1</entry>
+  <entry>0.6</entry>
+  <entry><m:math><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>6</m:mn></m:math></entry>
+  </row>
+  <row>
+  <entry>2</entry>
+  <entry>0.3</entry>
+  <entry><m:math><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>6</m:mn></m:math></entry>
+  </row>
+  <row>
+  <entry>3</entry>
+  <entry>0.1</entry>
+  <entry><m:math><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn></m:math></entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00003">The total of <m:math><m:mi>x</m:mi><m:mo>*</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is obtained as <m:math><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>6</m:mn><m:mo> </m:mo><m:mo>+</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>6</m:mn><m:mo> </m:mo><m:mo>+</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3</m:mn><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math>. So, the long-term average or expected value is obtained as μ = 1.5.</para>
+  </solution>
+  </exercise>
+  </note>  
 <example id="fs-idm82770544">
 <para id="fs-idm122112">Find the expected value of the number of times a newborn baby's crying wakes its parents after midnight. The expected value is the expected number of times per week a newborn baby's crying wakes its parents after midnight. Calculate the standard deviation of the variable as well.
 
@@ -954,7 +994,87 @@
 </m:math> = 1. Use this value to complete the fourth column.</para>
 
 <para id="fs-idm151081888">Add the values in the fourth column and take the square root of the sum: σ = <m:math><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>18</m:mn></m:mrow><m:mrow><m:mn>36</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow> </m:math> ≈ 0.7071.</para></solution>
-</exercise></example><example id="example1.8"><exercise id="fs-idm71286192"><problem id="fs-idm79685344">
+</exercise></example>
+<note class="statistics try" id="note-00002"><label/><title>Try It</title>
+  <exercise id="exer-00002"><problem id="prob-00002">
+   <para id="para-00004">Add the values in the third column to find the expected value: <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>36</m:mn><m:mn>36</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:math>. Use this value to complete the fourth column.</para>
+  <para id="para-00005">Add the values in the fourth column and take the square root of the sum: <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mn>18</m:mn><m:mn>36</m:mn></m:mfrac></m:msqrt><m:mo>≈</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>7071</m:mn></m:math>.</para>
+  <para id="para-00006">Two stacks of cards are placed on a table. Each stack has cards number 1 to 8. One card from each stack is picked up. Let <emphasis effect="italics">X</emphasis> = number of cards showing an odd number. Construct a table like Table 4.11 and calculate the mean µ and standard deviation σ of <emphasis effect="italics">X</emphasis>.</para>
+  </problem>
+   <solution id="sol-00002">
+  <para id="para-00007">The sample space has 64 outcomes:</para>
+  <table summary="" id="table-00002">
+  <tgroup cols="8">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <colspec colnum="5" colname="c5"/>
+  <colspec colnum="6" colname="c6"/>
+  <colspec colnum="7" colname="c7"/>
+  <colspec colnum="8" colname="c8"/>
+  <tbody>
+  <row>
+  <entry>(1,1)</entry><entry>(1,2)</entry><entry>(1,3)</entry><entry>(1,4)</entry><entry>(1,5)</entry><entry>(1,6)</entry><entry>(1,7)</entry><entry>(1,8)</entry>
+  </row>
+  <row>
+  <entry>(2,1)</entry><entry>(2,2)</entry><entry>(2,3)</entry><entry>(2,4)</entry><entry>(2,5)</entry><entry>(2,6)</entry><entry>(2,7)</entry><entry>(2,8)</entry>
+  </row>
+  <row>
+  <entry>(3,1)</entry><entry>(3,2)</entry><entry>(3,3)</entry><entry>(3,4)</entry><entry>(3,5)</entry><entry>(3,6)</entry><entry>(3,7)</entry><entry>(3,8)</entry>
+  </row>
+  <row>
+  <entry>(4,1)</entry><entry>(4,2)</entry><entry>(4,3)</entry><entry>(4,4)</entry><entry>(4,5)</entry><entry>(4,6)</entry><entry>(4,7)</entry><entry>(4,8)</entry>
+  </row>
+  <row>
+  <entry>(5,1)</entry><entry>(5,2)</entry><entry>(5,3)</entry><entry>(5,4)</entry><entry>(5,5)</entry><entry>(5,6)</entry><entry>(5,7)</entry><entry>(5,8)</entry>
+  </row>
+  <row>
+  <entry>(6,1)</entry><entry>(6,2)</entry><entry>(6,3)</entry><entry>(6,4)</entry><entry>(6,5)</entry><entry>(6,6)</entry><entry>(6,7)</entry><entry>(6,8)</entry>
+  </row>
+  <row>
+  <entry>(7,1)</entry><entry>(7,2)</entry><entry>(7,3)</entry><entry>(7,4)</entry><entry>(7,5)</entry><entry>(7,6)</entry><entry>(7,7)</entry><entry>(7,8)</entry>
+  </row>
+  <row>
+  <entry>(8,1)</entry><entry>(8,2)</entry><entry>(8,3)</entry><entry>(8,4)</entry><entry>(8,5)</entry><entry>(8,6)</entry><entry>(8,7)</entry><entry>(8,8)</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00008">The sample space is used to complete the following table:</para>
+  <table summary="" id="table-00003">
+  <tgroup cols="4">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <colspec colnum="3" colname="c3"/>
+  <colspec colnum="4" colname="c4"/>
+  <thead>
+  <row>
+  <entry><emphasis effect="italics">x</emphasis></entry>
+  <entry><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry>
+  <entry><emphasis effect="italics">x*P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry>
+  <entry><m:math><m:msup><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow></m:mfenced><m:mn>2</m:mn></m:msup><m:mo>·</m:mo><m:mi>P</m:mi><m:mfenced><m:mi>x</m:mi></m:mfenced></m:math></entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>0</entry><entry><m:math><m:mfrac><m:mn>16</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry><entry>0</entry><entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>·</m:mo><m:mfrac><m:mn>16</m:mn><m:mn>64</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>16</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry>
+  </row>
+  <row>
+  <entry>1</entry><entry><m:math><m:mfrac><m:mn>32</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry><entry><m:math><m:mfrac><m:mn>32</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry><entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>·</m:mo><m:mfrac><m:mn>32</m:mn><m:mn>64</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:math></entry>
+  </row>
+  <row>
+  <entry>2</entry><entry><m:math><m:mfrac><m:mn>16</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry><entry><m:math><m:mfrac><m:mn>32</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry><entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo>·</m:mo><m:mfrac><m:mn>16</m:mn><m:mn>64</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>16</m:mn><m:mn>64</m:mn></m:mfrac></m:math></entry>
+  </row>
+  </tbody>
+  </tgroup>
+  </table>
+  <para id="para-00009">The mean is calculated by adding the values in the third column of <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>), so <m:math><m:mfrac><m:mn>64</m:mn><m:mn>64</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.</para>
+  <para id="para-00010">The square root of the sum of values obtained in the fourth column will give the standard deviation, <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mn>32</m:mn><m:mn>64</m:mn></m:mfrac></m:msqrt><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>7071</m:mn></m:math>.</para>
+  </solution>
+  </exercise>
+  </note>  
+<example id="example1.8"><exercise id="fs-idm71286192"><problem id="fs-idm79685344">
 <para id="fs-idm64926544">On May 11, 2013 at 9:30 PM, the probability that moderate seismic activity (one moderate earthquake) would occur in the next 48 hours in Iran was about 21.42%. Suppose you make a bet that a moderate earthquake will occur in Iran during this period. If you win the bet, you win $50. If you lose the bet, you pay $20. Let <emphasis effect="italics">X</emphasis> = the amount of profit from a bet.</para><para id="fs-idm74848144"><emphasis effect="italics">P</emphasis>(win) = <emphasis effect="italics">P</emphasis>(one moderate earthquake will occur) = 21.42%</para>
 <para id="fs-idm122921568"><emphasis effect="italics">P</emphasis>(loss) = <emphasis effect="italics">P</emphasis>(one moderate earthquake will <emphasis effect="italics">not</emphasis> occur) = 100% – 21.42%</para><para id="fs-idm135341424">If you bet many times, will you come out ahead? Explain your answer in a complete sentence using numbers. What is the standard deviation of <emphasis effect="italics">X</emphasis>? Construct a table similar to <link target-id="element-226" document=""/> and <link target-id="fs-idm21999584" document=""/> to help you answer these questions.</para></problem>
 

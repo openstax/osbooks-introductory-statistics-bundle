@@ -22,10 +22,10 @@
   </m:mtable></m:mfenced>
    <m:msup><m:mi>p</m:mi><m:mi>x</m:mi></m:msup>
   <m:msup><m:mi>q</m:mi><m:mrow><m:mi>n</m:mi><m:mo>-</m:mo><m:mi>x</m:mi></m:mrow></m:msup>
-</m:math></equation></para><para id="eip-28">where b(x) is the probability of X successes in n trials     when the probability of a success in ANY ONE TRIAL is p. And of course q=(1-p) and is the probability of a failure in any one trial.</para><para id="eip-663">We can see now why the combinatorial formula is also called the binomial coefficient because it reappears here again in the binomial probability function. For the binomial formula to work, the probability of a success in any one trial must be the same from trial to trial, or in other words, the outcomes of each trial must be independent. Flipping a coin is a binomial process because the probability of getting a head in one flip does not depend upon what has happened in PREVIOUS flips. (At this time it should be noted that using p for the parameter of the binomial distribution is a violation of the rule that population parameters are designated with Greek letters. In many textbooks θ (pronounced theta) is used instead of p and this is how it should be.   </para><para id="eip-224">Just like a set of data, a probability density function has a mean and a standard deviation that describes the data set. For the binomial distribution these are given by the formulas:</para><para id="eip-393"><equation class="unnumbered" id="eip-id4794546">
+</m:math></equation></para><para id="eip-28">where b(x) is the probability of X successes in n trials     when the probability of a success in ANY ONE TRIAL is p. And of course q=(1-p) and is the probability of a failure in any one trial.</para><para id="eip-663">We can see now why the combinatorial formula is also called the binomial coefficient because it reappears here again in the binomial probability function. For the binomial formula to work, the probability of a success in any one trial must be the same from trial to trial, or in other words, the outcomes of each trial must be independent. Flipping a coin is a binomial process because the probability of getting a head in one flip does not depend upon what has happened in PREVIOUS flips. (At this time it should be noted that using p for the parameter of the binomial distribution is a violation of the rule that population parameters are designated with Greek letters. In many textbooks θ (pronounced theta) is used instead of p and this is how it should be.)</para><para id="eip-224">Just like a set of data, a probability density function has a mean and a standard deviation that describes the data set. For the binomial distribution these are given by the formulas:</para><para id="eip-393"><equation class="unnumbered" id="eip-id4794546">
 <m:math><m:mtext>μ</m:mtext><m:mo>=</m:mo> <m:mtext>np</m:mtext></m:math></equation>
 
-<equation class="unnumbered" id="eip-id2942178"><label/><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:msqrt></m:math></equation></para><para id="eip-515">Notice that p is the only parameter in these equations. The binomial distribution is thus seen as coming from the one-parameter family of probability distributions. In short, we know all there is to know about the binomial once we know p, the probability of a success in any one trial.</para><para id="eip-516">In probability theory, under certain circumstances, one probability distribution can be used to approximate another. We say that one is the limiting distribution of the other. If a small number is to be drawn from a large population, even if there is no replacement, we can still use the binomial even thought this is not a binomial process. If there is no replacement it violates the independence rule of the binomial. Nevertheless, we can use the binomial to approximate a probability that is really a hypergeometric distribution if we are drawing fewer than 10 percent of the population, i.e. n  is less than 10 percent of N in the formula for the hypergeometric function. The rationale for this argument is that when drawing a small percentage of the population we do not alter the probability of a success from draw to draw in any meaningful way. Imagine drawing from not one deck of 52 cards but from 6 decks of cards. The probability of say drawing an ace does not change the conditional probability of what happens on a second draw  in the same way it would if there were only 4 aces rather than the 24 aces now to draw from. This ability to use one probability distribution to estimate others will become very valuable to us later. </para></section><para id="element-999">There are three characteristics of a binomial experiment.
+<equation class="unnumbered" id="eip-id2942178"><label/><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:msqrt></m:math></equation></para><para id="eip-515">Notice that p is the only parameter in these equations. The binomial distribution is thus seen as coming from the one-parameter family of probability distributions. In short, we know all there is to know about the binomial distribution once we know p, the probability of a success in any one trial.</para><para id="eip-516">In probability theory, under certain circumstances, one probability distribution can be used to approximate another. We say that one is the limiting distribution of the other. If a small number is to be drawn from a large population, even if there is no replacement, we can still use the binomial even thought this is not a binomial process. If there is no replacement it violates the independence rule of the binomial. Nevertheless, we can use the binomial to approximate a probability that is really a hypergeometric distribution if we are drawing fewer than 10 percent of the population, i.e. n  is less than 10 percent of N in the formula for the hypergeometric function. The rationale for this argument is that when drawing a small percentage of the population we do not alter the probability of a success from draw to draw in any meaningful way. Imagine drawing from not one deck of 52 cards but from 6 decks of cards. The probability of say drawing an ace does not change the conditional probability of what happens on a second draw  in the same way it would if there were only 4 aces rather than the 24 aces now to draw from. This ability to use one probability distribution to estimate others will become very valuable to us later. </para></section><para id="element-999">There are three characteristics of a binomial experiment.
 <list id="element-591" list-type="enumerated"><item>There are a fixed number of trials. Think of trials as repetitions of an experiment. The letter <emphasis effect="italics">n</emphasis> denotes the number of trials.</item>
 <item>The random variable, <m:math><m:mi>x</m:mi></m:math>, number of successes, is discrete.</item>
 <item>There are only two possible outcomes, called "success" and "failure," for each trial. The letter <emphasis effect="italics">p</emphasis> denotes the probability of a success on any one trial, and <emphasis effect="italics">q</emphasis> denotes the probability of a failure on any one trial. <emphasis effect="italics">p</emphasis> + <emphasis effect="italics">q</emphasis> = 1.</item>
@@ -53,7 +53,7 @@
 </exercise>
 </note><example id="element-167"><exercise id="fs-idm61431456">
 <problem id="fs-idm3565248">
-<para id="element-104">A fair coin is flipped 15 times. Each flip is independent. What is the probability of getting more than ten heads? Let <emphasis effect="italics">X</emphasis> = the number of heads in 15 flips of the fair coin. <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, ..., 15. Since the coin is fair, <emphasis effect="italics">p</emphasis> = 0.5 and <emphasis effect="italics">q</emphasis> = 0.5. The number of trials is <emphasis effect="italics">n</emphasis> = 15. State the probability question mathematically.</para>
+<para id="element-104">A coin has been altered to weight the outcome from 0.5 to 0.25 and is flipped 5 times. Each flip is independent. What is the probability of getting more than 3 heads? Let <emphasis effect="italics">X</emphasis> = the number of heads in 5 flips of the fair coin. <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, 4, 5. Since the coin is altered to result in <emphasis effect="italics">p</emphasis> = 0.25, <emphasis effect="italics">q</emphasis> is 0.75. The number of trials is <emphasis effect="italics">n</emphasis> = 5. State the probability question mathematically.</para>
 </problem>
 <solution id="fs-idm23816272">
 <para id="fs-idm59406368"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 10)</para>
@@ -61,7 +61,7 @@
 </exercise>
 </example><example id="element-807">
 <para id="element-175">Approximately 70% of statistics students do their homework in time for it to be collected and graded. Each student does homework independently. In a statistics class of 50 students, what is the probability that at least 40 will do their homework on time? Students are selected randomly.<newline count="2"/></para><exercise id="element-1751"><problem id="id5317083">
-<para id="element-732">a. This is a binomial problem because there is only a success or a __________, there are a fixed number of trials, and the probability of a success is 0.70 for each trial.</para></problem>
+<para id="element-732">a. This is a binomial problem because there is only a success or a __________, there are a fixed number of trials.</para></problem>
 <solution id="id5321627">
  <para id="element-23523">a. failure<newline count="2"/></para></solution>
 </exercise>
@@ -103,12 +103,12 @@
 <problem id="fs-idm386096">
   <list id="list-00001" list-type="enumerated">
 <item>Sixty-five percent of people pass the state driver’s exam on the first try. A group of 50 individuals who have taken the driver’s exam is randomly selected. Give two reasons why this is a binomial problem.</item>
-<item>During the 2013 regular NBA season, DeAndre Jordan of the Los Angeles Clippers had the highest field goal completion rate in the league. DeAndre scored with 61.3% of his shots. Suppose you choose a random sample of 80 shots made by DeAndre during the 2013 season. Let <emphasis effect="italics">X</emphasis> = the number of shots that scored points.
+<item>During a certain NBA season, a player for the Los Angeles Clippers had the highest field goal completion rate in the league. This player scored with 61.3% of his shots. Suppose you choose a random sample of 80 shots made by this player during the season. Let <emphasis effect="italics">X</emphasis> = the number of shots that scored points.
 
   <list id="fs-idm69954960" list-type="enumerated" number-style="lower-alpha"><item>What is the probability distribution for <emphasis effect="italics">X</emphasis>?</item>
   <item>Using the formulas, calculate the (i) mean and (ii) standard deviation of <emphasis effect="italics">X</emphasis>.</item>
-  <item>Find the probability that DeAndre scored with 60 of these shots.</item>
-  <item>Find the probability that DeAndre scored with more than 50 of these shots.</item>
+  <item>Find the probability that this player scored with 60 of these shots.</item>
+  <item>Find the probability that this player scored with more than 50 of these shots.</item>
   </list></item>
 </list>
 
@@ -186,7 +186,7 @@
 
 <section id="fs-idp75382928" class="practice">
 
-<para id="fs-idm98093824"><emphasis effect="italics">Use the following information to answer the next eight exercises:</emphasis> The Higher Education Research Institute at UCLA collected data from 203,967 incoming first-time, full-time freshmen from 270 four-year colleges and universities in the U.S. 71.3% of those students replied that, yes, they believe that same-sex couples should have the right to legal marital status. Suppose that you randomly pick eight first-time, full-time freshmen from the survey. You are interested in the number that believes that same sex-couples should have the right to legal marital status.</para><exercise id="exerciseone">
+<para id="fs-idm98093824"><emphasis effect="italics">Use the following information to answer the next eight exercises:</emphasis> The Higher Education Research Institute at UCLA collected data from 203,967 incoming first-time, full-time first-year students from 270 four-year colleges and universities in the U.S. 71.3% of those students replied that, yes, they believe that same-sex couples should have the right to legal marital status. Suppose that you randomly pick eight first-time, full-time first-year students from the survey. You are interested in the number that believes that same sex-couples should have the right to legal marital status.</para><exercise id="exerciseone">
 <problem id="id8424885">
 <para id="prob_1">In words, define the random variable <emphasis effect="italics">X</emphasis>.</para>
 </problem>
@@ -328,12 +328,12 @@
 <para id="element-88758232434">1.2795</para>
 </solution> --></exercise><exercise id="exerciseseven">
 <problem id="id8562271">
-<para id="prob_7">What is the probability that at most five of the freshmen reply “yes”?</para></problem>
+<para id="prob_7">What is the probability that at most five of the first-year students reply “yes”?</para></problem>
 <solution id="id8562288">
 <para id="element-88758232344">0.4151</para></solution></exercise>
 
 <exercise id="exercisenine"><problem id="id8562314">
-<para id="prob_9">What is the probability that at least two of the freshmen reply “yes”?</para></problem>
+<para id="prob_9">What is the probability that at least two of the first-year students reply “yes”?</para></problem>
 
 <!-- <solution id="id8562331">
 <para id="element-88758233244">0.9990</para></solution> --></exercise></section>
@@ -376,7 +376,7 @@
 <para id="eip-idm142934256">one</para>
 </solution> -->
 </exercise><exercise id="fs-idp24682912"><problem id="fs-idp24683040">
-  <para id="fs-idm1731712">People visiting video rental stores often rent more than one DVD at a time. The probability distribution for number of hot dogs purchased per customer at a hot dog stand is given <link target-id="M04_Ch04_tbl005" document=""/>.</para>
+  <para id="fs-idm1731712">People visiting video game rental stores often rent more than one game at a time. The probability distribution for game rentals per customer at Game Stop is given <link target-id="M04_Ch04_tbl005" document=""/>. There is five-game limit per customer at this store, so nobody ever rents more than five video games.</para>
 
 <table id="M04_Ch04_tbl005" summary="The table lists the number of video rentals (1, 2, 3, 4, 5) and the respective probabilities.">
 <tgroup cols="2"><thead>
@@ -414,12 +414,12 @@
 
 </tgroup>
 </table><list id="eip-id1169667979628" mark-suffix="." list-type="enumerated" number-style="lower-alpha"><item>Describe the random variable <emphasis effect="italics">X</emphasis> in words.</item>
-<item>Find the probability that a customer purchases three hot dogs.</item>
-<item>Find the probability that a customer purchases at least four hot dogs.</item>
-<item>Find the probability that a customer purchases at most two hot dogs.</item>
+<item>Find the probability that a customer purchases three games.</item>
+<item>Find the probability that a customer purchases at least four games.</item>
+<item>Find the probability that a customer purchases at most two games.</item>
 </list></problem>
 <solution id="fs-idm53665904">
-<list id="eip-idm83204976" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of DVDs a Video to Go customer rents</item>
+<list id="eip-idm83204976" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of video games a Game Stop customer rents</item>
 <item>0.12</item>
 <item>0.11</item>
 <item>0.77</item>
@@ -733,7 +733,7 @@
 <solution id="fs-idp49095408">
 <list id="fs-idm15010256" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(15, 0.281)
 <figure id="fs-idm99183632"><media id="fs-idm76247600" alt="This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 15, with bars from 0 to 9. The y-axis shows values from 0 to 0.25 in increments of 0.05." display="block">
-<image mime-type="image/png" src="../../media/CNX_Stats_C04_M05_001anno.jpg" width="450"/></media></figure></item>
+<image mime-type="image/png" src="../../media/CNX_Stats_C04_M05_001anno.png" width="450"/></media></figure></item>
 <item>
 <list id="fs-idm155337312" list-type="enumerated" number-style="lower-roman"><item>Mean = <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> = 15(0.281) = 4.215</item>
 <item>Standard Deviation = <emphasis effect="italics">σ</emphasis> = <m:math>

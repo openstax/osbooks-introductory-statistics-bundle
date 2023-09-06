@@ -43,11 +43,16 @@
 </note><example id="element-167"><exercise id="fs-idm61431456">
 <problem id="fs-idm3565248">
 <para id="element-104">A coin is has been altered to weight the outcome from 0.5 to 0.25 and flipped 5 times. Each flip is independent. What is the probability of getting more than 3 heads? Let <emphasis effect="italics">X</emphasis> = the number of heads in 5 flips of the fair coin. <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, ..., 15. Since the coin is altered to result in <emphasis effect="italics">p</emphasis> = 0.25, <emphasis effect="italics">q</emphasis> is 0.75. The number of trials is <emphasis effect="italics">n</emphasis> = 5. State the probability question mathematically.</para>
+<para id="para-00001">First develop fully the probability density function and graph the probability density function. With the fully developed probability density function we can simply read the solution to the question <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn></m:mrow></m:mfenced></m:math> heads. <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0146</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0007</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0153</m:mn><m:mo>.</m:mo></m:math> We have added the two individual probabilities because of the addition rule from Chapter 3.</para>
+<para id="para-00002">Figure 4.4 also allows us to see the link between the probability density function and probability and area. We also see in Figure 4.4 the skew of the binomial distribution when p is not equal to 0.5. In Figure 4.4 the distribution is skewed right as a result of <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math> because <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math>.</para>
+<figure id="fig-00001"><media alt="Histogram of probability density function of the given data."><image mime-type="image/png" src="../../media/IBS2e_Figure_04_00_004.png"/></media></figure>
 </problem>
 </exercise>
 </example><note id="fs-idm26333440" class="statistics try"><label/><title>Try It</title>
 <exercise id="fs-idm77060880">
-<problem id="fs-idm123194928"><para id="fs-idm39905824">A fair, six-sided die is rolled ten times. Each roll is independent. You want to find the probability of rolling a one more than three times. State the probability question mathematically.</para></problem>
+<problem id="fs-idm123194928"><para id="fs-idm39905824">A fair, six-sided die is rolled ten times. Each roll is independent. You want to find the probability of rolling a one more than three times. State the probability question mathematically.</para>
+
+</problem>
 </exercise>
 </note><example id="element-807">
 <para id="element-175">Approximately 70% of statistics students do their homework in time for it to be collected and graded. Each student does homework independently. In a statistics class of 50 students, what is the probability that at least 40 will do their homework on time? Students are selected randomly.<newline count="2"/></para><exercise id="element-1751"><problem id="id5317083">
@@ -100,7 +105,7 @@ if "number" is left out, the result is the binomial probability table.
 
 <para id="element-442">The probability that at most 12 workers have a high school diploma but do not pursue any further education is 0.9738.</para>
 
-<para id="element-586">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(20, 0.41) is as follows:</para><figure id="fs-idm42104448"><media id="id5403497" display="block" alt="This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 20. The y-axis shows values from 0 to 0.2 in increments of 0.05."><image src="../../media/fig-ch04_05_01N.jpg" mime-type="image/jpg" width="450"/></media></figure><para id="element-313">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">x</emphasis>, where <emphasis effect="italics">X</emphasis> = the number of workers who have only a high school diploma.</para>
+<para id="element-586">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(20, 0.41) is as follows:</para><figure id="fs-idm42104448"><media id="id5403497" display="block" alt="This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 20. The y-axis shows values from 0 to 0.2 in increments of 0.05."><image src="../../media/fig-ch04_05_01.png" mime-type="image/png" width="450"/></media></figure><para id="element-313">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">x</emphasis>, where <emphasis effect="italics">X</emphasis> = the number of workers who have only a high school diploma.</para>
 
 <para id="element-363">The number of adult workers that you expect to have a high school diploma but not pursue any further education is the mean, <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> = (20)(0.41) = 8.2.</para>
 
@@ -319,6 +324,15 @@ if "number" is left out, the result is the binomial probability table.
 <item>Use your calculator to find the probability that at most eight people develop pancreatic cancer</item>
 <item>Is it more likely that five or six people will develop pancreatic cancer? Justify your answer numerically.</item>
 </list></problem>
+<solution id="sol-00001">
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00001">
+    <item><m:math><m:mi>X</m:mi><m:mo> </m:mo><m:mo>~</m:mo><m:mo> </m:mo><m:mi>B</m:mi><m:mfenced><m:mrow><m:mn>200</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfenced></m:math></item>
+    <item><m:math><m:mi>Mean</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>200</m:mn><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>3</m:mn></m:math><newline/><m:math><m:mi>Standard</m:mi><m:mo> </m:mo><m:mi>Deviation</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mn>200</m:mn><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>985</m:mn><m:mo>)</m:mo></m:msqrt><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>719</m:mn></m:math></item>
+    <item><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>8</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>9965</m:mn></m:math></item>
+    <item>The probability that five people develop pancreatic cancer is 0.1011. The probability that six people develop pancreatic cancer is 0.0500.</item>
+    </list>
+ 
+</solution>
 
 </exercise>
 </example>
@@ -955,12 +969,12 @@ if "number" is left out, the result is the binomial probability table.
 </list></solution></exercise>
 
 <exercise id="fs-idm40828128"><problem id="fs-idm51462656">
-<para id="fs-idp72203552">According to The World Bank, only 9% of the population of Uganda had access to electricity as of 2009. Suppose we randomly sample 150 people in Uganda. Let <emphasis effect="italics">X</emphasis> = the number of people who have access to electricity.</para>
+<para id="fs-idp72203552">Only 9% of the population of Niger has access to the internet. Suppose we randomly sample 150 people in Niger. Let <emphasis effect="italics">X</emphasis> = the number of people who have access to the internet.</para>
 <list id="fs-idm81777984" list-type="enumerated" number-style="lower-alpha"><item>What is the probability distribution for <emphasis effect="italics">X</emphasis>?</item>
 <item>Using the formulas, calculate the mean and standard deviation of <emphasis effect="italics">X</emphasis>.</item>
-<item>Use your calculator to find the probability that 15 people in the sample have access to electricity.</item>
-<item>Find the probability that at most ten people in the sample have access to electricity.</item>
-<item>Find the probability that more than 25 people in the sample have access to electricity.</item>
+<item>Use your calculator to find the probability that 15 people in the sample have access to the internet.</item>
+<item>Find the probability that at most ten people in the sample have access to the internet.</item>
+<item>Find the probability that more than 25 people in the sample have access to the internet.</item>
 </list></problem>
 
 <!-- <solution id="fs-idm37905376">
@@ -994,7 +1008,7 @@ if "number" is left out, the result is the binomial probability table.
 </list></solution> -->
 </exercise><exercise id="fs-idm104093808">
 <problem id="fs-idp20161024">
-<para id="fs-idp99891040">The literacy rate for a nation measures the proportion of people age 15 and over that can read and write. The literacy rate in Afghanistan is 28.1%. Suppose you choose 15 people in Afghanistan at random. Let <emphasis effect="italics">X</emphasis> = the number of people who are literate.</para>
+<para id="fs-idp99891040">The literacy rate for a nation measures the proportion of people age 15 and over that can read and write. The literacy rate in a certain country is 28.1%. Suppose you choose 15 people in that country at random. Let <emphasis effect="italics">X</emphasis> = the number of people who are literate.</para>
 <list id="fs-idm37302880" list-type="enumerated" number-style="lower-alpha">
 <item>Sketch a graph of the probability distribution of <emphasis effect="italics">X</emphasis>.</item>
 <item>Using the formulas, calculate the (i) mean and (ii) standard deviation of <emphasis effect="italics">X</emphasis>.</item>
@@ -1004,7 +1018,7 @@ if "number" is left out, the result is the binomial probability table.
 <solution id="fs-idp49095408">
 <list id="fs-idm15010256" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(15, 0.281)
 <figure id="fs-idm99183632"><media id="fs-idm76247600" alt="This histogram shows a binomial probability distribution. It is made up of bars that are fairly normally distributed. The x-axis shows values from 0 to 15, with bars from 0 to 9. The y-axis shows values from 0 to 0.25 in increments of 0.05." display="block">
-<image mime-type="image/png" src="../../media/CNX_Stats_C04_M05_001anno.jpg" width="450"/></media></figure></item>
+<image mime-type="image/png" src="../../media/CNX_Stats_C04_M05_001anno.png" width="450"/></media></figure></item>
 <item>
 <list id="fs-idm155337312" list-type="enumerated" number-style="lower-roman"><item>Mean = <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> = 15(0.281) = 4.215</item>
 <item>Standard Deviation = <emphasis effect="italics">σ</emphasis> = <m:math>
