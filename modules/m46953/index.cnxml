@@ -225,81 +225,17 @@ probability that it takes five games until you lose? Let <emphasis effect="itali
 </exercise></note><example id="fs-idm65101072">
 <exercise id="fs-idm83790480">
 <problem id="fs-idm65243344">
-<para id="fs-idm113071296">The lifetime risk of developing pancreatic cancer is about one in 67 (1.5%). Let <emphasis effect="italics">X</emphasis> = the number of people you ask until one says they have pancreatic cancer. Then <emphasis effect="italics">X</emphasis> is a discrete random variable with a geometric distribution:</para><list id="fs-idm128110288" list-type="enumerated" number-style="lower-alpha"><item>What is the probability of that you ask ten people before one says they have pancreatic cancer?</item>
+<para id="fs-idm113071296">The lifetime risk of developing pancreatic cancer is about one in 67 (1.5%). Let <emphasis effect="italics">X</emphasis> = the number of people you ask until one says they have pancreatic cancer. Then <emphasis effect="italics">X</emphasis> is a discrete random variable with a geometric distribution: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>G</m:mi><m:mfenced><m:mfrac><m:mn>1</m:mn><m:mn>67</m:mn></m:mfrac></m:mfenced></m:math> or <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>G</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>)</m:mo></m:math></para><list id="fs-idm128110288" list-type="enumerated" number-style="lower-alpha"><item>What is the probability of that you ask ten people before one says they have pancreatic cancer?</item>
 <item>What is the probability that you must ask 20 people?</item>
 <item>Find the (i) mean and (ii) standard deviation of <emphasis effect="italics">X</emphasis>.</item>
 </list></problem>
 
 <solution id="fs-idp19888080">
-<list id="fs-idm133938784" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 10) = geometpdf(0.0128, 10) = 0.0114</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 20) = geometpdf(0.0128, 20) = 0.01</item>
-<item>
-<list id="eip-idm162329472" list-type="enumerated" number-style="lower-roman"><item>Mean = <emphasis effect="italics">μ</emphasis> = <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mn>1</m:mn>
-   <m:mi>p</m:mi>
-  </m:mfrac>
-
- </m:mrow>
-</m:math> = <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mn>1</m:mn>
-   <m:mrow>
-    <m:mn>0.0128</m:mn>
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math> = 78</item>
-<item>Standard Deviation = <emphasis effect="italics">σ</emphasis> = <m:math>
- <m:mrow>
-  <m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi>
-     </m:mrow>
-     <m:mrow>
-      <m:msup>
-       <m:mi>p</m:mi>
-       <m:mn>2</m:mn>
-      </m:msup>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msqrt>
-
- </m:mrow>
-</m:math> = <m:math>
- <m:mrow>
-  <m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.0128</m:mn>
-     </m:mrow>
-     <m:mrow>
-      <m:msup>
-       <m:mrow>
-        <m:mn>0.0128</m:mn>
-       </m:mrow>
-       <m:mn>2</m:mn>
-      </m:msup>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msqrt>
-
- </m:mrow>
-</m:math> ≈ 77.6234</item>
-</list></item>
-</list></solution>
+  <list id="fs-idm133938784" list-type="enumerated" number-style="lower-alpha">
+  <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mi>e</m:mi><m:mi>o</m:mi><m:mi>m</m:mi><m:mi>e</m:mi><m:mi>t</m:mi><m:mi>r</m:mi><m:mi>i</m:mi><m:mi>c</m:mi><m:mi>p</m:mi><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0131</m:mn></m:math></item>
+  <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>g</m:mi><m:mi>e</m:mi><m:mi>o</m:mi><m:mi>m</m:mi><m:mi>e</m:mi><m:mi>t</m:mi><m:mi>r</m:mi><m:mi>i</m:mi><m:mi>c</m:mi><m:mi>p</m:mi><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>,</m:mo><m:mn>20</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0113</m:mn></m:math></item>
+  <item><m:math><m:mi>Mean</m:mi><m:mo>=</m:mo><m:mi>&#x3BC;</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>66</m:mn><m:mo>.</m:mo><m:mn>67</m:mn></m:math><newline/><m:math><m:mi>Standard</m:mi><m:mo>&#xA0;</m:mo><m:mi>Deviation</m:mi><m:mo>=</m:mo><m:mi>&#x3C3;</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow><m:msup><m:mi>p</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow><m:msup><m:mrow><m:mo>[</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>]</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mfrac></m:msqrt><m:mo>=</m:mo><m:mn>66</m:mn><m:mo>.</m:mo><m:mn>16</m:mn></m:math></item>
+  </list></solution>  
 </exercise>
 </example>
 
@@ -675,7 +611,7 @@ probability that it takes five games until you lose? Let <emphasis effect="itali
 
 
 <exercise id="fs-idm51281904"><problem id="fs-idm122477648">
-<para id="fs-idm73224944">The World Bank records the prevalence of HIV in countries around the world. According to their data, “Prevalence of HIV refers to the percentage of people ages 15 to 49 who are infected with HIV.”<footnote id="fs-idm108474144">”Prevalence of HIV, total (% of populations ages 15-49),” The World Bank, 2013. Available online at http://data.worldbank.org/indicator/SH.DYN.AIDS.ZS?order=wbapi_data_value_2011+wbapi_data_value+wbapi_data_value-last&amp;sort=desc (accessed May 15, 2013).</footnote> In South Africa, the prevalence of HIV is 17.3%. Let <emphasis effect="italics">X</emphasis> = the number of people you test until you find a person infected with HIV.</para>
+<para id="fs-idm73224944">Medical researchers in a certain country have documented that the percentage of people ages 15 to 49 who are infected with a certain respiratory virus is 17.3%. Let <emphasis effect="italics">X</emphasis> = the number of people you test until you find a person infected with the virus.</para>
 
 <list id="fs-idm123061824" list-type="enumerated" number-style="lower-alpha"><item>Sketch a graph of the distribution of the discrete random variable <emphasis effect="italics">X</emphasis>.</item>
 <item>What is the probability that you must test 30 people to find one with the virus?</item>

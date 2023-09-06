@@ -40,7 +40,10 @@
   
  </m:mrow>
 </m:math>.</para><para id="element-612">Any experiment that has characteristics three and four and where <emphasis effect="italics">n</emphasis> = 1 is called a <term id="term-00002">Bernoulli Trial</term> (named after Jacob Bernoulli who, in the late 1600s, studied them extensively). A binomial experiment takes place when the number of successes is counted in one or more Bernoulli Trials.</para><example id="fs-idm62623744">
-<para id="element-284">Suppose you play a game that you can only either win or lose. The probability that you win any game is 55%, and the probability that you lose is 45%. Each game you play is independent. If you play the game 20 times, write the function that describes the probability that you win 15 of the 20 times. Here, if you define <emphasis effect="italics">X</emphasis> as the number of wins, then <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, ..., 20. The probability of a success is <emphasis effect="italics">p</emphasis> = 0.55. The probability of a failure is <emphasis effect="italics">q</emphasis> = 0.45. The number of trials is <emphasis effect="italics">n</emphasis> = 20. The probability question can be stated mathematically as <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 15).</para></example>
+<para id="element-284">Suppose you play a game that you can only either win or lose. The probability that you win any game is 55%, and the probability that you lose is 45%. Each game you play is independent. If you play the game 20 times, write the function that describes the probability that you win 15 of the 20 times. Here, if you define <emphasis effect="italics">X</emphasis> as the number of wins, then <emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, ..., 20. The probability of a success is <emphasis effect="italics">p</emphasis> = 0.55. The probability of a failure is <emphasis effect="italics">q</emphasis> = 0.45. The number of trials is <emphasis effect="italics">n</emphasis> = 20. The probability question can be stated mathematically as <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 15).</para>
+<para id="para-00001"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>)</m:mo></m:math> stated more carefully in English would be stated as “the probability of exactly 15 wins in 20 trials.” <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>15</m:mn><m:mo>)</m:mo></m:math> would need again a more careful statement because if we desire <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>15</m:mn><m:mo>)</m:mo></m:math> we need to calculate all the values of x from <m:math><m:mi>P</m:mi><m:mo>:</m:mo><m:mo> </m:mo><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo>…</m:mo><m:mo>.</m:mo><m:mn>14</m:mn><m:mo>)</m:mo></m:math>.</para>
+<para id="para-00002">Similarly we may wish to know the probability “greater than” some number, which requires multiple calculations of the values of <emphasis effect="italics">x</emphasis>.</para>
+</example>
 
 <note id="fs-idm55323584" class="statistics try"><label/><title>Try It</title>
 <exercise id="fs-idm35562192">
@@ -57,44 +60,23 @@
 </problem>
 <solution id="fs-idm23816272">
 <para id="fs-idm59406368"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 10)</para>
+<para id="para-00003">First develop fully the probability density function and graph the probability density function. With the fully developed probability density function we can simply read the solution to the question <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math> heads. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0146</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0007</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0153</m:mn></m:math>. We have added the two individual probabilities because of the addition rule from Chapter 3.</para>
+<para id="para-00004">Figure 4.4 also allows us to see the link between the probability density function and probability and area. We also see in Figure 4.4 the skew of the binomial distribution when p is not equal to 0.5. In Figure 4.4 the distribution is skewed right as a result of <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math> because 	<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math>.</para>
+<figure id="fig-00001"><media alt="Histogram of probability density function of the given data."><image mime-type="image/png" src="../../media/IBS2e_Figure_04_00_004.png"/></media></figure>
 </solution>
 </exercise>
-</example><example id="element-807">
+</example>
+<note id="fs-idm26333440" class="statistics try"><label/><title>Try It</title>
+  <exercise id="fs-idm77060880">
+  <problem id="fs-idm123194928"><para id="fs-idm39905824">A fair, six-sided die is rolled ten times. Each roll is independent. You want to find the probability of rolling a one more than three times. State the probability question mathematically.</para>
+  </problem>
+  </exercise>
+  </note>
+<example id="element-807">
 <para id="element-175">Approximately 70% of statistics students do their homework in time for it to be collected and graded. Each student does homework independently. In a statistics class of 50 students, what is the probability that at least 40 will do their homework on time? Students are selected randomly.<newline count="2"/></para><exercise id="element-1751"><problem id="id5317083">
-<para id="element-732">a. This is a binomial problem because there is only a success or a __________, there are a fixed number of trials.</para></problem>
-<solution id="id5321627">
- <para id="element-23523">a. failure<newline count="2"/></para></solution>
-</exercise>
-
-<exercise id="element-1752"><problem id="id5318862">
-<para id="element-73124">b. If we are interested in the number of students who do their homework on time, then how do we define <emphasis effect="italics">X</emphasis>?</para></problem>
-<solution id="id5318289">
- <para id="element-235352">b. <emphasis effect="italics">X</emphasis> = the number of statistics students who do their homework on time<newline count="2"/></para></solution>
-</exercise>
-
-<exercise id="element-17530"><problem id="id5318085">
-<para id="element-732324">c. What values does <emphasis effect="italics">x</emphasis> take on?</para></problem>
-<solution id="id5318055">
- <para id="element-23352">c. 0, 1, 2, …, 50<newline count="2"/></para></solution>
-</exercise><exercise id="element-1753"><problem id="id5317581">
-<para id="element-7324">d. What is a "failure," in words?</para>
-</problem>
-<solution id="id5317186">
- <para id="element-232">d. Failure is defined as a student who does not complete his or her homework on time.</para>
-<para id="element-8865">The probability of a success is <emphasis effect="italics">p</emphasis> = 0.70. The number of trials is <emphasis effect="italics">n</emphasis> = 50.<newline count="2"/></para>
-</solution>
-</exercise><exercise id="element-1753232">
-<problem id="id5317836">
-<para id="element-74">e. If <emphasis effect="italics">p</emphasis> + <emphasis effect="italics">q</emphasis> = 1, then what is <emphasis effect="italics">q</emphasis>?</para>
-</problem>
-<solution id="id5317308">
- <para id="element-5352">e. <emphasis effect="italics">q</emphasis> = 0.30<newline count="2"/></para></solution>
-</exercise>
-
-<exercise id="element-13"><problem id="id5317006">
-<para id="element-70">f. The words "at least" translate as what kind of inequality for the probability question <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ____ 40).</para></problem>
+<para id="element-732">This is a binomial problem because there is only a success or a __________, there are a fixed number of trials. The words "at least" translate as what kind of inequality for the probability question <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ____ 40).</para></problem>
 <solution id="id5319380">
- <para id="element-23532">f. greater than or equal to (≥)
+ <para id="element-23532">failure<newline count="1"/>greater than or equal to (≥)
 <newline count="1"/>The probability question is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ 40).</para></solution>
 </exercise></example>
 

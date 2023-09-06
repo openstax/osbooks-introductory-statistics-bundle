@@ -8,70 +8,23 @@
 </metadata>
 
 <content>
-<para id="element-456">The geometric probability density function builds upon what we have learned from the binomial distribution. In this case the experiment continues until either a success or a failure occurs rather than for a set number of trials. There are three main characteristics of a geometric experiment.</para><list id="geometricexperiment" list-type="enumerated"><item>There are one or more Bernoulli trials with all failures except the last one, which is a success. In other words, you keep repeating what you are doing until the first success. Then you stop. For example, you throw a dart at a bullseye until you hit the bullseye. The first time you hit the bullseye is a "success" so you stop throwing the dart. It might take six tries until you hit the bullseye. You can think of the trials as failure, failure, failure, failure, failure, success, STOP.</item>
-<item>In theory, the number of trials could go on forever.</item>
-<item>The probability, <emphasis effect="italics">p</emphasis>, of a success and the probability, <emphasis effect="italics">q</emphasis>, of a failure is the same for each trial. <emphasis effect="italics">p</emphasis> + <emphasis effect="italics">q</emphasis> = 1 and <emphasis effect="italics">q</emphasis> = 1 − <emphasis effect="italics">p</emphasis>. For example, the probability of rolling a three when you throw one fair die is <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mn>1</m:mn>
-   <m:mn>6</m:mn>
-  </m:mfrac>
- </m:mrow>
-</m:math>. This is true no matter how many times you roll the die. Suppose you want to know the probability of getting the first three on the fifth roll. On rolls one through four, you do not get a face with a three. The probability for each of the rolls is <emphasis effect="italics">q</emphasis> = <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mtext>5</m:mtext>
-   <m:mtext>6</m:mtext>
-  </m:mfrac>
- </m:mrow>
-</m:math>, the probability of a failure. The probability of getting a three on the fifth roll is <m:math>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mn>5</m:mn>
-     <m:mn>6</m:mn>
-    </m:mfrac>
-    
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mn>5</m:mn>
-     <m:mn>6</m:mn>
-    </m:mfrac>
-    
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mn>5</m:mn>
-     <m:mn>6</m:mn>
-    </m:mfrac>
-    
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mn>5</m:mn>
-     <m:mn>6</m:mn>
-    </m:mfrac>
-    
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mn>1</m:mn>
-     <m:mn>6</m:mn>
-    </m:mfrac>
-    
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math> = 0.0804</item>
-<item><emphasis effect="italics">X</emphasis> = the number of independent trials until the first success.</item>
-
-</list><example id="element-328">
+  <para id="para-00001">There are four main characteristics of a geometric experiment.</para>
+  <list list-type="enumerated" number-style="arabic" id="list-00001">
+  <item>A trial is repeated until a success occurs. Think of this as one or more Bernoulli trials with all failures except the last one, which is a success. In other words, you keep repeating what you are doing until the first success. Then you stop. For example, you throw a dart at a bullseye until you hit the bullseye. The first time you hit the bullseye is a "success," so you stop throwing the dart. It might take six tries until you hit the bullseye. You can think of the trials as failure, failure, failure, failure, failure, success, STOP. In theory, the number of trials could go on forever.</item>
+  <item>The repeated trials are independent of each other.</item>
+  <item>The probability, p, of a success and the probability, q, of a failure is the same for each trial. <m:math><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:math> and <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:math> For example, the probability of rolling a three when you throw one fair die is <m:math><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>6</m:mn></m:math>. This is true no matter how many times you roll the die. Suppose you want to know the probability of getting the first three on the fifth roll. On rolls one through four, you do not get a face with a three. The probability for each of the rolls is <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>/</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:math>  the probability of a failure. The probability of getting a first three on the fifth roll is 
+  <m:math><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>/</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>/</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>/</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>/</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>/</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0804</m:mn></m:math></item>
+  <item>The random variable X represents the number of the trial in which the first success occurs.  That is, X = the number of independent trials until the first success.</item>
+  </list>
+  <para id="para-00002">The following are additional attributes of the geometric distribution:</para>
+  <list list-type="enumerated" number-style="arabic" start-value="5" id="list-00002">
+  <item>The random variable is discrete. The random variable may be defined in two ways depending upon the analyst’s interest. In the example above for throwing a die, the question was “What is the probability that the first success will be on the fifth throw?” Alternatively, the question could be asked as “What is the probability that it takes four failures before a success?” We will see that each way of asking the question will alter the form of the geometric probability density function slightly and will change the mean and standard deviation of the geometric pdf.</item>
+  <item>Implicit in the random variable is that the probability of a success is constant and therefore so is the probability of a failure. For flipping a coin this is obvious, but in experiments that require skill, such as hitting a baseball or throwing a dart, one might consider that learning during the experiment would alter the probability of a success. The geometric distribution cannot capture “learning” thus the historical probability of success is assumed to be constant.</item>
+  <item>The geometric distribution is “memoryless.” There are very few probability density functions that are what is known as “memoryless,” and the Geometric distribution is the only one with a discrete random variable that is memoryless. As an example, historically Major League Baseball player Jones has a record of hitting the ball for at least an advance to first base with a probability of 0.20. Jones has not had a hit in his last 10 times at bat. What is the probability that Jones will get a hit in his third time at bat? The answer ignores his 10 previous failures. All events prior to the events in current time are irrelevant and thus are considered “memoryless.”</item>
+  </list>
+  <para id="para-00003">Formally: <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mi>k</m:mi><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>≥</m:mo><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>)</m:mo><m:mo>,</m:mo></m:math> where k = number of previous failures</para>
+  <para id="para-00004">Jones’s probability of a hit begins anew each time he comes to bat. This feature of the geometric distribution results in a curious result: Drawing parts from a manufacturing process to test for parts that are defective, the geometric distribution begins with a clean slate each time the tests begin with no consideration of previous test results. More on this when we get to the exponential probability density function.</para>
+<example id="element-328">
 <para id="element-341">You play a game of chance that you can either win or lose (there are no other possibilities) <emphasis>until</emphasis> you lose. Your probability of losing is <emphasis effect="italics">p</emphasis> = 0.57. What is the
 probability that it takes five games until you lose? Let <emphasis effect="italics">X</emphasis> = the number of games you play until you lose (includes the losing game). Then <emphasis effect="italics">X</emphasis> takes on the values 1, 2, 3, ... (could go on indefinitely). The probability question is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 5).</para></example>
 
@@ -85,8 +38,20 @@ probability that it takes five games until you lose? Let <emphasis effect="itali
 <para id="fs-idm13712944">1, 2, 3, 4, … <emphasis effect="italics">n</emphasis>. It can go on indefinitely.</para>
 </solution>
 </exercise>
-</note><example id="element-15">
-<para id="element-320">A safety engineer feels that 35% of all industrial accidents in the plant are caused by failure of employees to follow instructions. They decide to look at the accident reports (selected randomly and replaced in the pile after reading) <emphasis>until</emphasis> they find one that shows an accident caused by failure of employees to follow instructions. On average, how many reports would the safety engineer <emphasis>expect</emphasis> to look at until they find a report showing an accident caused by employee failure to follow instructions? What is the probability that the safety engineer will have to examine at least three reports until they find a report showing an accident caused by employee failure to follow instructions?</para><para id="element-112">Let <emphasis effect="italics">X</emphasis> = the number of accidents the safety engineer must examine <emphasis>until</emphasis> they find a report showing an accident caused by employee failure to follow instructions. <emphasis effect="italics">X</emphasis> takes on the values 1, 2, 3, .... The first question asks you to find the <emphasis>expected value</emphasis> or the mean. The second question asks you to find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ 3). ("At least" translates to a "greater than or equal to" symbol).</para></example>
+</note>
+<example id="element-15">
+<exercise id="exer-00001">
+  <problem id="prob-00001">
+    <para id="element-320">A safety engineer feels that 35% of all industrial accidents in the plant are caused by failure of employees to follow instructions. They decide to look at the accident reports (selected randomly and replaced in the pile after reading) <emphasis>until</emphasis> they find one that shows an accident caused by failure of employees to follow instructions. On average, how many reports would the safety engineer <emphasis>expect</emphasis> to look at until they find a report showing an accident caused by employee failure to follow instructions? What is the probability that the safety engineer will have to examine at least three reports until they find a report showing an accident caused by employee failure to follow instructions?</para><para id="element-112">Let <emphasis effect="italics">X</emphasis> = the number of accidents the safety engineer must examine <emphasis>until</emphasis> they find a report showing an accident caused by employee failure to follow instructions. <emphasis effect="italics">X</emphasis> takes on the values 1, 2, 3, .... The first question asks you to find the <emphasis>expected value</emphasis> or the mean. The second question asks you to find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ 3). ("At least" translates to a "greater than or equal to" symbol).</para>
+  </problem>
+  <solution id="sol-00001">
+    <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+    <item>On average, how many reports would the safety engineer <emphasis>expect</emphasis> to review until they find a report showing an accident caused by something other than failure to follow instructions? This question asks you to find the <emphasis>expected value</emphasis> or the mean. This is the average number of failures from something other than following instructions. The formula for the mean of this geometric distribution is:<newline/><m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>E</m:mi><m:mfenced><m:mi>x</m:mi></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>≈</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>8</m:mn></m:math><newline/>Note that the mean does not need to be a whole number although the random variable is discrete and must be a counting number</item>
+    <item>What is the probability that the safety engineer will have to examine at least three reports until they find a report showing an accident caused by employee failure to follow instructions?<newline/>This question is answered by first defining the random variable. Let <emphasis effect="italics">X</emphasis> = the number of accidents the safety engineer must examine <emphasis>until</emphasis> they find a report showing an accident caused by employee failure to follow instructions. <emphasis effect="italics">X</emphasis> can take on the values 1, 2, 3, 4, … ∞. Unlike the binomial distribution with a fixed number of trials, the geometric distribution may have an infinite number of failed trials before a success occurs.<newline/>This second question asks you to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo> </m:mo><m:mo>≥</m:mo><m:mo> </m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math>. ("At least" translates to a "greater than or equal to" symbol.)<newline/>In a binomial distribution, we saw the solution to questions of “more than” or “less than” would be to calculate each probability individually and add from zero to three. If the probability of interest is “greater than or equal to” (≥) the individual probabilities are added from zero to three and then subtracted from one.<newline/><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo> </m:mo><m:mo>≥</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math><newline/>Because we cannot add the full range of the geometric distribution random variable because it goes through infinity, an alternative solution is developed. An alternative geometric distribution pair of formulas provides solutions for questions asking for probabilities “more than” and “less than.”<newline/>If the question is:<newline/>What is the probability it takes MORE THAN n events to get first success?<newline/><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mi>n</m:mi></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:math><newline/>What is the probability it takes LESS THAN n event for success?<newline/><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>n</m:mi></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mi>n</m:mi></m:msup></m:math></item>
+    </list>
+    </solution>
+</exercise>
+  </example>
 
 
 <note id="fs-idm100368272" class="statistics try"><label/><title>Try It</title>
@@ -99,39 +64,53 @@ probability that it takes five games until you lose? Let <emphasis effect="itali
 <para id="fs-idm44116544"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ 10)</para>
 </solution>
 </exercise></note><example id="element-616">
-<para id="element-741">Suppose that you are looking for a student at your college who lives within five miles of you. You know that 55% of the 25,000 students do live within five miles of you. You randomly contact students from the college <emphasis>until</emphasis> one says they live within five miles of you. What is the probability that you need to contact four people?</para><para id="element-724">This is a geometric problem because you may have a number of failures before you have the one success you desire. Also, the probability of a success stays approximately the same each time you ask a student if they live within five miles of you. There is no definite number of trials (number of times you ask a student).<newline count="2"/></para><exercise id="element-823">
-<problem id="id27319141">
-  <para id="element-4422">a. Let <emphasis effect="italics">X</emphasis> = the number of ____________ you must ask ____________ one says yes.</para></problem>
-<solution id="id27319163">
-  <para id="element-153">a. Let <emphasis effect="italics">X</emphasis> = the number of <emphasis>students</emphasis> you must ask <emphasis>until</emphasis> one says yes.<newline count="2"/></para></solution>
-</exercise>
-
-<exercise id="element-766"><problem id="id27319211">
-<para id="element-789">b. What values does <emphasis effect="italics">X</emphasis> take on?</para>
-</problem>
-<solution id="id27319232">
-<para id="element-140">b. 1, 2, 3, …, (total number of students)<newline count="2"/></para></solution>
-</exercise>
-
+<para id="element-741">Suppose that you are looking for a student at your college who lives within five miles of you. You know that 55% of the 25,000 students do live within five miles of you. You randomly contact students from the college <emphasis>until</emphasis> one says they live within five miles of you. What is the probability that you need to contact four people?</para><para id="element-724">This is a geometric problem because you may have a number of failures before you have the one success you desire. Also, the probability of a success stays approximately the same each time you ask a student if they live within five miles of you. There is no definite number of trials (number of times you ask a student).<newline count="2"/></para>
 <exercise id="element-208"><problem id="id27319259">
-  <para id="element-884">c. What are <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis>?</para></problem>
+  <para id="element-884">a. What are <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis>?</para></problem>
 
 <solution id="id27319284">
-  <para id="fs-idm85251472">c. <emphasis effect="italics">p</emphasis> = 0.55; <emphasis effect="italics">q</emphasis> = 0.45<newline count="2"/></para></solution>
+  <para id="fs-idm85251472">a. <emphasis effect="italics">p</emphasis> = 0.55; <emphasis effect="italics">q</emphasis> = 0.45<newline count="2"/></para></solution>
 </exercise>
 
 <exercise id="element-413"><problem id="id27319331">
-  <para id="element-458">d. The probability question is <emphasis effect="italics">P</emphasis>(_______).</para></problem>
+  <para id="element-458">b. The probability question is <emphasis effect="italics">P</emphasis>(_______).</para></problem>
 <solution id="id27319348">
-  <para id="element-996">d. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 4)</para></solution>
+  <para id="element-996">b. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 4)</para></solution>
 </exercise></example>
-
-
+<note id="fs-idm34549952" class="statistics try"><label/><title>Try It</title>
+  <exercise id="fs-idm110058608">
+  <problem id="fs-idp36058000">
+  <para id="fs-idm107872832">You need to find a store that carries a special printer ink. You know that of the stores that carry printer ink, 10% of them carry the special ink. You randomly call each store until one has the ink you need. What are <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis>?</para>
+  </problem>
+  </exercise></note>
 <section id="element-125">
 <title>Notation for the Geometric: G = Geometric Probability Distribution Function</title>
-<para id="element-156"><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">G</emphasis>(<emphasis effect="italics">p</emphasis>)</para><para id="element-953">Read this as "<emphasis effect="italics">X</emphasis> is a random variable with a <term id="term-00001">geometric distribution</term>." The parameter is <emphasis effect="italics">p</emphasis>; <emphasis effect="italics">p</emphasis> = the probability of a success for each trial.</para><para id="eip-282">The Geometric Pdf tells us the probability that the first occurrence of success requires x number of independent trials, each with success probability p. If the probability of success on each trial is <emphasis effect="italics">p</emphasis>, then the probability that the <emphasis effect="italics">x</emphasis>th trial (out of x trials) is the first success is:</para><para id="eip-775"><equation class="unnumbered" id="eip-id1167217541451"><label/><m:math><m:mtext>P</m:mtext><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:msup><m:mo>)</m:mo><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mi>p</m:mi></m:math></equation></para><para id="eip-187">for <emphasis effect="italics">x</emphasis> = 1, 2, 3, ....<newline/>
-The expected value of X, the mean of this distribution, is 1/p. This tells us how many trials we have to expect until we get the first success including in the count the trial that results in success. The above form of the Geometric distribution is used for modeling the number of trials until the first success. The number of trials includes the one that is a success: x = all trials including the one that is a success. This can  be seen in the form of the formula. If X = number of trials including the success, then we must multiply the probability of failure, (1-p), times the number of failures, that is X-1.</para><para id="eip-133">By contrast, the following form of the geometric distribution is used for modeling number of failures until the first success:</para><para id="eip-958"><equation class="unnumbered" id="eip-id1168965331778"><label/><m:math><m:mtext>P</m:mtext><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:msup><m:mo>)</m:mo><m:mi>x</m:mi></m:msup><m:mi>p</m:mi></m:math></equation></para><para id="eip-114">for <emphasis effect="italics">x</emphasis> = 0, 1, 2, 3, ....<newline/>
-In this case the trial that is a success is not counted as a trial in the formula: x = number of failures. The expected value, mean, of this distribution is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>p</m:mi></m:mrow></m:mfrac></m:math>. This tells us how many failures to expect before we have a success. In either case, the sequence of probabilities is a geometric sequence.</para></section>
+<para id="element-953">Read this as "<emphasis effect="italics">X</emphasis> is a random variable with a <term id="term-00001">geometric distribution</term>." The parameter is <emphasis effect="italics">p</emphasis>; <emphasis effect="italics">p</emphasis> = the probability of a success for each trial.</para>
+<para id="para-00005">CASE I: Random Variable X Is Event of First Success</para>
+<para id="para-00006">In this case we ask, “What is the probability that we will have some number x of events of interest to us of failures before a success?”</para>
+<para id="para-00007">The geometric pdf tells us the probability that the first occurrence of success requires x number of failure independent trials, each with probability (1-p). If the probability of success on each trial is p, then the probability that the <emphasis effect="italics">x</emphasis>th trial (out of x trials) is the first success is:</para>
+<equation class="unnumbered" id="eq-00001"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mi>p</m:mi></m:math></equation>
+<para id="para-00008">for <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:math></para>
+<para id="para-00009">Like the binomial distribution, the geometric distribution has the parameters of the mean and standard deviation. The expected value of X, the mean for Case I, is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac></m:math>. This tells us how many failed trials to expect until we get the first success. This count includes in the count of trials the trial that results in success. The above form of the geometric distribution is used for modeling the number of trials until the first success. The number of trials includes the one that is a success: x = all trials including the one that is a success. This can be seen in the form of the formula. If X = number of trials including the success, then we must multiply the probability of failure, <m:math><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:math>, times the number of failures, that is <m:math><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:math>. The standard deviation of Case I of the geometric distribution is:</para>
+<equation class="unnumbered" id="eq-00002"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfenced><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac></m:mfenced><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:msqrt></m:math></equation>
+<para id="para-00010">CASE II: Random Variable X Is Number of Failures BEFORE a Success</para>
+<para id="para-00011">By contrast to Case I, the following form of the geometric distribution used for modeling number of failures until the first success is:</para>
+<equation class="unnumbered" id="eq-00003"><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow></m:mfenced><m:mi>x</m:mi></m:msup><m:mi>p</m:mi></m:math></equation>
+<para id="para-00012">for <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:math></para>
+<para id="para-00013">In this case the trial that is the success is not counted as a trial in the formula: x = number of failures. The expected value, the mean, of this distribution is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow><m:mi>p</m:mi></m:mfrac></m:math>. This tells us how many failures to expect before we have a success. In either case, the sequence of probabilities is a geometric sequence. In Case II the standard deviation parameter is:</para> <equation class="unnumbered" id="eq-00004"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfenced><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow><m:mi>p</m:mi></m:mfrac></m:mfenced></m:msqrt></m:math>.</equation>
+<figure id="fig-00001"><media alt="Bar graph of probability distribution of the given data."><image mime-type="image/png" src="../../media/IBS2e_Figure_04_00_003.png"/></media></figure>
+<para id="para-00014">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">x</emphasis>, and the <emphasis effect="italics">x</emphasis>-axis is the random number components tested. For example, at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math> the probability it will be found to be defective is 0.0196. With two components tested, the probability the second component is defective is graphed at a probability of 0.0196 at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math> on the <emphasis effect="italics">x</emphasis> axis. For the probability that the third component is defective we find <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>019208</m:mn></m:math>. (The first two are the same because of rounding in the computations.)</para>
+<para id="para-00015">Notice in Figure 4.3 that the probabilities decline by the same step down with each change in the value of x. This increment is called the common ratio. This exists for the geometric probability distribution uniquely. The common ratio, called r, can be calculated by dividing any value by the previous value, e.g., <m:math><m:mfrac><m:mrow><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:mfenced></m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>018447</m:mn></m:mrow><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>018823</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>98</m:mn></m:math></para>
+<para id="para-00016">For this set of data, therefore, the common ratio is 0.98. The common ratio then multiplied by any other probability value will provide the next probability value in the sequence. For example, the probability that the sixth component tested is a failure is 0.018078. Check this using the formula from Case I. Now we have the <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:mfenced></m:math>. Knowing this and the common ratio we can calculate the <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:mfenced></m:math> by simple multiplication: <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>018078</m:mn></m:mrow></m:mfenced><m:mo> </m:mo><m:mo>×</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>98</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>017716</m:mn><m:mo>,</m:mo></m:math> the same value we found earlier by using the geometric probability distribution. This common ratio increment is the same ratio between every number and is called a geometric progression and thus the name for this probability density function. Once the common ratio is calculated, any <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:msub><m:mi>x</m:mi><m:mi>a</m:mi></m:msub></m:mrow></m:mfenced></m:math> one desires to know can be easily found.</para>
+<para id="para-00017">The number of components that you would expect to test until you find the first defective component is the mean, <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>50</m:mn></m:math> for this case of defective components. The formula for the mean of the geometric distribution for the random variable defined as number of failures before first success is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>50</m:mn></m:math>.</para>
+<para id="para-00018">See <emphasis>Example 4.9</emphasis> for an example where the geometric random variable is defined as number of trials until first success. The expected value of this formula for the geometric distribution will be different from this version of the distribution. Case II also has a variance but is changed from the Case I formula. This formula for the variance is:</para>
+<equation class="unnumbered" id="eq-00005"><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow></m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mi>p</m:mi></m:math></equation>
+<para id="para-00019">for <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo><m:mo>.</m:mo></m:math></para>
+<para id="para-00020">The formula for the variance is</para>
+<equation class="unnumbered" id="eq-00006"><m:math><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfenced><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac></m:mfenced><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mfenced><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn></m:mrow></m:mfrac></m:mfenced><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn></m:mrow></m:mfrac><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>450</m:mn></m:math></equation>
+<para id="para-00021">The standard deviation is</para>
+<equation class="unnumbered" id="eq-00007"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfenced><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac></m:mfenced><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfenced><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn></m:mrow></m:mfrac></m:mfenced><m:mfenced><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn></m:mrow></m:mfrac><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:msqrt><m:mo>=</m:mo><m:mn>49</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math></equation>
+<para id="para-00022">This tells us how many failures to expect before we have a success. In either case, the sequence of probabilities is a geometric sequence.</para></section>
 <example id="element-340">
 <para id="element-38">Assume that the probability of a defective computer component is 0.02. Components are randomly selected. Find the probability that the first defect is caused by the seventh component tested. How many components do you expect to test until one is found to be defective?</para><para id="element-20">Let <emphasis effect="italics">X</emphasis> = the number of computer components tested until the first defect is found.</para>
 <para id="element-857"><emphasis effect="italics">X</emphasis> takes on the values 1, 2, 3, ... where <emphasis effect="italics">p</emphasis> = 0.02.</para>
@@ -236,8 +215,12 @@ In this case the trial that is a success is not counted as a trial in the formul
   </m:msqrt>
   
  </m:mrow>
-</m:math> = 49.5</para></example> 
-
+</m:math> = 49.5</para></example>
+<note id="fs-idm16727632" class="statistics try "><label/><title>Try It</title>
+  <exercise id="fs-idm153734704"><problem id="fs-idm2610224">
+  <para id="fs-idm122642640">The probability of a defective steel rod is 0.01. Steel rods are selected at random. Find the probability that the first defect occurs on the ninth steel rod. Use the TI-83+ or TI-84 calculator to find the answer.</para>
+  </problem>
+  </exercise></note>
 <example id="fs-idm65101072">
 <exercise id="fs-idm83790480">
 <problem id="fs-idm65243344">
@@ -247,61 +230,11 @@ In this case the trial that is a success is not counted as a trial in the formul
 </list></problem>
 
 <solution id="fs-idp19888080">
-<list id="fs-idm133938784" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 9) = (1 - 0.0128)<sup>9</sup> · 0.0128 = 0.0114</item>
-<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 20) = (1 - 0.0128)<sup>19</sup> · 0.0128 =0.01</item>
+<list id="fs-idm133938784" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfenced><m:mn>9</m:mn></m:msup><m:mo> </m:mo><m:mo>×</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0131</m:mn></m:math></item>
+<item><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfenced><m:mn>19</m:mn></m:msup><m:mo> </m:mo><m:mo>×</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0113</m:mn></m:math></item>
 <item>
-<list id="eip-idm162329472" list-type="enumerated" number-style="lower-roman"><item>Mean = <emphasis effect="italics">μ</emphasis> = <m:math>
-<m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mi>p</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.0128</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>0.0128</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>77.12</m:mn></m:math>
-</item>
-
-
-
-
-<item>Standard Deviation = <emphasis effect="italics">σ</emphasis> = <m:math>
- <m:mrow>
-  <m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi>
-     </m:mrow>
-     <m:mrow>
-      <m:msup>
-       <m:mi>p</m:mi>
-       <m:mn>2</m:mn>
-      </m:msup>
-      
-     </m:mrow>
-    </m:mfrac>
-    
-   </m:mrow>
-  </m:msqrt>
-  
- </m:mrow>
-</m:math> = <m:math>
- <m:mrow>
-  <m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.0128</m:mn>
-     </m:mrow>
-     <m:mrow>
-      <m:msup>
-       <m:mrow>
-        <m:mn>0.0128</m:mn>
-       </m:mrow>
-       <m:mn>2</m:mn>
-      </m:msup>
-      
-     </m:mrow>
-    </m:mfrac>
-    
-   </m:mrow>
-  </m:msqrt>
-  
- </m:mrow>
-</m:math> ≈ 77.62</item>
+<list id="eip-idm162329472" list-type="enumerated" number-style="lower-roman"><item><m:math><m:mi>Mean</m:mi><m:mo>=</m:mo><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow></m:mfenced><m:mi>p</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>65</m:mn><m:mo>.</m:mo><m:mn>67</m:mn></m:math></item>
+<item><m:math><m:mi>Standard</m:mi><m:mo> </m:mo><m:mi>Deviation</m:mi><m:mo>=</m:mo><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>p</m:mi></m:mrow></m:mfenced><m:msup><m:mi>p</m:mi><m:mn>2</m:mn></m:msup></m:mfrac></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow></m:mfenced><m:msup><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>015</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mfrac></m:msqrt><m:mo>=</m:mo><m:mn>66</m:mn><m:mo>.</m:mo><m:mn>16</m:mn></m:math></item>
 </list></item>
 </list></solution>
 </exercise>
@@ -347,7 +280,24 @@ In this case the trial that is a success is not counted as a trial in the formul
   </para>
 </solution>
 </exercise><para id="eip-584">This is simply the expected value of successes and therefore the mean of the distribution. </para>
-</example><example id="eip-633"><exercise id="eip-425"><problem id="eip-814">
+</example>
+<note class="statistics try" id="note-00001"><label/><title>Try It</title>
+  <exercise id="exer-00002"><problem id="prob-00002">
+  <para id="para-00023">A runner has a probability of 0.426 to come in first in a race.</para>
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+  <item>What is the probability that they will come in first in the fourth race?</item>
+  <item>How many races do you expect the runner to need before they come in first?</item>
+  </list>
+  </problem>
+  <solution id="sol-00002">
+  <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
+  <item><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>426</m:mn></m:mrow></m:mfenced><m:mrow><m:mn>4</m:mn><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>189</m:mn></m:math></item>
+  <item><m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>p</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>426</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>347</m:mn><m:mo>≈</m:mo><m:mn>2</m:mn></m:math></item>
+  </list>
+  </solution>
+  </exercise>
+  </note>
+<example id="eip-633"><exercise id="eip-425"><problem id="eip-814">
   <para id="eip-163">
     There is an 80% chance that a Dalmatian dog has 13 black spots. You go to a dog show and count the spots on Dalmatians. What is the probability that you will review the spots on 3 dogs before you find one that has 13 black spots?
   </para>
@@ -356,7 +306,17 @@ In this case the trial that is a success is not counted as a trial in the formul
 <solution id="eip-690">
   <para id="eip-186"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>=3) = (1 - 0.80)<sup>3</sup> × 0.80 = 0.0064
   </para></solution>
-</exercise><para id="eip-id1171903708004"/></example><section id="fs-idp2191840" class="references"><title>References</title><para id="fs-idm46068128">“Millennials: A Portrait of Generation Next,” PewResearchCenter. Available online at http://www.pewsocialtrends.org/files/2010/10/millennials-confident-connected-open-to-change.pdf (accessed May 15, 2013).</para>
+</exercise><para id="eip-id1171903708004"/></example>
+<note class="statistics try" id="note-00002"><label/><title>Try It</title>
+  <exercise id="exer-00003"><problem id="prob-00003">
+  <para id="para-00024">There is a 75% chance that a parrot is green. You go to a pet shop and observe the parrots. What is the probability that you will observe 4 parrots before you find one that is a green parrot?</para>
+  </problem>
+  <solution id="sol-00003">
+  <para id="para-00025"><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:msup><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:mfenced><m:mn>4</m:mn></m:msup><m:mo>×</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0117</m:mn></m:math></para>
+  </solution>
+  </exercise>
+  </note>
+<section id="fs-idp2191840" class="references"><title>References</title><para id="fs-idm46068128">“Millennials: A Portrait of Generation Next,” PewResearchCenter. Available online at http://www.pewsocialtrends.org/files/2010/10/millennials-confident-connected-open-to-change.pdf (accessed May 15, 2013).</para>
 <para id="fs-idm5218624">“Millennials: Confident. Connected. Open to Change.” Executive Summary by PewResearch Social &amp; Demographic Trends, 2013. Available online at  http://www.pewsocialtrends.org/2010/02/24/millennials-confident-connected-open-to-change/ (accessed May 15, 2013).</para>
 <para id="fs-idm40376512">“Prevalence of HIV, total (% of populations ages 15-49),” The World Bank, 2013. Available online at http://data.worldbank.org/indicator/SH.DYN.AIDS.ZS?order=wbapi_data_value_2011+wbapi_data_value+wbapi_data_value-last&amp;sort=desc (accessed May 15, 2013).</para>
 <para id="eip-idp23364672">Pryor, John H., Linda DeAngelo, Laura Palucki Blake, Sylvia Hurtado, Serge Tran. <emphasis effect="italics">The American Freshman: National Norms Fall 2011.</emphasis> Los Angeles: Cooperative Institutional Research Program at the Higher Education Research Institute at UCLA, 2011. Also available online at http://heri.ucla.edu/PDFs/pubs/TFS/Norms/Monographs/TheAmericanFreshman2011.pdf (accessed May 15, 2013).</para><para id="fs-idm55727728">“Summary of the National Risk and Vulnerability Assessment 2007/8: A profile of Afghanistan,” The European Union and ICON-Institute. Available online at http://ec.europa.eu/europeaid/where/asia/documents/afgh_brochure_summary_en.pdf (accessed May 15, 2013).</para>
@@ -683,7 +643,7 @@ In this case the trial that is a success is not counted as a trial in the formul
 
 
 <exercise id="fs-idm51281904"><problem id="fs-idm122477648">
-<para id="fs-idm73224944">The World Bank records the prevalence of HIV in countries around the world. According to their data, “Prevalence of HIV refers to the percentage of people ages 15 to 49 who are infected with HIV.”<footnote id="fs-idm108474144">”Prevalence of HIV, total (% of populations ages 15-49),” The World Bank, 2013. Available online at http://data.worldbank.org/indicator/SH.DYN.AIDS.ZS?order=wbapi_data_value_2011+wbapi_data_value+wbapi_data_value-last&amp;sort=desc (accessed May 15, 2013).</footnote> In South Africa, the prevalence of HIV is 17.3%. Let <emphasis effect="italics">X</emphasis> = the number of people you test until you find a person infected with HIV.</para>
+<para id="fs-idm73224944">Medical researchers in a certain country have documented that the percentage of people ages 15 to 49 who are infected with a certain respiratory virus is 17.3%. Let <emphasis effect="italics">X</emphasis> = the number of people you test until you find a person infected with the virus.</para>
 
 <list id="fs-idm123061824" list-type="enumerated" number-style="lower-alpha"><item>Sketch a graph of the distribution of the discrete random variable <emphasis effect="italics">X</emphasis>.</item>
 <item>What is the probability that you must test 30 people to find one with the virus?</item>

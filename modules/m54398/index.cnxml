@@ -18,7 +18,14 @@
 </exercise>
 </example>
 
+<note id="fs-idm3960864" class="statistics try"><label/><title>Try It</title>
 
+  <exercise id="fs-idm122013280">
+  <problem id="fs-idp1855472">
+  <para id="fs-idm64281696">An electronics store expects to have ten returns per day on average. The manager wants to know the probability of the store getting fewer than eight returns on any given day. State the probability question mathematically.</para>
+  </problem>
+  </exercise>
+  </note>
 <example id="element-774">
 <para id="element-234">You notice that a news reporter says "uh," on average, two times per broadcast. What is the probability that the news reporter says "uh" more than two times per broadcast.</para>
 
@@ -54,13 +61,21 @@
   <para id="element-683">d. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 2)</para></solution>
 </exercise>
 </example>
+<note id="fs-idm101937776" class="statistics try"><label/><title>Try It</title>
 
+  <exercise id="fs-idm138494832">
+  <problem id="fs-idm76741440">
+  <para id="fs-idm124704784">An emergency room at a particular hospital gets an average of five patients per hour. A doctor wants to know the probability that the ER gets more than five patients per hour. Give the reason why this would be a Poisson distribution.</para></problem>
+  </exercise>
+  </note>
 
 <section id="element-210">
 <title>Notation for the Poisson: P = Poisson Probability Distribution Function</title>
 <para id="element-272"><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">μ</emphasis>)</para>
 
-<para id="element-273">Read this as "<emphasis effect="italics">X</emphasis> is a random variable with a Poisson distribution." The parameter is <emphasis effect="italics">μ</emphasis> (or <emphasis effect="italics">λ</emphasis>); <emphasis effect="italics">μ</emphasis> (or <emphasis effect="italics">λ</emphasis>) = the mean for the interval of our interest. The mean is the number of occurrences that occur on average during the interval period.</para><para id="eip-81">The formula for computing probabilities that are from a Poisson process is:</para><para id="eip-179"><equation class="unnumbered" id="eip-id1169814078894"><label/><m:math><m:mi>P</m:mi><m:mo maxsize="100%">(</m:mo><m:mi>x</m:mi><m:mo maxsize="100%">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:math></equation></para><para id="eip-835">where <emphasis effect="italics">P(X)</emphasis> is the probability of <emphasis effect="italics">X</emphasis> successes, <emphasis effect="italics">μ</emphasis> is the expected number of successes based upon historical data, <emphasis effect="italics">e</emphasis> is the natural logarithm approximately equal to 2.718, and <emphasis effect="italics">X</emphasis> is the number of successes per unit, usually per unit of time. </para><para id="eip-979">In order to use the Poisson distribution, certain assumptions must hold. These are: the probability of a success, μ, is unchanged within the interval, there cannot be simultaneous successes within the interval, and finally, that the probability of a success among intervals is independent, the same assumption of the binomial distribution. </para><para id="eip-552">In a way, the Poisson distribution can be thought of as a clever way to convert a continuous random variable, usually time, into a discrete random variable by breaking up time into discrete independent intervals. This way of thinking about the Poisson helps us understand why it can be used to estimate the probability for the discrete random variable from the binomial distribution. The Poisson is asking for the probability of a number of successes during a period of time while the binomial is asking for the probability of a certain number of successes for a given number of trials.</para></section>
+<para id="element-273">Read this as "<emphasis effect="italics">X</emphasis> is a random variable with a Poisson distribution." The parameter is <emphasis effect="italics">μ</emphasis> (or <emphasis effect="italics">λ</emphasis>); <emphasis effect="italics">μ</emphasis> (or <emphasis effect="italics">λ</emphasis>) = the mean for the interval of our interest. The mean is the number of occurrences that occur on average during the interval period.</para><para id="eip-81">The formula for computing probabilities that are from a Poisson process is:</para><para id="eip-179"><equation class="unnumbered" id="eip-id1169814078894"><label/><m:math><m:mi>P</m:mi><m:mo maxsize="100%">(</m:mo><m:mi>x</m:mi><m:mo maxsize="100%">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:math></equation></para><para id="eip-835">where <emphasis effect="italics">P(X)</emphasis> is the probability of <emphasis effect="italics">X</emphasis> successes, <emphasis effect="italics">μ</emphasis> is the expected number of successes based upon historical data, <emphasis effect="italics">e</emphasis> is the natural logarithm approximately equal to 2.718, and <emphasis effect="italics">X</emphasis> is the number of successes per unit, usually per unit of time. </para>
+<para id="para-00001">Remember your algebra class: <m:math><m:msup><m:mi>x</m:mi><m:mrow><m:mo>-</m:mo><m:mi>n</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup></m:mfrac></m:math>. The Poisson distribution has both a mean, µ , the average number of occurrences per unit of time, and also a standard deviation, <m:math><m:mi>σ</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:msqrt><m:mi>μ</m:mi></m:msqrt></m:math>.</para>
+<para id="eip-979">In order to use the Poisson distribution, certain assumptions must hold. These are: the probability of a success, μ, is unchanged within the interval, there cannot be simultaneous successes within the interval, and finally, that the probability of a success among intervals is independent, the same assumption of the binomial distribution. </para><para id="eip-552">In a way, the Poisson distribution can be thought of as a clever way to convert a continuous random variable, usually time, into a discrete random variable by breaking up time into discrete independent intervals. This way of thinking about the Poisson helps us understand why it can be used to estimate the probability for the discrete random variable from the binomial distribution. The Poisson is asking for the probability of a number of successes during a period of time while the binomial is asking for the probability of a certain number of successes for a given number of trials.</para></section>
 
 <example id="element-784"><para id="element-690">Leah receives about six telephone calls between 8 a.m. and 10 a.m. What is the probability that Leah receives more than one call <emphasis>in the next 15 minutes?</emphasis></para><para id="element-691">Let <emphasis effect="italics">X</emphasis> = the number of calls Leah receives in 15 minutes. (The <emphasis>interval of interest</emphasis> is 15 minutes or <m:math>
  <m:mrow>
@@ -83,41 +98,70 @@
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
 </m:math>(6) = 0.75 calls in 15 minutes, on average. So, <emphasis effect="italics">μ</emphasis> = 0.75 for this problem.</para>
-<para id="element-697">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1).</para><para id="element-886">Probability that Leah receives more than one telephone call in the next 15 minutes is about 0.1734.</para><para id="element-89">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(0.75) is:</para>
+<para id="element-697">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1).</para>
+<para id="para-00002">The Poisson distribution is discrete, and thus > 1 includes all whole numbers through infinity. The solution is to subtract the probability less than 1 thus <m:math><m:mn>1</m:mn><m:mo>-</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mrow></m:mfenced></m:math></para>
+<equation class="unnumbered" id="eq-00001"><m:math><m:mi>P</m:mi><m:mfenced><m:mi>x</m:mi></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mrow><m:mo> </m:mo><m:mi>e</m:mi></m:mrow><m:mrow><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:math></equation>
+<equation class="unnumbered" id="eq-00002"><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:math></equation>
+<equation class="unnumbered" id="eq-00003"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mrow></m:mfenced></m:math></equation>
+<equation class="unnumbered" id="eq-00004"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow><m:mn>0</m:mn></m:msup><m:msup><m:mrow><m:mo> </m:mo><m:mi>e</m:mi></m:mrow><m:mrow><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>0</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow><m:mn>1</m:mn></m:msup><m:msup><m:mrow><m:mo> </m:mo><m:mi>e</m:mi></m:mrow><m:mrow><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac></m:mrow></m:mfenced></m:math></equation>
+<equation class="unnumbered" id="eq-00005"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mfrac><m:mrow><m:mfenced><m:mn>1</m:mn></m:mfenced><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4724</m:mn></m:mrow></m:mfenced></m:mrow><m:mn>1</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:mfenced><m:mfenced><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4724</m:mn></m:mrow></m:mfenced></m:mrow><m:mn>1</m:mn></m:mfrac></m:mrow></m:mfenced></m:math></equation>
+<equation class="unnumbered" id="eq-00006"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4724</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3543</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1733</m:mn></m:math></equation>
+<figure id="fig-00001"><media alt="Histogram of probability density function of the given data."><image mime-type="image/png" src="../../media/IBS2e_Figure_04_00_004.png"/></media></figure>
+<para id="element-869">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">x</emphasis> where <emphasis effect="italics">X</emphasis> = the number of calls in 15 minutes.</para></example>
+<note id="fs-idm14071904" class="statistics try "><label/><title>Try It</title>
 
-<figure id="fs-idm13011872"><media id="id18951496" display="block" alt="This graphs shows a poisson probability distribution. It has 5 bars that decrease in height from left to right. The x-axis shows values in increments of 1 starting with 0, representing the number of calls Leah receives within 15 minutes. The y-axis ranges from 0 to 0.5 in increments of 0.1.">
-<image src="../../media/fig-ch04_08_01.png" mime-type="image/png" width="400"/>
-</media></figure><para id="element-869">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">x</emphasis> where <emphasis effect="italics">X</emphasis> = the number of calls in 15 minutes.</para></example><example id="fs-idm98662832">
+  <exercise id="fs-idm114328016">
+  <problem id="fs-idm126244848">
+  <para id="fs-idm2292064">A customer service center receives about ten emails every half-hour. What is the probability that the customer service center receives more than four emails in the next six minutes?</para></problem>
+  </exercise>
+  </note>
 
-<para id="fs-idm122953024">According to a survey a university professor gets, on average, 7 emails per day. Let <emphasis effect="italics">X</emphasis> = the number of emails a professor receives per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2 …. The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(7). The mean is 7 emails.</para><exercise id="fs-idm81055280">
-<problem id="fs-idm139603200">
-<list id="fs-idm148062160" list-type="enumerated" number-style="lower-alpha"><item>What is the probability that an email user receives exactly 2 emails per day?</item>
-<item>What is the probability that an email user receives at most 2 emails per day?</item>
-<item>What is the standard deviation?</item>
-</list></problem>
-<solution id="fs-idm126813888">
-<list id="fs-idm100902832" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mi>-μ</m:mi></m:msup></m:mrow><m:mrow><m:mi>x!</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mn>-7</m:mn></m:msup></m:mrow><m:mrow><m:mn>2!</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.022</m:mn></m:math></item>
+  <example id="fs-idm98662832">
 
-<item>
-<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mn>7</m:mn><m:mn>0</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mn>-7</m:mn></m:msup></m:mrow><m:mrow><m:mn>0!</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mn>7</m:mn><m:mn>1</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mn>-7</m:mn></m:msup></m:mrow><m:mrow><m:mn>1!</m:mn></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:msup><m:mn>7</m:mn><m:mn>2</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mn>-7</m:mn></m:msup></m:mrow><m:mrow><m:mn>2!</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.029</m:mn></m:math>
-</item>
-<item>Standard Deviation = <m:math>
- <m:mrow>
-  <m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt>
-   <m:mi>μ</m:mi>
-  </m:msqrt>
-  <m:mo>=</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mn>7</m:mn>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>≈</m:mo><m:mn>2.65</m:mn>
- </m:mrow>
-</m:math>
-</item></list></solution>
-</exercise>
-
-</example>
+    <para id="fs-idm122953024">According to Baydin, an email management company, an email user gets, on average, 147 emails per day. Let <emphasis effect="italics">X</emphasis> = the number of emails an email user receives per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2 …. The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(147). The mean is 147 emails.</para>
+    
+    <exercise id="fs-idm81055280">
+    <problem id="fs-idm139603200">
+    <list id="fs-idm148062160" list-type="enumerated" number-style="lower-alpha">
+    <item>What is the probability that an email user receives exactly 160 emails per day?</item>
+    <item>What is the probability that an email user receives at most 160 emails per day?</item>
+    <item>What is the standard deviation?</item>
+    </list>
+    </problem>
+    <solution id="fs-idm126813888">
+    <list id="fs-idm100902832" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 160) = poissonpdf(147, 160) ≈ 0.0180</item>
+    <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 160) = poissoncdf(147, 160) ≈ 0.8666</item>
+    <item>Standard Deviation = <m:math>
+     <m:mrow>
+      <m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt>
+       <m:mi>μ</m:mi>
+      </m:msqrt>
+      <m:mo>=</m:mo><m:msqrt>
+       <m:mrow>
+        <m:mn>147</m:mn>
+       </m:mrow>
+      </m:msqrt>
+      <m:mo>≈</m:mo><m:mn>12.1244</m:mn>
+     </m:mrow>
+    </m:math>
+    </item></list></solution>
+    </exercise>
+    
+    </example>
+    
+    <note id="fs-idm17831600" class="statistics try"><label/><title>Try It</title>
+    
+    <exercise id="fs-idm128601120">
+    <problem id="fs-idm195364880">
+    
+    <para id="fs-idm191065552">According to a recent poll by the Pew Internet Project, girls between the ages of 14 and 17 send an average of 187 text messages each day. Let <emphasis effect="italics">X</emphasis> = the number of texts that a girl aged 14 to 17 sends per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2 …. The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(187). The mean is 187 text messages.</para>
+    
+    <list id="fs-idm153913056" list-type="enumerated" number-style="lower-alpha"><item>What is the probability that a teen girl sends exactly 175 texts per day?</item>
+    <item>What is the probability that a teen girl sends at most 150 texts per day?</item>
+    <item>What is the standard deviation?</item>
+    </list></problem>
+    </exercise>
+    </note>
 
 <example id="fs-idp46630000">
 <para id="fs-idm138564992">Text message users receive or send an average of 41.5 text messages per day.</para>
@@ -149,7 +193,18 @@
 </list></solution>
 </exercise>
 </example>
+<note id="fs-idm6127376" class="statistics try"><label/><title>Try It</title>
 
+<exercise id="eip-693">
+<problem id="fs-idm114876624">
+<para id="fs-idm31960976">Atlanta’s Hartsfield-Jackson International Airport is the busiest airport in the world. On average there are 2,700 arrivals and departures each day.</para>
+
+
+<list id="fs-idm85294848" list-type="enumerated" number-style="lower-alpha"><item>How many airplanes arrive and depart the airport per hour?</item>
+<item>What is the probability that there are exactly 100 arrivals and departures in one hour? </item>
+<item>What is the probability that there are at most 100 arrivals and departures in one hour?</item>
+</list></problem>
+</exercise></note>
 <example id="fs-idm140754736">
 <exercise id="fs-idm140268064">
 <problem id="fs-idm63493200">
@@ -169,7 +224,17 @@
 </exercise>
 
 </example>
-
+<note id="fs-idp26868464" class="statistics try"><label/><title>Try It</title>
+  <exercise id="eip-idp124175712">
+  <problem id="eip-idp124175968">
+  <para id="eip-idp124176224">On a certain day in May starting at 4:30 PM, the probability of moderate seismic activity for the next 48 hours in the Kuril Islands off the coast of Japan was reported at about 1.43%. Use this information for the next 100 days to find the probability that there will be low seismic activity in five of the next 100 days. Use both the binomial and Poisson distributions to calculate the probabilities. Are they close?</para></problem>
+  </exercise></note>
+  <example id="exam-00001">
+    <para id="para-00003">The Poisson distribution is often referred to as a “waiting time” distribution. In a sense this is tied to the link between the discrete distribution measuring the number of occurrences and the treatment of the continuous random variable time. The Poisson takes the continuous random variable time and breaks it into a discrete random variable by measuring the discrete number of occurrences. In Example 4.16 we were measuring the number of messages sent, an occurrence, a discrete random variable, per day, a continuous random variable.</para>
+    <para id="para-00004">The Poisson distribution can be used for many other applications. Any continuous random variable that can be broken into discrete measures can use the Poisson distribution to calculate probabilities of the number of a given discrete value of x, the number of occurrences in which we have an interest. We are interested in the number of potholes in a highway to evaluate the quality of the paving job. In this case the pothole is the occurrence and can be counted per square miles of highway. Mile is a continuous random variable, and potholes is the discrete random variable. We may want to know the probability that a particular paving technique results in more than 20 potholes in 10 miles of paving. If that is the case, we may discard that paving technique. Alternatively, our chocolate cookies claim that each cookie has more than 5 chocolate pieces in each cookie. Sampling the cookie dough, we can calculate the probability that the resulting cookies will meet the claim of 5 chocolate pieces per cookie. Perhaps the production of glass for automobile windshields suffers from a flaw known as the “dot.” In the production process, air infrequently becomes lodged in the hot glass and upon cooling leaves a dot that distracts the driver. This would also be a case where use of the Poisson probability distribution would be the appropriate tool. To calculate the probability that the results have fewer than 3 “dots,” the number acceptable to the manufacturing process, the Poisson distribution would be useful.</para>
+    <para id="para-00005">By way of warning, the Poisson is a discrete random variable. We are counting occurrences. It occurred or it did not during the time, the miles of road, or the batch of cookie dough. In this sense the Poisson is like the binomial in that the occurrence is binary, happened or did not. Because of this link to the binomial, we can use the Poisson to estimate a binomial distribution, and this is discussed below.</para>
+    </example>
+    
 <section id="eip-301"><title>Estimating the Binomial Distribution with the Poisson Distribution</title><para id="eip-939">We found before that the binomial distribution provided an approximation for the hypergeometric distribution. Now we find that the Poisson distribution can provide an approximation for the binomial. We say that the binomial distribution approaches the Poisson. The binomial distribution approaches the Poisson distribution is as <emphasis effect="italics">n</emphasis> gets larger and <emphasis effect="italics">p</emphasis> is small such that <emphasis effect="italics">np</emphasis> becomes a constant value. There are several rules of thumb for when one can say they will use a Poisson to estimate a binomial. One suggests that <emphasis effect="italics">np</emphasis>, the mean of the binomial, should be less than 25. Another author suggests that it should be less than 7.  And another, noting that the mean and variance of the Poisson are both the same, suggests that <emphasis effect="italics">np</emphasis> and <emphasis effect="italics">npq</emphasis>, the mean and variance of the binomial, should be greater than 5. There is no one broadly accepted rule of thumb for when one can use the Poisson to estimate the binomial.</para><para id="eip-417">As we move through these probability distributions we are getting to more sophisticated distributions that, in a sense, contain the less sophisticated distributions within them. This proposition has been proven by mathematicians. This gets us to the highest level of sophistication in the next probability distribution which can be used as an approximation to all of those that we have discussed so far. This is the normal distribution.</para><example id="eip-972"><para id="eip-932">A survey of 500 seniors in the Price Business School yields the following information. 75% go straight to work after graduation. 15% go on to work on their MBA. 9% stay to get a minor in another program. 1% go on to get a Master's in Finance. </para><exercise id="eip-235"><problem id="eip-199">
   <para id="eip-259">
     What is the probability that more than 2 seniors go to graduate school for their Master's in finance?
@@ -210,7 +275,26 @@
 </equation>
 
 <para id="eip-id1169344588874">An approximation that is off by 1 one thousandth is certainly an acceptable approximation.</para></solution>
-</exercise></example></section><section id="fs-idm74033600" class="references"><title>References</title><para id="fs-idm50742304">“ATL Fact Sheet,” Department of Aviation at the Hartsfield-Jackson Atlanta International Airport, 2013. Available online at http://www.atl.com/about-atl/atl-factsheet/ (accessed February 6, 2019).</para><para id="fs-idm119939248">Center for Disease Control and Prevention. “Teen Drivers: Fact Sheet,” Injury Prevention &amp; Control: Motor Vehicle Safety,  October 2, 2012. Available online at http://www.cdc.gov/Motorvehiclesafety/Teen_Drivers/teendrivers_factsheet.html (accessed May 15, 2013).</para>
+</exercise></example>
+<note class="statistics try" id="note-00001"><label/><title>Try It</title>
+  <exercise id="exer-00001"><problem id="prob-00001">
+  <para id="para-00006">In a small city, a survey 500 vehicles reveals that there is a 2% chance of an accident occurring in a week.
+  Calculate the probability that at most 2 accidents occur in any given week.</para>
+  </problem>
+  <solution id="sol-00001">
+  <para id="para-00007">This is a binomial probability distribution problem.</para>
+  <para id="para-00008">Binomial solution:</para>
+  <equation class="unnumbered" id="eq-00007"><m:math><m:mi>n</m:mi><m:mo>*</m:mo><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>500</m:mn><m:mo>*</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>=</m:mo><m:mi>μ</m:mi></m:math></equation>
+  <equation class="unnumbered" id="eq-00008"><m:math><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>500</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>0</m:mn><m:mo>!</m:mo><m:mo>(</m:mo><m:mn>500</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:msup><m:mo>)</m:mo><m:mn>0</m:mn></m:msup><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:msup><m:mo>)</m:mo><m:mrow><m:mn>500</m:mn><m:mo>-</m:mo><m:mn>0</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00004</m:mn></m:math></equation>
+  <equation class="unnumbered" id="eq-00009"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>500</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>!</m:mo><m:mo>(</m:mo><m:mn>500</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:msup><m:mo>)</m:mo><m:mn>1</m:mn></m:msup><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:msup><m:mo>)</m:mo><m:mrow><m:mn>500</m:mn><m:mo>-</m:mo><m:mn>1</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00041</m:mn></m:math></equation>
+  <equation class="unnumbered" id="eq-00010"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>500</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>!</m:mo><m:mo>(</m:mo><m:mn>500</m:mn><m:mo>-</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:msup><m:mo>)</m:mo><m:mn>2</m:mn></m:msup><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>02</m:mn><m:msup><m:mo>)</m:mo><m:mrow><m:mn>500</m:mn><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00213</m:mn></m:math></equation>
+  <para id="para-00009">The probability that at most 2 accidents will occur in any week is obtained as follows:</para>
+  <equation class="unnumbered" id="eq-00011"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00004</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00041</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00213</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>00258</m:mn></m:math></equation>
+  </solution>
+  </exercise>
+  </note>
+  
+</section><section id="fs-idm74033600" class="references"><title>References</title><para id="fs-idm50742304">“ATL Fact Sheet,” Department of Aviation at the Hartsfield-Jackson Atlanta International Airport, 2013. Available online at http://www.atl.com/about-atl/atl-factsheet/ (accessed February 6, 2019).</para><para id="fs-idm119939248">Center for Disease Control and Prevention. “Teen Drivers: Fact Sheet,” Injury Prevention &amp; Control: Motor Vehicle Safety,  October 2, 2012. Available online at http://www.cdc.gov/Motorvehiclesafety/Teen_Drivers/teendrivers_factsheet.html (accessed May 15, 2013).</para>
 <para id="fs-idm54517952">“Children and Childrearing,” Ministry of Health, Labour, and Welfare. Available online at http://www.mhlw.go.jp/english/policy/children/children-childrearing/index.html (accessed May 15, 2013).</para>
 <para id="fs-idp39029744">“Eating Disorder Statistics,” South Carolina Department of Mental Health, 2006. Available online at http://www.state.sc.us/dmh/anorexia/statistics.htm (accessed May 15, 2013).</para>
 <para id="fs-idm985072">“Giving Birth in Manila: The maternity ward at the Dr Jose Fabella Memorial Hospital in Manila, the busiest in the Philippines, where there is an average of 60 births a day,” theguardian, 2013. Available online at http://www.theguardian.com/world/gallery/2011/jun/08/philippines-health#/?picture=375471900&amp;index=2 (accessed May 15, 2013).</para>

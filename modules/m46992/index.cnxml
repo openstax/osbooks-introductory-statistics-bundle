@@ -590,11 +590,11 @@
 </exercise></note>
 
 <example id="fs-idm153949776">
-<para id="fs-idp5363584">In the United States, someone is sexually assaulted every two minutes, on average, according to a number of studies. Suppose the standard deviation is 0.5 minutes and the sample size is 100.</para><exercise id="fs-idm67039584">
+<para id="fs-idp5363584">In the United States, a robbery occurs every two minutes, on average, according to a number of studies. Suppose the standard deviation is 0.5 minutes and the sample size is 100.</para><exercise id="fs-idm67039584">
 <problem id="fs-idm9526400">
-<list id="fs-idm184397680" list-type="enumerated" number-style="lower-alpha"><item>Find the median, the first quartile, and the third quartile for the sample mean time of sexual assaults in the United States.</item>
-<item>Find the median, the first quartile, and the third quartile for the sum of sample times of sexual assaults in the United States.</item>
-<item>Find the probability that a sexual assault occurs on the average between 1.75 and 1.85 minutes.</item>
+<list id="fs-idm184397680" list-type="enumerated" number-style="lower-alpha"><item>Find the median, the first quartile, and the third quartile for the sample mean time of robberies in the United States.</item>
+<item>Find the median, the first quartile, and the third quartile for the sum of sample times of robberies in the United States.</item>
+<item>Find the probability that a robbery occurs on the average between 1.75 and 1.85 minutes.</item>
 <item>Find the value that is two standard deviations above the sample mean.</item>
 <item>Find the <emphasis effect="italics">IQR</emphasis> for the sum of the sample times.</item>
 </list></problem>
@@ -699,18 +699,18 @@
 </note>
 
 <example id="fs-idm112138992">
-<exercise id="fs-idm108732608">
-<problem id="fs-idm110483328">
-<para id="fs-idm753456">A study was done about violence against prostitutes and the symptoms of the posttraumatic stress that they developed. The age range of the prostitutes was 14 to 61. The mean age was 30.9 years with a standard deviation of nine years.</para>
-<list id="fs-idm45985568" list-type="enumerated" number-style="lower-alpha">
-<item>In a sample of 25 prostitutes, what is the probability that the mean age of the prostitutes is less than 35?</item>
-<item>Is it likely that the mean age of the sample group could be more than 50 years? Interpret the results.</item>
-<item>In a sample of 49 prostitutes, what is the probability that the sum of the ages is no less than 1,600?</item>
-<item>Is it likely that the sum of the ages of the 49 prostitutes is at most 1,595? Interpret the results.</item>
-<item>Find the 95<sup>th</sup> percentile for the sample mean age of 65 prostitutes. Interpret the results.</item>
-<item>Find the 90<sup>th</sup> percentile for the sum of the ages of 65 prostitutes. Interpret the results.</item>
-</list>
-</problem>
+  <exercise id="fs-idm108732608">
+  <problem id="fs-idm110483328">
+  <para id="fs-idm753456">A study was done regarding attendance at Broadway shows in New York City. The age range of the attendees was 14 to 61. The mean age was 30.9 years with a standard deviation of nine years.</para>
+  <list id="fs-idm45985568" list-type="enumerated" number-style="lower-alpha">
+  <item>In a sample of 25 attendees, what is the probability that the mean age is less than 35?</item>
+  <item>Is it likely that the mean age of the sample group could be more than 50 years? Interpret the results.</item>
+  <item>In a sample of 49 attendees, what is the probability that the sum of the ages is no less than 1,600?</item>
+  <item>Is it likely that the sum of the ages of the 49 attendees is at most 1,595? Interpret the results.</item>
+  <item>Find the 95th percentile for the sample mean age of 65 attendees. Interpret the results.</item>
+  <item>Find the 90th percentile for the sum of the ages of 65 attendees. Interpret the results.</item>
+  </list>
+  </problem>
 <solution id="fs-idm138994048">
 <list id="fs-idm86323200" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">P</emphasis>(<m:math>
  <m:mover accent="true">
@@ -728,8 +728,8 @@
 </m:math> > 50) = <code>normalcdf</code>(50, <emphasis effect="italics">E</emphasis>99,30.9,1.8) ≈ 0. For this sample group, it is almost impossible for the group’s average age to be more than 50. However, it is still possible for an individual in this group to have an age greater than 50.</item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Σx</emphasis> ≥ 1,600) = <code>normalcdf</code>(1600,E99,1514.10,63) = 0.0864</item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Σx</emphasis> ≤ 1,595) = <code>normalcdf</code>(-E99,1595,1514.10,63) = 0.9005. This means that there is a 90% chance that the sum of the ages for the sample group <emphasis effect="italics">n</emphasis> = 49 is at most 1595.</item>
-<item>The 95th percentile = <code>invNorm</code>(0.95,30.9,1.1) = 32.7. This indicates that 95% of the prostitutes in the sample of 65 are younger than 32.7 years, on average.</item>
-<item>The 90th percentile = <code>invNorm</code>(0.90,2008.5,72.56) = 2101.5. This indicates that 90% of the prostitutes in the sample of 65 have a sum of ages less than 2,101.5 years.</item>
+<item>The 95th percentile = <code>invNorm</code>(0.95,30.9,1.1) = 32.7. This indicates that 95% of the attendees in the sample of 65 are younger than 32.7 years, on average.</item>
+<item>The 90th percentile = <code>invNorm</code>(0.90,2008.5,72.56) = 2101.5. This indicates that 90% of the attendees in the sample of 65 have a sum of ages less than 2,101.5 years.</item>
 </list></solution>
 </exercise>
 </example>
@@ -1486,7 +1486,7 @@ and <emphasis effect="italics">nq</emphasis> must both be greater than five (<em
 </list></problem>
 
 <solution id="id6009706">
-<list id="element-209" list-type="enumerated" number-style="lower-alpha"><item>Check student’s solution.</item>
+<list id="element-209" list-type="enumerated" number-style="lower-alpha"><item>Answers may vary.</item>
 <item><m:math>
  <m:mover accent="true">
   <m:mi>X</m:mi>
