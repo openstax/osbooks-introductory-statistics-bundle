@@ -18,13 +18,11 @@
 <m:mi>x</m:mi>
 <m:mo>¯</m:mo>
 </m:mover>
-</m:math> which consists of sample means, tends to be <term id="term-00001">normally distributed</term> and</para><para id="element-810"><m:math>
+</m:math> which consists of sample means, tends to be <term id="term-00001">normally distributed</term> and</para><equation class="unnumbered" id="element-810"><m:math>
 <m:mover accent="true">
 <m:mi>x</m:mi>
 <m:mo>¯</m:mo>
-</m:mover>
-</m:math> ~ <emphasis effect="italics">N</emphasis><m:math>
-<m:mrow>
+</m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow>
 <m:mrow><m:mo>(</m:mo>
 <m:mrow>
 <m:msub>
@@ -46,7 +44,7 @@
 </m:mrow>
 <m:mo>)</m:mo></m:mrow>
 </m:mrow>
-</m:math>.</para>
+</m:math></equation>
 
 <para id="element-489">The <term id="term-00002">central limit theorem</term> for sample means says that if you repeatedly draw samples of a given size (such as repeatedly rolling ten dice) and calculate their means, those means tend to follow a normal distribution (the sampling distribution). As sample sizes increase, the distribution of means more closely follows the normal distribution. The normal distribution has the same mean as the original distribution and a variance that equals the original variance divided by the sample size. Standard deviation is the square root of variance, so the standard deviation of the sampling distribution is the standard deviation of the original distribution divided by the square root of <emphasis effect="italics">n</emphasis>. The variable <emphasis effect="italics">n</emphasis> is the number of values that are averaged together, not the number of times the experiment is done.</para><para id="fs-idm26555216">To put it more formally, if you draw random samples of size <emphasis effect="italics">n</emphasis>, the distribution of the random variable <m:math>
 <m:mover accent="true">
@@ -122,7 +120,7 @@
 <note id="fs-idm74236704" class="statistics calculator">
 <label/>
 <para id="fs-idm164143744">To find probabilities for means on the calculator, follow these steps.</para>
-<para id="fs-idm81814896">2nd DISTR<newline/>2:normalcdf</para>
+<para id="fs-idm81814896"><code>2nd DISTR</code><newline/><code>2:normalcdf</code></para>
 <para id="fs-idm32771680"><m:math>
  <m:mrow>
   <m:mi>n</m:mi><m:mi>o</m:mi><m:mi>r</m:mi><m:mi>m</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>c</m:mi><m:mi>d</m:mi><m:mi>f</m:mi><m:mrow><m:mo>(</m:mo>
@@ -443,8 +441,8 @@ Let <emphasis effect="italics">X</emphasis> = the time, in hours, it takes to pl
 <note id="fs-idm13085488" class="statistics calculator">
 <label/>
 <para id="fs-idm146458576">To find percentiles for means on the calculator, follow these steps.</para>
-<para id="fs-idm39446144">2<sup>nd</sup> DIStR
-<newline/>3:invNorm</para>
+<para id="fs-idm39446144"><code>2<sup>nd</sup> DIStR</code>
+<newline/><code>3:invNorm</code></para>
 
 <para id="fs-idm50856880"><emphasis effect="italics">k</emphasis> = invNorm<m:math>
  <m:mrow>
@@ -567,12 +565,12 @@ Let <emphasis effect="italics">X</emphasis> = the time, in hours, it takes to pl
 <example id="fs-idm59036512">
 <exercise id="fs-idp15422768">
 <problem id="fs-idp210784">
-<para id="fs-idm45834688">The mean number of minutes for app engagement by a tablet user is 8.2 minutes. Suppose the standard deviation is one minute. Take a sample of 60.</para>
+<para id="fs-idm45834688">The mean number of minutes for app engagement by an iPad user is 8.2 minutes. Suppose the standard deviation is one minute. Take a sample of 60.</para>
 
 <list id="fs-idm51964960" list-type="enumerated" number-style="lower-alpha">
-<item>What are the mean and standard deviation for the sample mean number of app engagement by a tablet user?</item>
+<item>What are the mean and standard deviation for the sample mean number of app engagement by an iPad user?</item>
 <item>What is the standard error of the mean?</item>
-<item>Find the 90<sup>th</sup> percentile for the sample mean time for app engagement for a tablet user. Interpret this value in a complete sentence.</item>
+<item>Find the 90<sup>th</sup> percentile for the sample mean time for app engagement for an iPad user. Interpret this value in a complete sentence.</item>
 <item>Find the probability that the sample mean is between eight minutes and 8.5 minutes.</item>
 </list></problem>
 <solution id="fs-idp4823088">
@@ -642,7 +640,7 @@ Let <emphasis effect="italics">X</emphasis> = the time, in hours, it takes to pl
    </m:mrow>
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
-</m:math> = 8.37. This values indicates that 90 percent of the average app engagement time for table users is less than 8.37 minutes.</item>
+</m:math> = 8.37. This values indicates that 90 percent of the average app engagement time for iPad users is less than 8.37 minutes.</item>
 <item><emphasis effect="italics">P</emphasis>(8 &lt; <m:math>
 <m:mover accent="true">
 <m:mi>x</m:mi>
