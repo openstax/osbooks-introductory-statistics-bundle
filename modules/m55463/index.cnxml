@@ -80,28 +80,9 @@
 
 
 </m:mfrac>
-</m:math></equation><para id="eip-308">which is nothing more than a restatement of the general standardizing formula with appropriate substitutions for μ and σ from the binomial. We can use the standard normal distribution, the reason Z is in the equation, because the normal distribution is the limiting distribution of the binomial. This is another example of the Central Limit Theorem. We have already seen that the sampling distribution of means is normally distributed. Recall the extended discussion in <link document="m54530">Chapter 7</link> concerning the sampling distribution of proportions and the conclusions of the Central Limit Theorem.</para><para id="eip-359">We can now manipulate this formula in just the same way we did for finding the confidence intervals for a mean, but to find the confidence interval for the binomial population parameter,  p.</para><equation class="unnumbered" id="eip-511"><label/><m:math>
-<m:mi>p'</m:mi>
-<m:mo>-</m:mo>
-<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
-<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
-<m:mrow><m:mi>n</m:mi></m:mrow>
+</m:math></equation><para id="eip-308">which is nothing more than a restatement of the general standardizing formula with appropriate substitutions for μ and σ from the binomial. We can use the standard normal distribution, the reason Z is in the equation, because the normal distribution is the limiting distribution of the binomial. This is another example of the Central Limit Theorem. We have already seen that the sampling distribution of means is normally distributed. Recall the extended discussion in <link document="m54530">Chapter 7</link> concerning the sampling distribution of proportions and the conclusions of the Central Limit Theorem.</para><para id="eip-359">We can now manipulate this formula in just the same way we did for finding the confidence intervals for a mean, but to find the confidence interval for the binomial population parameter,  p.</para>
 
-</m:mfrac>
-</m:msqrt>
-
-<m:mo> ≤ </m:mo><m:mi>p</m:mi>
-<m:mo> ≤ </m:mo>
-<m:mi>p'</m:mi>
-<m:mo>+</m:mo>
-<m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
-<m:msqrt><m:mfrac><m:mrow><m:mi>p'q'</m:mi></m:mrow>
-<m:mrow><m:mi>n</m:mi></m:mrow>
-
-</m:mfrac>
-</m:msqrt>
-
-</m:math></equation><para id="eip-280">Where p′ = x/n, the point estimate of p taken from the sample.   Notice that p′ has replaced p in the formula. This is because we do not know p, indeed, this is just what we are trying to estimate. </para><para id="eip-432">Unfortunately, there is no correction factor for cases where the sample size is small so np′ and nq' must always be greater than 5 to develop an interval estimate for p.</para><example id="element-32">
+<equation class="unnumbered" id="eip-511"><label/><m:math><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:mo>-</m:mo><m:msub><m:mi>Z</m:mi><m:mfrac><m:mi>&#x3B1;</m:mi><m:mn>2</m:mn></m:mfrac></m:msub><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>q</m:mi><m:mo>'</m:mo></m:msup></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>&#x2264;</m:mo><m:mi>p</m:mi><m:mo>&#x2264;</m:mo><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>Z</m:mi><m:mfrac><m:mi>&#x3B1;</m:mi><m:mn>2</m:mn></m:mfrac></m:msub><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>q</m:mi><m:mo>'</m:mo></m:msup></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt></m:math></equation><para id="eip-280">Where p′ = x/n, the point estimate of p taken from the sample.   Notice that p′ has replaced p in the formula. This is because we do not know p, indeed, this is just what we are trying to estimate. </para><para id="eip-432">Unfortunately, there is no correction factor for cases where the sample size is small so np′ and nq' must always be greater than 5 to develop an interval estimate for p.</para><example id="element-32">
 <exercise id="element-814"><problem id="id24363103">
   <para id="element-687">Suppose that a market research firm is hired to estimate the percent of adults living in a large city who have smartphones.  Five hundred randomly selected adult residents in this city are surveyed to determine whether they have smartphones. Of
   the 500 people sampled, 421 responded yes - they own smartphones. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of adult residents of this city who have smartphones.</para>
@@ -233,7 +214,22 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
    <para id="eip-id6479480">The ± that makes up the confidence interval is thus 0.04; 0.12 + 0.04 = 0.16 and 0.12 − 0.04 = 0.08, the boundaries of the confidence interval. Finally, we solve for <emphasis effect="italics">Z</emphasis>.</para>
    <para id="eip-id1169335320053"><m:math><m:mo>[</m:mo><m:mi>Z</m:mi><m:mo>⋅</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.12</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.12</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>150</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo><m:mo>=</m:mo><m:mn>0.04</m:mn></m:math>, <emphasis><emphasis effect="italics">therefore Z</emphasis> = 1.51</emphasis></para>
    <para id="eip-id1169337927448">And then look up the probability for 1.51 standard deviations on the standard normal table.</para><para id="eip-id1166885205984"><m:math><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>=</m:mo><m:mn>1.51</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.4345</m:mn></m:math>, <m:math><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0.8690</m:mn></m:math> <emphasis effect="italics"><emphasis>or</emphasis></emphasis> <m:math><m:mn>86.90</m:mn><m:mo>%</m:mo></m:math>.</para></solution>
-</exercise></example><example id="eip-164"><exercise id="element-2"><problem id="id1164699825510">
+</exercise></example>
+<note id="fs-idp55027792" class="statistics try">
+  <label/>
+  <title>Try It</title>
+  <exercise id="fs-idm23330928">
+  <problem id="eip-165">
+  <para id="eip-183">A student polls his school to see if students in the school district are for or against the new legislation regarding school uniforms. She surveys 600 students and finds that 480 are against the new legislation.<newline count="2"/></para><para id="fs-idp17812400">a. Compute a 90% confidence interval for the true percent of students who are against the new legislation, and interpret the confidence interval.</para>
+  </problem>
+  </exercise>
+  <exercise id="fs-idm29038320">
+  <problem id="eip-882">
+  <para id="eip-207">b. In a sample of 300 students, 68% said they own an iPod and a smart phone. Compute a 97% confidence interval for the true percent of students who own an iPod and a smartphone.</para>
+   </problem>
+    </exercise>
+  </note>
+<example id="eip-164"><exercise id="element-2"><problem id="id1164699825510">
   <para id="element-182">A financial officer for a company wants to estimate the percent of accounts receivable that are more than 30 days overdue. They survey 500 accounts and find that 300 are more than 30 days overdue. Compute a 90% confidence interval for the true percent of accounts receivable that are more than 30 days overdue, and interpret the confidence interval.</para></problem>
 <solution id="id1164685709005">
 <list id="eip-id1168006547279"><item>The solution is step-by-step:</item>
@@ -327,12 +323,12 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
 <item>Alternate Wording: We estimate with 90% confidence that between 56.4% and 63.6% of ALL accounts are overdue 30 days.</item>
  </list></para><para id="element-828">Explanation of 90% Confidence Level: Ninety percent of all confidence intervals constructed in this way contain the true value for the population percent of accounts receivable that are overdue 30 days.</para></solution>
 
- </exercise></example><note id="fs-idp55027792" class="statistics try">
+ </exercise></example><note id="fs-idp55027792a" class="statistics try">
 <label/>
 <title>Try It</title>
-<exercise id="fs-idm23330928">
-<problem id="eip-165">
-<para id="eip-183">A student polls his school to see if students in the school district are for or against the new legislation regarding school uniforms. She surveys 600 students and finds that 480 are against the new legislation.<newline count="2"/></para><para id="fs-idp17812400">a. Compute a 90% confidence interval for the true percent of students who are against the new legislation, and interpret the confidence interval.</para>
+<exercise id="fs-idm23330928a">
+<problem id="eip-165a">
+<para id="eip-183a">A student polls his school to see if students in the school district are for or against the new legislation regarding school uniforms. She surveys 600 students and finds that 480 are against the new legislation.<newline count="2"/></para><para id="fs-idp17812400a">a. Compute a 90% confidence interval for the true percent of students who are against the new legislation, and interpret the confidence interval.</para>
 </problem>
 <solution id="eip-587">
 <label/>
@@ -341,8 +337,8 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
   </para>
 </solution>
 </exercise>
-<exercise id="fs-idm29038320"><problem id="eip-882">
-<para id="eip-207">b. In a sample of 300 students, 68% said they own an iPod and a smart phone. Compute a 97% confidence interval for the true percent of students who own an iPod and a smartphone.</para>
+<exercise id="fs-idm29038320a"><problem id="eip-882a">
+<para id="eip-207a">b. In a sample of 300 students, 68% said they own an iPod and a smart phone. Compute a 97% confidence interval for the true percent of students who own an iPod and a smartphone.</para>
  </problem>
 <solution id="eip-92">
 <label/>
@@ -617,7 +613,7 @@ Identify the following:
 </problem>
 <solution id="eip-208">
 <para id="eip-idp62067840">CI: (0.5321, 0.6679)</para>
-<figure id="fs-idp73910688"><media id="eip-idp62068224" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.6 on the horizontal axis.  A central region is shaded between points 0.5321 and 0.6679."><image src="../../media/CNX_Stats_C08_M04_item002annoN.jpg" mime-type="image/jpeg" width="380"/></media></figure>
+<figure id="fs-idp73910688"><media id="eip-idp62068224" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.6 on the horizontal axis.  A central region is shaded between points 0.5321 and 0.6679."><image src="../../media/CNX_Stats_C08_M04_item002anno.png" mime-type="image/png" width="380"/></media></figure>
 <para id="eip-idp97751072"><emphasis effect="italics">EBM</emphasis>: 0.0679</para></solution>
 </exercise>
 
@@ -641,7 +637,7 @@ Identify the following:
 </problem>
 <solution id="eip-284">
 <para id="eip-idp28777568">CI: (0.19432, 0.33068)</para>
-<figure id="fs-idm39446528"><media id="eip-idp150796640" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.26 on the horizontal axis.  A central region is shaded between points 0.1943 and 0.3307."><image src="../../media/CNX_Stats_C08_M04_item002anno.jpg" mime-type="image/jpeg" width="380"/></media></figure>
+<figure id="fs-idm39446528"><media id="eip-idp150796640" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.26 on the horizontal axis.  A central region is shaded between points 0.1943 and 0.3307."><image src="../../media/CNX_Stats_C08_M04_item002anno.png" mime-type="image/png" width="380"/></media></figure>
 </solution>
 </exercise>
 <exercise id="eip-218"><problem id="eip-768">
@@ -775,7 +771,7 @@ Calculate the following:
 </exercise>
  <exercise id="element-592"><problem id="id9759165">
   <para id="element-373">Fill in the blanks on the graph with the areas, upper and lower limits of the confidence interval, and the sample proportion.</para>
-<figure id="five-Ohno"><media id="id7994111" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."><image src="../../media/fig-ch08_08_01.jpg" mime-type="image/jpg" width="380"/></media></figure>
+<figure id="five-Ohno"><media id="id7994111" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."><image src="../../media/fig-ch08_08_01.png" mime-type="image/png" width="380"/></media></figure>
 </problem>
  </exercise><exercise id="element-733"><problem id="id9811149">
   <para id="element-17">

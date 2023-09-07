@@ -270,77 +270,9 @@
 
      </m:mrow>
     </m:math>; in this chapter the last two inputs in the invNorm command are 0, 1, because you are using a standard normal distribution <emphasis effect="italics">Z</emphasis> ~ <emphasis effect="italics">N</emphasis>(0, 1).</para>
-</note></section><section id="fs-idp84332448">
-<title>Calculating the Error Bound (<emphasis effect="italics">EBM</emphasis>)</title>
-    <para id="fs-idp74136672">The error bound formula for an unknown population mean <emphasis effect="italics">μ</emphasis> when the population standard deviation <emphasis effect="italics">σ</emphasis> is known is</para>
-    <list id="eip-id1171249476212" list-type="bulleted"><item><emphasis effect="italics">EBM</emphasis> = <m:math>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>z</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>σ</m:mi>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math></item>
-    </list></section>
-<section id="fs-idm53546816">
-<title>Constructing the Confidence Interval</title>
-<list id="fs-idm73276912" list-type="bulleted"><item>The confidence interval estimate has the format
-    <m:math>
- <m:mrow>
-  <m:mo stretchy="false">(</m:mo><m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mo>–</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>,</m:mo><m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mo>+</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo stretchy="false">)</m:mo>
- </m:mrow>
-</m:math>.</item></list><para id="eip-id1171253190648">The graph gives a picture of the entire situation.</para>
-<para id="eip-id1171259600150"><emphasis effect="italics">CL</emphasis> + <m:math>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:math> + <m:math>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:math> = <emphasis effect="italics">CL</emphasis> + <emphasis effect="italics">α</emphasis> = 1.</para>
-<figure id="fs-idp113086400"><media id="id1164466599913" alt="This is a normal distribution curve. The peak of the curve coincides with the point x-bar on the horizontal axis. The points x-bar - EBM and x-bar + EBM are labeled on the axis. Vertical lines are drawn from these points to the curve, and the region between the lines is shaded. The shaded region has area equal to 1 - a and represents the confidence level. Each unshaded tail has area a/2.">
-<image src="../../media/fig-ch08_02_02N.jpg" mime-type="image/jpg" width="380"/>
+</note>
+<figure id="fs-idp113086400"><media id="id1164466599913" alt="..">
+<image src="../../media/IBS2e_Figure_08_00_002.png" mime-type="image/png" width="380"/>
 </media>
 </figure></section>
 <section id="fs-idm103016896"><title>Writing the Interpretation</title><para id="fs-idp86836496">The interpretation should clearly state the confidence level (<emphasis effect="italics">CL</emphasis>), explain what population parameter is being estimated (here, a <emphasis>population mean</emphasis>), and state the confidence interval (both endpoints). "We estimate with ___% confidence that the true population mean (include the context of the problem) is between ___ and ___ (include appropriate units)."</para>
@@ -355,140 +287,20 @@
     <item>The first solution is shown step-by-step.</item>
     <item>The second solution uses the TI-83, 83+, and 84+ calculators.<newline/></item>
     </list>
-    <para id="eip-id1171260460763">To find the confidence interval, you need the sample mean, <m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math>, and the <emphasis effect="italics">EBM</emphasis>.</para>
-    <para id="eip-id1171259684785">
-    <list id="eip-id1171249631187" list-type="labeled-item"><item><m:math>
-     <m:mover accent="true">
-      <m:mi>x</m:mi>
-      <m:mo>¯</m:mo>
-     </m:mover>
-
-    </m:math> = 68</item>
-    <item>
-    <emphasis effect="italics">EBM</emphasis> = <m:math>
-     <m:mrow>
-      <m:mrow><m:mo>(</m:mo>
-       <m:mrow>
-        <m:msub>
-         <m:mi>z</m:mi>
-         <m:mrow>
-          <m:mfrac>
-           <m:mi>α</m:mi>
-           <m:mn>2</m:mn>
-          </m:mfrac>
-         </m:mrow>
-        </m:msub>
-       </m:mrow>
-      <m:mo>)</m:mo></m:mrow>
-     </m:mrow>
-    </m:math><m:math>
-     <m:mrow>
-      <m:mrow><m:mo>(</m:mo>
-       <m:mrow>
-        <m:mfrac>
-         <m:mi>σ</m:mi>
-         <m:mrow>
-          <m:msqrt>
-           <m:mi>n</m:mi>
-          </m:msqrt>
-         </m:mrow>
-        </m:mfrac>
-       </m:mrow>
-      <m:mo>)</m:mo></m:mrow>
-     </m:mrow>
-    </m:math></item>
-    <item><emphasis effect="italics">σ</emphasis> = 3; <emphasis effect="italics">n</emphasis> = 36; The confidence level is 90% (<emphasis effect="italics">CL</emphasis> = 0.90)</item>
-    </list>
-    </para>
-    <para id="eip-id1171269290538"><emphasis effect="italics">CL</emphasis> = 0.90 so <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.90 = 0.10</para>
-    <para id="eip-id1171249664419"><m:math>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-     </m:mrow>
-    </m:math> = 0.05 <m:math>
-     <m:mrow>
-      <m:msub>
-       <m:mi>z</m:mi>
-       <m:mrow>
-        <m:mfrac>
-         <m:mi>α</m:mi>
-         <m:mn>2</m:mn>
-        </m:mfrac>
-       </m:mrow>
-      </m:msub>
-      <m:mo>=</m:mo><m:msub>
-       <m:mi>z</m:mi>
-       <m:mrow>
-        <m:mn>0.05</m:mn>
-       </m:mrow>
-      </m:msub>
-     </m:mrow>
-    </m:math></para>
-    <para id="eip-id1171249710090">The area to the right of <emphasis effect="italics">z</emphasis><sub>0.05</sub> is 0.05 and the area to the left of <emphasis effect="italics">z</emphasis><sub>0.05</sub> is 1 – 0.05 = 0.95.</para>
-    <para id="element-55"><m:math>
-     <m:mrow>
-      <m:msub>
-       <m:mi>z</m:mi>
-       <m:mrow>
-        <m:mfrac>
-         <m:mi>α</m:mi>
-         <m:mn>2</m:mn>
-        </m:mfrac>
-       </m:mrow>
-      </m:msub>
-      <m:mtext> = </m:mtext><m:msub>
-       <m:mi>z</m:mi>
-       <m:mrow>
-        <m:mn>0.05</m:mn>
-       </m:mrow>
-      </m:msub>
-      <m:mtext> = 1</m:mtext><m:mtext>.645</m:mtext>
-     </m:mrow>
-    </m:math></para>
-    <para id="eip-id1171251216060">using invNorm(0.95, 0, 1) on the TI-83,83+, and 84+ calculators. This can also be found using appropriate commands on other calculators, using a computer, or using a probability table for the standard normal distribution.</para>
-    <para id="eip-id1171261548281"><emphasis effect="italics">EBM</emphasis> = (1.645)<m:math>
-     <m:mrow>
-      <m:mrow><m:mo>(</m:mo>
-       <m:mrow>
-        <m:mfrac>
-         <m:mn>3</m:mn>
-         <m:mrow>
-          <m:msqrt>
-           <m:mrow>
-            <m:mn>36</m:mn>
-           </m:mrow>
-          </m:msqrt>
-
-         </m:mrow>
-        </m:mfrac>
-
-       </m:mrow>
-      <m:mo>)</m:mo></m:mrow>
-     </m:mrow>
-    </m:math> = 0.8225</para>
-    <para id="eip-id1171249016439"><m:math>
-     <m:mover accent="true">
-      <m:mi>x</m:mi>
-      <m:mo>¯</m:mo>
-     </m:mover>
-    </m:math> - <emphasis effect="italics">EBM</emphasis> = 68 - 0.8225 = 67.1775</para>
-    <para id="eip-id1171247927262">
-    <m:math>
-     <m:mover accent="true">
-      <m:mi>x</m:mi>
-      <m:mo>¯</m:mo>
-     </m:mover>
-    </m:math> + <emphasis effect="italics">EBM</emphasis> = 68 + 0.8225 = 68.8225</para>
-    <para id="eip-id1171262340763">The 90% confidence interval is <emphasis>(67.1775, 68.8225).</emphasis><newline/></para>
+    <figure id="fig-00001"><media alt=""><image mime-type="image/png" src="../../media/IBS2e_Figure_08_00_003.png"/></media></figure>
+    <para id="para-00003">The solution is shown step by step:</para>
+    <para id="para-00004">The formula for a confidence interval for an unknown population mean assuming we know the population standard deviation is:</para>
+    <equation class="unnumbered" id="eq-00001"><m:math><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub><m:mfenced><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mfenced><m:mo>≤</m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>+</m:mo><m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub><m:mo>(</m:mo><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac><m:mo>)</m:mo></m:math></equation>
+    <para id="para-00005">For a 90% confidence interval, visualize an area of 0.90 centered under the normal curve (See Figure 8.2). The remaining area for the two tails of the normal distribution is then 0.10, which indicates that the area in the left tail is one-half of 0.10, which is 0.05. The corresponding z-score that cuts off an area of 0.05 in the left tail is 1.645.</para>
+    <para id="para-00006">In this example we are given that the population standard deviation <m:math><m:mi>σ</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>3</m:mn></m:math>.</para>
+    <para id="para-00007">We are also given that the sample size n = 36 and the sample mean <m:math><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mn>68</m:mn></m:math>.</para>
+    <para id="para-00008">Substituting these values in the confidence interval formula results in the following:</para>
+    <equation class="unnumbered" id="eq-00002"><m:math><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub><m:mfenced><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mfenced><m:mo>≤</m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>+</m:mo><m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub><m:mo>(</m:mo><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac><m:mo>)</m:mo></m:math></equation>
+    <equation class="unnumbered" id="eq-00003"><m:math><m:mn>68</m:mn><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>645</m:mn><m:mfenced><m:mfrac><m:mn>3</m:mn><m:msqrt><m:mn>36</m:mn></m:msqrt></m:mfrac></m:mfenced><m:mo>≤</m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>68</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>645</m:mn><m:mfenced><m:mfrac><m:mn>3</m:mn><m:msqrt><m:mn>36</m:mn></m:msqrt></m:mfrac></m:mfenced></m:math></equation>
+    <equation class="unnumbered" id="eq-00004"><m:math><m:mn>68</m:mn><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8225</m:mn><m:mo>≤</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>68</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8225</m:mn></m:math></equation>
+    <equation class="unnumbered" id="eq-00005"><m:math><m:mn>67</m:mn><m:mo>.</m:mo><m:mn>1775</m:mn><m:mo>≤</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>68</m:mn><m:mo>.</m:mo><m:mn>8225</m:mn></m:math></equation>
+    <para id="para-00009">We estimate with 90% confidence that the true population mean exam score for all statistics students is between 67.18 and 68.82.</para>
+  
     </solution>
 
 <solution id="eip-idp129183584">
@@ -510,8 +322,6 @@
     <newline/>The confidence interval is (to three decimal places)(67.178, 68.822).</para>
     </note>
 
-    <para id="eip-id1171248950887">Interpretation: We estimate with 90% confidence that the true population mean exam score for all statistics students is between 67.18 and 68.82.</para>
-
     <para id="eip-id1171264042411">Explanation of 90% Confidence Level:
     Ninety percent of all confidence intervals constructed in this way contain the true mean statistics exam score. For example, if we constructed 100 of these confidence intervals, we would expect 90 of them to contain the true population mean exam score.</para>
     </solution>
@@ -530,102 +340,51 @@
     </note>
 
 <example id="example3"><para id="eip-431">The Specific Absorption Rate (SAR) for a cell phone measures the amount of radio frequency (RF) energy absorbed by the user’s body when using the handset. Every cell phone emits RF energy. Different phone models have different SAR measures. To receive certification from the Federal Communications Commission (FCC) for sale in the United States, the SAR level for a cell phone must be no more than 1.6 watts per kilogram. <link target-id="M02_CH08-tbl001" document=""/> shows the highest SAR level for a random selection of cell phone models as measured by the FCC.</para>
-    <table id="M02_CH08-tbl001" summary="..">
+  <table id="M02_CH08-tbl001" summary="..">
     <tgroup cols="6">
+    <colspec colnum="1" colname="c1"/>
+    <colspec colnum="2" colname="c2"/>
+    <colspec colnum="3" colname="c3"/>
     <thead>
     <row>
-    <entry>Phone Model</entry>
-    <entry>SAR</entry>
-    <entry>Phone Model</entry>
-    <entry>SAR</entry>
-    <entry>Phone Model</entry>
-    <entry>SAR</entry>
+    <entry namest="c1" nameend="c3">SAR Data for a sample of 30 cell phones</entry>
     </row>
     </thead>
     <tbody>
     <row>
-    <entry>Apple iPhone 4S</entry>
-    <entry>1.11</entry>
-    <entry>LG Ally</entry>
-    <entry>1.36</entry>
-    <entry>Pantech Laser</entry>
-    <entry>0.74</entry>
+    <entry>1.11</entry><entry>1.36</entry><entry>0.74</entry>
     </row>
     <row>
-    <entry>BlackBerry Pearl 8120</entry>
-    <entry>1.48</entry>
-    <entry>LG AX275</entry>
-    <entry>1.34</entry>
-    <entry>Samsung Character</entry>
-    <entry>0.5</entry>
+    <entry>1.48</entry><entry>1.34</entry><entry>0.5</entry>
     </row>
     <row>
-    <entry>BlackBerry Tour 9630</entry>
-    <entry>1.43</entry>
-    <entry>LG Cosmos</entry>
-    <entry>1.18</entry>
-    <entry>Samsung Epic 4G Touch</entry>
-    <entry>0.4</entry>
+    <entry>1.43</entry><entry>1.18</entry><entry>0.4</entry>
     </row>
     <row>
-    <entry>Cricket TXTM8</entry>
-    <entry>1.3</entry>
-    <entry>LG CU515</entry>
-    <entry>1.3</entry>
-    <entry>Samsung M240</entry>
-    <entry>0.867</entry>
+    <entry>1.3</entry><entry>1.3</entry><entry>0.867</entry>
     </row>
     <row>
-    <entry>HP/Palm Centro</entry>
-    <entry>1.09</entry>
-    <entry>LG Trax CU575</entry>
-    <entry>1.26</entry>
-    <entry>Samsung Messager III SCH-R750</entry>
-    <entry>0.68</entry>
+    <entry>1.09</entry><entry>1.26</entry><entry>0.68</entry>
     </row>
     <row>
-    <entry>HTC One V</entry>
-    <entry>0.455</entry>
-    <entry>Motorola Q9h</entry>
-    <entry>1.29</entry>
-    <entry>Samsung Nexus S</entry>
-    <entry>0.51</entry>
+    <entry>0.455</entry><entry>1.29</entry><entry>0.51</entry>
     </row>
     <row>
-    <entry>HTC Touch Pro 2</entry>
-    <entry>1.41</entry>
-    <entry>Motorola Razr2 V8</entry>
-    <entry>0.36</entry>
-    <entry>Samsung SGH-A227</entry>
-    <entry>1.13</entry>
+    <entry>1.41</entry><entry>0.36</entry><entry>1.13</entry>
     </row>
     <row>
-    <entry>Huawei M835 Ideos</entry>
-    <entry>0.82</entry>
-    <entry>Motorola Razr2 V9</entry>
-    <entry>0.52</entry>
-    <entry>SGH-a107 GoPhone</entry>
-    <entry>0.3</entry>
+    <entry>0.82</entry><entry>0.52</entry><entry>0.3</entry>
     </row>
     <row>
-    <entry>Kyocera DuraPlus</entry>
-    <entry>0.78</entry>
-    <entry>Motorola V195s</entry>
-    <entry>1.6</entry>
-    <entry>Sony W350a</entry>
-    <entry>1.48</entry>
+    <entry>0.78</entry><entry>1.6</entry><entry>1.48</entry>
     </row>
     <row>
-    <entry>Kyocera K127 Marbl</entry>
-    <entry>1.25</entry>
-    <entry>Nokia 1680</entry>
-    <entry>1.39</entry>
-    <entry>T-Mobile Concord</entry>
-    <entry>1.38</entry>
+    <entry>1.25</entry><entry>1.39</entry><entry>1.38</entry>
     </row>
     </tbody>
     </tgroup>
     </table>
+   
     <exercise id="eip-377"><problem id="eip-199">
     <para id="eip-289">Find a 98% confidence interval for the true (population) mean of the Specific Absorption Rates (SARs) for cell phones. Assume that the population standard deviation is <emphasis effect="italics">σ</emphasis> = 0.337.</para></problem>
     <solution id="eip-311">
@@ -640,7 +399,7 @@
  </m:mrow>
 </m:math></para><para id="eip-idm41535920">Next, find the <emphasis effect="italics">EBM</emphasis>. Because you are creating a 98% confidence interval, <emphasis effect="italics">CL</emphasis> = 0.98.</para>
     <figure id="fs-idp138152784"><media id="eip-idp25198592" alt="This is a normal distribution curve. The point z0.01 is labeled at the right edge of the curve and the region to the right of this point is shaded. The area of this shaded region equals 0.01. The unshaded area equals 0.99.">
-    <image src="../../media/CNX_Stats_C08_M02_001.jpg" mime-type="image/jpeg" width="380"/>
+    <image src="../../media/CNX_Stats_C08_M02_001.png" mime-type="image/png" width="380"/>
     </media>
     </figure>
     <para id="eip-idp4350608">You need to find <emphasis effect="italics">z</emphasis><sub>0.01</sub> having the property that the area under the normal density curve to the right of <emphasis effect="italics">z</emphasis><sub>0.01</sub> is 0.01 and the area to the left is 0.99. Use your calculator, a computer, or a probability table for the standard normal distribution to find <emphasis effect="italics">z</emphasis><sub>0.01</sub> = 2.326.</para>
@@ -733,79 +492,49 @@
     <problem id="eip-555">
       <para id="eip-136"><link target-id="M02_CH08-tbl002" document=""/> shows a different random sampling of 20 cell phone models. Use this data to calculate a 93% confidence interval for the true mean SAR for cell phones certified for use in the United States. As previously, assume that the population standard deviation is <emphasis effect="italics">σ</emphasis> = 0.337.</para>
       <table id="M02_CH08-tbl002" summary="..">
-    <tgroup cols="4">
-    <thead>
-    <row>
-    <entry><emphasis>Phone Model</emphasis></entry>
-    <entry><emphasis>SAR</emphasis></entry>
-    <entry><emphasis>Phone Model</emphasis></entry>
-    <entry><emphasis>SAR</emphasis></entry>
-    </row>
-    </thead>
-    <tbody>
-    <row>
-    <entry>Blackberry Pearl 8120</entry>
-    <entry>1.48</entry>
-    <entry>Nokia E71x</entry>
-    <entry>1.53</entry>
-    </row>
-    <row>
-    <entry>HTC Evo Design 4G</entry>
-    <entry>0.8</entry>
-    <entry>Nokia N75</entry>
-    <entry>0.68</entry>
-    </row>
-    <row>
-    <entry>HTC Freestyle</entry>
-    <entry>1.15</entry>
-    <entry>Nokia N79</entry>
-    <entry>1.4</entry>
-    </row>
-    <row>
-    <entry>LG Ally</entry>
-    <entry>1.36</entry>
-    <entry>Sagem Puma</entry>
-    <entry>1.24</entry>
-    </row>
-    <row>
-    <entry>LG Fathom</entry>
-    <entry>0.77</entry>
-    <entry>Samsung Fascinate</entry>
-    <entry>0.57</entry>
-    </row>
-    <row>
-    <entry>LG Optimus Vu</entry>
-    <entry>0.462</entry>
-    <entry>Samsung Infuse 4G</entry>
-    <entry>0.2</entry>
-    </row>
-    <row>
-    <entry>Motorola Cliq XT</entry>
-    <entry>1.36</entry>
-    <entry>Samsung Nexus S</entry>
-    <entry>0.51</entry>
-    </row>
-    <row>
-    <entry>Motorola Droid Pro</entry>
-    <entry>1.39</entry>
-    <entry>Samsung Replenish</entry>
-    <entry>0.3</entry>
-    </row>
-    <row>
-    <entry>Motorola Droid Razr M</entry>
-    <entry>1.3</entry>
-    <entry>Sony W518a Walkman</entry>
-    <entry>0.73</entry>
-    </row>
-    <row>
-    <entry>Nokia 7705 Twist</entry>
-    <entry>0.7</entry>
-    <entry>ZTE C79</entry>
-    <entry>0.869</entry>
-    </row>
-    </tbody>
-    </tgroup>
-    </table>
+        <tgroup cols="2">
+        <colspec colnum="1" colname="c1"/> 
+        <colspec colnum="2" colname="c2"/> 
+        <thead>
+        <row>
+        <entry namest="c1" nameend="c2">SAR Data for a sample of 20 cell phones</entry>
+        </row>
+        </thead>
+        <tbody>
+        <row>
+        <entry>1.48</entry><entry>1.53</entry>
+        </row>
+        <row>
+        <entry>0.8</entry><entry>0.68</entry>
+        </row>
+        <row>
+        <entry>1.15</entry><entry>1.4</entry>
+        </row>
+        <row>
+        <entry>1.36</entry><entry>1.24</entry>
+        </row>
+        <row>
+        <entry>0.77</entry><entry>0.57</entry>
+        </row>
+        <row>
+        <entry>0.462</entry><entry>0.2</entry>
+        </row>
+        <row>
+        <entry>1.36</entry><entry>0.51</entry>
+        </row>
+        <row>
+        <entry>1.39</entry><entry>0.3</entry>
+        </row>
+        <row>
+        <entry>1.3</entry><entry>0.73</entry>
+        </row>
+        <row>
+        <entry>0.7</entry><entry>0.869</entry>
+        </row>
+      </tbody>
+        </tgroup>
+        </table>
+        
     </problem>
     </exercise>
     </note>
@@ -955,8 +684,8 @@
     Comparing the results:
     The 90% confidence interval is (67.18, 68.82). The 95% confidence interval is (67.02, 68.98). The 95% confidence interval is wider. If you look at the graphs, because the area 0.95 is larger than the area 0.90, it makes sense that the 95% confidence interval is wider. To be more confident that the confidence interval actually does contain the true value of the population mean for all statistics exam scores, the confidence interval necessarily needs to be wider.</para>
 
-    <figure id="conf_intvls_cfpm3"><media id="id1164459044969" alt="Part (a) shows a normal distribution curve. A central region with area equal to 0.90 is shaded. Each unshaded tail of the curve has area equal to 0.05. Part (b) shows a normal distribution curve. A central region with area equal to 0.95 is shaded. Each unshaded tail of the curve has area equal to 0.025.">
-    <image src="../../media/fig-ch08_02_03-66bc.jpg" mime-type="image/jpg" width="450"/>
+    <figure id="conf_intvls_cfpm3"><media id="id1164459044969" alt="..">
+    <image src="../../media/IBS2e_Figure_08_00_003.png" mime-type="image/png" width="450"/>
     </media>
     </figure>
 <para id="para-00001"><emphasis>Summary: Effect of Changing the Confidence Level</emphasis>
@@ -1729,7 +1458,7 @@
     <para id="eip-16">CI: (7.9441, 8.4559)</para>
 <figure id="eip-idm5552576">
       <media id="eip-idm128260720" alt="This is a normal distribution curve. The peak of the curve coincides with the point 8.2 on the horizontal axis.  A central region is shaded between points 7.94 and 8.46.">
-    <image src="../../media/CNX_Stats_C08_M02_item002annoN.jpg" mime-type="image/jpg" width="380"/>
+    <image src="../../media/CNX_Stats_C08_M02_item002anno.png" mime-type="image/png" width="380"/>
     </media>
 </figure>
 <para id="eip-idm5550160"><emphasis effect="italics">EBM</emphasis> = 0.26</para>
@@ -1812,7 +1541,7 @@
 
     <figure id="fs-idp82050400">
     <media id="eip-idp84209776" alt="This is a normal distribution curve. The peak of the curve coincides with the point 2.2 on the horizontal axis. A central region is shaded between points 2.13 and 2.27.">
-    <image src="../../media/CNX_Stats_C08_M02_item003annoN.jpg" mime-type="image/jpeg" width="380"/>
+    <image src="../../media/CNX_Stats_C08_M02_item003anno.png" mime-type="image/png" width="380"/>
     </media></figure>
     </solution>
     </exercise>
@@ -1949,7 +1678,7 @@
     </exercise><exercise id="fs-idm6858288"><problem id="fs-idm6858032">
       <para id="eip-810">Fill in the blanks on the graph with the areas, upper and lower limits of the confidence interval, and the sample mean.</para>
 
-    <figure id="five-0"><media id="id27456676" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."><image src="../../media/fig-ch08_06_01.jpg" mime-type="image/jpg" width="380"/></media></figure></problem>
+    <figure id="five-0"><media id="id27456676" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side."><image src="../../media/fig-ch08_06_01.png" mime-type="image/png" width="380"/></media></figure></problem>
      </exercise><exercise id="element-158"><problem id="id27481688">
       <para id="element-46">In one complete sentence, explain what the interval means.</para>
       </problem>
@@ -2011,7 +1740,7 @@
 <item>Normal. We know the standard deviation for the population, and the sample size is greater than 30.</item>
     <item>
       <list id="list_s3" list-type="enumerated" number-style="lower-roman"><item>CI: (70.151, 71.49)</item>
-        <item><figure id="figure1234"><media id="m1" alt=""><image src="../../media/fig-ch08_09_01.jpg" mime-type="image/jpg" width="380"/></media></figure></item>
+        <item><figure id="figure1234"><media id="m1" alt=""><image src="../../media/IBS2e_Figure_08_00_021.png" mime-type="image/png" width="380"/></media></figure></item>
         <item><emphasis effect="italics">EBM</emphasis> = 0.849</item>
         </list>
     </item>
@@ -2202,7 +1931,7 @@
 <m:mo>)</m:mo></m:mrow></m:math></para>
     </item>
         <item><list id="eip-id1172668181207" list-type="enumerated" number-style="lower-roman"><item>CI: (6.98, 8.82)</item>
-<item><figure id="eip-id1169152005093"><media id="eip-id1169152053385" alt=""><image src="../../media/CNX_Stats_C08_M01_item001.jpg" mime-type="image/png" width="400"/></media>
+<item><figure id="eip-id1169152005093"><media id="eip-id1169152053385" alt=""><image src="../../media/CNX_Stats_C08_M01_item001.png" mime-type="image/png" width="400"/></media>
 </figure></item>
 <item><emphasis effect="italics">EBM</emphasis>: 0.92</item></list></item>
 <item>The error bound and confidence interval will decrease.</item></list></para>
