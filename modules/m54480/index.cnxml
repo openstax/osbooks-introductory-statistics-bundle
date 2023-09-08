@@ -26,14 +26,14 @@
   <para id="para-00013">Case II would answer questions as “What is the probability more than <emphasis effect="italics">X</emphasis>?” What is the probability that a person will have to wait MORE THAN <emphasis effect="italics">x</emphasis> minutes? The relevant probability density function would be</para>
   <equation class="unnumbered" id="eq-00004"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:msub><m:mi>x</m:mi><m:mi>α</m:mi></m:msub><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:mi>x</m:mi><m:mi>μ</m:mi></m:mfrac></m:msup></m:mrow></m:mfenced><m:mo>=</m:mo><m:mi>e</m:mi><m:msup><m:mrow/><m:mfrac><m:mi>x</m:mi><m:mi>μ</m:mi></m:mfrac></m:msup></m:math></equation>
   <para id="para-00014">and is presented in <link target-id="fig-00001"/>.</para>
-  <figure id="fig-00001"><media alt="Probability distribution shaded under the curve for value of x less than 60."><image src="../../media/IBS2e_Figure_05_00_013a.png" mime-type="image/png" width="380"/></media></figure>
+  <figure id="fig-00001"><media alt="Probability distribution shaded under the curve for value of x less than 60."><image src="../../media/IBS2e_Figure_05_00_013a.png" mime-type="image/png" /></media></figure>
   <para id="para-00016">Case II</para>
   <para id="para-00017">Imagine an electric component is guaranteed to last two years. If it fails within the two-year guarantee, the purchaser will receive their money back in full. The manufacture knows by careful monitoring of their products the historical life of this component is 750 days, or two-and-one-half years. Are they engaged in a risky business policy? Here we can calculate the probability that a component will last longer than 730 days (two years) and thus no payment is required by the firm. The historical mean is 750 days, and the relevant time period is <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>730</m:mn></m:math> days. Using the exponential probability density function, it is found that the probability this electric component will last more than two years is only 0.378, as shown on <link target-id="fig-00002"/>.</para>
-  <figure id="fig-00002"><media alt="Probability distribution shaded under the curve for value of x more than 730."><image src="../../media/IBS2e_Figure_05_00_013b.png" mime-type="image/png" width="380"/></media></figure>
+  <figure id="fig-00002"><media alt="Probability distribution shaded under the curve for value of x more than 730."><image src="../../media/IBS2e_Figure_05_00_013b.png" mime-type="image/png" /></media></figure>
   <equation class="unnumbered" id="eq-00005"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:mi>x</m:mi><m:mi>μ</m:mi></m:mfrac></m:msup><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:mn>730</m:mn><m:mn>750</m:mn></m:mfrac></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>378</m:mn></m:math></equation>
   <para id="para-00019">Because the working life of each of the electric components is an independent random variable, we can say that approximately 38 percent of these components survive two years and thus 62 percent of purchasers of these components will be asking for a full refund. In short, the low production quality and thus high refund requirements will result in significant financial costs. We could expect that the two-year guarantee will be eliminated soon.</para>
   <para id="para-00020">Case III allows for knowing the probability that an occurrence will occur within a window of time. For example, when asking for the arrival time of an airplane, one might be given a range of time such as “plus or minus from the historical expected arrival time measured in hours from the time of take-off.” In this case, the mean is the historical expected arrival time given the historical travel time. Assume that the historical travel time between these two points is four hours. Case III requires calculating the probability between two points. <link target-id="fig-00003"/>: Case III shows the two points that are one hour longer and one hour sooner than the historical arrival time, which is midway between these points.</para>
-  <figure id="fig-00003"><media alt="Probability distribution shaded under the curve for value of x between 3 and 5."><image src="../../media/IBS2e_Figure_05_00_013c.png" mime-type="image/png" width="380"/></media></figure>
+  <figure id="fig-00003"><media alt="Probability distribution shaded under the curve for value of x between 3 and 5."><image src="../../media/IBS2e_Figure_05_00_013c.png" mime-type="image/png" /></media></figure>
   <para id="para-00022">If the historical travel time is four hours, then <m:math><m:msub><m:mi>x</m:mi><m:mi>o</m:mi></m:msub></m:math> is three hours of travel time and <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> is five hours of travel time. The mathematical expression is:</para>
   <equation class="unnumbered" id="eq-00006"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mo>)</m:mo><m:mo>-</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub><m:mi>μ</m:mi></m:mfrac></m:msup><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mi>μ</m:mi></m:mfrac></m:msup></m:math></equation>
   <equation class="unnumbered" id="eq-00007"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:mn>3</m:mn><m:mn>4</m:mn></m:mfrac></m:msup><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mfrac><m:mn>5</m:mn><m:mn>4</m:mn></m:mfrac></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>186</m:mn></m:math></equation>
@@ -44,7 +44,7 @@
   <equation class="unumbered" id="eq-00008"><m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>m</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>m</m:mi></m:mrow></m:msup></m:math></equation>
   <equation class="unnumbered" id="eq-00009"><m:math><m:mi>F</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:msubsup><m:mo>∫</m:mo><m:mn>0</m:mn><m:mi>x</m:mi></m:msubsup><m:mi>m</m:mi><m:mo> </m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>m</m:mi><m:mi>t</m:mi></m:mrow></m:msup><m:mi>d</m:mi><m:mi>t</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>m</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:math></equation>
   <para id="para-00027">Where <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac></m:math> is given the name decay factor and measures the speed of decay. The decay factor simply measures how rapidly the probability of an event declines as the random variable <emphasis effect="italics">X </emphasis>increases.</para>
-  <figure id="fig-00004"><media alt="Graph of probability distribution with three curves for the given data."><image src="../../media/IBS2e_Figure_05_00_014.png" mime-type="image/png" width="450"/></media></figure>
+  <figure id="fig-00004"><media alt="Graph of probability distribution with three curves for the given data."><image src="../../media/IBS2e_Figure_05_00_014.png" mime-type="image/png" /></media></figure>
   <para id="para-00029"><link target-id="fig-00004"/> shows the exponential distribution for three different decay factors. As before, the intercept on the vertical axis, the probability density, is the decay factor. A decay factor of 1.5, as in the first exponential function, is three time the speed of the third exponential distribution with a decay factor of 0.5. Looking at the probability for each of the three functions at the same value of <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math>, it is clear that the first function has a significantly greater probability of occurrence at <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math>than the other two (i.e., <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:msub><m:mi>X</m:mi><m:mi>α</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo><m:mo>></m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:msub><m:mi>X</m:mi><m:mi>b</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo><m:mo>></m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:msub><m:mi>X</m:mi><m:mi>c</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>)</m:mo></m:math> comparing the relevant probabilities for each of the functions a, b, c in order). Finally, the exponential distribution shows with drama the true meaning of “exponential.” In each unit, a change in <emphasis effect="italics">x</emphasis> in an exponential distribution has a significant change in probability. For example, if the simple exponential distribution function <m:math><m:mi>Y</m:mi><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mi>x</m:mi></m:msup></m:math> changes from <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>4</m:mn><m:mo> </m:mo></m:math> to <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>5</m:mn><m:mo> </m:mo></m:math>, the <emphasis effect="italics">y</emphasis>-value increases from 16 to 32, but a one-unit change from <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>10</m:mn></m:math>to <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>11</m:mn></m:math> causes the <emphasis effect="italics">y</emphasis>-value to increase from 1,024 to 2,048. Likewise, in an exponential function with a negative exponent such as the exponential probability distribution, the changes are startling for each unit change at higher levels of <emphasis effect="italics">X</emphasis>. At <m:math><m:mi>X</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>4</m:mn></m:math>to <m:math><m:mi>x</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mo>-</m:mo><m:mn>5</m:mn></m:math>, the <emphasis effect="italics">y</emphasis>-value changes from 0.063 to 0.031, while a one-unit change from <m:math><m:mi>X</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>10</m:mn></m:math> to <m:math><m:mi>X</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo>–</m:mo><m:mn>11</m:mn></m:math> results in a change in the <emphasis effect="italics">y</emphasis>-value from 0.00097 to 0.00048.</para>
   <para id="para-00030">The conclusion is that probabilities in an exponential probability distribution at large <emphasis effect="italics">x</emphasis>-values are scarce almost to the point of nonexistence.</para>
 
@@ -53,7 +53,7 @@
 <para id="fs-idm18148336">When the notation used the decay parameter, <emphasis effect="italics">m</emphasis>, the probability density function is presented as <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mi>m</m:mi><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mi>m</m:mi><m:mi>x</m:mi></m:mrow></m:msup></m:math>, which is simply the original formula with <emphasis effect="italics">m</emphasis> substituted for <m:math><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac></m:math>, or <m:math> <m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac><m:mi>x</m:mi></m:mrow></m:msup></m:math>.</para><para id="fs-idm74833712">To calculate probabilities for an exponential probability density function, we need to use the cumulative density function. As shown below, the curve for the cumulative density function is:</para><para id="fs-idp44233136"><emphasis effect="italics">f</emphasis>(<emphasis effect="italics">x</emphasis>) = 0.25<emphasis effect="italics">e</emphasis><sup>–0.25<emphasis effect="italics">x</emphasis></sup> where <emphasis effect="italics">x</emphasis> is at least zero and <emphasis effect="italics">m</emphasis> = 0.25.</para><para id="fs-idp127275616">For example, <emphasis effect="italics">f</emphasis>(5) = 0.25<emphasis effect="italics">e</emphasis><sup>(-0.25)(5)</sup> = 0.072. In other words, the function has a value of .072 when <emphasis effect="italics">x</emphasis> = 5.</para><para id="fs-idm23774336">The graph is as follows:</para>
 <figure id="fs-idp49716608">
 <media id="fs-idp114542640" alt="Exponential graph with increments of 2 from 0-20 on the x-axis of μ = 4 and increments of 0.05 from 0.05-0.25 on the y-axis of m = 0.25. The curved line begins at the top at point (0, 0.25) and curves down to point (20, 0). The x-axis is equal to a continuous random variable.">
-<image src="../../media/fig-ch05_04_01.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_04_01.png" mime-type="image/png" />
 </media>
 </figure>
 <para id="fs-idm725296">Notice the graph is a declining curve. When <emphasis effect="italics">x</emphasis> = 0,</para>
@@ -67,7 +67,7 @@
 <label/>
 <para id="fs-idm11378640"><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">Exp</emphasis>(0.125); <emphasis effect="italics">f</emphasis>(<emphasis effect="italics">x</emphasis>) = 0.125e<sup>–0.125<emphasis effect="italics">x</emphasis></sup>;</para><figure id="fs-idm51878624">
 <media id="fs-idp93846320" alt="">
-<image mime-type="image/png" src="../../media/CNX_Stats_C05_M04_item001anno.png" width="380"/>
+<image mime-type="image/png" src="../../media/CNX_Stats_C05_M04_item001anno.png" />
 </media>
 </figure>
 </solution>
@@ -85,7 +85,7 @@
 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 5) = 1 – <emphasis effect="italics">e</emphasis><sup>(–0.25)(5)</sup> = 0.7135 and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 4) = 1 – <emphasis effect="italics">e</emphasis><sup>(–0.25)(4)</sup> = 0.6321<newline/>
 <emphasis effect="italics">P</emphasis>(4 &lt; <emphasis effect="italics">x</emphasis> &lt; 5)= 0.7135 – 0.6321 = 0.0814</para><figure id="fs-idm58174736">
 <media id="fs-idm82717248" alt="Exponential graph with the curved line beginning at point (0, 0.25) and curves down towards point (∞, 0). Two vertical upward lines extend from points 4 and 5 to the curved line. The probability is in the area between points 4 and 5.">
-<image src="../../media/fig-ch05_04_02.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_04_02.png" mime-type="image/png" />
 </media>
 </figure>
 </solution>
@@ -132,7 +132,7 @@
 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 7) = <emphasis effect="italics">e</emphasis><sup>(–0.1)(7)</sup> = 0.4966. The probability that a computer part lasts more than seven years is 0.4966.</para></solution>
 </exercise><figure id="fs-idm49565232">
 <media id="fs-idp119826048" alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (∞, 0). A vertical upward line extends from point 1 to the curved line. The probability area occurs from point 1 to the end of the curve. The x-axis is equal to the amount of time a computer part lasts.">
-<image src="../../media/fig-ch05_04_04.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_04_04.png" mime-type="image/png" />
 </media>
 </figure>
 <exercise id="fs-idp116955392"><problem id="fs-idm10742336">
@@ -148,7 +148,7 @@
 <para id="fs-idm36478832">d. Find <emphasis effect="italics">P</emphasis>(9 &lt; <emphasis effect="italics">x</emphasis> &lt; 11). Draw the graph.</para>
 <figure id="fs-idm74816976">
 <media id="fs-idp57990224" alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (∞, 0). Two vertical upward lines extend from point 9 and 11 to the curved line. The probability area occurs between point 9 and 11.">
-<image src="../../media/fig-ch05_04_06.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_04_06.png" mime-type="image/png" />
 </media>
 </figure>
 <para id="fs-idm74819984"><emphasis effect="italics">P</emphasis>(9 &lt; <emphasis effect="italics">x</emphasis> &lt; 11) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 11) – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 9) = (1 – <emphasis effect="italics">e</emphasis><sup>(–0.1)(11)</sup>) – (1 – <emphasis effect="italics">e</emphasis><sup>(–0.1)(9)</sup>) = 0.6671 – 0.5934 = 0.0737. The probability that a computer part lasts between nine and 11 years is 0.0737.</para></solution>
@@ -185,7 +185,7 @@
 <problem id="fs-idm26812224">
 <para id="fs-idm16486960">What is <emphasis effect="italics">m</emphasis>, <emphasis effect="italics">μ</emphasis>, and <emphasis effect="italics">σ</emphasis>? The probability that you must wait more than five minutes is _______ .</para>
 </problem>
-<solution id="fs-idm16514768" print-placement="end">
+<solution id="fs-idm16514768" >
 <list id="fs-idm74868272" list-type="bulleted">
 <item><emphasis effect="italics">m</emphasis> = <m:math>
 <m:mrow>
@@ -246,14 +246,14 @@
 
 <figure id="fs-idp55682592">
 <media id="fs-idm58409472" alt="Exponential graph with the graph beginning at point (0, 0.5) and curving down towards the horizontal axis which is an asymptote. A vertical line segment extends from the horizontal axis to the curve at x = 1. The area under the curve between the y-axis and this segment is shaded. Text states “Shaded area represents probability 0.3935.”">
-<image src="../../media/CNX_Stats_C05_M04_001.png" mime-type="image/png" width="380"/>
+<image src="../../media/CNX_Stats_C05_M04_001.png" mime-type="image/png" />
 </media>
 </figure>
 </item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 5) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; 5) = 1 – (1 – <emphasis effect="italics">e</emphasis><sup>(-0.5)(5)</sup>) = e<sup>–2.5</sup> ≈ 0.0821.
 <figure id="fs-idm13320960">
 <media id="fs-idp101415248" alt="Exponential graph with the graph beginning at point (0, 0.5) and curving down towards the horizontal axis which is an asymptote. A vertical line segment extends from the horizontal axis to the curve at x = 2.41. The area under the curve between the y-axis and this segment is shaded. Text states “Shaded area represents probability 0.70.”">
-<image src="../../media/CNX_Stats_C05_M04_002.png" mime-type="image/png" width="380"/>
+<image src="../../media/CNX_Stats_C05_M04_002.png" mime-type="image/png" />
 </media>
 </figure>
 </item>
@@ -313,7 +313,7 @@
 <para id="fs-idm82829888">This is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> > 3) = 1 – <emphasis effect="italics">P</emphasis> (<emphasis effect="italics">X</emphasis> &lt; 3) = 1 – (1 – <emphasis effect="italics">e</emphasis><sup>–0.25⋅3</sup>) = <emphasis effect="italics">e</emphasis><sup>–0.75</sup> ≈ 0.4724.</para>
 <figure id="fs-idm5754752">
 <media id="fs-idp52917248" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.25) on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph to the right of x = 3 is shaded to represent P(x > 3) = 0.4724.">
-<image src="../../media/CNX_Stats_C05_M04_005.png" mime-type="image/png" width="380"/>
+<image src="../../media/CNX_Stats_C05_M04_005.png" mime-type="image/png" />
 </media>
 </figure>
 </example>
@@ -465,7 +465,7 @@ A visual way to show both the similarities and differences between these two dis
     <item>Let <emphasis effect="italics">T</emphasis> = time elapsed between calls. From part a, <m:math><m:mi>μ</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math>, so <m:math><m:mi>m</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>4</m:mn></m:math>. Thus, <emphasis effect="italics">T</emphasis> ∼ <emphasis effect="italics">Exp</emphasis>(4).<newline/>The cumulative distribution function is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>T</m:mi><m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>e</m:mi><m:msup><m:mrow><m:mo>-</m:mo><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow><m:mrow/></m:msup><m:mo>)</m:mo></m:math>.<newline/>The probability that the next call occurs in less than ten seconds ( <m:math><m:mi>ten</m:mi><m:mo> </m:mo><m:mi>seconds</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mi>minute</m:mi></m:math>) is <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>T</m:mi><m:mo>&lt;</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mo>-</m:mo><m:mn>4</m:mn><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4866</m:mn><m:mo>.</m:mo></m:math>
     <figure id="fs-idp698848">
     <media id="fs-idp4692208" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.8) on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph to the left of x = 20 is shaded to represent P(x &lt; 1/6) = 0.4866." display="block">
-    <image src="../../media/CNX_Stats_C05_M04_006.png" mime-type="image/png" width="550"/>
+    <image src="../../media/CNX_Stats_C05_M04_006.png" mime-type="image/png" />
     </media>
     </figure></item>
     <item>Let X = the number of calls per minute. As previously stated, the number of calls per minute has a Poisson distribution, with a mean of four calls per minute.<newline/>Therefore, <m:math><m:mo mathvariant="italic"> </m:mo><m:mi>X</m:mi><m:mo mathvariant="italic">~</m:mo><m:mi>P</m:mi><m:mi>o</m:mi><m:mi>i</m:mi><m:mi>s</m:mi><m:mi>s</m:mi><m:mi>o</m:mi><m:mi>n</m:mi><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:math> and so<newline/>
@@ -677,7 +677,7 @@ A visual way to show both the similarities and differences between these two dis
 <solution id="fs-idp74064288">
 <figure id="fs-idp74064544">
 <media id="fs-idp74064800" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.75) on the y-axis and approaches the x-axis at the right edge of the graph. The decay parameter, m, equals 0.75.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C05_M04_item002anno.png" width="380"/>
+<image mime-type="image/png" src="../../media/CNX_Stats_C05_M04_item002anno.png" />
 </media>
 </figure>
 </solution>
@@ -767,7 +767,7 @@ A visual way to show both the similarities and differences between these two dis
 <list id="fs-idm2762608" list-type="enumerated" number-style="lower-alpha">
 <item>Sketch the graph, and shade the area of interest.
 <figure id="fs-idp48103632"><media id="fs-idp48103888" alt="This is a blank graph template. The vertical and horizontal axes are unlabeled.">
-<image src="../../media/fig-ch05_06_01.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_06_01.png" mime-type="image/png" />
 </media>
 </figure></item>
 <item>Find the probability. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; 5,730) = __________</item>
@@ -786,7 +786,7 @@ A visual way to show both the similarities and differences between these two dis
 <para id="fs-idp139006032">Find the percentage of carbon-14 lasting longer than 10,000 years.</para>
 <list id="fs-idp72202640" list-type="enumerated" number-style="lower-alpha"><item>Sketch the graph, and shade the area of interest.
 <figure id="fs-idp72203632"><media id="fs-idp72203888" alt="Blank graph with horizontal and vertical axes.">
-<image src="../../media/fig-ch05_06_01.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_06_01.png" mime-type="image/png" />
 </media>
 </figure></item>
 <item>Find the probability. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 10,000) = ________</item>
@@ -798,7 +798,7 @@ A visual way to show both the similarities and differences between these two dis
 <para id="fs-idp17735296">Thirty percent (30%) of carbon-14 will decay within how many years?</para>
 <list id="fs-idp17735680" list-type="enumerated" number-style="lower-alpha"><item>Sketch the graph, and shade the area of interest.
 <figure id="fs-idp17736672"><media id="fs-idp17736928" alt="This is a blank graph template. The vertical and horizontal axes are unlabeled.">
-<image src="../../media/fig-ch05_06_01.png" mime-type="image/png" width="380"/>
+<image src="../../media/fig-ch05_06_01.png" mime-type="image/png" />
 </media>
 </figure></item>
 <item>Find the value <emphasis effect="italics">k</emphasis> such that <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; <emphasis effect="italics">k</emphasis>) = 0.30.</item></list></problem>
