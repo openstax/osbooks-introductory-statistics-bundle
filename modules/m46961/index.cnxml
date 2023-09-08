@@ -108,10 +108,6 @@
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
 </m:math>(6) = 0.75 calls in 15 minutes, on average. So, <emphasis effect="italics">μ</emphasis> = 0.75 for this problem.</para>
-<para id="element-696"><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(0.75)</para>
-
-<para id="element-697">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1). <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1) = 0.1734 (calculator or computer)</para>
-
 <note id="fs-idm23681840" class="statistics calculator"><label/>
 <list id="fs-idp1265216" list-type="bulleted"><item>Press 1 – and then press 2<sup>nd</sup> DISTR.</item>
 <item>Arrow down to poissoncdf. Press ENTER.</item>
@@ -120,8 +116,12 @@
 </list><note id="eip-706"><label/><title>NOTE</title>
 <para id="fs-idm154468640">The TI calculators use <emphasis effect="italics">λ</emphasis> (lambda) for the mean.</para>
 </note></note>
-<para id="element-886">The probability that Leah receives more than one telephone call in the next 15 minutes is about 0.1734: <newline count="1"/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1) = 1 − poissoncdf(0.75, 1).</para><para id="element-89">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(0.75) is:</para>
-
+<para id="para-00001">The Poisson distribution is discrete, and thus > 1 includes all whole numbers through infinity. The solution is to subtract the probability less than 1 thus <m:math><m:mn>1</m:mn><m:mo>-</m:mo><m:mo>[</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>]</m:mo></m:math></para>
+<equation class="unnumbered" id="eq-00001"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:math></equation>
+<equation class="unnumbered" id="eq-00002"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mo>[</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>]</m:mo><m:mo> </m:mo></m:math></equation>
+<equation class="unnumbered" id="eq-00003"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mo>[</m:mo><m:mfrac><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:msup><m:mn>75</m:mn><m:mn>0</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>0</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:msup><m:mn>75</m:mn><m:mn>1</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>-</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>]</m:mo></m:math></equation>
+<equation class="unnumbered" id="eq-00004"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mo>[</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4724</m:mn><m:mo>)</m:mo></m:mrow><m:mn>1</m:mn></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4724</m:mn><m:mo>)</m:mo></m:mrow><m:mn>1</m:mn></m:mfrac><m:mo>]</m:mo></m:math></equation>
+<equation class="unnumbered" id="eq-00005"><m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mo>[</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>4724</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3543</m:mn><m:mo>]</m:mo><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1733</m:mn></m:math></equation>
 <figure id="fig-00001"><media alt="Histogram of probability density function of the given data."><image mime-type="image/png" src="../../media/IBS2e_Figure_04_00_004.png"/></media></figure>
 <para id="element-869">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">x</emphasis> where <emphasis effect="italics">X</emphasis> = the number of calls in 15 minutes.</para></example>
 
