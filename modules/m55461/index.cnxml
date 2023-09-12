@@ -13,19 +13,19 @@ Consider the standardizing formula for the sampling distribution developed in th
 </para><equation class="unnumbered" id="eip-651"><label/><m:math><m:msub><m:mi>Z</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo>
 
 <m:mfrac>
-<m:mrow><m:mover><m:mi>X</m:mi><m:mo>−</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mi>X</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:mrow>
-<m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mi>X</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:mrow>
+<m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub></m:mrow>
+<m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:mrow></m:msub></m:mrow>
 </m:mfrac>
 
 <m:mo>=</m:mo>
 
 <m:mfrac>
-<m:mrow><m:mover><m:mi>X</m:mi><m:mo>−</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow>
+<m:mrow><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow>
 <m:mrow><m:mfrac bevelled="true"><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mrow>
 </m:mfrac>
 </m:math></equation><para id="eip-883">Notice that µ is substituted for <m:math><m:msub><m:mi>µ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:math> because we know that the expected value of <m:math><m:msub><m:mi>µ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:math> is µ from the Central Limit theorem and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:math> is replaced with <m:math><m:mfrac bevelled="true"><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt>
-</m:mfrac></m:math>, also from the Central Limit Theorem.  </para><para id="eip-276">In this formula we know <m:math><m:mover><m:mi>X</m:mi><m:mo>−</m:mo></m:mover></m:math>, <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:math> and n, the sample size. (In actuality we do not know the population standard deviation, but we do have a point estimate for it, s, from the sample we took. More on this later.) What we do not know is μ or Z<sub>1</sub>. We can solve for either one of these in terms of the other. Solving for μ in terms of Z<sub>1</sub> gives:</para><equation class="unnumbered" id="eip-107"><label/><m:math><m:mi>μ</m:mi><m:mo>=</m:mo>
-<m:mover><m:mi>X</m:mi><m:mo>−</m:mo></m:mover>
+</m:mfrac></m:math>, also from the Central Limit Theorem.  </para><para id="eip-276">In this formula we know <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover></m:math>, <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mi>x</m:mi><m:mo>−</m:mo></m:mover></m:mrow></m:msub></m:math> and n, the sample size. (In actuality we do not know the population standard deviation, but we do have a point estimate for it, s, from the sample we took. More on this later.) What we do not know is μ or Z<sub>1</sub>. We can solve for either one of these in terms of the other. Solving for μ in terms of Z<sub>1</sub> gives:</para><equation class="unnumbered" id="eip-107"><label/><m:math><m:mi>μ</m:mi><m:mo>=</m:mo>
+    <m:mover accent="true"><m:mi>X</m:mi><m:mo>–</m:mo></m:mover>
 <m:mo>±</m:mo>
 <m:msub><m:mi>Z</m:mi><m:mn>1</m:mn></m:msub>
 <m:mfrac bevelled="true"><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac>
@@ -64,7 +64,7 @@ Here again is the formula for a confidence interval for an unknown population me
         <para id="para-00003">The solution is shown step by step:</para>
         <para id="para-00004">The formula for a confidence interval for an unknown population mean assuming we know the population standard deviation is:</para>
         <equation class="unnumbered" id="eq-00001"><m:math><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>-</m:mo><m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub><m:mfenced><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac></m:mfenced><m:mo>≤</m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo>+</m:mo><m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub><m:mo>(</m:mo><m:mfrac><m:mi>σ</m:mi><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mfrac><m:mo>)</m:mo></m:math></equation>
-        <para id="para-00005">For a 90% confidence interval, visualize an area of 0.90 centered under the normal curve (See Figure 8.2). The remaining area for the two tails of the normal distribution is then 0.10, which indicates that the area in the left tail is one-half of 0.10, which is 0.05. The corresponding z-score that cuts off an area of 0.05 in the left tail is 1.645.</para>
+        <para id="para-00005">For a 90% confidence interval, visualize an area of 0.90 centered under the normal curve (See <link target-id="fig-00001" document=""/>). The remaining area for the two tails of the normal distribution is then 0.10, which indicates that the area in the left tail is one-half of 0.10, which is 0.05. The corresponding z-score that cuts off an area of 0.05 in the left tail is 1.645.</para>
         <para id="para-00006">In this example we are given that the population standard deviation <m:math><m:mi>σ</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>3</m:mn></m:math>.</para>
         <para id="para-00007">We are also given that the sample size <m:math><m:mi>n</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>36</m:mn></m:math> and the sample mean <m:math><m:mover><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover><m:mo> </m:mo><m:mo>=</m:mo><m:mn>68</m:mn></m:math>.</para>
         <para id="para-00008">Substituting these values in the confidence interval formula results in the following:</para>
@@ -117,7 +117,7 @@ Here again is the formula for a confidence interval for an unknown population me
      </m:mrow>
     </m:math></para><para id="fs-idp120322464">Notice that the plus/minus term in the equation is larger for a 95% confidence level in the original problem.</para>
 <para id="fs-idp38701776">Comparing the results: The 90% confidence interval is (67.18, 68.82). The 95% confidence interval is (67.02, 68.98). The 95% confidence interval is wider. If you look at the graphs, because the area 0.95 is larger than the area 0.90, it makes sense that the 95% confidence interval is wider. To be more confident that the confidence interval actually does contain the true value of the population mean for all statistics exam scores, the confidence interval necessarily needs to be wider. This demonstrates a very important principle of confidence intervals. There is a trade off between the level of confidence and the width of the interval. Our desire is to have a narrow confidence interval, huge wide intervals provide little information that is useful. But we would also like to have a high level of confidence in our interval. This demonstrates that we cannot have both. </para><figure id="conf_intvls_cfpm3"><media id="id1164459044969" alt="Part (a) shows a normal distribution curve. A central region with area equal to 0.90 is shaded. Each unshaded tail of the curve has area equal to 0.05. Part (b) shows a normal distribution curve. A central region with area equal to 0.95 is shaded. Each unshaded tail of the curve has area equal to 0.025.">
-    <image src="../../media/IBS2e_Figure_08_00_003.png" mime-type="image/png" width="450"/>
+    <image src="../../media/fig-ch08_02_03.png" mime-type="image/png" width="450"/>
     </media>
     </figure>
 <para id="para-00001"><emphasis>Summary: Effect of Changing the Confidence Level</emphasis>
@@ -136,7 +136,7 @@ Here again is the formula for a confidence interval for an unknown population me
     <label/>
     <title>Try It</title>
     <exercise id="eip-847"><problem id="eip-565">
-      <para id="eip-idp138029248">Refer back to the pizza-delivery <link target-id="fs-idm85249264" document="">Try It</link> exercise. The population standard deviation is six minutes and the sample mean deliver time is 36 minutes. Use a sample size of 20. Find a 95% confidence interval estimate for the true mean pizza delivery time.</para></problem>
+      <para id="eip-idp138029248">Refer back to the pizza-delivery <link target-id="fs-idm85249264" document="">Try It 8.1</link> exercise. The population standard deviation is six minutes and the sample mean deliver time is 36 minutes. Use a sample size of 20. Find a 95% confidence interval estimate for the true mean pizza delivery time.</para></problem>
     </exercise></note>
 <section id="sect-00001">
     <title>Changing the Sample Size 
@@ -161,7 +161,7 @@ Here again is the formula for a confidence interval for an unknown population me
     <note id="fs-idm59608800" class="statistics try"><label/><title>Try It</title>
         <exercise id="eip-159">
         <problem id="eip-53">
-          <para id="eip-929">Refer back to the pizza-delivery <link target-id="fs-idm85249264">Try It</link> exercise. The mean delivery time is 36 minutes and the population standard deviation is six minutes. Assume the sample size is changed to 50 restaurants with the same sample mean. Find a 90% confidence interval estimate for the population mean delivery time.</para></problem>
+          <para id="eip-929">Refer back to the pizza-delivery <link target-id="fs-idm85249264">Try It 8.1</link> exercise. The mean delivery time is 36 minutes and the population standard deviation is six minutes. Assume the sample size is changed to 50 restaurants with the same sample mean. Find a 90% confidence interval estimate for the population mean delivery time.</para></problem>
         </exercise>
         </note>
     
