@@ -267,8 +267,68 @@ the line of best fit has the equation:
  </m:mrow>
 </m:math> where <emphasis effect="italics">s</emphasis><sub><emphasis effect="italics">y</emphasis></sub> = the standard deviation of the <emphasis effect="italics">y</emphasis> values and <emphasis effect="italics">s</emphasis><sub><emphasis effect="italics">x</emphasis></sub> = the standard deviation of the <emphasis effect="italics">x</emphasis> values. <emphasis effect="italics">r</emphasis> is the correlation
 coefficient, which is discussed in the next section.</para>
-
-
+<section id="sect-00001">
+  <title>Residuals Plots</title>
+  <para id="para-00001">A residuals plot can be used to help determine if a set of (<emphasis effect="italic">x</emphasis>, <emphasis effect="italic">y</emphasis>) data is linearly correlated. For each data point used to create the correlation line, a residual <emphasis effect="italic">y</emphasis> - <emphasis effect="italic">y</emphasis> can be calculated, where y is the observed value of the response variable and <emphasis effect="italic">y</emphasis> is the value predicted by the correlation line. The difference between these values is called the residual. A residuals plot shows the explanatory variable <emphasis effect="italic">x</emphasis> on the horizontal axis and the residual for that value on the vertical axis. The residuals plot is often shown together with a scatter plot of the data. While a scatter plot of the data should resemble a straight line, a residuals plot should appear random, with no pattern and no outliers. It should also show constant error variance, meaning the residuals should not consistently increase (or decrease) as the explanatory variable <emphasis effect="italic">x</emphasis> increases.</para>
+  <para id="para-00002">A residuals plot can be created using StatCrunch or a TI calculator. The plot should appear random. A box plot of the residuals is also helpful to verify that there are no outliers in the data. By observing the scatter plot of the data, the residuals plot, and the box plot of residuals, together with the linear correlation coefficient, we can usually determine if it is reasonable to conclude that the data are linearly correlated.</para>
+  <section id="sect-00002">
+  <title>EXAMPLE:</title>
+  <para id="para-00003">A shop owner uses a straight-line regression to estimate the number of ice cream cones that would be sold in a day based on the temperature at noon. The owner has data for a 2-year period and chose nine days at random. A scatter plot of the data is shown, together with a residuals plot.</para>
+  <table summary="" id="table-00001">
+  <tgroup cols="2">
+  <colspec colnum="1" colname="c1"/>
+  <colspec colnum="2" colname="c2"/>
+  <thead>
+  <row>
+  <entry>Temperature ° F</entry>
+  <entry>Ice cream cones sold</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+  <entry>70</entry>
+  <entry>105</entry>
+  </row>
+  <row>
+  <entry>85</entry>
+  <entry>240</entry>
+  </row>
+  <row>
+  <entry>65</entry>
+  <entry>49</entry>
+  </row>
+  <row>
+  <entry>72</entry>
+  <entry>147</entry>
+  </row>
+  <row>
+  <entry>80</entry>
+  <entry>231</entry>
+  </row>
+  <row>
+  <entry>61</entry>
+  <entry>38</entry>
+  </row>
+  <row>
+  <entry>75</entry>
+  <entry>193</entry>
+  </row>
+  <row>
+  <entry>78</entry>
+  <entry>196</entry>
+  </row>
+  <row>
+  <entry>68</entry>
+  <entry>89</entry>
+  </row>
+  </tbody>
+  </tgroup>
+  <caption>Table showing the number of ice cream cones sold on nine random days and the temperature at noon on those days.</caption>
+  </table>
+  <figure id="fig-00001"><media alt="Scatter plot of ice creams sold against temperature of the given data. A straight line is constructed for the plot."><image mime-type="image/png" src="../../media/IS2e_Figure_12_00_011.png"/></media><caption>Scatter plot of the data looks like a straight line.</caption></figure>
+  <figure id="fig-00002"><media alt="Residual plot of residuals against temperature of the given data."><image mime-type="image/png" src="../../media/IS2e_Figure_12_00_012.png"/></media><caption>Residuals plot appears random.</caption></figure>
+  </section>
+</section>
 <section id="fs-idm120169264">
 <title>Least Squares Criteria for Best Fit</title>
 <para id="eip-996">The process of fitting the best-fit line is called <emphasis>linear regression</emphasis>. The idea behind finding the best-fit line is based on the assumption that the data are scattered about a straight line. The criteria for the best fit line is that the sum of the squared errors (SSE) is minimized, that is, made as small as possible. Any other line you might choose would have a higher SSE than the best fit line. This best fit line is called the <emphasis> least-squares regression line </emphasis>.</para>
