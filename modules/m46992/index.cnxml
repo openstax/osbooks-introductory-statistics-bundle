@@ -123,7 +123,8 @@
   </m:msqrt>
 
  </m:mrow>
-</m:math> = 1.15
+ <m:mo>=</m:mo><m:msqrt><m:mfrac><m:mn>16</m:mn><m:mn>12</m:mn></m:mfrac></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:msqrt><m:mo>,</m:mo><m:mtext>&#xA0;or&#xA0;approximately</m:mtext><m:mo>&#xA0;</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>15</m:mn><m:mo>.</m:mo>
+</m:math> 
 </para><para id="element-591">For problems a. and b., let <m:math>
  <m:mover accent="true">
   <m:mi>X</m:mi>
@@ -272,33 +273,17 @@
 
 <solution id="id11181711">
   <para id="fs-idp52789136">c. The mean of the sum of 75 stress scores is (75)(3) = 225</para>
-<para id="element-28">The standard deviation of the sum of 75 stress scores is <m:math>
- <m:mrow>
-  <m:mo stretchy="false">(</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mn>75</m:mn>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo stretchy="false">)</m:mo>
- </m:mrow>
-</m:math>(1.15) = 9.96</para><para id="element-510"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Σx</emphasis> &lt; 200) = 0</para>
+<para id="element-28">The standard deviation of the sum of 75 stress scores is <m:math><m:mfenced><m:msqrt><m:mn>75</m:mn></m:msqrt></m:mfenced><m:mfenced><m:msqrt><m:mfrac><m:mn>4</m:mn><m:mn>3</m:mn></m:mfrac></m:msqrt></m:mfenced><m:mo>=</m:mo><m:msqrt><m:mfenced><m:mfrac><m:mrow><m:mn>75</m:mn><m:mo>&#xD7;</m:mo><m:mn>4</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac></m:mfenced></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mn>100</m:mn></m:msqrt><m:mo>=</m:mo><m:mn>10</m:mn></m:math></para>
+  
+<para id="element-510"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Σx</emphasis> &lt; 200) = –0.0062</para>
 
 <figure class="scaled-down" id="fs-idm142729648"><media id="id10985583" alt="This is a normal distribution curve over a horizontal axis. The peak of the curve coincides with the point 225 on the horizontal axis. A point, 200, is marked at the left edge of the curve.">
 <image src="../../media/fig-ch07_04_03.png" mime-type="image/png"/>
 </media></figure>
 
-<para id="element-456">The probability that the total of 75 scores is less than 200 is about zero.</para>
+<para id="element-456">The probability that the total of 75 scores is less than 200 is about –0.0062.</para>
 
-<para id="element-273"><code>normalcdf</code> (75,200,(75)(3),<m:math>
- <m:mrow>
-  <m:mo stretchy="false">(</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mn>75</m:mn>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo stretchy="false">)</m:mo>
- </m:mrow>
-</m:math>(1.15)).</para><note id="note-2">
+<para id="element-273"><code>normalcdf</code> (75,200,(75)(3)).</para><note id="note-2">
 <label/>
 <title>REMINDER</title>
 <para id="fs-idm105410608">The smallest total of 75 stress scores is 75, because the smallest single score is one.</para></note>
