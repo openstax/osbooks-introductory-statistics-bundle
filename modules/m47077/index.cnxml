@@ -287,91 +287,129 @@
 </table>
 <para id="eip-idp2741344">We want to know if the change in the number of jobs is independent of the change in years. State the null and alternative hypotheses and the degrees of freedom.</para>
 </problem>
-</exercise></note><example id="element-505">
- <para id="element-311">De Anza College is interested in the relationship between anxiety level and the need to succeed in school. A random sample of 400 students took a test that measured anxiety level and need to succeed in school. <link target-id="element-875"/> shows the results. De Anza College wants to know if anxiety level and need to succeed in school are independent events.</para><table id="element-875" summary="This table presents the need to succeed in school in the first column and the various anxiety levels (high to low) and the row total in the second to seventh columns. The first row is for high need, the second row is for medium need, third row is for low need, and the column total is in the fourth row.">
-<title>Need to Succeed in School vs. Anxiety Level</title>
-<tgroup cols="7"><colspec colnum="1" colname="header_c1"/>
-<colspec colnum="2" colname="c2"/>
-<colspec colnum="3" colname="c3"/>
-<colspec colnum="4" colname="c4"/>
-<colspec colnum="5" colname="c5"/>
-<colspec colnum="6" colname="c6"/>
-<colspec colnum="7" colname="c7"/>
-<thead valign="top">
- <row>
- <entry>Need to Succeed in School</entry>
- <entry>High <newline/>Anxiety</entry>
- <entry>Med-high <newline/>Anxiety</entry>
- <entry>Medium <newline/>Anxiety</entry>
- <entry>Med-low <newline/>Anxiety</entry>
- <entry>Low <newline/>Anxiety</entry>
- <entry>Row Total</entry>
- </row>
-</thead>
-<tbody>
- <row>
- <entry>High Need</entry>
- <entry>35</entry>
- <entry>42</entry>
- <entry>53</entry>
- <entry>15</entry>
- <entry>10</entry>
-<entry>155</entry>
- </row>
- <row>
- <entry>Medium Need</entry>
- <entry>18</entry>
- <entry>48</entry>
- <entry>63</entry>
- <entry>33</entry>
- <entry>31</entry>
-<entry>193</entry>
- </row>
- <row>
- <entry>Low Need</entry>
- <entry>4</entry>
- <entry>5</entry>
- <entry>11</entry>
- <entry>15</entry>
- <entry>17</entry>
-<entry>52</entry>
- </row>
- <row>
- <entry>Column Total</entry>
- <entry>57</entry>
- <entry>95</entry>
- <entry>127</entry>
- <entry>63</entry>
- <entry>58</entry>
-<entry>400</entry>
- </row>
-</tbody>
-</tgroup>
-</table>
-<exercise id="element-454"><problem id="id9399628">
- <para id="element-671">a. How many high anxiety level students are expected to have a high need to succeed in school? </para></problem>
-<solution id="id9399648">
- <para id="element-554">a. The column total for a high anxiety level is 57. The row total for high need to succeed in school is 155. The sample size or total surveyed is 400. </para><equation class="unnumbered" id="fs-idm95557984"><label/><m:math><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mtext>(row total)(column total)</m:mtext><m:mtext>total surveyed</m:mtext></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>155</m:mn><m:mo>⋅</m:mo><m:mn>57</m:mn></m:mrow><m:mn>400</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>22.09</m:mn></m:math></equation><para id="element-790">The expected number of students who have a high anxiety level and a high need to succeed in school is about 22.<newline count="2"/></para></solution>
-</exercise><exercise id="element-804"><problem id="id8698448">
- <para id="element-683">b. If the two variables are independent, how many students do you expect to have a low need to succeed in school and a med-low level of anxiety? </para></problem>
-<solution id="id8698469">
- <para id="element-921">b. The column total for a med-low anxiety level is 63. The row total for a low need to succeed in school is 52. The sample size or total surveyed is 400.</para>
-</solution>
-</exercise><exercise id="eip-152"><problem id="id7273926">
-<para id="eip-idp45969696">c. <m:math><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mtext>(row total)(column total)</m:mtext>
- <m:mtext>total surveyed</m:mtext></m:mfrac></m:math> = ________</para>
-</problem>
-<solution id="id8469218">
-<para id="eip-idm78464064">c. <m:math><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mtext>(row total)(column total)</m:mtext><m:mtext>total surveyed</m:mtext></m:mfrac><m:mo> = </m:mo><m:mn>8.19</m:mn></m:math> </para>
- </solution>
-</exercise><exercise id="eip-699"><problem id="id7273926a">
-<para id="eip-idm73581440">d. The expected number of students who have a med-low anxiety level and a low need to
-  succeed in school is about ________.</para>
-</problem>
-<solution id="id8469218a">
-<para id="eip-idm130717088">d. 8</para>
-</solution>
-</exercise></example>
+</exercise></note>
+    <example id="element-505">
+      <para id="element-311">De Anza College is interested in the relationship between anxiety level
+        and the need to succeed in school. A random sample of 400 students took a test that measured
+        anxiety level and need to succeed in school. <link target-id="element-875"/> shows the
+        results. De Anza College wants to know if anxiety level and need to succeed in school are
+        independent events.</para>
+      <table id="element-875" summary="This table presents the need to succeed in school in the first column and the various anxiety levels (high to low) and the row total in the second to seventh columns. The first row is for high need, the second row is for medium need, third row is for low need, and the column total is in the fourth row.">
+        <title>Need to Succeed in School vs. Anxiety Level</title>
+        <tgroup cols="7">
+          <colspec colnum="1" colname="header_c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <colspec colnum="6" colname="c6"/>
+          <colspec colnum="7" colname="c7"/>
+          <thead valign="top">
+            <row>
+              <entry>Need to Succeed in School</entry>
+              <entry>High <newline/>Anxiety</entry>
+              <entry>Med-high <newline/>Anxiety</entry>
+              <entry>Medium <newline/>Anxiety</entry>
+              <entry>Med-low <newline/>Anxiety</entry>
+              <entry>Low <newline/>Anxiety</entry>
+              <entry>Row Total</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>High Need</entry>
+              <entry>35</entry>
+              <entry>42</entry>
+              <entry>53</entry>
+              <entry>15</entry>
+              <entry>10</entry>
+              <entry>155</entry>
+            </row>
+            <row>
+              <entry>Medium Need</entry>
+              <entry>18</entry>
+              <entry>48</entry>
+              <entry>63</entry>
+              <entry>33</entry>
+              <entry>31</entry>
+              <entry>193</entry>
+            </row>
+            <row>
+              <entry>Low Need</entry>
+              <entry>4</entry>
+              <entry>5</entry>
+              <entry>11</entry>
+              <entry>15</entry>
+              <entry>17</entry>
+              <entry>52</entry>
+            </row>
+            <row>
+              <entry>Column Total</entry>
+              <entry>57</entry>
+              <entry>95</entry>
+              <entry>127</entry>
+              <entry>63</entry>
+              <entry>58</entry>
+              <entry>400</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <exercise id="element-454">
+        <problem id="id9399628">
+          <para id="element-671">a. How many high anxiety level students are expected to have a high
+            need to succeed in school? </para>
+        </problem>
+        <solution id="id9399648">
+          <para id="element-554">a. The column total for a high anxiety level is 57. The row total
+            for high need to succeed in school is 155. The sample size or total surveyed is 400. </para>
+          <equation class="unnumbered" id="fs-idm95557984"><label/><m:math>
+              <m:mi>E</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mtext>(row total)(column total)</m:mtext>
+                <m:mtext>total surveyed</m:mtext>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mrow>
+                  <m:mn>155</m:mn>
+                  <m:mo>⋅</m:mo>
+                  <m:mn>57</m:mn>
+                </m:mrow>
+                <m:mn>400</m:mn>
+              </m:mfrac>
+              <m:mo>=</m:mo>
+              <m:mn>22.09</m:mn>
+            </m:math></equation>
+          <para id="element-790">The expected number of students who have a high anxiety level and a
+            high need to succeed in school is about 22.<newline count="2"/></para>
+        </solution>
+      </exercise>
+      <exercise id="element-804">
+        <problem id="id8698448">
+          <para id="element-683">b. If the two variables are independent, how many students do you
+            expect to have a low need to succeed in school and a med-low level of anxiety? </para>
+        </problem>
+        <solution id="id8698469">
+          <para id="element-921">b. The column total for a med-low anxiety level is 63. The row
+            total for a low need to succeed in school is 52. The sample size or total surveyed is
+            400.</para>
+          <equation class="unnumbered" id="eq-00001"><m:math>
+              <m:mi>E</m:mi>
+              <m:mo>=</m:mo>
+              <m:mfrac>
+                <m:mtext>(row total)(column total)</m:mtext>
+                <m:mtext>total surveyed</m:mtext>
+              </m:mfrac>
+              <m:mo> = </m:mo>
+              <m:mn>8.19</m:mn>
+            </m:math></equation>
+          <para id="para-00001">The expected number of students who have a low need to succeed in school and a
+            med-low level of anxiety is 8.</para>
+        </solution>
+      </exercise>
+    </example>
 <note id="fs-idm15185536" class="statistics try"><label/><title>Try It</title>
 <exercise id="eip-358"><problem id="eip-928">
  <para id="eip-757">Refer back to the information in <link target-id="fs-idm24618832" document="m47077"/>. How many service providing jobs are there expected to be in 2020? How many nonagriculture wage and salary jobs are there expected to be in 2020?</para></problem>
