@@ -9,7 +9,7 @@
 
 <content>
     <para id="eip-494">During an election year, we see articles in the newspaper that state <term id="term-00001">confidence intervals</term> in terms of proportions or percentages. For example, a poll for a particular candidate running for president might show that the candidate has 40% of the vote within three percentage points  (if the sample is large enough). Often, election polls are calculated with 95% confidence, so, the pollsters would be 95% confident that the true proportion of voters who favored the candidate would be between 0.37 and 0.43.</para><para id="element-292">Investors in the stock market are interested in the true proportion of stocks that go up and down each week. Businesses that sell personal computers are interested in the proportion of households in the United States that own personal computers. Confidence intervals can be calculated for the true proportion of stocks that go up or down each week and for the true proportion of households in the United States that own personal computers.</para>
- <para id="element-918">The procedure to find the confidence interval for a population proportion is similar to that for the population mean, but the formulas are a bit different although conceptually identical. While the formulas are different, they are based upon the same mathematical foundation given to us by the Central Limit Theorem. Because of this we will see the same basic format using the same three pieces of information: the sample value of the parameter in question, the standard deviation of the relevant sampling distribution, and the number of standard deviations we need to have the confidence in our estimate that we desire.</para><para id="element-574"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution has a binary random variable and therefore is a</emphasis> <term id="term-00002">binomial distribution</term>. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(<emphasis effect="italics">n</emphasis>, <emphasis effect="italics">p</emphasis>)  where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. To form a sample proportion, take <emphasis effect="italics">X</emphasis>, the random variable for the number of successes and divide it by <emphasis effect="italics">n</emphasis>, the number of trials (or the sample size). The random variable <emphasis effect="italics">P′</emphasis> (read "P prime") is the sample proportion,
+ <para id="element-918">The procedure to find the confidence interval for a population proportion is similar to that for the population mean, but the formulas are a bit different although conceptually identical. While the formulas are different, they are based upon the same mathematical foundation given to us by the Central Limit Theorem. Because of this we will see the same basic format using the same three pieces of information: the sample value of the parameter in question, the standard deviation of the relevant sampling distribution, and the number of standard deviations we need to have the confidence in our estimate that we desire.</para><para id="element-574"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution has a binary random variable and therefore is a</emphasis> <term id="term-00002">binomial distribution</term>. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(<emphasis effect="italics">n</emphasis>, <emphasis effect="italics">p</emphasis>)  where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. To form a sample proportion, take <emphasis effect="italics">X</emphasis>, the random variable for the number of successes and divide it by <emphasis effect="italics">n</emphasis>, the number of trials (or the sample size). The random variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> (read "P prime") is the sample proportion,
   </para><para id="element-771"><m:math>
    <m:mrow>
     <m:msup>
@@ -32,9 +32,9 @@
 
 
 
- <para id="element-142"><emphasis effect="italics">p′</emphasis> = the <emphasis>estimated proportion</emphasis> of successes or sample proportion of successes (<emphasis effect="italics">p′</emphasis> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true population proportion, and thus <emphasis effect="italics">q</emphasis> is the probability of a failure in any one trial.)</para><para id="element-818"><emphasis effect="italics">x</emphasis> = the <emphasis>number</emphasis> of successes in the sample</para><para id="element-434"><emphasis effect="italics">n</emphasis> = the size of the sample</para>
+ <para id="element-142"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = the <emphasis>estimated proportion</emphasis> of successes or sample proportion of successes (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true population proportion, and thus <emphasis effect="italics">q</emphasis> is the probability of a failure in any one trial.)</para><para id="element-818"><emphasis effect="italics">x</emphasis> = the <emphasis>number</emphasis> of successes in the sample</para><para id="element-434"><emphasis effect="italics">n</emphasis> = the size of the sample</para>
 
-<para id="eip-199">The formula for the confidence interval for a population proportion follows the same format as that for an estimate of a population mean. Remembering the sampling distribution for the proportion from <link document="m54530">The Central Limit Theorem</link>, the standard deviation was found to be:</para><equation class="unnumbered" id="eip-602"><m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt></m:math></equation><para id="eip-172">The confidence interval for a population proportion, therefore, becomes:</para><equation class="unnumbered" id="eip-194"><m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>±</m:mo><m:mo>[</m:mo><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo></m:math></equation><para id="eip-973"><m:math><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub></m:math> is set according to our desired degree of confidence and <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math> is the standard deviation of the sampling distribution.</para><para id="element-685">The <emphasis> sample proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are estimates of the unknown population proportions <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis></emphasis>. The estimated proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. </para><para id="eip-247">Remember that as <emphasis effect="italics">p</emphasis> moves further from 0.5 the binomial distribution becomes less symmetrical. Because we are estimating the binomial with the symmetrical normal distribution the further away from symmetrical the binomial becomes the less confidence we have in the estimate.</para><para id="eip-436">This conclusion can be demonstrated through the following analysis. Proportions are based upon the binomial probability distribution. The possible outcomes are binary, either “success” or “failure”. This gives rise to a proportion, meaning the percentage of the outcomes that are “successes”. It was shown that the binomial distribution could be fully understood if we knew only the probability of a success in any one trial, called p. The mean and the standard deviation of the binomial were found to be:</para><equation class="unnumbered" id="eip-107"><label/><m:math>
+<para id="eip-199">The formula for the confidence interval for a population proportion follows the same format as that for an estimate of a population mean. Remembering the sampling distribution for the proportion from <link document="m54530">The Central Limit Theorem</link>, the standard deviation was found to be:</para><equation class="unnumbered" id="eip-602"><m:math><m:msub><m:mi>σ</m:mi><m:mi>p'</m:mi></m:msub><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:msqrt></m:math></equation><para id="eip-172">The confidence interval for a population proportion, therefore, becomes:</para><equation class="unnumbered" id="eip-194"><m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>±</m:mo><m:mo>[</m:mo><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo></m:math></equation><para id="eip-973"><m:math><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub></m:math> is set according to our desired degree of confidence and <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math> is the standard deviation of the sampling distribution.</para><para id="element-685">The <emphasis> sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are estimates of the unknown population proportions <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis></emphasis>. The estimated proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. </para><para id="eip-247">Remember that as <emphasis effect="italics">p</emphasis> moves further from 0.5 the binomial distribution becomes less symmetrical. Because we are estimating the binomial with the symmetrical normal distribution the further away from symmetrical the binomial becomes the less confidence we have in the estimate.</para><para id="eip-436">This conclusion can be demonstrated through the following analysis. Proportions are based upon the binomial probability distribution. The possible outcomes are binary, either “success” or “failure”. This gives rise to a proportion, meaning the percentage of the outcomes that are “successes”. It was shown that the binomial distribution could be fully understood if we knew only the probability of a success in any one trial, called p. The mean and the standard deviation of the binomial were found to be:</para><equation class="unnumbered" id="eip-107"><label/><m:math>
 <m:mi>
 μ</m:mi><m:mo> =</m:mo><m:mi> np
 </m:mi>
@@ -82,7 +82,7 @@
 </m:mfrac>
 </m:math></equation><para id="eip-308">which is nothing more than a restatement of the general standardizing formula with appropriate substitutions for μ and σ from the binomial. We can use the standard normal distribution, the reason Z is in the equation, because the normal distribution is the limiting distribution of the binomial. This is another example of the Central Limit Theorem. We have already seen that the sampling distribution of means is normally distributed. Recall the extended discussion in <link document="m54530">The Central Limit Theorem</link> concerning the sampling distribution of proportions and the conclusions of the Central Limit Theorem.</para><para id="eip-359">We can now manipulate this formula in just the same way we did for finding the confidence intervals for a mean, but to find the confidence interval for the binomial population parameter,  p.</para>
 
-<equation class="unnumbered" id="eip-511"><label/><m:math><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:mo>-</m:mo><m:msub><m:mi>Z</m:mi><m:mfrac><m:mi>&#x3B1;</m:mi><m:mn>2</m:mn></m:mfrac></m:msub><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>q</m:mi><m:mo>'</m:mo></m:msup></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>&#x2264;</m:mo><m:mi>p</m:mi><m:mo>&#x2264;</m:mo><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>Z</m:mi><m:mfrac><m:mi>&#x3B1;</m:mi><m:mn>2</m:mn></m:mfrac></m:msub><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>'</m:mo></m:msup><m:msup><m:mi>q</m:mi><m:mo>'</m:mo></m:msup></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt></m:math></equation><para id="eip-280">Where p′ = x/n, the point estimate of p taken from the sample.   Notice that p′ has replaced p in the formula. This is because we do not know p, indeed, this is just what we are trying to estimate. </para><para id="eip-432">Unfortunately, there is no correction factor for cases where the sample size is small so np′ and nq' must always be greater than 5 to develop an interval estimate for p.</para><example id="element-32">
+<equation class="unnumbered" id="eip-511"><label/><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>-</m:mo><m:msub><m:mi>Z</m:mi><m:mfrac><m:mi>&#x3B1;</m:mi><m:mn>2</m:mn></m:mfrac></m:msub><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>&#x2264;</m:mo><m:mi>p</m:mi><m:mo>&#x2264;</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo><m:msub><m:mi>Z</m:mi><m:mfrac><m:mi>&#x3B1;</m:mi><m:mn>2</m:mn></m:mfrac></m:msub><m:msqrt><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt></m:math></equation><para id="eip-280">Where <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = x/n, the point estimate of <m:math><m:mi>p</m:mi></m:math> taken from the sample.   Notice that <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> has replaced <m:math><m:mi>p</m:mi></m:math> in the formula. This is because we do not know <m:math><m:mi>p</m:mi></m:math>, indeed, this is just what we are trying to estimate. </para><para id="eip-432">Unfortunately, there is no correction factor for cases where the sample size is small so <m:math><m:msup><m:mi>np</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>nq</m:mi><m:mo>′</m:mo></m:msup></m:math> must always be greater than 5 to develop an interval estimate for <m:math><m:mi>p</m:mi></m:math>.</para><example id="element-32">
 <exercise id="element-814"><problem id="id24363103">
   <para id="element-687">Suppose that a market research firm is hired to estimate the percent of adults living in a large city who have smartphones.  Five hundred randomly selected adult residents in this city are surveyed to determine whether they have smartphones. Of
   the 500 people sampled, 421 responded yes - they own smartphones. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of adult residents of this city who have smartphones.</para>
@@ -90,7 +90,7 @@
 </problem>
 <solution id="id24363164">
 <list id="element-757" list-type="bulleted"><item>The solution step-by-step.</item>
-</list><para id="element-386">Let <emphasis effect="italics">X</emphasis> = the number of people in the sample who have smartphones. <emphasis effect="italics">X</emphasis> is binomial: the random variable is binary, people either have a smartphone or they do not. </para><para id="element-985">To calculate the confidence interval, we must find <emphasis effect="italics">p′</emphasis>, <emphasis effect="italics">q′</emphasis>.</para><para id="element-227"><emphasis effect="italics">n</emphasis> = 500</para>
+</list><para id="element-386">Let <emphasis effect="italics">X</emphasis> = the number of people in the sample who have smartphones. <emphasis effect="italics">X</emphasis> is binomial: the random variable is binary, people either have a smartphone or they do not. </para><para id="element-985">To calculate the confidence interval, we must find <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>, <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math>.</para><para id="element-227"><emphasis effect="italics">n</emphasis> = 500</para>
 <para id="eip-idm67964976"><emphasis effect="italics">x</emphasis> = the number of successes in the sample = 421</para><para id="element-513"><m:math>
   <m:mrow>
    <m:msup>
@@ -113,9 +113,9 @@
   </m:mrow>
  </m:math>
   </para>
-<para id="fs-idp54910160"><emphasis effect="italics">p′</emphasis> = 0.842 is the sample proportion; this is the point estimate of the population proportion.</para>
+<para id="fs-idp54910160"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = 0.842 is the sample proportion; this is the point estimate of the population proportion.</para>
 
- <para id="element-339"><emphasis effect="italics">q′</emphasis> = 1 – <emphasis effect="italics">p′</emphasis> = 1 – 0.842 = 0.158</para>
+ <para id="element-339"><m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> = 1 – <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = 1 – 0.842 = 0.158</para>
 
  <para id="element-239">Since the requested confidence level is <emphasis effect="italics">CL</emphasis> = 0.95, then <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.95 = 0.05 <m:math>
  <m:mrow>
@@ -150,8 +150,7 @@
 <m:mn>1.96</m:mn>
 </m:math></para>
  <para id="element-88">This can be found using the Standard Normal probability table in <link document="m56641"/>. This can also be found in the students t table at the 0.025 column and infinity degrees of freedom because at infinite degrees of freedom the students <emphasis effect="italics">t</emphasis>-distribution becomes the standard normal distribution, Z.</para><para id="element-144">The confidence interval for the true binomial population proportion is <equation class="unnumbered" id="eip-id1169963537277"><label/><m:math>
-<m:mi>p'</m:mi>
-<m:mo>-</m:mo>
+  <m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>-</m:mo>
 <m:msub>
 <m:mi>Z</m:mi>
 <m:mi>α</m:mi>
@@ -159,7 +158,8 @@
 <m:msqrt>
 <m:mfrac>
 <m:mrow>
-<m:mi>p'q'</m:mi>
+<m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup>
+<m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup>
 </m:mrow>
 <m:mrow>
 <m:mi>n</m:mi>
@@ -172,8 +172,7 @@
 
 
 
-<m:mi>p'</m:mi>
-<m:mo>+</m:mo>
+<m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>+</m:mo>
 <m:msub>
 <m:mi>Z</m:mi>
 <m:mi>α</m:mi>
@@ -181,8 +180,8 @@
 <m:msqrt>
 <m:mfrac>
 <m:mrow>
-<m:mi>p'q'</m:mi>
-</m:mrow>
+  <m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup>
+  <m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:mrow>
 <m:mrow>
 <m:mi>n</m:mi>
 </m:mrow>
@@ -208,9 +207,9 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
 </note><example id="eip-786"><exercise id="eip-id1172122788985"><problem id="eip-id1172107422772">
   <para id="eip-id1172117840401">The Dundee Dog Training School has a larger than average proportion of clients who compete in competitive professional events. A confidence interval for the population proportion of dogs that compete in professional events from 150 different training schools is constructed. The lower limit is determined to be 0.08 and the upper limit is determined to be 0.16. Determine the level of confidence used to construct the interval of the population proportion of dogs that compete in professional events.</para></problem>
 <solution id="eip-id1172102325982">
-  <para id="eip-id1172099368827">We begin with the formula for a confidence interval for a proportion because the random variable is binary; either the client competes in professional competitive dog events or they don't.</para><equation class="unnumbered" id="eip-id1172122574035"><label/><m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>±</m:mo><m:mo>[</m:mo><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo></m:math></equation>
+  <para id="eip-id1172099368827">We begin with the formula for a confidence interval for a proportion because the random variable is binary; either the client competes in professional competitive dog events or they don't.</para><equation class="unnumbered" id="eip-id1172122574035"><label/><m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>±</m:mo><m:mo>[</m:mo><m:msub><m:mi>Z</m:mi><m:mrow><m:mo>(</m:mo><m:mfrac><m:mi>a</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msub><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo></m:math></equation>
    <para id="eip-id1172100365957">Next we find the sample proportion:</para>
-   <equation class="unnumbered" id="eip-id1172101566261"><label/><m:math><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.08</m:mn><m:mo>+</m:mo><m:mn>0.16</m:mn></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.12</m:mn></m:math></equation>
+   <equation class="unnumbered" id="eip-id1172101566261"><label/><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.08</m:mn><m:mo>+</m:mo><m:mn>0.16</m:mn></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.12</m:mn></m:math></equation>
    <para id="eip-id6479480">The ± that makes up the confidence interval is thus 0.04; 0.12 + 0.04 = 0.16 and 0.12 − 0.04 = 0.08, the boundaries of the confidence interval. Finally, we solve for <emphasis effect="italics">Z</emphasis>.</para>
    <para id="eip-id1169335320053"><m:math><m:mo>[</m:mo><m:mi>Z</m:mi><m:mo>⋅</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.12</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.12</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>150</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>]</m:mo><m:mo>=</m:mo><m:mn>0.04</m:mn></m:math>, <emphasis><emphasis effect="italics">therefore Z</emphasis> = 1.51</emphasis></para>
    <para id="eip-id1169337927448">And then look up the probability for 1.51 standard deviations on the standard normal table.</para><para id="eip-id1166885205984"><m:math><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>=</m:mo><m:mn>1.51</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.4345</m:mn></m:math>, <m:math><m:mi>p</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>)</m:mo><m:mo>⋅</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>0.8690</m:mn></m:math> <emphasis effect="italics"><emphasis>or</emphasis></emphasis> <m:math><m:mn>86.90</m:mn><m:mo>%</m:mo></m:math>.</para></solution>
@@ -466,7 +465,7 @@ Sixty-eight percent (68%) of students own an iPod and a smart phone.</para>
   <title>Chapter Review</title>
   <para id="eip-idm15657920">Some statistical measures, like many survey questions, measure qualitative rather than quantitative data. In this case, the population parameter being estimated is a proportion. It is possible to create a confidence interval for the true population proportion following procedures similar to those used in creating confidence intervals for population means. The formulas are slightly different, but they follow the same reasoning.</para>
 
-  <para id="eip-idm15657536">Let <emphasis effect="italics">p′</emphasis> represent the sample proportion, <emphasis effect="italics">x/n</emphasis>, where <emphasis effect="italics">x</emphasis> represents the number of successes and <emphasis effect="italics">n</emphasis> represents the sample size. Let <emphasis effect="italics">q′</emphasis> = 1 – <emphasis effect="italics">p′</emphasis>. Then the confidence interval for a population proportion is given by the following formula:</para><para id="eip-idp121742160"><m:math>
+  <para id="eip-idm15657536">Let <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> represent the sample proportion, <emphasis effect="italics">x/n</emphasis>, where <emphasis effect="italics">x</emphasis> represents the number of successes and <emphasis effect="italics">n</emphasis> represents the sample size. Let <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> = 1 – <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>. Then the confidence interval for a population proportion is given by the following formula:</para><para id="eip-idp121742160"><m:math>
 <m:mi>p'</m:mi>
 <m:mo>-</m:mo>
 <m:msub>
@@ -511,7 +510,7 @@ Sixty-eight percent (68%) of students own an iPod and a smart phone.</para>
 <section id="eip-826" class="formula-review">
 <title>Formula Review</title>
  <para id="eip-idm44244000"><emphasis effect="italics">p′= </emphasis> <m:math><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:math> where <emphasis effect="italics">x</emphasis> represents the number of successes in a sample and <emphasis effect="italics">n</emphasis> represents the sample size. The variable <emphasis effect="italics">p</emphasis>′ is the sample proportion and serves as the point estimate for the true population proportion.</para><para id="eip-idm61459360"><emphasis effect="italics">q</emphasis>′ = 1 – <emphasis effect="italics">p</emphasis>′</para>
- <para id="eip-idm163551632">The variable <emphasis effect="italics">p′</emphasis> has a binomial distribution that can be approximated with the normal distribution shown here. The confidence interval for the true population proportion is given by the formula:</para><para id="eip-idm90817904"><m:math>
+ <para id="eip-idm163551632">The variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> has a binomial distribution that can be approximated with the normal distribution shown here. The confidence interval for the true population proportion is given by the formula:</para><para id="eip-idm90817904"><m:math>
 <m:mi>p'</m:mi>
 <m:mo>-</m:mo>
 <m:msub><m:mi>Z</m:mi><m:mi>α</m:mi></m:msub>
@@ -595,11 +594,11 @@ Identify the following:
   <list id="fs-idm88953968" list-type="enumerated" number-style="lower-alpha">
   <item><emphasis effect="italics">x</emphasis> = ______</item>
   <item><emphasis effect="italics">n</emphasis> = ______</item>
-   <item><emphasis effect="italics">p′</emphasis> = ______</item>
+   <item><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = ______</item>
   </list>
 </problem>
 </exercise><exercise id="eip-55"><problem id="eip-818">
- <para id="eip-idp4012128">Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P′</emphasis> in words.</para>
+ <para id="eip-idp4012128">Define the random variables <emphasis effect="italics">X</emphasis> and <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> in words.</para>
 </problem>
 <solution id="eip-907">
  <para id="eip-idm101446224"><emphasis effect="italics">X</emphasis> is the number of “successes” where the woman makes the majority of the purchasing decisions for the household. <emphasis effect="italics">P</emphasis>′ is the percentage of households sampled where the woman makes the majority of the purchasing decisions for the household.</para>
@@ -936,8 +935,8 @@ Calculate the following:
     </list>
  </problem>
  <solution id="fs-idm130896">
-  <list id="fs-idm130640" list-type="enumerated" number-style="lower-alpha"><item> <emphasis effect="italics">X</emphasis> = the number of adult Americans who feel that crime is the main problem; <emphasis effect="italics">P′</emphasis> = the proportion of adult Americans who feel that crime is the main problem</item>
-    <item>Since we are estimating a proportion, given <emphasis effect="italics">P′</emphasis> = 0.2 and <emphasis effect="italics">n</emphasis> = 1000, the distribution we should use is <m:math>
+  <list id="fs-idm130640" list-type="enumerated" number-style="lower-alpha"><item> <emphasis effect="italics">X</emphasis> = the number of adult Americans who feel that crime is the main problem; <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = the proportion of adult Americans who feel that crime is the main problem</item>
+    <item>Since we are estimating a proportion, given <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = 0.2 and <emphasis effect="italics">n</emphasis> = 1000, the distribution we should use is <m:math>
  <m:mrow>
   <m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -1036,7 +1035,7 @@ Calculate the following:
 </list>
 </problem>
 <solution id="eip-746">
- <list id="eip-idp44228944" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">p′</emphasis> = <m:math>
+ <list id="eip-idp44228944" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = <m:math>
   <m:mrow>
    <m:mfrac>
     <m:mrow>

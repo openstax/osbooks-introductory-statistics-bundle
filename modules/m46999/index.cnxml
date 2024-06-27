@@ -12,7 +12,7 @@
  <para id="element-292">Investors in the stock market are interested in the true proportion of stocks that go up and down each week. Businesses that sell personal computers are interested in the proportion of households in the United States that own personal computers. Confidence intervals can be calculated for the true proportion of stocks that go up or down each week and for the true proportion of households in the United States that own personal computers.</para>
  <para id="element-918">The procedure to find the confidence interval, the sample size, the <term id="term-00002">error bound</term>, and the <term id="term-00003">confidence level</term> for a proportion is similar to that for the population mean, but the
  formulas are different.</para>
-  <para id="element-574"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution is a</emphasis> <term id="term-00004">binomial distribution</term>. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(<emphasis effect="italics">n</emphasis>, <emphasis effect="italics">p</emphasis>)  where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. To form a proportion, take <emphasis effect="italics">X</emphasis>, the random variable for the number of successes and divide it by <emphasis effect="italics">n</emphasis>, the number of trials (or the sample size). The random variable <emphasis effect="italics">P′</emphasis> (read "P prime") is that proportion,
+  <para id="element-574"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution is a</emphasis> <term id="term-00004">binomial distribution</term>. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(<emphasis effect="italics">n</emphasis>, <emphasis effect="italics">p</emphasis>)  where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. To form a proportion, take <emphasis effect="italics">X</emphasis>, the random variable for the number of successes and divide it by <emphasis effect="italics">n</emphasis>, the number of trials (or the sample size). The random variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> (read "P prime") is that proportion,
   </para>
  <para id="element-771"><m:math>
    <m:mrow>
@@ -47,7 +47,7 @@
  </m:mrow>
 </m:math></para>
  <para id="element-76">If we divide the random variable, the mean, and the standard
-deviation by <emphasis effect="italics">n</emphasis>, we get a normal distribution of proportions with <emphasis effect="italics">P′</emphasis>, called the
+deviation by <emphasis effect="italics">n</emphasis>, we get a normal distribution of proportions with <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>, called the
 estimated proportion, as the random variable. (Recall that a proportion as the
 number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
 
@@ -112,9 +112,9 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
   </m:mrow>
  </m:math>
  </para>
- <para id="element-683"><emphasis><emphasis effect="italics">P′</emphasis> follows a normal distribution for proportions</emphasis>:
-  <m:math><m:mfrac><m:mi>X</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>'</m:mo><m:mo>~</m:mo><m:mi>N</m:mi><m:mo>(</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac><m:mi>n</m:mi><m:mo>,</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>)</m:mo></m:math></para><para id="element-716">The confidence interval has the form (<emphasis effect="italics">p′</emphasis> – <emphasis effect="italics">EBP</emphasis>, <emphasis effect="italics">p′</emphasis> + <emphasis effect="italics">EBP</emphasis>). <emphasis effect="italics">EBP</emphasis> is error bound for the proportion.</para>
- <para id="element-35"><emphasis effect="italics">p′</emphasis> = <m:math>
+ <para id="element-683"><emphasis><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> follows a normal distribution for proportions</emphasis>:
+  <m:math><m:mfrac><m:mi>X</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>′</m:mo><m:mo>~</m:mo><m:mi>N</m:mi><m:mo>(</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac><m:mi>n</m:mi><m:mo>,</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>)</m:mo></m:math></para><para id="element-716">The confidence interval has the form (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>). <emphasis effect="italics">EBP</emphasis> is error bound for the proportion.</para>
+ <para id="element-35"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = <m:math>
  <m:mrow>
   <m:mfrac>
    <m:mi>x</m:mi>
@@ -124,7 +124,7 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
  </m:mrow>
 </m:math>
  </para>
- <para id="element-142"><emphasis effect="italics">p′</emphasis> = the <emphasis>estimated proportion</emphasis> of successes (<emphasis effect="italics">p′</emphasis> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true proportion.)</para>
+ <para id="element-142"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = the <emphasis>estimated proportion</emphasis> of successes (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true proportion.)</para>
 
  <para id="element-818"><emphasis effect="italics">x</emphasis> = the <emphasis>number</emphasis> of successes</para>
 
@@ -174,7 +174,7 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
    </m:mrow>
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
-</m:math> where <emphasis effect="italics">q′</emphasis> = 1 – <emphasis effect="italics">p′</emphasis></para>
+</m:math> where <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> = 1 – <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math></para>
 <para id="eip-841">This formula is similar to the error bound formula for a mean, except that the "appropriate standard deviation" is different. For a mean, when the population standard deviation is known, the appropriate standard deviation that we use is <m:math>
 <m:mfrac>
 <m:mrow>
@@ -237,9 +237,9 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
 </m:msqrt>
 </m:math>.</para>
 
-<para id="element-685">In the error bound formula, the <emphasis> sample proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are estimates of the unknown population proportions <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis></emphasis>. The estimated proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. The sample proportions <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> are calculated from the data: <emphasis effect="italics">p′</emphasis> is the estimated proportion of successes, and <emphasis effect="italics">q′</emphasis> is the estimated proportion of failures.</para>
+<para id="element-685">In the error bound formula, the <emphasis> sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are estimates of the unknown population proportions <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis></emphasis>. The estimated proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. The sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are calculated from the data: <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is the estimated proportion of successes, and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> is the estimated proportion of failures.</para>
 
- <para id="eip-711">The confidence interval can be used only if the number of successes <emphasis effect="italics">np′</emphasis> and the number of failures <emphasis effect="italics">nq′</emphasis> are both greater than five.</para>
+ <para id="eip-711">The confidence interval can be used only if the number of successes <m:math><m:msup><m:mi>np</m:mi><m:mo>′</m:mo></m:msup></m:math> and the number of failures <m:math><m:msup><m:mi>nq</m:mi><m:mo>′</m:mo></m:msup></m:math> are both greater than five.</para>
 
 <note id="id24362956"><label/>
 <title>NOTE</title>
@@ -321,7 +321,7 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
 </m:math>.</para>
-<para id="element-985">To calculate the confidence interval, you must find <emphasis effect="italics">p′</emphasis>, <emphasis effect="italics">q′</emphasis>, and <emphasis effect="italics">EBP</emphasis>.</para>
+<para id="element-985">To calculate the confidence interval, you must find <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>, <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math>, and <emphasis effect="italics">EBP</emphasis>.</para>
  <para id="element-227"><emphasis effect="italics">n</emphasis> = 500</para>
 <para id="eip-idm67964976"><emphasis effect="italics">x</emphasis> = the number of successes = 421</para>
  <para id="element-513"><m:math>
@@ -349,8 +349,10 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
 <para id="fs-idp54910160">
   <m:math>
     <m:mrow>
+      <m:msup>
       <m:mi>p</m:mi>
       <m:mo>′</m:mo>
+      </m:msup>
       <m:mo>=</m:mo>
       <m:mn>0.842</m:mn>
     </m:mrow>
@@ -358,15 +360,19 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
  <para id="element-339">
   <m:math>
     <m:mrow>
+      <m:msup>
       <m:mi>q</m:mi>
       <m:mo>′</m:mo>
+    </m:msup>
       <m:mo>=</m:mo>
       <m:mn>1</m:mn>
     </m:mrow>
     <m:mrow>
       <m:mo>-</m:mo>
+      <m:msup>
       <m:mi>p</m:mi>
       <m:mo>′</m:mo>
+    </m:msup>
       <m:mo>=</m:mo>
       <m:mn>1</m:mn>
     </m:mrow>
@@ -458,8 +464,10 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
  </m:mrow>
 </m:math></para>
  <para id="element-237"><m:math>
+  <m:msup>
 <m:mi>p</m:mi>
 <m:mo>′</m:mo>
+</m:msup>
 <m:mo>–</m:mo>
   <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi>
 <m:mo>=</m:mo>
@@ -481,7 +489,7 @@ number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
   </m:mrow>
  </m:math>
   </para>
- <para id="element-144">The confidence interval for the true binomial population proportion is <m:math><m:mo>(</m:mo><m:mi>p</m:mi><m:mo>'</m:mo><m:mo>&#xA0;</m:mo><m:mo>&#x2013;</m:mo><m:mo>&#xA0;</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>,</m:mo><m:mi>p</m:mi><m:mo>'</m:mo><m:mo>&#xA0;</m:mo><m:mo>+</m:mo><m:mo>&#xA0;</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>)</m:mo><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>810</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>874</m:mn><m:mo>)</m:mo><m:mo>.</m:mo></m:math></para>
+ <para id="element-144">The confidence interval for the true binomial population proportion is <m:math><m:mo>(</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>&#xA0;</m:mo><m:mo>&#x2013;</m:mo><m:mo>&#xA0;</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>,</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>&#xA0;</m:mo><m:mo>+</m:mo><m:mo>&#xA0;</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>)</m:mo><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>810</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>874</m:mn><m:mo>)</m:mo><m:mo>.</m:mo></m:math></para>
  <para id="element-822">Interpretation: We estimate with 95% confidence that between 81% and 87.4% of all adult residents of this city have smartphones.</para>
  <para id="element-415">Explanation of 95% Confidence Level: Ninety-five percent of the confidence intervals constructed in this way would contain the true value for the population proportion of all adult residents of this city who have smartphones.<newline/></para>
 </solution>
@@ -642,7 +650,7 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
     <m:mo>+</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>+</m:mo><m:mn>0.036</m:mn><m:mo>=</m:mo><m:mn>0.636</m:mn>
    </m:mrow>
  </m:math></para>
-<para id="element-343">The confidence interval for the true binomial population proportion is (<emphasis effect="italics">p′</emphasis> – <emphasis effect="italics">EBP</emphasis>, <emphasis effect="italics">p′</emphasis> + <emphasis effect="italics">EBP</emphasis>) = (0.564,0.636).</para>
+<para id="element-343">The confidence interval for the true binomial population proportion is (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>) = (0.564,0.636).</para>
 
  <list id="element-523" list-type="bulleted">
 <item>Interpretation: We estimate with 90% confidence that the true percent of all students that are registered voters is between 56.4% and 63.6%.</item>
@@ -796,8 +804,8 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
   <m:mo>≈</m:mo><m:mn>0.163</m:mn>
  </m:mrow>
 </m:math></para>
- <para id="eip-idm47330704"><emphasis effect="italics">p′</emphasis> – <emphasis effect="italics">EBP</emphasis> = 0.276 – 0.163 = 0.113</para>
- <para id="eip-idm47330064"><emphasis effect="italics">p′</emphasis> + <emphasis effect="italics">EBP</emphasis> = 0.276 + 0.163 = 0.439</para>
+ <para id="eip-idm47330704"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis> = 0.276 – 0.163 = 0.113</para>
+ <para id="eip-idm47330064"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis> = 0.276 + 0.163 = 0.439</para>
  <para id="eip-idm46666976">We are 95% confident that the true proportion of all statistics students who smoke cigarettes is between 0.113 and 0.439.</para>
 </solution>
 <solution id="fs-idp68718096">
@@ -835,7 +843,7 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
  <m:mrow>
   <m:msup>
    <m:mi>p</m:mi>
-   <m:mo>'</m:mo>
+   <m:mo>′</m:mo>
   </m:msup>
   <m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
    <m:mrow>
@@ -853,11 +861,11 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
  <m:mrow>
   <m:msup>
    <m:mi>q</m:mi>
-   <m:mo>'</m:mo>
+   <m:mo>′</m:mo>
   </m:msup>
   <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:msup>
    <m:mi>p</m:mi>
-   <m:mo>'</m:mo>
+   <m:mo>′</m:mo>
   </m:msup>
   <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0.241</m:mn><m:mo>=</m:mo><m:mn>0.722</m:mn>
  </m:mrow>
@@ -939,8 +947,8 @@ Suppose 250 randomly selected people are surveyed to determine if they own a tab
   <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>0.100</m:mn>
  </m:mrow>
 </m:math></para>
-<para id="eip-idp40189152"><emphasis effect="italics">p′</emphasis> – <emphasis effect="italics">EBP</emphasis> = 0.278 – 0.100 = 0.178</para>
- <para id="eip-idp61257168"><emphasis effect="italics">p′</emphasis> + <emphasis effect="italics">EBP</emphasis> = 0.278 + 0.100 = 0.378</para>
+<para id="eip-idp40189152"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis> = 0.278 – 0.100 = 0.178</para>
+ <para id="eip-idp61257168"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis> = 0.278 + 0.100 = 0.378</para>
 <para id="eip-idp61146144">We are 90% confident that between 17.8% and 37.8% of adults aged 18–29 would consider the purchase of an electric vehicle.</para></solution>
 <solution id="fs-idp141579680">
 <note id="fs-idm93286128" class="statistics calculator">
@@ -1161,7 +1169,7 @@ If researchers desire a specific margin of error, then they can use the error bo
   <title>Chapter Review</title>
   <para id="eip-idm15657920">Some statistical measures, like many survey questions, measure qualitative rather than quantitative data. In this case, the population parameter being estimated is a proportion. It is possible to create a confidence interval for the true population proportion following procedures similar to those used in creating confidence intervals for population means. The formulas are slightly different, but they follow the same reasoning.</para>
 
-  <para id="eip-idm15657536">Let <emphasis effect="italics">p′</emphasis> represent the sample proportion, <emphasis effect="italics">x/n</emphasis>, where <emphasis effect="italics">x</emphasis> represents the number of successes and <emphasis effect="italics">n</emphasis> represents the sample size. Let <emphasis effect="italics">q′</emphasis> = 1 – <emphasis effect="italics">p′</emphasis>. Then the confidence interval for a population proportion is given by the following formula:</para><para id="eip-idp121742160">(lower bound, upper bound) <m:math>
+  <para id="eip-idm15657536">Let <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> represent the sample proportion, <emphasis effect="italics">x/n</emphasis>, where <emphasis effect="italics">x</emphasis> represents the number of successes and <emphasis effect="italics">n</emphasis> represents the sample size. Let <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> = 1 – <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>. Then the confidence interval for a population proportion is given by the following formula:</para><para id="eip-idp121742160">(lower bound, upper bound) <m:math>
  <m:mrow>
   <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msup>
    <m:mi>p</m:mi>
@@ -1269,7 +1277,7 @@ If researchers desire a specific margin of error, then they can use the error bo
    </m:mrow>
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
-</m:math> The variable <emphasis effect="italics">p′</emphasis> has a binomial distribution that can be approximated with the normal distribution shown here.</para>
+</m:math> The variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> has a binomial distribution that can be approximated with the normal distribution shown here.</para>
  <para id="eip-idm90817904"><emphasis effect="italics">EBP</emphasis> = the error bound for a proportion = <m:math>
   <m:mrow>
    <m:msub>
@@ -1445,7 +1453,7 @@ If researchers desire a specific margin of error, then they can use the error bo
    <m:mo> </m:mo><m:mi>p</m:mi><m:mo>′</m:mo><m:mo>+</m:mo><m:mi>q</m:mi><m:mo>′</m:mo><m:mo>=</m:mo><m:mn>1</m:mn>
   </m:mrow>
  </m:math></para>
- <para id="eip-93">The confidence interval has the format (<emphasis effect="italics">p′</emphasis> – <emphasis effect="italics">EBP</emphasis>, <emphasis effect="italics">p′</emphasis> + <emphasis effect="italics">EBP</emphasis>).</para>
+ <para id="eip-93">The confidence interval has the format (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>).</para>
   <para id="eip-121"><m:math>
  <m:mrow>
   <m:mover accent="true">
@@ -1454,7 +1462,7 @@ If researchers desire a specific margin of error, then they can use the error bo
   </m:mover>
  </m:mrow>
 </m:math> is a point estimate for <emphasis effect="italics">μ</emphasis></para>
- <para id="eip-285"><emphasis effect="italics">p′</emphasis> is a point estimate for <emphasis effect="italics">ρ</emphasis></para>
+ <para id="eip-285"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is a point estimate for <emphasis effect="italics">ρ</emphasis></para>
  <para id="eip-401"><emphasis effect="italics">s</emphasis> is a point estimate for <emphasis effect="italics">σ</emphasis></para>
 </section>
 <section id="eip-515" class="practice">
@@ -1480,11 +1488,11 @@ Identify the following:
   <list id="fs-idm88953968" list-type="enumerated" number-style="lower-alpha">
   <item><emphasis effect="italics">x</emphasis> = ______</item>
   <item><emphasis effect="italics">n</emphasis> = ______</item>
-   <item><emphasis effect="italics">p′</emphasis> = ______</item>
+   <item><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = ______</item>
   </list>
 </problem>
 </exercise><exercise id="eip-55"><problem id="eip-818">
- <para id="eip-idp4012128">Define the random variables <emphasis effect="italics">X</emphasis> and <emphasis effect="italics">P′</emphasis> in words.</para>
+ <para id="eip-idp4012128">Define the random variables <emphasis effect="italics">X</emphasis> and <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> in words.</para>
 </problem>
 <solution id="eip-907">
  <para id="eip-idm101446224"><emphasis effect="italics">X</emphasis> is the number of “successes” where the woman makes the majority of the purchasing decisions for the household. <emphasis effect="italics">P</emphasis>′ is the percentage of households sampled where the woman makes the majority of the purchasing decisions for the household.</para>
@@ -1836,8 +1844,8 @@ Calculate the following:
     </list>
  </problem>
  <solution id="fs-idm130896">
-  <list id="fs-idm130640" list-type="enumerated" number-style="lower-alpha"><item> <emphasis effect="italics">X</emphasis> = the number of adult Americans who feel that crime is the main problem; <emphasis effect="italics">P′</emphasis> = the proportion of adult Americans who feel that crime is the main problem</item>
-    <item>Since we are estimating a proportion, given <emphasis effect="italics">P′</emphasis> = 0.2 and <emphasis effect="italics">n</emphasis> = 1000, the distribution we should use is <m:math>
+  <list id="fs-idm130640" list-type="enumerated" number-style="lower-alpha"><item> <emphasis effect="italics">X</emphasis> = the number of adult Americans who feel that crime is the main problem; <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = the proportion of adult Americans who feel that crime is the main problem</item>
+    <item>Since we are estimating a proportion, given <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = 0.2 and <emphasis effect="italics">n</emphasis> = 1000, the distribution we should use is <m:math>
  <m:mrow>
   <m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
    <m:mrow>
@@ -1953,7 +1961,7 @@ Calculate the following:
 </list>
 </problem>
 <solution id="eip-746">
- <list id="eip-idp44228944" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">p′</emphasis> = <m:math>
+ <list id="eip-idp44228944" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = <m:math>
   <m:mrow>
    <m:mfrac>
     <m:mrow>
