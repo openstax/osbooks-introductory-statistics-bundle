@@ -45,7 +45,7 @@ hold valuable information about the population under study and should remain inc
 <exercise id="eip-365">
 <problem id="eip-801">
   <para id="eip-145">Identify the potential outlier in the scatter plot. The standard deviation of the residuals or errors is approximately 8.6.</para>
-<figure class="scaled-down" id="fs-idp117757200"><media id="eip-idp189014800" alt="" display="block">
+<figure class="scaled-down" id="fs-idp117757200"><media id="eip-idp189014800" alt="Gráfico de dispersión con una línea de regresión lineal y un punto atípico." display="block">
   <image mime-type="image/png" src="../../media/CNX_Stats_C012_M09_item001.png"/>
 </media>
 </figure></problem>
@@ -306,7 +306,7 @@ First, <emphasis>square each |<emphasis effect="italics">y</emphasis> – <empha
 
 <para id="eip-799">Next, multiply <emphasis effect="italics">s</emphasis> by 2:
 <newline/>(2)(16.47) = 32.94
-<newline/>32.94 is 2 standard deviations away from the mean of the <emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis> values.</para><para id="eip-28">If we were to measure the vertical distance from any data point to the corresponding point on the line of best fit and that distance is at least 2<emphasis effect="italics">s</emphasis>, then we would consider the data point to be "too far" from the line of best fit. We call that point a <term id="term-00003">potential outlier</term>.</para><para id="eip-130">For the example, if any of the |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>| values are <emphasis>at least</emphasis> 32.94, the corresponding (<emphasis effect="italics">x</emphasis>, <emphasis effect="italics">y</emphasis>) data point is a potential outlier.</para><para id="eip-696">For the third exam/final exam problem, all the |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>|'s are less than 31.29 except for the first one which is 35.</para><para id="eip-994">35 > 31.29 That is, |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>| ≥ (2)(s)</para><para id="eip-980">The point which corresponds to |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>| = 35 is (65, 175). <emphasis>Therefore, the data point (65,175) is a potential outlier.</emphasis> For this example, we will delete it. (Remember, we do not always delete an outlier.)</para>
+<newline/>32.94 is 2 standard deviations away from the mean of the <emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis> values.</para><para id="eip-28">If we were to measure the vertical distance from any data point to the corresponding point on the line of best fit and that distance is at least 2<emphasis effect="italics">s</emphasis>, then we would consider the data point to be "too far" from the line of best fit. We call that point a <term id="term-00003">potential outlier</term>.</para><para id="eip-130">For the example, if any of the |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>| values are <emphasis>at least</emphasis> 32.94, the corresponding (<emphasis effect="italics">x</emphasis>, <emphasis effect="italics">y</emphasis>) data point is a potential outlier.</para><para id="eip-696">For the third exam/final exam problem, all the |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>|'s are less than 31.29 except for the first one which is 35.</para><para id="eip-994">35 &gt; 31.29 That is, |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>| ≥ (2)(s)</para><para id="eip-980">The point which corresponds to |<emphasis effect="italics">y</emphasis> – <emphasis effect="italics">ŷ</emphasis>| = 35 is (65, 175). <emphasis>Therefore, the data point (65,175) is a potential outlier.</emphasis> For this example, we will delete it. (Remember, we do not always delete an outlier.)</para>
 
 <note id="fs-idp12863088"><label/><title>NOTE</title>
 <para id="fs-idp101044864">When outliers are deleted, the researcher should either record that data was deleted, and why, or the researcher should provide results both with and without the deleted data. If data is erroneous and the correct values are known (e.g., student one actually scored a 70 instead of a 65), then this correction can be made to the data.</para></note>
@@ -401,8 +401,8 @@ The original line predicted <emphasis effect="italics">ŷ</emphasis> = –173.51
   <row>
     <entry>1975</entry>
     <entry>49.3</entry>
-    <entry></entry>
-    <entry></entry>
+    <entry/>
+    <entry/>
     </row>
     </tbody>
 </tgroup>
@@ -421,7 +421,7 @@ The original line predicted <emphasis effect="italics">ŷ</emphasis> = –173.51
   <list id="element-298" list-type="enumerated" number-style="lower-alpha"><item>See <link target-id="eip-idp35936320"/>.</item>
 <item><emphasis effect="italics">ŷ</emphasis> = –3204 + 1.662<emphasis effect="italics">x</emphasis> is the equation of the line of best fit.</item>
 <item><emphasis effect="italics">r</emphasis> = 0.8694</item>
-<item>The number of data points is <emphasis effect="italics">n</emphasis> = 14. Use the 95% Critical Values of the Sample Correlation Coefficient table at the end of Chapter 12. <emphasis effect="italics">n</emphasis> – 2 = 12. The corresponding critical value is 0.532. Since 0.8694 > 0.532, <emphasis effect="italics">r</emphasis> is significant.
+<item>The number of data points is <emphasis effect="italics">n</emphasis> = 14. Use the 95% Critical Values of the Sample Correlation Coefficient table at the end of Chapter 12. <emphasis effect="italics">n</emphasis> – 2 = 12. The corresponding critical value is 0.532. Since 0.8694 &gt; 0.532, <emphasis effect="italics">r</emphasis> is significant.
 <newline/><emphasis effect="italics">ŷ</emphasis> = –3204 + 1.662(1990) = 103.4 CPI</item>
 <item>Using the calculator LinRegTTest, we find that <emphasis effect="italics">s</emphasis> = 25.4 ; graphing the lines Y2 = –3204 + 1.662X – 2(25.4) and Y3 = –3204 + 1.662X + 2(25.4) shows that no data values are outside those lines, identifying no outliers. (Note that the year 1999 was very close to the upper line, but still inside it.)</item>
 </list><figure class="scaled-down" id="eip-idp35936320">
@@ -432,7 +432,7 @@ The original line predicted <emphasis effect="italics">ŷ</emphasis> = –173.51
 </solution>
 </exercise><note id="eip-413"><label/><title>NOTE</title><para id="fs-idp122850352">In the example, notice the pattern of the points compared to the line.  Although the correlation coefficient is significant, the pattern in the scatterplot indicates that a curve would be a more appropriate model to use than a line.  In this example, a statistician should prefer to use other methods to fit a curve to this data, rather than model the data with the line we found. In addition to doing the calculations, it is always important to look at the scatterplot when deciding whether a linear model is appropriate.</para></note>
 
-<para id="eip-983">If you are interested in seeing more years of data, visit the Bureau of Labor Statistics CPI website ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt; our data is taken from the column entitled "Annual Avg." (third column from the right). For example you could add more current years of data. Try adding the more recent years: 2010: CPI = 219.2; 2020: CPI = 258.0; 2023: CPI = 299.2. See how it affects the model. (Check: <m:math><m:mover><m:mi>y</m:mi><m:mo>&#x23DC;</m:mo></m:mover><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5030</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>598</m:mn><m:mi>x</m:mi></m:math>; <m:math><m:mi>r</m:mi><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>&#xA0;</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>9067</m:mn></m:math>. Is r significant? Is the fit better with the addition of the new points?)</para></example>
+<para id="eip-983">If you are interested in seeing more years of data, visit the Bureau of Labor Statistics CPI website ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt; our data is taken from the column entitled "Annual Avg." (third column from the right). For example you could add more current years of data. Try adding the more recent years: 2010: CPI = 219.2; 2020: CPI = 258.0; 2023: CPI = 299.2. See how it affects the model. (Check: <m:math><m:mover><m:mi>y</m:mi><m:mo>⏜</m:mo></m:mover><m:mo> </m:mo><m:mo>=</m:mo><m:mo>-</m:mo><m:mn>5030</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>598</m:mn><m:mi>x</m:mi></m:math>; <m:math><m:mi>r</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>9067</m:mn></m:math>. Is r significant? Is the fit better with the addition of the new points?)</para></example>
 
 <note id="fs-idm58078240" class="statistics try">
 <label/>
@@ -725,7 +725,7 @@ To determine if a point is an outlier, do one of the following:
 
         <item>Note: The calculator function LinRegTTest (STATS TESTS LinRegTTest) calculates <emphasis effect="italics">s</emphasis>.</item>
         </list></para></section><section id="eip-319" class="practice">
-<para id="eip-idm76852864"><emphasis effect="italics">Use the following information to answer the next four exercises.</emphasis> The scatter plot shows the relationship between hours spent studying and exam scores. The line shown is the calculated line of best fit. The correlation coefficient is 0.69.</para><figure class="scaled-down" id="fs-idp84808448"><media id="eip-idm82947312" alt="" display="block">
+<para id="eip-idm76852864"><emphasis effect="italics">Use the following information to answer the next four exercises.</emphasis> The scatter plot shows the relationship between hours spent studying and exam scores. The line shown is the calculated line of best fit. The correlation coefficient is 0.69.</para><figure class="scaled-down" id="fs-idp84808448"><media id="eip-idm82947312" alt="Gráfico de dispersión con una línea de regresión lineal y un punto atípico." display="block">
 <image mime-type="image/png" src="../../media/CNX_Stats_C012_M09_item001.png"/>
 </media></figure><exercise id="eip-984"><problem id="eip-idm7789920">
 <para id="eip-idp21732640">Do there appear to be any outliers?</para>
