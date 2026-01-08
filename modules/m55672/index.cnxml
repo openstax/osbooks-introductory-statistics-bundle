@@ -13,7 +13,7 @@
     <list id="element-381" list-type="enumerated"><item>The two independent samples are random samples that are independent.</item>
 <item> The number of successes is at least five, and the number of failures is at least five, for each of the samples.</item>
 <item>Growing literature states that the population must be at least ten or even perhaps 20 times the size of the sample. This keeps each population from being over-sampled and causing biased results.</item>
-</list><para id="eip-8888">Comparing two proportions, like comparing two means, is common. If two estimated proportions are different, it may be due to a difference in the populations or it may be due to chance in the sampling. A hypothesis test can help determine if a difference in the estimated proportions reflects a difference in the two population proportions.</para><para id="fs-idm58849136">Like the case of differences in sample means, we construct a sampling distribution for differences in sample proportions: <m:math><m:mo>(</m:mo><m:msubsup><m:mi>p</m:mi><m:mi>A</m:mi><m:mo>'</m:mo></m:msubsup><m:mo>-</m:mo><m:msubsup><m:mi>p</m:mi><m:mi>B</m:mi><m:mo>'</m:mo></m:msubsup><m:mo>)</m:mo></m:math> where <m:math><m:mi>p</m:mi><m:msub><m:mo>'</m:mo><m:mi>A</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:msub><m:mi>X</m:mi><m:mi>A</m:mi></m:msub><m:msub><m:mi>n</m:mi><m:mi>A</m:mi></m:msub></m:mfrac></m:math> and <m:math><m:mi>p</m:mi><m:msub><m:mo>'</m:mo><m:mi>B</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>X</m:mi><m:msub><m:mo>'</m:mo><m:mi>B</m:mi></m:msub></m:mrow><m:msub><m:mi>n</m:mi><m:msub><m:mrow/><m:mi>B</m:mi></m:msub></m:msub></m:mfrac></m:math> are the sample proportions for the two sets of data in question.  X<sub>A</sub> and X<sub>B</sub> are the number of successes in each sample group respectively, and n<sub>A</sub> and n<sub>B</sub> are the respective sample sizes from the two groups. Again we go the Central Limit theorem to find the distribution of this sampling distribution for the differences in sample proportions. And again we find that this sampling distribution, like the ones past, are normally distributed as proved by the Central Limit Theorem, as seen in <link target-id="fs-id1171052108018"/> .</para><figure class="scaled-down" id="fs-id1171052108018"><media id="fs-id1171049570695" alt=""><image src="../../media/fig-ch10_01_02.png" mime-type="image/png"/></media></figure><para id="eip-50">Generally, the null hypothesis allows for the test of a difference of a particular value, 𝛿<sub>0</sub>, just as we did for the case of differences in means.</para><equation class="unnumbered" id="eip-671"><label/><m:math>
+</list><para id="eip-8888">Comparing two proportions, like comparing two means, is common. If two estimated proportions are different, it may be due to a difference in the populations or it may be due to chance in the sampling. A hypothesis test can help determine if a difference in the estimated proportions reflects a difference in the two population proportions.</para><para id="fs-idm58849136">Like the case of differences in sample means, we construct a sampling distribution for differences in sample proportions: <m:math><m:mo>(</m:mo><m:msubsup><m:mi>p</m:mi><m:mi>A</m:mi><m:mo>'</m:mo></m:msubsup><m:mo>-</m:mo><m:msubsup><m:mi>p</m:mi><m:mi>B</m:mi><m:mo>'</m:mo></m:msubsup><m:mo>)</m:mo></m:math> where <m:math><m:mi>p</m:mi><m:msub><m:mo>'</m:mo><m:mi>A</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:msub><m:mi>X</m:mi><m:mi>A</m:mi></m:msub><m:msub><m:mi>n</m:mi><m:mi>A</m:mi></m:msub></m:mfrac></m:math> and <m:math><m:mi>p</m:mi><m:msub><m:mo>'</m:mo><m:mi>B</m:mi></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>X</m:mi><m:msub><m:mo>'</m:mo><m:mi>B</m:mi></m:msub></m:mrow><m:msub><m:mi>n</m:mi><m:msub><m:mrow/><m:mi>B</m:mi></m:msub></m:msub></m:mfrac></m:math> are the sample proportions for the two sets of data in question.  X<sub>A</sub> and X<sub>B</sub> are the number of successes in each sample group respectively, and n<sub>A</sub> and n<sub>B</sub> are the respective sample sizes from the two groups. Again we go the Central Limit theorem to find the distribution of this sampling distribution for the differences in sample proportions. And again we find that this sampling distribution, like the ones past, are normally distributed as proved by the Central Limit Theorem, as seen in <link target-id="fs-id1171052108018"/> .</para><figure class="scaled-down" id="fs-id1171052108018"><media id="fs-id1171049570695" alt="This diagram illustrates how two distinct populations lead to a sampling distribution of the difference in sample proportions (p'1 - p'2), which is then standardized for hypothesis testing (Z-distribution)."><image src="../../media/fig-ch10_01_02.png" mime-type="image/png"/></media></figure><para id="eip-50">Generally, the null hypothesis allows for the test of a difference of a particular value, 𝛿<sub>0</sub>, just as we did for the case of differences in means.</para><equation class="unnumbered" id="eip-671"><label/><m:math>
 <m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo>
 <m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub>
@@ -590,7 +590,7 @@ Does it appear that the proportion of Nevadans who are two or more races is high
         <list id="fs-idp6439728" list-type="enumerated" number-style="lower-roman">
           <item>Alpha: 0.05</item>
           <item>Decision: Cannot accept the null hypothesis.</item>
-          <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
+          <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
           <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that the proportions of White and Black people with conferred physical science degrees, aged 21 to 24, are different. </item>
         </list>
       </item>
@@ -671,7 +671,7 @@ Does it appear that the proportion of Nevadans who are two or more races is high
           <item><m:math><m:mi>p</m:mi><m:mn>2022</m:mn><m:mo> </m:mo><m:mo>≤</m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mn>2021</m:mn></m:math></item>
           <item><m:math><m:mi>p</m:mi><m:mn>2022</m:mn><m:mo> </m:mo><m:mo>≥</m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mn>2021</m:mn></m:math></item>
           <item><m:math><m:mi>μ</m:mi><m:mn>2022</m:mn><m:mo> </m:mo><m:mo>≤</m:mo><m:mo> </m:mo><m:mi>μ</m:mi><m:mn>2021</m:mn></m:math></item>
-          <item><m:math><m:mi>p</m:mi><m:mn>2022</m:mn><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mn>2021</m:mn></m:math></item>
+          <item><m:math><m:mi>p</m:mi><m:mn>2022</m:mn><m:mo> </m:mo><m:mo>&gt;</m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mn>2021</m:mn></m:math></item>
         </list>
       </problem>
 
@@ -730,7 +730,7 @@ Does it appear that the proportion of Nevadans who are two or more races is high
         <para id="fs-idp35036048">Test: two independent sample proportions</para>
         <para id="fs-idp35036432">Random variable: <emphasis effect="italics">p′<sub>1</sub></emphasis> − <emphasis effect="italics">p′<sub>2</sub></emphasis></para>
         <para id="fs-idm9404992">Distribution:</para>
-        <para id="fs-idp46050528"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math></para>
+        <para id="fs-idp46050528"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math></para>
         <para id="fs-idm39674464">A higher proportion of tablet owners are aged 16 to 29 years old than are 30 years old and older.</para>
         <para id="fs-idm39673968">Graph: right-tailed</para>
 
@@ -753,7 +753,7 @@ Does it appear that the proportion of Nevadans who are two or more races is high
       <para id="fs-idp35259328">Subscripts: 1: men; 2: women</para>
       <list id="fs-idp66491504" list-type="enumerated" number-style="lower-alpha">
         <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>≤</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
-        <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
+        <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>p</m:mi><m:mn>1</m:mn></m:msub><m:mo>&gt;</m:mo><m:msub><m:mi>p</m:mi><m:mn>2</m:mn></m:msub></m:math></item>
         <item><m:math>
  <m:mrow>
   <m:msub>
@@ -783,7 +783,7 @@ Does it appear that the proportion of Nevadans who are two or more races is high
           <list id="fs-idp134826688" list-type="enumerated" number-style="lower-roman">
             <item>Alpha: 0.05</item>
             <item>Decision: Cannot reject the null hypothesis.</item>
-            <item>Reason for Decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
+            <item>Reason for Decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
             <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that the proportion of men who enjoy shopping for electronic equipment is more than the proportion of women.</item>
           </list>
         </item>
@@ -903,7 +903,7 @@ Does it appear that the proportion of Nevadans who are two or more races is high
     </problem>
 <solution id="eip-idp83945904">
 <list id="eip-idp83946160" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">µ<sub>d</sub></emphasis> = 0</item>
-<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">µ<sub>d</sub></emphasis> > 0</item>
+<item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">µ<sub>d</sub></emphasis> &gt; 0</item>
 <item>The random variable <emphasis effect="italics">X<sub>d</sub></emphasis> is the mean difference in work times on days when eating breakfast and on days when not eating breakfast.</item>
 <item><emphasis effect="italics">t</emphasis><sub>9</sub></item>
 <item>test statistic: 4.8963</item>
