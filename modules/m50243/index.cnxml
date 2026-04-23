@@ -1,301 +1,57 @@
 <document xmlns="http://cnx.rice.edu/cnxml">
 
-<title>Sampling Experiment</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:content-id>m50243</md:content-id>
-  <md:title>Sampling Experiment</md:title>
-  <md:abstract/>
-  <md:uuid>8bf3bdf5-5120-4cb1-96a9-73d769e443d7</md:uuid>
-</metadata>
+  <title>Excel Labs</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:content-id>m50243</md:content-id>
+    <md:title>Excel Labs</md:title>
+    <md:abstract/>
+    <md:uuid>8bf3bdf5-5120-4cb1-96a9-73d769e443d7</md:uuid>
+  </metadata>
 
-<content>
-  <note id="fs-id1167914447982" class="statistics lab"><label/><title>Sampling Experiment</title>
+  <content>
 
-<para id="id9893246">Class Time:</para>
-<para id="element-745">Names:</para>
-<list id="element-806" list-type="bulleted">
-<title>Student Learning Outcomes</title>
-<item>The student will demonstrate the simple random, systematic, stratified, and cluster sampling techniques.</item>
-<item>The student will explain the details of each procedure used.<newline count="2"/></item>
-</list>
+    <note id="fs-idm27544368" class="statistics collab"><label/>
+<para id="eip-34">In your classroom, try this exercise. Have class members write down the average time (in hours, to the nearest half-hour) they sleep per night. Your instructor will record the data. Then create a simple graph (called a <emphasis>dot plot</emphasis>) of the data. A dot plot consists of a number line and dots (or points) positioned above the number line. For example, consider the following data:</para>
+<para id="eip-idm80945824"><list id="eip-909" list-type="labeled-item" display="inline">
+          <item>5</item>
+          <item>5.5</item>
+          <item>6</item>
+          <item>6</item>
+          <item>6</item>
+          <item>6.5</item>
+          <item>6.5</item>
+          <item>6.5</item>
+          <item>6.5</item>
+          <item>7</item>
+          <item>7</item>
+          <item>8</item>
+          <item>8</item>
+          <item>9</item>
+        </list></para><para id="eip-71">The dot plot for this data would be as follows:</para>
+<figure class="scaled-down" id="eip-idp25549888">
+        <media id="id44761709a" alt="This is a dot plot showing average hours of sleep. The number line is marked in intervals of 1 from 5 to 9. Dots above the line show 1 person reporting 5 hours, 1 with 5.5, 3 with 6, 4 with 6.5, 2 with 7, 2 with 8, and 1 with 9 hours." longdesc="m16020_DotPlot_description.html">
+          <image src="../../media/fig-ch01_02_01.png" mime-type="image/png">
+            <param name="longdesc" value="m16020_DotPlot_description.html"/></image>
+        </media>
+      </figure><para id="id10326643">Does your dot plot look the same as or different from the example? Why? If you did the same example in an English class with the same number of students, do you think the results would be the same? Why or why not?</para>
+<para id="id9336363">Where do your data appear to cluster? How might you interpret the clustering?</para>
+<para id="id9969457">The questions above ask you to analyze and interpret your data. With this example, you have begun your study of statistics.</para>
+    </note>
 
-<para id="element-153">In this lab, you will be asked to pick several random samples of restaurants. In each case, describe your procedure briefly, including how you might have used the random number generator, and then list the restaurants in the sample you obtained.</para>
+    <para id="para-00001">The Excel labs below are designed to accompany this course. The first Excel lab introduces the <emphasis>basic skills needed to use Excel</emphasis>. Later labs will align with examples from the textbook and will help you use Excel to perform statistical calculations and analyze data.</para>
+    <list id="list-00001">
+      <title>Notes on Using These Files</title>
+      <item>These files work best using the <emphasis>desktop version of Microsoft Excel</emphasis>, ideally on a <emphasis>Windows computer</emphasis>.</item>
+      <item>They may not function the same way in the <emphasis>cloud (online) version of Excel</emphasis>, and some features may behave slightly differently in <emphasis>Google Sheets</emphasis>. While most steps should still work, you may notice small differences in formulas, menus, or formatting.</item>
+    </list>
 
-<note id="id11521709"><label/><title>NOTE</title>
-<para id="fs-idp40181216">The following section contains restaurants stratified by city into columns and grouped horizontally by entree cost (clusters).</para>
-</note><table id="id9894hh324636" pgwide="1" class="top-titled" summary="This table provides a sample of restaurants.  Each cell contains a list of restaurants that correspond to the given location and price range.  The first column lists the location, the second column contains restaurants with entrees under $10, the third column contains restaurants with entrees between $10 and $15, the fourth column between $15 and $20, and the fifth column restaurants with entrees over $20.">
-<title>Restaurants Used In Sample</title>
-<tgroup cols="5">
-<colspec colnum="1" colname="c1"/>
-<colspec colnum="2" colname="c2"/>
-<colspec colnum="3" colname="c3"/>
-<colspec colnum="4" colname="c4"/>
-<colspec colnum="5" colname="c5"/>
-<thead>
-  <row>
-    <entry namest="c1" nameend="c5" align="center">Restaurants Stratified by City and Entree Cost</entry>
-  </row>
-<row>
-<entry>Entree Cost</entry>
-<entry>Under $10</entry>
-<entry>$10 to under $15</entry>
-<entry>$15 to under $20</entry>
-<entry>Over $20</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>San Jose</entry>
-<entry>El Abuelo Taq, Pasta Mia, Emma’s Express, Bamboo Hut</entry>
-<entry>Emperor’s Guard, Creekside Inn</entry>
-<entry>Agenda, Gervais, Miro’s</entry>
-<entry>Blake’s, Eulipia, Hayes Mansion, Germania</entry>
-</row>
-<row>
-<entry>Palo Alto</entry>
-<entry>Senor Taco, Olive Garden, Taxi’s</entry>
-<entry>Ming’s, P.A. Joe’s, Stickney’s</entry>
-<entry>Scott’s Seafood, Poolside Grill, Fish Market</entry>
-<entry>Sundance Mine, Maddalena’s, Spago’s</entry>
-</row>
-<row>
-<entry>Los Gatos</entry>
-<entry>Mary’s Patio, Mount Everest, Sweet Pea’s, Andele Taqueria</entry>
-<entry>Lindsey’s, Willow Street</entry>
-<entry>Toll House</entry>
-<entry>Charter House, La Maison Du Cafe</entry>
-</row>
-<row>
-<entry>Mountain View</entry>
-<entry>Maharaja, New Ma’s, Thai-Rific, Garden Fresh</entry>
-<entry>Amber Indian, La Fiesta, Fiesta del Mar, Dawit</entry>
-<entry>Austin’s, Shiva’s, Mazeh</entry>
-<entry>Le Petit Bistro</entry>
-</row>
-<row>
-<entry>Cupertino</entry>
-<entry>Hobees, Hung Fu, Samrat, Panda Express</entry>
-<entry>Santa Barb. Grill, Mand. Gourmet, Bombay Oven, Kathmandu West</entry>
-<entry>Fontana’s, Blue Pheasant</entry>
-<entry>Hamasushi, Helios</entry>
-</row>
-<row>
-<entry>Sunnyvale</entry>
-<entry>Chekijababi, Taj India, Full Throttle, Tia Juana, Lemon Grass</entry>
-<entry>Pacific Fresh, Charley Brown’s, Cafe Cameroon, Faz, Aruba’s</entry>
-<entry>Lion &amp; Compass, The Palace, Beau Sejour</entry>
-<entry/>
-</row>
-<row>
-<entry>Santa Clara</entry>
-<entry>Rangoli, Armadillo Willy’s, Thai Pepper, Pasand</entry>
-<entry>Arthur’s, Katie’s Cafe, Pedro’s, La Galleria</entry>
-<entry>Birk’s, Truya Sushi, Valley Plaza</entry>
-<entry>Lakeside, Mariani’s</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<para id="element-23513616999"><title>A Simple Random Sample</title>Pick a <emphasis>simple random sample</emphasis> of 15 restaurants.</para><list id="list-23562" list-type="enumerated"><item>Describe your procedure.</item>
-<item>Complete the table with your sample.
-<table id="tableone" summary="This table is presented as a template for collecting data and contains a total of 15 blank cells.">
-<tgroup cols="3">
-<tbody>
-<row>
-<entry>1. __________</entry>
-<entry>6. __________</entry>
-<entry>11. __________</entry>
-</row>
-<row>
-<entry>2. __________</entry>
-<entry>7. __________</entry>
-<entry>12. __________</entry>
-</row>
-<row>
-<entry>3. __________</entry>
-<entry>8. __________</entry>
-<entry>13. __________</entry>
-</row>
-<row>
-<entry>4. __________</entry>
-<entry>9. __________</entry>
-<entry>14. __________</entry>
-</row>
-<row>
-<entry>5. __________</entry>
-<entry>10. __________</entry>
-<entry>15. __________</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-</list>
-<para id="element-235975691"><title>A Systematic Sample</title>Pick a <emphasis>systematic sample</emphasis> of 15 restaurants.</para><list id="list-235562" list-type="enumerated"><item>Describe your procedure.</item>
-<item>Complete the table with your sample.
-<table id="tabletwo" summary="This table is presented as a template for collecting data and contains a total of 15 blank cells.">
-<tgroup cols="3">
-<tbody>
-<row>
-<entry>1. __________</entry>
-<entry>6. __________</entry>
-<entry>11. __________</entry>
-</row>
-<row>
-<entry>2. __________</entry>
-<entry>7. __________</entry>
-<entry>12. __________</entry>
-</row>
-<row>
-<entry>3. __________</entry>
-<entry>8. __________</entry>
-<entry>13. __________</entry>
-</row>
-<row>
-<entry>4. __________</entry>
-<entry>9. __________</entry>
-<entry>14. __________</entry>
-</row>
-<row>
-<entry>5. __________</entry>
-<entry>10. __________</entry>
-<entry>15. __________</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-</list>
-<para id="element-2466992"><title>A Stratified Sample</title>Pick a <emphasis>stratified sample</emphasis>, by city, of 20 restaurants. Use 25% of the restaurants from each stratum. Round to the nearest whole number.</para><list id="list-23566372" list-type="enumerated"><item>Describe your procedure.</item>
-<item>Complete the table with your sample.
-<table id="tablethree" summary="This table is presented as a template for collecting data and contains a total of 20 blank cells.">
-<tgroup cols="4">
-<tbody>
-<row>
-<entry>1. __________</entry>
-<entry>6. __________</entry>
-<entry>11. __________</entry>
-<entry>16. __________</entry>
-</row>
-<row>
-<entry>2. __________</entry>
-<entry>7. __________</entry>
-<entry>12. __________</entry>
-<entry>17. __________</entry>
-</row>
-<row>
-<entry>3. __________</entry>
-<entry>8. __________</entry>
-<entry>13. __________</entry>
-<entry>18. __________</entry>
-</row>
-<row>
-<entry>4. __________</entry>
-<entry>9. __________</entry>
-<entry>14. __________</entry>
-<entry>19. __________</entry>
-</row>
-<row>
-<entry>5. __________</entry>
-<entry>10. __________</entry>
-<entry>15. __________</entry>
-<entry>20. __________</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-</list>
-<para id="element-2359869125"><title>A Stratified Sample</title>Pick a <emphasis>stratified sample</emphasis>, by entree cost, of 21 restaurants. Use 25% of the restaurants from each stratum.  Round to the nearest whole number.</para><list id="list-235966372" list-type="enumerated"><item>Describe your procedure.</item>
-<item>Complete the table with your sample.
-<table id="tablefour" summary="This table is presented as a template for collecting data and contins a total of 21 blank cells.">
-<tgroup cols="4">
-<tbody>
-<row>
-<entry>1. __________</entry>
-<entry>6. __________</entry>
-<entry>11. __________</entry>
-<entry>16. __________</entry>
-</row>
-<row>
-<entry>2. __________</entry>
-<entry>7. __________</entry>
-<entry>12. __________</entry>
-<entry>17. __________</entry>
-</row>
-<row>
-<entry>3. __________</entry>
-<entry>8. __________</entry>
-<entry>13. __________</entry>
-<entry>18. __________</entry>
-</row>
-<row>
-<entry>4. __________</entry>
-<entry>9. __________</entry>
-<entry>14. __________</entry>
-<entry>19. __________</entry>
-</row>
-<row>
-<entry>5. __________</entry>
-<entry>10. __________</entry>
-<entry>15. __________</entry>
-<entry>20. __________</entry>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry>21. __________</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-</list>
-<para id="element-252976925"><title>A Cluster Sample</title>Pick a <emphasis>cluster sample</emphasis> of restaurants from two cities. The number of restaurants will vary.</para><list id="list-2359669372" list-type="enumerated"><item>Describe your procedure.</item>
-<item>Complete the table with your sample.
-<table id="tablefive" summary="This table is presented as a template for collecting data and contains a total of 25 blank cells.">
-<tgroup cols="5">
-<tbody>
-<row>
-<entry>1. ________</entry>
-<entry>6. ________</entry>
-<entry>11. ________</entry>
-<entry>16. ________</entry>
-<entry>21. ________</entry>
-</row>
-<row>
-<entry>2. ________</entry>
-<entry>7. ________</entry>
-<entry>12. ________</entry>
-<entry>17. ________</entry>
-<entry>22. ________</entry>
-</row>
-<row>
-<entry>3. ________</entry>
-<entry>8. ________</entry>
-<entry>13. ________</entry>
-<entry>18. ________</entry>
-<entry>23. ________</entry>
-</row>
-<row>
-<entry>4. ________</entry>
-<entry>9. ________</entry>
-<entry>14. ________</entry>
-<entry>19. ________</entry>
-<entry>24. ________</entry>
-</row>
-<row>
-<entry>5. ________</entry>
-<entry>10. ________</entry>
-<entry>15. ________</entry>
-<entry>20. ________</entry>
-<entry>25. ________</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-</list></note> </content>
+    <note id="fs-id1170942442486" class="statistics lab">
+      <title>Download Excel Labs</title>
+      <link url="https://docs.google.com/spreadsheets/d/1_NsOPmiCgqqwNLTGShOIweH4Zjg3bsl4/edit?usp=drive_link&amp;ouid=101888949105267800834&amp;rtpof=true&amp;sd=true">Excel Lab 1</link>
+      <newline/>
+      <link url="https://docs.google.com/spreadsheets/d/1IF4ks_vZjlkHkbRRlFDKnxiEbYLwz9qq/edit?usp=drive_link&amp;ouid=101888949105267800834&amp;rtpof=true&amp;sd=true">Excel Lab 2</link>
+    </note>
+
+  </content>
 
 </document>
