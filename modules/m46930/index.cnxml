@@ -63,13 +63,30 @@
       <para id="element-716">The <term id="term-00007">interquartile range</term> is a number that indicates the spread of the middle half or the middle 50% of the data. It is the difference between the third quartile (<emphasis effect="italics">Q</emphasis><sub>3</sub>) and the first quartile (<emphasis effect="italics">Q</emphasis><sub>1</sub>).</para>
 
       <para id="element-7162"><emphasis effect="italics">IQR</emphasis> = <emphasis effect="italics">Q</emphasis><sub>3</sub> – <emphasis effect="italics">Q</emphasis><sub>1</sub></para>
-      <para id="element-847">The <emphasis effect="italics">IQR</emphasis> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<emphasis effect="italics">IQR</emphasis>) below the first quartile or (1.5)(<emphasis effect="italics">IQR</emphasis>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this: 
-        <figure id="fig-00001">
+      <para id="element-847">The <emphasis effect="italics">IQR</emphasis> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<emphasis effect="italics">IQR</emphasis>) below the first quartile or (1.5)(<emphasis effect="italics">IQR</emphasis>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this: <figure id="fig-00001">
           <title>Identifying Outliers with the IQR</title>
           <media alt="temp">
             <image src="../../media/fig-ch02_IQR.png" mime-type="image/png"/>
           </media>
-          <caption>A value is an outlier if it falls below <m:math><m:mrow><m:mtext>Q</m:mtext><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mtext>IQR</m:mtext></m:mrow></m:math> or above <m:math><m:mrow><m:mtext>Q</m:mtext><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mtext>IQR</m:mtext></m:mrow></m:math></caption>
+          <caption>A value is an outlier if it falls below <m:math>
+              <m:mrow>
+                <m:mtext>Q</m:mtext>
+                <m:mn>1</m:mn>
+                <m:mo>−</m:mo>
+                <m:mn>1.5</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mtext>IQR</m:mtext>
+              </m:mrow>
+            </m:math> or above <m:math>
+              <m:mrow>
+                <m:mtext>Q</m:mtext>
+                <m:mn>3</m:mn>
+                <m:mo>+</m:mo>
+                <m:mn>1.5</m:mn>
+                <m:mo>⋅</m:mo>
+                <m:mtext>IQR</m:mtext>
+              </m:mrow>
+            </m:math></caption>
         </figure>
       </para>
       <para id="para-00022">Potential outliers always require further investigation.</para>
@@ -823,6 +840,47 @@
 
     <section id="fs-idm202752" class="formula-review">
       <title>Formula Review</title>
+      <para id="para-00023">If a median can be found between two data values <m:math>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:math> and <m:math>
+          <m:msub>
+            <m:mi>x</m:mi>
+            <m:mn>2</m:mn>
+          </m:msub>
+        </m:math>, take the average of these data values <m:math>
+          <m:mfrac>
+            <m:mrow>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+              <m:mo>+</m:mo>
+              <m:msub>
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mrow>
+            <m:mn>2</m:mn>
+          </m:mfrac>
+        </m:math></para>
+      <para id="para-00024">Interquartile range: <m:math>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mn>3</m:mn>
+          </m:msub>
+          <m:mo>-</m:mo>
+          <m:msub>
+            <m:mi>Q</m:mi>
+            <m:mn>1</m:mn>
+          </m:msub>
+        </m:math></para>
+      <para id="para-00025">A formula for potential outliers (one method): <list id="list-00005">
+          <item>Values below: <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi></m:math></item>
+          <item>Values above: <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi></m:math></item>
+        </list></para>
       <para id="fs-idp5126816"><m:math>
           <m:mrow>
             <m:mi>i</m:mi>
@@ -896,7 +954,7 @@
         <solution id="fs-idm60642032">
           <list id="fs-idp34749472" list-type="enumerated" number-style="lower-alpha">
             <item>The 40<sup>th</sup> percentile is 37 years.</item>
-            <item>The 78<sup>th</sup> percentile is 70 years.</item>
+            <item>The 78<sup>th</sup> percentile is 69.8, which rounds to 70 years.</item>
           </list>
         </solution>
       </exercise>
