@@ -484,7 +484,7 @@
 </exercise></note><example id="element-116">
 <para id="element-117">Suppose you play a game of chance in which five numbers are chosen from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. A computer randomly selects five numbers from zero to nine with replacement. You pay $2 to play and could profit $100,000 if you match all five numbers in order (you get your $2 back plus $100,000). Over the long term, what is your <emphasis>expected</emphasis> profit of playing the game?</para>
 <para id="element-481">To do this problem, set up an expected value table for the amount of money you can profit.</para>
-<para id="element-382">Let <emphasis effect="italics">X</emphasis> = the amount of money you profit. The values of <emphasis effect="italics">x</emphasis> are not 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Since you are interested in your profit (or loss), the values of <emphasis effect="italics">x</emphasis> are 100,000 dollars and −2 dollars.</para>
+<para id="element-382">Let <emphasis effect="italics">X</emphasis> = the amount of money you profit. The values of <emphasis effect="italics">x</emphasis> are not 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (because those are the digits drawn, but we are interested in the values of the random variable <emphasis effect="italics">X</emphasis> which relates to the money that could be profited). Since you are interested in your profit (or loss), the values of <emphasis effect="italics">x</emphasis> are 100,000 dollars and −2 dollars.</para>
 
 <para id="element-996">To win, you must get all five numbers correct, in order. The probability of choosing one correct number is <m:math><m:mfrac><m:mn>1</m:mn><m:mn>10</m:mn></m:mfrac></m:math> because there are ten numbers. You may choose a number more than once. The probability of choosing all five numbers correctly and in order is</para>
 
@@ -820,7 +820,7 @@
  </m:mrow>
 </m:math> = 0.7</para><para id="element-873">Generally for probability distributions, we use a calculator or a computer to calculate <emphasis effect="italics">μ</emphasis> and <emphasis effect="italics">σ</emphasis> to reduce roundoff error. For some probability distributions, there are short-cut formulas for calculating <emphasis effect="italics">μ</emphasis> and <emphasis effect="italics">σ</emphasis>.</para><example id="fs-idp4384592"><exercise id="fs-idm87291728"><problem id="fs-idm69882560">
 
-<para id="fs-idm82328592">Toss a fair, six-sided die twice. Let <emphasis effect="italics">X</emphasis> = the number of faces that show an even number. Construct a table like <link target-id="fs-idm71508016" document=""/> and calculate the mean <emphasis effect="italics">μ</emphasis> and standard deviation <emphasis effect="italics">σ</emphasis> of <emphasis effect="italics">X</emphasis>.</para></problem>
+<para id="fs-idm82328592">Toss a fair, six-sided die twice. Let <emphasis effect="italics">X</emphasis> = the number of faces that show an even number. Construct a table like <link target-id="element-226" document=""/> and calculate the mean <emphasis effect="italics">μ</emphasis> and standard deviation <emphasis effect="italics">σ</emphasis> of <emphasis effect="italics">X</emphasis>.</para></problem>
 <solution id="fs-idm46332752">
 <para id="fs-idm86008592">Tossing one fair six-sided die twice has the same sample space as tossing two fair six-sided dice. The sample space has 36 outcomes:</para>
 <table id="fs-idm21999584" summary="">
@@ -997,7 +997,7 @@
 </exercise></example>
 <note class="statistics try" id="note-00002"><label/><title>Try It</title>
   <exercise id="exer-00002"><problem id="prob-00002">
-  <para id="para-00006">Two stacks of cards are placed on a table. Each stack has cards number 1 to 8. One card from each stack is picked up. Let <emphasis effect="italics">X</emphasis> = number of cards showing an odd number. Construct a table like Table 4.11 and calculate the mean µ and standard deviation σ of <emphasis effect="italics">X</emphasis>.</para>
+  <para id="para-00006">Two stacks of cards are placed on a table. Each stack has cards number 1 to 8. One card from each stack is picked up. Let <emphasis effect="italics">X</emphasis> = number of cards showing an odd number. Construct a table like <link target-id="element-226" /> and calculate the mean µ and standard deviation σ of <emphasis effect="italics">X</emphasis>.</para>
   </problem>
    <solution id="sol-00002">
   <para id="para-00007">The sample space has 64 outcomes:</para>
@@ -1090,7 +1090,7 @@
 <entry/>
 <entry><emphasis effect="italics">x</emphasis></entry>
 <entry><emphasis effect="italics">P(x)</emphasis></entry>
-<entry><emphasis effect="italics">x</emphasis><emphasis effect="italics">(Px)</emphasis></entry>
+<entry><emphasis effect="italics">x</emphasis><emphasis effect="italics">P(x)</emphasis></entry>
 <entry>(<emphasis effect="italics">x</emphasis> – <emphasis effect="italics">μ</emphasis>)<sup>2</sup><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis>)</entry>
 </row></thead>
 <tbody>
