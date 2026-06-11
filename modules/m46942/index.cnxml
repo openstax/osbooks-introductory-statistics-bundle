@@ -501,7 +501,7 @@
       <label/><title>Try It</title>
   <exercise id="exer-00001">
         <problem id="prob-00001">
-          <para id="para-00001">A number is randomly selected between 1 to 10. Describe the sample space <emphasis effect="italics">S</emphasis>, identify each of the following events with a subset of S, and compute its probability (an outcome is the number selected).</para>
+          <para id="para-00001">A number is randomly selected between 1 and 10. Describe the sample space <emphasis effect="italics">S</emphasis>, identify each of the following events with a subset of S, and compute its probability (an outcome is the number selected).</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00001">
             <item>Event <emphasis effect="italics">F</emphasis> = the outcome is 5.</item>
             <item>Event <emphasis effect="italics">A</emphasis> = the number is more than 6.</item>
@@ -542,6 +542,8 @@
                     <m:mn>8</m:mn>
                     <m:mo>,</m:mo>
                     <m:mn>9</m:mn>
+                    <m:mo>,</m:mo>
+                    <m:mn>10</m:mn>
                   </m:mrow>
                 </m:mfenced>
                 <m:mo>,</m:mo>
@@ -551,7 +553,7 @@
                 <m:mo>)</m:mo>
                 <m:mo>=</m:mo>
                 <m:mfrac>
-                  <m:mn>3</m:mn>
+                  <m:mn>4</m:mn>
                   <m:mn>10</m:mn>
                 </m:mfrac>
               </m:math></item>
@@ -625,7 +627,7 @@
                 </m:mfenced>
                 <m:mo>,</m:mo>
                 <m:mi>P</m:mi>
-                <m:mfenced open="{" close="}">
+                <m:mfenced open="(" close=")">
                   <m:mrow>
                     <m:mi>A</m:mi>
                     <m:mo>|</m:mo>
@@ -897,7 +899,7 @@
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">T</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">C</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">M</emphasis> AND <emphasis effect="italics">T</emphasis>)</item>
-            <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">W</emphasis> and <emphasis effect="italics">C</emphasis>)</item>
+            <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">W</emphasis> AND <emphasis effect="italics">C</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">M</emphasis> OR <emphasis effect="italics">W</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">M</emphasis> OR <emphasis effect="italics">T</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">W</emphasis> OR <emphasis effect="italics">C</emphasis>)</item>
@@ -1169,7 +1171,7 @@
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">M</emphasis>|<emphasis effect="italics">L</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">L</emphasis>|<emphasis effect="italics">M</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">S</emphasis>|<emphasis effect="italics">F</emphasis>)</item>
-            <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">W</emphasis>|<emphasis effect="italics">L</emphasis>)</item>
+            <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>|<emphasis effect="italics">L</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis> OR <emphasis effect="italics">L</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">M</emphasis> AND <emphasis effect="italics">S</emphasis>)</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">F</emphasis>)</item>
@@ -1523,7 +1525,7 @@
       </exercise>
 
       <para id="fs-idm83426832"><newline/><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> You see a game at a local fair. You have to throw a dart at a color wheel. Each section on the color wheel is equal in area. <figure class="scaled-down" id="eip-idp31502288">
-          <media id="fs-idm79611488" alt="A colorful circular design featuring eight equal segments, alternately colored in shades of pink, light blue, mint green, and pale yellow, creating a vibrant, segmented wheel." display="block">
+          <media id="fs-idm79611488" alt="A color wheel divided into eight equal segments: four red, two blue, one green, and one yellow." display="block">
             <image mime-type="image/png" src="../../media/CNX_Stats_C03_M01_021.png"/>
           </media>
         </figure>
@@ -1561,7 +1563,7 @@
         </solution>
       </exercise>
 
-      <para id="eip-321"><newline/><emphasis effect="italics">Use the following information to answer the next ten exercises.</emphasis> On a baseball team, there are infielders and outfielders. Some players are great hitters, and some players are not great hitters. <newline count="1"/>Let <emphasis effect="italics">I</emphasis> = the event that a player in an infielder. <newline count="1"/>Let <emphasis effect="italics">O</emphasis> = the event that a player is an outfielder. <newline count="1"/>Let <emphasis effect="italics">H</emphasis> = the event that a player is a great hitter. <newline count="1"/>Let <emphasis effect="italics">N</emphasis> = the event that a player is not a great hitter.</para>
+      <para id="eip-321"><newline/><emphasis effect="italics">Use the following information to answer the next ten exercises.</emphasis> On a baseball team, there are infielders and outfielders. Some players are great hitters, and some players are not great hitters. <newline count="1"/>Let <emphasis effect="italics">I</emphasis> = the event that a player is an infielder. <newline count="1"/>Let <emphasis effect="italics">O</emphasis> = the event that a player is an outfielder. <newline count="1"/>Let <emphasis effect="italics">H</emphasis> = the event that a player is a great hitter. <newline count="1"/>Let <emphasis effect="italics">N</emphasis> = the event that a player is not a great hitter.</para>
       <exercise id="eip-386">
         <problem id="eip-583">
           <para id="eip-717">Write the symbols for the probability that a player is not an outfielder.</para>
@@ -1721,7 +1723,7 @@
         </problem>
         <solution id="fs-idm63594832">
           <list id="fs-idm95338544" list-type="enumerated" number-style="lower-alpha">
-            <item>Probability is never greater than 100%. Additionally, to calculate <emphasis effect="italics">P</emphasis>(Rain on Sat OR Rain on Sun) we would the formula <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <item>Probability is never greater than 100%. Additionally, to calculate <emphasis effect="italics">P</emphasis>(Rain on Sat OR Rain on Sun) we would use the formula <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
                 <m:mi>P</m:mi>
                 <m:mfenced>
                   <m:mi>A</m:mi>

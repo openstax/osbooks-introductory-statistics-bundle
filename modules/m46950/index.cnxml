@@ -33,9 +33,9 @@
           <solution id="sol-00002">
             <list id="list-00004">
               <item><emphasis>Binomial Process</emphasis>: The only 2 outcomes when taking an exam with only true or false questions are that each question is either 1) correct or 2) wrong. In this case, the “success” would be defined as a correct answer, and the “failure” would be defined as a wrong answer.</item>
-              <item><emphasis>Binomial Distribution</emphasis>: In this situation, we use the binomial distribution to predict our outcomes in this situation. By using this distribution, we can answer questions such as “what is the probability that I will get 20 or more questions right?” or “what is the expected score on an exam in this situation?” </item>
+              <item><emphasis>Binomial Distribution</emphasis>: In this situation, we use the binomial distribution to predict our outcomes. By using this distribution, we can answer questions such as “what is the probability that I will get 20 or more questions right?” or “what is the expected score on an exam in this situation?” </item>
               <item><emphasis>Binomial Experiment</emphasis>: Our example is a binomial experiment because: <list list-type="enumerated" id="list-00005">
-                  <item>he fixed number of trials would be the 30 questions.</item>
+                  <item>The fixed number of trials would be the 30 questions.</item>
                   <item>The number of correct answers is countable and therefore discrete.</item>
                   <item>Questions can be either right or wrong. Furthermore, if we truly guess each question randomly then there is a 50% chance of getting any question right or wrong (p=0.50, q=0.50).</item>
                   <item>The 30 true or false questions are independent from one another. The answer for one true or false question does not predict the answer for the next.</item>
@@ -64,7 +64,7 @@
             </m:mfrac>
           </m:mfenced>
         </m:math></title>
-      <para id="para-00010">A special function that is often used in different discrete distribution applications is called the binomial coefficient[DB1.1], denoted with several different types of notation:</para>
+      <para id="para-00010">A special function that is often used in different discrete distribution applications is called the binomial coefficient, denoted with several different types of notation:</para>
       <equation id="eq-00002"><m:math>
           <m:mi>C</m:mi>
           <m:mfenced>
@@ -257,14 +257,10 @@
       <para id="para-00022">We can see now why the combinatorial formula is also called the binomial coefficient because it reappears here again in the binomial probability function. For the binomial formula to work, the probability of a success in any one trial must be the same from trial to trial, or in other words, the outcomes of each trial must be independent. Flipping a coin is a binomial process because the probability of getting a head in one flip does not depend upon what has happened in PREVIOUS flips. </para>
       <para id="para-00023">Just like a set of data, a probability distribution function has a mean and a standard deviation that describes the data set. For the binomial distribution these are given by the formulas:</para>
       <equation id="eq-00006"><m:math>
-          <m:mo>"</m:mo>
           <m:mi>μ</m:mi>
-          <m:mo>"</m:mo>
           <m:mo>=</m:mo>
-          <m:mo>"</m:mo>
           <m:mi>n</m:mi>
           <m:mi>p</m:mi>
-          <m:mo>"</m:mo>
         </m:math></equation>
       <equation id="eq-00007"><m:math>
           <m:mi>σ</m:mi>
@@ -275,7 +271,7 @@
             <m:mi>q</m:mi>
           </m:msqrt>
         </m:math></equation>
-      <para id="para-00024">Notice that p and n are the only parameter in these equations (because <m:math>
+      <para id="para-00024">Notice that p and n are the only parameters in these equations (because <m:math>
           <m:mi>q</m:mi>
           <m:mo>=</m:mo>
           <m:mn>1</m:mn>
@@ -549,7 +545,7 @@
                     </m:mfenced>
                     <m:mo>·</m:mo>
                     <m:msup>
-                      <m:mn>25</m:mn>
+                      <m:mn>0.25</m:mn>
                       <m:msub>
                         <m:mi>x</m:mi>
                         <m:mn>0</m:mn>
@@ -557,7 +553,7 @@
                     </m:msup>
                     <m:mo>·</m:mo>
                     <m:msup>
-                      <m:mn>75</m:mn>
+                      <m:mn>0.75</m:mn>
                       <m:mrow>
                         <m:mn>5</m:mn>
                         <m:mo>-</m:mo>
@@ -1084,7 +1080,7 @@
       </exercise>
     </note>
     <section id="sect-00005"><title>Using the Binomial Distribution to Approximate Other Distributions</title>
-<para id="para-00028">In probability theory, under certain circumstances, one probability distribution can be used to approximate another. We say that one is the limiting distribution of the other. If a small number is to be drawn from a large population, even if there is no replacement, we can still use the binomial even thought this is not a binomial process. If there is no replacement it violates the independence rule of the binomial. Nevertheless, we can use the binomial to approximate a probability that is really a hypergeometric distribution if we are drawing fewer than 10 percent of the population, i.e. <m:math><m:mrow><m:mi>n</m:mi><m:mo>&lt;</m:mo><m:mn>0.10</m:mn><m:mi>N</m:mi></m:mrow></m:math> in the formula for the hypergeometric function, which will be discussed in a few sections. The rationale for this argument is that when drawing a small percentage of the population we do not alter the probability of a success from draw to draw in any meaningful way. Imagine drawing from not one deck of 52 cards but from 6 decks of cards, with 312 cards total now. The probability of drawing an ace does not change the conditional probability of what happens on a second draw in the same way it would if there were only 4 aces rather than the 24 aces, in 6 decks of cards, to draw from. This ability to use one probability distribution to estimate others will become very valuable to us later.</para>
+<para id="para-00028">In probability theory, under certain circumstances, one probability distribution can be used to approximate another. We say that one is the limiting distribution of the other. If a small number is to be drawn from a large population, even if there is no replacement, we can still use the binomial even though this is not a binomial process. If there is no replacement it violates the independence rule of the binomial. Nevertheless, we can use the binomial to approximate a probability that is really a hypergeometric distribution if we are drawing fewer than 10 percent of the population, i.e. <m:math><m:mrow><m:mi>n</m:mi><m:mo>&lt;</m:mo><m:mn>0.10</m:mn><m:mi>N</m:mi></m:mrow></m:math> in the formula for the hypergeometric function, which will be discussed in a few sections. The rationale for this argument is that when drawing a small percentage of the population we do not alter the probability of a success from draw to draw in any meaningful way. Imagine drawing from not one deck of 52 cards but from 6 decks of cards, with 312 cards total now. The probability of drawing an ace does not change the conditional probability of what happens on a second draw in the same way it would if there were only 4 aces rather than the 24 aces, in 6 decks of cards, to draw from. This ability to use one probability distribution to estimate others will become very valuable to us later.</para>
     </section>
     <section id="fs-idm225879408" class="references">
       <title>References</title>
@@ -1102,7 +1098,7 @@
       <para id="fs-idp48275616">A statistical experiment can be classified as a binomial experiment if the following conditions are met:</para>
       <list id="fs-idm159853952" list-type="enumerated">
         <item>There are a fixed number of trials, <emphasis effect="italics">n</emphasis>.</item>
-        <item>There are only two possible outcomes, called "success" and, "failure" for each trial. The letter <emphasis effect="italics">p</emphasis> denotes the probability of a success on one trial and <emphasis effect="italics">q</emphasis> denotes the probability of a failure on one trial.</item>
+        <item>There are only two possible outcomes, called "success" and "failure," for each trial. The letter <emphasis effect="italics">p</emphasis> denotes the probability of a success on one trial and <emphasis effect="italics">q</emphasis> denotes the probability of a failure on one trial.</item>
         <item>The <emphasis effect="italics">n</emphasis> trials are independent and are repeated using identical conditions.</item>
       </list>
       <para id="fs-idp5771264">The outcomes of a binomial experiment fit a binomial probability distribution. The random variable <emphasis effect="italics">X</emphasis> = the number of successes obtained in the <emphasis effect="italics">n</emphasis> independent trials. The mean of <emphasis effect="italics">X</emphasis> can be calculated using the formula <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis>, and the standard deviation is given by the formula σ = <m:math>
@@ -1371,7 +1367,7 @@
         <problem id="fs-idp24683040">
           <para id="fs-idm1731712">People visiting a hot dog stand often purchase more than one hot dog. The probability distribution for purchases of number of hot dogs per customer at a hot dog stand is given <link target-id="M04_Ch04_tbl005" document=""/>.</para>
 
-          <table id="M04_Ch04_tbl005" summary="The table lists the number of video rentals (1, 2, 3, 4, 5) and the respective probabilities.">
+          <table id="M04_Ch04_tbl005" summary="The table lists the number of hot dogs purchased per customer (0, 1, 2, 3, 4, 5) and the respective probabilities.">
             <tgroup cols="2">
               <thead>
                 <row>
@@ -1462,7 +1458,7 @@
                       <m:mn>382</m:mn>
                     </m:mrow>
                     <m:mrow>
-                      <m:mn>1043</m:mn>
+                      <m:mn>1034</m:mn>
                     </m:mrow>
                   </m:mfrac>
                 </m:mrow>
@@ -1492,7 +1488,7 @@
       </exercise>
       <exercise id="element-408">
         <problem id="id13466783">
-          <para id="element-757">What is the probability that the San Jose Sharks win at least five games in that upcoming month</para>
+          <para id="element-757">What is the probability that the San Jose Sharks win at least five games in that upcoming month?</para>
           <list id="element-388" list-type="enumerated" number-style="lower-alpha">
             <item>0.3694</item>
             <item>0.5266</item>
@@ -1839,7 +1835,7 @@
           <list id="fs-idm37302880" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch a graph of the probability distribution of <emphasis effect="italics">X</emphasis>.</item>
             <item>Using the formulas, calculate the (i) mean and (ii) standard deviation of <emphasis effect="italics">X</emphasis>.</item>
-            <item>Find the probability that more than five people in the sample are literate. Is it is more likely that three people or four people are literate.</item>
+            <item>Find the probability that more than five people in the sample are literate. Is it more likely that three people or four people are literate?</item>
           </list>
         </problem>
         <solution id="fs-idp49095408">
@@ -1880,7 +1876,7 @@
                     </m:mrow>
                   </m:math> = 1.7409</item>
               </list></item>
-            <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 5) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 5) = 1 – binomcdf(15, 0.281, 5) = 1 – 0.7754 = 0.2246 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 3) = binompdf(15, 0.281, 3) = 0.1927 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 4) = binompdf(15, 0.281, 4) = 0.2259 <newline/>It is more likely that four people are literate that three people are.</item>
+            <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 5) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 5) = 1 – binomcdf(15, 0.281, 5) = 1 – 0.7754 = 0.2246 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 3) = binompdf(15, 0.281, 3) = 0.1927 <newline/><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 4) = binompdf(15, 0.281, 4) = 0.2259 <newline/>It is more likely that four people are literate than three people are.</item>
           </list>
         </solution>
       </exercise>
@@ -1894,7 +1890,7 @@
       <term>Binomial Experiment</term>
       <meaning id="fs-idp17997392">a statistical experiment that satisfies the following three conditions: <list id="fs-idp38764304" list-type="enumerated">
           <item>There are a fixed number of trials, <emphasis effect="italics">n</emphasis>.</item>
-          <item>There are only two possible outcomes, called "success" and, "failure," for each trial. The letter <emphasis effect="italics">p</emphasis> denotes the probability of a success on one trial, and <emphasis effect="italics">q</emphasis> denotes the probability of a failure on one trial.</item>
+          <item>There are only two possible outcomes, called "success" and "failure," for each trial. The letter <emphasis effect="italics">p</emphasis> denotes the probability of a success on one trial, and <emphasis effect="italics">q</emphasis> denotes the probability of a failure on one trial.</item>
           <item>The <emphasis effect="italics">n</emphasis> trials are independent and are repeated using identical conditions.</item>
         </list>
       </meaning>

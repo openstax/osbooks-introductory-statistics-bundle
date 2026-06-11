@@ -12,7 +12,7 @@
     <para id="element-446">A <term id="term-00001">histogram</term> consists of contiguous (adjoining) boxes. It has both a horizontal axis and a vertical axis. The horizontal axis is labeled with what the data represents (for instance, distance from your home to school). The vertical axis is labeled either <term id="term-00002">frequency</term> or <term id="term-00003">relative frequency</term> (or percent frequency or probability). The graph will have the same shape with either label. The histogram (like the stemplot) can give you the shape of the data, the center, and the spread of the data.</para>
     <para id="para-00004">Here is an example of a histogram of the heights (in inches) for 30 children in a second grade class:</para>
     <figure class="scaled-down" id="fig-00001">
-      <media alt="Histogram showing children’s heights grouped into 2-inch intervals from about 60 to 76 inches. The distribution peaks between 66 and 68 inches, with fewer children at the shortest and tallest height ranges.">
+      <media alt="Histogram showing the heights of 30 children grouped into intervals from about 45 to 52.5 inches. The distribution peaks near the middle of the range, with fewer children at the shortest and tallest height ranges.">
         <image src="../../media/fig-30-children-heights-01.png" mime-type="image/png"/>
       </media>
     </figure>
@@ -64,8 +64,8 @@
         <colspec colnum="4" colname="c4"/>
         <thead>
           <row>
-            <entry>Upper</entry>
             <entry>Lower</entry>
+            <entry>Upper</entry>
             <entry>Frequency</entry>
             <entry>Relative Frequency (f/n)</entry>
           </row>
@@ -116,7 +116,7 @@
       <list list-type="enumerated" id="list-00002">
         <item><emphasis>Find the minimum and maximum values within the data set</emphasis>. This is essential information to set up any histogram. </item>
         <item><emphasis>Choose a starting point and ending point for the histogram that goes slightly beyond the data set</emphasis>. In general, these data points should be expanded one decimal point more than the given data set has. A small amount should be subtracted from the minimum value, and a small amount should be added to the maximum value. <list id="list-00003">
-            <item>Example 1: All of that data are given as whole numbers. If the minimum value is <m:math>
+            <item>Example 1: All of the data are given as whole numbers. If the minimum value is <m:math>
                 <m:mn>60</m:mn>
               </m:math> then the starting value should be <m:math>
                 <m:mrow>
@@ -145,7 +145,7 @@
                   <m:mo>−</m:mo>
                   <m:mn>0.005</m:mn>
                   <m:mo>=</m:mo>
-                  <m:mn>19.495</m:mn>
+                  <m:mn>14.495</m:mn>
                 </m:mrow>
               </m:math>. If the maximum value is <m:math>
                 <m:mn>21.05</m:mn>
@@ -177,17 +177,17 @@
               </m:mrow>
             </m:mrow>
           </m:math>.</item>
-        <item><emphasis>Decide the number bars or intervals needed for the histogram</emphasis>. These <term id="term-00005">intervals</term> can also be called <term id="term-00008">classes</term> or <term id="term-00009">bins</term>, and they represent the data. Many histograms consist of anywhere from five to 15 bars or classes for clarity. The number of intervals chosen will depend on how the data is spread out, and this value may need to be adjusted to more accurately reflect the data. The number of bars needs to be chosen. For now, refer to this number as <m:math>
+        <item><emphasis>Decide the number of bars or intervals needed for the histogram</emphasis>. These <term id="term-00005">intervals</term> can also be called <term id="term-00008">classes</term> or <term id="term-00009">bins</term>, and they represent the data. Many histograms consist of anywhere from five to 15 bars or classes for clarity. The number of intervals chosen will depend on how the data is spread out, and this value may need to be adjusted to more accurately reflect the data. The number of bars needs to be chosen. For now, refer to this number as <m:math>
             <m:mtext>k</m:mtext>
           </m:math>.</item>
         <item><emphasis>Divide the range <m:math>
               <m:mrow>
                 <m:mo>(</m:mo>
                 <m:mrow>
-                  <m:mtext>starting value</m:mtext>
+                  <m:mtext>ending value</m:mtext>
                   <m:mo>⁢</m:mo>
                   <m:mi>–</m:mi>
-                  <m:mtext>ending value</m:mtext>
+                  <m:mtext>starting value</m:mtext>
                 </m:mrow>
                 <m:mo>)</m:mo>
               </m:mrow>
@@ -231,8 +231,8 @@
               <m:mn>14.1</m:mn>
             </m:mrow>
           </m:math>.</item>
-        <item><emphasis>Decide the number bars or intervals needed for the histogram</emphasis>. For this example, we will choose eight bars. This is a choice by the researcher based on the spread of the data. Let k=8.</item>
-        <item><emphasis>Divide the range (starting value – ending value) by the (k – 1) and round to an appropriate interval width</emphasis>. In this example, we want 8 intervals so we will have 7 gaps (or dividers) between the intervals. We compute that <m:math>
+        <item><emphasis>Decide the number of bars or intervals needed for the histogram</emphasis>. For this example, we will choose eight bars. This is a choice by the researcher based on the spread of the data. Let k=8.</item>
+        <item><emphasis>Divide the range (ending value – starting value) by the (k – 1) and round to an appropriate interval width</emphasis>. In this example, we want 8 intervals so we will have 7 gaps (or dividers) between the intervals. We compute that <m:math>
             <m:mrow>
               <m:mn>14.1</m:mn>
               <m:mo>÷</m:mo>
@@ -258,9 +258,9 @@
               <m:mtd>
                 <m:mn>14.1</m:mn>
                 <m:mo>÷</m:mo>
-                <m:mn>8</m:mn>
+                <m:mn>7</m:mn>
                 <m:mo>=</m:mo>
-                <m:mn>1.76</m:mn>
+                <m:mn>2.014</m:mn>
               </m:mtd>
             </m:mtr>
           </m:mtable>
@@ -324,13 +324,13 @@
             <row>
               <entry>65.95</entry>
               <entry>67.95</entry>
-              <entry>41</entry>
+              <entry>40</entry>
               <entry>0.40</entry>
             </row>
             <row>
               <entry>67.95</entry>
               <entry>69.95</entry>
-              <entry>18</entry>
+              <entry>17</entry>
               <entry>0.18</entry>
             </row>
             <row>
@@ -404,14 +404,14 @@
               <entry>65.95</entry>
               <entry>67.95</entry>
               <entry>66.95</entry>
-              <entry>41</entry>
+              <entry>40</entry>
               <entry>0.40</entry>
             </row>
             <row>
               <entry>67.95</entry>
               <entry>69.95</entry>
               <entry>68.95</entry>
-              <entry>18</entry>
+              <entry>17</entry>
               <entry>0.18</entry>
             </row>
             <row>
@@ -922,10 +922,6 @@
               </tgroup>
             </table>
           </problem>
-          <solution id="sol-00001">
-            <para id="para-00002"><emphasis effect="bold">Calculus Test Scores v Algebra Test Scores</emphasis></para>
-            <para id="para-00003">Image Insert</para>
-          </solution>
         </exercise>
       </note>
     </section>
@@ -942,7 +938,7 @@
             <table id="fs-idp49086512" summary="">
               <tgroup cols="8">
                 <colspec colnum="1" colname="c1" align="center"/>
-                <colspec colnum="1" colname="c2"/>
+                <colspec colnum="2" colname="c2"/>
                 <colspec colnum="3" colname="c3"/>
                 <colspec colnum="4" colname="c4"/>
                 <colspec colnum="5" colname="c5"/>
@@ -1201,7 +1197,7 @@
             <para id="fs-idp25953376">The following table is a portion of a data set from www.worldbank.org. Use the table to construct a time series graph for CO<sub>2</sub> emissions for the United States.</para>
 
             <table id="fs-idp17543168" summary="">
-              <tgroup cols="5" align="center">
+              <tgroup cols="4" align="center">
                 <colspec colnum="1" colname="c1"/>
                 <colspec colnum="2" colname="c2"/>
                 <colspec colnum="3" colname="c3"/>
@@ -1285,7 +1281,7 @@
         <para id="eip-961">Histograms can be very helpful in understanding the data. Properly presented, they can be a quick visual way to present probabilities of different categories by the simple visual of comparing relative areas in each category. Here the error, purposeful or not, is to vary the width of the categories. This of course makes comparison to the other categories impossible. It does embellish the importance of the category with the expanded width because it has a greater area, inappropriately, and thus visually "says" that that category has a higher probability of occurrence. </para>
       </section>
       <section id="sect-00004">
-        <title>: Doctored Time Series</title>
+        <title>Doctored Time Series</title>
         <para id="eip-670">Time series graphs perhaps are the most abused. A plot of some variable across time should never be presented on axes that change part way across the page either in the vertical or horizontal dimension. Perhaps the time frame is changed from years to months. Perhaps this is to save space or because monthly data was not available for early years. In either case this confounds the presentation and destroys any value of the graph. If this is not done to purposefully confuse the reader, then it certainly is either lazy or sloppy work.</para>
         <para id="eip-123">Changing the units of measurement of the axis can smooth out a drop or accentuate one. If you want to show large changes, then measure the variable in small units (pennies rather than thousands of dollars). And of course to continue the fraud, be sure that the axis does not begin at the origin. If it begins at the origin, then it becomes apparent that the axis has been manipulated.</para>
         <para id="eip-958">Perhaps you have a client that is concerned with the volatility of the portfolio you manage. An easy way to present the data is to use long time periods on the time series graph. Use months or better, quarters rather than daily or weekly data. If that doesn't get the volatility down then spread the time axis relative to the rate of return or portfolio valuation axis. If you want to show "quick" dramatic growth, then shrink the time axis. Any positive growth will show visually "high" growth rates. Do note that if the growth is negative then this trick will show the portfolio is collapsing at a dramatic rate.</para>
@@ -1308,7 +1304,7 @@
     </section>
     <section id="fs-idp3035824" class="summary">
       <title>Chapter Review</title>
-      <para id="fs-idp16958096">A <emphasis>histogram</emphasis> is a graphic version of a frequency distribution. The graph consists of bars of equal width drawn adjacent to each other. The horizontal scale represents classes of quantitative data values and the vertical scale represents frequencies. The heights of the bars correspond to frequency values. Histograms are typically used for large, continuous, quantitative data sets. A frequency polygon can also be used when graphing large data sets with data points that repeat. The data usually goes on <emphasis effect="italics">y</emphasis>-axis with the frequency being graphed on the <emphasis effect="italics">x</emphasis>-axis. Time series graphs can be helpful when looking at large amounts of data for one variable over a period of time.</para>
+      <para id="fs-idp16958096">A <emphasis>histogram</emphasis> is a graphic version of a frequency distribution. The graph consists of bars of equal width drawn adjacent to each other. The horizontal scale represents classes of quantitative data values and the vertical scale represents frequencies. The heights of the bars correspond to frequency values. Histograms are typically used for large, continuous, quantitative data sets. A frequency polygon can also be used when graphing large data sets with data points that repeat. The data values usually go on the <emphasis effect="italics">x</emphasis>-axis with the frequency being graphed on the <emphasis effect="italics">y</emphasis>-axis. Time series graphs can be helpful when looking at large amounts of data for one variable over a period of time.</para>
     </section>
 
     <section id="fs-idm3046592" class="practice">
@@ -2499,7 +2495,7 @@
       <exercise id="fs-idp13768528">
         <problem id="fs-idm31496800">
           <para id="fs-idm31496544">Following are the rates of unmarried adults for the 50 U.S. states and Washington, DC.</para>
-          <table id="Obesity_Rates_2008" summary="The tables represents United States states and Obesity Rates. The first column and third columns list the names of the states and the second and fourth columns list Obesity Rates.">
+          <table id="Obesity_Rates_2008" summary="The table represents U.S. states and the percentages of adults who were never married. The first, third, and fifth columns list the names of the states, and the second, fourth, and sixth columns list the percentages of never-married adults.">
             <tgroup cols="6">
               <thead>
                 <row>
@@ -2660,7 +2656,7 @@
     </section>
     <section class="formula-review" id="sect-00005">
 <title>Formula Review</title>
-<para id="para-00009">Relative frequency: <m:math><m:mi>R</m:mi><m:mi>F</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>/</m:mo><m:mi>n</m:mi></m:math> where <m:math><m:mi>f</m:mi><m:mo>=</m:mo></m:math> frequency of a data value an <m:math><m:mi>n</m:mi></m:math> is the total number of data values</para>
+<para id="para-00009">Relative frequency: <m:math><m:mi>R</m:mi><m:mi>F</m:mi><m:mo>=</m:mo><m:mi>f</m:mi><m:mo>/</m:mo><m:mi>n</m:mi></m:math> where <m:math><m:mi>f</m:mi><m:mo>=</m:mo></m:math> frequency of a data value and <m:math><m:mi>n</m:mi></m:math> is the total number of data values</para>
 </section>
   </content>
 
