@@ -5,7 +5,7 @@
 _Introductory Statistics 3e and Introductory Business Statistics 2e_ are textbooks published by [OpenStax](https://openstax.org/), a non profit organization that is part of [Rice University](https://www.rice.edu/).
 
 To view these books online and view contributors, please visit:
-- _Introductory Statistics 2e_ [online](https://openstax.org/details/books/introductory-statistics-2e)
+- _Introductory Statistics 3e_ [online](https://openstax.org/details/books/introductory-statistics-3e)
 - _Introductory Business Statistics 2e_ [online](https://openstax.org/details/books/introductory-business-statistics-2e)
 
 ## License
