@@ -8,13 +8,13 @@
   </metadata>
 
   <content>
-    <para id="para-00001">Suppose you are drawing 5 cards from a standard 52-deck of cards. Within this drawing, you are curious as to the following situation: what is the probability you could draw 2 aces and 3 cards of other face value? Such questions can often become important to answer in card games. The hypergeometric distribution answers questions such as this. </para>
+    <para id="para-00001">Suppose you are drawing 5 cards from a standard 52-card deck. Within this drawing, you are curious as to the following situation: what is the probability you could draw 2 aces and 3 cards of other face value? Such questions can often become important to answer in card games. The hypergeometric distribution answers questions such as this. </para>
     <section id="sect-00001">
       <title>Key Terms</title>
       <para id="para-00002">There are 2 key terms we must understand when discussing the hypergeometric distribution:</para>
       <list id="list-00001">
         <item><term id="term-00001">Hypergeometric Distribution</term>: A hypergeometric distribution refers to a certain type of discrete probability distribution that can predict the outcome of a hypergeometric experiment. </item>
-        <item>Hypergeometric Experiment[DB1.1]: A hypergeometric experiment is a statistical experiment. The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. There are five characteristics of a hypergeometric experiment: <list id="element-999" list-type="enumerated">
+        <item>Hypergeometric Experiment: A hypergeometric experiment is a statistical experiment. The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. There are five characteristics of a hypergeometric experiment: <list id="element-999" list-type="enumerated">
             <item>You take samples from <emphasis>two</emphasis> groups.</item>
             <item>You are concerned with a group of interest, called the first group.</item>
             <item>You sample <emphasis>without replacement</emphasis> from the combined groups. For example, you want to choose a softball team from a combined group of 11 men and 13 women. The team consists of ten players.</item>
@@ -132,8 +132,8 @@
           </m:mfenced>
         </m:mfrac>
         <m:mo>=</m:mo>
-        <m:mn>.0399</m:mn>
-      </m:math><newline/> This solution is really just the probability distribution known as the Hypergeometric. The generalized formula is:<newline/>
+        <m:mn>0.0399</m:mn>
+      </m:math><newline/> This solution is really just the probability distribution known as the hypergeometric distribution. The generalized formula is:<newline/>
     <m:math>
         <m:mi>h</m:mi>
         <m:mo>(</m:mo>
@@ -170,7 +170,11 @@
             </m:mfrac>
           </m:mfenced>
         </m:mfrac>
-      </m:math><newline/> where x = the number we are interested in coming from the group with A objects. </para>
+      </m:math><newline/> where <m:math>
+        <m:mi>x</m:mi>
+      </m:math> = the number we are interested in coming from the group with <m:math>
+        <m:mi>A</m:mi>
+      </m:math> objects.</para>
     <para id="para-00006"><m:math>
         <m:mi>h</m:mi>
         <m:mfenced>
@@ -185,7 +189,7 @@
       </m:math> successes (aces in this case) are in a population that contains <m:math>
         <m:mi>N</m:mi>
       </m:math> elements. The hypergeometric distribution is an example of a discrete probability distribution because there is no possibility of partial success, that is, there can be no poker hands with 2 1/2 aces. Said another way, a discrete random variable has to be a whole, or counting, number only. This probability distribution works in cases where the probability of a success changes with each draw. Another way of saying this is that the events are NOT independent. In using a deck of cards, we are sampling WITHOUT replacement. If we put each card back after it was drawn then the hypergeometric distribution would be an inappropriate PDF.</para>
-    <para id="para-00007">For the hypergeometric to work, the population must be dividable into two and only two independent subsets (aces and non-aces in our example). The random variable <m:math>
+    <para id="para-00007">For the hypergeometric to work, the population must be divisible into two and only two mutually exclusive subsets (aces and non-aces in our example). The random variable <m:math>
         <m:mi>X</m:mi>
       </m:math> = the number of items from the group of interest.</para>
     <section id="sect-00002">
@@ -248,12 +252,12 @@
           <m:mo>=</m:mo>
           <m:mn>0.3846</m:mn>
         </m:math></equation>
-      <para id="para-00012">Meaning you would expect less than 1 ace in a draw of 5 cards from a standard 52-deck of cards. </para>
+      <para id="para-00012">This means you would expect fewer than one ace in a draw of 5 cards from a standard 52-card deck.</para>
     </section>
     <example id="element-84">
       <exercise id="fs-idp41303504">
         <problem id="fs-idm310432">
-          <para id="para-00013">A candy dish contains 30 jelly beans and 20 gumdrops. Ten candies are picked at random. What is the probability that 5 of the 10 are gumdrops? The two groups are jelly beans and gumdrops. Since the probability question asks for the probability of picking gumdrops, the group of interest (first group A in the formula) is gumdrops. The size of the group of interest (first group) is 20. The size of the second group is 30. The size of the sample is 10 (jelly beans or gumdrops). Let X = the number of gumdrops in the sample of 10. X takes on the values x = 0, 1, 2, ..., 10. <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+          <para id="para-00013">A candy dish contains 30 jelly beans and 20 gumdrops. Ten candies are picked at random. What is the probability that 5 of the 10 are gumdrops? The two groups are jelly beans and gumdrops. Since the probability question asks for the probability of picking gumdrops, the group of interest (first group <emphasis effect="italics">A</emphasis> in the formula) is gumdrops. The size of the group of interest (first group) is 20. The size of the second group is 30. The size of the sample is 10 (jelly beans or gumdrops). Let <emphasis effect="italics">X</emphasis> = the number of gumdrops in the sample of 10. <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2, ..., 10. <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
               <item>What is the probability statement written mathematically? </item>
               <item>What is the hypergeometric probability distribution function written out to solve this problem? </item>
               <item>What is the probability of drawing 5 gumdrops in 10 picks from the dish?</item>
@@ -665,16 +669,62 @@
 
       <para id="element-875">Let <emphasis effect="italics">X</emphasis> = the number of men on the committee of four. The men are the group of interest (first group).</para>
 
-      <para id="element-876"><emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, 4, where <emphasis effect="italics">A = 6</emphasis>, <emphasis effect="italics">N = 11</emphasis>, and <emphasis effect="italics">n = 4</emphasis>. <emphasis effect="italics">X ~ H</emphasis>(6, 11, 4)</para>
+      <para id="element-876"><emphasis effect="italics">X</emphasis> takes on the values 0, 1, 2, 3, 4, where <emphasis effect="italics">A = 6</emphasis>, <emphasis effect="italics">N = 11</emphasis>, and <emphasis effect="italics">n = 4</emphasis>. <m:math>
+          <m:mi>X</m:mi>
+          <m:mo>~</m:mo>
+          <m:mi>H</m:mi>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>6</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>11</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>4</m:mn>
+            </m:mrow>
+          </m:mfenced>
+        </m:math></para>
 
-      <para id="element-877">Find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 2). <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 2) = 0.4545 (calculator or computer)</para>
+      <para id="element-877">Find <m:math>
+          <m:mrow>
+            <m:mi>P</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>)</m:mo>
+          </m:mrow>
+        </m:math>. <m:math>
+          <m:mrow>
+            <m:mi>P</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2</m:mn>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mn>0.4545</m:mn>
+          </m:mrow>
+        </m:math> (calculator or computer)</para>
       <note id="id43780917">
         <label/><title>NOTE</title>
 <para id="fs-idm9108464">Currently, the TI-83+ and TI-84 do not have hypergeometric probability functions. There are a number of computer packages, including Microsoft Excel, that do.</para>
       </note>
       <para id="element-879">The probability that there are two men on the committee is about 0.45.</para>
 
-      <para id="element-136">The graph of <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">H</emphasis>(6, 11, 4) is:</para>
+      <para id="element-136">The graph of <m:math>
+          <m:mi>X</m:mi>
+          <m:mo>~</m:mo>
+          <m:mi>H</m:mi>
+          <m:mfenced>
+            <m:mrow>
+              <m:mn>6</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>11</m:mn>
+              <m:mo>,</m:mo>
+              <m:mn>4</m:mn>
+            </m:mrow>
+          </m:mfenced>
+        </m:math> is:</para>
       <figure class="scaled-down" id="fs-idp36734864">
         <media id="id43780967" display="block" alt="This graph shows a hypergeometric probability distribution. It has five bars that are slightly normally distributed. The x-axis shows values from 0 to 4 in increments of 1, representing the number of men on the four-person committee. The y-axis ranges from 0 to 0.5 in increments of 0.1.">
           <image src="../../media/fig-ch04_07_01.png" mime-type="image/png"/>
@@ -682,7 +732,13 @@
       </figure>
       <para id="element-704">The <emphasis effect="italics">y</emphasis>-axis contains the probability of <emphasis effect="italics">X</emphasis>, where <emphasis effect="italics">X</emphasis> = the number of men on the committee.</para>
 
-      <para id="element-369">You would expect <emphasis effect="italics">μ</emphasis> = 2.18 (about two) men on the committee.</para>
+      <para id="element-369">You would expect <m:math>
+          <m:mrow>
+            <m:mi>μ</m:mi>
+            <m:mo>=</m:mo>
+            <m:mn>2.18</m:mn>
+          </m:mrow>
+        </m:math> (about two) men on the committee.</para>
 
       <para id="element-702">The formula for the mean is <m:math>
           <m:mrow>
@@ -797,7 +853,7 @@
     <section id="fs-idm29445280" class="formula-review">
       <title>Formula Review</title>
       <para id="fs-idm47471792"><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">H</emphasis>(<emphasis effect="italics">r</emphasis>, <emphasis effect="italics">b</emphasis>, <emphasis effect="italics">n</emphasis>) means that the discrete random variable <emphasis effect="italics">X</emphasis> has a hypergeometric probability distribution with <emphasis effect="italics">r</emphasis> = the size of the group of interest (first group), <emphasis effect="italics">b</emphasis> = the size of the second group, and <emphasis effect="italics">n</emphasis> = the size of the chosen sample.</para>
-      <para id="fs-idp74346496"><emphasis effect="italics">X</emphasis> = the number of items from the group of interest that are in the chosen sample, and <emphasis effect="italics">X</emphasis> may take on the values <emphasis effect="italics">x</emphasis> = 0, 1, ..., up to the size of the group of interest. (The minimum value for <emphasis effect="italics">X</emphasis> may be larger than zero in some instances.)</para>
+      <para id="fs-idp74346496"><emphasis effect="italics">X</emphasis> = the number of items from the group of interest that are in the chosen sample, and <emphasis effect="italics">X</emphasis> may take on the values <emphasis effect="italics">x</emphasis> = 0, 1, ..., up to the sample size or the size of the group of interest, whichever is smaller. (The minimum value for <emphasis effect="italics">X</emphasis> may be larger than zero in some instances.)</para>
       <para id="fs-idm57506624"><emphasis effect="italics">n</emphasis> ≤ <emphasis effect="italics">r</emphasis> + <emphasis effect="italics">b</emphasis></para>
       <para id="fs-idm63887360">The mean of <emphasis effect="italics">X</emphasis> is given by the formula <emphasis effect="italics">μ</emphasis> = <m:math>
           <m:mrow>
@@ -814,7 +870,7 @@
             </m:mfrac>
 
           </m:mrow>
-        </m:math> and the standard deviation is = <m:math>
+        </m:math> and the standard deviation is <emphasis effect="italics">σ</emphasis> = <m:math>
           <m:mrow>
             <m:msqrt>
               <m:mrow>
@@ -963,7 +1019,7 @@
     </section>
 
     <section id="fs-idm62349392" class="free-response">
-      <title>HOMEWORK</title>
+      <title>Homework</title>
 
       <exercise id="element-194">
         <problem id="id5899812">
@@ -979,7 +1035,7 @@
         <!-- <solution id="fs-idp3312224">
 <list id="fs-idp10897328" list-type="enumerated" number-style="lower-alpha">
 <item><emphasis effect="italics">X</emphasis> = the number of Shotokan Karate students in the first demonstration</item>
-<item>0, 1, 2, 3, 4, 5, 6, 7</item>
+<item>2, 3, 4, 5, 6, 7</item>
 <item><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">H</emphasis>(7, 6, 8)</item>
 <item>4.31</item>
 </list></solution> -->
@@ -1056,7 +1112,7 @@
         <solution id="eip-idp145850256">
           <list id="eip-idp20489040" list-type="enumerated" number-style="lower-alpha">
             <item><emphasis effect="italics">X</emphasis> = the number of Patriots picked</item>
-            <item>0, 1, 2, 3, 4</item>
+            <item>1, 2, 3, 4</item>
             <item><emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">H</emphasis>(4, 8, 9)</item>
             <item>Without replacement</item>
           </list>
@@ -1302,7 +1358,7 @@
    <m:mrow>
     <m:mfrac>
      <m:mrow>
-      <m:mtext>39(13)13(39&#160;+&#160;13</m:mtext><m:mo>&#8211;</m:mo><m:mtext>13)</m:mtext>
+      <m:mtext>39(13)13(39&#160;+&#160;13</m:mtext><m:mo>&#8722;</m:mo><m:mtext>13)</m:mtext>
      </m:mrow>
      <m:mrow>
       <m:msup>
@@ -1311,7 +1367,7 @@
        </m:mrow>
        <m:mn>2</m:mn>
       </m:msup>
-      <m:mtext>(39&#160;+&#160;13</m:mtext><m:mo>&#8211;</m:mo><m:mtext>1)</m:mtext>
+      <m:mtext>(39&#160;+&#160;13</m:mtext><m:mo>&#8722;</m:mo><m:mtext>1)</m:mtext>
      </m:mrow>
     </m:mfrac>
 
@@ -1329,7 +1385,7 @@
 <item><emphasis effect="italics">X</emphasis> = the number of cards that are hearts; <emphasis effect="italics">x</emphasis> = 0, 1, 2, 3, &#8230; , 13</item>
 <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 0)</item>
 </list><note id="eip-idp114013328" ><label/><title>NOTE</title>
-<para id="fs-idm27875232">If you have access to it, use Microsoft Excel HYPERGEOM.DIST function with the following syntax: = HYPGEOM.DIST(x, sample size, size of group of interest, size of total population, FALSE)</para>
+<para id="fs-idm27875232">If you have access to it, use Microsoft Excel HYPGEOM.DIST function with the following syntax: = HYPGEOM.DIST(x, sample size, size of group of interest, size of total population, FALSE)</para>
 </note></solution> -->
       </exercise>
     </section>
