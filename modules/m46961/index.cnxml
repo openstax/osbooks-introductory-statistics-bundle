@@ -8,12 +8,12 @@
   </metadata>
 
   <content>
-    <para id="para-00003">Another useful probability distribution is the <term id="term-00001">Poisson Distribution</term>, or waiting time distribution. This distribution is used to determine how many checkout clerks are needed to keep the waiting time in line to specified levels, how may telephone lines are needed to keep the system from overloading, and many other practical applications. A modification of the Poisson, the Pascal, invented nearly two centuries ago, is used today by telecommunications companies worldwide for load factors, satellite hookup levels and Internet capacity problems. The distribution gets its name from Simeon Poisson who presented it in 1837 as an extension of the binomial distribution which we will see can be estimated with the Poisson.</para>
+    <para id="para-00003">Another useful probability distribution is the <term id="term-00001">Poisson distribution</term>, or waiting time distribution. This distribution is used to determine how many checkout clerks are needed to keep the waiting time in line to specified levels, how many telephone lines are needed to keep the system from overloading, and many other practical applications. A modification of the Poisson, the Pascal, invented nearly two centuries ago, is used today by telecommunications companies worldwide for load factors, satellite hookup levels and Internet capacity problems. The distribution gets its name from Simeon Poisson who presented it in 1837 as an extension of the binomial distribution which we will see can be estimated with the Poisson.</para>
     <section id="sect-00001">
       <title>Key Terms</title>
-      <para id="para-00004">There are 2 key terms we must understand when discussing the Poisson distribution:</para>
+      <para id="para-00004">There are two key terms we must understand when discussing the Poisson distribution:</para>
       <list id="list-00001">
-        <item><term id="term-00003">Poisson Distribution</term>: The Poisson distribution refers to a certain type of discrete probability distribution that can predict the outcomes of a Poisson experiment. </item>
+        <item><term id="term-00003">Poisson distribution</term>: The Poisson distribution refers to a certain type of discrete probability distribution that can predict the outcomes of a Poisson experiment. </item>
         <item><term id="term-00004">Poisson Experiment</term>: A Poisson experiment is a statistical experiment where the outcomes fit a Poisson distribution. There are two main characteristics of a Poisson experiment:<list list-type="enumerated" id="list-00002">
             <item>The Poisson probability distribution gives the probability of a number of events occurring in a fixed interval of time or space if these events happen with a known average rate.</item>
             <item>The events are independent of the time since the last event. For example, a book editor might be interested in the number of words spelled incorrectly in a particular book. It might be that, on the average, there are five words spelled incorrectly in 100 pages. The interval is the 100 pages and it is assumed that there is no relationship between when misspellings occur.</item>
@@ -78,7 +78,7 @@
       </exercise>
     </note>
     <example id="element-774">
-      <para id="element-234">You notice that a news reporter says “uh,” on average, two times per broadcast. What is the probability that the news reporter says “uh” more than two times per broadcast.</para>
+      <para id="element-234">You notice that a news reporter says “uh,” on average, two times per broadcast. What is the probability that the news reporter says “uh” more than two times per broadcast?</para>
 
       <para id="element-235">This is a Poisson problem because you are interested in knowing the number of times the news reporter says “uh” during a broadcast.<newline count="2"/></para>
       <exercise id="element-895">
@@ -176,7 +176,7 @@
           <m:mi>μ</m:mi>
         </m:math> is the expected number of successes based upon historical data, <m:math>
           <m:mi>e</m:mi>
-        </m:math> is the natural logarithm approximately equal to <m:math>
+        </m:math> is the base of the natural logarithm, approximately equal to <m:math>
           <m:mn>2.718</m:mn>
         </m:math>, and <m:math>
           <m:mi>x</m:mi>
@@ -249,16 +249,16 @@
         </m:math>(6) = 0.75 calls in 15 minutes, on average. So, <emphasis effect="italics">μ</emphasis> = 0.75 for this problem.</para>
       <note id="fs-idm23681840" class="statistics calculator"><label/>
 <list id="fs-idp1265216" list-type="bulleted">
-          <item>Press 1 then the "–" key and then press <code>2<sup>nd</sup> DISTR</code>.</item>
+          <item>Press 1 then the “−” key and then press <code>2<sup>nd</sup> DISTR</code>.</item>
           <item>Arrow down to <code>poissoncdf</code>. Press <code>ENTER</code>.</item>
           <item>Enter (0.75,1).</item>
           <item>The result is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 1) = 0.1734.</item>
         </list><note id="eip-706"><label/><title>NOTE</title>
 <para id="fs-idm154468640">The TI calculators use <emphasis effect="italics">λ</emphasis> (lambda) for the mean.</para>
         </note></note>
-      <para id="para-00001">The Poisson distribution is discrete, and thus > 1 includes all whole numbers through infinity. The solution is to subtract the probability less than 1 thus <m:math>
+      <para id="para-00001">The Poisson distribution is discrete, and thus > 1 includes all whole numbers through infinity. The solution is to subtract the probability that <emphasis effect="italics">x</emphasis> is less than or equal to 1, thus <m:math>
           <m:mn>1</m:mn>
-          <m:mo>-</m:mo>
+          <m:mo>−</m:mo>
           <m:mo>[</m:mo>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
@@ -290,7 +290,7 @@
               <m:msup>
                 <m:mi>e</m:mi>
                 <m:mrow>
-                  <m:mo>-</m:mo>
+                  <m:mo>−</m:mo>
                   <m:mi>μ</m:mi>
                 </m:mrow>
               </m:msup>
@@ -310,7 +310,7 @@
           <m:mo>)</m:mo>
           <m:mo>=</m:mo>
           <m:mn>1</m:mn>
-          <m:mo>-</m:mo>
+          <m:mo>−</m:mo>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
           <m:mi>x</m:mi>
@@ -320,7 +320,7 @@
           <m:mo> </m:mo>
           <m:mo>=</m:mo>
           <m:mn>1</m:mn>
-          <m:mo>-</m:mo>
+          <m:mo>−</m:mo>
           <m:mo>[</m:mo>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
@@ -341,7 +341,7 @@
       <equation class="unnumbered" id="eq-00003"><m:math>
           <m:mo>=</m:mo>
           <m:mn>1</m:mn>
-          <m:mo>-</m:mo>
+          <m:mo>−</m:mo>
           <m:mo>[</m:mo>
           <m:mfrac>
             <m:mrow>
@@ -354,7 +354,7 @@
               <m:msup>
                 <m:mi>e</m:mi>
                 <m:mrow>
-                  <m:mo>-</m:mo>
+                  <m:mo>−</m:mo>
                   <m:mn>0</m:mn>
                   <m:mo>.</m:mo>
                   <m:mn>75</m:mn>
@@ -378,7 +378,7 @@
               <m:msup>
                 <m:mi>e</m:mi>
                 <m:mrow>
-                  <m:mo>-</m:mo>
+                  <m:mo>−</m:mo>
                   <m:mn>0</m:mn>
                   <m:mo>.</m:mo>
                   <m:mn>75</m:mn>
@@ -395,7 +395,7 @@
       <equation class="unnumbered" id="eq-00004"><m:math>
           <m:mo>=</m:mo>
           <m:mn>1</m:mn>
-          <m:mo>-</m:mo>
+          <m:mo>−</m:mo>
           <m:mo>[</m:mo>
           <m:mfrac>
             <m:mrow>
@@ -431,7 +431,7 @@
       <equation class="unnumbered" id="eq-00005"><m:math>
           <m:mo>=</m:mo>
           <m:mn>1</m:mn>
-          <m:mo>-</m:mo>
+          <m:mo>−</m:mo>
           <m:mo>[</m:mo>
           <m:mn>0</m:mn>
           <m:mo>.</m:mo>
@@ -466,7 +466,7 @@
     </note>
     <example id="fs-idm98662832">
 
-      <para id="fs-idm122953024">According to Baydin, an email management company, an email user gets, on average, 147 emails per day. Let <emphasis effect="italics">X</emphasis> = the number of emails an email user receives per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2 …. The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(147). The mean is 147 emails.</para>
+      <para id="fs-idm122953024">According to Baydin, an email management company, an email user gets, on average, 147 emails per day. Let <emphasis effect="italics">X</emphasis> = the number of emails an email user receives per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2, ... The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(147). The mean is 147 emails.</para>
 
       <exercise id="fs-idm81055280">
         <problem id="fs-idm139603200">
@@ -509,7 +509,7 @@
 <exercise id="fs-idm128601120">
         <problem id="fs-idm195364880">
 
-          <para id="fs-idm191065552">According to a recent poll by the Pew Internet Project, people between the ages of 14 and 17 send an average of 187 text messages each day. Let <emphasis effect="italics">X</emphasis> = the number of texts that a girl aged 14 to 17 sends per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2 …. The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(187). The mean is 187 text messages.</para>
+          <para id="fs-idm191065552">According to a recent poll by the Pew Internet Project, people between the ages of 14 and 17 send an average of 187 text messages each day. Let <emphasis effect="italics">X</emphasis> = the number of texts that a girl aged 14 to 17 sends per day. The discrete random variable <emphasis effect="italics">X</emphasis> takes on the values <emphasis effect="italics">x</emphasis> = 0, 1, 2, ... The random variable <emphasis effect="italics">X</emphasis> has a Poisson distribution: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">P</emphasis>(187). The mean is 187 text messages.</para>
 
           <list id="fs-idm153913056" list-type="enumerated" number-style="lower-alpha">
             <item>What is the probability that a person sends exactly 175 texts per day?</item>
@@ -883,13 +883,15 @@
                         <m:mi>e</m:mi>
                         <m:mrow>
                           <m:mo>−</m:mo>
-                          <m:mi>np</m:mi>
+                          <m:mi>n</m:mi>
+                          <m:mi>p</m:mi>
                         </m:mrow>
                       </m:msup>
                       <m:msup>
                         <m:mrow>
                           <m:mo>(</m:mo>
-                          <m:mi>np</m:mi>
+                          <m:mi>n</m:mi>
+                          <m:mi>p</m:mi>
                           <m:mo>)</m:mo>
                         </m:mrow>
                         <m:mi>x</m:mi>
@@ -1020,7 +1022,7 @@
               </m:math>
             </para>
 
-            <para id="para-00031">An approximation that is off by 1 one thousandth is certainly an acceptable approximation.</para>
+            <para id="para-00031">An approximation that is off by about one one-thousandth is certainly an acceptable approximation.</para>
           </solution>
         </exercise>
       </example>
@@ -1066,9 +1068,7 @@
         </m:math>.</para>
       <para id="para-00002">The probability of having exactly <m:math>
           <m:mi>x</m:mi>
-        </m:math> successes in <m:math>
-          <m:mi>r</m:mi>
-        </m:math> trials is <m:math>
+        </m:math> successes in the interval is <m:math>
           <m:mi>P</m:mi>
           <m:mfenced>
             <m:mrow>
@@ -1082,7 +1082,7 @@
             <m:msup>
               <m:mi>e</m:mi>
               <m:mrow>
-                <m:mo>-</m:mo>
+                <m:mo>−</m:mo>
                 <m:mi>μ</m:mi>
               </m:mrow>
             </m:msup>
@@ -1256,7 +1256,7 @@
     </section>
 
     <section id="fs-idm132424448" class="free-response">
-      <title>HOMEWORK</title>
+      <title>Homework</title>
       <exercise id="fs-idm121525168">
         <problem id="fs-idm79533728">
           <para id="fs-idm79533600">The switchboard in a Minneapolis law office gets an average of 5.5 incoming phone calls during the noon hour on Mondays. Experience shows that the existing staff can handle up to six calls in an hour. Let <emphasis effect="italics">X</emphasis> = the number of calls received at noon.</para>
@@ -1282,7 +1282,7 @@
                 </m:mrow>
               </m:math> ≈ 2.3452</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 6) = poissoncdf(5.5, 6) ≈ 0.6860</item>
-            <item>There is a 15.7% probability that the law staff will receive more calls than they can handle.</item>
+            <item>There is a 15.7% probability that the law staff will receive exactly six calls on a given day, the maximum number they can handle.</item>
             <item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> > 8) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 8) = 1 – poissoncdf(5.5, 8) ≈ 1 – 0.8944 = 0.1056</item>
           </list>
         </solution>
@@ -1362,12 +1362,12 @@
         <problem id="id13721609">
           <para id="element-894">The average number of children a Spanish woman has in her lifetime is 1.47. Suppose that one Spanish woman is randomly chosen.</para>
           <list id="element-489" list-type="enumerated" number-style="lower-alpha">
-            <item>In words, define the Random Variable <emphasis effect="italics">X</emphasis>.</item>
+            <item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
             <item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
             <item>Give the distribution of <emphasis effect="italics">X</emphasis>. <emphasis effect="italics">X</emphasis> ~ _____(_____,_____)</item>
             <item>Find the probability that she has no children.</item>
             <item>Find the probability that she has fewer children than the Spanish average.</item>
-            <item>Find the probability that she has more children than the Spanish average .</item>
+            <item>Find the probability that she has more children than the Spanish average.</item>
           </list>
         </problem>
 
@@ -1439,11 +1439,11 @@
 
       <exercise id="element-255">
         <problem id="id17404044">
-          <para id="element-311">For every 200 U.S. kids and teens, the average number who suffer from obsessive compulsive disorder is one. Out of a randomly chosen group of 600 U.S. kids and teens determine the following.</para>
+          <para id="element-311">For every 200 U.S. kids and teens, the average number who suffer from obsessive compulsive disorder is one. Out of a randomly chosen group of 600 U.S. kids and teens, determine the following.</para>
           <list id="element-164" list-type="enumerated" number-style="lower-alpha">
             <item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
             <item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
-            <item>Give the distribution of<emphasis effect="italics">X</emphasis>. <emphasis effect="italics">X</emphasis> ~ _____(_____,_____)</item>
+            <item>Give the distribution of <emphasis effect="italics">X</emphasis>. <emphasis effect="italics">X</emphasis> ~ _____(_____,_____)</item>
             <item>How many are expected to suffer from obsessive compulsive disorder?</item>
             <item>Find the probability that no one suffers from obsessive compulsive disorder.</item>
             <item>Find the probability that more than four suffer from obsessive compulsive disorder.</item>
@@ -1461,7 +1461,7 @@
       </exercise>
       <exercise id="element-557">
         <problem id="id13739144">
-          <para id="element-345">The chance of an IRS audit for a tax return with over $25,000 in income is about 2% per year. Suppose that 100 people with tax returns over $25,000 are randomly picked. We are interested in the number of people audited in one year. Use a Poisson distribution to anwer the following questions.</para>
+          <para id="element-345">The chance of an IRS audit for a tax return with over $25,000 in income is about 2% per year. Suppose that 100 people with tax returns over $25,000 are randomly picked. We are interested in the number of people audited in one year. Use a Poisson distribution to answer the following questions.</para>
           <list id="element-832" list-type="enumerated" number-style="lower-alpha">
             <item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
             <item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
@@ -1590,7 +1590,7 @@
             </m:msqrt>
 
           </m:mrow>
-        </m:math>. The probability of having exactly <emphasis effect="italics">x</emphasis> successes in <emphasis effect="italics">r</emphasis> trials is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> = x ) = <m:math>
+        </m:math>. The probability of having exactly <emphasis effect="italics">x</emphasis> successes in the interval is <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> = <emphasis effect="italics">x</emphasis>) = <m:math>
           <m:mrow>
             <m:mo stretchy="false">(</m:mo>
             <m:msup>
