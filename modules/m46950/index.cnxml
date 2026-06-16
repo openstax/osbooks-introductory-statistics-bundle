@@ -393,7 +393,7 @@
     <example id="element-167">
       <exercise id="fs-idm61431456">
         <problem id="fs-idm3565248">
-          <para id="element-104">A coin has been altered to weight the outcome from 0.5 to 0.25 and flipped 5 times. Each flip is independent. What is the probability of getting more than 3 heads? Let <m:math>
+          <para id="element-104">A coin has been altered so that the probability of heads is 0.25 instead of 0.5, and it is flipped 5 times. Each flip is independent. What is the probability of getting more than 3 heads? Let <m:math>
               <m:mi>X</m:mi>
               <m:mo>=</m:mo>
             </m:math>the number of heads in 5 flips of the coin. <m:math>
@@ -864,7 +864,12 @@
           <m:mn>8.2</m:mn>
         </m:math>.</para>
 
-      <para id="element-949">The formula for the variance is σ<sup>2</sup> = <m:math>
+      <para id="element-949">The formula for the variance is <m:math>
+          <m:msup>
+            <m:mi>σ</m:mi>
+            <m:mn>2</m:mn>
+          </m:msup>
+          <m:mo>=</m:mo>
           <m:mi>npq</m:mi>
         </m:math>. The standard deviation is <m:math>
           <m:mi>σ</m:mi>
@@ -1502,6 +1507,33 @@
           <m:mo>–</m:mo>
           <m:mi>p</m:mi>
         </m:math></para>
+      <equation class="unnumbered" id="eip-bx-formula"><m:math>
+          <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>(</m:mo>
+            <m:mi>x</m:mi>
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+            <m:mfenced>
+              <m:mfrac linethickness="0">
+                <m:mi>n</m:mi>
+                <m:mi>x</m:mi>
+              </m:mfrac>
+            </m:mfenced>
+            <m:msup>
+              <m:mi>p</m:mi>
+              <m:mi>x</m:mi>
+            </m:msup>
+            <m:msup>
+              <m:mi>q</m:mi>
+              <m:mrow>
+                <m:mi>n</m:mi>
+                <m:mo>−</m:mo>
+                <m:mi>x</m:mi>
+              </m:mrow>
+            </m:msup>
+          </m:mrow>
+        </m:math></equation>
       <para id="para-00031">where <m:math>
           <m:mrow>
             <m:mi>b</m:mi>
