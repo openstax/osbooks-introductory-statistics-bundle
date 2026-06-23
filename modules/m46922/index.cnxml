@@ -134,7 +134,7 @@
               <m:mo>¯</m:mo>
             </m:mover>
 
-          </m:math> values for a sample, or the <m:math><m:mi>x</m:mi><m:mo>–</m:mo><m:mi>μ</m:mi></m:math> values for a population). The symbol <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> represents the population variance; the population standard deviation <m:math><m:mi>σ</m:mi></m:math> is the square root of the population variance. The symbol <m:math><m:mi>s</m:mi></m:math><sup>2</sup> represents the sample variance; the sample standard deviation <m:math><m:mi>s</m:mi></m:math> is the square root of the sample variance. You can think of the standard deviation as a special average of the deviations.</para>
+          </m:math> values for a sample, or the <m:math><m:mi>x</m:mi><m:mo>–</m:mo><m:mi>μ</m:mi></m:math> values for a population). The symbol <m:math><m:msup><m:mi>σ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> represents the population variance; the population standard deviation <m:math><m:mi>σ</m:mi></m:math> is the square root of the population variance. The symbol <m:math><m:msup><m:mi>s</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> represents the sample variance; the sample standard deviation <m:math><m:mi>s</m:mi></m:math> is the square root of the sample variance. You can think of the standard deviation as a special average of the deviations.</para>
         <para id="eip-790">If the numbers come from a census of the entire <emphasis>population</emphasis> and not a sample, when we calculate the average of the squared deviations to find the variance, we divide by <m:math><m:mi>N</m:mi></m:math>, the number of items in the population. If the data are from a <emphasis>sample</emphasis> rather than a population, when we calculate the average of the squared deviations, we divide by <emphasis><m:math><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn></m:math></emphasis>, one less than the number of items in the sample.</para>
       </section>
 
@@ -354,8 +354,8 @@
                 <entry>Data</entry>
                 <entry>Freq.</entry>
                 <entry>Deviations</entry>
-                <entry><emphasis effect="italics">Deviations</emphasis><sup>2</sup></entry>
-                <entry>(Freq.)(<emphasis effect="italics">Deviations</emphasis><sup>2</sup>)</entry>
+                <entry><m:math><m:msup><m:mtext>Deviations</m:mtext><m:mn>2</m:mn></m:msup></m:math></entry>
+                <entry>(Freq.)(<m:math><m:msup><m:mtext>Deviations</m:mtext><m:mn>2</m:mn></m:msup></m:math>)</entry>
               </row>
             </thead>
             <tbody>
@@ -368,61 +368,49 @@
                       <m:mo>¯</m:mo>
                     </m:mover>
                   </m:math>)</entry>
-                <entry>(<m:math><m:mi>x</m:mi><m:mo>–</m:mo></m:math><m:math>
-                    <m:mover accent="true">
-                      <m:mi>x</m:mi>
-                      <m:mo>¯</m:mo>
-                    </m:mover>
-
-                  </m:math>)<sup>2</sup></entry>
-                <entry>(<m:math><m:mi>f</m:mi></m:math>)(<m:math><m:mi>x</m:mi><m:mo>–</m:mo></m:math><m:math>
-                    <m:mover accent="true">
-                      <m:mi>x</m:mi>
-                      <m:mo>¯</m:mo>
-                    </m:mover>
-
-                  </m:math>)<sup>2</sup></entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math></entry>
+                <entry>(<m:math><m:mi>f</m:mi></m:math>)<m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math></entry>
               </row>
               <row>
                 <entry>9</entry>
                 <entry>1</entry>
                 <entry>9 – 10.525 = –1.525</entry>
-                <entry>(–1.525)<sup>2</sup> = 2.325625</entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mo>–</m:mo><m:mn>1.525</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> = 2.325625</entry>
                 <entry>1 × 2.325625 = 2.325625</entry>
               </row>
               <row>
                 <entry>9.5</entry>
                 <entry>2</entry>
                 <entry>9.5 – 10.525 = –1.025</entry>
-                <entry>(–1.025)<sup>2</sup> = 1.050625</entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mo>–</m:mo><m:mn>1.025</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> = 1.050625</entry>
                 <entry>2 × 1.050625 = 2.101250</entry>
               </row>
               <row>
                 <entry>10</entry>
                 <entry>4</entry>
                 <entry>10 – 10.525 = –0.525</entry>
-                <entry>(–0.525)<sup>2</sup> = 0.275625</entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mo>–</m:mo><m:mn>0.525</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> = 0.275625</entry>
                 <entry>4 × 0.275625 = 1.1025</entry>
               </row>
               <row>
                 <entry>10.5</entry>
                 <entry>4</entry>
                 <entry>10.5 – 10.525 = –0.025</entry>
-                <entry>(–0.025)<sup>2</sup> = 0.000625</entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mo>–</m:mo><m:mn>0.025</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> = 0.000625</entry>
                 <entry>4 × 0.000625 = 0.0025</entry>
               </row>
               <row>
                 <entry>11</entry>
                 <entry>6</entry>
                 <entry>11 – 10.525 = 0.475</entry>
-                <entry>(0.475)<sup>2</sup> = 0.225625</entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>0.475</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> = 0.225625</entry>
                 <entry>6 × 0.225625 = 1.35375</entry>
               </row>
               <row>
                 <entry>11.5</entry>
                 <entry>3</entry>
                 <entry>11.5 – 10.525 = 0.975</entry>
-                <entry>(0.975)<sup>2</sup> = 0.950625</entry>
+                <entry><m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mn>0.975</m:mn><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math> = 0.950625</entry>
                 <entry>3 × 0.950625 = 2.851875</entry>
               </row>
               <row>
@@ -437,7 +425,7 @@
 
           </tgroup>
         </table>
-        <para id="element-367">The sample variance, <m:math><m:mi>s</m:mi></m:math><sup>2</sup>, is equal to the sum of the last column (9.7375) divided by the total number of data values minus one (20 – 1):</para>
+        <para id="element-367">The sample variance, <m:math><m:msup><m:mi>s</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:math>, is equal to the sum of the last column (9.7375) divided by the total number of data values minus one (20 – 1):</para>
         <para id="element-631"><m:math>
             <m:mrow>
               <m:msup>
