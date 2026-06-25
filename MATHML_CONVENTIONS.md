@@ -24,6 +24,18 @@ Rules established while converting/reviewing math notation for the 3e edition.
     (`<m:mtext>type O OR Rh-</m:mtext>`); only a literal conditional bar becomes `<m:mo>|</m:mo>`.
   - Fill-in blanks (`___`) inside an argument are `<m:mtext>___</m:mtext>`.
   - A range like "1–33" stays an en dash inside `<m:mtext>` (it's prose text, not a minus operator).
+- **Never spell a word out as separate single-letter `<m:mi>` tokens.** Logical words and any
+  multi-letter label must be ONE token, not one `<m:mi>` per letter. The worst offender seen in 3e was
+  the word "AND"/"OR" encoded as `<m:mi>A</m:mi><m:mi>N</m:mi><m:mi>D</m:mi>` /
+  `<m:mi>O</m:mi><m:mi>R</m:mi>` (often with whitespace/newlines between the tags, so a naive
+  contiguous grep misses them). That renders as garbled *italic* letters with invisible-times between
+  them — e.g. `P(A AND B)` shows as "A·A·N·D·B". The symptom in the reader is an italic run where you
+  expect upright spaced text.
+  - Fix: logical operators → spaced `<m:mtext> AND </m:mtext>`, `<m:mtext> OR </m:mtext>`,
+    `<m:mtext> NOR </m:mtext>`, `<m:mtext> NOT </m:mtext>`, `<m:mtext> GIVEN </m:mtext>` (keep the
+    surrounding spaces inside the mtext so it doesn't glue to the operands).
+  - A genuine multi-letter *symbol* (e.g. `RR`, `BR`, `IQR`, `np`) is a single `<m:mi>RR</m:mi>` —
+    again never one tag per letter.
 - **Bold math:** when MathML sits inside a bold `<emphasis>` (i.e. `<emphasis>` with no `effect`, or
   `effect="bold"`), wrap the math's inner content in `<m:mstyle mathvariant="bold">…</m:mstyle>` so it
   renders bold to match the author's intent. (HTML bold does not propagate into a `<m:math>` element.)
@@ -65,13 +77,30 @@ Rules established while converting/reviewing math notation for the 3e edition.
   calculations (`IQR`, `RF`, `np`, outcome codes like `HH`, `Exp`, `ln`) *are* MathML.
 
 ## 7. Verification after any math edit
-- Run `xmllint --noout` on every changed module (must be well-formed).
-- Re-scan for: NBSP inside `<m:math>` (= 0), en dash inside `<m:math>` (= 0),
-  **hyphen-minus `<m:mo>-</m:mo>` inside `<m:math>` (= 0)**, non-ordinal `<sup>` (= 0),
-  and plain-text math left in prose (= 0).
+- Run `xmllint --noout` on every changed module (must be well-formed). This is the one check that
+  reliably catches structural corruption (e.g. a regex that merged across `</emphasis>`); the
+  char-preservation invariant below does **not** catch tag-structure damage.
+- Re-scan each changed chapter for all of these (target count = 0):
+  - NBSP inside `<m:math>` — literal U+00A0, `&nbsp;`, `&#160;`, `&#xa0;` (any form).
+  - en dash `–` / `&#8211;` used as a minus inside `<m:math>` (en dash inside `<m:mtext>` ranges is OK).
+  - hyphen-minus `<m:mo>-</m:mo>` inside `<m:math>` (renders fine, invisible defect — scan, don't eyeball).
+  - non-ordinal `<sup>` (math superscripts that should be `<m:msup>`).
+  - plain-text math left in prose — tell-tale `</m:math>(` (a `(` immediately after a math close) and
+    `<m:math>P</m:math>(` (probability notation split out of its math).
+  - **words spelled as single-letter `<m:mi>` runs** — whitespace-tolerant scan, e.g.
+    `<m:mi>A</m:mi>\s*<m:mi>N</m:mi>\s*<m:mi>D</m:mi>` (AND), `<m:mi>O</m:mi>\s*<m:mi>R</m:mi>` (OR),
+    and the same idea for NOT/NOR/GIVEN.
 - When converting, confirm a character-preservation invariant (stripping tags + whitespace, with
-  en-dash↔minus normalized, must be unchanged) so no content is lost.
+  en-dash↔hyphen↔minus normalized, must be unchanged) so no content is lost — and ideally diff the
+  tags-stripped text against `git show HEAD:<path>` so the only changes are markup, not visible text.
 
 ## 8. Web-render spot checks
 - When validating in the web reader, **wait several seconds for MathML to finish rendering** before
   judging — early paints can show transient artifacts (e.g. missing mfenced parens) that resolve.
+- A baked archive/preview snapshot only reflects edits made **before** it was built — fixes made after
+  a bake won't appear until the next rebuild. Don't re-flag something already fixed in source.
+- A freshly baked preview often **404s on the first visit** to a page; refresh/re-navigate and it loads.
+  (The host can also throw transient "Application Error" pages — wait and retry.)
+- Page-text extraction collapses the spaces inside `<m:mtext> AND </m:mtext>`, so "A AND B" may *look*
+  glued ("AAND B") in extracted text even when it renders correctly. Confirm spacing from the source or
+  a screenshot, not the text dump.
