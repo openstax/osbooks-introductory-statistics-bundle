@@ -15,6 +15,15 @@ Rules established while converting/reviewing math notation for the 3e edition.
   (e.g. a bold `<emphasis>` wrapper applies to the plain parts but not the MathML). Put the entire
   expression in one `<m:math>`; if it's meant to be bold, that's a separate styling decision applied
   to the whole element — don't leave half of it as bold text and half as MathML.
+- **Probability / distribution notation with worded arguments.** Expressions like `P(event description)`,
+  `P(A AND B)`, `P(x | y)`, `X ~ B(n, p)` must live entirely in one `<m:math>` — not `<m:math>P</m:math>(event)`
+  with the argument in prose. Inside:
+  - `P`, `X`, single-letter events (`A`, `B`, `F`, `M`) → `<m:mi>`; `(` `)` `=` `+` `~` `|` `<` `>` `≤` `≥` `%` → `<m:mo>`; numbers → `<m:mn>`.
+  - A **descriptive event name is one whole-phrase `<m:mtext>` chunk** — `<m:mtext>Person is in their twenties</m:mtext>`,
+    not a separate tag per letter/word. Keep logical words (`AND`/`OR`/`NOT`/`GIVEN`) inside that text run
+    (`<m:mtext>type O OR Rh-</m:mtext>`); only a literal conditional bar becomes `<m:mo>|</m:mo>`.
+  - Fill-in blanks (`___`) inside an argument are `<m:mtext>___</m:mtext>`.
+  - A range like "1–33" stays an en dash inside `<m:mtext>` (it's prose text, not a minus operator).
 - **Bold math:** when MathML sits inside a bold `<emphasis>` (i.e. `<emphasis>` with no `effect`, or
   `effect="bold"`), wrap the math's inner content in `<m:mstyle mathvariant="bold">…</m:mstyle>` so it
   renders bold to match the author's intent. (HTML bold does not propagate into a `<m:math>` element.)
@@ -26,10 +35,13 @@ Rules established while converting/reviewing math notation for the 3e edition.
 - Keep plain `<sup>` **only** for non-math superscripts — ordinals such as "4ᵗʰ", "90ᵗʰ percentile",
   "2ⁿᵈ". (`th`/`st`/`nd`/`rd`.)
 
-## 3. Minus sign — never an en dash
+## 3. Minus sign — never an en dash *or* a hyphen
 - The math operator "minus" must be **U+2212 MINUS SIGN (`−`)**, written `<m:mo>−</m:mo>`.
-- Do **not** use the en dash `–` (U+2013), the hyphen `-`, or `&#8211;` as a minus inside `<m:math>`.
-  (En dashes/hyphens remain fine in ordinary prose — ranges, compound words, etc.)
+- Do **not** use the en dash `–` (U+2013), the hyphen-minus `-` (U+002D), or `&#8211;` as a minus
+  inside `<m:math>`. (En dashes/hyphens remain fine in ordinary prose — ranges, compound words, etc.)
+- Note the hyphen form `<m:mo>-</m:mo>` *renders* as a minus, so it's an invisible defect — it won't
+  look wrong in the reader, but it's still incorrect for accessibility/semantics. Scan for it explicitly
+  (see §7); don't rely on visual checks to catch it.
 
 ## 4. Spacing — no NBSP, let MathML space operators
 - **Never use a non-breaking space for spacing inside MathML.** This breaks rendering
@@ -54,7 +66,8 @@ Rules established while converting/reviewing math notation for the 3e edition.
 
 ## 7. Verification after any math edit
 - Run `xmllint --noout` on every changed module (must be well-formed).
-- Re-scan for: NBSP inside `<m:math>` (= 0), en dash inside `<m:math>` (= 0), non-ordinal `<sup>` (= 0),
+- Re-scan for: NBSP inside `<m:math>` (= 0), en dash inside `<m:math>` (= 0),
+  **hyphen-minus `<m:mo>-</m:mo>` inside `<m:math>` (= 0)**, non-ordinal `<sup>` (= 0),
   and plain-text math left in prose (= 0).
 - When converting, confirm a character-preservation invariant (stripping tags + whitespace, with
   en-dash↔minus normalized, must be unchanged) so no content is lost.

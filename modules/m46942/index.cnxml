@@ -1331,15 +1331,15 @@
                 <m:mfrac>
                   <m:mrow>
                     <m:mn>150</m:mn>
-                    <m:mo>-</m:mo>
+                    <m:mo>−</m:mo>
                     <m:mn>22</m:mn>
-                    <m:mo>-</m:mo>
+                    <m:mo>−</m:mo>
                     <m:mn>38</m:mn>
-                    <m:mo>-</m:mo>
+                    <m:mo>−</m:mo>
                     <m:mn>20</m:mn>
-                    <m:mo>-</m:mo>
+                    <m:mo>−</m:mo>
                     <m:mn>28</m:mn>
-                    <m:mo>-</m:mo>
+                    <m:mo>−</m:mo>
                     <m:mn>26</m:mn>
                   </m:mrow>
                   <m:mrow>
@@ -1707,9 +1707,9 @@
             <item>Out of the men and women, what percent are men?</item>
             <item>Out of the women, what percent disapprove of Mayor Ford?</item>
             <item>Out of all the age groups, what percent approve of Mayor Ford?</item>
-            <item>Find <m:math><m:mi>P</m:mi></m:math>(Approve|Men).</item>
+            <item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Approve</m:mtext><m:mo>|</m:mo><m:mtext>Men</m:mtext><m:mo>)</m:mo></m:math>.</item>
             <item>Out of the age groups, what percent are more than 44 years old?</item>
-            <item>Find <m:math><m:mi>P</m:mi></m:math>(Approve|Age &lt; 35).</item>
+            <item>Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Approve</m:mtext><m:mo>|</m:mo><m:mtext>Age</m:mtext><m:mo>&lt;</m:mo><m:mn>35</m:mn><m:mo>)</m:mo></m:math>.</item>
           </list>
         </problem>
       </exercise>
@@ -1723,7 +1723,7 @@
         </problem>
         <solution id="fs-idm63594832">
           <list id="fs-idm95338544" list-type="enumerated" number-style="lower-alpha">
-            <item>Probability is never greater than 100%. Additionally, to calculate <m:math><m:mi>P</m:mi></m:math>(Rain on Sat OR Rain on Sun) we would use the formula <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+            <item>Probability is never greater than 100%. Additionally, to calculate <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>Rain on Sat OR Rain on Sun</m:mtext><m:mo>)</m:mo></m:math> we would use the formula <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
                 <m:mi>P</m:mi>
                 <m:mfenced>
                   <m:mi>A</m:mi>
@@ -1733,14 +1733,12 @@
                 <m:mfenced>
                   <m:mi>B</m:mi>
                 </m:mfenced>
-                <m:mo>-</m:mo>
+                <m:mo>−</m:mo>
                 <m:mi>P</m:mi>
                 <m:mfenced>
                   <m:mrow>
                     <m:mi>A</m:mi>
-                    <m:mo> </m:mo>
-                    <m:mtext>AND</m:mtext>
-                    <m:mo> </m:mo>
+                    <m:mtext> AND </m:mtext>
                     <m:mi>B</m:mi>
                   </m:mrow>
                 </m:mfenced>
@@ -1749,9 +1747,7 @@
                 <m:mfenced>
                   <m:mrow>
                     <m:mi>A</m:mi>
-                    <m:mo> </m:mo>
-                    <m:mtext>AND</m:mtext>
-                    <m:mo> </m:mo>
+                    <m:mtext> AND </m:mtext>
                     <m:mi>B</m:mi>
                   </m:mrow>
                 </m:mfenced>
@@ -1795,7 +1791,7 @@
       <term>Probability</term>
       <meaning id="id17934331">a number between zero and one, inclusive, that gives the likelihood that a specific event will occur; the foundation of statistics is given by the following 3 axioms (by A.N. Kolmogorov, 1930’s): Let <m:math><m:mi>S</m:mi></m:math> denote the sample space and <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are two events in <m:math><m:mi>S</m:mi></m:math>. Then: <list id="fs-id6987848" list-type="bulleted">
           <item><m:math><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mo>≤</m:mo><m:mn>1</m:mn></m:math></item>
-          <item>If <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are any two mutually exclusive events, then <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mtext> OR </m:mtext><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi></m:math>(B).</item>
+          <item>If <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are any two mutually exclusive events, then <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mtext> OR </m:mtext><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math>.</item>
           <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>S</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:math></item>
         </list>
       </meaning>
