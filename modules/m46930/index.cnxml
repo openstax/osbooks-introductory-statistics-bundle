@@ -8,7 +8,7 @@
 
   <content>
     <para id="para-00001">The common measures of location are <term id="term-00001">quartiles</term> and <term id="term-00002">percentiles</term>.</para>
-    <para id="para-00002">Quartiles divide an ordered data set into four equal parts. The three quartiles of a data set are labeled as <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub></m:math>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub></m:math>, and <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub></m:math>.</para>
+    <para id="para-00002">Quartiles divide an ordered data set into four equal parts. The three quartiles of a data set are labeled as <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub></m:math>, and <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub></m:math>.</para>
     <list id="list-00002">
       <item>About one-fourth of the data falls on or below the first quartile <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub></m:math>.</item>
       <item>About one-half of the data falls on or below the second quartile <m:math><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub></m:math>.</item>
@@ -62,8 +62,8 @@
       <title>The Interquartile Range</title>
       <para id="element-716">The <term id="term-00007">interquartile range</term> is a number that indicates the spread of the middle half or the middle 50% of the data. It is the difference between the third quartile (<m:math><m:mi>Q</m:mi></m:math><sub>3</sub>) and the first quartile (<m:math><m:mi>Q</m:mi></m:math><sub>1</sub>).</para>
 
-      <para id="element-7162"><m:math><m:mi>IQR</m:mi><m:mo>=</m:mo></m:math><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub></para>
-      <para id="element-847">The <m:math><m:mi>IQR</m:mi></m:math> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<m:math><m:mi>IQR</m:mi></m:math>) below the first quartile or (1.5)(<m:math><m:mi>IQR</m:mi></m:math>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this: <figure id="fig-00001">
+      <para id="element-7162"><m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub></para>
+      <para id="element-847">The <m:math><m:mi>IQR</m:mi></m:math> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) below the first quartile or (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this: <figure id="fig-00001">
           <title>Identifying Outliers with the IQR</title>
           <media alt="A diagram of a horizontal box plot over a number line showing how the IQR identifies outliers. A box labeled Interquartile Range (middle 50%) spans from Q1 to Q3 with a dashed line at Q2, the median, and brackets above show IQR = Q3 minus Q1. Whiskers extend 1.5 IQR below Q1 to the lower fence, Q1 minus 1.5 IQR, and 1.5 IQR above Q3 to the upper fence, Q3 plus 1.5 IQR. Typical data points appear as dots between the fences, while shaded regions beyond each fence are labeled Outlier Zone and contain outlier data points.">
             <image src="../../media/fig-ch02_IQR.png" mime-type="image/png"/>
@@ -102,7 +102,7 @@
         <solution id="id45746296">
           <para id="element-939">Order the data from smallest to largest. <newline/>114,950; 158,000; 230,500; 387,000; 389,950; 479,000; 488,800; 529,000; 575,000; 639,000; 659,000; 1,095,000; 5,500,000</para>
           <para id="element-170"><emphasis effect="italics">Median</emphasis> = 488,800</para>
-          <para id="element-563"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = <m:math>
+          <para id="element-563"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> <m:math><m:mo>=</m:mo>
               <m:mrow>
                 <m:mfrac>
                   <m:mrow>
@@ -111,8 +111,8 @@
                   <m:mn>2</m:mn>
                 </m:mfrac>
               </m:mrow>
-            </m:math> = 308,750</para>
-          <para id="element-756"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> = <m:math>
+            <m:mo>=</m:mo><m:mn>308</m:mn><m:mo>,</m:mo><m:mn>750</m:mn></m:math></para>
+          <para id="element-756"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>=</m:mo>
               <m:mrow>
                 <m:mfrac>
                   <m:mrow>
@@ -121,11 +121,11 @@
                   <m:mn>2</m:mn>
                 </m:mfrac>
               </m:mrow>
-            </m:math> = 649,000</para>
-          <para id="element-290"><m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mn>649</m:mn></m:math>,000 – 308,750 = 340,250</para>
-          <para id="element-166">(1.5)(<m:math><m:mi>IQR</m:mi></m:math>) = (1.5)(340,250) = 510,375</para>
-          <para id="element-348"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> – (1.5)(<m:math><m:mi>IQR</m:mi></m:math>) = 308,750 – 510,375 = –201,625</para>
-          <para id="element-211"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> + (1.5)(<m:math><m:mi>IQR</m:mi></m:math>) = 649,000 + 510,375 = 1,159,375</para>
+            <m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:math></para>
+          <para id="element-290"><m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:math>– 308,750 = 340,250</para>
+          <para id="element-166"><m:math><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>340</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>510</m:mn><m:mo>,</m:mo><m:mn>375</m:mn></m:math></para>
+          <para id="element-348"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> – <m:math><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>308</m:mn><m:mo>,</m:mo><m:mn>750</m:mn></m:math>– 510,375 = –201,625</para>
+          <para id="element-211"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>+</m:mo><m:mn>510</m:mn><m:mo>,</m:mo><m:mn>375</m:mn><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>159</m:mn><m:mo>,</m:mo><m:mn>375</m:mn></m:math></para>
           <para id="element-109">No house price is less than –201,625. However, 5,500,000 is more than 1,159,375. Therefore, 5,500,000 is a potential <term id="term-00008">outlier</term>.</para>
         </solution>
       </exercise>
@@ -201,8 +201,8 @@
           <list id="fs-idm23962720" list-type="enumerated" number-style="lower-alpha">
             <item>The IQR for the day group is <m:math><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 82.5 – 56 = 26.5 <para id="fs-idm7044352">The IQR for the night group is <m:math><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 89 – 78 = 11</para><para id="fs-idp42547504">The interquartile range (the spread or variability) for the day class is larger than the night class <m:math><m:mi>IQR</m:mi></m:math>. This suggests more variation will be found in the day class’s class test scores.</para></item>
             <item>Day class outliers are found using the IQR times 1.5 rule. So, <list id="fs-idm52257968" list-type="labeled-item">
-                <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> - <m:math><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>56</m:mn><m:mo>−</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>16.25</m:mn></m:math></item>
-                <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> + <m:math><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>82.5</m:mn><m:mo>+</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>122.25</m:mn></m:math></item>
+                <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> <m:math><m:mo>−</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>56</m:mn><m:mo>−</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>16.25</m:mn></m:math></item>
+                <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>82.5</m:mn><m:mo>+</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>122.25</m:mn></m:math></item>
               </list><para id="fs-idp38341744">Since the minimum and maximum values for the day class are greater than 16.25 and less than 122.25, there are no outliers.</para>
 <para id="fs-idm23940160">Night class outliers are calculated as:</para>
 <list id="fs-idp29569184" list-type="labeled-item">
@@ -384,7 +384,7 @@
                   <item><m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the index</item>
                   <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math></item>
                 </list>
-<m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math><m:math>
+<m:math><m:mi>i</m:mi><m:mo>=</m:mo>
                   <m:mrow>
                     <m:mfrac>
                       <m:mi>k</m:mi>
@@ -413,7 +413,7 @@
                   <item><m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the index</item>
                   <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math></item>
                 </list>
-<m:math><m:mi>i</m:mi></m:math>  = <m:math>
+<m:math><m:mi>i</m:mi><m:mo>=</m:mo>
                   <m:mrow>
                     <m:mfrac>
                       <m:mi>k</m:mi>
@@ -565,7 +565,7 @@
                 <m:mi>n</m:mi>
               </m:mfrac>
             </m:mrow>
-          </m:math>(100). Then round to the nearest integer.</item>
+          <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:math>. Then round to the nearest integer.</item>
       </list>
       <example id="fs-idm3849664">
         <exercise id="fs-idp28609648">
@@ -592,7 +592,7 @@
                       </m:mfrac>
 
                     </m:mrow>
-                  </m:math>(100) = <m:math>
+                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo>
                     <m:mrow>
                       <m:mfrac>
                         <m:mrow>
@@ -608,7 +608,7 @@
                         </m:mrow>
                       </m:mfrac>
                     </m:mrow>
-                  </m:math>(100) = 63.80. 58 is the 64<sup>th</sup> percentile.</para>
+                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>63.80</m:mn></m:math>. 58 is the 64<sup>th</sup> percentile.</para>
               </item>
               <item> Counting from the bottom of the list, there are three data values less than 25. There is one value of 25. <para id="fs-idm21523472"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.<m:math>
                     <m:mrow>
@@ -623,7 +623,7 @@
                       </m:mfrac>
 
                     </m:mrow>
-                  </m:math>(100) = <m:math>
+                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo>
                     <m:mrow>
                       <m:mfrac>
                         <m:mrow>
@@ -639,7 +639,7 @@
                         </m:mrow>
                       </m:mfrac>
                     </m:mrow>
-                  </m:math>(100) = 12.07. Twenty-five is the 12<sup>th</sup> percentile.</para>
+                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12.07</m:mn></m:math>. Twenty-five is the 12<sup>th</sup> percentile.</para>
               </item>
             </list>
           </solution>
@@ -750,7 +750,7 @@
       </list>
       <para id="fs-idp83565376">If you were the principal, would you be justified in purchasing new fitness equipment? Since 75% of the students exercise for 60 minutes or less daily, and since the <m:math><m:mi>IQR</m:mi></m:math> is 40 minutes (60 – 20 = 40), we know that half of the students surveyed exercise between 20 minutes and 60 minutes daily. At first glance, this seems a reasonable amount of time spent exercising, so the principal would be justified in purchasing the new equipment.</para>
       <para id="fs-idm77236544">However, the principal needs to be careful. The value 300 appears to be a potential outlier.</para>
-      <para id="fs-idm9669376"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> + 1.5(<m:math><m:mi>IQR</m:mi></m:math>) = 60 + (1.5)(40) = 120.</para>
+      <para id="fs-idm9669376"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>60</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>40</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>120</m:mn></m:math>.</para>
       <para id="fs-idp13270336">The value 300 is greater than 120 so it is a potential outlier. If we delete it and calculate the five values, we get the following values:</para>
       <list id="fs-idm2894688" list-type="labeled-item">
         <item>Min = 0</item>
@@ -770,7 +770,7 @@
           <para id="para-00007">2 hours; 3 hours; 5 hours; 3 hours; 4 hours;</para>
           <para id="para-00008">4 hours; 3 hours; 11 hours; 3 hours; 2 hours.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
-            <item>Determine the following five values: <emphasis effect="italics">Min</emphasis>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub></m:math>, <emphasis effect="italics">Med</emphasis>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub></m:math>, <emphasis effect="italics">Max</emphasis>.</item>
+            <item>Determine the following five values: <emphasis effect="italics">Min</emphasis>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo></m:math><emphasis effect="italics">Med</emphasis>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>,</m:mo></m:math><emphasis effect="italics">Max</emphasis>.</item>
             <item>Should the instructor modify the final project or leave it as is?</item>
           </list>
         </problem>
@@ -834,7 +834,7 @@
       <title>Chapter Review</title>
       <para id="fs-idp1397504">The values that divide a rank-ordered set of data into 100 equal parts are called percentiles. Percentiles are used to compare and interpret data. For example, an observation at the 50<sup>th</sup> percentile would be greater than 50 percent of the other observations in the set. Quartiles divide data into quarters. The first quartile (<m:math><m:mi>Q</m:mi></m:math><sub>1</sub>) is the 25<sup>th</sup> percentile,the second quartile (<m:math><m:mi>Q</m:mi></m:math><sub>2</sub> or median) is 50<sup>th</sup> percentile, and the third quartile (<m:math><m:mi>Q</m:mi></m:math><sub>3</sub>) is the 75<sup>th</sup> percentile. The interquartile range, or <m:math><m:mi>IQR</m:mi></m:math>, is the range of the middle 50 percent of the data values. The <m:math><m:mi>IQR</m:mi></m:math> is found by subtracting <m:math><m:mi>Q</m:mi></m:math><sub>1</sub> from <m:math><m:mi>Q</m:mi></m:math><sub>3</sub>, and can help determine outliers by using the following two expressions.</para>
       <list id="fs-idp12766560" list-type="bulleted">
-        <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> + <m:math><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math></item>
+        <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math></item>
         <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> – <m:math><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math></item>
       </list>
     </section>
@@ -936,7 +936,7 @@
               <m:mo>)</m:mo>
             </m:mrow>
           </m:mrow>
-        </m:math>(100)</para>
+        <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:math></para>
       <para id="fs-idp17176000">where <m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the number of values counting from the bottom of the data list up to but not including the data value for which you want to find the percentile,</para>
       <para id="fs-idm2884704"><m:math><m:mi>y</m:mi><m:mo>=</m:mo></m:math> the number of data values equal to the data value for which you want to find the percentile,</para>
       <para id="fs-idm5691392"><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> total number of data</para>
@@ -990,7 +990,7 @@
                 </m:mfrac>
 
               </m:mrow>
-            </m:math>(100) = <m:math>
+            <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo>
               <m:mrow>
                 <m:mfrac>
                   <m:mrow>
@@ -1007,7 +1007,7 @@
                 </m:mfrac>
 
               </m:mrow>
-            </m:math>(100) = 79.72. Jesse’s rank of 37 puts him at the 80<sup>th</sup> percentile.</para>
+            <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>79.72</m:mn></m:math>. Jesse’s rank of 37 puts him at the 80<sup>th</sup> percentile.</para>
         </solution>
       </exercise>
 

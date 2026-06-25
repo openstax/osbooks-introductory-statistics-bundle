@@ -9,6 +9,17 @@ Rules established while converting/reviewing math notation for the 3e edition.
   - This includes math inside table cells, captions, and list items.
 - `<emphasis effect="italics">` is for *prose* emphasis only (defined terms, book/journal titles,
   instruction lines like "Use the following information…"). Never use it to italicize a variable.
+- **Do not interleave MathML with plain-text math inside one expression.** A whole equation/inequality
+  must live in a single `<m:math>` — not split like `0.3 = (<m:math>k−1.5</m:math>) (0.4)` (where the
+  `0.3 = (` and `) (0.4)` are plain text). Mixed fragments render with inconsistent font/weight
+  (e.g. a bold `<emphasis>` wrapper applies to the plain parts but not the MathML). Put the entire
+  expression in one `<m:math>`; if it's meant to be bold, that's a separate styling decision applied
+  to the whole element — don't leave half of it as bold text and half as MathML.
+- **Bold math:** when MathML sits inside a bold `<emphasis>` (i.e. `<emphasis>` with no `effect`, or
+  `effect="bold"`), wrap the math's inner content in `<m:mstyle mathvariant="bold">…</m:mstyle>` so it
+  renders bold to match the author's intent. (HTML bold does not propagate into a `<m:math>` element.)
+  Keep the `<emphasis>` wrapper; do **not** try to bold by replacing/removing the emphasis with a
+  regex that spans across `</emphasis>` — that corrupts structure.
 
 ## 2. Superscripts
 - A **math** superscript (an exponent) must be `<m:msup>`, e.g. `e^{−mx}`, `σ²`, `p^x`, `(x − x̄)²`.
