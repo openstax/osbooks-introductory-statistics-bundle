@@ -55,13 +55,22 @@ Rules established while converting/reviewing math notation for the 3e edition.
   look wrong in the reader, but it's still incorrect for accessibility/semantics. Scan for it explicitly
   (see §7); don't rely on visual checks to catch it.
 
-## 4. Spacing — no NBSP, let MathML space operators
-- **Never use a non-breaking space for spacing inside MathML.** This breaks rendering
-  ("Entity 'nbsp' not defined"). That means no `&nbsp;`, no `&#160;`, and no literal U+00A0
-  inside `<m:math>`.
-- **Do not insert whitespace-only spacer elements** like `<m:mtext> </m:mtext>` or `<m:mo> </m:mo>`.
-  Let MathML provide natural spacing around operators (`<m:mo>=</m:mo>`, `<m:mo>+</m:mo>`, …).
-- If an explicit space is genuinely required, use `<m:mspace>` — but prefer relying on operator spacing.
+## 4. Spacing inside MathML
+- **Never use the *named* entity `&nbsp;`** inside `<m:math>` — it isn't defined without a DTD and breaks
+  parsing ("Entity 'nbsp' not defined"). When you need a non-breaking space, use the **numeric** form
+  `&#160;` (valid XML, always safe).
+- **Operators space themselves — don't add manual spaces around `<m:mo>`.** `<m:mo>=</m:mo>`, `<m:mo>+</m:mo>`,
+  `<m:mo>−</m:mo>` already render with correct spacing. Do **not** insert whitespace-only spacer elements
+  like `<m:mtext> </m:mtext>` or `<m:mo> </m:mo>`.
+- **Text next to a symbol needs a protected space — the renderer trims regular spaces at `<m:mtext>` edges.**
+  The rex-web/MathJax renderer (which matches production) **collapses a leading/trailing ordinary space
+  inside `<m:mtext>`**, so `…<m:mi>X</m:mi><m:mtext> AND </m:mtext><m:mi>Y</m:mi>…` renders glued as
+  "XANDY", and `<m:mi>R</m:mi><m:mtext> on 1st draw</m:mtext>` renders "Ron 1st draw".
+  - Fix: put `&#160;` at the mtext **edge that touches a symbol** — `<m:mtext>&#160;AND&#160;</m:mtext>`,
+    `<m:mtext>&#160;on 1st draw AND&#160;</m:mtext>`, `<m:mtext>&#160;on 2nd draw</m:mtext>`.
+  - **Internal** spaces inside the mtext (between words) are fine as ordinary spaces — only the edges collapse.
+  - Don't add `&#160;` at the very start/end of a whole `<m:math>` (no symbol there to glue to).
+  - This is invisible in a source diff but very visible in the reader; verify with the width test (§7) or by eye.
 
 ## 5. Inequalities / relational operators
 - `<`, `>`, `≤`, `≥` inside math must be `<m:mo>` (with `<` written as `&lt;`, `>` as a literal `>` is
@@ -81,7 +90,8 @@ Rules established while converting/reviewing math notation for the 3e edition.
   reliably catches structural corruption (e.g. a regex that merged across `</emphasis>`); the
   char-preservation invariant below does **not** catch tag-structure damage.
 - Re-scan each changed chapter for all of these (target count = 0):
-  - NBSP inside `<m:math>` — literal U+00A0, `&nbsp;`, `&#160;`, `&#xa0;` (any form).
+  - the **named** entity `&nbsp;` or whitespace-only spacer elements (`<m:mo> </m:mo>`, `<m:mtext> </m:mtext>`)
+    inside `<m:math>`. (Numeric `&#160;` is *expected* at mtext edges per §4 — do **not** flag it.)
   - en dash `–` / `&#8211;` used as a minus inside `<m:math>` (en dash inside `<m:mtext>` ranges is OK).
   - hyphen-minus `<m:mo>-</m:mo>` inside `<m:math>` (renders fine, invisible defect — scan, don't eyeball).
   - non-ordinal `<sup>` (math superscripts that should be `<m:msup>`).
@@ -90,17 +100,26 @@ Rules established while converting/reviewing math notation for the 3e edition.
   - **words spelled as single-letter `<m:mi>` runs** — whitespace-tolerant scan, e.g.
     `<m:mi>A</m:mi>\s*<m:mi>N</m:mi>\s*<m:mi>D</m:mi>` (AND), `<m:mi>O</m:mi>\s*<m:mi>R</m:mi>` (OR),
     and the same idea for NOT/NOR/GIVEN.
-- When converting, confirm a character-preservation invariant (stripping tags + whitespace, with
-  en-dash↔hyphen↔minus normalized, must be unchanged) so no content is lost — and ideally diff the
+  - **`<m:mtext>` with a regular (non-NBSP) leading/trailing space adjacent to a symbol** — these render
+    glued (see §4); the edge space should be `&#160;`.
+- When converting, confirm a character-preservation invariant (stripping tags + whitespace + `&#160;`,
+  with en-dash↔hyphen↔minus normalized, must be unchanged) so no content is lost — and ideally diff the
   tags-stripped text against `git show HEAD:<path>` so the only changes are markup, not visible text.
+- **Width test for mtext spacing:** to confirm a space actually renders (not just that it's in the source),
+  in the rendered page compare an `<mjx-mtext>`'s box width to its text measured with vs without edge spaces
+  (canvas `measureText`); box ≈ trimmed-width means the space collapsed. (NBSP-vs-regular A/B test: a
+  `<mtext>&#160;AND&#160;</mtext>` typesets visibly wider than `<mtext> AND </mtext>`.)
 
 ## 8. Web-render spot checks
-- When validating in the web reader, **wait several seconds for MathML to finish rendering** before
-  judging — early paints can show transient artifacts (e.g. missing mfenced parens) that resolve.
+- **The rex-web preview's *final* rendered state matches production exactly.** Once the page has fully
+  rendered, what you see is what ships — a persistent rendering problem is real, not a "preview-only"
+  artifact, and must be fixed. (Only mid-load paints are transient — see next bullet.)
+- **Wait several seconds for MathML to finish rendering** before judging — early paints can show
+  transient artifacts (e.g. momentarily missing mfenced parens) that resolve once layout settles.
 - A baked archive/preview snapshot only reflects edits made **before** it was built — fixes made after
   a bake won't appear until the next rebuild. Don't re-flag something already fixed in source.
 - A freshly baked preview often **404s on the first visit** to a page; refresh/re-navigate and it loads.
   (The host can also throw transient "Application Error" pages — wait and retry.)
-- Page-text extraction collapses the spaces inside `<m:mtext> AND </m:mtext>`, so "A AND B" may *look*
-  glued ("AAND B") in extracted text even when it renders correctly. Confirm spacing from the source or
-  a screenshot, not the text dump.
+- **Don't judge spacing from `get_page_text`** — text extraction collapses whitespace, so "A AND B"
+  and a glued "AANDB" look the same in the dump. Use a screenshot/zoom or the §7 width test. (Regular
+  edge spaces in mtext genuinely DO render glued; `&#160;` is what makes them show.)
