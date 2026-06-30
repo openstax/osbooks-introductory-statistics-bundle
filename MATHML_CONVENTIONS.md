@@ -3,6 +3,11 @@
 Rules established while converting/reviewing math notation for the 3e edition.
 **Every content review (and any author content added afterward) must follow these.**
 
+> For non-math element tagging (figures, tables, notes/features, EOC sections, links, sub/sup, etc.),
+> see **`TAGGING_LEGEND.md`** (the author team's CNXML tagging legend). The two docs together govern markup;
+> in particular, math sub/superscripts use MathML `<m:msup>`/`<m:msub>` while purely typographic ones use
+> `<sub>`/`<sup>` (see §2 here and the reconciliation note in the legend).
+
 ## 1. All math goes in MathML
 - Inline math must be MathML (`<m:math>…</m:math>`), not plain text and not `<emphasis effect="italics">`.
   - Single variables (`x`, `X`, `n`, `σ`, …) → `<m:mi>`; numbers → `<m:mn>`; operators → `<m:mo>`.

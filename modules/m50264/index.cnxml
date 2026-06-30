@@ -1,121 +1,204 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Using the Normal Distribution to Estimate the Binomial Distribution</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:content-id>m50264</md:content-id>
+    <md:title>Using the Normal Distribution to Estimate the Binomial Distribution</md:title>
+    <md:abstract/>
+    <md:uuid>66e9cc03-22f5-414b-bdf7-9355abdb2e1c</md:uuid>
+  </metadata>
 
-<title>Normal Distribution (Pinkie Length)</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:content-id>m50264</md:content-id>
-  <md:title>Normal Distribution (Pinkie Length)</md:title>
-  <md:abstract/>
-  <md:uuid>66e9cc03-22f5-414b-bdf7-9355abdb2e1c</md:uuid>
-</metadata>
-
-<content>
-  <note id="fs-id1164259932581" class="statistics lab"><label/><title>Normal Distribution (Pinkie Length)</title>
-<para id="id10270690">Class Time:</para>
-<para id="id9706632">Names:</para>
-<list id="id10998330" list-type="bulleted">
-<title>Student Learning Outcomes</title>
-<item>The student will compare empirical data and a theoretical distribution to determine if data from the experiment follow a continuous distribution. </item>
-</list>
-
-<para id="element-967">
-<title>Collect the Data</title>
-Measure the length of your pinky finger (in centimeters).</para>
-<list id="list-32487618725" list-type="enumerated">
-<item>Randomly survey 30 adults for their pinky finger lengths. Round the lengths to the nearest 0.5 cm.<newline/>
-<table id="element-2352564535s" summary="Blank table with 30 blank cells.">
-<tgroup cols="5">
-<tbody>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row></tbody>
-</tgroup>
-</table>
-</item>
-<item> Construct a histogram. Make five to six intervals. Sketch the graph using a ruler and pencil. Scale the axes.
-<figure class="scaled-down" id="eip-idp99193136"><media id="id5490004" alt="Blank graph with frequency on the vertical axis and length of finger on the horizontal axis."><image src="../../media/fig-ch06_11_01.png" mime-type="image/png"/></media>
-</figure></item>
-<item>Calculate the following.
-<list id="list-98752438" list-type="enumerated" number-style="lower-alpha"><item><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
- 
-</m:math> = _______</item>
-<item><emphasis effect="italics">s</emphasis> = _______</item>
-</list>
-</item>
-<item>Draw a smooth curve  through the top of the bars of the histogram. Write one to two complete sentences to describe the general shape of the curve. (Keep it simple. Does the graph go straight across, does it have a v-shape, does it have a hump in the middle or at either end, and so on?)</item>
-</list>
-
-<para id="element-492"><title>Analyze the Distribution</title>
-Using your sample mean, sample standard deviation, and histogram, what was the approximate theoretical distribution of the data you collected?</para>
-<list id="list-2342345" list-type="bulleted">
-<item><emphasis effect="italics">X</emphasis> ~ _____(_____,_____)</item>
-<item>How does the histogram help you arrive at the approximate distribution?</item> 
-</list>
-
-<para id="element-298">
-<title id="DescData2">Describe the Data</title>
-Using the data you collected complete the following statements. (Hint: order the data)</para>
-
-<note id="id5390377" type="Remember"><label/><title>Remember</title>
-<para id="eip-idp29979984">(<emphasis effect="italics">IQR</emphasis> = <emphasis effect="italics">Q</emphasis><sub>3</sub> – <emphasis effect="italics">Q</emphasis><sub>1</sub>)</para></note><list id="list-98723985" list-type="bulleted"><item><emphasis effect="italics">IQR</emphasis> = _______</item>
-<item>The 15<sup>th</sup> percentile is _______.</item>
-<item>The 85<sup>th</sup> percentile is _______.</item>
-<item>Median is _______.</item>
-<item>What is the theoretical probability that a randomly chosen pinky length is more than 6.5 cm? </item>
-<item>Explain the meaning of the 85<sup>th</sup> percentile of this data.</item>
-</list><para id="element-935">
-<title id="TheoDist2">Theoretical Distribution</title>
-Using the theoretical distribution, complete the following statements. Use a normal approximation based on the sample mean and standard deviation.</para>
-
-<list id="list-98436723985" list-type="bulleted"><item><emphasis effect="italics">IQR</emphasis> = _______</item>
-<item>The 15<sup>th</sup> percentile is _______.</item>
-<item>The 85<sup>th</sup> percentile is _______.</item>
-<item>Median is _______.</item>
-<item>What is the theoretical probability that a randomly chosen pinky length is more than 6.5 cm? </item>
-<item>Explain the meaning of the 85<sup>th</sup> percentile of this data.</item>
-</list><para id="eip-idp56724736"><title>Discussion Questions</title>Do the data you collected give a close approximation to the theoretical distribution? In complete sentences and comparing the results in the sections titled <link target-id="DescData2" document="">Describe the Data</link> and <link target-id="TheoDist2" document="">Theoretical Distribution</link>, explain why or why not.
-</para></note> </content>
-
+  <content>
+    <para id="para-00001">In the previous chapter, we discussed the binomial distribution. Recall that the binomial distribution is used for discrete data and probabilities. Below are a few examples of potential binomial distributions:</para>
+    <figure id="fig-00001">
+      <media alt="Several binomial distributions shown as bar graphs of discrete probabilities.">
+        <image src="../../media/CNX_Stats_C06_6-4_img1.png" mime-type="image/png"/>
+      </media>
+    </figure>
+    <para id="para-00002">Recall that these distributions are <emphasis>not histograms</emphasis>, but distributions for discrete probabilities. However, it can be easily seen that these distributions do seem to mimic a bell-curve shape:</para>
+    <figure id="fig-00002">
+      <media alt="The same binomial distributions with a bell-shaped curve overlaid, showing their resemblance to the normal distribution.">
+        <image src="../../media/CNX_Stats_C06_6-4_img2.png" mime-type="image/png"/>
+      </media>
+    </figure>
+    <para id="para-00003">The normal distribution can indeed be used for estimates of the binomial distribution, where calculations such as <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mi>X</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> can be visualized in the figures below:</para>
+    <figure id="fig-00003">
+      <media alt="A binomial distribution with a normal curve overlaid and the area for x greater than X shaded.">
+        <image src="../../media/CNX_Stats_C06_6-4_img3.png" mime-type="image/png"/>
+      </media>
+    </figure>
+    <para id="para-00004">We find that the normal distribution makes particularly accurate estimates of a binomial process under certain circumstances. <link target-id="eip-3e-fig-6-10"/> is a frequency distribution of a binomial process for the experiment of flipping three coins where the random variable is the number of heads. The sample space is listed below the distribution. The experiment assumed that the probability of a success is 0.5; the probability of a failure, a tail, is thus also 0.5. In observing <link target-id="eip-3e-fig-6-10"/> we are struck by the fact that the distribution is symmetrical. The root of this result is that the probabilities of success and failure are the same, 0.5. If the probability of success were smaller than 0.5, the distribution becomes skewed right. Indeed, as the probability of success diminishes, the degree of skewness increases. If the probability of success increases from 0.5, then the skewness increases in the lower tail, resulting in a left-skewed distribution.</para>
+    <figure id="eip-3e-fig-6-10">
+      <media alt="A histogram of the frequency distribution of flipping three coins where x is the number of heads. Bars at 0, 1, 2, 3 have heights 1/8, 3/8, 3/8, 1/8. Below the histogram is the sample space set s = {HHH, HHT, HTH, THH, TTT, TTH, THT, HTT}.">
+        <image src="../../media/CNX_Stats_C06_6-4_img4.png" mime-type="image/png"/>
+      </media>
+    </figure>
+    <para id="para-00005">The reason the skewness of the binomial distribution is important is because if it is to be estimated with a normal distribution, then we need to recognize that the normal distribution is symmetrical. The closer the underlying binomial distribution is to being symmetrical, the better the estimate that is produced by the normal distribution. <link target-id="eip-3e-fig-6-11"/> shows a symmetrical normal distribution transposed on a graph of a binomial distribution where <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>. The discrepancy between the estimated probability using a normal distribution and the probability of the original binomial distribution is apparent.</para>
+    <figure id="eip-3e-fig-6-11">
+      <media alt="A histogram of a binomial distribution with p = 0.2 and n = 5, with bar heights 0.3277, 0.4096, 0.2048, 0.0512, 0.0064, 0.0003 at 0 through 5, and a normal curve with mean 1 superimposed.">
+        <image src="../../media/CNX_Stats_C06_6-4_img5.png" mime-type="image/png"/>
+      </media>
+    </figure>
+    <section id="sect-00001">
+      <title>Criteria for Using the Normal Distribution to Estimate the Binomial Distribution</title>
+      <para id="para-00006">For a random variable <m:math><m:mi>X</m:mi></m:math> with the binomial distribution <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, the normal distribution can approximate a binomial distribution if:</para>
+      <list list-type="enumerated" id="list-00001">
+        <item><m:math><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></item>
+        <item><m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></item>
+      </list>
+      <para id="para-00007">Recall in a binomial distribution, <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:msqrt></m:mrow></m:math>. When the criteria above are met, the normal distribution can be used where <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo></m:mrow></m:math>.</para>
+    </section>
+    <example id="exam-00001">
+      <para id="para-00008">Imagine that it is known that only 10% of Australian Shepherd puppies are born with what is called "perfect symmetry" in their three colors, black, white, and copper. Perfect symmetry is defined as equal coverage on all parts of the dog when looked at in the face and measuring left and right down the centerline. A kennel would have a good reputation for breeding Australian Shepherds if they had a high percentage of dogs that met this criterion. During the past 5 years and out of the 100 dogs born to Dundee Kennels, 16 were born with this coloring characteristic.</para>
+      <exercise id="exer-00001">
+        <problem id="prob-00001">
+          <para id="para-00009">What is the probability that, in 100 births, 16 or more dogs would have this characteristic?</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+            <item>Compute this situation using a binomial distribution.</item>
+            <item>Check the criteria to see if the normal distribution can approximate this situation. If it can, then redo this problem using the normal distribution.</item>
+          </list>
+        </problem>
+        <solution id="sol-00001">
+          <para id="para-00010">a. Using <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>0.10</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, we find the <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo></m:mrow></m:math> 0.0399</para>
+          <figure id="fig-00004">
+            <media alt="A binomial distribution for the Australian Shepherd example with the area for 16 or more successes shaded.">
+              <image src="../../media/CNX_Stats_C06_6-4_img6.png" mime-type="image/png"/>
+            </media>
+          </figure>
+          <para id="para-00011">b. First we check that:</para>
+          <equation class="unnumbered" id="eq-00001"><m:math><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></equation>
+          <equation class="unnumbered" id="eq-00002"><m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.90</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>90</m:mn><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></equation>
+          <para id="para-00012">The criteria to use the normal distribution have been met.</para>
+          <para id="para-00013"><link target-id="eip-3e-fig-6-12"/> below shows the binomial distribution and marks the area we wish to know. The mean of the binomial, 10, is also marked, and the standard deviation is written on the side of the graph: <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>. We will use <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to estimate this situation. The area under the distribution from zero to 16 is the probability requested, and has been shaded in. Below the binomial distribution is a normal distribution to be used to estimate this probability. That probability has also been shaded.</para>
+          <figure id="eip-3e-fig-6-12">
+            <media alt="A histogram of a binomial distribution with p = 0.1 and n = 100, with bars greater than 16 shaded; below it a normal curve with mean 10 has the area for x greater than 16 shaded, with the z-score calculation z = (16 − 10)/3 = 2 shown.">
+              <image src="../../media/CNX_Stats_C06_6-4_img7.png" mime-type="image/png"/>
+            </media>
+          </figure>
+          <para id="para-00014">Standardizing from the binomial to the normal distribution as done in the past shows where we are asking for the probability from 16 to positive infinity, or 100 in this case. We need to calculate the number of standard deviations 16 is away from the mean: 10.</para>
+          <equation class="unnumbered" id="eq-00003"><m:math><m:mrow><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></equation>
+          <para id="para-00015">We are asking for the probability beyond two standard deviations, a very unlikely event. We look up two standard deviations in the standard normal table and find the area from zero to two standard deviations is 0.4772. We are interested in the tail, however, so we subtract 0.4772 from 0.5 and thus find the area in the tail. Our conclusion is the probability of a kennel having 16 or more dogs with "perfect symmetry" is 0.0228. Dundee Kennels has an extraordinary record in this regard.</para>
+          <para id="para-00016">Mathematically, we write this as:</para>
+          <equation class="unnumbered" id="eq-00004"><m:math><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mo stretchy="false">[</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mo>⋯</m:mo><m:mo>+</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo><m:mo>=</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Z</m:mi><m:mo>></m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0228</m:mn></m:mrow></m:math></equation>
+          <para id="para-00017">Note that computing this situation with the binomial distribution gave a probability of 0.0334 while the normal distribution gave a probability of 0.0228. For now, we will merely note that these values are close but clearly there is a discrepancy between them. There is a correction factor between these values to explain this discrepancy, which will be discussed in another section.</para>
+        </solution>
+      </exercise>
+    </example>
+    <note class="statistics try" id="note-00001">
+      <title>Try It</title>
+      <exercise id="exer-00002">
+        <problem id="prob-00002">
+          <para id="para-00018">Let's assume that only 10% of the wooden furniture made by a carpenter is made to the exact dimensions in the blueprint. During the last 3 years, the carpenter has made 100 pieces of wooden furniture, and 16 were found to be made to the exact dimensions in the blueprint.</para>
+          <para id="para-00019">What is the probability that, in 100 wooden furniture items, more than 16 would be made to the exact dimensions of the blueprint?</para>
+        </problem>
+      </exercise>
+    </note>
+    <example id="exam-00002">
+      <para id="para-00020">It has been stated that about 41% of adult workers have a high school diploma but do not pursue any further education. If 20 adult workers are randomly selected, find the probability that at most 12 of them have a high school diploma but do not pursue any further education. How many adult workers do you expect to have a high school diploma but do not pursue any further education? Previously this problem was completed using the binomial distribution where:</para>
+      <para id="para-00021">Let <m:math><m:mi>X</m:mi></m:math> = the number of workers who have a high school diploma but do not pursue any further education.</para>
+      <para id="para-00022"><m:math><m:mi>X</m:mi></m:math> takes on the values 0, 1, 2, ..., 20 where <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.41</m:mn></m:mrow></m:math>, and <m:math><m:mrow><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.41</m:mn><m:mo>=</m:mo><m:mn>0.59</m:mn></m:mrow></m:math>. <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>0.41</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+      <para id="para-00023">Find <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.9738</m:mn></m:mrow></m:math>. (calculator or computer)</para>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="para-00024">Redo this problem using the normal distribution to estimate the binomial distribution if it is possible.</para>
+        </problem>
+        <solution id="sol-00002">
+          <para id="para-00025">First check the criteria:</para>
+          <equation class="unnumbered" id="eq-00005"><m:math><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.41</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>8.2</m:mn></m:mrow></m:math></equation>
+          <equation class="unnumbered" id="eq-00006"><m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.59</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>11.8</m:mn></m:mrow></m:math></equation>
+          <para id="para-00026">Both criteria are met. We see that <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>8.2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>20</m:mn><m:mo>⋅</m:mo><m:mn>0.41</m:mn><m:mo>⋅</m:mo><m:mn>0.59</m:mn></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>2.2</m:mn></m:mrow></m:math>, so we will use the normal distribution <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8.2</m:mn><m:mo>,</m:mo><m:mn>2.2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to estimate this situation.</para>
+          <figure id="fig-00005">
+            <media alt="A binomial distribution with n = 20 and p = 0.41 with a normal curve N(8.2, 2.2) overlaid and the area for x at most 12 shaded.">
+              <image src="../../media/CNX_Stats_C06_6-4_img8.png" mime-type="image/png"/>
+            </media>
+          </figure>
+          <para id="para-00027">In this case, we find that <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.9745</m:mn></m:mrow></m:math> using the normal distribution. Again, for now we note there is a discrepancy between the probabilities that will be resolved later.</para>
+        </solution>
+      </exercise>
+    </example>
+    <note class="statistics try" id="note-00002">
+      <title>Try It</title>
+      <exercise id="exer-00004">
+        <problem id="prob-00004">
+          <para id="para-00028">In the 2013 <emphasis>Jerry's Artarama</emphasis> art supplies catalog, there are 560 pages. Eight of the pages feature signature artists. Suppose we randomly sample 100 pages. Let <m:math><m:mi>X</m:mi></m:math> = the number of pages that feature signature artists. Find the probability that at most six pages feature signature artists using the normal distribution to estimate the binomial distribution.</para>
+        </problem>
+      </exercise>
+    </note>
+    <section class="summary" id="sect-00002">
+      <title>Using the Normal Distribution to Estimate the Binomial Distribution</title>
+      <para id="para-00029">The binomial distribution can be estimated by the normal distribution if the following criteria are met when <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>:</para>
+      <list list-type="enumerated" id="list-00003">
+        <item><m:math><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></item>
+        <item><m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></item>
+      </list>
+      <para id="para-00030">If these criteria are met, then the normal distribution <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> can be used where <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:mrow></m:math>.</para>
+    </section>
+    <section class="formula-review" id="sect-00003">
+      <title>Using the Normal Distribution to Estimate the Binomial Distribution</title>
+      <para id="para-00031"><m:math><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math>, <m:math><m:mrow><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:mrow></m:math></para>
+      <para id="para-00032">For the binomial distribution: <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:mrow></m:math>, <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:mrow></m:math></para>
+      <para id="para-00033"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> can be approximated using <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+    </section>
+    <section class="practice" id="sect-00004">
+      <title>Using the Normal Distribution to Estimate the Binomial Distribution</title>
+      <exercise id="exer-00005">
+        <problem id="prob-00005"><para id="para-00034">An experiment with a probability of success given as 0.40 is repeated 100 times.</para><list list-type="enumerated" number-style="upper-alpha" id="list-00004"><item>Use the binomial distribution to find the probability the experiment will have at least 45 successes.</item><item>Use the normal distribution to approximate the binomial distribution, and find the probability the experiment will have at least 45 successes.</item></list></problem>
+      </exercise>
+      <exercise id="exer-00006">
+        <problem id="prob-00006"><para id="para-00035">An experiment with a probability of success given as 0.30 is repeated 90 times.</para><list list-type="enumerated" number-style="upper-alpha" id="list-00005"><item>Use the binomial distribution to find the probability the experiment will have at least 22 successes.</item><item>Use the normal distribution to approximate the binomial distribution, and find the probability the experiment will have at least 22 successes.</item></list></problem>
+        <solution id="sol-00003"><para id="para-00036">0.899 (binomial); 0.897 (normal approximation).</para></solution>
+      </exercise>
+      <exercise id="exer-00007">
+        <problem id="prob-00007"><para id="para-00037">An experiment with a probability of success given as 0.40 is repeated 100 times.</para><list list-type="enumerated" number-style="upper-alpha" id="list-00006"><item>Use the binomial distribution to find the probability the experiment will have from 35 to 45 successes.</item><item>Use the normal distribution to approximate the binomial distribution, and find the probability the experiment will have from 35 to 45 successes.</item></list></problem>
+      </exercise>
+      <exercise id="exer-00008">
+        <problem id="prob-00008"><para id="para-00038">An experiment with a probability of success given as 0.30 is repeated 90 times.</para><list list-type="enumerated" number-style="upper-alpha" id="list-00007"><item>Use the binomial distribution to find the probability the experiment will have from 26 to 30 successes.</item><item>Use the normal distribution to approximate the binomial distribution, and find the probability the experiment will have from 26 to 30 successes.</item></list></problem>
+        <solution id="sol-00004"><para id="para-00039">0.421 (binomial); 0.425 (normal approximation).</para></solution>
+      </exercise>
+      <exercise id="exer-00009">
+        <problem id="prob-00009"><para id="para-00040">An experiment with a probability of success given as 0.40 is repeated 100 times. Use the normal distribution to approximate the binomial distribution, and find the probability the experiment will have at most 34 successes.</para></problem>
+      </exercise>
+      <exercise id="exer-00010">
+        <problem id="prob-00010"><para id="para-00041">An experiment with a probability of success given as 0.30 is repeated 90 times. Use the normal distribution to approximate the binomial distribution, and find the probability the experiment will have at most 34 successes.</para></problem>
+        <solution id="sol-00005"><para id="para-00042">0.958 (normal approximation).</para></solution>
+      </exercise>
+      <exercise id="exer-00011">
+        <problem id="prob-00011"><para id="para-00043">A multiple choice test has a probability any question will be guessed correctly of 0.25. There are 100 questions, and a student guesses at all of them. Use the normal distribution to approximate the binomial distribution, and determine the probability at least 30, but no more than 32, questions will be guessed correctly.</para></problem>
+      </exercise>
+      <exercise id="exer-00012">
+        <problem id="prob-00012"><para id="para-00044">A multiple choice test has a probability any question will be guessed correctly of 0.25. There are 100 questions, and a student guesses at all of them. Use the normal distribution to approximate the binomial distribution, and determine the probability at least 24, but no more than 28, questions will be guessed correctly.</para></problem>
+        <solution id="sol-00006"><para id="para-00045">0.426 (normal approximation).</para></solution>
+      </exercise>
+    </section>
+    <section class="free-response" id="sect-00005">
+      <title>Using the Normal Distribution to Estimate the Binomial Distribution</title>
+      <exercise id="exer-00013">
+        <problem id="prob-00013"><para id="para-00046">An automotive factory can build an average of 6,000 cars and trucks a week. Generally, 10% of the cars were defective coming off the assembly line. Suppose we draw a random sample of <m:math><m:mi>n</m:mi></m:math> = 100 cars. Let <m:math><m:mi>X</m:mi></m:math> represent the number of defective cars in the sample. What can we say about <m:math><m:mi>X</m:mi></m:math> in regard to the 68-95-99.7 empirical rule (one standard deviation, two standard deviations and three standard deviations from the mean are being referred to)? Assume a normal distribution for the defective cars in the sample.</para></problem>
+      </exercise>
+      <exercise id="exer-00014">
+        <problem id="prob-00014"><para id="para-00047">We flip a coin 100 times (<m:math><m:mi>n</m:mi></m:math> = 100) and note that it only comes up heads 20% (<m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.20</m:mn></m:mrow></m:math>) of the time. The mean and standard deviation for the number of times the coin lands on heads is <m:math><m:mrow><m:mi>µ</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> (verify the mean and standard deviation). Solve the following:</para><list list-type="enumerated" number-style="lower-alpha" id="list-00008"><item>There is about a 68% chance that the number of heads will be somewhere between ___ and ___.</item><item>There is about a ____ chance that the number of heads will be somewhere between 12 and 28.</item><item>There is about a ____ chance that the number of heads will be somewhere between eight and 32.</item></list></problem>
+        <solution id="sol-00007"><para id="para-00048">About 16 and 24 (<m:math><m:mrow><m:mi>µ</m:mi><m:mo>±</m:mo><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>±</m:mo><m:mn>4</m:mn></m:mrow></m:math>); about 95% (12 to 28 is <m:math><m:mrow><m:mi>µ</m:mi><m:mo>±</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math>); about 99.7% (8 to 32 is <m:math><m:mrow><m:mi>µ</m:mi><m:mo>±</m:mo><m:mn>3</m:mn><m:mi>σ</m:mi></m:mrow></m:math>).</para></solution>
+      </exercise>
+      <exercise id="exer-00015">
+        <problem id="prob-00015"><para id="para-00049">A $1 scratch off lotto ticket will be a winner one out of five times. Out of a shipment of <m:math><m:mi>n</m:mi></m:math> = 190 lotto tickets, find the probability for the lotto tickets that there are</para><list list-type="enumerated" number-style="lower-alpha" id="list-00009"><item>somewhere between 34 and 54 prizes.</item><item>somewhere between 54 and 64 prizes.</item><item>more than 64 prizes.</item></list></problem>
+      </exercise>
+      <exercise id="exer-00016">
+        <problem id="prob-00016"><para id="para-00050">A hospital has 49 births in a year. It is considered equally likely that a birth be a boy as it is the birth be a girl.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00010"><item>What is the mean?</item><item>What is the standard deviation?</item><item>Can this binomial distribution be approximated with a normal distribution?</item><item>If so, use the normal distribution to find the probability that at least 23 of the 49 births were boys.</item></list></problem>
+        <solution id="sol-00008"><para id="para-00051">mean = 24.5; standard deviation = 3.5; yes, the normal approximation applies because <m:math><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>24.5</m:mn><m:mo>≥</m:mo><m:mn>5</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>23</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>0.716</m:mn></m:mrow></m:math>.</para></solution>
+      </exercise>
+      <exercise id="exer-00017">
+        <problem id="prob-00017"><para id="para-00052">Historically, a final exam in a course is passed with a probability of 0.9. The exam is given to a group of 70 students.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00011"><item>What is the mean of the binomial distribution?</item><item>What is the standard deviation?</item><item>Can this binomial distribution be approximated with a normal distribution?</item><item>If so, use the normal distribution to find the probability that at least 60 of the students pass the exam?</item></list></problem>
+      </exercise>
+      <exercise id="exer-00018">
+        <problem id="prob-00018"><para id="para-00053">A tree in an orchard has 200 oranges. Of the oranges, 40 are not ripe. Use the normal distribution to approximate the binomial distribution, and determine the probability a box containing 35 oranges has at most two oranges that are not ripe.</para></problem>
+        <solution id="sol-00009"><para id="para-00054">0.029 (normal approximation).</para></solution>
+      </exercise>
+      <exercise id="exer-00019">
+        <problem id="prob-00019"><para id="para-00055">In a large city one in ten fire hydrants are in need of repair. If a crew examines 100 fire hydrants in a week, what is the probability they will find nine or fewer fire hydrants that need repair? Use the normal distribution to approximate the binomial distribution.</para></problem>
+      </exercise>
+      <exercise id="exer-00020">
+        <problem id="prob-00020"><para id="para-00056">On an assembly line it is determined 85%% of the assembled products have no defects. If one day 50 items are assembled, what is the probability at least 4 and no more than 8 are defective. Use the normal distribution to approximate the binomial distribution.</para></problem>
+        <solution id="sol-00010"><para id="para-00057">0.597 (normal approximation).</para></solution>
+      </exercise>
+    </section>
+  </content>
 </document>
