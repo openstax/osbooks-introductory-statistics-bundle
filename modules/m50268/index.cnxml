@@ -1,238 +1,371 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
-
-<title>Central Limit Theorem (Pocket Change)</title>
-<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Using the Central Limit Theorem</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m50268</md:content-id>
-  <md:title>Central Limit Theorem (Pocket Change)</md:title>
+  <md:title>Using the Central Limit Theorem</md:title>
   <md:abstract/>
   <md:uuid>920d69d4-8aa8-4541-87b0-964f8cf40f07</md:uuid>
 </metadata>
 
 <content>
-  <note id="fs-id1172804210713" class="statistics lab"><label/><title>Central Limit Theorem (Pocket Change)</title>
-
-<para id="id48439801">Class Time: </para>
-<para id="id48439812">Names:</para>
-
-
-<list id="id48439824" list-type="bulleted">
-<title>Student Learning Outcomes</title>
-<item>The student will demonstrate and compare properties of the central limit theorem.</item>
+<para id="para-00001">We have learned three ways to use the Central Limit Theorem:</para>
+<list list-type="enumerated" id="list-00001">
+<item>For means</item>
+<item>For sums</item>
+<item>For proportions</item>
 </list>
-
-<note id="id17413334">
-<label/><title>NOTE</title>
-
-<para id="fs-idm68262064">This lab works best when sampling from several classes and combining data.</para></note>
-
-<list id="list-9099999888" list-type="enumerated"><title id="CollectData">Collect the Data</title><item>Count the change in your pocket. (Do not include bills.)</item>
-<item>Randomly survey 30 classmates. Record the values of the change in <link target-id="Ch07_lab1_tbl001" document=""/>.
-<table id="Ch07_lab1_tbl001" summary="Blank table with 30 empty cells.">
+<para id="para-00002">Each application of the CLT results in a new normal distribution.</para>
+<section id="sect-00001">
+<title>Formula and Graph Review</title>
+<para id="para-00003">It can get confusing to know when we are using a normal distribution for data versus a normal distribution that comes from the Central Limit Theorem. As such, we will compare the differences in notation and relevant formulas first:</para>
+<table summary="Comparison of notation, random variable, z-score formula, and probability statement for the normal distribution and the three Central Limit Theorem distributions." id="table-00001">
 <tgroup cols="5">
+<thead>
+<row>
+<entry>Distribution</entry>
+<entry>How a problem will refer to a value in the distribution</entry>
+<entry>Random Variable Notation</entry>
+<entry>Z-score Formula</entry>
+<entry>Sample way to display a probability statement for a value greater than some value k</entry>
+</row>
+</thead>
 <tbody>
 <row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
+<entry>Normal Distribution</entry>
+<entry>It will be indicated that we are referring to an <emphasis effect="italics">individual</emphasis> data point</entry>
+<entry><m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
+<entry><m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:math></entry>
+<entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
 </row>
 <row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
+<entry>Distribution of Means</entry>
+<entry>We will refer to a <emphasis effect="italics">mean</emphasis> from a sample of size n</entry>
+<entry><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mi>~</m:mi><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></entry>
+<entry><m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math></entry>
+<entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
 </row>
 <row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
+<entry>Distribution of Sums</entry>
+<entry>We will refer to either a <emphasis effect="italics">sum</emphasis> or <emphasis effect="italics">total</emphasis> of n values</entry>
+<entry><m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></entry>
+<entry><m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math></entry>
+<entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>></m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
 </row>
 <row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
+<entry>Distribution of Proportions</entry>
+<entry>We will refer to a <emphasis effect="italics">proportion</emphasis></entry>
+<entry><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>,</m:mo><m:mtext> </m:mtext><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></entry>
+<entry><m:math><m:msub><m:mi>z</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math></entry>
+<entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>></m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
 </row>
 </tbody>
 </tgroup>
 </table>
-</item>
-	<item>Construct a histogram. Make five to six intervals. Sketch the graph using a ruler and pencil. Scale the axes.<newline/>
-<figure class="scaled-down" id="id17573354"><media id="id17573359" alt="Blank graph template. The horizontal axis is labeled Value of the change and the vertical axis is labeled Frequency."><image src="../../media/fig-ch07_09_01.png" mime-type="image/png"/></media>
-</figure></item>
-<item> Calculate the following (<emphasis effect="italics">n</emphasis> = 1; surveying one person at a time):
-<list id="list-975947" list-type="enumerated" number-style="lower-alpha"><item><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> = _______</item>
-<item><emphasis effect="italics">s</emphasis> = _______</item>
-</list></item>
-<item>Draw a smooth curve through the tops of the bars of the histogram. Use one to two complete sentences to describe the general shape of the curve.</item>
-</list><para id="element-509"><title>Collecting Averages of Pairs</title>Repeat steps one through five of the section <link target-id="CollectData" document="">Collect the Data.</link> with one exception. Instead of recording the change of 30 classmates, record the average change of 30 pairs.</para><list id="list-9759443" list-type="enumerated"><item>Randomly survey 30 <emphasis>pairs</emphasis> of classmates.</item>
-<item>Record the values of the average of their change in <link target-id="Ch07_lab1_tbl002" document=""/>.
-<table id="Ch07_lab1_tbl002" summary="Blank table containing 30 blank cells.">
-<tgroup cols="5">
-<tbody>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-<item>Construct a histogram. Scale the axes using the same scaling you used for the section titled <link target-id="CollectData" document="">Collect the Data</link>. Sketch the graph using a ruler and a pencil.<newline/>
-
-<figure class="scaled-down" id="id17561753">
-<media id="id17561758" alt="This is a blank graph template. The horizontal axis is labeled Value of the change and the vertical axis is labeled Frequency.">
-<image src="../../media/fig-ch07_09_02.png" mime-type="image/png"/>
-</media></figure></item>
-<item> Calculate the following (<emphasis effect="italics">n</emphasis> = 2; surveying two people at a time):
-<list id="list-975875947" list-type="enumerated" number-style="lower-alpha">
-<item><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> = _______</item>
-<item><emphasis effect="italics">s</emphasis> = _______</item>
-</list></item>
-<item>Draw a smooth curve through tops of the bars of the histogram. Use one to two complete sentences to describe the general shape of the curve.</item>
-</list><para id="element-505436759"><title>Collecting Averages of Groups of Five</title>Repeat steps one through five (of the section titled <link target-id="CollectData" document="">Collect the Data</link>) with one exception. Instead of recording the change of 30 classmates, record the average change of 30 groups of five.</para><list id="list-9735659975974443" list-type="enumerated" number-style="arabic"><item>Randomly survey 30 <emphasis>groups of five</emphasis> classmates.</item>
-<item>Record the values of the average of their change.<table id="Ch07_lab1_tbl003" summary="Blank table containing 30 blank cells.">
-<tgroup cols="5">
-<tbody>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-<row>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-<entry/>
-</row>
-</tbody>
-</tgroup>
-</table>
-</item>
-<item>Construct a histogram. Scale the axes using the same scaling you used for the section titled <link target-id="CollectData" document="">Collect the Data</link>. Sketch the graph using a ruler and a pencil.<figure class="scaled-down" id="id17563881"><media id="id17563886" alt="This is a blank graph template. The horizontal axis is labeled Value of the change and the vertical axis is labeled Frequency.">
-<image src="../../media/fig-ch07_09_03.png" mime-type="image/png"/>
-</media></figure></item>
-<item>Calculate the following (<emphasis effect="italics">n</emphasis> = 5; surveying five people at a time):
-<list id="list-97587555947" list-type="enumerated" number-style="lower-alpha">
-<item><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> = _______</item>
-<item><emphasis effect="italics">s</emphasis> = _______</item>
-</list></item>
-<item>Draw a smooth curve through tops of the bars of the histogram. Use one to two complete sentences to describe the general shape of the curve.</item>
-</list><list id="element-441" list-type="enumerated"><title>Discussion Questions</title><item>Why did the shape of the distribution of the data change, as <emphasis effect="italics">n</emphasis> changed? Use one to two complete sentences to explain what happened.</item>
-<item>In the section titled <link target-id="CollectData" document="">Collect the Data</link>, what was the approximate distribution of the data? <emphasis effect="italics">X</emphasis> ~ _____(_____,_____)</item>
-<item>In the section titled <link target-id="element-505436759" document="">Collecting Averages of Groups of Five</link>, what was the approximate distribution of the averages? <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> ~ _____(_____,_____)</item>
-<item>In one to two complete sentences, explain any differences in your answers to the previous two questions.</item></list></note> </content>
-
+<para id="para-00004">Additionally, we should note the subtle differences in the graphs:</para>
+<figure id="fig-00001">
+<media alt="A comparison of the graphs of the normal distribution and the distributions of means, sums, and proportions produced by the Central Limit Theorem.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img1.png"/>
+</media></figure>
+<para id="para-00005">It is also possible that the original population could come from a set of data that is not normally distributed. Pay careful attention to what type of distribution is being used in the individual data versus when the Central Limit Theorem is being invoked.</para>
+</section>
+<section id="sect-00002">
+<title>Central Limit Theorem for the Mean and Sum Examples</title>
+<example id="exam-00001">
+<para id="para-00006">A study involving stress is conducted among the students on a college campus. <emphasis>The stress scores follow a uniform distribution</emphasis> with the lowest stress score equal to one and the highest equal to five. Using a sample of 75 students, answer the following questions:</para>
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+<item>What is the distribution for the individual data points? Describe both the random variable and how it is distributed.</item>
+<item>Find the mean and standard deviation for the population.</item>
+<item>Find the probability that a random student's stress score is 4 or more. Write both the probability statement and draw a graph associated with this situation.</item>
+<item>How can we describe the random variable <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> in this situation, and how is it distributed?</item>
+<item>Find the probability that the <emphasis>mean stress score</emphasis> for the 75 students is less than two. Write both the probability statement and draw a graph associated with this situation.</item>
+<item>Find the 90<sup>th</sup> percentile for the <emphasis>mean stress score</emphasis> for the 75 students. Draw a graph.</item>
+<item>How can we describe the random variable <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math> in this situation, and how is it distributed?</item>
+<item>Find the probability that the <emphasis>total of the 75 stress scores</emphasis> is less than 200. Write both the probability statement and draw a graph associated with this situation.</item>
+<item>Find the 90<sup>th</sup> percentile for the <emphasis>total stress score</emphasis> for the 75 students. Draw a graph.</item>
+</list>
+<para id="para-00007">Let <emphasis effect="italics">X</emphasis> = one stress score. The sample size, <emphasis effect="italics">n</emphasis>, is equal to 75.</para>
+<para id="para-00008">Since the individual stress scores follow a uniform distribution, <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>U</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:math> where <emphasis effect="italics">a</emphasis> = 1 and <emphasis effect="italics">b</emphasis> = 5 (see <link url="http://openstax.org/books/introductory-statistics-2e/pages/5-introduction">Continuous Random Variables</link> for an explanation of the uniform distribution).</para>
+</problem>
+<solution id="sol-00001">
+<para id="para-00009">a. The random variable <emphasis effect="italics">X</emphasis> = the stress scores of individual students. It is distributed <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>U</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>5</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math></para>
+<para id="para-00010">b. Since we are using the uniform distribution, we will use the formulas: <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>3</m:mn></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>1.1547</m:mn></m:math></para>
+<para id="para-00011">c. The probability statement is <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>4</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> We can represent this situation with the graph:</para>
+<figure id="fig-00002">
+<media alt="The graph of the uniform distribution on the interval from 1 to 5; the area to the right of 4 is shaded and equals one fourth.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img2.png"/>
+</media></figure>
+<para id="para-00012">The area is <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>4</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>4</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>4</m:mn></m:mrow></m:mfrac></m:math></para>
+<para id="para-00013">d. Since we are interested in a sample of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>75</m:mn><m:mo>,</m:mo></m:math> <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean stress score for 75 students. We say <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1.1547</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>75</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0.1333</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math></para>
+<para id="para-00014">e. <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math></para>
+<para id="para-00015">The probability that the mean stress score is less than two is about zero.</para>
+<figure id="fig-00003">
+<media alt="A normal distribution curve over a horizontal axis. The peak of the curve coincides with the point 3 on the horizontal axis. A point, 2, is marked at the left edge of the curve.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img3.png"/>
+</media></figure>
+<para id="para-00016">Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1.1547</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>75</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>0.1333</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>, we find that <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:math></para>
+<note class="statistics note" id="note-00001">
+<title>REMINDER</title>
+<para id="para-00017">The smallest stress score is one.</para>
+</note>
+<para id="para-00018">f. Let <emphasis effect="italics">k</emphasis> = the 90<sup>th</sup> percentile. Find <emphasis effect="italics">k</emphasis>, where <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.90</m:mn><m:mo>.</m:mo></m:math> <m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>3.2</m:mn></m:math></para>
+<figure id="fig-00004">
+<media alt="A normal distribution curve. The peak coincides with the point 3 on the horizontal axis. A point, k, is labeled to the right of 3; the area under the curve to the left of k is shaded, showing that P(x-bar &lt; k) = 0.90.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img4.png"/>
+</media></figure>
+<para id="para-00019">The 90<sup>th</sup> percentile for the mean of 75 scores is about 3.2. This tells us that 90% of all the means of 75 stress scores are at most 3.2, and that 10% are at least 3.2.</para>
+<para id="para-00020"><code>invNorm</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.90</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1.15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>75</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 3.2</para>
+<para id="para-00021">g. <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math> = the sum total of 75 stress scores for students, and <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>3</m:mn><m:mo>·</m:mo><m:mn>75</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>1.1547</m:mn><m:mo>·</m:mo><m:msqrt><m:mrow><m:mn>75</m:mn></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>225</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo></m:math></para>
+<para id="para-00022">h. <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>200</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0062</m:mn></m:math></para>
+<figure id="fig-00005">
+<media alt="A normal distribution curve over a horizontal axis. The peak of the curve coincides with the point 225 on the horizontal axis. A point, 200, is marked at the left edge of the curve.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img5.png"/>
+</media></figure>
+<para id="para-00023">The probability that the total of 75 scores is less than 200 is about 0.0062.</para>
+<para id="para-00024"><code>normalcdf</code>(75, 200, 225, 10)</para>
+<note class="statistics note" id="note-00002">
+<title>REMINDER</title>
+<para id="para-00025">The smallest total of 75 stress scores is 75, because the smallest single score is one.</para>
+</note>
+<para id="para-00026">i. Let <emphasis effect="italics">k</emphasis> = the 90<sup>th</sup> percentile. Find <emphasis effect="italics">k</emphasis> where <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.90</m:mn><m:mo>.</m:mo></m:math> <m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>237.8</m:mn></m:math></para>
+<figure id="fig-00006">
+<media alt="A normal distribution curve. The peak coincides with the point 225 on the horizontal axis. A point, k, is labeled to the right of 225; the area under the curve to the left of k is shaded, showing that P(sum of x &lt; k) = 0.90.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img6.png"/>
+</media></figure>
+<para id="para-00027">The 90<sup>th</sup> percentile for the sum of 75 scores is about 237.8. This tells us that 90% of all the sums of 75 scores are no more than 237.8 and 10% are no less than 237.8.</para>
+<para id="para-00028"><code>invNorm</code>(0.90, (75)(3), <m:math><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>75</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.15</m:mn><m:mo stretchy="false">)</m:mo></m:math>) = 237.8</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00003">
+<title>Try It</title>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00029">Use the information in the previous example, but use a sample size of 55 to answer the following questions.</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+<item>Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>7</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math></item>
+<item>Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>></m:mo><m:mn>170</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math></item>
+<item>Find the 80<sup>th</sup> percentile for the mean of 55 scores.</item>
+<item>Find the 85<sup>th</sup> percentile for the sum of 55 scores.</item>
+</list>
+</problem>
+</exercise>
+</note>
+<example id="exam-00002">
+<para id="para-00030">Suppose that a market research analyst for a cell phone company conducts a study of their customers who exceed the time allowance included on their basic cell phone contract; the analyst finds that for those people who exceed the time included in their basic contract, the <emphasis>excess time used</emphasis> follows an exponential distribution with a mean of 22 minutes.</para>
+<para id="para-00031">Consider a random sample of 80 customers who exceed the time allowance included in their basic cell phone contract.</para>
+<para id="para-00032">Let <emphasis effect="italics">X</emphasis> = the excess time used by one INDIVIDUAL cell phone customer who exceeds his contracted time allowance.</para>
+<para id="para-00033"><m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mtext>Exp</m:mtext><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>22</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> From previous chapters, we know that <emphasis effect="italics">μ</emphasis> = 22 and <emphasis effect="italics">σ</emphasis> = 22.</para>
+<para id="para-00034">Let <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean excess time used by a sample of <emphasis effect="italics">n</emphasis> = 80 customers who exceed their contracted time allowance.</para>
+<para id="para-00035"><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>22</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>80</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> by the central limit theorem for sample means.</para>
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00036"><emphasis>Using the CLT to find probability</emphasis></para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+<item>Find the probability that the mean excess time used by the 80 customers in the sample is longer than 20 minutes. This is asking us to find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math> Draw the graph.</item>
+<item>Suppose that one customer who exceeds the time limit for his cell phone contract is randomly selected. Find the probability that this individual customer's excess time is longer than 20 minutes. This is asking us to find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math></item>
+<item>Explain why the probabilities in parts a and b are different.</item>
+</list>
+</problem>
+<solution id="sol-00002">
+<para id="para-00037">a. Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo></m:math></para>
+<para id="para-00038"><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.7919 using <code>normalcdf</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mtext>E</m:mtext><m:mn>99</m:mn><m:mo>,</m:mo><m:mn>22</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>80</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
+<para id="para-00039">The probability is 0.7919 that the mean excess time used is more than 20 minutes, for a sample of 80 customers who exceed their contracted time allowance.</para>
+<figure id="fig-00007">
+<media alt="A normal distribution curve. The peak coincides with the point 22 on the horizontal axis. A point, 20, is labeled to the left of 22; the area under the curve to the right of 20 is shaded, showing P(x-bar > 20).">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img7.png"/>
+</media></figure>
+<note class="statistics note" id="note-00004">
+<title>REMINDER</title>
+<para id="para-00040">1E99 = <m:math><m:msup><m:mn>10</m:mn><m:mrow><m:mn>99</m:mn></m:mrow></m:msup></m:math> and −1E99 = <m:math><m:mo>−</m:mo><m:msup><m:mn>10</m:mn><m:mrow><m:mn>99</m:mn></m:mrow></m:msup></m:math>. Press the <code>EE</code> key for E. Or just use <m:math><m:msup><m:mn>10</m:mn><m:mrow><m:mn>99</m:mn></m:mrow></m:msup></m:math> instead of 1E99.</para>
+</note>
+<para id="para-00041">b. Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math> Remember to use the exponential distribution for an <emphasis>individual:</emphasis> <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mtext>Exp</m:mtext><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>22</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math></para>
+<para id="para-00042"><m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mo>−</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>22</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>20</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:msup></m:math> or <emphasis effect="italics">e</emphasis><sup>(−0.04545(20))</sup> = 0.4029</para>
+<para id="para-00043">c. Explaining the difference:</para>
+<list list-type="enumerated" number-style="arabic" id="list-00005">
+<item><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.4029</m:mn></m:math> but <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mn>20</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.7919</m:mn></m:math></item>
+<item>The probabilities are not equal because we use different distributions to calculate the probability for individuals and for means.</item>
+<item>When asked to find the probability of an individual value, use the stated distribution of its random variable; do not use the CLT. Use the CLT with the normal distribution when you are being asked to find the probability for a mean.</item>
+</list>
+</solution>
+</exercise>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00044"><emphasis>Using the CLT to find percentiles</emphasis></para>
+<para id="para-00045">Find the 95<sup>th</sup> percentile for the <emphasis>sample mean excess time</emphasis> for samples of 80 customers who exceed their basic contract time allowances. Draw a graph.</para>
+</problem>
+<solution id="sol-00003">
+<para id="para-00046">Let <emphasis effect="italics">k</emphasis> = the 95<sup>th</sup> percentile. Find <emphasis effect="italics">k</emphasis> where <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.95</m:mn><m:mo>.</m:mo></m:math></para>
+<para id="para-00047"><emphasis effect="italics">k</emphasis> = 26.0 using <code>invNorm</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.95</m:mn><m:mo>,</m:mo><m:mn>22</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>22</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>80</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 26.0</para>
+<figure id="fig-00008">
+<media alt="A normal distribution curve. The peak coincides with the point 22 on the horizontal axis. A point, k, is labeled to the right of 22; the area under the curve to the left of k is shaded, showing that P(x-bar &lt; k) = 0.95.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-4_img8.png"/>
+</media></figure>
+<para id="para-00048">The 95<sup>th</sup> percentile for the <emphasis>sample mean excess time used</emphasis> is about 26.0 minutes for random samples of 80 customers who exceed their contractual allowed time.</para>
+<para id="para-00049">Ninety five percent of such samples would have means under 26 minutes; only five percent of such samples would have means above 26 minutes.</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00005">
+<title>Try It</title>
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00050">Use the information in the previous example, but change the sample size to 144.</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+<item>Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>20</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>30</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math></item>
+<item>Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mtext> is at least </m:mtext><m:mn>3</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo><m:mo>.</m:mo></m:math></item>
+<item>Find the 75<sup>th</sup> percentile for the sample mean excess time of 144 customers.</item>
+<item>Find the 85<sup>th</sup> percentile for the sum of 144 excess times used by customers.</item>
+</list>
+</problem>
+</exercise>
+</note>
+<example id="exam-00003">
+<para id="para-00051">In the United States, a robbery occurs every two minutes, on average, according to a number of studies. Suppose the standard deviation is 0.5 minutes and the sample size is 100.</para>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+<item>Find the median, the first quartile, and the third quartile for the sample mean time of robberies in the United States.</item>
+<item>Find the median, the first quartile, and the third quartile for the sum of sample times of robberies in the United States.</item>
+<item>Find the probability that a robbery occurs on the average between 1.75 and 1.85 minutes.</item>
+<item>Find the value that is two standard deviations above the sample mean.</item>
+<item>Find the <emphasis effect="italics">IQR</emphasis> for the sum of the sample times.</item>
+</list>
+</problem>
+<solution id="sol-00004">
+<para id="para-00052">a. We have <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>. Therefore:</para>
+<list list-type="enumerated" number-style="arabic" id="list-00008">
+<item>50<sup>th</sup> percentile = <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> = 2</item>
+<item>25<sup>th</sup> percentile = <code>invNorm</code>(0.25, 2, 0.05) = 1.97</item>
+<item>75<sup>th</sup> percentile = <code>invNorm</code>(0.75, 2, 0.05) = 2.03</item>
+</list>
+<para id="para-00053">b. We have <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>200</m:mn></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn></m:math>. Therefore:</para>
+<list list-type="enumerated" number-style="arabic" id="list-00009">
+<item>50<sup>th</sup> percentile = <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 200</item>
+<item>25<sup>th</sup> percentile = <code>invNorm</code>(0.25, 200, 5) = 196.63</item>
+<item>75<sup>th</sup> percentile = <code>invNorm</code>(0.75, 200, 5) = 203.37</item>
+</list>
+<para id="para-00054">c. <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.75</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>1.85</m:mn><m:mo stretchy="false">)</m:mo></m:math> = <code>normalcdf</code>(1.75, 1.85, 2, 0.05) = 0.0013</para>
+<para id="para-00055">d. Using the <emphasis effect="italics">z</emphasis>-score equation, <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math>, and solving for <emphasis effect="italics">x</emphasis>, we have <emphasis effect="italics">x</emphasis> = 2(0.05) + 2 = 2.1</para>
+<para id="para-00056">e. The <emphasis effect="italics">IQR</emphasis> is 75<sup>th</sup> percentile − 25<sup>th</sup> percentile = 203.37 − 196.63 = 6.74</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00006">
+<title>Try It</title>
+<exercise id="exer-00007">
+<problem id="prob-00007">
+<para id="para-00057">Based on data from the National Health Survey, females between the ages of 18 and 24 have an average systolic blood pressure (in mm Hg) of 114.8 with a standard deviation of 13.1. Systolic blood pressure for females between the ages of 18 to 24 follow a normal distribution.</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00010">
+<item>If one female from this population is randomly selected, find the probability that their systolic blood pressure is greater than 120.</item>
+<item>If 40 females from this population are randomly selected, find the probability that their mean systolic blood pressure is greater than 120.</item>
+<item>If the sample were four females between the ages of 18 to 24 and we did not know the original distribution, could the central limit theorem be used?</item>
+</list>
+</problem>
+</exercise>
+</note>
+<example id="exam-00004">
+<exercise id="exer-00008">
+<problem id="prob-00008">
+<para id="para-00058">A study was done regarding attendance at Broadway shows in New York City. The age range of the attendees was 14 to 61. The mean age was 30.9 years with a standard deviation of nine years.</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00011">
+<item>In a sample of 25 attendees, what is the probability that the mean age is less than 35?</item>
+<item>Is it likely that the mean age of the sample group could be more than 50 years? Interpret the results.</item>
+<item>In a sample of 49 attendees, what is the probability that the sum of the ages is no less than 1,600?</item>
+<item>Is it likely that the sum of the ages of the 49 attendees is at most 1,595? Interpret the results.</item>
+<item>Find the 95<sup>th</sup> percentile for the sample mean age of 65 attendees. Interpret the results.</item>
+<item>Find the 90<sup>th</sup> percentile for the sum of the ages of 65 attendees. Interpret the results.</item>
+</list>
+</problem>
+<solution id="sol-00005">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00012">
+<item><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>35</m:mn><m:mo stretchy="false">)</m:mo></m:math> = <code>normalcdf</code>(−1E99, 35, 30.9, 1.8) = 0.9886</item>
+<item><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mn>50</m:mn><m:mo stretchy="false">)</m:mo></m:math> = <code>normalcdf</code>(50, 1E99, 30.9, 1.8) ≈ 0. For this sample group, it is almost impossible for the group's average age to be more than 50. However, it is still possible for an individual in this group to have an age greater than 50.</item>
+<item><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>600</m:mn><m:mo stretchy="false">)</m:mo></m:math> = <code>normalcdf</code>(1600, 1E99, 1514.10, 63) = 0.0864</item>
+<item><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>595</m:mn><m:mo stretchy="false">)</m:mo></m:math> = <code>normalcdf</code>(−1E99, 1595, 1514.10, 63) = 0.9005. This means that there is a 90% chance that the sum of the ages for the sample group <emphasis effect="italics">n</emphasis> = 49 is at most 1,595.</item>
+<item>The 95<sup>th</sup> percentile = <code>invNorm</code>(0.95, 30.9, 1.1) = 32.7. This indicates that 95% of the attendees in the sample of 65 are younger than 32.7 years, on average.</item>
+<item>The 90<sup>th</sup> percentile = <code>invNorm</code>(0.90, 2008.5, 72.56) = 2101.5. This indicates that 90% of the attendees in the sample of 65 have a sum of ages less than 2,101.5 years.</item>
+</list>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00007">
+<title>Try It</title>
+<exercise id="exer-00009">
+<problem id="prob-00009">
+<para id="para-00059">According to Boeing data, the 757 airliner carries 200 passengers and has doors with a height of 72 inches. Assume for a certain population of men we have a mean height of 69.0 inches and a standard deviation of 2.8 inches.</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00013">
+<item>What doorway height would allow 95% of men to enter the aircraft without bending?</item>
+<item>Assume that half of the 200 passengers are men. What mean doorway height satisfies the condition that there is a 0.95 probability that this height is greater than the mean height of 100 men?</item>
+<item>For engineers designing the 757, which result is more relevant: the height from part a or part b? Why?</item>
+</list>
+</problem>
+</exercise>
+</note>
+</section>
+<note id="note-00008">
+<title>Historical Note</title>
+<para id="para-00060"><emphasis>Normal Approximation to the Binomial</emphasis></para>
+<para id="para-00061">Historically, being able to compute binomial probabilities was one of the most important applications of the central limit theorem. Binomial probabilities with a small value for <emphasis effect="italics">n</emphasis> (say, 20) were displayed in a table in a book. To calculate the probabilities with large values of <emphasis effect="italics">n</emphasis>, you had to use the binomial formula, which could be very complicated. Using the normal approximation to the binomial distribution simplified the process. To compute the normal approximation to the binomial distribution, take a simple random sample from a population. You must meet the conditions for a binomial distribution:</para>
+<list list-type="bulleted" id="list-00014">
+<item>there are a certain number <emphasis effect="italics">n</emphasis> of independent trials</item>
+<item>the outcomes of any trial are success or failure</item>
+<item>each trial has the same probability of a success <emphasis effect="italics">p</emphasis></item>
+</list>
+<para id="para-00062">Recall that if <emphasis effect="italics">X</emphasis> is the binomial random variable, then <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:math>. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <emphasis effect="italics">np</emphasis> and <emphasis effect="italics">nq</emphasis> must both be greater than five (<m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math>; the approximation is better if they are both greater than or equal to 10). Then the binomial can be approximated by the normal distribution with mean <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:math>. Remember that <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math>. In order to get the best approximation, add 0.5 to <emphasis effect="italics">x</emphasis> or subtract 0.5 from <emphasis effect="italics">x</emphasis> (use <emphasis effect="italics">x</emphasis> + 0.5 or <emphasis effect="italics">x</emphasis> − 0.5). The number 0.5 is called the continuity correction factor and is used in the following example.</para>
+</note>
+<section id="sect-00003">
+<title>Examples of the Central Limit Theorem for Proportions</title>
+<example id="exam-00005">
+<para id="para-00063">Suppose in a local Kindergarten through 12<sup>th</sup> grade (K–12) school district, 53 percent of the population favor a charter school for grades K through 5. A simple random sample of 300 is surveyed.</para>
+<exercise id="exer-00010">
+<problem id="prob-00010">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00015">
+<item>Find the probability that <emphasis>at least 150</emphasis> favor a charter school.</item>
+<item>Find the probability that <emphasis>at most 160</emphasis> favor a charter school.</item>
+<item>Find the probability that <emphasis>more than 155</emphasis> favor a charter school.</item>
+<item>Find the probability that <emphasis>fewer than 147</emphasis> favor a charter school.</item>
+<item>Find the probability that <emphasis>exactly 175</emphasis> favor a charter school.</item>
+</list>
+</problem>
+<solution id="sol-00006">
+<para id="para-00064">Let <emphasis effect="italics">X</emphasis> = the number that favor a charter school for grades K through 5. <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:math> where <emphasis effect="italics">n</emphasis> = 300 and <emphasis effect="italics">p</emphasis> = 0.53. Since <emphasis effect="italics">np</emphasis> > 5 and <emphasis effect="italics">nq</emphasis> > 5, use the normal approximation to the binomial. The formulas for the mean and standard deviation are <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:math>. The mean is 159 and the standard deviation is 8.6447. The random variable for the normal distribution is <emphasis effect="italics">Y</emphasis>. <m:math><m:mi>Y</m:mi><m:mi>~</m:mi><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>159</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>8.6447</m:mn><m:mo stretchy="false">)</m:mo></m:math>. See <link url="http://openstax.org/books/introductory-statistics-2e/pages/6-introduction">The Normal Distribution</link> for help with calculator instructions.</para>
+<para id="para-00065">For part a, you <emphasis>include 150</emphasis> so <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>150</m:mn><m:mo stretchy="false">)</m:mo></m:math> has normal approximation <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Y</m:mi><m:mo>≥</m:mo><m:mn>149.5</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.8641.</para>
+<para id="para-00066"><code>normalcdf</code>(149.5, 1E99, 159, 8.6447) = 0.8641</para>
+<para id="para-00067">For part b, you <emphasis>include 160</emphasis> so <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≤</m:mo><m:mn>160</m:mn><m:mo stretchy="false">)</m:mo></m:math> has normal approximation <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Y</m:mi><m:mo>≤</m:mo><m:mn>160.5</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.5689.</para>
+<para id="para-00068"><code>normalcdf</code>(0, 160.5, 159, 8.6447) = 0.5689</para>
+<para id="para-00069">For part c, you <emphasis>exclude 155</emphasis> so <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mn>155</m:mn><m:mo stretchy="false">)</m:mo></m:math> has normal approximation <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Y</m:mi><m:mo>></m:mo><m:mn>155.5</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.6572.</para>
+<para id="para-00070"><code>normalcdf</code>(155.5, 1E99, 159, 8.6447) = 0.6572</para>
+<para id="para-00071">For part d, you <emphasis>exclude 147</emphasis> so <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mn>147</m:mn><m:mo stretchy="false">)</m:mo></m:math> has normal approximation <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Y</m:mi><m:mo>&lt;</m:mo><m:mn>146.5</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.0741.</para>
+<para id="para-00072"><code>normalcdf</code>(0, 146.5, 159, 8.6447) = 0.0741</para>
+<para id="para-00073">For part e, <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>175</m:mn><m:mo stretchy="false">)</m:mo></m:math> has normal approximation <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>174.5</m:mn><m:mo>&lt;</m:mo><m:mi>Y</m:mi><m:mo>&lt;</m:mo><m:mn>175.5</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.0083.</para>
+<para id="para-00074"><code>normalcdf</code>(174.5, 175.5, 159, 8.6447) = 0.0083</para>
+<para id="para-00075"><emphasis>Because of calculators and computer software</emphasis> that let you calculate binomial probabilities for large values of <emphasis effect="italics">n</emphasis> easily, it is not necessary to use the normal approximation to the binomial distribution, provided that you have access to these technology tools. Most school labs have Microsoft Excel, an example of computer software that calculates binomial probabilities. Many students have access to the TI-83 or 84 series calculators, and they easily calculate probabilities for the binomial distribution. If you type in “binomial probability distribution calculation” in an Internet browser, you can find at least one online calculator for the binomial.</para>
+<para id="para-00076">For this example, the probabilities are calculated using the following binomial distribution: (<emphasis effect="italics">n</emphasis> = 300 and <emphasis effect="italics">p</emphasis> = 0.53). Compare the binomial and normal distribution answers. See <link url="http://openstax.org/books/introductory-statistics-2e/pages/4-introduction">Discrete Random Variables</link> for help with calculator instructions for the binomial.</para>
+<para id="para-00077"><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>150</m:mn><m:mo stretchy="false">)</m:mo></m:math>: <code>1 − binomialcdf</code>(300, 0.53, 149) = 0.8641</para>
+<para id="para-00078"><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≤</m:mo><m:mn>160</m:mn><m:mo stretchy="false">)</m:mo></m:math>: <code>binomialcdf</code>(300, 0.53, 160) = 0.5684</para>
+<para id="para-00079"><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mn>155</m:mn><m:mo stretchy="false">)</m:mo></m:math>: <code>1 − binomialcdf</code>(300, 0.53, 155) = 0.6576</para>
+<para id="para-00080"><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mn>147</m:mn><m:mo stretchy="false">)</m:mo></m:math>: <code>binomialcdf</code>(300, 0.53, 146) = 0.0742</para>
+<para id="para-00081"><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>175</m:mn><m:mo stretchy="false">)</m:mo></m:math>: (You use the binomial pdf.) <code>binomialpdf</code>(300, 0.53, 175) = 0.0083</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00009">
+<title>Try It</title>
+<exercise id="exer-00011">
+<problem id="prob-00011">
+<para id="para-00082">In a city, 46 percent of the population favor the incumbent, Dawn Morgan, for mayor. A simple random sample of 500 is taken. Using the continuity correction factor, find the probability that at least 250 favor Dawn Morgan for mayor.</para>
+</problem>
+</exercise>
+</note>
+</section>
+<section class="glossary" id="sect-00004">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Continuity Correction Factor</term>
+<meaning>the value 0.5 that is added to or subtracted from a value of <m:math><m:mi>x</m:mi></m:math> when the normal distribution is used to approximate the binomial distribution, which improves the accuracy of the approximation.</meaning>
+</definition>
+</section>
+</content>
 </document>
