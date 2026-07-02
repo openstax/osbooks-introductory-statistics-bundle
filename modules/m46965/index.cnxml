@@ -216,7 +216,7 @@
           <m:mn>20</m:mn>
         </m:math>, inclusive.</para>
       <figure class="scaled-down" id="fs-idm76319168">
-        <media id="id39758796" alt="This shows the graph of the function f(x) = 1/20. A horiztonal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle.">
+        <media id="id39758796" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle.">
           <image src="../../media/fig-ch05_02_01.png" mime-type="image/png" />
         </media>
       </figure>
@@ -309,7 +309,9 @@
             <m:mi>f</m:mi>
             <m:mo>(</m:mo>
             <m:mi>x</m:mi>
-          </m:mstyle></m:math>) = <m:math><m:mstyle mathvariant="bold">
+            <m:mo>)</m:mo>
+            <m:mo>=</m:mo>
+          </m:mstyle></m:math> <m:math><m:mstyle mathvariant="bold">
             <m:mfrac>
               <m:mn>1</m:mn>
               <m:mn>20</m:mn>
@@ -325,7 +327,7 @@
             <m:mn>2</m:mn>
           </m:mstyle></m:math>.</emphasis></para>
       <figure class="scaled-down" id="fs-idp91224976">
-        <media id="id40073479" alt="This shows the graph of the function f(x) = 1/20. A horiztonal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = 2.">
+        <media id="id40073479" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = 2.">
           <image src="../../media/fig-ch05_02_02.png" mime-type="image/png" />
         </media>
       </figure>
@@ -419,7 +421,10 @@
             </m:mfrac>
 
           </m:mrow>
-        </m:math>) = 0.1.</para>
+          <m:mo>)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mn>0.1</m:mn>
+        </m:math>.</para>
       <para id="eip-553"><emphasis>Suppose we want to find the area between</emphasis> <m:math>
           <m:mi>f</m:mi>
           <m:mo>(</m:mo>
@@ -441,7 +446,7 @@
           <m:mn>15</m:mn>
         </m:math><emphasis>.</emphasis></para>
       <figure class="scaled-down" id="fs-idm39582736">
-        <media id="id40137735" alt="This shows the graph of the function f(x) = 1/20. A horiztonal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 4 to x = 15.">
+        <media id="id40137735" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 4 to x = 15.">
           <image src="../../media/fig-ch05_02_03.png" mime-type="image/png" />
         </media>
       </figure>
@@ -533,7 +538,15 @@
           <m:mo>)</m:mo>
           <m:mo>=</m:mo>
           <m:mo>(</m:mo>
-        </m:math>base)(height) = (0)<m:math>
+          <m:mtext>base</m:mtext>
+          <m:mo>)</m:mo>
+          <m:mo>(</m:mo>
+          <m:mtext>height</m:mtext>
+          <m:mo>)</m:mo>
+          <m:mo>=</m:mo>
+          <m:mo>(</m:mo>
+          <m:mn>0</m:mn>
+          <m:mo>)</m:mo>
           <m:mrow>
             <m:mrow>
               <m:mo>(</m:mo>
@@ -551,7 +564,7 @@
           </m:mrow>
         <m:mo>=</m:mo><m:mn>0</m:mn></m:math></para>
       <figure class="scaled-down" id="fs-idm37512432">
-        <media id="id40076640" alt="This shows the graph of the function f(x) = 1/20. A horiztonal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A vertical line extends from the horizontal axis to the graph at x = 15.">
+        <media id="id40076640" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A vertical line extends from the horizontal axis to the graph at x = 15.">
           <image src="../../media/fig-ch05_02_04.png" mime-type="image/png" />
         </media>
       </figure>
@@ -576,25 +589,29 @@
           <m:mi>X</m:mi>
         <m:mo>></m:mo>
           <m:mi>x</m:mi>
-        </m:math>). The CDF gives "area to the left" and <m:math>
+          <m:mo>)</m:mo>
+        </m:math>. The CDF gives "area to the left" and <m:math>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
           <m:mi>X</m:mi>
         <m:mo>></m:mo>
           <m:mi>x</m:mi>
-        </m:math>) gives "area to the right." We calculate <m:math>
+          <m:mo>)</m:mo>
+        </m:math> gives "area to the right." We calculate <m:math>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
           <m:mi>X</m:mi>
         <m:mo>></m:mo>
           <m:mi>x</m:mi>
-        </m:math>) for continuous distributions as follows: <m:math>
+          <m:mo>)</m:mo>
+        </m:math> for continuous distributions as follows: <m:math>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
           <m:mi>X</m:mi>
         <m:mo>></m:mo>
           <m:mi>x</m:mi>
-        </m:math>) = 1 – <m:math>
+          <m:mo>)</m:mo>
+        </m:math> = 1 − <m:math>
           <m:mi>P</m:mi>
           <m:mo>(</m:mo>
           <m:mi>X</m:mi>
@@ -603,7 +620,7 @@
           <m:mo>)</m:mo>
         </m:math>.</para>
       <figure class="scaled-down" id="fs-idp12815264">
-        <media id="id39508301" alt="This shows the graph of the function f(x) = 1/20. A horiztonal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. The area to the left of a value, x, is shaded.">
+        <media id="id39508301" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. The area to the left of a value, x, is shaded.">
           <image src="../../media/fig-ch05_02_05.png" mime-type="image/png" />
         </media>
       </figure>
@@ -650,7 +667,7 @@
           <m:mn>12.7</m:mn>
         </m:math>. Then calculate the shaded area of a rectangle.</para>
       <figure class="scaled-down" id="fs-idp96750640">
-        <media id="id40140418" alt="This shows the graph of the function f(x) = 1/20. A horiztonal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 2.3 to x = 12.7">
+        <media id="id40140418" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 2.3 to x = 12.7">
           <image src="../../media/fig-ch05_02_06.png" mime-type="image/png" />
         </media>
       </figure>
@@ -711,7 +728,7 @@
             
               <m:mrow>
                 <m:mfrac>
-                  <m:mtext>1</m:mtext>
+                  <m:mn>1</m:mn>
                   <m:mn>8</m:mn>
                 </m:mfrac>
 
@@ -787,7 +804,7 @@
           <m:mo>)</m:mo>
         </m:math>.</para>
       <figure class="scaled-down" id="fs-idm60245824">
-        <media id="fs-idp150656848" alt="The graph on the left shows a general density curve, y = f(x). The region under the curve and above the x-axis is shaded. The area of the shaded region is equal to 1. This shows that all possible outcomes are represented by the curve. The graph on the right shows the same density curve. Vertical lines x = a and x = b extend from the axis to the curve, and the area between the lines is shaded. The area of the shaded region represents the probabilit ythat a value x falls between a and b.">
+        <media id="fs-idp150656848" alt="The graph on the left shows a general density curve, y = f(x). The region under the curve and above the x-axis is shaded. The area of the shaded region is equal to 1. This shows that all possible outcomes are represented by the curve. The graph on the right shows the same density curve. Vertical lines x = a and x = b extend from the axis to the curve, and the area between the lines is shaded. The area of the shaded region represents the probability that a value x falls between a and b.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C05_M02_001.png" />
         </media>
       </figure>
@@ -926,7 +943,10 @@
               <m:mi>P</m:mi>
               <m:mo>(</m:mo>
               <m:mi>x</m:mi>
-            </m:math> > 15)?</para>
+              <m:mo>></m:mo>
+              <m:mn>15</m:mn>
+              <m:mo>)</m:mo>
+            </m:math>?</para>
         </problem>
       </exercise>
 
@@ -1059,7 +1079,7 @@
               <m:mi>x</m:mi>
             </m:math> falls in the shaded area.</para>
           <figure class="scaled-down" id="fs-idm29576816">
-            <media id="fs-idm168532640" alt="This shows the graph of the function f(x) = 1 9, the pdf for a uniform distribution. A horizontal line ranges from the point (0, 1/9) to the point (9, 1/9). A vertical line extends from the x-axis to the graph at x = 9 creating a rectangle with the coordinate axes on two sides. A region is shaded inside the rectangle from x = 6 to x = 8.">
+            <media id="fs-idm168532640" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (0, 1/9) to the point (9, 1/9). A vertical line extends from the x-axis to the graph at x = 9 creating a rectangle with the coordinate axes on two sides. A region is shaded inside the rectangle from x = 6 to x = 8.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M02_item001.png" />
             </media>
           </figure>

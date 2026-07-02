@@ -107,6 +107,12 @@ Rules established while converting/reviewing math notation for the 3e edition.
     and the same idea for NOT/NOR/GIVEN.
   - **`<m:mtext>` with a regular (non-NBSP) leading/trailing space adjacent to a symbol** — these render
     glued (see §4); the edge space should be `&#160;`.
+  - **stale cross-edition links** — scan every module for the *previous* edition's book slug in `<link url=…>`,
+    i.e. `grep -rn 'introductory-statistics-2e' modules/` (and any other prior-edition slug). These are
+    almost always cross-references to another chapter/appendix of *this* book that were carried over from 2e;
+    update the slug to the current edition (`introductory-statistics-3e`). Better still, an intra-book
+    cross-reference should be a `<link target-id="…" document="m…"/>` (edition-agnostic) rather than a
+    hard-coded `url=` — flag for the author if converting.
 - When converting, confirm a character-preservation invariant (stripping tags + whitespace + `&#160;`,
   with en-dash↔hyphen↔minus normalized, must be unchanged) so no content is lost — and ideally diff the
   tags-stripped text against `git show HEAD:<path>` so the only changes are markup, not visible text.

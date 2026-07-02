@@ -95,7 +95,7 @@
       </media>
     </figure>
 
-    <para id="para-00006">For computing probabilities, we can use the fact that the uniform distribution looks like a rectangle to compute probabilities. As a few examples:</para>
+    <para id="para-00006">For computing probabilities, we can use the fact that the uniform distribution looks like a rectangle. As a few examples:</para>
 
     <para id="para-00007"><m:math>
         <m:mrow>
@@ -372,7 +372,7 @@
       </table>
       <para id="para-00011">Here is the histogram of the given data (using a strategic choice of only 3 bins):</para>
       <figure class="scaled-down" id="fig-00004">
-        <media alt="Histogram showing three adjacent bars representing grouped frequency data. The bars are equal in width but differ in height. The center bar is the tallest, the left bar is slightly shorter, and the right bar is the shortest of the three. The bars are shaded light blue with darker blue outlines and rest on a horizontal baseline. No axis labels, tick marks, values, title, or legend are shown. The distribution appears roughly symmetric with a slight peak in the center.">
+        <media alt="Histogram showing three adjacent bars representing grouped frequency data. The bars are equal in width but differ in height. The center bar is the tallest, the left bar is slightly shorter, and the right bar is the shortest of the three. The bars are shaded light blue with darker blue outlines and rest on a horizontal baseline. The horizontal axis is labeled smiling times of an 8-week-old baby and has tick values 0, 8, 16, and 24; the vertical axis is labeled frequency. The distribution appears roughly symmetric with a slight peak in the center.">
           <image mime-type="image/png" src="../../media/smilingtimes.png"/>
         </media>
       </figure>
@@ -692,7 +692,7 @@
         </problem>
         <solution id="id10265871">
           <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
-            <item><para id="element-178"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>18</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (18 – 2)<m:math>
+            <item><para id="element-178"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>18</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (18 − 2)<m:math>
                   <m:mrow>
                     <m:mrow>
                       <m:mo>(</m:mo>
@@ -803,14 +803,14 @@
 
               </para>
           <para id="element-181"><figure class="scaled-down" id="eip-idp216325248">
-                  <media id="id9694885" alt="This shows the graph of the function f(x) = 1/23. A horiztonal line ranges from the point (0, 1/23) to the point (23, 1/23). A vertical line extends from the x-axis to the end of the line at point (23, 1/23) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = k. The shaded area represents P(x &lt; k) = 0.90.">
+                  <media id="id9694885" alt="This shows the graph of the function f(x) = 1/23. A horizontal line ranges from the point (0, 1/23) to the point (23, 1/23). A vertical line extends from the x-axis to the end of the line at point (23, 1/23) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = k. The shaded area represents P(x &lt; k) = 0.90.">
                     <image src="../../media/fig-ch05_03_02.png" mime-type="image/png"/>
                   </media>
                 </figure>
               </para>
             </item>
             <item><para id="fs-idp106518000">This probability question is a <emphasis>conditional</emphasis>. You are asked to find the probability that an eight-week-old baby smiles more than 12 seconds when you <emphasis>already know</emphasis> the baby has smiled for more than 8 seconds.</para>
-          <para id="element-836">Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>12</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math> There are two ways to do the problem. <emphasis>For the first way</emphasis>, use the fact that this is a <emphasis>conditional</emphasis> and changes the sample space. You know the baby smiled more than eight seconds, so now the sample space is reduced to the interval from [0, 23] to [8, 23] as illustrated in the figure below: </para>
+          <para id="element-836">Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>12</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math> There are two ways to do the problem. <emphasis>For the first way</emphasis>, use the fact that this is a <emphasis>conditional</emphasis> and changes the sample space. You know the baby smiled more than eight seconds, so now the sample space is reduced from the interval [0, 23] to [8, 23] as illustrated in the figure below: </para>
           <figure class="scaled-down" id="eip-idm134042368">
                 <media id="id15318622" alt="f(X)=1/15 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/15 on the y-axis, a vertical upward line from points 8 and 23 on the x-axis, and the x-axis. A shaded region from points 12-23 occurs within this area.">
                   <image src="../../media/fig-ch05_03_03.png" mime-type="image/png"/>
@@ -1045,7 +1045,7 @@
                     <m:mo stretchy="false">(</m:mo>
                     <m:mi>x</m:mi>
                     <m:mo>&lt;</m:mo>
-                    <m:mi>k</m:mi>
+                    <m:mn>12.5</m:mn>
                     <m:mo stretchy="false">)</m:mo>
                     <m:mo>=</m:mo>
                     <m:mo stretchy="false">(</m:mo>
@@ -1079,7 +1079,7 @@
                 </m:math></para>
             <para id="element-748">The probability a person waits less than 12.5 minutes is 0.8333.</para>
             <figure class="scaled-down" id="eip-idp99340768">
-                <media id="id17238530" alt="This shows the graph of the function f(x) = 1/15. A horiztonal line ranges from the point (0, 1/15) to the point (15, 1/15). A vertical line extends from the x-axis to the end of the line at point (15, 1/15) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = 12.5.">
+                <media id="id17238530" alt="This shows the graph of the function f(x) = 1/15. A horizontal line ranges from the point (0, 1/15) to the point (15, 1/15). A vertical line extends from the x-axis to the end of the line at point (15, 1/15) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = 12.5.">
                   <image src="../../media/fig-ch05_03_05.png" mime-type="image/png"/>
                 </media>
               </figure></item>
@@ -1137,9 +1137,9 @@
                     <m:mfrac>
                       <m:mrow>
                         <m:mo>(</m:mo>
-                        <m:mi>15</m:mi>
+                        <m:mn>15</m:mn>
                         <m:mo>−</m:mo>
-                        <m:mi>0</m:mi>
+                        <m:mn>0</m:mn>
                         <m:msup>
                           <m:mo>)</m:mo>
                           <m:mn>2</m:mn>
@@ -1426,7 +1426,7 @@
       </exercise>
     </note>
     <example id="eip-323">
-      <para id="eip-id1170213489898">Ace Heating and Air Conditioning Service finds that the amount of time a repair tech needs to fix a furnace is uniformly distributed between 1.5 and four hours. Let <m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the time needed to fix a furnace. Then <m:math><m:mi>x</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:math>.</para>
+      <para id="eip-id1170213489898">Ace Heating and Air Conditioning Service finds that the amount of time a repair tech needs to fix a furnace is uniformly distributed between 1.5 and four hours. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the time needed to fix a furnace. Then <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:math>.</para>
       <exercise id="eip-idm8252240">
         <problem id="eip-idp126490560">
           <list id="eip-id1170199222063" list-type="enumerated" number-style="lower-alpha">
@@ -1434,7 +1434,7 @@
             <item>Find the probability that a randomly selected furnace repair requires less than three hours.</item>
             <item>Find the 30<sup>th</sup> percentile of furnace repair times.</item>
             <item>The longest 25% of furnace repair times take at least how long? (In other words: find the minimum time for the longest 25% of repair times.) What percentile does this represent?</item>
-            <item>Find the mean and standard deviation</item>
+            <item>Find the mean and standard deviation.</item>
           </list>
         </problem>
         <solution id="eip-idp14636112">
@@ -1461,14 +1461,14 @@
                 </m:mfrac>
               </m:mrow>
             </m:math> so <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.4</m:mn></m:math></para>
-          <para id="fs-idm19787408"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (4 – 2)(0.4) = 0.8</para>
+          <para id="fs-idm19787408"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (4 − 2)(0.4) = 0.8</para>
           <figure class="scaled-down" id="fs-idp54235200">
             <media id="fs-idm38845872" alt="This shows the graph of the function f(x) = 0.4. A horizontal line ranges from the point (1.5, 0.4) to the point (4, 0.4). Vertical lines extend from the x-axis to the graph at x = 1.5 and x = 4 creating a rectangle. A region is shaded inside the rectangle from x = 2 to x = 4.">
               <image src="../../media/fig-ch05_03_08.png" mime-type="image/png"/>
             </media>
             <caption>Uniform Distribution between 1.5 and four with shaded area between two and four representing the probability that the repair time <m:math><m:mi>x</m:mi></m:math> is greater than two</caption>
           </figure>
-          <para id="fs-idp16376400">b. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (3 – 1.5)(0.4) = 0.6</para>
+          <para id="fs-idp16376400">b. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (3 − 1.5)(0.4) = 0.6</para>
           <para id="fs-idm70722128">The graph of the rectangle showing the entire distribution would remain the same. However the graph should be shaded between <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn></m:math> and <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math>. Note that the shaded area starts at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn></m:math> rather than at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math>; since <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>,</m:mo><m:mi>x</m:mi></m:math> cannot be less than 1.5.</para>
           <figure class="scaled-down" id="fs-idm70679104">
             <media id="fs-idm6304128" alt="This shows the graph of the function f(x) = 0.4. A horizontal line ranges from the point (1.5, 0.4) to the point (4, 0.4). Vertical lines extend from the x-axis to the graph at x = 1.5 and x = 4 creating a rectangle. A region is shaded inside the rectangle from x = 1.5 to x = 3.">
@@ -1492,8 +1492,8 @@
               <caption>Uniform Distribution between 1.5 and 4 with an area of 0.25 shaded to the right representing the longest 25% of repair times.</caption>
             </figure></para>
           <para id="fs-idp80199408"><newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mi>k</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.25</m:mn></m:math> <newline/>
-<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mi>k</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (4 – <m:math><m:mi>k</m:mi></m:math>)(0.4) <newline/>
-<emphasis>0.25 = (4 – <m:math><m:mstyle mathvariant="bold"><m:mi>k</m:mi></m:mstyle></m:math>)(0.4)</emphasis>; Solve for <m:math><m:mi>k</m:mi></m:math>: <newline/><m:math><m:mn>0.625</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>k</m:mi></m:math> (by dividing both sides by 0.4) <newline/>
+<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mi>k</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (4 − <m:math><m:mi>k</m:mi></m:math>)(0.4) <newline/>
+<emphasis>0.25 = (4 − <m:math><m:mstyle mathvariant="bold"><m:mi>k</m:mi></m:mstyle></m:math>)(0.4)</emphasis>; Solve for <m:math><m:mi>k</m:mi></m:math>: <newline/><m:math><m:mn>0.625</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mi>k</m:mi></m:math> (by dividing both sides by 0.4) <newline/>
 <m:math><m:mo>−</m:mo><m:mn>3.375</m:mn><m:mo>=</m:mo><m:mo>−</m:mo><m:mi>k</m:mi></m:math> (obtained by subtracting four from both sides)<newline/>
 <emphasis><m:math><m:mstyle mathvariant="bold"><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>3.375</m:mn></m:mstyle></m:math></emphasis>
 <newline/>The longest 25% of furnace repairs take at least 3.375 hours (3.375 hours or longer). <newline/><emphasis>Note:</emphasis> Since 25% of repair times are 3.375 hours or longer, that means that 75% of repair times are 3.375 hours or less. 3.375 hours is the <emphasis>75<sup>th</sup> percentile</emphasis> of furnace repair times.</para>
@@ -1694,7 +1694,7 @@
       <title>Formula Review</title>
       <para id="element-4292"><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> a real number between <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> (in some instances, <m:math><m:mi>X</m:mi></m:math> can take on the values <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math>). <m:math><m:mi>a</m:mi><m:mo>=</m:mo></m:math> smallest <m:math><m:mi>X</m:mi></m:math>; <m:math><m:mi>b</m:mi><m:mo>=</m:mo></m:math> largest <m:math><m:mi>X</m:mi></m:math>
       </para>
-      <para id="element-912"><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi></m:math> (a, b)</para>
+      <para id="element-912"><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:math></para>
 
       <para id="element-429">The mean is <m:math>
           <m:mrow>
@@ -1864,7 +1864,7 @@
 
             </m:mrow>
           </m:math></item>
-        <item>mean <m:math><m:mi>µ</m:mi><m:mo>=</m:mo>
+        <item>mean <m:math><m:mi>μ</m:mi><m:mo>=</m:mo>
             <m:mrow>
               <m:mfrac>
                 <m:mrow>
@@ -2112,7 +2112,7 @@
         </solution>
       </exercise>
 
-      <para id="eip-537"><newline/><emphasis effect="italics">Use the following information to answer the next eleven exercises.</emphasis> The age of cars in the staff parking lot of a suburban college is uniformly distributed from six months (0.5 years) to 9.5 years.</para>
+      <para id="eip-537"><newline/><emphasis effect="italics">Use the following information to answer the next twelve exercises.</emphasis> The age of cars in the staff parking lot of a suburban college is uniformly distributed from six months (0.5 years) to 9.5 years.</para>
       <exercise id="fs-idp73318288">
         <problem id="fs-idp14811216">
           <para id="fs-idp52562736">What is being measured here?</para>
@@ -2418,7 +2418,7 @@
         </problem>
         <solution id="fs-idp53345328">
           <list id="fs-idp164234448" list-type="enumerated" number-style="lower-alpha">
-            <item><m:math><m:mi>X</m:mi></m:math> represents the length of time a commuter must wait for a train to arrive on the Red Line.</item>
+            <item><m:math><m:mi>X</m:mi></m:math> represents the length of time a commuter must wait for a train to arrive.</item>
 
 
             <item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math></item>
@@ -2505,7 +2505,7 @@
         </problem>
       </exercise>
 
-      <para id="eip-192"><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> The Sky Train from the terminal to the rental–car and long–term parking center is supposed to arrive every eight minutes. The waiting times for the train are known to follow a uniform distribution.</para>
+      <para id="eip-192"><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> The Sky Train from the terminal to the rental-car and long-term parking center is supposed to arrive every eight minutes. The waiting times for the train are known to follow a uniform distribution.</para>
       <exercise id="eip-518">
         <problem id="fs-idp172910688">
           <para id="fs-idp114358400">What is the average waiting time (in minutes)?</para>
@@ -2638,7 +2638,7 @@
 
                 </m:mrow>
               </m:math>. <figure class="scaled-down" id="fs-idp56920896">
-                <media id="fs-idp56921152" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (16, 1/9) to the point (25, 1.9). Vertical lines extend from the x-axis to the graph at x = 16 and x = 25 creating a rectangle. A region is shaded inside the rectangle from x = 19 to x = 25. Text notes that the shaded area represents P(x > 19) = 2/3.">
+                <media id="fs-idp56921152" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (16, 1/9) to the point (25, 1/9). Vertical lines extend from the x-axis to the graph at x = 16 and x = 25 creating a rectangle. A region is shaded inside the rectangle from x = 19 to x = 25. Text notes that the shaded area represents P(x > 19) = 2/3.">
                   <image src="../../media/CNX_Stats_C05_RWP_001.png" mime-type="image/png"/>
                 </media>
               </figure></item>
@@ -2673,7 +2673,7 @@
 
                 </m:mrow>
               </m:math>. <figure class="scaled-down" id="fs-idp47544128">
-                <media id="fs-idp47544384" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (16, 1/9) to the point (25, 1.9). Vertical lines extend from the x-axis to the graph at x = 16 and x = 25 creating a rectangle. A region is shaded inside the rectangle from x = 19 to x = 22. Text notes that the shaded area represents P(19&lt; x &lt; 22) = 1/3.">
+                <media id="fs-idp47544384" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (16, 1/9) to the point (25, 1/9). Vertical lines extend from the x-axis to the graph at x = 16 and x = 25 creating a rectangle. A region is shaded inside the rectangle from x = 19 to x = 22. Text notes that the shaded area represents P(19&lt; x &lt; 22) = 1/3.">
                   <image mime-type="image/png" src="../../media/CNX_Stats_C05_RWP_002.png"/>
                 </media>
               </figure></item>
@@ -2691,7 +2691,7 @@
                     <m:mo>)</m:mo>
                   </m:mrow>
                 </m:mrow>
-              </m:math>, so width = (0.25)(9) = 2.25. Thus, the value is 25 – 2.25 = 22.75.</item>
+              </m:math>, so width = (0.25)(9) = 2.25. Thus, the value is 25 − 2.25 = 22.75.</item>
             <item>This is a conditional probability question. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>21</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>18</m:mn><m:mo>)</m:mo></m:math>. You can do this two ways: <list id="fs-idp37941792" list-type="bulleted">
                 <item>Draw the graph where a is now 18 and b is still 25. The height is <m:math>
                     <m:mrow>
@@ -2906,7 +2906,7 @@
                   </m:mfrac>
 
                 </m:mrow>
-              </m:math>, so width = 400(0.10) = 40. Since 700 – 40 = 660, the driver travels at least 660 miles on the furthest 10% of days.</item>
+              </m:math>, so width = 400(0.10) = 40. Since 700 − 40 = 660, the driver travels at least 660 miles on the furthest 10% of days.</item>
           </list>
         </solution>
       </exercise>
