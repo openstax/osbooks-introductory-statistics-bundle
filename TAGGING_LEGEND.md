@@ -61,6 +61,9 @@ for math-notation specifics (the two together govern markup).
 
 ## Inline / miscellaneous
 - Link (auto-generated "Figure #.#", "Table #.#", "Example #.#") — `<link target-id="id…" document="m…"/>`; use anchor text when linking chapters/modules/sections.
+  - **Cross-references to another chapter/appendix of this book** should use `<link target-id document>` (edition-agnostic),
+    not a hard-coded `url="http://openstax.org/books/introductory-statistics-Ne/pages/…"`. Watch for **stale prior-edition
+    links** left over from 2e (`introductory-statistics-2e/…`) and update them to the current edition (see MATHML_CONVENTIONS §7).
 - Key term (bold + index) — `<term>…</term>`.
 - Non-bold index term — `<term class="no-emphasis">…</term>`.
 - Italic — `<emphasis effect="italics">…</emphasis>`.
