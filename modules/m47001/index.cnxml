@@ -1,466 +1,206 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
-  <title>A Single Population Mean using the Student t Distribution</title>
+  <title>Confidence Intervals for a Single Population Mean using the Student’s t-Distribution</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m47001</md:content-id>
-  <md:title>A Single Population Mean using the Student t Distribution</md:title>
+  <md:title>Confidence Intervals for a Single Population Mean using the Student’s t-Distribution</md:title>
   <md:abstract/>
   <md:uuid>fda17024-5770-4f8f-b3fd-26217c74bd4b</md:uuid>
 </metadata>
 
 <content>
-    <para id="element-6432">In practice, we rarely know the population <term id="term-00001">standard deviation</term>. In the past, when the sample size was large, this did not present a problem to statisticians. They used the sample standard deviation <emphasis effect="italics">s</emphasis> as an estimate for <emphasis effect="italics">σ</emphasis> and proceeded as before to calculate a <term id="term-00002">confidence interval</term> with close enough results. However, statisticians ran into problems when the sample size was small. A small sample size caused inaccuracies in the confidence interval. </para>
-<para id="element-643">William S. Gosset (1876–1937) of the Guinness brewery in Dublin, Ireland ran into this  problem. His experiments with hops and barley produced very few samples. Just replacing <emphasis effect="italics">σ</emphasis> with <emphasis effect="italics">s</emphasis> did not produce accurate results when he tried to calculate a confidence interval. He realized that he could not use a normal distribution for the calculation; he found that the actual distribution depends on the sample size. This problem led him to "discover" what is called the <term id="term-00003">Student's t-distribution</term>. The name comes from the fact that Gosset wrote under the pen name "Student."</para><para id="eip-254">Up until the mid-1970s, some statisticians used the <term id="term-00004">normal distribution</term> approximation for large sample sizes and used the Student's t-distribution only for sample sizes of at most 30. With graphing calculators and computers, the practice now is to use the Student's t-distribution whenever <emphasis effect="italics">s</emphasis> is used as an estimate for <emphasis effect="italics">σ</emphasis>.</para><para id="eip-449">If you draw a simple random sample of size <emphasis effect="italics">n</emphasis> from a population that has an approximately normal distribution with mean <emphasis effect="italics">μ</emphasis> and unknown population standard deviation <emphasis effect="italics">σ</emphasis> and calculate the <emphasis effect="italics">t</emphasis>-score <emphasis effect="italics">t</emphasis> = <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mrow>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-    <m:mo>–</m:mo><m:mi>μ</m:mi>
-   </m:mrow>
-   <m:mrow>
-    <m:mrow><m:mo>(</m:mo>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>s</m:mi>
-       <m:mrow>
-        <m:msqrt>
-         <m:mi>n</m:mi>
-        </m:msqrt>
-
-       </m:mrow>
-      </m:mfrac>
-
-     </m:mrow>
-    <m:mo>)</m:mo></m:mrow>
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math>, then the <emphasis effect="italics">t</emphasis>-scores follow a <emphasis>Student's t-distribution with <emphasis effect="italics">n</emphasis> – 1 degrees of freedom</emphasis>. The <emphasis effect="italics">t</emphasis>-score has the same interpretation as the <term id="term-00005"><emphasis effect="italics">z</emphasis>-score</term>. It measures how far <m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> is from its mean <emphasis effect="italics">μ</emphasis>. For each sample size <emphasis effect="italics">n</emphasis>, there is a different Student's t-distribution.</para><para id="eip-490">The <term id="term-00006">degrees of freedom</term>, <emphasis><emphasis effect="italics">n</emphasis> – 1</emphasis>, come from the calculation of the sample standard deviation <emphasis><emphasis effect="italics">s</emphasis></emphasis>. This calculation requires <emphasis effect="italics">n</emphasis> deviations <m:math>
- <m:mrow>
-  <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mtext> values</m:mtext><m:mo stretchy="false">)</m:mo>
- </m:mrow>
-</m:math>. Because the sum of the deviations is zero, we can find the last deviation once we know the other <emphasis><emphasis effect="italics">n</emphasis> – 1</emphasis> deviations. The other <emphasis><emphasis effect="italics">n</emphasis> – 1</emphasis> deviations can change or vary freely. <emphasis>We call the number <emphasis effect="italics">n</emphasis> – 1 the degrees of freedom (df).</emphasis></para><list id="eip-418">
-<title>Properties of the Student's t-Distribution</title>
-<item>The graph for the Student's t-distribution is similar to the standard normal curve.</item>
-<item>The mean for the Student's t-distribution is zero and the distribution is symmetric about zero.</item>
-<item>The Student's t-distribution has more probability in its tails than the standard normal distribution because the spread of the t-distribution is greater than the spread of the standard normal. So the graph of the Student's t-distribution will be thicker in the tails and shorter in the center than the graph of the standard normal distribution.</item>
-<item>The exact shape of the Student's t-distribution depends on the degrees of freedom. As the degrees of freedom increases, the graph of Student's t-distribution becomes more like the graph of the standard normal distribution.</item>
-<item>The underlying population of individual observations is assumed to be normally distributed with unknown population mean <emphasis effect="italics">μ</emphasis> and unknown population standard deviation <emphasis effect="italics">σ</emphasis>. The size of the underlying population is generally not relevant unless it is very small. If it is bell shaped (normal) then the assumption is met and doesn't need discussion. Random sampling is assumed, but that is a completely separate assumption from normality.</item>
+<para id="para-00001">In practice, we rarely know the population standard deviation. In the past, when the sample size was large, this did not present a problem to statisticians. They used the sample standard deviation <m:math><m:mi>s</m:mi></m:math> as an estimate for <m:math><m:mi>σ</m:mi></m:math> and proceeded as before to calculate a confidence interval with close enough results. However, statisticians ran into problems when the sample size was small. A small sample size caused inaccuracies in the confidence interval.</para>
+<section id="sect-00001">
+<title>Student’s t-Distribution</title>
+<para id="para-00002">William S. Gosset (1876–1937) of the Guinness brewery in Dublin, Ireland, ran into this problem. His experiments with hops and barley produced very few samples. Just replacing <m:math><m:mi>σ</m:mi></m:math> with <m:math><m:mi>s</m:mi></m:math> did not produce accurate results when he tried to calculate a confidence interval. He realized that he could not use a normal distribution for the calculation; he found that the actual distribution depends on the sample size. This problem led him to “discover” what is called the Student’s t-distribution. The name comes from the fact that Gosset wrote under the pen name “Student.”</para>
+<para id="para-00003">Up until the mid-1970s, some statisticians used the normal distribution approximation for large sample sizes and used the Student’s t-distribution only for sample sizes of at most 30. With graphing calculators and computers, the practice now is to use the Student’s t-distribution whenever <m:math><m:mi>s</m:mi></m:math> is used as an estimate for <m:math><m:mi>σ</m:mi></m:math>.</para>
+<para id="para-00004">If you draw a simple random sample of size <m:math><m:mi>n</m:mi></m:math> from a population that has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math> and calculate the <emphasis effect="italics">t</emphasis>-score <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>, then the <emphasis effect="italics">t</emphasis>-scores follow a <emphasis>Student’s t-distribution with n − 1 degrees of freedom</emphasis>. The <emphasis effect="italics">t</emphasis>-score has the same interpretation as the <emphasis effect="italics">z</emphasis>-score. It measures how far <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from its mean <m:math><m:mi>μ</m:mi></m:math>. For each sample size <m:math><m:mi>n</m:mi></m:math>, there is a different Student’s t-distribution.</para>
+<para id="para-00005">The degrees of freedom, <emphasis>n − 1</emphasis>, come from the calculation of the sample standard deviation <emphasis>s</emphasis>. This calculation requires <m:math><m:mi>n</m:mi></m:math> deviations <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mtext> </m:mtext><m:mtext>values</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. Because the sum of the deviations is zero, we can find the last deviation once we know the other <emphasis>n − 1</emphasis> deviations. The other <emphasis>n − 1</emphasis> deviations can change or vary freely. <emphasis>We call the number n − 1 the degrees of freedom (df).</emphasis></para>
+<section id="sect-00002">
+<title>Properties of the Student’s t-Distribution</title>
+<list list-type="bulleted" id="list-00001">
+<item>The graph for the Student’s t-distribution is similar to the standard normal curve.</item>
+<item>The mean for the Student’s t-distribution is zero and the distribution is symmetric about zero.</item>
+<item>The Student’s t-distribution has more probability in its tails than the standard normal distribution because the spread of the t-distribution is greater than the spread of the standard normal. So the graph of the Student’s t-distribution will be thicker in the tails and shorter in the center than the graph of the standard normal distribution.</item>
+<item>The exact shape of the Student’s t-distribution depends on the degrees of freedom. As the degrees of freedom increases, the graph of Student’s t-distribution becomes more like the graph of the standard normal distribution.</item>
+<item>The underlying population of individual observations is assumed to be normally distributed with unknown population mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math>. The size of the underlying population is generally not relevant unless it is very small. If it is bell shaped (normal) then the assumption is met and doesn’t need discussion. Note that random sampling is also assumed; this is a separate condition from the normality assumption above.</item>
 </list>
-<para id="eip-231">Calculators and computers can easily calculate any Student's t-probabilities. The TI-83,83+, and 84+ have a tcdf function to find the probability for given values of <emphasis effect="italics">t</emphasis>. The grammar for the tcdf command is tcdf(lower bound, upper bound, degrees of freedom). However for confidence intervals, we need to use <emphasis>inverse</emphasis> probability to find the value of <emphasis effect="italics">t</emphasis> when we know the probability.</para><para id="eip-980">For the TI-84+ you can use the invT command on the DISTRibution menu. The invT command works similarly to the invnorm. The invT command requires two inputs: <emphasis> invT(area to the left, degrees of freedom)</emphasis> The output is the t-score that corresponds to the area we specified. <newline/>
-<newline/> The TI-83 and 83+ do not have the invT command. (The TI-89 has an inverse T command.)</para>
-<para id="eip-647">A probability table for the Student's t-distribution can also be used.  The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row). (The TI-86 does not have an invT program or command, so if you are using that calculator, you need to use a probability table for the Student's t-Distribution.) When using a <emphasis effect="italics">t</emphasis>-table, note that some tables are formatted to show the confidence level in the column headings, while the column headings in some tables may show only corresponding area in one or both tails.<newline/>
-
- <newline/>A Student's t table (See <link document="m47875"/>) gives <emphasis effect="italics">t</emphasis>-scores given the degrees of freedom and the right-tailed probability. The table is very limited. <emphasis>Calculators and computers can easily calculate any Student's  t-probabilities.</emphasis><newline/></para><list id="eip-752"><title><emphasis>The notation for the Student's t-distribution (using <emphasis effect="italics">T</emphasis> as the random variable) is:</emphasis></title><item><emphasis effect="italics">T ~ t<sub>df</sub></emphasis> where <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1.</item>
- <item>For example, if we have a sample of size <emphasis effect="italics">n</emphasis> = 20 items, then we calculate the degrees of freedom as <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> - 1 = 20 - 1 = 19 and we write the distribution as <emphasis effect="italics">T ~ t<sub>19</sub></emphasis>.</item></list><para id="eip-737"><emphasis>If the population standard deviation is  not known</emphasis>,  the <term id="term-00007">error bound for a population mean</term> is:</para>
- <list id="eip-168">
-<item><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>t</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>s</m:mi>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math>,</item>
-<item><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>σ</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-
- </m:mrow>
-</m:math> is the <emphasis effect="italics">t</emphasis>-score with area to the right equal to <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
-
- </m:mrow>
-</m:math>,</item>
-<item>use <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1 degrees of freedom, and</item>
-<item><emphasis effect="italics">s</emphasis> = sample standard deviation.</item></list>
-<para id="eip-819"><emphasis>The format for the confidence interval is:</emphasis>
-<newline/><m:math>
- <m:mrow>
-  <m:mo stretchy="false">(</m:mo><m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mo>−</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>,</m:mo><m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover><m:mo>+</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo stretchy="false">)</m:mo>
- </m:mrow>
-</m:math>.</para><note id="fs-idm181176784" class="statistics calculator"><label/>
-
-<para id="eip-881">To calculate the confidence interval directly:
-<newline/>Press <code>STAT</code>.
-<newline/>Arrow over to <code>TESTS</code>.
-<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or just press 8).</para>
-</note><example id="eip-51">
-<exercise id="element-632"><problem id="id1171101195216">
-<para id="element-866">Suppose you do a study of acupuncture to determine how effective it is in relieving pain. You measure sensory rates for 15 subjects with the results given. Use the sample data to construct a 95% confidence interval for the mean sensory rate for the population (assumed normal) from which you took the data.
-<newline/>The solution is shown step-by-step and by using the TI-83, 83+, or 84+ calculators.</para><div id="id1171109556457"><list id="set-328" list-type="labeled-item" display="inline"><item>8.6</item>
-			<item>9.4</item>
-			<item>7.9</item>
-			<item>6.8</item>
-			<item>8.3</item>
-			<item>7.3</item>
-			<item>9.2</item>
-			<item>9.6</item>
-			<item>8.7</item>
-			<item>11.4</item>
-			<item>10.3</item>
-			<item>5.4</item>
-			<item>8.1</item>
-			<item>5.5</item>
-			<item>6.9</item></list></div>
-	</problem>
-	<solution id="id1171108330127">
-<list id="eip-id1169415158393">
+</section>
+<para id="para-00006">The figure below shows a comparison of how the degrees of freedom impact Student’s t-distribution, and how this distribution ultimately compares to the standard normal distribution. Notice that as the degrees of freedom get larger, Student’s t-distribution begins to mimic the normal distribution.</para>
+<figure id="fig-00001">
+<media alt="A graph comparing several Student’s t-distributions with different degrees of freedom against the standard normal distribution. Curves with more degrees of freedom are taller in the center and thinner in the tails, approaching the standard normal curve.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img1.png"/>
+</media>
+</figure>
+<para id="para-00007">Calculators and computers can easily calculate any Student’s t-probabilities. The TI-83, 83+, and 84+ have a tcdf function to find the probability for given values of <emphasis effect="italics">t</emphasis>. The syntax for the tcdf command is <code>tcdf</code>(lower bound, upper bound, degrees of freedom). However for confidence intervals, we need to use <emphasis>inverse</emphasis> probability to find the value of <emphasis effect="italics">t</emphasis> when we know the probability.</para>
+<para id="para-00008">For the TI-84+ you can use the invT command on the DISTRibution menu. The invT command works similarly to the invnorm. The invT command requires two inputs: <emphasis>invT(area to the left, degrees of freedom)</emphasis>. The output is the t-score that corresponds to the area we specified.<newline/>The TI-83 and 83+ do not have the invT command. (The TI-89 has an inverse T command.)</para>
+<para id="para-00009">A probability table for the Student’s t-distribution can also be used. The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row). (The TI-86 does not have an invT program or command, so if you are using that calculator, you need to use a probability table for the Student’s t-Distribution.) When using a <emphasis effect="italics">t</emphasis>-table, note that some tables are formatted to show the confidence level in the column headings, while the column headings in some tables may show only corresponding area in one or both tails.</para>
+<para id="para-00010">A Student’s t table (see <link url="http://openstax.org/books/introductory-statistics-2e/pages/h-tables">Appendix H Tables</link>) gives <emphasis effect="italics">t</emphasis>-scores given the degrees of freedom and the right-tailed probability. The table is very limited. <emphasis>Calculators and computers can easily calculate any Student’s t-probabilities.</emphasis></para>
+<para id="para-00011"><emphasis>The notation for the Student’s t-distribution (using T as the random variable) is:</emphasis></para>
+<list list-type="bulleted" id="list-00002">
+<item><m:math><m:mi>T</m:mi><m:mi>~</m:mi><m:msub><m:mi>t</m:mi><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow></m:msub></m:math> where <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>.</item>
+<item>For example, if we have a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> items, then we calculate the degrees of freedom as <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math> and we write the distribution as <m:math><m:mi>T</m:mi><m:mi>~</m:mi><m:msub><m:mi>t</m:mi><m:mrow><m:mn>19</m:mn></m:mrow></m:msub></m:math>.</item>
+</list>
+</section>
+<section id="sect-00003">
+<title>Calculating a Confidence Interval when the Population Standard Deviation is Not Known</title>
+<para id="para-00012">When the population standard deviation <m:math><m:mi>σ</m:mi></m:math> is not known, we use the sample standard deviation <m:math><m:mi>s</m:mi></m:math> and Student’s t-distribution. The error bound for a population mean is:</para>
+<list list-type="bulleted" id="list-00003">
+<item><m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>,</item>
+<item><m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub></m:math> is the <emphasis effect="italics">t</emphasis>-score with area to the right equal to <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:math>,</item>
+<item>use <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> − 1 degrees of freedom, and</item>
+<item><emphasis effect="italics">s</emphasis> = sample standard deviation.</item>
+</list>
+<para id="para-00013"><emphasis>The format for the confidence interval is:</emphasis></para>
+<equation class="unnumbered" id="eq-00001">
+<m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>,</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext> </m:mtext><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
+</equation>
+<note class="statistics calculator" id="note-00001">
+<para id="para-00014">To calculate the confidence interval directly:<newline/>Press <code>STAT</code>.<newline/>Arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or just press 8).</para>
+</note>
+<example id="exam-00001">
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00015">Suppose you do a study of acupuncture to determine how effective it is in relieving pain. You measure sensory rates for 15 subjects with the results given. Use the sample data to construct a 95% confidence interval for the mean sensory rate for the population (assumed normal) from which you took the data.<newline/>The solution is shown step-by-step and by using the TI-83, 83+, or 84+ calculators.</para>
+<para id="para-00016">8.6; 9.4; 7.9; 6.8; 8.3; 7.3; 9.2; 9.6; 8.7; 11.4; 10.3; 5.4; 8.1; 5.5; 6.9</para>
+</problem>
+<solution id="sol-00001">
+<list list-type="bulleted" id="list-00004">
 <item>The first solution is step-by-step.</item>
 <item>The second solution uses the TI-83+ and TI-84 calculators.</item>
 </list>
-<para id="element-835">To find the confidence interval, you need the sample mean, <m:math>
-	  <m:mover accent="true">
-	   <m:mi>x</m:mi>
-	   <m:mo>¯</m:mo>
-	  </m:mover>
-	 </m:math>, and the <emphasis effect="italics">EBM</emphasis>.</para>
-
-	 <para id="element-809"><m:math>
-	  <m:mrow>
-	   <m:mover accent="true">
-	    <m:mi>x</m:mi>
-	    <m:mo>¯</m:mo>
-	   </m:mover>
-	  </m:mrow>
-	 </m:math> = 8.2267 <emphasis effect="italics">s</emphasis> = 1.6722 <emphasis effect="italics">n</emphasis> = 15</para>
-	 <para id="element-152"><emphasis effect="italics">df</emphasis> = 15 – 1 = 14 <emphasis effect="italics">CL</emphasis> so <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.95 = 0.05</para>
-	 <para id="element-471"><m:math>
-	  <m:mrow>
-	   <m:mfrac>
-	    <m:mi>α</m:mi>
-	    <m:mn>2</m:mn>
-	   </m:mfrac>
-	  </m:mrow>
-	 </m:math> = 0.025 <m:math>
-	   <m:mrow>
-	    <m:msub>
-	     <m:mi>t</m:mi>
-	     <m:mrow>
-	      <m:mfrac>
-	       <m:mi>α</m:mi>
-	       <m:mn>2</m:mn>
-	      </m:mfrac>
-
-	     </m:mrow>
-	    </m:msub>
-	    <m:mo>=</m:mo><m:msub>
-	     <m:mi>t</m:mi>
-	     <m:mrow>
-	      <m:mn>0.025</m:mn>
-	     </m:mrow>
-	    </m:msub>
-
-	   </m:mrow>
-	  </m:math></para>
-<para id="element-331">The area to the right of <emphasis effect="italics">t</emphasis><sub>0.025</sub> is 0.025, and the area to the left of <emphasis effect="italics">t</emphasis><sub>0.025</sub> is 1 – 0.025 = 0.975</para><para id="element-995"><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-  <m:mo>=</m:mo><m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mn>0.025</m:mn>
-   </m:mrow>
-  </m:msub>
-  <m:mo>=</m:mo><m:mn>2.14</m:mn>
- </m:mrow>
-</m:math> using invT(.975,14) on the TI-84+ calculator.</para>
-
-<para id="fs-idm31388048">
-	  <m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>t</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>s</m:mi>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math></para>
-
-	 <para id="element-522"><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mn>2.14</m:mn>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>1.6722</m:mn>
-     </m:mrow>
-     <m:mrow>
-      <m:msqrt>
-       <m:mrow>
-        <m:mn>15</m:mn>
-       </m:mrow>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.924</m:mn>
- </m:mrow>
-</m:math></para>
-<para id="element-218"><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> – <emphasis effect="italics">EBM</emphasis> = 8.2267 – 0.9240 = 7.3</para>
-<para id="element-947"><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover></m:math> + <emphasis effect="italics">EBM</emphasis> = 8.2267 + 0.9240 = 9.15</para><para id="element-430">The 95% confidence interval is (7.30, 9.15).</para>
-	 <para id="element-273">We estimate with 95% confidence  that the true population mean sensory rate is between 7.30 and 9.15.</para></solution>
-<solution id="fs-idp148096976">
-<note id="fs-idm8032736" class="statistics calculator">
-<label/>
-<para id="fs-idm125793568">Press <code>STAT</code> and arrow over to <code>TESTS</code>.
-<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>).
-<newline/>Arrow to <code>Data</code> and press <code>ENTER</code>.
-<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.
-<newline/>There should be a 1 after <code>Freq</code>.
-<newline/>Arrow down to <code>C-level</code> and enter 0.95
-<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.
-<newline/>The 95% confidence interval is (7.3006, 9.1527)</para>
-</note>
-<note id="eip-406"><label/>
+<para id="para-00017">To find the confidence interval, you need the sample mean, <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>, and the <emphasis effect="italics">EBM</emphasis>.</para>
+<para id="para-00018"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = 8.2267    <emphasis effect="italics">s</emphasis> = 1.6722    <emphasis effect="italics">n</emphasis> = 15</para>
+<para id="para-00019"><emphasis effect="italics">df</emphasis> = 15 − 1 = 14    <emphasis effect="italics">CL</emphasis> = 0.95 so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>C</m:mi><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.95</m:mn><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math></para>
+<para id="para-00020"><m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.025</m:mn></m:math>    <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math></para>
+<para id="para-00021">The area to the right of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 0.025, and the area to the left of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 1 − 0.025 = 0.975.</para>
+<para id="para-00022"><m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2.145</m:mn></m:math> using invT(.975,14) on the TI-84+ calculator.</para>
+<equation class="unnumbered" id="eq-00002">
+<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00003">
+<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>2.145</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1.6722</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>15</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.926</m:mn></m:math>
+</equation>
+<para id="para-00023"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> − <emphasis effect="italics">EBM</emphasis> = 8.2267 − 0.926 = 7.30</para>
+<para id="para-00024"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> + <emphasis effect="italics">EBM</emphasis> = 8.2267 + 0.926 = 9.15</para>
+<para id="para-00025">The 95% confidence interval is (7.30, 9.15).</para>
+<para id="para-00026">We estimate with 95% confidence that the true population mean sensory rate is between 7.30 and 9.15. The figure below shows the associated distributions for this situation:</para>
+<figure id="fig-00002">
+<media alt="A figure showing the associated distributions for the 95% confidence interval: a Student’s t-distribution with the middle 95% area marked and the corresponding sample mean interval from 7.30 to 9.15 centered at 8.2267.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img2.png"/>
+</media>
+</figure>
+</solution>
+<solution id="sol-00002">
+<para id="para-00027"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
+<para id="para-00028">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>).<newline/>Arrow to <code>Data</code> and press <code>ENTER</code>.<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.<newline/>There should be a 1 after <code>Freq</code>.<newline/>Arrow down to <code>C-level</code> and enter 0.95<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The 95% confidence interval is (7.3006, 9.1527).</para>
+</solution>
+</exercise>
+<note class="statistics note" id="note-00002">
 <title>NOTE</title>
-<para id="fs-idm137079696">When calculating the error bound, a probability table for the Student's t-distribution can also be used to find the value of <emphasis effect="italics">t</emphasis>. The table gives <emphasis effect="italics">t</emphasis>-scores that correspond to the confidence level (column) and degrees of freedom (row); the <emphasis effect="italics">t</emphasis>-score is found where the row and column intersect in the table.</para></note>
-</solution>
-</exercise></example>
-<note id="fs-idm181001040" class="statistics try">
- <label/>
- <title>Try It</title>
- <exercise id="eip-496"><problem id="eip-247">
-  <para id="eip-331">You do a study of hypnotherapy to determine how effective it is in increasing the number of hours of sleep subjects get each night. You measure hours of sleep for 12 subjects with the following results. Construct a 95% confidence interval for the mean number of hours slept for the population (assumed normal) from which you took the data.</para><para id="eip-idm108202576">8.2; 9.1; 7.7; 8.6; 6.9; 11.2; 10.1; 9.9; 8.9; 9.2; 7.5; 10.5</para></problem>
-</exercise>
+<para id="para-00029">When calculating the error bound, a probability table for the Student’s t-distribution can also be used to find the value of <emphasis effect="italics">t</emphasis>. The table gives <emphasis effect="italics">t</emphasis>-scores that correspond to the confidence level (column) and degrees of freedom (row); the <emphasis effect="italics">t</emphasis>-score is found where the row and column intersect in the table.</para>
 </note>
-<example id="eip-804"><exercise id="eip-821"><problem id="eip-957">
- <para id="eip-645">The Human Toxome Project (HTP) is working to understand the scope of industrial pollution in the human body. Industrial chemicals may enter the body through pollution or as ingredients in consumer products. The scientists at HTP tested cord blood samples for 20 newborn infants in the United States. The cord blood of the "In utero/newborn" group was tested for 430 industrial compounds, pollutants, and other chemicals, including chemicals linked to brain and nervous system toxicity, immune system toxicity, and reproductive toxicity, and fertility problems. There are health concerns about the effects of some chemicals on the brain and nervous system. <link target-id="eip-222" document=""/> shows how many of the targeted chemicals were found in each infant’s cord blood.</para><table id="eip-222" summary="..">
-<tgroup cols="10"><tbody>
-<row><entry>79</entry>	<entry>145</entry>	<entry>147</entry>	<entry>160</entry>	<entry>116</entry>	<entry>100</entry>	<entry>159</entry>	<entry>151</entry>	<entry>156</entry>	<entry>126</entry></row>
-<row><entry>137</entry>	<entry>83</entry>	<entry>156</entry>	<entry>94</entry>	<entry>121</entry>	<entry>144</entry>	<entry>123</entry>	<entry>114</entry>	<entry>139</entry>	<entry>99</entry></row>
-</tbody>
-</tgroup>
-</table>
-<para id="eip-idp159676448">Use this sample data to construct a 90% confidence interval for the mean number of targeted industrial chemicals to be found in an in infant’s blood.</para>
-</problem>
-<solution id="eip-262">
-  <para id="eip-78">From the sample, you can calculate <m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> = 127.45 and <emphasis effect="italics">s</emphasis> = 25.965. There are 20 infants in the sample, so <emphasis effect="italics">n</emphasis> = 20, and <emphasis effect="italics">df</emphasis> = 20 – 1 = 19. </para>
-<para id="eip-idm108372720">You are asked to calculate a 90% confidence interval: <emphasis effect="italics">CL</emphasis> = 0.90, so <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.90 = 0.10
-<list id="eip-idm108372304" list-type="labeled-item" display="inline">
-<item><m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
-  <m:mo>=</m:mo><m:mn>0.05,</m:mn><m:mspace width="2pt"/><m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-   </m:mrow>
-  </m:msub>
-  <m:mo>=</m:mo><m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mn>0.05</m:mn>
-   </m:mrow>
-  </m:msub>
- </m:mrow>
-</m:math></item>
-   </list>
-  </para><para id="eip-idm186375552">By definition, the area to the right of <emphasis effect="italics">t</emphasis><sub>0.05</sub> is 0.05 and so the area to the left of <emphasis effect="italics">t</emphasis><sub>0.05</sub> is 1 – 0.05 = 0.95.</para>
-<para id="eip-idm38662128">Use a table, calculator, or computer to find that <emphasis effect="italics">t</emphasis><sub>0.05</sub> = 1.729.</para>
- <para id="eip-idm126306320"><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>M</m:mi><m:mo>=</m:mo><m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-   </m:mrow>
-  </m:msub>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>s</m:mi>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-     </m:mrow>
-    </m:mfrac>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.729</m:mn><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>25.965</m:mn>
-     </m:mrow>
-     <m:mrow>
-      <m:msqrt>
-       <m:mrow>
-        <m:mn>20</m:mn>
-       </m:mrow>
-      </m:msqrt>
-     </m:mrow>
-    </m:mfrac>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mo> </m:mo><m:mo>≈</m:mo><m:mo> </m:mo><m:mn>10.038</m:mn>
- </m:mrow>
-</m:math></para><para id="eip-idm123738016"><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> – <emphasis effect="italics">EBM</emphasis> = 127.45 – 10.038 = 117.412</para>
-
- <para id="eip-idm1765136"><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> + <emphasis effect="italics">EBM</emphasis> = 127.45 + 10.038 = 137.488</para>
- <para id="eip-idm27533168">We estimate with 90% confidence that the mean number of all targeted industrial chemicals found in cord blood in the United States is between 117.412 and 137.488.</para>
-</solution>
-<solution id="fs-idp111080464">
-<para id="eip-idp189552432"/>
- <note id="fs-idm115636704" class="statistics calculator"><label/>
-<para id="fs-idm150426592">Enter the data as a list.
-<newline/>Press <code>STAT</code> and arrow over to <code>TESTS</code>.
-<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>). Arrow to Data and press <code>ENTER</code>.
-<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.
-<newline/>Arrow down to <code>Freq</code> and enter 1.
-<newline/>Arrow down to <code>C-level</code> and enter 0.90
-<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.
-<newline/>The 90% confidence interval is (117.41, 137.49).</para>
- </note>
-</solution>
-</exercise></example><note id="fs-idm12320384" class="statistics try">
-<label/><title>Try It</title>
-<exercise id="eip-467">
-<problem id="eip-272">
-  <para id="eip-636">A random sample of statistics students were asked to estimate the total number of hours they spend watching television in an average week. The responses are recorded in <link target-id="eip-672" document=""/>. Use this sample data to construct a 98% confidence interval for the mean number of hours statistics students will spend watching television in one week.
-<table id="eip-672" summary="..">
-<tgroup cols="5"><tbody>
-  <row><entry>0</entry>	<entry>3</entry>	<entry>1</entry>	<entry>20</entry>	<entry>9</entry></row>
-<row><entry>5</entry>	<entry>10</entry>	<entry>1</entry>	<entry>10</entry>	<entry>4</entry></row>
-<row><entry>14</entry>	<entry>2</entry>	<entry>4</entry>	<entry>4</entry>	<entry>5</entry></row>
-</tbody>
-</tgroup>
-</table>
-  </para>
+</example>
+<note class="statistics try" id="note-00003">
+<title>Try It</title>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00030">You do a study of hypnotherapy to determine how effective it is in increasing the number of hours of sleep subjects get each night. You measure hours of sleep for 12 subjects with the following results. Construct a 95% confidence interval for the mean number of hours slept for the population (assumed normal) from which you took the data.</para>
+<para id="para-00031">8.2; 9.1; 7.7; 8.6; 6.9; 11.2; 10.1; 9.9; 8.9; 9.2; 7.5; 10.5</para>
 </problem>
 </exercise>
 </note>
+<example id="exam-00002">
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00032">The Human Toxome Project (HTP) is working to understand the scope of industrial pollution in the human body. Industrial chemicals may enter the body through pollution or as ingredients in consumer products. The scientists at HTP tested cord blood samples for 20 newborn infants in the United States. The cord blood of the “In utero/newborn” group was tested for 430 industrial compounds, pollutants, and other chemicals, including chemicals linked to brain and nervous system toxicity, immune system toxicity, and reproductive toxicity, and fertility problems. There are health concerns about the effects of some chemicals on the brain and nervous system. <link target-id="fs-c8-tbl-8-3"/> shows how many of the targeted chemicals were found in each infant’s cord blood.</para>
+<table id="fs-c8-tbl-8-3" summary="The number of targeted industrial chemicals found in the cord blood of each of 20 newborn infants.">
+<title>Table 8.3</title>
+<tgroup cols="10">
+<tbody>
+<row>
+<entry>79</entry>
+<entry>145</entry>
+<entry>147</entry>
+<entry>160</entry>
+<entry>116</entry>
+<entry>100</entry>
+<entry>159</entry>
+<entry>151</entry>
+<entry>156</entry>
+<entry>126</entry>
+</row>
+<row>
+<entry>137</entry>
+<entry>83</entry>
+<entry>156</entry>
+<entry>94</entry>
+<entry>121</entry>
+<entry>144</entry>
+<entry>123</entry>
+<entry>114</entry>
+<entry>139</entry>
+<entry>99</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="para-00033">Use this sample data to construct a 90% confidence interval for the mean number of targeted industrial chemicals to be found in an infant’s blood.</para>
+</problem>
+<solution id="sol-00003">
+<para id="para-00034">From the sample, you can calculate <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = 127.45 and <emphasis effect="italics">s</emphasis> = 25.965. There are 20 infants in the sample, so <emphasis effect="italics">n</emphasis> = 20, and <emphasis effect="italics">df</emphasis> = 20 − 1 = 19.</para>
+<para id="para-00035">You are asked to calculate a 90% confidence interval: <emphasis effect="italics">CL</emphasis> = 0.90, so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>C</m:mi><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.90</m:mn><m:mo>=</m:mo><m:mn>0.10</m:mn></m:math>    <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.05</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math></para>
+<para id="para-00036">By definition, the area to the right of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 0.05 and so the area to the left of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 1 − 0.05 = 0.95.</para>
+<para id="para-00037">Use a table, calculator, or computer to find that <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.729</m:mn></m:math>.</para>
+<equation class="unnumbered" id="eq-00004">
+<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.729</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>25.965</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>20</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>10.038</m:mn></m:math>
+</equation>
+<para id="para-00038"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> − <emphasis effect="italics">EBM</emphasis> = 127.45 − 10.038 = 117.412</para>
+<para id="para-00039"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> + <emphasis effect="italics">EBM</emphasis> = 127.45 + 10.038 = 137.488</para>
+<para id="para-00040">We estimate with 90% confidence that the mean number of all targeted industrial chemicals found in cord blood in the United States is between 117.412 and 137.488.</para>
+</solution>
+<solution id="sol-00004">
+<para id="para-00041"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
+<para id="para-00042">Enter the data as a list.<newline/>Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>). Arrow to Data and press <code>ENTER</code>.<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.<newline/>Arrow down to <code>Freq</code> and enter 1.<newline/>Arrow down to <code>C-level</code> and enter 0.90<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The 90% confidence interval is (117.41, 137.49).</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00004">
+<title>Try It</title>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00043">A random sample of statistics students were asked to estimate the total number of hours they spend watching television in an average week. The responses are recorded in <link target-id="fs-c8-tbl-8-4"/>. Use this sample data to construct a 98% confidence interval for the mean number of hours statistics students will spend watching television in one week.</para>
+<table id="fs-c8-tbl-8-4" summary="Hours per week spent watching television reported by a sample of statistics students.">
+<title>Table 8.4</title>
+<tgroup cols="5">
+<tbody>
+<row>
+<entry>0</entry>
+<entry>3</entry>
+<entry>1</entry>
+<entry>20</entry>
+<entry>9</entry>
+</row>
+<row>
+<entry>5</entry>
+<entry>10</entry>
+<entry>1</entry>
+<entry>10</entry>
+<entry>4</entry>
+</row>
+<row>
+<entry>14</entry>
+<entry>2</entry>
+<entry>4</entry>
+<entry>4</entry>
+<entry>5</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+</exercise>
+</note>
+</section>
 <section id="eip-400" class="references"><title>References</title><para id="eip-idp72771968">“America’s Best Small Companies.” Forbes, 2013. Available online at http://www.forbes.com/best-small-companies/list/ (accessed July 2, 2013).</para>
 <para id="eip-idm62303392">Data from <emphasis effect="italics">Microsoft Bookshelf</emphasis>.</para>
 <para id="eip-idm46745392">Data from http://www.businessweek.com/.</para>
@@ -1257,7 +997,7 @@ Calculate the following:
  </problem>
  </exercise><exercise id="eip-390"><problem id="eip-14">
   <para id="eip-520">The Federal Election Commission (FEC) collects information about campaign contributions and disbursements for candidates and political committees each election cycle. A political action committee (PAC) is a committee formed to raise money for candidates and campaigns. A Leadership PAC is a PAC formed by a federal politician (senator or representative) to raise money to help other candidates’ campaigns.</para>
-<para id="eip-idm79133520">The FEC has reported financial information for 556 Leadership PACs that operating during a certain election cycle. The following table shows the total receipts during this cycle for a random selection of 30 Leadership PACs.</para><table id="eip-146" summary="..">
+<para id="eip-idm79133520">The FEC has reported financial information for 556 Leadership PACs that were operating during a certain election cycle. The following table shows the total receipts during this cycle for a random selection of 30 Leadership PACs.</para><table id="eip-146" summary="..">
 <tgroup cols="5"><tbody>
   <row><entry>$46,500.00</entry>	<entry>$0</entry>	<entry>$40,966.50</entry>	<entry>$105,887.20</entry>	<entry>$5,175.00</entry></row>
 <row><entry>$29,050.00</entry>	<entry>$19,500.00</entry>	<entry>$181,557.20</entry>	<entry>$31,500.00</entry>	<entry>$149,970.80</entry></row>
@@ -1625,63 +1365,30 @@ flight.
  </list>
 </problem>
 </exercise></section>
- </content>
-<glossary>
- <definition id="degrefree">
-    <term>Degrees of Freedom (<emphasis effect="italics">df</emphasis>)</term>
-    <meaning id="id17799455">the number of objects in a sample that are free to vary</meaning>
-  </definition>
-<definition id="normdist">
-    <term>Normal Distribution</term>
-    <meaning id="id42733014">a continuous random variable (RV) with pdf <m:math>
- <m:mrow>
-  <m:mi>f</m:mi><m:mtext>(</m:mtext><m:mi>x</m:mi><m:mtext>)</m:mtext><m:mo>=</m:mo><m:mfrac>
-   <m:mn>1</m:mn>
-   <m:mrow>
-    <m:mi>σ</m:mi><m:msqrt>
-     <m:mrow>
-      <m:mn>2</m:mn><m:mi>π</m:mi>
-     </m:mrow>
-    </m:msqrt>
-
-   </m:mrow>
-  </m:mfrac>
-  <m:msup>
-   <m:mi>e</m:mi>
-   <m:mrow>
-    <m:mo>–</m:mo><m:msup>
-     <m:mrow>
-      <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>–</m:mo><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo>
-     </m:mrow>
-     <m:mn>2</m:mn>
-    </m:msup>
-    <m:mo>/</m:mo><m:mn>2</m:mn><m:msup>
-     <m:mi>σ</m:mi>
-     <m:mn>2</m:mn>
-    </m:msup>
-
-   </m:mrow>
-  </m:msup>
-
- </m:mrow>
-</m:math>, where <emphasis effect="italics">μ</emphasis> is the mean of the distribution and <emphasis effect="italics">σ</emphasis> is the standard deviation, notation: <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">N</emphasis>(<emphasis effect="italics">μ</emphasis>,<emphasis effect="italics">σ</emphasis>). If <emphasis effect="italics">μ</emphasis> = 0 and <emphasis effect="italics">σ</emphasis> = 1, the RV is called <emphasis>the standard normal distribution</emphasis>.
-    </meaning>
-  </definition>
-<definition id="stddev">
-    <term>Standard Deviation</term>
-    <meaning id="id20302532"> a number that is equal to the square root of the variance and measures how far data values are from their mean; notation: <emphasis effect="italics">s</emphasis> for sample standard deviation and <emphasis effect="italics">σ</emphasis> for population standard deviation</meaning>
-  </definition>
-<definition id="studenttdist">
-    <term>Student's <emphasis>t</emphasis>-Distribution</term>
-    <meaning id="id8759760">investigated and reported by William S. Gossett in 1908 and published under the pseudonym Student; the major characteristics of the random variable (RV) are:
-    <list id="fs-idp209408240" list-type="bulleted">
-    <item>It is continuous and assumes any real values.</item>
-    <item>The pdf is symmetrical about its mean of zero. However, it is more spread out and flatter at the apex than the normal distribution.</item>
-    <item>It approaches the standard normal distribution as <emphasis effect="italics">n</emphasis> get larger.</item>
-    <item>There is a "family" of t–distributions: each representative of the family is completely defined by the number of degrees of freedom, which is one less than the number of data.</item>
-    </list>
-    </meaning>
-  </definition>
-</glossary>
+ <section class="glossary" id="sect-00004">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Degrees of Freedom (<emphasis effect="italics">df</emphasis>)</term>
+<meaning>the number of independent values that can vary in the calculation of a statistic; for a sample of size <emphasis effect="italics">n</emphasis> it equals <emphasis effect="italics">n</emphasis> − 1 when one parameter (the mean) has been estimated</meaning>
+</definition>
+<definition id="def-00002">
+<term>Normal Distribution</term>
+<meaning>a continuous random variable (RV) with pdf <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>/</m:mo><m:mn>2</m:mn><m:msup><m:mi>σ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:msup></m:math>, where <emphasis effect="italics">μ</emphasis> is the mean of the distribution and <emphasis effect="italics">σ</emphasis> is the standard deviation, notation: <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math>. If <emphasis effect="italics">μ</emphasis> = 0 and <emphasis effect="italics">σ</emphasis> = 1, the RV is called <emphasis>the standard normal distribution</emphasis>.</meaning>
+</definition>
+<definition id="def-00003">
+<term>Standard Deviation</term>
+<meaning>a number that is equal to the square root of the variance and measures how far data values are from their mean; notation: <emphasis effect="italics">s</emphasis> for sample standard deviation and <emphasis effect="italics">σ</emphasis> for population standard deviation</meaning>
+</definition>
+<definition id="def-00004">
+<term>Student’s <emphasis effect="italics">t</emphasis>-Distribution</term>
+<meaning>investigated and reported by William S. Gosset in 1908 and published under the pseudonym Student; the major characteristics of the random variable (RV) are:<list list-type="bulleted" id="list-00005">
+<item>It is continuous and assumes any real values.</item>
+<item>The pdf is symmetrical about its mean of zero. However, it is more spread out and flatter at the apex than the normal distribution.</item>
+<item>It approaches the standard normal distribution as <emphasis effect="italics">n</emphasis> gets larger.</item>
+<item>There is a “family” of t-distributions: each representative of the family is completely defined by the number of degrees of freedom, which is one less than the sample size.</item>
+</list></meaning>
+</definition>
+</section>
+</content>
 
 </document>

@@ -1,1164 +1,269 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
-  <title>A Population Proportion</title>
+  <title>Confidence Intervals for a Population Proportion</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
   <md:content-id>m46999</md:content-id>
-  <md:title>A Population Proportion</md:title>
+  <md:title>Confidence Intervals for a Population Proportion</md:title>
   <md:abstract/>
   <md:uuid>40dc2960-9ad3-4f5a-acd4-606a1f6fbfb1</md:uuid>
 </metadata>
 
 <content>
-    <para id="eip-494">During an election year, we see articles in the newspaper that state <term id="term-00001">confidence intervals</term> in terms of proportions or percentages. For example, a poll for a particular candidate running for president might show that the candidate has 40% of the vote within three percentage points  (if the sample is large enough). Often, election polls are calculated with 95% confidence, so, the pollsters would be 95% confident that the true proportion of voters who favored the candidate would be between 0.37 and 0.43: (0.40 – 0.03,0.40 + 0.03).</para>
- <para id="element-292">Investors in the stock market are interested in the true proportion of stocks that go up and down each week. Businesses that sell personal computers are interested in the proportion of households in the United States that own personal computers. Confidence intervals can be calculated for the true proportion of stocks that go up or down each week and for the true proportion of households in the United States that own personal computers.</para>
- <para id="element-918">The procedure to find the confidence interval, the sample size, the <term id="term-00002">error bound</term>, and the <term id="term-00003">confidence level</term> for a proportion is similar to that for the population mean, but the
- formulas are different.</para>
-  <para id="element-574"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution is a</emphasis> <term id="term-00004">binomial distribution</term>. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">B</emphasis>(<emphasis effect="italics">n</emphasis>, <emphasis effect="italics">p</emphasis>)  where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. To form a proportion, take <emphasis effect="italics">X</emphasis>, the random variable for the number of successes and divide it by <emphasis effect="italics">n</emphasis>, the number of trials (or the sample size). The random variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> (read "P prime") is that proportion,
-  </para>
- <para id="element-771"><m:math>
-   <m:mrow>
-    <m:msup>
-     <m:mi>P</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:mo>=</m:mo><m:mfrac>
-     <m:mi>X</m:mi>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-   </m:mrow>
-  </m:math>
- </para>
- <para id="element-596">(Sometimes the random variable is denoted as <m:math>
-  <m:mover accent="true">
-   <m:mi>P</m:mi>
-   <m:mo>^</m:mo>
-  </m:mover>
- </m:math>, read "P hat".)</para>
-
- <para id="element-959">When <emphasis effect="italics">n</emphasis> is large and <emphasis effect="italics">p</emphasis> is not close to zero or one, we can use the <term id="term-00005">normal distribution</term> to approximate the binomial.</para>
-
- <para id="element-813"><m:math>
- <m:mrow>
-  <m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo stretchy="false">)</m:mo>
- </m:mrow>
-</m:math></para>
- <para id="element-76">If we divide the random variable, the mean, and the standard
-deviation by <emphasis effect="italics">n</emphasis>, we get a normal distribution of proportions with <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>, called the
-estimated proportion, as the random variable. (Recall that a proportion as the
-number of successes divided by <emphasis effect="italics">n</emphasis>.)</para>
-
- <para id="element-461"><m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>X</m:mi>
-   <m:mi>n</m:mi>
-  </m:mfrac>
-  <m:mo>=</m:mo><m:msup>
-   <m:mi>P</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mtext>~ </m:mtext><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mi>n</m:mi><m:mi>p</m:mi>
-     </m:mrow>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-    <m:mo>,</m:mo><m:mfrac>
-     <m:mrow>
-      <m:msqrt>
-       <m:mrow>
-        <m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi>
-       </m:mrow>
-      </m:msqrt>
-
-     </m:mrow>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math></para><para id="element-894">Using algebra to simplify : <m:math>
-  <m:mrow>
-   <m:mfrac>
-    <m:mrow>
-     <m:msqrt>
-      <m:mrow>
-       <m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi>
-      </m:mrow>
-     </m:msqrt>
-
-    </m:mrow>
-    <m:mi>n</m:mi>
-   </m:mfrac>
-   <m:mo>=</m:mo><m:msqrt>
-    <m:mrow>
-     <m:mfrac>
-      <m:mrow>
-       <m:mi>p</m:mi><m:mi>q</m:mi>
-      </m:mrow>
-      <m:mi>n</m:mi>
-     </m:mfrac>
-
-    </m:mrow>
-   </m:msqrt>
-
-  </m:mrow>
- </m:math>
- </para>
- <para id="element-683"><emphasis><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> follows a normal distribution for proportions</emphasis>:
-  <m:math><m:mfrac><m:mi>X</m:mi><m:mi>n</m:mi></m:mfrac><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>′</m:mo><m:mo>~</m:mo><m:mi>N</m:mi><m:mo>(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:msqrt><m:mo>)</m:mo></m:math></para><para id="element-716">The confidence interval has the form (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>). <emphasis effect="italics">EBP</emphasis> is error bound for the proportion.</para>
- <para id="element-35"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>x</m:mi>
-   <m:mi>n</m:mi>
-  </m:mfrac>
-
- </m:mrow>
-</m:math>
- </para>
- <para id="element-142"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> = the <emphasis>estimated proportion</emphasis> of successes (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true proportion.)</para>
-
- <para id="element-818"><emphasis effect="italics">x</emphasis> = the <emphasis>number</emphasis> of successes</para>
-
- <para id="element-434"><emphasis effect="italics">n</emphasis> = the size of the sample</para>
-
- <para id="element-498"><emphasis>The error bound for a proportion is</emphasis></para>
-
- <para id="element-249">
-  <m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>z</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msqrt>
-     <m:mrow>
-      <m:mfrac>
-       <m:mrow>
-        <m:msup>
-         <m:mi>p</m:mi>
-         <m:mo>′</m:mo>
-        </m:msup>
-        <m:msup>
-         <m:mi>q</m:mi>
-         <m:mo>′</m:mo>
-        </m:msup>
-
-       </m:mrow>
-       <m:mi>n</m:mi>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msqrt>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math> where <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> = 1 – <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math></para>
-<para id="eip-841">This formula is similar to the error bound formula for a mean, except that the "appropriate standard deviation" is different. For a mean, when the population standard deviation is known, the appropriate standard deviation that we use is <m:math>
-<m:mfrac>
-<m:mrow>
-<m:mi>σ</m:mi>
-</m:mrow>
-<m:mrow>
-<m:msqrt>
-<m:mi>n</m:mi>
-</m:msqrt>
-</m:mrow>
-</m:mfrac>
-</m:math>. For a proportion, the appropriate standard deviation is <m:math>
-<m:msqrt>
-<m:mfrac>
-<m:mrow>
-<m:mi>p</m:mi>
-<m:mi>q</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mi>n</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:msqrt>
-</m:math>.</para>
- <para id="element-886">However, in the error bound formula, we use
-  <m:math>
- <m:mrow>
-  <m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:msup>
-       <m:mi>p</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-      <m:msup>
-       <m:mi>q</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-
-     </m:mrow>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msqrt>
-
- </m:mrow>
-</m:math> as the standard deviation, instead of <m:math>
-<m:msqrt>
-<m:mfrac>
-<m:mrow>
-<m:mi>p</m:mi>
-<m:mi>q</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mi>n</m:mi>
-</m:mrow>
-</m:mfrac>
-</m:msqrt>
-</m:math>.</para>
-
-<para id="element-685">In the error bound formula, the <emphasis> sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are estimates of the unknown population proportions <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis></emphasis>. The estimated proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. The sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> are calculated from the data: <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is the estimated proportion of successes, and <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math> is the estimated proportion of failures.</para>
-
- <para id="eip-711">The confidence interval can be used only if the number of successes <m:math><m:msup><m:mi>np</m:mi><m:mo>′</m:mo></m:msup></m:math> and the number of failures <m:math><m:msup><m:mi>nq</m:mi><m:mo>′</m:mo></m:msup></m:math> are both greater than five.</para>
-
-<note id="id24362956"><label/>
+<para id="para-00001">During an election year, we see articles in the newspaper that state confidence intervals in terms of proportions or percentages. For example, a poll for a particular candidate running for president might show that the candidate has 40% of the vote within three percentage points (if the sample is large enough). Often, election polls are calculated with 95% confidence, so, the pollsters would be 95% confident that the true proportion of voters who favored the candidate would be between 0.37 and 0.43: (0.40 − 0.03, 0.40 + 0.03).</para>
+<para id="para-00002">Investors in the stock market are interested in the true proportion of stocks that go close higher each week. Businesses that sell personal computers are interested in the proportion of households in the United States that own personal computers. Confidence intervals can be calculated for the true proportion of stocks that go close higher each week and for the true proportion of households in the United States that own personal computers.</para>
+<para id="para-00003">The procedure to find the confidence interval, the sample size, the error bound, and the confidence level for a proportion is similar to that for the population mean, but the formulas are different.</para>
+<para id="para-00004"><emphasis>How do you know you are dealing with a proportion problem?</emphasis> First, the underlying <emphasis>distribution is a</emphasis> binomial distribution. (There is no mention of a mean or average.) If <emphasis effect="italics">X</emphasis> is a binomial random variable, then <m:math><m:mi>X</m:mi><m:mi>~</m:mi><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:math> where <emphasis effect="italics">n</emphasis> is the number of trials and <emphasis effect="italics">p</emphasis> is the probability of a success. Recall that we can use the normal distribution to approximate a binomial distribution. In Chapter 7, we detailed how proportions can form a sampling distribution of proportions <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</para>
+<para id="para-00005">The margin of error in this case is called the <term id="term-00001">EBP</term>, for the error bound for the proportion. The confidence interval has the form:</para>
+<para id="para-00006">(point estimate − EBP, point estimate + EBP) or</para>
+<para id="para-00007">(<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> − <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>).</para>
+<para id="para-00008">In this situation, <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the <emphasis>estimated proportion</emphasis> of successes (<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is a <emphasis>point estimate</emphasis> for <emphasis effect="italics">p</emphasis>, the true proportion). We can calculate this as:</para>
+<equation class="unnumbered" id="eq-00001">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:math>
+</equation>
+<para id="para-00009"><emphasis effect="italics">x</emphasis> = the <emphasis>number</emphasis> of successes</para>
+<para id="para-00010"><emphasis effect="italics">n</emphasis> = the size of the sample</para>
+<para id="para-00011"><emphasis>The error bound for a proportion is</emphasis></para>
+<equation class="unnumbered" id="eq-00002">
+<m:math><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
+</equation>
+<para id="para-00012">where <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math>.</para>
+<para id="para-00013">This formula is similar to the error bound formula for a mean, except that the appropriate standard deviation is different. For a mean, when the population standard deviation is known, the appropriate standard deviation that we use is <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>. For a proportion, the appropriate standard deviation is <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</para>
+<para id="para-00014">However, in the error bound formula, we use <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math> as the standard deviation, instead of <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</para>
+<para id="para-00015">In the error bound formula, the <emphasis>sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> are estimates of the unknown population proportions p and q</emphasis>. The estimated proportions <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> are used because <emphasis effect="italics">p</emphasis> and <emphasis effect="italics">q</emphasis> are not known. The sample proportions <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> and <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> are calculated from the data: <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is the estimated proportion of successes, and <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is the estimated proportion of failures.</para>
+<para id="para-00016">The confidence interval can be used only if the number of successes <m:math><m:mi>n</m:mi><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> and the number of failures <m:math><m:mi>n</m:mi><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> are both greater than five.</para>
+<note class="statistics note" id="note-00001">
 <title>NOTE</title>
-<para id="fs-idp79319136">For the normal distribution of proportions, the <emphasis effect="italics">z</emphasis>-score formula is as follows.</para>
-  <para id="element-272">If <m:math>
-   <m:mrow>
-    <m:msup>
-     <m:mi>P</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:mtext>~</m:mtext><m:mi>N</m:mi><m:mrow><m:mo>(</m:mo>
-     <m:mrow>
-      <m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt>
-       <m:mrow>
-        <m:mfrac>
-         <m:mrow>
-          <m:mi>p</m:mi><m:mi>q</m:mi>
-         </m:mrow>
-         <m:mi>n</m:mi>
-        </m:mfrac>
-
-       </m:mrow>
-      </m:msqrt>
-
-     </m:mrow>
-     <m:mo>)</m:mo></m:mrow>
-   </m:mrow>
-  </m:math> then the <emphasis effect="italics">z</emphasis>-score formula is <m:math>
- <m:mrow>
-  <m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac>
-   <m:mrow>
-    <m:msup>
-     <m:mi>p</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:mo>−</m:mo><m:mi>p</m:mi>
-   </m:mrow>
-   <m:mrow>
-    <m:msqrt>
-     <m:mrow>
-      <m:mfrac>
-       <m:mrow>
-        <m:mi>p</m:mi><m:mi>q</m:mi>
-       </m:mrow>
-       <m:mi>n</m:mi>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msqrt>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math></para>
- </note>
-<example id="element-32">
-<exercise id="element-814"><problem id="id24363103">
-  <para id="element-687">Suppose that a market research firm is hired to estimate the percent of adults living in a large city who have smartphones.  Five hundred randomly selected adult residents in this city are surveyed to determine whether they have smartphones. Of
-  the 500 people surveyed, 421 responded yes - they own smartphones. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of adult residents of this city who have smartphones.</para>
+<para id="para-00017">For the normal distribution of proportions, the <emphasis effect="italics">z</emphasis>-score formula is as follows.</para>
+<para id="para-00018">If <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mi>~</m:mi><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> then the <emphasis effect="italics">z</emphasis>-score formula is <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</para>
+</note>
+<example id="exam-00001">
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00019">Suppose that a market research firm is hired to estimate the percent of adults living in a large city who have smartphones. Five hundred randomly selected adult residents in this city are surveyed to determine whether they have smartphones. Of the 500 people surveyed, 421 responded yes — they own smartphones. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of adult residents of this city who have smartphones.</para>
 </problem>
-<solution id="id24363164">
-<list id="element-757" list-type="bulleted">
+<solution id="sol-00001">
+<list list-type="bulleted" id="list-00001">
 <item>The first solution is step-by-step.</item>
 <item>The second solution uses a function of the TI-83, 83+ or 84 calculators.</item>
 </list>
- <para id="element-386">Let <emphasis effect="italics">X</emphasis> = the number of people in the sample who have cell phones. <emphasis effect="italics">X</emphasis> is binomial. <m:math>
- <m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mn>500</m:mn><m:mo>,</m:mo><m:mfrac>
-     <m:mrow>
-      <m:mn>421</m:mn>
-     </m:mrow>
-     <m:mrow>
-      <m:mn>500</m:mn>
-     </m:mrow>
-    </m:mfrac>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math>.</para>
-<para id="element-985">To calculate the confidence interval, you must find <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math>, <m:math><m:msup><m:mi>q</m:mi><m:mo>′</m:mo></m:msup></m:math>, and <emphasis effect="italics">EBP</emphasis>.</para>
- <para id="element-227"><emphasis effect="italics">n</emphasis> = 500</para>
-<para id="eip-idm67964976"><emphasis effect="italics">x</emphasis> = the number of successes = 421</para>
- <para id="element-513"><m:math>
-  <m:mrow>
-   <m:msup>
-    <m:mi>p</m:mi>
-    <m:mo>′</m:mo>
-   </m:msup>
-   <m:mo>=</m:mo><m:mfrac>
-    <m:mi>x</m:mi>
-    <m:mi>n</m:mi>
-   </m:mfrac>
-   <m:mo>=</m:mo><m:mfrac>
-    <m:mrow>
-     <m:mn>421</m:mn>
-    </m:mrow>
-    <m:mrow>
-     <m:mn>500</m:mn>
-    </m:mrow>
-   </m:mfrac>
-   <m:mo>=</m:mo><m:mn>0.842</m:mn>
-  </m:mrow>
- </m:math>
-  </para>
-<para id="fs-idp54910160">
-  <m:math>
-    <m:mrow>
-      <m:msup>
-      <m:mi>p</m:mi>
-      <m:mo>′</m:mo>
-      </m:msup>
-      <m:mo>=</m:mo>
-      <m:mn>0.842</m:mn>
-    </m:mrow>
-  </m:math> is the sample proportion; this is the point estimate of the population proportion.</para>
- <para id="element-339">
-  <m:math>
-    <m:mrow>
-      <m:msup>
-      <m:mi>q</m:mi>
-      <m:mo>′</m:mo>
-    </m:msup>
-      <m:mo>=</m:mo>
-      <m:mn>1</m:mn>
-    </m:mrow>
-    <m:mrow>
-      <m:mo>-</m:mo>
-      <m:msup>
-      <m:mi>p</m:mi>
-      <m:mo>′</m:mo>
-    </m:msup>
-      <m:mo>=</m:mo>
-      <m:mn>1</m:mn>
-    </m:mrow>
-    <m:mrow>
-      <m:mo>-</m:mo>
-      <m:mn>0.842</m:mn>
-      <m:mo>=</m:mo>
-      <m:mn>0.158</m:mn>
-    </m:mrow>
-  </m:math>  
-</para>
- <para id="element-239">Since <emphasis effect="italics">CL</emphasis> = 0.95, then <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.95 = 0.05 <m:math>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math> = 0.025.</para>
-<para id="element-838a">Then <m:math>
-<m:msub>
-<m:mi>z</m:mi>
-<m:mfrac>
-<m:mrow>
-<m:mi>α</m:mi>
-</m:mrow>
-<m:mrow>
-<m:mn>2</m:mn>
-</m:mrow>
-</m:mfrac>
-</m:msub>
-<m:mo>=</m:mo>
-<m:msub>
-<m:mi>z</m:mi>
-<m:mn>0.025</m:mn>
-</m:msub>
-<m:mo>=</m:mo>
-<m:mn>1.96</m:mn>
-</m:math></para>
- <para id="element-88">Use the TI-83, 83+, or 84+ calculator command invNorm(0.975,0,1) to find <emphasis effect="italics">z<sub>0.025</sub></emphasis>. Remember that the area to the right of <emphasis effect="italics">z<sub>0.025</sub></emphasis> is 0.025 and the area to the left of <emphasis effect="italics">z<sub>0.025</sub></emphasis> is 0.975. This can also be found using appropriate commands on other calculators, using a computer, or using a Standard Normal probability table.</para>
- <para id="element-42"><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>z</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-     </m:mrow>
-    </m:msub>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:msup>
-       <m:mi>p</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-      <m:msup>
-       <m:mi>q</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-     </m:mrow>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.96</m:mn><m:mo stretchy="false">)</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mo stretchy="false">(</m:mo><m:mn>0.842</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.158</m:mn><m:mo stretchy="false">)</m:mo>
-     </m:mrow>
-     <m:mrow>
-      <m:mn>500</m:mn>
-     </m:mrow>
-    </m:mfrac>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>=</m:mo><m:mn>0.032</m:mn>
- </m:mrow>
-</m:math></para>
- <para id="element-237"><m:math>
-  <m:msup>
-<m:mi>p</m:mi>
-<m:mo>′</m:mo>
-</m:msup>
-<m:mo>–</m:mo>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi>
-<m:mo>=</m:mo>
-<m:mn>0.842</m:mn>
-<m:mo>–</m:mo>
-<m:mn>0.032</m:mn>
-<m:mo>=</m:mo>
-<m:mn>0.81</m:mn>
- </m:math>
- </para>
-
- <para id="element-744"><m:math>
-  <m:mrow>
-   <m:msup>
-    <m:mi>p</m:mi>
-    <m:mo>′</m:mo>
-   </m:msup>
-   <m:mo>+</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0.842</m:mn><m:mo>+</m:mo><m:mn>0.032</m:mn><m:mo>=</m:mo><m:mn>0.874</m:mn>
-  </m:mrow>
- </m:math>
-  </para>
- <para id="element-144">The confidence interval for the true binomial population proportion is <m:math><m:mo>(</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>&#xA0;</m:mo><m:mo>&#x2013;</m:mo><m:mo>&#xA0;</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>,</m:mo><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup><m:mo>&#xA0;</m:mo><m:mo>+</m:mo><m:mo>&#xA0;</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>)</m:mo><m:mo>&#xA0;</m:mo><m:mo>=</m:mo><m:mo>&#xA0;</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>810</m:mn><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>874</m:mn><m:mo>)</m:mo><m:mo>.</m:mo></m:math></para>
- <para id="element-822">Interpretation: We estimate with 95% confidence that between 81% and 87.4% of all adult residents of this city have smartphones.</para>
- <para id="element-415">Explanation of 95% Confidence Level: Ninety-five percent of the confidence intervals constructed in this way would contain the true value for the population proportion of all adult residents of this city who have smartphones.<newline/></para>
+<para id="para-00020">Let <emphasis effect="italics">X</emphasis> = the number of people in the sample who have smartphones. <emphasis effect="italics">X</emphasis> is binomial. Since it is binomial, we can estimate the population proportion.</para>
+<para id="para-00021">To calculate the confidence interval, you must find <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math>, <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math>, and <emphasis effect="italics">EBP</emphasis>.</para>
+<para id="para-00022"><emphasis effect="italics">n</emphasis> = 500</para>
+<para id="para-00023"><emphasis effect="italics">x</emphasis> = the number of successes = 421</para>
+<equation class="unnumbered" id="eq-00003">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>421</m:mn></m:mrow><m:mrow><m:mn>500</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.842</m:mn></m:math>
+</equation>
+<para id="para-00024"><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.842</m:mn></m:math> is the sample proportion; this is the point estimate of the population proportion.</para>
+<equation class="unnumbered" id="eq-00004">
+<m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.842</m:mn><m:mo>=</m:mo><m:mn>0.158</m:mn></m:math>
+</equation>
+<para id="para-00025">Since <emphasis effect="italics">CL</emphasis> = 0.95, then <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>C</m:mi><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.95</m:mn><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 0.025.</para>
+<para id="para-00026">Then <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.96</m:mn></m:math></para>
+<para id="para-00027">Use the TI-83, 83+, or 84+ calculator command invNorm(0.975,0,1) to find <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math>. Remember that the area to the right of <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 0.025 and the area to the left of <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 0.975. This can also be found using appropriate commands on other calculators, using a computer, or using a Standard Normal probability table.</para>
+<equation class="unnumbered" id="eq-00005">
+<m:math><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1.96</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.842</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.158</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>500</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>0.032</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00006">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mn>0.842</m:mn><m:mo>−</m:mo><m:mn>0.032</m:mn><m:mo>=</m:mo><m:mn>0.810</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00007">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mn>0.842</m:mn><m:mo>+</m:mo><m:mn>0.032</m:mn><m:mo>=</m:mo><m:mn>0.874</m:mn></m:math>
+</equation>
+<para id="para-00028">The confidence interval for the true binomial population proportion is <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mtext>EBP</m:mtext><m:mo>,</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mtext>EBP</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.810</m:mn><m:mo>,</m:mo><m:mn>0.874</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</para>
+<para id="para-00029">Interpretation: We estimate with 95% confidence that between 81.0% and 87.4% of all adult residents of this city have smartphones.</para>
+<para id="para-00030">We can visualize this confidence interval with the figure:</para>
+<figure id="fig-00001">
+<media alt="A figure showing the distribution of the sample proportion with the 95% confidence interval marked, extending from 0.810 to 0.874 around the point estimate 0.842.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C08_8-3_img1.png"/>
+</media>
+</figure>
+<para id="para-00031">Explanation of 95% Confidence Level: Ninety-five percent of the confidence intervals constructed in this way would contain the true value for the population proportion of all adult residents of this city who have smartphones.</para>
 </solution>
-<solution id="fs-idm19757088">
-<note id="fs-idm86739552" class="statistics calculator">
-<label/>
-<para id="element-387">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>
-Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.<newline/>
-Arrow down to <m:math><m:mi>x</m:mi></m:math> and enter 421.<newline/>
-Arrow down to <m:math><m:mi>n</m:mi></m:math> and enter 500.<newline/>
-Arrow down to <code>C-Level</code> and enter .95.<newline/>
-Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>
-The confidence interval is (0.81003, 0.87397).</para>
-</note>
+<solution id="sol-00002">
+<para id="para-00032"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
+<para id="para-00033">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.<newline/>Arrow down to <m:math><m:mi>x</m:mi></m:math> and enter 421.<newline/>Arrow down to <m:math><m:mi>n</m:mi></m:math> and enter 500.<newline/>Arrow down to <code>C-Level</code> and enter .95.<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The confidence interval is (0.810, 0.874).</para>
 </solution>
-</exercise></example>
-<note id="fs-idp89365680" class="statistics try"><label/><title>Try It</title>
-   <exercise id="eip-890"><problem id="eip-454">
-  <para id="eip-844">
-Suppose 250 randomly selected people are surveyed to determine if they own a tablet. Of the 250 surveyed, 98 reported owning a tablet. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of people who own tablets.
-  </para>
+</exercise>
+</example>
+<note class="statistics try" id="note-00002">
+<title>Try It</title>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00034">Suppose 250 randomly selected people are surveyed to determine if they own a tablet. Of the 250 surveyed, 98 reported owning a tablet. Using a 95% confidence level, compute a confidence interval estimate for the true proportion of people who own tablets.</para>
 </problem>
-   </exercise>
-</note><example id="eip-164"><exercise id="element-2"><problem id="id1164699825510">
-  <para id="element-182">For a class project, a political science student at a large university wants to estimate the percent of students who are registered voters. He surveys 500 students and finds that 300 are registered voters. Compute a 90% confidence interval for the true percent of students who are registered voters, and interpret the confidence interval.</para>
-  </problem>
-<solution id="id1164685709005">
-<list id="eip-id1168006547279">
+</exercise>
+</note>
+<example id="exam-00002">
+<exercise id="exer-00003">
+<problem id="prob-00003">
+<para id="para-00035">For a class project, a political science student at a large university wants to estimate the percent of students who are registered voters. He surveys 500 students and finds that 300 are registered voters. Compute a 90% confidence interval for the true percent of students who are registered voters, and interpret the confidence interval.</para>
+</problem>
+<solution id="sol-00003">
+<list list-type="bulleted" id="list-00002">
 <item>The first solution is step-by-step.</item>
 <item>The second solution uses a function of the TI-83, 83+, or 84 calculators.</item>
 </list>
-  <para id="element-829">
-       <emphasis effect="italics">x</emphasis> = 300 and <emphasis effect="italics">n</emphasis> = 500</para>
- <para id="element-896"><m:math>
-  <m:mrow>
-   <m:msup>
-    <m:mi>p</m:mi>
-    <m:mo>′</m:mo>
-   </m:msup>
-   <m:mo>=</m:mo><m:mfrac>
-    <m:mi>x</m:mi>
-    <m:mi>n</m:mi>
-   </m:mfrac>
-   <m:mo>=</m:mo><m:mfrac>
-    <m:mrow>
-     <m:mn>300</m:mn>
-    </m:mrow>
-    <m:mrow>
-     <m:mn>500</m:mn>
-    </m:mrow>
-   </m:mfrac>
-   <m:mo>=</m:mo><m:mn>0.600</m:mn>
-  </m:mrow>
- </m:math></para>
- <para id="element-994"><m:math>
-  <m:mrow>
-   <m:msup>
-    <m:mi>q</m:mi>
-    <m:mo>′</m:mo>
-   </m:msup>
-   <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:msup>
-    <m:mi>p</m:mi>
-    <m:mo>′</m:mo>
-   </m:msup>
-   <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0.600</m:mn><m:mo>=</m:mo><m:mn>0.400</m:mn>
-  </m:mrow>
- </m:math></para>
-<para id="element-702">Since <emphasis effect="italics">CL</emphasis> = 0.90, then <emphasis effect="italics">α</emphasis> = 1 – <emphasis effect="italics">CL</emphasis> = 1 – 0.90 = 0.10<m:math>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math> = 0.05
-</para>
-<para id="eip-idm146395264">
-<m:math>
-		<m:msub>
-			<m:mi>z</m:mi>
-			<m:mfrac>
-				<m:mrow>
-					<m:mi>α</m:mi>
-				</m:mrow>
-				<m:mrow>
-					<m:mn>2</m:mn>
-				</m:mrow>
-			</m:mfrac>
-		</m:msub>
-		</m:math> = <emphasis effect="italics">z</emphasis><sub>0.05</sub> = 1.645</para>
- <para id="element-803">Use the TI-83, 83+, or 84+ calculator command invNorm(0.95,0,1) to find <emphasis effect="italics">z<sub>0.05</sub></emphasis>. Remember that the area to the right of <emphasis effect="italics">z<sub>0.05</sub></emphasis> is 0.05 and the area to the left of <emphasis effect="italics">z<sub>0.05</sub></emphasis> is 0.95. This can also be found using appropriate commands on other calculators, using a computer, or using a standard normal probability table.</para>
- <para id="element-541"><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>z</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-     </m:mrow>
-    </m:msub>
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:msup>
-       <m:mi>p</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-      <m:msup>
-       <m:mi>q</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-     </m:mrow>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.645</m:mn><m:mo stretchy="false">)</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mo stretchy="false">(</m:mo><m:mn>0.60</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.40</m:mn><m:mo stretchy="false">)</m:mo>
-     </m:mrow>
-     <m:mrow>
-      <m:mn>500</m:mn>
-     </m:mrow>
-    </m:mfrac>
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>=</m:mo><m:mn>0.036</m:mn>
- </m:mrow>
-</m:math></para>
- <para id="element-898"><m:math>
- <m:mrow>
-  <m:msup>
-   <m:mi>p</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>–</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>−</m:mo><m:mn>0.036</m:mn><m:mo>=</m:mo><m:mn>0.564</m:mn>
- </m:mrow>
-</m:math></para>
- <para id="fs-idm110100928"><m:math>
-   <m:mrow>
-    <m:msup>
-     <m:mi>p</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:mo>+</m:mo><m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>+</m:mo><m:mn>0.036</m:mn><m:mo>=</m:mo><m:mn>0.636</m:mn>
-   </m:mrow>
- </m:math></para>
-<para id="element-343">The confidence interval for the true binomial population proportion is (<m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>) = (0.564,0.636).</para>
-
- <list id="element-523" list-type="bulleted">
+<para id="para-00036"><emphasis effect="italics">x</emphasis> = 300 and <emphasis effect="italics">n</emphasis> = 500</para>
+<equation class="unnumbered" id="eq-00008">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>300</m:mn></m:mrow><m:mrow><m:mn>500</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.600</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00009">
+<m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.600</m:mn><m:mo>=</m:mo><m:mn>0.400</m:mn></m:math>
+</equation>
+<para id="para-00037">Since <emphasis effect="italics">CL</emphasis> = 0.90, then <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>C</m:mi><m:mi>L</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.90</m:mn><m:mo>=</m:mo><m:mn>0.10</m:mn></m:math> <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 0.05</para>
+<para id="para-00038"><m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.645</m:mn></m:math></para>
+<para id="para-00039">Use the TI-83, 83+, or 84+ calculator command invNorm(0.95,0,1) to find <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math>. Remember that the area to the right of <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 0.05 and the area to the left of <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 0.95. This can also be found using appropriate commands on other calculators, using a computer, or using a standard normal probability table.</para>
+<equation class="unnumbered" id="eq-00010">
+<m:math><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1.645</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.60</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.40</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>500</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>0.036</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00011">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>−</m:mo><m:mn>0.036</m:mn><m:mo>=</m:mo><m:mn>0.564</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00012">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>+</m:mo><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>+</m:mo><m:mn>0.036</m:mn><m:mo>=</m:mo><m:mn>0.636</m:mn></m:math>
+</equation>
+<para id="para-00040">The confidence interval for the true binomial population proportion is (<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> − <emphasis effect="italics">EBP</emphasis>, <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis>) = (0.564, 0.636).</para>
+<list list-type="bulleted" id="list-00003">
 <item>Interpretation: We estimate with 90% confidence that the true percent of all students that are registered voters is between 56.4% and 63.6%.</item>
 <item>Alternate Wording: We estimate with 90% confidence that between 56.4% and 63.6% of ALL students are registered voters.</item>
- </list>
- <para id="element-828">Explanation of 90% Confidence Level: Ninety percent of all confidence intervals constructed in this way contain the true value for the population percent of students that are registered voters.</para>
-</solution>
-<solution id="fs-idp10495376">
-<note id="fs-idm49834128" class="statistics calculator">
-<label/>
-<para id="eip-833">Press <code>STAT</code> and arrow over to <code>TESTS</code>.
-<newline/>Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.
-<newline/>Arrow down to <m:math><m:mi>x</m:mi></m:math> and enter 300.
-<newline/>Arrow down to <m:math><m:mi>n</m:mi></m:math> and enter 500.
-<newline/>Arrow down to <code>C-Level</code> and enter 0.90.
-<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.
-<newline/>The confidence interval is (0.564, 0.636).</para>
-  </note>
-</solution>
- </exercise></example><note id="fs-idp55027792" class="statistics try">
-<label/>
-<title>Try It</title>
-<exercise id="fs-idm23330928">
-<problem id="eip-165">
-<para id="eip-183">A student polls their school to see if students in the school district are for or against the new legislation regarding school uniforms. They survey 600 students and finds that 480 are against the new legislation.<newline count="2"/></para><para id="fs-idp17812400">a. Compute a 90% confidence interval for the true percent of students who are against the new legislation, and interpret the confidence interval.</para>
-</problem>
-</exercise>
-<exercise id="fs-idm29038320">
-<problem id="eip-882">
-<para id="eip-207">b. In a sample of 300 students, 68% said they own an iPod and a smart phone. Compute a 97% confidence interval for the true percent of students who own an iPod and a smartphone.</para>
- </problem>
-  </exercise>
-</note>
-
- <section id="eip-443">
-  <title>“Plus Four” Confidence Interval for <emphasis effect="italics">p</emphasis></title>
-
-  <para id="eip-idm101192016">There is a certain amount of error introduced into the process of calculating a confidence interval for a proportion. Because we do not know the true proportion for the population, we are forced to use point estimates to calculate the appropriate standard deviation of the sampling distribution. Studies have shown that the resulting estimation of the standard deviation can be flawed.</para>
-
-  <para id="eip-idp9663392">Fortunately, there is a simple adjustment that allows us to produce more accurate confidence intervals. We simply pretend that we have four additional observations. Two of these observations are successes and two are failures. The new sample size, then, is <emphasis effect="italics">n</emphasis> + 4, and the new count of successes is <emphasis effect="italics">x</emphasis> + 2. </para>
-
-  <para id="eip-idp9663968">Computer studies have demonstrated the effectiveness of this method. It should be used when the confidence level desired is at least 90% and the sample size is at least ten.</para>
-  </section>
- <example id="eip-982"><exercise id="eip-152"><problem id="eip-885">
-  <para id="eip-191">A random sample of 25 statistics students was asked: “Have you smoked a cigarette in the past week?” Six students reported smoking within the past week. Use the “plus-four” method to find a 95% confidence interval for the true proportion of statistics students who smoke.</para>
-</problem>
-<solution id="eip-19">
-<para id="eip-idp35102016">Six students out of 25 reported smoking within the past week, so <emphasis effect="italics">x</emphasis> = 6 and <emphasis effect="italics">n</emphasis> = 25. Because we are using the “plus-four” method, we will use <emphasis effect="italics">x</emphasis> = 6 + 2 = 8 and <emphasis effect="italics">n</emphasis> = 25 + 4 = 29.</para>
-
- <para id="eip-idm32296464"><m:math>
- <m:mrow>
-  <m:msup>
-   <m:mi>p</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>=</m:mo><m:mfrac>
-   <m:mi>x</m:mi>
-   <m:mi>n</m:mi>
-  </m:mfrac>
-  <m:mo>=</m:mo><m:mfrac>
-   <m:mn>8</m:mn>
-   <m:mrow>
-    <m:mn>29</m:mn>
-   </m:mrow>
-  </m:mfrac>
-  <m:mo>≈</m:mo><m:mn>0.276</m:mn>
- </m:mrow>
-</m:math></para>
-
- <para id="eip-idm33200496"><m:math>
- <m:mrow>
-  <m:msup>
-   <m:mi>q</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:msup>
-   <m:mi>p</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mn>0.276</m:mn><m:mo>=</m:mo><m:mn>0.724</m:mn>
- </m:mrow>
-</m:math></para>
- <para id="eip-idm27545488">Since <emphasis effect="italics">CL</emphasis> = 0.95, we know <emphasis effect="italics">α</emphasis> = 1 – 0.95 = 0.05 and <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
- </m:mrow>
-</m:math> = 0.025.</para>
- <para id="eip-idm27544960"><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>z</m:mi>
-   <m:mrow>
-    <m:mn>0.025</m:mn>
-   </m:mrow>
-  </m:msub>
-  <m:mo>=</m:mo><m:mn>1.96</m:mn>
- </m:mrow>
-</m:math>
- </para>
- <para id="eip-idm54844960"><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>z</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:msup>
-       <m:mi>p</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-      <m:msup>
-       <m:mi>q</m:mi>
-       <m:mo>′</m:mo>
-      </m:msup>
-
-     </m:mrow>
-     <m:mi>n</m:mi>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.96</m:mn><m:mo stretchy="false">)</m:mo><m:msqrt>
-   <m:mrow>
-    <m:mfrac>
-     <m:mrow>
-      <m:mn>0.276</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.724</m:mn><m:mo stretchy="false">)</m:mo>
-     </m:mrow>
-     <m:mrow>
-      <m:mn>29</m:mn>
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msqrt>
-  <m:mo>≈</m:mo><m:mn>0.163</m:mn>
- </m:mrow>
-</m:math></para>
- <para id="eip-idm47330704"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis> = 0.276 – 0.163 = 0.113</para>
- <para id="eip-idm47330064"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis> = 0.276 + 0.163 = 0.439</para>
- <para id="eip-idm46666976">We are 95% confident that the true proportion of all statistics students who smoke cigarettes is between 0.113 and 0.439.</para>
-</solution>
-<solution id="fs-idp68718096">
-<note id="fs-idp48064384" class="statistics calculator"><label/>
-<para id="fs-idp140335584">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>
- Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.<newline/></para>
- <note id="fs-idp12207696">
-    <label/>
-  <title>REMINDER</title>
-<para id="fs-idp183978608">Remember that the plus-four method assume an additional four trials: two successes and two failures. You do not need to change the process for calculating the confidence interval; simply update the values of x and n to reflect these additional trials.</para>
- </note>
- <para id="fs-idm64251984">Arrow down to <emphasis effect="italics">x</emphasis> and enter eight.<newline/>
- Arrow down to <emphasis effect="italics">n</emphasis> and enter 29.<newline/>
- Arrow down to C-Level and enter 0.95.<newline/>
- Arrow down to Calculate and press ENTER.<newline/>
- The confidence interval is (0.113, 0.439).<newline/></para>
-</note></solution>
-  </exercise></example><note id="fs-idp89200688" class="statistics try">
-<label/>
-<title>Try It</title>
-      <exercise id="eip-479">
-       <problem id="eip-517">
-    <para id="eip-987">Out of a random sample of 65 first-year students at State University, 31 students have declared a major. Use the “plus-four” method to find a 96% confidence interval for the true proportion of first-year students at State University who have declared a major.</para>
-   </problem>
-    </exercise>
-  </note>
-<example id="eip-251">
-<exercise id="eip-790"><problem id="eip-4">
-  <para id="eip-idm57290160">A marketing research firm conducted a survey regarding the potential purchase of electric vehicles among adults aged 18–29. In a group of 50 adults aged 18–29, 13 of them reported they would consider the purchase of an electric vehicle. Use the “plus four” method to find a 90% confidence interval for the true proportion of adults aged 18–29 who would consider the purchase of an electric vehicle.</para>
-</problem>
-<solution id="eip-598">
-<para id="eip-idp21168352">Using “plus-four,” we have <emphasis effect="italics">x</emphasis> = 13 + 2 = 15 and <emphasis effect="italics">n</emphasis> = 50 + 4 = 54.</para>
- <para id="eip-idp92452528">
-  <m:math>
- <m:mrow>
-  <m:msup>
-   <m:mi>p</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>=</m:mo><m:mo> </m:mo><m:mfrac>
-   <m:mrow>
-    <m:mn>15</m:mn>
-   </m:mrow>
-   <m:mrow>
-    <m:mn>54</m:mn>
-   </m:mrow>
-  </m:mfrac>
-  <m:mo> </m:mo><m:mo>≈</m:mo><m:mo> </m:mo><m:mn>0.278</m:mn>
- </m:mrow>
-</m:math>
-</para>
-<para id="eip-idp92453168"><m:math>
- <m:mrow>
-  <m:msup>
-   <m:mi>q</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:msup>
-   <m:mi>p</m:mi>
-   <m:mo>′</m:mo>
-  </m:msup>
-  <m:mo>=</m:mo><m:mn>1</m:mn><m:mo>-</m:mo><m:mn>0.241</m:mn><m:mo>=</m:mo><m:mn>0.722</m:mn>
- </m:mrow>
-</m:math>
-</para>
-<para id="eip-idp23600320">Since <emphasis effect="italics">CL</emphasis> = 0.90, we know <emphasis effect="italics">α</emphasis> = 1 – 0.90 = 0.10 and <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
- </m:mrow>
- </m:math> = 0.05.
-</para>
-<para id="eip-idp84176480"><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>z</m:mi>
-   <m:mrow>
-    <m:mn>0.05</m:mn>
-   </m:mrow>
-  </m:msub>
-  <m:mo>=</m:mo><m:mn>1.645</m:mn>
- </m:mrow>
-</m:math>
-</para>
- <para id="eip-idp73704848"><m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msub>
-   <m:mi>z</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-  <m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msqrt>
-     <m:mrow>
-      <m:mfrac>
-       <m:mrow>
-        <m:msup>
-         <m:mi>p</m:mi>
-         <m:mo>′</m:mo>
-        </m:msup>
-        <m:msup>
-         <m:mi>q</m:mi>
-         <m:mo>′</m:mo>
-        </m:msup>
-
-       </m:mrow>
-       <m:mi>n</m:mi>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msqrt>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.645</m:mn><m:mo stretchy="false">)</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msqrt>
-     <m:mrow>
-      <m:mfrac>
-       <m:mrow>
-        <m:mo stretchy="false">(</m:mo><m:mn>0.278</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.722</m:mn><m:mo stretchy="false">)</m:mo>
-       </m:mrow>
-       <m:mrow>
-        <m:mn>54</m:mn>
-       </m:mrow>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msqrt>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>0.100</m:mn>
- </m:mrow>
-</m:math></para>
-<para id="eip-idp40189152"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> – <emphasis effect="italics">EBP</emphasis> = 0.278 – 0.100 = 0.178</para>
- <para id="eip-idp61257168"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis> = 0.278 + 0.100 = 0.378</para>
-<para id="eip-idp61146144">We are 90% confident that between 17.8% and 37.8% of adults aged 18–29 would consider the purchase of an electric vehicle.</para></solution>
-<solution id="fs-idp141579680">
-<note id="fs-idm93286128" class="statistics calculator">
-<label/>
-<para id="fs-idp57846688">
-  <newline/>Press <code>STAT</code> and arrow over to <code>TESTS</code>.
-  <newline/>Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.
-  <newline/>Arrow down to <emphasis effect="italics">x</emphasis> and enter 15.
-  <newline/>Arrow down to <emphasis effect="italics">n</emphasis> and enter 54.
-  <newline/>Arrow down to <code>C-Level</code> and enter 0.90.
-  <newline/>Arrow down to Calculate and press <code>ENTER</code>.
-  <newline/>The confidence interval is (0.178, 0.378).
-</para>
-</note>
-</solution>
-
-   </exercise></example>
-<note id="fs-idp15135760" class="statistics try">
-<label/>
- <title>Try It</title>
- <exercise id="eip-375"><problem id="eip-391">
- <para id="eip-879">The survey referenced in <link target-id="eip-251" document=""/> talked to adults aged 18–29 in smaller focus groups but also interviewed additional individuals over the phone. When the study was complete, 588 adults aged 18–29 had answered the question about their potential purchase of an electric vehicle with 159 saying that they would consider such a purchase. Use the “plus-four” method to find a 90% confidence interval for the true proportion of adults aged 18–29 who would consider the purchase of an electric vehicle based on this larger sample. Compare the results to those in <link target-id="eip-251" document=""/>.
-     </para>
-    </problem>
-</exercise>
-</note>
- <section id="fs-idm22068416">
-  <title>Calculating the Sample Size <emphasis effect="italics">n</emphasis></title>
-       <para id="element-24">
-If researchers desire a specific margin of error, then they can use the error bound formula to calculate the required sample size.
-</para><para id="element-957">The error bound formula for a population proportion is
-</para><list id="element-166" list-type="bulleted"><item>
- <m:math>
- <m:mrow>
-  <m:mi>E</m:mi><m:mi>B</m:mi><m:mi>P</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>z</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msqrt>
-     <m:mrow>
-      <m:mfrac>
-       <m:mrow>
-        <m:msup>
-         <m:mi>p</m:mi>
-         <m:mo>′</m:mo>
-        </m:msup>
-        <m:msup>
-         <m:mi>q</m:mi>
-         <m:mo>′</m:mo>
-        </m:msup>
-
-       </m:mrow>
-       <m:mi>n</m:mi>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msqrt>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math></item>
-<item>Solving for <emphasis effect="italics">n</emphasis> gives you an equation for the sample size.</item>
-<item>
- <m:math>
- <m:mrow>
-  <m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
-   <m:mrow>
-    <m:msup>
-     <m:mrow>
-      <m:mrow><m:mo>(</m:mo>
-       <m:mrow>
-        <m:msub>
-         <m:mi>z</m:mi>
-         <m:mrow>
-          <m:mfrac>
-           <m:mi>α</m:mi>
-           <m:mn>2</m:mn>
-          </m:mfrac>
-
-         </m:mrow>
-        </m:msub>
-
-       </m:mrow>
-      <m:mo>)</m:mo></m:mrow>
-     </m:mrow>
-     <m:mn>2</m:mn>
-    </m:msup>
-    <m:mo stretchy="false">(</m:mo><m:msup>
-     <m:mi>p</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:msup>
-     <m:mi>q</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:mo stretchy="false">)</m:mo>
-   </m:mrow>
-   <m:mrow>
-    <m:mi>E</m:mi><m:mi>B</m:mi><m:msup>
-     <m:mi>P</m:mi>
-     <m:mn>2</m:mn>
-    </m:msup>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math>
-</item>
 </list>
- <example id="element-724">
-<exercise id="fs-idp171900368">
-<problem id="fs-idp171900624"><para id="eip-843">Suppose a mobile phone company wants to determine the current percentage of customers aged 50+ who use text messaging on their cell phones. How many customers aged 50+ should the company survey in order to be 90% confident that the estimated (sample) proportion is within three percentage points of the true population proportion of customers aged 50+ who use text messaging on their cell phones.</para></problem>
- <solution id="fs-idp53892304">
-<para id="eip-806">From the problem, we know that <emphasis><emphasis effect="italics">EBP</emphasis> = 0.03</emphasis> (3%=0.03) and
-   <m:math>
-    <m:mrow>
-     <m:msub>
-      <m:mi>z</m:mi>
-      <m:mrow>
-       <m:mfrac>
-        <m:mi>α</m:mi>
-        <m:mn>2</m:mn>
-       </m:mfrac>
-      </m:mrow>
-     </m:msub>
-   </m:mrow>
-   </m:math> <emphasis effect="italics">z</emphasis><sub>0.05</sub> = 1.645 because the confidence level is 90%.</para>
-<para id="eip-35">However, in order to find <emphasis effect="italics">n</emphasis>, we need to know the estimated (sample) proportion <emphasis effect="italics">p</emphasis>′. Remember that <emphasis effect="italics">q</emphasis>′ = 1 – <emphasis effect="italics">p</emphasis>′. But, we do not know <emphasis effect="italics">p</emphasis>′ yet. Since we multiply <emphasis effect="italics">p</emphasis>′ and <emphasis effect="italics">q</emphasis>′ together, we make them both equal to 0.5 because <emphasis effect="italics">p</emphasis>′<emphasis effect="italics">q</emphasis>′ = (0.5)(0.5) = 0.25 results in the largest possible product. (Try other products: (0.6)(0.4) = 0.24; (0.3)(0.7) = 0.21; (0.2)(0.8) = 0.16 and so on). The largest possible product gives us the largest <emphasis effect="italics">n</emphasis>. This gives us a large enough sample so that we can be 90% confident that we are within three percentage points of the true population proportion. To calculate the sample size <emphasis effect="italics">n</emphasis>, use the formula and make the substitutions.</para>
-  <para id="eip-812"><m:math>
- <m:mrow>
-  <m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
-   <m:mrow>
-    <m:msup>
-     <m:mi>z</m:mi>
-     <m:mn>2</m:mn>
-    </m:msup>
-    <m:msup>
-     <m:mi>p</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-    <m:msup>
-     <m:mi>q</m:mi>
-     <m:mo>′</m:mo>
-    </m:msup>
-
-   </m:mrow>
-   <m:mrow>
-    <m:mi>E</m:mi><m:mi>B</m:mi><m:msup>
-     <m:mi>P</m:mi>
-     <m:mn>2</m:mn>
-    </m:msup>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math> gives <m:math>
- <m:mrow>
-  <m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac>
-   <m:mrow>
-    <m:msup>
-     <m:mrow>
-      <m:mn>1.645</m:mn>
-     </m:mrow>
-     <m:mn>2</m:mn>
-    </m:msup>
-    <m:mo stretchy="false">(</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">)</m:mo>
-   </m:mrow>
-   <m:mrow>
-    <m:msup>
-     <m:mrow>
-      <m:mn>0.03</m:mn>
-     </m:mrow>
-     <m:mn>2</m:mn>
-    </m:msup>
-
-   </m:mrow>
-  </m:mfrac>
-  <m:mo>=</m:mo><m:mn>751.7</m:mn>
- </m:mrow>
-</m:math></para><para id="eip-979">Round the answer to the next higher value. The sample size should be 752 cell phone customers aged 50+ in order to be 90%  confident that the estimated (sample) proportion is within three percentage points of the true population proportion of all customers aged 50+ who use text messaging on their cell phones.
-</para></solution>
-
-
- </exercise></example>
-<note id="fs-idp13131184" class="statistics try">
-<label/>
+<para id="para-00041">Explanation of 90% Confidence Level: Ninety percent of all confidence intervals constructed in this way contain the true value for the population percent of students that are registered voters.</para>
+</solution>
+<solution id="sol-00004">
+<para id="para-00042"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
+<para id="para-00043">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.<newline/>Arrow down to <m:math><m:mi>x</m:mi></m:math> and enter 300.<newline/>Arrow down to <m:math><m:mi>n</m:mi></m:math> and enter 500.<newline/>Arrow down to <code>C-Level</code> and enter 0.90.<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The confidence interval is (0.564, 0.636).</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00003">
 <title>Try It</title>
-      <exercise id="eip-143">
-    <problem id="eip-26">
-  <para id="eip-803">Suppose an internet marketing company wants to determine the current percentage of customers who click on ads on their smartphones. How many customers should the company survey in order to be 90% confident that the estimated proportion is within five percentage points of the true population proportion of customers who click on ads on their smartphones?
-  </para>
+<exercise id="exer-00004">
+<problem id="prob-00004">
+<para id="para-00044">A student polls their school to see if students in the school district are for or against the new legislation regarding school uniforms. They survey 600 students and find that 480 are against the new legislation.</para>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+<item>Compute a 90% confidence interval for the true percent of students who are against the new legislation, and interpret the confidence interval.</item>
+<item>In a sample of 300 students, 68% said they own a smartwatch and a smartphone. Compute a 97% confidence interval for the true percent of students who own a smartwatch and a smartphone.</item>
+</list>
 </problem>
-   </exercise>
- </note>
- </section>
+</exercise>
+</note>
+<section id="sect-00001">
+<title>“Plus Four” Confidence Interval for p</title>
+<para id="para-00045">There is a certain amount of error introduced into the process of calculating a confidence interval for a proportion. Because we do not know the true proportion for the population, we are forced to use point estimates to calculate the appropriate standard deviation of the sampling distribution. Studies have shown that the resulting estimation of the standard deviation can be flawed.</para>
+<para id="para-00046">Fortunately, there is a simple adjustment that allows us to produce more accurate confidence intervals. We simply pretend that we have four additional observations. Two of these observations are successes and two are failures. The new sample size, then, is <emphasis effect="italics">n</emphasis> + 4, and the new count of successes is <emphasis effect="italics">x</emphasis> + 2.</para>
+<para id="para-00047">Computer studies have demonstrated the effectiveness of this method. It should be used when the confidence level desired is at least 90% and the sample size is at least ten.</para>
+<example id="exam-00003">
+<exercise id="exer-00005">
+<problem id="prob-00005">
+<para id="para-00048">A random sample of 25 statistics students was asked: “Have you smoked a cigarette in the past week?” Six students reported smoking within the past week. Use the “plus-four” method to find a 95% confidence interval for the true proportion of statistics students who smoke.</para>
+</problem>
+<solution id="sol-00005">
+<para id="para-00049">Six students out of 25 reported smoking within the past week, so <emphasis effect="italics">x</emphasis> = 6 and <emphasis effect="italics">n</emphasis> = 25. Because we are using the “plus-four” method, we will use <emphasis effect="italics">x</emphasis> = 6 + 2 = 8 and <emphasis effect="italics">n</emphasis> = 25 + 4 = 29.</para>
+<equation class="unnumbered" id="eq-00013">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>8</m:mn></m:mrow><m:mrow><m:mn>29</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.276</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00014">
+<m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.276</m:mn><m:mo>=</m:mo><m:mn>0.724</m:mn></m:math>
+</equation>
+<para id="para-00050">Since <emphasis effect="italics">CL</emphasis> = 0.95, we know <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.95</m:mn><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:math> = 0.025.</para>
+<equation class="unnumbered" id="eq-00015">
+<m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.96</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00016">
+<m:math><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1.96</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.276</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.724</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>29</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>≈</m:mo><m:mn>0.163</m:mn></m:math>
+</equation>
+<para id="para-00051"><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> − <emphasis effect="italics">EBP</emphasis> = 0.276 − 0.163 = 0.113</para>
+<para id="para-00052"><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis> = 0.276 + 0.163 = 0.439</para>
+<para id="para-00053">We are 95% confident that the true proportion of all statistics students who smoked a cigarette in the past week is between 0.113 and 0.439.</para>
+</solution>
+<solution id="sol-00006">
+<para id="para-00054"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
+<para id="para-00055">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.</para>
+<note class="statistics note" id="note-00004">
+<title>REMINDER</title>
+<para id="para-00056">Remember that the plus-four method assumes an additional four trials: two successes and two failures. You do not need to change the process for calculating the confidence interval; simply update the values of <emphasis effect="italics">x</emphasis> and <emphasis effect="italics">n</emphasis> to reflect these additional trials.</para>
+</note>
+<para id="para-00057">Arrow down to <emphasis effect="italics">x</emphasis> and enter eight.<newline/>Arrow down to <emphasis effect="italics">n</emphasis> and enter 29.<newline/>Arrow down to C-Level and enter 0.95.<newline/>Arrow down to Calculate and press ENTER.<newline/>The confidence interval is (0.113, 0.439).</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00005">
+<title>Try It</title>
+<exercise id="exer-00006">
+<problem id="prob-00006">
+<para id="para-00058">Out of a random sample of 65 first-year students at State University, 31 students have declared a major. Use the “plus-four” method to find a 96% confidence interval for the true proportion of first-year students at State University who have declared a major.</para>
+</problem>
+</exercise>
+</note>
+<example id="fs-c8-ex-8-13">
+<exercise id="exer-00007">
+<problem id="prob-00007">
+<para id="para-00059">A marketing research firm conducted a survey regarding the potential purchase of electric vehicles among adults aged 18–29. In a group of 50 adults aged 18–29, 13 of them reported they would consider the purchase of an electric vehicle. Use the “plus-four” method to find a 90% confidence interval for the true proportion of adults aged 18–29 who would consider the purchase of an electric vehicle.</para>
+</problem>
+<solution id="sol-00007">
+<para id="para-00060">Using “plus-four,” we have <emphasis effect="italics">x</emphasis> = 13 + 2 = 15 and <emphasis effect="italics">n</emphasis> = 50 + 4 = 54.</para>
+<equation class="unnumbered" id="eq-00017">
+<m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>54</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>0.278</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00018">
+<m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.278</m:mn><m:mo>=</m:mo><m:mn>0.722</m:mn></m:math>
+</equation>
+<para id="para-00061">Since <emphasis effect="italics">CL</emphasis> = 0.90, we know <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.90</m:mn><m:mo>=</m:mo><m:mn>0.10</m:mn></m:math> and <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:math> = 0.05.</para>
+<equation class="unnumbered" id="eq-00019">
+<m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.645</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00020">
+<m:math><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1.645</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.278</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.722</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>54</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>0.100</m:mn></m:math>
+</equation>
+<para id="para-00062"><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> − <emphasis effect="italics">EBP</emphasis> = 0.278 − 0.100 = 0.178</para>
+<para id="para-00063"><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> + <emphasis effect="italics">EBP</emphasis> = 0.278 + 0.100 = 0.378</para>
+<para id="para-00064">We are 90% confident that between 17.8% and 37.8% of adults aged 18–29 would consider the purchase of an electric vehicle.</para>
+</solution>
+<solution id="sol-00008">
+<para id="para-00065"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
+<para id="para-00066">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>A:1-PropZint</code>. Press <code>ENTER</code>.<newline/>Arrow down to <emphasis effect="italics">x</emphasis> and enter 15.<newline/>Arrow down to <emphasis effect="italics">n</emphasis> and enter 54.<newline/>Arrow down to <code>C-Level</code> and enter 0.90.<newline/>Arrow down to Calculate and press <code>ENTER</code>.<newline/>The confidence interval is (0.178, 0.378).</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00006">
+<title>Try It</title>
+<exercise id="exer-00008">
+<problem id="prob-00008">
+<para id="para-00067">The survey referenced in <link target-id="fs-c8-ex-8-13"/> talked to adults aged 18–29 in smaller focus groups but also interviewed additional individuals over the phone. When the study was complete, 588 adults aged 18–29 had answered the question about their potential purchase of an electric vehicle with 159 saying that they would consider such a purchase. Use the “plus-four” method to find a 90% confidence interval for the true proportion of adults aged 18–29 who would consider the purchase of an electric vehicle based on this larger sample. Compare the results to those in <link target-id="fs-c8-ex-8-13"/>.</para>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00002">
+<title>Calculating the Sample Size n</title>
+<para id="para-00068">If researchers desire a specific margin of error, then they can use the error bound formula to calculate the required sample size.</para>
+<para id="para-00069">The error bound formula for a population proportion is</para>
+<list list-type="bulleted" id="list-00005">
+<item><m:math><m:mtext>EBP</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></item>
+<item>Solving for <emphasis effect="italics">n</emphasis> gives you an equation for the sample size.</item>
+<item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mtext>EBP</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:math></item>
+</list>
+<example id="exam-00004">
+<exercise id="exer-00009">
+<problem id="prob-00009">
+<para id="para-00070">Suppose a mobile phone company wants to determine the current percentage of customers aged 50+ who use text messaging on their cell phones. How many customers aged 50+ should the company survey in order to be 90% confident that the estimated (sample) proportion is within three percentage points of the true population proportion of customers aged 50+ who use text messaging on their cell phones?</para>
+</problem>
+<solution id="sol-00009">
+<para id="para-00071">From the problem, we know that <emphasis>EBP = 0.03</emphasis> (3% = 0.03) and <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>z</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.645</m:mn></m:math> because the confidence level is 90%.</para>
+<para id="para-00072">However, in order to find <emphasis effect="italics">n</emphasis>, we need to know the estimated (sample) proportion <emphasis effect="italics">p′</emphasis>. Remember that <emphasis effect="italics">q′</emphasis> = 1 − <emphasis effect="italics">p′</emphasis>. But, we do not know <emphasis effect="italics">p′</emphasis> yet. Since we multiply <emphasis effect="italics">p′</emphasis> and <emphasis effect="italics">q′</emphasis> together, we make them both equal to 0.5 because <emphasis effect="italics">p′q′</emphasis> = (0.5)(0.5) = 0.25 results in the largest possible product. (Try other products: (0.6)(0.4) = 0.24; (0.3)(0.7) = 0.21; (0.2)(0.8) = 0.16 and so on). The largest possible product gives us the largest <emphasis effect="italics">n</emphasis>. This gives us a large enough sample so that we can be 90% confident that we are within three percentage points of the true population proportion. To calculate the sample size <emphasis effect="italics">n</emphasis>, use the formula and make the substitutions.</para>
+<para id="para-00073"><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>z</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:msup><m:mtext>EBP</m:mtext><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:math> gives <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mn>1.645</m:mn><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.5</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.5</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:msup><m:mn>0.03</m:mn><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>751.7</m:mn></m:math></para>
+<para id="para-00074">Round the answer to the next higher value. The sample size should be 752 cell phone customers aged 50+ in order to be 90% confident that the estimated (sample) proportion is within three percentage points of the true population proportion of all customers aged 50+ who use text messaging on their cell phones.</para>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00007">
+<title>Try It</title>
+<exercise id="exer-00010">
+<problem id="prob-00010">
+<para id="para-00075">Suppose an internet marketing company wants to determine the current percentage of customers who click on ads on their smartphones. How many customers should the company survey in order to be 90% confident that the estimated proportion is within five percentage points of the true population proportion of customers who click on ads on their smartphones?</para>
+</problem>
+</exercise>
+</note>
+</section>
 <section id="eip-566" class="references"><title>References</title><para id="eip-idp27535536">Jensen, Tom. “Democrats, Republicans Divided on Opinion of Music Icons.” Public Policy Polling. Available online at http://www.publicpolicypolling.com/Day2MusicPoll.pdf (accessed July 2, 2013).</para>
 <para id="eip-idm28118800">Madden, Mary, Amanda Lenhart, Sandra Coresi, Urs Gasser, Maeve Duggan, Aaron Smith, and Meredith Beaton. “Teens, Social Media, and Privacy.” PewInternet, 2013. Available online at http://www.pewinternet.org/Reports/2013/Teens-Social-Media-And-Privacy.aspx (accessed July 2, 2013).</para>
 <para id="eip-idm28117680">Prince Survey Research Associates International. “2013 Teen and Privacy Management Survey.” Pew Research Center: Internet and American Life Project. Available online at  http://www.pewinternet.org/~/media//Files/Questionnaire/2013/Methods%20and%20Questions_Teens%20and%20Social%20Media.pdf (accessed July 2, 2013).</para>
@@ -1277,7 +382,7 @@ If researchers desire a specific margin of error, then they can use the error bo
    </m:mrow>
   <m:mo>)</m:mo></m:mrow>
  </m:mrow>
-</m:math> The variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> has a binomial distribution that can be approximated with the normal distribution shown here.</para>
+</m:math> The variable <m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is the sample proportion; it is approximately normally distributed (as shown above) when <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math>, while the count of successes <m:math><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> has a binomial distribution.</para>
  <para id="eip-idm90817904"><emphasis effect="italics">EBP</emphasis> = the error bound for a proportion = <m:math>
   <m:mrow>
    <m:msub>
@@ -1462,7 +567,7 @@ If researchers desire a specific margin of error, then they can use the error bo
   </m:mover>
  </m:mrow>
 </m:math> is a point estimate for <emphasis effect="italics">μ</emphasis></para>
- <para id="eip-285"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is a point estimate for <emphasis effect="italics">ρ</emphasis></para>
+ <para id="eip-285"><m:math><m:msup><m:mi>p</m:mi><m:mo>′</m:mo></m:msup></m:math> is a point estimate for <emphasis effect="italics">p</emphasis></para>
  <para id="eip-401"><emphasis effect="italics">s</emphasis> is a point estimate for <emphasis effect="italics">σ</emphasis></para>
 </section>
 <section id="eip-515" class="practice">
@@ -1529,13 +634,13 @@ Identify the following:
 <para id="eip-idp15976608">Construct a 95% confidence interval. State the confidence interval, sketch the graph, and calculate the error bound.</para>
 </problem>
 <solution id="eip-284">
-<para id="eip-idp28777568">CI: (0.19432, 0.33068)</para>
+<para id="eip-idp28777568">CI: (0.192, 0.328)</para>
 <figure class="scaled-down" id="fs-idm39446528"><media id="eip-idp150796640" alt="This is a normal distribution curve. The peak of the curve coincides with the point 0.26 on the horizontal axis.  A central region is shaded between points 0.1943 and 0.3307."><image src="../../media/IBS2e_Figure_08_00_016.png" mime-type="image/png"/></media></figure>
-<para id="eip-idp173934176"><emphasis effect="italics">EBM</emphasis>: 0.0707</para>
+<para id="eip-idp173934176"><emphasis effect="italics">EBM</emphasis>: 0.068</para>
 </solution>
 </exercise>
 <exercise id="eip-218"><problem id="eip-768">
-<para id="eip-idp111500528">Suppose we want to lower the sampling error. What is one way to accomplish that?</para>
+<para id="eip-idp111500528">Suppose we want to lower the sampling error for the executives who prefer trucks. What is one way to accomplish that?</para>
 </problem>
 </exercise><exercise id="eip-978"><problem id="eip-261">
 <para id="eip-idm82424912">The sampling error given in the survey is ±2%. Explain what the ±2% means.</para>
@@ -2122,47 +1227,17 @@ Calculate the following:
   <para id="eip-439">In a recent Zogby International Poll, nine of 48 respondents rated the likelihood of a terrorist attack in their community as “likely” or “very likely.” Use the “plus four” method to create a 97% confidence interval for the proportion of American adults who believe that a terrorist attack in their community is likely or very likely. Explain what this confidence interval means in the context of the problem.</para>
 </problem>
 </exercise></section>
- </content>
-<glossary>
- <definition id="bidist">
-<term>Binomial Distribution</term>
-  <meaning id="id8181257">a discrete random variable (RV) which arises from Bernoulli trials; there are a fixed number, <emphasis effect="italics">n</emphasis>, of independent trials. “Independent” means that the result of any trial (for example, trial 1) does not affect the results of the following trials, and all trials are conducted under the same conditions. Under these circumstances the binomial RV <emphasis effect="italics">X</emphasis> is defined as the number of successes in <emphasis effect="italics">n</emphasis> trials. The notation is: <emphasis effect="italics">X</emphasis>~<emphasis effect="italics">B</emphasis>(<emphasis>n</emphasis>,<emphasis>p</emphasis>). The mean is <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">np</emphasis> and the standard deviation is <emphasis effect="italics">σ</emphasis> = <m:math>
-   <m:msqrt>
-    <m:mrow>
-     <m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi>
-    </m:mrow>
-   </m:msqrt>
-
-  </m:math>. The probability of exactly <emphasis effect="italics">x</emphasis> successes in <emphasis effect="italics">n</emphasis> trials is <m:math>
-  <m:mi>P</m:mi>
-  <m:mo>(</m:mo>
-  <m:mi>X</m:mi>
-  <m:mo>=</m:mo>
-  <m:mi>x</m:mi>
-  <m:mo>)</m:mo>
-  <m:mo>=</m:mo>
-  <m:mfenced>
-    <m:mfrac linethickness="0">
-      <m:mi>n</m:mi>
-      <m:mi>x</m:mi>
-    </m:mfrac>
-  </m:mfenced>
-  <m:msup>
-    <m:mi>p</m:mi>
-    <m:mi>x</m:mi>
-  </m:msup>
-  <m:msup>
-    <m:mi>q</m:mi>
-    <m:mrow>
-      <m:mi>n</m:mi>
-      <m:mo>−</m:mo>
-      <m:mi>x</m:mi>
-    </m:mrow>
-  </m:msup>
-</m:math>.
-    </meaning>
-  </definition>
-
-</glossary>
+ <section class="glossary" id="sect-00003">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Error Bound for a Proportion (EBP)</term>
+<meaning>the margin of error for a confidence interval for a population proportion; it depends on the confidence level and the sample proportion and equals the critical value (z with area <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:math> to its right) times <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</meaning>
+</definition>
+<definition id="def-00002">
+<term>Plus-Four Method</term>
+<meaning>a method for estimating a population proportion in which four imaginary observations — two successes and two failures — are added to the sample before the confidence interval is computed; it improves accuracy for small samples.</meaning>
+</definition>
+</section>
+</content>
 
 </document>

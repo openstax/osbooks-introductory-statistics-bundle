@@ -8,18 +8,18 @@
 </metadata>
 
 <content>
-<figure id="fs-idp38862000" class="splash"><media id="fs-idm31074784" alt="This is a photo of M&amp;Ms piled together. The M&amp;Ms are red, blue, green, yellow, orange and brown.">
+<figure id="fs-idp38862000" class="splash"><media id="fs-idm31074784" alt="This is a photo of a white pit bull dog sitting in the sidecar of a vintage motorcycle. The dog’s mouth is open, and a round chrome headlight and blurred green foliage are visible in the background.">
 <image src="../../media/CNX_Stats_C08_CO.jpg" mime-type="image/jpeg"/></media>
 
-<caption>Have you ever wondered what the average number of M&amp;Ms in a bag at the grocery store is? You can use confidence intervals to answer this question. (credit: modification of work “sweet, orange, food, green, red, color, brown, blue, colorful, yellow, chocolate, snack, dessert, toy, plain, candy, sweetness, treat, confectionery, coated, m ms, hard shell, snack food, jelly bean”/ Pxhere, Public Domain)</caption></figure><note id="fs-idp115342032" class="chapter-objectives"><label/><title>Chapter Objectives</title>
+<caption>What is the average weight of a pitbull? You can use confidence intervals to answer this question. (credit: [pitbull photo credit to be added])</caption></figure><note id="fs-idp115342032" class="chapter-objectives"><label/><title>Chapter Objectives</title>
 <para id="element-281">By the end of this chapter, the student should be able to:</para>
 <list id="list12315"><item>Calculate and interpret confidence intervals for estimating a population mean and a population proportion.</item>
-<item>Interpret the Student's t probability distribution as the sample size changes.</item>
+<item>Interpret the Student's t-distribution as the sample size changes.</item>
 <item>Discriminate between problems applying the normal and the Student's <emphasis effect="italics">t</emphasis> distributions.</item>
 <item>Calculate the sample size required to estimate a population mean and a population proportion given a desired confidence level and margin of error.</item>
 </list></note><para id="element-2812">Suppose you were trying to determine the mean rent of a two-bedroom apartment in your town. You might look in the classified section of the newspaper, write down several rents listed, and average them together. You would have obtained a point estimate of the true mean. If you are trying to determine the percentage of times you make a basket when shooting a basketball, you might count the number of shots you make and divide that by the number of shots you attempted. In this case, you would have obtained a point estimate for the true proportion.</para>
 <para id="element-550">We use sample data to make generalizations about an unknown population. This part of statistics is called <term id="term-00001">inferential statistics</term>.  <emphasis>The sample data help us to make an estimate of a population <term id="term-00002">parameter</term></emphasis>. We realize that the point estimate is most likely not the exact value of the population parameter, but close to it. After calculating point estimates, we construct interval estimates, called confidence intervals.</para>
-<para id="element-667">In this chapter, you will learn to construct and interpret confidence intervals. You will also learn a new distribution, the Student's-t, and how it is used with these intervals. Throughout the chapter, it is important to keep in mind that the confidence interval is a random variable. It is the population parameter that is fixed.</para>
+<para id="element-667">In this chapter, you will learn to construct and interpret confidence intervals. You will also learn a new distribution, the Student's t-distribution, and how it is used with these intervals. Throughout the chapter, it is important to keep in mind that the confidence interval is a random variable. It is the population parameter that is fixed.</para>
 <para id="element-560">If you worked in the marketing department of an entertainment company, you might be interested in the mean number of songs a consumer downloads a month from Apple Music. If so, you could conduct a survey and calculate the sample mean, <m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
@@ -47,7 +47,7 @@
 
 </m:math> and <emphasis effect="italics">s</emphasis> is called a statistic.</para>
 
-<para id="element-510">A <term id="term-00004">confidence interval</term> is another type of estimate but, instead of being just one number, it is an interval of numbers. It provides a range of reasonable values in which we expect the population parameter to fall. There is no guarantee that a given confidence interval does capture the parameter, but there is a predictable probability of success.</para><para id="element-53">Suppose, for the Apple Music example, we do not know the population mean <emphasis effect="italics">μ</emphasis>, but we do know that the population standard deviation is <emphasis effect="italics">σ</emphasis> = 1 and our sample size is 100. Then, by the central limit theorem, the standard deviation for the sample mean is</para>
+<para id="element-510">A <term id="term-00004">confidence interval</term> is another type of estimate but, instead of being just one number, it is an interval of numbers. It provides a range of reasonable values in which we expect the population parameter to fall. There is no guarantee that a given confidence interval does capture the parameter, but there is a predictable probability of success.</para><para id="element-53">Suppose, for the Apple Music example, we do not know the population mean <emphasis effect="italics">μ</emphasis>, but we do know that the population standard deviation is <emphasis effect="italics">σ</emphasis> = 1 and our sample size is 100. Then the standard error of the sample mean is</para>
 <equation class="unnumbered" id="element-624"><m:math>
  <m:mrow>
   <m:mfrac>
@@ -79,7 +79,7 @@
   <m:mo>¯</m:mo>
  </m:mover>
 
-</m:math>, will be within two standard deviations of the population mean <emphasis effect="italics">μ</emphasis>. For our Apple Music example, two standard deviations is (2)(0.1) = 0.2. The sample mean <m:math>
+</m:math>, will be within two standard deviations of the population mean <emphasis effect="italics">μ</emphasis>. For our Apple Music example, two standard deviations is (2)(0.1) = 0.2. (We use 2 here as the Empirical-Rule approximation; the exact z for 95% confidence is 1.96.) The sample mean <m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
   <m:mo>¯</m:mo>
@@ -91,7 +91,7 @@
   <m:mo>¯</m:mo>
  </m:mover>
 
-</m:math> is within 0.2 units of <emphasis effect="italics">μ</emphasis>, which is unknown, then <emphasis effect="italics">μ</emphasis> is likely to be within 0.2 units
+</m:math> is within 0.2 units of <emphasis effect="italics">μ</emphasis>, which is unknown, <emphasis effect="italics">μ</emphasis> is likely to be within 0.2 units
 of <m:math>
  <m:mover accent="true">
   <m:mi>x</m:mi>
@@ -209,32 +209,28 @@ of <m:math>
  </m:mrow>
 </m:math>.</item>
 </list><para id="element-927">We say we are approximately 95% confident that the true mean number of meals that students eat out in a week is between __________ and ___________.</para>
-</note> </content>
-
-
-
-<glossary>
-<definition id="coninter">
+</note> <section class="glossary" id="sect-00001">
+<title>Key Terms</title>
+<definition id="def-00001">
 <term>Confidence Interval (CI)</term>
-<meaning id="id20495395">an interval estimate for an unknown population parameter. This depends on:
-<list id="confint1" list-type="bulleted">
+<meaning>an interval estimate for an unknown population parameter. This depends on:<list list-type="bulleted" id="list-00001">
 <item>the desired confidence level,</item>
-<item>information that is known about the  distribution (for example, known standard deviation),</item>
+<item>information that is known about the distribution (for example, known standard deviation),</item>
 <item>the sample and its size.</item>
-</list>
-</meaning>
+</list></meaning>
 </definition>
-<definition id="infrstats">
+<definition id="def-00002">
 <term>Inferential Statistics</term>
-<meaning id="id20359958">also called statistical inference or inductive statistics; this facet of statistics deals with estimating a population parameter based on a sample statistic. For example, if four out of the 100 calculators sampled are defective we might infer that four percent of the production is defective.</meaning>
+<meaning>also called statistical inference or inductive statistics; this facet of statistics deals with estimating a population parameter based on a sample statistic. For example, if four out of the 100 calculators sampled are defective we might infer that four percent of the production is defective.</meaning>
 </definition>
-<definition id="parameter">
+<definition id="def-00003">
 <term>Parameter</term>
-<meaning id="id18035004">a numerical characteristic of a population</meaning>
+<meaning>a numerical characteristic of a population</meaning>
 </definition>
-<definition id="pointest">
+<definition id="def-00004">
 <term>Point Estimate</term>
-<meaning id="id20057179">a single number computed from a sample and used to estimate a population parameter</meaning>
+<meaning>a single number computed from a sample and used to estimate a population parameter</meaning>
 </definition>
-</glossary>
+</section>
+</content>
 </document>
