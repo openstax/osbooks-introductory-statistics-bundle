@@ -6,7 +6,6 @@
     <md:abstract/>
     <md:uuid>2a02fc0f-01bf-4294-9d3d-8e951eee4744</md:uuid>
   </metadata>
-
   <content>
     <para id="para-00001">The <term id="term-00001">Standard Normal Distribution</term> is a special application of the normal distribution. There are some key aspects of the standard normal distribution:</para>
     <list list-type="bulleted" id="list-00001">
@@ -43,7 +42,8 @@
                 <media alt="The standard normal distribution centered at z equals 0 with a standard deviation of 1.">
                   <image src="../../media/CNX_Stats_C06_6-2_img3.png" mime-type="image/png"/>
                 </media>
-              </figure></item>
+              </figure>
+            </item>
             <item>Previously we set up the following distribution for the Michael Jordan information:<newline/>
               <figure id="fig-00004">
                 <media alt="A normal distribution for Michael Jordan's points per game centered at 30.6 points with a standard deviation of 10.">
@@ -62,10 +62,10 @@
       </exercise>
     </example>
     <example id="exam-00002">
-      <exercise id="exer-00002">
+              <exercise id="exer-00002">
         <problem id="prob-00002">
           <para id="para-00004">In each example, draw the entirety of the normal distribution and standard normal distribution for each situation with all proper standard deviation labels. Then represent where the given 2 data points fall on each distribution.</para>
-          <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+              <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
             <item>The average weight of a pitbull terrier is 50 pounds with a standard deviation of 10 pounds. We weigh 2 random dogs and find their weights are 45 pounds and 71 pounds.</item>
             <item>Michael Jordan played over 1,200 games in the NBA. On average, he scored 30.6 points with a standard deviation of 10. In his first NBA game, he scored 16 points. In 1998 in game 6, he scored 45 points.</item>
           </list>
@@ -73,22 +73,30 @@
         <solution id="sol-00002">
           <para id="para-00005">a. First we must find the <m:math><m:mi>z</m:mi></m:math>-score for each data point.</para>
           <para id="para-00006">The <m:math><m:mi>z</m:mi></m:math>-score for a 45 pound dog is:</para>
-          <equation class="unnumbered" id="eq-00001"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>45</m:mn><m:mo>−</m:mo><m:mn>50</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.5</m:mn></m:mrow></m:math></equation>
+              <equation class="unnumbered" id="eq-00001">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>45</m:mn><m:mo>−</m:mo><m:mn>50</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.5</m:mn></m:mrow></m:math>
+          </equation>
           <para id="para-00007">The <m:math><m:mi>z</m:mi></m:math>-score for a 71 pound dog is:</para>
-          <equation class="unnumbered" id="eq-00002"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>71</m:mn><m:mo>−</m:mo><m:mn>50</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2.1</m:mn></m:mrow></m:math></equation>
+              <equation class="unnumbered" id="eq-00002">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>71</m:mn><m:mo>−</m:mo><m:mn>50</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2.1</m:mn></m:mrow></m:math>
+          </equation>
           <para id="para-00008">Below is a comparison of where these data points would fall on both the normal and standard normal distributions:</para>
-          <figure id="fig-00006">
-            <media alt="A pitbull weight normal distribution and the standard normal distribution side by side, showing the weights 45 and 71 pounds at z-scores of −0.5 and 2.1.">
+              <figure id="fig-00006">
+              <media alt="A pitbull weight normal distribution and the standard normal distribution side by side, showing the weights 45 and 71 pounds at z-scores of −0.5 and 2.1.">
               <image src="../../media/CNX_Stats_C06_6-2_img5.png" mime-type="image/png"/>
             </media>
           </figure>
           <para id="para-00009">b. The <m:math><m:mi>z</m:mi></m:math>-score for 16 points is:</para>
-          <equation class="unnumbered" id="eq-00003"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>30.6</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.46</m:mn></m:mrow></m:math></equation>
+              <equation class="unnumbered" id="eq-00003">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>16</m:mn><m:mo>−</m:mo><m:mn>30.6</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.46</m:mn></m:mrow></m:math>
+          </equation>
           <para id="para-00010">The <m:math><m:mi>z</m:mi></m:math>-score for 45 points is:</para>
-          <equation class="unnumbered" id="eq-00004"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>45</m:mn><m:mo>−</m:mo><m:mn>30.6</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1.44</m:mn></m:mrow></m:math></equation>
+              <equation class="unnumbered" id="eq-00004">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>45</m:mn><m:mo>−</m:mo><m:mn>30.6</m:mn></m:mrow><m:mn>10</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1.44</m:mn></m:mrow></m:math>
+          </equation>
           <para id="para-00011">Below is a comparison of where these data points would fall on both the normal and standard normal distributions:</para>
-          <figure id="fig-00007">
-            <media alt="A Michael Jordan points normal distribution and the standard normal distribution side by side, showing 16 and 45 points at z-scores of −1.46 and 1.44.">
+              <figure id="fig-00007">
+              <media alt="A Michael Jordan points normal distribution and the standard normal distribution side by side, showing 16 and 45 points at z-scores of −1.46 and 1.44.">
               <image src="../../media/CNX_Stats_C06_6-2_img6.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -96,7 +104,7 @@
       </exercise>
     </example>
     <para id="para-00012">The empirical rule continues to hold with the standard normal distribution, namely:</para>
-    <list list-type="bulleted" id="list-00005">
+              <list list-type="bulleted" id="list-00005">
       <item>About 68% of the values lie between <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></item>
       <item>About 95% of the values lie between <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></item>
       <item>About 99.7% of the values lie between <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math></item>
@@ -111,41 +119,75 @@
     </section>
     <section class="formula-review" id="sect-00003">
       <title>The Standard Normal Distribution</title>
-      <para id="para-00015"><m:math><m:mrow><m:mi>Z</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+      <para id="para-00015">
+        <m:math><m:mrow><m:mi>Z</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+      </para>
     </section>
     <section class="practice" id="sect-00004">
       <title>The Standard Normal Distribution</title>
-      <exercise id="exer-00003">
-        <problem id="prob-00003"><para id="para-00016">What is the mean of any standard normal distribution?</para></problem>
-        <solution id="sol-00003"><para id="para-00017">The mean is 0.</para></solution>
+              <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="para-00016">What is the mean of any standard normal distribution?</para>
+        </problem>
+        <solution id="sol-00003">
+          <para id="para-00017">The mean is 0.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00004">
-        <problem id="prob-00004"><para id="para-00018">What is the standard deviation of any standard normal distribution?</para></problem>
-        <solution id="sol-00004"><para id="para-00019">The standard deviation is 1.</para></solution>
+              <exercise id="exer-00004">
+        <problem id="prob-00004">
+          <para id="para-00018">What is the standard deviation of any standard normal distribution?</para>
+        </problem>
+        <solution id="sol-00004">
+          <para id="para-00019">The standard deviation is 1.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00005">
-        <problem id="prob-00005"><para id="para-00020">How is the <m:math><m:mi>x</m:mi></m:math>-axis different for the normal distribution versus the standard normal distribution?</para></problem>
-        <solution id="sol-00005"><para id="para-00021">For the normal distribution the axis is in the original data values (units of <m:math><m:mi>X</m:mi></m:math>, centered at the mean); for the standard normal the axis is in <m:math><m:mi>z</m:mi></m:math>-scores—the number of standard deviations from the mean—centered at 0.</para></solution>
+              <exercise id="exer-00005">
+        <problem id="prob-00005">
+          <para id="para-00020">How is the <m:math><m:mi>x</m:mi></m:math>-axis different for the normal distribution versus the standard normal distribution?</para>
+        </problem>
+        <solution id="sol-00005">
+          <para id="para-00021">For the normal distribution the axis is in the original data values (units of <m:math><m:mi>X</m:mi></m:math>, centered at the mean); for the standard normal the axis is in <m:math><m:mi>z</m:mi></m:math>-scores—the number of standard deviations from the mean—centered at 0.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00006">
-        <problem id="prob-00006"><para id="para-00022">A data set has been modeled using the normal distribution. What must happen for this same data to be visualized using the standard normal distribution?</para></problem>
-        <solution id="sol-00006"><para id="para-00023">Each data value must be converted to a <m:math><m:mi>z</m:mi></m:math>-score using <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:mrow></m:math> (the data is standardized). The <m:math><m:mi>x</m:mi></m:math>-axis goes from being data values to <m:math><m:mi>z</m:mi></m:math>-scores.</para></solution>
+              <exercise id="exer-00006">
+        <problem id="prob-00006">
+          <para id="para-00022">A data set has been modeled using the normal distribution. What must happen for this same data to be visualized using the standard normal distribution?</para>
+        </problem>
+        <solution id="sol-00006">
+          <para id="para-00023">Each data value must be converted to a <m:math><m:mi>z</m:mi></m:math>-score using <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:mrow></m:math> (the data is standardized). The <m:math><m:mi>x</m:mi></m:math>-axis goes from being data values to <m:math><m:mi>z</m:mi></m:math>-scores.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00007">
-        <problem id="prob-00007"><para id="para-00024">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para></problem>
-        <solution id="sol-00007"><para id="para-00025"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> is the mean, so it maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> at the center of the standard normal.</para></solution>
+              <exercise id="exer-00007">
+        <problem id="prob-00007">
+          <para id="para-00024">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para>
+        </problem>
+        <solution id="sol-00007">
+          <para id="para-00025"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>9</m:mn><m:mo>−</m:mo><m:mn>9</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math> is the mean, so it maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> at the center of the standard normal.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00008">
-        <problem id="prob-00008"><para id="para-00026">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para></problem>
-        <solution id="sol-00008"><para id="para-00027"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.5</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.5</m:mn></m:mrow></m:math>.</para></solution>
+              <exercise id="exer-00008">
+        <problem id="prob-00008">
+          <para id="para-00026">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para>
+        </problem>
+        <solution id="sol-00008">
+          <para id="para-00027"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.5</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.5</m:mn></m:mrow></m:math>.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00009">
-        <problem id="prob-00009"><para id="para-00028">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para></problem>
-        <solution id="sol-00009"><para id="para-00029"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math>.</para></solution>
+              <exercise id="exer-00009">
+        <problem id="prob-00009">
+          <para id="para-00028">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para>
+        </problem>
+        <solution id="sol-00009">
+          <para id="para-00029"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>7</m:mn></m:mrow><m:mn>4</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math>.</para>
+        </solution>
       </exercise>
-      <exercise id="exer-00010">
-        <problem id="prob-00010"><para id="para-00030">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para></problem>
-        <solution id="sol-00010"><para id="para-00031"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>1.67</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>1.67</m:mn></m:mrow></m:math>.</para></solution>
+              <exercise id="exer-00010">
+        <problem id="prob-00010">
+          <para id="para-00030">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Draw how the data value <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math> would fit onto this distribution, and then draw on the analogous situation in the standard normal distribution.</para>
+        </problem>
+        <solution id="sol-00010">
+          <para id="para-00031"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow><m:mn>3</m:mn></m:mfrac><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>1.67</m:mn></m:mrow></m:math>; <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math> maps to <m:math><m:mrow><m:mi>z</m:mi><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>1.67</m:mn></m:mrow></m:math>.</para>
+        </solution>
       </exercise>
     </section>
   </content>

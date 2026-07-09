@@ -6,7 +6,6 @@
     <md:abstract/>
     <md:uuid>19dbb18e-b94b-42ec-8477-eca45a10d49e</md:uuid>
   </metadata>
-
   <content>
     <para id="para-00001">The <term id="term-00001">Normal Distribution</term> is a type of continuous distribution that can be observed with many real world applications, and the shape of its graph is typically called a <term id="term-00002">bell curve</term>. The shape of a bell curve naturally emerges when the size of the sample <m:math><m:mi>n</m:mi></m:math> is large enough. As a review, here are a few examples of histograms based on weight data with different samples of size <m:math><m:mi>n</m:mi></m:math>. Notice that the curve smooths out as <m:math><m:mi>n</m:mi></m:math> gets larger:</para>
     <figure id="fig-00001">
@@ -15,7 +14,9 @@
       </media>
     </figure>
     <para id="para-00002">The bell curve formula involves an exponential, and it has the probability density function:</para>
-    <equation class="unnumbered" id="eq-00001"><m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo stretchy="true">(</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo stretchy="true">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math></equation>
+    <equation class="unnumbered" id="eq-00001">
+      <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo stretchy="true">(</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo stretchy="true">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math>
+    </equation>
     <para id="para-00003">The probability density function is a rather complicated mathematical function. <emphasis>Do not memorize it</emphasis>. It is not necessary. The function is dependent on two parameters: the mean (<m:math><m:mi>μ</m:mi></m:math>) and the standard deviation (<m:math><m:mi>σ</m:mi></m:math>). These parameters have great significance to the graph of the function. Specifically:</para>
     <list list-type="bulleted" id="list-00001">
       <item>The normal distribution is always centered at the mean <m:math><m:mi>μ</m:mi></m:math></item>
@@ -54,18 +55,24 @@
         </problem>
         <solution id="sol-00001">
           <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
-            <item><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>
+            <item>
+              <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+              <newline/>
               <figure id="fig-00005">
                 <media alt="A normal distribution for pitbull terrier weights, X is distributed as N(50, 10), centered at 50 pounds.">
                   <image src="../../media/CNX_Stats_C06_6-1_img4.png" mime-type="image/png"/>
                 </media>
-              </figure></item>
-            <item><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30.6</m:mn><m:mo>,</m:mo><m:mn>10.0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math><newline/>
+              </figure>
+            </item>
+            <item>
+              <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>30.6</m:mn><m:mo>,</m:mo><m:mn>10.0</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+              <newline/>
               <figure id="fig-00006">
                 <media alt="A normal distribution for Michael Jordan's points per game, X is distributed as N(30.6, 10), centered at 30.6 points.">
                   <image src="../../media/CNX_Stats_C06_6-1_img5.png" mime-type="image/png"/>
                 </media>
-              </figure></item>
+              </figure>
+            </item>
           </list>
         </solution>
       </exercise>
@@ -120,37 +127,43 @@
                   <media alt="A normal distribution of pitbull terrier weights with the 68%, 95%, and 99.7% empirical-rule intervals labeled.">
                     <image src="../../media/CNX_Stats_C06_6-1_img7.png" mime-type="image/png"/>
                   </media>
-                </figure></item>
+                </figure>
+              </item>
               <item>In about 68% of the games Michael Jordan played in the NBA, he scored between 20.6 and 40.6 points in the game. In 95% of the games he played, he scored between 10.6 and 50.6 points in the game. In 99.7% of the games, he scored between 0.6 points and 60.6 points in the game. (Fun fact: the most points Jordan ever scored in a game was 69 points.)<newline/>
                 <figure id="fig-00009">
                   <media alt="A normal distribution of Michael Jordan's points per game with the 68%, 95%, and 99.7% empirical-rule intervals labeled.">
                     <image src="../../media/CNX_Stats_C06_6-1_img8.png" mime-type="image/png"/>
                   </media>
-                </figure></item>
+                </figure>
+              </item>
               <item>The values from 40 to 60 are within 1 standard deviation of the mean, so the probability would be 68%.<newline/>
                 <figure id="fig-00010">
                   <media alt="A normal curve with the region between 40 and 60 shaded, representing 68% of the area.">
                     <image src="../../media/CNX_Stats_C06_6-1_img9.png" mime-type="image/png"/>
                   </media>
-                </figure></item>
+                </figure>
+              </item>
               <item>We are referring to the area to the right of the mean. Since the distribution is perfectly symmetric, this is 50% of the area.<newline/>
                 <figure id="fig-00011">
                   <media alt="A normal curve with the region to the right of the mean shaded, representing 50% of the area.">
                     <image src="../../media/CNX_Stats_C06_6-1_img10.png" mime-type="image/png"/>
                   </media>
-                </figure></item>
+                </figure>
+              </item>
               <item>For this question, we rely on the symmetry of the normal distribution and the empirical rule. The area from 40 to 50 is 34% (half of the middle 68% from the empirical rule). The area from 50 to the right is 50%. The probability is <m:math><m:mrow><m:mn>34</m:mn><m:mo>%</m:mo><m:mo>+</m:mo><m:mn>50</m:mn><m:mo>%</m:mo><m:mo>=</m:mo><m:mn>84</m:mn><m:mo>%</m:mo></m:mrow></m:math>.<newline/>
                 <figure id="fig-00012">
                   <media alt="A normal curve with the region to the right of 40 shaded, representing 84% of the area.">
                     <image src="../../media/CNX_Stats_C06_6-1_img11.png" mime-type="image/png"/>
                   </media>
-                </figure></item>
+                </figure>
+              </item>
               <item>Leveraging both the symmetry of the distribution and the empirical rule, we know that the area from 10.6 to the mean 30.6 is 47.5% of the area (half the middle 95%), and the area from 30.6 to 40.6 is 34% (half of the middle 68% of area). We add these to get that the probability is <m:math><m:mrow><m:mn>47.5</m:mn><m:mo>%</m:mo><m:mo>+</m:mo><m:mn>34</m:mn><m:mo>%</m:mo><m:mo>=</m:mo><m:mn>81.5</m:mn><m:mo>%</m:mo></m:mrow></m:math>.<newline/>
                 <figure id="fig-00013">
                   <media alt="A normal curve with the region between 10.6 and 40.6 shaded, representing 81.5% of the area.">
                     <image src="../../media/CNX_Stats_C06_6-1_img12.png" mime-type="image/png"/>
                   </media>
-                </figure></item>
+                </figure>
+              </item>
             </list>
           </solution>
         </exercise>
@@ -159,7 +172,9 @@
     <section id="sect-00002">
       <title>Z-Scores</title>
       <para id="para-00017"><emphasis>A <m:math><m:mi>z</m:mi></m:math>-score is measured in units of the standard deviation.</emphasis> If <m:math><m:mi>X</m:mi></m:math> is a normally distributed random variable and <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, then the <term id="term-00005">z-score</term> is:</para>
-      <equation class="unnumbered" id="eq-00002"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:mrow></m:math></equation>
+      <equation class="unnumbered" id="eq-00002">
+        <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:mrow></m:math>
+      </equation>
       <para id="para-00018"><emphasis>The <m:math><m:mi>z</m:mi></m:math>-score tells you how many standard deviations the value <m:math><m:mi>x</m:mi></m:math> is above (to the right of) or below (to the left of) the mean, <m:math><m:mi>μ</m:mi></m:math>.</emphasis> Values of <m:math><m:mi>x</m:mi></m:math> that are larger than the mean have positive <m:math><m:mi>z</m:mi></m:math>-scores, and values of <m:math><m:mi>x</m:mi></m:math> that are smaller than the mean have negative <m:math><m:mi>z</m:mi></m:math>-scores. If <m:math><m:mi>x</m:mi></m:math> equals the mean, then <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of zero.</para>
       <figure id="fig-00014">
         <media alt="A normal curve showing z-scores along the horizontal axis: 0 at the mean and plus or minus 1, 2, and 3 at one, two, and three standard deviations from the mean.">
@@ -174,11 +189,13 @@
       </list>
       <example id="exam-00004">
         <para id="para-00020">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. This says that <m:math><m:mi>X</m:mi></m:math> is a normally distributed random variable with mean <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> and standard deviation <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math>. Suppose <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math>. Then:</para>
-        <para id="para-00021"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para>
+        <para id="para-00021">
+          <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>
+        </para>
         <para id="para-00022">This means that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math> is <emphasis>two standard deviations</emphasis> (<m:math><m:mrow><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math>) above or to the right of the mean <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>.</para>
         <para id="para-00023">Notice that: <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>17</m:mn></m:mrow></m:math> (The pattern is <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mi>z</m:mi><m:mi>σ</m:mi><m:mo>=</m:mo><m:mi>x</m:mi></m:mrow></m:math>.)</para>
         <para id="para-00024">Now suppose <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>. Then: <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.67</m:mn></m:mrow></m:math> (rounded to two decimal places)</para>
-        <para id="para-00025"><emphasis>This means that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> is 0.67 standard deviations (<m:math><m:mrow><m:mo>−</m:mo><m:mn>0.67</m:mn><m:mi>σ</m:mi></m:mrow></m:math>) below or to the left of the mean <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>. Notice that:</emphasis> <m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.67</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is approximately equal to one (This has the pattern <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.67</m:mn><m:mo stretchy="false">)</m:mo><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>).</para>
+        <para id="para-00025"><emphasis>This means that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math> is 0.67 standard deviations (<m:math><m:mrow><m:mo>−</m:mo><m:mn>0.67</m:mn><m:mi>σ</m:mi></m:mrow></m:math>) below or to the left of the mean <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>. Notice that:</emphasis><m:math><m:mrow><m:mn>5</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.67</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> is approximately equal to one (This has the pattern <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.67</m:mn><m:mo stretchy="false">)</m:mo><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>).</para>
         <para id="para-00026">Summarizing, when <m:math><m:mi>z</m:mi></m:math> is positive, <m:math><m:mi>x</m:mi></m:math> is above or to the right of <m:math><m:mi>μ</m:mi></m:math> and when <m:math><m:mi>z</m:mi></m:math> is negative, <m:math><m:mi>x</m:mi></m:math> is to the left of or below <m:math><m:mi>μ</m:mi></m:math>. Or, when <m:math><m:mi>z</m:mi></m:math> is positive, <m:math><m:mi>x</m:mi></m:math> is greater than <m:math><m:mi>μ</m:mi></m:math>, and when <m:math><m:mi>z</m:mi></m:math> is negative <m:math><m:mi>x</m:mi></m:math> is less than <m:math><m:mi>μ</m:mi></m:math>.</para>
       </example>
       <note class="statistics try" id="note-00002">
@@ -287,14 +304,14 @@
     </section>
     <section class="glossary" id="sect-00003">
       <title>Key Terms</title>
-    <definition id="def-00001">
-      <term>Normal Distribution</term>
-      <meaning>a continuous random variable (RV) with pdf <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> = <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo stretchy="true">(</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo stretchy="true">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math>, where <m:math><m:mi>μ</m:mi></m:math> is the mean of the distribution and <m:math><m:mi>σ</m:mi></m:math> is the standard deviation; notation: <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. If <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, the RV is called the <term id="term-00006">standard normal distribution</term>.</meaning>
-    </definition>
-    <definition id="def-00002">
-      <term>z-score</term>
-      <meaning>the linear transformation of the form <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:mrow></m:math>; if this transformation is applied to any normal distribution <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, the result is the standard normal distribution <m:math><m:mrow><m:mi>Z</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. The value <m:math><m:mi>z</m:mi></m:math> tells how many standard deviations a value <m:math><m:mi>x</m:mi></m:math> is above (positive) or below (negative) the mean.</meaning>
-    </definition>
+      <definition id="def-00001">
+        <term>Normal Distribution</term>
+        <meaning>a continuous random variable (RV) with pdf <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> = <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>⋅</m:mo><m:msup><m:mrow><m:mo stretchy="true">(</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo stretchy="true">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:msup></m:mrow></m:math>, where <m:math><m:mi>μ</m:mi></m:math> is the mean of the distribution and <m:math><m:mi>σ</m:mi></m:math> is the standard deviation; notation: <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. If <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>, the RV is called the <term id="term-00006">standard normal distribution</term>.</meaning>
+      </definition>
+      <definition id="def-00002">
+        <term>z-score</term>
+        <meaning>the linear transformation of the form <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:mrow></m:math>; if this transformation is applied to any normal distribution <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, the result is the standard normal distribution <m:math><m:mrow><m:mi>Z</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. The value <m:math><m:mi>z</m:mi></m:math> tells how many standard deviations a value <m:math><m:mi>x</m:mi></m:math> is above (positive) or below (negative) the mean.</meaning>
+      </definition>
     </section>
     <section class="summary" id="sect-00004">
       <title>The Normal Distribution</title>
@@ -302,7 +319,9 @@
     </section>
     <section class="formula-review" id="sect-00005">
       <title>The Normal Distribution</title>
-      <para id="para-00048"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
+      <para id="para-00048">
+        <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+      </para>
       <para id="para-00049"><m:math><m:mi>μ</m:mi></m:math> = the mean; <m:math><m:mi>σ</m:mi></m:math> = the standard deviation</para>
       <para id="para-00050"><m:math><m:mi>z</m:mi></m:math> = a standardized value (<m:math><m:mi>z</m:mi></m:math>-score)</para>
       <para id="para-00051">mean = 0; standard deviation = 1</para>
@@ -313,184 +332,409 @@
     <section class="practice" id="sect-00006">
       <title>The Normal Distribution</title>
       <exercise id="exer-00013">
-        <problem id="prob-00013"><para id="para-00055">A bottle of water contains 12.05 fluid ounces with a standard deviation of 0.01 ounces. Define the random variable <m:math><m:mi>X</m:mi></m:math> in words. <m:math><m:mi>X</m:mi></m:math> = ____________.</para></problem>
-        <solution id="sol-00008"><para id="para-00056">ounces of water in a bottle</para></solution>
+        <problem id="prob-00013">
+          <para id="para-00055">A bottle of water contains 12.05 fluid ounces with a standard deviation of 0.01 ounces. Define the random variable <m:math><m:mi>X</m:mi></m:math> in words. <m:math><m:mi>X</m:mi></m:math> = ____________.</para>
+        </problem>
+        <solution id="sol-00008">
+          <para id="para-00056">ounces of water in a bottle</para>
+        </solution>
       </exercise>
       <exercise id="exer-00014">
-        <problem id="prob-00014"><para id="para-00057">A normal distribution has a mean of 61 and a standard deviation of 15. What is the median?</para></problem>
+        <problem id="prob-00014">
+          <para id="para-00057">A normal distribution has a mean of 61 and a standard deviation of 15. What is the median?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00015">
-        <problem id="prob-00015"><para id="para-00058"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mi>σ</m:mi></m:math> = _______</para></problem>
-        <solution id="sol-00009"><para id="para-00059">2</para></solution>
+        <problem id="prob-00015">
+          <para id="para-00058"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mi>σ</m:mi></m:math> = _______</para>
+        </problem>
+        <solution id="sol-00009">
+          <para id="para-00059">2</para>
+        </solution>
       </exercise>
       <exercise id="exer-00016">
-        <problem id="prob-00016"><para id="para-00060">A company manufactures rubber balls. The mean diameter of a ball is 12 cm with a standard deviation of 0.2 cm. Define the random variable <m:math><m:mi>X</m:mi></m:math> in words. <m:math><m:mi>X</m:mi></m:math> = ______________.</para></problem>
+        <problem id="prob-00016">
+          <para id="para-00060">A company manufactures rubber balls. The mean diameter of a ball is 12 cm with a standard deviation of 0.2 cm. Define the random variable <m:math><m:mi>X</m:mi></m:math> in words. <m:math><m:mi>X</m:mi></m:math> = ______________.</para>
+        </problem>
       </exercise>
       <exercise id="exer-00017">
-        <problem id="prob-00017"><para id="para-00061"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the median?</para></problem>
-        <solution id="sol-00010"><para id="para-00062">−4</para></solution>
+        <problem id="prob-00017">
+          <para id="para-00061"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the median?</para>
+        </problem>
+        <solution id="sol-00010">
+          <para id="para-00062">−4</para>
+        </solution>
       </exercise>
       <exercise id="exer-00018">
-        <problem id="prob-00018"><para id="para-00063"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mi>σ</m:mi></m:math> = _______</para></problem>
+        <problem id="prob-00018">
+          <para id="para-00063"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mi>σ</m:mi></m:math> = _______</para>
+        </problem>
       </exercise>
       <exercise id="exer-00019">
-        <problem id="prob-00019"><para id="para-00064"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mi>μ</m:mi></m:math> = _______</para></problem>
-        <solution id="sol-00011"><para id="para-00065">−2</para></solution>
+        <problem id="prob-00019">
+          <para id="para-00064"><m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. <m:math><m:mi>μ</m:mi></m:math> = _______</para>
+        </problem>
+        <solution id="sol-00011">
+          <para id="para-00065">−2</para>
+        </solution>
       </exercise>
       <exercise id="exer-00020">
-        <problem id="prob-00020"><para id="para-00066">What does a <m:math><m:mi>z</m:mi></m:math>-score measure?</para></problem>
+        <problem id="prob-00020">
+          <para id="para-00066">What does a <m:math><m:mi>z</m:mi></m:math>-score measure?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00021">
-        <problem id="prob-00021"><para id="para-00067">What does standardizing a normal distribution do to the mean?</para></problem>
-        <solution id="sol-00012"><para id="para-00068">The mean becomes zero.</para></solution>
+        <problem id="prob-00021">
+          <para id="para-00067">What does standardizing a normal distribution do to the mean?</para>
+        </problem>
+        <solution id="sol-00012">
+          <para id="para-00068">The mean becomes zero.</para>
+        </solution>
       </exercise>
       <exercise id="exer-00022">
-        <problem id="prob-00022"><para id="para-00069">Is <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> a standardized normal distribution? Why or why not?</para></problem>
+        <problem id="prob-00022">
+          <para id="para-00069">Is <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> a standardized normal distribution? Why or why not?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00023">
-        <problem id="prob-00023"><para id="para-00070">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math>, if it is two standard deviations to the right of the mean?</para></problem>
-        <solution id="sol-00013"><para id="para-00071"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00023">
+          <para id="para-00070">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>12</m:mn></m:mrow></m:math>, if it is two standard deviations to the right of the mean?</para>
+        </problem>
+        <solution id="sol-00013">
+          <para id="para-00071">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00024">
-        <problem id="prob-00024"><para id="para-00072">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math>, if it is 1.5 standard deviations to the left of the mean?</para></problem>
+        <problem id="prob-00024">
+          <para id="para-00072">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math>, if it is 1.5 standard deviations to the left of the mean?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00025">
-        <problem id="prob-00025"><para id="para-00073">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math>, if it is 2.78 standard deviations to the right of the mean?</para></problem>
-        <solution id="sol-00014"><para id="para-00074"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2.78</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00025">
+          <para id="para-00073">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math>, if it is 2.78 standard deviations to the right of the mean?</para>
+        </problem>
+        <solution id="sol-00014">
+          <para id="para-00074">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>2.78</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00026">
-        <problem id="prob-00026"><para id="para-00075">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math>, if it is 0.133 standard deviations to the left of the mean?</para></problem>
+        <problem id="prob-00026">
+          <para id="para-00075">What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:mrow></m:math>, if it is 0.133 standard deviations to the left of the mean?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00027">
-        <problem id="prob-00027"><para id="para-00076">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of three?</para></problem>
-        <solution id="sol-00015"><para id="para-00077"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00027">
+          <para id="para-00076">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of three?</para>
+        </problem>
+        <solution id="sol-00015">
+          <para id="para-00077">
+            <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00028">
-        <problem id="prob-00028"><para id="para-00078">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of −2.25?</para></problem>
+        <problem id="prob-00028">
+          <para id="para-00078">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of −2.25?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00029">
-        <problem id="prob-00029"><para id="para-00079">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of −0.5?</para></problem>
-        <solution id="sol-00016"><para id="para-00080"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6.5</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00029">
+          <para id="para-00079">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of −0.5?</para>
+        </problem>
+        <solution id="sol-00016">
+          <para id="para-00080">
+            <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6.5</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00030">
-        <problem id="prob-00030"><para id="para-00081">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of −0.67?</para></problem>
+        <problem id="prob-00030">
+          <para id="para-00081">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> has a <m:math><m:mi>z</m:mi></m:math>-score of −0.67?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00031">
-        <problem id="prob-00031"><para id="para-00082">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> is 1.5 standard deviations to the left of the mean?</para></problem>
-        <solution id="sol-00017"><para id="para-00083"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00031">
+          <para id="para-00082">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> is 1.5 standard deviations to the left of the mean?</para>
+        </problem>
+        <solution id="sol-00017">
+          <para id="para-00083">
+            <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00032">
-        <problem id="prob-00032"><para id="para-00084">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> is two standard deviations to the right of the mean?</para></problem>
+        <problem id="prob-00032">
+          <para id="para-00084">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> is two standard deviations to the right of the mean?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00033">
-        <problem id="prob-00033"><para id="para-00085">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> is 0.67 standard deviations to the left of the mean?</para></problem>
-        <solution id="sol-00018"><para id="para-00086"><m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.97</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00033">
+          <para id="para-00085">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>9</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What value of <m:math><m:mi>x</m:mi></m:math> is 0.67 standard deviations to the left of the mean?</para>
+        </problem>
+        <solution id="sol-00018">
+          <para id="para-00086">
+            <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.97</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00034">
-        <problem id="prob-00034"><para id="para-00087">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>?</para></problem>
+        <problem id="prob-00034">
+          <para id="para-00087">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00035">
-        <problem id="prob-00035"><para id="para-00088">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>?</para></problem>
-        <solution id="sol-00019"><para id="para-00089"><m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.67</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00035">
+          <para id="para-00088">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>12</m:mn><m:mo>,</m:mo><m:mn>6</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:mrow></m:math>?</para>
+        </problem>
+        <solution id="sol-00019">
+          <para id="para-00089">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.67</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00036">
-        <problem id="prob-00036"><para id="para-00090">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math>?</para></problem>
+        <problem id="prob-00036">
+          <para id="para-00090">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:mrow></m:math>?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00037">
-        <problem id="prob-00037"><para id="para-00091">Suppose a normal distribution has a mean of six and a standard deviation of 1.5. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.5</m:mn></m:mrow></m:math>?</para></problem>
-        <solution id="sol-00020"><para id="para-00092"><m:math><m:mrow><m:mi>z</m:mi><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>0.33</m:mn></m:mrow></m:math></para></solution>
+        <problem id="prob-00037">
+          <para id="para-00091">Suppose a normal distribution has a mean of six and a standard deviation of 1.5. What is the <m:math><m:mi>z</m:mi></m:math>-score of <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5.5</m:mn></m:mrow></m:math>?</para>
+        </problem>
+        <solution id="sol-00020">
+          <para id="para-00092">
+            <m:math><m:mrow><m:mi>z</m:mi><m:mo>≈</m:mo><m:mo>−</m:mo><m:mn>0.33</m:mn></m:mrow></m:math>
+          </para>
+        </solution>
       </exercise>
       <exercise id="exer-00038">
-        <problem id="prob-00038"><para id="para-00093">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.25</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para></problem>
+        <problem id="prob-00038">
+          <para id="para-00093">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.25</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para>
+        </problem>
       </exercise>
       <exercise id="exer-00039">
-        <problem id="prob-00039"><para id="para-00094">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0.67</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para></problem>
-        <solution id="sol-00021"><para id="para-00095">0.67, right</para></solution>
+        <problem id="prob-00039">
+          <para id="para-00094">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>0.67</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para>
+        </problem>
+        <solution id="sol-00021">
+          <para id="para-00095">0.67, right</para>
+        </solution>
       </exercise>
       <exercise id="exer-00040">
-        <problem id="prob-00040"><para id="para-00096">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para></problem>
+        <problem id="prob-00040">
+          <para id="para-00096">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para>
+        </problem>
       </exercise>
       <exercise id="exer-00041">
-        <problem id="prob-00041"><para id="para-00097">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3.14</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para></problem>
-        <solution id="sol-00022"><para id="para-00098">3.14, left</para></solution>
+        <problem id="prob-00041">
+          <para id="para-00097">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3.14</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para>
+        </problem>
+        <solution id="sol-00022">
+          <para id="para-00098">3.14, left</para>
+        </solution>
       </exercise>
       <exercise id="exer-00042">
-        <problem id="prob-00042"><para id="para-00099">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.7</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para></problem>
+        <problem id="prob-00042">
+          <para id="para-00099">In a normal distribution, <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.7</m:mn></m:mrow></m:math>. This tells you that <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:math> is ____ standard deviations to the ____ (right or left) of the mean.</para>
+        </problem>
       </exercise>
       <exercise id="exer-00043">
-        <problem id="prob-00043"><para id="para-00100">About what percent of <m:math><m:mi>x</m:mi></m:math> values from a normal distribution lie within one standard deviation (left and right) of the mean of that distribution?</para></problem>
-        <solution id="sol-00023"><para id="para-00101">about 68%</para></solution>
+        <problem id="prob-00043">
+          <para id="para-00100">About what percent of <m:math><m:mi>x</m:mi></m:math> values from a normal distribution lie within one standard deviation (left and right) of the mean of that distribution?</para>
+        </problem>
+        <solution id="sol-00023">
+          <para id="para-00101">about 68%</para>
+        </solution>
       </exercise>
       <exercise id="exer-00044">
-        <problem id="prob-00044"><para id="para-00102">About what percent of the <m:math><m:mi>x</m:mi></m:math> values from a normal distribution lie within two standard deviations (left and right) of the mean of that distribution?</para></problem>
+        <problem id="prob-00044">
+          <para id="para-00102">About what percent of the <m:math><m:mi>x</m:mi></m:math> values from a normal distribution lie within two standard deviations (left and right) of the mean of that distribution?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00045">
-        <problem id="prob-00045"><para id="para-00103">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the second and third standard deviations (both sides)?</para></problem>
-        <solution id="sol-00024"><para id="para-00104">about 4%</para></solution>
+        <problem id="prob-00045">
+          <para id="para-00103">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the second and third standard deviations (both sides)?</para>
+        </problem>
+        <solution id="sol-00024">
+          <para id="para-00104">about 4%</para>
+        </solution>
       </exercise>
       <exercise id="exer-00046">
-        <problem id="prob-00046"><para id="para-00105">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Between what <m:math><m:mi>x</m:mi></m:math> values does 68.27% of the data lie? The range of <m:math><m:mi>x</m:mi></m:math> values is centered at the mean of the distribution (i.e., 15).</para></problem>
+        <problem id="prob-00046">
+          <para id="para-00105">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Between what <m:math><m:mi>x</m:mi></m:math> values does 68.27% of the data lie? The range of <m:math><m:mi>x</m:mi></m:math> values is centered at the mean of the distribution (i.e., 15).</para>
+        </problem>
       </exercise>
       <exercise id="exer-00047">
-        <problem id="prob-00047"><para id="para-00106">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Between what <m:math><m:mi>x</m:mi></m:math> values does 95.45% of the data lie? The range of <m:math><m:mi>x</m:mi></m:math> values is centered at the mean of the distribution (i.e., −3).</para></problem>
-        <solution id="sol-00025"><para id="para-00107">between −5 and −1</para></solution>
+        <problem id="prob-00047">
+          <para id="para-00106">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Between what <m:math><m:mi>x</m:mi></m:math> values does 95.45% of the data lie? The range of <m:math><m:mi>x</m:mi></m:math> values is centered at the mean of the distribution (i.e., −3).</para>
+        </problem>
+        <solution id="sol-00025">
+          <para id="para-00107">between −5 and −1</para>
+        </solution>
       </exercise>
       <exercise id="exer-00048">
-        <problem id="prob-00048"><para id="para-00108">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Between what <m:math><m:mi>x</m:mi></m:math> values does 34.14% of the data lie?</para></problem>
+        <problem id="prob-00048">
+          <para id="para-00108">Suppose <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Between what <m:math><m:mi>x</m:mi></m:math> values does 34.14% of the data lie?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00049">
-        <problem id="prob-00049"><para id="para-00109">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the mean and three standard deviations?</para></problem>
-        <solution id="sol-00026"><para id="para-00110">about 50%</para></solution>
+        <problem id="prob-00049">
+          <para id="para-00109">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the mean and three standard deviations?</para>
+        </problem>
+        <solution id="sol-00026">
+          <para id="para-00110">about 50%</para>
+        </solution>
       </exercise>
       <exercise id="exer-00050">
-        <problem id="prob-00050"><para id="para-00111">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the mean and one standard deviation?</para></problem>
+        <problem id="prob-00050">
+          <para id="para-00111">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the mean and one standard deviation?</para>
+        </problem>
       </exercise>
       <exercise id="exer-00051">
-        <problem id="prob-00051"><para id="para-00112">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the first and second standard deviations from the mean (both sides)?</para></problem>
-        <solution id="sol-00027"><para id="para-00113">about 27%</para></solution>
+        <problem id="prob-00051">
+          <para id="para-00112">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the first and second standard deviations from the mean (both sides)?</para>
+        </problem>
+        <solution id="sol-00027">
+          <para id="para-00113">about 27%</para>
+        </solution>
       </exercise>
       <exercise id="exer-00052">
-        <problem id="prob-00052"><para id="para-00114">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the first and third standard deviations (both sides)?</para></problem>
+        <problem id="prob-00052">
+          <para id="para-00114">About what percent of <m:math><m:mi>x</m:mi></m:math> values lie between the first and third standard deviations (both sides)?</para>
+        </problem>
       </exercise>
       <para id="para-00115"><emphasis>Use the following information to answer the next two exercises:</emphasis> The life of wearable fitness devices is normally distributed with a mean of 4.1 years and a standard deviation of 1.3 years. A wearable fitness device is guaranteed for three years. We are interested in the length of time a wearable fitness device lasts.</para>
       <exercise id="exer-00053">
-        <problem id="prob-00053"><para id="para-00116">Define the random variable <m:math><m:mi>X</m:mi></m:math> in words. <m:math><m:mi>X</m:mi></m:math> = _______________.</para></problem>
-        <solution id="sol-00028"><para id="para-00117">The lifetime of a wearable fitness device measured in years.</para></solution>
+        <problem id="prob-00053">
+          <para id="para-00116">Define the random variable <m:math><m:mi>X</m:mi></m:math> in words. <m:math><m:mi>X</m:mi></m:math> = _______________.</para>
+        </problem>
+        <solution id="sol-00028">
+          <para id="para-00117">The lifetime of a wearable fitness device measured in years.</para>
+        </solution>
       </exercise>
       <exercise id="exer-00054">
-        <problem id="prob-00054"><para id="para-00118"><m:math><m:mi>X</m:mi></m:math> ~ _____(_____,_____)</para></problem>
+        <problem id="prob-00054">
+          <para id="para-00118"><m:math><m:mi>X</m:mi></m:math> ~ _____(_____,_____)</para>
+        </problem>
       </exercise>
     </section>
     <section class="free-response" id="sect-00007">
       <title>The Normal Distribution</title>
       <para id="para-00119"><emphasis>Use the following information to answer the next two exercises:</emphasis> The patient recovery time from a particular surgical procedure is normally distributed with a mean of 5.3 days and a standard deviation of 2.1 days.</para>
       <exercise id="exer-00055">
-        <problem id="prob-00055"><para id="para-00120">What is the median recovery time?</para><list list-type="enumerated" number-style="lower-alpha" id="list-00013"><item>2.7</item><item>5.3</item><item>7.4</item><item>2.1</item></list></problem>
+        <problem id="prob-00055">
+          <para id="para-00120">What is the median recovery time?</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00013">
+            <item>2.7</item>
+            <item>5.3</item>
+            <item>7.4</item>
+            <item>2.1</item>
+          </list>
+        </problem>
       </exercise>
       <exercise id="exer-00056">
-        <problem id="prob-00056"><para id="para-00121">What is the <m:math><m:mi>z</m:mi></m:math>-score for a patient who takes ten days to recover?</para><list list-type="enumerated" number-style="lower-alpha" id="list-00014"><item>1.5</item><item>0.2</item><item>2.2</item><item>7.3</item></list></problem>
-        <solution id="sol-00029"><para id="para-00122">c</para></solution>
+        <problem id="prob-00056">
+          <para id="para-00121">What is the <m:math><m:mi>z</m:mi></m:math>-score for a patient who takes ten days to recover?</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
+            <item>1.5</item>
+            <item>0.2</item>
+            <item>2.2</item>
+            <item>7.3</item>
+          </list>
+        </problem>
+        <solution id="sol-00029">
+          <para id="para-00122">c</para>
+        </solution>
       </exercise>
       <exercise id="exer-00057">
-        <problem id="prob-00057"><para id="para-00123">The length of time to find a parking space at 9 A.M. follows a normal distribution with a mean of five minutes and a standard deviation of two minutes. If the mean is significantly greater than the standard deviation, which of the following statements is true?</para><list list-type="enumerated" number-style="upper-roman" id="list-00015"><item>The data cannot follow the uniform distribution.</item><item>The data cannot follow the exponential distribution.</item><item>The data cannot follow the normal distribution.</item></list><list list-type="enumerated" number-style="lower-alpha" id="list-00016"><item>I only</item><item>II only</item><item>III only</item><item>I, II, and III</item></list></problem>
+        <problem id="prob-00057">
+          <para id="para-00123">The length of time to find a parking space at 9 A.M. follows a normal distribution with a mean of five minutes and a standard deviation of two minutes. If the mean is significantly greater than the standard deviation, which of the following statements is true?</para>
+          <list list-type="enumerated" number-style="upper-roman" id="list-00015">
+            <item>The data cannot follow the uniform distribution.</item>
+            <item>The data cannot follow the exponential distribution.</item>
+            <item>The data cannot follow the normal distribution.</item>
+          </list>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00016">
+            <item>I only</item>
+            <item>II only</item>
+            <item>III only</item>
+            <item>I, II, and III</item>
+          </list>
+        </problem>
       </exercise>
       <exercise id="exer-00058">
-        <problem id="prob-00058"><para id="para-00124">The heights of the 430 National Basketball Association players were listed on team rosters at the start of a recent season. The heights of basketball players have an approximate normal distribution with mean, <m:math><m:mi>μ</m:mi></m:math> = 79 inches and a standard deviation, <m:math><m:mi>σ</m:mi></m:math> = 3.89 inches. For each of the following heights, calculate the <m:math><m:mi>z</m:mi></m:math>-score and interpret it using complete sentences.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00017"><item>77 inches</item><item>85 inches</item><item>If an NBA player reported his height had a <m:math><m:mi>z</m:mi></m:math>-score of 3.5, would you believe him? Explain your answer.</item></list></problem>
-        <solution id="sol-00030"><para id="para-00125">a. Use the <m:math><m:mi>z</m:mi></m:math>-score formula. <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.5141</m:mn></m:mrow></m:math>. The height of 77 inches is 0.5141 standard deviations below the mean. An NBA player whose height is 77 inches is shorter than average.</para><para id="para-00126">b. Use the <m:math><m:mi>z</m:mi></m:math>-score formula. <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1.5424</m:mn></m:mrow></m:math>. The height 85 inches is 1.5424 standard deviations above the mean. An NBA player whose height is 85 inches is taller than average.</para><para id="para-00127">c. Height = <m:math><m:mrow><m:mn>79</m:mn><m:mo>+</m:mo><m:mn>3.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3.89</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>92.615</m:mn></m:mrow></m:math> inches, which is taller than 7 feet, 8 inches. There are very few NBA players this tall so the answer is no, not likely.</para></solution>
+        <problem id="prob-00058">
+          <para id="para-00124">The heights of the 430 National Basketball Association players were listed on team rosters at the start of a recent season. The heights of basketball players have an approximate normal distribution with mean, <m:math><m:mi>μ</m:mi></m:math> = 79 inches and a standard deviation, <m:math><m:mi>σ</m:mi></m:math> = 3.89 inches. For each of the following heights, calculate the <m:math><m:mi>z</m:mi></m:math>-score and interpret it using complete sentences.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00017">
+            <item>77 inches</item>
+            <item>85 inches</item>
+            <item>If an NBA player reported his height had a <m:math><m:mi>z</m:mi></m:math>-score of 3.5, would you believe him? Explain your answer.</item>
+          </list>
+        </problem>
+        <solution id="sol-00030">
+          <para id="para-00125">a. Use the <m:math><m:mi>z</m:mi></m:math>-score formula. <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.5141</m:mn></m:mrow></m:math>. The height of 77 inches is 0.5141 standard deviations below the mean. An NBA player whose height is 77 inches is shorter than average.</para>
+          <para id="para-00126">b. Use the <m:math><m:mi>z</m:mi></m:math>-score formula. <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1.5424</m:mn></m:mrow></m:math>. The height 85 inches is 1.5424 standard deviations above the mean. An NBA player whose height is 85 inches is taller than average.</para>
+          <para id="para-00127">c. Height = <m:math><m:mrow><m:mn>79</m:mn><m:mo>+</m:mo><m:mn>3.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3.89</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>92.615</m:mn></m:mrow></m:math> inches, which is taller than 7 feet, 8 inches. There are very few NBA players this tall so the answer is no, not likely.</para>
+        </solution>
       </exercise>
       <exercise id="exer-00059">
-        <problem id="prob-00059"><para id="para-00128">The systolic blood pressure (given in millimeters) of males has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> = 125 and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 14. Systolic blood pressure for males follows a normal distribution.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00018"><item>Calculate the <m:math><m:mi>z</m:mi></m:math>-scores for the male systolic blood pressures 100 and 150 millimeters.</item><item>If a male friend of yours said he thought his systolic blood pressure was 2.5 standard deviations below the mean, but that he believed his blood pressure was between 100 and 150 millimeters, what would you say to him?</item></list></problem>
+        <problem id="prob-00059">
+          <para id="para-00128">The systolic blood pressure (given in millimeters) of males has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> = 125 and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 14. Systolic blood pressure for males follows a normal distribution.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00018">
+            <item>Calculate the <m:math><m:mi>z</m:mi></m:math>-scores for the male systolic blood pressures 100 and 150 millimeters.</item>
+            <item>If a male friend of yours said he thought his systolic blood pressure was 2.5 standard deviations below the mean, but that he believed his blood pressure was between 100 and 150 millimeters, what would you say to him?</item>
+          </list>
+        </problem>
       </exercise>
       <exercise id="exer-00060">
-        <problem id="prob-00060"><para id="para-00129">Kyle’s doctor told him that the <m:math><m:mi>z</m:mi></m:math>-score for his systolic blood pressure is 1.75. Which of the following is the best interpretation of this standardized score? The systolic blood pressure (given in millimeters) of males has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> = 125 and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 14. If <m:math><m:mi>X</m:mi></m:math> = a systolic blood pressure score then <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>125</m:mn><m:mo>,</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00019"><item>Which answer(s) <emphasis>is/are</emphasis> correct?<list list-type="enumerated" number-style="lower-roman" id="list-00020"><item>Kyle’s systolic blood pressure is 175.</item><item>Kyle’s systolic blood pressure is 1.75 times the average blood pressure of men his age.</item><item>Kyle’s systolic blood pressure is 1.75 above the average systolic blood pressure of men his age.</item><item>Kyle’s systolic blood pressure is 1.75 standard deviations above the average systolic blood pressure for men.</item></list></item><item>Calculate Kyle’s blood pressure.</item></list></problem>
-        <solution id="sol-00031"><para id="para-00130">a. iv</para><para id="para-00131">b. Kyle’s blood pressure is equal to <m:math><m:mrow><m:mn>125</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.75</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>149.5</m:mn></m:mrow></m:math>.</para></solution>
+        <problem id="prob-00060">
+          <para id="para-00129">Kyle’s doctor told him that the <m:math><m:mi>z</m:mi></m:math>-score for his systolic blood pressure is 1.75. Which of the following is the best interpretation of this standardized score? The systolic blood pressure (given in millimeters) of males has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> = 125 and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 14. If <m:math><m:mi>X</m:mi></m:math> = a systolic blood pressure score then <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>125</m:mn><m:mo>,</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00019">
+            <item>Which answer(s) <emphasis>is/are</emphasis> correct?
+              <list list-type="enumerated" number-style="lower-roman" id="list-00020">
+                <item>Kyle’s systolic blood pressure is 175.</item>
+                <item>Kyle’s systolic blood pressure is 1.75 times the average blood pressure of men his age.</item>
+                <item>Kyle’s systolic blood pressure is 1.75 above the average systolic blood pressure of men his age.</item>
+                <item>Kyle’s systolic blood pressure is 1.75 standard deviations above the average systolic blood pressure for men.</item>
+              </list>
+            </item>
+            <item>Calculate Kyle’s blood pressure.</item>
+          </list>
+        </problem>
+        <solution id="sol-00031">
+          <para id="para-00130">a. iv</para>
+          <para id="para-00131">b. Kyle’s blood pressure is equal to <m:math><m:mrow><m:mn>125</m:mn><m:mo>+</m:mo><m:mo stretchy="false">(</m:mo><m:mn>1.75</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>14</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>149.5</m:mn></m:mrow></m:math>.</para>
+        </solution>
       </exercise>
       <exercise id="exer-00061">
-        <problem id="prob-00061"><para id="para-00132">Height and weight are two measurements used to track a child’s development. The World Health Organization measures child development by comparing the weights of children who are the same height and the same gender. In 2009, weights for all 80 cm girls in the reference population had a mean <m:math><m:mi>μ</m:mi></m:math> = 10.2 kg and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 0.8 kg. Weights are normally distributed. <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10.2</m:mn><m:mo>,</m:mo><m:mn>0.8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Calculate the <m:math><m:mi>z</m:mi></m:math>-scores that correspond to the following weights and interpret them.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00021"><item>11 kg</item><item>7.9 kg</item><item>12.2 kg</item></list></problem>
+        <problem id="prob-00061">
+          <para id="para-00132">Height and weight are two measurements used to track a child’s development. The World Health Organization measures child development by comparing the weights of children who are the same height and the same gender. In 2009, weights for all 80 cm girls in the reference population had a mean <m:math><m:mi>μ</m:mi></m:math> = 10.2 kg and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 0.8 kg. Weights are normally distributed. <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10.2</m:mn><m:mo>,</m:mo><m:mn>0.8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>. Calculate the <m:math><m:mi>z</m:mi></m:math>-scores that correspond to the following weights and interpret them.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00021">
+            <item>11 kg</item>
+            <item>7.9 kg</item>
+            <item>12.2 kg</item>
+          </list>
+        </problem>
       </exercise>
       <exercise id="exer-00062">
-        <problem id="prob-00062"><para id="para-00133">During a certain year, 1,475,623 students heading to college took the SAT. The distribution of scores in the math section of the SAT follows a normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> = 520 and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 115.</para><list list-type="enumerated" number-style="lower-alpha" id="list-00022"><item>Calculate the <m:math><m:mi>z</m:mi></m:math>-score for an SAT score of 720. Interpret it using a complete sentence.</item><item>What math SAT score is 1.5 standard deviations above the mean? What can you say about this SAT score?</item><item>During a different year, the SAT math test had a mean of 514 and standard deviation 117. The ACT math test is an alternate to the SAT and is approximately normally distributed with mean 21 and standard deviation 5.3. If one person took the SAT math test and scored 700 and a second person took the ACT math test and scored 30, who did better with respect to the test they took?</item></list></problem>
-        <solution id="sol-00032"><para id="para-00134">Let <m:math><m:mi>X</m:mi></m:math> = an SAT math score and <m:math><m:mi>Y</m:mi></m:math> = an ACT math score. Use the <m:math><m:mi>z</m:mi></m:math>-score formula.</para><para id="para-00135">a. <m:math><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>720</m:mn></m:mrow></m:math>: <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>720</m:mn><m:mo>−</m:mo><m:mn>520</m:mn></m:mrow><m:mn>115</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1.74</m:mn></m:mrow></m:math>. The exam score of 720 is 1.74 standard deviations above the mean of 520.</para><para id="para-00136">b. <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn></m:mrow></m:math>. The math SAT score is <m:math><m:mrow><m:mn>520</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>115</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>692.5</m:mn></m:mrow></m:math>. The exam score of 692.5 is 1.5 standard deviations above the mean of 520.</para><para id="para-00137">c. <m:math><m:mrow><m:mfrac><m:mrow><m:mi>X</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>700</m:mn><m:mo>−</m:mo><m:mn>514</m:mn></m:mrow><m:mn>117</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>1.59</m:mn></m:mrow></m:math>, the <m:math><m:mi>z</m:mi></m:math>-score for the SAT. <m:math><m:mrow><m:mfrac><m:mrow><m:mi>Y</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>21</m:mn></m:mrow><m:mn>5.3</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>1.70</m:mn></m:mrow></m:math>, the <m:math><m:mi>z</m:mi></m:math>-score for the ACT. With respect to the test they took, the person who took the ACT did better (has the higher <m:math><m:mi>z</m:mi></m:math>-score).</para></solution>
+        <problem id="prob-00062">
+          <para id="para-00133">During a certain year, 1,475,623 students heading to college took the SAT. The distribution of scores in the math section of the SAT follows a normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> = 520 and standard deviation <m:math><m:mi>σ</m:mi></m:math> = 115.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00022">
+            <item>Calculate the <m:math><m:mi>z</m:mi></m:math>-score for an SAT score of 720. Interpret it using a complete sentence.</item>
+            <item>What math SAT score is 1.5 standard deviations above the mean? What can you say about this SAT score?</item>
+            <item>During a different year, the SAT math test had a mean of 514 and standard deviation 117. The ACT math test is an alternate to the SAT and is approximately normally distributed with mean 21 and standard deviation 5.3. If one person took the SAT math test and scored 700 and a second person took the ACT math test and scored 30, who did better with respect to the test they took?</item>
+          </list>
+        </problem>
+        <solution id="sol-00032">
+          <para id="para-00134">Let <m:math><m:mi>X</m:mi></m:math> = an SAT math score and <m:math><m:mi>Y</m:mi></m:math> = an ACT math score. Use the <m:math><m:mi>z</m:mi></m:math>-score formula.</para>
+          <para id="para-00135">a. <m:math><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>720</m:mn></m:mrow></m:math>: <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>720</m:mn><m:mo>−</m:mo><m:mn>520</m:mn></m:mrow><m:mn>115</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>1.74</m:mn></m:mrow></m:math>. The exam score of 720 is 1.74 standard deviations above the mean of 520.</para>
+          <para id="para-00136">b. <m:math><m:mrow><m:mi>z</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn></m:mrow></m:math>. The math SAT score is <m:math><m:mrow><m:mn>520</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>115</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>692.5</m:mn></m:mrow></m:math>. The exam score of 692.5 is 1.5 standard deviations above the mean of 520.</para>
+          <para id="para-00137">c. <m:math><m:mrow><m:mfrac><m:mrow><m:mi>X</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>700</m:mn><m:mo>−</m:mo><m:mn>514</m:mn></m:mrow><m:mn>117</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>1.59</m:mn></m:mrow></m:math>, the <m:math><m:mi>z</m:mi></m:math>-score for the SAT. <m:math><m:mrow><m:mfrac><m:mrow><m:mi>Y</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>21</m:mn></m:mrow><m:mn>5.3</m:mn></m:mfrac><m:mo>≈</m:mo><m:mn>1.70</m:mn></m:mrow></m:math>, the <m:math><m:mi>z</m:mi></m:math>-score for the ACT. With respect to the test they took, the person who took the ACT did better (has the higher <m:math><m:mi>z</m:mi></m:math>-score).</para>
+        </solution>
       </exercise>
     </section>
   </content>

@@ -1,196 +1,201 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Finite Population Correction Factor</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:content-id>m50269</md:content-id>
-  <md:title>Finite Population Correction Factor</md:title>
-  <md:abstract/>
-  <md:uuid>92e5097b-a96a-4d0f-b6b5-265617f78bb8</md:uuid>
-</metadata>
-
-<content>
-<para id="para-00001">We saw that the sample size has an important effect on the variance and thus the standard deviation of the sampling distribution. Also of interest is the proportion of the total population that has been sampled. We have assumed that the population is extremely large and that we have sampled a small part of the population. As the population becomes smaller and we sample a larger number of observations the sample observations are not independent of each other. To correct for the impact of this, the <term id="term-00001">Finite Population Correction Factor</term> can be used to adjust the variance of the sampling distribution. It is appropriate when more than 5% of the population is being sampled and the population has a known population size. There are cases when the population is known, and therefore the correction factor must be applied. The issue arises for both the sampling distribution of the means and the sampling distribution of proportions. The Finite Population Correction Factor for the variance of the means shown in the standardizing formula is:</para>
-<equation class="unnumbered" id="eq-00001">
-<m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>
-</equation>
-<para id="para-00002">and for the variance of proportions is:</para>
-<equation class="unnumbered" id="eq-00002">
-<m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>
-</equation>
-<para id="para-00003">The following examples show how to apply the factor. Sampling variances get adjusted using the above formula.</para>
-<example id="exam-00001">
-<para id="para-00004">It is learned that the population of White German Shepherds in the USA is 4,000 dogs, and the mean weight for German Shepherds is 75.45 pounds. It is also learned that the population standard deviation is 10.37 pounds.</para>
-<exercise id="exer-00001">
-<problem id="prob-00001">
-<para id="para-00005">If the sample size is 225 dogs, then find the probability that a sample will have a mean that differs from the true probability mean by less than 2 pounds.</para>
-</problem>
-<solution id="sol-00001">
-<para id="para-00006"><m:math><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>4000</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>225</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>10.37</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>75.45</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>±</m:mi><m:mn>2</m:mn></m:math></para>
-<equation class="unnumbered" id="eq-00003">
-<m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>±</m:mi><m:mn>2</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>10.37</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>225</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>4000</m:mn><m:mo>−</m:mo><m:mn>225</m:mn></m:mrow><m:mrow><m:mn>4000</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>2.978</m:mn></m:math>
-</equation>
-<equation class="unnumbered" id="eq-00004">
-<m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2.978</m:mn><m:mo>&lt;</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mn>2.978</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.4985</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.997</m:mn></m:math>
-</equation>
-<para id="para-00007">Note that “differs by less” references the area on both sides of the mean within 2 pounds right or left.</para>
-</solution>
-</exercise>
-</example>
-<note class="statistics try" id="note-00001">
-<title>Try It</title>
-<exercise id="exer-00002">
-<problem id="prob-00002">
-<para id="para-00008">For the 5,000 students in University A, the average height of the students is 170 cm. The population standard deviation is 5 cm.</para>
-<para id="para-00009">If the sample size is 100 students, find the probability that the sample mean is within 1 cm of the true mean.</para>
-</problem>
-</exercise>
-</note>
-<example id="exam-00002">
-<para id="para-00010">When a customer places an order with Rudy's On-Line Office Supplies, a computerized accounting information system (AIS) automatically checks to see if the customer has exceeded their credit limit. Past records indicate that the probability of customers exceeding their credit limit is 0.06.</para>
-<exercise id="exer-00003">
-<problem id="prob-00003">
-<para id="para-00011">Suppose that on a given day, 3,000 orders are placed in total. If we randomly select 360 orders, what is the probability that between 10 and 20 customers will exceed their credit limit?</para>
-</problem>
-<solution id="sol-00002">
-<para id="para-00012"><m:math><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>3000</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>360</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.06</m:mn></m:math></para>
-<equation class="unnumbered" id="eq-00005">
-<m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.06</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>360</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>3000</m:mn><m:mo>−</m:mo><m:mn>360</m:mn></m:mrow><m:mrow><m:mn>3000</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>0.0117</m:mn></m:math>
-</equation>
-<para id="para-00013"><m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>360</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.0278</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mrow><m:mn>360</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.0556</m:mn></m:math></para>
-<equation class="unnumbered" id="eq-00006">
-<m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.0278</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2.74</m:mn></m:math>
-</equation>
-<equation class="unnumbered" id="eq-00007">
-<m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.0556</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.38</m:mn></m:math>
-</equation>
-<equation class="unnumbered" id="eq-00008">
-<m:math><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>0.0278</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo>&lt;</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mfrac><m:mrow><m:mn>0.0556</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mo>−</m:mo><m:mn>2.74</m:mn><m:mo>&lt;</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>0.38</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.4969</m:mn><m:mo>−</m:mo><m:mn>0.1480</m:mn><m:mo>=</m:mo><m:mn>0.3489</m:mn></m:math>
-</equation>
-</solution>
-</exercise>
-</example>
-<note class="statistics try" id="note-00002">
-<title>Try It</title>
-<exercise id="exer-00004">
-<problem id="prob-00004">
-<para id="para-00014">There is a 0.01 probability that a student gets food poisoning eating food in a cafeteria. Suppose there are 2,000 orders in a day in the cafeteria. If we select 200 orders randomly, what is the probability that between 5 and 10 students will get food poisoning?</para>
-</problem>
-</exercise>
-</note>
-<section class="glossary" id="sect-00001">
-<title>Key Terms</title>
-<definition id="def-00001">
-<term>Finite Population Correction Factor</term>
-<meaning>a factor, <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>, used to adjust the variance (and thus the standard deviation) of a sampling distribution when more than 5% of a finite population of known size <m:math><m:mi>N</m:mi></m:math> is sampled.</meaning>
-</definition>
-</section>
-<section class="practice" id="sect-00002">
-<exercise id="exer-00005">
-<problem id="prob-00005">
-<para id="para-00015">A fishing boat has 1,000 fish on board, with an average weight of 120 pounds and a standard deviation of 6.0 pounds. If sample sizes of 50 fish are checked, what is the probability the fish in a sample will have mean weight within 2.8 pounds the true mean of the population?</para>
-</problem>
-<solution id="sol-00003">
-<para id="para-00016">0.999</para>
-</solution>
-</exercise>
-<exercise id="exer-00006">
-<problem id="prob-00006">
-<para id="para-00017">An experimental garden has 500 sunflower plants. The plants are being treated so they grow to unusual heights. The average height is 9.3 feet with a standard deviation of 0.5 foot. If sample sizes of 60 plants are taken, what is the probability the plants in a given sample will have an average height within 0.1 foot of the true mean of the population?</para>
-</problem>
-<solution id="sol-00004">
-<para id="para-00018">0.901</para>
-</solution>
-</exercise>
-<exercise id="exer-00007">
-<problem id="prob-00007">
-<para id="para-00019">A company has 800 employees. The average number of workdays between absence for illness is 123 with a standard deviation of 14 days. Samples of 50 employees are examined. What is the probability a sample has a mean of workdays with no absence for illness of at least 124 days?</para>
-</problem>
-<solution id="sol-00005">
-<para id="para-00020">0.301</para>
-</solution>
-</exercise>
-<exercise id="exer-00008">
-<problem id="prob-00008">
-<para id="para-00021">Cars pass an automatic speed check device that monitors 2,000 cars on a given day. This population of cars has an average speed of 67 miles per hour with a standard deviation of 2 miles per hour. If samples of 30 cars are taken, what is the probability a given sample will have an average speed within 0.50 mile per hour of the population mean?</para>
-</problem>
-<solution id="sol-00006">
-<para id="para-00022">0.832</para>
-</solution>
-</exercise>
-<exercise id="exer-00009">
-<problem id="prob-00009">
-<para id="para-00023">A town keeps weather records. From these records it has been determined that it rains on an average of 37% of the days each year. If 30 days are selected at random from one year, what is the probability that at least 5 and at most 11 days had rain?</para>
-</problem>
-<solution id="sol-00007">
-<para id="para-00024">0.483</para>
-</solution>
-</exercise>
-<exercise id="exer-00010">
-<problem id="prob-00010">
-<para id="para-00025">A maker of yardsticks has an ink problem that causes the markings to smear on 4% of the yardsticks. The daily production run is 2,000 yardsticks. What is the probability if a sample of 100 yardsticks is checked, there will be ink smeared on at most 4 yardsticks?</para>
-</problem>
-<solution id="sol-00008">
-<para id="para-00026">0.0500</para>
-</solution>
-</exercise>
-<exercise id="exer-00011">
-<problem id="prob-00011">
-<para id="para-00027">A school has 300 students. Usually, there are an average of 21 students who are absent. If a sample of 30 students is taken on a certain day, what is the probability that at most 2 students in the sample will be absent?</para>
-</problem>
-<solution id="sol-00009">
-<para id="para-00028">0.502</para>
-</solution>
-</exercise>
-<exercise id="exer-00012">
-<problem id="prob-00012">
-<para id="para-00029">A college gives a placement test to 5,000 incoming students each year. On the average 1,213 place in one or more developmental courses. If a sample of 50 is taken from the 5,000, what is the probability at most 12 of those sampled will have to take at least one developmental course?</para>
-</problem>
-<solution id="sol-00010">
-<para id="para-00030">0.519</para>
-</solution>
-</exercise>
-</section>
-<section class="free-response" id="sect-00003">
-<title>HOMEWORK</title>
-<exercise id="exer-00013">
-<problem id="prob-00013">
-<para id="para-00031">A company has 1,000 employees. The average number of workdays between absence for illness is 80 with a standard deviation of 11 days. Samples of 80 employees are examined. What is the probability a sample has a mean of workdays with no absence for illness of at least 78 days and at most 84 days?</para>
-</problem>
-<solution id="sol-00011">
-<para id="para-00032">0.955</para>
-</solution>
-</exercise>
-<exercise id="exer-00014">
-<problem id="prob-00014">
-<para id="para-00033">Trucks pass an automatic scale that monitors 2,000 trucks. This population of trucks has an average weight of 20 tons with a standard deviation of 2 tons. If a sample of 50 trucks is taken, what is the probability the sample will have an average weight within one-half ton of the population mean?</para>
-</problem>
-<solution id="sol-00012">
-<para id="para-00034">0.927</para>
-</solution>
-</exercise>
-<exercise id="exer-00015">
-<problem id="prob-00015">
-<para id="para-00035">A town keeps weather records. From these records it has been determined that it rains on an average of 12% of the days each year. If 30 days are selected at random from one year, what is the probability that at most 3 days had rain?</para>
-</problem>
-<solution id="sol-00013">
-<para id="para-00036">0.648</para>
-</solution>
-</exercise>
-<exercise id="exer-00016">
-<problem id="prob-00016">
-<para id="para-00037">A maker of greeting cards has an ink problem that causes the ink to smear on 7% of the cards. The daily production run is 500 cards. What is the probability that if a sample of 35 cards is checked, there will be ink smeared on at most 5 cards?</para>
-</problem>
-<solution id="sol-00014">
-<para id="para-00038">0.101</para>
-</solution>
-</exercise>
-<exercise id="exer-00017">
-<problem id="prob-00017">
-<para id="para-00039">A school has 500 students. Usually, there are an average of 20 students who are absent. If a sample of 30 students is taken on a certain day, what is the probability that at least 2 students in the sample will be absent?</para>
-</problem>
-<solution id="sol-00015">
-<para id="para-00040">0.273</para>
-</solution>
-</exercise>
-</section>
-</content>
+    <md:content-id>m50269</md:content-id>
+    <md:title>Finite Population Correction Factor</md:title>
+    <md:abstract/>
+    <md:uuid>92e5097b-a96a-4d0f-b6b5-265617f78bb8</md:uuid>
+  </metadata>
+  <content>
+    <para id="para-00001">We saw that the sample size has an important effect on the variance and thus the standard deviation of the sampling distribution. Also of interest is the proportion of the total population that has been sampled. We have assumed that the population is extremely large and that we have sampled a small part of the population. As the population becomes smaller and we sample a larger number of observations the sample observations are not independent of each other. To correct for the impact of this, the <term id="term-00001">Finite Population Correction Factor</term> can be used to adjust the variance of the sampling distribution. It is appropriate when more than 5% of the population is being sampled and the population has a known population size. There are cases when the population is known, and therefore the correction factor must be applied. The issue arises for both the sampling distribution of the means and the sampling distribution of proportions. The Finite Population Correction Factor for the variance of the means shown in the standardizing formula is:</para>
+    <equation class="unnumbered" id="eq-00001">
+      <m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>
+    </equation>
+    <para id="para-00002">and for the variance of proportions is:</para>
+    <equation class="unnumbered" id="eq-00002">
+      <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>
+    </equation>
+    <para id="para-00003">The following examples show how to apply the factor. Sampling variances get adjusted using the above formula.</para>
+    <example id="exam-00001">
+      <para id="para-00004">It is learned that the population of White German Shepherds in the USA is 4,000 dogs, and the mean weight for German Shepherds is 75.45 pounds. It is also learned that the population standard deviation is 10.37 pounds.</para>
+      <exercise id="exer-00001">
+        <problem id="prob-00001">
+          <para id="para-00005">If the sample size is 225 dogs, then find the probability that a sample will have a mean that differs from the true probability mean by less than 2 pounds.</para>
+        </problem>
+        <solution id="sol-00001">
+          <para id="para-00006">
+            <m:math><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>4000</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>225</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>10.37</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>75.45</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>±</m:mi><m:mn>2</m:mn></m:math>
+          </para>
+          <equation class="unnumbered" id="eq-00003">
+            <m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>±</m:mi><m:mn>2</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>10.37</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>225</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>4000</m:mn><m:mo>−</m:mo><m:mn>225</m:mn></m:mrow><m:mrow><m:mn>4000</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>2.978</m:mn></m:math>
+          </equation>
+          <equation class="unnumbered" id="eq-00004">
+            <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>2.978</m:mn><m:mo>&lt;</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mn>2.978</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.4985</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.997</m:mn></m:math>
+          </equation>
+          <para id="para-00007">Note that “differs by less” references the area on both sides of the mean within 2 pounds right or left.</para>
+        </solution>
+      </exercise>
+    </example>
+    <note class="statistics try" id="note-00001">
+      <title>Try It</title>
+      <exercise id="exer-00002">
+        <problem id="prob-00002">
+          <para id="para-00008">For the 5,000 students in University A, the average height of the students is 170 cm. The population standard deviation is 5 cm.</para>
+          <para id="para-00009">If the sample size is 100 students, find the probability that the sample mean is within 1 cm of the true mean.</para>
+        </problem>
+      </exercise>
+    </note>
+    <example id="exam-00002">
+      <para id="para-00010">When a customer places an order with Rudy's On-Line Office Supplies, a computerized accounting information system (AIS) automatically checks to see if the customer has exceeded their credit limit. Past records indicate that the probability of customers exceeding their credit limit is 0.06.</para>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="para-00011">Suppose that on a given day, 3,000 orders are placed in total. If we randomly select 360 orders, what is the probability that between 10 and 20 customers will exceed their credit limit?</para>
+        </problem>
+        <solution id="sol-00002">
+          <para id="para-00012">
+            <m:math><m:mi>N</m:mi><m:mo>=</m:mo><m:mn>3000</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>360</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.06</m:mn></m:math>
+          </para>
+          <equation class="unnumbered" id="eq-00005">
+            <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.06</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>360</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>×</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>3000</m:mn><m:mo>−</m:mo><m:mn>360</m:mn></m:mrow><m:mrow><m:mn>3000</m:mn><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>0.0117</m:mn></m:math>
+          </equation>
+          <para id="para-00013">
+            <m:math><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:mn>360</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.0278</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>20</m:mn></m:mrow><m:mrow><m:mn>360</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.0556</m:mn></m:math>
+          </para>
+          <equation class="unnumbered" id="eq-00006">
+            <m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.0278</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>2.74</m:mn></m:math>
+          </equation>
+          <equation class="unnumbered" id="eq-00007">
+            <m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.0556</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.38</m:mn></m:math>
+          </equation>
+          <equation class="unnumbered" id="eq-00008">
+            <m:math><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>0.0278</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo>&lt;</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mfrac><m:mrow><m:mn>0.0556</m:mn><m:mo>−</m:mo><m:mn>0.06</m:mn></m:mrow><m:mrow><m:mn>0.011744</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>p</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mo>−</m:mo><m:mn>2.74</m:mn><m:mo>&lt;</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>0.38</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.4969</m:mn><m:mo>−</m:mo><m:mn>0.1480</m:mn><m:mo>=</m:mo><m:mn>0.3489</m:mn></m:math>
+          </equation>
+        </solution>
+      </exercise>
+    </example>
+    <note class="statistics try" id="note-00002">
+      <title>Try It</title>
+      <exercise id="exer-00004">
+        <problem id="prob-00004">
+          <para id="para-00014">There is a 0.01 probability that a student gets food poisoning eating food in a cafeteria. Suppose there are 2,000 orders in a day in the cafeteria. If we select 200 orders randomly, what is the probability that between 5 and 10 students will get food poisoning?</para>
+        </problem>
+      </exercise>
+    </note>
+    <section class="glossary" id="sect-00001">
+      <title>Key Terms</title>
+      <definition id="def-00001">
+        <term>Finite Population Correction Factor</term>
+        <meaning>a factor, <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>, used to adjust the variance (and thus the standard deviation) of a sampling distribution when more than 5% of a finite population of known size <m:math><m:mi>N</m:mi></m:math> is sampled.</meaning>
+      </definition>
+    </section>
+    <section class="practice" id="sect-00002">
+      <exercise id="exer-00005">
+        <problem id="prob-00005">
+          <para id="para-00015">A fishing boat has 1,000 fish on board, with an average weight of 120 pounds and a standard deviation of 6.0 pounds. If sample sizes of 50 fish are checked, what is the probability the fish in a sample will have mean weight within 2.8 pounds the true mean of the population?</para>
+        </problem>
+        <solution id="sol-00003">
+          <para id="para-00016">0.999</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00006">
+        <problem id="prob-00006">
+          <para id="para-00017">An experimental garden has 500 sunflower plants. The plants are being treated so they grow to unusual heights. The average height is 9.3 feet with a standard deviation of 0.5 foot. If sample sizes of 60 plants are taken, what is the probability the plants in a given sample will have an average height within 0.1 foot of the true mean of the population?</para>
+        </problem>
+        <solution id="sol-00004">
+          <para id="para-00018">0.901</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00007">
+        <problem id="prob-00007">
+          <para id="para-00019">A company has 800 employees. The average number of workdays between absence for illness is 123 with a standard deviation of 14 days. Samples of 50 employees are examined. What is the probability a sample has a mean of workdays with no absence for illness of at least 124 days?</para>
+        </problem>
+        <solution id="sol-00005">
+          <para id="para-00020">0.301</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00008">
+        <problem id="prob-00008">
+          <para id="para-00021">Cars pass an automatic speed check device that monitors 2,000 cars on a given day. This population of cars has an average speed of 67 miles per hour with a standard deviation of 2 miles per hour. If samples of 30 cars are taken, what is the probability a given sample will have an average speed within 0.50 mile per hour of the population mean?</para>
+        </problem>
+        <solution id="sol-00006">
+          <para id="para-00022">0.832</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00009">
+        <problem id="prob-00009">
+          <para id="para-00023">A town keeps weather records. From these records it has been determined that it rains on an average of 37% of the days each year. If 30 days are selected at random from one year, what is the probability that at least 5 and at most 11 days had rain?</para>
+        </problem>
+        <solution id="sol-00007">
+          <para id="para-00024">0.483</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00010">
+        <problem id="prob-00010">
+          <para id="para-00025">A maker of yardsticks has an ink problem that causes the markings to smear on 4% of the yardsticks. The daily production run is 2,000 yardsticks. What is the probability if a sample of 100 yardsticks is checked, there will be ink smeared on at most 4 yardsticks?</para>
+        </problem>
+        <solution id="sol-00008">
+          <para id="para-00026">0.0500</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00011">
+        <problem id="prob-00011">
+          <para id="para-00027">A school has 300 students. Usually, there are an average of 21 students who are absent. If a sample of 30 students is taken on a certain day, what is the probability that at most 2 students in the sample will be absent?</para>
+        </problem>
+        <solution id="sol-00009">
+          <para id="para-00028">0.502</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00012">
+        <problem id="prob-00012">
+          <para id="para-00029">A college gives a placement test to 5,000 incoming students each year. On the average 1,213 place in one or more developmental courses. If a sample of 50 is taken from the 5,000, what is the probability at most 12 of those sampled will have to take at least one developmental course?</para>
+        </problem>
+        <solution id="sol-00010">
+          <para id="para-00030">0.519</para>
+        </solution>
+      </exercise>
+    </section>
+    <section class="free-response" id="sect-00003">
+      <title>HOMEWORK</title>
+      <exercise id="exer-00013">
+        <problem id="prob-00013">
+          <para id="para-00031">A company has 1,000 employees. The average number of workdays between absence for illness is 80 with a standard deviation of 11 days. Samples of 80 employees are examined. What is the probability a sample has a mean of workdays with no absence for illness of at least 78 days and at most 84 days?</para>
+        </problem>
+        <solution id="sol-00011">
+          <para id="para-00032">0.955</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00014">
+        <problem id="prob-00014">
+          <para id="para-00033">Trucks pass an automatic scale that monitors 2,000 trucks. This population of trucks has an average weight of 20 tons with a standard deviation of 2 tons. If a sample of 50 trucks is taken, what is the probability the sample will have an average weight within one-half ton of the population mean?</para>
+        </problem>
+        <solution id="sol-00012">
+          <para id="para-00034">0.927</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00015">
+        <problem id="prob-00015">
+          <para id="para-00035">A town keeps weather records. From these records it has been determined that it rains on an average of 12% of the days each year. If 30 days are selected at random from one year, what is the probability that at most 3 days had rain?</para>
+        </problem>
+        <solution id="sol-00013">
+          <para id="para-00036">0.648</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00016">
+        <problem id="prob-00016">
+          <para id="para-00037">A maker of greeting cards has an ink problem that causes the ink to smear on 7% of the cards. The daily production run is 500 cards. What is the probability that if a sample of 35 cards is checked, there will be ink smeared on at most 5 cards?</para>
+        </problem>
+        <solution id="sol-00014">
+          <para id="para-00038">0.101</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00017">
+        <problem id="prob-00017">
+          <para id="para-00039">A school has 500 students. Usually, there are an average of 20 students who are absent. If a sample of 30 students is taken on a certain day, what is the probability that at least 2 students in the sample will be absent?</para>
+        </problem>
+        <solution id="sol-00015">
+          <para id="para-00040">0.273</para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
 </document>

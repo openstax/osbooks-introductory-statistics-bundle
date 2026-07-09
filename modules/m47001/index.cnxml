@@ -1,1393 +1,1049 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Confidence Intervals for a Single Population Mean using the Student’s t-Distribution</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:content-id>m47001</md:content-id>
-  <md:title>Confidence Intervals for a Single Population Mean using the Student’s t-Distribution</md:title>
-  <md:abstract/>
-  <md:uuid>fda17024-5770-4f8f-b3fd-26217c74bd4b</md:uuid>
-</metadata>
-
-<content>
-<para id="para-00001">In practice, we rarely know the population standard deviation. In the past, when the sample size was large, this did not present a problem to statisticians. They used the sample standard deviation <m:math><m:mi>s</m:mi></m:math> as an estimate for <m:math><m:mi>σ</m:mi></m:math> and proceeded as before to calculate a confidence interval with close enough results. However, statisticians ran into problems when the sample size was small. A small sample size caused inaccuracies in the confidence interval.</para>
-<section id="sect-00001">
-<title>Student’s t-Distribution</title>
-<para id="para-00002">William S. Gosset (1876–1937) of the Guinness brewery in Dublin, Ireland, ran into this problem. His experiments with hops and barley produced very few samples. Just replacing <m:math><m:mi>σ</m:mi></m:math> with <m:math><m:mi>s</m:mi></m:math> did not produce accurate results when he tried to calculate a confidence interval. He realized that he could not use a normal distribution for the calculation; he found that the actual distribution depends on the sample size. This problem led him to “discover” what is called the Student’s t-distribution. The name comes from the fact that Gosset wrote under the pen name “Student.”</para>
-<para id="para-00003">Up until the mid-1970s, some statisticians used the normal distribution approximation for large sample sizes and used the Student’s t-distribution only for sample sizes of at most 30. With graphing calculators and computers, the practice now is to use the Student’s t-distribution whenever <m:math><m:mi>s</m:mi></m:math> is used as an estimate for <m:math><m:mi>σ</m:mi></m:math>.</para>
-<para id="para-00004">If you draw a simple random sample of size <m:math><m:mi>n</m:mi></m:math> from a population that has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math> and calculate the <m:math><m:mi>t</m:mi></m:math>-score <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>, then the <m:math><m:mi>t</m:mi></m:math>-scores follow a <emphasis>Student’s t-distribution with n − 1 degrees of freedom</emphasis>. The <m:math><m:mi>t</m:mi></m:math>-score has the same interpretation as the <m:math><m:mi>z</m:mi></m:math>-score. It measures how far <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from its mean <m:math><m:mi>μ</m:mi></m:math>. For each sample size <m:math><m:mi>n</m:mi></m:math>, there is a different Student’s t-distribution.</para>
-<para id="para-00005">The degrees of freedom, <emphasis>n − 1</emphasis>, come from the calculation of the sample standard deviation <emphasis>s</emphasis>. This calculation requires <m:math><m:mi>n</m:mi></m:math> deviations <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mtext> </m:mtext><m:mtext>values</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. Because the sum of the deviations is zero, we can find the last deviation once we know the other <emphasis>n − 1</emphasis> deviations. The other <emphasis>n − 1</emphasis> deviations can change or vary freely. <emphasis>We call the number n − 1 the degrees of freedom (df).</emphasis></para>
-<section id="sect-00002">
-<title>Properties of the Student’s t-Distribution</title>
-<list list-type="bulleted" id="list-00001">
-<item>The graph for the Student’s t-distribution is similar to the standard normal curve.</item>
-<item>The mean for the Student’s t-distribution is zero and the distribution is symmetric about zero.</item>
-<item>The Student’s t-distribution has more probability in its tails than the standard normal distribution because the spread of the t-distribution is greater than the spread of the standard normal. So the graph of the Student’s t-distribution will be thicker in the tails and shorter in the center than the graph of the standard normal distribution.</item>
-<item>The exact shape of the Student’s t-distribution depends on the degrees of freedom. As the degrees of freedom increases, the graph of Student’s t-distribution becomes more like the graph of the standard normal distribution.</item>
-<item>The underlying population of individual observations is assumed to be normally distributed with unknown population mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math>. The size of the underlying population is generally not relevant unless it is very small. If it is bell shaped (normal) then the assumption is met and doesn’t need discussion. Note that random sampling is also assumed; this is a separate condition from the normality assumption above.</item>
-</list>
-</section>
-<para id="para-00006">The figure below shows a comparison of how the degrees of freedom impact Student’s t-distribution, and how this distribution ultimately compares to the standard normal distribution. Notice that as the degrees of freedom get larger, Student’s t-distribution begins to mimic the normal distribution.</para>
-<figure id="fig-00001">
-<media alt="A graph comparing several Student’s t-distributions with different degrees of freedom against the standard normal distribution. Curves with more degrees of freedom are taller in the center and thinner in the tails, approaching the standard normal curve.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img1.png"/>
-</media>
-</figure>
-<para id="para-00007">Calculators and computers can easily calculate any Student’s t-probabilities. The TI-83, 83+, and 84+ have a tcdf function to find the probability for given values of <m:math><m:mi>t</m:mi></m:math>. The syntax for the tcdf command is <code>tcdf</code>(lower bound, upper bound, degrees of freedom). However for confidence intervals, we need to use <emphasis>inverse</emphasis> probability to find the value of <m:math><m:mi>t</m:mi></m:math> when we know the probability.</para>
-<para id="para-00008">For the TI-84+ you can use the invT command on the DISTRibution menu. The invT command works similarly to the invnorm. The invT command requires two inputs: <emphasis>invT(area to the left, degrees of freedom)</emphasis>. The output is the t-score that corresponds to the area we specified.<newline/>The TI-83 and 83+ do not have the invT command. (The TI-89 has an inverse T command.)</para>
-<para id="para-00009">A probability table for the Student’s t-distribution can also be used. The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row). (The TI-86 does not have an invT program or command, so if you are using that calculator, you need to use a probability table for the Student’s t-Distribution.) When using a <m:math><m:mi>t</m:mi></m:math>-table, note that some tables are formatted to show the confidence level in the column headings, while the column headings in some tables may show only corresponding area in one or both tails.</para>
-<para id="para-00010">A Student’s t table (see <link document="m47875">Appendix H Tables</link>) gives <m:math><m:mi>t</m:mi></m:math>-scores given the degrees of freedom and the right-tailed probability. The table is very limited. <emphasis>Calculators and computers can easily calculate any Student’s t-probabilities.</emphasis></para>
-<para id="para-00011"><emphasis>The notation for the Student’s t-distribution (using T as the random variable) is:</emphasis></para>
-<list list-type="bulleted" id="list-00002">
-<item><m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow></m:msub></m:math> where <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>.</item>
-<item>For example, if we have a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> items, then we calculate the degrees of freedom as <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math> and we write the distribution as <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>19</m:mn></m:mrow></m:msub></m:math>.</item>
-</list>
-</section>
-<section id="sect-00003">
-<title>Calculating a Confidence Interval when the Population Standard Deviation is Not Known</title>
-<para id="para-00012">When the population standard deviation <m:math><m:mi>σ</m:mi></m:math> is not known, we use the sample standard deviation <m:math><m:mi>s</m:mi></m:math> and Student’s t-distribution. The error bound for a population mean is:</para>
-<list list-type="bulleted" id="list-00003">
-<item><m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>,</item>
-<item><m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub></m:math> is the <m:math><m:mi>t</m:mi></m:math>-score with area to the right equal to <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:math>,</item>
-<item>use <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom, and</item>
-<item><m:math><m:mi>s</m:mi></m:math> = sample standard deviation.</item>
-</list>
-<para id="para-00013"><emphasis>The format for the confidence interval is:</emphasis></para>
-<equation class="unnumbered" id="eq-00001">
-<m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>,</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext> </m:mtext><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
-</equation>
-<note class="statistics calculator" id="note-00001">
-<para id="para-00014">To calculate the confidence interval directly:<newline/>Press <code>STAT</code>.<newline/>Arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or just press 8).</para>
-</note>
-<example id="exam-00001">
-<exercise id="exer-00001">
-<problem id="prob-00001">
-<para id="para-00015">Suppose you do a study of acupuncture to determine how effective it is in relieving pain. You measure sensory rates for 15 subjects with the results given. Use the sample data to construct a 95% confidence interval for the mean sensory rate for the population (assumed normal) from which you took the data.<newline/>The solution is shown step-by-step and by using the TI-83, 83+, or 84+ calculators.</para>
-<para id="para-00016">8.6; 9.4; 7.9; 6.8; 8.3; 7.3; 9.2; 9.6; 8.7; 11.4; 10.3; 5.4; 8.1; 5.5; 6.9</para>
-</problem>
-<solution id="sol-00001">
-<list list-type="bulleted" id="list-00004">
-<item>The first solution is step-by-step.</item>
-<item>The second solution uses the TI-83+ and TI-84 calculators.</item>
-</list>
-<para id="para-00017">To find the confidence interval, you need the sample mean, <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>, and the <m:math><m:mtext>EBM</m:mtext></m:math>.</para>
-<para id="para-00018"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>8.2267</m:mn><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>1.6722</m:mn><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math></para>
-<para id="para-00019"><m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>14</m:mn><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.95</m:mn></m:math> so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.95</m:mn><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math></para>
-<para id="para-00020"><m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.025</m:mn></m:math>    <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math></para>
-<para id="para-00021">The area to the right of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 0.025, and the area to the left of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 1 − 0.025 = 0.975.</para>
-<para id="para-00022"><m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2.145</m:mn></m:math> using invT(.975,14) on the TI-84+ calculator.</para>
-<equation class="unnumbered" id="eq-00002">
-<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
-</equation>
-<equation class="unnumbered" id="eq-00003">
-<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>2.145</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1.6722</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>15</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.926</m:mn></m:math>
-</equation>
-<para id="para-00023"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>8.2267</m:mn><m:mo>−</m:mo><m:mn>0.926</m:mn><m:mo>=</m:mo><m:mn>7.30</m:mn></m:math></para>
-<para id="para-00024"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>8.2267</m:mn><m:mo>+</m:mo><m:mn>0.926</m:mn><m:mo>=</m:mo><m:mn>9.15</m:mn></m:math></para>
-<para id="para-00025">The 95% confidence interval is (7.30, 9.15).</para>
-<para id="para-00026">We estimate with 95% confidence that the true population mean sensory rate is between 7.30 and 9.15. The figure below shows the associated distributions for this situation:</para>
-<figure id="fig-00002">
-<media alt="A figure showing the associated distributions for the 95% confidence interval: a Student’s t-distribution with the middle 95% area marked and the corresponding sample mean interval from 7.30 to 9.15 centered at 8.2267.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img2.png"/>
-</media>
-</figure>
-</solution>
-<solution id="sol-00002">
-<para id="para-00027"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
-<para id="para-00028">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>).<newline/>Arrow to <code>Data</code> and press <code>ENTER</code>.<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.<newline/>There should be a 1 after <code>Freq</code>.<newline/>Arrow down to <code>C-level</code> and enter 0.95<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The 95% confidence interval is (7.3006, 9.1527).</para>
-</solution>
-</exercise>
-<note class="statistics note" id="note-00002">
-<title>NOTE</title>
-<para id="para-00029">When calculating the error bound, a probability table for the Student’s t-distribution can also be used to find the value of <m:math><m:mi>t</m:mi></m:math>. The table gives <m:math><m:mi>t</m:mi></m:math>-scores that correspond to the confidence level (column) and degrees of freedom (row); the <m:math><m:mi>t</m:mi></m:math>-score is found where the row and column intersect in the table.</para>
-</note>
-</example>
-<note class="statistics try" id="note-00003">
-<title>Try It</title>
-<exercise id="exer-00002">
-<problem id="prob-00002">
-<para id="para-00030">You do a study of hypnotherapy to determine how effective it is in increasing the number of hours of sleep subjects get each night. You measure hours of sleep for 12 subjects with the following results. Construct a 95% confidence interval for the mean number of hours slept for the population (assumed normal) from which you took the data.</para>
-<para id="para-00031">8.2; 9.1; 7.7; 8.6; 6.9; 11.2; 10.1; 9.9; 8.9; 9.2; 7.5; 10.5</para>
-</problem>
-</exercise>
-</note>
-<example id="exam-00002">
-<exercise id="exer-00003">
-<problem id="prob-00003">
-<para id="para-00032">The Human Toxome Project (HTP) is working to understand the scope of industrial pollution in the human body. Industrial chemicals may enter the body through pollution or as ingredients in consumer products. The scientists at HTP tested cord blood samples for 20 newborn infants in the United States. The cord blood of the “In utero/newborn” group was tested for 430 industrial compounds, pollutants, and other chemicals, including chemicals linked to brain and nervous system toxicity, immune system toxicity, and reproductive toxicity, and fertility problems. There are health concerns about the effects of some chemicals on the brain and nervous system. <link target-id="fs-c8-tbl-8-3"/> shows how many of the targeted chemicals were found in each infant’s cord blood.</para>
-<table id="fs-c8-tbl-8-3" summary="The number of targeted industrial chemicals found in the cord blood of each of 20 newborn infants.">
-<title>Table 8.3</title>
-<tgroup cols="10">
-<tbody>
-<row>
-<entry>79</entry>
-<entry>145</entry>
-<entry>147</entry>
-<entry>160</entry>
-<entry>116</entry>
-<entry>100</entry>
-<entry>159</entry>
-<entry>151</entry>
-<entry>156</entry>
-<entry>126</entry>
-</row>
-<row>
-<entry>137</entry>
-<entry>83</entry>
-<entry>156</entry>
-<entry>94</entry>
-<entry>121</entry>
-<entry>144</entry>
-<entry>123</entry>
-<entry>114</entry>
-<entry>139</entry>
-<entry>99</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<para id="para-00033">Use this sample data to construct a 90% confidence interval for the mean number of targeted industrial chemicals to be found in an infant’s blood.</para>
-</problem>
-<solution id="sol-00003">
-<para id="para-00034">From the sample, you can calculate <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>127.45</m:mn></m:math> and <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>25.965</m:mn></m:math>. There are 20 infants in the sample, so <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math>, and <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math>.</para>
-<para id="para-00035">You are asked to calculate a 90% confidence interval: <m:math><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.90</m:mn></m:math>, so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.90</m:mn><m:mo>=</m:mo><m:mn>0.10</m:mn></m:math>    <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.05</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math></para>
-<para id="para-00036">By definition, the area to the right of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 0.05 and so the area to the left of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 1 − 0.05 = 0.95.</para>
-<para id="para-00037">Use a table, calculator, or computer to find that <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.729</m:mn></m:math>.</para>
-<equation class="unnumbered" id="eq-00004">
-<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.729</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>25.965</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>20</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>10.038</m:mn></m:math>
-</equation>
-<para id="para-00038"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>127.45</m:mn><m:mo>−</m:mo><m:mn>10.038</m:mn><m:mo>=</m:mo><m:mn>117.412</m:mn></m:math></para>
-<para id="para-00039"><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>127.45</m:mn><m:mo>+</m:mo><m:mn>10.038</m:mn><m:mo>=</m:mo><m:mn>137.488</m:mn></m:math></para>
-<para id="para-00040">We estimate with 90% confidence that the mean number of all targeted industrial chemicals found in cord blood in the United States is between 117.412 and 137.488.</para>
-</solution>
-<solution id="sol-00004">
-<para id="para-00041"><emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis></para>
-<para id="para-00042">Enter the data as a list.<newline/>Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>). Arrow to Data and press <code>ENTER</code>.<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.<newline/>Arrow down to <code>Freq</code> and enter 1.<newline/>Arrow down to <code>C-level</code> and enter 0.90<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The 90% confidence interval is (117.41, 137.49).</para>
-</solution>
-</exercise>
-</example>
-<note class="statistics try" id="note-00004">
-<title>Try It</title>
-<exercise id="exer-00004">
-<problem id="prob-00004">
-<para id="para-00043">A random sample of statistics students were asked to estimate the total number of hours they spend watching television in an average week. The responses are recorded in <link target-id="fs-c8-tbl-8-4"/>. Use this sample data to construct a 98% confidence interval for the mean number of hours statistics students will spend watching television in one week.</para>
-<table id="fs-c8-tbl-8-4" summary="Hours per week spent watching television reported by a sample of statistics students.">
-<title>Table 8.4</title>
-<tgroup cols="5">
-<tbody>
-<row>
-<entry>0</entry>
-<entry>3</entry>
-<entry>1</entry>
-<entry>20</entry>
-<entry>9</entry>
-</row>
-<row>
-<entry>5</entry>
-<entry>10</entry>
-<entry>1</entry>
-<entry>10</entry>
-<entry>4</entry>
-</row>
-<row>
-<entry>14</entry>
-<entry>2</entry>
-<entry>4</entry>
-<entry>4</entry>
-<entry>5</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-</problem>
-</exercise>
-</note>
-</section>
-<section id="eip-400" class="references"><title>References</title><para id="eip-idp72771968">“America’s Best Small Companies.” Forbes, 2013. Available online at http://www.forbes.com/best-small-companies/list/ (accessed July 2, 2013).</para>
-<para id="eip-idm62303392">Data from <emphasis effect="italics">Microsoft Bookshelf</emphasis>.</para>
-<para id="eip-idm46745392">Data from http://www.businessweek.com/.</para>
-<para id="eip-idp72771584">Data from http://www.forbes.com/.</para>
-<para id="eip-idp90955712">“Disclosure Data Catalog: Leadership PAC and Sponsors Report, 2012.” Federal Election Commission. Available online at http://www.fec.gov/data/index.jsp (accessed July 2,2013).</para>
-<para id="eip-idm101744816">“Human Toxome Project: Mapping the Pollution in People.” Environmental Working Group. Available online at http://www.ewg.org/sites/humantoxome/participants/participant-group.php?group=in+utero%2Fnewborn (accessed July 2, 2013).</para>
-<para id="eip-idp90954816">“Metadata Description of Leadership PAC List.” Federal Election Commission. Available online at http://www.fec.gov/finance/disclosure/metadata/metadataLeadershipPacList.shtml (accessed July 2, 2013).</para></section><section id="eip-447" class="summary">
-<title>Chapter Review</title>
-<para id="eip-895">In many cases, the researcher does not know the population standard deviation, <m:math><m:mi>σ</m:mi></m:math>, of the measure being studied. In these cases, it is common to use the sample standard deviation, <m:math><m:mi>s</m:mi></m:math>, as an estimate of <m:math><m:mi>σ</m:mi></m:math>. The normal distribution creates accurate confidence intervals when <m:math><m:mi>σ</m:mi></m:math> is known, but it is not as accurate when <m:math><m:mi>s</m:mi></m:math> is used as an estimate. In this case, the Student’s t-distribution is much better. Define a t-score using the following formula:</para>
- <para id="eip-828"><m:math>
- <m:mrow>
-  <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
-   <m:mrow>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-    <m:mo>−</m:mo><m:mi>μ</m:mi>
-   </m:mrow>
-   <m:mrow>
-    <m:mfrac bevelled="true">
-     <m:mi>s</m:mi>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math></para>
-
- <para id="eip-305">The <m:math><m:mi>t</m:mi></m:math>-score follows the Student’s t-distribution with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom. The confidence interval under this distribution is calculated with <m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:msub>
-     <m:mi>t</m:mi>
-     <m:mrow>
-      <m:mfrac>
-       <m:mi>α</m:mi>
-       <m:mn>2</m:mn>
-      </m:mfrac>
-
-     </m:mrow>
-    </m:msub>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow><m:mfrac>
-   <m:mi>s</m:mi>
-   <m:mrow>
-    <m:msqrt>
-     <m:mi>n</m:mi>
-    </m:msqrt>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math> where <m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-
- </m:mrow>
-</m:math> is the <m:math><m:mi>t</m:mi></m:math>-score with area to the right equal to <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
-
- </m:mrow>
-</m:math>, <m:math><m:mi>s</m:mi></m:math> is the sample standard deviation, and <m:math><m:mi>n</m:mi></m:math> is the sample size. Use a table, calculator, or computer to find <m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-
- </m:mrow>
-</m:math> for a given <m:math><m:mi>α</m:mi></m:math>.</para></section>
-<section id="eip-428" class="formula-review">
-<title>Formula Review</title>
-<para id="eip-987"><m:math><m:mi>s</m:mi></m:math> = the standard deviation of sample values.
-</para>
- <para id="eip-11"><m:math>
- <m:mrow>
-  <m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac>
-   <m:mrow>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-    <m:mo>−</m:mo><m:mi>μ</m:mi>
-   </m:mrow>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>s</m:mi>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math> is the formula for the <m:math><m:mi>t</m:mi></m:math>-score which measures how far away a measure is from the population mean in the Student’s t-distribution</para>
-<para id="eip-995"><m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>; the degrees of freedom for a Student’s t-distribution where n represents the size of the sample</para>
-<para id="eip-288"><m:math><m:mi>T</m:mi></m:math>~<emphasis effect="italics">t<sub>df</sub></emphasis> the random variable, <m:math><m:mi>T</m:mi></m:math>, has a Student’s t-distribution with <m:math><m:mtext>df</m:mtext></m:math> degrees of freedom</para>
-<para id="eip-635"><m:math>
- <m:mrow>
-  <m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-  <m:mfrac>
-   <m:mi>s</m:mi>
-   <m:mrow>
-    <m:msqrt>
-     <m:mi>n</m:mi>
-    </m:msqrt>
-
-   </m:mrow>
-  </m:mfrac>
-
- </m:mrow>
-</m:math> = the error bound for the population mean when the population standard deviation is unknown</para>
-<para id="eip-110"><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-
- </m:mrow>
-</m:math> is the <m:math><m:mi>t</m:mi></m:math>-score in the Student’s t-distribution with area to the right equal to <m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
-
- </m:mrow>
-</m:math></para>
-<para id="fs-idm169440128">The general form for a confidence interval for a single mean, population standard deviation unknown, Student's t is given by (lower bound, upper bound)
-<newline/>= (point estimate – <m:math><m:mtext>EBM</m:mtext></m:math>, point estimate + <m:math><m:mtext>EBM</m:mtext></m:math>)
-<newline/>= <m:math>
- <m:mrow>
-  <m:mrow><m:mo>(</m:mo>
-   <m:mrow>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-    <m:mo>−</m:mo><m:mfrac>
-     <m:mrow>
-      <m:mi>t</m:mi><m:mi>s</m:mi>
-     </m:mrow>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-    <m:mo>,</m:mo><m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-    <m:mtext>+ </m:mtext><m:mfrac>
-     <m:mrow>
-      <m:mi>t</m:mi><m:mi>s</m:mi>
-     </m:mrow>
-     <m:mrow>
-      <m:msqrt>
-       <m:mi>n</m:mi>
-      </m:msqrt>
-
-     </m:mrow>
-    </m:mfrac>
-
-   </m:mrow>
-  <m:mo>)</m:mo></m:mrow>
- </m:mrow>
-</m:math></para></section>
-<section id="eip-568" class="practice">
-<para id="eip-517"><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> A hospital is trying to cut down on emergency room wait times. It is interested in the amount of time patients must wait before being called back to be examined. An investigation committee randomly surveyed 70 patients. The sample mean was 1.5 hours with a sample standard deviation of 0.5 hours.</para>
-<exercise id="eip-761"><problem id="eip-280">
-  <para id="eip-271">Identify the following:  </para>
- <list id="fs-idm169488192" list-type="enumerated" number-style="lower-alpha">
-<item>
-<m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> =_______</item>
- <item>
- <m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>s</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-
- </m:mrow>
-</m:math> =_______</item>
- <item><m:math><m:mi>n</m:mi></m:math> =_______</item>
- <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> =_______</item>
-</list></problem>
-</exercise><exercise id="eip-589"><problem id="eip-841">
-  <para id="eip-213">Define the random variables <m:math><m:mi>X</m:mi></m:math> and <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> in words.</para>
-</problem>
-<solution id="eip-771">
-  <para id="eip-673"><m:math><m:mi>X</m:mi></m:math> is the number of hours a patient waits in the emergency room before being called back to be examined. <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> is the mean wait time of 70 patients in the emergency room.</para></solution>
-</exercise>
-<exercise id="eip-709"><problem id="eip-983">
-  <para id="eip-555">Which distribution should you use for this problem?</para>
-</problem>
-</exercise><exercise id="eip-624">
-<problem id="eip-477">
-  <para id="eip-158">Construct a 95% confidence interval for the population mean time spent waiting. State the confidence interval, sketch the graph, and calculate the error bound.</para>
-</problem>
-<solution id="eip-501">
-  <para id="eip-334">CI: (1.3808, 1.6192)</para>
- <figure class="scaled-down" id="fs-idm150372688"><media id="eip-idp2023440" alt="This is a normal distribution curve. The peak of the curve coincides with the point 1.5 on the horizontal axis.  A central region is shaded between points 1.38 and 1.62."><image src="../../media/CNX_Stats_C08_M03_item001anno.png" mime-type="image/png"/></media></figure><para id="eip-idm67620928">
-<m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>0.12</m:mn></m:math></para>
-</solution>
-</exercise>
-<exercise id="eip-469"><problem id="eip-552">
-  <para id="eip-785">Explain in complete sentences what the confidence interval means.</para>
-</problem>
-</exercise><para id="eip-724"><newline/><emphasis effect="italics">Use the following information to answer the next six exercises:</emphasis> One hundred eight Americans were surveyed to determine the number of hours they spend watching television each month. It was revealed that they watched an average of 151 hours each month with a standard deviation of 32 hours. Assume that the underlying population distribution is normal.</para><exercise id="eip-817"><problem id="eip-671">
-  <para id="eip-716">Identify the following:</para>
- <list id="fs-idm137662144" list-type="enumerated" number-style="lower-alpha"><item><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> =_______</item>
-<item><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>s</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-
- </m:mrow>
-</m:math> =_______</item>
-  <item><m:math><m:mi>n</m:mi></m:math> =_______</item>
-  <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> =_______</item>
-</list></problem>
-<solution id="eip-123">
- <list id="fs-idm117900288" list-type="enumerated" number-style="lower-alpha"><item>
- <m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-<m:mo>=</m:mo><m:mn>151</m:mn></m:math></item>
-<item>
-<m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>s</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-
- </m:mrow>
-<m:mo>=</m:mo><m:mn>32</m:mn></m:math></item>
-<item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>108</m:mn></m:math></item>
-<item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>107</m:mn></m:math></item>
-</list></solution>
-</exercise>
-<exercise id="eip-225"><problem id="eip-586">
-  <para id="eip-675">Define the random variable <m:math><m:mi>X</m:mi></m:math> in words.</para>
-</problem>
-</exercise><exercise id="eip-810">
-<problem id="eip-816">
-  <para id="eip-629">Define the random variable <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> in words.</para>
-</problem>
-<solution id="eip-823">
-  <para id="eip-495"><m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> is the mean number of hours spent watching television per month from a sample of 108 Americans.</para></solution>
-</exercise><exercise id="eip-72"><problem id="eip-425">
-  <para id="eip-578">Which distribution should you use for this problem?</para>
-</problem>
-</exercise><exercise id="eip-82"><problem id="eip-528">
-  <para id="eip-489">Construct a 99% confidence interval for the population mean hours spent watching television per month. (a) State the confidence interval, (b) sketch the graph, and (c) calculate the error bound.</para>
-</problem>
-<solution id="eip-35">
- <para id="eip-id1169812910484">CI: (142.92, 159.08)<newline/>
-
-  <figure class="scaled-down" id="fs-idm53713472"><media id="eip-idm24726752" alt="This is a normal distribution curve. The peak of the curve coincides with the point 151 on the horizontal axis.  A central region is shaded between points 142.92 and 159.08."><image src="../../media/CNX_Stats_C08_M03_item002anno.png" mime-type="image/png"/></media></figure>
-<newline/><m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>8.08</m:mn></m:math>
-</para>
-</solution>
-</exercise><exercise id="eip-793"><problem id="eip-727">
-  <para id="eip-524">Why would the error bound change if the confidence level were lowered to 95%?</para>
-</problem>
-</exercise><para id="element-59"><newline/><emphasis effect="italics">Use the following information to answer the next 13 exercises:</emphasis> The data in <link target-id="element-181" document=""/> are the result of a random survey of 39 national flags (with replacement between picks) from various countries. We are interested in finding a confidence interval for the true mean number of colors on a national flag. Let <m:math><m:mi>X</m:mi></m:math> = the number of colors on a national flag.</para><table id="element-181" summary="This table presents the X values (1-5) in the first column and the frequency in the second column.">
-<tgroup cols="2">
-<colspec colnum="1" colname="c1"/>
-<colspec colnum="2" colname="c2"/>
-       <thead>
-<row>
-<entry><m:math><m:mi>X</m:mi></m:math></entry>
-<entry>Freq.</entry>
-</row>
-      </thead>
-<tbody>
-<row>
-<entry align="center">1</entry>
-<entry align="center">1</entry>
-</row>
-<row>
-<entry align="center">2</entry>
-<entry align="center">7</entry>
-</row>
-<row>
-<entry align="center">3</entry>
-<entry align="center">18</entry>
-</row>
-<row>
-<entry align="center">4</entry>
-<entry align="center">7</entry>
-</row><row>
-<entry align="center">5</entry>
-<entry align="center">6</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
-<exercise id="element-953"><problem id="id45583482">
- <para id="element-234525">
-Calculate the following:
-</para>
-  <list id="list-87678" list-type="enumerated" number-style="lower-alpha">
-   <item><m:math>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-   </m:math> =______</item>
-   <item><m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>s</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-
- </m:mrow>
-</m:math> =______</item>
-   <item><m:math><m:mi>n</m:mi></m:math> =______</item>
-</list>
-
-</problem>
-<solution id="id45593982">
- <list id="list-827634" list-type="enumerated" number-style="lower-alpha">
-<item>3.26</item>
-<item>1.02</item>
-<item>39</item>
-</list>
-</solution>
-</exercise>
- <exercise id="element-62"><problem id="id45594056">
-  <para id="element-588">Define the random variable <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math> in words.</para>
-</problem>
- </exercise><exercise id="element-212">
-<problem id="id45594158">
-  <para id="element-703">What is <m:math>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-
-   </m:math> estimating?</para>
-</problem>
-<solution id="id45594200">
-  <para id="element-760"><m:math><m:mi>μ</m:mi></m:math></para>
-</solution>
- </exercise>
- <exercise id="element-704"><problem id="id45594258">
-  <para id="element-695">Is <m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>σ</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-
- </m:mrow>
-</m:math> known?</para>
-</problem>
-</exercise><exercise id="element-164"><problem id="id45594330">
-  <para id="element-339">As a result of your answer to <link target-id="element-704" document=""/>, state the exact distribution to use when calculating the confidence interval.</para></problem>
-<solution id="id45594350">
- <para id="element-875"><m:math><m:mi>t</m:mi></m:math><sub>38</sub></para>
-</solution>
-</exercise>
-<para id="element-548"><newline count="1"/><emphasis effect="italics">Construct a 95% confidence interval for the true mean number of colors on national flags.</emphasis></para><exercise id="element-425"><problem id="id45959436">
-  <para id="element-325">How much area is in both tails (combined)?</para>
-</problem>
-</exercise><exercise id="element-945"><problem id="id45959507">
-  <para id="element-260">How much area is in each tail?</para>
-</problem>
-<solution id="id45959554">
-  <para id="element-697">0.025</para>
-</solution>
-</exercise>
-<exercise id="element-526"><problem id="id45959582">
-<para id="element-2354253">Calculate the following:
- <list id="list-76787865" list-type="enumerated" number-style="lower-alpha">
-  <item>lower limit</item>
-  <item>upper limit</item>
-  <item>error bound</item>
-</list></para>
-</problem>
-</exercise><exercise id="element-363"><problem id="id45959730">
- <para id="element-434">The 95% confidence interval is_____.</para>
-</problem>
-<solution id="id45959750">
-  <para id="element-350">(2.93, 3.59)</para>
-</solution>
-</exercise>
- <exercise id="element-188"><problem id="id45959778">
-  <para id="element-726">Fill in the blanks on the graph with the areas, the upper and lower limits of the Confidence Interval and the sample mean.</para>
-<figure class="scaled-down" id="five5"><media id="id45959805" alt="This is a template of a normal distribution curve with the central region shaded to represent a confidence interval. The residual areas are on either side of the shaded region. Blanks indicate that students should label the confidence level, residual areas, and points that define the confidence interval.">
-<image src="../../media/fig-ch08_07_01.png" mime-type="image/png"/></media></figure>
-</problem>
- </exercise><exercise id="element-499"><problem id="id45959843">
-  <para id="fs-idp7770160">In one complete sentence, explain what the interval means.</para>
-</problem>
-<solution id="eip-idm51678224">
-<para id="eip-idp98208704">We are 95% confident that the true mean number of colors for national flags is between 2.93 colors and 3.59 colors.</para>
-</solution>
-</exercise><exercise id="element-542"><problem id="id46274989">
-<para id="one">
- Using the same <m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
-
-</m:math>, <m:math>
- <m:mrow>
-  <m:msub>
-   <m:mi>s</m:mi>
-   <m:mi>x</m:mi>
-  </m:msub>
-
- </m:mrow>
-</m:math>, and level of confidence, suppose that <m:math><m:mi>n</m:mi></m:math> were 69 instead of 39. Would the error bound become larger or smaller? How do you know?</para>
-</problem>
-<solution id="eip-idm61120128">
-<para id="eip-idm61119872">The error bound would become EBM = 0.245. This error bound decreases because as sample sizes increase, variability decreases and we need less interval length to capture the true mean.</para>
-</solution></exercise><exercise id="element-939"><problem id="id46275081">
-  <para id="element-111">Using the same <m:math>
-   <m:mover accent="true">
-    <m:mi>x</m:mi>
-    <m:mo>¯</m:mo>
-   </m:mover></m:math>, <m:math>
-    <m:mrow>
-     <m:msub>
-      <m:mi>s</m:mi>
-      <m:mi>x</m:mi>
-     </m:msub>
-    </m:mrow>
-   </m:math>, and <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>39</m:mn></m:math>, how would the error bound change if the confidence level were reduced to 90%? Why?</para>
-</problem>
-</exercise>
-</section>
-<section id="fs-idp293092128" class="free-response">
-<title>Homework</title>
-<exercise id="exer2">
-<problem id="id6354520">
-<para id="para2">In six packages of “The Flintstones® Real Fruit Snacks” there were five Bam-Bam snack pieces. The total number of snack pieces in the six bags was 68. We wish to calculate a 96% confidence interval for the population proportion of Bam-Bam snack pieces.</para>
- <list id="list5" list-type="enumerated" number-style="lower-alpha">
-  <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and
+    <md:content-id>m47001</md:content-id>
+    <md:title>Confidence Intervals for a Single Population Mean using the Student’s t-Distribution</md:title>
+    <md:abstract/>
+    <md:uuid>fda17024-5770-4f8f-b3fd-26217c74bd4b</md:uuid>
+  </metadata>
+  <content>
+    <para id="para-00001">In practice, we rarely know the population standard deviation. In the past, when the sample size was large, this did not present a problem to statisticians. They used the sample standard deviation <m:math><m:mi>s</m:mi></m:math> as an estimate for <m:math><m:mi>σ</m:mi></m:math> and proceeded as before to calculate a confidence interval with close enough results. However, statisticians ran into problems when the sample size was small. A small sample size caused inaccuracies in the confidence interval.</para>
+    <section id="sect-00001">
+      <title>Student’s t-Distribution</title>
+      <para id="para-00002">William S. Gosset (1876–1937) of the Guinness brewery in Dublin, Ireland, ran into this problem. His experiments with hops and barley produced very few samples. Just replacing <m:math><m:mi>σ</m:mi></m:math> with <m:math><m:mi>s</m:mi></m:math> did not produce accurate results when he tried to calculate a confidence interval. He realized that he could not use a normal distribution for the calculation; he found that the actual distribution depends on the sample size. This problem led him to “discover” what is called the Student’s t-distribution. The name comes from the fact that Gosset wrote under the pen name “Student.”</para>
+      <para id="para-00003">Up until the mid-1970s, some statisticians used the normal distribution approximation for large sample sizes and used the Student’s t-distribution only for sample sizes of at most 30. With graphing calculators and computers, the practice now is to use the Student’s t-distribution whenever <m:math><m:mi>s</m:mi></m:math> is used as an estimate for <m:math><m:mi>σ</m:mi></m:math>.</para>
+      <para id="para-00004">If you draw a simple random sample of size <m:math><m:mi>n</m:mi></m:math> from a population that has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math> and calculate the <m:math><m:mi>t</m:mi></m:math>-score <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>, then the <m:math><m:mi>t</m:mi></m:math>-scores follow a <emphasis>Student’s t-distribution with n − 1 degrees of freedom</emphasis>. The <m:math><m:mi>t</m:mi></m:math>-score has the same interpretation as the <m:math><m:mi>z</m:mi></m:math>-score. It measures how far <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from its mean <m:math><m:mi>μ</m:mi></m:math>. For each sample size <m:math><m:mi>n</m:mi></m:math>, there is a different Student’s t-distribution.</para>
+      <para id="para-00005">The degrees of freedom, <emphasis>n − 1</emphasis>, come from the calculation of the sample standard deviation <emphasis>s</emphasis>. This calculation requires <m:math><m:mi>n</m:mi></m:math> deviations <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mtext/><m:mtext>values</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. Because the sum of the deviations is zero, we can find the last deviation once we know the other <emphasis>n − 1</emphasis> deviations. The other <emphasis>n − 1</emphasis> deviations can change or vary freely. <emphasis>We call the number n − 1 the degrees of freedom (df).</emphasis></para>
+      <section id="sect-00002">
+        <title>Properties of the Student’s t-Distribution</title>
+        <list list-type="bulleted" id="list-00001">
+          <item>The graph for the Student’s t-distribution is similar to the standard normal curve.</item>
+          <item>The mean for the Student’s t-distribution is zero and the distribution is symmetric about zero.</item>
+          <item>The Student’s t-distribution has more probability in its tails than the standard normal distribution because the spread of the t-distribution is greater than the spread of the standard normal. So the graph of the Student’s t-distribution will be thicker in the tails and shorter in the center than the graph of the standard normal distribution.</item>
+          <item>The exact shape of the Student’s t-distribution depends on the degrees of freedom. As the degrees of freedom increases, the graph of Student’s t-distribution becomes more like the graph of the standard normal distribution.</item>
+          <item>The underlying population of individual observations is assumed to be normally distributed with unknown population mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math>. The size of the underlying population is generally not relevant unless it is very small. If it is bell shaped (normal) then the assumption is met and doesn’t need discussion. Note that random sampling is also assumed; this is a separate condition from the normality assumption above.</item>
+        </list>
+      </section>
+      <para id="para-00006">The figure below shows a comparison of how the degrees of freedom impact Student’s t-distribution, and how this distribution ultimately compares to the standard normal distribution. Notice that as the degrees of freedom get larger, Student’s t-distribution begins to mimic the normal distribution.</para>
+      <figure id="fig-00001">
+        <media alt="A graph comparing several Student’s t-distributions with different degrees of freedom against the standard normal distribution. Curves with more degrees of freedom are taller in the center and thinner in the tails, approaching the standard normal curve.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img1.png"/>
+        </media>
+      </figure>
+      <para id="para-00007">Calculators and computers can easily calculate any Student’s t-probabilities. The TI-83, 83+, and 84+ have a tcdf function to find the probability for given values of <m:math><m:mi>t</m:mi></m:math>. The syntax for the tcdf command is <code>tcdf</code>(lower bound, upper bound, degrees of freedom). However for confidence intervals, we need to use <emphasis>inverse</emphasis> probability to find the value of <m:math><m:mi>t</m:mi></m:math> when we know the probability.</para>
+      <para id="para-00008">For the TI-84+ you can use the invT command on the DISTRibution menu. The invT command works similarly to the invnorm. The invT command requires two inputs: <emphasis>invT(area to the left, degrees of freedom)</emphasis>. The output is the t-score that corresponds to the area we specified.<newline/>The TI-83 and 83+ do not have the invT command. (The TI-89 has an inverse T command.)</para>
+      <para id="para-00009">A probability table for the Student’s t-distribution can also be used. The table gives t-scores that correspond to the confidence level (column) and degrees of freedom (row). (The TI-86 does not have an invT program or command, so if you are using that calculator, you need to use a probability table for the Student’s t-Distribution.) When using a <m:math><m:mi>t</m:mi></m:math>-table, note that some tables are formatted to show the confidence level in the column headings, while the column headings in some tables may show only corresponding area in one or both tails.</para>
+      <para id="para-00010">A Student’s t table (see <link document="m47875">Appendix H Tables</link>) gives <m:math><m:mi>t</m:mi></m:math>-scores given the degrees of freedom and the right-tailed probability. The table is very limited. <emphasis>Calculators and computers can easily calculate any Student’s t-probabilities.</emphasis></para>
+      <para id="para-00011">
+        <emphasis>The notation for the Student’s t-distribution (using T as the random variable) is:</emphasis>
+      </para>
+      <list list-type="bulleted" id="list-00002">
+        <item><m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow></m:msub></m:math> where <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>.</item>
+        <item>For example, if we have a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> items, then we calculate the degrees of freedom as <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math> and we write the distribution as <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>19</m:mn></m:mrow></m:msub></m:math>.</item>
+      </list>
+    </section>
+    <section id="sect-00003">
+      <title>Calculating a Confidence Interval when the Population Standard Deviation is Not Known</title>
+      <para id="para-00012">When the population standard deviation <m:math><m:mi>σ</m:mi></m:math> is not known, we use the sample standard deviation <m:math><m:mi>s</m:mi></m:math> and Student’s t-distribution. The error bound for a population mean is:</para>
+      <list list-type="bulleted" id="list-00003">
+        <item><m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>,</item>
+        <item><m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub></m:math> is the <m:math><m:mi>t</m:mi></m:math>-score with area to the right equal to <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:math>,</item>
+        <item>use <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom, and</item>
+        <item><m:math><m:mi>s</m:mi></m:math> = sample standard deviation.</item>
+      </list>
+      <para id="para-00013">
+        <emphasis>The format for the confidence interval is:</emphasis>
+      </para>
+      <equation class="unnumbered" id="eq-00001">
+        <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>,</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext/><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
+      </equation>
+      <note class="statistics calculator" id="note-00001">
+        <para id="para-00014">To calculate the confidence interval directly:<newline/>Press <code>STAT</code>.<newline/>Arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or just press 8).</para>
+      </note>
+      <example id="exam-00001">
+        <exercise id="exer-00001">
+          <problem id="prob-00001">
+            <para id="para-00015">Suppose you do a study of acupuncture to determine how effective it is in relieving pain. You measure sensory rates for 15 subjects with the results given. Use the sample data to construct a 95% confidence interval for the mean sensory rate for the population (assumed normal) from which you took the data.<newline/>The solution is shown step-by-step and by using the TI-83, 83+, or 84+ calculators.</para>
+            <para id="para-00016">8.6; 9.4; 7.9; 6.8; 8.3; 7.3; 9.2; 9.6; 8.7; 11.4; 10.3; 5.4; 8.1; 5.5; 6.9</para>
+          </problem>
+          <solution id="sol-00001">
+            <list list-type="bulleted" id="list-00004">
+              <item>The first solution is step-by-step.</item>
+              <item>The second solution uses the TI-83+ and TI-84 calculators.</item>
+            </list>
+            <para id="para-00017">To find the confidence interval, you need the sample mean, <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>, and the <m:math><m:mtext>EBM</m:mtext></m:math>.</para>
+            <para id="para-00018">
+              <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>8.2267</m:mn><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>1.6722</m:mn><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math>
+            </para>
+            <para id="para-00019"><m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>14</m:mn><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.95</m:mn></m:math> so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.95</m:mn><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math></para>
+            <para id="para-00020">
+              <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.025</m:mn></m:math>
+              <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math>
+            </para>
+            <para id="para-00021">The area to the right of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 0.025, and the area to the left of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub></m:math> is 1 − 0.025 = 0.975.</para>
+            <para id="para-00022"><m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.025</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2.145</m:mn></m:math> using invT(.975,14) on the TI-84+ calculator.</para>
+            <equation class="unnumbered" id="eq-00002">
+              <m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
+            </equation>
+            <equation class="unnumbered" id="eq-00003">
+              <m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>2.145</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1.6722</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>15</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.926</m:mn></m:math>
+            </equation>
+            <para id="para-00023">
+              <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>8.2267</m:mn><m:mo>−</m:mo><m:mn>0.926</m:mn><m:mo>=</m:mo><m:mn>7.30</m:mn></m:math>
+            </para>
+            <para id="para-00024">
+              <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>8.2267</m:mn><m:mo>+</m:mo><m:mn>0.926</m:mn><m:mo>=</m:mo><m:mn>9.15</m:mn></m:math>
+            </para>
+            <para id="para-00025">The 95% confidence interval is (7.30, 9.15).</para>
+            <para id="para-00026">We estimate with 95% confidence that the true population mean sensory rate is between 7.30 and 9.15. The figure below shows the associated distributions for this situation:</para>
+            <figure id="fig-00002">
+              <media alt="A figure showing the associated distributions for the 95% confidence interval: a Student’s t-distribution with the middle 95% area marked and the corresponding sample mean interval from 7.30 to 9.15 centered at 8.2267.">
+                <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img2.png"/>
+              </media>
+            </figure>
+          </solution>
+          <solution id="sol-00002">
+            <para id="para-00027">
+              <emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis>
+            </para>
+            <para id="para-00028">Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>).<newline/>Arrow to <code>Data</code> and press <code>ENTER</code>.<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.<newline/>There should be a 1 after <code>Freq</code>.<newline/>Arrow down to <code>C-level</code> and enter 0.95<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The 95% confidence interval is (7.3006, 9.1527).</para>
+          </solution>
+        </exercise>
+        <note class="statistics note" id="note-00002">
+          <title>NOTE</title>
+          <para id="para-00029">When calculating the error bound, a probability table for the Student’s t-distribution can also be used to find the value of <m:math><m:mi>t</m:mi></m:math>. The table gives <m:math><m:mi>t</m:mi></m:math>-scores that correspond to the confidence level (column) and degrees of freedom (row); the <m:math><m:mi>t</m:mi></m:math>-score is found where the row and column intersect in the table.</para>
+        </note>
+      </example>
+      <note class="statistics try" id="note-00003">
+        <title>Try It</title>
+        <exercise id="exer-00002">
+          <problem id="prob-00002">
+            <para id="para-00030">You do a study of hypnotherapy to determine how effective it is in increasing the number of hours of sleep subjects get each night. You measure hours of sleep for 12 subjects with the following results. Construct a 95% confidence interval for the mean number of hours slept for the population (assumed normal) from which you took the data.</para>
+            <para id="para-00031">8.2; 9.1; 7.7; 8.6; 6.9; 11.2; 10.1; 9.9; 8.9; 9.2; 7.5; 10.5</para>
+          </problem>
+        </exercise>
+      </note>
+      <example id="exam-00002">
+        <exercise id="exer-00003">
+          <problem id="prob-00003">
+            <para id="para-00032">The Human Toxome Project (HTP) is working to understand the scope of industrial pollution in the human body. Industrial chemicals may enter the body through pollution or as ingredients in consumer products. The scientists at HTP tested cord blood samples for 20 newborn infants in the United States. The cord blood of the “In utero/newborn” group was tested for 430 industrial compounds, pollutants, and other chemicals, including chemicals linked to brain and nervous system toxicity, immune system toxicity, and reproductive toxicity, and fertility problems. There are health concerns about the effects of some chemicals on the brain and nervous system. <link target-id="fs-c8-tbl-8-3"/> shows how many of the targeted chemicals were found in each infant’s cord blood.</para>
+            <table id="fs-c8-tbl-8-3" summary="The number of targeted industrial chemicals found in the cord blood of each of 20 newborn infants.">
+              <title>Table 8.3</title>
+              <tgroup cols="10">
+                <tbody>
+                  <row>
+                    <entry>79</entry>
+                    <entry>145</entry>
+                    <entry>147</entry>
+                    <entry>160</entry>
+                    <entry>116</entry>
+                    <entry>100</entry>
+                    <entry>159</entry>
+                    <entry>151</entry>
+                    <entry>156</entry>
+                    <entry>126</entry>
+                  </row>
+                  <row>
+                    <entry>137</entry>
+                    <entry>83</entry>
+                    <entry>156</entry>
+                    <entry>94</entry>
+                    <entry>121</entry>
+                    <entry>144</entry>
+                    <entry>123</entry>
+                    <entry>114</entry>
+                    <entry>139</entry>
+                    <entry>99</entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+            <para id="para-00033">Use this sample data to construct a 90% confidence interval for the mean number of targeted industrial chemicals to be found in an infant’s blood.</para>
+          </problem>
+          <solution id="sol-00003">
+            <para id="para-00034">From the sample, you can calculate <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>127.45</m:mn></m:math> and <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>25.965</m:mn></m:math>. There are 20 infants in the sample, so <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math>, and <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math>.</para>
+            <para id="para-00035">You are asked to calculate a 90% confidence interval: <m:math><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.90</m:mn></m:math>, so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.90</m:mn><m:mo>=</m:mo><m:mn>0.10</m:mn></m:math>    <m:math><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.05</m:mn><m:mo>,</m:mo><m:mspace width="1em"/><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math></para>
+            <para id="para-00036">By definition, the area to the right of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 0.05 and so the area to the left of <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub></m:math> is 1 − 0.05 = 0.95.</para>
+            <para id="para-00037">Use a table, calculator, or computer to find that <m:math><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.05</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>1.729</m:mn></m:math>.</para>
+            <equation class="unnumbered" id="eq-00004">
+              <m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mrow><m:mi>α</m:mi></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msub><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1.729</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>25.965</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>20</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>10.038</m:mn></m:math>
+            </equation>
+            <para id="para-00038">
+              <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>127.45</m:mn><m:mo>−</m:mo><m:mn>10.038</m:mn><m:mo>=</m:mo><m:mn>117.412</m:mn></m:math>
+            </para>
+            <para id="para-00039">
+              <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>127.45</m:mn><m:mo>+</m:mo><m:mn>10.038</m:mn><m:mo>=</m:mo><m:mn>137.488</m:mn></m:math>
+            </para>
+            <para id="para-00040">We estimate with 90% confidence that the mean number of all targeted industrial chemicals found in cord blood in the United States is between 117.412 and 137.488.</para>
+          </solution>
+          <solution id="sol-00004">
+            <para id="para-00041">
+              <emphasis>Using the TI-83, 83+, 84, 84+ Calculator</emphasis>
+            </para>
+            <para id="para-00042">Enter the data as a list.<newline/>Press <code>STAT</code> and arrow over to <code>TESTS</code>.<newline/>Arrow down to <code>8:TInterval</code> and press <code>ENTER</code> (or you can just press <code>8</code>). Arrow to Data and press <code>ENTER</code>.<newline/>Arrow down to <code>List</code> and enter the list name where you put the data.<newline/>Arrow down to <code>Freq</code> and enter 1.<newline/>Arrow down to <code>C-level</code> and enter 0.90<newline/>Arrow down to <code>Calculate</code> and press <code>ENTER</code>.<newline/>The 90% confidence interval is (117.41, 137.49).</para>
+          </solution>
+        </exercise>
+      </example>
+      <note class="statistics try" id="note-00004">
+        <title>Try It</title>
+        <exercise id="exer-00004">
+          <problem id="prob-00004">
+            <para id="para-00043">A random sample of statistics students were asked to estimate the total number of hours they spend watching television in an average week. The responses are recorded in <link target-id="fs-c8-tbl-8-4"/>. Use this sample data to construct a 98% confidence interval for the mean number of hours statistics students will spend watching television in one week.</para>
+            <table id="fs-c8-tbl-8-4" summary="Hours per week spent watching television reported by a sample of statistics students.">
+              <title>Table 8.4</title>
+              <tgroup cols="5">
+                <tbody>
+                  <row>
+                    <entry>0</entry>
+                    <entry>3</entry>
+                    <entry>1</entry>
+                    <entry>20</entry>
+                    <entry>9</entry>
+                  </row>
+                  <row>
+                    <entry>5</entry>
+                    <entry>10</entry>
+                    <entry>1</entry>
+                    <entry>10</entry>
+                    <entry>4</entry>
+                  </row>
+                  <row>
+                    <entry>14</entry>
+                    <entry>2</entry>
+                    <entry>4</entry>
+                    <entry>4</entry>
+                    <entry>5</entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </problem>
+        </exercise>
+      </note>
+    </section>
+    <section id="eip-400" class="references">
+      <title>References</title>
+      <para id="eip-idp72771968">“America’s Best Small Companies.” Forbes, 2013. Available online at http://www.forbes.com/best-small-companies/list/ (accessed July 2, 2013).</para>
+      <para id="eip-idm62303392">Data from <emphasis effect="italics">Microsoft Bookshelf</emphasis>.</para>
+      <para id="eip-idm46745392">Data from http://www.businessweek.com/.</para>
+      <para id="eip-idp72771584">Data from http://www.forbes.com/.</para>
+      <para id="eip-idp90955712">“Disclosure Data Catalog: Leadership PAC and Sponsors Report, 2012.” Federal Election Commission. Available online at http://www.fec.gov/data/index.jsp (accessed July 2,2013).</para>
+      <para id="eip-idm101744816">“Human Toxome Project: Mapping the Pollution in People.” Environmental Working Group. Available online at http://www.ewg.org/sites/humantoxome/participants/participant-group.php?group=in+utero%2Fnewborn (accessed July 2, 2013).</para>
+      <para id="eip-idp90954816">“Metadata Description of Leadership PAC List.” Federal Election Commission. Available online at http://www.fec.gov/finance/disclosure/metadata/metadataLeadershipPacList.shtml (accessed July 2, 2013).</para>
+    </section>
+    <section id="eip-447" class="summary">
+      <title>Chapter Review</title>
+      <para id="eip-895">In many cases, the researcher does not know the population standard deviation, <m:math><m:mi>σ</m:mi></m:math>, of the measure being studied. In these cases, it is common to use the sample standard deviation, <m:math><m:mi>s</m:mi></m:math>, as an estimate of <m:math><m:mi>σ</m:mi></m:math>. The normal distribution creates accurate confidence intervals when <m:math><m:mi>σ</m:mi></m:math> is known, but it is not as accurate when <m:math><m:mi>s</m:mi></m:math> is used as an estimate. In this case, the Student’s t-distribution is much better. Define a t-score using the following formula:</para>
+      <para id="eip-828">
+        <m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac bevelled="true"><m:mi>s</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math>
+      </para>
+      <para id="eip-305">The <m:math><m:mi>t</m:mi></m:math>-score follows the Student’s t-distribution with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom. The confidence interval under this distribution is calculated with <m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub></m:mrow><m:mo>)</m:mo></m:mrow><m:mfrac><m:mi>s</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> where <m:math><m:mrow><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub></m:mrow></m:math> is the <m:math><m:mi>t</m:mi></m:math>-score with area to the right equal to <m:math><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>, <m:math><m:mi>s</m:mi></m:math> is the sample standard deviation, and <m:math><m:mi>n</m:mi></m:math> is the sample size. Use a table, calculator, or computer to find <m:math><m:mrow><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub></m:mrow></m:math> for a given <m:math><m:mi>α</m:mi></m:math>.</para>
+    </section>
+    <section id="eip-428" class="formula-review">
+      <title>Formula Review</title>
+      <para id="eip-987"><m:math><m:mi>s</m:mi></m:math> = the standard deviation of sample values.
+      </para>
+      <para id="eip-11"><m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mi>s</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:mrow></m:math> is the formula for the <m:math><m:mi>t</m:mi></m:math>-score which measures how far away a measure is from the population mean in the Student’s t-distribution</para>
+      <para id="eip-995"><m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>; the degrees of freedom for a Student’s t-distribution where n represents the size of the sample</para>
+      <para id="eip-288"><m:math><m:mi>T</m:mi></m:math>~<emphasis effect="italics">t<sub>df</sub></emphasis> the random variable, <m:math><m:mi>T</m:mi></m:math>, has a Student’s t-distribution with <m:math><m:mtext>df</m:mtext></m:math> degrees of freedom</para>
+      <para id="eip-635"><m:math><m:mrow><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub><m:mfrac><m:mi>s</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math> = the error bound for the population mean when the population standard deviation is unknown</para>
+      <para id="eip-110"><m:math><m:mrow><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub></m:mrow></m:math> is the <m:math><m:mi>t</m:mi></m:math>-score in the Student’s t-distribution with area to the right equal to <m:math><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:math></para>
+      <para id="fs-idm169440128">The general form for a confidence interval for a single mean, population standard deviation unknown, Student's t is given by (lower bound, upper bound)
+        <newline/>= (point estimate – <m:math><m:mtext>EBM</m:mtext></m:math>, point estimate + <m:math><m:mtext>EBM</m:mtext></m:math>)
+        <newline/>= <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>−</m:mo><m:mfrac><m:mrow><m:mi>t</m:mi><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac><m:mo>,</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mtext>+ </m:mtext><m:mfrac><m:mrow><m:mi>t</m:mi><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></para>
+    </section>
+    <section id="eip-568" class="practice">
+      <para id="eip-517"><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> A hospital is trying to cut down on emergency room wait times. It is interested in the amount of time patients must wait before being called back to be examined. An investigation committee randomly surveyed 70 patients. The sample mean was 1.5 hours with a sample standard deviation of 0.5 hours.</para>
+        <exercise id="eip-761">
+        <problem id="eip-280">
+          <para id="eip-271">Identify the following:  </para>
+          <list id="fs-idm169488192" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> =_______</item>
+            <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> =_______</item>
+            <item><m:math><m:mi>n</m:mi></m:math> =_______</item>
+            <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> =_______</item>
+          </list>
+        </problem>
+      </exercise>
+        <exercise id="eip-589">
+        <problem id="eip-841">
+          <para id="eip-213">Define the random variables <m:math><m:mi>X</m:mi></m:math> and <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</para>
+        </problem>
+        <solution id="eip-771">
+          <para id="eip-673"><m:math><m:mi>X</m:mi></m:math> is the number of hours a patient waits in the emergency room before being called back to be examined. <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> is the mean wait time of 70 patients in the emergency room.</para>
+        </solution>
+      </exercise>
+        <exercise id="eip-709">
+        <problem id="eip-983">
+          <para id="eip-555">Which distribution should you use for this problem?</para>
+        </problem>
+      </exercise>
+        <exercise id="eip-624">
+        <problem id="eip-477">
+          <para id="eip-158">Construct a 95% confidence interval for the population mean time spent waiting. State the confidence interval, sketch the graph, and calculate the error bound.</para>
+        </problem>
+        <solution id="eip-501">
+          <para id="eip-334">CI: (1.3808, 1.6192)</para>
+          <figure class="scaled-down" id="fs-idm150372688">
+            <media id="eip-idp2023440" alt="This is a normal distribution curve. The peak of the curve coincides with the point 1.5 on the horizontal axis.  A central region is shaded between points 1.38 and 1.62.">
+              <image src="../../media/CNX_Stats_C08_M03_item001anno.png" mime-type="image/png"/>
+            </media>
+          </figure>
+          <para id="eip-idm67620928">
+            <m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>0.12</m:mn></m:math>
+          </para>
+        </solution>
+      </exercise>
+        <exercise id="eip-469">
+        <problem id="eip-552">
+          <para id="eip-785">Explain in complete sentences what the confidence interval means.</para>
+        </problem>
+      </exercise>
+      <para id="eip-724"><newline/><emphasis effect="italics">Use the following information to answer the next six exercises:</emphasis> One hundred eight Americans were surveyed to determine the number of hours they spend watching television each month. It was revealed that they watched an average of 151 hours each month with a standard deviation of 32 hours. Assume that the underlying population distribution is normal.</para>
+        <exercise id="eip-817">
+        <problem id="eip-671">
+          <para id="eip-716">Identify the following:</para>
+          <list id="fs-idm137662144" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> =_______</item>
+            <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> =_______</item>
+            <item><m:math><m:mi>n</m:mi></m:math> =_______</item>
+            <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> =_______</item>
+          </list>
+        </problem>
+        <solution id="eip-123">
+          <list id="fs-idm117900288" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mn>151</m:mn></m:math>
+            </item>
+            <item>
+              <m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>=</m:mo><m:mn>32</m:mn></m:math>
+            </item>
+            <item>
+              <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>108</m:mn></m:math>
+            </item>
+            <item>
+              <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>107</m:mn></m:math>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+        <exercise id="eip-225">
+        <problem id="eip-586">
+          <para id="eip-675">Define the random variable <m:math><m:mi>X</m:mi></m:math> in words.</para>
+        </problem>
+      </exercise>
+        <exercise id="eip-810">
+        <problem id="eip-816">
+          <para id="eip-629">Define the random variable <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</para>
+        </problem>
+        <solution id="eip-823">
+          <para id="eip-495"><m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> is the mean number of hours spent watching television per month from a sample of 108 Americans.</para>
+        </solution>
+      </exercise>
+        <exercise id="eip-72">
+        <problem id="eip-425">
+          <para id="eip-578">Which distribution should you use for this problem?</para>
+        </problem>
+      </exercise>
+        <exercise id="eip-82">
+        <problem id="eip-528">
+          <para id="eip-489">Construct a 99% confidence interval for the population mean hours spent watching television per month. (a) State the confidence interval, (b) sketch the graph, and (c) calculate the error bound.</para>
+        </problem>
+        <solution id="eip-35">
+          <para id="eip-id1169812910484">CI: (142.92, 159.08)<newline/>
+            <figure class="scaled-down" id="fs-idm53713472">
+              <media id="eip-idm24726752" alt="This is a normal distribution curve. The peak of the curve coincides with the point 151 on the horizontal axis.  A central region is shaded between points 142.92 and 159.08.">
+                <image src="../../media/CNX_Stats_C08_M03_item002anno.png" mime-type="image/png"/>
+              </media>
+            </figure>
+            <newline/><m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>8.08</m:mn></m:math>
+          </para>
+        </solution>
+      </exercise>
+        <exercise id="eip-793">
+        <problem id="eip-727">
+          <para id="eip-524">Why would the error bound change if the confidence level were lowered to 95%?</para>
+        </problem>
+      </exercise>
+      <para id="element-59"><newline/><emphasis effect="italics">Use the following information to answer the next 13 exercises:</emphasis> The data in <link target-id="element-181" document=""/> are the result of a random survey of 39 national flags (with replacement between picks) from various countries. We are interested in finding a confidence interval for the true mean number of colors on a national flag. Let <m:math><m:mi>X</m:mi></m:math> = the number of colors on a national flag.</para>
+        <table id="element-181" summary="This table presents the X values (1-5) in the first column and the frequency in the second column.">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <thead>
+            <row>
+              <entry>
+                <m:math><m:mi>X</m:mi></m:math>
+              </entry>
+              <entry>Freq.</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry align="center">1</entry>
+              <entry align="center">1</entry>
+            </row>
+            <row>
+              <entry align="center">2</entry>
+              <entry align="center">7</entry>
+            </row>
+            <row>
+              <entry align="center">3</entry>
+              <entry align="center">18</entry>
+            </row>
+            <row>
+              <entry align="center">4</entry>
+              <entry align="center">7</entry>
+            </row>
+            <row>
+              <entry align="center">5</entry>
+              <entry align="center">6</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+        <exercise id="element-953">
+        <problem id="id45583482">
+          <para id="element-234525">
+            Calculate the following:
+          </para>
+          <list id="list-87678" list-type="enumerated" number-style="lower-alpha">
+            <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> =______</item>
+            <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> =______</item>
+            <item><m:math><m:mi>n</m:mi></m:math> =______</item>
+          </list>
+        </problem>
+        <solution id="id45593982">
+          <list id="list-827634" list-type="enumerated" number-style="lower-alpha">
+            <item>3.26</item>
+            <item>1.02</item>
+            <item>39</item>
+          </list>
+        </solution>
+      </exercise>
+        <exercise id="element-62">
+        <problem id="id45594056">
+          <para id="element-588">Define the random variable <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</para>
+        </problem>
+      </exercise>
+        <exercise id="element-212">
+        <problem id="id45594158">
+          <para id="element-703">What is <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> estimating?</para>
+        </problem>
+        <solution id="id45594200">
+          <para id="element-760">
+            <m:math><m:mi>μ</m:mi></m:math>
+          </para>
+        </solution>
+      </exercise>
+        <exercise id="element-704">
+        <problem id="id45594258">
+          <para id="element-695">Is <m:math><m:mrow><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> known?</para>
+        </problem>
+      </exercise>
+        <exercise id="element-164">
+        <problem id="id45594330">
+          <para id="element-339">As a result of your answer to <link target-id="element-704" document=""/>, state the exact distribution to use when calculating the confidence interval.</para>
+        </problem>
+        <solution id="id45594350">
+          <para id="element-875">
+            <m:math><m:mi>t</m:mi></m:math>
+            <sub>38</sub>
+          </para>
+        </solution>
+      </exercise>
+      <para id="element-548">
+        <newline count="1"/>
+        <emphasis effect="italics">Construct a 95% confidence interval for the true mean number of colors on national flags.</emphasis>
+      </para>
+        <exercise id="element-425">
+        <problem id="id45959436">
+          <para id="element-325">How much area is in both tails (combined)?</para>
+        </problem>
+      </exercise>
+        <exercise id="element-945">
+        <problem id="id45959507">
+          <para id="element-260">How much area is in each tail?</para>
+        </problem>
+        <solution id="id45959554">
+          <para id="element-697">0.025</para>
+        </solution>
+      </exercise>
+        <exercise id="element-526">
+        <problem id="id45959582">
+          <para id="element-2354253">Calculate the following:
+            <list id="list-76787865" list-type="enumerated" number-style="lower-alpha">
+              <item>lower limit</item>
+              <item>upper limit</item>
+              <item>error bound</item>
+            </list>
+          </para>
+        </problem>
+      </exercise>
+        <exercise id="element-363">
+        <problem id="id45959730">
+          <para id="element-434">The 95% confidence interval is_____.</para>
+        </problem>
+        <solution id="id45959750">
+          <para id="element-350">(2.93, 3.59)</para>
+        </solution>
+      </exercise>
+        <exercise id="element-188">
+        <problem id="id45959778">
+          <para id="element-726">Fill in the blanks on the graph with the areas, the upper and lower limits of the Confidence Interval and the sample mean.</para>
+          <figure class="scaled-down" id="five5">
+            <media id="id45959805" alt="This is a template of a normal distribution curve with the central region shaded to represent a confidence interval. The residual areas are on either side of the shaded region. Blanks indicate that students should label the confidence level, residual areas, and points that define the confidence interval.">
+              <image src="../../media/fig-ch08_07_01.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+        <exercise id="element-499">
+        <problem id="id45959843">
+          <para id="fs-idp7770160">In one complete sentence, explain what the interval means.</para>
+        </problem>
+        <solution id="eip-idm51678224">
+          <para id="eip-idp98208704">We are 95% confident that the true mean number of colors for national flags is between 2.93 colors and 3.59 colors.</para>
+        </solution>
+      </exercise>
+        <exercise id="element-542">
+        <problem id="id46274989">
+          <para id="one">
+            Using the same <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>, <m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math>, and level of confidence, suppose that <m:math><m:mi>n</m:mi></m:math> were 69 instead of 39. Would the error bound become larger or smaller? How do you know?</para>
+        </problem>
+        <solution id="eip-idm61120128">
+          <para id="eip-idm61119872">The error bound would become EBM = 0.245. This error bound decreases because as sample sizes increase, variability decreases and we need less interval length to capture the true mean.</para>
+        </solution>
+      </exercise>
+            <exercise id="element-939">
+        <problem id="id46275081">
+          <para id="element-111">Using the same <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math>, <m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math>, and <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>39</m:mn></m:math>, how would the error bound change if the confidence level were reduced to 90%? Why?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="fs-idp293092128" class="free-response">
+      <title>Homework</title>
+            <exercise id="exer2">
+        <problem id="id6354520">
+          <para id="para2">In six packages of “The Flintstones® Real Fruit Snacks” there were five Bam-Bam snack pieces. The total number of snack pieces in the six bags was 68. We wish to calculate a 96% confidence interval for the population proportion of Bam-Bam snack pieces.</para>
+            <list id="list5" list-type="enumerated" number-style="lower-alpha">
+            <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and
    <m:math><m:mi>P</m:mi></m:math>′ in words.</item>
-      <item>Which distribution should you use for this problem? Explain your choice</item>
-  <item>Calculate <m:math><m:mi>p</m:mi></m:math>′.</item>
-      <item>Construct a 96% confidence interval for the population proportion of Bam-Bam snack pieces per bag.
-       <list id="list6" list-type="enumerated" number-style="lower-roman">
-        <item>State the confidence interval.</item>
-      <item>Sketch the graph.</item>
-   <item>Calculate the error bound.</item>
-       </list>
-      </item>
-      <item>Do you think that six packages of fruit snacks yield enough data to give accurate results? Why or why not?</item>
- </list>
-</problem>
-</exercise>
-<exercise id="exer3"><problem id="id5182442"><para id="para7">A random survey of enrollment at 35 community colleges across the United States yielded the following figures: 6,414; 1,550; 2,109; 9,350; 21,828; 4,300; 5,944; 5,722; 2,825; 2,044; 5,481; 5,200; 5,853; 2,750; 10,012; 6,357; 27,000; 9,414; 7,681; 3,200; 17,500; 9,200; 7,380; 18,314; 6,557; 13,713; 17,768; 7,493; 2,771; 2,861; 1,263; 7,285; 28,165; 5,080; 11,622. Assume the underlying population is normal.
- <list id="list10" list-type="enumerated" number-style="lower-alpha">
- <item>
-  <list id="list9" list-type="enumerated" number-style="lower-roman">
-   <item><m:math>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-   </m:math> = __________</item>
-   <item><m:math>
-    <m:mrow>
-     <m:msub>
-      <m:mi>s</m:mi>
-      <m:mi>x</m:mi>
-     </m:msub>
-    </m:mrow>
-   </m:math> = __________</item>
-   <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
-   <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
-  </list>
-  </item>
-   <item>Define the random variables <m:math>
-    <m:mi>X</m:mi>
-   </m:math> and <m:math>
-    <m:mover accent="true">
-     <m:mi>X</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-   </m:math> in words.</item>
-      <item>Which distribution should you use for this problem? Explain your choice.</item>
-      <item>Construct a 95% confidence interval for the population mean enrollment at community colleges in the United States.
-       <list id="list11" list-type="enumerated" number-style="lower-roman">
-        <item>State the confidence interval.</item>
-      <item>Sketch the graph.</item>
-    <item>Calculate the error bound.</item>
-       </list>
-      </item>
-    <item>What will happen to the error bound and confidence interval if 500 community colleges were surveyed? Why?</item>
- </list>
-</para>
-</problem>
- <solution id="id6025360"><list id="list_s4" list-type="enumerated" number-style="lower-alpha">
-  <item>
-   <list id="list_s5" list-type="enumerated" number-style="lower-roman">
-    <item>8629</item>
-<item>6944</item>
-<item>35</item>
-<item>34</item>
-   </list>
-  </item>
-  <item><m:math>
-   <m:mrow>
-    <m:msub>
-     <m:mi>t</m:mi>
-     <m:mrow>
-      <m:mn>34</m:mn>
-     </m:mrow>
-    </m:msub>
-   </m:mrow>
-  </m:math>
-  </item>
-  <item><list id="list_s7" list-type="enumerated" number-style="lower-roman">
-   <item>CI: (6244, 11,014)</item>
-<item><figure class="scaled-down" id="fs-idp12588848"><media id="mmm" alt="A normal distribution curve with a peak at 8629, showing the shaded area representing data points between 6244 and 11014."><image src="../../media/IBS2e_Figure_08_00_019.png" mime-type="image/png"/></media></figure></item>
-   <item>EB = 2385</item>
-  </list>
-  </item>
-<item>It will become smaller</item>
- </list>
-
- </solution>
-</exercise>
-<exercise id="exer5"><problem id="id5647026"><para id="para8">Suppose that a committee is studying whether or not there is waste of time in our judicial system. It is interested in the mean amount of time individuals waste at the courthouse waiting to be called for jury duty. The committee randomly surveyed 81 people who recently served as jurors. The sample mean wait time was eight hours with a sample standard deviation of four hours.</para>
-
-<list id="list13" list-type="enumerated" number-style="lower-alpha">
-  <item><list id="list12" list-type="enumerated" number-style="lower-roman">
-   <item><m:math>
-    <m:mover accent="true">
-     <m:mi>x</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-   </m:math> = __________</item>
-
-   <item><m:math>
-    <m:mrow>
-     <m:msub>
-      <m:mi>s</m:mi>
-      <m:mi>x</m:mi>
-     </m:msub>
-    </m:mrow>
-   </m:math> = __________</item>
-
-   <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
-
-   <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
-  </list>
-   </item>
-   <item>Define the random variables <m:math>
-    <m:mi>X</m:mi>
-   </m:math> and <m:math>
-    <m:mover accent="true">
-     <m:mi>X</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-   </m:math> in words.</item>
-<item>Which distribution should you use for this problem? Explain your choice.</item>
-  <item>Construct a 95% confidence interval for the population mean time wasted.
-   <list id="list14" list-type="enumerated" number-style="lower-roman">
-    <item>State the confidence interval.</item>
-<item>Sketch the graph.</item>
-<item>Calculate the error bound.</item>
-   </list>
-  </item>
-<item>Explain in a complete sentence what the confidence interval means.</item>
- </list>
-</problem>
-</exercise><exercise id="exer10"><problem id="id6300844"><para id="para21">A pharmaceutical company makes tranquilizers. It is assumed that the distribution for the length of time they last is approximately normal. Researchers in a hospital used the drug on a random sample of nine patients. The effective period of the tranquilizer for each patient (in hours) was as follows: 2.7; 2.8; 3.0; 2.3; 2.3; 2.2; 2.8; 2.1; and 2.4.</para>
- <list id="list21" list-type="enumerated" number-style="lower-alpha">
-  <item><list id="list21a" list-type="enumerated" number-style="lower-roman">
-  <item><m:math>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
- </m:math> = __________</item>
-
-  <item><m:math>
-   <m:mrow>
-    <m:msub>
-     <m:mi>s</m:mi>
-     <m:mi>x</m:mi>
-    </m:msub>
-   </m:mrow>
-  </m:math> = __________</item>
-
-  <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
-
-  <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
- </list>
- </item>
-  <item>Define the random variable <m:math>
-    <m:mi>X</m:mi>
-   </m:math> in words.</item>
-  <item>Define the random variable <m:math>
-   <m:mover accent="true">
-    <m:mi>X</m:mi>
-    <m:mo>¯</m:mo>
-   </m:mover>
-  </m:math> in words.</item>
-      <item>Which distribution should you use for this problem? Explain your choice.</item>
-  <item>Construct a 95% confidence interval for the population mean length of time.
-   <list id="list22_5" list-type="enumerated" number-style="lower-roman">
-   <item>State the confidence interval.</item>
-<item>Sketch the graph.</item>
-<item>Calculate the error bound.</item>
-   </list>
-  </item>
-<item>What does it mean to be “95% confident” in this problem?</item>
- </list>
-</problem>
-<solution id="fs-idm131198032">
-<list id="fs-idm86189312" list-type="enumerated" number-style="lower-alpha">
-<item>
-<list id="fs-idm33946400" list-type="enumerated" number-style="lower-roman">
-<item><m:math>
- <m:mover accent="true">
-  <m:mi>x</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
- <m:mo>=</m:mo><m:mn>2.51</m:mn></m:math></item>
-<item><m:math>
-   <m:mrow>
-    <m:msub>
-     <m:mi>s</m:mi>
-     <m:mi>x</m:mi>
-    </m:msub>
-   </m:mrow>
-  <m:mo>=</m:mo><m:mn>0.318</m:mn></m:math></item>
-<item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:math></item>
-<item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:math> </item>
-</list>
-</item>
-<item>the effective length of time for a tranquilizer</item>
-<item>the mean effective length of time of tranquilizers from a sample of nine patients</item>
-<item>We need to use a Student’s-t distribution, because we do not know the population standard deviation.</item>
-<item>
-<list id="fs-idm270080896" list-type="enumerated" number-style="lower-roman"><item>CI: (2.27, 2.76)</item>
-<item>Answers may vary.</item>
-<item><m:math><m:mtext>EBM</m:mtext></m:math>: 0.25</item>
-</list></item>
-<item>If we were to sample many groups of nine patients, 95% of the samples would contain the true population mean length of time.</item>
-</list>
-</solution>
-</exercise><exercise id="exer11"><problem id="id5850872">
-<para id="para23">Suppose that 14 children, who were learning to ride two-wheel bikes, were surveyed to determine how long they had to use training wheels. It was revealed that they used them an average of six months with a sample standard deviation of three months. Assume that the underlying population distribution is normal.</para>
-<list id="list23_5" list-type="enumerated" number-style="lower-alpha">
-   <item>
-    <list id="list24" list-type="enumerated" number-style="lower-roman"><item><m:math>
-      <m:mover accent="true">
-       <m:mi>x</m:mi>
-       <m:mo>¯</m:mo>
-      </m:mover>
-     </m:math> = __________</item>
-     <item><m:math>
-      <m:mrow>
-       <m:msub>
-        <m:mi>s</m:mi>
-        <m:mi>x</m:mi>
-       </m:msub>
-      </m:mrow>
-     </m:math> = __________</item>
-     <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
-
-     <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
-    </list></item>
-
-   <item>Define the random variable <m:math>
-    <m:mi>X</m:mi>
-   </m:math> in words.</item>
-   <item>Define the random variable<m:math>
-    <m:mover accent="true">
-     <m:mi>X</m:mi>
-     <m:mo>¯</m:mo>
-    </m:mover>
-   </m:math> in words.</item>
-      <item>Which distribution should you use for this problem? Explain your choice.</item>
-   <item>Construct a 99% confidence interval for the population mean length of time using training wheels.<list id="list24_5" list-type="enumerated" number-style="lower-roman">
-    <item>State the confidence interval.</item>
-<item>Sketch the graph.</item>
-<item>Calculate the error bound.</item></list></item>
-
-<item>Why would the error bound change if the confidence level were lowered to 90%?</item>
-  </list>
- </problem>
- </exercise><exercise id="eip-390"><problem id="eip-14">
-  <para id="eip-520">The Federal Election Commission (FEC) collects information about campaign contributions and disbursements for candidates and political committees each election cycle. A political action committee (PAC) is a committee formed to raise money for candidates and campaigns. A Leadership PAC is a PAC formed by a federal politician (senator or representative) to raise money to help other candidates’ campaigns.</para>
-<para id="eip-idm79133520">The FEC has reported financial information for 556 Leadership PACs that were operating during a certain election cycle. The following table shows the total receipts during this cycle for a random selection of 30 Leadership PACs.</para><table id="eip-146" summary="..">
-<tgroup cols="5"><tbody>
-  <row><entry>$46,500.00</entry>	<entry>$0</entry>	<entry>$40,966.50</entry>	<entry>$105,887.20</entry>	<entry>$5,175.00</entry></row>
-<row><entry>$29,050.00</entry>	<entry>$19,500.00</entry>	<entry>$181,557.20</entry>	<entry>$31,500.00</entry>	<entry>$149,970.80</entry></row>
-<row><entry>$2,555,363.20</entry>	<entry>$12,025.00</entry>	<entry>$409,000.00</entry>	<entry>$60,521.70</entry>	<entry>$18,000.00</entry></row>
-<row><entry>$61,810.20</entry>	<entry>$76,530.80</entry>	<entry>$119,459.20</entry>	<entry>$0</entry>	<entry>$63,520.00</entry></row>
-<row><entry>$6,500.00</entry>	<entry>$502,578.00</entry>	<entry>$705,061.10</entry>	<entry>$708,258.90</entry>	<entry>$135,810.00</entry></row>
-<row><entry>$2,000.00</entry>	<entry>$2,000.00</entry>	<entry>$0</entry>	<entry>$1,287,933.80</entry>	<entry>$219,148.30</entry></row>
-</tbody>
-</tgroup>
-</table>
-<para id="fs-idm101832672">
-<m:math>
- <m:mrow>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mo>=</m:mo><m:mi>$</m:mi><m:mn>251</m:mn><m:mo>,</m:mo><m:mn>854.23</m:mn>
- </m:mrow>
-</m:math>
-</para>
-<para id="fs-idm60266896">
-<m:math>
- <m:mrow>
-  <m:mi>s</m:mi><m:mo>=</m:mo><m:mtext> </m:mtext><m:mi>$</m:mi><m:mn>521</m:mn><m:mo>,</m:mo><m:mn>130.41</m:mn>
- </m:mrow>
-</m:math>
-</para>
-<para id="eip-idp69132832">Use this sample data to construct a 96% confidence interval for the mean amount of money raised by all Leadership PACs during the specific election cycle. Use the Student's t-distribution.</para>
-</problem>
-<solution id="eip-770">
-<para id="fs-idm151956208">
-<m:math>
- <m:mrow>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
-  <m:mo>=</m:mo><m:mi>$</m:mi><m:mn>251</m:mn><m:mo>,</m:mo><m:mn>854.23</m:mn>
- </m:mrow>
-</m:math>
-</para>
-<para id="fs-idp3598576">
-<m:math>
- <m:mrow>
-  <m:mi>s</m:mi><m:mo>=</m:mo><m:mtext> </m:mtext><m:mi>$</m:mi><m:mn>521</m:mn><m:mo>,</m:mo><m:mn>130.41</m:mn>
- </m:mrow>
-</m:math>
-</para>
-<para id="fs-idm60939744">Note that we are not given the population standard deviation, only the standard deviation of the sample.</para>
-<para id="eip-idm63664256">There are 30 measures in the sample, so <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, and <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>29</m:mn></m:math></para>
-<para id="fs-idm117819488"><m:math><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.96</m:mn></m:math>, so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.96</m:mn><m:mo>=</m:mo><m:mn>0.04</m:mn></m:math></para>
-<para id="fs-idm140901120"><m:math>
- <m:mrow>
-  <m:mfrac>
-   <m:mi>α</m:mi>
-   <m:mn>2</m:mn>
-  </m:mfrac>
-  <m:mo>=</m:mo><m:mn>0.02</m:mn>
- </m:mrow>
- <m:mrow>
-  <m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mfrac>
-     <m:mi>α</m:mi>
-     <m:mn>2</m:mn>
-    </m:mfrac>
-
-   </m:mrow>
-  </m:msub>
-  <m:mo>=</m:mo><m:msub>
-   <m:mi>t</m:mi>
-   <m:mrow>
-    <m:mn>0.02</m:mn>
-   </m:mrow>
-  </m:msub>
-
- </m:mrow>
-<m:mo>=</m:mo><m:mn>2.150</m:mn></m:math></para>
- <para id="eip-idp903520"><m:math>
-  <m:mrow>
-   <m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub>
-    <m:mi>t</m:mi>
-    <m:mrow>
-     <m:mfrac>
-      <m:mi>α</m:mi>
-      <m:mn>2</m:mn>
-     </m:mfrac>
-
-    </m:mrow>
-   </m:msub>
-   <m:mrow><m:mo>(</m:mo>
-    <m:mrow>
-     <m:mfrac>
-      <m:mi>s</m:mi>
-      <m:mrow>
-       <m:msqrt>
-        <m:mi>n</m:mi>
-       </m:msqrt>
-
-      </m:mrow>
-     </m:mfrac>
-
-    </m:mrow>
-    <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.150</m:mn><m:mrow><m:mo>(</m:mo>
-     <m:mrow>
-      <m:mfrac>
-       <m:mrow>
-        <m:mn>521</m:mn><m:mo>,</m:mo><m:mn>130.41</m:mn>
-       </m:mrow>
-       <m:mrow>
-        <m:msqrt>
-         <m:mrow>
-          <m:mn>30</m:mn>
-         </m:mrow>
-        </m:msqrt>
-
-       </m:mrow>
-      </m:mfrac>
-
-     </m:mrow>
-     <m:mo>)</m:mo></m:mrow><m:mo>~</m:mo><m:mi>$</m:mi><m:mn>204</m:mn><m:mo>,</m:mo><m:mn>561.66</m:mn>
-  </m:mrow>
- </m:math>
-</para>
-<para id="eip-idm139616976"><m:math>
- <m:mrow>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo stretchy="true">¯</m:mo>
-  </m:mover>
-   </m:mrow>
-<m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mo>$</m:mo><m:mn>251</m:mn></m:math>,854.23 - $204,561.66 = $47,292.57</para>
-<para id="eip-idm95497616"><m:math>
- <m:mrow>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo stretchy="true">¯</m:mo>
-  </m:mover>
- </m:mrow>
-<m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mo>$</m:mo><m:mn>251</m:mn></m:math>,854.23 + $204,561.66 = $456,415.89</para>
-<para id="eip-idm43369008">We estimate with 96% confidence that the mean amount of money raised by all Leadership PACs during the specific election cycle lies between $47,292.57 and $456,415.89.<newline/></para><para id="eip-idm19923248">Alternate Solution</para>
-<note id="fs-idm33267104" class="statistics calculator">
-<label/>
-<para id="fs-idm130936496">Enter the data as a list.</para>
-<para id="fs-idm33521776">Press <code>STAT</code> and arrow over to <code>TESTS</code>.</para>
-<para id="fs-idm74740208">Arrow down to <code>8:TInterval</code>.</para>
-<para id="fs-idm137623792">Press <code>ENTER</code>.</para>
-<para id="fs-idm117237136">Arrow to Data and press <code>ENTER</code>.</para>
-<para id="fs-idm121069488">Arrow down and enter the name of the list where the data is stored.</para>
-<para id="fs-idm76431648">Enter <code>Freq</code>: 1</para>
-<para id="fs-idm157410432">Enter <code>C-Level</code>: 0.96</para>
-<para id="fs-idm14318528">Arrow down to <code>Calculate</code> and press <code>Enter</code>.</para>
-<para id="fs-idm131790576">The 96% confidence interval is ($47,262, $456,447).</para>
-</note>
-<para id="eip-idp167827024">The difference between solutions arises from rounding differences.</para>
-</solution>
-</exercise><exercise id="eip-217"><problem id="eip-975">
- <para id="eip-184"><emphasis effect="italics">Forbes</emphasis> magazine published data on the best small firms in a certain year. These were firms that had been publicly traded for at least a year, have a stock price of at least $5 per share, and have reported annual revenue between $5 million and $1 billion. The <link target-id="eip-884" document=""/> shows the ages of the corporate CEOs for a random sample of these firms.
-  </para>
-<table id="eip-884" summary="..">
-<tgroup cols="5"><tbody>
-  <row><entry>48</entry>	<entry>58</entry>	<entry>51</entry>	<entry>61</entry>	<entry>56</entry></row>
-<row><entry>59</entry>	<entry>74</entry>	<entry>63</entry>	<entry>53</entry>	<entry>50</entry></row>
-<row><entry>59</entry>	<entry>60</entry>	<entry>60</entry>	<entry>57</entry>	<entry>46</entry></row>
-<row><entry>55</entry>	<entry>63</entry>	<entry>57</entry>	<entry>47</entry>	<entry>55</entry></row>
-<row><entry>57</entry>	<entry>43</entry>	<entry>61</entry>	<entry>62</entry>	<entry>49</entry></row>
-<row><entry>67</entry>	<entry>67</entry>	<entry>55</entry>	<entry>55</entry>	<entry>49</entry></row>
-</tbody>
-</tgroup>
-</table>
-<para id="eip-idm30943456">Use this sample data to construct a 90% confidence interval for the mean age of CEO’s for these top small firms. Use the Student's t-distribution.</para>
-</problem>
-</exercise><exercise id="eip-392">
-<problem id="eip-190">
-  <para id="eip-579">Unoccupied seats on flights cause airlines to lose revenue. Suppose a large airline wants to estimate its mean number of unoccupied seats per flight over the past year. To accomplish this, the records of 225 flights are randomly selected and the number of unoccupied seats is noted for each of the sampled flights. The sample mean is 11.6 seats and the sample standard deviation is 4.1 seats.</para>
- <list id="eip-idm49907776" list-type="enumerated" number-style="lower-alpha"><item>
- <list id="eip-idp70657312" list-type="enumerated" number-style="lower-roman">
- <item><m:math>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
- </m:math> = __________
-  </item>
-  <item><m:math>
-   <m:mrow>
-    <m:msub>
-     <m:mi>s</m:mi>
-     <m:mi>x</m:mi>
-    </m:msub>
-   </m:mrow>
-  </m:math> = __________</item>
-
-  <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
-
-  <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
-  </list>
-
-</item>
- <item>Define the random variables <m:math>
-  <m:mi>X</m:mi>
- </m:math> and <m:math>
-  <m:mover accent="true">
-   <m:mi>X</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
- </m:math> in words.</item>
-<item>Which distribution should you use for this problem? Explain your choice.</item>
-<item>Construct a 92% confidence interval for the population mean number of unoccupied seats per
-flight.
- <list id="eip-idm535456" list-type="enumerated" number-style="lower-roman">
-<item>State the confidence interval.</item>
-<item>Sketch the graph.</item>
-<item>Calculate the error bound.</item>
- </list>
-</item>
- </list>
-</problem>
-<solution id="fs-idm33461392">
-<list id="fs-idp16278992" list-type="enumerated" number-style="lower-alpha">
-<item>
-<list id="fs-idm150491184" list-type="enumerated" number-style="lower-roman"><item><m:math>
-  <m:mover accent="true">
-   <m:mi>x</m:mi>
-   <m:mo>¯</m:mo>
-  </m:mover>
- <m:mo>=</m:mo><m:mn>11.6</m:mn></m:math></item>
-<item><m:math>
-   <m:mrow>
-    <m:msub>
-     <m:mi>s</m:mi>
-     <m:mi>x</m:mi>
-    </m:msub>
-   </m:mrow>
-  <m:mo>=</m:mo><m:mn>4.1</m:mn></m:math></item>
-<item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>225</m:mn></m:math></item>
-<item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>224</m:mn></m:math></item>
-</list></item>
-<item><m:math><m:mi>X</m:mi></m:math> is the number of unoccupied seats on a single flight. <m:math>
- <m:mover accent="true">
-  <m:mi>X</m:mi>
-  <m:mo>¯</m:mo>
- </m:mover>
- </m:math> is the mean number of unoccupied seats from a sample of 225 flights.</item>
-<item>We will use a Student’s-t distribution, because we do not know the population standard deviation.</item>
-<item>
-<list id="fs-idm19293168" list-type="enumerated" number-style="lower-roman"><item>CI: (11.12 , 12.08)</item>
-<item>Answers may vary.</item>
-<item><m:math><m:mtext>EBM</m:mtext></m:math>: 0.48</item>
-</list></item>
-</list>
-</solution>
-</exercise>
-<exercise id="eip-848"><problem id="eip-idm117422496">
-<para id="eip-idp46649712">In a recent sample of 84 used car sales costs, the sample mean was $6,425 with a standard deviation of $3,156. Assume the underlying distribution is approximately normal.</para>
- <list id="eip-idp46650288" list-type="enumerated" number-style="lower-alpha">
-<item>Which distribution should you use for this problem? Explain your choice.</item>
-  <item>Define the random variable <m:math>
-   <m:mover accent="true">
-    <m:mi>X</m:mi>
-    <m:mo>¯</m:mo>
-   </m:mover>
-   </m:math> in words.</item>
-<item>Construct a 95% confidence interval for the population mean cost of a used car.
- <list id="eip-idp2064304" list-type="enumerated" number-style="lower-roman">
-<item>State the confidence interval.</item>
-<item>Sketch the graph.</item>
-<item>Calculate the error bound.</item>
- </list>
-</item>
-<item>Explain what a “95% confidence interval” means for this study.</item>
-</list>
-</problem>
-</exercise><exercise id="eip-789">
-<problem id="eip-idp101366832">
-<para id="eip-idp114357168">Six different national brands of chocolate chip cookies were randomly selected at the supermarket. The grams of fat per serving are as follows: 8; 8; 10; 7; 9; 9. Assume the underlying distribution is approximately normal.</para>
-<list id="eip-idp114357792" list-type="enumerated" number-style="lower-alpha">
-<item>Construct a 90% confidence interval for the population mean grams of fat per serving of chocolate chip cookies sold in supermarkets.
- <list id="eip-idm3541392" list-type="enumerated" number-style="lower-roman">
-<item>State the confidence interval.</item>
-<item>Sketch the graph.</item>
-<item>Calculate the error bound.</item>
-</list>
-</item>
-<item>If you wanted a smaller error bound while keeping the same level of confidence, what should have been changed in the study before it was done?</item>
-<item>Go to the store and record the grams of fat per serving of six brands of chocolate chip cookies.</item>
-<item>Calculate the mean.</item>
-<item>Is the mean within the interval you calculated in part a? Did you expect it to be? Why or why not?</item>
-</list>
- </problem>
-  <solution id="fs-idm144387776">
-   <list id="fs-idm144387520" list-type="enumerated" number-style="lower-alpha">
-   <item>
-    <list id="fs-idm104467472" list-type="enumerated" number-style="lower-roman"><item>CI: (7.64 , 9.36)</item>
-     <item><figure class="scaled-down" id="fs-idm59520752"><media id="mmm3" alt="A normal distribution curve with the area between 7.64 and 9.36 highlighted, centered at 8.5."><image src="../../media/IBS2e_Figure_08_00_020.png" mime-type="image/png"/></media></figure></item>
-   <item><m:math><m:mtext>EBM</m:mtext></m:math>: 0.86</item>
-    </list></item>
-   <item>The sample should have been increased.</item>
-   <item>Answers will vary.</item>
-   <item>Answers will vary.</item>
-   <item>Answers will vary.</item>
-   </list>
-  </solution>
- </exercise>
-<exercise id="fs-idm170967312"><problem id="fs-idm181156640">
-<para id="fs-idm181156384">A survey of the mean number of cents off that coupons give was conducted by randomly surveying one coupon per page from the coupon sections of a recent San Jose Mercury News. The following data were collected: 20¢; 75¢; 50¢; 65¢; 30¢; 55¢; 40¢; 40¢; 30¢; 55¢; $1.50; 40¢; 65¢; 40¢. Assume the underlying distribution is approximately normal.</para>
- <list id="fs-idm115727600" list-type="enumerated" number-style="lower-alpha"><item>
-   <list id="fs-idm158307360" list-type="enumerated" number-style="lower-roman">
-    <item><m:math>
-     <m:mover accent="true">
-      <m:mi>x</m:mi>
-      <m:mo>¯</m:mo>
-     </m:mover>
-    </m:math> = __________</item>
-    <item><m:math>
-     <m:mrow>
-      <m:msub>
-       <m:mi>s</m:mi>
-       <m:mi>x</m:mi>
-      </m:msub>
-     </m:mrow>
-    </m:math> = __________</item>
-    <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
-    <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
- </list>
-  </item>
-  <item>Define the random variables <m:math>
-   <m:mi>X</m:mi>
-  </m:math> and <m:math>
-   <m:mover accent="true">
-    <m:mi>X</m:mi>
-    <m:mo>¯</m:mo>
-   </m:mover>
-  </m:math> in words.</item>
- <item>Which distribution should you use for this problem? Explain your choice.</item>
- <item>Construct a 95% confidence interval for the population mean worth of coupons.
-  <list id="fs-idm87013712" list-type="enumerated" number-style="lower-roman">
-  <item>State the confidence interval.</item>
- <item>Sketch the graph.</item>
- <item>Calculate the error bound.</item>
-  </list>
- </item>
-<item>If many random samples were taken of size 14, what percent of the confidence intervals constructed should contain the population mean worth of coupons? Explain why.</item>
- </list></problem>
- </exercise><para id="id7660865"><newline/><emphasis effect="italics">Use the following information to answer the next two exercises:</emphasis> A quality control specialist for a restaurant chain takes a random sample of size 12 to check the amount of soda served in the 16 oz. serving size. The sample mean is 13.30 with a sample standard deviation of 1.55. Assume the underlying population is normally distributed.</para><exercise id="eeeeeeeeeeeeeeex"><problem id="id5710642">
- <para id="para58">Find the 95% Confidence Interval for the true population mean for the amount of soda served.</para>
-<list id="list58" list-type="enumerated" number-style="lower-alpha">
-<item>(12.42, 14.18)</item>
-<item>(12.32, 14.29)</item>
-<item>(12.50, 14.10)</item>
-<item>Impossible to determine</item></list>
-</problem>
-<solution id="id6215942">
- <para id="solb11">b</para>
-</solution>
-</exercise><exercise id="exxxx"><problem id="id6176057"><para id="para60"> What is the error bound?</para>
-<list id="list60" list-type="enumerated" number-style="lower-alpha">
-<item>0.87</item>
-<item>1.98</item>
-<item>0.99</item>
-<item>1.74</item>
- </list>
-</problem>
-</exercise></section>
- <section class="glossary" id="sect-00004">
-<title>Key Terms</title>
-<definition id="def-00001">
-<term>Degrees of Freedom (<m:math><m:mtext>df</m:mtext></m:math>)</term>
-<meaning>the number of independent values that can vary in the calculation of a statistic; for a sample of size <m:math><m:mi>n</m:mi></m:math> it equals <m:math><m:mi>n</m:mi></m:math> − 1 when one parameter (the mean) has been estimated</meaning>
-</definition>
-<definition id="def-00002">
-<term>Normal Distribution</term>
-<meaning>a continuous random variable (RV) with pdf <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>/</m:mo><m:mn>2</m:mn><m:msup><m:mi>σ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:msup></m:math>, where <m:math><m:mi>μ</m:mi></m:math> is the mean of the distribution and <m:math><m:mi>σ</m:mi></m:math> is the standard deviation, notation: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math>. If <m:math><m:mi>μ</m:mi></m:math> = 0 and <m:math><m:mi>σ</m:mi></m:math> = 1, the RV is called <emphasis>the standard normal distribution</emphasis>.</meaning>
-</definition>
-<definition id="def-00003">
-<term>Standard Deviation</term>
-<meaning>a number that is equal to the square root of the variance and measures how far data values are from their mean; notation: <m:math><m:mi>s</m:mi></m:math> for sample standard deviation and <m:math><m:mi>σ</m:mi></m:math> for population standard deviation</meaning>
-</definition>
-<definition id="def-00004">
-<term>Student’s <m:math><m:mi>t</m:mi></m:math>-Distribution</term>
-<meaning>investigated and reported by William S. Gosset in 1908 and published under the pseudonym Student; the major characteristics of the random variable (RV) are:<list list-type="bulleted" id="list-00005">
-<item>It is continuous and assumes any real values.</item>
-<item>The pdf is symmetrical about its mean of zero. However, it is more spread out and flatter at the apex than the normal distribution.</item>
-<item>It approaches the standard normal distribution as <m:math><m:mi>n</m:mi></m:math> gets larger.</item>
-<item>There is a “family” of t-distributions: each representative of the family is completely defined by the number of degrees of freedom, which is one less than the sample size.</item>
-</list></meaning>
-</definition>
-</section>
-</content>
-
+            <item>Which distribution should you use for this problem? Explain your choice</item>
+            <item>Calculate <m:math><m:mi>p</m:mi></m:math>′.</item>
+            <item>Construct a 96% confidence interval for the population proportion of Bam-Bam snack pieces per bag.
+              <list id="list6" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>Do you think that six packages of fruit snacks yield enough data to give accurate results? Why or why not?</item>
+          </list>
+        </problem>
+      </exercise>
+              <exercise id="exer3">
+        <problem id="id5182442">
+          <para id="para7">A random survey of enrollment at 35 community colleges across the United States yielded the following figures: 6,414; 1,550; 2,109; 9,350; 21,828; 4,300; 5,944; 5,722; 2,825; 2,044; 5,481; 5,200; 5,853; 2,750; 10,012; 6,357; 27,000; 9,414; 7,681; 3,200; 17,500; 9,200; 7,380; 18,314; 6,557; 13,713; 17,768; 7,493; 2,771; 2,861; 1,263; 7,285; 28,165; 5,080; 11,622. Assume the underlying population is normal.
+            <list id="list10" list-type="enumerated" number-style="lower-alpha">
+              <item>
+                <list id="list9" list-type="enumerated" number-style="lower-roman">
+                  <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> = __________</item>
+                  <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> = __________</item>
+                  <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
+                  <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
+                </list>
+              </item>
+              <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+              <item>Which distribution should you use for this problem? Explain your choice.</item>
+              <item>Construct a 95% confidence interval for the population mean enrollment at community colleges in the United States.
+                <list id="list11" list-type="enumerated" number-style="lower-roman">
+                  <item>State the confidence interval.</item>
+                  <item>Sketch the graph.</item>
+                  <item>Calculate the error bound.</item>
+                </list>
+              </item>
+              <item>What will happen to the error bound and confidence interval if 500 community colleges were surveyed? Why?</item>
+            </list>
+          </para>
+        </problem>
+        <solution id="id6025360">
+              <list id="list_s4" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="list_s5" list-type="enumerated" number-style="lower-roman">
+                <item>8629</item>
+                <item>6944</item>
+                <item>35</item>
+                <item>34</item>
+              </list>
+            </item>
+            <item>
+              <m:math><m:mrow><m:msub><m:mi>t</m:mi><m:mrow><m:mn>34</m:mn></m:mrow></m:msub></m:mrow></m:math>
+            </item>
+            <item>
+              <list id="list_s7" list-type="enumerated" number-style="lower-roman">
+                <item>CI: (6244, 11,014)</item>
+                <item>
+                  <figure class="scaled-down" id="fs-idp12588848">
+                    <media id="mmm" alt="A normal distribution curve with a peak at 8629, showing the shaded area representing data points between 6244 and 11014.">
+                      <image src="../../media/IBS2e_Figure_08_00_019.png" mime-type="image/png"/>
+                    </media>
+                  </figure>
+                </item>
+                <item>EB = 2385</item>
+              </list>
+            </item>
+            <item>It will become smaller</item>
+          </list>
+        </solution>
+      </exercise>
+              <exercise id="exer5">
+        <problem id="id5647026">
+          <para id="para8">Suppose that a committee is studying whether or not there is waste of time in our judicial system. It is interested in the mean amount of time individuals waste at the courthouse waiting to be called for jury duty. The committee randomly surveyed 81 people who recently served as jurors. The sample mean wait time was eight hours with a sample standard deviation of four hours.</para>
+              <list id="list13" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="list12" list-type="enumerated" number-style="lower-roman">
+                <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> = __________</item>
+                <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
+              </list>
+            </item>
+            <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+            <item>Which distribution should you use for this problem? Explain your choice.</item>
+            <item>Construct a 95% confidence interval for the population mean time wasted.
+              <list id="list14" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>Explain in a complete sentence what the confidence interval means.</item>
+          </list>
+        </problem>
+      </exercise>
+              <exercise id="exer10">
+        <problem id="id6300844">
+          <para id="para21">A pharmaceutical company makes tranquilizers. It is assumed that the distribution for the length of time they last is approximately normal. Researchers in a hospital used the drug on a random sample of nine patients. The effective period of the tranquilizer for each patient (in hours) was as follows: 2.7; 2.8; 3.0; 2.3; 2.3; 2.2; 2.8; 2.1; and 2.4.</para>
+              <list id="list21" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="list21a" list-type="enumerated" number-style="lower-roman">
+                <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> = __________</item>
+                <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
+              </list>
+            </item>
+            <item>Define the random variable <m:math><m:mi>X</m:mi></m:math> in words.</item>
+            <item>Define the random variable <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+            <item>Which distribution should you use for this problem? Explain your choice.</item>
+            <item>Construct a 95% confidence interval for the population mean length of time.
+              <list id="list22_5" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>What does it mean to be “95% confident” in this problem?</item>
+          </list>
+        </problem>
+        <solution id="fs-idm131198032">
+              <list id="fs-idm86189312" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="fs-idm33946400" list-type="enumerated" number-style="lower-roman">
+                <item>
+                  <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mn>2.51</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>=</m:mo><m:mn>0.318</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>9</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn></m:math>
+                </item>
+              </list>
+            </item>
+            <item>the effective length of time for a tranquilizer</item>
+            <item>the mean effective length of time of tranquilizers from a sample of nine patients</item>
+            <item>We need to use a Student’s-t distribution, because we do not know the population standard deviation.</item>
+            <item>
+              <list id="fs-idm270080896" list-type="enumerated" number-style="lower-roman">
+                <item>CI: (2.27, 2.76)</item>
+                <item>Answers may vary.</item>
+                <item><m:math><m:mtext>EBM</m:mtext></m:math>: 0.25</item>
+              </list>
+            </item>
+            <item>If we were to sample many groups of nine patients, 95% of the samples would contain the true population mean length of time.</item>
+          </list>
+        </solution>
+      </exercise>
+              <exercise id="exer11">
+        <problem id="id5850872">
+          <para id="para23">Suppose that 14 children, who were learning to ride two-wheel bikes, were surveyed to determine how long they had to use training wheels. It was revealed that they used them an average of six months with a sample standard deviation of three months. Assume that the underlying population distribution is normal.</para>
+              <list id="list23_5" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="list24" list-type="enumerated" number-style="lower-roman">
+                <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> = __________</item>
+                <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
+              </list>
+            </item>
+            <item>Define the random variable <m:math><m:mi>X</m:mi></m:math> in words.</item>
+            <item>Define the random variable<m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+            <item>Which distribution should you use for this problem? Explain your choice.</item>
+            <item>Construct a 99% confidence interval for the population mean length of time using training wheels.
+              <list id="list24_5" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>Why would the error bound change if the confidence level were lowered to 90%?</item>
+          </list>
+        </problem>
+      </exercise>
+              <exercise id="eip-390">
+        <problem id="eip-14">
+          <para id="eip-520">The Federal Election Commission (FEC) collects information about campaign contributions and disbursements for candidates and political committees each election cycle. A political action committee (PAC) is a committee formed to raise money for candidates and campaigns. A Leadership PAC is a PAC formed by a federal politician (senator or representative) to raise money to help other candidates’ campaigns.</para>
+          <para id="eip-idm79133520">The FEC has reported financial information for 556 Leadership PACs that were operating during a certain election cycle. The following table shows the total receipts during this cycle for a random selection of 30 Leadership PACs.</para>
+              <table id="eip-146" summary="..">
+            <tgroup cols="5">
+              <tbody>
+                <row>
+                  <entry>$46,500.00</entry>
+                  <entry>$0</entry>
+                  <entry>$40,966.50</entry>
+                  <entry>$105,887.20</entry>
+                  <entry>$5,175.00</entry>
+                </row>
+                <row>
+                  <entry>$29,050.00</entry>
+                  <entry>$19,500.00</entry>
+                  <entry>$181,557.20</entry>
+                  <entry>$31,500.00</entry>
+                  <entry>$149,970.80</entry>
+                </row>
+                <row>
+                  <entry>$2,555,363.20</entry>
+                  <entry>$12,025.00</entry>
+                  <entry>$409,000.00</entry>
+                  <entry>$60,521.70</entry>
+                  <entry>$18,000.00</entry>
+                </row>
+                <row>
+                  <entry>$61,810.20</entry>
+                  <entry>$76,530.80</entry>
+                  <entry>$119,459.20</entry>
+                  <entry>$0</entry>
+                  <entry>$63,520.00</entry>
+                </row>
+                <row>
+                  <entry>$6,500.00</entry>
+                  <entry>$502,578.00</entry>
+                  <entry>$705,061.10</entry>
+                  <entry>$708,258.90</entry>
+                  <entry>$135,810.00</entry>
+                </row>
+                <row>
+                  <entry>$2,000.00</entry>
+                  <entry>$2,000.00</entry>
+                  <entry>$0</entry>
+                  <entry>$1,287,933.80</entry>
+                  <entry>$219,148.30</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <para id="fs-idm101832672">
+            <m:math><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mi>$</m:mi><m:mn>251</m:mn><m:mo>,</m:mo><m:mn>854.23</m:mn></m:mrow></m:math>
+          </para>
+          <para id="fs-idm60266896">
+            <m:math><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:mtext/><m:mi>$</m:mi><m:mn>521</m:mn><m:mo>,</m:mo><m:mn>130.41</m:mn></m:mrow></m:math>
+          </para>
+          <para id="eip-idp69132832">Use this sample data to construct a 96% confidence interval for the mean amount of money raised by all Leadership PACs during the specific election cycle. Use the Student's t-distribution.</para>
+        </problem>
+        <solution id="eip-770">
+          <para id="fs-idm151956208">
+            <m:math><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mi>$</m:mi><m:mn>251</m:mn><m:mo>,</m:mo><m:mn>854.23</m:mn></m:mrow></m:math>
+          </para>
+          <para id="fs-idp3598576">
+            <m:math><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:mtext/><m:mi>$</m:mi><m:mn>521</m:mn><m:mo>,</m:mo><m:mn>130.41</m:mn></m:mrow></m:math>
+          </para>
+          <para id="fs-idm60939744">Note that we are not given the population standard deviation, only the standard deviation of the sample.</para>
+          <para id="eip-idm63664256">There are 30 measures in the sample, so <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, and <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>29</m:mn></m:math></para>
+          <para id="fs-idm117819488"><m:math><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.96</m:mn></m:math>, so <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.96</m:mn><m:mo>=</m:mo><m:mn>0.04</m:mn></m:math></para>
+          <para id="fs-idm140901120">
+            <m:math><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>0.02</m:mn></m:mrow><m:mrow><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>0.02</m:mn></m:mrow></m:msub></m:mrow><m:mo>=</m:mo><m:mn>2.150</m:mn></m:math>
+          </para>
+          <para id="eip-idp903520">
+            <m:math><m:mrow><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mfrac><m:mi>α</m:mi><m:mn>2</m:mn></m:mfrac></m:mrow></m:msub><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>s</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>2.150</m:mn><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>521</m:mn><m:mo>,</m:mo><m:mn>130.41</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>30</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>~</m:mo><m:mi>$</m:mi><m:mn>204</m:mn><m:mo>,</m:mo><m:mn>561.66</m:mn></m:mrow></m:math>
+          </para>
+          <para id="eip-idm139616976"><m:math><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo stretchy="true">¯</m:mo></m:mover></m:mrow><m:mo>−</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mo>$</m:mo><m:mn>251</m:mn></m:math>,854.23 - $204,561.66 = $47,292.57</para>
+          <para id="eip-idm95497616"><m:math><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo stretchy="true">¯</m:mo></m:mover></m:mrow><m:mo>+</m:mo><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mo>$</m:mo><m:mn>251</m:mn></m:math>,854.23 + $204,561.66 = $456,415.89</para>
+          <para id="eip-idm43369008">We estimate with 96% confidence that the mean amount of money raised by all Leadership PACs during the specific election cycle lies between $47,292.57 and $456,415.89.<newline/></para>
+          <para id="eip-idm19923248">Alternate Solution</para>
+              <note id="fs-idm33267104" class="statistics calculator">
+            <label/>
+            <para id="fs-idm130936496">Enter the data as a list.</para>
+            <para id="fs-idm33521776">Press <code>STAT</code> and arrow over to <code>TESTS</code>.</para>
+            <para id="fs-idm74740208">Arrow down to <code>8:TInterval</code>.</para>
+            <para id="fs-idm137623792">Press <code>ENTER</code>.</para>
+            <para id="fs-idm117237136">Arrow to Data and press <code>ENTER</code>.</para>
+            <para id="fs-idm121069488">Arrow down and enter the name of the list where the data is stored.</para>
+            <para id="fs-idm76431648">Enter <code>Freq</code>: 1</para>
+            <para id="fs-idm157410432">Enter <code>C-Level</code>: 0.96</para>
+            <para id="fs-idm14318528">Arrow down to <code>Calculate</code> and press <code>Enter</code>.</para>
+            <para id="fs-idm131790576">The 96% confidence interval is ($47,262, $456,447).</para>
+          </note>
+          <para id="eip-idp167827024">The difference between solutions arises from rounding differences.</para>
+        </solution>
+      </exercise>
+              <exercise id="eip-217">
+        <problem id="eip-975">
+          <para id="eip-184"><emphasis effect="italics">Forbes</emphasis> magazine published data on the best small firms in a certain year. These were firms that had been publicly traded for at least a year, have a stock price of at least $5 per share, and have reported annual revenue between $5 million and $1 billion. The <link target-id="eip-884" document=""/> shows the ages of the corporate CEOs for a random sample of these firms.
+          </para>
+              <table id="eip-884" summary="..">
+            <tgroup cols="5">
+              <tbody>
+                <row>
+                  <entry>48</entry>
+                  <entry>58</entry>
+                  <entry>51</entry>
+                  <entry>61</entry>
+                  <entry>56</entry>
+                </row>
+                <row>
+                  <entry>59</entry>
+                  <entry>74</entry>
+                  <entry>63</entry>
+                  <entry>53</entry>
+                  <entry>50</entry>
+                </row>
+                <row>
+                  <entry>59</entry>
+                  <entry>60</entry>
+                  <entry>60</entry>
+                  <entry>57</entry>
+                  <entry>46</entry>
+                </row>
+                <row>
+                  <entry>55</entry>
+                  <entry>63</entry>
+                  <entry>57</entry>
+                  <entry>47</entry>
+                  <entry>55</entry>
+                </row>
+                <row>
+                  <entry>57</entry>
+                  <entry>43</entry>
+                  <entry>61</entry>
+                  <entry>62</entry>
+                  <entry>49</entry>
+                </row>
+                <row>
+                  <entry>67</entry>
+                  <entry>67</entry>
+                  <entry>55</entry>
+                  <entry>55</entry>
+                  <entry>49</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+          <para id="eip-idm30943456">Use this sample data to construct a 90% confidence interval for the mean age of CEO’s for these top small firms. Use the Student's t-distribution.</para>
+        </problem>
+      </exercise>
+              <exercise id="eip-392">
+        <problem id="eip-190">
+          <para id="eip-579">Unoccupied seats on flights cause airlines to lose revenue. Suppose a large airline wants to estimate its mean number of unoccupied seats per flight over the past year. To accomplish this, the records of 225 flights are randomly selected and the number of unoccupied seats is noted for each of the sampled flights. The sample mean is 11.6 seats and the sample standard deviation is 4.1 seats.</para>
+              <list id="eip-idm49907776" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="eip-idp70657312" list-type="enumerated" number-style="lower-roman">
+                <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> = __________
+                </item>
+                <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
+              </list>
+            </item>
+            <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+            <item>Which distribution should you use for this problem? Explain your choice.</item>
+            <item>Construct a 92% confidence interval for the population mean number of unoccupied seats per
+              flight.
+              <list id="eip-idm535456" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+          </list>
+        </problem>
+        <solution id="fs-idm33461392">
+              <list id="fs-idp16278992" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="fs-idm150491184" list-type="enumerated" number-style="lower-roman">
+                <item>
+                  <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mn>11.6</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow><m:mo>=</m:mo><m:mn>4.1</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>225</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>224</m:mn></m:math>
+                </item>
+              </list>
+            </item>
+            <item><m:math><m:mi>X</m:mi></m:math> is the number of unoccupied seats on a single flight. <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> is the mean number of unoccupied seats from a sample of 225 flights.</item>
+            <item>We will use a Student’s-t distribution, because we do not know the population standard deviation.</item>
+            <item>
+              <list id="fs-idm19293168" list-type="enumerated" number-style="lower-roman">
+                <item>CI: (11.12 , 12.08)</item>
+                <item>Answers may vary.</item>
+                <item><m:math><m:mtext>EBM</m:mtext></m:math>: 0.48</item>
+              </list>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+              <exercise id="eip-848">
+        <problem id="eip-idm117422496">
+          <para id="eip-idp46649712">In a recent sample of 84 used car sales costs, the sample mean was $6,425 with a standard deviation of $3,156. Assume the underlying distribution is approximately normal.</para>
+              <list id="eip-idp46650288" list-type="enumerated" number-style="lower-alpha">
+            <item>Which distribution should you use for this problem? Explain your choice.</item>
+            <item>Define the random variable <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+            <item>Construct a 95% confidence interval for the population mean cost of a used car.
+              <list id="eip-idp2064304" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>Explain what a “95% confidence interval” means for this study.</item>
+          </list>
+        </problem>
+      </exercise>
+              <exercise id="eip-789">
+        <problem id="eip-idp101366832">
+          <para id="eip-idp114357168">Six different national brands of chocolate chip cookies were randomly selected at the supermarket. The grams of fat per serving are as follows: 8; 8; 10; 7; 9; 9. Assume the underlying distribution is approximately normal.</para>
+              <list id="eip-idp114357792" list-type="enumerated" number-style="lower-alpha">
+            <item>Construct a 90% confidence interval for the population mean grams of fat per serving of chocolate chip cookies sold in supermarkets.
+              <list id="eip-idm3541392" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>If you wanted a smaller error bound while keeping the same level of confidence, what should have been changed in the study before it was done?</item>
+            <item>Go to the store and record the grams of fat per serving of six brands of chocolate chip cookies.</item>
+            <item>Calculate the mean.</item>
+            <item>Is the mean within the interval you calculated in part a? Did you expect it to be? Why or why not?</item>
+          </list>
+        </problem>
+        <solution id="fs-idm144387776">
+              <list id="fs-idm144387520" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="fs-idm104467472" list-type="enumerated" number-style="lower-roman">
+                <item>CI: (7.64 , 9.36)</item>
+                <item>
+                  <figure class="scaled-down" id="fs-idm59520752">
+                    <media id="mmm3" alt="A normal distribution curve with the area between 7.64 and 9.36 highlighted, centered at 8.5.">
+                      <image src="../../media/IBS2e_Figure_08_00_020.png" mime-type="image/png"/>
+                    </media>
+                  </figure>
+                </item>
+                <item><m:math><m:mtext>EBM</m:mtext></m:math>: 0.86</item>
+              </list>
+            </item>
+            <item>The sample should have been increased.</item>
+            <item>Answers will vary.</item>
+            <item>Answers will vary.</item>
+            <item>Answers will vary.</item>
+          </list>
+        </solution>
+      </exercise>
+              <exercise id="fs-idm170967312">
+        <problem id="fs-idm181156640">
+          <para id="fs-idm181156384">A survey of the mean number of cents off that coupons give was conducted by randomly surveying one coupon per page from the coupon sections of a recent San Jose Mercury News. The following data were collected: 20¢; 75¢; 50¢; 65¢; 30¢; 55¢; 40¢; 40¢; 30¢; 55¢; $1.50; 40¢; 65¢; 40¢. Assume the underlying distribution is approximately normal.</para>
+              <list id="fs-idm115727600" list-type="enumerated" number-style="lower-alpha">
+            <item>
+              <list id="fs-idm158307360" list-type="enumerated" number-style="lower-roman">
+                <item><m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> = __________</item>
+                <item><m:math><m:mrow><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mrow></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi></m:math> = __________</item>
+                <item><m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> = __________</item>
+              </list>
+            </item>
+            <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and <m:math><m:mover accent="true"><m:mi>X</m:mi><m:mo>¯</m:mo></m:mover></m:math> in words.</item>
+            <item>Which distribution should you use for this problem? Explain your choice.</item>
+            <item>Construct a 95% confidence interval for the population mean worth of coupons.
+              <list id="fs-idm87013712" list-type="enumerated" number-style="lower-roman">
+                <item>State the confidence interval.</item>
+                <item>Sketch the graph.</item>
+                <item>Calculate the error bound.</item>
+              </list>
+            </item>
+            <item>If many random samples were taken of size 14, what percent of the confidence intervals constructed should contain the population mean worth of coupons? Explain why.</item>
+          </list>
+        </problem>
+      </exercise>
+      <para id="id7660865"><newline/><emphasis effect="italics">Use the following information to answer the next two exercises:</emphasis> A quality control specialist for a restaurant chain takes a random sample of size 12 to check the amount of soda served in the 16 oz. serving size. The sample mean is 13.30 with a sample standard deviation of 1.55. Assume the underlying population is normally distributed.</para>
+              <exercise id="eeeeeeeeeeeeeeex">
+        <problem id="id5710642">
+          <para id="para58">Find the 95% Confidence Interval for the true population mean for the amount of soda served.</para>
+              <list id="list58" list-type="enumerated" number-style="lower-alpha">
+            <item>(12.42, 14.18)</item>
+            <item>(12.32, 14.29)</item>
+            <item>(12.50, 14.10)</item>
+            <item>Impossible to determine</item>
+          </list>
+        </problem>
+        <solution id="id6215942">
+          <para id="solb11">b</para>
+        </solution>
+      </exercise>
+              <exercise id="exxxx">
+        <problem id="id6176057">
+          <para id="para60"> What is the error bound?</para>
+              <list id="list60" list-type="enumerated" number-style="lower-alpha">
+            <item>0.87</item>
+            <item>1.98</item>
+            <item>0.99</item>
+            <item>1.74</item>
+          </list>
+        </problem>
+      </exercise>
+    </section>
+    <section class="glossary" id="sect-00004">
+      <title>Key Terms</title>
+      <definition id="def-00001">
+        <term>Degrees of Freedom (<m:math><m:mtext>df</m:mtext></m:math>)</term>
+        <meaning>the number of independent values that can vary in the calculation of a statistic; for a sample of size <m:math><m:mi>n</m:mi></m:math> it equals <m:math><m:mi>n</m:mi></m:math> − 1 when one parameter (the mean) has been estimated</meaning>
+      </definition>
+      <definition id="def-00002">
+        <term>Normal Distribution</term>
+        <meaning>a continuous random variable (RV) with pdf <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mo>/</m:mo><m:mn>2</m:mn><m:msup><m:mi>σ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:msup></m:math>, where <m:math><m:mi>μ</m:mi></m:math> is the mean of the distribution and <m:math><m:mi>σ</m:mi></m:math> is the standard deviation, notation: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math>. If <m:math><m:mi>μ</m:mi></m:math> = 0 and <m:math><m:mi>σ</m:mi></m:math> = 1, the RV is called <emphasis>the standard normal distribution</emphasis>.</meaning>
+      </definition>
+      <definition id="def-00003">
+        <term>Standard Deviation</term>
+        <meaning>a number that is equal to the square root of the variance and measures how far data values are from their mean; notation: <m:math><m:mi>s</m:mi></m:math> for sample standard deviation and <m:math><m:mi>σ</m:mi></m:math> for population standard deviation</meaning>
+      </definition>
+      <definition id="def-00004">
+        <term>Student’s <m:math><m:mi>t</m:mi></m:math>-Distribution</term>
+        <meaning>investigated and reported by William S. Gosset in 1908 and published under the pseudonym Student; the major characteristics of the random variable (RV) are:
+              <list list-type="bulleted" id="list-00005">
+            <item>It is continuous and assumes any real values.</item>
+            <item>The pdf is symmetrical about its mean of zero. However, it is more spread out and flatter at the apex than the normal distribution.</item>
+            <item>It approaches the standard normal distribution as <m:math><m:mi>n</m:mi></m:math> gets larger.</item>
+            <item>There is a “family” of t-distributions: each representative of the family is completely defined by the number of degrees of freedom, which is one less than the sample size.</item>
+          </list>
+        </meaning>
+      </definition>
+    </section>
+  </content>
 </document>

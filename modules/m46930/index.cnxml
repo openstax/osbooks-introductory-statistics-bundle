@@ -5,7 +5,6 @@
     <md:title>Measures of the Location of the Data</md:title>
     <md:uuid>95a77922-f2e0-4099-a88e-7863520b915c</md:uuid>
   </metadata>
-
   <content>
     <para id="para-00001">The common measures of location are <term id="term-00001">quartiles</term> and <term id="term-00002">percentiles</term>.</para>
     <para id="para-00002">Quartiles divide an ordered data set into four equal parts. The three quartiles of a data set are labeled as <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub></m:math>, and <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub></m:math>.</para>
@@ -23,33 +22,11 @@
     <section id="sect-00002">
       <title>Introduction to Quartiles</title>
       <para id="fs-idp48110304">Percentiles are mostly used with very large populations. Therefore, if you were to say that 90% of the test scores are less (and not the same or less) than your score, it would be acceptable because removing one particular data value is not significant. </para>
-
-
       <para id="element-681">The <term id="term-00003">median</term> is a number that measures the "center" of the data. You can think of the median as the "middle value," but it does not actually have to be one of the observed values. It is a number that separates ordered data into halves. Half the values are the same number or smaller than the median, and half the values are the same number or larger. For example, consider the following data. <newline/>1; 11.5; 6; 7.2; 4; 8; 9; 10; 6.8; 8.3; 2; 2; 10; 1 <newline count="2"/>Ordered from smallest to largest: <newline/>1; 1; 2; 2; 4; 6; 6.8; 7.2; 8; 8.3; 9; 10; 10; 11.5</para>
       <para id="element-546">Since there are 14 observations, the median is between the seventh value, 6.8, and the eighth value, 7.2. To find the median, add the two values together and divide by two.</para>
-      <equation id="element-293" class="unnumbered"><label/>
-<m:math>
-          <m:mtable>
-            <m:mtr>
-              <m:mtd>
-                <m:mn>6.8</m:mn>
-                <m:mo>+</m:mo>
-                <m:mn>7.2</m:mn>
-                <m:mo>=</m:mo>
-                <m:mn>14</m:mn>
-              </m:mtd>
-            </m:mtr>
-            <m:mtr>
-              <m:mtd>
-                <m:mn>14</m:mn>
-                <m:mo>÷</m:mo>
-                <m:mn>2</m:mn>
-                <m:mo>=</m:mo>
-                <m:mn>7</m:mn>
-              </m:mtd>
-            </m:mtr>
-          </m:mtable>
-        </m:math>
+      <equation id="element-293" class="unnumbered">
+        <label/>
+        <m:math><m:mtable><m:mtr><m:mtd><m:mn>6.8</m:mn><m:mo>+</m:mo><m:mn>7.2</m:mn><m:mo>=</m:mo><m:mn>14</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>14</m:mn><m:mo>÷</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:mtd></m:mtr></m:mtable></m:math>
       </equation>
       <para id="element-995">The median is seven. Half of the values are smaller than seven and half of the values are larger than seven.</para>
       <para id="element-308">Quartiles are numbers that separate the data into quarters. Quartiles may or may not be part of the data. To find the quartiles, first find the median or second quartile. The first quartile, <m:math><m:mi>Q</m:mi></m:math><sub>1</sub>, is the middle value of the lower half of the data, and the third quartile, <m:math><m:mi>Q</m:mi></m:math><sub>3</sub>, is the middle value, or median, of the upper half of the data. To get the idea, consider the same data set: <newline/>1; 1; 2; 2; 4; 6; 6.8; 7.2; 8; 8.3; 9; 10; 10; 11.5</para>
@@ -61,38 +38,22 @@
     <section id="sect-00003">
       <title>The Interquartile Range</title>
       <para id="element-716">The <term id="term-00007">interquartile range</term> is a number that indicates the spread of the middle half or the middle 50% of the data. It is the difference between the third quartile (<m:math><m:mi>Q</m:mi></m:math><sub>3</sub>) and the first quartile (<m:math><m:mi>Q</m:mi></m:math><sub>1</sub>).</para>
-
       <para id="element-7162"><m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub></para>
-      <para id="element-847">The <m:math><m:mi>IQR</m:mi></m:math> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) below the first quartile or (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this: <figure id="fig-00001">
+      <para id="element-847">The <m:math><m:mi>IQR</m:mi></m:math> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) below the first quartile or (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this:
+        <figure id="fig-00001">
           <title>Identifying Outliers with the IQR</title>
           <media alt="A diagram of a horizontal box plot over a number line showing how the IQR identifies outliers. A box labeled Interquartile Range (middle 50%) spans from Q1 to Q3 with a dashed line at Q2, the median, and brackets above show IQR = Q3 minus Q1. Whiskers extend 1.5 IQR below Q1 to the lower fence, Q1 minus 1.5 IQR, and 1.5 IQR above Q3 to the upper fence, Q3 plus 1.5 IQR. Typical data points appear as dots between the fences, while shaded regions beyond each fence are labeled Outlier Zone and contain outlier data points.">
             <image src="../../media/fig-ch02_IQR.png" mime-type="image/png"/>
           </media>
-          <caption>A value is an outlier if it falls below <m:math>
-              <m:mrow>
-                <m:mtext>Q</m:mtext>
-                <m:mn>1</m:mn>
-                <m:mo>−</m:mo>
-                <m:mn>1.5</m:mn>
-                <m:mo>⋅</m:mo>
-                <m:mtext>IQR</m:mtext>
-              </m:mrow>
-            </m:math> or above <m:math>
-              <m:mrow>
-                <m:mtext>Q</m:mtext>
-                <m:mn>3</m:mn>
-                <m:mo>+</m:mo>
-                <m:mn>1.5</m:mn>
-                <m:mo>⋅</m:mo>
-                <m:mtext>IQR</m:mtext>
-              </m:mrow>
-            </m:math></caption>
+          <caption>A value is an outlier if it falls below <m:math><m:mrow><m:mtext>Q</m:mtext><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mtext>IQR</m:mtext></m:mrow></m:math> or above <m:math><m:mrow><m:mtext>Q</m:mtext><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mtext>IQR</m:mtext></m:mrow></m:math></caption>
         </figure>
       </para>
       <para id="para-00022">Potential outliers always require further investigation.</para>
-
-      <note id="fs-idm10803744"><label/><title>NOTE</title>
-<para id="fs-idp4345696">A potential outlier is a data point that is significantly different from the other data points. These special data points may be errors or some kind of abnormality or they may be a key to understanding the data.</para></note>
+      <note id="fs-idm10803744">
+        <label/>
+        <title>NOTE</title>
+        <para id="fs-idp4345696">A potential outlier is a data point that is significantly different from the other data points. These special data points may be errors or some kind of abnormality or they may be a key to understanding the data.</para>
+      </note>
     </section>
     <example id="element-826">
       <exercise id="exer5">
@@ -102,41 +63,38 @@
         <solution id="id45746296">
           <para id="element-939">Order the data from smallest to largest. <newline/>114,950; 158,000; 230,500; 387,000; 389,950; 479,000; 488,800; 529,000; 575,000; 639,000; 659,000; 1,095,000; 5,500,000</para>
           <para id="element-170"><emphasis effect="italics">Median</emphasis> = 488,800</para>
-          <para id="element-563"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> <m:math><m:mo>=</m:mo>
-              <m:mrow>
-                <m:mfrac>
-                  <m:mrow>
-                    <m:mtext>230,500 + 387,000</m:mtext>
-                  </m:mrow>
-                  <m:mn>2</m:mn>
-                </m:mfrac>
-              </m:mrow>
-            <m:mo>=</m:mo><m:mn>308</m:mn><m:mo>,</m:mo><m:mn>750</m:mn></m:math></para>
-          <para id="element-756"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>=</m:mo>
-              <m:mrow>
-                <m:mfrac>
-                  <m:mrow>
-                    <m:mtext>639,000 + 659,000</m:mtext>
-                  </m:mrow>
-                  <m:mn>2</m:mn>
-                </m:mfrac>
-              </m:mrow>
-            <m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:math></para>
+          <para id="element-563">
+            <m:math><m:mi>Q</m:mi></m:math>
+            <sub>1</sub>
+            <m:math><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>230,500 + 387,000</m:mtext></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mn>308</m:mn><m:mo>,</m:mo><m:mn>750</m:mn></m:math>
+          </para>
+          <para id="element-756">
+            <m:math><m:mi>Q</m:mi></m:math>
+            <sub>3</sub>
+            <m:math><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mtext>639,000 + 659,000</m:mtext></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:math>
+          </para>
           <para id="element-290"><m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn></m:math>– 308,750 = 340,250</para>
-          <para id="element-166"><m:math><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>340</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>510</m:mn><m:mo>,</m:mo><m:mn>375</m:mn></m:math></para>
+          <para id="element-166">
+            <m:math><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>340</m:mn><m:mo>,</m:mo><m:mn>250</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>510</m:mn><m:mo>,</m:mo><m:mn>375</m:mn></m:math>
+          </para>
           <para id="element-348"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> – <m:math><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>308</m:mn><m:mo>,</m:mo><m:mn>750</m:mn></m:math>– 510,375 = –201,625</para>
-          <para id="element-211"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>+</m:mo><m:mn>510</m:mn><m:mo>,</m:mo><m:mn>375</m:mn><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>159</m:mn><m:mo>,</m:mo><m:mn>375</m:mn></m:math></para>
+          <para id="element-211">
+            <m:math><m:mi>Q</m:mi></m:math>
+            <sub>3</sub>
+            <m:math><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>649</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>+</m:mo><m:mn>510</m:mn><m:mo>,</m:mo><m:mn>375</m:mn><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>159</m:mn><m:mo>,</m:mo><m:mn>375</m:mn></m:math>
+          </para>
           <para id="element-109">No house price is less than –201,625. However, 5,500,000 is more than 1,159,375. Therefore, 5,500,000 is a potential <term id="term-00008">outlier</term>.</para>
         </solution>
       </exercise>
     </example>
-
     <note id="fs-idp16250528" class="statistics try">
-      <label/><title>Try It</title>
-<exercise id="fs-idp63302352">
+      <label/>
+      <title>Try It</title>
+      <exercise id="fs-idp63302352">
         <problem id="fs-idm22548992">
           <para id="fs-idp42507600">For the following 11 salaries, calculate the <m:math><m:mi>IQR</m:mi></m:math> and determine if any salaries are outliers. The salaries are in dollars.</para>
-          <para id="fs-idm25187088"><list list-type="labeled-item" display="inline" id="list-00001">
+          <para id="fs-idm25187088">
+            <list list-type="labeled-item" display="inline" id="list-00001">
               <item>$33,000</item>
               <item>$64,500</item>
               <item>$28,000</item>
@@ -148,11 +106,11 @@
               <item>$54,000</item>
               <item>$120,000</item>
               <item>$40,500</item>
-            </list></para>
+            </list>
+          </para>
         </problem>
       </exercise>
     </note>
-
     <example id="element-17">
       <exercise id="element-889">
         <problem id="id45587381">
@@ -172,15 +130,23 @@
                 <row>
                   <entry/>
                   <entry>Minimum</entry>
-                  <entry><m:math><m:mi>Q</m:mi></m:math><sub>1</sub></entry>
+                  <entry>
+                    <m:math><m:mi>Q</m:mi></m:math>
+                    <sub>1</sub>
+                  </entry>
                   <entry>Median</entry>
-                  <entry><m:math><m:mi>Q</m:mi></m:math><sub>3</sub></entry>
+                  <entry>
+                    <m:math><m:mi>Q</m:mi></m:math>
+                    <sub>3</sub>
+                  </entry>
                   <entry>Maximum</entry>
                 </row>
               </thead>
               <tbody>
                 <row>
-                  <entry><emphasis effect="bold">Day</emphasis></entry>
+                  <entry>
+                    <emphasis effect="bold">Day</emphasis>
+                  </entry>
                   <entry>32</entry>
                   <entry>56</entry>
                   <entry>74.5</entry>
@@ -188,7 +154,9 @@
                   <entry>99</entry>
                 </row>
                 <row>
-                  <entry><emphasis effect="bold">Night</emphasis></entry>
+                  <entry>
+                    <emphasis effect="bold">Night</emphasis>
+                  </entry>
                   <entry>25.5</entry>
                   <entry>78</entry>
                   <entry>81</entry>
@@ -200,33 +168,46 @@
           </table>
           <list id="fs-idm23962720" list-type="enumerated" number-style="lower-alpha">
             <item>The IQR for the day group is <m:math><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 82.5 – 56 = 26.5 <para id="fs-idm7044352">The IQR for the night group is <m:math><m:mi>Q</m:mi></m:math><sub>3</sub> – <m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 89 – 78 = 11</para><para id="fs-idp42547504">The interquartile range (the spread or variability) for the day class is larger than the night class <m:math><m:mi>IQR</m:mi></m:math>. This suggests more variation will be found in the day class’s class test scores.</para></item>
-            <item>Day class outliers are found using the IQR times 1.5 rule. So, <list id="fs-idm52257968" list-type="labeled-item">
-                <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> <m:math><m:mo>−</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>56</m:mn><m:mo>−</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>16.25</m:mn></m:math></item>
-                <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>82.5</m:mn><m:mo>+</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>122.25</m:mn></m:math></item>
-              </list><para id="fs-idp38341744">Since the minimum and maximum values for the day class are greater than 16.25 and less than 122.25, there are no outliers.</para>
+            <item>Day class outliers are found using the IQR times 1.5 rule. So,
+              <list id="fs-idm52257968" list-type="labeled-item">
+                <item>
+                  <m:math><m:mi>Q</m:mi></m:math>
+                  <sub>1</sub>
+                  <m:math><m:mo>−</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>56</m:mn><m:mo>−</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>16.25</m:mn></m:math>
+                </item>
+                <item>
+                  <m:math><m:mi>Q</m:mi></m:math>
+                  <sub>3</sub>
+                  <m:math><m:mo>+</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>82.5</m:mn><m:mo>+</m:mo><m:mn>26.5</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>122.25</m:mn></m:math>
+                </item>
+              </list>
+              <para id="fs-idp38341744">Since the minimum and maximum values for the day class are greater than 16.25 and less than 122.25, there are no outliers.</para>
 <para id="fs-idm23940160">Night class outliers are calculated as:</para>
-<list id="fs-idp29569184" list-type="labeled-item">
+              <list id="fs-idp29569184" list-type="labeled-item">
                 <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> – <m:math><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>78</m:mn><m:mo>−</m:mo><m:mn>11</m:mn><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>61.5</m:mn></m:math></item>
                 <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> + IQR(1.5) = 89 + 11(1.5) = 105.5</item>
-              </list><para id="fs-idp5005056">For this class, any test score less than 61.5 is an outlier. Therefore, the scores of 45 and 25.5 are outliers. Since no test score is greater than 105.5, there is no upper end outlier.</para>
+              </list>
+              <para id="fs-idp5005056">For this class, any test score less than 61.5 is an outlier. Therefore, the scores of 45 and 25.5 are outliers. Since no test score is greater than 105.5, there is no upper end outlier.</para>
             </item>
           </list>
         </solution>
       </exercise>
     </example>
-
-    <note id="fs-idp58037360" class="statistics try"><label/><title>Try It</title>
-<exercise id="fs-idp23368176">
+    <note id="fs-idp58037360" class="statistics try">
+      <label/>
+      <title>Try It</title>
+      <exercise id="fs-idp23368176">
         <problem id="fs-idp23368304">
           <para id="fs-idp5269648">Find the interquartile range for the following two data sets and compare them.</para>
           <para id="fs-idp4060048">Test Scores for Class <m:math><m:mi>A</m:mi></m:math>
-<newline/>69; 96; 81; 79; 65; 76; 83; 99; 89; 67; 90; 77; 85; 98; 66; 91; 77; 69; 80; 94 <newline count="2"/>Test Scores for Class <m:math><m:mi>B</m:mi></m:math>
-<newline/>90; 72; 80; 92; 90; 97; 92; 75; 79; 68; 70; 80; 99; 95; 78; 73; 71; 68; 95; 100</para>
+            <newline/>69; 96; 81; 79; 65; 76; 83; 99; 89; 67; 90; 77; 85; 98; 66; 91; 77; 69; 80; 94 <newline count="2"/>Test Scores for Class <m:math><m:mi>B</m:mi></m:math>
+            <newline/>90; 72; 80; 92; 90; 97; 92; 75; 79; 68; 70; 80; 99; 95; 78; 73; 71; 68; 95; 100</para>
         </problem>
-      </exercise></note>
+      </exercise>
+    </note>
     <example id="element-84">
       <para id="element-913">Fifty statistics students were asked how much sleep they get per school night (rounded to the nearest hour). The results were:</para>
-      <table id="id4431204" summary="This table presents the amount of sleep per school night in hours in the first column, from 4-10 hours, frequency in the second column, relative frequency in the third column, and cumulative relative frequency in the fourth column.">
+            <table id="id4431204" summary="This table presents the amount of sleep per school night in hours in the first column, from 4-10 hours, frequency in the second column, relative frequency in the third column, and cumulative relative frequency in the fourth column.">
         <tgroup cols="4">
           <colspec colnum="1" colname="c1"/>
           <colspec colnum="2" colname="c2"/>
@@ -290,13 +271,13 @@
       <para id="element-488"><emphasis>Find the median</emphasis>. Look again at the "cumulative relative frequency" column and find 0.52. The median is the 50<sup>th</sup> percentile or the second quartile. 50% of 50 is 25. There are 25 values less than the median. They include the two 4s, the five 5s, the seven 6s, and eleven of the 7s. The median or 50<sup>th</sup> percentile is between the 25<sup>th</sup>, or seven, and 26<sup>th</sup>, or seven, values. <emphasis>The median is seven.</emphasis></para>
       <para id="element-539"><emphasis>Find the third quartile</emphasis>. The third quartile is the same as the 75<sup>th</sup> percentile. You can "eyeball" this answer. If you look at the "cumulative relative frequency" column, you find 0.52 and 0.80. When you have all the fours, fives, sixes and sevens, you have 52% of the data. When you include all the 8s, you have 80% of the data. <emphasis>The 75<sup>th</sup> percentile, then, must be an eight</emphasis>. Another way to look at the problem is to find 75% of 50, which is 37.5, and round up to 38. The third quartile, <m:math><m:mi>Q</m:mi></m:math><sub>3</sub>, is the 38<sup>th</sup> value, which is an eight. You can check this answer by counting the values. (There are 37 values below the third quartile and 12 values above.)</para>
     </example>
-
-    <note id="fs-idm52647472" class="statistics try">
-      <label/><title>Try it</title>
-<exercise id="fs-idm18606176">
+            <note id="fs-idm52647472" class="statistics try">
+      <label/>
+      <title>Try it</title>
+            <exercise id="fs-idm18606176">
         <problem id="fs-idm21314496">
           <para id="fs-idm44305856">Forty bus drivers were asked how many hours they spend each day running their routes (rounded to the nearest hour). Find the 65<sup>th</sup> percentile.</para>
-          <table id="fs-idm24649760" summary="">
+            <table id="fs-idm24649760" summary="">
             <tgroup cols="4" align="center">
               <thead>
                 <row>
@@ -335,342 +316,174 @@
             </tgroup>
           </table>
         </problem>
-      </exercise></note>
+      </exercise>
+    </note>
     <section id="fs-idm21580416">
       <title>A Formula for Finding the <m:math><m:mi>k</m:mi></m:math>th Percentile</title>
       <para id="fs-idp1786064">If you were to do a little research, you would find several formulas for calculating the <m:math><m:mi>k</m:mi></m:math><sup>th</sup> percentile. Here is one of them.</para>
       <para id="fs-idp3096416"><m:math><m:mi>k</m:mi><m:mo>=</m:mo></m:math> the <m:math><m:msup><m:mi>k</m:mi><m:mtext>th</m:mtext></m:msup></m:math> percentile. It may or may not be part of the data.</para>
       <para id="fs-idp1947472"><m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the index (ranking or position of a data value)</para>
       <para id="fs-idm946480"><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the total number of data</para>
-
-      <list id="fs-idm9831088" list-type="bulleted">
+            <list id="fs-idm9831088" list-type="bulleted">
         <item>Order the data from smallest to largest.</item>
-        <item>Calculate <m:math>
-            <m:mrow>
-              <m:mi>i</m:mi>
-              <m:mo>=</m:mo>
-              <m:mfrac>
-                <m:mi>k</m:mi>
-                <m:mrow>
-                  <m:mn>100</m:mn>
-                </m:mrow>
-              </m:mfrac>
-              <m:mo stretchy="false">(</m:mo>
-              <m:mi>n</m:mi>
-              <m:mo>+</m:mo>
-              <m:mn>1</m:mn>
-              <m:mo stretchy="false">)</m:mo>
-            </m:mrow>
-          </m:math></item>
+        <item>Calculate <m:math><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mi>k</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></item>
         <item>If <m:math><m:mi>i</m:mi></m:math> is an integer, then the <m:math><m:msup><m:mi>k</m:mi><m:mtext>th</m:mtext></m:msup></m:math> percentile is the data value in the <m:math><m:msup><m:mi>i</m:mi><m:mtext>th</m:mtext></m:msup></m:math> position in the ordered set of data.</item>
         <item>If <m:math><m:mi>i</m:mi></m:math> is not an integer, then round <m:math><m:mi>i</m:mi></m:math> up and round <m:math><m:mi>i</m:mi></m:math> down to the nearest integers. Average the two data values in these two positions in the ordered data set. This is easier to understand in an example.</item>
       </list>
       <example id="fs-idm4569232">
-        <exercise id="fs-idm105708208">
+            <exercise id="fs-idm105708208">
           <problem id="fs-idm3783968">
             <para id="fs-idp1509664">Listed are 29 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis>
-<newline/>18; 21; 22; 25; 26; 27; 29; 30; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77</para>
-            <list id="fs-idm1901040" list-type="enumerated" number-style="lower-alpha">
+              <newline/>18; 21; 22; 25; 26; 27; 29; 30; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77</para>
+              <list id="fs-idm1901040" list-type="enumerated" number-style="lower-alpha">
               <item>Find the 70<sup>th</sup> percentile.</item>
               <item>Find the 83<sup>rd</sup> percentile.</item>
             </list>
-
           </problem>
           <solution id="fs-idp40713040">
-            <list id="fs-idm62647008" list-type="enumerated" number-style="lower-alpha">
+              <list id="fs-idm62647008" list-type="enumerated" number-style="lower-alpha">
               <item>
                 <list id="fs-idp14170864" list-type="labeled-item">
-                  <item><m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>70</m:mn></m:math></item>
+                  <item>
+                    <m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>70</m:mn></m:math>
+                  </item>
                   <item><m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the index</item>
-                  <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math></item>
+                  <item>
+                    <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math>
+                  </item>
                 </list>
-<m:math><m:mi>i</m:mi><m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mfrac>
-                      <m:mi>k</m:mi>
-                      <m:mrow>
-                        <m:mn>100</m:mn>
-                      </m:mrow>
-                    </m:mfrac>
-
-                  </m:mrow>
-                </m:math> (<m:math><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math>) = (<m:math>
-                  <m:mrow>
-                    <m:mfrac>
-                      <m:mrow>
-                        <m:mn>70</m:mn>
-                      </m:mrow>
-                      <m:mrow>
-                        <m:mn>100</m:mn>
-                      </m:mrow>
-                    </m:mfrac>
-
-                  </m:mrow>
-                </m:math>)(29 + 1) = 21. Twenty-one is an integer, and the data value in the 21<sup>st</sup> position in the ordered data set is 64. The 70<sup>th</sup> percentile is 64 years.</item>
+                <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math> (<m:math><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math>) = (<m:math><m:mrow><m:mfrac><m:mrow><m:mn>70</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math>)(29 + 1) = 21. Twenty-one is an integer, and the data value in the 21<sup>st</sup> position in the ordered data set is 64. The 70<sup>th</sup> percentile is 64 years.</item>
               <item>
                 <list id="fs-idm21563168" list-type="labeled-item">
                   <item><m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>83</m:mn></m:math><sup>rd</sup> percentile</item>
                   <item><m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the index</item>
-                  <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math></item>
+                  <item>
+                    <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math>
+                  </item>
                 </list>
-<m:math><m:mi>i</m:mi><m:mo>=</m:mo>
-                  <m:mrow>
-                    <m:mfrac>
-                      <m:mi>k</m:mi>
-                      <m:mrow>
-                        <m:mn>100</m:mn>
-                      </m:mrow>
-                    </m:mfrac>
-
-                  </m:mrow>
-                </m:math> (<m:math><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math>) = (<m:math>
-                  <m:mrow>
-                    <m:mfrac>
-                      <m:mrow>
-                        <m:mn>83</m:mn>
-                      </m:mrow>
-                      <m:mrow>
-                        <m:mn>100</m:mn>
-                      </m:mrow>
-                    </m:mfrac>
-
-                  </m:mrow>
-                </m:math>)(29 + 1) = 24.9, which is NOT an integer. Round it down to 24 and up to 25. The age in the 24<sup>th</sup> position is 71 and the age in the 25<sup>th</sup> position is 72. Average 71 and 72. The 83<sup>rd</sup> percentile is 71.5 years.</item>
+                <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math> (<m:math><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math>) = (<m:math><m:mrow><m:mfrac><m:mrow><m:mn>83</m:mn></m:mrow><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow></m:math>)(29 + 1) = 24.9, which is NOT an integer. Round it down to 24 and up to 25. The age in the 24<sup>th</sup> position is 71 and the age in the 25<sup>th</sup> position is 72. Average 71 and 72. The 83<sup>rd</sup> percentile is 71.5 years.</item>
             </list>
           </solution>
         </exercise>
       </example>
-      <note id="fs-idm16529696" class="statistics try"><label/><title>Try It</title>
-  <exercise id="fs-idm3894192">
+                <note id="fs-idm16529696" class="statistics try">
+        <label/>
+        <title>Try It</title>
+                <exercise id="fs-idm3894192">
           <problem id="fs-idp25866864">
             <para id="fs-idp25866992">Listed are 29 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis></para>
             <para id="fs-idm19734064">18; 21; 22; 25; 26; 27; 29; 30; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77 <newline/>Calculate the 20<sup>th</sup> percentile and the 55<sup>th</sup> percentile.</para>
           </problem>
-        </exercise></note>
-      <note id="eip-404"><label/><title>NOTE</title>
-  <para id="fs-idp26669920">You can calculate percentiles using calculators and computers. There are a variety of online calculators.</para>
+        </exercise>
+      </note>
+                <note id="eip-404">
+        <label/>
+        <title>NOTE</title>
+        <para id="fs-idp26669920">You can calculate percentiles using calculators and computers. There are a variety of online calculators.</para>
       </note>
       <example id="element-572">
-        <exercise id="element-2353">
+                <exercise id="element-2353">
           <problem id="id45288379">
             <para id="element-23532">Using <link target-id="id4431204"/>:</para>
-            <list id="element-6" list-type="enumerated" number-style="lower-alpha">
+                <list id="element-6" list-type="enumerated" number-style="lower-alpha">
               <item>Find the 80<sup>th</sup> percentile.</item>
               <item>Find the 90<sup>th</sup> percentile.</item>
               <item>Find the first quartile. What is another name for the first quartile?</item>
-
             </list>
           </problem>
           <solution id="fs-idp60869984">
             <para id="fs-idp15042704">Using the data from the frequency table, we have:</para>
-            <list id="fs-idm54301152" list-type="enumerated" number-style="lower-alpha">
-              <item>Notice there are 50 data values in the table, so <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>50</m:mn></m:math>.<newline/>Calculate the index i as follows:<newline/><m:math>
-                  <m:mi>i</m:mi>
-                  <m:mo>=</m:mo>
-                  <m:mfrac>
-                    <m:mn>80</m:mn>
-                    <m:mn>100</m:mn>
-                  </m:mfrac>
-                  <m:mo>(</m:mo>
-                  <m:mn>50</m:mn>
-                  <m:mo>+</m:mo>
-                  <m:mn>1</m:mn>
-                  <m:mo>)</m:mo>
-                  <m:mo>=</m:mo>
-                  <m:mn>40</m:mn>
-                  <m:mo>.</m:mo>
-                  <m:mn>8</m:mn>
-                </m:math><newline/>Since <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>40.8</m:mn></m:math>, calculate the mean of the 40<sup>th</sup> and 41<sup>st</sup> data values. The 40<sup>th</sup> data value is 8, the 41<sup>st</sup> data value is 9, and the mean of these two data values is 8.5. Thus, the 80<sup>th</sup> percentile is 8.5.</item>
-              <item>Calculate the index <m:math><m:mi>i</m:mi></m:math> as follows:<newline/><m:math>
-                  <m:mi>i</m:mi>
-                  <m:mo>=</m:mo>
-                  <m:mfrac>
-                    <m:mn>90</m:mn>
-                    <m:mn>100</m:mn>
-                  </m:mfrac>
-                  <m:mo>(</m:mo>
-                  <m:mn>50</m:mn>
-                  <m:mo>+</m:mo>
-                  <m:mn>1</m:mn>
-                  <m:mo>)</m:mo>
-                  <m:mo>=</m:mo>
-                  <m:mn>45</m:mn>
-                  <m:mo>.</m:mo>
-                  <m:mn>9</m:mn>
-                </m:math><newline/>Since <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>45.9</m:mn></m:math>, calculate the mean of the 45<sup>th</sup> and 46<sup>th</sup> data values. The 45<sup>th</sup> data value is 9, the 46<sup>th</sup> data value is 9, and the mean of these two data values is 9. Thus, the 90<sup>th</sup> percentile is 9.</item>
-              <item>Another name for the first quartile is the 25<sup>th</sup> percentile. Proceed to calculate the 25<sup>th</sup> percentile:<newline/>Calculate the index <m:math><m:mi>i</m:mi></m:math> as follows:<newline/><m:math>
-                  <m:mi>i</m:mi>
-                  <m:mo>=</m:mo>
-                  <m:mfrac>
-                    <m:mn>25</m:mn>
-                    <m:mn>100</m:mn>
-                  </m:mfrac>
-                  <m:mo>(</m:mo>
-                  <m:mn>50</m:mn>
-                  <m:mo>+</m:mo>
-                  <m:mn>1</m:mn>
-                  <m:mo>)</m:mo>
-                  <m:mo>=</m:mo>
-                  <m:mn>12</m:mn>
-                  <m:mo>.</m:mo>
-                  <m:mn>75</m:mn>
-                </m:math><newline/>Since <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>12.75</m:mn></m:math>, calculate the mean of the 12<sup>th</sup> and 13<sup>th</sup> data values. The 12<sup>th</sup> data value is 6, the 13<sup>th</sup> data value is 6, and the mean of these two data values is 6. Thus, the first quartile is 6.</item>
+                <list id="fs-idm54301152" list-type="enumerated" number-style="lower-alpha">
+              <item>Notice there are 50 data values in the table, so <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>50</m:mn></m:math>.<newline/>Calculate the index i as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>80</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>40</m:mn><m:mo>.</m:mo><m:mn>8</m:mn></m:math><newline/>Since <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>40.8</m:mn></m:math>, calculate the mean of the 40<sup>th</sup> and 41<sup>st</sup> data values. The 40<sup>th</sup> data value is 8, the 41<sup>st</sup> data value is 9, and the mean of these two data values is 8.5. Thus, the 80<sup>th</sup> percentile is 8.5.</item>
+              <item>Calculate the index <m:math><m:mi>i</m:mi></m:math> as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>90</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>45</m:mn><m:mo>.</m:mo><m:mn>9</m:mn></m:math><newline/>Since <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>45.9</m:mn></m:math>, calculate the mean of the 45<sup>th</sup> and 46<sup>th</sup> data values. The 45<sup>th</sup> data value is 9, the 46<sup>th</sup> data value is 9, and the mean of these two data values is 9. Thus, the 90<sup>th</sup> percentile is 9.</item>
+              <item>Another name for the first quartile is the 25<sup>th</sup> percentile. Proceed to calculate the 25<sup>th</sup> percentile:<newline/>Calculate the index <m:math><m:mi>i</m:mi></m:math> as follows:<newline/><m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>25</m:mn><m:mn>100</m:mn></m:mfrac><m:mo>(</m:mo><m:mn>50</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:math><newline/>Since <m:math><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>12.75</m:mn></m:math>, calculate the mean of the 12<sup>th</sup> and 13<sup>th</sup> data values. The 12<sup>th</sup> data value is 6, the 13<sup>th</sup> data value is 6, and the mean of these two data values is 6. Thus, the first quartile is 6.</item>
             </list>
           </solution>
         </exercise>
       </example>
-      <note id="fs-idm56651440" class="statistics try">
+                <note id="fs-idm56651440" class="statistics try">
         <label/>
-    <title>Try It</title>
-    <exercise id="fs-idp38065168">
+        <title>Try It</title>
+                <exercise id="fs-idp38065168">
           <problem id="fs-idm27880528">
             <para id="fs-idp54653312">Refer to the <link target-id="fs-idm24649760"/>. Find the third quartile. What is another name for the third quartile?</para>
           </problem>
         </exercise>
       </note>
-
-      <note id="fs-idm13393536" class="statistics collab"><label/>
-    
-    <para id="element-758">Your instructor or a member of the class will ask everyone in class how many sweaters they own. Answer the following questions: <list id="exlist" list-type="enumerated">
+                <note id="fs-idm13393536" class="statistics collab">
+        <label/>
+        <para id="element-758">Your instructor or a member of the class will ask everyone in class how many sweaters they own. Answer the following questions:
+          <list id="exlist" list-type="enumerated">
             <item> How many students were surveyed?</item>
             <item>What kind of sampling did you do?</item>
             <item>Construct two different histograms. For each, starting value = _____ ending value = ____. </item>
             <item>Find the median, first quartile, and third quartile.</item>
-            <item>Construct a table of the data to find the following: <list id="exlist2" list-type="enumerated" number-style="lower-alpha">
+            <item>Construct a table of the data to find the following:
+              <list id="exlist2" list-type="enumerated" number-style="lower-alpha">
                 <item>the 10<sup>th</sup> percentile</item>
                 <item>the 70<sup>th</sup> percentile</item>
                 <item>the percent of students who own less than four sweaters</item>
               </list>
             </item>
           </list>
-        </para></note>
-
+        </para>
+      </note>
     </section>
     <section id="fs-idp2972176">
       <title>A Formula for Finding the Percentile of a Value in a Data Set</title>
-      <list id="fs-idm17756640" list-type="bulleted">
+                <list id="fs-idm17756640" list-type="bulleted">
         <item>Order the data from smallest to largest.</item>
         <item><m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the number of data values counting from the bottom of the data list up to but not including the data value for which you want to find the percentile.</item>
         <item><m:math><m:mi>y</m:mi><m:mo>=</m:mo></m:math> the number of data values equal to the data value for which you want to find the percentile.</item>
         <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the total number of data.</item>
-        <item>Calculate <m:math>
-            <m:mrow>
-              <m:mfrac>
-                <m:mrow>
-                  <m:mi>x</m:mi>
-                  <m:mo>+</m:mo>
-                  <m:mn>0.5</m:mn>
-                  <m:mi>y</m:mi>
-                </m:mrow>
-                <m:mi>n</m:mi>
-              </m:mfrac>
-            </m:mrow>
-          <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:math>. Then round to the nearest integer.</item>
+        <item>Calculate <m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mi>y</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:math>. Then round to the nearest integer.</item>
       </list>
       <example id="fs-idm3849664">
-        <exercise id="fs-idp28609648">
+                <exercise id="fs-idp28609648">
           <problem id="fs-idp28609904">
             <para id="fs-idp38890112">Listed are 29 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis>
-<newline/>18; 21; 22; 25; 26; 27; 29; 30; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77</para>
-            <list id="fs-idm21168272" list-type="enumerated" number-style="lower-alpha">
+              <newline/>18; 21; 22; 25; 26; 27; 29; 30; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77</para>
+              <list id="fs-idm21168272" list-type="enumerated" number-style="lower-alpha">
               <item>Find the percentile for 58.</item>
               <item>Find the percentile for 25.</item>
             </list>
           </problem>
           <solution id="fs-idm170490752">
-            <list id="fs-idm170490496" list-type="enumerated" number-style="lower-alpha">
-              <item>Counting from the bottom of the list, there are 18 data values less than 58. There is one value of 58. <para id="fs-idm3871584"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>18</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.<m:math>
-                    <m:mrow>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mi>x</m:mi>
-                          <m:mo>+</m:mo>
-                          <m:mn>0.5</m:mn>
-                          <m:mi>y</m:mi>
-                        </m:mrow>
-                        <m:mi>n</m:mi>
-                      </m:mfrac>
-
-                    </m:mrow>
-                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo>
-                    <m:mrow>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mn>18</m:mn>
-                          <m:mo>+</m:mo>
-                          <m:mn>0.5</m:mn>
-                          <m:mo stretchy="false">(</m:mo>
-                          <m:mn>1</m:mn>
-                          <m:mo stretchy="false">)</m:mo>
-                        </m:mrow>
-                        <m:mrow>
-                          <m:mn>29</m:mn>
-                        </m:mrow>
-                      </m:mfrac>
-                    </m:mrow>
-                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>63.80</m:mn></m:math>. 58 is the 64<sup>th</sup> percentile.</para>
+              <list id="fs-idm170490496" list-type="enumerated" number-style="lower-alpha">
+              <item>Counting from the bottom of the list, there are 18 data values less than 58. There is one value of 58. <para id="fs-idm3871584"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>18</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.<m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mi>y</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>29</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>63.80</m:mn></m:math>. 58 is the 64<sup>th</sup> percentile.</para>
               </item>
-              <item> Counting from the bottom of the list, there are three data values less than 25. There is one value of 25. <para id="fs-idm21523472"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.<m:math>
-                    <m:mrow>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mi>x</m:mi>
-                          <m:mo>+</m:mo>
-                          <m:mn>0.5</m:mn>
-                          <m:mi>y</m:mi>
-                        </m:mrow>
-                        <m:mi>n</m:mi>
-                      </m:mfrac>
-
-                    </m:mrow>
-                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo>
-                    <m:mrow>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mn>3</m:mn>
-                          <m:mo>+</m:mo>
-                          <m:mn>0.5</m:mn>
-                          <m:mo stretchy="false">(</m:mo>
-                          <m:mn>1</m:mn>
-                          <m:mo stretchy="false">)</m:mo>
-                        </m:mrow>
-                        <m:mrow>
-                          <m:mn>29</m:mn>
-                        </m:mrow>
-                      </m:mfrac>
-                    </m:mrow>
-                  <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12.07</m:mn></m:math>. Twenty-five is the 12<sup>th</sup> percentile.</para>
+              <item> Counting from the bottom of the list, there are three data values less than 25. There is one value of 25. <para id="fs-idm21523472"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.<m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mi>y</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>29</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>12.07</m:mn></m:math>. Twenty-five is the 12<sup>th</sup> percentile.</para>
               </item>
             </list>
           </solution>
         </exercise>
       </example>
-
-      <note id="fs-idm170943360" class="statistics try"><label/><title>Try It</title>
-<exercise id="fs-idm170942864">
+              <note id="fs-idm170943360" class="statistics try">
+        <label/>
+        <title>Try It</title>
+              <exercise id="fs-idm170942864">
           <problem id="fs-idp35294448">
             <para id="fs-idp35294576">Listed are 30 ages for Academy Award winning best actors <emphasis effect="underline">in order from smallest to largest.</emphasis></para>
             <para id="fs-idp13252768">18; 21; 22; 25; 26; 27; 29; 30; 31; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77 <newline/>Find the percentiles for 47 and 31.</para>
           </problem>
-        </exercise></note>
+        </exercise>
+      </note>
     </section>
-
-
     <section id="fs-idp45793312">
       <title>Interpreting Percentiles, Quartiles, and Median</title>
       <para id="eip-400">A percentile indicates the relative standing of a data value when data are sorted into numerical order from smallest to largest. Percentages of data values are less than or equal to the pth percentile. For example, 15% of data values are less than or equal to the 15<sup>th</sup> percentile.</para>
-      <list id="eip-id1164310609380" list-type="bulleted" bullet-style="bullet">
+              <list id="eip-id1164310609380" list-type="bulleted" bullet-style="bullet">
         <item>Low percentiles always correspond to lower data values.</item>
         <item>High percentiles always correspond to higher data values.</item>
       </list>
       <para id="fs-idp44902944">A percentile may or may not correspond to a value judgment about whether it is "good" or "bad." The interpretation of whether a certain percentile is "good" or "bad" depends on the context of the situation to which the data applies. In some situations, a low percentile would be considered "good;" in other contexts a high percentile might be considered "good". In many situations, there is no value judgment that applies.</para>
       <para id="fs-idm23920480">Understanding how to interpret percentiles properly is important not only when describing data, but also when calculating probabilities in later chapters of this text.</para>
     </section>
-
-    <note id="fs-idm106923680"><label/><title>NOTE</title>
-
-<para id="fs-idm20251376">When writing the interpretation of a percentile in the context of the given data, the sentence should contain the following information.</para>
-<list id="eip-id1168197264788" list-type="bulleted">
+              <note id="fs-idm106923680">
+      <label/>
+      <title>NOTE</title>
+      <para id="fs-idm20251376">When writing the interpretation of a percentile in the context of the given data, the sentence should contain the following information.</para>
+              <list id="eip-id1168197264788" list-type="bulleted">
         <item>information about the context of the situation being considered</item>
         <item>the data value (value of the variable) that represents the percentile</item>
         <item>the percent of individuals or items with data values below the percentile</item>
@@ -678,12 +491,12 @@
       </list>
     </note>
     <example id="eip-id1170215995305">
-      <exercise id="fs-idm91768592">
+              <exercise id="fs-idm91768592">
         <problem id="fs-idm91768464">
           <para id="eip-id1170184310084">On a timed math test, the first quartile for time it took to finish the exam was 35 minutes. Interpret the first quartile in the context of this situation.</para>
         </problem>
         <solution id="fs-idm53128368">
-          <list id="eip-id1170179452695" list-type="bulleted">
+              <list id="eip-id1170179452695" list-type="bulleted">
             <item>Twenty-five percent of students finished the exam in 35 minutes or less. </item>
             <item>Seventy-five percent of students finished the exam in 35 minutes or more.</item>
             <item>A low percentile could be considered good, as finishing more quickly on a timed exam is desirable. (If you take too long, you might not be able to finish.)</item>
@@ -691,57 +504,54 @@
         </solution>
       </exercise>
     </example>
-
-
-    <note id="fs-idp16945648" class="statistics try">
-      <label/><title>Try It</title>
-<exercise id="fs-idp33388848">
+              <note id="fs-idp16945648" class="statistics try">
+      <label/>
+      <title>Try It</title>
+              <exercise id="fs-idp33388848">
         <problem id="fs-idm41955616">
           <para id="fs-idp20699248">For the 100-meter dash, the third quartile for times for finishing the race was 11.5 seconds. Interpret the third quartile in the context of the situation.</para>
         </problem>
-      </exercise></note>
-
+      </exercise>
+    </note>
     <example id="eip-id1170441826663">
-      <exercise id="fs-idm148596320">
+              <exercise id="fs-idm148596320">
         <problem id="fs-idm170402432">
           <para id="eip-id1170436117670">On a 20 question math test, the 70<sup>th</sup> percentile for number of correct answers was 16. Interpret the 70<sup>th</sup> percentile in the context of this situation.</para>
         </problem>
       </exercise>
     </example>
-
-    <note id="fs-idp77029680" class="statistics try">
-      <label/><title>Try It</title>
-<exercise id="fs-idp34034288">
+              <note id="fs-idp77029680" class="statistics try">
+      <label/>
+      <title>Try It</title>
+              <exercise id="fs-idp34034288">
         <problem id="fs-idp48692144">
           <para id="fs-idp55037680">On a 60 point written assignment, the 80<sup>th</sup> percentile for the number of points earned was 49. Interpret the 80<sup>th</sup> percentile in the context of this situation.</para>
         </problem>
       </exercise>
     </note>
-
     <example id="eip-id7060500">
-      <exercise id="fs-idm205091056">
+              <exercise id="fs-idm205091056">
         <problem id="fs-idm15124096">
           <para id="eip-id1170610063171">At a community college, it was found that the 30<sup>th</sup> percentile of credit units that students are enrolled for is seven units. Interpret the 30<sup>th</sup> percentile in the context of this situation.</para>
         </problem>
       </exercise>
     </example>
-
-    <note id="fs-idp80590208" class="statistics try">
-      <label/><title>Try It</title>
-<exercise id="fs-idp73731328">
+              <note id="fs-idp80590208" class="statistics try">
+      <label/>
+      <title>Try It</title>
+              <exercise id="fs-idp73731328">
         <problem id="fs-idp42792528">
           <para id="fs-idm23433888">During a season, the 40<sup>th</sup> percentile for points scored per player in a game is eight. Interpret the 40<sup>th</sup> percentile in the context of this situation.</para>
         </problem>
       </exercise>
     </note>
-
     <example id="fs-idp9603904">
       <para id="fs-idp45664304">Sharpe Middle School is applying for a grant that will be used to add fitness equipment to the gym. The principal surveyed 15 anonymous students to determine how many minutes a day the students spend exercising. The results from the 15 anonymous students are shown.</para>
       <para id="fs-idp39768656">0 minutes; 40 minutes; 60 minutes; 30 minutes; 60 minutes</para>
       <para id="fs-idm13969776">10 minutes; 45 minutes; 30 minutes; 300 minutes; 90 minutes;</para>
       <para id="fs-idp22597008">30 minutes; 120 minutes; 60 minutes; 0 minutes; 20 minutes</para>
       <para id="fs-idp53167440">Determine the following five values.</para>
-      <list id="fs-idp70490496" list-type="labeled-item">
+              <list id="fs-idp70490496" list-type="labeled-item">
         <item>Min = 0</item>
         <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 20</item>
         <item>Med = 40</item>
@@ -750,9 +560,9 @@
       </list>
       <para id="fs-idp83565376">If you were the principal, would you be justified in purchasing new fitness equipment? Since 75% of the students exercise for 60 minutes or less daily, and since the <m:math><m:mi>IQR</m:mi></m:math> is 40 minutes (60 – 20 = 40), we know that half of the students surveyed exercise between 20 minutes and 60 minutes daily. At first glance, this seems a reasonable amount of time spent exercising, so the principal would be justified in purchasing the new equipment.</para>
       <para id="fs-idm77236544">However, the principal needs to be careful. The value 300 appears to be a potential outlier.</para>
-      <para id="fs-idm9669376"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>60</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>40</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>120</m:mn></m:math>.</para>
+      <para id="fs-idm9669376"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub><m:math><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>(</m:mo><m:mi>IQR</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>60</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>40</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>120</m:mn></m:math>.</para>
       <para id="fs-idp13270336">The value 300 is greater than 120 so it is a potential outlier. If we delete it and calculate the five values, we get the following values:</para>
-      <list id="fs-idm2894688" list-type="labeled-item">
+              <list id="fs-idm2894688" list-type="labeled-item">
         <item>Min = 0</item>
         <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 20</item>
         <item>Med = 35</item>
@@ -761,60 +571,43 @@
       </list>
       <para id="fs-idm6660656">We still have 75% of the students exercising for 60 minutes or less daily and half of the students exercising between 20 and 60 minutes a day. However, 15 students is a small sample and the principal should survey more students to confirm his findings.</para>
     </example>
-    <note class="statistics try" id="note-00001">
+              <note class="statistics try" id="note-00001">
       <label/>
-  <title>Try It</title>
-  <exercise id="exer-00001">
+      <title>Try It</title>
+              <exercise id="exer-00001">
         <problem id="prob-00001">
           <para id="para-00006">A college statistics instructor is investigating the amount of time students spend working on a final project in the course. The instructor would like students to spend approximately 3 to 4 hours as the typical amount of time to be spent on the project. The instructor collects data from a random sample of 10 students for the number of hours spent working on the final project. The results obtained are as follows:</para>
           <para id="para-00007">2 hours; 3 hours; 5 hours; 3 hours; 4 hours;</para>
           <para id="para-00008">4 hours; 3 hours; 11 hours; 3 hours; 2 hours.</para>
-          <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+              <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
             <item>Determine the following five values: <emphasis effect="italics">Min</emphasis>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo></m:math><emphasis effect="italics">Med</emphasis>, <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>,</m:mo></m:math><emphasis effect="italics">Max</emphasis>.</item>
             <item>Should the instructor modify the final project or leave it as is?</item>
           </list>
         </problem>
         <solution id="sol-00001">
-          <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
+              <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
             <item>The five values are obtained as follows: <para id="para-00009"><emphasis effect="italics">Min</emphasis> = 2</para>
-  <para id="para-00010"><m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn></m:math></para>
+  <para id="para-00010">
+                <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>3</m:mn></m:math>
+  </para>
   <para id="para-00011"><emphasis effect="italics">Med</emphasis> = 3</para>
-  <para id="para-00012"><m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn></m:math></para>
+  <para id="para-00012">
+                <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn></m:math>
+  </para>
   <para id="para-00013"><emphasis effect="italics">Max</emphasis> = 11</para></item>
             <item>Given that the 3<sup>rd</sup> quartile is 4 hours, this indicates that 75% of the students spend 4 hours or less on the project. Also for the interquartile range: <m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>1</m:mn></m:math>, we know that half the students spent between 3 and 4 hours on the project. This seems like a reasonable amount of time for students to spend on the final project. <para id="para-00014">However, the value 11 hours appears to be a potential outlier.</para>
-  <equation class="unnumbered" id="eq-00001"><m:math>
-                  <m:msub>
-                    <m:mi>Q</m:mi>
-                    <m:mn>3</m:mn>
-                  </m:msub>
-                  <m:mo>+</m:mo>
-                  <m:mn>1</m:mn>
-                  <m:mo>.</m:mo>
-                  <m:mn>5</m:mn>
-                  <m:mo>(</m:mo>
-                  <m:mi>I</m:mi>
-                  <m:mi>Q</m:mi>
-                  <m:mi>R</m:mi>
-                  <m:mo>)</m:mo>
-                  <m:mo>=</m:mo>
-                  <m:mn>4</m:mn>
-                  <m:mo>+</m:mo>
-                  <m:mn>1</m:mn>
-                  <m:mo>.</m:mo>
-                  <m:mn>5</m:mn>
-                  <m:mo>(</m:mo>
-                  <m:mn>1</m:mn>
-                  <m:mo>)</m:mo>
-                  <m:mo>=</m:mo>
-                  <m:mn>5</m:mn>
-                  <m:mo>.</m:mo>
-                  <m:mn>5</m:mn>
-                </m:math></equation>
-  <para id="para-00015">The value 11 is greater than 5.5, so it is an outlier. If we delete it and recalculate the five values, we get the following values:</para>
+              <equation class="unnumbered" id="eq-00001">
+                <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>.</m:mo><m:mn>5</m:mn></m:math>
+              </equation>
+              <para id="para-00015">The value 11 is greater than 5.5, so it is an outlier. If we delete it and recalculate the five values, we get the following values:</para>
   <para id="para-00016"><emphasis effect="italics">Min</emphasis> = 2</para>
-  <para id="para-00017"><m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2.5</m:mn></m:math></para>
+  <para id="para-00017">
+                <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mn>2.5</m:mn></m:math>
+  </para>
   <para id="para-00026"><emphasis effect="italics">Med</emphasis> = 3</para>
-  <para id="para-00018"><m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn></m:math></para>
+  <para id="para-00018">
+                <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mn>4</m:mn></m:math>
+  </para>
   <para id="para-00019"><emphasis effect="italics">Max</emphasis> = 5</para>
   <para id="para-00020">We still have 75% of students spending 4 hours or less on the project. Half of the students spend between 2.5 hours and 4 hours on the project.</para>
   <para id="para-00021">However, 10 students may be a relatively small sample size. The instructor might consider a larger sample size.</para></item>
@@ -833,216 +626,101 @@
     <section id="fs-idm13790128" class="summary">
       <title>Chapter Review</title>
       <para id="fs-idp1397504">The values that divide a rank-ordered set of data into 100 equal parts are called percentiles. Percentiles are used to compare and interpret data. For example, an observation at the 50<sup>th</sup> percentile would be greater than 50 percent of the other observations in the set. Quartiles divide data into quarters. The first quartile (<m:math><m:mi>Q</m:mi></m:math><sub>1</sub>) is the 25<sup>th</sup> percentile,the second quartile (<m:math><m:mi>Q</m:mi></m:math><sub>2</sub> or median) is 50<sup>th</sup> percentile, and the third quartile (<m:math><m:mi>Q</m:mi></m:math><sub>3</sub>) is the 75<sup>th</sup> percentile. The interquartile range, or <m:math><m:mi>IQR</m:mi></m:math>, is the range of the middle 50 percent of the data values. The <m:math><m:mi>IQR</m:mi></m:math> is found by subtracting <m:math><m:mi>Q</m:mi></m:math><sub>1</sub> from <m:math><m:mi>Q</m:mi></m:math><sub>3</sub>, and can help determine outliers by using the following two expressions.</para>
-      <list id="fs-idp12766560" list-type="bulleted">
-        <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> <m:math><m:mo>+</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math></item>
+              <list id="fs-idp12766560" list-type="bulleted">
+        <item>
+          <m:math><m:mi>Q</m:mi></m:math>
+          <sub>3</sub>
+          <m:math><m:mo>+</m:mo><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math>
+        </item>
         <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> – <m:math><m:mi>IQR</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math></item>
       </list>
     </section>
-
     <section id="fs-idm202752" class="formula-review">
       <title>Formula Review</title>
-      <para id="para-00023">If a median can be found between two data values <m:math>
-          <m:msub>
-            <m:mi>x</m:mi>
-            <m:mn>1</m:mn>
-          </m:msub>
-        </m:math> and <m:math>
-          <m:msub>
-            <m:mi>x</m:mi>
-            <m:mn>2</m:mn>
-          </m:msub>
-        </m:math>, take the average of these data values <m:math>
-          <m:mfrac>
-            <m:mrow>
-              <m:msub>
-                <m:mi>x</m:mi>
-                <m:mn>1</m:mn>
-              </m:msub>
-              <m:mo>+</m:mo>
-              <m:msub>
-                <m:mi>x</m:mi>
-                <m:mn>2</m:mn>
-              </m:msub>
-            </m:mrow>
-            <m:mn>2</m:mn>
-          </m:mfrac>
-        </m:math></para>
-      <para id="para-00024">Interquartile range: <m:math>
-          <m:msub>
-            <m:mi>Q</m:mi>
-            <m:mn>3</m:mn>
-          </m:msub>
-          <m:mo>−</m:mo>
-          <m:msub>
-            <m:mi>Q</m:mi>
-            <m:mn>1</m:mn>
-          </m:msub>
-        </m:math></para>
-      <para id="para-00025">A formula for potential outliers (one method): <list id="list-00005">
+      <para id="para-00023">If a median can be found between two data values <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> and <m:math><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:math>, take the average of these data values <m:math><m:mfrac><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub></m:mrow><m:mn>2</m:mn></m:mfrac></m:math></para>
+      <para id="para-00024">Interquartile range: <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>−</m:mo><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub></m:math></para>
+      <para id="para-00025">A formula for potential outliers (one method):
+        <list id="list-00005">
           <item>Values below: <m:math><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi></m:math></item>
           <item>Values above: <m:math><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>5</m:mn><m:mo>·</m:mo><m:mi>I</m:mi><m:mi>Q</m:mi><m:mi>R</m:mi></m:math></item>
-        </list></para>
-      <para id="fs-idp5126816"><m:math>
-          <m:mrow>
-            <m:mi>i</m:mi>
-            <m:mo>=</m:mo>
-            <m:mrow>
-              <m:mo>(</m:mo>
-              <m:mrow>
-                <m:mfrac>
-                  <m:mi>k</m:mi>
-                  <m:mrow>
-                    <m:mn>100</m:mn>
-                  </m:mrow>
-                </m:mfrac>
-
-              </m:mrow>
-              <m:mo>)</m:mo>
-            </m:mrow>
-            <m:mrow>
-              <m:mo>(</m:mo>
-              <m:mrow>
-                <m:mi>n</m:mi>
-                <m:mo>+</m:mo>
-                <m:mn>1</m:mn>
-              </m:mrow>
-              <m:mo>)</m:mo>
-            </m:mrow>
-          </m:mrow>
-        </m:math>
+        </list>
+      </para>
+      <para id="fs-idp5126816">
+        <m:math><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mi>k</m:mi><m:mrow><m:mn>100</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
       </para>
       <para id="fs-idp706784">where <m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the ranking or position of a data value,</para>
       <para id="fs-idm55046864"><m:math><m:mi>k</m:mi><m:mo>=</m:mo></m:math> the kth percentile,</para>
       <para id="fs-idm6916704"><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> total number of data.</para>
-
-      <para id="fs-idp294352">Expression for finding the percentile of a data value: <m:math>
-          <m:mrow>
-            <m:mrow>
-              <m:mo>(</m:mo>
-              <m:mrow>
-                <m:mfrac>
-                  <m:mrow>
-                    <m:mrow>
-                      <m:mi>x</m:mi>
-                      <m:mtext>&#160;+&#160;</m:mtext>
-                      <m:mn>0.5</m:mn>
-                      <m:mi>y</m:mi>
-                    </m:mrow>
-                  </m:mrow>
-                  <m:mi>n</m:mi>
-                </m:mfrac>
-
-              </m:mrow>
-              <m:mo>)</m:mo>
-            </m:mrow>
-          </m:mrow>
-        <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:math></para>
+      <para id="fs-idp294352">Expression for finding the percentile of a data value: <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mrow><m:mi>x</m:mi><m:mtext> + </m:mtext><m:mn>0.5</m:mn><m:mi>y</m:mi></m:mrow></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo></m:math></para>
       <para id="fs-idp17176000">where <m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the number of values counting from the bottom of the data list up to but not including the data value for which you want to find the percentile,</para>
       <para id="fs-idm2884704"><m:math><m:mi>y</m:mi><m:mo>=</m:mo></m:math> the number of data values equal to the data value for which you want to find the percentile,</para>
       <para id="fs-idm5691392"><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> total number of data</para>
     </section>
-
     <section id="fs-idp40431760" class="practice">
-      <exercise id="fs-idm1110784">
+              <exercise id="fs-idm1110784">
         <problem id="fs-idm38839376">
           <para id="fs-idm38839120">Listed are 29 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis></para>
           <para id="fs-idm6939584">18; 21; 22; 25; 26; 27; 29; 30; 31; 33; 36; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77</para>
-          <list id="fs-idp12728784" list-type="enumerated" number-style="lower-alpha">
+              <list id="fs-idp12728784" list-type="enumerated" number-style="lower-alpha">
             <item>Find the 40<sup>th</sup> percentile.</item>
             <item>Find the 78<sup>th</sup> percentile.</item>
           </list>
         </problem>
         <solution id="fs-idm60642032">
-          <list id="fs-idp34749472" list-type="enumerated" number-style="lower-alpha">
+              <list id="fs-idp34749472" list-type="enumerated" number-style="lower-alpha">
             <item>The 40<sup>th</sup> percentile is 37 years.</item>
             <item>The 78<sup>th</sup> percentile is 69.8, which rounds to 70 years.</item>
           </list>
         </solution>
       </exercise>
-
-      <exercise id="fs-idm4719584">
+              <exercise id="fs-idm4719584">
         <problem id="fs-idm4719328">
           <para id="fs-idp14289472">Listed are 32 ages for Academy Award winning best actors <emphasis effect="italics">in order from smallest to largest.</emphasis></para>
           <para id="fs-idm62636912">18; 18; 21; 22; 25; 26; 27; 29; 30; 31; 31; 33; 36; 37; 37; 41; 42; 47; 52; 55; 57; 58; 62; 64; 67; 69; 71; 72; 73; 74; 76; 77</para>
-          <list id="fs-idm82651968" list-type="enumerated" number-style="lower-alpha">
+              <list id="fs-idm82651968" list-type="enumerated" number-style="lower-alpha">
             <item>Find the percentile of 37.</item>
             <item>Find the percentile of 72.</item>
           </list>
         </problem>
       </exercise>
-
-      <exercise id="fs-idp30887728">
+              <exercise id="fs-idp30887728">
         <problem id="fs-idp30887984">
           <para id="fs-idp30888240">Jesse was ranked 37<sup>th</sup> in his graduating class of 180 students. At what percentile is Jesse’s ranking?</para>
         </problem>
         <solution id="fs-idm44160976">
           <para id="fs-idm44160720">Jesse graduated 37<sup>th</sup> out of a class of 180 students. There are 180 – 37 = 143 students ranked below Jesse. There is one rank of 37.</para>
-          <para id="fs-idm80018544"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>143</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>. <m:math>
-              <m:mrow>
-                <m:mfrac>
-                  <m:mrow>
-                    <m:mi>x</m:mi>
-                    <m:mo>+</m:mo>
-                    <m:mn>0.5</m:mn>
-                    <m:mi>y</m:mi>
-                  </m:mrow>
-                  <m:mi>n</m:mi>
-                </m:mfrac>
-
-              </m:mrow>
-            <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo>
-              <m:mrow>
-                <m:mfrac>
-                  <m:mrow>
-                    <m:mn>143</m:mn>
-                    <m:mo>+</m:mo>
-                    <m:mn>0.5</m:mn>
-                    <m:mo stretchy="false">(</m:mo>
-                    <m:mn>1</m:mn>
-                    <m:mo stretchy="false">)</m:mo>
-                  </m:mrow>
-                  <m:mrow>
-                    <m:mn>180</m:mn>
-                  </m:mrow>
-                </m:mfrac>
-
-              </m:mrow>
-            <m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>79.72</m:mn></m:math>. Jesse’s rank of 37 puts him at the 80<sup>th</sup> percentile.</para>
+          <para id="fs-idm80018544"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>143</m:mn></m:math> and <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>. <m:math><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mi>y</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>143</m:mn><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>180</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>(</m:mo><m:mn>100</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>79.72</m:mn></m:math>. Jesse’s rank of 37 puts him at the 80<sup>th</sup> percentile.</para>
         </solution>
       </exercise>
-
-      <exercise id="eip-id1168182229232">
+              <exercise id="eip-id1168182229232">
         <problem id="eip-id1168183555687">
-          <list id="eip-id1168185190290" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
+              <list id="eip-id1168185190290" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
             <item>For runners in a race, a low time means a faster run. The winners in a race have the shortest running times. Is it more desirable to have a finish time with a high or a low percentile when running a race?</item>
             <item>The 20<sup>th</sup> percentile of run times in a particular race is 5.2 minutes. Write a sentence interpreting the 20<sup>th</sup> percentile in the context of the situation.</item>
             <item>A bicyclist in the 90<sup>th</sup> percentile of a bicycle race completed the race in 1 hour and 12 minutes. Is he among the fastest or slowest cyclists in the race? Write a sentence interpreting the 90<sup>th</sup> percentile in the context of the situation.</item>
           </list>
         </problem>
       </exercise>
-
-      <exercise id="eip-id1168182273864">
+              <exercise id="eip-id1168182273864">
         <problem id="eip-id1168191796049">
-          <list id="eip-id5724192" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
+              <list id="eip-id5724192" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
             <item>For runners in a race, a higher speed means a faster run. Is it more desirable to have a speed with a high or a low percentile when running a race?</item>
             <item>The 40<sup>th</sup> percentile of speeds in a particular race is 7.5 miles per hour. Write a sentence interpreting the 40<sup>th</sup> percentile in the context of the situation.</item>
           </list>
         </problem>
         <solution id="eip-id1168199883378">
-          <list id="eip-id1168196369910" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
+              <list id="eip-id1168196369910" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
             <item>For runners in a race it is more desirable to have a high percentile for speed. A high percentile means a higher speed which is faster.</item>
             <item>40% of runners ran at speeds of 7.5 miles per hour or less (slower). 60% of runners ran at speeds of 7.5 miles per hour or more (faster).</item>
           </list>
         </solution>
       </exercise>
-
-      <exercise id="eip-id1168217995987">
+              <exercise id="eip-id1168217995987">
         <problem id="eip-id1168183864592">
           <para id="eip-id1168226425380">On an exam, would it be more desirable to earn a grade with a high or low percentile? Explain.</para>
         </problem>
       </exercise>
-
-      <exercise id="eip-id1168183173702">
+              <exercise id="eip-id1168183173702">
         <problem id="eip-id1168227404691">
           <para id="eip-id1168230025239">Mina is waiting in line at the Department of Motor Vehicles (DMV). Her wait time of 32 minutes is the 85<sup>th</sup> percentile of wait times. Is that good or bad? Write a sentence interpreting the 85<sup>th</sup> percentile in the context of this situation.</para>
         </problem>
@@ -1050,14 +728,12 @@
           <para id="eip-id1168214950316">When waiting in line at the DMV, the 85<sup>th</sup> percentile would be a long wait time compared to the other people waiting. 85% of people had shorter wait times than Mina. In this context, Mina would prefer a wait time corresponding to a lower percentile. 85% of people at the DMV waited 32 minutes or less. 15% of people at the DMV waited 32 minutes or longer.</para>
         </solution>
       </exercise>
-
-      <exercise id="eip-id1168213546999">
+              <exercise id="eip-id1168213546999">
         <problem id="eip-id1168188876815">
           <para id="eip-id7349223">In a survey collecting data about the salaries earned by recent college graduates, Li found that her salary was in the 78<sup>th</sup> percentile. Should Li be pleased or upset by this result? Explain.</para>
         </problem>
       </exercise>
-
-      <exercise id="eip-id1168214876383">
+              <exercise id="eip-id1168214876383">
         <problem id="eip-id7327842">
           <para id="eip-id1168230657040">In a study collecting data about the repair costs of damage to automobiles in a certain type of crash tests, a certain model of car had $1,700 in damage and was in the 90<sup>th</sup> percentile. Should the manufacturer and the consumer be pleased or upset by this result? Explain and write a sentence that interprets the 90<sup>th</sup> percentile in the context of this problem.</para>
         </problem>
@@ -1065,18 +741,16 @@
           <para id="eip-id1168234799988">The manufacturer and the consumer would be upset. This is a large repair cost for the damages, compared to the other cars in the sample. INTERPRETATION: 90% of the crash tested cars had damage repair costs of $1700 or less; only 10% had damage repair costs of $1700 or more.</para>
         </solution>
       </exercise>
-
-      <exercise id="eip-id1168195852900">
+              <exercise id="eip-id1168195852900">
         <problem id="eip-id1168225195383">
           <para id="eip-idm9549040">The University of Wisconsin has two criteria used to set admission standards for students to be admitted to a college in the UW system:</para>
-          <list id="eip-id1168211096380" mark-suffix="" list-type="enumerated" number-style="lower-alpha">
+              <list id="eip-id1168211096380" mark-suffix="" list-type="enumerated" number-style="lower-alpha">
             <item>Students' GPAs and scores on standardized tests (SATs and ACTs) are entered into a formula that calculates an "admissions index" score. The admissions index score is used to set eligibility standards intended to meet the goal of admitting the top 12% of high school students in the state. In this context, what percentile does the top 12% represent?</item>
             <item>Students whose GPAs are at or above the 96<sup>th</sup> percentile of all students at their high school are eligible (called eligible in the local context), even if they are not in the top 12% of all students in the state. What percentage of students from each high school are "eligible in the local context"?</item>
           </list>
         </problem>
       </exercise>
-
-      <exercise id="eip-id1168223160542">
+              <exercise id="eip-id1168223160542">
         <problem id="eip-id7507305">
           <para id="eip-id1168211272126">Suppose that you are buying a house. You and your realtor have determined that the most expensive house you can afford is the 34<sup>th</sup> percentile. The 34<sup>th</sup> percentile of housing prices is $240,000 in the town you want to move to. In this town, can you afford 34% of the houses or 66% of the houses?</para>
         </problem>
@@ -1084,15 +758,13 @@
           <para id="eip-id1168225765198">You can afford 34% of houses. 66% of the houses are too expensive for your budget. INTERPRETATION: 34% of houses cost $240,000 or less. 66% of houses cost $240,000 or more.</para>
         </solution>
       </exercise>
-
       <para id="element-726">Use the following information to answer the next six exercises. Sixty-five randomly selected car salespersons were asked the number of cars they generally sell in one week. Fourteen people answered that they generally sell three cars; nineteen generally sell four cars; twelve generally sell five cars; nine generally sell six cars; eleven generally sell seven cars. </para>
-      <exercise id="exercisenine">
+              <exercise id="exercisenine">
         <problem id="id21439538">
           <para id="prob_9">First quartile = _______</para>
         </problem>
       </exercise>
-
-      <exercise id="exerciseten">
+              <exercise id="exerciseten">
         <problem id="id4433542">
           <para id="prob_10">Second quartile = median = 50<sup>th</sup> percentile = _______</para>
         </problem>
@@ -1100,14 +772,12 @@
           <para id="element-23635">4</para>
         </solution>
       </exercise>
-
-      <exercise id="exerciseeleven">
+              <exercise id="exerciseeleven">
         <problem id="id21413333">
           <para id="prob_11">Third quartile = _______</para>
         </problem>
       </exercise>
-
-      <exercise id="exercisetwelve">
+              <exercise id="exercisetwelve">
         <problem id="id13392439">
           <para id="prob_12">Interquartile range (<m:math><m:mi>IQR</m:mi></m:math>) = _____ – _____ = _____</para>
         </problem>
@@ -1115,14 +785,12 @@
           <para id="element-23646">6 – 4 = 2</para>
         </solution>
       </exercise>
-
-      <exercise id="exercisethirteen">
+              <exercise id="exercisethirteen">
         <problem id="id14610610">
           <para id="prob_13">10<sup>th</sup> percentile = _______</para>
         </problem>
       </exercise>
-
-      <exercise id="exercisefourteen">
+              <exercise id="exercisefourteen">
         <problem id="id21409553">
           <para id="prob_14">70<sup>th</sup> percentile = _______</para>
         </problem>
@@ -1131,23 +799,23 @@
         </solution>
       </exercise>
     </section>
-
     <section id="fs-idm1839472" class="free-response">
       <title>Homework</title>
-      <exercise id="fs-idp61512400">
+              <exercise id="fs-idp61512400">
         <problem id="fs-idp61512656">
-          <para id="fs-idm5042080">The median age for Black people in the U.S. is 30.9 years; for U.S. White people it is 42.3 years. <list id="fs-idm33581296" list-type="enumerated" number-style="lower-alpha">
+          <para id="fs-idm5042080">The median age for Black people in the U.S. is 30.9 years; for U.S. White people it is 42.3 years.
+            <list id="fs-idm33581296" list-type="enumerated" number-style="lower-alpha">
               <item>Based upon this information, give two reasons why the median age for Black people could be lower than the median age for White people.</item>
               <item>Does the lower median age for Black people necessarily mean that Black people die younger than White people? Why or why not?</item>
               <item>How might it be possible for Black people and White people to die at approximately the same age, but for the median age for White people to be higher?</item>
-            </list></para>
+            </list>
+          </para>
         </problem>
       </exercise>
-
-      <exercise id="element-927">
+              <exercise id="element-927">
         <problem id="id3483376">
           <para id="element-746">Six hundred adult Americans were asked by telephone poll, "What do you think constitutes a middle-class income?" The results are in <link target-id="element-588"/>. Also, include left endpoint, but not the right endpoint.</para>
-          <table id="element-588" summary="This table presents the results from a poll on what Americans thought constituted middle class. The first column lists the salary and the second column lists the relative frequency. There are 8 rows.">
+              <table id="element-588" summary="This table presents the results from a poll on what Americans thought constituted middle class. The first column lists the salary and the second column lists the relative frequency. There are 8 rows.">
             <tgroup cols="2">
               <colspec colnum="1" colname="c1"/>
               <colspec colnum="2" colname="c2"/>
@@ -1193,69 +861,72 @@
               </tbody>
             </tgroup>
           </table>
-          <list id="element-295" list-type="enumerated" number-style="lower-alpha">
+              <list id="element-295" list-type="enumerated" number-style="lower-alpha">
             <item>What percentage of the survey answered "not sure"?</item>
             <item>What percentage think that middle-class is from $25,000 to $50,000?</item>
-            <item>Construct a histogram of the data. <list id="nestlist3" mark-suffix="." list-type="enumerated" number-style="lower-roman">
+            <item>Construct a histogram of the data.
+              <list id="nestlist3" mark-suffix="." list-type="enumerated" number-style="lower-roman">
                 <item>Should all bars have the same width, based on the data? Why or why not?</item>
                 <item>How should the &lt;20,000 and the 100,000+ intervals be handled? Why?</item>
-              </list></item>
+              </list>
+            </item>
             <item>Find the 40<sup>th</sup> and 80<sup>th</sup> percentiles</item>
             <item>Construct a bar graph of the data</item>
           </list>
         </problem>
-
         <solution id="eip-idp78472880">
-          <list id="element-295a" list-type="enumerated" number-style="lower-alpha">
+              <list id="element-295a" list-type="enumerated" number-style="lower-alpha">
             <item>1 – (0.02+0.09+0.19+0.26+0.18+0.17+0.02+0.01) = 0.06</item>
             <item>0.19+0.26+0.18 = 0.63</item>
             <item>Answers may vary.</item>
-            <item><para id="eip-idp139654864">40<sup>th</sup> percentile will fall between 30,000 and 40,000</para>
-<para id="eip-idp139655632">80<sup>th</sup> percentile will fall between 50,000 and 75,000</para></item>
+            <item>
+              <para id="eip-idp139654864">40<sup>th</sup> percentile will fall between 30,000 and 40,000</para>
+              <para id="eip-idp139655632">80<sup>th</sup> percentile will fall between 50,000 and 75,000</para>
+            </item>
             <item>Answers may vary.</item>
           </list>
         </solution>
       </exercise>
-
-      <exercise id="fs-idp35930608">
+              <exercise id="fs-idp35930608">
         <problem id="id3500598">
           <para id="element-209">Given the following box plot:</para>
-          <figure class="scaled-down" id="fs-idm476896">
-            <media id="id4775287" alt="This is a horizontal boxplot graphed over a number line from 0 to 13. The first whisker extends from the smallest value, 0, to the first quartile, 2. The box begins at the first quartile and extends to third quartile, 12. A vertical, dashed line is drawn at median, 10. The second whisker extends from the third quartile to largest value, 13.">
+              <figure class="scaled-down" id="fs-idm476896">
+              <media id="id4775287" alt="This is a horizontal boxplot graphed over a number line from 0 to 13. The first whisker extends from the smallest value, 0, to the first quartile, 2. The box begins at the first quartile and extends to third quartile, 12. A vertical, dashed line is drawn at median, 10. The second whisker extends from the third quartile to largest value, 13.">
               <image src="../../media/fig-ch02_13_02.png" mime-type="image/png"/>
             </media>
           </figure>
-          <list id="element-328" list-type="enumerated" number-style="lower-alpha">
+              <list id="element-328" list-type="enumerated" number-style="lower-alpha">
             <item>which quarter has the smallest spread of data? What is that spread?</item>
             <item>which quarter has the largest spread of data? What is that spread?</item>
             <item>find the interquartile range (<m:math><m:mi>IQR</m:mi></m:math>).</item>
             <item>are there more data in the interval 5–10 or in the interval 10–13? How do you know this?</item>
-            <item>which interval has the fewest data in it? How do you know this? <list id="nestlist7" mark-suffix="." list-type="enumerated" number-style="lower-roman">
+            <item>which interval has the fewest data in it? How do you know this?
+              <list id="nestlist7" mark-suffix="." list-type="enumerated" number-style="lower-roman">
                 <item>0–2</item>
                 <item>2–4</item>
                 <item>10–12</item>
                 <item>12–13</item>
                 <item>need more information</item>
-              </list></item>
+              </list>
+            </item>
           </list>
         </problem>
       </exercise>
-
-      <exercise id="element-284">
+              <exercise id="element-284">
         <problem id="id3912087">
           <para id="element-874">The following box plot shows the U.S. population for a certain year.</para>
-          <figure class="scaled-down" id="fs-idm132205520">
-            <media id="id7587202" alt="A box plot with values from 0 to 105, with Q1 at 17, M at 33, and Q3 at 50.">
+              <figure class="scaled-down" id="fs-idm132205520">
+              <media id="id7587202" alt="A box plot with values from 0 to 105, with Q1 at 17, M at 33, and Q3 at 50.">
               <image src="../../media/fig-ch02_13_08.png" mime-type="image/png"/>
             </media>
           </figure>
-          <list id="element-951" list-type="enumerated" number-style="lower-alpha">
+              <list id="element-951" list-type="enumerated" number-style="lower-alpha">
             <item>Are there fewer or more children (age 17 and under) than senior citizens (age 65 and over)? How do you know?</item>
             <item>12.6% are age 65 and over. Approximately what percentage of the population are working age adults (above age 17 to age 65)?</item>
           </list>
         </problem>
         <solution id="id7597969">
-          <list id="element-1000" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
+              <list id="element-1000" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
             <item>more children; the left whisker shows that 25% of the population are children 17 and younger. The right whisker shows that 25% of the population are adults 50 and older, so adults 65 and over represent less than 25%.</item>
             <item>62.4%</item>
           </list>
@@ -1263,23 +934,17 @@
       </exercise>
     </section>
   </content>
-
-  <glossary>
-    <definition id="iqr">
+  <glossary><definition id="iqr">
       <term>Interquartile Range</term>
       <meaning id="id15896860"> or <m:math><m:mi>IQR</m:mi></m:math>, is the range of the middle 50 percent of the data values; the <m:math><m:mi>IQR</m:mi></m:math> is found by subtracting the first quartile from the third quartile.</meaning>
-    </definition>
-    <definition id="outlier">
+    </definition><definition id="outlier">
       <term>Outlier</term>
       <meaning id="id1171166689919"> an observation that does not fit the rest of the data</meaning>
-    </definition>
-    <definition id="percentile">
+    </definition><definition id="percentile">
       <term>Percentile</term>
       <meaning id="id19436015"> a number that divides ordered data into hundredths; percentiles may or may not be part of the data. The median of the data is the second quartile and the 50<sup>th</sup> percentile. The first and third quartiles are the 25<sup>th</sup> and the 75<sup>th</sup> percentiles, respectively.</meaning>
-    </definition>
-    <definition id="quartiles">
+    </definition><definition id="quartiles">
       <term>Quartiles</term>
       <meaning id="id1164416504778"> the numbers that separate the data into quarters; quartiles may or may not be part of the data. The second quartile is the median of the data.</meaning>
-    </definition>
-  </glossary>
+    </definition></glossary>
 </document>

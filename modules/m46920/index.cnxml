@@ -6,18 +6,17 @@
     <md:abstract/>
     <md:uuid>10377c7d-2afb-4b9b-867a-e1b9b04ae4f1</md:uuid>
   </metadata>
-
   <content>
     <para id="eip-idp953206882"><term id="term-00001">Box plots</term> (also called <term id="term-00002">box-and-whisker plots</term> or <term id="term-00003">box-whisker plots</term>) give a good graphical image of the concentration of the data. They also show how far the extreme values are from most of the data. A box plot is constructed from five values: the minimum value, the first quartile, the median, the third quartile, and the maximum value. We use these values to compare how close other data values are to them.</para>
     <para id="element-175">To construct a box plot, use a horizontal or vertical number line and a rectangular box. The smallest and largest data values label the endpoints of the axis. The first quartile marks one end of the box and the third quartile marks the other end of the box. Approximately <emphasis>the middle 50 percent of the data fall inside the box.</emphasis> The "whiskers" extend from the ends of the box to the smallest and largest data values. The median or second quartile can be between the first and third quartiles, or it can be one, or the other, or both. The box plot gives a good, quick picture of the data.</para>
-
     <note id="eip-724">
-      <label/><title>NOTE</title>
-<para id="eip-idp95320688">You may encounter box-and-whisker plots that have dots marking outlier values. In those cases, the whiskers are not extending to the minimum and maximum values.</para>
+      <label/>
+      <title>NOTE</title>
+      <para id="eip-idp95320688">You may encounter box-and-whisker plots that have dots marking outlier values. In those cases, the whiskers are not extending to the minimum and maximum values.</para>
     </note>
-
     <para id="element-476">Consider, again, this dataset.</para>
-    <para id="element-238907"><list list-type="labeled-item" display="inline" id="set-476">
+    <para id="element-238907">
+      <list list-type="labeled-item" display="inline" id="set-476">
         <item>1</item>
         <item>1</item>
         <item>2</item>
@@ -35,18 +34,21 @@
       </list>
     </para>
     <para id="element-23123">The first quartile is two, the median is seven, and the third quartile is nine. The smallest value is one, and the largest value is 11.5. The following image shows the constructed box plot.</para>
-
-    <note id="fs-idp40306080"><label/><title>NOTE</title>
-<para id="eip-idp22327712">See the calculator instructions on the <link url="http://education.ti.com/educationportal/sites/US/sectionHome/support.html">TI web site</link> or in the appendix.</para></note>
+    <note id="fs-idp40306080">
+      <label/>
+      <title>NOTE</title>
+      <para id="eip-idp22327712">See the calculator instructions on the <link url="http://education.ti.com/educationportal/sites/US/sectionHome/support.html">TI web site</link> or in the appendix.</para>
+    </note>
     <figure class="scaled-down" id="fs-idp11793488">
       <media id="id8621327" alt="Horizontal boxplot's first whisker extends from the smallest value, 1, to the first quartile, 2, the box begins at the first quartile and extends to the third quartile, 9, a vertical dashed line is drawn at the median, 7, and the second whisker extends from the third quartile to the largest value of 11.5." display="block">
         <image src="../../media/fig-ch02_05_01.png" mime-type="image/png"/>
       </media>
     </figure>
     <para id="element-303">The two whiskers extend from the first quartile to the smallest value and from the third quartile to the largest value. The median is shown with a dashed line.</para>
-
-    <note id="fs-idp59493440"><label/><title>NOTE</title>
-<para id="fs-idp69379904">It is important to start a box plot with a <emphasis effect="bold">scaled number line</emphasis>. Otherwise the box plot may not be useful.</para>
+    <note id="fs-idp59493440">
+      <label/>
+      <title>NOTE</title>
+      <para id="fs-idp69379904">It is important to start a box plot with a <emphasis effect="bold">scaled number line</emphasis>. Otherwise the box plot may not be useful.</para>
     </note>
     <example id="element-32">
       <para id="element-676">The following data are the heights of 40 students in a statistics class.</para>
@@ -116,27 +118,31 @@
         <item>The middle 50% (middle half) of the data has a range of 5.5 inches.</item>
       </list>
     </example>
-
-    <note id="fs-idp87772032" class="statistics calculator"><label/>
-<para id="fs-idm41967520">To find the minimum, maximum, and quartiles:</para>
-<para id="fs-idp68357280">Enter data into the list editor (Press <code>STAT 1:EDIT</code>). If you need to clear the list, arrow up to the name <code>L1</code>, press CLEAR, and then arrow down.</para>
-<para id="fs-idp62743968">Put the data values into the list <code>L1</code>.</para>
-<para id="fs-idp69578208">Press STAT and arrow to CALC. Press <code>1:1-VarStats</code>. Enter <code>L1</code>.</para>
-<para id="fs-idp74492720">Press ENTER.</para>
-<para id="fs-idp69067168">Use the down and up arrow keys to scroll.</para>
-<para id="fs-idp53473856">Smallest value = 59.</para>
-<para id="fs-idp58572832">Largest value = 77.</para>
-<para id="fs-idp87802880"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub>: First quartile = 64.5.</para><para id="fs-idp30335392"><m:math><m:mi>Q</m:mi></m:math><sub>2</sub>: Second quartile or median = 66.</para><para id="fs-idp53554416"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub>: Third quartile = 70.<newline count="2"/></para><para id="fs-idp67418928">To construct the box plot:</para>
-<para id="fs-idp65417472">Press <code>4:Plotsoff</code>. Press ENTER.</para>
-<para id="fs-idm19087248">Arrow down and then use the right arrow key to go to the fifth picture, which is the box plot. Press ENTER.</para>
-<para id="fs-idp74884208">Arrow down to <code>Xlist: Press 2nd 1 for L1</code></para>
-<para id="fs-idp72873744">Arrow down to <code>Freq: Press ALPHA</code>. Press 1.</para>
-<para id="fs-idp75665280">Press Zoom. <code>Press 9: ZoomStat</code>.</para>
-<para id="fs-idp65135968">Press TRACE, and use the arrow keys to examine the box plot.</para>
+    <note id="fs-idp87772032" class="statistics calculator">
+      <label/>
+      <para id="fs-idm41967520">To find the minimum, maximum, and quartiles:</para>
+      <para id="fs-idp68357280">Enter data into the list editor (Press <code>STAT 1:EDIT</code>). If you need to clear the list, arrow up to the name <code>L1</code>, press CLEAR, and then arrow down.</para>
+      <para id="fs-idp62743968">Put the data values into the list <code>L1</code>.</para>
+      <para id="fs-idp69578208">Press STAT and arrow to CALC. Press <code>1:1-VarStats</code>. Enter <code>L1</code>.</para>
+      <para id="fs-idp74492720">Press ENTER.</para>
+      <para id="fs-idp69067168">Use the down and up arrow keys to scroll.</para>
+      <para id="fs-idp53473856">Smallest value = 59.</para>
+      <para id="fs-idp58572832">Largest value = 77.</para>
+      <para id="fs-idp87802880"><m:math><m:mi>Q</m:mi></m:math><sub>1</sub>: First quartile = 64.5.</para>
+      <para id="fs-idp30335392"><m:math><m:mi>Q</m:mi></m:math><sub>2</sub>: Second quartile or median = 66.</para>
+      <para id="fs-idp53554416"><m:math><m:mi>Q</m:mi></m:math><sub>3</sub>: Third quartile = 70.<newline count="2"/></para>
+      <para id="fs-idp67418928">To construct the box plot:</para>
+      <para id="fs-idp65417472">Press <code>4:Plotsoff</code>. Press ENTER.</para>
+      <para id="fs-idm19087248">Arrow down and then use the right arrow key to go to the fifth picture, which is the box plot. Press ENTER.</para>
+      <para id="fs-idp74884208">Arrow down to <code>Xlist: Press 2nd 1 for L1</code></para>
+      <para id="fs-idp72873744">Arrow down to <code>Freq: Press ALPHA</code>. Press 1.</para>
+      <para id="fs-idp75665280">Press Zoom. <code>Press 9: ZoomStat</code>.</para>
+      <para id="fs-idp65135968">Press TRACE, and use the arrow keys to examine the box plot.</para>
     </note>
-    <note id="fs-idp31328448" class="statistics try"><label/>
-<title>Try It</title>
-<exercise id="fs-idp52595328">
+    <note id="fs-idp31328448" class="statistics try">
+      <label/>
+      <title>Try It</title>
+      <exercise id="fs-idp52595328">
         <problem id="fs-idm27882400">
           <para id="fs-idp69268960">The following data are the number of pages in 40 books on a shelf. Construct a box plot using a graphing calculator, and state the interquartile range.</para>
           <para id="fs-idm41586448">
@@ -181,10 +187,11 @@
               <item>450</item>
               <item>475</item>
               <item>512</item>
-            </list></para>
+            </list>
+          </para>
         </problem>
-      </exercise></note>
-
+      </exercise>
+    </note>
     <para id="element-155">For some sets of data, some of the largest value, smallest value, first quartile, median, and third quartile may be the same. For instance, you might have a data set in which the median and the third quartile are the same. In this case, the diagram would not have a dotted line inside the box displaying the median. The right side of the box would display both the third quartile and the median. For example, if the smallest value and the first quartile were both one, the median and the third quartile were both five, and the largest value was seven, the box plot would look like:</para>
     <figure class="scaled-down" id="fs-idm16338080">
       <media id="id1164414369705" alt="Horizontal boxplot box begins at the smallest value and Q1, 1, until the Q3 and median, 5, no median line is designated, and has its lone whisker extending from the Q3 to the largest value, 7." display="block">
@@ -192,8 +199,6 @@
       </media>
     </figure>
     <para id="fs-idm26870032">In this case, at least 25% of the values are equal to one. Twenty-five percent of the values are between one and five, inclusive. At least 25% of the values are equal to five. The top 25% of the values fall between five and seven, inclusive.</para>
-
-
     <example id="element-583">
       <para id="element-601">Test scores for a college statistics class held during the day are:</para>
       <para id="element-891">
@@ -220,7 +225,6 @@
           <item>90</item>
         </list>
       </para>
-
       <para id="element-212">Test scores for a college statistics class held during the evening are:</para>
       <para id="element-763">
         <list id="element-711" list-type="labeled-item" display="inline">
@@ -248,7 +252,6 @@
           <item>25.5</item>
         </list>
       </para>
-
       <exercise id="element-23526">
         <problem id="id1164420007817">
           <list id="element-778" list-type="enumerated" number-style="lower-alpha">
@@ -261,83 +264,27 @@
         </problem>
         <solution id="element-601s">
           <list id="element-106" list-type="enumerated" number-style="lower-alpha">
-            <item><list id="eip-idp9991488" list-type="labeled-item">
-                <!--<title>First Data Set</title>-->
-                <item>Min = 32</item>
-                <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 56 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-                    <m:mrow>
-                      <m:mo>(</m:mo>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mn>56</m:mn>
-                          <m:mo>+</m:mo>
-                          <m:mn>56</m:mn>
-                        </m:mrow>
-                        <m:mn>2</m:mn>
-                      </m:mfrac>
-                      <m:mo>)</m:mo>
-                    </m:mrow>
-                  </m:math></item>
-                <item><emphasis effect="italics">Med</emphasis> = 74.5 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-                    <m:mrow>
-                      <m:mo>(</m:mo>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mn>72</m:mn>
-                          <m:mo>+</m:mo>
-                          <m:mn>77</m:mn>
-                        </m:mrow>
-                        <m:mn>2</m:mn>
-                      </m:mfrac>
-                      <m:mo>)</m:mo>
-                    </m:mrow>
-                  </m:math></item>
-                <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> = 82.5 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-                    <m:mrow>
-                      <m:mrow>
-                        <m:mo>(</m:mo>
-                        <m:mfrac>
-                          <m:mrow>
-                            <m:mn>81</m:mn>
-                            <m:mo>+</m:mo>
-                            <m:mn>84</m:mn>
-                          </m:mrow>
-                          <m:mn>2</m:mn>
-                        </m:mfrac>
-                        <m:mo>)</m:mo>
-                      </m:mrow>
-                      <m:mo>=</m:mo>
-                      <m:mn>82.5</m:mn>
-                    </m:mrow>
-                  </m:math></item>
+            <item>
+              <list id="eip-idp9991488" list-type="labeled-item">
+                <!--<title>First Data Set</title>--><item>Min = 32</item>
+                <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 56 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>56</m:mn><m:mo>+</m:mo><m:mn>56</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:math></item>
+                <item><emphasis effect="italics">Med</emphasis> = 74.5 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>72</m:mn><m:mo>+</m:mo><m:mn>77</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:math></item>
+                <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> = 82.5 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>81</m:mn><m:mo>+</m:mo><m:mn>84</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>82.5</m:mn></m:mrow></m:math></item>
                 <item>Max = 99</item>
-
               </list>
             </item>
             <item>
               <list id="element-1062" list-type="labeled-item">
-                <!--<title>Second Data Set</title>-->
-                <item>Min = 25.5</item>
+                <!--<title>Second Data Set</title>--><item>Min = 25.5</item>
                 <item><m:math><m:mi>Q</m:mi></m:math><sub>1</sub> = 78</item>
-                <item><emphasis effect="italics">Med</emphasis> = 81 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-                    <m:mrow>
-                      <m:mo>(</m:mo>
-                      <m:mfrac>
-                        <m:mrow>
-                          <m:mn>81</m:mn>
-                          <m:mo>+</m:mo>
-                          <m:mn>81</m:mn>
-                        </m:mrow>
-                        <m:mn>2</m:mn>
-                      </m:mfrac>
-                      <m:mo>)</m:mo>
-                    </m:mrow>
-                  </m:math></item>
+                <item><emphasis effect="italics">Med</emphasis> = 81 <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mrow><m:mo>(</m:mo><m:mfrac><m:mrow><m:mn>81</m:mn><m:mo>+</m:mo><m:mn>81</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:math></item>
                 <item><m:math><m:mi>Q</m:mi></m:math><sub>3</sub> = 89 </item>
                 <item>Max = 98</item>
-              </list></item>
+              </list>
+            </item>
             <item> Day class: There are five data values ranging from 32 to 56 (32, 32, 45, 55.5, 56): 25%. There are five data values ranging from 56 to 74.5 (56, 59, 68, 70, 72): 25%. There are five data values ranging from 74.5 to 82.5 (77, 78, 79, 80, 81): 25%. There are five data values ranging from 82.5 to 99 (84, 84.5, 90, 90, 99): 25%. There are 15 data values between the first quartile, 56, and the largest value, 99: 75%. <newline/> Night class: There are five data values ranging from 25.5 to 78 (25.5, 45, 65, 68, 76): 22.7%. There are six data values ranging from 78 to 81 (78, 78, 79, 79, 80, 81): 27.3%. There are six data values ranging from 81 to 89 (81, 83, 84.5, 85, 88, 89): 27.3%. There are five data values ranging from 89 to 98 (90, 90, 98, 98, 98): 22.7%. There are 17 data values between the first quartile, 78, and the largest value, 98: 77.3%. <newline/> Note that a choice needs to be made for how to account for the quartiles in each situation. For the day class, the quartiles were excluded from the interval as they were all calculated. For the night class, when a quartile value appears more than once in the data, the duplicates are split between the two adjacent groups so that each group has 5 or 6 values. </item>
-            <item> These are the box plots, respectively: <figure class="scaled-down" id="fs-idp65829088">
+            <item> These are the box plots, respectively:
+              <figure class="scaled-down" id="fs-idp65829088">
                 <media id="id1164411411845" alt="Two box plots over a number line from 0 to 100.  The top plot shows a whisker from 32 to 56, a solid line at 56, a dashed line at 74.5, a solid line at 82.5, and a whisker from 82.5 to 99.  The lower plot shows a whisker from 25.5 to 78, solid line at 78, dashed line at 81, solid line at 89, and a whisker from 89 to 98." display="block">
                   <image src="../../media/fig-ch02_sol_01.png" mime-type="image/png"/>
                 </media>
@@ -348,16 +295,16 @@
         </solution>
       </exercise>
     </example>
-
-    <note id="fs-idp63834272" class="statistics try "><label/><title>Try It</title>
-<exercise id="fs-idm19314304">
+    <note id="fs-idp63834272" class="statistics try ">
+      <label/>
+      <title>Try It</title>
+      <exercise id="fs-idm19314304">
         <problem id="fs-idm1151200">
           <para id="fs-idp29298016">The following data set shows the heights in inches for the 20 boys in a class of 40 students.</para>
           <para id="fs-idm35019456">66; 66; 67; 67; 68; 68; 68; 68; 68; 69; 69; 69; 70; 71; 72; 72; 72; 73; 73; 74 <newline/>The following data set shows the heights in inches for the 20 girls in a class of 40 students. <newline/>61; 61; 62; 62; 63; 63; 63; 65; 65; 65; 66; 66; 66; 67; 68; 68; 68; 69; 69; 69 <newline/>Construct a box plot using a graphing calculator for each data set, and state which box plot has the wider spread for the middle 50% of the data.</para>
         </problem>
-      </exercise></note>
-
-
+      </exercise>
+    </note>
     <example id="fs-idm38612912">
       <para id="fs-idm15332992">Graph a box-and-whisker plot for the 15 data values shown.</para>
       <para id="fs-idp63131872">
@@ -394,13 +341,14 @@
         </media>
       </figure>
     </example>
-
-
-    <note id="fs-idp43137808" class="statistics try"><label/><title>Try It</title>
-<exercise id="eip-idp22858976">
+    <note id="fs-idp43137808" class="statistics try">
+      <label/>
+      <title>Try It</title>
+      <exercise id="eip-idp22858976">
         <problem id="eip-idp22859232">
           <para id="fs-idm36238000">Follow the steps you used to graph a box-and-whisker plot for the data values shown.</para>
-          <para id="fs-idm33689504"><list list-type="labeled-item" display="inline" id="list-00003">
+          <para id="fs-idm33689504">
+            <list list-type="labeled-item" display="inline" id="list-00003">
               <item>0</item>
               <item>5</item>
               <item>5</item>
@@ -416,22 +364,19 @@
               <item>140</item>
               <item>240</item>
               <item>330</item>
-            </list></para>
-
+            </list>
+          </para>
         </problem>
-
       </exercise>
     </note>
     <section id="fs-idp34607616" class="references">
       <title>References</title>
       <para id="fs-idm91067600">Data from <emphasis effect="italics">West Magazine</emphasis>.</para>
     </section>
-
     <section id="fs-idp44166016" class="summary">
       <title>Chapter Review</title>
       <para id="fs-idp62162768">Box plots are a type of graph that can help visually organize data. To graph a box plot the following data points must be calculated: the minimum value, the first quartile, the median, the third quartile, and the maximum value. Once the box plot is graphed, you can display and compare distributions of data.</para>
     </section>
-
     <section id="fs-idm61864272" class="practice">
       <para id="fs-idp75507648">Use the following information to answer the next two exercises. Sixty-five randomly selected car salespersons were asked the number of cars they generally sell in one week. Fourteen people answered that they generally sell three cars; nineteen generally sell four cars; twelve generally sell five cars; nine generally sell six cars; eleven generally sell seven cars.</para>
       <exercise id="fs-idm23427584">
@@ -439,7 +384,6 @@
           <para id="element-580">Construct a box plot below. Use a ruler to measure and scale accurately.</para>
         </problem>
       </exercise>
-
       <exercise id="fs-idm39140224">
         <problem id="fs-idp35412208">
           <para id="element-797">Looking at your box plot, does it appear that the data are concentrated together, spread out evenly, or concentrated in some areas, but not in others? How can you tell?</para>
@@ -449,7 +393,6 @@
         </solution>
       </exercise>
     </section>
-
     <section id="fs-idp27456352" class="free-response">
       <title>Homework</title>
       <exercise id="fs-idp68490208">
@@ -460,7 +403,6 @@
               <image src="../../media/fig-ch02_13_01.png" mime-type="image/png"/>
             </media>
           </figure>
-
           <list id="fs-idm29105040" list-type="enumerated" number-style="lower-alpha">
             <item>In complete sentences, describe what the shape of each box plot implies about the distribution of the data collected.</item>
             <item>Have more U.S. citizens or more Germans surveyed been to over eight foreign countries?</item>
@@ -468,7 +410,6 @@
           </list>
         </problem>
       </exercise>
-
       <exercise id="element-606">
         <problem id="id4047646">
           <para id="fs-idm12685520">Given the following box plot, answer the questions.</para>
@@ -489,7 +430,6 @@
           </list>
         </solution>
       </exercise>
-
       <exercise id="element-990">
         <problem id="id9907048">
           <para id="element-499">Given the following box plots, answer the questions.</para>
@@ -499,16 +439,17 @@
             </media>
           </figure>
           <list id="element-718" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
-            <item>In complete sentences, explain why each statement is false. <list id="nestlist13" mark-suffix="." list-type="enumerated" number-style="lower-roman">
+            <item>In complete sentences, explain why each statement is false.
+              <list id="nestlist13" mark-suffix="." list-type="enumerated" number-style="lower-roman">
                 <item><emphasis>Data 1</emphasis> has more data values above two than <emphasis>Data 2</emphasis> has above two.</item>
                 <item>The data sets cannot have the same mode.</item>
                 <item>For <emphasis>Data 1</emphasis>, there are more data values below four than there are above four.</item>
-              </list></item>
+              </list>
+            </item>
             <item>For which group, Data 1 or Data 2, is the value of “7” more likely to be an outlier? Explain why in complete sentences.</item>
           </list>
         </problem>
       </exercise>
-
       <exercise id="fs-idp23710160">
         <problem id="fs-idp61030656">
           <para id="fs-idp61030912">A survey was conducted of 130 purchasers of new BMW 3 series cars, 130 purchasers of new BMW 5 series cars, and 130 purchasers of new BMW 7 series cars. In it, people were asked the age they were when they purchased their car. The following box plots display the results.</para>
@@ -525,11 +466,13 @@
             <item>Look at the BMW 5 series. Which quarter has the largest spread of data? What is the spread?</item>
             <item>Look at the BMW 5 series. Estimate the interquartile range (IQR).</item>
             <item>Look at the BMW 5 series. Are there more data in the interval 31 to 38 or in the interval 45 to 55? How do you know this?</item>
-            <item>Look at the BMW 5 series. Which interval has the fewest data in it? How do you know this? <list id="fs-idp34051952" mark-suffix="." list-type="enumerated" number-style="lower-roman">
+            <item>Look at the BMW 5 series. Which interval has the fewest data in it? How do you know this?
+              <list id="fs-idp34051952" mark-suffix="." list-type="enumerated" number-style="lower-roman">
                 <item>31–35</item>
                 <item>38–41</item>
                 <item>41–64</item>
-              </list></item>
+              </list>
+            </item>
           </list>
         </problem>
         <solution id="fs-idp2465296">
@@ -545,10 +488,10 @@
           </list>
         </solution>
       </exercise>
-
       <exercise id="element-833">
         <problem id="id3776067">
-          <para id="element-202">Twenty-five randomly selected students were asked the number of movies they watched the previous week. The results are as follows: <table id="fs-idm41926784" summary="The table presents the number of movies 25 students watched in the previous week. The first column lists the number of movies from 0-4, the second column lists the frequency with the values of 5, 9, 6, 4, 1, the third column is for relative frequency and is blank, and the fourth column is for cumulative relative frequency and is blank.">
+          <para id="element-202">Twenty-five randomly selected students were asked the number of movies they watched the previous week. The results are as follows:
+            <table id="fs-idm41926784" summary="The table presents the number of movies 25 students watched in the previous week. The first column lists the number of movies from 0-4, the second column lists the frequency with the values of 5, 9, 6, 4, 1, the third column is for relative frequency and is blank, and the fourth column is for cumulative relative frequency and is blank.">
               <tgroup cols="2">
                 <thead>
                   <row>
@@ -578,14 +521,12 @@
                     <entry>1</entry>
                   </row>
                 </tbody>
-
               </tgroup>
-            </table></para>
+            </table>
+          </para>
           <para id="fs-idp36227856">Construct a box plot of the data. </para>
         </problem>
       </exercise>
-
-
     </section>
     <section id="fs-idm80158176" class="bring-together-homework">
       <title>Bringing It Together</title>
@@ -654,50 +595,44 @@
     </section>
     <section class="formula-review" id="sect-00001">
       <title>Formula Review</title>
-      <para id="para-00001">The Five Number Summary includes: <list id="list-00004">
+      <para id="para-00001">The Five Number Summary includes:
+        <list id="list-00004">
           <item>The minimum value</item>
-          <item><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub></m:math></item>
+          <item>
+            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>Q</m:mi><m:mn>1</m:mn></m:msub></m:math>
+          </item>
           <item><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>Q</m:mi><m:mn>2</m:mn></m:msub></m:math> also known as the median</item>
-          <item><m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub></m:math></item>
+          <item>
+            <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:msub><m:mi>Q</m:mi><m:mn>3</m:mn></m:msub></m:math>
+          </item>
           <item>The maximum value</item>
-        </list></para>
-        <para id="para-00002">The range is calculated as the maximum value – the minimum value.</para>
+        </list>
+      </para>
+      <para id="para-00002">The range is calculated as the maximum value – the minimum value.</para>
     </section>
   </content>
-
-  <glossary>
-    <definition id="fs-idp72865536">
+  <glossary><definition id="fs-idp72865536">
       <term>Box plot</term>
       <meaning id="fs-idp43755328">a graph that gives a quick picture of the middle 50% of the data</meaning>
-    </definition>
-
-    <definition id="fs-idp102508064">
+    </definition><definition id="fs-idp102508064">
       <term>First Quartile</term>
       <meaning id="fs-idp111069232">the value that is the median of the lower half of the ordered data set</meaning>
-    </definition>
-
-    <definition id="fs-idp97747904">
+    </definition><definition id="fs-idp97747904">
       <term>Frequency Polygon</term>
       <meaning id="fs-idm46549456">looks like a line graph but uses intervals to display ranges of large amounts of data</meaning>
-    </definition>
-
-    <definition id="fs-idp84101520">
+    </definition><definition id="fs-idp84101520">
       <term>Interval</term>
       <meaning id="fs-idm8914352">also called a class interval; an interval represents a range of data and is used when displaying large data sets</meaning>
-    </definition>
-
-
-    <definition id="fs-idm26718304">
+    </definition><definition id="fs-idm26718304">
       <term>Paired Data Set</term>
-      <meaning id="fs-idp116205376">two data sets that have a one to one relationship so that: <list id="fs-idp85390096" list-type="bulleted">
+      <meaning id="fs-idp116205376">two data sets that have a one to one relationship so that:
+        <list id="fs-idp85390096" list-type="bulleted">
           <item>both data sets are the same size, and</item>
           <item>each data point in one data set is matched with exactly one point from the other set.</item>
-        </list></meaning>
-    </definition>
-
-    <definition id="fs-idp31125760">
+        </list>
+      </meaning>
+    </definition><definition id="fs-idp31125760">
       <term>Skewed</term>
       <meaning id="fs-idp57238128">used to describe data that is not symmetrical; when the right side of a graph looks “chopped off” compared the left side, we say it is “skewed to the left.” When the left side of the graph looks “chopped off” compared to the right side, we say the data is “skewed to the right.” Alternatively: when the lower values of the data are more spread out, we say the data are skewed to the left. When the greater values are more spread out, the data are skewed to the right.</meaning>
-    </definition>
-  </glossary>
+    </definition></glossary>
 </document>

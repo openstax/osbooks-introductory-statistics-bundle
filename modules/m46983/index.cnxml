@@ -1,72 +1,66 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" class="introduction">
   <title>Introduction</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:content-id>m46983</md:content-id>
-  <md:title>Introduction</md:title>
-  <md:abstract/>
-  <md:uuid>3156cbd2-f14e-4bac-bb76-07d69213dfb8</md:uuid>
-</metadata>
-
-<content>
-  <figure id="fs-idm16905488" class="splash"><media id="fs-idm70194688" alt="This is a photo of change a set of keys in a pile. There appear to be five pennies, three quarters, four dimes, and two nickels. The key ring has a bronze whale on it and holds eleven keys.">
-<image mime-type="image/jpg" src="../../media/CNX_Stats_C07_CO.jpg"/>
-</media>
-
-<caption>If you want to figure out the distribution of the change people carry in their pockets, using the central limit theorem and assuming your sample is large enough, you will find that the  distribution is normal and bell-shaped. (credit: modification of work “american coins” by Paula R. Lively/ Flickr, CC BY 2.0)</caption></figure><note id="fs-idp26371136" class="chapter-objectives"><label/><title>Chapter Objectives</title>
-<para id="element-745">By the end of this chapter, the student should be able to:</para>
-<list id="list6234" list-type="bulleted"><item>Recognize central limit theorem problems.</item>
-<item>Classify continuous word problems by their distributions.</item>
-<item>Apply and interpret the central limit theorem for means.</item>
-<item>Apply and interpret the central limit theorem for sums.</item>
-<item>Apply and interpret the central limit theorem for proportions.</item>
-<item>Apply the finite population correction factor.</item>
-</list></note>
-
-<para id="para-00001">In the previous chapter, we discussed the normal distribution and standard normal distribution. The normal distribution tends to occur naturally in many situations.</para>
-<para id="para-00002">In this chapter, we will now look at another situation where the normal distribution naturally occurs via The <term id="term-00001">Central Limit Theorem</term>. In this chapter, we will discuss three ways to use this theorem:</para>
-<list list-type="enumerated" id="list-00001">
-<item>The Central Limit Theorem for means</item>
-<item>The Central Limit Theorem for sums</item>
-<item>The Central Limit Theorem for proportions</item>
-</list>
-<para id="para-00003">This theorem is one of the most powerful and useful ideas in all of statistics.</para>
-<para id="para-00004">You may have noticed that in every chapter, we are always interested in the mean. Why are we so concerned with means? Two reasons are: they give us a middle ground for comparison, and they are easy to calculate. In this chapter, we will look at another reason why the mean is important. You will study the importance of means (and sums and proportions) with the Central Limit Theorem.</para>
-<para id="para-00005">The Central Limit Theorem (CLT for short) is one of the most powerful and useful ideas in all of statistics. It says that if we collect samples of size <emphasis effect="italics">n</emphasis> with a “large enough <emphasis effect="italics">n</emphasis>,” calculate each sample’s mean or sum or proportion, then create a histogram of those means, then the resulting histogram will tend to have an approximate normal bell shape.</para>
-<para id="para-00006">The size of the sample, <emphasis effect="italics">n</emphasis>, that is required in order to be “large enough” depends on the original population from which the samples are drawn (the sample size should be at least 30 or the data should come from a normal distribution). If the original population is far from normal, then more observations are needed for the sample means or sums to be normal. Sampling is done with replacement.</para>
-<para id="para-00007">It would be difficult to overstate the importance of the central limit theorem in statistical theory. Knowing that data, even if its distribution is not normal, behaves in a predictable way is a powerful tool. We will explore this for several chapters.</para><note id="fs-idp64638656" class="statistics collab">
-<label/>
-<title>Collaborative Classroom Activity</title>
-
-<para id="element-332">Suppose eight of you roll one fair die ten times, seven of you roll two fair dice ten times, nine of you roll five fair dice ten times, and 11 of you roll ten fair dice ten times.</para><para id="element-42">Each time a person rolls more than one die, they calculate the sample <term id="term-00002">mean</term> of the faces showing. For example, one person might roll five fair dice and get 2, 2, 3, 4, 6 on one roll.</para>
-
-<para id="element-994">The mean is <m:math><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>3.4</m:mn></m:math>. The 3.4 is one mean when five fair dice are rolled. This same person would roll the five dice nine more times and calculate nine more means for a total of ten means.</para>
-
-<para id="element-200">Your instructor will pass out the dice to several people. Roll your dice ten times. For each roll, record the faces, and find the mean. Round to the nearest 0.5.</para>
-
-<para id="element-73">Your instructor (and possibly you) will produce one graph (it might be a histogram) for one die, one graph for two dice, one graph for five dice, and one graph for ten dice. Since the "mean" when you roll one die is just the face on the die, what distribution do these <emphasis>means</emphasis> appear to be representing?</para>
-
-<para id="element-938"><emphasis>Draw the graph for the means using two dice.</emphasis> Do the sample means show any kind of pattern?</para>
-
-<para id="element-182"><emphasis>Draw the graph for the means using five dice.</emphasis> Do you see any pattern emerging?</para>
-
-<para id="element-131"><emphasis>Finally, draw the graph for the means using ten dice.</emphasis> Do you see any pattern to the graph? What can you conclude as you increase the number of dice?</para>
-
-<para id="element-368">As the number of dice rolled increases from one to two to five to ten, the following is happening:</para>
-
-<list id="list-1" list-type="enumerated">
-<item>The mean of the sample means remains approximately the same.</item>
-<item>The spread of the sample means (the standard deviation of the sample means) gets smaller.</item>
-<item>The graph appears steeper and thinner.</item>
-</list>
-
-<para id="element-730">You have just demonstrated the central limit theorem (clt).</para>
-<para id="element-266">The central limit theorem tells you that as you increase the number of dice, <emphasis>the sample means  tend toward a normal distribution (the sampling distribution).</emphasis></para>
-</note> </content>
-
-  <glossary>
-<definition id="fs-idm28209360">
-<term>Sampling Distribution</term>
-<meaning id="fs-idm33714048">Given simple random samples of size <emphasis effect="italics">n</emphasis> from a given population with a measured characteristic such as mean, proportion, or standard deviation for each sample, the probability distribution of all the measured characteristics is called a sampling distribution.</meaning>
-</definition>
-</glossary>
+    <md:content-id>m46983</md:content-id>
+    <md:title>Introduction</md:title>
+    <md:abstract/>
+    <md:uuid>3156cbd2-f14e-4bac-bb76-07d69213dfb8</md:uuid>
+  </metadata>
+  <content>
+    <figure id="fs-idm16905488" class="splash">
+      <media id="fs-idm70194688" alt="This is a photo of change a set of keys in a pile. There appear to be five pennies, three quarters, four dimes, and two nickels. The key ring has a bronze whale on it and holds eleven keys.">
+        <image mime-type="image/jpg" src="../../media/CNX_Stats_C07_CO.jpg"/>
+      </media>
+      <caption>If you want to figure out the distribution of the change people carry in their pockets, using the central limit theorem and assuming your sample is large enough, you will find that the  distribution is normal and bell-shaped. (credit: modification of work “american coins” by Paula R. Lively/ Flickr, CC BY 2.0)</caption>
+    </figure>
+    <note id="fs-idp26371136" class="chapter-objectives">
+      <label/>
+      <title>Chapter Objectives</title>
+      <para id="element-745">By the end of this chapter, the student should be able to:</para>
+      <list id="list6234" list-type="bulleted">
+        <item>Recognize central limit theorem problems.</item>
+        <item>Classify continuous word problems by their distributions.</item>
+        <item>Apply and interpret the central limit theorem for means.</item>
+        <item>Apply and interpret the central limit theorem for sums.</item>
+        <item>Apply and interpret the central limit theorem for proportions.</item>
+        <item>Apply the finite population correction factor.</item>
+      </list>
+    </note>
+    <para id="para-00001">In the previous chapter, we discussed the normal distribution and standard normal distribution. The normal distribution tends to occur naturally in many situations.</para>
+    <para id="para-00002">In this chapter, we will now look at another situation where the normal distribution naturally occurs via The <term id="term-00001">Central Limit Theorem</term>. In this chapter, we will discuss three ways to use this theorem:</para>
+    <list list-type="enumerated" id="list-00001">
+      <item>The Central Limit Theorem for means</item>
+      <item>The Central Limit Theorem for sums</item>
+      <item>The Central Limit Theorem for proportions</item>
+    </list>
+    <para id="para-00003">This theorem is one of the most powerful and useful ideas in all of statistics.</para>
+    <para id="para-00004">You may have noticed that in every chapter, we are always interested in the mean. Why are we so concerned with means? Two reasons are: they give us a middle ground for comparison, and they are easy to calculate. In this chapter, we will look at another reason why the mean is important. You will study the importance of means (and sums and proportions) with the Central Limit Theorem.</para>
+    <para id="para-00005">The Central Limit Theorem (CLT for short) is one of the most powerful and useful ideas in all of statistics. It says that if we collect samples of size <emphasis effect="italics">n</emphasis> with a “large enough <emphasis effect="italics">n</emphasis>,” calculate each sample’s mean or sum or proportion, then create a histogram of those means, then the resulting histogram will tend to have an approximate normal bell shape.</para>
+    <para id="para-00006">The size of the sample, <emphasis effect="italics">n</emphasis>, that is required in order to be “large enough” depends on the original population from which the samples are drawn (the sample size should be at least 30 or the data should come from a normal distribution). If the original population is far from normal, then more observations are needed for the sample means or sums to be normal. Sampling is done with replacement.</para>
+    <para id="para-00007">It would be difficult to overstate the importance of the central limit theorem in statistical theory. Knowing that data, even if its distribution is not normal, behaves in a predictable way is a powerful tool. We will explore this for several chapters.</para>
+    <note id="fs-idp64638656" class="statistics collab">
+      <label/>
+      <title>Collaborative Classroom Activity</title>
+      <para id="element-332">Suppose eight of you roll one fair die ten times, seven of you roll two fair dice ten times, nine of you roll five fair dice ten times, and 11 of you roll ten fair dice ten times.</para>
+      <para id="element-42">Each time a person rolls more than one die, they calculate the sample <term id="term-00002">mean</term> of the faces showing. For example, one person might roll five fair dice and get 2, 2, 3, 4, 6 on one roll.</para>
+      <para id="element-994">The mean is <m:math><m:mfrac><m:mrow><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>6</m:mn></m:mrow><m:mn>5</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>3.4</m:mn></m:math>. The 3.4 is one mean when five fair dice are rolled. This same person would roll the five dice nine more times and calculate nine more means for a total of ten means.</para>
+      <para id="element-200">Your instructor will pass out the dice to several people. Roll your dice ten times. For each roll, record the faces, and find the mean. Round to the nearest 0.5.</para>
+      <para id="element-73">Your instructor (and possibly you) will produce one graph (it might be a histogram) for one die, one graph for two dice, one graph for five dice, and one graph for ten dice. Since the "mean" when you roll one die is just the face on the die, what distribution do these <emphasis>means</emphasis> appear to be representing?</para>
+      <para id="element-938"><emphasis>Draw the graph for the means using two dice.</emphasis> Do the sample means show any kind of pattern?</para>
+      <para id="element-182"><emphasis>Draw the graph for the means using five dice.</emphasis> Do you see any pattern emerging?</para>
+      <para id="element-131"><emphasis>Finally, draw the graph for the means using ten dice.</emphasis> Do you see any pattern to the graph? What can you conclude as you increase the number of dice?</para>
+      <para id="element-368">As the number of dice rolled increases from one to two to five to ten, the following is happening:</para>
+      <list id="list-1" list-type="enumerated">
+        <item>The mean of the sample means remains approximately the same.</item>
+        <item>The spread of the sample means (the standard deviation of the sample means) gets smaller.</item>
+        <item>The graph appears steeper and thinner.</item>
+      </list>
+      <para id="element-730">You have just demonstrated the central limit theorem (clt).</para>
+      <para id="element-266">The central limit theorem tells you that as you increase the number of dice, <emphasis>the sample means  tend toward a normal distribution (the sampling distribution).</emphasis></para>
+    </note>
+  </content>
+  <glossary><definition id="fs-idm28209360">
+      <term>Sampling Distribution</term>
+      <meaning id="fs-idm33714048">Given simple random samples of size <emphasis effect="italics">n</emphasis> from a given population with a measured characteristic such as mean, proportion, or standard deviation for each sample, the probability distribution of all the measured characteristics is called a sampling distribution.</meaning>
+    </definition></glossary>
 </document>

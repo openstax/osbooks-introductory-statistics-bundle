@@ -1,375 +1,410 @@
 <document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>The Central Limit Theorem for Proportions</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
-  <md:content-id>m46992</md:content-id>
-  <md:title>The Central Limit Theorem for Proportions</md:title>
-  <md:abstract/>
-  <md:uuid>45c3f6e5-1eab-41c3-91a9-e0c42a78c970</md:uuid>
-</metadata>
-
-<content>
-<para id="para-00001">In this section, we will discuss and work to understand the Central Limit Theorem for Proportions. This is a different case from the Central Limit Theorem for Means or for Sums. Namely, when proportions are involved, typically we are using discrete data and using the normal distribution to approximate a binomial process.</para>
-<section id="sect-00001">
-<title>Statement of the Central Limit Theorem for Proportions and Criteria</title>
-<para id="para-00002">Let <m:math><m:mi>X</m:mi></m:math> be a random variable from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math>.</para>
-<para id="para-00003">The Central Limit Theorem for Proportions says:</para>
-<para id="para-00004"><emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and the same proportion is computed from each sample, the histogram of the proportions tends to follow a normal distribution regardless of the population’s original distribution. This distribution of proportions can be notated: <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> where <m:math><m:mi>p</m:mi></m:math> represents the population proportion and <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math>. Going forward, we will just use <m:math><m:mi>q</m:mi></m:math> to represent <m:math><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math>. A third way to represent this distribution is <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>,</m:mo><m:mtext> </m:mtext><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mi>p</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</emphasis></para>
-<para id="para-00005">We will work to understand the steps of the Central Limit Theorem throughout this section. There are a few key aspects of this theorem that we should note as we work to understand it:</para>
-<list list-type="enumerated" id="list-00001">
-<item>We must <emphasis effect="italics">repeatedly</emphasis> take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population.</item>
-<item>We must find the proportion of each sample.</item>
-<item>We compile the proportions into a histogram. For large enough samples of size <m:math><m:mi>n</m:mi></m:math> and enough proportions, the histogram will begin to resemble a normal distribution. This will happen <emphasis effect="italics">regardless</emphasis> of the original population’s distribution.</item>
-<item>When the histogram resembles a bell-curve, it will be centered at the original population <m:math><m:mi>p</m:mi></m:math> with standard deviation <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</item>
-</list>
-<para id="para-00006">To use the Central Limit Theorem, the following criteria must be met before using the theorem. Notice that the criteria are similar to the criteria for using a normal distribution to approximate the binomial distribution:</para>
-<list list-type="enumerated" id="list-00002">
-<item>We must have that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math>.</item>
-<item>Samples must be of a size less than 5% of the population’s size when sampling without replacement.</item>
-</list>
-</section>
-<section id="sect-00002">
-<title>Review: Using the Normal Distribution to Approximate a Binomial Distribution</title>
-<para id="para-00007">We begin with a quick review of how the binomial distribution can be approximated with a normal distribution. Recall that in Chapter 4, we learned that a binomial experiment has the following criteria:</para>
-<list list-type="enumerated" id="list-00003">
-<item>There are a fixed number of trials. The letter <m:math><m:mi>n</m:mi></m:math> denotes the number of trials.</item>
-<item>The random variable, <m:math><m:mi>X</m:mi></m:math>, number of successes, is discrete.</item>
-<item>There are only two possible outcomes, called “success” and “failure,” for each trial. The letter <m:math><m:mi>p</m:mi></m:math> denotes the probability of a success on any one trial, and <m:math><m:mi>q</m:mi></m:math> denotes the probability of a failure on any one trial. <m:math><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.</item>
-<item>The <m:math><m:mi>n</m:mi></m:math> trials are independent and are repeated using identical conditions.</item>
-</list>
-<para id="para-00008">For any binomial distribution, we can compute the probability of a number of successes within a set of outcomes. For instance, suppose we have a group of 15 voters (<m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math>). In a particular county, there is a 60% chance that any given voter will support Candidate A (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>0.40</m:mn></m:math>). As a binomial experiment, we would represent the binomial distribution as <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.6</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> With discrete probabilities, we can represent each probability with either a table or bar graph as shown in the next figure:</para>
-<figure id="fig-00001">
-<media alt="A table and bar graph showing the binomial distribution B(15, 0.6): the probability of each possible number of voters (out of 15) who support Candidate A.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img1.png"/>
-</media></figure>
-<para id="para-00009">In Chapter 6, we discussed that when <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:math> the normal distribution can be used to approximate the binomial distribution. In this example, we see that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.6</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.4</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:math> so this criteria is met and we can easily visualize the normal distribution approximation for our bar graph in the next figure. Recall that when the normal distribution is used, we can write that <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math></para>
-<figure id="fig-00002">
-<media alt="The bar graph of the binomial distribution B(15, 0.6) with the approximating normal curve N(np, √(npq)) overlaid.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img2.png"/>
-</media></figure>
-<para id="para-00010">We are leveraging this relationship between the binomial distribution and the normal distribution for the Central Limit Theorem for Proportions.</para>
-</section>
-<section id="sect-00003">
-<title>An Important Note on Notation</title>
-<para id="para-00011">Going forward, we will begin referring to:</para>
-<list list-type="bulleted" id="list-00004">
-<item>Population proportion information: <m:math><m:mi>p</m:mi></m:math> or <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math></item>
-<item>Sample proportion information: <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> or <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math></item>
-</list>
-<para id="para-00012">Some books use <m:math><m:mover><m:mrow><m:mi>p</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:math> or <m:math><m:mover><m:mrow><m:mi>q</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:math> to denote a sample proportion. Regardless, it is important to note that the prime symbol is referring to a <emphasis effect="italics">sample</emphasis> instead of the population.</para>
-</section>
-<section id="sect-00004">
-<title>Understanding the Central Limit Theorem for Proportions</title>
-<para id="para-00013">The Central Limit Theorem for Proportions has a slightly different way that it works than the previous sections. In this case, suppose in our population of 50,000 students, we conduct a one-question survey: are you graduating this semester? There are only two answers: yes or no. We are interested in the number of “yes” responses. We visualize each student in the figure below as a dot. Green dots mean “yes” and grey dots mean “no,” where ultimately we will have <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>42</m:mn><m:mo>%</m:mo></m:math> yes responses. We also summarize their responses with a bar graph.</para>
-<figure id="fig-00003">
-<media alt="A visualization of the 50,000 students as dots (green for “yes,” grey for “no”) alongside a bar graph summarizing the yes and no responses, where 42% respond yes.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img3.png"/>
-</media></figure>
-<para id="para-00014">This data is all discrete, so it is not appropriate to represent it with a histogram. It is merely a visual of the yes or no responses.</para>
-<para id="para-00015">We return to our three researchers. From this population, each researcher randomly selects a sample of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math> students and asks them if they are graduating. Below are the responses that each received and the proportion of students within their survey that said yes, they are graduating:</para>
-<figure id="fig-00004">
-<media alt="The three researchers’ samples of 30 students each, showing the yes/no responses and the proportion within each sample that said yes.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img4.png"/>
-</media></figure>
-<para id="para-00016">As expected, each proportion is slightly different in each sample. Also recall, an important aspect of the Central Limit Theorem is to take proportions <emphasis effect="italics">repeatedly.</emphasis> While each researcher has collected quite a bit of data, they ultimately only have three proportions collected. Three proportions are not enough for a meaningful result with the Central Limit Theorem. As such, we assemble a team of 50 researchers to each collect a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> The next figure shows what proportion each of the 50 researchers obtained, including our original three researchers.</para>
-<figure id="fig-00005">
-<media alt="A display of the sample proportion obtained by each of 50 researchers, each collecting a sample of size 30.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img5.png"/>
-</media></figure>
-<para id="para-00017">This is exactly the process that the Central Limit Theorem requires: repeatedly collecting samples of the same size, and then finding the proportions. The Central Limit Theorem then requires that we investigate the histogram of these proportions. In the next figure is the histogram of the 50 proportions:</para>
-<figure id="fig-00006">
-<media alt="A histogram of the 50 sample proportions; it does not yet have a clear distribution because it is made from only 50 proportions.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img6.png"/>
-</media></figure>
-<para id="para-00018">This histogram does not have a clear distribution, which is to be expected because it is comprised of only 50 proportions (which we stated earlier was a small amount of data for a meaningful histogram). The result aligns with what we already noted about histograms: 50 proportions are not enough for a clear distribution to emerge.</para>
-<para id="para-00019">Now suppose that we have an army of 5,000 researchers collect samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> In the next figure, we can visualize many of the proportions that each researcher collected:</para>
-<figure id="fig-00007">
-<media alt="A visualization of many of the sample proportions collected by an army of 5,000 researchers, each collecting a sample of size 30.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img7.png"/>
-</media></figure>
-<para id="para-00020">Taking the 5,000 proportions that each researcher collected, we can create a new histogram:</para>
-<figure id="fig-00008">
-<media alt="A histogram of the 5,000 sample proportions in which a clear bell-curve shape emerges, centered at the population proportion 0.42.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img8.png"/>
-</media></figure>
-<para id="para-00021">With 5,000 sample proportions, a clear bell-curve shape emerges. Since this bell-curve is made of proportions, we call it <emphasis>the distribution of proportions.</emphasis> The <emphasis>distribution of proportions</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Proportions. The theorem guarantees that the histogram of the proportions will always tend towards a normal distribution shape. Because we have a new set of data created of proportions, we use a new random variable denoted <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math>. The use of <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> as the variable makes it clear that we are using the distribution of proportions. <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is also a different choice of variable than <m:math><m:mi>X</m:mi></m:math>, because the original random variable <m:math><m:mi>X</m:mi></m:math> was merely discrete “yes” or “no” answers. <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represents proportions made from samples in <m:math><m:mi>X</m:mi></m:math>, and the variable reminds us that we have created numerical data from a qualitative data set. Note that the distribution of proportions has centered at the population proportion, <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.42</m:mn><m:mo>.</m:mo></m:math></para>
-</section>
-<section id="sect-00005">
-<title>The Size of the Sample Impacts the Shape of the Bell Curve</title>
-<para id="para-00022">We have discussed and shown that the distribution of proportions is centered at <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:math> Now we will focus on the standard deviation portion of the distribution. To understand this, let’s examine several distributions of proportions utilizing different sample sizes of <m:math><m:mi>n</m:mi></m:math>:</para>
-<figure id="fig-00009">
-<media alt="Several distributions of proportions built using different sample sizes, each a bell-curve centered at the population proportion.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img9.png"/>
-</media></figure>
-<para id="para-00023">To make it easier for comparison, we compare the normal curves for each of these 4 graphs against one another:</para>
-<figure id="fig-00010">
-<media alt="The normal curves for the four distributions of proportions overlaid on the same axis for comparison, all centered at the population proportion.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img10.png"/>
-</media></figure>
-<para id="para-00024">The size of <m:math><m:mi>n</m:mi></m:math> will create a stretch factor for the shape of the normal distribution. Smaller values of <m:math><m:mi>n</m:mi></m:math> will widen the curve, while larger values will narrow the curve. The curve will always be centered at <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:math></para>
-</section>
-<note class="statistics calculator" id="note-00001">
-<para id="para-00025">To find probabilities for proportions on the calculator, follow these steps.</para>
-<para id="para-00026"><code>2nd DISTR</code><newline/><code>2:normalcdf</code></para>
-<para id="para-00027"><code>normalcdf</code>(lower value of the area, upper value of the area, <emphasis effect="italics">p</emphasis>, <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>)</para>
-<para id="para-00028">where:</para>
-<list list-type="bulleted" id="list-00005">
-<item><emphasis effect="italics">p</emphasis> is the proportion of the original population</item>
-<item><emphasis effect="italics">q</emphasis> = 1 − <emphasis effect="italics">p</emphasis></item>
-<item><emphasis effect="italics">sample size</emphasis> = <emphasis effect="italics">n</emphasis></item>
-</list>
-</note>
-<example id="exam-00001">
-<para id="para-00029">At a particular college, it is known that 33% of students live on campus. We survey 300 students.</para>
-<exercise id="exer-00001">
-<problem id="prob-00001">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00006">
-<item>What does the random variable <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represent in this situation, and how is it distributed?</item>
-<item>What is the probability that less than 142 students live on campus in our survey? Draw a graph.</item>
-<item>What is the probability that between 90 and 100 students say they live on campus? Draw a graph.</item>
-</list>
-</problem>
-<solution id="sol-00001">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00007">
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 300 surveyed students who say they live on campus.<newline/><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.33</m:mn><m:mo>·</m:mo><m:mn>0.67</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0271</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-<item>Less than 142 students out of 300 translates to a proportion <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>142</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.4733</m:mn><m:mo>.</m:mo></m:math><newline/>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0271</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo></m:math> we have that <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&lt;</m:mo><m:mn>0.4733</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:math> It is almost certain that fewer than 142 of these students out of the 300 will live on campus.<newline/> <figure id="fig-00011">
-<media alt="A normal distribution curve for the sample proportion centered at 0.33; the area to the left of 0.4733 is shaded and represents a probability of approximately 1.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img11.png"/>
-</media></figure></item>
-
-<item>We must translate 90 and 100 out of 300.<newline/><m:math><m:msubsup><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>′</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>90</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.30</m:mn></m:math><newline/><m:math><m:msubsup><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>′</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>100</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.3333</m:mn></m:math><newline/>In this case, we will compute <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.30</m:mn><m:mo>&lt;</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&lt;</m:mo><m:mn>0.3333</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.5489</m:mn><m:mo>−</m:mo><m:mn>0.1346</m:mn><m:mo>=</m:mo><m:mn>0.4143</m:mn><m:mo>.</m:mo></m:math> There is a 41.43% chance that between 90 and 100 students in the survey live on campus. <newline/>
-<figure id="fig-00012">
-<media alt="A normal distribution curve for the sample proportion centered at 0.33; the area between 0.30 and 0.3333 is shaded and represents a probability of about 0.4143.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img12.png"/>
-</media></figure>
-</item>
-</list>
-</solution>
-</exercise>
-</example>
-<note class="statistics try" id="note-00002">
-<title>Try It</title>
-<exercise id="exer-00002">
-<problem id="prob-00002">
-<para id="para-00030">It is known that on a particular website, 20% of website users will buy something from the website’s store. A random sample of 500 website visitors is taken.</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00008">
-<item>What does the random variable <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represent in this situation, and how is it distributed?</item>
-<item>What is the probability that less than 90 of the sampled website visits will buy something?</item>
-<item>What is the probability that between 60 and 80 website users buy something from the website store?</item>
-</list>
-</problem>
-</exercise>
-</note>
-<example id="exam-00002">
-<para id="para-00031">In the 2025–2026 NBA season, Jalen Brunson had a free throw percentage of 84.1%.<footnote id="foot-00001">Jalen Brunson Career Stats. (2026). ESPN. Retrieved June 26, 2026, from https://www.espn.com/nba/player/stats/_/id/3934672/jalen-brunson</footnote> Suppose a sample of 40 free throws are taken from the 2025–2026 season.</para>
-<exercise id="exer-00003">
-<problem id="prob-00003">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00009">
-<item>What does the random variable <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represent in this situation, and how is it distributed?</item>
-<item>What is the probability that Jalen made more than 85% of these free throws? Write the probability statement and draw a graph.</item>
-<item>What is the 40<sup>th</sup> percentile in this situation, and what does it represent?</item>
-</list>
-</problem>
-<solution id="sol-00002">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00010">
-<item><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is the sample proportion of free throws made out of the 40 sample free throws.<newline/><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.841</m:mn><m:mo>·</m:mo><m:mn>0.159</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0578</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-<item>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0578</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>></m:mo><m:mn>0.85</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.4382</m:mn></m:math><newline/>
-<figure id="fig-00013">
-<media alt="A normal distribution curve for the sample proportion centered at 0.841; the area to the right of 0.85 is shaded and represents a probability of about 0.4382.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img13.png"/>
-</media></figure>
-</item>
-<item>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0578</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> and invNorm, the 40<sup>th</sup> percentile of <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is 0.826. This means that 40% of all random samples of 40 free throws will have a sample made-proportion of 0.826 (82.6%) or lower. In other words, 33 or fewer free throws are successfully made out of 40. The remaining 60% of samples exceed that proportion.<newline/> <figure id="fig-00014">
-<media alt="A normal distribution curve for the sample proportion centered at 0.841 with the 40th percentile marked at 0.826.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img14.png"/>
-</media></figure></item>
-
-</list>
-</solution>
-</exercise>
-</example>
-<note class="statistics try" id="note-00003">
-<title>Try It</title>
-<exercise id="exer-00004">
-<problem id="prob-00004">
-<para id="para-00032">Continuing from the previous example:</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00011">
-<item>What is the probability that Jalen Brunson made between 82% and 85% of these free throws?</item>
-<item>What is the probability that Jalen Brunson made fewer than 50% of these free throws?</item>
-<item>What is the 80<sup>th</sup> percentile in this situation, and what does it represent?</item>
-</list>
-</problem>
-</exercise>
-</note>
-<section class="glossary" id="sect-00006">
-<title>Key Terms</title>
-<definition id="def-00001">
-<term>The Distribution of Proportions</term>
-<meaning>the natural, approximately normal (bell-curve) distribution that emerges when sample proportions are repeatedly computed from samples of size <m:math><m:mi>n</m:mi></m:math>, as guaranteed by the Central Limit Theorem for Proportions; it is centered at the population proportion <m:math><m:mi>p</m:mi></m:math> and has standard deviation <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</meaning>
-</definition>
-</section>
-<section class="practice" id="sect-00007">
-<para id="para-00033"><emphasis effect="italics">Use the following information to answer the next four exercises:</emphasis> A survey is conducted and finds that 48% of college students skip breakfast. A sample of 50 students is taken.</para>
-<exercise id="exer-00005">
-<problem id="prob-00005">
-<para id="para-00034">What is <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> in this situation and how is it distributed?</para>
-</problem>
-<solution id="sol-00003">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00012">
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of a sample of 50 students who skip breakfast</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.48</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0707</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-</list>
-</solution>
-</exercise>
-<exercise id="exer-00006">
-<problem id="prob-00006">
-<para id="para-00035">What is the probability that in the sample of 50 students, 50% of them or less of them skipped breakfast?</para>
-</problem>
-</exercise>
-<exercise id="exer-00007">
-<problem id="prob-00007">
-<para id="para-00036">What is the probability that in the sample of 50 students, more than 75% skipped breakfast?</para>
-</problem>
-<solution id="sol-00004">
-<para id="para-00037">0.0001</para>
-</solution>
-</exercise>
-<exercise id="exer-00008">
-<problem id="prob-00008">
-<para id="para-00038">What is the probability that in the sample of 50 students, between 45% and 62% skipped breakfast?</para>
-</problem>
-</exercise>
-<para id="para-00039"><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> At a particular college, faculty tend to only open 27% of their emails. A sample of 35 faculty members is taken and surveyed.</para>
-<exercise id="exer-00009">
-<problem id="prob-00009">
-<para id="para-00040">What is <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> in this situation and how is it distributed?</para>
-</problem>
-<solution id="sol-00005">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00013">
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of a sample of 35 faculty who open their emails</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.27</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0750</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-</list>
-</solution>
-</exercise>
-<exercise id="exer-00010">
-<problem id="prob-00010">
-<para id="para-00041">What is the probability that the faculty surveyed opened 30% or fewer of their emails?</para>
-</problem>
-<solution id="sol-00006">
-<para id="para-00042">0.6554</para>
-</solution>
-</exercise>
-<exercise id="exer-00011">
-<problem id="prob-00011">
-<para id="para-00043">What is the probability that the faculty surveyed opened between 26% to 29% of their emails?</para>
-</problem>
-</exercise>
-<para id="para-00044"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> In a particular office building, 2% of the lightbulbs are out. Peter is on the third floor and checking all 275 lightbulbs.</para>
-<exercise id="exer-00012">
-<problem id="prob-00012">
-<para id="para-00045">What is the difference between the distributions <m:math><m:mi>X</m:mi></m:math> and <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> in this situation?</para>
-</problem>
-</exercise>
-<exercise id="exer-00013">
-<problem id="prob-00013">
-<para id="para-00046">Describe the distributions for each. Represent <m:math><m:mi>X</m:mi></m:math> with both the binomial distribution and normal distribution approximation. Why can we approximate the binomial distribution with a normal distribution?</para>
-</problem>
-<solution id="sol-00007">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00014">
-<item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>275</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.02</m:mn><m:mo stretchy="false">)</m:mo></m:math>; because np = 5.5 and nq = 269.5 are both ≥ 5, <m:math><m:mi>X</m:mi><m:mo>≈</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5.5</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>2.3216</m:mn><m:mo stretchy="false">)</m:mo></m:math>.</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.02</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0084</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-</list>
-</solution>
-</exercise>
-<exercise id="exer-00014">
-<problem id="prob-00014">
-<para id="para-00047">Suppose we want to know the probability that exactly 5 lightbulbs are out. What is the appropriate distribution to use, and why?</para>
-</problem>
-</exercise>
-<exercise id="exer-00015">
-<problem id="prob-00015">
-<para id="para-00048">Suppose that within the 275 lightbulbs that Peter is checking, we want to know what the probability is that more than 10% are out. What is the appropriate distribution to use, and why?</para>
-</problem>
-<solution id="sol-00008">
-<para id="para-00049">Use the distribution of the sample proportion, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.02</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0084</m:mn><m:mo stretchy="false">)</m:mo></m:math>, because the question asks about a proportion (percent) of the 275 bulbs; the normal approximation applies since np and nq are both ≥ 5.</para>
-</solution>
-</exercise>
-<exercise id="exer-00016">
-<problem id="prob-00016">
-<para id="para-00050">Find the probability that among the 275 lightbulbs that Peter is checking, more than 10% are out.</para>
-</problem>
-</exercise>
-</section>
-<section class="free-response" id="sect-00008">
-<title>HOMEWORK</title>
-<exercise id="exer-00017">
-<problem id="prob-00017">
-<para id="para-00051">A pharmacy finds that 9% of the prescriptions it fills are flagged for insurance review. A random sample of 150 prescriptions is taken.</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00015">
-<item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
-<item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
-<item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
-<item>Find the probability that among the 150 prescriptions, 12% or more are flagged for insurance review.</item>
-<item>Find the 40<sup>th</sup> percentile for the proportion of prescriptions flagged, and interpret its meaning.</item>
-</list>
-</problem>
-</exercise>
-<exercise id="fs-c7-hw-97">
-<problem id="prob-00018">
-<para id="para-00052">A factory produces smartphones, and 1.25% of all phones end up with a cracked screen off the assembly line. We take a sample of 300 smartphones.</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00016">
-<item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
-<item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
-<item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
-<item>Find the probability that among the 300 phone sample, 2% or more of them have cracked screens.</item>
-</list>
-</problem>
-<solution id="sol-00009">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00017">
-<item>Not really — np = (300)(0.0125) = 3.75 &lt; 5, so the np ≥ 5 condition is not met. Allowing the approximation, <m:math><m:mi>X</m:mi></m:math> = the number of the 300 phones that have a cracked screen.</item>
-<item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3.75</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>1.9244</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 300 sampled phones that have a cracked screen</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.0125</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0064</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-<item>0.1212</item>
-</list>
-</solution>
-</exercise>
-<exercise id="exer-00018">
-<problem id="prob-00019">
-<para id="para-00053">At a college, it is known that 62% of students use the tutoring center services. A sample of 60 students is taken.</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00018">
-<item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
-<item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
-<item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
-<item>Find the probability that among the 60 students surveyed, 50% or less use the tutoring center.</item>
-</list>
-</problem>
-</exercise>
-<exercise id="fs-c7-hw-99">
-<problem id="prob-00020">
-<para id="para-00054">Michael Jordan averaged 83.5% of free throws in his career. Suppose we take a sample of 50 random free throws.</para>
-<list list-type="enumerated" number-style="lower-alpha" id="list-00019">
-<item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
-<item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
-<item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
-<item>Find the probability that among those free throws sample, Michael Jordan made more than 80% of them.</item>
-<item>Find the 50<sup>th</sup> percentile among the sampled free throws, and interpret its meaning.</item>
-</list>
-</problem>
-<solution id="sol-00010">
-<list list-type="enumerated" number-style="lower-alpha" id="list-00020">
-<item>Yes; np = (50)(0.835) = 41.75 ≥ 5 and nq = (50)(0.165) = 8.25 ≥ 5. <m:math><m:mi>X</m:mi></m:math> = the number of the 50 sampled free throws that are made.</item>
-<item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>41.75</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>2.6246</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 50 sampled free throws that are made</item>
-<item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.835</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mn>0.0525</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-<item>0.7475</item>
-<item>0.835; the 50<sup>th</sup> percentile (median) equals the mean, so half of the samples have a made-proportion at or below 0.835 (83.5%).</item>
-</list>
-</solution>
-</exercise>
-</section>
-</content>
+    <md:content-id>m46992</md:content-id>
+    <md:title>The Central Limit Theorem for Proportions</md:title>
+    <md:abstract/>
+    <md:uuid>45c3f6e5-1eab-41c3-91a9-e0c42a78c970</md:uuid>
+  </metadata>
+  <content>
+    <para id="para-00001">In this section, we will discuss and work to understand the Central Limit Theorem for Proportions. This is a different case from the Central Limit Theorem for Means or for Sums. Namely, when proportions are involved, typically we are using discrete data and using the normal distribution to approximate a binomial process.</para>
+    <section id="sect-00001">
+      <title>Statement of the Central Limit Theorem for Proportions and Criteria</title>
+      <para id="para-00002">Let <m:math><m:mi>X</m:mi></m:math> be a random variable from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math>.</para>
+      <para id="para-00003">The Central Limit Theorem for Proportions says:</para>
+      <para id="para-00004">
+        <emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and the same proportion is computed from each sample, the histogram of the proportions tends to follow a normal distribution regardless of the population’s original distribution. This distribution of proportions can be notated: <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext/><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> where <m:math><m:mi>p</m:mi></m:math> represents the population proportion and <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math>. Going forward, we will just use <m:math><m:mi>q</m:mi></m:math> to represent <m:math><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math>. A third way to represent this distribution is <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mi>p</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</emphasis>
+      </para>
+      <para id="para-00005">We will work to understand the steps of the Central Limit Theorem throughout this section. There are a few key aspects of this theorem that we should note as we work to understand it:</para>
+      <list list-type="enumerated" id="list-00001">
+        <item>We must <emphasis effect="italics">repeatedly</emphasis> take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population.</item>
+        <item>We must find the proportion of each sample.</item>
+        <item>We compile the proportions into a histogram. For large enough samples of size <m:math><m:mi>n</m:mi></m:math> and enough proportions, the histogram will begin to resemble a normal distribution. This will happen <emphasis effect="italics">regardless</emphasis> of the original population’s distribution.</item>
+        <item>When the histogram resembles a bell-curve, it will be centered at the original population <m:math><m:mi>p</m:mi></m:math> with standard deviation <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</item>
+      </list>
+      <para id="para-00006">To use the Central Limit Theorem, the following criteria must be met before using the theorem. Notice that the criteria are similar to the criteria for using a normal distribution to approximate the binomial distribution:</para>
+      <list list-type="enumerated" id="list-00002">
+        <item>We must have that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math>.</item>
+        <item>Samples must be of a size less than 5% of the population’s size when sampling without replacement.</item>
+      </list>
+    </section>
+    <section id="sect-00002">
+      <title>Review: Using the Normal Distribution to Approximate a Binomial Distribution</title>
+      <para id="para-00007">We begin with a quick review of how the binomial distribution can be approximated with a normal distribution. Recall that in Chapter 4, we learned that a binomial experiment has the following criteria:</para>
+      <list list-type="enumerated" id="list-00003">
+        <item>There are a fixed number of trials. The letter <m:math><m:mi>n</m:mi></m:math> denotes the number of trials.</item>
+        <item>The random variable, <m:math><m:mi>X</m:mi></m:math>, number of successes, is discrete.</item>
+        <item>There are only two possible outcomes, called “success” and “failure,” for each trial. The letter <m:math><m:mi>p</m:mi></m:math> denotes the probability of a success on any one trial, and <m:math><m:mi>q</m:mi></m:math> denotes the probability of a failure on any one trial. <m:math><m:mi>p</m:mi><m:mo>+</m:mo><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.</item>
+        <item>The <m:math><m:mi>n</m:mi></m:math> trials are independent and are repeated using identical conditions.</item>
+      </list>
+      <para id="para-00008">For any binomial distribution, we can compute the probability of a number of successes within a set of outcomes. For instance, suppose we have a group of 15 voters (<m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math>). In a particular county, there is a 60% chance that any given voter will support Candidate A (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>,</m:mo><m:mtext/><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>0.40</m:mn></m:math>). As a binomial experiment, we would represent the binomial distribution as <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext/><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.6</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> With discrete probabilities, we can represent each probability with either a table or bar graph as shown in the next figure:</para>
+      <figure id="fig-00001">
+        <media alt="A table and bar graph showing the binomial distribution B(15, 0.6): the probability of each possible number of voters (out of 15) who support Candidate A.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img1.png"/>
+        </media>
+      </figure>
+      <para id="para-00009">In Chapter 6, we discussed that when <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:math> the normal distribution can be used to approximate the binomial distribution. In this example, we see that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.6</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.4</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:math> so this criteria is met and we can easily visualize the normal distribution approximation for our bar graph in the next figure. Recall that when the normal distribution is used, we can write that <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext/><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math></para>
+      <figure id="fig-00002">
+        <media alt="The bar graph of the binomial distribution B(15, 0.6) with the approximating normal curve N(np, √(npq)) overlaid.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img2.png"/>
+        </media>
+      </figure>
+      <para id="para-00010">We are leveraging this relationship between the binomial distribution and the normal distribution for the Central Limit Theorem for Proportions.</para>
+    </section>
+    <section id="sect-00003">
+      <title>An Important Note on Notation</title>
+      <para id="para-00011">Going forward, we will begin referring to:</para>
+      <list list-type="bulleted" id="list-00004">
+        <item>Population proportion information: <m:math><m:mi>p</m:mi></m:math> or <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math></item>
+        <item>Sample proportion information: <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> or <m:math><m:msup><m:mi>q</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math></item>
+      </list>
+      <para id="para-00012">Some books use <m:math><m:mover><m:mrow><m:mi>p</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:math> or <m:math><m:mover><m:mrow><m:mi>q</m:mi></m:mrow><m:mo>^</m:mo></m:mover></m:math> to denote a sample proportion. Regardless, it is important to note that the prime symbol is referring to a <emphasis effect="italics">sample</emphasis> instead of the population.</para>
+    </section>
+    <section id="sect-00004">
+      <title>Understanding the Central Limit Theorem for Proportions</title>
+      <para id="para-00013">The Central Limit Theorem for Proportions has a slightly different way that it works than the previous sections. In this case, suppose in our population of 50,000 students, we conduct a one-question survey: are you graduating this semester? There are only two answers: yes or no. We are interested in the number of “yes” responses. We visualize each student in the figure below as a dot. Green dots mean “yes” and grey dots mean “no,” where ultimately we will have <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>42</m:mn><m:mo>%</m:mo></m:math> yes responses. We also summarize their responses with a bar graph.</para>
+      <figure id="fig-00003">
+        <media alt="A visualization of the 50,000 students as dots (green for “yes,” grey for “no”) alongside a bar graph summarizing the yes and no responses, where 42% respond yes.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img3.png"/>
+        </media>
+      </figure>
+      <para id="para-00014">This data is all discrete, so it is not appropriate to represent it with a histogram. It is merely a visual of the yes or no responses.</para>
+      <para id="para-00015">We return to our three researchers. From this population, each researcher randomly selects a sample of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math> students and asks them if they are graduating. Below are the responses that each received and the proportion of students within their survey that said yes, they are graduating:</para>
+      <figure id="fig-00004">
+        <media alt="The three researchers’ samples of 30 students each, showing the yes/no responses and the proportion within each sample that said yes.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img4.png"/>
+        </media>
+      </figure>
+      <para id="para-00016">As expected, each proportion is slightly different in each sample. Also recall, an important aspect of the Central Limit Theorem is to take proportions <emphasis effect="italics">repeatedly.</emphasis> While each researcher has collected quite a bit of data, they ultimately only have three proportions collected. Three proportions are not enough for a meaningful result with the Central Limit Theorem. As such, we assemble a team of 50 researchers to each collect a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> The next figure shows what proportion each of the 50 researchers obtained, including our original three researchers.</para>
+      <figure id="fig-00005">
+        <media alt="A display of the sample proportion obtained by each of 50 researchers, each collecting a sample of size 30.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img5.png"/>
+        </media>
+      </figure>
+      <para id="para-00017">This is exactly the process that the Central Limit Theorem requires: repeatedly collecting samples of the same size, and then finding the proportions. The Central Limit Theorem then requires that we investigate the histogram of these proportions. In the next figure is the histogram of the 50 proportions:</para>
+      <figure id="fig-00006">
+        <media alt="A histogram of the 50 sample proportions; it does not yet have a clear distribution because it is made from only 50 proportions.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img6.png"/>
+        </media>
+      </figure>
+      <para id="para-00018">This histogram does not have a clear distribution, which is to be expected because it is comprised of only 50 proportions (which we stated earlier was a small amount of data for a meaningful histogram). The result aligns with what we already noted about histograms: 50 proportions are not enough for a clear distribution to emerge.</para>
+      <para id="para-00019">Now suppose that we have an army of 5,000 researchers collect samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> In the next figure, we can visualize many of the proportions that each researcher collected:</para>
+      <figure id="fig-00007">
+        <media alt="A visualization of many of the sample proportions collected by an army of 5,000 researchers, each collecting a sample of size 30.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img7.png"/>
+        </media>
+      </figure>
+      <para id="para-00020">Taking the 5,000 proportions that each researcher collected, we can create a new histogram:</para>
+      <figure id="fig-00008">
+        <media alt="A histogram of the 5,000 sample proportions in which a clear bell-curve shape emerges, centered at the population proportion 0.42.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img8.png"/>
+        </media>
+      </figure>
+      <para id="para-00021">With 5,000 sample proportions, a clear bell-curve shape emerges. Since this bell-curve is made of proportions, we call it <emphasis>the distribution of proportions.</emphasis> The <emphasis>distribution of proportions</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Proportions. The theorem guarantees that the histogram of the proportions will always tend towards a normal distribution shape. Because we have a new set of data created of proportions, we use a new random variable denoted <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math>. The use of <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> as the variable makes it clear that we are using the distribution of proportions. <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is also a different choice of variable than <m:math><m:mi>X</m:mi></m:math>, because the original random variable <m:math><m:mi>X</m:mi></m:math> was merely discrete “yes” or “no” answers. <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represents proportions made from samples in <m:math><m:mi>X</m:mi></m:math>, and the variable reminds us that we have created numerical data from a qualitative data set. Note that the distribution of proportions has centered at the population proportion, <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.42</m:mn><m:mo>.</m:mo></m:math></para>
+    </section>
+    <section id="sect-00005">
+      <title>The Size of the Sample Impacts the Shape of the Bell Curve</title>
+      <para id="para-00022">We have discussed and shown that the distribution of proportions is centered at <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:math> Now we will focus on the standard deviation portion of the distribution. To understand this, let’s examine several distributions of proportions utilizing different sample sizes of <m:math><m:mi>n</m:mi></m:math>:</para>
+      <figure id="fig-00009">
+        <media alt="Several distributions of proportions built using different sample sizes, each a bell-curve centered at the population proportion.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img9.png"/>
+        </media>
+      </figure>
+      <para id="para-00023">To make it easier for comparison, we compare the normal curves for each of these 4 graphs against one another:</para>
+      <figure id="fig-00010">
+        <media alt="The normal curves for the four distributions of proportions overlaid on the same axis for comparison, all centered at the population proportion.">
+          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img10.png"/>
+        </media>
+      </figure>
+      <para id="para-00024">The size of <m:math><m:mi>n</m:mi></m:math> will create a stretch factor for the shape of the normal distribution. Smaller values of <m:math><m:mi>n</m:mi></m:math> will widen the curve, while larger values will narrow the curve. The curve will always be centered at <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:mi>p</m:mi><m:mo>.</m:mo></m:math></para>
+    </section>
+    <note class="statistics calculator" id="note-00001">
+      <para id="para-00025">To find probabilities for proportions on the calculator, follow these steps.</para>
+      <para id="para-00026">
+        <code>2nd DISTR</code>
+        <newline/>
+        <code>2:normalcdf</code>
+      </para>
+      <para id="para-00027"><code>normalcdf</code>(lower value of the area, upper value of the area, <emphasis effect="italics">p</emphasis>, <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>)</para>
+      <para id="para-00028">where:</para>
+      <list list-type="bulleted" id="list-00005">
+        <item><emphasis effect="italics">p</emphasis> is the proportion of the original population</item>
+        <item><emphasis effect="italics">q</emphasis> = 1 − <emphasis effect="italics">p</emphasis></item>
+        <item><emphasis effect="italics">sample size</emphasis> = <emphasis effect="italics">n</emphasis></item>
+      </list>
+    </note>
+    <example id="exam-00001">
+      <para id="para-00029">At a particular college, it is known that 33% of students live on campus. We survey 300 students.</para>
+      <exercise id="exer-00001">
+        <problem id="prob-00001">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+            <item>What does the random variable <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represent in this situation, and how is it distributed?</item>
+            <item>What is the probability that less than 142 students live on campus in our survey? Draw a graph.</item>
+            <item>What is the probability that between 90 and 100 students say they live on campus? Draw a graph.</item>
+          </list>
+        </problem>
+        <solution id="sol-00001">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 300 surveyed students who say they live on campus.<newline/><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.33</m:mn><m:mo>·</m:mo><m:mn>0.67</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0271</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
+            <item>Less than 142 students out of 300 translates to a proportion <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>142</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.4733</m:mn><m:mo>.</m:mo></m:math><newline/>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0271</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo></m:math> we have that <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&lt;</m:mo><m:mn>0.4733</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:math> It is almost certain that fewer than 142 of these students out of the 300 will live on campus.<newline/>
+              <figure id="fig-00011">
+                <media alt="A normal distribution curve for the sample proportion centered at 0.33; the area to the left of 0.4733 is shaded and represents a probability of approximately 1.">
+                  <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img11.png"/>
+                </media>
+              </figure>
+            </item>
+            <item>We must translate 90 and 100 out of 300.<newline/><m:math><m:msubsup><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>′</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>90</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.30</m:mn></m:math><newline/><m:math><m:msubsup><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>′</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>100</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.3333</m:mn></m:math><newline/>In this case, we will compute <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.30</m:mn><m:mo>&lt;</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&lt;</m:mo><m:mn>0.3333</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.5489</m:mn><m:mo>−</m:mo><m:mn>0.1346</m:mn><m:mo>=</m:mo><m:mn>0.4143</m:mn><m:mo>.</m:mo></m:math> There is a 41.43% chance that between 90 and 100 students in the survey live on campus. <newline/>
+              <figure id="fig-00012">
+                <media alt="A normal distribution curve for the sample proportion centered at 0.33; the area between 0.30 and 0.3333 is shaded and represents a probability of about 0.4143.">
+                  <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img12.png"/>
+                </media>
+              </figure>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+    </example>
+    <note class="statistics try" id="note-00002">
+      <title>Try It</title>
+      <exercise id="exer-00002">
+        <problem id="prob-00002">
+          <para id="para-00030">It is known that on a particular website, 20% of website users will buy something from the website’s store. A random sample of 500 website visitors is taken.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00008">
+            <item>What does the random variable <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represent in this situation, and how is it distributed?</item>
+            <item>What is the probability that less than 90 of the sampled website visits will buy something?</item>
+            <item>What is the probability that between 60 and 80 website users buy something from the website store?</item>
+          </list>
+        </problem>
+      </exercise>
+    </note>
+    <example id="exam-00002">
+      <para id="para-00031">In the 2025–2026 NBA season, Jalen Brunson had a free throw percentage of 84.1%.<footnote id="foot-00001">Jalen Brunson Career Stats. (2026). ESPN. Retrieved June 26, 2026, from https://www.espn.com/nba/player/stats/_/id/3934672/jalen-brunson</footnote> Suppose a sample of 40 free throws are taken from the 2025–2026 season.</para>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00009">
+            <item>What does the random variable <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> represent in this situation, and how is it distributed?</item>
+            <item>What is the probability that Jalen made more than 85% of these free throws? Write the probability statement and draw a graph.</item>
+            <item>What is the 40<sup>th</sup> percentile in this situation, and what does it represent?</item>
+          </list>
+        </problem>
+        <solution id="sol-00002">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
+            <item><m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is the sample proportion of free throws made out of the 40 sample free throws.<newline/><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.841</m:mn><m:mo>·</m:mo><m:mn>0.159</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0578</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
+            <item>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0578</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext/><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&gt;</m:mo><m:mn>0.85</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.4382</m:mn></m:math><newline/>
+              <figure id="fig-00013">
+                <media alt="A normal distribution curve for the sample proportion centered at 0.841; the area to the right of 0.85 is shaded and represents a probability of about 0.4382.">
+                  <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img13.png"/>
+                </media>
+              </figure>
+            </item>
+            <item>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0578</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> and invNorm, the 40<sup>th</sup> percentile of <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is 0.826. This means that 40% of all random samples of 40 free throws will have a sample made-proportion of 0.826 (82.6%) or lower. In other words, 33 or fewer free throws are successfully made out of 40. The remaining 60% of samples exceed that proportion.<newline/>
+              <figure id="fig-00014">
+                <media alt="A normal distribution curve for the sample proportion centered at 0.841 with the 40th percentile marked at 0.826.">
+                  <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img14.png"/>
+                </media>
+              </figure>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+    </example>
+    <note class="statistics try" id="note-00003">
+      <title>Try It</title>
+      <exercise id="exer-00004">
+        <problem id="prob-00004">
+          <para id="para-00032">Continuing from the previous example:</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00011">
+            <item>What is the probability that Jalen Brunson made between 82% and 85% of these free throws?</item>
+            <item>What is the probability that Jalen Brunson made fewer than 50% of these free throws?</item>
+            <item>What is the 80<sup>th</sup> percentile in this situation, and what does it represent?</item>
+          </list>
+        </problem>
+      </exercise>
+    </note>
+    <section class="glossary" id="sect-00006">
+      <title>Key Terms</title>
+      <definition id="def-00001">
+        <term>The Distribution of Proportions</term>
+        <meaning>the natural, approximately normal (bell-curve) distribution that emerges when sample proportions are repeatedly computed from samples of size <m:math><m:mi>n</m:mi></m:math>, as guaranteed by the Central Limit Theorem for Proportions; it is centered at the population proportion <m:math><m:mi>p</m:mi></m:math> and has standard deviation <m:math><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>.</meaning>
+      </definition>
+    </section>
+    <section class="practice" id="sect-00007">
+      <para id="para-00033"><emphasis effect="italics">Use the following information to answer the next four exercises:</emphasis> A survey is conducted and finds that 48% of college students skip breakfast. A sample of 50 students is taken.</para>
+      <exercise id="exer-00005">
+        <problem id="prob-00005">
+          <para id="para-00034">What is <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> in this situation and how is it distributed?</para>
+        </problem>
+        <solution id="sol-00003">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00012">
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of a sample of 50 students who skip breakfast</item>
+            <item>
+              <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.48</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0707</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="exer-00006">
+        <problem id="prob-00006">
+          <para id="para-00035">What is the probability that in the sample of 50 students, 50% of them or less of them skipped breakfast?</para>
+        </problem>
+      </exercise>
+      <exercise id="exer-00007">
+        <problem id="prob-00007">
+          <para id="para-00036">What is the probability that in the sample of 50 students, more than 75% skipped breakfast?</para>
+        </problem>
+        <solution id="sol-00004">
+          <para id="para-00037">0.0001</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00008">
+        <problem id="prob-00008">
+          <para id="para-00038">What is the probability that in the sample of 50 students, between 45% and 62% skipped breakfast?</para>
+        </problem>
+      </exercise>
+      <para id="para-00039"><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> At a particular college, faculty tend to only open 27% of their emails. A sample of 35 faculty members is taken and surveyed.</para>
+      <exercise id="exer-00009">
+        <problem id="prob-00009">
+          <para id="para-00040">What is <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> in this situation and how is it distributed?</para>
+        </problem>
+        <solution id="sol-00005">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00013">
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of a sample of 35 faculty who open their emails</item>
+            <item>
+              <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.27</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0750</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="exer-00010">
+        <problem id="prob-00010">
+          <para id="para-00041">What is the probability that the faculty surveyed opened 30% or fewer of their emails?</para>
+        </problem>
+        <solution id="sol-00006">
+          <para id="para-00042">0.6554</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00011">
+        <problem id="prob-00011">
+          <para id="para-00043">What is the probability that the faculty surveyed opened between 26% to 29% of their emails?</para>
+        </problem>
+      </exercise>
+      <para id="para-00044"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> In a particular office building, 2% of the lightbulbs are out. Peter is on the third floor and checking all 275 lightbulbs.</para>
+      <exercise id="exer-00012">
+        <problem id="prob-00012">
+          <para id="para-00045">What is the difference between the distributions <m:math><m:mi>X</m:mi></m:math> and <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> in this situation?</para>
+        </problem>
+      </exercise>
+      <exercise id="exer-00013">
+        <problem id="prob-00013">
+          <para id="para-00046">Describe the distributions for each. Represent <m:math><m:mi>X</m:mi></m:math> with both the binomial distribution and normal distribution approximation. Why can we approximate the binomial distribution with a normal distribution?</para>
+        </problem>
+        <solution id="sol-00007">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
+            <item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>275</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.02</m:mn><m:mo stretchy="false">)</m:mo></m:math>; because np = 5.5 and nq = 269.5 are both ≥ 5, <m:math><m:mi>X</m:mi><m:mo>≈</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5.5</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>2.3216</m:mn><m:mo stretchy="false">)</m:mo></m:math>.</item>
+            <item>
+              <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.02</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0084</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="exer-00014">
+        <problem id="prob-00014">
+          <para id="para-00047">Suppose we want to know the probability that exactly 5 lightbulbs are out. What is the appropriate distribution to use, and why?</para>
+        </problem>
+      </exercise>
+      <exercise id="exer-00015">
+        <problem id="prob-00015">
+          <para id="para-00048">Suppose that within the 275 lightbulbs that Peter is checking, we want to know what the probability is that more than 10% are out. What is the appropriate distribution to use, and why?</para>
+        </problem>
+        <solution id="sol-00008">
+          <para id="para-00049">Use the distribution of the sample proportion, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.02</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0084</m:mn><m:mo stretchy="false">)</m:mo></m:math>, because the question asks about a proportion (percent) of the 275 bulbs; the normal approximation applies since np and nq are both ≥ 5.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00016">
+        <problem id="prob-00016">
+          <para id="para-00050">Find the probability that among the 275 lightbulbs that Peter is checking, more than 10% are out.</para>
+        </problem>
+      </exercise>
+    </section>
+    <section class="free-response" id="sect-00008">
+      <title>HOMEWORK</title>
+      <exercise id="exer-00017">
+        <problem id="prob-00017">
+          <para id="para-00051">A pharmacy finds that 9% of the prescriptions it fills are flagged for insurance review. A random sample of 150 prescriptions is taken.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00015">
+            <item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
+            <item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
+            <item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
+            <item>Find the probability that among the 150 prescriptions, 12% or more are flagged for insurance review.</item>
+            <item>Find the 40<sup>th</sup> percentile for the proportion of prescriptions flagged, and interpret its meaning.</item>
+          </list>
+        </problem>
+      </exercise>
+      <exercise id="fs-c7-hw-97">
+        <problem id="prob-00018">
+          <para id="para-00052">A factory produces smartphones, and 1.25% of all phones end up with a cracked screen off the assembly line. We take a sample of 300 smartphones.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00016">
+            <item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
+            <item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
+            <item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
+            <item>Find the probability that among the 300 phone sample, 2% or more of them have cracked screens.</item>
+          </list>
+        </problem>
+        <solution id="sol-00009">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00017">
+            <item>Not really — np = (300)(0.0125) = 3.75 &lt; 5, so the np ≥ 5 condition is not met. Allowing the approximation, <m:math><m:mi>X</m:mi></m:math> = the number of the 300 phones that have a cracked screen.</item>
+            <item>
+              <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>3.75</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>1.9244</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 300 sampled phones that have a cracked screen</item>
+            <item>
+              <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.0125</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0064</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+            <item>0.1212</item>
+          </list>
+        </solution>
+      </exercise>
+      <exercise id="exer-00018">
+        <problem id="prob-00019">
+          <para id="para-00053">At a college, it is known that 62% of students use the tutoring center services. A sample of 60 students is taken.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00018">
+            <item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
+            <item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
+            <item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
+            <item>Find the probability that among the 60 students surveyed, 50% or less use the tutoring center.</item>
+          </list>
+        </problem>
+      </exercise>
+      <exercise id="fs-c7-hw-99">
+        <problem id="prob-00020">
+          <para id="para-00054">Michael Jordan averaged 83.5% of free throws in his career. Suppose we take a sample of 50 random free throws.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00019">
+            <item>Can the normal distribution be used to approximate a binomial distribution in this situation? Why? Allowing the normal distribution to approximate the binomial distribution, in words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
+            <item><m:math><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
+            <item>In words, <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = _______</item>
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> ~ _______(_______,_______)</item>
+            <item>Find the probability that among those free throws sample, Michael Jordan made more than 80% of them.</item>
+            <item>Find the 50<sup>th</sup> percentile among the sampled free throws, and interpret its meaning.</item>
+          </list>
+        </problem>
+        <solution id="sol-00010">
+          <list list-type="enumerated" number-style="lower-alpha" id="list-00020">
+            <item>Yes; np = (50)(0.835) = 41.75 ≥ 5 and nq = (50)(0.165) = 8.25 ≥ 5. <m:math><m:mi>X</m:mi></m:math> = the number of the 50 sampled free throws that are made.</item>
+            <item>
+              <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>41.75</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>2.6246</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+            <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 50 sampled free throws that are made</item>
+            <item>
+              <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.835</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0525</m:mn><m:mo stretchy="false">)</m:mo></m:math>
+            </item>
+            <item>0.7475</item>
+            <item>0.835; the 50<sup>th</sup> percentile (median) equals the mean, so half of the samples have a made-proportion at or below 0.835 (83.5%).</item>
+          </list>
+        </solution>
+      </exercise>
+    </section>
+  </content>
 </document>
