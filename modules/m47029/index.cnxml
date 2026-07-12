@@ -1,4 +1,4 @@
-<document xmlns="http://cnx.rice.edu/cnxml">
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
   <title>Outcomes and the Type I and Type II Errors</title>
   <metadata xmlns:md="http://cnx.rice.edu/mdml">
     <md:content-id>m47029</md:content-id>
@@ -14,7 +14,7 @@
           <row>
             <entry>ACTION</entry>
             <entry><emphasis effect="italics">H<sub>0</sub></emphasis> IS ACTUALLY</entry>
-            <entry>...</entry>
+            <entry><emphasis effect="italics">H<sub>0</sub></emphasis> IS ACTUALLY</entry>
           </row>
         </thead>
         <tbody>
@@ -34,7 +34,7 @@
             <entry>
               <emphasis>Reject <emphasis effect="italics">H<sub>0</sub></emphasis></emphasis>
             </entry>
-            <entry>Type I Error</entry>
+            <entry>Type I error</entry>
             <entry>Correct Outcome</entry>
           </row>
         </tbody>
@@ -49,15 +49,15 @@
       </list>
     </para>
     <para id="element-247">Each of the errors occurs with a particular probability. The Greek letters <emphasis effect="italics">α</emphasis> and <emphasis effect="italics">β</emphasis> represent the probabilities.</para>
-    <para id="element-95"><emphasis effect="italics">α</emphasis> = probability of a Type I error = <emphasis><emphasis effect="italics">P</emphasis>(Type I error)</emphasis> = probability of rejecting the null hypothesis when the null hypothesis is true.</para>
-    <para id="element-634"><emphasis effect="italics">β</emphasis> = probability of a Type II error = <emphasis><emphasis effect="italics">P</emphasis>(Type II error)</emphasis> = probability of not rejecting the null hypothesis when the null hypothesis is false.</para>
-    <para id="fs-idp40594672"><emphasis effect="italics">α</emphasis> and <emphasis effect="italics">β</emphasis> should be as small as possible because they are probabilities of errors. They are rarely zero.</para>
+    <para id="element-95"><emphasis effect="italics">α</emphasis> = probability of a Type I error = <emphasis><emphasis effect="italics">P</emphasis>(Type I error)</emphasis> = probability of rejecting the null hypothesis when the null hypothesis is true, ie we rejected when we did not need to.</para>
+    <para id="element-634"><emphasis effect="italics">β</emphasis> = probability of a Type II error = <emphasis><emphasis effect="italics">P</emphasis>(Type II error)</emphasis> = probability of not rejecting the null hypothesis when the null hypothesis is false; ie we failed to detect an issue.</para>
+    <para id="fs-idp40594672"><emphasis effect="italics">α</emphasis> and <emphasis effect="italics">β</emphasis> should be as small as possible because they are probabilities of errors. They are rarely zero. For a given sample size, decreasing <emphasis effect="italics">α</emphasis> tends to increase <emphasis effect="italics">β</emphasis>; the only way to reduce both is to increase the sample size.</para>
     <para id="element-225">The Power of the Test is 1 – <emphasis effect="italics">β</emphasis>. Ideally, we want a high power that is as close to one as possible. Increasing the sample size can increase the Power of the Test.</para>
     <para id="element-400">The following are examples of Type I and Type II errors.</para>
     <example id="element-484">
       <para id="element-742">Suppose the null hypothesis, <emphasis effect="italics">H<sub>0</sub></emphasis>, is: Navah's rock climbing equipment is safe.</para>
-      <para id="element-905"><emphasis>Type I error</emphasis>: Navah thinks that her rock climbing equipment may not be safe when, in fact, it really is safe. <emphasis>Type II error</emphasis>: Navah thinks that her rock climbing equipment may be safe when, in fact, it is not safe.</para>
-      <para id="element-821"><emphasis><emphasis effect="italics">α</emphasis> = probability</emphasis> that Navah thinks her rock climbing equipment may not be safe when, in fact, it really is safe. <emphasis><emphasis effect="italics">β</emphasis> = probability</emphasis> that Navah thinks her rock climbing equipment may be safe when, in fact, it is not safe.</para>
+      <para id="element-905"><emphasis>Type I error</emphasis>: Navah thinks that her rock climbing equipment is not safe when, in fact, it really is safe. <emphasis>Type II error</emphasis>: Navah thinks that her rock climbing equipment is safe when, in fact, it is not safe.</para>
+      <para id="element-821"><emphasis><emphasis effect="italics">α</emphasis> = probability</emphasis> that Navah thinks her rock climbing equipment is not safe when, in fact, it really is safe. <emphasis><emphasis effect="italics">β</emphasis> = probability</emphasis> that Navah thinks her rock climbing equipment is safe when, in fact, it is not safe.</para>
       <para id="element-239">Notice that, in this case, the error with the greater consequence is the Type II error. (If Navah thinks her rock climbing equipment is safe, she will go ahead and use it.)</para>
     </example>
     <note id="fs-idm72148080" class="statistics try">
@@ -70,11 +70,16 @@
       </exercise>
     </note>
     <example id="element-449">
-      <para id="element-496">Suppose the null hypothesis, <emphasis effect="italics">H<sub>0</sub></emphasis>, is: The victim of an automobile accident is alive when they arrive at the emergency room of a hospital.</para>
-      <para id="element-157"><emphasis>Type I error</emphasis>: The emergency crew thinks that the victim is dead when, in fact, the victim is alive. <emphasis>Type II error</emphasis>: The emergency crew does not know if the victim is alive when, in fact, the victim is dead.</para>
-      <para id="element-558"><emphasis><emphasis effect="italics">α</emphasis> = probability</emphasis> that the emergency crew thinks the victim is dead when, in fact, the victim is really alive = <emphasis effect="italics">P</emphasis>(Type I error).
-<emphasis><emphasis effect="italics">β</emphasis> = probability</emphasis> that the emergency crew does not know if the victim is alive when, in fact, the victim is dead = <emphasis effect="italics">P</emphasis>(Type II error).</para>
-      <para id="element-266">The error with the greater consequence is the Type I error. (If the emergency crew thinks the victim is dead, they will not treat them.)</para>
+      <exercise id="exer-00001">
+        <problem id="prob-00001">
+          <para id="element-496">Suppose the null hypothesis, <emphasis effect="italics">H<sub>0</sub></emphasis>, is: The victim of an automobile accident is alive when they arrive at the emergency room of a hospital. Describe the Type I and Type II errors.</para>
+        </problem>
+        <solution id="sol-00001">
+          <para id="element-157"><emphasis>Type I error</emphasis>: The emergency crew thinks that the victim is dead when, in fact, the victim is alive. <emphasis>Type II error</emphasis>: The emergency crew thinks the victim is alive when, in fact, the victim is dead.</para>
+          <para id="element-558"><emphasis><emphasis effect="italics">α</emphasis> = probability</emphasis> that the emergency crew thinks the victim is dead when, in fact, the victim is really alive = <emphasis effect="italics">P</emphasis>(Type I error). <emphasis><emphasis effect="italics">β</emphasis> = probability</emphasis> that the emergency crew thinks the victim is alive when, in fact, the victim is dead = <emphasis effect="italics">P</emphasis>(Type II error).</para>
+          <para id="element-266">The error with the greater consequence is the Type I error. (If the emergency crew thinks the victim is dead, they will not treat them.)</para>
+        </solution>
+      </exercise>
     </example>
         <note id="fs-idp97501776" class="statistics try">
       <label/>
@@ -96,12 +101,12 @@
       <title>Try It</title>
         <exercise id="eip-idp106437392">
         <problem id="eip-idm60347984">
-          <para id="eip-326">“Red tide” is a bloom of poison-producing algae–a few different species of a class of plankton called dinoflagellates. When the weather and water conditions cause these blooms, shellfish such as clams living in the area develop dangerous levels of a paralysis-inducing toxin. In Massachusetts, the Division of Marine Fisheries (DMF) monitors levels of the toxin in shellfish by regular sampling of shellfish along the coastline. If the mean level of toxin in clams exceeds 800 μg (micrograms) of toxin per kg of clam meat in any area, clam harvesting is banned there until the bloom is over and levels of toxin in clams subside. Describe both a Type I and a Type II error in this context, and state which error has the greater consequence.</para>
+          <para id="eip-326">“Red tide” is a bloom of poison-producing algae—a few different species of a class of plankton called dinoflagellates. When the weather and water conditions cause these blooms, shellfish such as clams living in the area develop dangerous levels of a paralysis-inducing toxin. In Massachusetts, the Division of Marine Fisheries (DMF) monitors levels of the toxin in shellfish by regular sampling of shellfish along the coastline. If the mean level of toxin in clams exceeds 800 μg (micrograms) of toxin per kg of clam meat in any area, clam harvesting is banned there until the bloom is over and levels of toxin in clams subside. Describe both a Type I and a Type II error in this context, and state which error has the greater consequence.</para>
         </problem>
       </exercise>
     </note>
     <example id="eip-168">
-      <para id="eip-90">A certain experimental drug claims a cure rate of at least 75% for males with prostate cancer. Describe both the Type I and Type II errors in context. Which error is the more serious?</para>
+      <para id="eip-90">The maker of a certain experimental drug claims a cure rate of at least 75% for males with prostate cancer. Describe both the Type I and Type II errors in context. Which error is the more serious?</para>
       <para id="eip-141"><emphasis>Type I</emphasis>: A cancer patient believes the cure rate for the drug is less than 75% when it actually is at least 75%.</para>
       <para id="eip-695"><emphasis>Type II</emphasis>: A cancer patient believes the experimental drug has at least a 75% cure rate when it has a cure rate that is less than 75%.</para>
       <para id="eip-806">In this scenario, the Type II error contains the more severe consequence. If a patient believes the drug works at least 75% of the time, this most likely will influence the patient’s (and doctor’s) choice about whether to use the drug as a treatment option.</para>
@@ -258,7 +263,7 @@
         <problem id="id9404374">
           <para id="id8618928">When a new drug is created, the pharmaceutical company must subject it to testing before receiving the necessary permission from the Food and Drug Administration (FDA) to market the drug. Suppose the null hypothesis is “the drug is unsafe.” What is the Type II Error?</para>
           <list id="id5046364" list-type="enumerated" number-style="lower-alpha">
-            <item>To conclude the drug is safe when in, fact, it is unsafe.</item>
+            <item>To conclude the drug is safe when, in fact, it is unsafe.</item>
             <item>Not to conclude the drug is safe when, in fact, it is safe.</item>
             <item>To conclude the drug is safe when, in fact, it is safe.</item>
             <item>Not to conclude the drug is unsafe when, in fact, it is unsafe.</item>
@@ -306,14 +311,20 @@
         </problem>
       </exercise>
     </section>
-  </content>
-  <glossary><definition id="type1err">
-      <term>Type I Error</term>
-      <meaning id="id2292288">The decision is to reject the null hypothesis when, in fact, the null hypothesis is true.
-    </meaning>
-    </definition><definition id="type2err">
-      <term>Type II Error</term>
-      <meaning id="id1169217218486">The decision is not to reject the null hypothesis when, in fact, the null hypothesis is false.
-    </meaning>
-    </definition></glossary>
+  <section class="glossary" id="sect-00001">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Type I Error</term>
+<meaning>the decision is to reject the null hypothesis when, in fact, the null hypothesis is true.</meaning>
+</definition>
+<definition id="def-00002">
+<term>Type II Error</term>
+<meaning>the decision is not to reject the null hypothesis when, in fact, the null hypothesis is false.</meaning>
+</definition>
+<definition id="def-00003">
+<term>Power of the Test</term>
+<meaning>the probability of rejecting the null hypothesis when the null hypothesis is false, equal to <m:math><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>β</m:mi></m:math>; a high power means the test is likely to detect a real difference when one exists. Increasing the sample size increases the power.</meaning>
+</definition>
+</section>
+</content>
 </document>
