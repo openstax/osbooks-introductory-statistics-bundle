@@ -34,7 +34,7 @@
 <entry>Population mean <m:math><m:mi>μ</m:mi></m:math></entry>
 <entry>Sample mean <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math></entry>
 <entry>Not known</entry>
-<entry>Student’s t-distribution, <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow></m:msub></m:math></entry>
+<entry>Student’s t-distribution, <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mtext>df</m:mtext></m:mrow></m:msub></m:math></entry>
 </row>
 <row>
 <entry>Hypothesis test for proportions</entry>
@@ -62,7 +62,7 @@
 <para id="para-00005">When you perform a hypothesis test of a single population proportion <m:math><m:mi>p</m:mi></m:math>, these are the fundamental assumptions that must be met:</para>
 <list list-type="enumerated" id="list-00003">
 <item>You take a simple random sample from the population.</item>
-<item>You must meet the conditions for a binomial distribution: there are a certain number <m:math><m:mi>n</m:mi></m:math> of independent trials, the outcomes of any trial are success or failure, and each trial has the same probability of a success <m:math><m:mi>p</m:mi></m:math>. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <m:math><m:mi>np</m:mi></m:math> and <emphasis effect="italics">nq</emphasis> must both be greater than five (<m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math>).</item>
+<item>You must meet the conditions for a binomial distribution: there are a certain number <m:math><m:mi>n</m:mi></m:math> of independent trials, the outcomes of any trial are success or failure, and each trial has the same probability of a success <m:math><m:mi>p</m:mi></m:math>. The shape of the binomial distribution needs to be similar to the shape of the normal distribution. To ensure this, the quantities <m:math><m:mi>np</m:mi></m:math> and <m:math><m:mi>nq</m:mi></m:math> must both be greater than five (<m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math>).</item>
 <item>Then the binomial distribution of a sample (estimated) proportion can be approximated by the normal distribution with <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>p</m:mi></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math>. Remember that <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:math>.</item>
 </list>
 </section>
@@ -78,9 +78,9 @@
 </problem>
 <solution id="sol-00001">
 <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
-<item><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>≥</m:mo><m:mn>42</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>&lt;</m:mo><m:mn>42</m:mn></m:math> (a time less than 42 minutes in this context would be an improvement)<newline/>This situation states the standard deviation is <emphasis effect="italics">known</emphasis>, so it is interpreted as <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1.2</m:mn></m:math> and the normal distribution will be used, <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>42</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1.2</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></item>
-<item><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>6.5</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>6.5</m:mn></m:math><newline/>Since the standard deviation comes from the survey of 15 students, we interpret this as <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>. Since only the sample standard deviation is known, we use Student’s t-distribution with <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>14</m:mn></m:mrow></m:msub></m:math></item>
-<item>Since we are discussing hypothesis testing with proportions, we first should confirm that the criteria <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> are met. Note that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>25</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.68</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>17</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>25</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.32</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>,</m:mo></m:math> so the criteria are met. Note that the population proportion <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.68</m:mn></m:math> was used, <emphasis effect="italics">not</emphasis> <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.72</m:mn></m:math>.<newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>0.68</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>0.68</m:mn></m:math><newline/>In this text, hypothesis tests for proportions use the normal distribution with <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.68</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.68</m:mn><m:mo>·</m:mo><m:mn>0.32</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</item>
+<item><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>≥</m:mo><m:mn>42</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>&lt;</m:mo><m:mn>42</m:mn></m:math> (a time less than 42 minutes in this context would be an improvement)<newline/>This situation states the standard deviation is <emphasis effect="italics">known</emphasis>, so it is interpreted as <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1.2</m:mn></m:math> and the normal distribution will be used, <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>42</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1.2</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></item>
+<item><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>6.5</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>6.5</m:mn></m:math><newline/>Since the standard deviation comes from the survey of 15 students, we interpret this as <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>. Since only the sample standard deviation is known, we use Student’s t-distribution with <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>14</m:mn></m:mrow></m:msub></m:math></item>
+<item>Since we are discussing hypothesis testing with proportions, we first should confirm that the criteria <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> are met. Note that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>25</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.68</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>17</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>25</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.32</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>8</m:mn></m:math>, so the criteria are met. Note that the population proportion <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.68</m:mn></m:math> was used, <emphasis effect="italics">not</emphasis> <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.72</m:mn></m:math>.<newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>≤</m:mo><m:mn>0.68</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:mi>p</m:mi><m:mo>></m:mo><m:mn>0.68</m:mn></m:math><newline/>In this text, hypothesis tests for proportions use the normal distribution with <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.68</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.68</m:mn><m:mo>·</m:mo><m:mn>0.32</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</item>
 </list>
 </solution>
 </exercise>
@@ -114,7 +114,7 @@
 </row>
 <row>
 <entry>Hypothesis test for the mean, when the population standard deviation is unknown and the distribution of the sample mean is approximately normal</entry>
-<entry>Student’s t-distribution, <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mi>d</m:mi><m:mi>f</m:mi></m:mrow></m:msub></m:math></entry>
+<entry>Student’s t-distribution, <m:math><m:mi>T</m:mi><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mtext>df</m:mtext></m:mrow></m:msub></m:math></entry>
 <entry><m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math></entry>
 </row>
 <row>
@@ -192,7 +192,7 @@
           is approximately normally distributed, or the sample size is large, with a known standard
           deviation.</item>
       </list>
-      <para id="fs-idp12045392">When testing a single population proportion, use a normal test if the data come from a simple random sample, the requirements for a binomial distribution are fulfilled, and the mean number of successes and the mean number of failures satisfy the conditions: <m:math><m:mi>np</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <emphasis effect="italics">nq</emphasis> > 5 where <m:math><m:mi>n</m:mi></m:math> is the sample size, <m:math><m:mi>p</m:mi></m:math> is the probability of a success, and <m:math><m:mi>q</m:mi></m:math> is the probability of a failure.</para>
+      <para id="fs-idp12045392">When testing a single population proportion, use a normal test if the data come from a simple random sample, the requirements for a binomial distribution are fulfilled, and the mean number of successes and the mean number of failures satisfy the conditions: <m:math><m:mi>np</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>nq</m:mi><m:mo>></m:mo><m:mn>5</m:mn></m:math> where <m:math><m:mi>n</m:mi></m:math> is the sample size, <m:math><m:mi>p</m:mi></m:math> is the probability of a success, and <m:math><m:mi>q</m:mi></m:math> is the probability of a failure.</para>
     </section>
     <section id="eip-772" class="formula-review">
       <title>Formula Review</title>
@@ -206,9 +206,9 @@
         <item>For a <emphasis>single population proportion</emphasis>, we may use a normal distribution with the following mean and standard deviation. Proportions:  <m:math><m:mi>μ</m:mi><m:mo>=</m:mo></m:math> <emphasis><m:math><m:mi>p</m:mi></m:math></emphasis> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mi>n</m:mi></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math>. </item>
       </list>
     <para id="para-00023"><emphasis>Test Statistics</emphasis></para>
-<para id="para-00024">Single population mean, <emphasis effect="italics">σ</emphasis> known: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math></para>
-<para id="para-00025">Single population mean, <emphasis effect="italics">σ</emphasis> unknown: <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math>, with df = <emphasis effect="italics">n</emphasis> − 1</para>
-<para id="para-00026">Single population proportion: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>, where <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:math> is the sample proportion</para>
+<para id="para-00024">Single population mean, <m:math><m:mi>σ</m:mi></m:math> known: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math></para>
+<para id="para-00025">Single population mean, <m:math><m:mi>σ</m:mi></m:math> unknown: <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math>, with df = <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math></para>
+<para id="para-00026">Single population proportion: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>, where <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:math> is the sample proportion</para>
 </section>
     <section id="eip-496" class="practice">
           <exercise id="eip-176">
@@ -216,7 +216,7 @@
           <para id="eip-434">Which two distributions can you use for hypothesis testing for this chapter?</para>
         </problem>
         <solution id="sol-00003">
-<para id="para-00027">A normal distribution or a Student's <emphasis effect="italics">t</emphasis>-distribution</para>
+<para id="para-00027">A normal distribution or a Student's <m:math><m:mi>t</m:mi></m:math>-distribution</para>
 </solution>
       </exercise>
           <exercise id="eip-492">
@@ -229,7 +229,7 @@
           <para id="eip-756">Which distribution do you use when the standard deviation is not known and you are testing one population mean? Assume sample size is large.</para>
         </problem>
         <solution id="sol-00004">
-<para id="para-00028">Use a Student's <emphasis effect="italics">t</emphasis>-distribution</para>
+<para id="para-00028">Use a Student's <m:math><m:mi>t</m:mi></m:math>-distribution</para>
 </solution>
       </exercise>
           <exercise id="eip-692">
@@ -265,7 +265,7 @@
       </exercise>
           <exercise id="eip-254">
         <problem id="eip-543">
-          <para id="eip-372">You are performing a hypothesis test of a single population proportion. What must be true about the quantities of <m:math><m:mi>np</m:mi></m:math> and <emphasis effect="italics">nq</emphasis>?</para>
+          <para id="eip-372">You are performing a hypothesis test of a single population proportion. What must be true about the quantities of <m:math><m:mi>np</m:mi></m:math> and <m:math><m:mi>nq</m:mi></m:math>?</para>
         </problem>
         <solution id="sol-00007">
 <para id="para-00031">They must both be greater than five.</para>
@@ -315,27 +315,6 @@
   <section class="glossary" id="sect-00003">
 <title>Key Terms</title>
 <definition id="def-00001">
-<term>Binomial Distribution</term>
-<meaning>a discrete random variable (RV) that arises from Bernoulli trials. There are a fixed number, <m:math><m:mi>n</m:mi></m:math>, of independent trials. “Independent” means that the result of any trial (for example, trial 1) does not affect the results of the following trials, and all trials are conducted under the same conditions. Under these circumstances the binomial RV <m:math><m:mi>X</m:mi></m:math> is defined as the number of successes in <m:math><m:mi>n</m:mi></m:math> trials. The notation is: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>p</m:mi><m:mo stretchy="false">)</m:mo></m:math>. The mean is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:math> and the standard deviation is <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:math>. The probability of exactly <m:math><m:mi>x</m:mi></m:math> successes in <m:math><m:mi>n</m:mi></m:math> trials is <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo minsize="2.047em" maxsize="2.047em">(</m:mo><m:mfrac linethickness="0"><m:mrow><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>x</m:mi></m:mrow></m:mfrac><m:mo minsize="2.047em" maxsize="2.047em">)</m:mo><m:msup><m:mi>p</m:mi><m:mrow><m:mi>x</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:math>.</meaning>
-</definition>
-<definition id="def-00002">
-<term>Normal Distribution</term>
-<meaning>a continuous random variable (RV) with pdf <m:math><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mn>2</m:mn><m:mi>π</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:msup><m:mi>e</m:mi><m:mrow><m:mfrac><m:mrow><m:mo>−</m:mo><m:msup><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>2</m:mn><m:msup><m:mi>σ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msup></m:mrow></m:mfrac></m:mrow></m:msup></m:math>, where <m:math><m:mi>μ</m:mi></m:math> is the mean of the distribution, and <m:math><m:mi>σ</m:mi></m:math> is the standard deviation, notation: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math>. If <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math>, the RV is called <emphasis>the standard normal distribution</emphasis>.</meaning>
-</definition>
-<definition id="def-00003">
-<term>Standard Deviation</term>
-<meaning>a number that is equal to the square root of the variance and measures how far data values are from their mean; notation: <m:math><m:mi>s</m:mi></m:math> for sample standard deviation and <m:math><m:mi>σ</m:mi></m:math> for population standard deviation.</meaning>
-</definition>
-<definition id="def-00004">
-<term>Student’s <m:math><m:mi>t</m:mi></m:math>-Distribution</term>
-<meaning>investigated and reported by William S. Gosset in 1908 and published under the pseudonym Student. The major characteristics of the random variable (RV) are:<list list-type="bulleted" id="list-00007">
-<item>It is continuous and assumes any real values.</item>
-<item>The pdf is symmetrical about its mean of zero. However, it is more spread out and flatter at the apex than the normal distribution.</item>
-<item>It approaches the standard normal distribution as <m:math><m:mi>n</m:mi></m:math> gets larger.</item>
-<item>There is a “family” of t distributions: every representative of the family is completely defined by the number of degrees of freedom, which is one less than the number of data items.</item>
-</list></meaning>
-</definition>
-<definition id="def-00005">
 <term>Test Statistic</term>
 <meaning>a standardized value calculated from the sample data — in this chapter, a z-score or a t-score — that measures how far the sample result falls from the value of the parameter claimed in the null hypothesis, in units of standard errors. The test statistic is used to calculate the p-value.</meaning>
 </definition>
