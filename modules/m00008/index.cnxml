@@ -1,0 +1,436 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Differences in Hypothesis Testing with Two Groups versus One Group</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title/>
+    <md:content-id>m00008</md:content-id>
+    <md:uuid>77fb13b0-f0df-463e-b2de-7b18da428a9e</md:uuid>
+  </metadata>
+  <content>
+<para id="para-00001">In this chapter, we will move into hypothesis testing in four different situations:</para>
+<list list-type="enumerated" id="list-00001">
+<item>Hypothesis testing with two population means and unknown population standard deviations</item>
+<item>Hypothesis testing with two population means and known population standard deviations</item>
+<item>Hypothesis testing with two population proportions</item>
+<item>Hypothesis testing with matched pairs or paired samples</item>
+</list>
+<section id="sect-00001">
+<title>The Central Limit Theorem and Two Groups</title>
+<para id="para-00002">When we developed the hypothesis test for the mean and proportions we began with the Central Limit Theorem. We recognized that a sample mean came from the sampling distribution of sample means, and sample proportions came from the sampling distribution of sample proportions. Hypothesis testing of a single mean or proportion allowed us to measure the probability that a random sample was extreme if our population mean truly equaled the hypothesized value.</para>
+<para id="para-00003">Now we are interested in whether or not two populations have the same mean. Do these two samples come from the same population distribution? To approach this problem we create a new random variable. We recognize that we have two sample means, one from each set of data, and thus we have two random variables coming from two unknown distributions. To solve the problem we create a new random variable, the difference between the sample means. This new random variable also has a distribution and, again, the Central Limit Theorem tells us that this new distribution is approximately normally distributed, regardless of the underlying distributions of the original data, provided the sample sizes are sufficiently large. A graph may help to understand this concept.</para>
+<figure id="fig-00001">
+<media alt="Depicts two population distributions forming a normal sampling distribution of the difference in means (X1-X2), then standardized into a Z-distribution for hypothesis testing (H0, H1).">
+<image mime-type="image/png" src="../../media/CNX_Stats_C10_s1_img1.png"/>
+</media>
+</figure>
+<para id="para-00004">Pictured are two distributions of data, <m:math><m:mi>X</m:mi></m:math><sub>1</sub> and <m:math><m:mi>X</m:mi></m:math><sub>2</sub>, with unknown means and standard deviations. The second panel shows the sampling distribution of the newly created random variable (<m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>). This distribution is the theoretical distribution of many sample means from population 1 minus sample means from population 2. The Central Limit Theorem tells us that this theoretical sampling distribution of differences in sample means is approximately normally distributed, regardless of the distribution of the actual population data shown in the top panel. Because the sampling distribution is normally distributed, we can develop a standardizing formula and calculate probabilities from the standard normal distribution in the bottom panel.</para>
+<para id="para-00005">This application of the Central Limit Theorem allows us to conduct hypothesis tests comparing two groups in a multitude of situations.</para>
+</section>
+<section id="sect-00002">
+<title>Types of Hypothesis Testing</title>
+<para id="para-00006">The logic of hypothesis testing does not change with two groups, but the notation and formulas are different. A key difference to note is when a situation is specifically examining two groups versus a single group. Below are a few examples of how we might compare two groups:</para>
+<list list-type="bulleted" id="list-00002">
+<item><emphasis>A comparison of two means:</emphasis> In a math class, a morning class and an evening class took the same exam. A professor wants to know if the morning class had a better average than the evening class.</item>
+<item><emphasis>A comparison of two proportions:</emphasis> A researcher wants to know if there is a difference in graduation rates between two counties. She surveys 60 students from Winnebago County and 72 students from DuPage County.</item>
+</list>
+<para id="para-00007">A new term in that list is <emphasis>matched pairs</emphasis> or <emphasis>paired samples.</emphasis> In this situation, two measurements are taken on the same subjects and the analysis is done on the differences between the paired measurements. A few examples of matched pairs are:</para>
+<list list-type="bulleted" id="list-00003">
+<item>Ashanti notes the sales of her team, and then has her team complete a new training program on different sales techniques. She wants to know if sales have increased for her team after completing this training program.</item>
+<item>A county has enacted a new policy to fight truancy. The county compares truancy rates for each high school in the county before and after the policy. The county wants to know if truancy rates have dropped since the policy was enacted.</item>
+</list>
+<para id="para-00008">As we have learned throughout the text, simply looking at the raw means or proportions of a sample does not tell the entire story of the data. We must also consider the standard deviation or the size of the sample in our analysis — all of which we do when conducting hypothesis testing.</para>
+</section>
+<section id="sect-00003">
+<title>Random Variable Notation</title>
+<para id="para-00009">Because we are now referring to two different groups, our random variable notation must reflect that. The table below shows the different ways to represent random variables:</para>
+<table summary="This table lists the type of test in the first column, the random variable used for that test in the second column, and a description of the random variable in the third column." id="table-00001">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead valign="top">
+<row>
+<entry align="center">Test</entry>
+<entry align="center">Random Variable</entry>
+<entry align="center">How to Describe the Random Variable</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Hypothesis test with two population means</entry>
+<entry><m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry>The random variable is the difference of the means between group 1 and group 2</entry>
+</row>
+<row>
+<entry>Hypothesis test with two proportions</entry>
+<entry><m:math><m:msubsup><m:mi>P</m:mi><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup><m:mo>−</m:mo><m:msubsup><m:mi>P</m:mi><m:mrow><m:mn>2</m:mn></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup></m:math></entry>
+<entry>The random variable is the difference of the proportions between group 1 and group 2</entry>
+</row>
+<row>
+<entry>Hypothesis test with matched pairs</entry>
+<entry><m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math></entry>
+<entry>The random variable is the difference in the measurements or metrics (within the same group)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="para-00010">When two groups are being compared, it is common to use more meaningful notation in the subscripts. For instance:</para>
+<list list-type="bulleted" id="list-00004">
+<item><emphasis>A comparison of two means:</emphasis> In a math class, a morning class and an evening class took the same exam. A professor wants to know if the morning class had a better average than the evening class. Let <m:math><m:mi>m</m:mi><m:mo>=</m:mo></m:math> the morning class and <m:math><m:mi>e</m:mi><m:mo>=</m:mo></m:math> the evening class. The random variable is <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>m</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>e</m:mi></m:mrow></m:msub></m:math> and represents the difference in average exam scores between the morning class and the evening class.</item>
+<item><emphasis>A comparison of two proportions:</emphasis> A researcher wants to know if there is a difference in graduation rates between two counties. She surveys 60 students from Winnebago County and 72 students from DuPage County. Let <m:math><m:mi>W</m:mi><m:mo>=</m:mo></m:math> Winnebago County and let <m:math><m:mi>D</m:mi><m:mo>=</m:mo></m:math> DuPage County. The random variable is <m:math><m:msubsup><m:mi>P</m:mi><m:mrow><m:mi>W</m:mi></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup><m:mo>−</m:mo><m:msubsup><m:mi>P</m:mi><m:mrow><m:mi>D</m:mi></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup></m:math> and represents the difference in the proportion of students who graduated from high school in each county.</item>
+</list>
+<para id="para-00011">When referring to matched pairs, you will note that a single variable is used in the random variable: <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math>. The <emphasis effect="italics">d</emphasis> indicates that a difference between the same group has been taken. With matched pairs, we typically do not deviate from using the <emphasis effect="italics">d</emphasis> subscript.</para>
+</section>
+<section id="sect-00004">
+<title>Setting Up Hypothesis Tests</title>
+<para id="para-00012">Hypothesis tests between two groups must use notation to indicate the difference of two groups. One option is to set up the hypotheses to indicate we are explicitly comparing two groups, such as:</para>
+<equation class="unnumbered" id="eq-00001">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00002">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>
+</equation>
+<para id="para-00013">The other option is to show that the difference between the two groups is 0. It is also optional to change the 0 to a different number, but in this text we will always use 0.</para>
+<equation class="unnumbered" id="eq-00003">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math>
+</equation>
+<equation class="unnumbered" id="eq-00004">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn></m:math>
+</equation>
+<para id="para-00014">These two setups are equivalent. Additionally, we can change the subscripts of “1” and “2” to more meaningful subscripts like letters to represent the groups that the means are related to.</para>
+<para id="para-00015">In the same manner as before, hypothesis tests for means can be left, right, or two-tailed:</para>
+<table summary="This table lists the type of test in the first column, the null hypothesis in the second column, and the alternative hypothesis in the third column, for tests comparing two means." id="table-00002">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead valign="top">
+<row>
+<entry align="center">Type of test</entry>
+<entry align="center">Null Hypothesis</entry>
+<entry align="center">Alternative Hypothesis</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Left-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≥</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+</row>
+<row>
+<entry>Right-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+</row>
+<row>
+<entry>Two-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="para-00016">The same setup holds for comparing two proportions:</para>
+<table summary="This table lists the type of test in the first column, the null hypothesis in the second column, and the alternative hypothesis in the third column, for tests comparing two proportions." id="table-00003">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead valign="top">
+<row>
+<entry align="center">Type of test</entry>
+<entry align="center">Null Hypothesis</entry>
+<entry align="center">Alternative Hypothesis</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Left-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≥</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+</row>
+<row>
+<entry>Right-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+</row>
+<row>
+<entry>Two-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≠</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<para id="para-00017">When setting up hypotheses for matched pairs, the hypotheses are typically set up in a similar way to a single mean but always compared to zero, such as:</para>
+<table summary="This table lists the type of test in the first column, the null hypothesis in the second column, and the alternative hypothesis in the third column, for matched pairs tests." id="table-00004">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead valign="top">
+<row>
+<entry align="center">Type of test</entry>
+<entry align="center">Null Hypothesis</entry>
+<entry align="center">Alternative Hypothesis</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Left-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≥</m:mo><m:mn>0</m:mn></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math></entry>
+</row>
+<row>
+<entry>Right-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math></entry>
+</row>
+<row>
+<entry>Two-tailed</entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math></entry>
+<entry><m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn></m:math></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<example id="exam-00001">
+<exercise id="exer-00001">
+<problem id="prob-00001">
+<para id="para-00018">Indicate the type of hypothesis test from the choices below, then state the random variable and how to set up the hypothesis tests in each situation:</para>
+<list list-type="bulleted" id="list-00005">
+<item>Two independent group means, population standard deviations, and/or variances known</item>
+<item>Two independent group means, population standard deviations, and/or variances unknown</item>
+<item>Matched or paired samples</item>
+<item>single mean</item>
+<item>two proportions</item>
+<item>single proportion</item>
+</list>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00006">
+<item>A group of 10 subjects are participating in a sleep study. The subjects record the number of hours of sleep they get before taking a new medication, and then their sleep is recorded after taking the new medication.</item>
+<item>A researcher wants to compare if engineering majors get more sleep on average than business majors. The researcher surveys a group of 25 engineering majors and 36 business majors.</item>
+<item>Missy reads a news article that states 9% of the population got the flu last year. She believes this percentage is higher at her dorm.</item>
+<item>A school states that students will spend an average of $200 on books per semester. A group of nursing students believe they spend more on books.</item>
+<item>A researcher wants to know if students at a four-year university use AI to help complete their homework more than students at the local community college. The researcher surveys 50 university students and 65 community college students.</item>
+</list>
+</problem>
+<solution id="sol-00001">
+<list list-type="enumerated" number-style="lower-alpha" id="list-00007">
+<item><para id="para-00019">Matched pairs</para><para id="para-00020">Random variable: <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> the mean difference in hours of sleep (after − before) for the subjects taking the new medication</para><equation class="unnumbered" id="eq-00005">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math>
+</equation><equation class="unnumbered" id="eq-00006">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math>
+</equation></item>
+<item><para id="para-00021">Two independent group means, population standard deviations, and/or variances unknown</para><para id="para-00022">Random variable: <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>e</m:mi></m:mrow></m:msub></m:math> represents the sample mean of the engineering majors and <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:msub></m:math> represents the sample mean of the business majors. The random variable is <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>e</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>b</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> the difference in mean hours of sleep between engineering majors and business majors.</para><equation class="unnumbered" id="eq-00007">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>e</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>b</m:mi></m:mrow></m:msub></m:math>
+</equation><equation class="unnumbered" id="eq-00008">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>e</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>b</m:mi></m:mrow></m:msub></m:math>
+</equation></item>
+<item><para id="para-00023">Single proportion</para><para id="para-00024">Random variable: <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msup><m:mo>=</m:mo></m:math> the proportion of students in the dorm who got the flu</para><equation class="unnumbered" id="eq-00009">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.09</m:mn></m:math>
+</equation><equation class="unnumbered" id="eq-00010">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:mi>p</m:mi><m:mo>></m:mo><m:mn>0.09</m:mn></m:math>
+</equation></item>
+<item><para id="para-00025">Single mean</para><para id="para-00026">Random variable: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo></m:math> the mean amount of money nursing students spend on books</para><equation class="unnumbered" id="eq-00011">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>200</m:mn></m:math>
+</equation><equation class="unnumbered" id="eq-00012">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>200</m:mn></m:math>
+</equation></item>
+<item><para id="para-00027">Two proportions</para><para id="para-00028">Random variable: <m:math><m:msubsup><m:mi>P</m:mi><m:mrow><m:mi>u</m:mi></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup></m:math> represents the sample proportion of the four-year university students and <m:math><m:msubsup><m:mi>P</m:mi><m:mrow><m:mi>c</m:mi></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup></m:math> represents the sample proportion of the community college students. The random variable is <m:math><m:msubsup><m:mi>P</m:mi><m:mrow><m:mi>u</m:mi></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup><m:mo>−</m:mo><m:msubsup><m:mi>P</m:mi><m:mrow><m:mi>c</m:mi></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup><m:mo>=</m:mo></m:math> the difference in the proportion of university versus community college students who used AI to help complete their homework</para><equation class="unnumbered" id="eq-00013">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mi>u</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mi>c</m:mi></m:mrow></m:msub></m:math>
+</equation><equation class="unnumbered" id="eq-00014">
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mi>u</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mi>c</m:mi></m:mrow></m:msub></m:math>
+</equation></item>
+</list>
+</solution>
+</exercise>
+</example>
+<note class="statistics try" id="note-00001">
+<title>Try It</title>
+<exercise id="exer-00002">
+<problem id="prob-00002">
+<para id="para-00029">Indicate the type of hypothesis test from the choices below, then state the random variable and how to set up the hypothesis tests in each situation:</para>
+<list list-type="bulleted" id="list-00008">
+<item>Two independent group means, population standard deviations, and/or variances known</item>
+<item>Two independent group means, population standard deviations, and/or variances unknown</item>
+<item>Matched or paired samples</item>
+<item>single mean</item>
+<item>two proportions</item>
+<item>single proportion</item>
+</list>
+<list list-type="enumerated" number-style="lower-alpha" id="list-00009">
+<item>A professor notes which students came to office hours versus those that did not. She wants to know if the students who came to office hours scored higher on the exam.</item>
+<item>Fifteen students take a GRE practice test. All fifteen enroll in a GRE prep course, and then retake the practice exam.</item>
+<item>The College of DuPage is located in the suburbs of Chicago while Malcolm X College is located in Chicago. Is there a difference in the proportion of cars that a students own?</item>
+</list>
+</problem>
+</exercise>
+</note>
+</section>
+<section id="sect-00005">
+<title>How to Conduct a Hypothesis Test</title>
+<para id="para-00030">The logic to complete a hypothesis test does not change when we compare groups in any of the situations we have discussed. Instead, we just have to change the notation and formulas. The upcoming sections will discuss the formulas required for each situation, but the steps below serve as a reminder that we will use throughout the upcoming sections.</para>
+<para id="para-00031">The steps for a hypothesis test can be found in <link document="m47882">Appendix E</link>. The steps below have been updated to use appropriate language for the comparison of two populations, but note that the logic is the same. The only step that has been removed is the confidence interval.</para>
+<para id="para-00032">When conducting a hypothesis test, we follow the steps below:</para>
+<list list-type="enumerated" id="list-00010">
+<item>Determine what type of hypothesis test we are using</item>
+<item>State the hypotheses <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub></m:math></item>
+<item>Clearly state what the random variable represents (using <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>, <m:math><m:msubsup><m:mi>P</m:mi><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup><m:mo>−</m:mo><m:msubsup><m:mi>P</m:mi><m:mrow><m:mn>2</m:mn></m:mrow><m:mrow><m:msup><m:mi/><m:mi>′</m:mi></m:msup></m:mrow></m:msubsup></m:math>, or <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math>)</item>
+<item>State the distribution to use for the test.</item>
+<item>What is the test statistic?</item>
+<item>What is the <emphasis effect="italics">p</emphasis>-value? In one or two complete sentences, explain what the <emphasis effect="italics">p</emphasis>-value means for this problem.</item>
+<item>Use the previous information to sketch a picture of this situation. Clearly label and scale the horizontal axis and shade the region(s) corresponding to the <emphasis effect="italics">p</emphasis>-value. Use a clear standard normal or Student’s <emphasis effect="italics">t</emphasis>-distribution, centered at 0.<figure id="fig-00002">
+<media alt="This is the frequency curve of a normal distribution with blank horizontal and vertical axes.">
+<image mime-type="image/png" src="../../media/CNX_Stats_C10_s1_img2.png"/>
+</media>
+</figure></item>
+<item>Indicate the correct decision (“reject” or “do not reject” the null hypothesis), the reason for it, and write an appropriate conclusion, using complete sentences. As part of your decision, you will want to note:<list list-type="bulleted" id="list-00011">
+<item>The <m:math><m:mi>α</m:mi></m:math> level</item>
+<item>The decision</item>
+<item>The reason for the decision (typically you will want to state how the <emphasis effect="italics">p</emphasis>-value compares to the <m:math><m:mi>α</m:mi></m:math> level)</item>
+<item>The conclusion, as a full sentence</item>
+</list></item>
+</list>
+</section>
+  <section class="summary" id="sect-00006">
+<title>Chapter Review</title>
+<para id="para-00033">Hypothesis tests comparing two groups take four forms: two population means with unknown standard deviations, two population means with known standard deviations, two population proportions, and matched or paired samples.</para>
+<list list-type="bulleted" id="list-00012">
+<item>Notation uses meaningful subscripts to identify the groups (for example, <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>g</m:mi></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>b</m:mi></m:mrow></m:msub></m:math> for girls and boys).</item>
+<item>By the Central Limit Theorem, the difference of the sample means, <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>, is approximately normally distributed when the sample sizes are sufficiently large, which allows a standardizing formula and a test statistic.</item>
+<item>All four tests follow the same 8-step hypothesis testing process (solution sheets are in <link document="m47882">Appendix E</link>).</item>
+</list>
+</section>
+<section class="formula-review" id="sect-00007">
+<title>Formula Review</title>
+<para id="para-00034">The tests in this chapter standardize a difference between two sample statistics and follow the same 8-step hypothesis testing process; solution sheets are in <link document="m47882">Appendix E</link>.</para>
+</section>
+<section class="practice" id="sect-00008">
+
+      <para id="fs-idm124875168"><emphasis effect="italics">Use the following information to answer the next 15 exercises:</emphasis> Indicate if the hypothesis test is for</para>
+        <list id="fs-idm45665008" list-type="enumerated" number-style="lower-alpha">
+        <item>two independent group means, population standard deviations, and/or variances known</item>
+        <item>two independent group means, population standard deviations, and/or variances unknown</item>
+        <item>matched or paired samples</item>
+        <item>single mean</item>
+        <item>two proportions</item>
+        <item>single proportion</item>
+      </list>
+      <para id="para-00035">Then determine the random variable and hypotheses.</para>
+        <exercise id="fs-idm22935904">
+        <problem id="fs-idm124875424">
+          <para id="fs-idm84013008">It is believed that 70% of men pass their driver’s test in the first attempt, while 65% of women pass the test in the first attempt. Of interest is whether the proportions are in fact equal.</para>
+        </problem>
+        <solution id="sol-00002">
+<para id="para-00036">two proportions</para>
+<para id="para-00037">Random Variable: <m:math><m:msub><m:mrow><m:msup><m:mi>P</m:mi><m:mi>′</m:mi></m:msup></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:msup><m:mi>P</m:mi><m:mi>′</m:mi></m:msup></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> = the difference between the proportions of men and women who pass the driver's test on the first attempt (1 = men, 2 = women).</para>
+<para id="para-00038">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≠</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm146907648">
+        <problem id="fs-idm146907392">
+          <para id="fs-idm146907136">A new laundry detergent is tested on consumers. Of interest is the proportion of consumers who prefer the new brand over the leading competitor. A study with 15 consumers is done to test this.</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idm161821520">
+        <problem id="fs-idm161821264">
+          <para id="fs-idm164006592">A new windshield treatment claims to repel water more effectively. Ten windshields are tested by simulating rain without the new treatment. The same windshields are then treated, and the experiment is run again. A hypothesis test is conducted.</para>
+        </problem>
+        <solution id="sol-00003">
+<para id="para-00039">matched or paired samples</para>
+<para id="para-00040">Random Variable: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> = the mean difference in the amount of water repelled by the ten windshields (treated − untreated).</para>
+<para id="para-00041">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm120536064">
+        <problem id="fs-idm68027168">
+          <para id="fs-idm68026912">The known standard deviation in salary for all mid-level professionals in the financial industry is $11,000. Company A and Company B are in the financial industry. Suppose samples are taken of mid-level professionals from Company A and from Company B. The sample mean salary for mid-level professionals in Company A is $80,000. The sample mean salary for mid-level professionals in Company B is $96,000.  Company A and Company B management want to know if their mid-level professionals are paid differently, on average.</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idp21825264">
+        <problem id="fs-idp21825520">
+          <para id="fs-idm175592768">The average worker in Germany gets eight weeks of paid vacation. A professor believes that universities have more vacation time. Thirty university policies regarding paid vacation time are sampled.</para>
+        </problem>
+        <solution id="sol-00004">
+<para id="para-00042">single mean</para>
+<para id="para-00043">Random Variable: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean weeks of paid vacation in the 30 sampled university policies.</para>
+<para id="para-00044">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>8</m:mn></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>8</m:mn></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm170345552">
+        <problem id="fs-idm170345296">
+          <para id="fs-idm39186912">According to a television commercial, 80% of dentists agree that Ultrafresh toothpaste is the best on the market. A survey of 25 dentists is conducted to see if this figure is exaggerated.</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idp3576048">
+        <problem id="fs-idm27505984">
+          <para id="fs-idm27505728">It is believed that the average grade on an English essay in a particular school system for women is higher than for men. A random sample of 31 women had a mean score of 82 with a standard deviation of three, and a random sample of 25 men had a mean score of 76 with a standard deviation of four.</para>
+        </problem>
+        <solution id="sol-00005">
+<para id="para-00045">two independent group means, population standard deviations and/or variances unknown</para>
+<para id="para-00046">Random Variable: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> = the difference between the mean English essay scores of women and men (1 = women, 2 = men).</para>
+<para id="para-00047">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm32687376">
+        <problem id="fs-idm32687120">
+          <para id="fs-idm32686864">The league mean batting average is 0.280 with a known standard deviation of 0.06. The Rattlers and the Vikings belong to the league.  The mean batting average for a sample of eight Rattlers is 0.210, and the mean batting average for a sample of eight Vikings is 0.260. There are 24 players on the Rattlers and 19 players on the Vikings. Are the batting averages of the Rattlers and Vikings statistically different?</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idm36046944">
+        <problem id="fs-idm36046688">
+          <para id="fs-idm3190160">In a random sample of 100 forests in the United States, 56 were coniferous or contained conifers. In a random sample of 80 forests in Mexico, 40 were coniferous or contained conifers. Is the proportion of conifers in the United States statistically more than the proportion of conifers in Mexico?</para>
+        </problem>
+        <solution id="sol-00006">
+<para id="para-00048">two proportions</para>
+<para id="para-00049">Random Variable: <m:math><m:msub><m:mrow><m:msup><m:mi>P</m:mi><m:mi>′</m:mi></m:msup></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:msup><m:mi>P</m:mi><m:mi>′</m:mi></m:msup></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> = the difference between the proportions of coniferous forests in the United States and Mexico (1 = United States, 2 = Mexico).</para>
+<para id="para-00050">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm84811344">
+        <problem id="fs-idm84811088">
+          <para id="fs-idm16418448">A new medicine is said to help improve sleep. Eight subjects are picked at random and given the medicine. The hours slept for each person were recorded before starting the medication and after.</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idm111997184">
+        <problem id="fs-idm111996928">
+          <para id="fs-idm35434864">It is thought that teenagers sleep more than adults on average. A study is done to verify this. A sample of 16 teenagers has a mean of 8.9 hours slept and a standard deviation of 1.2. A sample of 12 adults has a mean of 6.9 hours slept and a standard deviation of 0.6.</para>
+        </problem>
+        <solution id="sol-00007">
+<para id="para-00051">two independent group means, population standard deviations and/or variances unknown</para>
+<para id="para-00052">Random Variable: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> = the difference between the mean hours slept by teenagers and adults (1 = teenagers, 2 = adults).</para>
+<para id="para-00053">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm83613168">
+        <problem id="fs-idm83612912">
+          <para id="fs-idm122472032">Varsity athletes practice five times a week, on average. At a particular college, 8 varsity teams are surveyed for how many times a week they practice.</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idm155074576">
+        <problem id="fs-idm187988384">
+          <para id="fs-idm187988128">A sample of 12 in-state graduate school programs at school A has a mean tuition of $64,000 with a standard deviation of $8,000. At school B, a sample of 16 in-state graduate programs has a mean of $80,000 with a standard deviation of $6,000.  On average, are the mean tuitions different?</para>
+        </problem>
+        <solution id="sol-00008">
+<para id="para-00054">two independent group means, population standard deviations and/or variances unknown</para>
+<para id="para-00055">Random Variable: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> = the difference between the mean in-state graduate tuitions at school A and school B (1 = school A, 2 = school B).</para>
+<para id="para-00056">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>.</para>
+</solution>
+      </exercise>
+        <exercise id="fs-idm86331952">
+        <problem id="fs-idm109695328">
+          <para id="fs-idm109695072">A new WiFi range booster is being offered to consumers. A researcher tests the native range of 12 different routers under the same conditions. The ranges are recorded. Then the researcher uses the new WiFi range booster and records the new ranges. Does the new WiFi range booster do a better job?</para>
+        </problem>
+      </exercise>
+        <exercise id="fs-idm152397632">
+        <problem id="fs-idm187246864">
+          <para id="fs-idm187246608">A high school principal claims that 30% of student athletes drive themselves to school, while 4% of non-athletes drive themselves to school. In a sample of 20 student athletes, 45% drive themselves to school. In a sample of 35 non-athlete students, 6% drive themselves to school. Is the percent of student athletes who drive themselves to school more than the percent of non-athletes?</para>
+        </problem>
+        <solution id="sol-00009">
+<para id="para-00057">two proportions</para>
+<para id="para-00058">Random Variable: <m:math><m:msub><m:mrow><m:msup><m:mi>P</m:mi><m:mi>′</m:mi></m:msup></m:mrow><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mrow><m:msup><m:mi>P</m:mi><m:mi>′</m:mi></m:msup></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> = the difference between the proportions of student athletes and non-athletes who drive themselves to school (1 = athletes, 2 = non-athletes).</para>
+<para id="para-00059">The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>≤</m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow></m:msub></m:math>.</para>
+</solution>
+      </exercise>
+</section>
+</content>
+</document>
