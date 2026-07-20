@@ -15,8 +15,8 @@
 <item>The differences form the sample that is used for the hypothesis test.</item>
 <item>Either the matched pairs have differences that come from a population that is normal or the number of differences is sufficiently large so that the distribution of the sample mean of differences is approximately normal.</item>
 </list>
-<para id="para-00002">One of the key steps for matched pairs is that a difference is calculated. Typically if there is before and after data, then we take the differences in the order of (after – before). The differences are the data for the hypothesis test. The population mean for the differences, <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math>, is then tested using a Student’s-<emphasis effect="italics">t</emphasis> test for a single population mean with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom, where <emphasis effect="italics">n</emphasis> is the number of differences.</para>
-<para id="para-00003">The test statistic (<emphasis effect="italics">t</emphasis>-score) is:</para>
+<para id="para-00002">One of the key steps for matched pairs is that a difference is calculated. Typically if there is before and after data, then we take the differences in the order of (after – before). The differences are the data for the hypothesis test. The population mean for the differences, <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math>, is then tested using a Student’s-<m:math><m:mi>t</m:mi></m:math> test for a single population mean with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom, where <m:math><m:mi>n</m:mi></m:math> is the number of differences.</para>
+<para id="para-00003">The test statistic (<m:math><m:mi>t</m:mi></m:math>-score) is:</para>
 <equation class="unnumbered" id="eq-00001">
 <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>
 </equation>
@@ -136,21 +136,21 @@
 </table><para id="para-00007">The data <emphasis>for the test</emphasis> are the differences: {0.2, –4.1, –1.6, –1.8, –3.2, –2, –2.9, –9.6}</para><para id="para-00008">The sample mean and sample standard deviation of the differences are: <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3.13</m:mn></m:math> and <m:math><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>2.91</m:mn></m:math>. Verify these values.</para><para id="para-00009">Let <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> be the population mean for the differences. We use the subscript <m:math><m:mi>d</m:mi></m:math> to denote “differences.”</para>
 <para id="para-00010"><emphasis>2. Hypotheses:</emphasis> The differences were calculated as (after – before), and the words “lower after” mean the after scores should be smaller, so the “&lt;” symbol goes into the alternative hypothesis. The test is left-tailed.</para>
 <equation class="unnumbered" id="eq-00002">
-<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≥</m:mo><m:mn>0</m:mn></m:math>
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≥</m:mo><m:mn>0</m:mn></m:math>
 </equation><equation class="unnumbered" id="eq-00003">
-<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math>
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math>
 </equation>
 <para id="para-00011"><emphasis>3. Random Variable:</emphasis> <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> the mean difference of the sensory measurements (after – before).</para>
-<para id="para-00012"><emphasis>4. Distribution:</emphasis> Student’s <emphasis effect="italics">t</emphasis>-distribution with <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:math>.</para>
+<para id="para-00012"><emphasis>4. Distribution:</emphasis> Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:math>.</para>
 <para id="para-00013"><emphasis>5. Test Statistic:</emphasis> <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>−</m:mo><m:mn>3.13</m:mn><m:mo>−</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2.91</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>8</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3.04</m:mn></m:math>.</para>
-<para id="para-00014"><emphasis>6. <emphasis effect="italics">p</emphasis>-value:</emphasis> <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>3.04</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0094</m:mn></m:math>. If <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> is true, there is a 0.0094 probability (0.94%) that the sample mean difference is -3.13 or lower.</para>
-<para id="para-00015"><emphasis>7. Graph:</emphasis> The graph of this situation is below, on Student’s <emphasis effect="italics">t</emphasis>-distribution with <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>7</m:mn></m:math>.</para>
+<para id="para-00014"><emphasis>6. <m:math><m:mi>p</m:mi></m:math>-value:</emphasis> <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>3.04</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0094</m:mn></m:math>. If <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> is true, there is a 0.0094 probability (0.94%) that the sample mean difference is -3.13 or lower.</para>
+<para id="para-00015"><emphasis>7. Graph:</emphasis> The graph of this situation is below, on Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>7</m:mn></m:math>.</para>
 <figure id="hyptest22_samp1">
 <media alt="Student's t-distribution with df = 7 centered at 0 with the region to the left of t = -3.04 shaded; a red arrow labels the shaded area p-value = 0.0094.">
 <image mime-type="image/png" src="../../media/CNX_Stats_C10_s5_img1.png"/>
 </media>
 </figure>
-<para id="para-00016"><emphasis>8. Decision and Conclusion:</emphasis> Compare <m:math><m:mi>α</m:mi></m:math> and the <emphasis effect="italics">p</emphasis>-value: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <emphasis effect="italics">p</emphasis>-value = 0.0094, so <m:math><m:mi>α</m:mi><m:mo>></m:mo></m:math> <emphasis effect="italics">p</emphasis>-value. Reject <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that the sensory measurements, on average, are lower after hypnotism. Hypnotism appears to be effective in reducing pain.</para>
+<para id="para-00016"><emphasis>8. Decision and Conclusion:</emphasis> Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <m:math><m:mi>p</m:mi></m:math>-value = 0.0094, so <m:math><m:mi>α</m:mi><m:mo>></m:mo></m:math> <m:math><m:mi>p</m:mi></m:math>-value. Reject <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. At the 5% level of significance, from the sample data, there is sufficient evidence to conclude that the sensory measurements, on average, are lower after hypnotism. Hypnotism appears to be effective in reducing pain.</para>
 </solution>
 </exercise>
 </example>
@@ -160,7 +160,7 @@
 </note>
 <note id="id11476702" class="statistics calculator">
 <title>Using the TI-83, 83+, 84, 84+ Calculator</title>
-<para id="para-00018">Use your list of differences as the data. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Press <code>2:T-Test</code>. Arrow over to <code>Data</code> and press <code>ENTER</code>. Arrow down and enter <code>0</code> for <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>, the name of the list where you put the data, and <code>1</code> for Freq:. Arrow down to <m:math><m:mi>μ</m:mi></m:math>: and arrow over to <code>&lt;</code> <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. Press <code>ENTER</code>. Arrow down to <code>Calculate</code> and press <code>ENTER</code>. The <emphasis effect="italics">p</emphasis>-value is 0.0094, and the test statistic is -3.04. Do these instructions again except, arrow to <code>Draw</code> (instead of <code>Calculate</code>). Press <code>ENTER</code>.</para>
+<para id="para-00018">Use your list of differences as the data. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Press <code>2:T-Test</code>. Arrow over to <code>Data</code> and press <code>ENTER</code>. Arrow down and enter <code>0</code> for <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>, the name of the list where you put the data, and <code>1</code> for Freq:. Arrow down to <m:math><m:mi>μ</m:mi></m:math>: and arrow over to <code>&lt;</code> <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. Press <code>ENTER</code>. Arrow down to <code>Calculate</code> and press <code>ENTER</code>. The <m:math><m:mi>p</m:mi></m:math>-value is 0.0094, and the test statistic is -3.04. Do these instructions again except, arrow to <code>Draw</code> (instead of <code>Calculate</code>). Press <code>ENTER</code>.</para>
 </note>
 <note id="fs-idp46905536" class="statistics try">
 <title>Try It</title>
@@ -275,21 +275,21 @@
 <para id="para-00025"><emphasis>1. Type of test:</emphasis> Because the same four players are measured before and after the strength development class, this is a matched pairs test.</para>
 <para id="para-00026"><emphasis>2. Hypotheses:</emphasis> The differences were calculated as (after – before), and the words “makes the players stronger” mean the after lifts should be larger, so the “>” symbol goes into the alternative hypothesis. The test is right-tailed.</para>
 <equation class="unnumbered" id="eq-00005">
-<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math>
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math>
 </equation><equation class="unnumbered" id="eq-00006">
-<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math>
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math>
 </equation>
 <para id="para-00027"><emphasis>3. Random Variable:</emphasis> <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> the mean difference in the maximum lift (after – before), in pounds.</para>
-<para id="para-00028"><emphasis>4. Distribution:</emphasis> Student’s <emphasis effect="italics">t</emphasis>-distribution with <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:math>.</para>
+<para id="para-00028"><emphasis>4. Distribution:</emphasis> Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>3</m:mn></m:math>.</para>
 <para id="para-00029"><emphasis>5. Test Statistic:</emphasis> <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>21.3</m:mn><m:mo>−</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>46.7</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>4</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.91</m:mn></m:math>.</para>
-<para id="para-00030"><emphasis>6. <emphasis effect="italics">p</emphasis>-value:</emphasis> <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>></m:mo><m:mn>0.91</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.2150</m:mn></m:math>. If <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> is true, there is a 0.2150 probability (21.50%) that the sample mean difference is 21.3 pounds or more.</para>
-<para id="para-00031"><emphasis>7. Graph:</emphasis> The graph of this situation is below, on Student’s <emphasis effect="italics">t</emphasis>-distribution with <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math>.</para>
+<para id="para-00030"><emphasis>6. <m:math><m:mi>p</m:mi></m:math>-value:</emphasis> <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>></m:mo><m:mn>0.91</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.2150</m:mn></m:math>. If <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> is true, there is a 0.2150 probability (21.50%) that the sample mean difference is 21.3 pounds or more.</para>
+<para id="para-00031"><emphasis>7. Graph:</emphasis> The graph of this situation is below, on Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>3</m:mn></m:math>.</para>
 <figure id="hyptest22_samp2">
 <media alt="Student's t-distribution with df = 3 centered at 0 with the region to the right of t = 0.91 shaded; a red arrow labels the shaded area p-value = 0.2150.">
 <image mime-type="image/png" src="../../media/CNX_Stats_C10_s5_img2.png"/>
 </media>
 </figure>
-<para id="para-00032"><emphasis>8. Decision and Conclusion:</emphasis> Compare <m:math><m:mi>α</m:mi></m:math> and the <emphasis effect="italics">p</emphasis>-value: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <emphasis effect="italics">p</emphasis>-value = 0.2150, so <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo></m:math> <emphasis effect="italics">p</emphasis>-value. Do not reject <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class makes the players stronger, on average. (See the Note above: the sample mean is pulled upward by the single large difference of 90 pounds.)</para>
+<para id="para-00032"><emphasis>8. Decision and Conclusion:</emphasis> Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <m:math><m:mi>p</m:mi></m:math>-value = 0.2150, so <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo></m:math> <m:math><m:mi>p</m:mi></m:math>-value. Do not reject <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the strength development class makes the players stronger, on average. (See the Note above: the sample mean is pulled upward by the single large difference of 90 pounds.)</para>
 </solution>
 </exercise>
 </example>
@@ -391,21 +391,21 @@
 <para id="para-00036"><emphasis>1. Type of test:</emphasis> Each student produces two measurements (dominant hand and weaker hand), so this is a matched pairs test.</para>
 <para id="para-00037"><emphasis>2. Hypotheses:</emphasis> The students thought they could push equal distances with either hand, so <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> has an “=” symbol and, with no direction claimed, the alternative hypothesis has a “≠” symbol. The test is two-tailed.</para>
 <equation class="unnumbered" id="eq-00007">
-<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math>
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math>
 </equation><equation class="unnumbered" id="eq-00008">
-<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn></m:math>
+<m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≠</m:mo><m:mn>0</m:mn></m:math>
 </equation>
 <para id="para-00038"><emphasis>3. Random Variable:</emphasis> <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> the mean difference in distances (dominant – weaker), in feet.</para>
-<para id="para-00039"><emphasis>4. Distribution:</emphasis> Student’s <emphasis effect="italics">t</emphasis>-distribution with <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>6</m:mn></m:math>. The differences (dominant – weaker) are {2, 12, 7, -1, 2, 0, 4}; from the data, <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≈</m:mo><m:mn>3.71</m:mn></m:math> and <m:math><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≈</m:mo><m:mn>4.50</m:mn></m:math>.</para>
+<para id="para-00039"><emphasis>4. Distribution:</emphasis> Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>6</m:mn></m:math>. The differences (dominant – weaker) are {2, 12, 7, -1, 2, 0, 4}; from the data, <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≈</m:mo><m:mn>3.71</m:mn></m:math> and <m:math><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≈</m:mo><m:mn>4.50</m:mn></m:math>.</para>
 <para id="para-00040"><emphasis>5. Test Statistic:</emphasis> <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3.71</m:mn><m:mo>−</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>4.50</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>7</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>2.18</m:mn></m:math>.</para>
-<para id="para-00041"><emphasis>6. <emphasis effect="italics">p</emphasis>-value:</emphasis> <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>2.18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>></m:mo><m:mn>2.18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>0.0716</m:mn></m:math>. If <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> is true, there is a 0.0716 probability (7.16%) that the sample mean difference is at least 3.71 feet in either direction.</para>
-<para id="para-00042"><emphasis>7. Graph:</emphasis> The graph of this situation is below, on Student’s <emphasis effect="italics">t</emphasis>-distribution with <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:math>.</para>
+<para id="para-00041"><emphasis>6. <m:math><m:mi>p</m:mi></m:math>-value:</emphasis> <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>2.18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>></m:mo><m:mn>2.18</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>0.0716</m:mn></m:math>. If <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math> is true, there is a 0.0716 probability (7.16%) that the sample mean difference is at least 3.71 feet in either direction.</para>
+<para id="para-00042"><emphasis>7. Graph:</emphasis> The graph of this situation is below, on Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mn>6</m:mn></m:math>.</para>
 <figure id="fs-idp32743168">
 <media alt="Student's t-distribution with df = 6 centered at 0 with both tails beyond t = -2.18 and t = 2.18 shaded; a red arrow labels the shaded area p-value = 0.0716.">
 <image mime-type="image/png" src="../../media/CNX_Stats_C10_s5_img3.png"/>
 </media>
 </figure>
-<para id="para-00043"><emphasis>8. Decision and Conclusion:</emphasis> Compare <m:math><m:mi>α</m:mi></m:math> and the <emphasis effect="italics">p</emphasis>-value: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <emphasis effect="italics">p</emphasis>-value <m:math><m:mo>≈</m:mo><m:mn>0.0716</m:mn></m:math>, so <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo></m:math> <emphasis effect="italics">p</emphasis>-value. Do not reject <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the mean difference in distances between the dominant and weaker hands is significant. The data do not contradict the students’ belief that they can push equal distances with either hand.</para>
+<para id="para-00043"><emphasis>8. Decision and Conclusion:</emphasis> Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math> and <m:math><m:mi>p</m:mi></m:math>-value <m:math><m:mo>≈</m:mo><m:mn>0.0716</m:mn></m:math>, so <m:math><m:mi>α</m:mi><m:mo>&lt;</m:mo></m:math> <m:math><m:mi>p</m:mi></m:math>-value. Do not reject <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub></m:math>. At the 5% level of significance, from the sample data, there is not sufficient evidence to conclude that the mean difference in distances between the dominant and weaker hands is significant. The data do not contradict the students’ belief that they can push equal distances with either hand.</para>
 </solution>
 </exercise>
 </example>
@@ -457,21 +457,21 @@
 </note>
 <section id="fs-idp51883760" class="summary">
 <title>Chapter Review</title>
-<para id="para-00045">A hypothesis test for matched or paired samples (<emphasis effect="italics">t</emphasis>-test) has these characteristics:</para>
+<para id="para-00045">A hypothesis test for matched or paired samples (<m:math><m:mi>t</m:mi></m:math>-test) has these characteristics:</para>
 <list list-type="bulleted" id="list-00002">
 <item>Test the differences by subtracting one measurement from the other measurement</item>
 <item>Random Variable: <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> mean of the differences</item>
-<item>Distribution: Student’s-<emphasis effect="italics">t</emphasis> distribution with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom</item>
+<item>Distribution: Student’s-<m:math><m:mi>t</m:mi></m:math> distribution with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom</item>
 <item>If the number of differences is small (less than 30), the differences must follow a normal distribution.</item>
 <item>Two samples are drawn from the same set of objects.</item>
 <item>Samples are dependent.</item>
 </list>
 </section><section id="fs-idm5585024" class="formula-review">
 <title>Formula Review</title>
-<para id="para-00046">Test Statistic (<emphasis effect="italics">t</emphasis>-score): <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math></para>
-<para id="para-00047">Degrees of freedom: <m:math><m:mi>d</m:mi><m:mi>f</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>.</para>
+<para id="para-00046">Test Statistic (<m:math><m:mi>t</m:mi></m:math>-score): <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math></para>
+<para id="para-00047">Degrees of freedom: <m:math><m:mtext>df</m:mtext><m:mo>=</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>.</para>
 <para id="para-00048">where:</para>
-<para id="para-00049"><m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> is the mean of the sample differences. <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> is the mean of the population differences. <m:math><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> is the sample standard deviation of the differences. <emphasis effect="italics">n</emphasis> is the number of differences.</para>
+<para id="para-00049"><m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> is the mean of the sample differences. <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> is the mean of the population differences. <m:math><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> is the sample standard deviation of the differences. <m:math><m:mi>n</m:mi></m:math> is the number of differences.</para>
 </section><section id="fs-idm5499920" class="practice">
       <para id="fs-idp116024816"><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> A study was conducted to test the effectiveness of a software patch in reducing system failures over a six-month period. Results for randomly selected installations are shown in <link target-id="fs-idp116025200"/>. The “before” value is matched to an “after” value, and the differences are calculated. The differences have a normal distribution. Test at the 1% significance level.</para>
             <table id="fs-idp116025200" summary="">
@@ -530,7 +530,7 @@
       </exercise>
             <exercise id="fs-idm10056224">
         <problem id="fs-idm120978416">
-          <para id="fs-idm120978160">What is the <emphasis effect="italics">p</emphasis>-value?</para>
+          <para id="fs-idm120978160">What is the <m:math><m:mi>p</m:mi></m:math>-value?</para>
         </problem>
         <solution id="sol-00005">
 <para id="para-00051">0.0067</para>
@@ -538,7 +538,7 @@
       </exercise>
             <exercise id="fs-idp119203856">
         <problem id="fs-idp119204112">
-          <para id="fs-idp119204368">Draw the graph of the <emphasis effect="italics">p</emphasis>-value.</para>
+          <para id="fs-idp119204368">Draw the graph of the <m:math><m:mi>p</m:mi></m:math>-value.</para>
         </problem>
       </exercise>
             <exercise id="fs-idp92713024">
@@ -546,10 +546,10 @@
           <para id="fs-idm6212608">What conclusion can you draw about the software patch?</para>
         </problem>
         <solution id="sol-00006">
-<para id="para-00052">With a <emphasis effect="italics">p</emphasis>-value 0.0067, we can reject the null hypothesis. There is enough evidence to support that the software patch is effective in reducing the number of system failures.</para>
+<para id="para-00052">With a <m:math><m:mi>p</m:mi></m:math>-value of 0.0067, we can reject the null hypothesis. There is enough evidence to support that the software patch is effective in reducing the number of system failures.</para>
 </solution>
       </exercise>
-      <para id="fs-idp5775856"><newline/><emphasis effect="italics">Use the following information to answer next five exercises.</emphasis> A study was conducted to test the effectiveness of a juggling class. Before the class started, six subjects juggled as many balls as they could at once. After the class, the same six subjects juggled as many balls as they could. The differences in the number of balls are calculated. The differences have a normal distribution. Test at the 1% significance level.</para>
+      <para id="fs-idp5775856"><newline/><emphasis effect="italics">Use the following information to answer the next five exercises.</emphasis> A study was conducted to test the effectiveness of a juggling class. Before the class started, six subjects juggled as many balls as they could at once. After the class, the same six subjects juggled as many balls as they could. The differences in the number of balls are calculated. The differences have a normal distribution. Test at the 1% significance level.</para>
             <table id="fs-idp110216832" summary="">
         <tgroup cols="7">
           <thead>
@@ -592,7 +592,7 @@
       </exercise>
             <exercise id="fs-idp15011664">
         <problem id="fs-idp15011920">
-          <para id="fs-idp15012176">What is the <emphasis effect="italics">p</emphasis>-value?</para>
+          <para id="fs-idp15012176">What is the <m:math><m:mi>p</m:mi></m:math>-value?</para>
         </problem>
         <solution id="sol-00007">
 <para id="para-00053">0.0021</para>
@@ -605,7 +605,7 @@
       </exercise>
             <exercise id="fs-idp9592768">
         <problem id="fs-idp9593024">
-          <para id="fs-idp9593280">Draw the graph of the <emphasis effect="italics">p</emphasis>-value.</para>
+          <para id="fs-idp9593280">Draw the graph of the <m:math><m:mi>p</m:mi></m:math>-value.</para>
         </problem>
         <solution id="sol-00008">
 <figure id="fig-00001">
@@ -661,8 +661,8 @@
           <para id="fs-idp119813056">State the null and alternative hypotheses.</para>
         </problem>
         <solution id="sol-00009">
-<para id="para-00054"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> ≥ 0</para>
-<para id="para-00055"><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">μ<sub>d</sub></emphasis> &lt; 0</para>
+<para id="para-00054"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>μ</m:mi><m:mi>d</m:mi></m:msub><m:mo>≥</m:mo><m:mn>0</m:mn></m:math></para>
+<para id="para-00055"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:msub><m:mi>μ</m:mi><m:mi>d</m:mi></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math></para>
 </solution>
       </exercise>
             <exercise id="fs-idm60519136">
@@ -672,7 +672,7 @@
       </exercise>
             <exercise id="fs-idp69509280">
         <problem id="fs-idp8847888">
-          <para id="fs-idp8848144">What is the <emphasis effect="italics">p</emphasis>-value?</para>
+          <para id="fs-idp8848144">What is the <m:math><m:mi>p</m:mi></m:math>-value?</para>
         </problem>
         <solution id="sol-00010">
 <para id="para-00056">0.0699</para>
@@ -700,11 +700,11 @@
             <note id="eip-250">
         <label/>
         <title>NOTE</title>
-        <para id="eip-idm140675200">If you are using a Student's <emphasis effect="italics">t</emphasis>-distribution for the homework problems, including for paired data, you may assume that the underlying population is normally distributed. (When using these tests in a real situation, you must first prove that assumption, however.)</para>
+        <para id="eip-idm140675200">If you are using a Student's <m:math><m:mi>t</m:mi></m:math>-distribution for the homework problems, including for paired data, you may assume that the underlying population is normally distributed. (When using these tests in a real situation, you must first prove that assumption, however.)</para>
       </note>
             <exercise id="fs-idp64398288">
         <problem id="fs-idp64398544">
-          <para id="fs-idp64398800">Ten individuals went on a low–fat diet for 12 weeks to lower their cholesterol. The data are recorded in <link target-id="fs-idp16051952"/>. Do you think that their cholesterol levels were significantly lowered?</para>
+          <para id="fs-idp64398800">Ten individuals went on a low-fat diet for 12 weeks to lower their cholesterol. The data are recorded in <link target-id="fs-idp16051952"/>. Do you think that their cholesterol levels were significantly lowered?</para>
             <table id="fs-idp16051952" summary="The table presents the starting cholesterol level in the first row and the ending cholesterol level in the second row.">
             <tgroup cols="2">
               <colspec colnum="1" colname="c1"/>
@@ -761,26 +761,26 @@
           </table>
         </problem>
         <solution id="sol-00012">
-<para id="para-00058"><emphasis effect="italics">p</emphasis>-value = 0.1353</para>
+<para id="para-00058"><m:math><m:mi>p</m:mi></m:math>-value = 0.1353</para>
 <para id="para-00059">At the 5% significance level, there is insufficient evidence to conclude that the low-fat diet lowered cholesterol levels after 12 weeks.</para>
 </solution>
       </exercise>
       <para id="eip-637"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> A new heart disease prevention drug was tried on a group of 224 patients. Forty-five patients developed heart disease after four years. In a control group of 224 patients, 68 developed heart disease after four years. We want to test whether the method of treatment reduces the proportion of patients that develop heart disease after four years or if the proportions of the treated group and the untreated group stay the same.</para>
-      <para id="eip-793">Let the subscript <emphasis effect="italics">t</emphasis> = treated patient and <emphasis effect="italics">ut</emphasis> = untreated patient.</para>
+      <para id="eip-793">Let the subscript <m:math><m:mi>t</m:mi><m:mo>=</m:mo></m:math> treated patient and <emphasis effect="italics">ut</emphasis> = untreated patient.</para>
             <exercise id="element-719">
         <problem id="id17683497">
           <para id="element-505">The appropriate hypotheses are:</para>
             <list id="element-722" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> &lt; <emphasis effect="italics">p<sub>ut</sub></emphasis> and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> ≥ <emphasis effect="italics">p<sub>ut</sub></emphasis></item>
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> ≤ <emphasis effect="italics">p<sub>ut</sub></emphasis> and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> > <emphasis effect="italics">p<sub>ut</sub></emphasis></item>
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> = <emphasis effect="italics">p<sub>ut</sub></emphasis> and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> ≠ <emphasis effect="italics">p<sub>ut</sub></emphasis></item>
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> = <emphasis effect="italics">p<sub>ut</sub></emphasis> and <emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">p<sub>t</sub></emphasis> &lt; <emphasis effect="italics">p<sub>ut</sub></emphasis></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>≥</m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>></m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub></m:math> ≠ <m:math><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>≥</m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:msub><m:mi>p</m:mi><m:mi>t</m:mi></m:msub><m:mo>&lt;</m:mo><m:msub><m:mi>p</m:mi><m:mtext>ut</m:mtext></m:msub></m:math></item>
           </list>
         </problem>
       </exercise>
             <exercise id="element-198">
         <problem id="id12277184">
-          <para id="element-849">If the <emphasis effect="italics">p</emphasis>-value is 0.0062 what is the conclusion (use <emphasis effect="italics">α</emphasis> = 0.05)?</para>
+          <para id="element-849">If the <m:math><m:mi>p</m:mi></m:math>-value is 0.0062, what is the conclusion (use <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>)?</para>
             <list id="list1111" list-type="enumerated" number-style="lower-alpha">
             <item>The method has no effect.</item>
             <item>There is sufficient evidence to conclude that the method reduces the proportion of patients who develop heart disease after four years.</item>
@@ -792,25 +792,25 @@
 <para id="para-00060">b</para>
 </solution>
       </exercise>
-      <para id="eip-338"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> An experiment is conducted to show that blood pressure can be consciously reduced in people trained in a “biofeedback exercise program.” Six subjects were randomly selected and blood pressure measurements were recorded before and after the training. The difference between blood pressures was calculated (after - before) producing the following results: <m:math><m:mrow><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub></m:mrow></m:math> = −10.2 <emphasis effect="italics">s<sub>d</sub></emphasis> = 8.4. Using the data, test the hypothesis that the blood pressure has decreased after the training.</para>
+      <para id="eip-338"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> An experiment is conducted to show that blood pressure can be consciously reduced in people trained in a “biofeedback exercise program.” Six subjects were randomly selected and blood pressure measurements were recorded before and after the training. The difference between blood pressures was calculated (after – before) producing the following results: <m:math><m:mrow><m:msub><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mi>d</m:mi></m:msub></m:mrow><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>10.2</m:mn></m:math>, <m:math><m:msub><m:mi>s</m:mi><m:mi>d</m:mi></m:msub><m:mo>=</m:mo><m:mn>8.4</m:mn></m:math>. Using the data, test the hypothesis that the blood pressure has decreased after the training.</para>
             <exercise id="element-38">
         <problem id="id4488558">
           <para id="element-865">The distribution for the test is:</para>
             <list id="element-492" list-type="enumerated" number-style="lower-alpha">
             <item>
-              <emphasis effect="italics">t<sub>5</sub></emphasis>
+              <m:math><m:msub><m:mi>t</m:mi><m:mn>5</m:mn></m:msub></m:math>
             </item>
             <item>
-              <emphasis effect="italics">t<sub>6</sub></emphasis>
+              <m:math><m:msub><m:mi>t</m:mi><m:mn>6</m:mn></m:msub></m:math>
             </item>
-            <item><emphasis effect="italics">N</emphasis>(−10.2, 8.4)</item>
+            <item><m:math><m:mi>N</m:mi></m:math>(−10.2, 8.4)</item>
             <item>N(−10.2, <m:math><m:mrow><m:mfrac><m:mrow><m:mn>8.4</m:mn></m:mrow><m:mrow><m:msqrt><m:mn>6</m:mn></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math>) </item>
           </list>
         </problem>
       </exercise>
             <exercise id="element-954">
         <problem id="id6323430">
-          <para id="element-815">If <emphasis effect="italics">α</emphasis> = 0.05, the <emphasis effect="italics">p</emphasis>-value and the conclusion are</para>
+          <para id="element-815">If <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>, the <m:math><m:mi>p</m:mi></m:math>-value and the conclusion are</para>
             <list id="element-595" list-type="enumerated" number-style="lower-alpha">
             <item>0.0014; There is sufficient evidence to conclude that the blood pressure decreased after the training.</item>
             <item>0.0014; There is sufficient evidence to conclude that the blood pressure increased after the training.</item>
@@ -858,8 +858,8 @@
             The correct decision is:
           </para>
             <list id="element-523" list-type="enumerated" number-style="lower-alpha">
-            <item>Reject <emphasis effect="italics">H<sub>0</sub></emphasis>.</item>
-            <item>Do not reject the <emphasis effect="italics">H<sub>0</sub></emphasis>.</item>
+            <item>Reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</item>
+            <item>Do not reject the <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</item>
           </list>
         </problem>
       </exercise>
@@ -948,11 +948,11 @@
         <solution id="sol-00015">
 <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
 <item>This is a hypothesis test for matched or paired samples (paired t-test).</item>
-<item>The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math>.</item>
+<item>The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≤</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>></m:mo><m:mn>0</m:mn></m:math>.</item>
 <item>Random Variable: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> = the mean difference in the estimates of new female breast cancer cases by southern state (Year 2 − Year 1).</item>
-<item>Distribution for the Test: Student's t-distribution: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mi>~</m:mi><m:msub><m:mi>t</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:math></item>
+<item>Distribution for the Test: Student's t-distribution: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:math></item>
 <item>Test Statistic: <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>/</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>174.62</m:mn><m:mo>−</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mn>143.21</m:mn><m:mo>/</m:mo><m:msqrt><m:mrow><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>4.40</m:mn></m:math></item>
-<item><emphasis effect="italics">p</emphasis>-value = 0.0004. If the null hypothesis is true, then there is a 0.0004 probability that the sample mean increase is 174.62 cases or more.</item>
+<item><m:math><m:mi>p</m:mi></m:math>-value = 0.0004. If the null hypothesis is true, then there is a 0.0004 probability that the sample mean increase is 174.62 cases or more.</item>
 <item><figure id="fig-00002">
 <media alt="Graph of the distribution for this hypothesis test, with the test statistic marked on the horizontal axis and the region corresponding to the p-value shaded.">
 <image mime-type="image/png" src="../../media/CNX_Stats_C10_sol_img18.png"/>
@@ -1120,11 +1120,11 @@
         <solution id="sol-00016">
 <list list-type="enumerated" number-style="lower-alpha" id="list-00005">
 <item>This is a hypothesis test for matched or paired samples (paired t-test).</item>
-<item>The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mi>:</m:mi><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math>.</item>
+<item>The hypotheses are <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mn>0</m:mn></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>≥</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:msub><m:mi>H</m:mi><m:mrow><m:mi>a</m:mi></m:mrow></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>&lt;</m:mo><m:mn>0</m:mn></m:math>.</item>
 <item>Random Variable: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math> = the mean difference in the underemployment rates of the northeastern states (Year 2 − Year 1).</item>
-<item>Distribution for the Test: Student's t-distribution: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mi>~</m:mi><m:msub><m:mi>t</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:math></item>
+<item>Distribution for the Test: Student's t-distribution: <m:math><m:msub><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>~</m:mo><m:msub><m:mi>t</m:mi><m:mrow><m:mn>12</m:mn></m:mrow></m:msub></m:math></item>
 <item>Test Statistic: <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>/</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>−</m:mo><m:mn>0.60</m:mn><m:mo>−</m:mo><m:mn>0</m:mn></m:mrow><m:mrow><m:mn>1.76</m:mn><m:mo>/</m:mo><m:msqrt><m:mrow><m:mn>13</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>1.23</m:mn></m:math></item>
-<item><emphasis effect="italics">p</emphasis>-value = 0.1207. If the null hypothesis is true, then there is a 0.1207 probability that the sample mean change is −0.6 percentage points or lower.</item>
+<item><m:math><m:mi>p</m:mi></m:math>-value = 0.1207. If the null hypothesis is true, then there is a 0.1207 probability that the sample mean change is −0.6 percentage points or lower.</item>
 <item><figure id="fig-00003">
 <media alt="Graph of the distribution for this hypothesis test, with the test statistic marked on the horizontal axis and the region corresponding to the p-value shaded.">
 <image mime-type="image/png" src="../../media/CNX_Stats_C10_sol_img19.png"/>
@@ -1142,7 +1142,7 @@
     </section>
     <section id="fs-idm68580000" class="bring-together-homework">
       <title>Bringing It Together</title>
-      <para id="fs-idp56242144"><emphasis effect="italics">Use the following information to answer the next ten exercises.</emphasis> indicate which of the following choices best identifies the hypothesis test.</para>
+      <para id="fs-idp56242144"><emphasis effect="italics">Use the following information to answer the next ten exercises.</emphasis> Indicate which of the following choices best identifies the hypothesis test.</para>
             <list id="eip-688" list-type="enumerated" number-style="lower-alpha">
         <item>independent group means, population standard deviations and/or variances known</item>
         <item>independent group means, population standard deviations and/or variances unknown</item>
@@ -1166,7 +1166,7 @@
       </exercise>
             <exercise id="fs-idm66474352">
         <problem id="fs-idm151765440">
-          <para id="fs-idm151765184">The mean number of English courses taken in a two–year time period by men and women college students is believed to be about the same. An experiment is conducted and data are collected from nine males and 16 females.</para>
+          <para id="fs-idm151765184">The mean number of English courses taken in a two-year time period by men and women college students is believed to be about the same. An experiment is conducted and data are collected from nine males and 16 females.</para>
         </problem>
       </exercise>
             <exercise id="fs-idm53146784">
@@ -1278,7 +1278,7 @@
       </exercise>
             <exercise id="eip-787">
         <problem id="eip-435">
-          <para id="eip-929">Lesley E. Tan investigated the relationship between left-handedness vs. right-handedness and motor competence in preschool children. Random samples of 41 left-handed preschool children and 41 right-handed preschool children were given several tests of motor skills to determine if there is evidence of a difference between the children based on this experiment. The experiment produced the means and standard deviations shown <link target-id="fs-idp128816944"/>. Determine the appropriate test and best distribution to use for that test.</para>
+          <para id="eip-929">Lesley E. Tan investigated the relationship between left-handedness vs. right-handedness and motor competence in preschool children. Random samples of 41 left-handed preschool children and 41 right-handed preschool children were given several tests of motor skills to determine if there is evidence of a difference between the children based on this experiment. The experiment produced the means and standard deviations shown in <link target-id="fs-idp128816944"/>. Determine the appropriate test and best distribution to use for that test.</para>
             <table id="fs-idp128816944" summary="...">
             <tgroup cols="3">
               <tbody>
@@ -1315,7 +1315,7 @@
       </exercise>
             <exercise id="fs-idp144471136">
         <problem id="fs-idp144471392">
-          <para id="eip-407">A golf instructor is interested in determining if a new technique for improving players’ golf scores is effective. The instructor takes four (4) new students and records their 18-hole scores before learning the technique and then after having taken the class. The instructor conducts a hypothesis test. The data are as <link target-id="fs-idp136885584"/>.</para>
+          <para id="eip-407">A golf instructor is interested in determining if a new technique for improving players’ golf scores is effective. The instructor takes four (4) new students and records their 18-hole scores before learning the technique and then after having taken the class. The instructor conducts a hypothesis test. The data are as shown in <link target-id="fs-idp136885584"/>.</para>
             <table id="fs-idp136885584" summary="table question">
             <tgroup cols="5">
               <thead>
@@ -1354,9 +1354,16 @@
           </list>
         </problem>
         <solution id="sol-00022">
-<para id="para-00067">a</para>
+<para id="para-00067">c</para>
 </solution>
       </exercise>
     </section>
+    <section class="glossary" id="sect-glossary-00001">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Matched or Paired Samples</term>
+<meaning>two measurements drawn from the same pair of individuals or objects. Differences are calculated from the matched or paired samples, and those differences form the sample that is used for the hypothesis test. The test is a test of a single mean — the mean of the differences.</meaning>
+</definition>
+</section>
   </content>
 </document>
