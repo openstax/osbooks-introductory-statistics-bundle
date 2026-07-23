@@ -14,16 +14,16 @@
       <para id="eip-idp34705152">The expected value for each cell needs to be at least five in order for you to use this test.</para>
     </note>
     <para id="eip-705"><title>Hypotheses</title><newline/><emphasis effect="italics">H<sub>0</sub></emphasis>: The distributions of the two populations are the same.<newline/><newline/><emphasis effect="italics">H<sub>a</sub></emphasis>:  The distributions of the two populations are not the same.</para>
-    <para id="eip-703"><title>Test Statistic</title>Use a <m:math><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup></m:math>  test statistic.  It is computed in the same way as the test for independence.  </para>
-    <para id="eip-577"><title>Degrees of Freedom (<emphasis effect="italics">df</emphasis>)</title><emphasis effect="italics">df</emphasis> = number of columns - 1</para>
-    <para id="eip-572"><title>Requirements</title>All values in the table must be greater than or equal to five. </para>
-    <para id="eip-66"><title>Common Uses</title>Comparing two populations. For example:  men vs. women, before vs. after, east vs. west. The variable is categorical with more than two possible response values. </para>
+    <para id="eip-703"><title>Test Statistic:</title>Use a <m:math><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup></m:math>  test statistic.  It is computed in the same way as the test for independence.  </para>
+    <para id="eip-577"><title>Degrees of Freedom (<emphasis effect="italics">df</emphasis>):</title><emphasis effect="italics">df</emphasis> = number of columns - 1</para>
+    <para id="eip-572"><title>Requirements:</title>All expected cell counts must be greater than or equal to five. </para>
+    <para id="eip-66"><title>Common Uses:</title>Comparing two populations. For example:  men vs. women, before vs. after, east vs. west. The variable is categorical with more than two possible response values. </para>
     <example id="eip-101">
       <exercise id="eip-790">
         <problem id="eip-886">
           <para id="eip-520">Do men and women college students have the same distribution of living arrangements?  Use a level of significance of 0.05. Suppose that 250 randomly selected men college students and 300 randomly selected women college students were asked about their living arrangements: dormitory, apartment, with parents, other. The results are shown in <link target-id="eip-924"/>. Do male and female college students have the same distribution of living arrangements?</para>
           <table id="eip-924" summary="The table contains the distribution of living conditions for college males and college females. First row: Males 72 Dorm; 84 Apt.; 49 Parents; 45 Other; Second row: Females, 91 Dorm; 86 Apt.; 88 Parents; 35 Other;">
-            <title>Distribution of Living Arragements for College Men and College Women</title>
+            <title>Distribution of Living Arrangements for College Men and College Women</title>
             <tgroup cols="5">
               <thead>
                 <row>
@@ -59,12 +59,12 @@
         </problem>
         <solution id="eip-996">
           <para id="eip-724"><emphasis effect="italics">H<sub>0</sub></emphasis>: The distribution of living arrangements for men college students is the same as the distribution of living arrangements for women college students.<newline/><newline/><emphasis effect="italics">H<sub>a</sub></emphasis>: The distribution of living arrangements for men college students is not the same as the distribution of living arrangements for women college students.<newline/><newline/><emphasis>Degrees of Freedom (<emphasis effect="italics">df</emphasis>):</emphasis><newline/><emphasis effect="italics">df</emphasis> = number of columns – 1 = 4 – 1 = 3 <newline/><newline/>  <emphasis>Distribution for the test:</emphasis><m:math><m:msubsup><m:mi>χ</m:mi><m:mn>3</m:mn><m:mn>2</m:mn></m:msubsup></m:math><newline/><newline/>
-    <emphasis>Calculate the test statistic:</emphasis> <emphasis effect="italics">χ</emphasis><sup>2</sup> = 10.1287 (calculator or computer)  <newline/><newline/> <emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> &gt;10.1287) = 0.0175</para>
+    <emphasis>Calculate the test statistic:</emphasis> <emphasis effect="italics">χ</emphasis><sup>2</sup> = 10.1287 (calculator or computer)  <newline/><newline/> <emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> >10.1287) = 0.0175</para>
             <note id="fs-idm46378784" class="statistics calculator">
             <label/>
             <para id="eip-idm368940736">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>2 ENTER 4 ENTER</code>. Enter the table values by row. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 10.1287 and the <emphasis effect="italics">p</emphasis>-value = 0.0175. Do the procedure a second time but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para>
           </note>
-          <para id="fs-idm273008"><newline/><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> Since no <emphasis effect="italics">α</emphasis> is given, assume <emphasis effect="italics">α</emphasis> = 0.05. <emphasis effect="italics">p</emphasis>-value = 0.0175. <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value.  <newline/><newline/> <emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that the distributions are not the same. <newline/><newline/> <emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to conclude that the distributions of living arrangements for men and women college students are not the same.<newline/><newline/> Notice that the conclusion is only that the distributions are not the same. We cannot use the test for homogeneity to draw any conclusions about how they differ.
+          <para id="fs-idm273008"><newline/><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> Since no <emphasis effect="italics">α</emphasis> is given, assume <emphasis effect="italics">α</emphasis> = 0.05. <emphasis effect="italics">p</emphasis>-value = 0.0175. <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value.  <newline/><newline/> <emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that the distributions are not the same. <newline/><newline/> <emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to conclude that the distributions of living arrangements for men and women college students are not the same.<newline/><newline/> Notice that the conclusion is only that the distributions are not the same. We cannot use the test for homogeneity to draw any conclusions about how they differ.
           </para>
         </solution>
       </exercise>
@@ -152,14 +152,14 @@
         <solution id="eip-156">
           <para id="eip-969"><emphasis effect="italics">H<sub>0</sub></emphasis>: The distribution of voter preferences was the same before and after the earthquake.  <newline/><newline/><emphasis effect="italics">H<sub>a</sub></emphasis>: The distribution of voter preferences was not the same before and after the earthquake. <newline/><newline/><emphasis>Degrees of Freedom (<emphasis effect="italics">df</emphasis>):</emphasis><newline/><emphasis effect="italics">df</emphasis> = number of columns – 1 = 3 – 1 = 2 <newline/><newline/>  <emphasis>Distribution for the test:</emphasis>  <m:math><m:msubsup><m:mi>χ</m:mi><m:mn>2</m:mn><m:mn>2</m:mn></m:msubsup></m:math>
 <newline count="2"/><emphasis>Calculate the test statistic</emphasis>: <emphasis effect="italics">χ<sup>2</sup></emphasis> = 3.2603 (calculator or computer)
-<newline count="2"/><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value=<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ<sup>2</sup></emphasis> &gt; 3.2603) = 0.1959</para>
+<newline count="2"/><emphasis>Probability statement:</emphasis> <emphasis effect="italics">p</emphasis>-value=<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ<sup>2</sup></emphasis> > 3.2603) = 0.1959</para>
             <note id="fs-idp99944704" class="statistics calculator">
             <label/>
             <para id="fs-idm65647616">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>2 ENTER 3 ENTER</code>. Enter the table values by row. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 3.2603 and the <emphasis effect="italics">p</emphasis>-value = 0.1959. Do the procedure a second time but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para>
           </note>
           <para id="fs-idm10889120"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis><emphasis effect="italics">α</emphasis> = 0.05 and the  <emphasis effect="italics">p</emphasis>-value = 0.1959. <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value.</para>
           <para id="fs-idp90106784"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &lt; <emphasis effect="italics">p</emphasis>-value, do not reject <emphasis effect="italics">H<sub>o</sub></emphasis>.</para>
-          <para id="fs-idm18971600"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is insufficient evidence to  conclude that the distribution of voter preferences was not the same before and after the earthquake.</para>
+          <para id="fs-idm18971600"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is insufficient evidence to reject the claim that the distributions are the same.</para>
         </solution>
       </exercise>
     </example>
@@ -217,12 +217,13 @@
     </section>
     <section id="fs-idp53742432" class="summary">
       <title>Chapter Review</title>
-      <para id="eip-56">To assess whether two data sets are derived from the same distribution—which need not be known, you can apply the test for homogeneity that uses the chi-square distribution. The null hypothesis for this test states that the populations of the two data sets come from the same distribution. The test compares the observed values against the expected values if the two populations followed the same distribution. The test is right-tailed. Each observation or cell category must have an expected value of at least five.</para>
+      <para id="eip-56">To assess whether two data sets are derived from the same distribution—which need not be known—you can apply the test for homogeneity that uses the chi-square distribution. The null hypothesis for this test states that the populations of the two data sets come from the same distribution. The test compares the observed values against the expected values if the two populations followed the same distribution. The test is right-tailed. Each observation or cell category must have an expected value of at least five. If the null hypothesis is rejected, the test can conclude only that the two distributions are not the same; it does not tell us how they differ.</para>
     </section>
     <section id="fs-idp64112192" class="formula-review">
       <title>Formula Review</title>
       <para id="eip-963"><m:math><m:mrow><m:munder><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>j</m:mi></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math> Homogeneity test statistic where:	<emphasis effect="italics">O</emphasis> = observed values <newline/>  <emphasis effect="italics">E</emphasis> = expected values <newline/><emphasis effect="italics">i</emphasis> = number of rows in data contingency table <newline/><emphasis effect="italics">j</emphasis> = number of columns in data contingency table</para>
-      <para id="eip-243"><emphasis effect="italics">df</emphasis> = (<emphasis effect="italics">i</emphasis> −1)(<emphasis effect="italics">j</emphasis> −1)  Degrees of freedom</para>
+      <para id="eip-243"><emphasis effect="italics">df</emphasis> = number of columns − 1 Degrees of freedom</para>
+    <para id="para-00001">If the null hypothesis is true, the expected number <emphasis effect="italics">E</emphasis> = (row total)(column total)/(total surveyed), computed in the same way as in the test of independence.</para>
     </section>
     <section id="fs-idm167041200" class="practice">
             <exercise id="eip-134">
@@ -387,7 +388,7 @@
               <list id="fs-idp114714608" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Do not reject the null hypothesis.</item>
-                <item>Reason for decision:   <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+                <item>Reason for decision:   <emphasis effect="italics">p</emphasis>-value > alpha</item>
                 <item>Conclusion:  There is insufficient evidence to conclude that the distribution of personality types is different for business and social science majors.</item>
               </list>
             </item>
@@ -396,7 +397,7 @@
       </exercise>
             <exercise id="eip-302">
         <problem id="eip-252">
-          <para id="eip-617">Do men and women select different breakfasts? The breakfasts ordered by randomly selected men and women at a popular breakfast place is shown in <link target-id="eip-id1167950422174"/>. Conduct a test for homogeneity at a 5% level of significance.
+          <para id="eip-617">Do men and women select different breakfasts? The breakfasts ordered by randomly selected men and women at a popular breakfast place are shown in <link target-id="eip-id1167950422174"/>. Conduct a test for homogeneity at a 5% level of significance.
             <table id="eip-id1167950422174" summary="The table presents personality types along the top from columns 2-6 and major (business and social science) in the first column. There are 3 rows.">
               <tgroup cols="5">
                 <tbody>
@@ -546,7 +547,7 @@
                   <entry>6</entry>
                   <entry>3,413</entry>
                   <entry>7,164</entry>
-                  <entry>10,557</entry>
+                  <entry>10,577</entry>
                 </row>
                 <row>
                   <entry>5</entry>
@@ -592,8 +593,8 @@
             <list id="fs-idm34614464" list-type="enumerated" number-style="lower-alpha">
             <item><emphasis effect="italics">H<sub>0</sub></emphasis>: The distribution of average energy use in the USA is the same as in Europe between Year 1 and Year 6.</item>
             <item><emphasis effect="italics">H<sub>a</sub></emphasis>: The distribution of average energy use in the USA is not the same as in Europe between Year 1 and Year 6.</item>
-            <item><emphasis effect="italics">df</emphasis> = 4</item>
-            <item>chi-square with <emphasis effect="italics">df</emphasis> = 4</item>
+            <item><emphasis effect="italics">df</emphasis> = 5</item>
+            <item>chi-square with <emphasis effect="italics">df</emphasis> = 5</item>
             <item>test statistic = 2.7434</item>
             <item><emphasis effect="italics">p</emphasis>-value = 0.7395</item>
             <item>Answers may vary.</item>
@@ -601,8 +602,8 @@
               <list id="fs-idp64830064" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Do not reject the null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
-                <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that the average energy use values in the US and EU are not derived from different distributions for the period from Year 1 to Year 6.</item>
+                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
+                <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that the average energy use values in the US and EU are derived from different distributions for the period from Year 1 to Year 6.</item>
               </list>
             </item>
           </list>
@@ -664,5 +665,12 @@
         </problem>
       </exercise>
     </section>
-  </content>
+  <section class="glossary" id="sect-00001">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Test for Homogeneity</term>
+<meaning>a hypothesis test using the chi-square distribution that determines whether two populations have the same (possibly unknown) distribution; the test is right-tailed, with degrees of freedom equal to the number of columns minus one.</meaning>
+</definition>
+</section>
+</content>
 </document>

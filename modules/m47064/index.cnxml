@@ -19,7 +19,7 @@
       <item id="element-481"><emphasis effect="italics">E</emphasis> = <term id="term-00002">expected values</term> (from theory)</item>
       <item id="element-402"><emphasis effect="italics">k</emphasis> = the number of different data cells or categories</item>
     </list>
-    <para id="element-512"><emphasis>The observed values are the data values and the expected values are the values you would expect to get if the null hypothesis were true.</emphasis> There are <emphasis effect="italics">n</emphasis> terms of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>.</para>
+    <para id="element-512"><emphasis>The observed values are the data values and the expected values are the values you would expect to get if the null hypothesis were true.</emphasis> There are <emphasis effect="italics">k</emphasis> terms of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>.</para>
     <para id="element-304">The number of degrees of freedom is <emphasis effect="italics">df</emphasis> = (number of categories – 1).</para>
     <para id="element-838"><emphasis>The <term id="term-00003">goodness-of-fit test</term> is almost always right-tailed.</emphasis> If the observed values and the corresponding expected values are not close to each other, then the test statistic can get very large and will be way out in the right tail of the chi-square curve.</para>
     <note id="eip-587">
@@ -316,7 +316,7 @@
             </item>
           </list>
           <para id="element-231">Now add (sum) the last column. The sum is three. This is the <emphasis effect="italics">χ<sup>2</sup></emphasis> test statistic.</para>
-          <para id="element-290">To find the <emphasis effect="italics">p</emphasis>-value, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> &gt; 3). This test is right-tailed. (Use a computer or calculator to find the <emphasis effect="italics">p</emphasis>-value. You should get <emphasis effect="italics">p</emphasis>-value = 0.5578.)</para>
+          <para id="element-290">To find the <emphasis effect="italics">p</emphasis>-value, calculate <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> > 3). This test is right-tailed. (Use a computer or calculator to find the <emphasis effect="italics">p</emphasis>-value. You should get <emphasis effect="italics">p</emphasis>-value = 0.5578.)</para>
           <para id="element-894">The <emphasis effect="italics">dfs</emphasis> are the number of cells – 1 = 5 – 1 = 4</para>
           <note id="fs-idm116498656" class="statistics calculator">
             <label/>
@@ -518,14 +518,14 @@
               <image src="../../media/fig-ch11_04_02.png" mime-type="image/png"/>
             </media>
           </figure>
-          <para id="element-635"><emphasis>Probability statement:</emphasis><emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> &gt; 29.65) = 0.000006</para>
+          <para id="element-635"><emphasis>Probability statement:</emphasis><emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> > 29.65) = 0.000006</para>
           <para id="element-42"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis>
             <list id="list-whatever3" list-type="bulleted">
               <item><emphasis effect="italics">α</emphasis> = 0.01</item>
               <item><emphasis effect="italics">p</emphasis>-value = 0.000006</item>
             </list>
-            So, <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value.</para>
-          <para id="element-251"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>o</sub></emphasis>.</para>
+            So, <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value.</para>
+          <para id="element-251"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>o</sub></emphasis>.</para>
           <para id="element-717">This means you reject the belief that the distribution for the far western states is the same as that of the American population as a whole.</para>
           <para id="element-387"><emphasis>Conclusion:</emphasis> At the 1% significance level, from the data, there is sufficient evidence to conclude that the "number of streaming services" distribution for the far western United States is different from the "number of streaming services" distribution for the American population as a whole.</para>
             <note id="fs-idm137892176" class="statistics calculator">
@@ -635,7 +635,7 @@
               <image src="../../media/fig-ch11_04_03.png" mime-type="image/png"/>
             </media>
           </figure>
-          <para id="element-490"><emphasis>Probability statement:</emphasis><emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> &gt; 2.14) = 0.3430
+          <para id="element-490"><emphasis>Probability statement:</emphasis><emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ</emphasis><sup>2</sup> > 2.14) = 0.3430
           </para>
           <para id="element-817"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis>
             <list id="element-xyz" list-type="bulleted">
@@ -760,7 +760,7 @@
       </exercise>
         <exercise id="eip-906">
         <problem id="eip-958">
-          <para id="eip-19">An economist is deriving a model to predict outcomes on the stock market. They create a list of expected points on the stock market index for the next two weeks. At the close of each day’s trading, The economist records the actual points on the index. They want to see how well the model matched what actually happened.
+          <para id="eip-19">An economist is deriving a model to predict outcomes on the stock market. They create a list of expected points on the stock market index for the next two weeks. At the close of each day’s trading, the economist records the actual points on the index. They want to see how well the model matched what actually happened.
           </para>
         </problem>
         <solution id="eip-193">
@@ -773,7 +773,7 @@
           <para id="eip-144">A personal trainer is putting together a weight-lifting program for their clients. For a 90-day program, they expect each client to lift a specific maximum weight each week. As the program goes along, the trainer records the actual maximum weights their clients lifted. They want to know how well their expectations met with what was observed.</para>
         </problem>
       </exercise>
-      <para id="eip-886"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> A teacher predicts that the distribution of grades on the final exam will be and they are recorded in <link target-id="fs-idm120960208"/>.</para>
+      <para id="eip-886"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> A teacher predicts that the distribution of grades on the final exam will be as recorded in <link target-id="fs-idm120960208"/>.</para>
         <table id="fs-idm120960208" summary="">
         <tgroup cols="2">
           <thead>
@@ -955,7 +955,7 @@
       </table>
         <exercise id="fs-idm118784352">
         <problem id="fs-idm118784096">
-          <para id="element-308">If the ethnicities of COVID-19 cases victims followed the ethnicities of the total county population, fill in the expected number of cases per ethnic group.
+          <para id="element-308">If the ethnicities of COVID-19 cases followed the ethnicities of the total county population, fill in the expected number of cases per ethnic group.
             <newline/><emphasis effect="italics">Perform a goodness-of-fit test to determine whether the occurrence of COVID-19 cases follows the ethnicities of the general population of Santa Clara County.</emphasis></para>
         </problem>
       </exercise>
@@ -1288,9 +1288,9 @@
                   <item>Alpha = 0.05</item>
                   <item>Decision: Reject null when <emphasis effect="italics">a</emphasis> = 0.05</item>
                   <item>Reason for Decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
-                  <item>Conclusion: Local data do not fit the mass transit Distribution.</item>
+                  <item>Conclusion: Local data do not fit the mass transit distribution.</item>
                   <item>Decision: Do not reject null when <emphasis effect="italics">a</emphasis> = 0.01</item>
-                  <item>Conclusion: There is insufficient evidence to conclude that local data do not follow the distribution of the of students who use mass transit.</item>
+                  <item>Conclusion: There is insufficient evidence to conclude that local data do not follow the distribution of students who use mass transit.</item>
                 </list>
               </para>
             </item>
@@ -1443,7 +1443,7 @@
               <list id="eip-idp78081520" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha = 0.05</item>
                 <item>Decision: Do not reject null when <emphasis effect="italics">a</emphasis> = 0.05 and <emphasis effect="italics">a</emphasis> = 0.01</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
                 <item>Conclusion: There is insufficient evidence to conclude that the distribution of actual college majors of graduating women do not fit the distribution of their expected majors.</item>
               </list>
             </item>
@@ -1675,12 +1675,27 @@
             <item><emphasis effect="italics">H<sub>a</sub></emphasis>: Surveyed obese do not fit the distribution of expected obese</item>
           </list>
           <para id="fs-idm175304323">Use a chi-square distribution with <emphasis effect="italics">df</emphasis> = 4 to evaluate the data.</para>
-          <para id="fs-idm175304324">The test statistic is <emphasis effect="italics">X<sup>2</sup></emphasis> = 9.85</para>
-          <para id="fs-idm175304325">The <emphasis effect="italics">P</emphasis>-value = 0.0431</para>
+          <para id="fs-idm175304324">The test statistic is <emphasis effect="italics">X<sup>2</sup></emphasis> = 39.81</para>
+          <para id="fs-idm175304325">The <emphasis effect="italics">P</emphasis>-value = 0</para>
           <para id="fs-idm175304328">At 5% significance level, α = 0.05. For this data, <emphasis effect="italics">P</emphasis> &lt; α. Reject the null hypothesis.</para>
           <para id="fs-idm175304329">At the 5% level of significance, from the data, there is sufficient evidence to conclude that the surveyed obese do not fit the distribution of expected obese.</para>
         </solution>
       </exercise>
     </section>
-  </content>
+  <section class="glossary" id="sect-00001">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Expected Values</term>
+<meaning>the values you would expect to get if the null hypothesis is true; in a chi-square test, the expected value for each cell must be at least five in order to use the test.</meaning>
+</definition>
+<definition id="def-00002">
+<term>Goodness-of-Fit Test</term>
+<meaning>a hypothesis test using the chi-square distribution that determines whether data “fit” a particular distribution; the test is almost always right-tailed, with degrees of freedom equal to the number of categories minus one.</meaning>
+</definition>
+<definition id="def-00003">
+<term>Observed Values</term>
+<meaning>the actual data values obtained from the sample or experiment.</meaning>
+</definition>
+</section>
+</content>
 </document>
