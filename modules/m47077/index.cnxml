@@ -11,16 +11,16 @@
     <para id="element-230">The test statistic for a <term id="term-00002">test of independence</term> is similar to that of a goodness-of-fit test:</para>
     <equation class="unnumbered" id="element-164">
       <label/>
-      <m:math><m:mrow><m:munder><m:mi>Σ</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>j</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>–</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>
+      <m:math><m:mrow><m:munder><m:mi>Σ</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>j</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>
     </equation>
     <para id="element-874">where:</para>
     <list id="element-12123" list-type="bulleted">
-      <item><emphasis effect="italics">O</emphasis> = observed values</item>
-      <item><emphasis effect="italics">E</emphasis> = expected values</item>
-      <item><emphasis effect="italics">i</emphasis> = the number of rows in the table</item>
-      <item><emphasis effect="italics">j</emphasis> = the number of columns in the table</item>
+      <item><m:math><m:mi>O</m:mi><m:mo>=</m:mo></m:math> observed values</item>
+      <item><m:math><m:mi>E</m:mi><m:mo>=</m:mo></m:math> expected values</item>
+      <item><m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the number of rows in the table</item>
+      <item><m:math><m:mi>j</m:mi><m:mo>=</m:mo></m:math> the number of columns in the table</item>
     </list>
-    <para id="element-575">There are <m:math><m:mi>i</m:mi><m:mo>⋅ </m:mo><m:mi>j</m:mi></m:math> terms of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>–</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>. </para>
+    <para id="element-575">There are <m:math><m:mi>i</m:mi><m:mo>⋅ </m:mo><m:mi>j</m:mi></m:math> terms of the form <m:math><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>. </para>
     <para id="element-518"><emphasis>A test of independence determines whether two factors are independent or not.</emphasis> You first encountered the term independence in <link document="m46938">Probability Topics</link>. As a review, consider the following example.</para>
     <note id="eip-155">
       <label/>
@@ -28,21 +28,21 @@
       <para id="eip-idp140445076868880">The expected value for each cell needs to be at least five in order for you to use this test.</para>
     </note>
     <example id="element-54">
-      <para id="element-904">Suppose <emphasis effect="italics">A</emphasis> = a speeding violation in the last year and <emphasis effect="italics">B</emphasis> = a cell phone user while driving. If <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are independent then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis> AND <emphasis effect="italics">B</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>)<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>). <emphasis effect="italics">A</emphasis> AND <emphasis effect="italics">B</emphasis> is the event that a driver received a speeding violation last year and also used a cell phone while driving. Suppose, in a study of drivers who received speeding violations in the last year, and who used cell phone while driving, that 755 people were surveyed. Out of the 755, 70 had a speeding violation and 685 did not; 305 used cell phones while driving and 450 did not.</para>
-      <para id="element-427">Let <emphasis effect="italics">y</emphasis> = expected number of drivers who used a cell phone while driving and received speeding violations.</para>
-      <para id="element-367">If <emphasis effect="italics">A</emphasis> and <emphasis effect="italics">B</emphasis> are independent, then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis> AND <emphasis effect="italics">B</emphasis>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">A</emphasis>)<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">B</emphasis>). By substitution,</para>
+      <para id="element-904">Suppose <m:math><m:mi>A</m:mi><m:mo>=</m:mo></m:math> a speeding violation in the last year and <m:math><m:mi>B</m:mi><m:mo>=</m:mo></m:math> a cell phone user while driving. If <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are independent then <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mtext> AND </m:mtext><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math>. <m:math><m:mi>A</m:mi><m:mtext> AND </m:mtext><m:mi>B</m:mi></m:math> is the event that a driver received a speeding violation last year and also used a cell phone while driving. Suppose, in a study of drivers who received speeding violations in the last year, and who used cell phone while driving, that 755 people were surveyed. Out of the 755, 70 had a speeding violation and 685 did not; 305 used cell phones while driving and 450 did not.</para>
+      <para id="element-427">Let <m:math><m:mi>y</m:mi><m:mo>=</m:mo></m:math> expected number of drivers who used a cell phone while driving and received speeding violations.</para>
+      <para id="element-367">If <m:math><m:mi>A</m:mi></m:math> and <m:math><m:mi>B</m:mi></m:math> are independent, then <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mtext> AND </m:mtext><m:mi>B</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>)</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>B</m:mi><m:mo>)</m:mo></m:math>. By substitution,</para>
       <para id="element-329">
         <m:math><m:mrow><m:mfrac><m:mi>y</m:mi><m:mrow><m:mn>755</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>70</m:mn></m:mrow><m:mrow><m:mn>755</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mrow><m:mn>305</m:mn></m:mrow><m:mrow><m:mn>755</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
       </para>
-      <para id="element-482">Solve for <emphasis effect="italics">y</emphasis>: <emphasis effect="italics">y</emphasis> = <m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>70</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>305</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>755</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>28.3</m:mn></m:mrow></m:math> </para>
+      <para id="element-482">Solve for <m:math><m:mi>y</m:mi></m:math>: <m:math><m:mi>y</m:mi><m:mo>=</m:mo></m:math> <m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>70</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>305</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>755</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>28.3</m:mn></m:mrow></m:math> </para>
       <para id="element-249">About 28 people in the sample are expected to use cell phones while driving and receive speeding violations.</para>
       <para id="element-365">In a test of independence, we state the null and alternative hypotheses in words. Since the contingency table consists of <emphasis>two factors</emphasis>, the null hypothesis states that the factors are <emphasis>independent</emphasis> and the alternative hypothesis states that they are <emphasis>not independent (dependent)</emphasis>. If we do a test of independence using the example, then the null hypothesis is:</para>
-      <para id="element-337"><emphasis effect="italics">H<sub>0</sub></emphasis>: Being a cell phone user while driving and receiving a speeding violation are independent events.</para>
+      <para id="element-337"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: Being a cell phone user while driving and receiving a speeding violation are independent events.</para>
       <para id="element-903">If the null hypothesis were true, we would expect about 28 people to use cell phones while driving and to receive a speeding violation.</para>
       <para id="element-197"><emphasis>The test of independence is always right-tailed</emphasis> because of the calculation of the test statistic. If the expected and observed values are not close together, then the test statistic is very large and way out in the right tail of the chi-square curve, as it is in a goodness-of-fit test.</para>
       <para id="element-35">The number of degrees of freedom for the test of independence is:</para>
       <para id="element-12412"><emphasis effect="italics">df</emphasis> = (number of columns - 1)(number of rows - 1)</para>
-      <para id="element-928">The following formula calculates the <emphasis>expected number</emphasis> (<emphasis effect="italics">E</emphasis>):</para>
+      <para id="element-928">The following formula calculates the <emphasis>expected number</emphasis> (<m:math><m:mi>E</m:mi></m:math>):</para>
       <equation class="unnumbered" id="element-164a">
         <label/>
         <m:math><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mtext>(row total)(column total)</m:mtext><m:mtext>total number surveyed</m:mtext></m:mfrac></m:math>
@@ -114,8 +114,8 @@
         </problem>
         <solution id="id8698856">
           <para id="element-8768798723">The <emphasis>observed table</emphasis> and the question at the end of the problem, "Is the number of hours volunteered independent of the type of volunteer?" tell you this is a test of independence. The two factors are <emphasis>number of hours volunteered</emphasis> and <emphasis>type of volunteer</emphasis>. This test is always right-tailed.</para>
-          <para id="element-945"><emphasis effect="italics">H<sub>0</sub></emphasis>: The number of hours volunteered is <emphasis>independent</emphasis> of the type of volunteer.</para>
-          <para id="element-255"><emphasis effect="italics">H<sub>a</sub></emphasis>: The number of hours volunteered is <emphasis>dependent</emphasis> on the type of volunteer.</para>
+          <para id="element-945"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: The number of hours volunteered is <emphasis>independent</emphasis> of the type of volunteer.</para>
+          <para id="element-255"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: The number of hours volunteered is <emphasis>dependent</emphasis> on the type of volunteer.</para>
           <para id="element-455">The expected results are in <link target-id="table-73248a"/>.
             <table id="table-73248a" summary="This table presents the expected hours per week volunteered by type of volunteer. The first row represents community-college students, the second row represents four-year college students, and the third row represents non-students. The second column is 1-3 hours per week, the third column is 4-6 hours per week, and the fourth column is 7-9 hours per week.">
               <title>Number of Hours Worked Per Week by Volunteer Type (Expected)</title>
@@ -153,7 +153,7 @@
                   </row>
                 </tbody>
               </tgroup>
-              <caption>The table contains <emphasis>expected</emphasis> (<emphasis effect="italics">E</emphasis>) values (data).</caption>
+              <caption>The table contains <emphasis>expected</emphasis> (<m:math><m:mi>E</m:mi></m:math>) values (data).</caption>
             </table>
           </para>
           <para id="element-720">For example, the calculation for the expected frequency for the top left cell is </para>
@@ -161,7 +161,7 @@
             <label/>
             <m:math><m:mrow><m:mi>E</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mtext>row total</m:mtext><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mtext>column total</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mtext>total number surveyed</m:mtext></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>255</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>298</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mn>839</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>90.57</m:mn></m:mrow></m:math>
           </equation>
-          <para id="element-558"><emphasis>Calculate the test statistic:</emphasis><emphasis effect="italics">χ</emphasis><sup>2</sup> = 12.99 (calculator or computer)</para>
+          <para id="element-558"><emphasis>Calculate the test statistic:</emphasis><m:math><m:mi>χ</m:mi></m:math><sup>2</sup> = 12.99 (calculator or computer)</para>
           <para id="element-775">
             <emphasis>Distribution for the test:</emphasis>
             <m:math><m:msubsup><m:mi>χ</m:mi><m:mn>4</m:mn><m:mn>2</m:mn></m:msubsup></m:math>
@@ -175,14 +175,14 @@
               <image src="../../media/fig-ch11_05_01.png" mime-type="image/png"/>
             </media>
           </figure>
-          <para id="element-117"><emphasis>Probability statement:</emphasis><emphasis effect="italics">p</emphasis>-value=<emphasis effect="italics">P</emphasis>(<emphasis effect="italics">χ<sup>2</sup></emphasis> > 12.99) = 0.0113</para>
-          <para id="element-347"><emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis> Since no <emphasis effect="italics">α</emphasis> is given, assume <emphasis effect="italics">α</emphasis> = 0.05. <emphasis effect="italics">p</emphasis>-value = 0.0113. <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value.</para>
-          <para id="fs-idm62402592"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> > <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that the factors are not independent.</para>
+          <para id="element-117"><emphasis>Probability statement:</emphasis><m:math><m:mi>p</m:mi></m:math>-value=<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup><m:mo>></m:mo><m:mn>12.99</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.0113</m:mn></m:math></para>
+          <para id="element-347"><emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value:</emphasis> Since no <m:math><m:mi>α</m:mi></m:math> is given, assume <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>. <m:math><m:mi>p</m:mi></m:math>-value = 0.0113. <m:math><m:mi>α</m:mi><m:mo>></m:mo><m:mi>p</m:mi></m:math>-value.</para>
+          <para id="fs-idm62402592"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>></m:mo><m:mi>p</m:mi></m:math>-value, reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. This means that the factors are not independent.</para>
           <para id="element-590"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to conclude that the number of hours volunteered and the type of volunteer are dependent on one another.</para>
           <para id="element-956">For the example in <link target-id="table-73248"/>, if there had been another type of volunteer, teenagers, what would the degrees of freedom be?</para>
           <note id="fs-idp30286464" class="statistics calculator">
             <label/>
-            <para id="element-854">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>3 ENTER 3 ENTER</code>. Enter the table values by row from <link target-id="table-73248"/>. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. If necessary, use the arrow keys to move the cursor after <code>Observed:</code> and press <code>2nd MATRX</code>. Press <code>1:[A]</code> to select matrix A. It is not necessary to enter expected values. The matrix listed after <code>Expected:</code> can be blank. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 12.9909 and the <emphasis effect="italics">p</emphasis>-value = 0.0113. Do the procedure a second time, but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para>
+            <para id="element-854">Press the <code>MATRX</code> key and arrow over to <code>EDIT</code>. Press <code>1:[A]</code>. Press <code>3 ENTER 3 ENTER</code>. Enter the table values by row from <link target-id="table-73248"/>. Press <code>ENTER</code> after each. Press <code>2nd QUIT</code>. Press <code>STAT</code> and arrow over to <code>TESTS</code>. Arrow down to <code>C:χ2-TEST</code>. Press <code>ENTER</code>. You should see <code>Observed:[A] and Expected:[B]</code>. If necessary, use the arrow keys to move the cursor after <code>Observed:</code> and press <code>2nd MATRX</code>. Press <code>1:[A]</code> to select matrix A. It is not necessary to enter expected values. The matrix listed after <code>Expected:</code> can be blank. Arrow down to <code>Calculate</code>. Press <code>ENTER</code>. The test statistic is 12.9909 and the <m:math><m:mi>p</m:mi></m:math>-value = 0.0113. Do the procedure a second time, but arrow down to <code>Draw</code> instead of <code>calculate</code>.</para>
           </note>
         </solution>
       </exercise>
@@ -393,12 +393,12 @@
         <title>Test of Independence</title>
         <item>The number of degrees of freedom is equal to (number of columns - 1)(number of rows - 1).</item>
         <item>The test statistic is
-<m:math><m:mrow><m:munder><m:mi>Σ</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>j</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>–</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math> where
-<emphasis effect="italics">O</emphasis> = observed values,
-<emphasis effect="italics">E</emphasis> = expected values,
-<emphasis effect="italics">i</emphasis> = the number of rows in the
+<m:math><m:mrow><m:munder><m:mi>Σ</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo>⋅</m:mo><m:mi>j</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math> where
+<m:math><m:mi>O</m:mi><m:mo>=</m:mo></m:math> observed values,
+<m:math><m:mi>E</m:mi><m:mo>=</m:mo></m:math> expected values,
+<m:math><m:mi>i</m:mi><m:mo>=</m:mo></m:math> the number of rows in the
           table, and
-<emphasis effect="italics">j</emphasis> = the number of columns in
+<m:math><m:mi>j</m:mi><m:mo>=</m:mo></m:math> the number of columns in
           the table.
         </item>
         <item>If the null hypothesis is true, the expected number
@@ -492,8 +492,8 @@
             <exercise id="eip-919">
         <problem id="eip-917">
           <para id="eip-842">State the hypotheses.
-            <newline/><emphasis effect="italics">H<sub>0</sub></emphasis>: _______
-            <newline/><emphasis effect="italics">H<sub>a</sub></emphasis>: _______
+            <newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: _______
+            <newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: _______
           </para>
         </problem>
       </exercise>
@@ -525,7 +525,7 @@
       </exercise>
             <exercise id="eip-811">
         <problem id="eip-646">
-          <para id="eip-575">What is the <emphasis effect="italics">p</emphasis>-value? </para>
+          <para id="eip-575">What is the <m:math><m:mi>p</m:mi></m:math>-value? </para>
         </problem>
         <solution id="eip-554">
           <para id="eip-599">0.0435 </para>
@@ -697,8 +697,8 @@
             <exercise id="fs-idp51845072">
         <problem id="fs-idp65899264">
           <para id="eip-842abc">State the hypotheses.<newline/>
-<emphasis effect="italics">H<sub>0</sub></emphasis>: _______<newline/>
-<emphasis effect="italics">H<sub>a</sub></emphasis>: _______
+<m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: _______<newline/>
+<m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: _______
           </para>
         </problem>
       </exercise>
@@ -779,7 +779,7 @@
       </exercise>
             <exercise id="element-151">
         <problem id="id13677856">
-          <para id="element-267"><emphasis effect="italics">p</emphasis>-value = ______</para>
+          <para id="element-267"><m:math><m:mi>p</m:mi></m:math>-value = ______</para>
         </problem>
       </exercise>
             <exercise id="element-526">
@@ -792,7 +792,7 @@
       </exercise>
             <exercise id="element-651">
         <problem id="id13510518">
-          <para id="element-52">Graph the situation. Label and scale the horizontal axis. Mark the mean and test statistic. Shade in the region corresponding to the <emphasis effect="italics">p</emphasis>-value. </para>
+          <para id="element-52">Graph the situation. Label and scale the horizontal axis. Mark the mean and test statistic. Shade in the region corresponding to the <m:math><m:mi>p</m:mi></m:math>-value. </para>
             <figure class="scaled-down" id="fs-idp37466400">
             <media id="id10494834" display="block" alt="Blank graph with vertical and horizontal axes.">
               <image src="../../media/fig-ch11_11_01.png" mime-type="image/png"/>
@@ -800,10 +800,10 @@
           </figure>
         </problem>
       </exercise>
-      <para id="element-150">State the decision and conclusion (in a complete sentence) for the following preconceived levels of <emphasis effect="italics">α</emphasis>.</para>
+      <para id="element-150">State the decision and conclusion (in a complete sentence) for the following preconceived levels of <m:math><m:mi>α</m:mi></m:math>.</para>
             <exercise id="element-90">
         <problem id="id13505381">
-          <para id="element-764"><emphasis effect="italics">α</emphasis> = 0.05</para>
+          <para id="element-764"><m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math></para>
             <list id="list-2353627788" list-type="enumerated" number-style="lower-alpha">
             <item>Decision: ___________________</item>
             <item>Reason for the decision: ___________________</item>
@@ -813,14 +813,14 @@
         <solution id="id10677600">
             <list id="fs-idp17339744" list-type="enumerated" number-style="lower-alpha">
             <item>Reject the null hypothesis.</item>
-            <item><emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
             <item> There is sufficient evidence to conclude that smoking level is dependent on ethnic group.</item>
           </list>
         </solution>
       </exercise>
             <exercise id="element-56">
         <problem id="id12810548">
-          <para id="element-317"><emphasis effect="italics">α</emphasis> = 0.01</para>
+          <para id="element-317"><m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.01</m:mn></m:math></para>
             <list id="list-23536277881" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
             <item>Decision: ___________________</item>
             <item>Reason for the decision: ___________________</item>
@@ -929,18 +929,18 @@
         </problem>
         <solution id="fs-idp45408448">
             <list id="fs-idm6658592" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: Car size is independent of family size.</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: Car size is dependent on family size.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: Car size is independent of family size.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: Car size is dependent on family size.</item>
             <item><emphasis effect="italics">df</emphasis> = 9</item>
             <item>chi-square distribution with <emphasis effect="italics">df</emphasis> = 9</item>
             <item>test statistic = 15.8284</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0.0706</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0.0706</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idp124357408" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Do not reject the null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value > alpha</item>
                 <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that car size and family size are dependent.</item>
               </list>
             </item>
@@ -1054,18 +1054,18 @@
         </problem>
         <solution id="fs-idp45475856">
             <list id="fs-idp151446416" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: Honeymoon locations are independent of bride’s age.</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: Honeymoon locations are dependent on bride’s age.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: Honeymoon locations are independent of bride’s age.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: Honeymoon locations are dependent on bride’s age.</item>
             <item><emphasis effect="italics">df</emphasis> = 9</item>
             <item>chi-square distribution with <emphasis effect="italics">df</emphasis> = 9</item>
             <item>test statistic = 15.7027</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0.0734</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0.0734</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idm28786192" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Do not reject the null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value > alpha</item>
                 <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that honeymoon location and bride age are dependent.</item>
               </list>
             </item>
@@ -1165,18 +1165,18 @@
         </problem>
         <solution id="fs-idp17240224">
             <list id="fs-idp17240480" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: The types of fries sold are independent of the location.</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: The types of fries sold are dependent on the location.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: The types of fries sold are independent of the location.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: The types of fries sold are dependent on the location.</item>
             <item><emphasis effect="italics">df</emphasis> = 6</item>
             <item> chi-square distribution with <emphasis effect="italics">df</emphasis> = 6</item>
             <item>test statistic =18.8369</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0.0044</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0.0044</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idp36061776" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Reject the null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
                 <item>Conclusion: At the 5% significance level, there is sufficient evidence that types of fries and location are dependent.</item>
               </list>
             </item>
@@ -1303,17 +1303,17 @@
         </problem>
         <solution id="eip-idm117790352">
             <list id="eip-idm117790096" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: Salary is independent of level of education.</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: Salary is dependent on level of education.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: Salary is independent of level of education.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: Salary is dependent on level of education.</item>
             <item><emphasis effect="italics">df</emphasis> = 12</item>
             <item>chi-square distribution with <emphasis effect="italics">df</emphasis> = 12</item>
             <item>test statistic = 255.7704</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0</item>
             <item>Answers may vary.</item>
             <item>
               <para id="eip-idp3905728">Alpha: 0.05</para>
               <para id="eip-idp3906112">Decision: Reject the null hypothesis.</para>
-              <para id="eip-idm66838512">Reason for decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</para>
+              <para id="eip-idm66838512">Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</para>
               <para id="eip-idm120727936">Conclusion: At the 5% significance level, there is sufficient evidence to conclude that salary and level of education are dependent.</para>
             </item>
           </list>
@@ -1463,18 +1463,18 @@
         </problem>
         <solution id="eip-14">
             <list id="fs-idp33820128" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: Age is independent of the youngest online entrepreneurs’ net worth.</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: Age is dependent on the net worth of the youngest online entrepreneurs.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: Age is independent of the youngest online entrepreneurs’ net worth.</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: Age is dependent on the net worth of the youngest online entrepreneurs.</item>
             <item><emphasis effect="italics">df</emphasis> = 2</item>
             <item>chi-square distribution with <emphasis effect="italics">df</emphasis> = 2 </item>
             <item>test statistic = 1.76</item>
-            <item><emphasis effect="italics">p</emphasis>-value 0.4144</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value 0.4144</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idp21843088" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Do not reject the null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value > alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value > alpha</item>
                 <item>Conclusion: At the 5% significance level, there is insufficient evidence to conclude that age and net worth for the youngest online entrepreneurs are dependent.</item>
               </list>
             </item>

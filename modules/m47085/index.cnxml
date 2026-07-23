@@ -10,15 +10,15 @@
     <para id="element-194">A <term id="term-00001">test of a single variance</term> assumes that the underlying distribution is <emphasis>normal</emphasis>. The null and alternative hypotheses are stated in terms of the <term id="term-00002">population variance</term> (or population standard deviation). The test statistic is:</para>
     <equation class="unnumbered" id="element-740">
       <label/>
-      <m:math><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>-</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:math>
+      <m:math><m:mfrac><m:mrow><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:math>
     </equation>
     <para id="element-706">where:</para>
     <list id="element-706l" list-type="bulleted">
-      <item><emphasis effect="italics">n</emphasis> = the total number of data values</item>
-      <item id="element-646"><emphasis effect="italics">s</emphasis><sup>2</sup> = sample variance </item>
-      <item id="element-502"><emphasis effect="italics">σ</emphasis><sup>2</sup> = population variance</item>
+      <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the total number of data values</item>
+      <item id="element-646"><m:math><m:mi>s</m:mi></m:math><sup>2</sup> = sample variance </item>
+      <item id="element-502"><m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = population variance</item>
     </list>
-    <para id="element-416">You may think of <emphasis effect="italics">s</emphasis> as the random variable in this test. The number of degrees of freedom is <emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> - 1. <emphasis>A test of a single variance may be right-tailed, left-tailed, or two-tailed.</emphasis> <link target-id="element-174"/> will show you how to set up the null and alternative hypotheses. The null and alternative hypotheses contain statements about the population variance.</para>
+    <para id="element-416">You may think of <m:math><m:mi>s</m:mi></m:math> as the random variable in this test. The number of degrees of freedom is <emphasis effect="italics">df</emphasis> = <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>. <emphasis>A test of a single variance may be right-tailed, left-tailed, or two-tailed.</emphasis> <link target-id="element-174"/> will show you how to set up the null and alternative hypotheses. The null and alternative hypotheses contain statements about the population variance.</para>
     <example id="element-174">
       <exercise id="element-514">
         <problem id="id1168324983513">
@@ -29,9 +29,9 @@
         <solution id="id1168323245019">
           <para id="element-219">Even though we are given the population standard deviation, we can set up the test using the population variance as follows.</para>
             <list id="element-660" list-type="bulleted">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> = 5<sup>2</sup>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 5<sup>2</sup>
             </item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> &gt; 5<sup>2</sup></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> &gt; 5<sup>2</sup></item>
           </list>
         </solution>
       </exercise>
@@ -56,19 +56,19 @@
         </problem>
         <solution id="id1168321500398">
           <para id="element-628">Since the claim is that a single line causes less variation, this is a test of a single variance.
-            The parameter is the population variance, <emphasis effect="italics">σ</emphasis><sup>2</sup>, or the population standard deviation, <emphasis effect="italics">σ</emphasis>.
+            The parameter is the population variance, <m:math><m:mi>σ</m:mi></m:math><sup>2</sup>, or the population standard deviation, <m:math><m:mi>σ</m:mi></m:math>.
           </para>
-          <para id="element-16"><emphasis>Random Variable:</emphasis> The sample standard deviation, <emphasis effect="italics">s</emphasis>, is the random variable.
-            Let <emphasis effect="italics">s</emphasis> = standard deviation for the waiting times.</para>
+          <para id="element-16"><emphasis>Random Variable:</emphasis> The sample standard deviation, <m:math><m:mi>s</m:mi></m:math>, is the random variable.
+            Let <m:math><m:mi>s</m:mi><m:mo>=</m:mo></m:math> standard deviation for the waiting times.</para>
             <list id="element-227">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> = 7.2<sup>2</sup></item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> &lt; 7.2<sup>2</sup></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 7.2<sup>2</sup></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> &lt; 7.2<sup>2</sup></item>
           </list>
           <para id="element-789">The word <emphasis>"less"</emphasis> tells you this is a left-tailed test.</para>
           <para id="element-760"><emphasis>Distribution for the test:</emphasis><m:math><m:msubsup><m:mi>χ</m:mi><m:mn>24</m:mn><m:mn>2</m:mn></m:msubsup></m:math>, where:
             <list id="element-12421" list-type="bulleted">
-              <item><emphasis effect="italics">n</emphasis> = the number of customers sampled</item>
-              <item><emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1 = 25 – 1 = 24</item>
+              <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the number of customers sampled</item>
+              <item><emphasis effect="italics">df</emphasis> = <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>24</m:mn></m:math></item>
             </list>
           </para>
           <para id="element-85">
@@ -76,9 +76,9 @@
           </para>
             <equation class="unnumbered" id="element-10">
             <label/>
-            <m:math><m:mrow><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mtext/><m:mo>−</m:mo><m:mtext/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>25</m:mn><m:mtext/><m:mo>−</m:mo><m:mtext/><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>7.2</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>5.67</m:mn></m:mrow></m:math>
+            <m:math><m:mrow><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>3.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>7.2</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>5.67</m:mn></m:mrow></m:math>
           </equation>
-          <para id="element-801">where <emphasis effect="italics">n</emphasis> = 25, <emphasis effect="italics">s</emphasis> = 3.5, and <emphasis effect="italics">σ</emphasis> = 7.2.</para>
+          <para id="element-801">where <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:math>, <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>3.5</m:mn></m:math>, and <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>7.2</m:mn></m:math>.</para>
           <para id="element-607">
             <emphasis>Graph:</emphasis>
           </para>
@@ -87,17 +87,17 @@
               <image src="../../media/fig-ch11_08_01.png" mime-type="image/jpg"/>
             </media>
           </figure>
-          <para id="element-970"><emphasis>Probability statement:</emphasis><emphasis effect="italics">p</emphasis>-value = <emphasis effect="italics">P</emphasis> ( <emphasis effect="italics">χ</emphasis><sup>2</sup> &lt; 5.67) = 0.000042</para>
+          <para id="element-970"><emphasis>Probability statement:</emphasis><m:math><m:mi>p</m:mi></m:math>-value = <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>χ</m:mi></m:math><sup>2</sup> &lt; 5.67) = 0.000042</para>
           <para id="element-684">
-            <emphasis>Compare <emphasis effect="italics">α</emphasis> and the <emphasis effect="italics">p</emphasis>-value:</emphasis>
+            <emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value:</emphasis>
             <newline/>
             <list list-type="labeled-item" display="inline" id="list-00001">
-              <item><emphasis effect="italics">α</emphasis> = 0.05</item>
-              <item><emphasis effect="italics">p</emphasis>-value = 0.000042</item>
-              <item><emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value</item>
+              <item><m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math></item>
+              <item><m:math><m:mi>p</m:mi></m:math>-value = 0.000042</item>
+              <item><m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mi>p</m:mi></m:math>-value</item>
             </list>
           </para>
-          <para id="element-726"><emphasis>Make a decision:</emphasis> Since <emphasis effect="italics">α</emphasis> &gt; <emphasis effect="italics">p</emphasis>-value, reject <emphasis effect="italics">H<sub>0</sub></emphasis>. This means that you reject <emphasis effect="italics">σ</emphasis><sup>2</sup> = 7.2<sup>2</sup>. In other words, you do not think the variation in waiting times is 7.2 minutes; you think the variation in waiting times is less.</para>
+          <para id="element-726"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mi>p</m:mi></m:math>-value, reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. This means that you reject <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 7.2<sup>2</sup>. In other words, you do not think the variation in waiting times is 7.2 minutes; you think the variation in waiting times is less.</para>
           <para id="element-952"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to
             conclude that a single line causes a lower variation among the waiting times <emphasis>or</emphasis> with a single
             line, the customer waiting times vary less than 7.2 minutes.</para>
@@ -105,7 +105,7 @@
             <label/>
             <para id="element-528">In <code>2nd DISTR</code>, use <code>7:χ2cdf</code>. The syntax is
               <code>(lower, upper, df)</code> for the parameter list.
-              For <link target-id="element-28"/>, <code>χ2cdf(-1E99,5.67,24)</code>. The <emphasis effect="italics">p</emphasis>-value = 0.000042.</para>
+              For <link target-id="element-28"/>, <code>χ2cdf(-1E99,5.67,24)</code>. The <m:math><m:mi>p</m:mi></m:math>-value = 0.000042.</para>
           </note>
         </solution>
       </exercise>
@@ -115,7 +115,7 @@
       <title>Try It</title>
               <exercise id="eip-209">
         <problem id="eip-849">
-          <para id="eip-37">The FCC conducts broadband speed tests to measure how much data per second passes between a consumer’s computer and the internet. At a certain point in time, the standard deviation of Internet speeds across Internet Service Providers (ISPs) was 12.2 percent. Suppose a sample of 15 ISPs is taken, and the standard deviation is 13.2 percent. An analyst claims that the standard deviation of speeds is more than what was reported. State the null and alternative hypotheses, compute the degrees of freedom, the test statistic, sketch the graph of the <emphasis effect="italics">p</emphasis>-value, and draw a conclusion. Test at the 1% significance level.</para>
+          <para id="eip-37">The FCC conducts broadband speed tests to measure how much data per second passes between a consumer’s computer and the internet. At a certain point in time, the standard deviation of Internet speeds across Internet Service Providers (ISPs) was 12.2 percent. Suppose a sample of 15 ISPs is taken, and the standard deviation is 13.2 percent. An analyst claims that the standard deviation of speeds is more than what was reported. State the null and alternative hypotheses, compute the degrees of freedom, the test statistic, sketch the graph of the <m:math><m:mi>p</m:mi></m:math>-value, and draw a conclusion. Test at the 1% significance level.</para>
         </problem>
       </exercise>
     </note>
@@ -131,15 +131,15 @@
     <section id="fs-idm8553712" class="formula-review">
       <title>Formula Review</title>
       <para id="fs-idm93679184"><m:math><m:mrow><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo></m:mrow></m:math><m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math> Test of a single variance statistic where:<newline/>
-   <emphasis effect="italics">n</emphasis>: sample size<newline/>
-   <emphasis effect="italics">s</emphasis>: sample standard deviation<newline/>
-   <emphasis effect="italics">σ</emphasis>: population standard deviation</para>
-      <para id="eip-902"><emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1 Degrees of freedom</para>
+   <m:math><m:mi>n</m:mi></m:math>: sample size<newline/>
+   <m:math><m:mi>s</m:mi></m:math>: sample standard deviation<newline/>
+   <m:math><m:mi>σ</m:mi></m:math>: population standard deviation</para>
+      <para id="eip-902"><emphasis effect="italics">df</emphasis> = <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> Degrees of freedom</para>
         <list id="eip-29" list-type="bulleted">
         <title>Test of a Single Variance</title>
         <item>Use the test to determine variation.</item>
         <item>The degrees of freedom is the number of samples – 1.</item>
-        <item>The test statistic is <m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>, where <emphasis effect="italics">n</emphasis> = the total number of data, <emphasis effect="italics">s</emphasis><sup>2</sup> = sample variance, and <emphasis effect="italics">σ</emphasis><sup>2</sup> = population variance.
+        <item>The test statistic is <m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>, where <m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the total number of data, <m:math><m:mi>s</m:mi></m:math><sup>2</sup> = sample variance, and <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = population variance.
         </item>
         <item>The test may be left-, right-, or two-tailed.</item>
       </list>
@@ -180,8 +180,8 @@
           </para>
         </problem>
         <solution id="eip-401">
-          <para id="eip-306"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> = 0.81<sup>2</sup>;</para>
-          <para id="eip-idm138366848"><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> &gt; 0.81<sup>2</sup> </para>
+          <para id="eip-306"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 0.81<sup>2</sup>;</para>
+          <para id="eip-idm138366848"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> &gt; 0.81<sup>2</sup> </para>
         </solution>
       </exercise>
         <exercise id="eip-179">
@@ -205,7 +205,7 @@
       </exercise>
         <exercise id="eip-462">
         <problem id="eip-303">
-          <para id="eip-279">What is the <emphasis effect="italics">p</emphasis>-value?</para>
+          <para id="eip-279">What is the <m:math><m:mi>p</m:mi></m:math>-value?</para>
         </problem>
         <solution id="eip-447">
           <para id="eip-789">0.0542</para>
@@ -241,10 +241,10 @@
       </exercise>
         <exercise id="fs-idm22555680">
         <problem id="fs-idm53291472">
-          <para id="fs-idp8181296"><emphasis effect="italics">H<sub>0</sub></emphasis>: __________</para>
+          <para id="fs-idp8181296"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: __________</para>
         </problem>
         <solution id="fs-idm63616976">
-          <para id="fs-idp33949200"><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis><sup>2</sup> ≤ 150</para>
+          <para id="fs-idp33949200"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> ≤ 150</para>
         </solution>
       </exercise>
         <exercise id="fs-idm2265776">
@@ -262,12 +262,12 @@
       </exercise>
         <exercise id="fs-idm70553440">
         <problem id="fs-idp47518368">
-          <para id="fs-idp34036528"><emphasis effect="italics">p</emphasis>-value = ________</para>
+          <para id="fs-idp34036528"><m:math><m:mi>p</m:mi></m:math>-value = ________</para>
         </problem>
       </exercise>
         <exercise id="fs-idp82699488">
         <problem id="fs-idm73044992">
-          <para id="fs-idm74715968">Graph the situation. Label and scale the horizontal axis. Mark the mean and test statistic. Shade the <emphasis effect="italics">p</emphasis>-value.</para>
+          <para id="fs-idm74715968">Graph the situation. Label and scale the horizontal axis. Mark the mean and test statistic. Shade the <m:math><m:mi>p</m:mi></m:math>-value.</para>
         </problem>
         <solution id="fs-idp93898016">
           <para id="fs-idp3655968">Answers may vary.</para>
@@ -275,7 +275,7 @@
       </exercise>
         <exercise id="fs-idm73610688">
         <problem id="fs-idm57687392">
-          <para id="fs-idm24034400">Let <emphasis effect="italics">α</emphasis> = 0.05<newline/>
+          <para id="fs-idm24034400">Let <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math><newline/>
             Decision: ________<newline/>
             Conclusion (write out in a complete sentence.): ________</para>
         </problem>
@@ -298,7 +298,7 @@
           <para id="eip-idp107850688">If an additional test were done on the claim of the average delay, but 45 flights were surveyed, which distribution would you use?</para>
         </problem>
         <solution id="eip-idm10455136">
-          <para id="eip-idm10454880">a Student's <emphasis effect="italics">t</emphasis>- or normal distribution</para>
+          <para id="eip-idm10454880">a Student's <m:math><m:mi>t</m:mi><m:mo>-</m:mo></m:math> or normal distribution</para>
         </solution>
       </exercise>
       <para id="eip-457">
@@ -318,18 +318,18 @@
         </problem>
         <solution id="fs-idp8292400">
             <list id="fs-idm38743456" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis> = 15</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">σ</emphasis> &gt; 15</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>σ</m:mi><m:mo>&gt;</m:mo><m:mn>15</m:mn></m:math></item>
             <item><emphasis effect="italics">df</emphasis> = 42</item>
             <item>chi-square with <emphasis effect="italics">df</emphasis> = 42</item>
             <item>test statistic = 26.88</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0.9663</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0.9663</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idp14221792" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha = 0.05</item>
                 <item>Decision: Do not reject null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &gt; alpha</item>
                 <item>Conclusion: There is insufficient evidence to conclude that the standard deviation is greater than 15.</item>
               </list>
             </item>
@@ -350,18 +350,18 @@
         </problem>
         <solution id="fs-idp2191872">
             <list id="fs-idm74960368" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis> ≤ 3</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">σ</emphasis> &gt; 3</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn></m:math></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>σ</m:mi><m:mo>&gt;</m:mo><m:mn>3</m:mn></m:math></item>
             <item><emphasis effect="italics">df</emphasis> = 17</item>
             <item>chi-square distribution with <emphasis effect="italics">df</emphasis> = 17</item>
             <item>test statistic = 28.73</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0.0371</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0.0371</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idp134836976" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha: 0.05</item>
                 <item>Decision: Reject the null hypothesis.</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
                 <item>Conclusion: There is sufficient evidence to conclude that the standard deviation is greater than three.</item>
               </list>
             </item>
@@ -411,18 +411,18 @@
         </problem>
         <solution id="fs-idm41336224">
             <list id="fs-idp70912512" list-type="enumerated" number-style="lower-alpha">
-            <item><emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">σ</emphasis> = 2</item>
-            <item><emphasis effect="italics">H<sub>a</sub></emphasis>: <emphasis effect="italics">σ</emphasis> ≠ 2</item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math></item>
+            <item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>σ</m:mi></m:math> ≠ 2</item>
             <item><emphasis effect="italics">df</emphasis> = 14</item>
             <item>chi-square distribution with <emphasis effect="italics">df</emphasis> = 14</item>
             <item>chi-square test statistic = 5.2094 (or 5.2333 if full precision is used)</item>
-            <item><emphasis effect="italics">p</emphasis>-value = 0.0346 (or <emphasis effect="italics">p</emphasis>=0.0354 if full precision is used)</item>
+            <item><m:math><m:mi>p</m:mi></m:math>-value = 0.0346 (or <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.0354</m:mn></m:math> if full precision is used)</item>
             <item>Answers may vary.</item>
             <item>
               <list id="fs-idp46969120" list-type="enumerated" number-style="lower-roman">
                 <item>Alpha = 0.05</item>
                 <item>Decision: Reject the null hypothesis</item>
-                <item>Reason for decision: <emphasis effect="italics">p</emphasis>-value &lt; alpha</item>
+                <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
                 <item>Conclusion: There is sufficient evidence to conclude that the standard deviation is different than 2.</item>
               </list>
             </item>
@@ -441,14 +441,14 @@
         </problem>
         <solution id="fs-idp46489456">
           <para id="fs-idp77058224">The sample standard deviation is $34.29.</para>
-          <para id="fs-idp77058608"><emphasis effect="italics">H<sub>0</sub></emphasis> : <emphasis effect="italics">σ</emphasis><sup>2</sup> = 25<sup>2</sup><newline/>
-     <emphasis effect="italics">H<sub>a</sub></emphasis> : <emphasis effect="italics">σ</emphasis><sup>2</sup> &gt; 25<sup>2</sup></para>
-          <para id="fs-idp53015088"><newline/><emphasis effect="italics">df</emphasis> = <emphasis effect="italics">n</emphasis> – 1 = 7.</para>
-          <para id="fs-idp75015024"><newline/>test statistic: <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mo/><m:msubsup><m:mi>x</m:mi><m:mn>7</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mo/><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mo/><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>–</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>34.29</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>13.169</m:mn></m:mrow></m:math>;</para>
-          <para id="fs-idp111810080"><newline/><emphasis effect="italics">p</emphasis>-value: <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>x</m:mi><m:mn>7</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>&gt;</m:mo><m:mn>13.169</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>–</m:mo><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>x</m:mi><m:mn>7</m:mn><m:mn>2</m:mn></m:msubsup><m:mo/><m:mo>≤</m:mo><m:mn>13.169</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.0681</m:mn></m:mrow></m:math></para>
+          <para id="fs-idp77058608"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math> : <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 25<sup>2</sup><newline/>
+     <m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math> : <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> &gt; 25<sup>2</sup></para>
+          <para id="fs-idp53015088"><newline/><emphasis effect="italics">df</emphasis> = <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>7</m:mn></m:math>.</para>
+          <para id="fs-idp75015024"><newline/>test statistic: <m:math><m:mrow><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:msubsup><m:mi>χ</m:mi><m:mn>7</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>8</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mn>34.29</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mrow><m:mn>25</m:mn></m:mrow><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>13.169</m:mn></m:mrow></m:math>;</para>
+          <para id="fs-idp111810080"><newline/><m:math><m:mi>p</m:mi></m:math>-value: <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>χ</m:mi><m:mn>7</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>&gt;</m:mo><m:mn>13.169</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:msubsup><m:mi>χ</m:mi><m:mn>7</m:mn><m:mn>2</m:mn></m:msubsup><m:mo>≤</m:mo><m:mn>13.169</m:mn></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.0681</m:mn></m:mrow></m:math></para>
           <para id="fs-idp75024832"><newline/>Alpha: 0.05</para>
           <para id="fs-idp120246432"><newline/>Decision: Do not reject the null hypothesis.</para>
-          <para id="fs-idp83140624"><newline/>Reason for decision: <emphasis effect="italics">p</emphasis>-value &gt; alpha</para>
+          <para id="fs-idp83140624"><newline/>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &gt; alpha</para>
           <para id="fs-idp62506704"><newline/>Conclusion: At the 5% level, there is insufficient evidence to conclude that the variance is more than 625.</para>
         </solution>
       </exercise>
@@ -461,5 +461,16 @@
         </problem>
       </exercise>
     </section>
+    <section class="glossary" id="sect-glossary-00001">
+<title>Key Terms</title>
+<definition id="def-00001">
+<term>Test of a Single Variance</term>
+<meaning>a hypothesis test that uses the chi-square distribution to determine whether the variance (or standard deviation) of a single population equals a claimed value. The test assumes the underlying population is normally distributed and uses the test statistic <m:math><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:math> with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom.</meaning>
+</definition>
+<definition id="def-00002">
+<term>Population Variance</term>
+<meaning>the variance of an entire population, denoted <m:math><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:math>; a measure of how far the values in the population spread from the population mean. Its square root is the population standard deviation, <m:math><m:mi>σ</m:mi></m:math>.</meaning>
+</definition>
+</section>
   </content>
 </document>
