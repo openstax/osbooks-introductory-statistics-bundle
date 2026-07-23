@@ -16,29 +16,31 @@
 </list>
 <section id="fs-idm3483088">
 <title>The Null and Alternative Hypotheses</title>
-<para id="me2">The null hypothesis is simply that all the group population means are the same. The alternative hypothesis is that at least one pair of means is different. For example, if there are <emphasis effect="italics">k</emphasis> groups:</para>
-<para id="element-671"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mo>. . .</m:mo><m:msub><m:mi>μ</m:mi><m:mi>k</m:mi></m:msub></m:math></para><para id="element-952"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: At least two of the group means <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>,</m:mo><m:mo>. . . ,</m:mo><m:msub><m:mi>μ</m:mi><m:mi>k</m:mi></m:msub></m:math> are not equal.
+<para id="me2">The null hypothesis is simply that all the group population means are the same. The alternative hypothesis is that at least one pair of means is different. For example, if there are <m:math><m:mi>k</m:mi></m:math> groups:</para>
+<para id="element-671"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mo>. . .</m:mo><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mi>k</m:mi></m:msub></m:math></para><para id="element-952"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: At least two of the group means <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>,</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>,</m:mo><m:mo>. . . ,</m:mo><m:msub><m:mi>μ</m:mi><m:mi>k</m:mi></m:msub></m:math> are not equal.
 
 That is, 
-<m:math><m:msub><m:mi>μ</m:mi><m:mi>i </m:mi></m:msub><m:mi> ≠ </m:mi><m:msub><m:mi> μ</m:mi><m:mi>j</m:mi></m:msub></m:math> 
+<m:math><m:msub><m:mi>μ</m:mi><m:mi>i</m:mi></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mi>j</m:mi></m:msub></m:math> 
 for some
-<m:math><m:mi>i </m:mi><m:mi> ≠ </m:mi><m:mi> j</m:mi></m:math>. </para><para id="eip-969">The graphs, a set of box plots representing the distribution of values with the group means indicated by a dashed horizontal line through the box, help in understanding the hypothesis test. In the first graph (blue box plots), <emphasis effect="italics">H<sub>0</sub></emphasis>: <emphasis effect="italics">μ<sub>1</sub></emphasis> = <emphasis effect="italics">μ<sub>2</sub></emphasis> = <emphasis effect="italics">μ<sub>3</sub></emphasis> and the three populations have the same distribution if the null hypothesis is true.  The variance of the combined data is approximately the same as the variance of each of the populations.</para>
+<m:math><m:mi>i</m:mi><m:mo>≠</m:mo><m:mi>j</m:mi></m:math>. </para><para id="eip-969">The graphs, a set of box plots representing the distribution of values with the group means indicated by a dashed horizontal line through the box, help in understanding the hypothesis test. In the first graph (blue box plots), <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub></m:math> and the three populations have the same distribution if the null hypothesis is true.  The variance of the combined data is approximately the same as the variance of each of the populations.</para>
 <para id="fs-idp14626496">If the null hypothesis is false, then the variance of the combined data is larger, which is caused by the different means, as shown in the second graph (green box plots).</para>
 
 <figure class="scaled-down" id="fs-idp110803872"><media id="eip-idp18347248" alt="The first illustration shows three vertical boxplots with equal means. The second illustration shows three vertical boxplots with unequal means.">
 <image src="../../media/CNX_Stats_C13_M02_001.png" mime-type="image/png"/>
 </media>
-<caption>(a) <emphasis effect="italics">H<sub>0</sub></emphasis> is true. All means are the same; the differences are due to random variation. (b) <emphasis effect="italics">H<sub>0</sub></emphasis> is not true. The means are not all the same; the differences are too large to be due to random variation.</caption></figure></section>
+<caption>(a) <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math> is true. All means are the same; the differences are due to random variation. (b) <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math> is not true. The means are not all the same; the differences are too large to be due to random variation.</caption></figure></section>
 
 <section id="eip-60" class="summary">
 <title>Chapter Review</title>
-<para id="eip-981">Analysis of variance extends the comparison of two groups to several, each a level of a categorical variable (factor). Samples from each group are independent, and must be randomly selected from normal populations with equal variances. We test the null hypothesis of equal means of the response in every group versus the alternative hypothesis of one or more group means being different from the others. A one-way ANOVA hypothesis test determines if several population means are equal. The distribution for the test is the <emphasis effect="italics">F</emphasis> distribution with two different degrees of freedom.</para>
+<para id="eip-981">Analysis of variance extends the comparison of two groups to several, each a level of a categorical variable (factor). Samples from each group are independent, and must be randomly selected from normal populations with equal variances. We test the null hypothesis of equal means of the response in every group versus the alternative hypothesis of one or more group means being different from the others. A one-way ANOVA hypothesis test determines if several population means are equal. The distribution for the test is the <m:math><m:mi>F</m:mi></m:math> distribution with two different degrees of freedom.</para>
 
 <list id="fs-idm125719248" list-type="enumerated">
 <title>Assumptions:</title>
 <item>Each population from which a sample is taken is assumed to be normal.</item>
 <item>All samples are randomly selected and independent.</item>
 <item>The populations are assumed to have equal standard deviations (or variances).</item>
+<item>The factor is a categorical variable.</item>
+<item>The response is a numerical variable.</item>
 </list>
 </section>
 
@@ -78,7 +80,7 @@ for some
 <para id="para-00001">Write the final assumption.</para>
 </problem>
 <solution id="sol-00001">
-<para id="para-00002">The response is a numerical value.</para>
+<para id="para-00002">The response is a numerical variable.</para>
 </solution>
 </exercise>
 <exercise id="exer-00002">
@@ -91,7 +93,7 @@ for some
 <para id="para-00004">State the alternative hypothesis for a one-way ANOVA test if there are three groups.</para>
 </problem>
 <solution id="sol-00002">
-<para id="para-00005"><emphasis effect="italics">H</emphasis><sub>a</sub>: At least two of the group means <emphasis effect="italics">μ</emphasis><sub>1</sub>, <emphasis effect="italics">μ</emphasis><sub>2</sub>, <emphasis effect="italics">μ</emphasis><sub>3</sub> are not equal.</para>
+<para id="para-00005"><m:math><m:mi>H</m:mi></m:math><sub>a</sub>: At least two of the group means <m:math><m:mi>μ</m:mi></m:math><sub>1</sub>, <m:math><m:mi>μ</m:mi></m:math><sub>2</sub>, <m:math><m:mi>μ</m:mi></m:math><sub>3</sub> are not equal.</para>
 </solution>
 </exercise>
 <exercise id="exer-00004">
@@ -125,12 +127,12 @@ for some
 </tbody>
 </tgroup>
 </table>
-</para><para id="eip-331">State <emphasis effect="italics">SS</emphasis><sub>between</sub>, <emphasis effect="italics">SS</emphasis><sub>within</sub>, and the <emphasis effect="italics">F</emphasis> statistic.</para>
+</para><para id="eip-331">State <m:math><m:mi>SS</m:mi></m:math><sub>between</sub>, <m:math><m:mi>SS</m:mi></m:math><sub>within</sub>, and the <m:math><m:mi>F</m:mi></m:math> statistic.</para>
 </problem>
 <solution id="eip-934">
-<para id="eip-idp68682064"><emphasis effect="italics">SS</emphasis><sub>between</sub> = 26
-<newline/><emphasis effect="italics">SS</emphasis><sub>within</sub> = 441
-<newline/><emphasis effect="italics">F</emphasis> = 0.2653</para>
+<para id="eip-idp68682064"><m:math><m:mi>SS</m:mi></m:math><sub>between</sub> = 26
+<newline/><m:math><m:mi>SS</m:mi></m:math><sub>within</sub> = 441
+<newline/><m:math><m:mi>F</m:mi><m:mo>=</m:mo><m:mn>0.2653</m:mn></m:math></para>
 </solution>
 </exercise><exercise id="eip-230"><problem id="id47643113">
 
@@ -194,7 +196,7 @@ for some
 <m:mrow>
 <m:mover accent="true">
 <m:mi>x</m:mi>
-<m:mo>–</m:mo>
+<m:mo>¯</m:mo>
 </m:mover>
 <m:mo>=</m:mo>
 </m:mrow>
@@ -226,10 +228,21 @@ for some
 </tgroup>
 </table>
 <para id="element-736">State the hypotheses.</para>
-<para id="element-740"><emphasis effect="italics">H<sub>0</sub></emphasis>: ____________</para>
-<para id="element-571"><emphasis effect="italics">H<sub>a</sub></emphasis>: ____________    </para>
+<para id="element-740"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: ____________</para>
+<para id="element-571"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: ____________    </para>
 </problem>
 </exercise>
 </section>
  </content>
+  <glossary>
+    <definition id="equal-sd">
+      <term>Equal Standard Deviations</term>
+      <meaning id="mean-equal-sd">an assumption of one-way ANOVA that the populations being compared all have the same standard deviation (equivalently, the same variance).</meaning>
+    </definition>
+    <definition id="variances">
+      <term>Variances</term>
+      <meaning id="mean-variances">measures of the spread of data about the mean; one-way ANOVA compares the variation between groups with the variation within groups (rather than the means directly) to decide whether the population means are equal.</meaning>
+    </definition>
+  </glossary>
+
 </document>
