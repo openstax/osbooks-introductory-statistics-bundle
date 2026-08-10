@@ -15,24 +15,31 @@
     </note>
     <para id="element-44">When each value in the data set is not unique, the mean can be calculated by multiplying each distinct value by its frequency and then dividing the sum by the total number of data values. The letter used to represent the <emphasis>sample mean</emphasis> is an <m:math><m:mi>x</m:mi></m:math> with a bar over it (pronounced “<m:math><m:mi>x</m:mi></m:math> bar”): <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>−</m:mo></m:mover></m:math>.</para>
     <para id="element-705">The Greek letter <m:math><m:mi>μ</m:mi></m:math> (pronounced "mew") represents the <emphasis>population mean</emphasis>. One of the requirements for the <emphasis>sample mean</emphasis> to be a good estimate of the <emphasis>population mean</emphasis> is for the sample taken to be truly random.</para>
-    <example id="exam-00001">
-      <para id="element-228">To see that both ways of calculating the mean are the same, consider the sample: <newline/>1; 1; 1; 2; 2; 3; 4; 4; 4; 4; 4. There are 2 ways to calculate the mean: </para>
+    <section id="sect-00001">
+      <title>Two Ways to Calculate a Mean</title>
+      <para id="para-00005">Consider the set of sample data: <newline/>1; 1; 1; 2; 2; 3; 4; 4; 4; 4; 4</para>
+      <para id="para-00006">There are 2 ways to calculate the mean.</para>
+      <para id="para-00007"><emphasis effect="bold">Way 1: Take the Sum of all Points Divided by the Quantity of Points</emphasis></para>
+      <para id="para-00008">In this way, we take the sum of all the individual points and divide by the quantity of points, which can be seen in the following calculation:</para>
       <equation class="unnumbered" id="element-46">
         <label/>
         <m:math><m:mover><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn><m:mo>+</m:mo><m:mn>4</m:mn></m:mrow><m:mn>11</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2.7</m:mn></m:math>
       </equation>
+      <para id="para-00009"><emphasis effect="bold">Way 2: Leverage the Frequency of Each Data Point to Simplify the Sum</emphasis></para>
       <para id="para-00001">In the second equivalent calculation, the frequencies are 3, 2, 1, and 5 for the values 1, 2, 3, and 4 respectively to shorten the calculation required for the numerator: </para>
       <equation class="unnumbered" id="element-662">
         <label/>
         <m:math><m:mrow><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>1</m:mn><m:mo stretchy="false">(</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>+</m:mo><m:mn>5</m:mn><m:mo stretchy="false">(</m:mo><m:mn>4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mn>11</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.7</m:mn></m:mrow></m:math>
       </equation>
-    </example>
+    </section>
+    <section id="sect-00002">
+      <title>Finding and Calculating the Median</title>
     <para id="element-429">You can quickly find the location of the median by using the expression <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:math>.</para>
     <para id="element-860">The letter <m:math><m:mi>n</m:mi></m:math> is the total number of data values in the sample. If <m:math><m:mi>n</m:mi></m:math> is an odd number, the median is the middle value of the ordered data (ordered smallest to largest). If <m:math><m:mi>n</m:mi></m:math> is an even number, the median is equal to the two middle values added together and divided by two after the data has been ordered. For example, if the total number of data values is 97, then <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>97</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>49</m:mn></m:math>. The median is the 49<sup>th</sup> value in the ordered data. If the total number of data values is 100, then <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>100</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>50.5</m:mn></m:math>. The median occurs midway between the 50<sup>th</sup> and 51<sup>st</sup> values. The location of the median and the value of the median are <emphasis>not</emphasis> the same. The upper case letter <m:math><m:mi>M</m:mi></m:math> is often used to represent the median. The next example illustrates the location of the median and the value of the median.</para>
     <example id="element-3">
       <exercise id="exer4">
         <problem id="id45306962">
-          <para id="element-226">A hospital administrator keeps track of the ages (in years) of patients visiting the emergency room over a one-week period (data are sorted from smallest to largest):<newline/>3; 4; 8; 8; 10; 11; 12; 13; 14; 15; 15; 16; 16; 17; 17; 18; 21; 22; 22; 24; 24; 25; 26; 26; 27; 27; 29; 29; 31; 32; 33; 33; 34; 34; 35; 37; 40; 44; 44; 47 <newline/>Calculate the mean and the median.</para>
+          <para id="element-226">A hospital administrator keeps track of the ages (in years) of patients visiting the emergency room over a one-week period (data are sorted from smallest to largest):<newline/>3; 4; 8; 8; 10; 11; 12; 13; 14; 15; 15; 16; 16; 17; 17; 18; 21; 22; 22; 24; 24; 25; 26; 26; 27; 27; 29; 29; 31; 32; 33; 33; 34; 34; 35; 37; 40; 44; 44; 47 <newline/>Use the frequency of each data point to help calculate the mean and find the median.</para>
         </problem>
         <solution id="id45386042">
           <para id="para-00002">Note that there are repeated values in this data set, so for the mean the frequency of the data value is leveraged for the calculation. </para>
@@ -134,6 +141,9 @@
         </problem>
       </exercise>
     </note>
+    </section>
+    <section id="sect-00003">
+      <title>Finding the Mode</title>
     <para id="element-584">Another measure of the center is the mode. The <term id="term-00003">mode</term> is the most frequent value. There can be more than one mode in a data set as long as those values have the same frequency and that frequency is the highest. A data set with two modes is called bimodal.</para>
     <example id="element-114">
       <para id="element-639">Statistics exam scores for 20 students are as follows:</para>
@@ -175,7 +185,7 @@
       <title>Try It</title>
       <exercise id="fs-idm24402032">
         <problem id="fs-idm24643648">
-          <para id="fs-idp74555792">The number of books checked out from the library from 25 students are as follows:</para>
+          <para id="fs-idp74555792">The number of books checked out from the library by 25 students are as follows:</para>
           <para id="fs-idm901328">
             <list list-type="labeled-item" display="inline" id="list-00002">
               <item>0</item>
@@ -209,10 +219,33 @@
       </exercise>
     </note>
     <example id="element-725">
-      <para id="element-622">Five real estate exam scores are 430, 430, 480, 480, 495. The data set is bimodal because the scores 430 and 480 each occur twice.</para>
+      <exercise id="exer-00001">
+        <problem id="prob-00001">
+          <para id="element-622">Five real estate exam scores are 430, 430, 480, 480, 495. Is the data set bimodal? Explain your reasoning.</para>
+        </problem>
+        <solution id="sol-00001">
+          <para id="para-00010">The data set is bimodal because the scores 430 and 480 each occur twice.</para>
+        </solution>
+      </exercise>
     </example>
+    <note class="statistics try" id="note-00001">
+      <label/>
+      <title>Try It</title>
+      <exercise id="exer-00002">
+        <problem id="prob-00002">
+          <para id="para-00011">Five credit scores are 680, 680, 700, 720, 720. Is this data set bimodal? Explain.</para>
+        </problem>
+      </exercise>
+    </note>
     <example id="exam-00002">
-      <para id="element-353">Consider a weight loss program that advertises a mean weight loss of six pounds the first week of the program. The mode might indicate that most people lose two pounds the first week, making the program less appealing.</para>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="element-353">Consider a weight loss program that advertises a mean weight loss of six pounds the first week of the program. Why would the mode be helpful in this context?</para>
+        </problem>
+        <solution id="sol-00002">
+          <para id="para-00012">The mode might indicate that most people lose two pounds the first week, making the program less appealing.</para>
+        </solution>
+      </exercise>
     </example>
             <note id="eip-146">
       <label/>
@@ -225,61 +258,10 @@
       <title>Try It</title>
             <exercise id="fs-idm2098096">
         <problem id="fs-idm2097968">
-          <para id="fs-idm5923360">Five credit scores are 680, 680, 700, 720, 720. The data set is bimodal because the scores 680 and 720 each occur twice. Consider the annual earnings of workers at a factory. The mode is $25,000 and occurs 150 times out of 301. The median is $50,000 and the mean is $47,500. What would be the best measure of the “center”?</para>
+          <para id="fs-idm5923360">Consider the annual earnings of workers at a factory. The mode is $25,000 and occurs 150 times out of 301. The median is $50,000 and the mean is $47,500. What would be the best measure of the “center”?</para>
         </problem>
       </exercise>
     </note>
-    <section id="element-282">
-      <title>The Law of Large Numbers and the Mean</title>
-      <para id="element-41">The Law of Large Numbers says that if you take samples of larger and larger size from any population, then the mean <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> of the sample is very likely to get closer and closer to <m:math><m:mi>µ</m:mi></m:math>. This is discussed in more detail later in the text.</para>
-    </section>
-    <section id="eip-529">
-      <title>Sampling Distributions and Statistic of a Sampling Distribution</title>
-      <para id="eip-568">You can think of a <term id="term-00004">sampling distribution</term> as a <emphasis> relative frequency distribution</emphasis> with a great many samples. (See <emphasis>Sampling and Data</emphasis> for a review of relative frequency). Suppose thirty randomly selected students were asked the number of movies they watched the previous week. The results are in the <emphasis>relative frequency table</emphasis> shown below.</para>
-            <table id="rel_freq_table" summary="The table presents the number of movies 30 students watched in the previous week. The first column lists the number of movies from 0-4 and the second column lists the relative frequencies.">
-        <tgroup cols="2">
-          <thead>
-            <row>
-              <entry># of movies</entry>
-              <entry>Relative Frequency</entry>
-            </row>
-          </thead>
-          <tbody>
-            <row>
-              <entry>0</entry>
-              <entry>
-                <m:math><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math>
-              </entry>
-            </row>
-            <row>
-              <entry>1</entry>
-              <entry>
-                <m:math><m:mrow><m:mfrac><m:mn>15</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math>
-              </entry>
-            </row>
-            <row>
-              <entry>2</entry>
-              <entry>
-                <m:math><m:mrow><m:mfrac><m:mn>6</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math>
-              </entry>
-            </row>
-            <row>
-              <entry>3</entry>
-              <entry>
-                <m:math><m:mrow><m:mfrac><m:mn>3</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math>
-              </entry>
-            </row>
-            <row>
-              <entry>4</entry>
-              <entry>
-                <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow></m:math>
-              </entry>
-            </row>
-          </tbody>
-        </tgroup>
-      </table>
-      <para id="eip-7"><emphasis>If you let the number of samples get very large (say, 300 million or more), the relative frequency table becomes a relative frequency distribution</emphasis>.</para>
-      <para id="eip-309">A <emphasis>statistic</emphasis> is a number calculated from a sample. Statistic examples include the mean, the median and the mode as well as others. The sample mean <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> is an example of a statistic which estimates the population mean <m:math><m:mi>μ</m:mi></m:math>.</para>
     </section>
     <section id="fs-idp28527728">
       <title>Calculating the Mean of Grouped Frequency Tables</title>
@@ -524,12 +506,15 @@
     <section id="fs-idm7033248" class="summary">
       <title>Chapter Review</title>
       <para id="fs-idm18283152">The mean and the median can be calculated to help you find the "center" of a data set. The mean is the best estimate for the actual data set, but the median is the best measurement when a data set contains several outliers or extreme values. The mode will tell you the most frequently occurring datum (or data) in your data set. The mean, median, and mode are extremely helpful when you need to analyze your data, but if your data set consists of ranges which lack specific values, the mean may seem impossible to calculate. However, the mean can be approximated if you add the lower boundary with the upper boundary and divide by two to find the midpoint of each interval. Multiply each midpoint by the number of values found in the corresponding range. Divide the sum of these values by the total number of data values in the set.</para>
+      <para id="para-00013">The location of the median in an ordered data set can be found with the expression <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:math>; note that the location of the median and the value of the median are not the same. A data set with two modes is called bimodal, and the mode can be calculated for qualitative as well as quantitative data.</para>
     </section>
     <section id="fs-idm345328" class="formula-review">
       <title>Formula Review</title>
       <para id="para-00003">For a sample mean: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mi>x</m:mi></m:mstyle></m:mrow><m:mi>n</m:mi></m:mfrac></m:math> where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>x</m:mi></m:math> is each data value</para>
       <para id="para-00004">For a population mean: <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mi>x</m:mi></m:mstyle></m:mrow><m:mi>n</m:mi></m:mfrac></m:math> where <m:math xmlns:m="http://www.w3.org/1998/Math/MathML"><m:mi>x</m:mi></m:math> is each data value</para>
-      <para id="fs-idp28375264"><m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mrow><m:mi>f</m:mi><m:mi>m</m:mi></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mi>f</m:mi></m:mstyle></m:mrow></m:mfrac></m:mrow></m:math> Where <m:math><m:mi>f</m:mi><m:mo>=</m:mo></m:math> interval frequencies and <m:math><m:mi>m</m:mi><m:mo>=</m:mo></m:math> interval midpoints.</para>
+      <para id="fs-idp28375264"><m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mrow><m:mi>f</m:mi><m:mi>m</m:mi></m:mrow></m:mstyle></m:mrow><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo><m:mi>f</m:mi></m:mstyle></m:mrow></m:mfrac></m:mrow></m:math> where <m:math><m:mi>f</m:mi><m:mo>=</m:mo></m:math> interval frequencies and <m:math><m:mi>m</m:mi><m:mo>=</m:mo></m:math> interval midpoints.</para>
+      <para id="para-00014">Location of the median: <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:math></para>
+      <para id="para-00015">Midpoint of an interval: <m:math><m:mfrac><m:mrow><m:mtext>lower boundary</m:mtext><m:mo>+</m:mo><m:mtext>upper boundary</m:mtext></m:mrow><m:mn>2</m:mn></m:mfrac></m:math></para>
     </section>
     <section id="fs-idp67676496" class="practice">
             <exercise id="fs-idp11191056">
@@ -991,5 +976,8 @@
     </definition><definition id="mode">
       <term>Mode</term>
       <meaning id="id44836043"> the value that appears most frequently in a set of data</meaning>
+    </definition><definition id="def-00001">
+      <term>Bimodal</term>
+      <meaning>a data set with two modes; that is, two values that occur with the same, highest frequency</meaning>
     </definition></glossary>
 </document>

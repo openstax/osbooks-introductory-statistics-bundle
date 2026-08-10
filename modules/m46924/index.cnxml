@@ -7,9 +7,9 @@
     <md:uuid>dfc348e7-9ad5-4123-8e77-45504640e01e</md:uuid>
   </metadata>
   <content>
-    <para id="element-657">For most of the work you do in this book, you will use a histogram to display the data. One advantage of a histogram is that it can readily display large data sets. A rule of thumb is to use a histogram when the data set consists of 100 values or more.</para>
+    <para id="element-657">For most of the work you do in this book, you will use a histogram to display the data. One advantage of a histogram is that it can readily display large data sets. Histograms can be used with either large or small data sets, and the shape of a histogram stabilizes as the number of data points grows. There is no firm rule for how many points count as "enough."</para>
     <para id="element-446">A <term id="term-00001">histogram</term> consists of contiguous (adjoining) boxes. It has both a horizontal axis and a vertical axis. The horizontal axis is labeled with what the data represents (for instance, distance from your home to school). The vertical axis is labeled either <term id="term-00002">frequency</term> or <term id="term-00003">relative frequency</term> (or percent frequency or probability). The graph will have the same shape with either label. The histogram (like the stemplot) can give you the shape of the data, the center, and the spread of the data.</para>
-    <para id="para-00004">Here is an example of a histogram of the heights (in inches) for 30 children in a second grade class:</para>
+    <para id="para-00004">Here is an example of a histogram of the heights (in inches) for 30 children in a second-grade class:</para>
     <figure class="scaled-down" id="fig-00001">
       <media alt="Histogram showing the heights of 30 children grouped into intervals from about 45 to 52.5 inches. The distribution peaks near the middle of the range, with fewer children at the shortest and tallest height ranges.">
         <image src="../../media/fig-30-children-heights-01.png" mime-type="image/png"/>
@@ -88,7 +88,7 @@
       <para id="element-237">Below is a step-by-step outline on how to construct a histogram, followed by an example of how to carry out these steps:</para>
       <list list-type="enumerated" id="list-00002">
         <item><emphasis>Find the minimum and maximum values within the data set</emphasis>. This is essential information to set up any histogram. </item>
-        <item><emphasis>Choose a starting point and ending point for the histogram that goes slightly beyond the data set</emphasis>. In general, these data points should be expanded one decimal point more than the given data set has. A small amount should be subtracted from the minimum value, and a small amount should be added to the maximum value.
+        <item><emphasis>Choose a starting point and ending point for the histogram that goes slightly beyond the data set</emphasis>. In general, these data points should be expanded one decimal place more than the given data set has. A small amount should be subtracted from the minimum value, and a small amount should be added to the maximum value.
           <list id="list-00003">
             <item>Example 1: All of the data are given as whole numbers. If the minimum value is <m:math><m:mn>60</m:mn></m:math> then the starting value should be <m:math><m:mrow><m:mn>60</m:mn><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mo>=</m:mo><m:mn>59.5</m:mn></m:mrow></m:math>. Similarly, if the maximum value is <m:math><m:mn>74</m:mn></m:math> then the ending value of the histogram should be <m:math><m:mrow><m:mn>74</m:mn><m:mo>+</m:mo><m:mn>0.5</m:mn><m:mo>=</m:mo><m:mn>74.5</m:mn></m:mrow></m:math>.</item>
             <item> Example 2: The data set is rounded to 2 decimal places, so the small decimal adjustment should go to the thousandths. If the minimum value is <m:math><m:mn>14.5</m:mn></m:math>, then the starting value should be <m:math><m:mrow><m:mn>14.5</m:mn><m:mo>−</m:mo><m:mn>0.005</m:mn><m:mo>=</m:mo><m:mn>14.495</m:mn></m:mrow></m:math>. If the maximum value is <m:math><m:mn>21.05</m:mn></m:math>, then the ending value of the histogram should be <m:math><m:mrow><m:mn>21.05</m:mn><m:mo>+</m:mo><m:mn>0.005</m:mn><m:mo>=</m:mo><m:mn>21.055</m:mn></m:mrow></m:math>.</item>
@@ -96,14 +96,18 @@
         </item>
         <item><emphasis>Find the range of the starting and ending values of the histogram</emphasis>. This is calculated by taking the <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mtext>ending value</m:mtext><m:mo>)</m:mo></m:mrow><m:mo>⁢</m:mo><m:mi>−</m:mi><m:mo>⁢</m:mo><m:mrow><m:mo>(</m:mo><m:mtext>starting value</m:mtext><m:mo>)</m:mo></m:mrow></m:mrow></m:math>.</item>
         <item><emphasis>Decide the number of bars or intervals needed for the histogram</emphasis>. These <term id="term-00005">intervals</term> can also be called <term id="term-00008">classes</term> or <term id="term-00009">bins</term>, and they represent the data. Many histograms consist of anywhere from five to 15 bars or classes for clarity. The number of intervals chosen will depend on how the data is spread out, and this value may need to be adjusted to more accurately reflect the data. The number of bars needs to be chosen. For now, refer to this number as <m:math><m:mtext>k</m:mtext></m:math>.</item>
-        <item><emphasis>Divide the range <m:math><m:mstyle mathvariant="bold"><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ending value</m:mtext><m:mo>⁢</m:mo><m:mi>−</m:mi><m:mtext>starting value</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mstyle></m:math> by the <m:math><m:mstyle mathvariant="bold"><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>k</m:mi><m:mo>⁢</m:mo><m:mi>−</m:mi><m:mn>1</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mstyle></m:math> and round to an appropriate interval width</emphasis>. Round this number up to an appropriate decimal for your bins. Subtracting one from the desired number of intervals accounts for the number of gaps between the intervals (5 intervals will have 4 dividers between them). This number needs to be rounded to an appropriate interval width. For these examples, it is okay to round this number to the nearest whole number or to within 1 decimal. This number will be referred to as the interval width. </item>
-        <item><emphasis>Add the interval width to the starting value to create the separate intervals until a list of desired intervals has been created</emphasis>. At this point, there will be a list of <m:math><m:mi>k</m:mi></m:math> numbers. At this point, the analyst can choose how to display the intervals. Interval endpoints can be shown on the histogram, or midpoints can be shown alternatively. </item>
+        <item><emphasis>Divide the range <m:math><m:mstyle mathvariant="bold"><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>ending value</m:mtext><m:mo>⁢</m:mo><m:mi>−</m:mi><m:mtext>starting value</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mstyle></m:math> by <m:math><m:mstyle mathvariant="bold"><m:mi>k</m:mi></m:mstyle></m:math> and round to an appropriate interval width</emphasis>. Round this number up to an appropriate decimal for your bins. This number needs to be rounded to an appropriate interval width. For these examples, it is okay to round this number to the nearest whole number or to within 1 decimal. This number will be referred to as the interval width. </item>
+        <item><emphasis>Add the interval width to the starting value to create the separate intervals until a list of desired intervals has been created</emphasis>. At this point, there will be a list of <m:math><m:mi>k</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:math> numbers. At this point, the analyst can choose how to display the intervals. Interval endpoints can be shown on the histogram, or midpoints can be shown alternatively. </item>
         <item><emphasis>Match each data point into its appropriate interval and create the histogram</emphasis>. From here, a histogram can be created. </item>
       </list>
       <para id="para-00006">These steps are demonstrated in the next example. </para>
     </section>
     <example id="exampid1">
+      <exercise id="exer-00002">
+        <problem id="prob-00002">
       <para id="element-743">The following data are the heights (in inches to the nearest half inch) of 100 semiprofessional soccer players. The heights are <emphasis>continuous</emphasis> data, since height is measured. <newline/>60; 60.5; 61; 61; 61.5 <newline/>63.5; 63.5; 63.5 <newline/>64; 64; 64; 64; 64; 64; 64; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5; 64.5 <newline/>66; 66; 66; 66; 66; 66; 66; 66; 66; 66; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 66.5; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5; 67.5 <newline/>68; 68; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69; 69.5; 69.5; 69.5; 69.5; 69.5 <newline/>70; 70; 70; 70; 70; 70; 70.5; 70.5; 70.5; 71; 71; 71 <newline/>72; 72; 72; 72.5; 72.5; 73; 73.5 <newline/>74 </para>
+        </problem>
+        <solution id="sol-00001">
       <para id="element-364">
         <list list-type="enumerated" id="list-00004">
           <item><emphasis>Find the minimum and maximum data value</emphasis>. The smallest data value is 60, and the largest value is 74.</item>
@@ -112,19 +116,15 @@
           </item>
         </list>
       </para>
-      <para id="element-906">60 – 0.05 = 59.95 which is more precise than, say, 61.5 by one decimal place. The starting point is, then, 59.95.</para>
+      <para id="element-906">60 – 0.05 = 59.95, which is more precise than, say, 61.5 by one decimal place. The starting point is, then, 59.95.</para>
       <para id="element-291">The largest value is 74, so 74 + 0.05 = 74.05 is the ending value.</para>
       <list list-type="enumerated" start-value="3" id="list-00005">
         <item><emphasis>Find the range of the starting and ending values of the histogram</emphasis>. In this example, the range is: <m:math><m:mrow><m:mn>74.05</m:mn><m:mo>−</m:mo><m:mn>59.95</m:mn><m:mo>=</m:mo><m:mn>14.1</m:mn></m:mrow></m:math>.</item>
         <item><emphasis>Decide the number of bars or intervals needed for the histogram</emphasis>. For this example, we will choose eight bars. This is a choice by the researcher based on the spread of the data. Let k=8.</item>
-        <item><emphasis>Divide the range (ending value – starting value) by the (k – 1) and round to an appropriate interval width</emphasis>. In this example, we want 8 intervals so we will have 7 gaps (or dividers) between the intervals. We compute that <m:math><m:mrow><m:mn>14.1</m:mn><m:mo>÷</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>2.014</m:mn></m:mrow></m:math>.</item>
+        <item><emphasis>Divide the range (ending value – starting value) by k and round to an appropriate interval width</emphasis>. In this example, we divide the range by the 8 intervals. We compute that <m:math><m:mrow><m:mn>14.1</m:mn><m:mo>÷</m:mo><m:mn>8</m:mn><m:mo>=</m:mo><m:mn>1.7625</m:mn></m:mrow></m:math>.</item>
       </list>
-      <equation class="unnumbered" id="element-2133">
-        <label/>
-        <m:math><m:mtable><m:mtr><m:mtd><m:mn>74.05</m:mn><m:mo>−</m:mo><m:mn>59.95</m:mn><m:mo>=</m:mo><m:mn>14.1</m:mn></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>14.1</m:mn><m:mo>÷</m:mo><m:mn>7</m:mn><m:mo>=</m:mo><m:mn>2.014</m:mn></m:mtd></m:mtr></m:mtable></m:math>
-      </equation>
       <note id="id7476385">
-        <para id="fs-idm11623536">We will round to the nearest whole number, two, and make each bar or class interval two units wide. Rounding to two is one way to prevent a value from falling on a boundary. Alternatively 2.1 would have worked for this example, but two is easier to do calculations with and will appropriately capture the starting and ending values for this histogram.</para>
+        <para id="fs-idm11623536">We will round to the nearest whole number, two, and make each bar or class interval two units wide. Rounding to two is one way to prevent a value from falling on a boundary. Alternatively, 1.8 would have worked for this example, but two is easier to do calculations with and will appropriately capture the starting and ending values for this histogram.</para>
       </note>
       <para id="element-209">
         <list list-type="enumerated" start-value="6" id="list-00006">
@@ -191,7 +191,7 @@
               <entry>67.95</entry>
               <entry>69.95</entry>
               <entry>17</entry>
-              <entry>0.18</entry>
+              <entry>0.17</entry>
             </row>
             <row>
               <entry>69.95</entry>
@@ -272,7 +272,7 @@
               <entry>69.95</entry>
               <entry>68.95</entry>
               <entry>17</entry>
-              <entry>0.18</entry>
+              <entry>0.17</entry>
             </row>
             <row>
               <entry>69.95</entry>
@@ -304,6 +304,8 @@
           <image src="../../media/fig-heights-midpoints.png" mime-type="image/png"/>
         </media>
       </figure>
+        </solution>
+      </exercise>
     </example>
     <note id="fs-idp304592" class="statistics try">
       <label/>
@@ -776,7 +778,7 @@
       <example id="fs-idp7658080">
             <exercise id="fs-idp4161680">
           <problem id="fs-idm51003184">
-            <para id="fs-idm34305376">The following data shows the Annual Consumer Price Index, each month, for ten years. Construct a time series graph for the Annual Consumer Price Index data only.</para>
+            <para id="fs-idm34305376">The following data show the Annual Consumer Price Index, each month, for ten years. Construct a time series graph for the Annual Consumer Price Index data only.</para>
             <table id="fs-idp49086512" summary="">
               <tgroup cols="8">
                 <colspec colnum="1" colname="c1" align="center"/>
@@ -1161,7 +1163,7 @@
         <para id="eip-670">Time series graphs perhaps are the most abused. A plot of some variable across time should never be presented on axes that change part way across the page either in the vertical or horizontal dimension. Perhaps the time frame is changed from years to months. Perhaps this is to save space or because monthly data was not available for early years. In either case this confounds the presentation and destroys any value of the graph. If this is not done to purposefully confuse the reader, then it certainly is either lazy or sloppy work.</para>
         <para id="eip-123">Changing the units of measurement of the axis can smooth out a drop or accentuate one. If you want to show large changes, then measure the variable in small units (pennies rather than thousands of dollars). And of course to continue the fraud, be sure that the axis does not begin at the origin. If it begins at the origin, then it becomes apparent that the axis has been manipulated.</para>
         <para id="eip-958">Perhaps you have a client that is concerned with the volatility of the portfolio you manage. An easy way to present the data is to use long time periods on the time series graph. Use months or better, quarters rather than daily or weekly data. If that doesn't get the volatility down then spread the time axis relative to the rate of return or portfolio valuation axis. If you want to show "quick" dramatic growth, then shrink the time axis. Any positive growth will show visually "high" growth rates. Do note that if the growth is negative then this trick will show the portfolio is collapsing at a dramatic rate.</para>
-        <para id="eip-757">Again, the goal of descriptive statistics is to convey meaningful visuals that tell the story of the data. Purposeful manipulation is fraud and unethical at the worst, but even at its best, making these type of errors will lead to confusion on the part of the analyst.</para>
+        <para id="eip-757">Again, the goal of descriptive statistics is to convey meaningful visuals that tell the story of the data. Purposeful manipulation is fraud and unethical at the worst, but even at its best, making these types of errors will lead to confusion on the part of the analyst.</para>
       </section>
     </section>
     <section id="fs-idm65232944" class="references">
@@ -1179,7 +1181,7 @@
     </section>
     <section id="fs-idp3035824" class="summary">
       <title>Chapter Review</title>
-      <para id="fs-idp16958096">A <emphasis>histogram</emphasis> is a graphic version of a frequency distribution. The graph consists of bars of equal width drawn adjacent to each other. The horizontal scale represents classes of quantitative data values and the vertical scale represents frequencies. The heights of the bars correspond to frequency values. Histograms are typically used for large, continuous, quantitative data sets. A frequency polygon can also be used when graphing large data sets with data points that repeat. The data values usually go on the <m:math><m:mi>x</m:mi></m:math>-axis with the frequency being graphed on the <m:math><m:mi>y</m:mi></m:math>-axis. Time series graphs can be helpful when looking at large amounts of data for one variable over a period of time.</para>
+      <para id="fs-idp16958096">A <emphasis>histogram</emphasis> is a graphic version of a frequency distribution. The graph consists of bars of equal width drawn adjacent to each other. The horizontal scale represents classes of quantitative data values and the vertical scale represents frequencies. The heights of the bars correspond to frequency values. Histograms are typically used for large, continuous, quantitative data sets. A frequency polygon can also be used when graphing large data sets with data points that repeat. The data usually go on the <m:math><m:mi>x</m:mi></m:math>-axis with the frequency being graphed on the <m:math><m:mi>y</m:mi></m:math>-axis. Time series graphs can be helpful when looking at large amounts of data for one variable over a period of time.</para>
     </section>
     <section id="fs-idm3046592" class="practice">
             <exercise id="eip-341">
@@ -2531,5 +2533,8 @@
     </definition><definition id="relfreq">
       <term>Relative Frequency</term>
       <meaning id="id5747717"> the ratio of the number of times a value of the data occurs in the set of all outcomes to the number of all outcomes</meaning>
+    </definition><definition id="def-00001">
+      <term>Time Series Graph</term>
+      <meaning>a graph that plots the values of a variable in chronological order, with time increments on the horizontal axis and the values of the variable on the vertical axis</meaning>
     </definition></glossary>
 </document>

@@ -1,0 +1,386 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Empirical versus Theoretical Distributions</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+    <md:title>Empirical versus Theoretical Distributions</md:title>
+    <md:content-id>m00009</md:content-id>
+    <md:uuid>7a6060fd-a102-40a8-97c2-ef66d86a78aa</md:uuid>
+  </metadata>
+  <content>
+    <para id="para-00001">As we have seen in this chapter, we can visualize data with bar charts, line charts, histograms, and other methods. In this section, we will take a look at different ways real-world, or empirical, data can relate to theoretical distributions. When visualizing data from a real data set, the distribution is called an <term id="term-00001">empirical distribution</term>. Sometimes the empirical distribution can look similar to a <term id="term-00002">theoretical distribution</term>, which is a known distribution that we use for inferential statistics.</para>
+    <section id="sect-00001">
+      <title>The Law of Large Numbers</title>
+      <para id="para-00002">Before we can discuss empirical versus theoretical distributions, we need to discuss an incredibly important aspect of statistics: the <term id="term-00003">Law of Large Numbers</term>. The Law of Large Numbers states:</para>
+      <para id="para-00003"><emphasis effect="italics">As a data set grows large enough or an experiment is repeated enough times, the results will begin to tend towards the true theoretical outcome.</emphasis></para>
+      <para id="para-00004">People frequently abuse the Law of Large Numbers, but not you! Often, people believe the Law of Large Numbers means a desired outcome will “even out” with enough experiment repetition. This kind of thinking is particularly prevalent with gambling, where a gambler who is losing may believe that the Law of Large Numbers will eventually swing their luck the other way. This is not how that law works. If anything, the Law of Large Numbers will explain why most gambling games are designed to be lost in the long term.</para>
+      <para id="para-00005">The Law of Large Numbers says that when an experiment is repeated enough or enough data is collected, the data will eventually emulate a known theoretical outcome. Another way to think about this is that relative frequencies will approach theoretical probabilities over enough repetition.</para>
+      <para id="para-00006">Here is one easy way to think about this. Let’s say that we flip a fair coin ten times, and these are the outcomes:</para>
+      <list list-type="bulleted" id="list-00001">
+        <item>Heads: 3 times</item>
+        <item>Tails: 7 times</item>
+      </list>
+      <para id="para-00007">We discussed how probability measures how likely an outcome is to occur in <link document="m46913">Chapter 1</link>. For a fair coin, most people know that the probability of heads or tails is 50%. In our experiment, we got heads 30% of the time and tails 70% of the time. Does this mean the coin is biased? No! It means that we have not repeated this experiment enough times. This is exactly what the Law of Large Numbers is talking about. Let’s continue repeating this experiment and notice how the outcomes are distributed as we continue flipping the coin with the following comparison table:</para>
+      <table summary="The table shows the number of coin flips and the resulting counts and relative frequencies of heads and tails as the number of flips increases." id="table-00001">
+        <tgroup cols="5">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <thead>
+            <row>
+              <entry>Number of flips (n)</entry>
+              <entry>Heads</entry>
+              <entry>Tails</entry>
+              <entry>Relative frequency of heads</entry>
+              <entry>Relative frequency of tails</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>10</entry>
+              <entry>3</entry>
+              <entry>7</entry>
+              <entry>30.00%</entry>
+              <entry>70.00%</entry>
+            </row>
+            <row>
+              <entry>100</entry>
+              <entry>44</entry>
+              <entry>56</entry>
+              <entry>44.00%</entry>
+              <entry>56.00%</entry>
+            </row>
+            <row>
+              <entry>1,000</entry>
+              <entry>494</entry>
+              <entry>506</entry>
+              <entry>49.40%</entry>
+              <entry>50.60%</entry>
+            </row>
+            <row>
+              <entry>1,000,000</entry>
+              <entry>500,235</entry>
+              <entry>499,765</entry>
+              <entry>50.02%</entry>
+              <entry>49.98%</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="para-00008">The table shows that as n gets larger, the relative frequency of heads and tails begins to very closely match the theoretical probability of a 50% chance of heads or tails. This is what the Law of Large Numbers guarantees. Extending this same logic to our previous gambling example, we would find that, in the long term, the gambler is destined to lose money in most gambling games.</para>
+      <para id="para-00009">It is important to keep this idea in mind, as it can be incredibly impractical or unlikely that “enough” data can be collected or an experiment can be run “enough” times for the empirical data to begin to mimic the theoretical. We will discuss many ways to work around this as the chapters progress.</para>
+    </section>
+    <section id="sect-00002">
+      <title>A Preview of Theoretical Distributions</title>
+      <para id="para-00010">Statistics has a variety of theoretical distributions. We have learned that quantitative data can be discrete or continuous. To that end, there are theoretical distributions that align with discrete or continuous data or outcomes.</para>
+      <para id="para-00011">Some known discrete theoretical distributions look like this:</para>
+      <figure class="scaled-down" id="fig-00001">
+        <media alt="Three examples of discrete theoretical distributions shown as bar graphs with separated bars.">
+          <image src="../../media/CNX_Stats_C02_M10_001.png" mime-type="image/png"/>
+        </media>
+      </figure>
+      <para id="para-00012">Some known continuous theoretical distributions look like this:</para>
+      <figure class="scaled-down" id="fig-00002">
+        <media alt="Three examples of continuous theoretical distributions shown as smooth curves.">
+          <image src="../../media/CNX_Stats_C02_M10_002.png" mime-type="image/png"/>
+        </media>
+      </figure>
+      <para id="para-00013">Notice that the discrete distribution utilizes bar graphs with separation. This typically represents the fact that outcomes are countable, and therefore there is a clear separation between them. For continuous distributions, since outcomes are measured there is no clear separation between individual outcomes and instead they are smoothed out. We will now take a look at how these distributions can arise from empirical data.</para>
+    </section>
+    <section id="sect-00003">
+      <title>Discrete Data and Outcomes and Empirical versus Theoretical Discrete Distributions</title>
+      <para id="para-00014">With discrete data, the way we view a distribution will often be tied to the way we are viewing the data. To understand this, let’s consider rolling a fair six-sided die 24 times. What is the probability of getting any particular outcome? It would be <m:math><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:math>. Since each outcome has an equal chance of happening, we call this a uniform distribution. Let’s compare the outcomes of rolling our die 24 times versus the theoretical outcome:</para>
+      <table summary="The table shows each face of a six-sided die, the number of times it was rolled in 24 rolls, and the resulting relative frequency." id="table-00002">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <thead>
+            <row>
+              <entry>Face</entry>
+              <entry>Number of Times Rolled</entry>
+              <entry>Relative Frequency</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>1</entry>
+              <entry>4</entry>
+              <entry>16.7%</entry>
+            </row>
+            <row>
+              <entry>2</entry>
+              <entry>5</entry>
+              <entry>20.8%</entry>
+            </row>
+            <row>
+              <entry>3</entry>
+              <entry>7</entry>
+              <entry>29.2%</entry>
+            </row>
+            <row>
+              <entry>4</entry>
+              <entry>2</entry>
+              <entry>8.3%</entry>
+            </row>
+            <row>
+              <entry>5</entry>
+              <entry>1</entry>
+              <entry>4.2%</entry>
+            </row>
+            <row>
+              <entry>6</entry>
+              <entry>5</entry>
+              <entry>20.8%</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="para-00015">At only 24 rolls, the relative frequencies do not come anywhere near the theoretical probabilities, but this is to be expected because we understand the Law of Large Numbers. However, if we were to roll the die 1,000,000 times then we would expect the outcomes to begin to match the theoretical probabilities. We can visualize the outcomes against their theoretical probabilities in the figure below:</para>
+      <figure class="scaled-down" id="fig-00003">
+        <media alt="A bar graph comparing the empirical relative frequencies of rolling a die many times against the theoretical uniform probability of one-sixth for each face. The empirical bars closely match the theoretical value.">
+          <image src="../../media/CNX_Stats_C02_M10_003.png" mime-type="image/png"/>
+        </media>
+      </figure>
+      <para id="para-00016">We can see how the Law of Large Numbers is alive and well within this situation: the empirical distribution clearly follows a uniform distribution when the die is rolled enough times.</para>
+      <para id="para-00017">What often happens with discrete data is we make slight adjustments in how we think about the outcomes. You will deepen this skill in upcoming chapters, but we will preview how this works now. Suppose that instead of recording the outcomes, we tweak the way we think about outcomes. Instead of merely recording how many times any particular face of a die appears, we are instead interested in the number of times we roll a five within six rolls. Such tweaks in reasoning are common for discrete outcomes. In that case, in six rolls, what is the maximum number of times we could get a five? The maximum is six times. However, what do you think the probability of actually getting a five in every roll is? Such questions will be dissected in a later chapter, but it is interesting to note that outcomes can be modeled with this distribution:</para>
+      <figure class="scaled-down" id="fig-00004">
+        <media alt="A bar graph showing the distribution for the number of times a five is rolled within six rolls of a die. The distribution is skewed to the right, with the highest bars at zero and one.">
+          <image src="../../media/CNX_Stats_C02_M10_004.png" mime-type="image/png"/>
+        </media>
+      </figure>
+      <para id="para-00018">It is interesting to note that a tweak in how we view a situation can significantly impact the distribution. Pay careful attention to this in upcoming chapters.</para>
+    </section>
+    <section id="sect-00004">
+      <title>Distributions for Continuous Data</title>
+      <para id="para-00019">For continuous data, histograms are typically used to visualize how data is distributed. Below are a few ways that empirical data can relate to theoretical distributions.</para>
+      <section id="sect-00005">
+        <title>Empirical Data and the Normal Distribution</title>
+        <para id="para-00020">You will learn in upcoming chapters about the normal distribution, which follows a bell-curve shape. This is a theoretical distribution that many types of data naturally follow, but how clearly the bell shape appears in a histogram depends on the amount of data collected. For instance, if we collected the heights of 100 students at a college, this could be a realistic histogram:</para>
+        <figure class="scaled-down" id="fig-00005">
+          <media alt="A histogram of the heights of 100 students. The distribution is roughly symmetric but the bell shape is not clearly defined.">
+            <image src="../../media/CNX_Stats_C02_M10_005.png" mime-type="image/png"/>
+          </media>
+        </figure>
+        <para id="para-00021">The histogram seems somewhat symmetric, but it’s hard to see a clear bell shape. This is not surprising. We simply do not have enough data to have a clear shape. Now suppose we collect the heights of 10,000 students at a college. The histogram of this data could look like this:</para>
+        <figure class="scaled-down" id="fig-00006">
+          <media alt="A histogram of the heights of 10,000 students. The distribution has a much clearer bell shape, though the histogram has rough edges.">
+            <image src="../../media/CNX_Stats_C02_M10_006.png" mime-type="image/png"/>
+          </media>
+        </figure>
+        <para id="para-00022">This data has a much clearer bell shape, but the histogram has rough edges. When data is modeled in this fashion, the distribution is called an empirical distribution and shows how often any data point occurred within a sample.</para>
+        <para id="para-00023">In order to create a smoother curve, a statistician will fit a theoretical distribution to the data set. Often this process requires characteristics of the data set (such as the mean or standard deviation) to be used as inputs to a special function called a density function, which you will learn more about in a later chapter. In the case of our height data above, we can apply this process to generate the smooth normal curve associated with it:</para>
+        <figure class="scaled-down" id="fig-00007">
+          <media alt="A histogram of the heights of 10,000 students with a smooth red normal distribution curve fitted over it. The theoretical curve aligns closely with the empirical data.">
+            <image src="../../media/CNX_Stats_C02_M10_007.png" mime-type="image/png"/>
+          </media>
+        </figure>
+        <para id="para-00024">The red curve is called a normal distribution, and you will learn more about it in upcoming chapters (including an opportunity to use the normal density function!). The red line is a theoretical distribution, but you can see the real-world data aligns very closely with the theoretical distribution.</para>
+      </section>
+      <section id="sect-00006">
+        <title>Empirical Data and the Uniform Distribution</title>
+        <para id="para-00025">As another example of continuous data, let’s say we use a random number generator to select 20,000 numbers (up to 5 decimal places) between 1 and 8. We can visualize the histogram as:</para>
+        <figure class="scaled-down" id="fig-00008">
+          <media alt="A histogram of 20,000 randomly generated numbers between 1 and 8. Most bars are roughly the same height, but some bars deviate, giving the histogram a ragged appearance.">
+            <image src="../../media/CNX_Stats_C02_M10_008.png" mime-type="image/png"/>
+          </media>
+        </figure>
+        <para id="para-00026">How would you describe this histogram? It seems like most bars are uniform in height, but then some bars deviate, making the histogram look ragged. The theoretical distribution that aligns with this histogram would be the uniform distribution. In the case of our random data above, we can once again apply the special process to fit this empirical data to the theoretical uniform distribution in red:</para>
+        <figure class="scaled-down" id="fig-00009">
+          <media alt="A histogram of 20,000 randomly generated numbers between 1 and 8 with a flat red uniform distribution curve fitted over it.">
+            <image src="../../media/CNX_Stats_C02_M10_009.png" mime-type="image/png"/>
+          </media>
+        </figure>
+        <para id="para-00027">You will learn more about the uniform distribution in upcoming chapters.</para>
+      </section>
+    </section>
+    <section id="sect-00007">
+      <title>Unknown Distributions</title>
+      <para id="para-00028">It is also possible that a set of empirical data has no known distribution. Suppose the coffee shop that we discussed in <link document="m46922">Measures of the Spread of the Data</link>, The Divine Cup, has the following distribution of wait times for 1,000 customers:</para>
+      <figure class="scaled-down" id="fig-00010">
+        <media alt="A histogram of the wait times for 1,000 customers at The Divine Cup. The histogram has two distinct peaks, one for quiet weekday visits and one for busy Saturdays.">
+          <image src="../../media/CNX_Stats_C02_M10_010.png" mime-type="image/png"/>
+        </media>
+      </figure>
+      <para id="para-00029">In this case, the empirical distribution does not seem to follow any theoretical distribution. Notice that the histogram has two distinct peaks—one from the quiet weekday visits and one from the busy Saturdays—and none of the theoretical distributions we have seen has more than one peak. This can absolutely happen, but we can still conduct meaningful analysis in this situation. Such situations will be discussed in future chapters.</para>
+    </section>
+    <section class="summary" id="sect-00008">
+      <title>Chapter Review</title>
+      <para id="para-00030">A distribution built from a real data set is called an empirical distribution, while a theoretical distribution is a known distribution used to model data and support inferential statistics. The Law of Large Numbers connects the two: as a data set grows large enough or an experiment is repeated enough times, relative frequencies approach the theoretical probabilities, so the empirical distribution begins to resemble its theoretical counterpart. The Law of Large Numbers guarantees long-run percentages; it does not promise that counts of individual outcomes will “even out.” Discrete data produce distributions displayed with separated bars, while continuous data produce histograms that can be fitted with smooth theoretical curves, such as the normal or uniform distributions, using characteristics of the data set like the mean and standard deviation as inputs. Some empirical data sets do not resemble any known theoretical distribution, and meaningful analysis is still possible in those situations.</para>
+    </section>
+    <section class="practice" id="sect-00009">
+      <title>Empirical versus Theoretical Distributions</title>
+      <exercise id="exer-00001">
+        <problem id="prob-00001">
+          <para id="para-00031">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00011">
+            <media alt="A smooth continuous curve that starts high on the left and decays toward zero as it moves to the right.">
+              <image src="../../media/CNX_Stats_C02_M10_011.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+        <solution id="sol-00001">
+          <para id="para-00032">Continuous; this is the exponential distribution.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00002">
+        <problem id="prob-00002">
+          <para id="para-00033">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00012">
+            <media alt="Six separated bars of equal height.">
+              <image src="../../media/CNX_Stats_C02_M10_012.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="para-00034">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00013">
+            <media alt="Several separated bars of varying, irregular heights.">
+              <image src="../../media/CNX_Stats_C02_M10_013.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+        <solution id="sol-00002">
+          <para id="para-00035">Discrete; this is an unknown distribution.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00004">
+        <problem id="prob-00004">
+          <para id="para-00036">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00014">
+            <media alt="A smooth continuous curve with three peaks of decreasing height.">
+              <image src="../../media/CNX_Stats_C02_M10_014.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+      <exercise id="exer-00005">
+        <problem id="prob-00005">
+          <para id="para-00037">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00015">
+            <media alt="A flat rectangular region of constant height.">
+              <image src="../../media/CNX_Stats_C02_M10_015.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+        <solution id="sol-00003">
+          <para id="para-00038">Continuous; this is the uniform distribution.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00006">
+        <problem id="prob-00006">
+          <para id="para-00039">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00016">
+            <media alt="Separated bars whose heights decrease steadily from left to right.">
+              <image src="../../media/CNX_Stats_C02_M10_016.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+      <exercise id="exer-00007">
+        <problem id="prob-00007">
+          <para id="para-00040">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00017">
+            <media alt="A smooth, symmetric bell-shaped curve.">
+              <image src="../../media/CNX_Stats_C02_M10_017.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+        <solution id="sol-00004">
+          <para id="para-00041">Continuous; this is the normal distribution.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00008">
+        <problem id="prob-00008">
+          <para id="para-00042">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
+          <figure class="scaled-down" id="fig-00018">
+            <media alt="Separated bars whose heights rise to a peak in the middle and fall off symmetrically.">
+              <image src="../../media/CNX_Stats_C02_M10_018.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+    </section>
+    <section class="free-response" id="sect-00010">
+      <title>Homework</title>
+      <exercise id="exer-00009">
+        <problem id="prob-00009">
+          <para id="para-00043">Jolene collected the heights of 30 basketball players at her school, and got the histogram below. Explain whether this data is enough to mimic a theoretical distribution.</para>
+          <figure class="scaled-down" id="fig-00019">
+            <media alt="A histogram titled Heights of 30 Basketball Players. The horizontal axis shows height in inches from 68 to 84 and the vertical axis shows the number of players. The bar heights are 3, 9, 6, 3, 5, 2, and 2, and no clear shape emerges.">
+              <image src="../../media/CNX_Stats_C02_M10_019.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+        <solution id="sol-00005">
+          <para id="para-00044">No, 30 data points is not enough for this histogram to mimic a theoretical distribution. Height data typically follows a normal distribution, so we might expect this histogram to show a bell shape, but no clear shape emerges. The Law of Large Numbers tells us the histogram would smooth out and the bell shape of the normal distribution would begin to appear.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00010">
+        <problem id="prob-00010">
+          <para id="para-00045">Ashanti is a school principal going through the attendance records of all of her 500 students. Below is a graph of her data. Is this data discrete or continuous? Do we have enough data to determine if this data mimics a theoretical distribution?</para>
+          <figure class="scaled-down" id="fig-00020">
+            <media alt="A bar graph titled Days Absent This Year for All 500 Students. The horizontal axis shows the number of days absent from 0 to 12 in whole-number steps and the vertical axis shows the number of students. The bars decrease from 164 at zero days down to small counts at higher numbers of days.">
+              <image src="../../media/CNX_Stats_C02_M10_020.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+      </exercise>
+      <exercise id="exer-00011">
+        <problem id="prob-00011">
+          <para id="para-00046">Kathy has a standard deck of cards. She selects 1 card from the deck, notes its color, and then returns the card to the deck and shuffles. She repeats this process 5 times, recording how many of the 5 draws give her a red card. What are the possible outcomes for the number of red cards Kathy observes?</para>
+        </problem>
+        <solution id="sol-00006">
+          <para id="para-00047">The outcomes are counting the potential number of red cards in 5 draws. She can get 0, 1, 2, 3, 4, or 5 red cards in 5 draws.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00012">
+        <problem id="prob-00012">
+          <para id="para-00048">Priya rolls a fair six-sided die 4 times. Instead of recording which face appears, she records how many of the 4 rolls land on an even number. What are the possible outcomes of Priya’s experiment? Are these outcomes the same as the outcomes of a single roll?</para>
+        </problem>
+      </exercise>
+      <exercise id="exer-00013">
+        <problem id="prob-00013">
+          <para id="para-00049">Malik is practicing free throws and knows from years of records that he makes 70% of his attempts. Today he takes 10 free throws and makes only 4. Malik concludes his shooting form is broken and he must relearn it. Using the Law of Large Numbers, explain whether Malik’s conclusion is justified.</para>
+        </problem>
+        <solution id="sol-00007">
+          <para id="para-00050">10 attempts is too few to justify this claim.</para>
+        </solution>
+      </exercise>
+      <exercise id="exer-00014">
+        <problem id="prob-00014">
+          <para id="para-00051">A city transportation department records the commute times of 25,000 morning commuters and draws a histogram, which forms a smooth right-skewed shape rising quickly and trailing off slowly. Draw a potential histogram for this situation. Is this data discrete or continuous? Does the department have enough data to say the data mimics a theoretical distribution, and if so, which shape from this section does it resemble?</para>
+        </problem>
+      </exercise>
+      <exercise id="exer-00015">
+        <problem id="prob-00015">
+          <para id="para-00052">A restaurant open from 11 a.m. to 10 p.m. records how many minutes each of 2,000 customers waited for a table. The histogram is below. Does this empirical distribution mimic any theoretical distribution from this section? Explain what feature of the histogram supports your answer.</para>
+          <figure class="scaled-down" id="fig-00021">
+            <media alt="A histogram titled Table Wait Times for 2,000 Restaurant Customers. The horizontal axis shows wait time for a table in minutes from 0 to 60 and the vertical axis shows the number of customers. The histogram has two distinct peaks, one near 5 to 10 minutes and another near 35 to 40 minutes.">
+              <image src="../../media/CNX_Stats_C02_M10_021.png" mime-type="image/png"/>
+            </media>
+          </figure>
+        </problem>
+        <solution id="sol-00008">
+          <para id="para-00053">No. The histogram has two peaks, and every theoretical shape in the section is single-peaked or flat.</para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+  <glossary>
+    <definition id="def-00001">
+      <term>Empirical Distribution</term>
+      <meaning>the distribution of the values in a real-world, or observed, data set; it shows how often each value or interval of values actually occurred in the sample.</meaning>
+    </definition>
+    <definition id="def-00002">
+      <term>Theoretical Distribution</term>
+      <meaning>a known distribution, described by a mathematical model, that is used for inferential statistics; empirical data can be compared to, or modeled by, a theoretical distribution.</meaning>
+    </definition>
+    <definition id="def-00003">
+      <term>Law of Large Numbers</term>
+      <meaning>a principle stating that as a data set grows large enough, or an experiment is repeated enough times, the relative frequencies of outcomes tend toward the true theoretical probabilities.</meaning>
+    </definition>
+  </glossary>
+</document>

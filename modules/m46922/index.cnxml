@@ -9,52 +9,49 @@
   <content>
     <para id="element-683">An important characteristic of any set of data is the variation in the data. In some data sets, the data values are concentrated closely near the mean; in other data sets, the data values are more widely spread out from the mean. The most common measure of variation, or spread, is the standard deviation. The <term id="term-00001">standard deviation</term> is a number that measures how far data values are from their mean.</para>
     <section id="fs-idm94849104">
-      <title>The standard deviation</title>
+      <title>The Intuition Behind the Standard Deviation</title>
       <para id="para-00004">The standard deviation has two main uses: </para>
       <list id="eip-id1169998044652" list-type="bulleted">
         <item>provides a numerical measure of the overall amount of variation in a data set, and</item>
         <item>can be used to determine whether a particular data value is close to or far from the mean.</item>
       </list>
+      <para id="fs-idm111390400">The standard deviation is always positive or zero. The standard deviation is small when the data are all highly concentrated close to the mean, exhibiting little variation or spread. The standard deviation is larger when the data values are more spread out from the mean, exhibiting more variation. Below are two examples that demonstrate how the standard deviation can be used.</para>
       <section id="fs-idm34509216">
-        <title>The standard deviation provides a measure of the overall variation in a data set</title>
-        <para id="fs-idm111390400">The standard deviation is always positive or zero. The standard deviation is small when the data are all highly concentrated close to the mean, exhibiting little variation or spread. The standard deviation is larger when the data values are more spread out from the mean, exhibiting more variation.</para>
-        <para id="eip-419">Suppose that we are studying the amount of time customers wait in line at the checkout at supermarket <m:math><m:mi>A</m:mi></m:math> and supermarket <m:math><m:mi>B</m:mi></m:math>. The average wait time at both supermarkets is five minutes. At supermarket <m:math><m:mi>A</m:mi></m:math>, the standard deviation for the wait time is two minutes; at supermarket <m:math><m:mi>B</m:mi></m:math> the standard deviation for the wait time is four minutes.</para>
-        <para id="fs-idm8407856">Because supermarket <m:math><m:mi>B</m:mi></m:math> has a higher standard deviation, we know that there is more variation in the wait times at supermarket <m:math><m:mi>B</m:mi></m:math>. Overall, wait times at supermarket <m:math><m:mi>B</m:mi></m:math> are more spread out from the average; wait times at supermarket <m:math><m:mi>A</m:mi></m:math> are more concentrated near the average.</para>
+        <title>An Example of How the Standard Deviation Provides a Numerical Measure of the Overall Amount of Variation in a Data Set</title>
+        <para id="fs-idm111390401">Suppose there are two coffee shops you like to go to: The Divine Cup and Meg’s Daily Grind. Both coffee shops are popular, and the mean wait time before you can order a drink is 6 minutes at each. The Divine Cup, however, is in a neighborhood that is extremely quiet on weekdays but slammed on Saturdays, while Meg’s Daily Grind is in a strip mall and tends to have steady business. While both coffee shops have the same mean wait time, which shop do you think would have greater variation in wait times?</para>
+        <para id="eip-419">The Divine Cup has a mean wait time of 6 minutes with a standard deviation of 5 minutes. Because wait times here swing between quiet weekdays and busy Saturdays, your wait commonly ranges anywhere from 1 minute to 11 minutes. We will learn later in this section that, no matter how the wait times are distributed, you are unlikely to wait more than 21 minutes to order your coffee.</para>
+        <para id="fs-idm8407856">Meg’s Daily Grind has a mean wait time of 6 minutes with a standard deviation of only 1 minute. Because business is steady, most of the time you will wait between 5 and 7 minutes. We will learn later in this section that you will almost never wait less than 3 minutes or more than 9 minutes to order a coffee.</para>
       </section>
       <section id="fs-idm58314928">
-        <title>The standard deviation can be used to determine whether a data value is close to or far from the mean.</title>
-        <example id="exam-00001">
-          <para id="fs-idm19508768">Suppose that Rosa and Binh both shop at supermarket <m:math><m:mi>A</m:mi></m:math>. Rosa waits at the checkout counter for seven minutes and Binh waits for one minute. At supermarket <m:math><m:mi>A</m:mi></m:math>, the mean waiting time is five minutes and the standard deviation is two minutes. The standard deviation can be used to determine whether a data value is close to or far from the mean.</para>
-          <para id="eip-992">
-            <emphasis>Rosa waits for seven minutes:</emphasis>
-          </para>
-          <list id="eip-id1172354240261">
-            <item>Seven is two minutes longer than the average of five; two minutes is equal to one standard deviation.</item>
-            <item>Rosa's wait time of seven minutes is <emphasis>two minutes longer than the average</emphasis> of five minutes.</item>
-            <item>Rosa's wait time of seven minutes is <emphasis>one standard deviation above the average</emphasis> of five minutes.</item>
-          </list>
-        </example>
-        <para id="eip-973">
-          <emphasis>Binh waits for one minute.</emphasis>
-        </para>
-        <list id="eip-id1164884926039">
-          <item>One is four minutes less than the average of five; four minutes is equal to two standard deviations.</item>
-          <item>Binh's wait time of one minute is <emphasis>four minutes less than the average</emphasis> of five minutes.</item>
-          <item>Binh's wait time of one minute is <emphasis>two standard deviations below the average</emphasis> of five minutes.</item>
-          <item>A data value that is two standard deviations from the average is just on the borderline for what many statisticians would consider to be far from the average. Considering data to be far from the mean if it is more than two standard deviations away is more of an approximate "rule of thumb" than a rigid rule. In general, the shape of the distribution of the data affects how much of the data is further away than two standard deviations. (You will learn more about this in later chapters.)</item>
+        <title>An Example of How the Standard Deviation Can Be Used to Determine Whether a Particular Data Value Is Close to or Far from the Mean</title>
+        <para id="fs-idm19508768">Once you know a standard deviation, you can use it to determine how close a data value is to the mean. Let’s return to Meg’s Daily Grind, where we have a mean wait time of 6 minutes and a standard deviation of 1 minute.</para>
+        <list id="eip-id1172354240261">
+          <item>If you wait 5 minutes or 7 minutes to order your coffee, either wait time is one standard deviation from the mean.</item>
+          <item>If you wait 4 minutes or 8 minutes to order your coffee, either wait time is two standard deviations from the mean.</item>
+          <item>If you wait 12 minutes to order your coffee, this is six standard deviations away from the mean. We will learn that it is extraordinarily unlikely for this type of situation to occur; data values this far from the mean are extremely rare.</item>
         </list>
-        <para id="element-517">The number line may help you understand standard deviation. If we were to put five and seven on a number line, seven is to the right of five. We say, then, that seven is <emphasis>one</emphasis> standard deviation to the <emphasis>right</emphasis> of five because 5 + (1)(2) = 7.</para>
-        <para id="fs-idm83232288">If one were also part of the data set, then one is <emphasis>two</emphasis> standard deviations to the <emphasis>left</emphasis> of five because 5 + (–2)(2) = 1.</para>
+        <para id="fs-idm83232288">As a rough rule of thumb, many statisticians consider a data value to be far from the mean when it is more than two standard deviations away. The shape of the distribution affects how much of the data lies more than two standard deviations from the mean; you will learn more about this in later chapters.</para>
+      </section>
+      <section id="fs-idm-numberline">
+        <title>Visualizing Standard Deviations with the Number Line</title>
+        <para id="element-517">A number line can be a useful way to visualize standard deviations. Using our coffee shop examples from earlier, we can visualize each coffee shop and its spread of possible wait times on the following number lines:</para>
         <figure class="scaled-down" id="fs-idm12176304">
-          <media id="id7156187" alt="This shows a number line in intervals of 1 from 0 to 7.">
-            <image src="../../media/fig-ch02_09_01.png" mime-type="image/png"/>
+          <media id="id7156187" alt="A number line for The Divine Cup showing a mean wait time of 6 minutes with a standard deviation of 5 minutes. The mean is marked at 6, one standard deviation below at 1 minute, and one standard deviation above at 11 minutes.">
+            <image src="../../media/fig-ch02_09_10.png" mime-type="image/png"/>
           </media>
         </figure>
+        <figure class="scaled-down" id="fs-idm12176305">
+          <media alt="A number line for Meg’s Daily Grind showing a mean wait time of 6 minutes with a standard deviation of 1 minute. The mean is marked at 6, one standard deviation below at 5 minutes, and one standard deviation above at 7 minutes.">
+            <image src="../../media/fig-ch02_09_11.png" mime-type="image/png"/>
+          </media>
+        </figure>
+        <para id="fs-idm-nl2">Once we know what a single standard deviation represents in context, we can relabel any number line in terms of standard deviations away from the mean.</para>
+        <para id="fs-idm-nl3">We use the mean and standard deviation to help define how far data values are from the mean, which we can write as:</para>
         <list id="eip-id1164316275630">
           <item>In general, a <emphasis>value = mean + (#ofSTDEV)(standard deviation)</emphasis></item>
           <item>where #ofSTDEVs = the number of standard deviations</item>
           <item>#ofSTDEV does not need to be an integer</item>
-          <item>One is <emphasis>two standard deviations less than the mean</emphasis> of five because: 1 = 5 + (–2)(2).</item>
+          <item>At Meg’s Daily Grind, a wait time of 4 minutes is <emphasis>two standard deviations less than the mean</emphasis> because: 4 = 6 + (–2)(1).</item>
         </list>
         <para id="eip-922">The equation <emphasis>value = mean + (#ofSTDEVs)(standard deviation)</emphasis> can be expressed for a sample and for a population.
           <list id="eip-id1164892626854">
@@ -101,7 +98,7 @@
         <para id="eip-idp582096"><emphasis>In practice, USE A CALCULATOR OR COMPUTER SOFTWARE TO CALCULATE THE STANDARD DEVIATION. If you are using a TI-83, 83+, 84+ calculator, you need to select the appropriate standard deviation <m:math><m:mstyle mathvariant="bold"><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub></m:mstyle></m:math> or <m:math><m:mstyle mathvariant="bold"><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:mstyle></m:math> from the summary statistics.</emphasis> We will concentrate on using and interpreting the information that the standard deviation gives us. However you should study the following step-by-step example to help you understand how the standard deviation measures variation from the mean. (The calculator instructions appear at the end of this example.)</para>
       </note>
       <example id="element-655">
-        <para id="element-440">In a fifth grade class, the teacher was interested in the average age and the sample standard deviation of the ages of the students. The following data are the ages for a SAMPLE of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> fifth grade students. The ages are rounded to the nearest half year: </para>
+        <para id="element-440">In a fifth-grade class, the teacher was interested in the average age and the sample standard deviation of the ages of the students. The following data are the ages for a SAMPLE of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> fifth-grade students. The ages are rounded to the nearest half year: </para>
         <para id="element-433">9; 9.5; 9.5; 10; 10; 10; 10; 10.5; 10.5; 10.5; 10.5; 11; 11; 11; 11; 11; 11; 11.5; 11.5; 11.5</para>
           <equation class="unnumbered" id="element-320">
           <label/>
@@ -252,10 +249,10 @@
                 </note>
               </item>
               <item>(<m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> + 1s) = 10.525 + (1)(0.715891) = 11.24</item>
-              <item>(<m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> – <m:math><m:mn>2</m:mn><m:mi>s</m:mi></m:math>) = 10.53 – (2)(0.715891) = 9.09</item>
+              <item>(<m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> – <m:math><m:mn>2</m:mn><m:mi>s</m:mi></m:math>) = 10.525 – (2)(0.715891) = 9.09</item>
               <item>
                 <list id="element-364" list-type="bulleted">
-                  <item>(<m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> – <m:math><m:mn>1.5</m:mn><m:mi>s</m:mi></m:math>) = 10.53 – (1.5)(0.715891) = 9.45</item>
+                  <item>(<m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> – <m:math><m:mn>1.5</m:mn><m:mi>s</m:mi></m:math>) = 10.525 – (1.5)(0.715891) = 9.45</item>
                   <item>
                     <m:math><m:mo>(</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mi>s</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>10.53</m:mn><m:mo>+</m:mo><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0.715891</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>11.60</m:mn></m:math>
                   </item>
@@ -276,9 +273,8 @@
           </problem>
         </exercise>
       </note>
-      <section id="fs-idm66792288">
-        <title>Explanation of the standard deviation calculation shown in the table</title>
-        <para id="element-877">The deviations show how spread out the data are about the mean. The data value 11.5 is farther from the mean than is the data value 11 which is indicated by the deviations 0.97 and 0.47. A positive deviation occurs when the data value is greater than the mean, whereas a negative deviation occurs when the data value is less than the mean. The deviation is –1.525 for the data value nine. <emphasis>If you add the deviations, the sum is always zero</emphasis>. (For <link target-id="element-655"/>, there are <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> deviations.) So you cannot simply add the deviations to get the spread of the data. By squaring the deviations, you make them positive numbers, and the sum will also be positive. The variance, then, is the average squared deviation.</para>
+      <para id="para-00017">Explanation of the standard deviation calculation shown in the table</para>
+        <para id="element-877">The deviations show how spread out the data are about the mean. The data value 11.5 is farther from the mean than is the data value 11, which is indicated by the deviations 0.975 and 0.475. A positive deviation occurs when the data value is greater than the mean, whereas a negative deviation occurs when the data value is less than the mean. The deviation is –1.525 for the data value nine. <emphasis>If you add the deviations, the sum is always zero</emphasis>. (For <link target-id="element-655"/>, there are <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math> deviations.) So you cannot simply add the deviations to get the spread of the data. By squaring the deviations, you make them positive numbers, and the sum will also be positive. The variance, then, is the average squared deviation.</para>
         <para id="element-969">The variance is a squared measure and does not have the same units as the data. Taking the square root solves the problem. The standard deviation measures the spread in the same units as the data.</para>
         <para id="eip-880">Notice that instead of dividing by <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math>, the calculation divided by <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>19</m:mn></m:math> because the data is a sample. For the <emphasis>sample</emphasis> variance, we divide by the sample size minus one (<m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>). Why not divide by <m:math><m:mi>n</m:mi></m:math>? The answer has to do with the population variance. <emphasis>The sample variance is an estimate of the population variance.</emphasis> Based on the theoretical mathematics that lies behind these calculations, dividing by (<m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>) gives a better estimate of the population variance.</para>
           <note id="eip-718">
@@ -485,18 +481,17 @@
             </solution>
           </exercise>
           <para id="element-242">The long left whisker in the box plot is reflected in the left side of the histogram. The spread of the exam scores in the lower 50% is greater (73 – 33 = 40) than the spread in the upper 50% (100 – 73 = 27). The histogram, box plot, and chart all reflect this. There are a substantial number of A and B grades (80s, 90s, and 100). The histogram clearly shows this. The box plot shows us that the middle 50% of the exam scores (<m:math><m:mi>IQR</m:mi><m:mo>=</m:mo><m:mn>29</m:mn></m:math>) are Ds, Cs, and Bs. The box plot also shows us that the lower 25% of the exam scores are Ds and Fs.</para>
-          <para id="para-00005">As an additional note, the cumulative frequencies do not add to 1 due to accumulated rounding. Another way to approach this table would be to round in such a way that ensures the table sums to 1. </para>
+          <para id="para-00005">As an additional note, the cumulative relative frequencies do not reach 1 due to accumulated rounding. Another way to approach this table would be to round in such a way that ensures the table sums to 1. </para>
         </example>
           <note id="fs-idp3274832" class="statistics try ">
           <label/>
           <title>Try It</title>
           <exercise id="fs-idm22220656">
             <problem id="fs-idm22220400">
-              <para id="fs-idm125056">The following data show the different types of pet food stores in the area carry. <newline/>6; 6; 6; 6; 7; 7; 7; 7; 7; 8; 9; 9; 9; 9; 10; 10; 10; 10; 10; 11; 11; 11; 11; 12; 12; 12; 12; 12; 12; <newline/>Calculate the sample mean and the sample standard deviation to one decimal place using a TI-83+ or TI-84 calculator.</para>
+              <para id="fs-idm125056">The following data show the number of different types of pet food that stores in the area carry. <newline/>6; 6; 6; 6; 7; 7; 7; 7; 7; 8; 9; 9; 9; 9; 10; 10; 10; 10; 10; 11; 11; 11; 11; 12; 12; 12; 12; 12; 12; <newline/>Calculate the sample mean and the sample standard deviation to one decimal place using a TI-83+ or TI-84 calculator.</para>
             </problem>
           </exercise>
         </note>
-      </section>
     </section>
     <section id="fs-idm111076336">
       <title>Standard Deviation of Grouped Frequency Tables</title>
@@ -772,7 +767,7 @@
         <title>Try It</title>
         <exercise id="fs-idm30975248">
           <problem id="fs-idm30974992">
-            <para id="fs-idm30974736">Two swimmers, Angie and Beth, from different teams, wanted to find out who had the fastest time for the 50 meter freestyle when compared to her team. Which swimmer had the fastest time when compared to her team?</para>
+            <para id="fs-idm30974736">Two swimmers, Angie and Beth, from different teams, wanted to find out who had the fastest time for the 50-meter freestyle when compared to her team. Which swimmer had the fastest time when compared to her team?</para>
             <table id="fs-idm44209040" summary="">
               <tgroup cols="4">
                 <thead>
@@ -837,6 +832,19 @@
           </solution>
         </exercise>
       </example>
+      <note class="statistics try" id="note-00001">
+        <label/>
+        <title>Try It</title>
+        <exercise id="exer-00002">
+          <problem id="prob-00002">
+            <para id="para-00018">Refer to <link target-id="exam-00002"/>. Bernardo is in the afternoon class (mean 78 points, standard deviation 15 points) and scored 48 points on the exam.</para>
+            <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+              <item>Write Bernardo’s score in terms of the number of standard deviations it is from the class mean.</item>
+              <item>Does Chebyshev’s Rule suggest that a score like Bernardo’s is impossible?</item>
+            </list>
+          </problem>
+        </exercise>
+      </note>
     </section>
     <section id="fs-idp5887184" class="references">
       <title>References</title>
@@ -847,8 +855,16 @@
       <title>Chapter Review</title>
       <para id="fs-idm30771952">The standard deviation can help you calculate the spread of data. There are different equations to use if you are calculating the standard deviation of a sample or of a population. </para>
                 <list id="fs-idm41288176" list-type="bulleted">
-        <item>The Standard Deviation allows us to compare individual data or classes to the data set mean numerically.</item>
+        <item>The standard deviation allows us to compare individual data or classes to the data set mean numerically.</item>
         <item><m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math> or <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>f</m:mi><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math> is the formula for calculating the standard deviation of a sample. To calculate the standard deviation of a population, we would use the population mean, <m:math><m:mi>μ</m:mi></m:math>, and the formula <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>N</m:mi></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math> or <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mtext>​</m:mtext></m:msup><m:mi>f</m:mi><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>N</m:mi></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math>.</item>
+      </list>
+      <para id="para-00019">The sample variance is an estimate of the population variance; dividing by (<m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math>) rather than <m:math><m:mi>n</m:mi></m:math> gives a better estimate of the population variance. The variance is the average of the squares of the deviations, and the standard deviation is the square root of the variance.</para>
+      <para id="para-00020">The standard deviation is useful when comparing data values that come from different data sets with different means and standard deviations. For each data value, calculate how many standard deviations the value is from its mean: <emphasis>value = mean + (#ofSTDEVs)(standard deviation)</emphasis>. The number of standard deviations is often called a <emphasis>z</emphasis>-score.</para>
+      <para id="para-00021">For ANY data set, no matter what the distribution: at least 75 percent of the data is within two standard deviations of the mean, and at least 89 percent is within three standard deviations (Chebyshev’s Rule). For data whose distribution is bell-shaped and symmetric:</para>
+      <list list-type="bulleted" id="list-00004">
+        <item>approximately 68 percent of the data is within one standard deviation of the mean</item>
+        <item>approximately 95 percent is within two standard deviations</item>
+        <item>more than 99 percent is within three standard deviations (the Empirical Rule)</item>
       </list>
     </section>
     <section id="fs-idm71113376" class="formula-review">
@@ -1227,7 +1243,7 @@
       </exercise>
                 <exercise id="fs-idm6474736">
         <problem id="fs-idm6474480">
-          <para id="fs-idm6474224">A selection of countries has poverty rates that range from 11.4% to 74.6%. This data is summarized in <link target-id="fs-idm115378592">Table 2.76</link>.</para>
+          <para id="fs-idm6474224">A selection of countries has poverty rates that range from 11.4% to 74.6%.</para>
                 <table id="fs-idm115378592" summary="">
             <tgroup cols="2">
               <colspec colnum="1" colname="c1"/>
@@ -1510,7 +1526,7 @@
           </para>
                 <list id="element-217" mark-suffix="." list-type="enumerated" number-style="lower-alpha">
             <item>What is the mean change score?</item>
-            <item>What is the standard deviation for this population?</item>
+            <item>What is the standard deviation for this sample?</item>
             <item>What is the median change score?</item>
             <item>Find the change score that is 2.2 standard deviations below the mean.</item>
           </list>
@@ -1586,7 +1602,7 @@
                   </thead>
                   <tbody>
                     <row>
-                      <entry>1000-5000</entry>
+                      <entry>0-5000</entry>
                       <entry>10</entry>
                     </row>
                     <row>
@@ -1908,5 +1924,8 @@
     </definition><definition id="variance">
       <term>Variance</term>
       <meaning id="id3154337"> mean of the squared deviations from the mean, or the square of the standard deviation; for a set of data, a deviation can be represented as <m:math><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> where <m:math><m:mi>x</m:mi></m:math> is a value of the data and <m:math><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:math> is the sample mean. The sample variance is equal to the sum of the squares of the deviations divided by the difference of the sample size and one.</meaning>
+    </definition><definition id="def-00001">
+      <term>z-score</term>
+      <meaning>the number of standard deviations a data value is from its mean; for a sample, <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true"><m:mi>x</m:mi><m:mo>¯</m:mo></m:mover></m:mrow><m:mi>s</m:mi></m:mfrac></m:math>, and for a population, <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mi>σ</m:mi></m:mfrac></m:math>. Also called a standard score.</meaning>
     </definition></glossary>
 </document>
