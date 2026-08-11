@@ -16,11 +16,12 @@
     <note id="fs-idp13104688" class="chapter-objectives">
       <label/>
       <title>Chapter Objectives</title>
-      <para id="element-103">By the end of this chapter, the student should be able to:</para>
+      <para id="element-103">After studying this chapter, you will be able to:</para>
       <list id="list1">
         <item>Recognize and understand continuous probability density functions in general.</item>
         <item>Recognize the uniform probability distribution and apply it appropriately.</item>
         <item>Recognize the exponential probability distribution and apply it appropriately.</item>
+        <item>Compare empirical data from a random sample with the theoretical uniform distribution.</item>
       </list>
     </note>
     <para id="eip-idp101194160">Continuous random variables have many applications. Baseball batting averages, IQ scores, the length of time a long-distance telephone call lasts, the amount of money a person carries, the length of time a computer chip lasts, and SAT scores are just a few. The field of reliability depends on a variety of continuous random variables.</para>
@@ -29,29 +30,9 @@
       <title>NOTE</title>
       <para id="fs-idm83037888">The values of discrete and continuous random variables can be ambiguous. For example, if <m:math><m:mi>X</m:mi></m:math> is equal to the number of miles (to the nearest mile) you drive to work, then <m:math><m:mi>X</m:mi></m:math> is a discrete random variable. You count the miles. If <m:math><m:mi>X</m:mi></m:math> is the distance you drive to work, then you measure values of <m:math><m:mi>X</m:mi></m:math> and <m:math><m:mi>X</m:mi></m:math> is a continuous random variable. For a second example, if <m:math><m:mi>X</m:mi></m:math> is equal to the number of books in a backpack, then <m:math><m:mi>X</m:mi></m:math> is a discrete random variable. If <m:math><m:mi>X</m:mi></m:math> is the weight of a book, then <m:math><m:mi>X</m:mi></m:math> is a continuous random variable because weights are measured. How the random variable is defined is very important.</para>
     </note>
-    <section id="eip-606">
-      <title>Properties of Continuous Probability Distributions</title>
-      <para id="eip-60">The graph of a continuous probability distribution is a curve. Probability is represented by area under the curve.</para>
-      <para id="eip-33">The curve is called the <term id="term-00001">probability density function</term> (abbreviated as <emphasis>pdf</emphasis>), denoted <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>. We use this function to draw the graph of a probability distribution in the same way you might from any other algebra or pre-calculus course.</para>
-      <para id="eip-474"><emphasis>Area under the curve</emphasis> is given by a different function called the <emphasis>cumulative distribution function </emphasis>(abbreviated as <emphasis>cdf</emphasis>). The cumulative distribution function is used to evaluate probability as area.</para>
-      <para id="eip-224">
-        <list id="eip-id1170587055152">
-          <item>The outcomes are measured, not counted.</item>
-          <item>The entire area under the curve and above the <m:math><m:mi>x</m:mi></m:math>-axis is equal to one.</item>
-          <item>Probability is found for intervals of <m:math><m:mi>x</m:mi></m:math> values rather than for individual <m:math><m:mi>x</m:mi></m:math> values.</item>
-        </list>
-      </para>
-      <para id="para-00001"> We should note that the probability of any continuous distribution function has a few properties:
-        <list id="list-00001">
-          <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>d</m:mi><m:mo>)</m:mo></m:math> is the probability that the random variable <m:math><m:mi>X</m:mi></m:math> is in the interval between the values <m:math><m:mi>c</m:mi></m:math> and <m:math><m:mi>d</m:mi></m:math>. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>d</m:mi><m:mo>)</m:mo></m:math> is the area under the curve, above the <m:math><m:mi>x</m:mi></m:math>-axis, to the right of <m:math><m:mi>c</m:mi></m:math> and the left of <m:math><m:mi>d</m:mi></m:math>.</item>
-          <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math> The probability that <m:math><m:mi>x</m:mi></m:math> takes on any single individual value is zero. The area below the curve, above the <m:math><m:mi>x</m:mi></m:math>-axis, and between <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:math> and <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>c</m:mi></m:math> has no width, and therefore no area (area = 0). Since the probability is equal to the area, the probability is also zero.</item>
-          <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>d</m:mi><m:mo>)</m:mo></m:math> is the same as <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>d</m:mi><m:mo>)</m:mo></m:math> because probability is equal to area.</item>
-        </list>
-      </para>
-      <para id="eip-423">We will find the area that represents probability by using geometry, formulas, technology, or probability tables. In general, calculus is needed to find the area under the curve for many probability density functions. When we use formulas to find the area in this textbook, the formulas were found by using the techniques of integral calculus. However, because most students taking this course have not studied calculus, we will not be using calculus in this textbook.</para>
-      <para id="eip-335">There are many continuous probability distributions. When using a continuous probability distribution to model probability, the distribution used is selected to model and fit the particular situation in the best way.</para>
-      <para id="eip-94">In this chapter and the next, we will study the uniform distribution, the exponential distribution, and the normal distribution. The following graphs illustrate these distributions.</para>
-      <para id="eip-114">
+    <para id="eip-60">The graph of a continuous probability distribution is a curve. Probability is represented by area under the curve.</para>
+    <para id="eip-94">In this chapter and the next, we will study the uniform distribution, the exponential distribution, and the normal distribution. The following graphs illustrate these distributions.</para>
+    <para id="eip-114">
         <figure class="scaled-down" id="id4131243">
           <media id="id1164320264037" alt="This graph shows a uniform distribution. The horizontal axis ranges from 0 to 10. The distribution is modeled by a rectangle extending from x = 2 to x = 8.8. A region from x = 3 to x = 6 is shaded inside the rectangle. The shaded area represents P(3 &lt; x &lt; 6).">
             <image src="../../media/fig-ch05_01_01.png" mime-type="image/png"/>
@@ -71,7 +52,6 @@
           <caption>The graph shows the Normal Distribution with the area between <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:math> and <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn></m:math> shaded to represent the probability that the value of the random variable <m:math><m:mi>X</m:mi></m:math> is in the interval between one and two.</caption>
         </figure>
       </para>
-    </section>
   </content>
   <glossary><definition id="fs-idm138335264">
       <term>Uniform Distribution</term>

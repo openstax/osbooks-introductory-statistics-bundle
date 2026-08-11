@@ -8,18 +8,24 @@
   </metadata>
   <content>
     <section id="sect-00001">
-      <title>Histograms and Continuous Distributions</title>
-      <para id="para-00001">In <link document="m46925">Chapter 2</link>, we introduced the concept of histograms and how data is distributed. Recall that histograms are often used for continuous quantitative data. For small values of <m:math><m:mi>n</m:mi></m:math>, we can see that a dataset might look <emphasis effect="italics">approximately</emphasis> like a particular distribution. In general, as <m:math><m:mi>n</m:mi></m:math> gets larger, a dataset begins to resemble a particular distribution more clearly. For large enough values of <m:math><m:mi>n</m:mi></m:math>, the histogram of a dataset smooths out into a clear curve. We can visualize this phenomenon in the figure below:</para>
+      <title>A Review of Histograms and Continuous Distributions</title>
+      <para id="para-00001">In <link document="m46925">Chapter 2</link>, we introduced the concept of histograms and how data are distributed. Recall that histograms are often used for continuous quantitative data. For small values of <m:math><m:mi>n</m:mi></m:math>, we can see that a dataset might look <emphasis effect="italics">approximately</emphasis> like a particular distribution. In general, as <m:math><m:mi>n</m:mi></m:math> gets larger, a dataset begins to resemble a particular distribution more clearly. Below is a reminder of this natural phenomenon, where we see that increasing the number of data points eventually results in a smooth histogram that aligns with the red theoretical distribution:</para>
       <figure id="fig-00001">
         <media alt="Four-panel illustration showing the relationship between a histogram and a normal distribution curve. Each panel displays the same general bell-shaped distribution with increasing smoothness from top left to bottom right.          Top-left panel: A histogram with a small number of wide bars approximates a bell-shaped distribution. A red normal curve is overlaid on the bars.          Top-right panel: A histogram with more, narrower bars provides a closer approximation to the red normal curve.          Bottom-left panel: A histogram with many thin bars closely follows the shape of the red normal curve, making the distribution appear smoother.          Bottom-right panel: The histogram has effectively become a continuous distribution, shown as a solid blue bell-shaped region with a red normal curve tracing its outline.          The figure illustrates how increasing the number of intervals (bins) in a histogram causes the histogram to more closely approximate a continuous normal distribution.">
           <image src="../../media/histograms.png" mime-type="image/png"/>
         </media>
       </figure>
-      <para id="para-00002">It is rare to have enough data in any sample to create a truly smooth histogram like the <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1,000,000</m:mn></m:math> case in the figure. Instead, we often note whether a set of data follows a particular distribution and then use the theoretical properties of that distribution to answer various probability questions about the data. </para>
+      <para id="para-00002">As we have learned, it is rare to have enough data in any sample to create a truly smooth histogram like the <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1,000,000</m:mn></m:math> case in the figure. Instead, we often note whether a set of data follows a particular distribution and then use the theoretical properties of that distribution to answer various probability questions about the data. </para>
     </section>
     <section id="sect-00002">
       <title>Probability Density Functions</title>
-      <para id="para-00003">The curve is called the <term id="term-00001">probability density function</term> (abbreviated as <term id="term-00002">PDF</term>). Recall in Chapter 4, we also used the acronym PDF but for discrete distributions this represents a probability <emphasis effect="italics">distribution</emphasis> function whereas with continuous distributions the curve is called a probability density function. We use the symbol <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to represent the curve. <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is the function that corresponds to the graph; we use the density function <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to draw the graph of the probability distribution.</para>
+      <para id="para-00003">The theoretical curve is called the <term id="term-00001">probability density function</term> (abbreviated as <term id="term-00002">PDF</term>). Recall in Chapter 4, we also used the acronym PDF but for discrete distributions this represents a probability <emphasis effect="italics">distribution</emphasis> function whereas with continuous distributions the curve is called a probability density function. We use the symbol <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to represent the curve. <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is the function that corresponds to the graph; we use the density function <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to draw the graph of the probability distribution.</para>
+      <para id="para-00009">In the next few chapters, we will explore three probability density functions: the curve for a uniform distribution, the curve for an exponential distribution, and the curve for a normal or standard normal distribution. Below is a preview of what these distributions typically look like:</para>
+      <figure id="fig-00002">
+        <media alt="Figure showing four common probability density functions arranged from left to right.          The first graph is a uniform distribution, displayed as a rectangle with constant height between two endpoints and zero elsewhere, indicating that all values within the interval are equally likely.          The second graph is an exponential distribution, beginning at a high value on the left and decreasing rapidly as x increases, approaching but never reaching the horizontal axis.          The third graph is a gamma distribution, starting near zero, rising to a peak, and then gradually decreasing with a long right tail.          The fourth graph is a normal distribution, shown as a symmetric bell-shaped curve centered around its mean, with tails that taper toward zero on both sides.          Together, the figure compares the shapes of uniform, exponential, gamma, and normal probability distributions.">
+          <image src="../../media/distributions.png" mime-type="image/png"/>
+        </media>
+      </figure>
     </section>
     <section id="sect-00003">
       <title>Cumulative Distribution Functions (CDFs)</title>
@@ -33,14 +39,10 @@
         <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>d</m:mi><m:mo>)</m:mo></m:math> is the same as <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>c</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>d</m:mi><m:mo>)</m:mo></m:math> because probability is equal to area.</item>
       </list>
       <para id="para-00005">We will find the area that represents probability by using geometry, formulas, technology, or probability tables. Specifically, integral calculus is needed to find the area under the curve for many probability density functions. When we use formulas to find the area in this textbook, the formulas were found by using the techniques of integral calculus. However, since these distributions are so commonly used, a calculator or Excel can be used to find the area more easily than integrating. </para>
-      <para id="para-00006">There are many continuous probability distributions. When using a continuous probability distribution to model probability, the distribution used is selected to model and fit the particular situation in the best way. </para>
-      <para id="para-00007">
-        <emphasis>For continuous probability distributions, PROBABILITY = AREA.</emphasis>
-      </para>
-      <para id="para-00008">In this chapter and the next, we will study the uniform distribution, the exponential distribution, and the normal distribution. The following graphs illustrate these distributions that we will learn about:</para>
-      <figure id="fig-00002">
-        <media alt="Figure showing four common probability density functions arranged from left to right.          The first graph is a uniform distribution, displayed as a rectangle with constant height between two endpoints and zero elsewhere, indicating that all values within the interval are equally likely.          The second graph is an exponential distribution, beginning at a high value on the left and decreasing rapidly as x increases, approaching but never reaching the horizontal axis.          The third graph is a gamma distribution, starting near zero, rising to a peak, and then gradually decreasing with a long right tail.          The fourth graph is a normal distribution, shown as a symmetric bell-shaped curve centered around its mean, with tails that taper toward zero on both sides.          Together, the figure compares the shapes of uniform, exponential, gamma, and normal probability distributions.">
-          <image src="../../media/distributions.png" mime-type="image/png"/>
+      <para id="para-00007"><emphasis>For continuous probability distributions, PROBABILITY = AREA.</emphasis> Below are the three distributions we&#8217;ve previously discussed. The shaded area in each represents a probability, which we will discuss how to find using various CDFs:</para>
+      <figure id="fig-00002b">
+        <media alt="Figure showing three probability density functions—uniform, exponential, and normal—arranged from left to right. In each graph, a region under the curve is shaded to represent a probability. The uniform distribution is a rectangle with a shaded interval; the exponential distribution is a decreasing curve with a shaded region; and the normal distribution is a symmetric bell-shaped curve with a shaded region.">
+          <image src="../../media/CNX_Stats_C05_M02_002.png" mime-type="image/png"/>
         </media>
       </figure>
     </section>
@@ -123,6 +125,51 @@
         </problem>
       </exercise>
     </note>
+    <section id="sect-00004">
+      <title>A Comparison of Empirical Distributions, Discrete Probability Distributions, and Continuous Probability Distributions</title>
+      <para id="para-00010">At this point, it is common to confuse some of the details surrounding all the distributions we&#8217;ve learned to this point. The fact is that many details look similar or are the same, and it&#8217;s important to keep these details straight as eventually we will be combining analyses of both empirical and theoretical distributions. Below is a review of some of the key facts about these different distributions:</para>
+      <table id="table-00001" summary="A comparison of empirical, discrete probability, and continuous probability distributions across chapter reference, type of data, what the graph looks like, and variable type.">
+        <tgroup cols="5">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <thead>
+            <row>
+              <entry>Distribution</entry>
+              <entry>Chapter Reference</entry>
+              <entry>Type of Data</entry>
+              <entry>Graph Looks Like</entry>
+              <entry>Variable Type</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Empirical</entry>
+              <entry><link document="m46925">Chapter 2</link></entry>
+              <entry>Can be discrete or continuous collected data values, typically from a sample</entry>
+              <entry>Can be bar graphs, pie charts, histograms, etc. We can use a variety of ways to represent the data. Large enough data sets will come to resemble theoretical distributions.</entry>
+              <entry>We use a capital letter like <m:math><m:mi>X</m:mi></m:math> or <m:math><m:mi>Y</m:mi></m:math> to denote the variable, and use words to describe the type of data we are collecting</entry>
+            </row>
+            <row>
+              <entry>Discrete Probability</entry>
+              <entry><link document="m46955">Chapter 4</link></entry>
+              <entry>Discrete outcomes, which are countable. Discrete probabilities can be determined by basic probability calculations OR they can be associated with a specific function.</entry>
+              <entry>Bar graphs only</entry>
+              <entry>We use a capital letter like <m:math><m:mi>X</m:mi></m:math> or <m:math><m:mi>Y</m:mi></m:math> to denote the random variable, and we use words to describe the type of probabilities we are interested in</entry>
+            </row>
+            <row>
+              <entry>Continuous Probability</entry>
+              <entry>Chapter 5 (and Chapter 6 will also use continuous probability)</entry>
+              <entry>Continuous outcomes, which are measured, not counted. Continuous probabilities will always be associated with a function, and often require calculus or technology to compute &#8212; though simple cases such as the uniform distribution can be found using basic geometry (area = base &#215; height).</entry>
+              <entry>Some type of curve (like a line, bell-curve, etc.)</entry>
+              <entry>We use a capital letter like <m:math><m:mi>X</m:mi></m:math> or <m:math><m:mi>Y</m:mi></m:math> to denote the random variable, and we use words to describe the type of probabilities we are interested in</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
     <section id="fs-idp147304960" class="summary">
       <title>Chapter Review</title>
       <para id="fs-idp147305600">The probability density function (pdf) is used to describe probabilities for continuous random variables. The area under the density curve between two points corresponds to the probability that the variable falls between those two values. In other words, the area under the density curve between points <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> is equal to <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:math>. The cumulative distribution function (cdf) gives the probability as an area. If <m:math><m:mi>X</m:mi></m:math> is a continuous random variable, the probability density function (pdf), <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>, is used to draw the graph of the probability distribution. The total area under the graph of <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is one. The area under the graph of <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> and between values <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> gives the probability <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:math>.</para>
@@ -311,4 +358,14 @@
       </exercise>
     </section>
   </content>
+  <glossary>
+    <definition id="def-00001">
+      <term>Cumulative Distribution Function (CDF)</term>
+      <meaning id="mean-00001">the function <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>, which gives the probability that the random variable <m:math><m:mi>X</m:mi></m:math> is less than or equal to <m:math><m:mi>x</m:mi></m:math>; for a continuous distribution, it equals the area under the density curve to the left of <m:math><m:mi>x</m:mi></m:math>.</meaning>
+    </definition>
+    <definition id="def-00002">
+      <term>Probability Density Function (PDF)</term>
+      <meaning id="mean-00002">the function <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> whose graph describes probabilities for a continuous random variable; the probability that the variable falls between two values is the area under the curve between them, and the total area under the curve is one.</meaning>
+    </definition>
+  </glossary>
 </document>
