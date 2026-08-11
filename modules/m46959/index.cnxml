@@ -8,7 +8,7 @@
   </metadata>
   <content>
     <para id="s-idm1221053442">The <term id="term-00001">expected value</term> is often referred to as the <emphasis>"long-term" average or mean</emphasis>. This means that over the long term of doing an experiment over and over, you would <emphasis>expect</emphasis> this average.</para>
-    <para id="fs-idm122105344">You toss a coin and record the result. What is the probability that the result is heads? If you flip a coin two times, does probability tell you that these flips will result in one heads and one tail? You might toss a fair coin ten times and record nine heads. As you learned in <link document="m46938">Probability Topics</link>, probability does not describe the short-term results of an experiment. It gives information about what can be expected in the long term. To demonstrate this, Karl Pearson once tossed a fair coin 24,000 times! He recorded the results of each toss, obtaining heads 12,012 times. <emphasis effect="bold">In his experiment, Pearson illustrated the Law of Large Numbers</emphasis>.</para>
+    <para id="fs-idm122105344">You toss a coin and record the result. What is the probability that the result is heads? If you flip a coin two times, does probability tell you that these flips will result in one head and one tail? You might toss a fair coin ten times and record nine heads. As you learned in <link document="m46925">Chapter 2</link> and <link document="m46938">Chapter 3</link>, probability does not describe the short-term results of an experiment. It gives information about what can be expected in the long term. To demonstrate this, Karl Pearson once tossed a fair coin 24,000 times! He recorded the results of each toss, obtaining heads 12,012 times. <emphasis effect="bold">In his experiment, Pearson illustrated the Law of Large Numbers</emphasis>.</para>
     <para id="fs-idm32245968"><emphasis effect="bold">The Law of Large Numbers</emphasis> states that, as the number of trials in a probability experiment increases, the difference between the theoretical probability of an event and the relative frequency approaches zero <emphasis effect="bold">(the theoretical probability and the relative frequency get closer and closer together)</emphasis>. When evaluating the long-term results of statistical experiments, we often want to know the “average” outcome. This “long-term average” is known as the <term id="term-00002">mean</term> or <term id="term-00003">expected value</term> of the experiment and is denoted by the Greek letter <m:math><m:mi>μ</m:mi></m:math>. In other words, after conducting many trials of an experiment, you would expect this average value.</para>
     <para id="eip-332">The mean, <m:math><m:mi>μ</m:mi></m:math>, of a discrete probability function is the expected value. </para>
     <equation class="unnumbered" id="eip-226">
@@ -23,12 +23,12 @@
     <note id="id8737934">
       <label/>
       <title>NOTE</title>
-      <para id="eip-idp95250624">To find the expected value or long term average, <m:math><m:mi>μ</m:mi></m:math>, simply multiply each value of the random variable by its probability and add the products.</para>
+      <para id="eip-idp95250624">To find the expected value or long-term average, <m:math><m:mi>μ</m:mi></m:math>, simply multiply each value of the random variable by its probability and add the products.</para>
     </note>
     <example id="fs-idp56252608">
       <para id="fs-idm190895152">A soccer team plays soccer zero, one, or two days a week. The probability that they play zero days is 0.2, the probability that they play one day is 0.5, and the probability that they play two days is 0.3. Find the long-term average or expected value, <m:math><m:mi>μ</m:mi></m:math>, of the number of days per week the soccer team plays soccer.</para>
       <para id="element-126">To do the problem, first let the random variable <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of days the soccer team plays soccer per week. <m:math><m:mi>X</m:mi></m:math> takes on the values 0, 1, 2. Construct a PDF table adding a column <m:math><m:mi>x</m:mi><m:mo>*</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>. In this column, you will multiply each <m:math><m:mi>x</m:mi></m:math> value by its probability.</para>
-      <table id="element-749" summary="The PDF table contains the number of days a men's soccer team plays soccer per week and their probabilities.">
+      <table id="element-749" summary="The PDF table contains the number of days a soccer team plays soccer per week and their probabilities.">
         <title>Expected Value Table This table is called an expected value table. The table helps you calculate the expected value or long-term average.</title>
         <tgroup cols="3">
           <colspec colnum="1" colname="c1"/>
@@ -66,7 +66,7 @@
           </tbody>
         </tgroup>
       </table>
-      <para id="fs-idm87467792">Add the last column <m:math><m:mi>x</m:mi><m:mo>*</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to find the long term average or expected value: (0)(0.2) + (1)(0.5) + (2)(0.3) = 0 + 0.5 + 0.6 = 1.1.</para>
+      <para id="fs-idm87467792">Add the last column <m:math><m:mi>x</m:mi><m:mo>*</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to find the long-term average or expected value: (0)(0.2) + (1)(0.5) + (2)(0.3) = 0 + 0.5 + 0.6 = 1.1.</para>
       <para id="element-353">The expected value is 1.1. The soccer team would, on the average, expect to play soccer 1.1 days per week. The number 1.1 is the long-term average or expected value if the soccer team plays soccer week after week after week. We say <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>1.1</m:mn></m:math>.</para>
     </example>
     <note class="statistics try" id="note-00001">
@@ -504,7 +504,7 @@
         </problem>
       </exercise>
     </note>
-    <para id="element-903">Like data, probability distributions have standard deviations. To calculate the standard deviation (<m:math><m:mi>σ</m:mi></m:math>) of a probability distribution, find each deviation from its expected value, square it, multiply it by its probability, add the products, and take the square root. To understand how to do the calculation, look at the table for the number of days per week a men's soccer team plays soccer. To find the standard deviation, add the entries in the column labeled <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> and take the square root.
+    <para id="element-903">Like data, probability distributions have standard deviations. To calculate the standard deviation (<m:math><m:mi>σ</m:mi></m:math>) of a probability distribution, find each deviation from its expected value, square it, multiply it by its probability, add the products, and take the square root. To understand how to do the calculation, look at the table for the number of days per week a soccer team plays soccer. To find the standard deviation, add the entries in the column labeled <m:math><m:msup><m:mrow><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:mrow><m:mrow><m:mn>2</m:mn></m:mrow></m:msup><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> and take the square root.
       <table id="element-226" summary="PDF table with the added columns for expected value and variance.">
         <tgroup cols="4">
           <colspec colnum="1" colname="c1"/>
@@ -697,7 +697,7 @@
       <title>Try It</title>
       <exercise id="exer-00002">
         <problem id="prob-00002">
-          <para id="para-00006">Two stacks of cards are placed on a table. Each stack has cards number 1 to 8. One card from each stack is picked up. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> number of cards showing an odd number. Construct a table like <link target-id="element-226"/> and calculate the mean μ and standard deviation σ of <m:math><m:mi>X</m:mi></m:math>.</para>
+          <para id="para-00006">Two stacks of cards are placed on a table. Each stack has cards numbered 1 to 8. One card from each stack is picked up. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> number of cards showing an odd number. Construct a table like <link target-id="element-226"/> and calculate the mean μ and standard deviation σ of <m:math><m:mi>X</m:mi></m:math>.</para>
         </problem>
         <solution id="sol-00002">
           <para id="para-00007">The sample space has 64 outcomes:</para>
@@ -864,7 +864,7 @@
     <example id="example1.8">
       <exercise id="fs-idm71286192">
         <problem id="fs-idm79685344">
-          <para id="fs-idm64926544">On May 11, 2013 at 9:30 PM, the probability that moderate seismic activity (one moderate earthquake) would occur in the next 48 hours in Iran was about 21.42%. Suppose you make a bet that a moderate earthquake will occur in Iran during this period. If you win the bet, you win $50. If you lose the bet, you pay $20. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the amount of profit from a bet.</para>
+          <para id="fs-idm64926544">On May 11, 2013, at 9:30 PM, the probability that moderate seismic activity (one moderate earthquake) would occur in the next 48 hours in Iran was about 21.42%. Suppose you make a bet that a moderate earthquake will occur in Iran during this period. If you win the bet, you win $50. If you lose the bet, you pay $20. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the amount of profit from a bet.</para>
           <para id="fs-idm74848144"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>win</m:mtext><m:mo>)</m:mo></m:math> = <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>one moderate earthquake will occur</m:mtext><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>21.42</m:mn><m:mo>%</m:mo></m:math></para>
           <para id="fs-idm122921568">
             <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>loss</m:mtext><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>one moderate earthquake will </m:mtext><m:mstyle mathvariant="italic"><m:mtext>not</m:mtext></m:mstyle><m:mtext> occur</m:mtext><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>100</m:mn><m:mo>%</m:mo><m:mo>−</m:mo><m:mn>21.42</m:mn><m:mo>%</m:mo></m:math>
@@ -920,7 +920,7 @@
             </tgroup>
           </table>
           <para id="fs-idm111908496">Mean = Expected Value = 10.71 + (–15.716) = –5.006.</para>
-          <para id="fs-idm85218944">If you make this bet many times under the same conditions, your long term outcome will be an average <emphasis effect="italics">loss</emphasis> of $5.01 per bet.</para>
+          <para id="fs-idm85218944">If you make this bet many times under the same conditions, your long-term outcome will be an average <emphasis effect="italics">loss</emphasis> of $5.01 per bet.</para>
           <para id="fs-idm50457088">
             <m:math><m:mrow><m:mtext>Standard Deviation = </m:mtext><m:msqrt><m:mrow><m:mn>648.0964</m:mn><m:mo>+</m:mo><m:mn>176.6636</m:mn></m:mrow></m:msqrt><m:mo>≈</m:mo><m:mn>28.7186</m:mn></m:mrow></m:math>
           </para>
@@ -932,7 +932,7 @@
       <title>Try It</title>
       <exercise id="fs-idm88593344">
         <problem id="eip-idp52574576">
-          <para id="eip-idp52574832">On May 11, 2013 at 9:30 PM, the probability that moderate seismic activity (one moderate earthquake) would occur in the next 48 hours in Japan was about 1.08%. As in <link target-id="example1.8" document=""/>, you bet that a moderate earthquake will occur in Japan during this period. If you win the bet, you win $100. If you lose the bet, you pay $10. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the amount of profit from a bet. Find the mean and standard deviation of <m:math><m:mi>X</m:mi></m:math>.</para>
+          <para id="eip-idp52574832">On May 11, 2013, at 9:30 PM, the probability that moderate seismic activity (one moderate earthquake) would occur in the next 48 hours in Japan was about 1.08%. As in <link target-id="example1.8" document=""/>, you bet that a moderate earthquake will occur in Japan during this period. If you win the bet, you win $100. If you lose the bet, you pay $10. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the amount of profit from a bet. Find the mean and standard deviation of <m:math><m:mi>X</m:mi></m:math>.</para>
         </problem>
       </exercise>
     </note>

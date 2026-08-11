@@ -10,10 +10,10 @@
     <para id="para-00001">Suppose you are drawing 5 cards from a standard 52-card deck. Within this drawing, you are curious as to the following situation: what is the probability you could draw 2 aces and 3 cards of other face value? Such questions can often become important to answer in card games. The hypergeometric distribution answers questions such as this. </para>
     <section id="sect-00001">
       <title>Key Terms</title>
-      <para id="para-00002">There are 2 key terms we must understand when discussing the hypergeometric distribution:</para>
+      <para id="para-00002">There are two key terms we must understand when discussing the hypergeometric distribution:</para>
       <list id="list-00001">
         <item><term id="term-00001">Hypergeometric Distribution</term>: A hypergeometric distribution refers to a certain type of discrete probability distribution that can predict the outcome of a hypergeometric experiment. </item>
-        <item>Hypergeometric Experiment: A hypergeometric experiment is a statistical experiment. The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. There are five characteristics of a hypergeometric experiment:
+        <item><term id="term-00005">Hypergeometric Experiment</term>: A hypergeometric experiment is a statistical experiment. The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. There are five characteristics of a hypergeometric experiment:
           <list id="element-999" list-type="enumerated">
             <item>You take samples from <emphasis>two</emphasis> groups.</item>
             <item>You are concerned with a group of interest, called the first group.</item>
@@ -28,7 +28,7 @@
     <para id="para-00003">Let’s look at an example of choosing 5 cards from a deck of standard cards without replacement.</para>
     <para id="para-00004">Consider how to get 2 aces and 3 other cards. </para>
     <para id="para-00005">To find the number of ways to get 2 aces from the four in the deck we computed: <newline/><m:math><m:mfenced><m:mfrac linethickness="0"><m:mn>4</m:mn><m:mn>2</m:mn></m:mfrac></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>4</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>!</m:mo><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>6</m:mn></m:math><newline/> And if we did not care what else we had in our hand for the other three cards we would compute:<newline/>
-    <m:math><m:mfenced><m:mfrac linethickness="0"><m:mn>48</m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>48</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>!</m:mo><m:mn>45</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>17,296</m:mn></m:math><newline/> Putting this together, we can compute the probability of getting exactly two aces in a 5 card poker hand as:<newline/>
+    <m:math><m:mfenced><m:mfrac linethickness="0"><m:mn>48</m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>48</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>!</m:mo><m:mn>45</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>17,296</m:mn></m:math><newline/> Putting this together, we can compute the probability of getting exactly two aces in a 5-card poker hand as:<newline/>
     <m:math><m:mfrac><m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>4</m:mn><m:mn>2</m:mn></m:mfrac></m:mfenced><m:mfenced><m:mfrac linethickness="0"><m:mn>48</m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced></m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>52</m:mn><m:mn>5</m:mn></m:mfrac></m:mfenced></m:mfrac><m:mo>=</m:mo><m:mn>0.0399</m:mn></m:math><newline/> This solution is really just the probability distribution known as the hypergeometric distribution. The generalized formula is:<newline/>
     <m:math><m:mi>h</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mi>A</m:mi><m:mi>x</m:mi></m:mfrac></m:mfenced><m:mfenced><m:mfrac linethickness="0"><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>A</m:mi></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mfenced></m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mi>N</m:mi><m:mi>n</m:mi></m:mfrac></m:mfenced></m:mfrac></m:math><newline/> where <m:math><m:mi>x</m:mi></m:math> = the number we are interested in coming from the group with <m:math><m:mi>A</m:mi></m:math> objects.</para>
     <para id="para-00006"><m:math><m:mi>h</m:mi><m:mfenced><m:mi>x</m:mi></m:mfenced></m:math> is the probability of <m:math><m:mi>x</m:mi></m:math> successes, in <m:math><m:mi>n</m:mi></m:math> attempts, when <m:math><m:mi>A</m:mi></m:math> successes (aces in this case) are in a population that contains <m:math><m:mi>N</m:mi></m:math> elements. The hypergeometric distribution is an example of a discrete probability distribution because there is no possibility of partial success, that is, there can be no poker hands with 2 1/2 aces. Said another way, a discrete random variable has to be a whole, or counting, number only. This probability distribution works in cases where the probability of a success changes with each draw. Another way of saying this is that the events are NOT independent. In using a deck of cards, we are sampling WITHOUT replacement. If we put each card back after it was drawn then the hypergeometric distribution would be an inappropriate PDF.</para>
@@ -52,8 +52,9 @@
     <example id="element-84">
       <exercise id="fs-idp41303504">
         <problem id="fs-idm310432">
-          <para id="para-00013">A candy dish contains 30 jelly beans and 20 gumdrops. Ten candies are picked at random. What is the probability that 5 of the 10 are gumdrops? The two groups are jelly beans and gumdrops. Since the probability question asks for the probability of picking gumdrops, the group of interest (first group <m:math><m:mi>A</m:mi></m:math> in the formula) is gumdrops. The size of the group of interest (first group) is 20. The size of the second group is 30. The size of the sample is 10 (jelly beans or gumdrops). Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of gumdrops in the sample of 10. <m:math><m:mi>X</m:mi></m:math> takes on the values <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:math>..., 10.
+          <para id="para-00013">A candy dish contains 30 jelly beans and 20 gumdrops. Ten candies are picked at random. What is the probability that 5 of the 10 are gumdrops?
             <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
+              <item>Explain why this situation fits a hypergeometric experiment.</item>
               <item>What is the probability statement written mathematically? </item>
               <item>What is the hypergeometric probability distribution function written out to solve this problem? </item>
               <item>What is the probability of drawing 5 gumdrops in 10 picks from the dish?</item>
@@ -63,6 +64,15 @@
         </problem>
         <solution id="fs-idm31176384">
           <list list-type="enumerated" number-style="lower-alpha" id="list-00003">
+            <item>Addressing each of the five criteria:
+              <list list-type="bulleted" id="list-00006">
+                <item>You take samples from two groups: the two groups are jelly beans and gumdrops.</item>
+                <item>You are concerned with a group of interest, called the first group: because the probability question asks about gumdrops, we designate gumdrops as the group of interest (i.e., it is the “first group”).</item>
+                <item>You sample without replacement from the combined groups: the ten candies are picked at random from the combined 50 and are not put back, so the sampling is without replacement.</item>
+                <item>Each pick is not independent, since sampling is without replacement: because a candy is not replaced after it is drawn, each pick changes how many gumdrops and jelly beans remain, so the probability of drawing a gumdrop changes from one pick to the next. The picks are therefore dependent.</item>
+                <item>You are not dealing with Bernoulli trials: Bernoulli trials require independent trials with the same probability of success on every trial. Here the trials are dependent and the probability of a “success” (drawing a gumdrop) changes with each pick, so these are not Bernoulli trials.</item>
+              </list>
+            </item>
             <item>
               <m:math><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:math>
             </item>
@@ -82,7 +92,7 @@
       <title>Try It</title>
       <exercise id="fs-idm3161264">
         <problem id="fs-idp72756304">
-          <para id="fs-idp107407200">A bag contains letter tiles. Forty-four of the tiles are vowels, and 56 are consonants. Seven tiles are picked at random. You want to know the probability that four of the seven tiles are vowels. What is the group of interest, the size of the group of interest, and the size of the sample?</para>
+          <para id="fs-idp107407200">A bag contains letter tiles. Forty-four of the tiles are vowels, and 56 are consonants. Seven tiles are picked at random. You want to know the probability that four of the seven tiles are vowels. Explain why this example fits a hypergeometric distribution. What is the group of interest, the size of the group of interest, and the size of the sample?</para>
         </problem>
       </exercise>
     </note>
@@ -165,7 +175,7 @@
             </item>
             <item>
               <para id="element-0836">
-                <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math>
+                <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math>
                 <newline/>
                 <m:math><m:mfrac><m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>15</m:mn><m:mn>5</m:mn></m:mfrac></m:mfenced><m:mfenced><m:mfrac linethickness="0"><m:mn>18</m:mn><m:mn>2</m:mn></m:mfrac></m:mfenced></m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>33</m:mn><m:mn>7</m:mn></m:mfrac></m:mfenced></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>15</m:mn><m:mn>6</m:mn></m:mfrac></m:mfenced><m:mfenced><m:mfrac linethickness="0"><m:mn>18</m:mn><m:mn>1</m:mn></m:mfrac></m:mfenced></m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>33</m:mn><m:mn>7</m:mn></m:mfrac></m:mfenced></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>15</m:mn><m:mn>7</m:mn></m:mfrac></m:mfenced><m:mfenced><m:mfrac linethickness="0"><m:mn>18</m:mn><m:mn>0</m:mn></m:mfrac></m:mfenced></m:mrow><m:mfenced><m:mfrac linethickness="0"><m:mn>33</m:mn><m:mn>7</m:mn></m:mfrac></m:mfenced></m:mfrac><m:mo>=</m:mo><m:mn>0.1301</m:mn></m:math>
               </para>
@@ -226,7 +236,7 @@
         <item>Each pick is not independent, since sampling is without replacement.</item>
         <item>You are not dealing with Bernoulli trials.</item>
       </list>
-      <para id="fs-idm39657744">The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. The random variable <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of items from the group of interest. The distribution of <m:math><m:mi>X</m:mi></m:math> is denoted <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>H</m:mi><m:mo>(</m:mo><m:mi>r</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:math>, where <m:math><m:mi>r</m:mi><m:mo>=</m:mo></m:math> the size of the group of interest (first group), <m:math><m:mi>b</m:mi><m:mo>=</m:mo></m:math> the size of the second group, and <m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the size of the chosen sample. It follows that <newline/><m:math><m:mi>n</m:mi><m:mo>≤</m:mo><m:mi>r</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:math>. The mean of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>r</m:mi></m:mrow><m:mrow><m:mi>r</m:mi><m:mtext> + </m:mtext><m:mi>b</m:mi></m:mrow></m:mfrac></m:mrow></m:math> and the standard deviation is <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>r</m:mi><m:mi>b</m:mi><m:mi>n</m:mi><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mtext> + </m:mtext><m:mi>b</m:mi><m:mtext> − </m:mtext><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mtext> + </m:mtext><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>r</m:mi><m:mtext> + </m:mtext><m:mi>b</m:mi><m:mo>−</m:mo><m:mtext>1)</m:mtext></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math>.</para>
+      <para id="fs-idm39657744">The outcomes of a hypergeometric experiment fit a hypergeometric probability distribution. The random variable <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of items from the group of interest. The distribution of <m:math><m:mi>X</m:mi></m:math> is denoted <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>H</m:mi><m:mo>(</m:mo><m:mi>A</m:mi><m:mo>,</m:mo><m:mi>N</m:mi><m:mo>,</m:mo><m:mi>n</m:mi><m:mo>)</m:mo></m:math>, where <m:math><m:mi>A</m:mi><m:mo>=</m:mo></m:math> the size of the group of interest (first group), <m:math><m:mi>N</m:mi><m:mo>=</m:mo></m:math> the size of the entire population (the number of items in both groups), and <m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the size of the chosen sample. It follows that <m:math><m:mi>n</m:mi><m:mo>≤</m:mo><m:mi>N</m:mi></m:math>. The mean of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>A</m:mi></m:mrow><m:mi>N</m:mi></m:mfrac></m:math> and the standard deviation is <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mfrac><m:mrow><m:mi>n</m:mi><m:mi>A</m:mi><m:mo stretchy="false">(</m:mo><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>A</m:mi><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:msup><m:mi>N</m:mi><m:mn>2</m:mn></m:msup><m:mo stretchy="false">(</m:mo><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:msqrt></m:math>.</para>
     </section>
     <section id="fs-idm29445280" class="formula-review">
       <title>Formula Review</title>
@@ -472,5 +482,8 @@
           <item>A fixed sample size, <m:math><m:mi>n</m:mi></m:math>, drawn without replacement.</item>
           <item>The probability of success is not the same from trial to trial because the trials are not independent. The probability of success on one draw will depend on the outcomes of the previous draws.</item>
         </list> We sample from two groups of items when we are interested in only one group. <m:math><m:mi>X</m:mi></m:math> is defined as the number of successes out of the total number of items chosen. Notation: <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>H</m:mi><m:mfenced><m:mrow><m:mi>A</m:mi><m:mo>,</m:mo><m:mi>N</m:mi><m:mo>,</m:mo><m:mi>n</m:mi></m:mrow></m:mfenced></m:mrow></m:math>, where <m:math><m:mi>A</m:mi></m:math> = the size of the group of interest (first group), <m:math><m:mi>N</m:mi></m:math> = the size of the entire population (the number of items in both groups), <m:math><m:mi>n</m:mi></m:math> = the size of the chosen sample</meaning>
+    </definition><definition id="def-00001">
+      <term>Hypergeometric Distribution</term>
+      <meaning>a discrete probability distribution that can predict the outcome of a hypergeometric experiment.</meaning>
     </definition></glossary>
 </document>

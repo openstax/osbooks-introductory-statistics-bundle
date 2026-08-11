@@ -7,19 +7,19 @@
     <md:uuid>bc688b3a-f3f9-4686-899c-da9dae9fbf31</md:uuid>
   </metadata>
   <content>
-    <para id="para-00003">Suppose there is an exam coming up that you did not have time to study for. The exam is made up entirely of 30 true or false questions. If you randomly guess the answer for each question, what is the probability that you will pass this exam? This type of question can be answered by using the binomial distribution and the binomial process.</para>
+    <para id="para-00003">Suppose there is an exam coming up that you did not have time to study for. The exam is made up entirely of 30 true-false questions. If you randomly guess the answer for each question, what is the probability that you will pass this exam? This type of question can be answered by using the binomial distribution and the binomial process.</para>
     <section id="sect-00001">
       <title>Key Terms</title>
-      <para id="para-00004">There are 3 key terms we must understand when discussing the binomial distribution:</para>
+      <para id="para-00004">There are three key terms we must understand when discussing the binomial distribution:</para>
       <list id="list-00002">
         <item><term id="term-00001">Binomial Process</term>: A binomial process, often called a Bernoulli process after the first person to fully develop its properties, is any case where there are only two possible outcomes in any one trial, called successes and failures.</item>
-        <item><term id="term-00002">Binomial Distribution</term>: A binomial distribution refers to a certain type of discrete probability distribution that can predict the outcomes of a binomial process</item>
+        <item><term id="term-00002">Binomial Distribution</term>: A binomial distribution refers to a certain type of discrete probability distribution that can predict the outcomes of a binomial process.</item>
         <item><term id="term-00003">Binomial Experiment</term>: A binomial experiment is a statistical experiment with a fixed number of trials. The outcomes of a binomial experiment fit a binomial probability distribution. The random variable X = the number of successes obtained in the n independent trials. There are four characteristics of a binomial experiment:
           <list list-type="enumerated" id="list-00003">
             <item>There are a fixed number of trials. Think of trials as repetitions of an experiment. The letter n denotes the number of trials.</item>
             <item>The random variable, X, number of successes, is discrete.</item>
-            <item>There are only two possible outcomes, called “success” and “failure,” for each trial. The letter p denotes the probability of a success on any one trial, and q denotes the probability of a failure on any one trial. p + q = 1.</item>
-            <item>The n trials are independent and are repeated using identical conditions. Think of this as drawing WITH replacement. Because the n trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, p, of a success and probability, q, of a failure remain the same. For example, randomly guessing at a true-false statistics question has only two outcomes. If a success is guessing correctly, then a failure is guessing incorrectly.</item>
+            <item>There are only two possible outcomes, called “success” and “failure,” for each trial. The letter p denotes the probability of a success on any one trial, and q denotes the probability of a failure on any one trial. p + q = 1. For example, randomly guessing at a true-false statistics question has only two outcomes. If a success is guessing correctly, then a failure is guessing incorrectly.</item>
+            <item>The n trials are independent and are repeated using identical conditions. Think of this as drawing WITH replacement. Because the n trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, p, of a success and probability, q, of a failure remain the same.</item>
           </list>
         </item>
       </list>
@@ -29,31 +29,47 @@
       <example id="exam-00001">
         <exercise id="exer-00001">
           <problem id="prob-00001">
-            <para id="para-00006">Suppose there is an exam coming up that you did not have time to study for. The exam is made up entirely of 30 true or false questions. You randomly guess the answer for each question. Explain how the 3 key terms apply to this situation.</para>
+            <para id="para-00006">Suppose there is an exam coming up that you did not have time to study for. The exam is made up entirely of 30 true-false questions. You randomly guess the answer for each question. Explain how the three key terms apply to this situation.</para>
           </problem>
           <solution id="sol-00002">
             <list id="list-00004">
-              <item><emphasis>Binomial Process</emphasis>: The only 2 outcomes when taking an exam with only true or false questions are that each question is either 1) correct or 2) wrong. In this case, the “success” would be defined as a correct answer, and the “failure” would be defined as a wrong answer.</item>
+              <item><emphasis>Binomial Process</emphasis>: The only two outcomes when taking an exam with only true-false questions are that each question is either 1) correct or 2) wrong. In this case, the “success” would be defined as a correct answer, and the “failure” would be defined as a wrong answer.</item>
               <item><emphasis>Binomial Distribution</emphasis>: In this situation, we use the binomial distribution to predict our outcomes. By using this distribution, we can answer questions such as “what is the probability that I will get 20 or more questions right?” or “what is the expected score on an exam in this situation?” </item>
               <item><emphasis>Binomial Experiment</emphasis>: Our example is a binomial experiment because:
                 <list list-type="enumerated" id="list-00005">
                   <item>The fixed number of trials would be the 30 questions.</item>
                   <item>The number of correct answers is countable and therefore discrete.</item>
                   <item>Questions can be either right or wrong. Furthermore, if we truly guess each question randomly then there is a 50% chance of getting any question right or wrong (p=0.50, q=0.50).</item>
-                  <item>The 30 true or false questions are independent from one another. The answer for one true or false question does not predict the answer for the next.</item>
+                  <item>The 30 true-false questions are independent from one another. The answer for one true-false question does not predict the answer for the next.</item>
                 </list>
               </item>
             </list>
           </solution>
         </exercise>
       </example>
+      <note class="statistics try" id="note-00003">
+        <label/>
+        <title>Try It</title>
+        <exercise id="exer-00002">
+          <problem id="prob-00002">
+            <para id="para-00032">A multiple-choice quiz has 15 questions, and each question has four answer choices. A student did not study and guesses randomly on every question. Explain how the three key terms apply to this situation.</para>
+          </problem>
+        </exercise>
+      </note>
       <section id="sect-00002">
         <title>Regarding Successes and Failures</title>
         <para id="para-00007">When discussing the binomial distribution, we often refer to the “success” category and the “failure” category. These terms are not judgements on a situation, but often just an easy way to separate two categories. In general, the “success” category is the primary category of interest. Watch out for this as the category of interest will typically influence your choice of p vs q.</para>
       </section>
     </section>
     <example id="exam-00002">
-      <para id="para-00008">At ABC College, the withdrawal rate from an elementary physics course is 30% for any given term. This implies that, for any given term, 70% of the students stay in the class for the entire term. A "success" could be defined as an individual who withdrew. The random variable <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of students who withdraw from the randomly selected elementary physics class.</para>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="para-00008">At ABC College, the withdrawal rate from an elementary physics course is 30% for any given term. This implies that, for any given term, 70% of the students stay in the class for the entire term. State the random variable and state what a "success" is in this situation.</para>
+        </problem>
+        <solution id="sol-00003">
+          <para id="para-00033">A "success" could be defined as an individual who withdrew. The random variable <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of students who withdraw from the randomly selected elementary physics class.</para>
+        </solution>
+      </exercise>
     </example>
     <note id="fs-idm55323584" class="statistics try">
       <label/>
@@ -80,7 +96,7 @@
         <m:math><m:mfenced><m:mfrac linethickness="0"><m:mn>5</m:mn><m:mn>3</m:mn></m:mfrac></m:mfenced><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mo>!</m:mo></m:mrow><m:mrow><m:mn>3</m:mn><m:mo>!</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>−</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mo>*</m:mo><m:mn>4</m:mn><m:mo>*</m:mo><m:mn>3</m:mn><m:mo>*</m:mo><m:mn>2</m:mn><m:mo>*</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mo>(</m:mo><m:mn>3</m:mn><m:mo>*</m:mo><m:mn>2</m:mn><m:mo>*</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>*</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>5</m:mn><m:mo>*</m:mo><m:mn>4</m:mn></m:mrow><m:mrow><m:mn>2</m:mn><m:mo>*</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>20</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>10</m:mn></m:math>
       </equation>
       <para id="para-00018">Thus our answers match. </para>
-      <para id="para-00019">This formula will not appear often as computation exercises as any computer or calculator can easily do this calculation, but it is important to know what this function means as it appears in various contexts throughout the chapter. </para>
+      <para id="para-00019">This formula will not appear often in computation exercises, as any computer or calculator can easily do this calculation, but it is important to know what this function means as it appears in various contexts throughout the chapter. </para>
     </section>
     <section id="sect-00004">
       <title>A Binomial Experiment</title>
@@ -89,9 +105,9 @@
         <title><term id="term-00005">Binomial Formula</term></title>
         <m:math><m:mrow><m:mi>b</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfenced><m:mfrac linethickness="0"><m:mi>n</m:mi><m:mi>x</m:mi></m:mfrac></m:mfenced><m:msup><m:mi>p</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:mrow></m:math>
       </equation>
-      <para id="para-00021">where <m:math><m:mi>b</m:mi><m:mfenced><m:mi>x</m:mi></m:mfenced></m:math> is the probability of X successes in n trials when the probability of a success in ANY ONE TRIAL is p. And of course <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow></m:mfenced></m:math> and is the probability of a failure in any one trial.</para>
-      <para id="para-00022">We can see now why the combinatorial formula is also called the binomial coefficient because it reappears here again in the binomial probability function. For the binomial formula to work, the probability of a success in any one trial must be the same from trial to trial, or in other words, the outcomes of each trial must be independent. Flipping a coin is a binomial process because the probability of getting a head in one flip does not depend upon what has happened in PREVIOUS flips. </para>
-      <para id="para-00023">Just like a set of data, a probability distribution function has a mean and a standard deviation that describes the data set. For the binomial distribution these are given by the formulas:</para>
+      <para id="para-00021">where <m:math><m:mi>b</m:mi><m:mfenced><m:mi>x</m:mi></m:mfenced></m:math> is the probability of x successes in n trials when the probability of a success in ANY ONE TRIAL is p. And of course <m:math><m:mi>q</m:mi><m:mo>=</m:mo><m:mfenced><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>p</m:mi></m:mrow></m:mfenced></m:math> and is the probability of a failure in any one trial.</para>
+      <para id="para-00022">We can see now why the combinatorial formula is also called the binomial coefficient because it reappears here again in the binomial probability function. For the binomial formula to work, the probability of a success in any one trial must be the same from trial to trial, and the outcomes of each trial must be independent. Flipping a coin is a binomial process because the probability of getting a head in one flip does not depend upon what has happened in PREVIOUS flips. </para>
+      <para id="para-00023">Just like a set of data, a probability distribution function has a mean and a standard deviation that describe the data set. For the binomial distribution these are given by the formulas:</para>
       <equation id="eq-00006">
         <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi></m:math>
       </equation>
@@ -117,7 +133,7 @@
       <exercise id="fs-idm61431456">
         <problem id="fs-idm3565248">
           <para id="element-104">A coin has been altered so that the probability of heads is 0.25 instead of 0.5, and it is flipped 5 times. Each flip is independent. What is the probability of getting more than 3 heads? Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of heads in 5 flips of the coin. <m:math><m:mi>X</m:mi></m:math> takes on the values 0, 1, 2, 3, 4, 5. Since the coin is altered to result in <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.25</m:mn><m:mo>,</m:mo><m:mi>q</m:mi></m:math> is 0.75. The number of trials is <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math>. State the probability question mathematically.</para>
-          <para id="para-00001">First develop fully the probability distribution function and graph the probability distribution function. With the fully developed probability distribution function we can simply read the solution to the question <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced></m:math> heads. <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0146</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0010</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0156</m:mn><m:mo>.</m:mo></m:math> We have added the two individual probabilities because of the addition rule from <link document="m46938">Probability Topics</link>.</para>
+          <para id="para-00001">First develop fully the probability distribution function and graph the probability distribution function. With the fully developed probability distribution function we can simply read the solution to the question <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn></m:mrow></m:mfenced></m:math>. <m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>></m:mo><m:mn>3</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mo>+</m:mo><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0146</m:mn><m:mo>+</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0010</m:mn><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>0156</m:mn><m:mo>.</m:mo></m:math> We have added the two individual probabilities because of the addition rule from <link document="m46938">Probability Topics</link>.</para>
           <para id="para-00002"><link target-id="fig-00001" document=""/> also allows us to see the link between the probability distribution function and probability and area. We also see in <link target-id="fig-00001" document=""/> the skew of the binomial distribution when p is not equal to 0.5. In <link target-id="fig-00001" document=""/> the distribution is skewed right as a result of <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math> because <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>25</m:mn></m:math>.</para>
           <figure id="fig-00001">
             <media alt="Histogram of probability density function of the given data.">
@@ -190,7 +206,7 @@
       <note id="id5442988">
         <label/>
         <title>NOTE</title>
-        <para id="fs-idm93661872">If you want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>)</m:mo></m:math>, use the pdf (binompdf). If you want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 12), use 1 - binomcdf(20,0.41,12).</para>
+        <para id="fs-idm93661872">If you want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>12</m:mn><m:mo>)</m:mo></m:math>, use the pdf (binompdf). If you want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 12), use 1 - binomcdf(20,0.41,12).</para>
       </note>
       <para id="element-442">The probability that at most 12 workers have a high school diploma but do not pursue any further education is 0.9738.</para>
       <para id="element-586">The graph of <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo>(</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mn>0.41</m:mn><m:mo>)</m:mo></m:math> is as follows:</para>
@@ -236,7 +252,7 @@
               <list id="fs-idm2065488" list-type="enumerated" number-style="lower-roman">
                 <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>100</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>560</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mn>2</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>0.2466</m:mn></m:math></item>
                 <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binomcdf<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>100</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>560</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mn>6</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>0.9994</m:mn></m:math></item>
-                <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 3) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> binomcdf<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>100</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>560</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:math>– 0.9443 = 0.0557</item>
+                <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 3) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> binomcdf<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>100</m:mn><m:mo>,</m:mo><m:mfrac><m:mn>8</m:mn><m:mrow><m:mn>560</m:mn></m:mrow></m:mfrac><m:mo>,</m:mo><m:mn>3</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn></m:math>– 0.9443 = 0.0557</item>
               </list>
             </item>
             <item>
@@ -276,7 +292,7 @@
           <list id="fs-idm74773968" list-type="enumerated" number-style="lower-alpha">
             <item>What is the probability distribution for <m:math><m:mi>X</m:mi></m:math>?</item>
             <item>Using the formulas, calculate the (i) mean and (ii) standard deviation of <m:math><m:mi>X</m:mi></m:math>.</item>
-            <item>Use your calculator to find the probability that at most eight people develop cancer</item>
+            <item>Use your calculator to find the probability that at most eight people develop cancer.</item>
             <item>Is it more likely that five or six people will develop cancer? Justify your answer numerically.</item>
           </list>
         </problem>
@@ -380,7 +396,7 @@
           <para id="prob_1">In words, define the random variable <m:math><m:mi>X</m:mi></m:math>.</para>
         </problem>
         <solution id="id8424902">
-          <para id="element-88758234"><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number that reply “yes”</para>
+          <para id="element-88758234"><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number who reply “yes”</para>
         </solution>
       </exercise>
       <exercise id="exercisetwo">
@@ -542,7 +558,7 @@
       <title>HOMEWORK</title>
       <exercise id="eip-idm67916816">
         <problem id="eip-idm67916560">
-          <para id="eip-idm67916304">According to a recent article the average number of babies born with significant hearing loss (deafness) is approximately two per 1,000 babies in a healthy baby nursery. The number climbs to an average of 30 per 1,000 babies in an intensive care nursery.</para>
+          <para id="eip-idm67916304">According to a recent article, the average number of babies born with significant hearing loss (deafness) is approximately two per 1,000 babies in a healthy baby nursery. The number climbs to an average of 30 per 1,000 babies in an intensive care nursery.</para>
           <para id="eip-idm92091200">Suppose that 1,000 babies from healthy baby nurseries were randomly surveyed. Find the probability that exactly two babies were born deaf.</para>
         </problem>
       <!-- <solution id="eip-idm92090528">
@@ -723,9 +739,9 @@
             <item>
               <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>32, </m:mtext><m:mfrac><m:mtext>1</m:mtext><m:mtext>3</m:mtext></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math>
             </item>
-            <item>We are interested in MORE THAN 75% of 32 questions correct. 75% of 32 is 24. We want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 24). The event "more than 24" is the complement of "less than or equal to 24."</item>
+            <item>We are interested in MORE THAN 75% of 32 questions correct. 75% of 32 is 24. We want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 24). The event "more than 24" is the complement of "less than or equal to 24."</item>
             <item>Using your calculator's distribution menu: 1 – binomcdf<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mtext>32, </m:mtext><m:mfrac><m:mtext>1</m:mtext><m:mtext>3</m:mtext></m:mfrac><m:mo>,</m:mo><m:mtext> 24</m:mtext></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math></item>
-            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 24) = 0</item>
+            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 24) = 0</item>
             <item>The probability of getting more than 75% of the 32 questions correct when randomly guessing is very small and practically zero.</item>
           </list>
         </solution>
@@ -763,7 +779,7 @@
         </problem>
         <solution id="fs-idm24618656">
           <list id="fs-idm63350320" list-type="enumerated" number-style="lower-alpha">
-            <item><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of college and universities that offer online offerings.</item>
+            <item><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of colleges and universities that offer online offerings.</item>
             <item>0, 1, 2, …, 13</item>
             <item>
               <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo>(</m:mo><m:mn>13</m:mn><m:mo>,</m:mo><m:mn>0.96</m:mn><m:mo>)</m:mo></m:math>
@@ -815,7 +831,7 @@
             </item>
             <item>10</item>
             <item>0.0442</item>
-            <item>The probability that all 25 not use the foil is almost zero. Therefore, it would be very surprising.</item>
+            <item>The probability that all 25 do not use the foil is almost zero. Therefore, it would be very surprising.</item>
           </list>
         </solution>
       </exercise>
@@ -960,7 +976,7 @@
                 <item>Standard Deviation = <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:mrow><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mn>15</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.281</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.719</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:msqrt></m:mrow><m:mo>=</m:mo><m:mn>1.7409</m:mn></m:math></item>
               </list>
             </item>
-            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 5) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> binomcdf(15, 0.281, 5) = 1 – 0.7754 = 0.2246 <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf(15, 0.281, 3) = 0.1927 <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf(15, 0.281, 4) = 0.2259 <newline/>It is more likely that four people are literate than three people are.</item>
+            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 5) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> binomcdf(15, 0.281, 5) = 1 – 0.7754 = 0.2246 <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf(15, 0.281, 3) = 0.1927 <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf(15, 0.281, 4) = 0.2259 <newline/>It is more likely that four people are literate than three people are.</item>
           </list>
         </solution>
       </exercise>
@@ -986,5 +1002,8 @@
     </definition><definition id="bidist">
       <term>Binomial Probability Distribution</term>
       <meaning id="id8181257">a discrete random variable (RV) that arises from Bernoulli trials; there are a fixed number, <m:math><m:mi>n</m:mi></m:math>, of independent trials. “Independent” means that the result of any trial (for example, trial one) does not affect the results of the following trials, and all trials are conducted under the same conditions. Under these circumstances the binomial RV <m:math><m:mi>X</m:mi></m:math> is defined as the number of successes in <m:math><m:mi>n</m:mi></m:math> trials. The notation is: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo>(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>p</m:mi><m:mo>)</m:mo></m:math>. The mean is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>np</m:mi></m:math> and the standard deviation is <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt></m:mrow></m:math>. The probability of exactly <m:math><m:mi>x</m:mi></m:math> successes in <m:math><m:mi>n</m:mi></m:math> trials is <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mtable columnalign="left"><m:mtr><m:mtd><m:mi>n</m:mi></m:mtd></m:mtr><m:mtr><m:mtd><m:mi>x</m:mi></m:mtd></m:mtr></m:mtable><m:mo>)</m:mo></m:mrow></m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>x</m:mi></m:mrow></m:msup><m:msup><m:mi>q</m:mi><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mi>x</m:mi></m:mrow></m:msup></m:math>.</meaning>
+    </definition><definition id="def-00001">
+      <term>Binomial Process</term>
+      <meaning>a process — often called a Bernoulli process — in which there are only two possible outcomes in any one trial, called successes and failures; the binomial random variable counts the number of successes in the repeated trials of such a process.</meaning>
     </definition></glossary>
 </document>

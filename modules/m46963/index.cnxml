@@ -7,18 +7,34 @@
     <md:uuid>5fc88cd3-b01f-4b10-b20e-72faabd269bf</md:uuid>
   </metadata>
   <content>
-    <para id="element-1652">A discrete probability distribution requires a process that has countable outcomes. We have previously discussed the idea of quantitative discrete data. Here are some outcomes that can be counted:</para>
+    <para id="para-00008">In <link document="m46925">Chapter 2</link>, we discussed how quantitative data can be either discrete or continuous, and how data values can be visualized with a variety of empirical distributions. We also discussed how, with enough data, an empirical distribution can come to approximate a theoretical distribution. A theoretical distribution arises from probability theory rather than from observed data. In the same way that empirical data can be visualized with a distribution, the outcomes of a random process can be represented with a probability distribution. For example, flipping a fair coin once has a 50% chance of heads and a 50% chance of tails. These two outcomes can easily be represented with a bar graph:</para>
+    <figure class="scaled-down" id="fig-00001">
+      <media alt="A bar graph titled Probability Distribution: One Fair Coin Flipped Once. The horizontal axis shows the outcomes Heads and Tails and the vertical axis shows probability. Each bar has a height of one-half.">
+        <image src="../../media/CNX_Stats_C04_M04_001.png" mime-type="image/png"/>
+      </media>
+    </figure>
+    <para id="para-00009">We use probability distributions to help analyze outcomes of a statistical experiment.</para>
+    <section id="sect-00002">
+      <title>Vocabulary for a Probability Distribution Function</title>
+      <para id="para-00010">In <link document="m46913">Chapter 1</link>, we learned about variables and denoted them with capital letters like <m:math><m:mi>X</m:mi></m:math> or <m:math><m:mi>Y</m:mi></m:math>. We use a similar notation for random experiments, whose outcomes we describe using <term id="term-00002">random variables</term>. A random variable describes the outcome of a random statistical experiment in words, and its value can change each time the experiment is repeated. The values of a random variable can vary with each repetition of an experiment.</para>
+      <para id="para-00011">Upper case letters such as <m:math><m:mi>X</m:mi></m:math> or <m:math><m:mi>Y</m:mi></m:math> denote a random variable, while the outcome is described in words. Lower case letters like <m:math><m:mi>x</m:mi></m:math> or <m:math><m:mi>y</m:mi></m:math> denote the value of a random variable. As an example:</para>
+      <list list-type="bulleted" id="list-00002">
+        <item>A coin is flipped three times and we count the number of heads</item>
+        <item>The random variable is <m:math><m:mi>X</m:mi></m:math> = the number of heads in three coin flips</item>
+        <item>The values of <m:math><m:mi>x</m:mi></m:math> are: 0, 1, 2, 3</item>
+      </list>
+      <para id="element-1652">Random variables help us describe the types of outcomes we are interested in. A random variable can be either discrete or continuous. A discrete probability distribution is defined for a discrete random variable, which is a variable that can take on only a countable number of values. We have previously discussed quantitative discrete data; here are some outcomes that can be counted:</para>
     <list id="element-yu2" list-type="enumerated" number-style="arabic">
-      <item>The number of heads in 3 coin flips: 0, 1, 2, 3</item>
+      <item>The number of heads in three coin flips: 0, 1, 2, 3</item>
       <item>The number of even faces from rolling 2 dice: 0, 1, 2</item>
       <item>The number of books in a student’s backpack: 0, 1, 2, … up to however many might be in the backpack</item>
     </list>
-    <para id="para-00001">A discrete probability distribution is generally represented with a <term id="term-00001">discrete probability distribution function (PDF)</term>. A discrete probability distribution function has two characteristics:</para>
+    <para id="para-00001">A discrete probability distribution is generally represented with a <term id="term-00001">discrete probability distribution function (PDF)</term>. A discrete PDF has two characteristics:</para>
     <list list-type="enumerated" number-style="arabic" id="list-00001">
       <item>Each probability is between zero and one, inclusive.</item>
       <item>The sum of the probabilities is one.</item>
     </list>
-    <para id="para-00002">Often these functions are represented using a table. There are different ways that such functions can be visualized. For instance, suppose we conduct a survey of 10 students and count the number of books in each student’s backpack. The x column represents the outcome, and the P(x) column represents the probability of randomly selecting one student with a certain number of books in their backpack from our survey.</para>
+    <para id="para-00002">Often these functions are represented using a table. There are different ways that such functions can be represented or visualized. For instance, suppose we conduct a survey of 10 students and count the number of books in each student’s backpack. The x column represents the outcome, and the P(x) column represents the probability of randomly selecting one student with a certain number of books in their backpack from our survey.</para>
     <table summary="This table shows values of x and their corresponding probabilities P of x." id="table-00001">
       <title>Probability Distribution</title>
       <tgroup cols="2">
@@ -64,9 +80,17 @@
         </tbody>
       </tgroup>
     </table>
+      <para id="para-00012">We can also visualize these outcomes with a bar graph:</para>
+      <figure class="scaled-down" id="fig-00002">
+        <media alt="A bar graph titled Probability Distribution: Number of Books in a Backpack. The horizontal axis shows the number of books x from 0 to 4 and the vertical axis shows P of x. The bar heights are one-tenth at 0, three-tenths at 1, four-tenths at 2, one-tenth at 3, and one-tenth at 4.">
+          <image src="../../media/CNX_Stats_C04_M04_002.png" mime-type="image/png"/>
+        </media>
+      </figure>
+      <para id="para-00013">Note that the language in this example is tied to the experiment. Why would it be wrong to say the probability that any student has one book in their backpack is <m:math><m:mfrac><m:mn>3</m:mn><m:mn>10</m:mn></m:mfrac></m:math>? The value <m:math><m:mfrac><m:mn>3</m:mn><m:mn>10</m:mn></m:mfrac></m:math> applies only to the 10 students we surveyed. This value is the probability of randomly selecting one of that group who has one book. Ten students is a small amount of data, unlikely to apply to the population of all students. We would need a much larger data set before we could confidently state the probability that any student has one book in their backpack.</para>
+    </section>
     <section id="sect-00001">
       <title>Discrete Probability Outcomes versus General Probability Outcomes</title>
-      <para id="para-00003">The way outcomes were counted in <link document="m46938">Chapter 3</link> versus this chapter can be the same or different. It is entirely dependent on the way data is being viewed. One way we can compare these techniques is by examining different ways to view the outcomes of flipping a coin 3 times:</para>
+      <para id="para-00003">The way outcomes were counted in <link document="m46938">Chapter 3</link> versus this chapter can be the same or different. It is entirely dependent on the way data are being viewed. One way we can compare these techniques is by examining different ways to view the outcomes of flipping a coin 3 times:</para>
       <table summary="This table compares thinking about three fair coin tosses using a general probability lens versus a discrete probability lens." id="table-00002">
         <title>Coin Toss Probability Lenses</title>
         <tgroup cols="3">
@@ -174,7 +198,7 @@
           </tbody>
         </tgroup>
       </table>
-      <para id="para-00007">It is worth noting that a discrete PDF cannot take order into account. For instance, if you want to calculate the probability of getting the outcome HTH, then you must use the sample space S. However, if you want to compute the probability of getting 2 heads within the 3 flips, then the probabilities from either lens will be the same. </para>
+      <para id="para-00007">It is worth noting that a discrete PDF cannot take order into account. For instance, if you want to calculate the probability of getting the outcome HTH, then you must use the general probability lens with sample space S. However, if you want to compute the probability of getting 2 heads within the 3 flips, then the probabilities from either lens will be the same. </para>
     </section>
     <example id="example1">
       <para id="element-165">A child psychologist is interested in the number of times a newborn baby's crying wakes its mother after midnight. For a random sample of 50 mothers, the following information was obtained. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of times per week a newborn baby's crying wakes its mother after midnight. For this example, <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>,</m:mo><m:mn>5</m:mn></m:math>.</para>
@@ -548,7 +572,7 @@
       <!-- <solution id="fs-idm3118640"><para id="fs-idm66349888">Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of batches that the baker will sell.</para></solution> --></exercise>
       <exercise id="fs-idm14204160">
         <problem id="fs-idp91033728">
-          <para id="fs-idp57653024">What is the probability the baker will sell more than one batch? <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 1) = _______</para>
+          <para id="fs-idp57653024">What is the probability the baker will sell more than one batch? <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 1) = _______</para>
         </problem>
         <solution id="fs-idm77654992">
           <para id="fs-idp67916960">0.35 + 0.40 + 0.10 = 0.85</para>
@@ -692,14 +716,14 @@
       </exercise>
       <exercise id="fs-idm51474800">
         <problem id="fs-idp105026400">
-          <para id="fs-idm62777200">Find the probability that Javier volunteers for less than three events each month. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math>_______</para>
+          <para id="fs-idm62777200">Find the probability that Javier volunteers for fewer than three events each month. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math>_______</para>
         </problem>
       <!-- <solution id="fs-idp58199168">
 <para id="fs-idm17855008">0.05 + 0.05 + 0.10 = 0.20</para>
 </solution> --></exercise>
       <exercise id="fs-idm38193104">
         <problem id="fs-idm1831824">
-          <para id="fs-idp54225264">Find the probability that Javier volunteers for at least one event each month. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 0) = _______</para>
+          <para id="fs-idp54225264">Find the probability that Javier volunteers for at least one event each month. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 0) = _______</para>
         </problem>
         <solution id="fs-idm39812848">
           <para id="fs-idp75344688">1 – 0.05 = 0.95</para>

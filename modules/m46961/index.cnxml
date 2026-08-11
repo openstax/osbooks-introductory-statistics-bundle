@@ -7,41 +7,54 @@
     <md:uuid>2f718046-c613-47e2-a323-90654f0e45af</md:uuid>
   </metadata>
   <content>
-    <para id="para-00003">Another useful probability distribution is the <term id="term-00001">Poisson distribution</term>, or waiting time distribution. This distribution is used to determine how many checkout clerks are needed to keep the waiting time in line to specified levels, how many telephone lines are needed to keep the system from overloading, and many other practical applications. A modification of the Poisson, the Pascal, invented nearly two centuries ago, is used today by telecommunications companies worldwide for load factors, satellite hookup levels and Internet capacity problems. The distribution gets its name from Simeon Poisson who presented it in 1837 as an extension of the binomial distribution which we will see can be estimated with the Poisson.</para>
+    <para id="para-00003">Another useful probability distribution is the <term id="term-00001">Poisson distribution</term>. This distribution is used to determine how many checkout clerks are needed to keep the waiting time in line to specified levels, how many telephone lines are needed to keep the system from overloading, and many other practical applications. A modification of the Poisson, the Pascal, invented nearly two centuries ago, is used today by telecommunications companies worldwide for load factors, satellite hookup levels and Internet capacity problems. The distribution gets its name from Simeon Poisson who presented it in 1837 as an extension of the binomial distribution which we will see can be estimated with the Poisson.</para>
     <section id="sect-00001">
       <title>Key Terms</title>
       <para id="para-00004">There are two key terms we must understand when discussing the Poisson distribution:</para>
       <list id="list-00001">
-        <item><term id="term-00003">Poisson distribution</term>: The Poisson distribution refers to a certain type of discrete probability distribution that can predict the outcomes of a Poisson experiment. </item>
+        <item><term id="term-00003">Poisson Distribution</term>: The Poisson distribution refers to a certain type of discrete probability distribution that can predict the outcomes of a Poisson experiment. </item>
         <item><term id="term-00004">Poisson Experiment</term>: A Poisson experiment is a statistical experiment where the outcomes fit a Poisson distribution. There are two main characteristics of a Poisson experiment:
           <list list-type="enumerated" id="list-00002">
             <item>The Poisson probability distribution gives the probability of a number of events occurring in a fixed interval of time or space if these events happen with a known average rate.</item>
-            <item>The events are independent of the time since the last event. For example, a book editor might be interested in the number of words spelled incorrectly in a particular book. It might be that, on the average, there are five words spelled incorrectly in 100 pages. The interval is the 100 pages and it is assumed that there is no relationship between when misspellings occur.</item>
+            <item>The events are independent of the time since the last event. For example, a book editor might be interested in the number of words spelled incorrectly in a particular book. It might be that, on the average, there are five words spelled incorrectly in 100 pages. The interval is the 100 pages, and it is assumed that there is no relationship between when misspellings occur.</item>
           </list>
         </item>
       </list>
       <para id="para-00005">The random variable <m:math><m:mi>X</m:mi></m:math> = the number of occurrences in the interval of interest.</para>
     </section>
     <example id="element-743">
-      <para id="element-746">The average number of loaves of bread put on a shelf in a bakery in a half-hour period is 12. Of interest is the number of loaves of bread put on the shelf in five minutes. The time interval of interest is five minutes. What is the probability that the number of loaves, selected randomly, put on the shelf in five minutes is three?</para>
-      <para id="element-747">Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of loaves of bread put on the shelf in five minutes. If the average number of loaves put on the shelf in 30 minutes (half-hour) is 12, <emphasis>then the average number of loaves put on the shelf in five minutes is</emphasis> <m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>5</m:mn><m:mrow><m:mn>30</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>(</m:mo><m:mn>12</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>2</m:mn></m:math> loaves of bread.</para>
-      <para id="element-749">The probability question asks you to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math>.</para>
+      <exercise id="exer-00003">
+        <problem id="prob-00003">
+          <para id="element-746">The average number of loaves of bread put on a shelf in a bakery in a half-hour period is 12. Of interest is the number of loaves of bread put on the shelf in five minutes. The time interval of interest is five minutes. Explain why this example fits a Poisson Experiment, then state the random variable.</para>
+        </problem>
+        <solution id="sol-00002">
+          <para id="para-00041">Using the criteria of a Poisson Experiment:</para>
+          <para id="para-00042">The Poisson probability distribution gives the probability of a number of events occurring in a fixed interval of time or space if these events happen with a known average rate. In this case, we need a little algebra to find the rate for our interval. We are told the interval of interest is five minutes, and that the average number of loaves in a half-hour period is 12. We can write this as a rate:</para>
+          <para id="para-00043"><m:math><m:mfrac><m:mtext>number of loaves</m:mtext><m:mtext>period time</m:mtext></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mtext>12 loaves</m:mtext><m:mtext>30 minutes</m:mtext></m:mfrac></m:math></para>
+          <para id="para-00044">To find the average for a five-minute interval, we multiply by five minutes:</para>
+          <para id="para-00045"><m:math><m:mfrac><m:mtext>12 loaves</m:mtext><m:mtext>30 minutes</m:mtext></m:mfrac><m:mo>×</m:mo><m:mn>5</m:mn><m:mtext> minutes</m:mtext><m:mo>=</m:mo><m:mn>2</m:mn><m:mtext> loaves</m:mtext></m:math></para>
+          <para id="para-00046">So, with a little work, we see that the average number of loaves in a 5-minute interval should be 2 loaves.</para>
+          <para id="para-00047">The events are independent of the time since the last event: in theory, the number of loaves placed on the shelf in one interval does not depend on the number placed in any earlier interval.</para>
+          <para id="para-00048">The random variable is <m:math><m:mi>X</m:mi></m:math> = the number of loaves of bread put on the shelf in five minutes.</para>
+        </solution>
+      </exercise>
     </example>
     <note id="fs-idp39470352" class="statistics try">
       <label/>
       <title>Try It</title>
       <exercise id="fs-idm102800576">
         <problem id="fs-idm136652096">
-          <para id="fs-idm76340608">The average number of fish caught in an hour is eight. Of interest is the number of fish caught in 15 minutes. The time interval of interest is 15 minutes. What is the average number of fish caught in 15 minutes?</para>
+          <para id="fs-idm76340608">The average number of fish caught in an hour is eight. Of interest is the number of fish caught in 15 minutes. The time interval of interest is 15 minutes. Explain why this example fits a Poisson experiment, and state the random variable.</para>
         </problem>
       </exercise>
     </note>
     <example id="element-403">
       <exercise id="fs-idp21926144">
         <problem id="fs-idp93226496">
-          <para id="element-244">A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Write a mathematical statement for the probability question.</para>
+          <para id="element-244">A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. State the random variable and write a mathematical statement for the probability question.</para>
         </problem>
         <solution id="fs-idp61940464">
+          <para id="para-00049">Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day, then the average is six checks per day. The probability statement is:</para>
           <para id="fs-idm21074048">
             <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:math>
           </para>
@@ -71,7 +84,7 @@
           <para id="element-227">a. one broadcast</para>
           <para id="element-40">b. 2</para>
           <para id="element-112">c. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of times the news reporter says “uh” during one broadcast. <newline/><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:math>... </para>
-          <para id="element-683">d. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 2)</para>
+          <para id="element-683">d. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 2)</para>
         </solution>
       </exercise>
     </example>
@@ -96,14 +109,14 @@
       </equation>
       <para id="para-00009">where <m:math><m:mrow><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow></m:math> is the probability of <m:math><m:mi>x</m:mi></m:math> successes, <m:math><m:mi>μ</m:mi></m:math> is the expected number of successes based upon historical data, <m:math><m:mi>e</m:mi></m:math> is the base of the natural logarithm, approximately equal to <m:math><m:mn>2.718</m:mn></m:math>, and <m:math><m:mi>x</m:mi></m:math> is the number of successes per unit, usually per unit of time.</para>
       <para id="para-00010">Remember your algebra class: <m:math><m:mrow><m:msup><m:mi>x</m:mi><m:mrow><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:msup><m:mi>x</m:mi><m:mi>n</m:mi></m:msup></m:mfrac></m:mrow></m:math>. The Poisson distribution has both a mean, <m:math><m:mi>μ</m:mi></m:math>, the average number of occurrences per unit of time, and also a standard deviation, <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>μ</m:mi></m:msqrt></m:mrow></m:math>.</para>
-      <para id="para-00011">In order to use the Poisson distribution, certain assumptions must hold. These are: the probability of a success, <m:math><m:mi>μ</m:mi></m:math>, is unchanged within the interval, there cannot be simultaneous successes within the interval, and finally, that the probability of a success among intervals is independent, the same assumption of the binomial distribution.</para>
+      <para id="para-00011">In order to use the Poisson distribution, certain assumptions must hold. These are: the average rate of occurrences, <m:math><m:mi>μ</m:mi></m:math>, is constant within the interval, there cannot be simultaneous successes within the interval, and finally, that the probability of a success among intervals is independent, the same assumption of the binomial distribution.</para>
       <para id="para-00012">In a way, the Poisson distribution can be thought of as a clever way to convert a continuous random variable, usually time, into a discrete random variable by breaking up time into discrete independent intervals. This way of thinking about the Poisson helps us understand why it can be used to estimate the probability for the discrete random variable from the binomial distribution. The Poisson is asking for the probability of a number of successes during a period of time while the binomial is asking for the probability of a certain number of successes for a given number of trials.</para>
     </section>
     <example id="element-784">
       <para id="element-690">Leah receives about six telephone calls between 8 a.m. and 10 a.m. What is the probability that Leah receives more than one call <emphasis>in the next 15 minutes?</emphasis></para>
       <para id="element-691">Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of calls Leah receives in 15 minutes. (The <emphasis>interval of interest</emphasis> is 15 minutes or <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>4</m:mn></m:mfrac></m:mrow></m:math> hour.)</para>
       <para id="element-692"><m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo>,</m:mo></m:math>...</para>
-      <para id="element-693">If Leah receives, on the average, six telephone calls in two hours, and there are eight 15 minute intervals in two hours, then Leah receives</para>
+      <para id="element-693">If Leah receives, on the average, six telephone calls in two hours, and there are eight 15-minute intervals in two hours, then Leah receives</para>
       <para id="element-694"><m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>(</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.75</m:mn></m:math> calls in 15 minutes, on average. So, <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>0.75</m:mn></m:math> for this problem.</para>
       <note id="fs-idm23681840" class="statistics calculator">
         <label/>
@@ -111,7 +124,7 @@
           <item>Press 1 then the “−” key and then press <code>2<sup>nd</sup> DISTR</code>.</item>
           <item>Arrow down to <code>poissoncdf</code>. Press <code>ENTER</code>.</item>
           <item>Enter (0.75,1).</item>
-          <item>The result is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 1) = 0.1734.</item>
+          <item>The result is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 1) = 0.1734.</item>
         </list>
         <note id="eip-706">
           <label/>
@@ -119,12 +132,12 @@
           <para id="fs-idm154468640">The TI calculators use <m:math><m:mi>λ</m:mi></m:math> (lambda) for the mean.</para>
         </note>
       </note>
-      <para id="para-00001">The Poisson distribution is discrete, and thus &gt; 1 includes all whole numbers through infinity. The solution is to subtract the probability that <m:math><m:mi>x</m:mi></m:math> is less than or equal to 1, thus <m:math><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>[</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>]</m:mo></m:math></para>
+      <para id="para-00001">The Poisson distribution is discrete, and thus > 1 includes all whole numbers through infinity. The solution is to subtract the probability that <m:math><m:mi>x</m:mi></m:math> is less than or equal to 1, thus <m:math><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>[</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>]</m:mo></m:math></para>
       <equation class="unnumbered" id="eq-00001">
         <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:math>
       </equation>
       <equation class="unnumbered" id="eq-00002">
-        <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>[</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>]</m:mo></m:math>
+        <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>></m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>[</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>+</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>]</m:mo></m:math>
       </equation>
       <equation class="unnumbered" id="eq-00003">
         <m:math><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>[</m:mo><m:mfrac><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:msup><m:mn>75</m:mn><m:mn>0</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>0</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>+</m:mo><m:mfrac><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:msup><m:mn>75</m:mn><m:mn>1</m:mn></m:msup><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>75</m:mn></m:mrow></m:msup></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>!</m:mo></m:mrow></m:mfrac><m:mo>]</m:mo></m:math>
@@ -174,7 +187,7 @@
       <title>Try It</title>
       <exercise id="fs-idm128601120">
         <problem id="fs-idm195364880">
-          <para id="fs-idm191065552">According to a recent poll by the Pew Internet Project, people between the ages of 14 and 17 send an average of 187 text messages each day. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of texts that a girl aged 14 to 17 sends per day. The discrete random variable <m:math><m:mi>X</m:mi></m:math> takes on the values <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:math>... The random variable <m:math><m:mi>X</m:mi></m:math> has a Poisson distribution: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>187</m:mn><m:mo>)</m:mo></m:math>. The mean is 187 text messages.</para>
+          <para id="fs-idm191065552">According to a recent poll by the Pew Internet Project, people between the ages of 14 and 17 send an average of 187 text messages each day. Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of texts that people aged 14 to 17 send per day. The discrete random variable <m:math><m:mi>X</m:mi></m:math> takes on the values <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo></m:math>... The random variable <m:math><m:mi>X</m:mi></m:math> has a Poisson distribution: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>187</m:mn><m:mo>)</m:mo></m:math>. The mean is 187 text messages.</para>
           <list id="fs-idm153913056" list-type="enumerated" number-style="lower-alpha">
             <item>What is the probability that a person sends exactly 175 texts per day?</item>
             <item>What is the probability that a person sends at most 150 texts per day?</item>
@@ -197,7 +210,7 @@
           <list id="fs-idm97821584" list-type="enumerated" number-style="lower-alpha">
             <item>Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of texts that a user sends or receives in one hour. The average number of texts received per hour is <m:math><m:mrow><m:mfrac><m:mrow><m:mn>41.5</m:mn></m:mrow><m:mrow><m:mn>24</m:mn></m:mrow></m:mfrac></m:mrow></m:math> ≈ 1.7292.</item>
             <item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>1.7292</m:mn><m:mo>)</m:mo></m:math>, so <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> poissonpdf(1.7292, 2) ≈ 0.2653</item>
-            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 2) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> poissoncdf(1.7292, 2) ≈ 1 – 0.7495 = 0.2505</item>
+            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 2) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> poissoncdf(1.7292, 2) ≈ 1 – 0.7495 = 0.2505</item>
           </list>
         </solution>
       </exercise>
@@ -225,12 +238,12 @@
           <para id="fs-idm69654032">Let <m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> the number of days with low seismic activity.</para>
           <para id="fs-idm57624224">Using the binomial distribution:
             <list id="fs-idp4019536" list-type="bulleted" bullet-style="none">
-              <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf(200, .0102, 10) ≈ 0.000039</item>
+              <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> binompdf(200, 0.0102, 10) ≈ 0.000039</item>
             </list>
           </para>
           <para id="fs-idm136827536">Using the Poisson distribution:
             <list id="fs-idm9822304" list-type="bulleted" bullet-style="none">
-              <item>Calculate <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>np</m:mi><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>(</m:mo><m:mn>0.0102</m:mn><m:mo>)</m:mo></m:math>≈ 2.04</item>
+              <item>Calculate <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>np</m:mi><m:mo>=</m:mo><m:mn>200</m:mn><m:mo>(</m:mo><m:mn>0.0102</m:mn><m:mo>)</m:mo></m:math> = 2.04</item>
               <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> poissonpdf(2.04, 10) ≈ 0.000045</item>
             </list>
           </para>
@@ -243,7 +256,7 @@
       <title>Try It</title>
       <exercise id="eip-idp124175712">
         <problem id="eip-idp124175968">
-          <para id="eip-idp124176224">On a certain day in May starting at 4:30 PM, the probability of moderate seismic activity for the next 48 hours in the Kuril Islands off the coast of Japan was reported at about 1.43%. Use this information for the next 100 days to find the probability that there will be low seismic activity in five of the next 100 days. Use both the binomial and Poisson distributions to calculate the probabilities. Are they close?</para>
+          <para id="eip-idp124176224">On a certain day in May starting at 4:30 PM, the probability of moderate seismic activity for the next 48 hours in the Kuril Islands off the coast of Japan was reported at about 1.43%. Use this information for the next 100 days to find the probability that there will be moderate seismic activity in five of the next 100 days. Use both the binomial and Poisson distributions to calculate the probabilities. Are they close?</para>
         </problem>
       </exercise>
     </note>
@@ -307,7 +320,7 @@
         <title>Try It</title>
         <exercise id="exer-00002">
           <problem id="prob-00002">
-            <para id="para-00032">In <link target-id="exam-00001"/>, what is the probability that less than 4 seniors will go to graduate school for their master’s in finance?</para>
+            <para id="para-00032">In <link target-id="exam-00001"/>, what is the probability that fewer than four seniors will go to graduate school for their master’s in finance?</para>
           </problem>
         </exercise>
       </note>
@@ -419,6 +432,26 @@
       <exercise id="exercisefour">
         <problem id="id10020274">
           <para id="prob_4">For the given values of the random variable <m:math><m:mi>X</m:mi></m:math>, fill in the corresponding probabilities.</para>
+          <table summary="A probability distribution table with x values of 0, 4, 8, 10, 11, and 15 and blank cells for the corresponding probabilities to be filled in." id="table-00001">
+            <tgroup cols="2">
+              <colspec colnum="1" colname="c1"/>
+              <colspec colnum="2" colname="c2"/>
+              <thead>
+                <row>
+                  <entry><m:math><m:mi>x</m:mi></m:math></entry>
+                  <entry><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math></entry>
+                </row>
+              </thead>
+              <tbody>
+                <row><entry>0</entry><entry/></row>
+                <row><entry>4</entry><entry/></row>
+                <row><entry>8</entry><entry/></row>
+                <row><entry>10</entry><entry/></row>
+                <row><entry>11</entry><entry/></row>
+                <row><entry>15</entry><entry/></row>
+              </tbody>
+            </tgroup>
+          </table>
         </problem>
       <!-- <solution id="fs-idp29073952">
 <table id="element-222" summary="">
@@ -459,10 +492,10 @@
 </solution> --></exercise>
       <exercise id="exercisefive">
         <problem id="id10039817">
-          <para id="prob_5">Is it likely that there will be no teens killed from motor vehicle injuries on any given day in the U.S? Justify your answer numerically.</para>
+          <para id="prob_5">Is it likely that there will be no teens killed from motor vehicle injuries on any given day in the U.S.? Justify your answer numerically.</para>
         </problem>
         <solution id="id10039834">
-          <para id="element-887532428234">No</para>
+          <para id="element-887532428234">No; if <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math>, then <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>8</m:mn></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0.0003</m:mn></m:math>, so a day with no teen deaths from motor vehicle injuries would be very unlikely.</para>
         </solution>
       </exercise>
       <exercise id="exercisesix">
@@ -489,8 +522,8 @@
           <list id="fs-idp36488944" list-type="enumerated" number-style="lower-alpha">
             <item><m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>5.5</m:mn><m:mo>)</m:mo></m:math>; <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>5.5</m:mn></m:math>; <m:math><m:mrow><m:mi>σ</m:mi><m:mtext> = </m:mtext><m:msqrt><m:mrow><m:mn>5.5</m:mn></m:mrow></m:msqrt></m:mrow></m:math> ≈ 2.3452</item>
             <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>6</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math> poissoncdf(5.5, 6) ≈ 0.6860</item>
-            <item><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>157</m:mn></m:math>. There is a 15.7% probability that the law staff will receive exactly six calls on a given day, the maximum number they can handle. Calculating <m:math><m:mrow><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>6</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.6860</m:mn><m:mo>=</m:mo><m:mn>0.3140</m:mn></m:mrow></m:math>, which means there is a 31.4% chance they will receive more calls than they can handle.</item>
-            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> &gt; 8) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>8</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> poissoncdf(5.5, 8) ≈ 1 – 0.8944 = 0.1056</item>
+            <item><m:math><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mn>6</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>157</m:mn></m:math>. There is a 15.7% probability that the law staff will receive exactly six calls on a given day, the maximum number they can handle. Calculating <m:math><m:mrow><m:mi>P</m:mi><m:mfenced><m:mrow><m:mi>X</m:mi><m:mo>></m:mo><m:mn>6</m:mn></m:mrow></m:mfenced><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.6860</m:mn><m:mo>=</m:mo><m:mn>0.3140</m:mn></m:mrow></m:math>, which means there is a 31.4% chance they will receive more calls than they can handle.</item>
+            <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi></m:math> > 8) = 1 – <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>8</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo></m:math> poissoncdf(5.5, 8) ≈ 1 – 0.8944 = 0.1056</item>
           </list>
         </solution>
       </exercise>
@@ -583,7 +616,7 @@
       </exercise>
       <exercise id="eip-241">
         <problem id="eip-550">
-          <para id="eip-509">Fertile, female cats produce an average of three litters per year. Suppose that one fertile, female cat is randomly chosen. In one year, find the probability she produces:</para>
+          <para id="eip-509">Fertile, female cats produce an average of three litters per year. Suppose that one fertile, female cat is randomly chosen.</para>
           <list id="eip-idm49807776" list-type="enumerated" number-style="lower-alpha">
             <item>In words, define the random variable <m:math><m:mi>X</m:mi></m:math>.</item>
             <item>List the values that <m:math><m:mi>X</m:mi></m:math> may take on.</item>
@@ -630,14 +663,14 @@
       </exercise>
       <exercise id="element-255">
         <problem id="id17404044">
-          <para id="element-311">For every 200 U.S. kids and teens, the average number who suffer from obsessive compulsive disorder is one. Out of a randomly chosen group of 600 U.S. kids and teens, determine the following.</para>
+          <para id="element-311">For every 200 U.S. kids and teens, the average number who have obsessive-compulsive disorder is one. Out of a randomly chosen group of 600 U.S. kids and teens, determine the following.</para>
           <list id="element-164" list-type="enumerated" number-style="lower-alpha">
             <item>In words, define the random variable <m:math><m:mi>X</m:mi></m:math>.</item>
             <item>List the values that <m:math><m:mi>X</m:mi></m:math> may take on.</item>
             <item>Give the distribution of <m:math><m:mi>X</m:mi></m:math>. <m:math><m:mi>X</m:mi><m:mo>~</m:mo></m:math>_____(_____,_____)</item>
-            <item>How many are expected to suffer from obsessive compulsive disorder?</item>
-            <item>Find the probability that no one suffers from obsessive compulsive disorder.</item>
-            <item>Find the probability that more than four suffer from obsessive compulsive disorder.</item>
+            <item>How many are expected to have obsessive-compulsive disorder?</item>
+            <item>Find the probability that no one has obsessive-compulsive disorder.</item>
+            <item>Find the probability that more than four have obsessive-compulsive disorder.</item>
           </list>
         </problem>
       <!-- <solution id="id13728739">
@@ -1431,6 +1464,9 @@
           <item>The probability that the event occurs in a given interval is the same for all intervals.</item>
           <item>The events occur with a known mean and independently of the time since the last event.</item>
         </list> The distribution is defined by the mean <m:math><m:mi>μ</m:mi></m:math> of the event in the interval. Notation: <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>μ</m:mi><m:mo>)</m:mo></m:math>. <para id="para-00033">The mean <m:math><m:mi>μ</m:mi></m:math> is typically given as a parameter of the distribution.</para>
-<para id="para-00034">The variance is <m:math><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mi>μ</m:mi></m:mrow></m:math>, and the standard deviation is <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>μ</m:mi></m:msqrt></m:mrow></m:math>.</para> The probability of having exactly <m:math><m:mi>x</m:mi></m:math> successes within the interval is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:mrow></m:math>. The Poisson distribution is often used to approximate the binomial distribution, when <m:math><m:mi>n</m:mi></m:math> is “large” and <m:math><m:mi>p</m:mi></m:math> is “small” (a general rule is that <m:math><m:mi>n</m:mi></m:math> should be greater than or equal to 20 and <m:math><m:mi>p</m:mi></m:math> should be less than or equal to 0.05).</meaning>
+<para id="para-00034">The variance is <m:math><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup><m:mo>=</m:mo><m:mi>μ</m:mi></m:mrow></m:math>, and the standard deviation is <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>μ</m:mi></m:msqrt></m:mrow></m:math>.</para> The probability of having exactly <m:math><m:mi>x</m:mi></m:math> successes within the interval is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mo stretchy="false">(</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow></m:msup><m:mo stretchy="false">)</m:mo><m:mfrac><m:mrow><m:msup><m:mi>μ</m:mi><m:mi>x</m:mi></m:msup></m:mrow><m:mrow><m:mi>x</m:mi><m:mo>!</m:mo></m:mrow></m:mfrac></m:mrow></m:math>. The Poisson distribution is often used to approximate the binomial distribution, when <m:math><m:mi>n</m:mi></m:math> is “large” and <m:math><m:mi>p</m:mi></m:math> is “small” (a general rule is that <m:math><m:mi>n</m:mi></m:math> should be greater than 20 and <m:math><m:mi>p</m:mi></m:math> should be less than 0.05).</meaning>
+    </definition><definition id="def-00001">
+      <term>Poisson Experiment</term>
+      <meaning>a statistical experiment in which the outcomes fit a Poisson distribution: the experiment counts the number of events in a fixed interval of time or space, the events occur with a known average rate, and they occur independently of the time since the last event.</meaning>
     </definition></glossary>
 </document>
