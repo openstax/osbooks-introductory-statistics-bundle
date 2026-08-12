@@ -7,7 +7,7 @@
     <md:uuid>19dbb18e-b94b-42ec-8477-eca45a10d49e</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001">The <term id="term-00001">Normal Distribution</term> is a type of continuous distribution that can be observed with many real world applications, and the shape of its graph is typically called a <term id="term-00002">bell curve</term>. The shape of a bell curve naturally emerges when the size of the sample <m:math><m:mi>n</m:mi></m:math> is large enough. As a review, here are a few examples of histograms based on weight data with different samples of size <m:math><m:mi>n</m:mi></m:math>. Notice that the curve smooths out as <m:math><m:mi>n</m:mi></m:math> gets larger:</para>
+    <para id="para-00001">The <term id="term-00001">Normal Distribution</term> is a type of continuous distribution that can be observed with many real-world applications, and the shape of its graph is typically called a <term id="term-00002">bell curve</term>. The shape of a bell curve naturally emerges when the size of the sample <m:math><m:mi>n</m:mi></m:math> is large enough. As a review, here are a few examples of histograms based on weight data with different samples of size <m:math><m:mi>n</m:mi></m:math>. Notice that the curve smooths out as <m:math><m:mi>n</m:mi></m:math> gets larger:</para>
     <figure id="fig-00001">
       <media alt="Three histograms of weight data for increasingly large sample sizes n; as n increases the histogram becomes smoother and more bell-shaped.">
         <image src="../../media/CNX_Stats_C06_6-1_img1.png" mime-type="image/png"/>
@@ -49,7 +49,7 @@
             </media>
           </figure>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00002">
-            <item>The average weight of a pitbull terrier is 50 pounds with a standard deviation of 10 pounds.</item>
+            <item>The average weight of a pit bull terrier is 50 pounds with a standard deviation of 10 pounds.</item>
             <item>Michael Jordan played over 1,200 games in the NBA. On average, he scored 30.6 points with a standard deviation of 10.</item>
           </list>
         </problem>
@@ -59,7 +59,7 @@
               <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>50</m:mn><m:mo>,</m:mo><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
               <newline/>
               <figure id="fig-00005">
-                <media alt="A normal distribution for pitbull terrier weights, X is distributed as N(50, 10), centered at 50 pounds.">
+                <media alt="A normal distribution for pit bull terrier weights, X is distributed as N(50, 10), centered at 50 pounds.">
                   <image src="../../media/CNX_Stats_C06_6-1_img4.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -77,15 +77,27 @@
         </solution>
       </exercise>
     </example>
+    <note class="statistics try" id="note-tryit-0601">
+      <title>Try It</title>
+      <exercise id="exer-tryit-0601">
+        <problem id="prob-tryit-0601">
+          <para id="para-tryit-0601">Draw the following normal distributions associated with each given situation. State how the random variable is distributed, and then draw a proper normal distribution with the mean and standard deviation.</para>
+          <list list-type="enumerated" number-style="lower-alpha" id="list-tryit-0601">
+            <item>The length of a human pregnancy averages 280 days with a standard deviation of 13 days.</item>
+            <item>The scores on a college entrance exam have a mean of 52 points and a standard deviation of 11 points.</item>
+          </list>
+        </problem>
+      </exercise>
+    </note>
     <section id="sect-00001">
       <title>The Empirical Rule</title>
       <para id="para-00012">Why do we care about all the different values on the normal distribution like <m:math><m:mi>μ</m:mi></m:math>, <m:math><m:mi>σ</m:mi></m:math>, <m:math><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>σ</m:mi></m:mrow></m:math>, etc.? These measures hold particular significance due to the <term id="term-00004">Empirical Rule</term>. If <m:math><m:mi>X</m:mi></m:math> is a random variable and has a normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math>, then the Empirical Rule states the following:</para>
       <list list-type="bulleted" id="list-00004">
-        <item>About 68% of the <m:math><m:mi>x</m:mi></m:math> values lie between <m:math><m:mrow><m:mo>−</m:mo><m:mn>1</m:mn><m:mi>σ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mo>+</m:mo><m:mn>1</m:mn><m:mi>σ</m:mi></m:mrow></m:math> of the mean <m:math><m:mi>μ</m:mi></m:math> (within one standard deviation of the mean).</item>
-        <item>About 95% of the <m:math><m:mi>x</m:mi></m:math> values lie between <m:math><m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math> of the mean <m:math><m:mi>μ</m:mi></m:math> (within two standard deviations of the mean).</item>
-        <item>About 99.7% of the <m:math><m:mi>x</m:mi></m:math> values lie between <m:math><m:mrow><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>σ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>σ</m:mi></m:mrow></m:math> of the mean <m:math><m:mi>μ</m:mi></m:math> (within three standard deviations of the mean). Notice that almost all the <m:math><m:mi>x</m:mi></m:math> values lie within three standard deviations of the mean.</item>
+        <item>About 68% of the <m:math><m:mi>x</m:mi></m:math> values lie between <m:math><m:mrow><m:mi>μ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mi>σ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mi>σ</m:mi></m:mrow></m:math> (within one standard deviation of the mean).</item>
+        <item>About 95% of the <m:math><m:mi>x</m:mi></m:math> values lie between <m:math><m:mrow><m:mi>μ</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math> (within two standard deviations of the mean).</item>
+        <item>About 99.7% of the <m:math><m:mi>x</m:mi></m:math> values lie between <m:math><m:mrow><m:mi>μ</m:mi><m:mo>−</m:mo><m:mn>3</m:mn><m:mi>σ</m:mi></m:mrow></m:math> and <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mn>3</m:mn><m:mi>σ</m:mi></m:mrow></m:math> (within three standard deviations of the mean). Notice that almost all the <m:math><m:mi>x</m:mi></m:math> values lie within three standard deviations of the mean.</item>
       </list>
-      <para id="para-00013">The empirical rule is also known as the 68-95-99.7 rule. We can visualize this rule with the following figure:</para>
+      <para id="para-00013">The empirical rule is also known as the 68-95-99.7 rule. As a reminder, for simplicity we sometimes abbreviate <m:math><m:mrow><m:mi>μ</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mi>σ</m:mi></m:mrow></m:math>, <m:math><m:mrow><m:mi>μ</m:mi><m:mo>+</m:mo><m:mn>1</m:mn><m:mi>σ</m:mi></m:mrow></m:math>, <m:math><m:mrow><m:mi>μ</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math>, and the like with: <m:math><m:mrow><m:mo>−</m:mo><m:mi>σ</m:mi></m:mrow></m:math>, <m:math><m:mi>σ</m:mi></m:math>, <m:math><m:mrow><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>σ</m:mi></m:mrow></m:math>, etc. We can visualize this rule with the following figure:</para>
       <figure id="fig-00007">
         <media alt="A normal curve illustrating the Empirical Rule: about 68% of values lie within one standard deviation of the mean, 95% within two, and 99.7% within three standard deviations.">
           <image src="../../media/CNX_Stats_C06_6-1_img6.png" mime-type="image/png"/>
@@ -112,31 +124,31 @@
           <problem id="prob-00003">
             <para id="para-00016">Using your normal distributions from earlier, apply the empirical rule to the following situations.</para>
             <list list-type="enumerated" number-style="lower-alpha" id="list-00006">
-              <item>The average weight of a pitbull terrier is 50 pounds with a standard deviation of 10 pounds.</item>
+              <item>The average weight of a pit bull terrier is 50 pounds with a standard deviation of 10 pounds.</item>
               <item>Michael Jordan played over 1,200 games in the NBA. On average, he scored 30.6 points with a standard deviation of 10.</item>
-              <item>What is the probability that a pitbull terrier weighs between 40 and 60 pounds?</item>
+              <item>What is the probability that a pit bull terrier weighs between 40 and 60 pounds?</item>
               <item>What is the probability that Michael Jordan scored more than 30.6 points?</item>
-              <item>What is the probability that a pitbull terrier weighs more than 40 pounds?</item>
+              <item>What is the probability that a pit bull terrier weighs more than 40 pounds?</item>
               <item>What is the probability that Michael Jordan scored between 10.6 and 40.6 points?</item>
             </list>
           </problem>
           <solution id="sol-00002">
             <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
-              <item>About 68% of all pitbull terriers weigh between 40 and 60 pounds. About 95% of all pitbull terriers weigh between 30 and 70 pounds. About 99.7% of all pitbull terriers weigh between 20 and 80 pounds.<newline/>
+              <item>About 68% of all pit bull terriers weigh between 40 and 60 pounds. About 95% of all pit bull terriers weigh between 30 and 70 pounds. About 99.7% of all pit bull terriers weigh between 20 and 80 pounds.<newline/>
                 <figure id="fig-00008">
-                  <media alt="A normal distribution of pitbull terrier weights with the 68%, 95%, and 99.7% empirical-rule intervals labeled.">
+                  <media alt="A normal distribution of pit bull terrier weights with the 68%, 95%, and 99.7% empirical-rule intervals labeled.">
                     <image src="../../media/CNX_Stats_C06_6-1_img7.png" mime-type="image/png"/>
                   </media>
                 </figure>
               </item>
-              <item>In about 68% of the games Michael Jordan played in the NBA, he scored between 20.6 and 40.6 points in the game. In 95% of the games he played, he scored between 10.6 and 50.6 points in the game. In 99.7% of the games, he scored between 0.6 points and 60.6 points in the game. (Fun fact: the most points Jordan ever scored in a game was 69 points.)<newline/>
+              <item>In about 68% of the games Michael Jordan played in the NBA, he scored between 20.6 and 40.6 points in the game. In about 95% of the games he played, he scored between 10.6 and 50.6 points in the game. In about 99.7% of the games, he scored between 0.6 points and 60.6 points in the game. (Fun fact: the most points Jordan ever scored in a game was 69 points.)<newline/>
                 <figure id="fig-00009">
                   <media alt="A normal distribution of Michael Jordan's points per game with the 68%, 95%, and 99.7% empirical-rule intervals labeled.">
                     <image src="../../media/CNX_Stats_C06_6-1_img8.png" mime-type="image/png"/>
                   </media>
                 </figure>
               </item>
-              <item>The values from 40 to 60 are within 1 standard deviation of the mean, so the probability would be 68%.<newline/>
+              <item>The values from 40 to 60 are within one standard deviation of the mean, so the probability would be 68%.<newline/>
                 <figure id="fig-00010">
                   <media alt="A normal curve with the region between 40 and 60 shaded, representing 68% of the area.">
                     <image src="../../media/CNX_Stats_C06_6-1_img9.png" mime-type="image/png"/>
@@ -168,6 +180,18 @@
           </solution>
         </exercise>
       </example>
+      <note class="statistics try" id="note-tryit-0603">
+        <title>Try It</title>
+        <exercise id="exer-tryit-0603">
+          <problem id="prob-tryit-0603">
+            <para id="para-tryit-0603">Using your normal distributions from Try It 6.1, apply the empirical rule to the following situations.</para>
+            <list list-type="enumerated" number-style="lower-alpha" id="list-tryit-0603">
+              <item>What is the probability that a human pregnancy lasts between 267 and 293 days?</item>
+              <item>What is the probability that a human pregnancy lasts more than 254 days?</item>
+            </list>
+          </problem>
+        </exercise>
+      </note>
     </section>
     <section id="sect-00002">
       <title>Z-Scores</title>
@@ -304,7 +328,7 @@
     </section>
     <section class="summary" id="sect-00004">
       <title>The Normal Distribution</title>
-      <para id="para-00047">The normal distribution, which is continuous, is the most important of all the probability distributions. Its graph is bell-shaped. This bell-shaped curve is used in almost all disciplines. Since it is a continuous distribution, the total area under the curve is one. The parameters of the normal are the mean <m:math><m:mi>μ</m:mi></m:math> and the standard deviation <m:math><m:mi>σ</m:mi></m:math>. A special normal distribution, called the standard normal distribution is the distribution of <m:math><m:mi>z</m:mi></m:math>-scores. Its mean is zero, and its standard deviation is one.</para>
+      <para id="para-00047">The normal distribution, which is continuous, is the most important of all the probability distributions. Its graph is bell-shaped. This bell-shaped curve is used in almost all disciplines. Since it is a continuous distribution, the total area under the curve is one. The parameters of the normal are the mean <m:math><m:mi>μ</m:mi></m:math> and the standard deviation <m:math><m:mi>σ</m:mi></m:math>. A special normal distribution, called the standard normal distribution, is the distribution of <m:math><m:mi>z</m:mi></m:math>-scores. Its mean is zero, and its standard deviation is one.</para>
     </section>
     <section class="formula-review" id="sect-00005">
       <title>The Normal Distribution</title>

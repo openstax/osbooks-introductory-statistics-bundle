@@ -7,7 +7,7 @@
     <md:uuid>2277b0c2-7700-44ed-a958-350715a4d8d1</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001">Technology or a table are used to calculate probabilities associated with the normal distribution or standard normal distribution. Many technologies (TI-83+, TI-84, or Excel) default probability calculations to the left.</para>
+    <para id="para-00001">Technology or a table is used to calculate probabilities associated with the normal distribution or standard normal distribution. Many technologies (TI-83+, TI-84, or Excel) default probability calculations to the left.</para>
     <para id="para-00002">Before we look at calculations of various probabilities, we will review a few key properties of continuous distributions that still hold with the normal or standard normal distributions:</para>
     <list list-type="bulleted" id="list-00001">
       <item>
@@ -41,7 +41,7 @@
           <image src="../../media/CNX_Stats_C06_6-3_img3.png" mime-type="image/png"/>
         </media>
       </figure>
-      <para id="para-00008">In the event of using technology that only compute to the left, we will recognize how two areas overlap on one another and thus must be subtracted from one another: <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> vs <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> as shown below:</para>
+      <para id="para-00008">In the event of using technology that only computes to the left, we will recognize how two areas overlap on one another and thus must be subtracted from one another: <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> vs <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> as shown below:</para>
       <figure id="fig-00004">
         <media alt="A normal distribution showing the area to the left of B and the area to the left of A, whose difference gives the area between A and B.">
           <image src="../../media/CNX_Stats_C06_6-3_img4.png" mime-type="image/png"/>
@@ -55,7 +55,7 @@
             <image src="../../media/CNX_Stats_C06_6-3_img5.png" mime-type="image/png"/>
           </media>
         </figure>
-        <para id="para-00010">Note that a percentile is typically referring to the <emphasis>left side</emphasis> of the normal distribution. Most technology also assumes that inverse normal calculations move to the left. As such, if we were asked to find what data value is in the top 20<sup>th</sup> percentile, we would adjust this language for the technology as explained in the figure below:</para>
+        <para id="para-00010">Note that a percentile is typically referring to the <emphasis>left side</emphasis> of the normal distribution. Most technology also assumes that inverse normal calculations move to the left. As such, if we were asked to find what data value separates the top 20% of the distribution, we would adjust this language for the technology as explained in the figure below:</para>
         <figure id="fig-00006">
           <media alt="A normal distribution showing that finding the top 20th percentile is equivalent to finding the value with 80% of the area to its left.">
             <image src="../../media/CNX_Stats_C06_6-3_img6.png" mime-type="image/png"/>
@@ -263,7 +263,7 @@
             <list list-type="bulleted" id="list-00003">
               <item>invNorm(0.80,36.9,13.9) = 48.6</item>
               <item>The 80<sup>th</sup> percentile is 48.6 years.</item>
-              <item>80% of the smartphone users in the age range 13 – 55+ are 48.6 years old or less.</item>
+              <item>Eighty percent of the smartphone users in the age range 13 to 55+ are 48.6 years old or less.</item>
             </list>
           </solution>
         </exercise>
@@ -275,7 +275,7 @@
             <para id="para-00066">Use the information in <link target-id="eip-3e-ex-smartphone-ages"/> to answer the following questions.</para>
             <list list-type="enumerated" number-style="lower-alpha" id="list-00004">
               <item>Find the 30<sup>th</sup> percentile, and interpret it in a complete sentence.</item>
-              <item>What is the probability that the age of a randomly selected smartphone user in the range 13 to 55+ is less than 27 years old.</item>
+              <item>What is the probability that the age of a randomly selected smartphone user in the range 13 to 55+ is less than 27 years old?</item>
             </list>
           </problem>
         </exercise>
@@ -375,6 +375,10 @@
           </problem>
         </exercise>
       </note>
+    </section>
+    <section class="summary" id="sect-summary-63">
+      <title>Using the Normal Distribution</title>
+      <para id="para-summary-63">Probabilities for a normal distribution are areas under its curve, calculated with technology such as normalcdf(lower value, upper value, mean, standard deviation). Because technology typically calculates areas to the left, probabilities to the right use the complement rule, <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, and probabilities between two values are found by subtracting one left-hand area from another. Drawing and shading the distribution first helps confirm that an answer makes sense. The process can also be inverted: starting from a probability or percentile, invNorm(area to the left, mean, standard deviation) returns the data value <m:math><m:mi>k</m:mi></m:math>, the <m:math><m:mi>k</m:mi></m:math>th percentile, that produces that area.</para>
     </section>
     <section class="formula-review" id="sect-00004">
       <title>Using the Normal Distribution</title>
@@ -833,11 +837,11 @@
           <para id="para-00145">c. Answers may vary.</para>
           <para id="para-00146">d. Answers may vary.</para>
           <para id="para-00147">e. <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>5.51</m:mn><m:mo>,</m:mo><m:mn>2.15</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math></para>
-          <para id="para-00148">f. 0.6029</para>
+          <para id="para-00148">f. 0.6081</para>
           <para id="para-00149">g. The cumulative frequency for less than 6.1 minutes is 0.64.</para>
           <para id="para-00150">h. The answers to part f and part g are not exactly the same, because the normal distribution is only an approximation to the real one.</para>
           <para id="para-00151">i. The answers to part f and part g are close, because a normal distribution is an excellent approximation when the sample size is greater than 30.</para>
-          <para id="para-00152">j. The approximation would have been less accurate, because the smaller sample size means that the data does not fit normal curve as well.</para>
+          <para id="para-00152">j. The approximation would have been less accurate, because the smaller sample size means that the data do not fit the normal curve as well.</para>
         </solution>
       </exercise>
       <exercise id="exer-00047">
@@ -969,14 +973,14 @@
       </exercise>
       <exercise id="exer-00050">
         <problem id="prob-00050">
-          <para id="para-00164">On average, 28% of 18 to 34 year olds check social media before getting out of bed in the morning. Suppose this percentage follows a normal distribution with a standard deviation of 5%.</para>
+          <para id="para-00164">On average, 28% of 18- to 34-year-olds check social media before getting out of bed in the morning. Suppose this percentage follows a normal distribution with a standard deviation of 5%.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00031">
-            <item>Find the probability that the percent of 18 to 34 year olds who check social media before getting out of bed in the morning is at least 30%.</item>
+            <item>Find the probability that the percent of 18- to 34-year-olds who check social media before getting out of bed in the morning is at least 30%.</item>
             <item>Find the 95th percentile, and express it in a sentence.</item>
           </list>
         </problem>
         <solution id="sol-00027">
-          <para id="para-00165"><m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mtext>percent</m:mtext><m:mo>≥</m:mo><m:mn>30</m:mn><m:mo>%</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>≥</m:mo><m:mn>0.4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.3446</m:mn></m:mrow></m:math>. The 95th percentile is <m:math><m:mrow><m:mn>28</m:mn><m:mo>+</m:mo><m:mn>1.645</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>36.2</m:mn><m:mo>%</m:mo></m:mrow></m:math>, so about 95% of the time at most 36.2% of 18–34 year olds check social media before getting out of bed.</para>
+          <para id="para-00165"><m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mtext>percent</m:mtext><m:mo>≥</m:mo><m:mn>30</m:mn><m:mo>%</m:mo><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>≥</m:mo><m:mn>0.4</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.3446</m:mn></m:mrow></m:math>. The 95th percentile is <m:math><m:mrow><m:mn>28</m:mn><m:mo>+</m:mo><m:mn>1.645</m:mn><m:mo stretchy="false">(</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo><m:mo>≈</m:mo><m:mn>36.2</m:mn><m:mo>%</m:mo></m:mrow></m:math>, so about 95% of the time at most 36.2% of 18- to 34-year-olds check social media before getting out of bed.</para>
         </solution>
       </exercise>
     </section>
