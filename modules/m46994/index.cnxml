@@ -11,27 +11,27 @@
     <section id="sect-00001">
       <title>Statement of the Central Limit Theorem for Means and Criteria</title>
       <para id="para-00002">Let <m:math><m:mi>X</m:mi></m:math> be a random variable from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math>.</para>
-      <para id="para-00003">The Central Limit Theorem for Means says:</para>
-      <para id="para-00004">
-        <emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their means are computed, the histogram of the means tends to follow a normal distribution regardless of the population’s original distribution. This distribution of means can be notated: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> (where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>).</emphasis>
-      </para>
-      <para id="para-00005">We will work to understand the steps of the Central Limit Theorem throughout this section. There are a few key aspects of this theorem that we should note as we work to understand it:</para>
-      <list list-type="enumerated" id="list-00001">
-        <item>We must <emphasis effect="italics">repeatedly</emphasis> take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population.</item>
-        <item>We must find the mean of each sample.</item>
-        <item>We compile the means into a histogram. For large enough samples of size <m:math><m:mi>n</m:mi></m:math> and enough means, the histogram will begin to resemble a normal distribution. This will happen <emphasis effect="italics">regardless</emphasis> of the original population’s distribution.</item>
-        <item>When the histogram resembles a bell-curve, it will be centered at the original population <m:math><m:mi>μ</m:mi></m:math> with standard deviation <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</item>
-      </list>
       <para id="para-00006">To use the Central Limit Theorem, the following criteria must be met before using the theorem:</para>
       <list list-type="enumerated" id="list-00002">
-        <item>Samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (though this rule can be softened if the population is nearly normally distributed).</item>
+        <item>Samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (this rule does not apply if it is known that the population is normally distributed).</item>
         <item>Samples must be random and independent from one another.</item>
         <item>Samples must be of a size less than 5% of the population’s size when sampling without replacement.</item>
       </list>
+      <para id="para-00003">The Central Limit Theorem for Means says:</para>
+      <para id="para-00004"><emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their means are computed, the distribution of those means is approximately normal, no matter what the original population looks like, as long as the criteria above are met. The larger <m:math><m:mi>n</m:mi></m:math> is, the better the approximation. This distribution of means can be notated: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> (where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>).</emphasis> We also call this the sampling distribution of means or sampling distribution.
+      </para>
+      <para id="para-00005">We will work to understand the steps of the Central Limit Theorem throughout this section. There are a few key aspects of this theorem that we should note as we work to understand it:</para>
+      <para id="para-00098">To help understand the full picture of what the theorem says, we must:</para>
+      <list list-type="enumerated" id="list-00001">
+        <item>Repeatedly take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population.</item>
+        <item>Find the mean of each sample.</item>
+        <item>Compile the means into a histogram. Take enough means and the histogram becomes a clear, stable picture. Take samples that are <emphasis effect="italics">large enough</emphasis> and the picture that emerges is a normal curve. This will happen regardless of the original population’s distribution. When the histogram resembles a bell-curve, it will be centered at the original population <m:math><m:mi>μ</m:mi></m:math> with standard deviation <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</item>
+      </list>
+      <para id="para-00099">After we understand the full picture of what the theorem is saying, we can understand its meaning: in real problems, the mean of a single sample of size <m:math><m:mi>n</m:mi></m:math> came from this larger distribution that we pictured.</para>
     </section>
     <section id="sect-00002">
       <title>Review: Histograms and Sample Sizes</title>
-      <para id="para-00007">Before we can discuss how the Central Limit Theorem for Means works, we review some important aspects about histograms and sample sizes. Recall that histograms can tend to look less meaningful with small sample sizes. As the sample size <m:math><m:mi>n</m:mi></m:math> increases, the shape of the histogram can become prominent. In the example below, we draw samples of different sizes from a normally distributed population. You will note that when <m:math><m:mi>n</m:mi><m:mo>≤</m:mo><m:mn>100</m:mn><m:mo>,</m:mo></m:math> the histogram does not seem to have a clear shape. As <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>000</m:mn><m:mo>,</m:mo></m:math> the histogram begins to follow a clear bell-curve shape:</para>
+      <para id="para-00007">Before we can discuss how the Central Limit Theorem for Means works, we review some important aspects about histograms and sample sizes. Recall that histograms can tend to look less meaningful with small sample sizes. When the sample size <m:math><m:mi>n</m:mi></m:math> increases, the shape of the histogram can become prominent. In the example below, we draw samples of different sizes from a normally distributed population. You will note that when <m:math><m:mi>n</m:mi><m:mo>≤</m:mo><m:mn>100</m:mn><m:mo>,</m:mo></m:math> the histogram does not seem to have a clear shape. When <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>000</m:mn><m:mo>,</m:mo></m:math> the histogram begins to follow a clear bell-curve shape:</para>
       <figure id="fig-00001">
         <media alt="Four histograms of samples drawn from a normally distributed population for increasing sample sizes; for small sample sizes the histogram has no clear shape, while for large sample sizes a clear bell-curve shape emerges.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img1.png"/>
@@ -52,14 +52,14 @@
         <item>The population mean is <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>172</m:mn></m:math></item>
         <item>The population standard deviation is <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>40</m:mn></m:math></item>
       </list>
-      <para id="para-00011">Recall that it is typically very difficult to obtain population-level data in day-to-day research. Suppose three researchers want to take simple random samples from this population data (because they do not have access to the population-level data). The three researchers randomly collect samples each of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> Below you can see the dataset that each research collected, the sample mean of each data set, and the histogram for each data set.</para>
+      <para id="para-00011">Recall that it is typically very difficult to obtain population-level data in day-to-day research. Suppose three researchers want to take simple random samples from this population data (because they do not have access to the population-level data). The three researchers randomly collect samples each of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> Below you can see the data set that each researcher collected, the sample mean of each data set, and the histogram for each data set.</para>
       <figure id="fig-00003">
         <media alt="The datasets collected by three researchers, each a sample of size 30, with each sample mean and a histogram for each dataset; the histograms do not look normally distributed.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img3.png"/>
         </media>
       </figure>
-      <para id="para-00012">As expected, the histograms do not look normally distributed because they are comprised of only 30 data points each. Additionally, each mean is slightly different due to natural variability in sampling.</para>
-      <para id="para-00013">An important aspect of the Central Limit Theorem is to take means <emphasis effect="italics">repeatedly.</emphasis> While each researcher has collected quite a bit of data, they ultimately only have three means collected. Three means is not enough for a meaningful result with the Central Limit Theorem. As such, we assemble a team of 50 researchers to each collect a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> The next figure shows what mean each of the 50 researchers obtained, including our original three researchers.</para>
+      <para id="para-00012">As expected, the histograms do not look normally distributed because they are composed of only 30 data points each. The individual samples are not expected to look normal, and at this point the main concern we have is the mean of each sample. Additionally, each mean is slightly different due to natural variability in sampling.</para>
+      <para id="para-00013">An important aspect of the Central Limit Theorem is to take means <emphasis effect="italics">repeatedly.</emphasis> While each researcher has collected quite a bit of data, they ultimately only have three means collected. Three means are not enough for a meaningful result with the Central Limit Theorem. As such, we assemble a team of 50 researchers to each collect a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> The next figure shows what mean each of the 50 researchers obtained, including our original three researchers.</para>
       <figure id="fig-00004">
         <media alt="A display of the sample mean obtained by each of 50 researchers, each collecting a sample of size 30.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img4.png"/>
@@ -71,8 +71,8 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img5.png"/>
         </media>
       </figure>
-      <para id="para-00015">This histogram does not have a clear distribution, which is to be expected because it is comprised of only 50 means (which we stated earlier was a small amount of data for a meaningful histogram). The result aligns with what we already noted about histograms: 50 means is typically not enough for a clear distribution to emerge.</para>
-      <para id="para-00016">Now suppose that we have an army of 5,000 researchers collect samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> In the next figure, we can visualize many of the means that each researcher collected:</para>
+      <para id="para-00015">This histogram does not have a clear distribution, which is to be expected because it is made up of only 50 means (which we stated earlier was a small amount of data for a meaningful histogram). The result aligns with what we already noted about histograms: 50 means are typically not enough for a clear distribution to emerge.</para>
+      <para id="para-00016">Now suppose that we have an army of 5,000 researchers collect samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math> (as an additional note, some students may appear in certain samples more than once, which is fine since the researchers each take an independent sample). In the next figure, we can visualize many of the 5,000 means that each researcher collected:</para>
       <figure id="fig-00006">
         <media alt="A visualization of many of the sample means collected by an army of 5,000 researchers, each collecting a sample of size 30.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img6.png"/>
@@ -84,8 +84,8 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img7.png"/>
         </media>
       </figure>
-      <para id="para-00018">With 5,000 sample means, a clear bell-curve shape emerges. Since this bell-curve is made of means, we call it <emphasis>the distribution of means.</emphasis> The <emphasis>distribution of means</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Means. The theorem guarantees that the histogram of the means will always tend towards a normal distribution shape. Because we have a new set of data created of means, we use a new random variable denoted <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. The bar makes a clear indication that we are using a distribution of means.</para>
-      <para id="para-00019">Additionally, note where this distribution of means is centered: it has become naturally centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem means when it states that this distribution of means follows the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough means are repeatedly taken, their histogram will always be centered at the population mean.</para>
+      <para id="para-00018">With 5,000 sample means, a clear bell-curve shape emerges. Since this bell-curve is made of means, we call it <emphasis>the distribution of means.</emphasis> The <emphasis>distribution of means</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Means. The theorem tells us that as the sample size grows, the distribution of the sample means approaches a normal distribution. With enough means, the histogram shows this bell-curve shape. Because we have a new set of data made of means, we use a new random variable denoted <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. The bar makes a clear indication that we are using a distribution of means.</para>
+      <para id="para-00019">Additionally, note where this distribution of means is centered: it has become naturally centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem means when it states that this distribution of means follows the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough means are repeatedly taken, their histogram will be centered at the population mean. The formula <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> is called the <term id="term-se-mean">standard error of the mean</term>. The different name indicates that it is different from just the population standard deviation <m:math><m:mi>σ</m:mi></m:math>. It specifically tells us how sample means vary, as opposed to how individual data points vary.</para>
       <para id="para-00020">If we continued this process and collected 5,000,000 means, this is how the histogram would look:</para>
       <figure id="fig-00008">
         <media alt="A histogram of 5,000,000 sample means, showing an even smoother bell-curve shape than before.">
@@ -105,20 +105,20 @@
       <para id="para-00023">In each case, it is clear that the histogram of means follows a bell-curve <emphasis effect="italics">regardless of the original population distribution.</emphasis> Additionally, note that the distribution of means in each example is centered at the population mean. This is the remarkable result of the Central Limit Theorem for Means, and this result will empower us to perform powerful analyses in the next chapters.</para>
     </section>
     <section id="sect-00005">
-      <title>The Size of the Sample Impacts the Shape of the Bell Curve</title>
+      <title>The Size of the Sample Impacts the Spread of the Bell Curve</title>
       <para id="para-00024">We have discussed and shown that the distribution of means is centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> Now we will focus on the standard deviation portion of the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> To understand this, let’s examine several distributions of means utilizing different sample sizes of <m:math><m:mi>n</m:mi></m:math>:</para>
       <figure id="fig-00010">
         <media alt="Four distributions of means built using different sample sizes; larger sample sizes produce narrower curves.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img10.png"/>
         </media>
       </figure>
-      <para id="para-00025">To make it easier for comparison, we compare the normal curves for each of these 4 graphs against one another:</para>
+      <para id="para-00025">To make it easier for comparison, we compare the normal curves for each of these four graphs against one another:</para>
       <figure id="fig-00011">
         <media alt="The normal curves for the four distributions of means overlaid on the same axis for comparison, showing that larger sample sizes narrow the curve.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img11.png"/>
         </media>
       </figure>
-      <para id="para-00026">The size of <m:math><m:mi>n</m:mi></m:math> will create a stretch factor for the shape of the normal distribution. Smaller values of <m:math><m:mi>n</m:mi></m:math> will widen the curve, while larger values will narrow the curve.</para>
+      <para id="para-00026">The size of <m:math><m:mi>n</m:mi></m:math> stretches or squeezes how wide the normal curve is. Smaller values of <m:math><m:mi>n</m:mi></m:math> will widen the curve, while larger values will narrow the curve.</para>
     </section>
     <section id="sect-00006">
       <title>Important Notes on Notation and Vocabulary</title>
@@ -151,7 +151,7 @@
             <row>
               <entry>Histogram is made from</entry>
               <entry>Individual data points</entry>
-              <entry>Individual sample means from a sample of size <m:math><m:mi>n</m:mi></m:math></entry>
+              <entry>Individual sample means from samples of size <m:math><m:mi>n</m:mi></m:math></entry>
             </row>
             <row>
               <entry>Distribution Shape</entry>
@@ -159,9 +159,9 @@
               <entry>Bell-curve</entry>
             </row>
             <row>
-              <entry>Horizontal axis comprised of</entry>
+              <entry>Horizontal axis composed of</entry>
               <entry>Individual data values</entry>
-              <entry>Individual sample means from a sample of size <m:math><m:mi>n</m:mi></m:math></entry>
+              <entry>Individual sample means from samples of size <m:math><m:mi>n</m:mi></m:math></entry>
             </row>
             <row>
               <entry>Distribution notation</entry>
@@ -179,6 +179,11 @@
               </entry>
               <entry><m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> (which is equal to <m:math><m:mi>μ</m:mi></m:math>)</entry>
             </row>
+            <row>
+              <entry>Distribution spread given by</entry>
+              <entry><m:math><m:mi>σ</m:mi></m:math> (population standard deviation)</entry>
+              <entry><m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> (standard error)</entry>
+            </row>
           </tbody>
         </tgroup>
       </table>
@@ -189,7 +194,7 @@
             <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math>
           </equation>
         </item>
-        <item>The standard deviation of the distribution of means relies on the original population’s standard deviation, but is adjusted for the sample size <m:math><m:mi>n</m:mi></m:math>. Again, the <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> notation signals that this standard deviation is from the distribution of means, and the standard deviation uses this formula:
+        <item>The standard deviation of the distribution of means, which is also called the standard error of the mean, relies on the original population’s standard deviation, but is adjusted for the sample size <m:math><m:mi>n</m:mi></m:math>. Again, the <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> notation signals that this standard deviation is from the distribution of means, and the standard deviation uses this formula:
           <equation id="eq-00003">
             <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>
           </equation>
@@ -203,7 +208,7 @@
       <equation class="unnumbered" id="eq-00001">
         <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math>
       </equation>
-      <para id="para-00032">Notice that <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> in the first formula has been changed to simply <m:math><m:mi>μ</m:mi></m:math> in the second version. The reason is that mathematically it can be shown that the expected value of <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> is equal to <m:math><m:mi>μ</m:mi></m:math>. Mathematically, the <m:math><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math> symbol reads the “expected value of <m:math><m:mi>X</m:mi></m:math>”. This formula will be used in the next unit to provide estimates of the <emphasis>unknown</emphasis> population parameter <m:math><m:mi>μ</m:mi></m:math>.</para>
+      <para id="para-00032">Notice that <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> in the first formula has been changed to simply <m:math><m:mi>μ</m:mi></m:math> in the second version. The reason is that mathematically it can be shown that the expected value of <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is equal to <m:math><m:mi>μ</m:mi></m:math>. Mathematically, the <m:math><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo stretchy="false">)</m:mo></m:math> symbol reads the “expected value of <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>”. This formula will be used in the next chapter to provide estimates of the population parameter <m:math><m:mi>μ</m:mi></m:math>.</para>
     </section>
     <section id="sect-00008">
       <title>A Review of the Relevant Formulas for the Distribution of Means</title>
@@ -240,7 +245,7 @@
                 <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac></m:math>
               </entry>
               <entry>
-                <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math>
+                <m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math>
               </entry>
             </row>
           </tbody>
@@ -285,6 +290,35 @@
           </tbody>
         </tgroup>
       </table>
+      <example id="exam-00005">
+        <para id="para-00100">A set of data is normally distributed with the distribution <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>70</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>10</m:mn><m:mo stretchy="false">)</m:mo></m:math>.</para>
+        <exercise id="exer-00019">
+          <problem id="prob-00027">
+            <list list-type="enumerated" number-style="lower-alpha" id="list-00031">
+              <item>Compute the z-score for a data value <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>75</m:mn></m:math>.</item>
+              <item>Compare the computation for a single data value versus the z-score for a mean <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>75</m:mn></m:math> computed from a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:math>.</item>
+            </list>
+          </problem>
+          <solution id="sol-00015">
+            <para id="para-00101">The z-score is computed:</para>
+            <para id="para-00102"><m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>75</m:mn><m:mo>−</m:mo><m:mn>70</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.5</m:mn></m:math></para>
+            <para id="para-00103">Now we are dealing with a mean instead of a single data value. In this case, we will use:</para>
+            <para id="para-00104"><m:math><m:msub><m:mi>z</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>75</m:mn><m:mo>−</m:mo><m:mn>70</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>10</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>25</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>2.5</m:mn></m:math></para>
+          </solution>
+        </exercise>
+      </example>
+      <note class="statistics try" id="note-00008">
+        <title>Try It</title>
+        <exercise id="exer-00020">
+          <problem id="prob-00028">
+            <para id="para-00105">A set of data is normally distributed with the distribution <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>60</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo></m:math>.</para>
+            <list list-type="enumerated" number-style="lower-alpha" id="list-00032">
+              <item>Compute the z-score for a data value <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>65</m:mn></m:math>.</item>
+              <item>Compare the computation for a single data value versus the z-score for a mean <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>65</m:mn></m:math> computed from a sample of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>16</m:mn></m:math>.</item>
+            </list>
+          </problem>
+        </exercise>
+      </note>
     </section>
     <note class="statistics calculator" id="note-00001">
       <para id="para-00035">To find probabilities for means on the calculator, follow these steps.</para>
@@ -302,13 +336,13 @@
       </list>
     </note>
     <example id="exam-00001">
-      <para id="para-00039">An unknown distribution has a mean of 90 and a standard deviation of 15. Samples of size <emphasis effect="italics">n</emphasis> = 25 are drawn randomly from the population.</para>
+      <para id="para-00039">A normal distribution has a mean of 90 and a standard deviation of 15. Samples of size <emphasis effect="italics">n</emphasis> = 25 are drawn randomly from the population.</para>
       <exercise id="exer-00001">
         <problem id="prob-00001">
           <para id="para-00040">a. Find the probability that the <term id="term-00001">sample mean</term> is between 85 and 92.</para>
         </problem>
         <solution id="sol-00001">
-          <para id="para-00041">a. Let <emphasis effect="italics">X</emphasis> = one value from the original unknown population. The probability question asks you to find a probability for the <emphasis>sample mean</emphasis>.</para>
+          <para id="para-00041">a. Let <emphasis effect="italics">X</emphasis> = one value from the original population. The probability question asks you to find a probability for the <emphasis>sample mean</emphasis>.</para>
           <para id="para-00042">Let <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean of a sample of size 25. Since <emphasis effect="italics">μ</emphasis> = 90, <emphasis effect="italics">σ</emphasis> = 15, and <emphasis effect="italics">n</emphasis> = 25, <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>90</m:mn><m:mo>,</m:mo><m:mtext/><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>25</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</para>
           <para id="para-00043">Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>92</m:mn><m:mo stretchy="false">)</m:mo></m:math>. Draw a graph.</para>
           <para id="para-00044">
@@ -333,10 +367,10 @@
         </problem>
         <solution id="sol-00002">
           <para id="para-00050">b. To find the value that is two standard deviations above the expected value 90, use the formula:</para>
-          <para id="para-00051">value = <emphasis effect="italics">μ</emphasis> + (#ofTSDEVs)<m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
+          <para id="para-00051">value = <emphasis effect="italics">μ</emphasis> + (#ofSTDEVs)<m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
           <para id="para-00052">value = <m:math><m:mn>90</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>25</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>96</m:mn></m:math></para>
           <para id="para-00053">The value that is two standard deviations above the expected value is 96.</para>
-          <para id="para-00054">The standard error of the mean is <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> = <m:math><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>25</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> = 3. Recall that the standard error of the mean is a description of how far (on average) that the sample mean will be from the population mean in repeated simple random samples of size <emphasis effect="italics">n</emphasis>.</para>
+          <para id="para-00054">The standard error of the mean is <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> = <m:math><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>25</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> = 3. Recall that the standard error of the mean is a description of how far (on average) the sample mean will be from the population mean in repeated simple random samples of size <emphasis effect="italics">n</emphasis>.</para>
         </solution>
       </exercise>
     </example>
@@ -357,13 +391,13 @@
           <para id="para-00057">Let <emphasis effect="italics">X</emphasis> = the time, in hours, it takes to play one soccer match.</para>
           <para id="para-00058">The probability question asks you to find a probability for the <emphasis>sample mean time, in hours</emphasis>, it takes to play one soccer match.</para>
           <para id="para-00059">Let <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean time, in hours, it takes to play one soccer match.</para>
-          <para id="para-00060">If <emphasis effect="italics">μ</emphasis> = _________, <emphasis effect="italics">σ</emphasis> = __________, and <emphasis effect="italics">n</emphasis> = ___________, then <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ <emphasis effect="italics">N</emphasis>(______, ______) by the central limit theorem for means.</para>
+          <para id="para-00060">If <emphasis effect="italics">μ</emphasis> = _________, <emphasis effect="italics">σ</emphasis> = __________, and <emphasis effect="italics">n</emphasis> = ___________, then <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ <emphasis effect="italics">N</emphasis>(______, ______) by the Central Limit Theorem for Means.</para>
           <para id="para-00061"><emphasis effect="italics">μ</emphasis> = 2, <emphasis effect="italics">σ</emphasis> = 0.5, <emphasis effect="italics">n</emphasis> = 50, and <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mtext/><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
           <para id="para-00062">Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.8</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2.3</m:mn><m:mo stretchy="false">)</m:mo></m:math>. Draw a graph.</para>
           <para id="para-00063">
             <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.8</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2.3</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.9977</m:mn></m:math>
           </para>
-          <para id="para-00064"><code>normalcdf</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1.8</m:mn><m:mo>,</m:mo><m:mn>2.3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>.5</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 0.9977</para>
+          <para id="para-00064"><code>normalcdf</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>1.8</m:mn><m:mo>,</m:mo><m:mn>2.3</m:mn><m:mo>,</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 0.9977</para>
           <para id="para-00065">The probability that the mean time is between 1.8 hours and 2.3 hours is 0.9977.</para>
         </solution>
       </exercise>
@@ -399,15 +433,15 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
             <item>What are the mean and standard deviation for the sample mean ages of iPad users?</item>
             <item>What does the distribution look like?</item>
-            <item>Find the probability that the sample mean age is more than 30 years (the reported mean age of iPad users in this particular study).</item>
+            <item>Find the probability that the sample mean age is more than 30 years.</item>
             <item>Find the 95<sup>th</sup> percentile for the sample mean age (to one decimal place).</item>
           </list>
         </problem>
         <solution id="sol-00004">
           <list list-type="enumerated" number-style="lower-alpha" id="list-00008">
-            <item>Since the sample mean tends to target the population mean, we have <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> = <emphasis effect="italics">μ</emphasis> = 34. The sample standard deviation is given by <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> = <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>100</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.5</m:mn></m:math>.</item>
-            <item>The central limit theorem states that for large sample sizes (<emphasis effect="italics">n</emphasis>), the sampling distribution will be approximately normal.</item>
-            <item>The probability that the sample mean age is more than 30 is given by <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&gt;</m:mo><m:mn>30</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = <code>normalcdf</code>(30, E99, 34, 1.5) = 0.9962.</item>
+            <item>Since the sample mean tends to target the population mean, we have <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> = <emphasis effect="italics">μ</emphasis> = 34. The standard error of the mean is given by <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> = <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>100</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>10</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>1.5</m:mn></m:math>.</item>
+            <item>The Central Limit Theorem states that for large sample sizes (<emphasis effect="italics">n</emphasis>), the sampling distribution will be approximately normal. Namely, the distribution will be <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>34</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>1.5</m:mn><m:mo stretchy="false">)</m:mo></m:math>.</item>
+            <item>The probability that the sample mean age is more than 30 is given by <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>></m:mo><m:mn>30</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = <code>normalcdf</code>(30, E99, 34, 1.5) = 0.9962.</item>
             <item>Let <emphasis effect="italics">k</emphasis> = the 95<sup>th</sup> percentile.<newline/><emphasis effect="italics">k</emphasis> = <code>invNorm</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.95</m:mn><m:mo>,</m:mo><m:mn>34</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>100</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 36.5.</item>
           </list>
         </solution>
@@ -417,7 +451,7 @@
       <title>Try It</title>
       <exercise id="exer-00007">
         <problem id="prob-00007">
-          <para id="para-00072">In an article on Flurry Blog, a gaming marketing gap for men between the ages of 30 and 40 is identified. You are researching a startup game targeted at the 35-year-old demographic. Your idea is to develop a strategy game that can be played by men from their late 20s through their late 30s. Based on the article’s data, industry research shows that the average strategy player is 28 years old with a standard deviation of 4.8 years. You take a sample of 100 randomly selected gamers. If your target market is 29- to 35-year-olds, should you continue with your development strategy?</para>
+          <para id="para-00072">In an article on Flurry Blog, a gaming marketing gap for men between the ages of 30 and 40 is identified. You are researching a startup game targeted at the 35-year-old demographic. Your idea is to develop a strategy game that can be played by men from their late 20s through their late 30s. Based on the article’s data, industry research shows that the average strategy player is 28 years old with a standard deviation of 4.8 years. You take a sample of 100 randomly selected gamers. If your target market is 29- to 35-year-olds, should you continue with your development strategy? Start by finding the probability that the mean age of your sample falls between 29 and 35.</para>
         </problem>
       </exercise>
     </note>
@@ -437,8 +471,8 @@
             <item>
               <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>8.2</m:mn><m:mspace width="1em"/><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>60</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.13</m:mn></m:math>
             </item>
-            <item>This allows us to calculate the probability of sample means of a particular distance from the mean, in repeated samples of size 60.</item>
-            <item>Let <emphasis effect="italics">k</emphasis> = the 90<sup>th</sup> percentile.<newline/><emphasis effect="italics">k</emphasis> = <code>invNorm</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.90</m:mn><m:mo>,</m:mo><m:mn>8.2</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>60</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 8.37. This value indicates that 90 percent of the average app engagement time for iPad users is less than 8.37 minutes.</item>
+            <item>The standard error of the mean is the standard deviation calculated in part a, namely 0.13.</item>
+            <item>Let <emphasis effect="italics">k</emphasis> = the 90<sup>th</sup> percentile.<newline/><emphasis effect="italics">k</emphasis> = <code>invNorm</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.90</m:mn><m:mo>,</m:mo><m:mn>8.2</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>60</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 8.37. This value indicates that 90 percent of samples of 60 iPad users have a mean app engagement time of less than 8.37 minutes.</item>
             <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>8</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>8.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo></m:math><code>normalcdf</code><m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>8</m:mn><m:mo>,</m:mo><m:mn>8.5</m:mn><m:mo>,</m:mo><m:mn>8.2</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>60</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> = 0.9293.</item>
           </list>
         </solution>
@@ -452,11 +486,25 @@
         </problem>
       </exercise>
     </note>
+    <section class="summary" id="sect-00009">
+      <title>The Central Limit Theorem for Means</title>
+      <para id="para-00106">In a population whose distribution may be known or unknown, if the size (<m:math><m:mi>n</m:mi></m:math>) of samples is sufficiently large, the distribution of the sample means will be approximately normal. The mean of the sample means will equal the population mean. The standard deviation of the distribution of the sample means, called the standard error of the mean, is equal to the population standard deviation divided by the square root of the sample size (<m:math><m:mi>n</m:mi></m:math>).</para>
+      <para id="para-00107">The Central Limit Theorem for Means says: when samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math> and their means are computed, the histogram of the means tends to follow a normal distribution regardless of the shape of the population’s original distribution. This distribution of means can be notated <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math>, where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</para>
+      <para id="para-00108">To use the theorem, samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (though this rule can be softened if the population is nearly normally distributed), samples must be random and independent from one another, and samples must be of a size less than 5% of the population’s size when sampling without replacement. The distribution created from using the Central Limit Theorem is called the distribution of means; while the shape of the curve is a normal distribution, its histogram is made of sample means rather than individual data values.</para>
+    </section>
+    <section class="formula-review" id="sect-00012">
+      <title>The Central Limit Theorem for Means</title>
+      <para id="para-00109">The Central Limit Theorem for Means: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math></para>
+      <para id="para-00110">Mean of the distribution of means: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math></para>
+      <para id="para-00111">Standard deviation of the distribution of means (standard error of the mean): <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math></para>
+      <para id="para-00112"><m:math><m:mi>z</m:mi></m:math>-score for a sample mean: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math></para>
+      <para id="para-00113">Criteria for using the CLT for Means: samples of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (this rule can be softened if the population is nearly normally distributed), samples random and independent from one another, and samples less than 5% of the population’s size when sampling without replacement</para>
+    </section>
     <section class="practice" id="sect-00010">
       <para id="para-00075"><emphasis effect="italics">Use the following information to answer the next six exercises:</emphasis> Yoonie is a personnel manager in a large corporation. Each month she must review 16 of the employees. From past experience, she has found that the reviews take her approximately four hours each to do with a population standard deviation of 1.2 hours. Let <m:math><m:mi>X</m:mi></m:math> be the random variable representing the time it takes her to complete one review. Assume <m:math><m:mi>X</m:mi></m:math> is normally distributed. Let <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> be the random variable representing the mean time to complete the 16 reviews. Assume that the 16 reviews represent a random set of reviews.</para>
       <exercise id="exer-00010">
         <problem id="prob-00010">
-          <para id="para-00076">What is the mean, standard deviation, and sample size?</para>
+          <para id="para-00076">What are the mean, standard deviation, and sample size?</para>
         </problem>
         <solution id="sol-00006">
           <para id="para-00077">mean = 4 hours; standard deviation = 1.2 hours; sample size = 16</para>
@@ -667,7 +715,7 @@
       </exercise>
       <exercise id="fs-c7-hw-89">
         <problem id="prob-00024">
-          <para id="para-00094">The distribution of income in some developing countries is considered wedge shaped (many low income people, very few middle income people, and even fewer high income people). Suppose we pick a country with a wedge shaped distribution. Let the average salary be $2,000 per year with a standard deviation of $8,000. We randomly survey 1,000 residents of that country.</para>
+          <para id="para-00094">The distribution of income in some developing countries is considered wedge shaped (many low income people, very few middle income people, and even fewer high income people). Suppose we pick a country with a wedge-shaped distribution. Let the average salary be $2,000 per year with a standard deviation of $8,000. We randomly survey 1,000 residents of that country.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00027">
             <item>In words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
             <item>In words, <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = _______</item>
@@ -684,7 +732,7 @@
               <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>2000</m:mn><m:mo>,</m:mo><m:mtext/><m:mfrac><m:mrow><m:mn>8000</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1000</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>
             </item>
             <item>Very wide differences in data values can have averages smaller than standard deviations.</item>
-            <item>The distribution of the sample mean will have higher probabilities closer to the population mean. <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2000</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2100</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.1537 <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2100</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2200</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.1317</item>
+            <item>The distribution of the sample mean will have higher probabilities closer to the population mean. <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2000</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2100</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.1537; <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>2100</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2200</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 0.1317</item>
           </list>
         </solution>
       </exercise>
@@ -724,9 +772,17 @@
     </section>
   </content>
   <glossary>
+      <definition id="def-00002">
+        <term>Central Limit Theorem</term>
+        <meaning>a theorem stating that when samples of a sufficiently large size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from a population and each sample’s mean (or sum, or proportion) is computed, the distribution of those statistics tends toward a normal distribution, regardless of the shape of the population’s original distribution</meaning>
+      </definition>
       <definition id="def-00001">
         <term>The Distribution of Means</term>
         <meaning>the natural, approximately normal (bell-curve) distribution that emerges when the sample means of samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly computed from a population, as guaranteed by the Central Limit Theorem for Means; it is centered at the population mean <m:math><m:mi>μ</m:mi></m:math> and has standard deviation <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</meaning>
+      </definition>
+      <definition id="def-00003">
+        <term>Standard Error of the Mean</term>
+        <meaning>the standard deviation of the distribution of the sample means, <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>; it describes how far, on average, a sample mean will be from the population mean in repeated simple random samples of size <m:math><m:mi>n</m:mi></m:math></meaning>
       </definition>
   </glossary>
 </document>

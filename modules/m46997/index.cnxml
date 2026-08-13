@@ -11,23 +11,17 @@
     <section id="sect-00001">
       <title>Statement of the Central Limit Theorem for Sums and Criteria</title>
       <para id="para-00002">Let <m:math><m:mi>X</m:mi></m:math> be a random variable from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math>.</para>
-      <para id="para-00003"><term id="term-00001">The Central Limit Theorem for Sums</term> says:</para>
-      <para id="para-00004">
-        <emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their sums are computed, the histogram of the sums tends to follow a normal distribution regardless of the population’s original distribution. This distribution of sums can be notated: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</emphasis>
-      </para>
-      <para id="para-00005">We will work to understand the steps of the Central Limit Theorem throughout this section. There are a few key aspects of this theorem that we should note as we work to understand it:</para>
-      <list list-type="enumerated" id="list-00001">
-        <item>We must <emphasis effect="italics">repeatedly</emphasis> take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population.</item>
-        <item>We must find the sum of each sample.</item>
-        <item>We compile the sums into a histogram. For large enough samples of size <m:math><m:mi>n</m:mi></m:math> and enough sums, the histogram will begin to resemble a normal distribution. This will happen <emphasis effect="italics">regardless</emphasis> of the original population’s distribution.</item>
-        <item>When the histogram resembles a bell-curve, it will be centered at the original population <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi></m:math> with standard deviation <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:math>.</item>
-      </list>
-      <para id="para-00006">To use the Central Limit Theorem, the following criteria must be met before using the theorem:</para>
+      <para id="para-00006">To use the Central Limit Theorem for Sums, the following criteria must be met before using the theorem:</para>
       <list list-type="enumerated" id="list-00002">
-        <item>Samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (though this rule can be softened if the population is nearly normally distributed).</item>
+        <item>Samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (this rule does not apply if it is known that the population is normally distributed).</item>
         <item>Samples must be random and independent from one another.</item>
         <item>Samples must be of a size less than 5% of the population’s size when sampling without replacement.</item>
       </list>
+      <para id="para-00003"><term id="term-00001">The Central Limit Theorem for Sums</term> says:</para>
+      <para id="para-00004">
+        <emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their sums are computed, the distribution of those sums is approximately normal, no matter what the original population looks like, as long as the criteria above are met. The larger <m:math><m:mi>n</m:mi></m:math> is, the better the approximation. This distribution of sums can be notated: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. We also call this the sampling distribution of sums.</emphasis>
+      </para>
+      <para id="para-00005">We will follow similar steps to what we did in section 7.1 to understand how the Central Limit Theorem for Sums works. Notice how we repeatedly take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population, find the sum of each sample, and compile the sums into a histogram in a very similar manner that we did with means from the previous section.</para>
     </section>
     <section id="sect-00002">
       <title>Applying the Central Limit Theorem to Sums</title>
@@ -44,7 +38,7 @@
       <equation class="unnumbered" id="eq-00002">
         <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>40</m:mn><m:msqrt><m:mrow><m:mn>30</m:mn></m:mrow></m:msqrt><m:mo>≈</m:mo><m:mn>219.089</m:mn></m:math>
       </equation>
-      <para id="para-00009">We return to the same data sets that our three researchers pulled for samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, but in this case our researchers will simply <emphasis effect="italics">find the sum</emphasis> of all 30 data points.</para>
+      <para id="para-00009">We will note these numbers now and see later that the distribution of sums will indeed be centered and spread out at the above metrics. We return to the same data sets that our three researchers pulled for samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, but in this case our researchers will simply <emphasis effect="italics">find the sum</emphasis> of all 30 data points.</para>
       <figure id="fig-00002">
         <media alt="The three researchers’ datasets of size 30, each with the sum of its 30 data points computed.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img2.png"/>
@@ -62,7 +56,7 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img4.png"/>
         </media>
       </figure>
-      <para id="para-00012">This histogram does not have a clear distribution, which is to be expected because it is comprised of only 50 sums (which we stated earlier was a small amount of data for a meaningful histogram). As such, we continue on with more researchers.</para>
+      <para id="para-00012">This histogram does not have a clear distribution, which is to be expected because it is made up of only 50 sums (similar to what we saw in section 7.1). As such, we continue on with more researchers.</para>
       <para id="para-00013">Now suppose that we have an army of 5,000 researchers collect samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> In the next figure, we can visualize many of the sums that each researcher collected:</para>
       <figure id="fig-00005">
         <media alt="A visualization of many of the sample sums collected by an army of 5,000 researchers, each collecting a sample of size 30.">
@@ -75,9 +69,9 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img6.png"/>
         </media>
       </figure>
-      <para id="para-00015">With 5,000 different sample sums, a clear bell-curve shape emerges. Since this bell-curve is made of sums, we call it <emphasis>the distribution of sums.</emphasis> The <emphasis>distribution of sums</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Sums. The theorem guarantees that the histogram of the sums will always tend towards a normal distribution shape. Because we have a new set of data made of sums, we use a new random variable denoted <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math>. The summation symbol <m:math><m:mi>Σ</m:mi></m:math> makes clear that we are using a distribution of sums.</para>
+      <para id="para-00015">With 5,000 different sample sums, a clear bell-curve shape emerges. Since this bell-curve is made of sums, we call it <emphasis>the distribution of sums.</emphasis> The <emphasis>distribution of sums</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Sums. The theorem tells us that as the sample size grows, the distribution of the sample sums approaches a normal distribution. With enough sums, the histogram shows this bell-curve shape. Because we have a new set of data made of sums, we use a new random variable denoted <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math>. The summation symbol <m:math><m:mi>Σ</m:mi></m:math> makes clear that we are using a distribution of sums.</para>
       <para id="para-00016">Additionally, note where this distribution of sums is centered: it has become naturally centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>160</m:mn><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem tells us when it states that this distribution of sums follows the distribution</para>
-      <para id="para-00017"><m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough sums are repeatedly taken, their histogram will always be centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math></para>
+      <para id="para-00017"><m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough sums are repeatedly taken, their histogram will be centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math></para>
       <para id="para-00018">If we continued this process and collected 5,000,000 sums, this is how the histogram would look:</para>
       <figure id="fig-00007">
         <media alt="A histogram of 5,000,000 sample sums, showing an even smoother bell-curve shape than before.">
@@ -94,34 +88,75 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img8.png"/>
         </media>
       </figure>
-      <para id="para-00021">In each case, it is clear that the histogram of sums continues to follow a bell-curve <emphasis effect="italics">regardless of the original population distribution.</emphasis> Just as with the Central Limit Theorem for Means, this holds regardless of the population’s shape.</para>
+      <para id="para-00021">In each case, it is clear that the histogram of sums continues to follow a bell-curve <emphasis effect="italics">regardless of the original population distribution.</emphasis></para>
     </section>
     <section id="sect-00004">
       <title>A Note on Relevant Formulas</title>
-      <para id="para-00022">The distribution of sums uses the following formulas for each situation:</para>
-      <list list-type="bulleted" id="list-00003">
-        <item>The variable for the distribution of sums is notated: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math></item>
-        <item>We represent this variable with the notation: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext/><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></item>
-        <item>The formula for the mean within the distribution of sums is: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi></m:math></item>
-        <item>The formula for the standard deviation within the distribution of sums is: <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:math></item>
-        <item>The formula for a z-score for a sum from the distribution of sums is: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mfrac></m:math></item>
-      </list>
+      <para id="para-00022">We now compare how formulas compare between the distribution of sums versus the distribution of means:</para>
+      <table summary="Comparison of the formulas for the distribution of sums and the distribution of means." id="table-00001">
+        <tgroup cols="3">
+          <thead>
+            <row>
+              <entry/>
+              <entry>Distribution of Sums</entry>
+              <entry>Distribution of Means</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Random variable</entry>
+              <entry><m:math><m:mrow><m:mo>Σ</m:mo><m:mi>X</m:mi></m:mrow></m:math></entry>
+              <entry><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math></entry>
+            </row>
+            <row>
+              <entry>Histogram is made from</entry>
+              <entry>Individual sums from samples of size <m:math><m:mi>n</m:mi></m:math></entry>
+              <entry>Individual sample means from samples of size <m:math><m:mi>n</m:mi></m:math></entry>
+            </row>
+            <row>
+              <entry>Distribution Shape</entry>
+              <entry>Bell-curve</entry>
+              <entry>Bell-curve</entry>
+            </row>
+            <row>
+              <entry>Horizontal axis composed of</entry>
+              <entry>Individual sums from samples of size <m:math><m:mi>n</m:mi></m:math></entry>
+              <entry>Individual sample means from samples of size <m:math><m:mi>n</m:mi></m:math></entry>
+            </row>
+            <row>
+              <entry>Distribution notation</entry>
+              <entry><m:math><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mo>Σ</m:mo><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mo>Σ</m:mo><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math></entry>
+              <entry><m:math><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math></entry>
+            </row>
+            <row>
+              <entry>Distribution centered at</entry>
+              <entry><m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mo>Σ</m:mo><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math></entry>
+              <entry><m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> (which is equal to <m:math><m:mi>μ</m:mi></m:math>)</entry>
+            </row>
+            <row>
+              <entry>Distribution spread given by</entry>
+              <entry><m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mo>Σ</m:mo><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:math> (this formula has no special name)</entry>
+              <entry><m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> (standard error)</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </section>
     <section id="sect-00005">
-      <title>The Size of the Sample Impacts the Shape of the Bell Curve</title>
-      <para id="para-00023">We have discussed and shown that the distribution of sums is centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math> Now we will focus on comparing both how the mean and the standard deviation portion influence a distribution of sums of the form <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> The choice of <m:math><m:mi>n</m:mi></m:math> will change where the distribution is centered, and also influence how the distribution is spread out. We can compare a few instances of this in the figure:</para>
+      <title>The Size of the Sample Impacts the Center and Spread of the Bell Curve</title>
+      <para id="para-00023">We have discussed and shown that the distribution of sums is centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math> Now we will look at how <m:math><m:mi>n</m:mi></m:math> affects both where the distribution is centered and how spread out it is. <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> The choice of <m:math><m:mi>n</m:mi></m:math> will change where the distribution is centered, and also influence how the distribution is spread out. We can compare a few instances of this in the figure:</para>
       <figure id="fig-00009">
         <media alt="Several distributions of sums built using different sample sizes, showing that the sample size changes both the center and the spread of the distribution.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img9.png"/>
         </media>
       </figure>
-      <para id="para-00024">To make it easier for comparison, we compare the normal curves for each of these 4 graphs against one another:</para>
+      <para id="para-00024">To make it easier for comparison, we compare the normal curves for each of these four graphs against one another:</para>
       <figure id="fig-00010">
         <media alt="The normal curves for the four distributions of sums overlaid on the same axis for comparison.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img10.png"/>
         </media>
       </figure>
-      <para id="para-00025">The size of <m:math><m:mi>n</m:mi></m:math> will create a stretch factor for the shape of the normal distribution. Smaller values of <m:math><m:mi>n</m:mi></m:math> will narrow the curve, while larger values will widen the curve. One interesting caveat about sums is that the size of <m:math><m:mi>n</m:mi></m:math> works in the opposite way that it did for means in terms of how the standard deviation stretches the curve.</para>
+      <para id="para-00025">The size of <m:math><m:mi>n</m:mi></m:math> stretches or squeezes how wide the normal curve is. Smaller values of <m:math><m:mi>n</m:mi></m:math> will narrow the curve, while larger values will widen the curve. One interesting caveat about sums is that the size of <m:math><m:mi>n</m:mi></m:math> works in the opposite way that it did for means in terms of how the standard deviation stretches the curve.</para>
     </section>
     <note class="statistics calculator" id="note-00001">
       <para id="para-00026">To find probabilities for sums on the calculator, follow these steps.</para>
@@ -149,15 +184,15 @@
         </problem>
         <solution id="sol-00001">
           <para id="para-00031">Let <emphasis effect="italics">X</emphasis> = one value from the original unknown population. The probability question asks you to find a probability for <emphasis>the sum (or total of) 80 values.</emphasis></para>
-          <para id="para-00032"><m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math> = the sum or total of 80 values. Since <emphasis effect="italics">μ</emphasis> = 90, <emphasis effect="italics">σ</emphasis> = 15, and <emphasis effect="italics">n</emphasis> = 80, <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mo stretchy="false">(</m:mo><m:mn>80</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>90</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mtext/><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>80</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
+          <para id="para-00032">Let <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math> = the sum or total of 80 values. Since <emphasis effect="italics">μ</emphasis> = 90, <emphasis effect="italics">σ</emphasis> = 15, and <emphasis effect="italics">n</emphasis> = 80, <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mo stretchy="false">(</m:mo><m:mn>80</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>90</m:mn><m:mo stretchy="false">)</m:mo><m:mo>,</m:mo><m:mtext/><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>80</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
           <list list-type="bulleted" id="list-00006">
             <item>mean of the sums = (<emphasis effect="italics">n</emphasis>)(<emphasis effect="italics">μ</emphasis>) = (80)(90) = 7,200</item>
             <item>standard deviation of the sums = <m:math><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>80</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
             <item>sum of 80 values = <m:math><m:mi>Σ</m:mi><m:mi>x</m:mi></m:math> = 7,500</item>
           </list>
-          <para id="para-00033">a. Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>7</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>500</m:mn><m:mo stretchy="false">)</m:mo></m:math></para>
+          <para id="para-00033">a. Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>></m:mo><m:mn>7</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>500</m:mn><m:mo stretchy="false">)</m:mo></m:math></para>
           <para id="para-00034">
-            <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>7</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>500</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0127</m:mn></m:math>
+            <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>></m:mo><m:mn>7</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>500</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0127</m:mn></m:math>
           </para>
           <figure id="fig-00011">
             <media alt="A normal distribution curve. The peak of the curve coincides with the point 7200 on the horizontal axis. The point 7500 is also labeled. A vertical line extends from point 7500 to the curve. The area to the right of 7500 below the curve is shaded.">
@@ -217,7 +252,7 @@
         </problem>
         <solution id="sol-00002">
           <list list-type="enumerated" number-style="lower-alpha" id="list-00009">
-            <item><m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:math> = <m:math><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> = 50(34) = 1,700 and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:math> = <m:math><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mspace width="0.167em"/><m:mi>σ</m:mi></m:math> = <m:math><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 106.07<newline/>The distribution is normal for sums by the central limit theorem.</item>
+            <item><m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:math> = <m:math><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> = 50(34) = 1,700 and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:math> = <m:math><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mspace width="0.167em"/><m:mi>σ</m:mi></m:math> = <m:math><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo></m:math> = 106.07<newline/>The distribution is normal for sums by the Central Limit Theorem.</item>
             <item><emphasis effect="italics">P</emphasis>(1500 &lt; <m:math><m:mi>Σ</m:mi><m:mi>x</m:mi></m:math> &lt; 1800) = <code>normalcdf</code>(1,500, 1,800, (50)(34), <m:math><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo></m:math>) = 0.7974</item>
             <item>Let <emphasis effect="italics">k</emphasis> = the 80<sup>th</sup> percentile.<newline/><emphasis effect="italics">k</emphasis> = <code>invNorm</code>(0.80, (50)(34), <m:math><m:mo stretchy="false">(</m:mo><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo stretchy="false">)</m:mo></m:math>) = 1,789.3</item>
           </list>
@@ -268,6 +303,18 @@
         </problem>
       </exercise>
     </note>
+    <section class="summary" id="sect-00006">
+      <title>The Central Limit Theorem for Sums</title>
+      <para id="para-00106">The central limit theorem tells us that for a population with any distribution, the distribution of the sample sums approaches a normal distribution as the sample size increases. In other words, if the sample size is large enough, the distribution of the sums can be approximated by a normal distribution even if the original population is not normally distributed. Additionally, if the original population has a mean of <m:math><m:mi>μ</m:mi></m:math> and a standard deviation of <m:math><m:mi>σ</m:mi></m:math>, the mean of the sums is <m:math><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> and the standard deviation is <m:math><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math> where <m:math><m:mi>n</m:mi></m:math> is the sample size.</para>
+      <para id="para-00107">The distribution of sums can be notated <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math>, where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math>. The natural bell curve that emerges from repeatedly collected sample sums is called the distribution of sums.</para>
+    </section>
+    <section class="formula-review" id="sect-00009">
+      <title>The Central Limit Theorem for Sums</title>
+      <para id="para-00108">The Central Limit Theorem for Sums: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math></para>
+      <para id="para-00109">Mean of the distribution of sums: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math></para>
+      <para id="para-00110">Standard deviation of the distribution of sums: <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math></para>
+      <para id="para-00111"><m:math><m:mi>z</m:mi></m:math>-score for a sum: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mfrac></m:math></para>
+    </section>
     <section class="practice" id="sect-00007">
       <para id="para-00051"><emphasis effect="italics">Use the following information to answer the next four exercises:</emphasis> An unknown distribution has a mean of 80 and a standard deviation of 12. A sample size of 95 is drawn randomly from the population.</para>
       <exercise id="exer-00007">
@@ -392,7 +439,7 @@
       </exercise>
       <exercise id="exer-00023">
         <problem id="prob-00025">
-          <para id="para-00082">What is <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>290</m:mn><m:mo stretchy="false">)</m:mo></m:math>?</para>
+          <para id="para-00082">What is <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>></m:mo><m:mn>290</m:mn><m:mo stretchy="false">)</m:mo></m:math>?</para>
         </problem>
         <solution id="sol-00013">
           <para id="para-00083">0.9772</para>
@@ -467,7 +514,7 @@
       </exercise>
       <exercise id="exer-00034">
         <problem id="prob-00036">
-          <para id="para-00101">What is <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>9</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo></m:math>?</para>
+          <para id="para-00101">What is <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>></m:mo><m:mn>9</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo></m:math>?</para>
         </problem>
       </exercise>
     </section>
@@ -486,7 +533,7 @@
       </exercise>
       <exercise id="fs-c7-hw-93">
         <problem id="prob-00038">
-          <para id="para-00103">Suppose that the duration of a particular type of criminal trial is known to have a mean of 21 days and a standard deviation of seven days. We randomly sample nine trials.</para>
+          <para id="para-00103">Suppose that the duration of a particular type of criminal trial is known to have a mean of 21 days and a standard deviation of seven days. We randomly sample nine trials. The durations are approximately normally distributed.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00015">
             <item>In words, <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math> = _______</item>
             <item><m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math> ~ _______(_______,_______)</item>
@@ -501,7 +548,7 @@
               <m:math><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>189</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>21</m:mn><m:mo stretchy="false">)</m:mo></m:math>
             </item>
             <item>0.0432</item>
-            <item>162.09; ninety percent of the total nine trials of this type will last 162 days or more.</item>
+            <item>162.09; ninety percent of the totals of nine of these trials will be 162.09 days or more.</item>
           </list>
         </solution>
       </exercise>

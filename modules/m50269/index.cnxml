@@ -7,7 +7,7 @@
     <md:uuid>92e5097b-a96a-4d0f-b6b5-265617f78bb8</md:uuid>
   </metadata>
   <content>
-    <para id="para-00001">We saw that the sample size has an important effect on the variance and thus the standard deviation of the sampling distribution. Also of interest is the proportion of the total population that has been sampled. We have assumed that the population is extremely large and that we have sampled a small part of the population. As the population becomes smaller and we sample a larger number of observations the sample observations are not independent of each other. To correct for the impact of this, the <term id="term-00001">Finite Population Correction Factor</term> can be used to adjust the variance of the sampling distribution. It is appropriate when more than 5% of the population is being sampled and the population has a known population size. There are cases when the population is known, and therefore the correction factor must be applied. The issue arises for both the sampling distribution of the means and the sampling distribution of proportions. The Finite Population Correction Factor for the variance of the means shown in the standardizing formula is:</para>
+    <para id="para-00001">We saw that the sample size has an important effect on the variance and thus the standard deviation of the sampling distribution. Also of interest is the proportion of the total population that has been sampled. We have assumed that the population is extremely large and that we have sampled a small part of the population. As the population becomes smaller and we sample a larger number of observations, the sample observations are not independent of each other. To correct for the impact of this, the <term id="term-00001">Finite Population Correction Factor</term> can be used to adjust the variance of the sampling distribution. It is appropriate when more than 5% of the population is being sampled and the population has a known population size. There are cases when the population is known, and therefore the correction factor must be applied. The issue arises for both the sampling distribution of the means and the sampling distribution of proportions. The Finite Population Correction Factor for the variance of the means shown in the standardizing formula is:</para>
     <equation class="unnumbered" id="eq-00001">
       <m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>
     </equation>
@@ -17,10 +17,10 @@
     </equation>
     <para id="para-00003">The following examples show how to apply the factor. Sampling variances get adjusted using the above formula.</para>
     <example id="exam-00001">
-      <para id="para-00004">It is learned that the population of White German Shepherds in the USA is 4,000 dogs, and the mean weight for German Shepherds is 75.45 pounds. It is also learned that the population standard deviation is 10.37 pounds.</para>
+      <para id="para-00004">It is learned that the population of White German Shepherds in the USA is 4,000 dogs, and the mean weight for these dogs is 75.45 pounds. It is also learned that the population standard deviation is 10.37 pounds.</para>
       <exercise id="exer-00001">
         <problem id="prob-00001">
-          <para id="para-00005">If the sample size is 225 dogs, then find the probability that a sample will have a mean that differs from the true probability mean by less than 2 pounds.</para>
+          <para id="para-00005">If the sample size is 225 dogs, then find the probability that a sample will have a mean that differs from the true population mean by less than 2 pounds.</para>
         </problem>
         <solution id="sol-00001">
           <para id="para-00006">
@@ -81,6 +81,15 @@
         </problem>
       </exercise>
     </note>
+    <section class="summary" id="sect-00005">
+      <title>Finite Population Correction Factor</title>
+      <para id="para-00049">The sample size has an important effect on the standard deviation of a sampling distribution, and so does the proportion of the total population that has been sampled. When the population size <m:math><m:mi>N</m:mi></m:math> is known and more than 5% of the population is being sampled without replacement, the sample observations are not independent of each other, so the Finite Population Correction Factor <m:math><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:math> must be applied to adjust the standard deviation of the sampling distribution. The correction applies both to the sampling distribution of means and to the sampling distribution of proportions.</para>
+    </section>
+    <section class="formula-review" id="sect-00006">
+      <title>Finite Population Correction Factor</title>
+      <para id="para-00050">Finite Population Correction Factor for the sampling distribution of means: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math></para>
+      <para id="para-00051">Finite Population Correction Factor for the sampling distribution of proportions: <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo>·</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mi>n</m:mi></m:mrow><m:mrow><m:mi>N</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:math></para>
+    </section>
     <section class="practice" id="sect-00002">
       <exercise id="exer-00005">
         <problem id="prob-00005">
@@ -119,7 +128,7 @@
           <para id="para-00023">A town keeps weather records. From these records it has been determined that it rains on an average of 37% of the days each year. If 30 days are selected at random from one year, what is the probability that at least 5 and at most 11 days had rain?</para>
         </problem>
         <solution id="sol-00007">
-          <para id="para-00024">0.483</para>
+          <para id="para-00024">0.476</para>
         </solution>
       </exercise>
       <exercise id="exer-00010">
@@ -127,7 +136,7 @@
           <para id="para-00025">A maker of yardsticks has an ink problem that causes the markings to smear on 4% of the yardsticks. The daily production run is 2,000 yardsticks. What is the probability if a sample of 100 yardsticks is checked, there will be ink smeared on at most 4 yardsticks?</para>
         </problem>
         <solution id="sol-00008">
-          <para id="para-00026">0.0500</para>
+          <para id="para-00026">0.5000</para>
         </solution>
       </exercise>
       <exercise id="exer-00011">
@@ -135,7 +144,7 @@
           <para id="para-00027">A school has 300 students. Usually, there are an average of 21 students who are absent. If a sample of 30 students is taken on a certain day, what is the probability that at most 2 students in the sample will be absent?</para>
         </problem>
         <solution id="sol-00009">
-          <para id="para-00028">0.502</para>
+          <para id="para-00028">0.470</para>
         </solution>
       </exercise>
       <exercise id="exer-00012">
@@ -143,7 +152,7 @@
           <para id="para-00029">A college gives a placement test to 5,000 incoming students each year. On the average 1,213 place in one or more developmental courses. If a sample of 50 is taken from the 5,000, what is the probability at most 12 of those sampled will have to take at least one developmental course?</para>
         </problem>
         <solution id="sol-00010">
-          <para id="para-00030">0.519</para>
+          <para id="para-00030">0.483</para>
         </solution>
       </exercise>
     </section>
@@ -170,7 +179,7 @@
           <para id="para-00035">A town keeps weather records. From these records it has been determined that it rains on an average of 12% of the days each year. If 30 days are selected at random from one year, what is the probability that at most 3 days had rain?</para>
         </problem>
         <solution id="sol-00013">
-          <para id="para-00036">0.648</para>
+          <para id="para-00036">0.363</para>
         </solution>
       </exercise>
       <exercise id="exer-00016">
@@ -178,7 +187,7 @@
           <para id="para-00037">A maker of greeting cards has an ink problem that causes the ink to smear on 7% of the cards. The daily production run is 500 cards. What is the probability that if a sample of 35 cards is checked, there will be ink smeared on at most 5 cards?</para>
         </problem>
         <solution id="sol-00014">
-          <para id="para-00038">0.101</para>
+          <para id="para-00038">0.960</para>
         </solution>
       </exercise>
       <exercise id="exer-00017">
@@ -186,7 +195,7 @@
           <para id="para-00039">A school has 500 students. Usually, there are an average of 20 students who are absent. If a sample of 30 students is taken on a certain day, what is the probability that at least 2 students in the sample will be absent?</para>
         </problem>
         <solution id="sol-00015">
-          <para id="para-00040">0.273</para>
+          <para id="para-00040">0.221</para>
         </solution>
       </exercise>
     </section>
