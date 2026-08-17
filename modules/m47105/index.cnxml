@@ -27,7 +27,7 @@
           <para id="element-444">a. 145.27</para>
           <para id="element-380">b. The <m:math><m:mi>x</m:mi></m:math> values in the data are between 65 and 75. Ninety is outside of the domain of the observed <m:math><m:mi>x</m:mi></m:math> values in the data (independent variable), so you cannot reliably predict the final exam score for this student. (Even though it is possible to enter 90 into the equation for <m:math><m:mi>x</m:mi></m:math> and calculate a corresponding <m:math><m:mi>y</m:mi></m:math> value, the <m:math><m:mi>y</m:mi></m:math> value that you get will not be reliable.)
             <newline/>
-            To understand really how unreliable the prediction can be outside of the observed <m:math><m:mi>x</m:mi></m:math> values in the data, make the substitution <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>90</m:mn></m:math> into the equation.
+            To understand just how unreliable the prediction can be outside of the observed <m:math><m:mi>x</m:mi></m:math> values in the data, make the substitution <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>90</m:mn></m:math> into the equation.
             <newline/><newline/>
 <m:math><m:mover><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>173.51</m:mn><m:mo>+</m:mo><m:mn>4.83</m:mn><m:mo>(</m:mo><m:mn>90</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>261.19</m:mn></m:math>
             <newline/><newline/>
@@ -62,7 +62,7 @@
     </section>
     <section id="eip-469" class="summary">
       <title>Chapter Review</title>
-      <para id="fs-idm72353840">After determining the presence of a strong correlation coefficient and calculating the line of best fit, you can use the least squares regression line to make predictions about your data.</para>
+      <para id="fs-idm72353840">After determining the presence of a significant correlation coefficient and calculating the line of best fit, you can use the least squares regression line to make predictions about your data.</para>
     </section>
     <section id="eip-160" class="practice">
       <para id="eip-949"><emphasis effect="italics">Use the following information to answer the next two exercises</emphasis>. An electronics retailer used regression to find a simple model to predict sales growth in the first quarter of the new year (January through March). The model is good for 90 days, where <m:math><m:mi>x</m:mi></m:math> is the day. The model can be written as follows:</para>
@@ -305,7 +305,7 @@
           <para id="fs-idp59562368">What does the correlation imply about the relationship between time (years) and the number of diagnosed flu cases reported in the U.S.?</para>
         </problem>
         <solution id="fs-idp63232128">
-          <para id="fs-idm19062048">Also, the correlation <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.4526</m:mn></m:math>.  If <m:math><m:mi>r</m:mi></m:math> is compared to the value in the 95% Critical Values of the Sample Correlation Coefficient Table, because <m:math><m:mi>r</m:mi><m:mo>></m:mo><m:mn>0.423</m:mn></m:math>, <m:math><m:mi>r</m:mi></m:math> is significant, and you would think that the line could be used for prediction. But the scatter plot indicates otherwise.</para>
+          <para id="fs-idm19062048">The correlation is <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.4526</m:mn></m:math>.  If <m:math><m:mi>r</m:mi></m:math> is compared to the value in the 95% Critical Values of the Sample Correlation Coefficient Table, because <m:math><m:mi>r</m:mi><m:mo>></m:mo><m:mn>0.423</m:mn></m:math>, <m:math><m:mi>r</m:mi></m:math> is significant, and you would think that the line could be used for prediction. But the scatter plot indicates otherwise.</para>
         </solution>
       </exercise>
       <!-- From 12.4 Move to 12.8 --><exercise id="fs-idm79515504">
@@ -324,7 +324,7 @@
           <para id="element-803">Write the equation: <m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo></m:math> ____________</para>
         </problem>
         <solution id="id3238552">
-          <para id="element-747"><m:math><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:math>,448,225 + 1750<m:math><m:mi>x</m:mi></m:math></para>
+          <para id="element-747"><m:math><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3</m:mn></m:math>,448,225 + 1,750<m:math><m:mi>x</m:mi></m:math></para>
         </solution>
       </exercise>
             <exercise id="element-593">
@@ -497,6 +497,7 @@
                   </tbody>
                 </tgroup>
               </table>
+              <para id="para-midpoints">Age-interval midpoints: 17.5, 22, 29.5, 44.5, 64.5, and 80 (using 80 for the 75+ group).</para>
             </item>
             <item>Check student’s solution.</item>
             <item><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mn>35.5818045</m:mn><m:mo>−</m:mo><m:mn>0.19182491</m:mn><m:mi>x</m:mi></m:math></item>
@@ -651,7 +652,7 @@
               <item>page 200: <m:math><m:mi>ŷ</m:mi></m:math> ≈ 14.39 — but page 200 is far outside the data, so this is extrapolation.</item>
               <item>No; the least-squares line should not be used at page 200 because it is well outside the observed page range.</item>
           </list>
-          <para id="fs-idp70584384">As the page number increases by one page, the discount decreases by $0.01412</para>
+          <para id="fs-idp70584384">As the page number increases by one page, the discount decreases by $0.01412, on average.</para>
         </solution>
       </exercise>
             <exercise id="element-263a">
@@ -849,7 +850,7 @@
             <item>Check student’s solution.</item>
             <item>no</item>
             <item><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mn>47.03</m:mn><m:mo>−</m:mo><m:mn>0.0216</m:mn><m:mi>x</m:mi></m:math></item>
-            <item>–0.4280 The r-value indicates that there is not a significant correlation between the year the state entered the union and the number of letters in the name.</item>
+            <item>r = –0.4280. The r-value indicates that there is not a significant correlation between the year the state entered the union and the number of letters in the name.</item>
             <item>1900: <m:math><m:mi>ŷ</m:mi></m:math> ≈ 5.96 → 6 letters; 1940: <m:math><m:mi>ŷ</m:mi></m:math> ≈ 5.09 → 5 letters.</item>
               <item>No, the relationship does not appear to be linear; the correlation is not significant.</item>
               <item>The least-squares line should not be used to predict for a new state this year — the correlation is not significant (<m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.428</m:mn></m:math>) and the year is outside the observed range.</item>

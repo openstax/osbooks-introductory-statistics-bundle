@@ -63,7 +63,7 @@
         <title>NOTE</title>
         <para id="fs-idp95645280">We divide by (<m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:math>) because the regression model involves two estimates.</para>
       </note>
-      <para id="element-42">Rather than calculate the value of <m:math><m:mi>s</m:mi></m:math> ourselves, we can find <m:math><m:mi>s</m:mi></m:math> using the computer or calculator. For this example, the calculator function LinRegTTest found <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>16.4</m:mn></m:math> as the standard deviation of the residuals
+      <para id="element-42">Rather than calculate the value of <m:math><m:mi>s</m:mi></m:math> ourselves, we can find <m:math><m:mi>s</m:mi></m:math> using the computer or calculator. For this example, the calculator function LinRegTTest found <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>16.4</m:mn></m:math> as the standard deviation of the residuals:
         <list id="set-list2" list-type="labeled-item" display="inline">
           <item>35</item>
           <item>–17</item>
@@ -171,7 +171,7 @@
     </section>
     <section id="fs-idm166882672">
       <title>How does the outlier affect the best-fit line?</title>
-      <para id="element-8021">Numerically and graphically, we have identified the point (65, 175) as an outlier. We should re-examine the data for this point to see if there are any problems with the data. If there is an error, we should fix the error if possible, or delete the data. If the data is correct, we would leave it in the data set. For this problem, we will suppose that we examined the data and found that this outlier data was an error. Therefore we will continue on and delete the outlier, so that we can explore how it affects the results, as a learning experience.</para>
+      <para id="element-8021">Numerically and graphically, we have identified the point (65, 175) as an outlier. We should re-examine the data for this point to see if there are any problems with the data. If there is an error, we should fix the error if possible, or delete the data. If the data are correct, we would leave them in the data set. For this problem, we will suppose that we examined the data and found that this outlier was the result of an error. Therefore we will continue on and delete the outlier, so that we can explore how it affects the results, as a learning experience.</para>
       <para id="element-6691"><title>Compute a new best-fit line and correlation coefficient using the ten remaining points:</title>
         On the TI-83, TI-83+, TI-84+ calculators, delete the outlier from L1 and L2. Using the LinRegTTest, the new line of best fit and the correlation coefficient are:</para>
       <para id="element-669"><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>355.19</m:mn><m:mo>+</m:mo><m:mn>7.39</m:mn><m:mi>x</m:mi></m:math> and <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.9121</m:mn></m:math></para>
@@ -212,12 +212,12 @@
       <para id="eip-28">If we were to measure the vertical distance from any data point to the corresponding point on the line of best fit and that distance is at least 2<m:math><m:mi>s</m:mi></m:math>, then we would consider the data point to be "too far" from the line of best fit. We call that point a <term id="term-00003">potential outlier</term>.</para>
       <para id="eip-130">For the example, if any of the |<m:math><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>ŷ</m:mi><m:mo>|</m:mo></m:math> values are <emphasis>at least</emphasis> 32.94, the corresponding (<m:math><m:mi>x</m:mi></m:math>, <m:math><m:mi>y</m:mi></m:math>) data point is a potential outlier.</para>
       <para id="eip-696">For the third exam/final exam problem, all the |<m:math><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>ŷ</m:mi><m:mo>|</m:mo></m:math>'s are less than 32.94 except for the first one which is 35.</para>
-      <para id="eip-994">35 > 32.94 That is, |<m:math><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>ŷ</m:mi><m:mo>|</m:mo><m:mo>≥</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>s</m:mi><m:mo>)</m:mo></m:math></para>
+      <para id="eip-994">35 > 32.94. That is, |<m:math><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>ŷ</m:mi><m:mo>|</m:mo><m:mo>≥</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mi>s</m:mi><m:mo>)</m:mo></m:math></para>
       <para id="eip-980">The point which corresponds to |<m:math><m:mi>y</m:mi><m:mo>−</m:mo><m:mi>ŷ</m:mi><m:mo>|</m:mo><m:mo>=</m:mo><m:mn>35</m:mn></m:math> is (65, 175). <emphasis>Therefore, the data point (65,175) is a potential outlier.</emphasis> For this example, we will delete it. (Remember, we do not always delete an outlier.)</para>
         <note id="fs-idp12863088">
         <label/>
         <title>NOTE</title>
-        <para id="fs-idp101044864">When outliers are deleted, the researcher should either record that data was deleted, and why, or the researcher should provide results both with and without the deleted data. If data is erroneous and the correct values are known (e.g., student one actually scored a 70 instead of a 65), then this correction can be made to the data.</para>
+        <para id="fs-idp101044864">When outliers are deleted, the researcher should either record that data were deleted, and why, or the researcher should provide results both with and without the deleted data. If data are erroneous and the correct values are known (e.g., student one actually scored a 70 instead of a 65), then this correction can be made to the data.</para>
       </note>
       <para id="fs-idm274617664"><newline/><newline/>The next step is to compute a new best-fit line using the ten remaining
         points. The new line of best fit and the correlation coefficient are:</para>
@@ -360,7 +360,7 @@
           <title>NOTE</title>
           <para id="fs-idp122850352">In the example, notice the pattern of the points compared to the line.  Although the correlation coefficient is significant, the pattern in the scatterplot indicates that a curve would be a more appropriate model to use than a line.  In this example, a statistician should prefer to use other methods to fit a curve to this data, rather than model the data with the line we found. In addition to doing the calculations, it is always important to look at the scatterplot when deciding whether a linear model is appropriate.</para>
         </note>
-        <para id="eip-983">If you are interested in seeing more years of data, visit the Bureau of Labor Statistics CPI website ftp://ftp.bls.gov/pub/special.requests/cpi/cpiai.txt; our data is taken from the column entitled "Annual Avg." (third column from the right). For example you could add more current years of data. Try adding the more recent years: 2010: CPI = 219.2; 2020: CPI = 258.0; 2023: CPI = 299.2. See how it affects the model. (Check: <m:math><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5030</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>598</m:mn><m:mi>x</m:mi></m:math>; <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>9067</m:mn></m:math>. Is r significant? Is the fit better with the addition of the new points?)</para>
+        <para id="eip-983">If you are interested in seeing more years of data, visit the Bureau of Labor Statistics CPI website https://www.bls.gov/cpi/; our data are taken from the column entitled "Annual Avg." (third column from the right). For example you could add more current years of data. Try adding the more recent years: 2010: CPI = 219.2; 2020: CPI = 258.0; 2023: CPI = 299.2. See how it affects the model. (Check: <m:math><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5030</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>.</m:mo><m:mn>598</m:mn><m:mi>x</m:mi></m:math>; <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>9067</m:mn></m:math>. Is r significant? Is the fit better with the addition of the new points?)</para>
       </example>
                 <note id="fs-idm58078240" class="statistics try">
         <label/>
@@ -608,10 +608,10 @@
       <para id="eip-idm88717792">
         To determine if a point is an outlier, do one of the following:
         <list id="eip-idp16278896" list-type="enumerated" number-style="arabic">
-          <item>Input the following equations into the TI 83, 83+,84, 84+:
+          <item>Input the following equations into the TI-83, 83+, 84, 84+:
         <para id="eip-idp42255472"><m:math><m:mrow><m:mtable columnalign="left"><m:mtr columnalign="left"><m:mtd columnalign="left"><m:mrow><m:msub><m:mi>y</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign="left"><m:mtd columnalign="left"><m:mrow><m:msub><m:mi>y</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>s</m:mi></m:mrow></m:mtd></m:mtr><m:mtr columnalign="left"><m:mtd columnalign="left"><m:mrow><m:msub><m:mi>y</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mi>s</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:math> where s is the standard deviation of the residuals</para><para id="eip-idp16274560">If any point is above y<sub>2</sub> or below y<sub>3</sub> then the point is considered to be an outlier.</para></item>
           <item>Use the residuals and compare their absolute values to 2<m:math><m:mi>s</m:mi></m:math> where <m:math><m:mi>s</m:mi></m:math> is the standard deviation of the residuals. If the absolute value of any residual is greater than or equal to 2<m:math><m:mi>s</m:mi></m:math>, then the corresponding point is an outlier.</item>
-          <item>Note: The calculator function LinRegTTest (STATS TESTS LinRegTTest) calculates <m:math><m:mi>s</m:mi></m:math>.</item>
+          <item>Note: The calculator function LinRegTTest (STAT TESTS LinRegTTest) calculates <m:math><m:mi>s</m:mi></m:math>.</item>
         </list>
       </para>
     </section>
@@ -658,7 +658,7 @@
       </exercise>
                 <exercise id="eip-7">
         <problem id="eip-idp54697072">
-          <para id="eip-idp57078080">The Standard Deviation for the Sum of Squared Errors for a data set is 9.8. What is the cutoff for the vertical distance that a point can be from the line of best fit to be considered an outlier?</para>
+          <para id="eip-idp57078080">The standard deviation of the residuals for a data set is 9.8. What is the cutoff for the vertical distance that a point can be from the line of best fit to be considered an outlier?</para>
         </problem>
       </exercise>
     </section>
@@ -751,10 +751,10 @@
         </problem>
         <solution id="fs-idm56676800">
           <para id="fs-idp172680496">a. and b. Check student’s solution.</para>
-          <para id="fs-idp172680880">c. The slope of the regression line is -0.3040 with a y-intercept of 31.93. In context, the y-intercept indicates that when there are no returning sparrow hawks, there will be almost 32% new sparrow hawks, which doesn’t make sense since if there are no returning birds, then the new percentage would have to be 100% (this is an example of why we do not extrapolate). The slope tells us that for each percentage increase in returning birds, the percentage of new birds in the colony decreases by 30.3%. </para>
-          <para id="fs-idp36047136">d. If we examine r2, we see that only 56.02% of the variation in the percent of new birds is explained by the model and the correlation coefficient, r = –.7485 only indicates a somewhat strong correlation between returning and new percentages. </para>
-          <para id="fs-idp137409168">e. The ordered pair (66, 6) generates the largest residual of 5.87. This means that when the observed return percentage is 66%, our observed new percentage, 6%, is almost 6% less than the predicted new value of 11.87%. If we remove this data pair, we see only an adjusted slope of -.2789 and an adjusted intercept of 30.9816. In other words, even though this data generates the largest residual, it is not an outlier, nor is the data pair an influential point.</para>
-          <para id="fs-idp89140080">f. If there are 70% returning birds, we would expect to see y = –.2789(70) + 30.9816 = 11.46 or 11.4% new birds in the colony.</para>
+          <para id="fs-idp172680880">c. The slope of the regression line is -0.3040 with a y-intercept of 31.93. In context, the y-intercept indicates that when there are no returning sparrow hawks, there will be almost 32% new sparrow hawks, which doesn’t make sense since if there are no returning birds, then the new percentage would have to be 100% (this is an example of why we do not extrapolate). The slope tells us that for each percentage increase in returning birds, the percentage of new birds in the colony decreases by 0.3%. </para>
+          <para id="fs-idp36047136">d. If we examine r2, we see that only 56.02% of the variation in the percent of new birds is explained by the model and the correlation coefficient, r = –0.7485 only indicates a somewhat strong correlation between returning and new percentages. </para>
+          <para id="fs-idp137409168">e. The ordered pair (66, 6) generates the largest residual of 5.87. This means that when the observed return percentage is 66%, our observed new percentage, 6%, is almost 6% less than the predicted new value of 11.87%. If we remove this data pair, we see only an adjusted slope of -0.2789 and an adjusted intercept of 30.9816. In other words, even though this data generates the largest residual, it is not an outlier, nor is the data pair an influential point.</para>
+          <para id="fs-idp89140080">f. If there are 70% returning birds, we would expect to see ŷ = –0.2789(70) + 30.9816 = 11.46, or about 11.5%, new birds in the colony.</para>
         </solution>
       </exercise>
             <exercise id="fs-idp82285104">
@@ -886,7 +886,7 @@
             <list id="eip-idm38243616" list-type="enumerated" number-style="lower-alpha">
             <item>Check student’s solution.</item>
             <item>Check student’s solution.</item>
-            <item>We have a slope of –1.4946 with a <m:math><m:mi>y</m:mi></m:math>-intercept of 193.88. The slope, in context, indicates that for each additional minute added to the swim time, the heart rate will decrease by 1.5 beats per minute. If the student is not swimming at all, the <m:math><m:mi>y</m:mi></m:math>-intercept indicates that his heart rate will be 193.88 beats per minute. While the slope has meaning (the longer it takes to swim 2,000 meters, the less effort the heart puts out), the <m:math><m:mi>y</m:mi></m:math>-intercept does not make sense. If the athlete is not swimming (resting), then his heart rate should be very low.</item>
+            <item>We have a slope of –1.4946 with a <m:math><m:mi>y</m:mi></m:math>-intercept of 193.88. The slope, in context, indicates that for each additional minute added to the swim time, the heart rate will decrease by 1.5 beats per minute. If the student is not swimming at all, the <m:math><m:mi>y</m:mi></m:math>-intercept indicates that the student’s heart rate will be 193.88 beats per minute. While the slope has meaning (the longer it takes to swim 2,000 yards, the less effort the heart puts out), the <m:math><m:mi>y</m:mi></m:math>-intercept does not make sense. If the athlete is not swimming (resting), then his heart rate should be very low.</item>
             <item>Since only 1.5% of the heart rate variation is explained by this regression equation, we must conclude that this association is not explained with a linear relationship.</item>
             <item>The point (34.72, 124) generates the largest residual of –17.99. This means that our observed heart rate is almost 18 beats less than our predicted rate of 142 beats per minute. When this point is removed, the slope becomes –2.953 with the y-intercept changing to 247.1616. While the linear association is still very weak, we see that the removed data pair can be considered an influential point in the sense that the <m:math><m:mi>y</m:mi></m:math>-intercept becomes more meaningful.</item>
           </list>
@@ -894,7 +894,7 @@
       </exercise>
             <exercise id="fs-idp111074400">
         <problem id="fs-idp111074656">
-          <para id="fs-idm34344064">A researcher is investigating whether population impacts homicide rate. He uses demographic data from Detroit, MI to compare homicide rates and the number of the population that are White men.</para>
+          <para id="fs-idm34344064">A researcher is investigating whether population impacts homicide rate. He uses demographic data from Detroit, MI to compare homicide rates with the number of White men in the population.</para>
             <table id="fs-idp10781040" summary="..">
             <tgroup cols="2">
               <colspec colnum="1" colname="c1"/>
@@ -1192,7 +1192,7 @@
             <item>0.9448; Yes</item>
             <item>62.8233; 62.3265</item>
             <item>yes</item>
-            <item>no; (Year 9, 62.7)</item>
+            <item>no; (the largest residual is at Year 9, 62.7)</item>
             <item>72.5937; no (year 72 = calendar year 2050 — extrapolation beyond the data)</item>
             <item>slope = 0.1656.<newline/>As the year increases by one, the percent of workers paid hourly rates tends to increase by 0.1656.</item>
           </list>
@@ -1310,7 +1310,7 @@
             <item>Check student’s solution. </item>
             <item>There is a linear relationship for the sizes 16 through 64, but that linear trend does not continue to the 200-oz size.</item>
             <item><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mn>20.2368</m:mn><m:mo>−</m:mo><m:mn>0.0819</m:mn></m:math>x</item>
-            <item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.8086</m:mn></m:math></item>
+            <item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.8086</m:mn></m:math>. With df = n − 2 = 2, the critical value is 0.950; |r| = 0.8086 &lt; 0.950, so r is not significant.</item>
             <item>40-oz: 16.96 cents/oz</item>
             <item>90-oz: 12.87 cents/oz</item>
             <item>The relationship is not linear; the least squares line is not appropriate.</item>
@@ -1445,7 +1445,7 @@
             <item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.8944</m:mn></m:math>, yes it is significant</item>
             <item>32-terabyte: $1006.93, 50-terabyte: $1992.53</item>
             <item>No, the relationship does not appear to be linear. However, <m:math><m:mi>r</m:mi></m:math> is significant.</item>
-            <item>yes, the 40-terabyte hard drive has the largest residual (≈ +732); the 60-terabyte point has high leverage but a small residual</item>
+            <item>No. The 40-terabyte hard drive has the largest residual (≈ +732), however its standard residual is only 1.66 so it does not qualify as an outlier.</item>
             <item>For each additional terabyte, the price increases by $54.76</item>
           </list>
         </solution>
@@ -1620,7 +1620,7 @@
             <item>Does it appear that a line is the best way to fit the data? Why or why not?</item>
             <item>Are there any outliers?</item>
             <item>Use the least squares line to estimate the area of a new state that enters the Union. Can the least-squares line be used to predict it? Why or why not?</item>
-            <item>Delete “Hawaii” and substitute “Alaska” for it. Alaska is the forty-ninth, state with an area of 656,424 square miles.</item>
+            <item>Delete “Hawaii” and substitute “Alaska” for it. Alaska is the forty-ninth state, with an area of 656,424 square miles.</item>
             <item>Calculate the new least-squares line.</item>
             <item>Find the estimated area for Alabama. Is it closer to the actual area with this new least-squares line or with the previous one that included Hawaii? Why do you think that’s the case?</item>
             <item>Do you think that, in general, newer states are larger than the original states?</item>
@@ -1633,8 +1633,8 @@
             <item>There appears to be a linear relationship, with one outlier.</item>
             <item><m:math><m:mi>ŷ</m:mi></m:math> (area) = 24177.06 + 1010.478<m:math><m:mi>x</m:mi></m:math></item>
             <item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.50047</m:mn></m:math>, <m:math><m:mi>r</m:mi></m:math> is not significant so there is no relationship between the variables.</item>
-            <item>Alabama: 46407.576  Colorado: 62575.224</item>
-            <item>Alabama estimate is closer than Colorado estimate.</item>
+            <item>Alabama: 46407.576  Colorado: 62575.224 The Alabama estimate is closer to its actual area (52,423 sq. mi) than the Colorado estimate is to its 104,100 sq. mi.</item>
+            <item>Check student’s solution.</item>
             <item>If the outlier is removed, there is a linear relationship. </item>
             <item>There is one outlier (Hawaii).</item>
             <item>rank 51: 75711.4; no</item>
@@ -1664,11 +1664,11 @@
                       <entry>104,100</entry>
                     </row>
                     <row>
-                      <entry>Hawaii</entry>
+                      <entry>Alaska</entry>
                       <entry>6</entry>
                       <entry>1959</entry>
-                      <entry>50</entry>
-                      <entry>10,932</entry>
+                      <entry>49</entry>
+                      <entry>656,424</entry>
                     </row>
                     <row>
                       <entry>Iowa</entry>
@@ -2117,7 +2117,7 @@
   </content>
   <glossary><definition id="outlier">
       <term>Outlier</term>
-      <meaning id="id1171166689919">an observation that does not fit the rest of the data</meaning>
+      <meaning id="id1171166689919">an observation that does not fit the rest of the data.</meaning>
     </definition>
     <definition id="potential-outlier">
       <term>Potential Outlier</term>

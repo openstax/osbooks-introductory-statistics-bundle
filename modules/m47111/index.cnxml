@@ -24,7 +24,7 @@
       </list>
     </para>
     <para id="fs-idp40539792">
-      <title>If the test concludes that the correlation coefficient is not significantly different from zero (it is close to zero), we say that correlation coefficient is "not significant".</title>
+      <title>If the test concludes that the correlation coefficient is not significantly different from zero (it is close to zero), we say that the correlation coefficient is "not significant".</title>
       <list id="eip-663">
         <item>Conclusion:  "There is insufficient evidence to conclude that there is a significant linear relationship between <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> because the correlation coefficient is not significantly different from zero."</item>
         <item>What the conclusion means: There is not a significant linear relationship between <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math>. Therefore, we CANNOT use the regression line to model a linear relationship between <m:math><m:mi>x</m:mi></m:math> and <m:math><m:mi>y</m:mi></m:math> in the population.</item>
@@ -143,7 +143,7 @@
           </exercise>
         </note>
         <example id="element-358">
-          <para id="element-206">Suppose you computed <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.624</m:mn></m:math> with 14 data points. <emphasis effect="italics">df</emphasis> = 14 – 2 = 12. The critical values are –0.532 and 0.532. Since –0.624 &lt; –0.532, <m:math><m:mi>r</m:mi></m:math> is significant and the line can be used for prediction</para>
+          <para id="element-206">Suppose you computed <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.624</m:mn></m:math> with 14 data points. <emphasis effect="italics">df</emphasis> = 14 – 2 = 12. The critical values are –0.532 and 0.532. Since –0.624 &lt; –0.532, <m:math><m:mi>r</m:mi></m:math> is significant and the line can be used for prediction.</para>
                 <figure class="scaled-down" id="id1165447908929">
                 <media id="id1165447908933" alt="Horizontal number line with values of -0.624, -0.532, and 0.532.">
               <image src="../../media/fig-ch12_07_02.png" mime-type="image/png"/>
@@ -175,7 +175,7 @@
           <title>Try It</title>
                 <exercise id="eip-610">
             <problem id="eip-276">
-              <para id="eip-396">For a given line of best fit, you compute that <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.7204</m:mn></m:math> using <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:math> data points, and the critical value is = 0.707. Can the line be used for prediction? Why or why not?</para>
+              <para id="eip-396">For a given line of best fit, you compute that <m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>0.7204</m:mn></m:math> using <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>8</m:mn></m:math> data points, and the critical value is 0.707. Can the line be used for prediction? Why or why not?</para>
             </problem>
           </exercise>
         </note>
@@ -255,20 +255,8 @@
     </section>
     <section id="eip-896" class="formula-review">
       <title>Formula Review</title>
-      <para id="eip-388">Least Squares Line or Line of Best Fit: </para>
-      <para id="eip-64">
-        <m:math><m:mrow><m:mover accent="true"><m:mi>y</m:mi><m:mo>^</m:mo></m:mover><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi><m:mi>x</m:mi></m:mrow></m:math>
-      </para>
-      <para id="eip-716">where </para>
-      <para id="eip-574"><m:math><m:mi>a</m:mi><m:mo>=</m:mo><m:mi>y</m:mi></m:math>-intercept</para>
-      <para id="eip-41"><m:math><m:mi>b</m:mi><m:mo>=</m:mo></m:math> slope</para>
-      <para id="eip-484">Standard deviation of the residuals: </para>
-      <para id="eip-496">
-        <m:math><m:mrow><m:mi>s</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>S</m:mi><m:mi>S</m:mi><m:mi>E</m:mi></m:mrow><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mi>.</m:mi></m:mrow></m:math>
-      </para>
-      <para id="eip-463">where</para>
-      <para id="eip-814">SSE = sum of squared errors</para>
-      <para id="eip-799"><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the number of data points</para>
+      <para id="eip-388">Test statistic for the significance of the correlation coefficient (<emphasis effect="italics">df</emphasis> = <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:math>):</para>
+      <para id="eip-64"><m:math><m:mrow><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>r</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn></m:mrow></m:msqrt></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>r</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:math></para>
     </section>
     <section id="eip-142" class="practice">
         <exercise id="eip-552">
