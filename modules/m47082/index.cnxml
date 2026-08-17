@@ -12,7 +12,7 @@
       <item><emphasis>Goodness-of-Fit:</emphasis> Use the goodness-of-fit test to decide whether a population with an unknown distribution "fits" a known distribution. In this case there will be a single qualitative survey question or a single outcome of an experiment from a single population. Goodness-of-Fit is typically used to see if the population is uniform (all outcomes occur with equal frequency), the population is normal, or the population follows another specified theoretical distribution (for example, binomial or Poisson). The null and alternative hypotheses are:
         <newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: The population fits the given distribution.
         <newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: The population does not fit the given distribution.</item>
-      <item><emphasis>Independence:</emphasis> Use the test for independence to decide whether two variables (factors) are independent or dependent. In this case there will be two qualitative survey questions or experiments and a contingency table will be constructed. The goal is to see if the two variables are unrelated (independent) or related (dependent). The null and alternative hypotheses are:
+      <item><emphasis>Independence:</emphasis> Use the test of independence to decide whether two variables (factors) are independent or dependent. In this case there will be two qualitative survey questions or experiments and a contingency table will be constructed. The goal is to see if the two variables are unrelated (independent) or related (dependent). The null and alternative hypotheses are:
         <newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: The two variables (factors) are independent.
         <newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: The two variables (factors) are dependent.</item>
       <item><emphasis>Homogeneity:</emphasis> Use the test for homogeneity to decide if two populations with unknown distributions have the same distribution as each other. In this case there will be a single qualitative survey question or experiment given to two different populations. The null and alternative hypotheses are:
@@ -20,6 +20,7 @@
         <newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: The two populations have different distributions.
       </item>
     </list>
+    <para id="para-00005">You have also used the chi-square distribution in this chapter for the test of a single variance (Section 11.5), which determines whether a population variance (or standard deviation) equals a claimed value. Its test statistic, <m:math><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:math>, has a different form from the <m:math><m:mrow><m:mstyle displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math> statistic the three tests above share, and it may be left-tailed, right-tailed, or two-tailed.</para>
     <section id="fs-idm111900416" class="summary">
       <title>Chapter Review</title>
       <para id="eip-208">The goodness-of-fit test is typically used to determine if data fit a particular distribution. The test of independence makes use of a contingency table to determine the independence of two factors. The test for homogeneity determines whether two populations come from the same distribution, even if this distribution is unknown.</para>
@@ -57,7 +58,7 @@
           <para id="eip-830">How are tests of independence similar to tests for homogeneity?</para>
         </problem>
         <solution id="eip-945">
-          <para id="eip-614">Answers will vary. Sample answer: Tests of independence and tests for homogeneity both calculate the test statistic the same way <m:math><m:mrow><m:munder><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mi>j</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>. In addition, all values must be greater than or equal to five. </para>
+          <para id="eip-614">Answers will vary. Sample answer: Tests of independence and tests for homogeneity both calculate the test statistic the same way <m:math><m:mrow><m:munder><m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>i</m:mi><m:mi>j</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:munder><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>O</m:mi><m:mo>−</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mi>E</m:mi></m:mfrac></m:mrow></m:math>. In addition, all expected values must be greater than or equal to five. </para>
         </solution>
       </exercise>
         <exercise id="eip-206">
@@ -73,7 +74,7 @@
       </para>
         <exercise id="eip-519">
         <problem id="eip-604">
-          <para id="eip-412">Is there a difference between the distribution of community college statistics students and the distribution of university statistics students in what technology they use on their homework? Of some randomly selected community college students, 43 used a computer, 102 used a calculator with built in statistics functions, and 65 used a table from the textbook. Of some randomly selected university students, 28 used a computer, 33 used a calculator with built in statistics functions, and 40 used a table from the textbook. Conduct an appropriate hypothesis test using a 0.05 level of significance.
+          <para id="eip-412">Is there a difference between the distribution of community college statistics students and the distribution of university statistics students in what technology they use on their homework? Of some randomly selected community college students, 43 used a computer, 102 used a calculator with built-in statistics functions, and 65 used a table from the textbook. Of some randomly selected university students, 28 used a computer, 33 used a calculator with built-in statistics functions, and 40 used a table from the textbook. Conduct an appropriate hypothesis test using a 0.05 level of significance.
           </para>
         </problem>
         <solution id="eip-860">
@@ -117,7 +118,7 @@
         <solution id="fs-idm144548544">
           <list id="fs-idm11228640" list-type="enumerated" number-style="lower-alpha">
             <item>The test statistic is always positive and if the expected and observed values are not close together, the test statistic is large and the null hypothesis will be rejected.</item>
-            <item>Testing to see if the data fits the distribution “too well” or is too perfect.</item>
+            <item>Testing to see if the data fit the distribution “too well” or are too perfect.</item>
           </list>
         </solution>
       </exercise>

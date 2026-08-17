@@ -87,7 +87,7 @@
               <image src="../../media/fig-ch11_08_01.png" mime-type="image/jpg"/>
             </media>
           </figure>
-          <para id="element-970"><emphasis>Probability statement:</emphasis><m:math><m:mi>p</m:mi></m:math>-value = <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>χ</m:mi></m:math><sup>2</sup> &lt; 5.67) = 0.000042</para>
+          <para id="element-970"><emphasis>Probability statement:</emphasis> <m:math><m:mi>p</m:mi></m:math>-value = <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>χ</m:mi></m:math><sup>2</sup> &lt; 5.67) = 0.000042</para>
           <para id="element-684">
             <emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value:</emphasis>
             <newline/>
@@ -97,9 +97,9 @@
               <item><m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mi>p</m:mi></m:math>-value</item>
             </list>
           </para>
-          <para id="element-726"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mi>p</m:mi></m:math>-value, reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. This means that you reject <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 7.2<sup>2</sup>. In other words, you do not think the variation in waiting times is 7.2 minutes; you think the variation in waiting times is less.</para>
+          <para id="element-726"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>&gt;</m:mo><m:mi>p</m:mi></m:math>-value, reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. This means that you reject <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = 7.2<sup>2</sup>. In other words, you do not think the standard deviation in waiting times is 7.2 minutes; you think the variation in waiting times is less.</para>
           <para id="element-952"><emphasis>Conclusion:</emphasis> At a 5% level of significance, from the data, there is sufficient evidence to
-            conclude that a single line causes a lower variation among the waiting times <emphasis>or</emphasis> with a single
+            conclude that a single line causes a lower variation among the waiting times or, with a single
             line, the customer waiting times vary less than 7.2 minutes.</para>
             <note id="fs-idm81061344" class="statistics calculator">
             <label/>
@@ -115,7 +115,7 @@
       <title>Try It</title>
               <exercise id="eip-209">
         <problem id="eip-849">
-          <para id="eip-37">The FCC conducts broadband speed tests to measure how much data per second passes between a consumer’s computer and the internet. At a certain point in time, the standard deviation of Internet speeds across Internet Service Providers (ISPs) was 12.2 percent. Suppose a sample of 15 ISPs is taken, and the standard deviation is 13.2 percent. An analyst claims that the standard deviation of speeds is more than what was reported. State the null and alternative hypotheses, compute the degrees of freedom, the test statistic, sketch the graph of the <m:math><m:mi>p</m:mi></m:math>-value, and draw a conclusion. Test at the 1% significance level.</para>
+          <para id="eip-37">The FCC conducts broadband speed tests to measure how much data per second passes between a consumer’s computer and the internet. At a certain point in time, the standard deviation of internet speeds across Internet Service Providers (ISPs) was 12.2 percent. Suppose a sample of 15 ISPs is taken, and the standard deviation is 13.2 percent. An analyst claims that the standard deviation of speeds is more than what was reported. State the null and alternative hypotheses, compute the degrees of freedom, the test statistic, sketch the graph of the <m:math><m:mi>p</m:mi></m:math>-value, and draw a conclusion. Test at the 1% significance level.</para>
         </problem>
       </exercise>
     </note>
@@ -126,7 +126,7 @@
     </section>
     <section id="fs-idm93039536" class="summary">
       <title>Chapter Review</title>
-      <para id="eip-212">To test variability, use the chi-square test of a single variance. The test may be left-, right-, or two-tailed, and its hypotheses are always expressed in terms of the variance (or standard deviation).</para>
+      <para id="eip-212">To test variability, use the chi-square test of a single variance. The test may be left-, right-, or two-tailed, and its hypotheses are always expressed in terms of the population variance (or population standard deviation).</para>
     </section>
     <section id="fs-idm8553712" class="formula-review">
       <title>Formula Review</title>
@@ -138,14 +138,14 @@
         <list id="eip-29" list-type="bulleted">
         <title>Test of a Single Variance</title>
         <item>Use the test to determine variation.</item>
-        <item>The degrees of freedom is the number of samples – 1.</item>
-        <item>The test statistic is <m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>, where <m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the total number of data, <m:math><m:mi>s</m:mi></m:math><sup>2</sup> = sample variance, and <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = population variance.
+        <item>The degrees of freedom is the number of data values – 1.</item>
+        <item>The test statistic is <m:math><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn><m:mo stretchy="false">)</m:mo><m:mo>⋅</m:mo><m:msup><m:mi>s</m:mi><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:msup><m:mi>σ</m:mi><m:mn>2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:math>, where <m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> the total number of data values, <m:math><m:mi>s</m:mi></m:math><sup>2</sup> = sample variance, and <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> = population variance.
         </item>
         <item>The test may be left-, right-, or two-tailed.</item>
       </list>
     </section>
     <section id="fs-idm13240448" class="practice">
-      <para id="eip-idp102579024"><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> An archer’s standard deviation for hits is six (data is measured in distance from the center of the target). An observer claims the standard deviation is less.</para>
+      <para id="eip-idp102579024"><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> An archer’s standard deviation for hits is six (data are measured in distance from the center of the target). An observer claims the standard deviation is less.</para>
         <exercise id="eip-432">
         <problem id="eip-192">
           <para id="eip-947">What type of test should be used?</para>
@@ -277,7 +277,7 @@
         <problem id="fs-idm57687392">
           <para id="fs-idm24034400">Let <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math><newline/>
             Decision: ________<newline/>
-            Conclusion (write out in a complete sentence.): ________</para>
+            Conclusion (write out in a complete sentence): ________</para>
         </problem>
       </exercise>
             <exercise id="eip-572">
@@ -306,7 +306,7 @@
       </para>
             <exercise id="fs-idp51794048">
         <problem id="fs-idp51794176">
-          <para id="fs-idm36035424">A plant manager is concerned their equipment may need recalibrating. It seems that the actual weight of the 15 oz. cereal boxes it fills has been fluctuating. The standard deviation should be at most 0.5 oz. In order to determine if the machine needs to be recalibrated, 84 randomly selected boxes of cereal from the next day’s production were weighed. The standard deviation of the 84 boxes was 0.54. Does the machine need to be recalibrated?
+          <para id="fs-idm36035424">A plant manager is concerned their equipment may need recalibrating. It seems that the actual weight of the 15 oz. cereal boxes it fills has been fluctuating. The standard deviation should be at most 0.5 oz. In order to determine if the machine needs to be recalibrated, 84 randomly selected boxes of cereal from the next day’s production were weighed. The standard deviation of the 84 boxes was 0.54 oz. Does the machine need to be recalibrated?
           </para>
         </problem>
       </exercise>
@@ -339,7 +339,7 @@
             <exercise id="fs-idm4701360">
         <problem id="id21087466">
           <para id="element-427">
-            Isabella, an accomplished Bay to Breakers runner, claims that the standard deviation for her time to run the 7.5 mile race is at most three minutes. To test her claim, Rupinder looks up five of her race times. They are 55 minutes, 61 minutes, 58 minutes, 63 minutes, and 57 minutes.
+            Isabella, an accomplished Bay to Breakers runner, claims that the standard deviation for her time to run the 7.5-mile race is at most three minutes. To test her claim, Rupinder looks up five of her race times. They are 55 minutes, 61 minutes, 58 minutes, 63 minutes, and 57 minutes.
           </para>
         </problem>
       </exercise>
@@ -370,7 +370,7 @@
       </exercise>
             <exercise id="element-559">
         <problem id="id21087650">
-          <para id="element-641">The number of births per woman in China is 1.6 down from 5.91 in 1966. This fertility rate has been attributed to the law passed in 1979 restricting births to one per woman. Suppose that a group of students studied whether or not the standard deviation of births per woman was greater than 0.75. They asked 50 women across China the number of births they had had. The results are shown in <link target-id="id6106431"/>. Does the students’ survey indicate that the standard deviation is greater than 0.75?
+          <para id="element-641">The number of births per woman in China is 1.6, down from 5.91 in 1966. This fertility rate has been attributed to the law passed in 1979 restricting births to one per woman. Suppose that a group of students studied whether or not the standard deviation of births per woman was greater than 0.75. They asked 50 women across China the number of births they had had. The results are shown in <link target-id="id6106431"/>. Does the students’ survey indicate that the standard deviation is greater than 0.75?
           </para>
             <table id="id6106431" summary="The table has the number of births in the first column and the frequency in the second column. There are 4 rows.">
             <tgroup cols="2">
@@ -423,7 +423,7 @@
                 <item>Alpha = 0.05</item>
                 <item>Decision: Reject the null hypothesis</item>
                 <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
-                <item>Conclusion: There is sufficient evidence to conclude that the standard deviation is different than 2.</item>
+                <item>Conclusion: There is sufficient evidence to conclude that the standard deviation is different from 2.</item>
               </list>
             </item>
           </list>
@@ -457,7 +457,7 @@
           <para id="eip-574">A company packages apples by weight. One of the weight grades is Class A apples. Class A apples have a mean weight of 150 g, and there is a maximum allowed weight tolerance of 5% above or below the mean for apples in the same consumer package. A batch of apples is selected to be included in a Class A apple package. Given the following apple weights of the batch, does the fruit comply with the Class A grade weight tolerance requirements? Conduct an appropriate hypothesis test.</para>
           <para id="eip-idp93825408">(a) at the 5% significance level</para>
           <para id="eip-idp25991408">(b) at the 1% significance level</para>
-          <para id="eip-idm53488240">Weights in selected apple batch (in grams): 158; 167; 149; 169; 164; 139; 154; 150; 157; 171; 152; 161; 141; 166; 172;</para>
+          <para id="eip-idm53488240">Weights in selected apple batch (in grams): 158; 167; 149; 169; 164; 139; 154; 150; 157; 171; 152; 161; 141; 166; 172</para>
         </problem>
       </exercise>
     </section>

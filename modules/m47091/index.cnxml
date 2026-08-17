@@ -7,21 +7,21 @@
     <md:uuid>2c445a24-9229-4306-8910-4ca01e4e89ce</md:uuid>
   </metadata>
   <content>
-    <para id="element-3816">The goodness–of–fit test can be used to decide whether a population fits a given distribution, but it will not suffice to decide whether two populations follow the same unknown distribution. A different test, called the <term id="term-00001">test for homogeneity</term>, can be used to draw a conclusion about whether two populations have the same distribution. To calculate the test statistic for a test for homogeneity, follow the same procedure as with the test of independence.</para>
+    <para id="element-3816">The goodness-of-fit test can be used to decide whether a population fits a given distribution, but it will not suffice to decide whether two populations follow the same unknown distribution. A different test, called the <term id="term-00001">test for homogeneity</term>, can be used to draw a conclusion about whether two populations have the same distribution. To calculate the test statistic for a test for homogeneity, follow the same procedure as with the test of independence.</para>
     <note id="eip-195">
       <label/>
       <title>NOTE</title>
       <para id="eip-idp34705152">The expected value for each cell needs to be at least five in order for you to use this test.</para>
     </note>
     <para id="eip-705"><title>Hypotheses</title><newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: The distributions of the two populations are the same.<newline/><newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>:  The distributions of the two populations are not the same.</para>
-    <para id="eip-703"><title>Test Statistic:</title>Use a <m:math><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup></m:math>  test statistic.  It is computed in the same way as the test for independence.  </para>
-    <para id="eip-577"><title>Degrees of Freedom (<emphasis effect="italics">df</emphasis>):</title><emphasis effect="italics">df</emphasis> = (number of rows − 1)(number of columns − 1)</para>
-    <para id="eip-572"><title>Requirements:</title>All expected cell counts must be greater than or equal to five. </para>
-    <para id="eip-66"><title>Common Uses:</title>Comparing two populations. For example:  men vs. women, before vs. after, east vs. west. The variable is categorical with more than two possible response values. </para>
+    <para id="eip-703"><title>Test Statistic:</title> Use a <m:math><m:msup><m:mi>χ</m:mi><m:mn>2</m:mn></m:msup></m:math>  test statistic.  It is computed in the same way as the test for independence.  </para>
+    <para id="eip-577"><title>Degrees of Freedom (<emphasis effect="italics">df</emphasis>):</title> <emphasis effect="italics">df</emphasis> = (number of rows − 1)(number of columns − 1)</para>
+    <para id="eip-572"><title>Requirements:</title> All expected cell counts must be greater than or equal to five. </para>
+    <para id="eip-66"><title>Common Uses:</title> Comparing two populations. For example:  men vs. women, before vs. after, east vs. west. The variable is categorical with more than two possible response values. </para>
     <example id="eip-101">
       <exercise id="eip-790">
         <problem id="eip-886">
-          <para id="eip-520">Do men and women college students have the same distribution of living arrangements?  Use a level of significance of 0.05. Suppose that 250 randomly selected men college students and 300 randomly selected women college students were asked about their living arrangements: dormitory, apartment, with parents, other. The results are shown in <link target-id="eip-924"/>. Do male and female college students have the same distribution of living arrangements?</para>
+          <para id="eip-520">Do men and women college students have the same distribution of living arrangements?  Use a level of significance of 0.05. Suppose that 250 randomly selected men college students and 300 randomly selected women college students were asked about their living arrangements: dormitory, apartment, with parents, other. The results are shown in <link target-id="eip-924"/>. Do men and women college students have the same distribution of living arrangements?</para>
           <table id="eip-924" summary="The table contains the distribution of living conditions for college males and college females. First row: Males 72 Dorm; 84 Apt.; 49 Parents; 45 Other; Second row: Females, 91 Dorm; 86 Apt.; 88 Parents; 35 Other;">
             <title>Distribution of Living Arrangements for College Men and College Women</title>
             <tgroup cols="5">
@@ -74,7 +74,7 @@
       <title>Try It</title>
             <exercise id="eip-976">
         <problem id="eip-39">
-          <para id="eip-658">Do families and singles have the same distribution of cars? Use a level of significance of 0.05. Suppose that 100 randomly selected families and 200 randomly selected singles were asked what type of car they drove: sport, sedan, hatchback, truck, van/SUV. The results are shown in <link target-id="eip-idm93309648"/>. Do families and singles have the same distribution of cars? Test at a level of significance of 0.05.</para>
+          <para id="eip-658">Do families and singles have the same distribution of cars? Suppose that 100 randomly selected families and 200 randomly selected singles were asked what type of car they drove: sport, sedan, hatchback, truck, van/SUV. The results are shown in <link target-id="eip-idm93309648"/>. Do families and singles have the same distribution of cars? Test at a level of significance of 0.05.</para>
             <table id="eip-idm93309648" summary="">
             <tgroup cols="6">
               <thead>
@@ -257,7 +257,7 @@
           <para id="eip-188">What condition must be met to use the test for homogeneity?   </para>
         </problem>
         <solution id="eip-701">
-          <para id="eip-458">All values in the table must be greater than or equal to five.</para>
+          <para id="eip-458">All expected values in the table must be greater than or equal to five.</para>
         </solution>
       </exercise>
       <para id="eip-idp68604192"><emphasis effect="italics">Use the following information to answer the next five exercises:</emphasis> Do private practice doctors and hospital doctors have the same distribution of working hours? Suppose that a sample of 100 private practice doctors and 150 hospital doctors are selected at random and asked about the number of hours a week they work. The results are shown in <link target-id="eip-idm14786672"/>.</para>
@@ -266,9 +266,9 @@
           <thead>
             <row>
               <entry/>
-              <entry>20–30</entry>
-              <entry>30–40</entry>
-              <entry>40–50</entry>
+              <entry>20–29</entry>
+              <entry>30–39</entry>
+              <entry>40–49</entry>
               <entry>50–60</entry>
             </row>
           </thead>
@@ -458,7 +458,7 @@
                 <item>Alpha: 0.05</item>
                 <item>Decision: Reject the null hypothesis.</item>
                 <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
-                <item>Conclusion: There is evidence to conclude that the distribution of fish caught is different in Green Valley Lake and in Echo Lake</item>
+                <item>Conclusion: There is evidence to conclude that the distribution of fish caught is different in Green Valley Lake and in Echo Lake.</item>
               </list>
             </item>
           </list>
@@ -611,7 +611,7 @@
       </exercise>
             <exercise id="eip-653">
         <problem id="eip-200">
-          <para id="eip-454">The Insurance Institute for Highway Safety collects safety information about all types of cars every year, and publishes a report of Top Safety Picks among all cars, makes, and models. <link target-id="eip-idp53245072"/> presents the number of Top Safety Picks in six car categories for two specific years. Analyze the table data to conclude Year 1 and Year 2. Derive your results at the 5% significance level.</para>
+          <para id="eip-454">The Insurance Institute for Highway Safety collects safety information about all types of cars every year, and publishes a report of Top Safety Picks among all cars, makes, and models. <link target-id="eip-idp53245072"/> presents the number of Top Safety Picks in six car categories for two specific years. Analyze the table data to conclude whether the distribution of cars that earned the Top Safety Picks safety award has remained the same for Year 1 and Year 2. Derive your results at the 5% significance level.</para>
             <table id="eip-idp53245072" summary="">
             <tgroup cols="8">
               <thead>
