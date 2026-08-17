@@ -6,12 +6,12 @@
     <md:uuid>75804770-2fd0-4750-b668-898c101c81a4</md:uuid>
   </metadata>
   <content>
-<para id="me001">The distribution used for the hypothesis test is a new one. It is called the <term id="term-00001"><m:math><m:mi>F</m:mi></m:math> distribution</term>, invented by George Snedecor but named in honor of Sir Ronald Fisher, an English statistician. The <m:math><m:mi>F</m:mi></m:math> statistic is a ratio (a fraction). There are two sets of degrees of freedom; one for the numerator and one for the denominator.</para><para id="element-674">For example, if <m:math><m:mi>F</m:mi></m:math> follows an <m:math><m:mi>F</m:mi></m:math> distribution and the number of degrees of freedom for the numerator is four, and the number of degrees of freedom for the denominator is ten, then <m:math><m:mi>F</m:mi><m:mo>~</m:mo><m:msub><m:mi>F</m:mi><m:mtext>4,10</m:mtext></m:msub></m:math>.</para>
+<para id="me001">The distribution used for the hypothesis test is a new one. It is called the <term id="term-00001"><m:math><m:mi>F</m:mi></m:math> distribution</term>, invented by George Snedecor but named in honor of Sir Ronald Fisher, an English statistician. The <m:math><m:mi>F</m:mi></m:math> statistic is a ratio (a fraction). There are two sets of degrees of freedom, one for the numerator and one for the denominator.</para><para id="element-674">For example, if <m:math><m:mi>F</m:mi></m:math> follows an <m:math><m:mi>F</m:mi></m:math> distribution and the number of degrees of freedom for the numerator is four, and the number of degrees of freedom for the denominator is ten, then <m:math><m:mi>F</m:mi><m:mo>~</m:mo><m:msub><m:mi>F</m:mi><m:mtext>4,10</m:mtext></m:msub></m:math>.</para>
 
 <para id="element-967">To calculate the <term id="term-00002"><m:math><m:mi>F</m:mi></m:math> ratio</term>, two estimates of the variance are made.</para>
 
 <list id="element-236" list-type="enumerated">
-<item><term id="term-00003">Variance between samples</term><emphasis>:</emphasis> An estimate of <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> that is the variance of the sample means multiplied by <m:math><m:mi>n</m:mi></m:math> (when the sample sizes are the same.). If the samples are different sizes, the variance between samples is weighted to account for the different sample sizes. The variance is also called <emphasis>variation due to treatment or explained variation.</emphasis></item>
+<item><term id="term-00003">Variance between samples</term><emphasis>:</emphasis> An estimate of <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> that is the variance of the sample means multiplied by <m:math><m:mi>n</m:mi></m:math> (when the sample sizes are the same). If the samples are different sizes, the variance between samples is weighted to account for the different sample sizes. The variance is also called <emphasis>variation due to treatment or explained variation.</emphasis></item>
 <item><term id="term-00004">Variance within samples</term><emphasis>:</emphasis> An estimate of <m:math><m:mi>σ</m:mi></m:math><sup>2</sup> that is the average of the sample variances (also known as a pooled variance). When the sample sizes are different, the variance within samples is weighted. The variance is also called the <emphasis>variation due to error or unexplained variation.</emphasis></item>
 </list>
 
@@ -31,7 +31,7 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 <item><m:math><m:mi>n</m:mi><m:mo>=</m:mo></m:math> total number of all the values combined (total sample size: ∑<m:math><m:msub><m:mi>n</m:mi><m:mi>j</m:mi></m:msub></m:math>)</item>
 <item><m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> one value: ∑<m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> ∑<m:math><m:msub><m:mi>s</m:mi><m:mi>j</m:mi></m:msub></m:math></item>
 <item>Sum of squares of all values from every group combined: ∑<m:math><m:mi>x</m:mi></m:math><sup>2</sup></item>
-<item>Total sum of squares: <m:math><m:mi>S</m:mi><m:msub><m:mi>S</m:mi><m:mtext>total</m:mtext></m:msub><m:mo>=</m:mo><m:mo>&#x2211;</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup>
+<item>Total sum of squares: <m:math><m:mi>S</m:mi><m:msub><m:mi>S</m:mi><m:mtext>total</m:mtext></m:msub><m:mo>=</m:mo><m:mo>&#x2211;</m:mo><m:msup><m:mi>x</m:mi><m:mn>2</m:mn></m:msup><m:mo>−</m:mo>
 <m:mrow>
 <m:mfrac>
 <m:mrow>
@@ -448,7 +448,7 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 </tbody>
 
 </tgroup>
-</table><para id="fs-idp93901056"><m:math><m:mi>s</m:mi></m:math><sub>1</sub> = 16.5, <m:math><m:mi>s</m:mi></m:math><sub>2</sub> =15, <m:math><m:mi>s</m:mi></m:math><sub>3</sub> = 15.5</para><para id="fs-idp76691888">Following are the calculations needed to fill in the one-way ANOVA table. The table is used to conduct a hypothesis test.</para>
+</table><para id="fs-idp93901056"><m:math><m:mi>s</m:mi></m:math><sub>1</sub> = 16.5, <m:math><m:mi>s</m:mi></m:math><sub>2</sub> = 15, <m:math><m:mi>s</m:mi></m:math><sub>3</sub> = 15.5</para><para id="fs-idp76691888">Following are the calculations needed to fill in the one-way ANOVA table. The table is used to conduct a hypothesis test.</para>
 <equation class="unnumbered" id="fs-idp76692400"> <m:math>
 <m:mrow>
 <m:mi>S</m:mi><m:mi>S</m:mi><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mi>e</m:mi><m:mi>t</m:mi><m:mi>w</m:mi><m:mi>e</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mo>∑</m:mo><m:mrow><m:mo>[</m:mo> <m:mrow>
@@ -856,7 +856,7 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 <title>Try It</title>
 <exercise id="fs-idm48661072">
 <problem id="fs-idp24724224">
-<para id="fs-idp86837680">As part of an experiment to see how different types of soil cover would affect slicing tomato production, Marist College students grew tomato plants under different soil cover conditions. Groups of three plants each had one of the following treatments</para>
+<para id="fs-idp86837680">As part of an experiment to see how different types of soil cover would affect slicing tomato production, Marist College students grew tomato plants under different soil cover conditions. Groups of three plants each had one of the following treatments:</para>
 <list id="fs-idp86838320" list-type="bulleted">
 <item>bare soil</item>
 <item>a commercial ground cover</item>
@@ -984,7 +984,7 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 
 <para id="eip-idp93603520"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>5</m:mn></m:msub></m:math></para>
 
-<para id="eip-idp134625200"><emphasis effect="italics">H<sub>a</sub>: μ<sub>i</sub> ≠ μ<sub>j</sub></emphasis> some  <emphasis effect="italics">i ≠ j</emphasis></para><para id="eip-idm22822112">The one-way ANOVA results are shown in <link target-id="eip-632" document="m47128"/></para>
+<para id="eip-idp134625200"><emphasis effect="italics">H<sub>a</sub>: μ<sub>i</sub> ≠ μ<sub>j</sub></emphasis> for some <emphasis effect="italics">i ≠ j</emphasis></para><para id="eip-idm22822112">The one-way ANOVA results are shown in <link target-id="eip-632" document="m47128"/>.</para>
 
 <table id="eip-632" summary="..">
 <tgroup cols="5"><thead>
@@ -1062,7 +1062,7 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 
 <para id="eip-idm4421120"><emphasis>Compare <m:math><m:mi>α</m:mi></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value:</emphasis> <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>, <m:math><m:mi>p</m:mi></m:math>-value = 0.0248</para>
 
-<para id="eip-idm141674128"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>></m:mo><m:mi>p</m:mi></m:math>-value, we cannot accept <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para><para id="eip-idm156731472"><emphasis>Conclusion:</emphasis> At the 5% significance level, we have reasonably strong evidence that differences in mean yields for slicing tomato plants grown under different mulching conditions are unlikely to be due to chance alone.  We may conclude that at least some of the mulches led to different mean yields.</para>
+<para id="eip-idm141674128"><emphasis>Make a decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>></m:mo><m:mi>p</m:mi></m:math>-value, we reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para><para id="eip-idm156731472"><emphasis>Conclusion:</emphasis> At the 5% significance level, we have reasonably strong evidence that differences in mean yields for slicing tomato plants grown under different mulching conditions are unlikely to be due to chance alone.  We may conclude that at least some of the mulches led to different mean yields.</para>
 
 </solution>
 </exercise>
@@ -1492,7 +1492,7 @@ sororities?  </para></problem>
 
 <para id="element-351">The <m:math><m:mi>p</m:mi></m:math>-value is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>></m:mo><m:mn>0.134</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.8759</m:mn></m:math>. </para>
 
-<para id="element-528"><emphasis>Decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.03</m:mn></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value = 0.8759, then we cannot reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. (Why?)</para><para id="element-886"><emphasis>Conclusion:</emphasis> With a 3% level of significance, from the sample data, the evidence is not sufficient to conclude that the mean heights of the bean plants are  different.</para>
+<para id="element-528"><emphasis>Decision:</emphasis> Since <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.03</m:mn></m:math> and the <m:math><m:mi>p</m:mi></m:math>-value = 0.8759, we cannot reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>. (Why?)</para><para id="element-886"><emphasis>Conclusion:</emphasis> With a 3% level of significance, from the sample data, the evidence is not sufficient to conclude that the mean heights of the bean plants are  different.</para>
 
 </solution>
 </exercise>
@@ -1518,7 +1518,7 @@ sororities?  </para></problem>
 <m:mrow>
 <m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac>
 <m:mrow>
-<m:mtext>df</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>u</m:mi><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo>
+<m:mtext>df</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mi>o</m:mi><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo>
 </m:mrow>
 <m:mrow>
 <m:mtext>df</m:mtext><m:mo stretchy="false">(</m:mo><m:mi>d</m:mi><m:mi>e</m:mi><m:mi>n</m:mi><m:mi>o</m:mi><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo><m:mo>−</m:mo><m:mn>2</m:mn>
@@ -1538,7 +1538,7 @@ sororities?  </para></problem>
 
 <section id="fs-idp65787616" class="summary">
 <title>Chapter Review</title>
-<para id="eip-18">Analysis of variance compares the means of a response variable for several groups. ANOVA compares the variation within each group to the variation of the mean of each group. The ratio of these two is the <m:math><m:mi>F</m:mi></m:math> statistic from an <m:math><m:mi>F</m:mi></m:math> distribution with (number of groups – 1) as the numerator degrees of freedom and (number of observations – number of groups) as the denominator degrees of freedom.  These statistics are summarized in the ANOVA table.
+<para id="eip-18">Analysis of variance compares the means of a response variable for several groups. ANOVA compares the variation among the group means to the variation within the groups. The ratio of these two is the <m:math><m:mi>F</m:mi></m:math> statistic from an <m:math><m:mi>F</m:mi></m:math> distribution with (number of groups – 1) as the numerator degrees of freedom and (number of observations – number of groups) as the denominator degrees of freedom.  These statistics are summarized in the ANOVA table.
 </para>
 </section>
 
@@ -1907,13 +1907,13 @@ What is <emphasis effect="italics">SS<sub>within</sub></emphasis>?
 <problem id="eip-715">
 <para id="eip-695">Judging by the <m:math><m:mi>F</m:mi></m:math> statistic, do you think it is likely or unlikely that you will reject the null hypothesis?</para></problem>
 <solution id="eip-61">
-<para id="eip-996">Because a one-way ANOVA test is always right-tailed, a high <m:math><m:mi>F</m:mi></m:math> statistic corresponds to a low <m:math><m:mi>p</m:mi></m:math>-value, so it is likely that we cannot accept the null hypothesis.</para></solution>
+<para id="eip-996">Because a one-way ANOVA test is always right-tailed, a high <m:math><m:mi>F</m:mi></m:math> statistic corresponds to a low <m:math><m:mi>p</m:mi></m:math>-value, so it is likely that we will reject the null hypothesis.</para></solution>
 </exercise>
 </section>
 
 <section id="eip-103" class="free-response"><title>Homework</title><para id="eip-434">
-<emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Suppose a group is interested in determining whether teenagers obtain their drivers licenses at approximately the same average age across the country.
-Suppose that the following data are randomly collected from four teenagers in each region of the country. The numbers represent the age at which teenagers obtained their drivers licenses.
+<emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Suppose a group is interested in determining whether teenagers obtain their driver's licenses at approximately the same average age across the country.
+Suppose that the following data are randomly collected from four teenagers in each region of the country. The numbers represent the age at which teenagers obtained their driver's licenses.
 </para>
 <table id="eip-idp64551440" summary="...">
 <tgroup cols="6">

@@ -9,8 +9,8 @@
 <para id="eip-201"><emphasis>Here are some facts about the <m:math><m:mi>F</m:mi></m:math> distribution.</emphasis></para><list id="list-1" list-type="enumerated"><item>The curve is not symmetrical but skewed to the right.</item>
 <item>There is a different curve for each set of degrees of freedom.</item>
 <item>The <m:math><m:mi>F</m:mi></m:math> statistic is greater than or equal to zero.</item>
-<item>As the degrees of freedom for the numerator and for the denominator get larger, the curve approximates the normal as can be seen in the figure below. The <m:math><m:mi>F</m:mi></m:math><sub>100,100</sub> curve, which has the most degrees of freedom, most closely approaches the normal distribution, but remember that the <m:math><m:mi>F</m:mi></m:math> cannot ever be less than zero so the distribution does not have a tail that goes to infinity on the left as the normal distribution does.</item>
-<item>Other uses for the <m:math><m:mi>F</m:mi></m:math> distribution include comparing two variances and two-way Analysis of Variance. Two-Way Analysis is beyond the scope of this chapter.</item>
+<item>As the degrees of freedom for the numerator and for the denominator get larger, the curve approximates the normal distribution, as can be seen in the figure below. The <m:math><m:mi>F</m:mi></m:math><sub>100,100</sub> curve, which has the most degrees of freedom, most closely approaches the normal distribution, but remember that the <m:math><m:mi>F</m:mi></m:math> statistic can never be less than zero, so the distribution does not have a tail that goes to infinity on the left as the normal distribution does.</item>
+<item>Other uses for the <m:math><m:mi>F</m:mi></m:math> distribution include comparing two variances, as we saw in Section 13.1, and two-way analysis of variance. Two-way analysis of variance is beyond the scope of this chapter.</item>
 </list><figure class="scaled-down" id="fs-idm71247456"><media id="id5185835" alt="This graph has an unmarked Y axis and then an X axis that ranges from 0.00 to 4.00. It has three plot lines. The plot line labelled F subscript 1, 5 starts near the top of the Y axis at the extreme left of the graph and drops quickly to near the bottom at 0.50, at which point is slowly decreases in a curved fashion to the 4.00 mark on the X axis. The plot line labelled F subscript 100, 100 remains at Y = 0 for much of its length, except for a distinct peak between 0.50 and 1.50. The peak is a smooth curve that reaches about half way up the Y axis at its peak. The plot line labelled F subscript 5, 10 increases slightly as it progresses from 0.00 to 0.50, after which it peaks and slowly decreases down the remainder of the X axis. The peak only reaches about one fifth up the height of the Y axis.">
 <image src="../../media/IS2e_Figure_12_00_007.png" mime-type="image/png"/></media></figure><section id="eip-712" class="references">
 <title>References</title><para id="eip-977">Data from a fourth grade classroom in 1994 in a private K – 12 school in San Jose, CA.</para>
@@ -28,7 +28,7 @@
 <title>Chapter Review</title>
 <para id="eip-684">The graph of the <m:math><m:mi>F</m:mi></m:math> distribution is always positive and skewed right, though the shape can be mounded or exponential depending on the combination of numerator and denominator degrees of freedom. The <m:math><m:mi>F</m:mi></m:math> statistic is the ratio of a measure of the variation in the group means to a similar measure of the variation within the groups. If the null hypothesis is correct, then the numerator should be small compared to the denominator. A small <m:math><m:mi>F</m:mi></m:math> statistic will result, and the area under the <m:math><m:mi>F</m:mi></m:math> curve to the right will be large, representing a large <m:math><m:mi>p</m:mi></m:math>-value. When the null hypothesis of equal group means is incorrect, then the numerator should be large compared to the denominator, giving a large <m:math><m:mi>F</m:mi></m:math> statistic and a small area (small <m:math><m:mi>p</m:mi></m:math>-value) to the right of the statistic under the <m:math><m:mi>F</m:mi></m:math> curve.</para>
 
-<para id="eip-833">When the data have unequal group sizes (unbalanced data), then techniques from <link document="m47128"/> need to be used for hand calculations. In the case of balanced data (the groups are the same size) however, simplified calculations based on group means and variances may be used. In practice, of course, software is usually employed in the analysis. As in any analysis, graphs of various sorts should be used in conjunction with numerical techniques. Always look at your data!</para></section>
+<para id="eip-833">When the data have unequal group sizes (unbalanced data), then techniques from <link document="m47128"/> need to be used for hand calculations. In the case of balanced data (the groups are the same size), however, simplified calculations based on group means and variances may be used. In practice, of course, software is usually employed in the analysis. As in any analysis, graphs of various sorts should be used in conjunction with numerical techniques. Always look at your data!</para></section>
 
 <section id="fs-idp110212080" class="practice">
 
@@ -92,10 +92,10 @@
 </exercise>
 
 <exercise id="eip-984"><problem id="eip-100">
-<para id="eip-346">What are the Sum of Squares and Mean Squares Factors?</para>
+<para id="eip-346">What are the Sum of Squares Factor and the Mean Square Factor?</para>
 </problem></exercise><exercise id="eip-213">
 <problem id="eip-514">
-<para id="eip-826">What are the Sum of Squares and Mean Squares Errors?</para>
+<para id="eip-826">What are the Sum of Squares Error and the Mean Square Error?</para>
 </problem>
 
 <solution id="eip-600">
@@ -167,12 +167,12 @@
 </problem>
 
 <solution id="eip-618">
-<para id="eip-988">Yes, there is enough evidence to show that the scores among the groups are statistically significant at the 10% level.</para>
+<para id="eip-988">Yes, there is enough evidence to conclude that the mean scores among the groups are significantly different at the 10% level.</para>
 </solution>
 </exercise>
 
 
-<para id="element-577"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Suppose a group is interested in determining whether teenagers obtain their drivers licenses at approximately the same average age across the country. Suppose that the following data are randomly collected from four teenagers in each region of the country. The numbers represent the age at which teenagers obtained their drivers licenses.
+<para id="element-577"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Suppose a group is interested in determining whether teenagers obtain their driver's licenses at approximately the same average age across the country. Suppose that the following data are randomly collected from four teenagers in each region of the country. The numbers represent the age at which teenagers obtained their driver's licenses.
 </para><table id="element-25" summary="">
 <tgroup cols="6"><colspec colnum="1" colname="c1"/>
 <colspec colnum="2" colname="c2"/>
@@ -341,7 +341,7 @@ East
 </problem>
 <solution id="id18508040">
 <list id="eip-idp84128112" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>μ</m:mi><m:mi>L</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mi>T</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mi>J</m:mi></m:msub></m:math></item>
-<item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: at least any two of the means are different</item>
+<item><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: at least two of the means are different</item>
 <item><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = 2; <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = 12</item>
 <item><m:math><m:mi>F</m:mi></m:math> distribution</item>
 <item>0.67</item>
@@ -474,17 +474,17 @@ East
 </problem>
 <solution id="eip-idm63675648">
 <list id="eip-idm63675392" list-type="enumerated" number-style="lower-alpha"><item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>μ</m:mi></m:math><sub>c</sub> = <m:math><m:mi>μ</m:mi></m:math><sub>n</sub> = <m:math><m:mi>μ</m:mi></m:math><sub>h</sub></item>
-<item>At least any two of the magazines have different mean lengths.</item>
+<item>At least two of the magazines have different mean lengths.</item>
 <item><emphasis effect="italics">df</emphasis>(<emphasis effect="italics">num</emphasis>) = 2, <emphasis effect="italics">df</emphasis>(<emphasis effect="italics">denom</emphasis>) = 12</item>
 <item><m:math><m:mi>F</m:mi></m:math> distribution</item>
-<item><m:math><m:mi>F</m:mi><m:mo>=</m:mo><m:mn>15.28</m:mn></m:math></item>
-<item><m:math><m:mi>p</m:mi></m:math>-value = 0.001</item>
+<item><m:math><m:mi>F</m:mi><m:mo>=</m:mo><m:mn>2.12</m:mn></m:math></item>
+<item><m:math><m:mi>p</m:mi></m:math>-value = 0.16</item>
 <item>Answers may vary.</item>
 <item>
 <list id="eip-idm15104944" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
-<item>Decision: Cannot accept the null hypothesis.</item>
-<item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &lt; alpha</item>
-<item>Conclusion: There is sufficient evidence to conclude that the mean lengths of the magazines are different.</item>
+<item>Decision: Do not reject the null hypothesis.</item>
+<item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value &gt; alpha</item>
+<item>Conclusion: There is not sufficient evidence to conclude that the mean lengths of the remaining three magazine types are different; they are statistically the same.</item>
 </list></item>
 </list></solution>
 </exercise>
@@ -606,11 +606,11 @@ East
 <list id="eip-idm119829920" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
 <item>Decision: Cannot reject the null hypothesis.</item>
 <item>Reason for decision: <m:math><m:mi>p</m:mi></m:math>-value > alpha</item>
-<item>Conclusion: The mean scores of different class delivery are not different.</item>
+<item>Conclusion: The mean scores of the different class delivery types are not different.</item>
 </list></item>
 </list>
 </solution></exercise><exercise id="fs-idm81211824"><problem id="fs-idm81211696">
-<para id="fs-idm81211440">Are the mean number of times a month a person eats out the same for White people, Black people, Hispanic/Latinos and Asian people? Suppose that <link target-id="fs-idm13269984"/> shows the results of a study.</para><table id="fs-idm13269984" summary="The Table consists of 4 columns: White, Black, Hispanic and Asian. The table entries are the mean number of times a month that people who are White, Black, Hispanic/Latino and Asian eat out.">
+<para id="fs-idm81211440">Are the mean numbers of times per month a person eats out the same for White people, Black people, Hispanic/Latino people, and Asian people? Suppose that <link target-id="fs-idm13269984"/> shows the results of a study.</para><table id="fs-idm13269984" summary="The Table consists of 4 columns: White, Black, Hispanic and Asian. The table entries are the mean number of times a month that people who are White, Black, Hispanic/Latino and Asian eat out.">
 <tgroup cols="4"><colspec colnum="1" colname="c1"/>
 <colspec colnum="2" colname="c2"/>
 <colspec colnum="3" colname="c3"/>
@@ -716,7 +716,7 @@ East
 <solution id="eip-idm119523872">
 <list id="eip-idm119523616" list-type="enumerated" number-style="lower-alpha">
 <item><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:msub><m:mi>μ</m:mi><m:mi>p</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mi>m</m:mi></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mi>h</m:mi></m:msub></m:math></item>
-<item>At least any two of the means are different.</item>
+<item>At least two of the means are different.</item>
 <item><emphasis effect="italics">df</emphasis>(<m:math><m:mi>n</m:mi></m:math>) = 2, <emphasis effect="italics">df</emphasis>(<m:math><m:mi>d</m:mi></m:math>) = 12</item>
 <item><m:math><m:mi>F</m:mi></m:math><sub>2,12</sub></item>
 <item>3.13</item>
@@ -730,7 +730,7 @@ East
 </list></item>
 </list>
 </solution></exercise><exercise id="eip-88"><problem id="eip-730">
-<para id="eip-165">Sanjay made identical paper airplanes out of three different weights of paper, light, medium and heavy.  He made four airplanes from each of the weights, and launched them himself across the room.  Here are the distances (in meters) that his planes flew.</para>
+<para id="eip-165">Sanjay made identical paper airplanes out of three different weights of paper: light, medium, and heavy.  He made four airplanes from each of the weights, and launched them himself across the room.  Here are the distances (in meters) that his planes flew.</para>
 
 <table id="eip-729" summary=".."><tgroup cols="3">
 <thead>
@@ -772,7 +772,7 @@ East
 
 <item>Why is this a balanced design?</item>
 <item>Calculate the sample mean and sample standard deviation for each group.</item>
-<item>Does the weight of the paper have an effect on how far the plane will travel?  Use a 1% level of significance. Complete the test using the method shown in the bean plant example in <link target-id="fs-idm82879440"/>.
+<item>Does the weight of the paper have an effect on how far the plane will travel?  Use a 1% level of significance. Complete the test using the method shown in the bean plant example in <link target-id="element-349" document="m47128"/>.
 
 <list id="eip-idp94716144">
 <item>variance of the group means __________</item>
@@ -793,7 +793,7 @@ East
 <problem id="eip-432">
 <para id="eip-864">DDT is a pesticide that has been banned from use in the United States and most other areas of the world. It is quite effective, but persisted in the environment and over time became seen as harmful to higher-level organisms. Famously, egg shells of eagles and other raptors were believed to be thinner and prone to breakage in the nest because of ingestion of DDT in the food chain of the birds.</para>
 
-<para id="eip-idp9520752">An experiment was conducted on the number of eggs (fecundity) laid by female fruit flies.  There are three groups of flies.  One group was bred to be resistant to DDT (the RS group).  Another was bred to be especially susceptible to DDT (SS).  Finally there was a control line of non-selected or typical fruitflies (NS).  Here are the data:
+<para id="eip-idp9520752">An experiment was conducted on the number of eggs (fecundity) laid by female fruit flies.  There are three groups of flies.  One group was bred to be resistant to DDT (the RS group).  Another was bred to be especially susceptible to DDT (SS).  Finally, there was a control line of non-selected or typical fruit flies (NS).  Here are the data:
 
 <table id="eip-180" summary="..">
 <tgroup cols="3">
@@ -919,7 +919,7 @@ East
 
 </para>
 
-<para id="eip-idm118691088">The values are the average number of eggs laid daily for each of 75 flies (25 in each group) over the first 14 days of their lives.  Using a 1% level of significance, are the mean rates of egg selection for the three strains of fruitfly different?  If so, in what way?  Specifically, the researchers were interested in whether or not the selectively bred strains were different from the nonselected line, and whether the two selected lines were different from each other.</para>
+<para id="eip-idm118691088">The values are the average number of eggs laid daily for each of 75 flies (25 in each group) over the first 14 days of their lives.  Using a 1% level of significance, are the mean rates of egg laying for the three strains of fruit fly different?  If so, in what way?  Specifically, the researchers were interested in whether or not the selectively bred strains were different from the nonselected line, and whether the two selected lines were different from each other.</para>
 
 <para id="eip-idp20090240">Here is a chart of the three groups:</para>
 
@@ -937,13 +937,13 @@ East
 </media>
 </figure><para id="eip-idp2564992"><emphasis><emphasis effect="underline">Decision:</emphasis></emphasis>  Since the <m:math><m:mi>p</m:mi></m:math>-value is less than the level of significance of 0.01, we reject the null hypothesis.</para>
 
-<para id="eip-idp38405520"><emphasis><emphasis effect="underline">Conclusion:</emphasis></emphasis> We have good evidence that the average number of eggs laid during the first 14 days of life for these three strains of fruitflies are different.</para>
+<para id="eip-idp38405520"><emphasis><emphasis effect="underline">Conclusion:</emphasis></emphasis> We have good evidence that the average numbers of eggs laid during the first 14 days of life for these three strains of fruit flies are different.</para>
 
-<para id="eip-idm111067136">Interestingly, if you perform a two sample <m:math><m:mi>t</m:mi></m:math>-test to compare the RS and NS groups they are significantly different (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.0013</m:mn></m:math>). Similarly, SS and NS are significantly different (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.0006</m:mn></m:math>). However, the two selected groups, RS and SS are <emphasis effect="italics">not</emphasis> significantly different (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.5176</m:mn></m:math>). Thus we appear to have good evidence that selection either for resistance or for susceptibility involves a reduced rate of egg production (for these specific strains) as compared to flies that were not selected for resistance or susceptibility to DDT. Here, genetic selection has apparently involved a loss of fecundity.</para></solution>
+<para id="eip-idm111067136">Interestingly, if you perform a two-sample <m:math><m:mi>t</m:mi></m:math>-test to compare the RS and NS groups they are significantly different (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.0013</m:mn></m:math>). Similarly, SS and NS are significantly different (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.0006</m:mn></m:math>). However, the two selected groups, RS and SS are <emphasis effect="italics">not</emphasis> significantly different (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.5176</m:mn></m:math>). Thus we appear to have good evidence that selection either for resistance or for susceptibility involves a reduced rate of egg production (for these specific strains) as compared to flies that were not selected for resistance or susceptibility to DDT. Here, genetic selection has apparently involved a loss of fecundity.</para></solution>
 </exercise>
 
-<exercise id="eip-178"><problem id="eip-800"><para id="fs-idp79390240">The data shown is the recorded body temperatures of 130 subjects as estimated from available histograms.</para>
-<para id="fs-idm8674144">Traditionally we are taught that the normal human body temperature is 98.6 F. This is not quite correct for everyone. Are the mean temperatures among the four groups different?</para>
+<exercise id="eip-178"><problem id="eip-800"><para id="fs-idp79390240">The data shown are the recorded body temperatures of 130 subjects as estimated from available histograms.</para>
+<para id="fs-idm8674144">Traditionally we are taught that the normal human body temperature is 98.6°F. This is not quite correct for everyone. Are the mean temperatures among the four groups different?</para>
 <para id="fs-idm8673568">Calculate 95% confidence intervals for the mean body temperature in each group and comment about the confidence intervals.</para>
 
 <table id="eip-269" summary="..">

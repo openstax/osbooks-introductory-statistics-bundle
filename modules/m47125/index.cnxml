@@ -6,7 +6,7 @@
     <md:uuid>9f819829-f4a3-4a3b-9425-65cb66c078b4</md:uuid>
   </metadata>
   <content>
-<para id="eip-8888">This chapter introduces a new probability density function, the F distribution. This distribution is used for many applications, including ANOVA and testing equality across multiple means. We begin with the F distribution and the test of hypothesis of differences in variances. It is often desirable to compare two variances rather than two averages. For instance, college administrators would like two college professors grading exams to have the same variation in their grading. In order for a lid to fit a container, the variation in the lid and the container should be approximately the same. A supermarket might be interested in the variability of check-out times for two checkers. In finance, the variance is a measure of risk and thus an interesting question would be to test the hypothesis that two different investment portfolios have the same variance, or volatility.</para><para id="element-114">To perform an <m:math><m:mi>F</m:mi></m:math> test of two variances, it is important that the following are true:
+<para id="eip-8888">This chapter introduces a new probability density function, the F distribution. This distribution is used for many applications, including ANOVA and testing equality across multiple means. We begin with the F distribution and the hypothesis test of differences in variances. It is often desirable to compare two variances rather than two averages. For instance, college administrators would like two college professors grading exams to have the same variation in their grading. In order for a lid to fit a container, the variation in the lid and the container should be approximately the same. A supermarket might be interested in the variability of check-out times for two checkers. In finance, the variance is a measure of risk and thus an interesting question would be to test the hypothesis that two different investment portfolios have the same variance, or volatility.</para><para id="element-114">To perform an <m:math><m:mi>F</m:mi></m:math> test of two variances, it is important that the following are true:
 <list id="list1" list-type="enumerated"><item>The populations from which the two samples are drawn are approximately normally distributed.</item>
 <item>The two populations are independent of each other.</item>
 </list></para>
@@ -281,9 +281,9 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
     <entry>H<sub>0</sub>: σ<sub>1</sub><sup>2</sup> ≥ σ<sub>2</sub><sup>2</sup></entry>
   </row>
   <row>
-    <entry>H<sub>1</sub>: σ<sub>1</sub><sup>2</sup> ≠ σ<sub>2</sub><sup>2</sup></entry>
-    <entry>H<sub>1</sub>: σ<sub>1</sub><sup>2</sup> > σ<sub>2</sub><sup>2</sup></entry>
-    <entry>H<sub>1</sub>: σ<sub>1</sub><sup>2</sup> &lt; σ<sub>2</sub><sup>2</sup></entry>
+    <entry>H<sub>a</sub>: σ<sub>1</sub><sup>2</sup> ≠ σ<sub>2</sub><sup>2</sup></entry>
+    <entry>H<sub>a</sub>: σ<sub>1</sub><sup>2</sup> > σ<sub>2</sub><sup>2</sup></entry>
+    <entry>H<sub>a</sub>: σ<sub>1</sub><sup>2</sup> &lt; σ<sub>2</sub><sup>2</sup></entry>
   </row>
 </tbody>
 
@@ -291,7 +291,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 
 
 </tgroup>
-</table><para id="eip-562">A more general form of the null and alternative hypothesis for a two tailed test would be :</para><equation class="unnumbered" id="eip-139"><label/><m:math>
+</table><para id="eip-562">A more general form of the null and alternative hypothesis for a two-tailed test would be:</para><equation class="unnumbered" id="eip-139"><label/><m:math>
 <m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub>
 <m:mo>:</m:mo>
 <m:mfrac>
@@ -311,7 +311,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </m:mfrac>
 <m:mo>≠</m:mo>
 <m:msub><m:mi>δ</m:mi><m:mn>0</m:mn></m:msub>
-</m:math></equation><para id="eip-978">where, if δ<sub>0</sub> = 1, it is a simple test of the hypothesis that the two variances are equal. This form of the hypothesis does have the benefit of allowing for tests that go beyond simple differences and can accommodate tests for specific differences as we did for differences in means and differences in proportions. This form of the hypothesis also shows the relationship between the F distribution and the χ<sup>2</sup> : the F is a ratio of two independent chi-square random variables, each divided by its degrees of freedom — a distribution we saw in <link document="m47088">The Chi-Square Distribution</link>. This is helpful in determining the degrees of freedom of the resultant F distribution.</para><para id="eip-666">If the two populations have equal variances, then <m:math>
+</m:math></equation><para id="eip-978">where, if δ<sub>0</sub> = 1, it is a simple test of the hypothesis that the two variances are equal. This form of the hypothesis does have the benefit of allowing for tests that go beyond simple differences and can accommodate tests for specific differences as we did for differences in means and differences in proportions. This form of the hypothesis also shows the relationship between the F distribution and the χ<sup>2</sup>: the F is a ratio of two independent chi-square random variables, each divided by its degrees of freedom — a distribution we saw in <link document="m47088">The Chi-Square Distribution</link>. This is helpful in determining the degrees of freedom of the resultant F distribution.</para><para id="eip-666">If the two populations have equal variances, then <m:math>
  <m:mrow>
   <m:msubsup>
    <m:mi>s</m:mi>
@@ -470,9 +470,9 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
   </m:mfrac>
 
  </m:mrow>
-</m:math> is a large number.</para><para id="eip-657">Therefore, if <m:math><m:mi>F</m:mi></m:math> is close to one, the evidence favors the null hypothesis (the two population variances are equal). But if <m:math><m:mi>F</m:mi></m:math> is much larger than one, then the evidence is against the null hypothesis. In essence, we are asking if the calculated F statistic, test statistic,  is significantly different from one.</para><para id="eip-415">To determine the critical points, we have to find F<sub>α</sub>,<sub>df1</sub>,<sub>df2</sub>. See Appendix A for the F table. This F table has values for various levels of significance from 0.1 to 0.001 designated as "p" in the first column. To find the critical value choose the desired significance level and follow down and across to find the critical value at the intersection of the two different degrees of freedom. The F distribution has two different degrees of freedom, one associated with the numerator, <sub>df1</sub>, and one associated with the denominator, <sub>df2</sub> and to complicate matters the F distribution is not symmetrical and changes the degree of skewness as the degrees of freedom change. The degrees of freedom in the numerator is n<sub>1</sub>-1, where n<sub>1</sub> is the sample size for group 1, and the degrees of freedom in the denominator is n<sub>2</sub>-1, where n<sub>2</sub> is the sample size for group 2.  F<sub>α</sub>,<sub>df1</sub>,<sub>df2</sub> will give the critical value on the <emphasis>upper</emphasis> end of the F distribution. </para><para id="eip-918">To find the critical value for the <emphasis>lower</emphasis> end of the distribution, reverse the degrees of freedom and divide the F-value from the table into one.</para><list id="eip-379" list-type="bulleted" bullet-style="bullet"><item>Upper tail critical value : F<sub>α</sub>,<sub>df1</sub>,<sub>df2</sub></item>
+</m:math> is a large number.</para><para id="eip-657">Therefore, if <m:math><m:mi>F</m:mi></m:math> is close to one, the evidence favors the null hypothesis (the two population variances are equal). But if <m:math><m:mi>F</m:mi></m:math> is much larger than one, then the evidence is against the null hypothesis. In essence, we are asking if the calculated F statistic (the test statistic) is significantly different from one.</para><para id="eip-415">To determine the critical points, we have to find F<sub>α</sub>,<sub>df1</sub>,<sub>df2</sub>. See Appendix A for the F table. This F table has values for various levels of significance from 0.1 to 0.001 designated as "p" in the first column. To find the critical value choose the desired significance level and follow down and across to find the critical value at the intersection of the two different degrees of freedom. The F distribution has two different degrees of freedom, one associated with the numerator, <sub>df1</sub>, and one associated with the denominator, <sub>df2</sub> and to complicate matters the F distribution is not symmetrical and changes the degree of skewness as the degrees of freedom change. The degrees of freedom in the numerator is n<sub>1</sub>-1, where n<sub>1</sub> is the sample size for group 1, and the degrees of freedom in the denominator is n<sub>2</sub>-1, where n<sub>2</sub> is the sample size for group 2.  F<sub>α</sub>,<sub>df1</sub>,<sub>df2</sub> will give the critical value on the <emphasis>upper</emphasis> end of the F distribution. </para><para id="eip-918">To find the critical value for the <emphasis>lower</emphasis> end of the distribution, reverse the degrees of freedom and divide the F-value from the table into one.</para><list id="eip-379" list-type="bulleted" bullet-style="bullet"><item>Upper tail critical value : F<sub>α</sub>,<sub>df1</sub>,<sub>df2</sub></item>
 <item>Lower tail critical value : 1/F<sub>α</sub>,<sub>df2</sub>,<sub>df1</sub></item>
-</list><para id="eip-600">When the calculated value of  F is between the critical values, not in the tail, we cannot reject the null hypothesis that the two samples came from populations with the same variance. If the calculated F-value is in either tail we cannot accept the null hypothesis just as we have been doing for all of the previous tests of hypothesis.</para><para id="eip-710">An alternative way of finding the critical values of the F distribution makes the use of the F-table easier. We note in the F-table that all the values of F are greater than one therefore the critical F value for the left hand tail will always be less than one because to find the critical value on the left tail we divide an F value into the number one as shown above.  We also note that if the sample variance in the numerator of the test statistic is larger than the sample variance in the denominator, the resulting F value will be greater than one. The shorthand method for this test is thus to be sure that the larger of the two sample variances is placed in the numerator to calculate the test statistic. This will mean that only the right hand tail critical value will have to be found in the F-table.</para><example id="element-315">
+</list><para id="eip-600">When the calculated value of  F is between the critical values, not in the tail, we cannot reject the null hypothesis that the two samples came from populations with the same variance. If the calculated F-value is in either tail, we reject the null hypothesis, just as we have been doing for all of the previous hypothesis tests.</para><para id="eip-710">An alternative way of finding the critical values of the F distribution makes the use of the F-table easier. We note in the F-table that all the values of F are greater than one therefore the critical F value for the left-hand tail will always be less than one because to find the critical value on the left tail we divide an F value into the number one as shown above.  We also note that if the sample variance in the numerator of the test statistic is larger than the sample variance in the denominator, the resulting F value will be greater than one. The shorthand method for this test is thus to be sure that the larger of the two sample variances is placed in the numerator to calculate the test statistic. This will mean that only the right-hand tail critical value will have to be found in the F-table.</para><example id="element-315">
 <exercise id="element-888">
 <problem id="id17653959">
 <para id="element-33">Two college instructors are interested in whether or not there is any variation in the way they grade math exams. They each grade the same set of 10 exams. The first instructor's grades have a variance of 52.3. The second instructor's grades have a variance of 89.9. Test the claim that the first instructor's variance is smaller. (In most colleges, it is desirable for the variances of exam grades to be nearly the same among instructors.) The level of significance is 1%.</para></problem>
@@ -562,9 +562,9 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
   </m:mfrac>
   <m:mo>=</m:mo><m:mn>1.719</m:mn>
  </m:mrow>
-</m:math></para><para id="element-569"><emphasis>Critical value for the test:</emphasis> <m:math><m:mi>F</m:mi></m:math><sub>9,9</sub> = 5.35 where <m:math><m:mi>n</m:mi></m:math><sub>1</sub> – 1 = 9 and <m:math><m:mi>n</m:mi></m:math><sub>2</sub> – 1 = 9.</para><figure class="scaled-down" id="anova_twotests"><media id="id18591379" alt="This graph shows a nonsymmetrical F distribution curve. The curve is slightly skewed to the right, but is approximately normal. The value 0.5818 is marked on the vertical axis to the right of the curve's peak. A vertical upward line extends from 0.5818 to the curve and the area to the left of this line is shaded to represent the p-value.">
+</m:math></para><para id="element-569"><emphasis>Critical value for the test:</emphasis> <m:math><m:mi>F</m:mi></m:math><sub>0.01,9,9</sub> = 5.35 where <m:math><m:mi>n</m:mi></m:math><sub>1</sub> – 1 = 9 and <m:math><m:mi>n</m:mi></m:math><sub>2</sub> – 1 = 9.</para><figure class="scaled-down" id="anova_twotests"><media id="id18591379" alt="This graph shows a nonsymmetrical F distribution curve. The curve is slightly skewed to the right, but is approximately normal. The value 0.5818 is marked on the vertical axis to the right of the curve's peak. A vertical upward line extends from 0.5818 to the curve and the area to the left of this line is shaded to represent the p-value.">
 <image src="../../media/fig-ch13_04_01n.png" mime-type="image/png"/>
-</media></figure><para id="element-153"><emphasis>Make a decision:</emphasis> Since the calculated F value is not in the tail we cannot reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para><para id="element-760"><emphasis>Conclusion:</emphasis> With a 1% level of significance, from the data, there is insufficient evidence to conclude that the variance in grades for the first instructor is smaller.</para></solution>
+</media></figure><para id="element-153"><emphasis>Make a decision:</emphasis> Since the calculated F value is not in the tail, we cannot reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para><para id="element-760"><emphasis>Conclusion:</emphasis> With a 1% level of significance, from the data, there is insufficient evidence to conclude that the variance in grades for the first instructor is smaller.</para></solution>
 </exercise>
 </example>
 
@@ -582,11 +582,11 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 <thead>
 <row>
 <entry>Tenor1</entry>
-<entry>Bass 2</entry>
-<entry>Tenor 1</entry>
-<entry>Bass 2</entry>
-<entry>Tenor 1</entry>
-<entry>Bass 2</entry>
+<entry>Bass2</entry>
+<entry>Tenor1</entry>
+<entry>Bass2</entry>
+<entry>Tenor1</entry>
+<entry>Bass2</entry>
 </row>
 </thead>
 <tbody>
@@ -726,7 +726,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 
 <section id="eip-873" class="references"><title>References</title><para id="eip-45">“MLB Vs. Division Standings – 2012.” Available online at http://espn.go.com/mlb/standings/_/year/2012/type/vs-division/order/true.</para></section><section id="fs-idm88248672" class="summary">
 <title>Chapter Review</title>
-<para id="eip-30">The <m:math><m:mi>F</m:mi></m:math> test for the equality of two variances rests heavily on the assumption of normal distributions. The test is unreliable if this assumption is not met. If both distributions are normal, then the ratio of the two sample variances is distributed as an <m:math><m:mi>F</m:mi></m:math> statistic, with numerator and denominator degrees of freedom that are one less than the samples sizes of the corresponding two groups. A <emphasis>test of two variances</emphasis> hypothesis test determines if two variances are the same. The distribution for the hypothesis test is the <m:math><m:mi>F</m:mi></m:math> distribution with two different degrees of freedom.</para><list id="list2" list-type="enumerated"><title>Assumptions:</title><item>The populations from which the two samples are drawn are normally distributed.</item>
+<para id="eip-30">The <m:math><m:mi>F</m:mi></m:math> test for the equality of two variances rests heavily on the assumption of normal distributions. The test is unreliable if this assumption is not met. If both distributions are normal, then the ratio of the two sample variances is distributed as an <m:math><m:mi>F</m:mi></m:math> statistic, with numerator and denominator degrees of freedom that are one less than the sample sizes of the corresponding two groups. A <emphasis>test of two variances</emphasis> hypothesis test determines if two variances are the same. The distribution for the hypothesis test is the <m:math><m:mi>F</m:mi></m:math> distribution with two different degrees of freedom.</para><list id="list2" list-type="enumerated"><title>Assumptions:</title><item>The populations from which the two samples are drawn are approximately normally distributed.</item>
 <item>The two populations are independent of each other.</item>
 </list></section>
 
@@ -739,7 +739,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </problem>
 
 <solution id="eip-413">
-  <para id="eip-526">The populations from which the two samples are drawn are normally distributed.</para></solution>
+  <para id="eip-526">The populations from which the two samples are drawn are approximately normally distributed.</para></solution>
 </exercise>
 
 <exercise id="eip-417"><problem id="eip-547">
@@ -816,10 +816,10 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </problem>
 
 <solution id="eip-19">
-  <para id="eip-345">No, at the 10% level of significance, we cannot reject the null hypothesis and state that the data do not show that the variation in drive times for the first worker is less than the variation in drive times for the second worker.</para></solution>
+  <para id="eip-345">No, at the 10% level of significance, we cannot reject the null hypothesis; the data do not show that the variation in drive times for the first worker is less than the variation in drive times for the second worker.</para></solution>
 </exercise>
 
-<para id="eip-896"><newline/><emphasis effect="italics">Use the following information to answer the next four exercises.</emphasis> Two students are interested in whether or not there is variation in their test scores for math class. There are 15 total math tests they have taken so far. The first student’s grades have a standard deviation of 38.1. The second student’s grades have a standard deviation of 22.5. The second student thinks his scores are more consistent.</para><exercise id="eip-292"><problem id="eip-514">
+<para id="eip-896"><newline/><emphasis effect="italics">Use the following information to answer the next four exercises.</emphasis> Two students are interested in whether or not there is variation in their test scores for math class. They have each taken the same 15 math tests so far. The first student’s grades have a standard deviation of 38.1. The second student’s grades have a standard deviation of 22.5. The second student thinks his scores are more consistent.</para><exercise id="eip-292"><problem id="eip-514">
   <para id="eip-548">State the null and alternative hypotheses.</para>
 </problem></exercise><exercise id="eip-932">
 <problem id="eip-69">
@@ -838,10 +838,10 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </problem>
 
 <solution id="eip-84">
-  <para id="eip-395">Cannot accept the null hypothesis. There is enough evidence to say that the variance of the grades for the first student is higher than the variance in the grades for the second student.</para></solution>
+  <para id="eip-395">Reject the null hypothesis. There is enough evidence to say that the variance of the grades for the first student is higher than the variance in the grades for the second student.</para></solution>
 </exercise>
 
-<para id="eip-225"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Two cyclists are comparing the variances of their overall paces going uphill. Each cyclist records their speeds going up 35 hills. The first cyclist has a variance of 23.8 and the second cyclist has a variance of 32.1. The cyclists want to see if their variances are the same or different. Assume that the paces are normally distributed.</para><exercise id="eip-827"><problem id="eip-966">
+<para id="eip-225"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises.</emphasis> Two cyclists are comparing the variances of their overall speeds going uphill. Each cyclist records their speeds going up 35 hills. The first cyclist has a variance of 23.8 and the second cyclist has a variance of 32.1. The cyclists want to see if their variances are the same or different. Assume that the paces are normally distributed.</para><exercise id="eip-827"><problem id="eip-966">
   <para id="eip-290">State the null and alternative hypotheses.</para>
 </problem></exercise><exercise id="eip-366">
 <problem id="eip-939">
@@ -903,7 +903,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </tgroup>
 </table>
 
-<para id="element-363">Determine whether or not the variance in weight gain is statistically the same among Javier’s and Linda’s rats. Test at a significance level of 10%.</para>
+<para id="element-363">Determine whether or not the variance in weight gain is statistically the same between Javier’s and Linda’s rats. Test at a significance level of 10%.</para>
 </problem>
 
 <solution id="id19296291">
@@ -1011,7 +1011,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 
 
 </tgroup>
-</table><para id="element-421">Determine whether or not the variance in mileage driven is statistically the same among the working class and professional (middle income) groups. Use a 5% significance level.</para>
+</table><para id="element-421">Determine whether or not the variance in mileage driven is statistically the same between the working-class and professional (middle income) groups. Use a 5% significance level.</para>
 </problem></exercise>
 <para id="eip-idm130829600"><emphasis effect="italics">Use the following information to answer the next two exercises.</emphasis> The following table lists the number of pages in four different types of magazines.</para>
 <table id="id7236751" summary="This table presents the number of pages in some types of magazines with home decorating in the first column, news in the second column, health in the third column, and computer in the fourth column.">
@@ -1241,7 +1241,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 <item>
 <list id="eip-idm187473360" list-type="enumerated" number-style="lower-roman"><item>Alpha: 0.05</item>
 <item>Decision: Cannot reject the null hypothesis.</item>
-<item>Reason for decision: calculated test statistics is not in the tail of the distribution</item>
+<item>Reason for decision: calculated test statistic is not in the tail of the distribution</item>
 <item>Conclusion: There is not sufficient evidence to conclude that the variances are different.</item>
 </list></item>
 </list>
@@ -1314,7 +1314,7 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </tgroup>
 </table>
 </problem></exercise><exercise id="eip-262"><problem id="eip-594">
-  <para id="eip-688">King Manuel I, Komnenus ruled the Byzantine Empire from Constantinople (Istanbul) during the years 1145 to 1180 A.D. The empire was very powerful during his reign, but declined significantly afterwards. Coins minted during his era were found in Cyprus, an island in the eastern Mediterranean Sea. Nine coins were from his first coinage, seven from the second, four from the third, and seven from a fourth. These spanned most of his reign. We have data on the silver content of the coins:</para>
+  <para id="eip-688">King Manuel I Komnenus ruled the Byzantine Empire from Constantinople (Istanbul) during the years 1145 to 1180 A.D. The empire was very powerful during his reign, but declined significantly afterward. Coins minted during his era were found in Cyprus, an island in the eastern Mediterranean Sea. Nine coins were from his first coinage, seven from the second, four from the third, and seven from a fourth. These spanned most of his reign. We have data on the silver content of the coins:</para>
 
 <table id="eip-idp58672320" summary="..">
 <tgroup cols="4"><thead>
@@ -1468,8 +1468,8 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 
 </tgroup>
 </table><para id="fs-idm113961200">
-<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>></m:mo><m:mn>26.272</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0</m:mn></m:math>;</para>
-<para id="eip-idm119286624">Cannot accept the null hypothesis for any alpha. There is sufficient evidence to conclude that the mean silver content among the four coinages are different. From the strip chart, it appears that the first and second coinages had higher silver contents than the third and fourth.</para></solution>
+<m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo>></m:mo><m:mn>26.272</m:mn><m:mo>)</m:mo><m:mo>≈</m:mo><m:mn>0</m:mn></m:math>;</para>
+<para id="eip-idm119286624">Reject the null hypothesis at any common significance level. There is sufficient evidence to conclude that the mean silver content differs among the four coinages. From the strip chart, it appears that the first and second coinages had higher silver contents than the third and fourth.</para></solution>
 </exercise>
 <exercise id="eip-273"><problem id="eip-idm101855984">
   <para id="eip-605">The American League and the National League of Major League Baseball are each divided into three divisions: East, Central, and West. Many years, fans talk about some divisions being stronger (having better teams) than other divisions. This may have consequences for the postseason. For instance, in a certain year Tampa Bay won 90 games and did not play in the postseason, while Detroit won only 88 and did play in the postseason. This may have been an oddity, but is there good evidence that in this specific season, the American League divisions were significantly different in overall records? Use the following data to test whether the mean number of wins per team in the three American League divisions were the same or not. Note that the data are not balanced, as two divisions had five teams, while one had only four.</para>
@@ -1599,12 +1599,12 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
 </problem>
 
 <solution id="eip-204">
-  <para id="eip-427">Here is a stripchart of the number of wins for the 14 teams in the AL for the 2012 season.
+  <para id="eip-427">Here is a strip chart of the number of wins for the 14 teams in the AL for the season in question.
   </para>
 
 <figure class="scaled-down" id="fs-idm154004704"><media id="eip-idm94490816" alt="This graph is a scatterplot which represents the data provided. The horizontal axis is labeled 'Number of wins in 2012 Major League Baseball Season' and extends from 65 - 95. The vertical axis is labeled 'American league division.' The vertical axis is labeled with the categories Central, East, West.">
 <image src="../../media/CNX_Stats_C13_M05_007anno.png" mime-type="image/png"/></media>
-</figure><para id="eip-idm94489920">While the spread seems similar, there may be some question about the normality of the data, given the wide gaps in the middle near the 0.500 mark of 82 games (teams play 162 games each season in MLB). However, one-way ANOVA is robust.</para>
+</figure><para id="eip-idm94489920">While the spread seems similar, there may be some question about the normality of the data, given the wide gaps in the middle near the 0.500 mark of 81 games (teams play 162 games each season in MLB). However, one-way ANOVA is robust.</para>
 
 <para id="eip-idm141008496">Here is the ANOVA table for the data:</para>
 
@@ -1629,14 +1629,14 @@ sample sizes be <m:math><m:mi>n</m:mi></m:math><sub>1</sub> and <m:math><m:mi>n<
     <entry>344.16</entry>
     <entry>3 – 1 = 2</entry>
     <entry>172.08</entry>
-    <entry/>
+    <entry>1.5521</entry>
   </row>
   <row>
     <entry>Error (Within)</entry>
     <entry>1,219.55</entry>
     <entry>14 – 3 = 11</entry>
     <entry>110.87</entry>
-    <entry>1.5521</entry>
+    <entry/>
   </row>
   <row>
     <entry>Total</entry>
