@@ -21,12 +21,12 @@
         <emphasis>Draw a graph that shows the <m:math><m:mi>p</m:mi></m:math>-value. The hypothesis test is easier to perform if you use a graph because you see the problem more clearly.</emphasis>
       </para>
       <example id="element-804">
-        <para id="element-842">Suppose a baker claims that his bread height is more than 15 cm, on average. Several of his customers do not believe him. To persuade his customers that he is right, the baker decides to do a hypothesis test. He bakes 10 loaves of bread. The mean height of the sample loaves is 17 cm. The baker knows from baking hundreds of loaves of bread that the <term id="term-00005">standard deviation</term> for the height is 0.5 cm. and the distribution of heights is normal. </para>
+        <para id="element-842">Suppose a baker claims that his bread height is more than 15 cm, on average. Several of his customers do not believe him. To persuade his customers that he is right, the baker decides to do a hypothesis test. He bakes 10 loaves of bread. The mean height of the sample loaves is 17 cm. The baker knows from baking hundreds of loaves of bread that the <term id="term-00005">standard deviation</term> for the height is 0.5 cm and the distribution of heights is normal. </para>
         <para id="element-369">The null hypothesis could be:<newline/><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>: <m:math><m:mi>μ</m:mi><m:mo>≤</m:mo><m:mn>15</m:mn></m:math><newline/><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub></m:math>: <m:math><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>15</m:mn></m:math></para>
         <para id="element-850">The words <emphasis>"is more than"</emphasis> translate as a ">" so "<m:math><m:mi>μ</m:mi><m:mo>></m:mo><m:mn>15</m:mn></m:math>" goes into the alternate hypothesis. The null hypothesis must contradict the alternate hypothesis.</para>
         <para id="element-863">By the <term id="term-00009">Central Limit Theorem</term>, the distribution of sample means, for samples of 10 loaves, will be normal with mean <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math> and standard deviation <m:math><m:mrow><m:mfrac><m:mi>σ</m:mi><m:mrow><m:msqrt><m:mi>n</m:mi></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.16</m:mn></m:mrow></m:math>. The distribution is <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>.</para>
         <para id="element-910">Suppose the null hypothesis is true (the mean height of the loaves is no more than 15 cm). Then is the mean height (17 cm) calculated from the sample unexpectedly large? The hypothesis test works by asking the question how <emphasis>unlikely</emphasis> the sample mean would be if the null hypothesis were true. The graph shows how far out the sample mean is on the normal curve. The <m:math><m:mi>p</m:mi></m:math>-value is the probability that, if we were to take other samples, any other sample mean would fall at least as far out as 17 cm.</para>
-        <para id="element-537"><emphasis>The <m:math><m:mi>p</m:mi></m:math>-value, then, is the probability that a sample mean is the same or greater than 17 cm. when the population mean is, in fact, 15 cm.</emphasis> We can calculate this probability using the normal distribution for means. First we calculate the test statistic associated with this sample mean:</para>
+        <para id="element-537"><emphasis>The <m:math><m:mi>p</m:mi></m:math>-value, then, is the probability that a sample mean is the same or greater than 17 cm when the population mean is, in fact, 15 cm.</emphasis> We can calculate this probability using the normal distribution for means. First we calculate the test statistic associated with this sample mean:</para>
         <equation class="unnumbered" id="eq-00001"><m:math><m:mtext>test statistic</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>17</m:mn><m:mo>−</m:mo><m:mn>15</m:mn></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>10</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>12.65</m:mn></m:math></equation>
         <para id="para-00001">When finding a <m:math><m:mi>p</m:mi></m:math>-value, we standardize the normal distribution into the standard normal distribution. The figure below reviews how this works.</para>
         <figure id="fs-idm112264608">
@@ -35,7 +35,7 @@
           </media>
         </figure>
         <para id="fs-idp85594448"><m:math><m:mi>p</m:mi></m:math>-value = <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>z</m:mi><m:mo>></m:mo><m:mn>12.65</m:mn><m:mo>)</m:mo></m:math> which is approximately zero (on the order of <m:math><m:msup><m:mn>10</m:mn><m:mrow><m:mo>−</m:mo><m:mn>36</m:mn></m:mrow></m:msup></m:math>).</para>
-        <para id="element-710">A <m:math><m:mi>p</m:mi></m:math>-value of approximately zero tells us that if the population mean height really were 15 cm, a sample mean height of 17 cm or more would be extremely unlikely. That is, almost 0% of all samples of 10 loaves would have a mean height of at least 17 cm <emphasis>purely by CHANCE</emphasis> had the population mean height really been 15 cm.  Because the outcome of 17 cm. is so <emphasis>unlikely (meaning it is happening NOT by chance alone)</emphasis>, we conclude that the evidence is strongly against the null hypothesis (the mean height is at most 15 cm.). There is sufficient evidence that the true mean height for the population of the baker's loaves of bread is greater than 15 cm.</para>
+        <para id="element-710">A <m:math><m:mi>p</m:mi></m:math>-value of approximately zero tells us that if the population mean height really were 15 cm, a sample mean height of 17 cm or more would be extremely unlikely. That is, almost 0% of all samples of 10 loaves would have a mean height of at least 17 cm <emphasis>purely by CHANCE</emphasis> had the population mean height really been 15 cm.  Because the outcome of 17 cm is so <emphasis>unlikely (meaning it is happening NOT by chance alone)</emphasis>, we conclude that the evidence is strongly against the null hypothesis (the mean height is at most 15 cm.). There is sufficient evidence that the true mean height for the population of the baker's loaves of bread is greater than 15 cm.</para>
       </example>
       <note id="fs-idm19107408" class="statistics try">
         <label/>
@@ -64,7 +64,7 @@
       </para>
       <para id="element-734"><emphasis>Conclusion:</emphasis> After you make your decision, write a thoughtful <emphasis>conclusion</emphasis> about the hypotheses in terms of the given problem.</para>
       <example id="eip-514">
-        <para id="eip-701">When using the <m:math><m:mi>p</m:mi></m:math>-value to evaluate a hypothesis test, it is sometimes useful to use the following memory device</para>
+        <para id="eip-701">When using the <m:math><m:mi>p</m:mi></m:math>-value to evaluate a hypothesis test, it is sometimes useful to use the following memory device:</para>
         <para id="eip-494">If the <m:math><m:mi>p</m:mi></m:math>-value is low, the null must go.</para>
         <para id="eip-295">If the <m:math><m:mi>p</m:mi></m:math>-value is high, the null must fly.</para>
         <para id="eip-244">This memory aid relates a <m:math><m:mi>p</m:mi></m:math>-value less than the established alpha (the <m:math><m:mi>p</m:mi></m:math> is low) as rejecting the null hypothesis and, likewise, relates a <m:math><m:mi>p</m:mi></m:math>-value higher than the established alpha (the <m:math><m:mi>p</m:mi></m:math> is high) as not rejecting the null hypothesis.</para>
@@ -134,7 +134,7 @@
       </exercise>
             <exercise id="fs-idp139727497515136">
         <problem id="fs-idp139727497515392">
-          <para id="fs-idp139727497515648">The mean age of graduate students at a University is at most 31 years with a standard deviation of two years. A random sample of 15 graduate students is taken. The sample mean is 32 years and the sample standard deviation is three years. Are the data significant at the 1% level? The <m:math><m:mi>p</m:mi></m:math>-value is 0.0264. State the null and alternative hypotheses and interpret the <m:math><m:mi>p</m:mi></m:math>-value.</para>
+          <para id="fs-idp139727497515648">The mean age of graduate students at a university is at most 31 years with a standard deviation of two years. A random sample of 15 graduate students is taken. The sample mean is 32 years and the sample standard deviation is three years. Are the data significant at the 1% level? The <m:math><m:mi>p</m:mi></m:math>-value is 0.0264. State the null and alternative hypotheses and interpret the <m:math><m:mi>p</m:mi></m:math>-value.</para>
         </problem>
       </exercise>
             <exercise id="fs-idp139727497492608">
@@ -249,7 +249,7 @@
             <item>Which test should be used?</item>
             <item>State the distribution to use for the hypothesis test.</item>
             <item>Find the <m:math><m:mi>p</m:mi></m:math>-value.</item>
-            <item>At a pre-conceived <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>, what is your:
+            <item>At a preset <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>, what is your:
               <list id="fs-idp14952416" list-type="enumerated" number-style="lower-roman">
                 <item>Decision:</item>
                 <item>Reason for the decision:</item>
@@ -282,7 +282,7 @@
             <item>Calculate <m:math><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub><m:mo>=</m:mo></m:math>  __________. Show the formula set-up.</item>
             <item>State the distribution to use for the hypothesis test.</item>
             <item>Find the <m:math><m:mi>p</m:mi></m:math>-value.</item>
-            <item>At a pre-conceived <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>, what is your:
+            <item>At a preset <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>0.05</m:mn></m:math>, what is your:
               <list id="fs-idp70896592" list-type="enumerated" number-style="lower-roman">
                 <item>Decision:</item>
                 <item>Reason for the decision:</item>
