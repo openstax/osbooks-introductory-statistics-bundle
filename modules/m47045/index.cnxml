@@ -15,7 +15,7 @@
 <item>The differences form the sample that is used for the hypothesis test.</item>
 <item>Either the matched pairs have differences that come from a population that is normal or the number of differences is sufficiently large so that the distribution of the sample mean of differences is approximately normal.</item>
 </list>
-<para id="para-00002">One of the key steps for matched pairs is that a difference is calculated. Typically if there is before and after data, then we take the differences in the order of (after – before). The differences are the data for the hypothesis test. The population mean for the differences, <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math>, is then tested using a Student’s-<m:math><m:mi>t</m:mi></m:math> test for a single population mean with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom, where <m:math><m:mi>n</m:mi></m:math> is the number of differences.</para>
+<para id="para-00002">One of the key steps for matched pairs is that a difference is calculated. Typically if there are before and after data, then we take the differences in the order of (after – before). The differences are the data for the hypothesis test. The population mean for the differences, <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:math>, is then tested using a Student’s-<m:math><m:mi>t</m:mi></m:math> test for a single population mean with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom, where <m:math><m:mi>n</m:mi></m:math> is the number of differences.</para>
 <para id="para-00003">The test statistic (<m:math><m:mi>t</m:mi></m:math>-score) is:</para>
 <equation class="unnumbered" id="eq-00001">
 <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:msub><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:msub><m:mi>s</m:mi><m:mrow><m:mi>d</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>
@@ -461,7 +461,7 @@
 <list list-type="bulleted" id="list-00002">
 <item>Test the differences by subtracting one measurement from the other measurement</item>
 <item>Random Variable: <m:math><m:msub><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow><m:mrow><m:mi>d</m:mi></m:mrow></m:msub><m:mo>=</m:mo></m:math> mean of the differences</item>
-<item>Distribution: Student’s-<m:math><m:mi>t</m:mi></m:math> distribution with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom</item>
+<item>Distribution: Student’s <m:math><m:mi>t</m:mi></m:math>-distribution with <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn></m:math> degrees of freedom</item>
 <item>If the number of differences is small (less than 30), the differences must follow a normal distribution.</item>
 <item>Two samples are drawn from the same set of objects.</item>
 <item>Samples are dependent.</item>
@@ -520,7 +520,7 @@
           <para id="fs-idp9763376">What is the random variable?</para>
         </problem>
         <solution id="sol-00004">
-<para id="para-00050">the mean difference of the system failures</para>
+<para id="para-00050">the mean difference in the number of system failures (after − before)</para>
 </solution>
       </exercise>
             <exercise id="fs-idp71083104">
@@ -688,7 +688,7 @@
           <para id="fs-idm27176928">What is the conclusion?</para>
         </problem>
         <solution id="sol-00011">
-<para id="para-00057">We decline to reject the null hypothesis. There is not sufficient evidence to support that the medication is effective.</para>
+<para id="para-00057">We do not reject the null hypothesis. There is not sufficient evidence to support that the medication is effective.</para>
 </solution>
       </exercise>
     </section>
@@ -1192,7 +1192,7 @@
       </exercise>
             <exercise id="fs-idm63898096">
         <problem id="fs-idm63897840">
-          <para id="fs-idm84604768">According to a recent study, U.S. companies have a mean maternity-leave of six weeks. </para>
+          <para id="fs-idm84604768">According to a recent study, U.S. companies have a mean maternity leave of six weeks. </para>
         </problem>
       </exercise>
             <exercise id="fs-idm45776544">
@@ -1216,8 +1216,8 @@
               </thead>
               <tbody>
                 <row>
-                  <entry>1</entry>
-                  <entry>300</entry>
+                  <entry>800</entry>
+                  <entry>900</entry>
                 </row>
                 <row>
                   <entry>960</entry>
