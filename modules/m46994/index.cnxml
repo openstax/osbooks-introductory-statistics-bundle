@@ -18,7 +18,7 @@
         <item>Samples must be of a size less than 5% of the population’s size when sampling without replacement.</item>
       </list>
       <para id="para-00003">The Central Limit Theorem for Means says:</para>
-      <para id="para-00004"><emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their means are computed, the distribution of those means is approximately normal, no matter what the original population looks like, as long as the criteria above are met. The larger <m:math><m:mi>n</m:mi></m:math> is, the better the approximation. This distribution of means can be notated: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> (where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>).</emphasis> We also call this the sampling distribution of means or sampling distribution.
+      <para id="para-00004"><emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their means are computed, the distribution of those means is approximately normal, no matter what the original population looks like, as long as the criteria above are met. The larger <m:math><m:mi>n</m:mi></m:math> is, the better the approximation. This sampling distribution of means can be notated: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math> (where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>).</emphasis> We also call this the sampling distribution of means or sampling distribution.
       </para>
       <para id="para-00005">We will work to understand the steps of the Central Limit Theorem throughout this section. There are a few key aspects of this theorem that we should note as we work to understand it:</para>
       <para id="para-00098">To help understand the full picture of what the theorem says, we must:</para>
@@ -84,8 +84,8 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img7.png"/>
         </media>
       </figure>
-      <para id="para-00018">With 5,000 sample means, a clear bell-curve shape emerges. Since this bell-curve is made of means, we call it <emphasis>the distribution of means.</emphasis> The <emphasis>distribution of means</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Means. The theorem tells us that as the sample size grows, the distribution of the sample means approaches a normal distribution. With enough means, the histogram shows this bell-curve shape. Because we have a new set of data made of means, we use a new random variable denoted <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. The bar makes a clear indication that we are using a distribution of means.</para>
-      <para id="para-00019">Additionally, note where this distribution of means is centered: it has become naturally centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem means when it states that this distribution of means follows the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough means are repeatedly taken, their histogram will be centered at the population mean. The formula <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> is called the <term id="term-se-mean">standard error of the mean</term>. The different name indicates that it is different from just the population standard deviation <m:math><m:mi>σ</m:mi></m:math>. It specifically tells us how sample means vary, as opposed to how individual data points vary.</para>
+      <para id="para-00018">With 5,000 sample means, a clear bell-curve shape emerges. Since this bell-curve is made of means, we call it <emphasis>the sampling distribution of means.</emphasis> The <emphasis>sampling distribution of means</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Means. The theorem tells us that as the sample size grows, the distribution of the sample means approaches a normal distribution. With enough means, the histogram shows this bell-curve shape. Because we have a new set of data made of means, we use a new random variable denoted <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. The bar makes a clear indication that we are using a sampling distribution of means.</para>
+      <para id="para-00019">Additionally, note where this sampling distribution of means is centered: it has become naturally centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem means when it states that this sampling distribution of means follows the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough means are repeatedly taken, their histogram will be centered at the population mean. The formula <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> is called the <term id="term-se-mean">standard error of the mean</term>. The different name indicates that it is different from just the population standard deviation <m:math><m:mi>σ</m:mi></m:math>. It specifically tells us how sample means vary, as opposed to how individual data points vary.</para>
       <para id="para-00020">If we continued this process and collected 5,000,000 means, this is how the histogram would look:</para>
       <figure id="fig-00008">
         <media alt="A histogram of 5,000,000 sample means, showing an even smoother bell-curve shape than before.">
@@ -102,11 +102,11 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img9.png"/>
         </media>
       </figure>
-      <para id="para-00023">In each case, it is clear that the histogram of means follows a bell-curve <emphasis effect="italics">regardless of the original population distribution.</emphasis> Additionally, note that the distribution of means in each example is centered at the population mean. This is the remarkable result of the Central Limit Theorem for Means, and this result will empower us to perform powerful analyses in the next chapters.</para>
+      <para id="para-00023">In each case, it is clear that the histogram of means follows a bell-curve <emphasis effect="italics">regardless of the original population distribution.</emphasis> Additionally, note that the sampling distribution of means in each example is centered at the population mean. This is the remarkable result of the Central Limit Theorem for Means, and this result will empower us to perform powerful analyses in the next chapters.</para>
     </section>
     <section id="sect-00005">
       <title>The Size of the Sample Impacts the Spread of the Bell Curve</title>
-      <para id="para-00024">We have discussed and shown that the distribution of means is centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> Now we will focus on the standard deviation portion of the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> To understand this, let’s examine several distributions of means utilizing different sample sizes of <m:math><m:mi>n</m:mi></m:math>:</para>
+      <para id="para-00024">We have discussed and shown that the sampling distribution of means is centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> Now we will focus on the standard deviation portion of the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> To understand this, let’s examine several distributions of means utilizing different sample sizes of <m:math><m:mi>n</m:mi></m:math>:</para>
       <figure id="fig-00010">
         <media alt="Four distributions of means built using different sample sizes; larger sample sizes produce narrower curves.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img10.png"/>
@@ -122,20 +122,20 @@
     </section>
     <section id="sect-00006">
       <title>Important Notes on Notation and Vocabulary</title>
-      <para id="para-00027">We have seen several examples of how the Central Limit Theorem works. It is important to note some new notation and vocabulary for this situation. The distribution created from using the Central Limit Theorem is called the <emphasis>distribution of means</emphasis>. While the shape of the curve is a normal distribution, it has some key differences. The next figure compares the normal distribution versus the distribution of means:</para>
+      <para id="para-00027">We have seen several examples of how the Central Limit Theorem works. It is important to note some new notation and vocabulary for this situation. The distribution created from using the Central Limit Theorem is called the <emphasis>sampling distribution of means</emphasis>. While the shape of the curve is a normal distribution, it has some key differences. The next figure compares the normal distribution versus the sampling distribution of means:</para>
       <figure id="fig-00012">
-        <media alt="A side-by-side comparison of the normal distribution (built from individual data points) and the distribution of means (built from sample means).">
+        <media alt="A side-by-side comparison of the normal distribution (built from individual data points) and the sampling distribution of means (built from sample means).">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img12.png"/>
         </media>
       </figure>
       <para id="para-00028">We note some of the similarities and differences between these distributions in the table:</para>
-      <table summary="Comparison of the normal distribution and the distribution of means." id="table-00001">
+      <table summary="Comparison of the normal distribution and the sampling distribution of means." id="table-00001">
         <tgroup cols="3">
           <thead>
             <row>
               <entry/>
               <entry>Normal Distribution</entry>
-              <entry>Distribution of Means</entry>
+              <entry>Sampling Distribution of Means</entry>
             </row>
           </thead>
           <tbody>
@@ -187,15 +187,15 @@
           </tbody>
         </tgroup>
       </table>
-      <para id="para-00029">Since the two distributions look so similar, careful attention must be used to ensure the proper distribution is being used. Since the distribution of means can be created from a population that has its own mean and standard deviation, we also note that the formulas for the distribution of means relate back to the original population’s data:</para>
+      <para id="para-00029">Since the two distributions look so similar, careful attention must be used to ensure the proper distribution is being used. Since the sampling distribution of means can be created from a population that has its own mean and standard deviation, we also note that the formulas for the sampling distribution of means relate back to the original population’s data:</para>
       <list list-type="bulleted" id="list-00004">
-        <item>The mean for the distribution of means is the same as the population mean, but the <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> notation is an explicit marker that we are using the mean in the context of the distribution of means:
-          <equation id="eq-00002">
+        <item>The mean for the sampling distribution of means is the same as the population mean, but the <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> notation is an explicit marker that we are using the mean in the context of the sampling distribution of means:
+          <equation class="unnumbered" id="eq-00002">
             <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math>
           </equation>
         </item>
-        <item>The standard deviation of the distribution of means, which is also called the standard error of the mean, relies on the original population’s standard deviation, but is adjusted for the sample size <m:math><m:mi>n</m:mi></m:math>. Again, the <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> notation signals that this standard deviation is from the distribution of means, and the standard deviation uses this formula:
-          <equation id="eq-00003">
+        <item>The standard deviation of the sampling distribution of means, which is also called the standard error of the mean, relies on the original population’s standard deviation, but is adjusted for the sample size <m:math><m:mi>n</m:mi></m:math>. Again, the <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> notation signals that this standard deviation is from the sampling distribution of means, and the standard deviation uses this formula:
+          <equation class="unnumbered" id="eq-00003">
             <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>
           </equation>
         </item>
@@ -211,15 +211,15 @@
       <para id="para-00032">Notice that <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:math> in the first formula has been changed to simply <m:math><m:mi>μ</m:mi></m:math> in the second version. The reason is that mathematically it can be shown that the expected value of <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is equal to <m:math><m:mi>μ</m:mi></m:math>. Mathematically, the <m:math><m:mi>E</m:mi><m:mo stretchy="false">(</m:mo><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo stretchy="false">)</m:mo></m:math> symbol reads the “expected value of <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>”. This formula will be used in the next chapter to provide estimates of the population parameter <m:math><m:mi>μ</m:mi></m:math>.</para>
     </section>
     <section id="sect-00008">
-      <title>A Review of the Relevant Formulas for the Distribution of Means</title>
-      <para id="para-00033">As a final review, below are the relevant formulas for the distribution of means.</para>
-      <table summary="Relevant formulas for the normal distribution and the distribution of means." id="table-00002">
+      <title>A Review of the Relevant Formulas for the Sampling Distribution of Means</title>
+      <para id="para-00033">As a final review, below are the relevant formulas for the sampling distribution of means.</para>
+      <table summary="Relevant formulas for the normal distribution and the sampling distribution of means." id="table-00002">
         <tgroup cols="3">
           <thead>
             <row>
               <entry/>
               <entry>Normal Distribution</entry>
-              <entry>Distribution of Means</entry>
+              <entry>Sampling Distribution of Means</entry>
             </row>
           </thead>
           <tbody>
@@ -251,7 +251,7 @@
           </tbody>
         </tgroup>
       </table>
-      <para id="para-00034">Additionally, we review the differences between notation for a sample versus a population versus the theoretical distribution of means:</para>
+      <para id="para-00034">Additionally, we review the differences between notation for a sample versus a population versus the theoretical sampling distribution of means:</para>
       <table summary="Notation for population distribution, sample, and sampling distribution of sample means." id="table-00003">
         <tgroup cols="4">
           <thead>
@@ -390,7 +390,7 @@
         <solution id="sol-00003">
           <para id="para-00057">Let <emphasis effect="italics">X</emphasis> = the time, in hours, it takes to play one soccer match.</para>
           <para id="para-00058">The probability question asks you to find a probability for the <emphasis>sample mean time, in hours</emphasis>, it takes to play one soccer match.</para>
-          <para id="para-00059">Let <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean time, in hours, it takes to play one soccer match.</para>
+          <para id="para-00059">Let <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = the mean time, in hours, it takes to play one soccer match.</para>
           <para id="para-00060">If <emphasis effect="italics">μ</emphasis> = _________, <emphasis effect="italics">σ</emphasis> = __________, and <emphasis effect="italics">n</emphasis> = ___________, then <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ <emphasis effect="italics">N</emphasis>(______, ______) by the Central Limit Theorem for Means.</para>
           <para id="para-00061"><emphasis effect="italics">μ</emphasis> = 2, <emphasis effect="italics">σ</emphasis> = 0.5, <emphasis effect="italics">n</emphasis> = 50, and <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mtext/><m:mfrac><m:mrow><m:mn>0.5</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mn>50</m:mn></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math></para>
           <para id="para-00062">Find <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.8</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>2.3</m:mn><m:mo stretchy="false">)</m:mo></m:math>. Draw a graph.</para>
@@ -489,14 +489,14 @@
     <section class="summary" id="sect-00009">
       <title>The Central Limit Theorem for Means</title>
       <para id="para-00106">In a population whose distribution may be known or unknown, if the size (<m:math><m:mi>n</m:mi></m:math>) of samples is sufficiently large, the distribution of the sample means will be approximately normal. The mean of the sample means will equal the population mean. The standard deviation of the distribution of the sample means, called the standard error of the mean, is equal to the population standard deviation divided by the square root of the sample size (<m:math><m:mi>n</m:mi></m:math>).</para>
-      <para id="para-00107">The Central Limit Theorem for Means says: when samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math> and their means are computed, the histogram of the means tends to follow a normal distribution regardless of the shape of the population’s original distribution. This distribution of means can be notated <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math>, where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</para>
-      <para id="para-00108">To use the theorem, samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (this rule does not apply if it is known that the population is normally distributed), samples must be random and independent from one another, and samples must be of a size less than 5% of the population’s size when sampling without replacement. The distribution created from using the Central Limit Theorem is called the distribution of means; while the shape of the curve is a normal distribution, its histogram is made of sample means rather than individual data values.</para>
+      <para id="para-00107">The Central Limit Theorem for Means says: when samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from a population with mean <m:math><m:mi>μ</m:mi></m:math> and standard deviation <m:math><m:mi>σ</m:mi></m:math> and their means are computed, the histogram of the means tends to follow a normal distribution regardless of the shape of the population’s original distribution. This sampling distribution of means can be notated <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math>, where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</para>
+      <para id="para-00108">To use the theorem, samples typically should be of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (this rule does not apply if it is known that the population is normally distributed), samples must be random and independent from one another, and samples must be of a size less than 5% of the population’s size when sampling without replacement. The distribution created from using the Central Limit Theorem is called the sampling distribution of means; while the shape of the curve is a normal distribution, its histogram is made of sample means rather than individual data values.</para>
     </section>
     <section class="formula-review" id="sect-00012">
       <title>The Central Limit Theorem for Means</title>
       <para id="para-00109">The Central Limit Theorem for Means: <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math></para>
-      <para id="para-00110">Mean of the distribution of means: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math></para>
-      <para id="para-00111">Standard deviation of the distribution of means (standard error of the mean): <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math></para>
+      <para id="para-00110">Mean of the sampling distribution of means: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mi>μ</m:mi></m:math></para>
+      <para id="para-00111">Standard deviation of the sampling distribution of means (standard error of the mean): <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math></para>
       <para id="para-00112"><m:math><m:mi>z</m:mi></m:math>-score for a sample mean: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:mrow></m:msub></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:mrow></m:mfrac></m:math></para>
       <para id="para-00113">Criteria for using the CLT for Means: samples of size <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>30</m:mn></m:math> (this rule does not apply if it is known that the population is normally distributed), samples random and independent from one another, and samples less than 5% of the population’s size when sampling without replacement</para>
     </section>
@@ -594,7 +594,7 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00016">
             <item><m:math><m:mi>X</m:mi></m:math> = amount of change a student carries</item>
             <item><m:math><m:mtext>Exp</m:mtext><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mn>0.88</m:mn></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mtext>Exp</m:mtext><m:mo stretchy="false">(</m:mo><m:mn>1.1364</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
-            <item><m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = average amount of change carried by a sample of 25 students.</item>
+            <item><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = average amount of change carried by a sample of 25 students.</item>
             <item>
               <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.88</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.176</m:mn><m:mo stretchy="false">)</m:mo></m:math>
             </item>
@@ -609,7 +609,7 @@
           <para id="para-00087">Suppose that the distance of fly balls hit to the outfield (in baseball) is normally distributed with a mean of 250 feet and a standard deviation of 50 feet. We randomly sample 49 fly balls.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00017">
             <item>If <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = average distance in feet for 49 fly balls, then <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ _______(_______,_______)</item>
-            <item>What is the probability that the 49 balls traveled an average of less than 240 feet? Sketch the graph. Scale the horizontal axis for <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. Shade the region corresponding to the probability. Find the probability.</item>
+            <item>What is the probability that the 49 balls traveled an average of less than 240 feet? Sketch the graph. Scale the horizontal axis for <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. Shade the region corresponding to the probability. Find the probability.</item>
             <item>Find the 80<sup>th</sup> percentile of the distribution of the average of 49 fly balls.</item>
           </list>
         </problem>
@@ -639,7 +639,7 @@
       </exercise>
       <exercise id="exer-00015">
         <problem id="prob-00019">
-          <para id="para-00089">Suppose that a category of world-class runners are known to run a marathon (26 miles) in an average of 145 minutes with a standard deviation of 14 minutes. Consider 49 of the races. Let <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> be the average of the 49 races.</para>
+          <para id="para-00089">Suppose that a category of world-class runners are known to run a marathon (26 miles) in an average of 145 minutes with a standard deviation of 14 minutes. Consider 49 of the races. Let <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> be the average of the 49 races.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00020">
             <item><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ _______(_______,_______)</item>
             <item>Find the probability that the runner will average between 142 and 146 minutes in these 49 marathons.</item>
@@ -682,7 +682,7 @@
             <item>In words, <m:math><m:mi>X</m:mi></m:math> = _______</item>
             <item>In words, <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = _______</item>
             <item><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ _______(_______,_______)</item>
-            <item>The IQR for <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from _______ acres to _______ acres.</item>
+            <item>The IQR for <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from _______ acres to _______ acres.</item>
           </list>
         </problem>
       </exercise>
@@ -691,8 +691,8 @@
           <para id="para-00092">Determine which of the following are true and which are false. Then, in complete sentences, justify your answers.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00024">
             <item>When the sample size is large, the mean of <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is approximately equal to the mean of <m:math><m:mi>X</m:mi></m:math>.</item>
-            <item>When the sample size is large, <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is approximately normally distributed.</item>
-            <item>When the sample size is large, the standard deviation of <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is approximately the same as the standard deviation of <m:math><m:mi>X</m:mi></m:math>.</item>
+            <item>When the sample size is large, <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is approximately normally distributed.</item>
+            <item>When the sample size is large, the standard deviation of <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is approximately the same as the standard deviation of <m:math><m:mi>X</m:mi></m:math>.</item>
           </list>
         </problem>
         <solution id="sol-00012">
@@ -705,7 +705,7 @@
       </exercise>
       <exercise id="exer-00017">
         <problem id="prob-00023">
-          <para id="para-00093">The percent of fat calories that a person in America consumes each day is normally distributed with a mean of about 36 and a standard deviation of about ten. Suppose that 16 individuals are randomly chosen. Let <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = average percent of fat calories.</para>
+          <para id="para-00093">The percent of fat calories that a person in America consumes each day is normally distributed with a mean of about 36 and a standard deviation of about ten. Suppose that 16 individuals are randomly chosen. Let <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> = average percent of fat calories.</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00026">
             <item><m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> ~ _______(_______,_______)</item>
             <item>For the group of 16, find the probability that the average percent of fat calories consumed is more than five. Graph the situation and shade in the area to be determined.</item>
@@ -777,7 +777,7 @@
         <meaning>a theorem stating that when samples of a sufficiently large size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from a population and each sample’s mean (or sum, or proportion) is computed, the distribution of those statistics tends toward a normal distribution, regardless of the shape of the population’s original distribution</meaning>
       </definition>
       <definition id="def-00001">
-        <term>The Distribution of Means</term>
+        <term>The Sampling Distribution of Means</term>
         <meaning>the natural, approximately normal (bell-curve) distribution that emerges when the sample means of samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly computed from a population, as guaranteed by the Central Limit Theorem for Means; it is centered at the population mean <m:math><m:mi>μ</m:mi></m:math> and has standard deviation <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math>.</meaning>
       </definition>
       <definition id="def-00003">

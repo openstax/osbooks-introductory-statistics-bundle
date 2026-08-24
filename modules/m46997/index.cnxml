@@ -19,7 +19,7 @@
       </list>
       <para id="para-00003"><term id="term-00001">The Central Limit Theorem for Sums</term> says:</para>
       <para id="para-00004">
-        <emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their sums are computed, the distribution of those sums is approximately normal, no matter what the original population looks like, as long as the criteria above are met. The larger <m:math><m:mi>n</m:mi></m:math> is, the better the approximation. This distribution of sums can be notated: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. We also call this the sampling distribution of sums.</emphasis>
+        <emphasis>When samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly drawn from the population and their sums are computed, the distribution of those sums is approximately normal, no matter what the original population looks like, as long as the criteria above are met. The larger <m:math><m:mi>n</m:mi></m:math> is, the better the approximation. This sampling distribution of sums can be notated: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:mtext/><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. We also call this the sampling distribution of sums.</emphasis>
       </para>
       <para id="para-00005">We will follow similar steps to what we did in section 7.1 to understand how the Central Limit Theorem for Sums works. Notice how we repeatedly take samples of the same size <m:math><m:mi>n</m:mi></m:math> from the same population, find the sum of each sample, and compile the sums into a histogram in a very similar manner that we did with means from the previous section.</para>
     </section>
@@ -38,7 +38,7 @@
       <equation class="unnumbered" id="eq-00002">
         <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>40</m:mn><m:msqrt><m:mrow><m:mn>30</m:mn></m:mrow></m:msqrt><m:mo>≈</m:mo><m:mn>219.089</m:mn></m:math>
       </equation>
-      <para id="para-00009">We will note these numbers now and see later that the distribution of sums will indeed be centered and spread out at the above metrics. We return to the same data sets that our three researchers pulled for samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, but in this case our researchers will simply <emphasis effect="italics">find the sum</emphasis> of all 30 data points.</para>
+      <para id="para-00009">We will note these numbers now and see later that the sampling distribution of sums will indeed be centered and spread out at the above metrics. We return to the same data sets that our three researchers pulled for samples of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, but in this case our researchers will simply <emphasis effect="italics">find the sum</emphasis> of all 30 data points.</para>
       <figure id="fig-00002">
         <media alt="The three researchers’ datasets of size 30, each with the sum of its 30 data points computed.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img2.png"/>
@@ -69,8 +69,8 @@
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img6.png"/>
         </media>
       </figure>
-      <para id="para-00015">With 5,000 different sample sums, a clear bell-curve shape emerges. Since this bell-curve is made of sums, we call it <emphasis>the distribution of sums.</emphasis> The <emphasis>distribution of sums</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Sums. The theorem tells us that as the sample size grows, the distribution of the sample sums approaches a normal distribution. With enough sums, the histogram shows this bell-curve shape. Because we have a new set of data made of sums, we use a new random variable denoted <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math>. The summation symbol <m:math><m:mi>Σ</m:mi></m:math> makes clear that we are using a distribution of sums.</para>
-      <para id="para-00016">Additionally, note where this distribution of sums is centered: it has become naturally centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>160</m:mn><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem tells us when it states that this distribution of sums follows the distribution</para>
+      <para id="para-00015">With 5,000 different sample sums, a clear bell-curve shape emerges. Since this bell-curve is made of sums, we call it <emphasis>the sampling distribution of sums.</emphasis> The <emphasis>sampling distribution of sums</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Sums. The theorem tells us that as the sample size grows, the distribution of the sample sums approaches a normal distribution. With enough sums, the histogram shows this bell-curve shape. Because we have a new set of data made of sums, we use a new random variable denoted <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi></m:math>. The summation symbol <m:math><m:mi>Σ</m:mi></m:math> makes clear that we are using a sampling distribution of sums.</para>
+      <para id="para-00016">Additionally, note where this sampling distribution of sums is centered: it has become naturally centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>160</m:mn><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem tells us when it states that this sampling distribution of sums follows the distribution</para>
       <para id="para-00017"><m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough sums are repeatedly taken, their histogram will be centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math></para>
       <para id="para-00018">If we continued this process and collected 5,000,000 sums, this is how the histogram would look:</para>
       <figure id="fig-00007">
@@ -92,14 +92,14 @@
     </section>
     <section id="sect-00004">
       <title>A Note on Relevant Formulas</title>
-      <para id="para-00022">We now compare how formulas compare between the distribution of sums versus the distribution of means:</para>
-      <table summary="Comparison of the formulas for the distribution of sums and the distribution of means." id="table-00001">
+      <para id="para-00022">We now compare how formulas compare between the sampling distribution of sums versus the sampling distribution of means:</para>
+      <table summary="Comparison of the formulas for the sampling distribution of sums and the sampling distribution of means." id="table-00001">
         <tgroup cols="3">
           <thead>
             <row>
               <entry/>
-              <entry>Distribution of Sums</entry>
-              <entry>Distribution of Means</entry>
+              <entry>Sampling Distribution of Sums</entry>
+              <entry>Sampling Distribution of Means</entry>
             </row>
           </thead>
           <tbody>
@@ -144,7 +144,7 @@
     </section>
     <section id="sect-00005">
       <title>The Size of the Sample Impacts the Center and Spread of the Bell Curve</title>
-      <para id="para-00023">We have discussed and shown that the distribution of sums is centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math> Now we will look at how <m:math><m:mi>n</m:mi></m:math> affects both where the distribution is centered and how spread out it is. <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> The choice of <m:math><m:mi>n</m:mi></m:math> will change where the distribution is centered, and also influence how the distribution is spread out. We can compare a few instances of this in the figure:</para>
+      <para id="para-00023">We have discussed and shown that the sampling distribution of sums is centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>.</m:mo></m:math> Now we will look at how <m:math><m:mi>n</m:mi></m:math> affects both where the distribution is centered and how spread out it is. <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mi>n</m:mi><m:mo>,</m:mo><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> The choice of <m:math><m:mi>n</m:mi></m:math> will change where the distribution is centered, and also influence how the distribution is spread out. We can compare a few instances of this in the figure:</para>
       <figure id="fig-00009">
         <media alt="Several distributions of sums built using different sample sizes, showing that the sample size changes both the center and the spread of the distribution.">
           <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-2_img9.png"/>
@@ -305,14 +305,14 @@
     </note>
     <section class="summary" id="sect-00006">
       <title>The Central Limit Theorem for Sums</title>
-      <para id="para-00106">The central limit theorem tells us that for a population with any distribution, the distribution of the sample sums approaches a normal distribution as the sample size increases. In other words, if the sample size is large enough, the distribution of the sums can be approximated by a normal distribution even if the original population is not normally distributed. Additionally, if the original population has a mean of <m:math><m:mi>μ</m:mi></m:math> and a standard deviation of <m:math><m:mi>σ</m:mi></m:math>, the mean of the sums is <m:math><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> and the standard deviation is <m:math><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math> where <m:math><m:mi>n</m:mi></m:math> is the sample size.</para>
-      <para id="para-00107">The distribution of sums can be notated <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math>, where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math>. The natural bell curve that emerges from repeatedly collected sample sums is called the distribution of sums.</para>
+      <para id="para-00106">The Central Limit Theorem tells us that for a population with any distribution, the distribution of the sample sums approaches a normal distribution as the sample size increases. In other words, if the sample size is large enough, the sampling distribution of the sums can be approximated by a normal distribution even if the original population is not normally distributed. Additionally, if the original population has a mean of <m:math><m:mi>μ</m:mi></m:math> and a standard deviation of <m:math><m:mi>σ</m:mi></m:math>, the mean of the sums is <m:math><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> and the standard deviation is <m:math><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math> where <m:math><m:mi>n</m:mi></m:math> is the sample size.</para>
+      <para id="para-00107">The sampling distribution of sums can be notated <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math>, where <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math> and <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math>. The natural bell curve that emerges from repeatedly collected sample sums is called the sampling distribution of sums.</para>
     </section>
     <section class="formula-review" id="sect-00009">
       <title>The Central Limit Theorem for Sums</title>
       <para id="para-00108">The Central Limit Theorem for Sums: <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi><m:mo stretchy="false">)</m:mo></m:math> or <m:math><m:mi>Σ</m:mi><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>,</m:mo><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo stretchy="false">)</m:mo></m:math></para>
-      <para id="para-00109">Mean of the distribution of sums: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math></para>
-      <para id="para-00110">Standard deviation of the distribution of sums: <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math></para>
+      <para id="para-00109">Mean of the sampling distribution of sums: <m:math><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:math></para>
+      <para id="para-00110">Standard deviation of the sampling distribution of sums: <m:math><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:math></para>
       <para id="para-00111"><m:math><m:mi>z</m:mi></m:math>-score for a sum: <m:math><m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>n</m:mi><m:mi>μ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt><m:mi>σ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>Σ</m:mi><m:mi>x</m:mi><m:mo>−</m:mo><m:msub><m:mi>μ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow><m:mrow><m:msub><m:mi>σ</m:mi><m:mrow><m:mi>Σ</m:mi><m:mi>X</m:mi></m:mrow></m:msub></m:mrow></m:mfrac></m:math></para>
     </section>
     <section class="practice" id="sect-00007">
@@ -522,7 +522,7 @@
       <title>HOMEWORK</title>
       <exercise id="exer-00035">
         <problem id="prob-00037">
-          <para id="para-00102">Which of the following is NOT TRUE about the theoretical distribution of sums?</para>
+          <para id="para-00102">Which of the following is NOT TRUE about the theoretical sampling distribution of sums?</para>
           <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
             <item>The mean, median and mode are equal.</item>
             <item>The area under the curve is one.</item>
@@ -602,7 +602,7 @@
   </content>
   <glossary>
       <definition id="def-00001">
-        <term>The Distribution of Sums</term>
+        <term>The Sampling Distribution of Sums</term>
         <meaning>the natural, approximately normal (bell-curve) distribution that emerges when the sample sums of samples of size <m:math><m:mi>n</m:mi></m:math> are repeatedly computed from a population, as guaranteed by the Central Limit Theorem for Sums; it is centered at <m:math><m:mi>μ</m:mi><m:mi>n</m:mi></m:math> and has standard deviation <m:math><m:mi>σ</m:mi><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:math>.</meaning>
       </definition>
   </glossary>

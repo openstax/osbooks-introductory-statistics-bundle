@@ -753,7 +753,7 @@
           <para id="fs-idp172680496">a. and b. Check student’s solution.</para>
           <para id="fs-idp172680880">c. The slope of the regression line is -0.3040 with a y-intercept of 31.93. In context, the y-intercept indicates that when there are no returning sparrow hawks, there will be almost 32% new sparrow hawks, which doesn’t make sense since if there are no returning birds, then the new percentage would have to be 100% (this is an example of why we do not extrapolate). The slope tells us that for each percentage increase in returning birds, the percentage of new birds in the colony decreases by 0.3%. </para>
           <para id="fs-idp36047136">d. If we examine r2, we see that only 56.02% of the variation in the percent of new birds is explained by the model and the correlation coefficient, r = –0.7485 only indicates a somewhat strong correlation between returning and new percentages. </para>
-          <para id="fs-idp137409168">e. The ordered pair (66, 6) generates the largest residual of 5.87. This means that when the observed return percentage is 66%, our observed new percentage, 6%, is almost 6% less than the predicted new value of 11.87%. If we remove this data pair, we see only an adjusted slope of -0.2789 and an adjusted intercept of 30.9816. In other words, even though this data generates the largest residual, it is not an outlier, nor is the data pair an influential point.</para>
+          <para id="fs-idp137409168">e. The ordered pair (66, 6) generates the largest residual of 5.87. This means that when the observed return percentage is 66%, our observed new percentage, 6%, is almost 6% less than the predicted new value of 11.87%. The standard deviation of the residuals is <emphasis effect="italics">s</emphasis> = 3.67, so this residual does not quite reach the 2<emphasis effect="italics">s</emphasis> = 7.33 cutoff for a potential outlier. However, if we remove this data pair and recompute the line of best fit, the slope changes noticeably from -0.3040 to an adjusted slope of -0.2789, and the intercept changes from 31.93 to an adjusted intercept of 30.9816. Because this point has such a large effect on the regression line, we treat it as an influential point and remove it, using the adjusted line for the prediction in part f.</para>
           <para id="fs-idp89140080">f. If there are 70% returning birds, we would expect to see ŷ = –0.2789(70) + 30.9816 = 11.46, or about 11.5%, new birds in the colony.</para>
         </solution>
       </exercise>
@@ -1126,47 +1126,47 @@
               </thead>
               <tbody>
                 <row>
-                  <entry align="center">1</entry>
+                  <entry align="center">1979</entry>
                   <entry align="center">61.2</entry>
                 </row>
                 <row>
-                  <entry align="center">2</entry>
+                  <entry align="center">1980</entry>
                   <entry align="center">60.7</entry>
                 </row>
                 <row>
-                  <entry align="center">3</entry>
+                  <entry align="center">1981</entry>
                   <entry align="center">61.3</entry>
                 </row>
                 <row>
-                  <entry align="center">4</entry>
+                  <entry align="center">1982</entry>
                   <entry align="center">61.3</entry>
                 </row>
                 <row>
-                  <entry align="center">5</entry>
+                  <entry align="center">1983</entry>
                   <entry align="center">61.8</entry>
                 </row>
                 <row>
-                  <entry align="center">6</entry>
+                  <entry align="center">1984</entry>
                   <entry align="center">61.7</entry>
                 </row>
                 <row>
-                  <entry align="center">7</entry>
+                  <entry align="center">1985</entry>
                   <entry align="center">61.8</entry>
                 </row>
                 <row>
-                  <entry align="center">8</entry>
+                  <entry align="center">1986</entry>
                   <entry align="center">62.0</entry>
                 </row>
                 <row>
-                  <entry align="center">9</entry>
+                  <entry align="center">1987</entry>
                   <entry align="center">62.7</entry>
                 </row>
                 <row>
-                  <entry align="center">12</entry>
+                  <entry align="center">1990</entry>
                   <entry align="center">62.8</entry>
                 </row>
                 <row>
-                  <entry align="center">14</entry>
+                  <entry align="center">1992</entry>
                   <entry align="center">62.9</entry>
                 </row>
               </tbody>
@@ -1177,10 +1177,10 @@
             <item>Does it appear from inspection that there is a relationship between the variables? Why or why not?</item>
             <item>Calculate the least-squares line. Put the equation in the form of: <m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mi>a</m:mi><m:mo>+</m:mo></m:math> <emphasis effect="italics">bx</emphasis></item>
             <item>Find the correlation coefficient. Is it significant?</item>
-            <item>Find the estimated percents for year 13 and year 10.</item>
+            <item>Find the estimated percents for 1991 and 1988.</item>
             <item>Based on the data, is there a linear relationship between the year and the percent of female wage and salary earners who are paid hourly rates?</item>
             <item>Are there any outliers in the data?</item>
-            <item>What is the estimated percent for the year 72? Does the least-squares line give an accurate estimate for that year? Explain why or why not.</item>
+            <item>What is the estimated percent for the year 2050? Does the least-squares line give an accurate estimate for that year? Explain why or why not.</item>
             <item>What is the slope of the least-squares (best-fit) line? Interpret the slope.</item>
           </list>
         </problem>
@@ -1188,12 +1188,12 @@
             <list id="element-571" list-type="enumerated" number-style="lower-alpha">
             <item>Check student's solution.</item>
             <item>yes</item>
-            <item><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>266.8863</m:mn><m:mo>+</m:mo><m:mn>0.1656</m:mn></m:math>x (Note: here <m:math><m:mi>x</m:mi></m:math> is the calendar year, not 1–14; e.g., year 13 = 1991 and year 10 = 1988. The predictions below use calendar years.)</item>
+            <item><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>266.8863</m:mn><m:mo>+</m:mo><m:mn>0.1656</m:mn></m:math>x, where <m:math><m:mi>x</m:mi></m:math> is the calendar year</item>
             <item>0.9448; Yes</item>
             <item>62.8233; 62.3265</item>
             <item>yes</item>
-            <item>no; (the largest residual is at Year 9, 62.7)</item>
-            <item>72.5937; no (year 72 = calendar year 2050 — extrapolation beyond the data)</item>
+            <item>no; (the largest residual is at 1987, 62.7)</item>
+            <item>72.5937; no (the year 2050 is far outside the range of the data, so this is an extrapolation)</item>
             <item>slope = 0.1656.<newline/>As the year increases by one, the percent of workers paid hourly rates tends to increase by 0.1656.</item>
           </list>
         </solution>

@@ -10,9 +10,9 @@
     <para id="para-00001">In practice, we rarely know the population standard deviation. In the past, when the sample size was large, this did not present a problem to statisticians. They used the sample standard deviation <m:math><m:mi>s</m:mi></m:math> as an estimate for <m:math><m:mi>σ</m:mi></m:math> and proceeded as before to calculate a confidence interval with close enough results. However, statisticians ran into problems when the sample size was small. A small sample size caused inaccuracies in the confidence interval.</para>
     <section id="sect-00001">
       <title>Student’s t-Distribution</title>
-      <para id="para-00002">William S. Gosset (1876–1937) of the Guinness brewery in Dublin, Ireland, ran into this problem. His experiments with hops and barley produced very few samples. Just replacing <m:math><m:mi>σ</m:mi></m:math> with <m:math><m:mi>s</m:mi></m:math> did not produce accurate results when he tried to calculate a confidence interval. He realized that he could not use a normal distribution for the calculation; he found that the actual distribution depends on the sample size. This problem led him to “discover” what is called the Student’s t-distribution. The name comes from the fact that Gosset wrote under the pen name “Student.”</para>
+      <para id="para-00002">William S. Gosset (1876–1937) of the Guinness brewery in Dublin, Ireland, ran into this problem. His experiments with hops and barley produced very few samples. Just replacing <m:math><m:mi>σ</m:mi></m:math> with <m:math><m:mi>s</m:mi></m:math> did not produce accurate results when he tried to calculate a confidence interval. He realized that he could not use a normal distribution for the calculation; he found that the actual distribution depends on the sample size. This problem led him to “discover” what is called the <term id="term-00001">Student’s t-distribution</term>. The name comes from the fact that Gosset wrote under the pen name “Student.”</para>
       <para id="para-00003">Up until the mid-1970s, some statisticians used the normal distribution approximation for large sample sizes and used the Student’s t-distribution only for sample sizes of at most 30. With graphing calculators and computers, the practice now is to use the Student’s t-distribution whenever <m:math><m:mi>s</m:mi></m:math> is used as an estimate for <m:math><m:mi>σ</m:mi></m:math>.</para>
-      <para id="para-00004">If you draw a simple random sample of size <m:math><m:mi>n</m:mi></m:math> from a population that has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math> and calculate the <m:math><m:mi>t</m:mi></m:math>-score <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>, then the <m:math><m:mi>t</m:mi></m:math>-scores follow a <emphasis>Student’s t-distribution with n − 1 degrees of freedom</emphasis>. The <m:math><m:mi>t</m:mi></m:math>-score has the same interpretation as the <m:math><m:mi>z</m:mi></m:math>-score. It measures how far <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from its mean <m:math><m:mi>μ</m:mi></m:math>. For each sample size <m:math><m:mi>n</m:mi></m:math>, there is a different Student’s t-distribution.</para>
+      <para id="para-00004">If you draw a simple random sample of size <m:math><m:mi>n</m:mi></m:math> from a population that has an approximately normal distribution with mean <m:math><m:mi>μ</m:mi></m:math> and unknown population standard deviation <m:math><m:mi>σ</m:mi></m:math> and calculate the <m:math><m:mi>t</m:mi></m:math>-score <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>−</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mfrac><m:mrow><m:mi>s</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:mrow></m:mfrac></m:math>, then the <m:math><m:mi>t</m:mi></m:math>-scores follow a <emphasis>Student’s t-distribution with n − 1 <term id="term-00002">degrees of freedom</term></emphasis>. The <m:math><m:mi>t</m:mi></m:math>-score has the same interpretation as the <m:math><m:mi>z</m:mi></m:math>-score. It measures how far <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math> is from its mean <m:math><m:mi>μ</m:mi></m:math>. For each sample size <m:math><m:mi>n</m:mi></m:math>, there is a different Student’s t-distribution.</para>
       <para id="para-00005">The degrees of freedom, <emphasis>n − 1</emphasis>, come from the calculation of the sample standard deviation <emphasis>s</emphasis>. This calculation requires <m:math><m:mi>n</m:mi></m:math> deviations <m:math><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mtext/><m:mtext>values</m:mtext><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. Because the sum of the deviations is zero, we can find the last deviation once we know the other <emphasis>n − 1</emphasis> deviations. The other <emphasis>n − 1</emphasis> deviations can change or vary freely. <emphasis>We call the number n − 1 the degrees of freedom (df).</emphasis></para>
       <section id="sect-00002">
         <title>Properties of the Student’s t-Distribution</title>
@@ -503,7 +503,7 @@
           <para id="fs-idp7770160">In one complete sentence, explain what the interval means.</para>
         </problem>
         <solution id="eip-idm51678224">
-          <para id="eip-idp98208704">We are 95% confident that the true mean number of colors for national flags is between 2.93 colors and 3.59 colors.</para>
+          <para id="eip-idp98208704">If we took repeated samples and constructed a 95% confidence interval from each, approximately 95% of those intervals would contain the true mean number of colors for national flags; our interval, 2.93 colors to 3.59 colors, is one such interval.</para>
         </solution>
       </exercise>
         <exercise id="element-542">
@@ -523,25 +523,6 @@
     </section>
     <section id="fs-idp293092128" class="free-response">
       <title>Homework</title>
-            <exercise id="exer2">
-        <problem id="id6354520">
-          <para id="para2">In six packages of “The Flintstones® Real Fruit Snacks” there were five Bam-Bam snack pieces. The total number of snack pieces in the six bags was 68. We wish to calculate a 96% confidence interval for the population proportion of Bam-Bam snack pieces.</para>
-            <list id="list5" list-type="enumerated" number-style="lower-alpha">
-            <item>Define the random variables <m:math><m:mi>X</m:mi></m:math> and
-   <m:math><m:mi>P</m:mi></m:math>′ in words.</item>
-            <item>Which distribution should you use for this problem? Explain your choice.</item>
-            <item>Calculate <m:math><m:mi>p</m:mi></m:math>′.</item>
-            <item>Construct a 96% confidence interval for the population proportion of Bam-Bam snack pieces per bag.
-              <list id="list6" list-type="enumerated" number-style="lower-roman">
-                <item>State the confidence interval.</item>
-                <item>Sketch the graph.</item>
-                <item>Calculate the error bound.</item>
-              </list>
-            </item>
-            <item>Do you think that six packages of fruit snacks yield enough data to give accurate results? Why or why not?</item>
-          </list>
-        </problem>
-      </exercise>
               <exercise id="exer3">
         <problem id="id5182442">
           <para id="para7">A random survey of enrollment at 35 community colleges across the United States yielded the following figures: 6,414; 1,550; 2,109; 9,350; 21,828; 4,300; 5,944; 5,722; 2,825; 2,044; 5,481; 5,200; 5,853; 2,750; 10,012; 6,357; 27,000; 9,414; 7,681; 3,200; 17,500; 9,200; 7,380; 18,314; 6,557; 13,713; 17,768; 7,493; 2,771; 2,861; 1,263; 7,285; 28,165; 5,080; 11,622. Assume the underlying population is normal.
