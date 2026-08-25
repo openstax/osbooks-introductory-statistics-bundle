@@ -886,90 +886,6 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 </table>
 <para id="fs-idp30767328"><newline/>Create the one-way ANOVA table.</para></problem>
 
-<solution id="fs-idp130292784">
-<label/>
-<para id="fs-idp49360912">Enter the data into lists L1, L2, L3, L4 and L5. Press STAT and arrow over to TESTS. Arrow down to ANOVA. Press ENTER and enter L1, L2, L3, L4, L5). Press ENTER. The table was filled in with the results from the calculator.</para>
-
-
-<para id="fs-idp100345264">One-Way ANOVA table:</para>
-
-<table id="fs-idp5531824" summary="..">
-<tgroup cols="5"><colspec colnum="1" colname="c1"/>
-<colspec colnum="2" colname="c2"/>
-<colspec colnum="3" colname="c3"/>
-<colspec colnum="4" colname="c4"/>
-<colspec colnum="5" colname="c5"/>
-<thead>
-<row>
-<entry>Source of variation</entry>
-<entry>Sum of squares (<m:math><m:mi>SS</m:mi></m:math>)</entry>
-<entry>Degrees of freedom (<emphasis effect="italics">df</emphasis>)</entry>
-<entry>Mean square (<m:math><m:mi>MS</m:mi></m:math>)</entry>
-<entry><m:math><m:mi>F</m:mi></m:math></entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>Factor (Between)</entry>
-<entry>36,648,561</entry>
-<entry>5 – 1 = 4</entry>
-<entry> <m:math>
-<m:mrow>
-<m:mfrac>
-<m:mrow>
-<m:mn>36</m:mn><m:mo>,</m:mo><m:mn>648</m:mn><m:mo>,</m:mo><m:mn>561</m:mn>
-</m:mrow>
-<m:mn>4</m:mn>
-</m:mfrac>
-<m:mo>=</m:mo><m:mn>9</m:mn><m:mo>,</m:mo><m:mn>162</m:mn><m:mo>,</m:mo><m:mn>140</m:mn>
-</m:mrow>
-</m:math>
-</entry>
-<entry> <m:math>
-<m:mrow>
-<m:mfrac>
-<m:mrow>
-<m:mn>9</m:mn><m:mo>,</m:mo><m:mn>162</m:mn><m:mo>,</m:mo><m:mn>140</m:mn>
-</m:mrow>
-<m:mrow>
-<m:mn>2</m:mn><m:mo>,</m:mo><m:mn>044</m:mn><m:mo>,</m:mo><m:mn>672.6</m:mn>
-</m:mrow>
-</m:mfrac>
-<m:mo>=</m:mo><m:mn>4.4810</m:mn>
-</m:mrow>
-</m:math>
-</entry>
-</row>
-<row>
-<entry>Error (Within)</entry>
-<entry>20,446,726</entry>
-<entry>15 – 5 = 10</entry>
-<entry> <m:math>
-<m:mrow>
-<m:mfrac>
-<m:mrow>
-<m:mn>20</m:mn><m:mo>,</m:mo><m:mn>446</m:mn><m:mo>,</m:mo><m:mn>726</m:mn>
-</m:mrow>
-<m:mrow>
-<m:mn>10</m:mn>
-</m:mrow>
-</m:mfrac>
-<m:mo>=</m:mo><m:mn>2</m:mn><m:mo>,</m:mo><m:mn>044</m:mn><m:mo>,</m:mo><m:mn>672.6</m:mn>
-</m:mrow>
-</m:math> </entry>
-<entry/>
-</row>
-<row>
-<entry>Total</entry>
-<entry>57,095,287</entry>
-<entry>15 – 1 = 14</entry>
-<entry/>
-<entry/>
-</row>
-</tbody>
-
-</tgroup>
-</table></solution>
 </exercise>
 </note>
 
@@ -1088,73 +1004,6 @@ the sample standard deviation in <link document="m46925">Descriptive Statistics<
 </table>
 <para id="para-00002">Test whether the mean length of hospital stay is the same or different for the various strains of COVID-19. Construct the ANOVA table, find the <m:math><m:mi>p</m:mi></m:math>-value, and state your conclusion. Use a 5% significance level.</para>
 </problem>
-<solution id="eip-174">
-  <para id="para-00003">We test for equality of mean length of hospital stay:</para>
-  <para id="para-00004"><m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mn>1</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>2</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>3</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>4</m:mn></m:msub><m:mo>=</m:mo><m:msub><m:mi>μ</m:mi><m:mn>5</m:mn></m:msub></m:math></para>
-  <para id="para-00005"><m:math><m:msub><m:mi>H</m:mi><m:mi>a</m:mi></m:msub><m:mo>:</m:mo><m:msub><m:mi>μ</m:mi><m:mi>i</m:mi></m:msub><m:mo>≠</m:mo><m:msub><m:mi>μ</m:mi><m:mi>j</m:mi></m:msub><m:mo>,</m:mo><m:mi>some</m:mi><m:mo> </m:mo><m:mi mathvariant="normal">i</m:mi><m:mo>≠</m:mo><m:mi>j</m:mi></m:math></para>
-  <para id="para-00006">The one-way ANOVA table results are shown:</para>
-
-<table id="eip-83" summary="..">
-<tgroup cols="6">
-<colspec colnum="1" colname="c1"/>
-<colspec colnum="2" colname="c2"/>
-<colspec colnum="3" colname="c3"/>
-<colspec colnum="4" colname="c4"/>
-<colspec colnum="5" colname="c5"/>
-<colspec colnum="6" colname="c6"/>
-<thead>
-<row>
-<entry><emphasis effect="italics">Source of Variation</emphasis></entry>
-<entry><emphasis effect="italics">Sum of Squares (SS)</emphasis></entry>
-<entry><emphasis effect="italics">Degrees of Freedom (df)</emphasis></entry>
-<entry><emphasis effect="italics">Mean Square (MS)</emphasis></entry>
-<entry><m:math><m:mi>F</m:mi></m:math></entry>
-<entry><emphasis effect="italics">P-value</emphasis></entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>Factor (Between)</entry>
-<entry>14.056</entry>
-<entry>5 – 1 = 4</entry>
-<entry>3.514</entry>
-<entry>0.353095</entry>
-<entry>0.8362</entry>
-</row>
-
-<row>
-<entry>Error (Within)</entry>
-<entry>99.52</entry>
-<entry>15 – 5 = 10</entry>
-<entry>9.952</entry>
-<entry/>
-<entry/>
-</row>
-<row>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-  <entry/>
-</row>
-<row>
-<entry>Total</entry>
-<entry>113.576</entry>
-<entry>15 – 1 = 14</entry>
-<entry/>
-<entry/>
-<entry/>
-</row>
-</tbody>
-
-</tgroup>
-</table>
-<para id="para-00007"><emphasis effect="bold">Distribution for the test:</emphasis> <m:math><m:mi>F</m:mi><m:mn>4</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mn>10</m:mn></m:math></para>
-<para id="para-00008"><emphasis effect="bold">Probability Statement:</emphasis> <m:math><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>F</m:mi><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>3531</m:mn><m:mo>)</m:mo><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8362</m:mn></m:math></para>
-<para id="para-00009"><emphasis effect="bold">Compare α and the <m:math><m:mi>p</m:mi></m:math>-value:</emphasis> <m:math><m:mi>α</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>05</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi><m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>8362</m:mn><m:mo>,</m:mo><m:mo> </m:mo><m:mi>α</m:mi><m:mo> </m:mo><m:mo>></m:mo><m:mo> </m:mo><m:mi>p</m:mi><m:mo>-</m:mo><m:mi>v</m:mi><m:mi>a</m:mi><m:mi>l</m:mi><m:mi>u</m:mi><m:mi>e</m:mi></m:math></para>
-<para id="para-00010"><emphasis effect="bold">Make a decision:</emphasis> Since α > <m:math><m:mi>p</m:mi></m:math>-value, we do not reject <m:math><m:msub><m:mi>H</m:mi><m:mn>0</m:mn></m:msub></m:math>.</para>
-<para id="para-00011"><emphasis effect="bold">Conclusion:</emphasis> At the 5% significance level, there is insufficient evidence from these data that different strains of COVID-19 virus will cause a significant difference in the length of a hospital stay.</para>
-</solution>
 </exercise></note>
 
 
@@ -1261,8 +1110,6 @@ sororities?  </para></problem>
 
 </problem>
 
-<solution id="eip-858">
-<para id="eip-176">With a <m:math><m:mi>p</m:mi></m:math>-value of 0.9271, we decline to reject the null hypothesis. There is not sufficient evidence to conclude that there is a difference among the GPAs for the sports teams.</para></solution>
 </exercise></note>
 
 
