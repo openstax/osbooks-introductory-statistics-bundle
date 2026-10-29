@@ -41,15 +41,15 @@
       </equation>
       <para id="para-00012">and is presented in <link target-id="eip-3e-fig-513"/>.</para>
       <figure class="scaled-down" id="eip-3e-fig-513">
-        <media alt="Probability distribution shaded under the curve for value of x less than 60.">
-          <image src="../../media/5-13-x60.png" mime-type="image/png"/>
+        <media alt="Exponential density curve for Case I, with mean waiting time mu = 30 minutes. The curve starts at height 1/mu = 1/30 at x = 0 and decreases toward the x-axis. The region under the curve from 0 to x = 60 is shaded, representing P(x less than or equal to 60) = 0.865.">
+          <image src="../../media/IS_Figure_05_03_001.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00013">Case II</para>
       <para id="para-00014">Imagine an electric component is guaranteed to last two years. If it fails within the two-year guarantee, the purchaser will receive their money back in full. The manufacturer knows by careful monitoring of their products the historical life of this component is 750 days, or about two years. Are they engaged in a risky business policy? Here we can calculate the probability that a component will last longer than 730 days (two years) and thus no payment is required by the firm. The historical mean is 750 days, and the relevant time period is <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>730</m:mn></m:mrow></m:math> days. Using the exponential probability density function, it is found that the probability this electric component will last more than two years is only 0.378, as shown on <link target-id="eip-3e-fig-514"/>.</para>
       <figure class="scaled-down" id="eip-3e-fig-514">
-        <media alt="Probability distribution shaded under the curve for value of x more than 730.">
-          <image src="../../media/5-14-x730.png" mime-type="image/png"/>
+        <media alt="Exponential density curve for Case II, starting at height 1/mu at x = 0 and decreasing toward the x-axis. The region under the curve to the right of x = 730 days is shaded, extending to the right edge, representing P(X greater than or equal to 730) = 0.378.">
+          <image src="../../media/IS_Figure_05_03_002.png" mime-type="image/png"/>
         </media>
       </figure>
       <equation class="unnumbered" id="eq-00006">
@@ -58,8 +58,8 @@
       <para id="para-00015">Because the working life of each of the electric components is an independent random variable, we can say that approximately 38 percent of these components survive two years and thus 62 percent of purchasers of these components will be asking for a full refund. In short, the low production quality and thus high refund requirements will result in significant financial costs. We could expect that the two-year guarantee will be eliminated soon.</para>
       <para id="para-00016">Case III allows for knowing the probability that an occurrence will occur within a window of time. For example, when asking for the arrival time of an airplane, one might be given a range of time such as "plus or minus from the historical expected arrival time measured in hours from the time of take-off." In this case, the mean is the historical expected arrival time given the historical travel time. Assume that the historical travel time between these two points is four hours. Case III requires calculating the probability between two points. <link target-id="eip-3e-fig-515"/>: Case III shows the two points that are one hour longer and one hour sooner than the historical arrival time, which is midway between these points.</para>
       <figure class="scaled-down" id="eip-3e-fig-515">
-        <media alt="Probability distribution shaded under the curve for value of x between 3 and 5.">
-          <image src="../../media/5-15x3-5.png" mime-type="image/png"/>
+        <media alt="Exponential density curve for Case III, starting at height 1/mu = 1/4 at x = 0 and decreasing toward the x-axis. The x-axis is marked 0, x sub 0 = 3, x = 4 and x sub 1 = 5. The region under the curve between x sub 0 = 3 and x sub 1 = 5 is shaded. An arrow from x sub 0 pointing right is labeled e to the power negative x sub 0 over mu, and a shorter arrow from x sub 1 pointing right is labeled e to the power negative x sub 1 over mu, showing that the shaded area is the difference of these two right-tail areas.">
+          <image src="../../media/IS_Figure_05_03_003.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00017">If the historical travel time is four hours, then <m:math><m:msub><m:mi>x</m:mi><m:mn>0</m:mn></m:msub></m:math> is three hours of travel time and <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> is five hours of travel time. The mathematical expression is:</para>
@@ -83,8 +83,8 @@
       </equation>
       <para id="para-00021">Where <m:math><m:mrow><m:mi>m</m:mi><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mi>μ</m:mi></m:mfrac></m:mrow></m:math> is given the name decay factor and measures the speed of decay. The decay factor simply measures how rapidly the probability of an event declines as the random variable <m:math><m:mi>X</m:mi></m:math> increases.</para>
       <figure class="scaled-down" id="eip-3e-fig-516">
-        <media alt="Graph of probability distribution with three curves for the given data.">
-          <image src="../../media/5-16-multigraph.png" mime-type="image/png"/>
+        <media alt="Graph of three exponential density curves with vertical axis P(x) from 0 to 1.6, labeled M = 1/mu, and horizontal axis x from 0 to 5. The curves start at decay factors M sub a = 1.5 (light blue), M sub b = 1.0 (red) and M sub c = 0.5 (green). The steepest curve, starting at 1.5, drops fastest; the curve starting at 0.5 is flattest and stays highest for larger x. Hatched rectangles from 0 to a small value X sub 1 mark the areas P(X sub a less than or equal to X sub 1), P(X sub b less than or equal to X sub 1) and P(X sub c less than or equal to X sub 1), with the note P(X sub a less than or equal to X sub 1) greater than P(X sub b less than or equal to X sub 1) greater than P(X sub c less than or equal to X sub 1).">
+          <image src="../../media/IS_Figure_05_03_004.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00022"><link target-id="eip-3e-fig-516"/> shows the exponential distribution for three different decay factors. As before, the intercept on the vertical axis, the probability density, is the decay factor. A decay factor of 1.5, as in the first exponential function, is three times the speed of the third exponential distribution with a decay factor of 0.5. Looking at the probability for each of the three functions at the same value of <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math>, it is clear that the first function has a significantly greater probability of occurrence at <m:math><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub></m:math> than the other two (i.e., <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>X</m:mi><m:mi>a</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mi>P</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>X</m:mi><m:mi>b</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mo>&gt;</m:mo><m:mi>P</m:mi><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>X</m:mi><m:mi>c</m:mi></m:msub><m:mo>≤</m:mo><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:math> comparing the relevant probabilities for each of the functions a, b, c in order). Finally, the exponential distribution shows with drama the true meaning of "exponential." In each unit, a change in <m:math><m:mi>x</m:mi></m:math> in an exponential distribution has a significant change in probability. For example, if the simple exponential distribution function <m:math><m:mrow><m:mi>Y</m:mi><m:mo>=</m:mo><m:msup><m:mn>2</m:mn><m:mi>x</m:mi></m:msup></m:mrow></m:math> changes from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>4</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>, the <m:math><m:mi>y</m:mi><m:mo>−</m:mo></m:math>value increases from 16 to 32, but a one-unit change from <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>10</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>11</m:mn></m:mrow></m:math> causes the <m:math><m:mi>y</m:mi><m:mo>−</m:mo></m:math>value to increase from 1,024 to 2,048. Likewise, in an exponential function with a negative exponent such as the exponential probability distribution, the changes are startling for each unit change at higher levels of <m:math><m:mi>X</m:mi></m:math>. At <m:math><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>4</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>5</m:mn></m:mrow></m:math>, the <m:math><m:mi>y</m:mi><m:mo>−</m:mo></m:math>value changes from 0.063 to 0.031, while a one-unit change from <m:math><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>10</m:mn></m:mrow></m:math> to <m:math><m:mrow><m:mi>X</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>11</m:mn></m:mrow></m:math> results in a change in the <m:math><m:mi>y</m:mi><m:mo>−</m:mo></m:math>value from 0.00097 to 0.00048.</para>
@@ -102,7 +102,7 @@
       <para id="fs-idp127275616">For example, <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.25</m:mn><m:msup><m:mi>e</m:mi><m:mrow><m:mo>(</m:mo><m:mo>−</m:mo><m:mn>0.25</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.072</m:mn></m:math>. The value 0.072 is the height of the curve when <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:math>. In <link target-id="fs-idm47363760"/> below, you will learn how to find probabilities using the decay parameter.</para>
       <para id="fs-idm23774336">The graph is as follows:</para>
       <figure class="scaled-down" id="fs-idp49716608">
-        <media id="fs-idp114542640" alt="Exponential graph with increments of 2 from 0-20 on the x-axis of μ = 4 and increments of 0.05 from 0.05-0.25 on the y-axis of m = 0.25. The curved line begins at the top at point (0, 0.25) and curves down to point (20, 0). The x-axis is equal to a continuous random variable.">
+        <media id="fs-idp114542640" alt="Exponential density curve labeled m = 0.25 and mu = 4. Vertical axis f(x) from 0 to 0.25 in steps of 0.05; horizontal axis x from 0 to 20 in steps of 2. The curve starts at 0.25 at x = 0, falls to about 0.07 at x = 5, and approaches 0 by about x = 16.">
           <image src="../../media/fig-ch05_04_01.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -127,7 +127,7 @@
           <para id="fs-idp81828496">a. Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:math>. <newline/>The <term id="term-00003">cumulative distribution function (CDF)</term> gives the area to the left. <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mtext>−mx</m:mtext></m:msup></m:math>
             <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>(</m:mo><m:mo>−</m:mo><m:mn>0.25</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:msup></m:math> = 0.7135 and <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>(</m:mo><m:mo>−</m:mo><m:mn>0.25</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.6321</m:mn></m:math></para>
             <figure class="scaled-down" id="fs-idm58174736">
-            <media id="fs-idm82717248" alt="Exponential graph with the curved line beginning at point (0, 0.25) and curves down towards point (∞, 0). Two vertical upward lines extend from points 4 and 5 to the curved line. The probability is in the area between points 4 and 5.">
+            <media id="fs-idm82717248" alt="Exponential density curve starting at f(x) = 0.25 at x = 0 and decreasing toward the x-axis. The region under the curve between x = 4 and x = 5 is shaded, with the note: Shaded area represents probability P(4 less than x less than 5).">
               <image src="../../media/fig-ch05_04_02.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -150,7 +150,7 @@
         <solution id="fs-idp177104864">
           <para id="fs-idm31379520">b. Find the 50<sup>th</sup> percentile.</para>
             <figure class="scaled-down" id="fs-idm48286512">
-            <media id="fs-idm16795200" alt="Exponential graph with the curved line beginning at point (0, 0.25) and curves down towards point (∞, 0). A vertical upward line extends from point k to the curved line. The probability area from 0-k is equal to 0.50.">
+            <media id="fs-idm16795200" alt="Exponential density curve starting at f(x) = 0.25 at x = 0 and decreasing toward the x-axis. A vertical line at x = k divides the area; the region to the right of k is shaded, with the note: Shaded area represents probability P(x greater than k) = 0.50. So k is the 50th percentile.">
               <image src="../../media/fig-ch05_04_03.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -214,7 +214,7 @@
         <para id="fs-idp98577776">On the home screen, enter e^(-0.1*7).</para>
       </note>
             <figure class="scaled-down" id="fs-idm49565232">
-            <media id="fs-idp119826048" alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (∞, 0). A vertical upward line extends from point 7 to the curved line. The probability area occurs from point 7 to the end of the curve. The x-axis is equal to the amount of time a computer part lasts.">
+            <media id="fs-idp119826048" alt="Exponential density curve with mu = 10, starting at f(x) = 0.1 at x = 0 and decreasing toward the x-axis. The region under the curve to the right of x = 7 is shaded, with the note: Shaded area represents probability P(x greater than 7).">
           <image src="../../media/fig-ch05_04_04.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -233,7 +233,7 @@
         <solution id="fs-idm5825984">
           <para id="fs-idm20707392">c. Find the 80<sup>th</sup> percentile. Draw the graph. Let <m:math><m:mi>k</m:mi><m:mo>=</m:mo></m:math> the 80<sup>th</sup> percentile.</para>
             <figure class="scaled-down" id="fs-idm185319392">
-            <media id="fs-idp97349984" alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (∞, 0). A vertical upward line extends from point k to the curved line. k is the 80th percentile. The probability area from 0-k is equal to 0.80.">
+            <media id="fs-idp97349984" alt="Exponential density curve starting at f(x) = 0.1 at x = 0 and decreasing toward the x-axis. The region under the curve from 0 to x = k is shaded, with the note: Shaded area represents probability P(x less than k) = 0.80.">
               <image src="../../media/fig-ch05_04_05.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -252,7 +252,7 @@
         <solution id="fs-idp122166176">
           <para id="fs-idm36478832">d. Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>9</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>11</m:mn><m:mo>)</m:mo></m:math>. Draw the graph.</para>
             <figure class="scaled-down" id="fs-idm74816976">
-            <media id="fs-idp57990224" alt="Exponential graph with the curved line beginning at point (0, 0.1) and curves down towards point (∞, 0). Two vertical upward lines extend from point 9 and 11 to the curved line. The probability area occurs between point 9 and 11.">
+            <media id="fs-idp57990224" alt="Exponential density curve with mu = 10, starting at f(x) = 0.1 at x = 0 and decreasing toward the x-axis. The region under the curve between x = 9 and x = 11 is shaded, with the note: Shaded area represents probability P(9 less than x less than 11).">
               <image src="../../media/fig-ch05_04_06.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -329,14 +329,14 @@
                 <para id="fs-idm49583248"><m:math><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>e</m:mi></m:math>^(–0.5) ≈ 0.3935</para>
               </note>
               <figure class="scaled-down" id="fs-idp55682592">
-                <media id="fs-idm58409472" alt="Exponential graph with the graph beginning at point (0, 0.5) and curving down towards the horizontal axis which is an asymptote. A vertical line segment extends from the horizontal axis to the curve at x = 1. The area under the curve between the y-axis and this segment is shaded. Text states “Shaded area represents probability 0.3935.”">
+                <media id="fs-idm58409472" alt="Exponential density curve for X distributed as Exp(0.5): vertical axis f(x) from 0 to 0.5, horizontal axis x marked 1, 5, 10 and 15. The curve starts at 0.5 at x = 0 and decreases toward the x-axis, nearly flat by x = 10. The region under the curve from 0 to x = 1 is shaded, with the note: Shaded area represents probability 0.3935.">
                   <image src="../../media/CNX_Stats_C05_M04_001.png" mime-type="image/png"/>
                 </media>
               </figure>
             </item>
             <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mn>5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>(</m:mo><m:mo>−</m:mo><m:mn>0.50</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>5</m:mn><m:mo>)</m:mo></m:mrow></m:msup></m:math>) = <m:math><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>2.5</m:mn></m:mrow></m:msup></m:math> ≈ 0.0821.
               <figure class="scaled-down" id="fs-idm13320960">
-                <media id="fs-idp101415248" alt="Exponential graph with the graph beginning at point (0, 0.5) and curving down towards the horizontal axis which is an asymptote. A vertical line segment extends from the horizontal axis to the curve at x = 5. The area under the curve to the right of this segment is shaded. Text states “Shaded area represents probability P(x &gt; 5) = 1 – P(x &lt; 5) = 0.0821.”">
+                <media id="fs-idp101415248" alt="Exponential density curve for X distributed as Exp(0.5): vertical axis f(x) from 0 to 0.5, horizontal axis x marked 1, 5, 10 and 15. The curve starts at 0.5 at x = 0 and decreases toward the x-axis. The small region under the curve to the right of x = 5 is shaded, with the note: Shaded area represents probability P(x greater than 5) = 1 − P(x less than 5) = 0.0821.">
                   <image src="../../media/CNX_Stats_C05_M04_002.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -348,7 +348,7 @@
             <item>We want to solve <m:math><m:mn>0.70</m:mn><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> for <m:math><m:mi>x</m:mi></m:math>. <newline/>Substituting in the cumulative distribution function gives 0.70 = 1 – <m:math><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mi>x</m:mi></m:mrow></m:msup></m:math>, so that <m:math><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mi>x</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.30</m:mn></m:math>. Converting this to logarithmic form gives –<m:math><m:mn>0.5</m:mn><m:mi>x</m:mi><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo>(</m:mo><m:mn>0.30</m:mn><m:mo>)</m:mo></m:math>, or <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>ln</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>0.30</m:mn></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mrow><m:mo>−</m:mo><m:mn>0.5</m:mn></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>2.41</m:mn></m:mrow></m:math> minutes. <newline/>Thus, 70% of the time, customers arrive within 2.41 minutes of the previous customer. <newline/>You are finding the 70<sup>th</sup> percentile <m:math><m:mi>k</m:mi></m:math> so you can use the formula <m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>A</m:mi><m:mi>r</m:mi><m:mi>e</m:mi><m:mi>a</m:mi><m:mo>_</m:mo><m:mi>T</m:mi><m:mi>o</m:mi><m:mo>_</m:mo><m:mi>T</m:mi><m:mi>h</m:mi><m:mi>e</m:mi><m:mo>_</m:mo><m:mi>L</m:mi><m:mi>e</m:mi><m:mi>f</m:mi><m:mi>t</m:mi><m:mo>_</m:mo><m:mi>O</m:mi><m:mi>f</m:mi><m:mo>_</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:math>
               <newline/><m:math><m:mi>k</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>ln</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.70</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mn>0.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>2.41</m:mn></m:mrow></m:math> minutes
               <figure class="scaled-down" id="fs-idp171901552">
-                <media id="fs-idp37010704" alt="Exponential graph with the graph beginning at point (0, 0.5) and curving down towards the horizontal axis which is an asymptote. A vertical line segment extends from the horizontal axis to the curve at x = 2.41. The area under the curve between the y-axis and this segment is shaded. Text states “Shaded area represents probability 0.70.”" display="block">
+                <media id="fs-idp37010704" alt="Exponential density curve for X distributed as Exp(0.5): vertical axis f(x) from 0 to 0.5, horizontal axis x marked 2.41, 5, 10 and 15. The curve starts at 0.5 at x = 0 and decreases toward the x-axis. The region under the curve from 0 to x = 2.41 is shaded, with the note: Shaded area represents probability 0.70. So 2.41 is the 70th percentile." display="block">
                   <image src="../../media/CNX_Stats_C05_M04_003.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -389,7 +389,7 @@
       <para id="fs-idp127070144">We want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>7</m:mn><m:mo>|</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:math>. The <emphasis>memoryless property</emphasis> says that <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>7</m:mn><m:mo>|</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo></m:math>, so we just need to find the probability that a customer spends more than three minutes with a postal clerk.</para>
       <para id="fs-idm82829888">This is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mo>(</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0.25</m:mn><m:mo>⋅</m:mo><m:mn>3</m:mn></m:mrow></m:msup></m:math>) = <m:math><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>0.75</m:mn></m:mrow></m:msup></m:math> ≈ 0.4724.</para>
             <figure class="scaled-down" id="fs-idm5754752">
-            <media id="fs-idp52917248" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.25) on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph to the right of x = 3 is shaded to represent P(x &gt; 3) = 0.4724.">
+            <media id="fs-idp52917248" alt="Exponential density curve for X distributed as Exp(0.25): vertical axis f(x) from 0 to 0.25 in steps of 0.05, horizontal axis x marked 3, 10, 20 and 30. The curve starts at 0.25 at x = 0 and decreases toward the x-axis. The region under the curve to the right of x = 3 is shaded, with the note: Shaded area represents probability P(x greater than 3) = 0.4724.">
           <image src="../../media/CNX_Stats_C05_M04_005.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -432,7 +432,7 @@
             <item>On average, four calls occur per minute, so 15 seconds, or <m:math><m:mrow><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>60</m:mn></m:mrow></m:mfrac></m:mrow></m:math> = 0.25 minutes occur between successive calls on average.</item>
             <item>Let <m:math><m:mi>T</m:mi><m:mo>=</m:mo></m:math> time elapsed between calls. From part a, <m:math><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>0.25</m:mn></m:math>, so <m:math><m:mi>m</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>0.25</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mn>4</m:mn></m:math>. Thus, <m:math><m:mi>T</m:mi></m:math> ∼ <m:math><m:mi>Exp</m:mi><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:math>. <newline/>The cumulative distribution function is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>T</m:mi><m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mn>4</m:mn><m:mi>t</m:mi></m:mrow></m:msup></m:math>. <newline/>The probability that the next call occurs in less than ten seconds (ten seconds = 1/6 minute) is <m:math><m:mrow><m:mi>P</m:mi><m:mrow><m:mo>(</m:mo><m:mrow><m:mi>T</m:mi><m:mtext> &lt; </m:mtext><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>(</m:mo><m:mo>−</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>)</m:mo></m:mrow></m:msup><m:mo>≈</m:mo><m:mn>0.4866.</m:mn></m:mrow></m:math>
               <figure class="scaled-down" id="fs-idp698848">
-                <media id="fs-idp4692208" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 4) on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph to the left of x = 1/6 is shaded to represent P(x &lt; 1/6) = 0.4866." display="block">
+                <media id="fs-idp4692208" alt="Exponential density curve for T distributed as Exp(4): vertical axis f(t) from 0 to 5, horizontal axis t from 0 to 1.5003 in steps of 0.1667. The curve starts at 4 at t = 0 and decreases toward the t-axis. The region under the curve from 0 to t = 1/6 (0.1667) is shaded, with the note: Shaded area represents probability P(t less than 1/6) = 0.4866." display="block">
                   <image src="../../media/CNX_Stats_C05_M04_006.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -606,7 +606,7 @@
         </problem>
         <solution id="fs-idp74064288">
             <figure class="scaled-down" id="fs-idp74064544">
-            <media id="fs-idp74064800" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.75) on the y-axis and approaches the x-axis at the right edge of the graph. The decay parameter, m, equals 0.75.">
+            <media id="fs-idp74064800" alt="Exponential density curve for X distributed as Exp(0.75), labeled m = 0.75: vertical axis f(x) from 0 to 0.75, horizontal axis x from 0 to 20 in steps of 2. The curve starts at 0.75 at x = 0 and decreases toward the x-axis.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M04_item002anno.png"/>
             </media>
           </figure>
@@ -678,7 +678,7 @@
             <list id="fs-idm2762608" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph, and shade the area of interest.
               <figure class="scaled-down" id="fs-idp48103632">
-                <media id="fs-idp48103888" alt="This is a blank graph template. The vertical and horizontal axes are unlabeled.">
+                <media id="fs-idp48103888" alt="Blank graph template for sketching the carbon-14 decay distribution: a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_01.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -701,7 +701,7 @@
             <list id="fs-idp72202640" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph, and shade the area of interest.
               <figure class="scaled-down" id="fs-idp72203632">
-                <media id="fs-idp72203888" alt="Blank graph with horizontal and vertical axes.">
+                <media id="fs-idp72203888" alt="Blank graph template for sketching the graph and shading the area for P(x less than 5,730): a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_01.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -716,7 +716,7 @@
             <list id="fs-idp17735680" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph, and shade the area of interest.
               <figure class="scaled-down" id="fs-idp17736672">
-                <media id="fs-idp17736928" alt="This is a blank graph template. The vertical and horizontal axes are unlabeled.">
+                <media id="fs-idp17736928" alt="Blank graph template for sketching the graph and shading the area for P(x greater than 10,000): a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_01.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -918,7 +918,7 @@
             <item>Therefore, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>T</m:mi><m:mo>&lt;</m:mo><m:mn>1</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mrow></m:msup></m:math> ≈ 0.1175.</item>
             <item>We want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>6</m:mn><m:mo>&lt;</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mn>10</m:mn><m:mo>)</m:mo></m:math>. <newline/>To do this, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mn>10</m:mn><m:mo>)</m:mo><m:mo>−</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>t</m:mi><m:mo>&lt;</m:mo><m:mn>6</m:mn><m:mo>)</m:mo></m:math> <newline/><m:math><m:mrow><m:mo>=</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>*</m:mo><m:mn>10</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac><m:mo>*</m:mo><m:mn>6</m:mn></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow></m:math> ≈ 0.7135 – 0.5276 = 0.1859
               <figure class="scaled-down" id="fs-idp22135936">
-                <media id="fs-idp22136192" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.12) and approaches the horizontal t-axis at the right edge of the graph. The region under the graph from x = 6 to x = 10 is shaded. Text notes that the shaded area represents P(6 &lt; t &lt; 10) = 0.1859.">
+                <media id="fs-idp22136192" alt="Exponential density curve for light bulb lifetime T distributed as Exp(1/8): vertical axis f(x) from 0 to 0.12, horizontal axis t marked 6, 10, 20, 40 and 60. The curve starts at about 0.125 at t = 0 and decreases to near 0 by about t = 35. The region under the curve between t = 6 and t = 10 is shaded, with the note: Shaded area represents probability P(6 less than t less than 10) = 0.1859.">
                   <image mime-type="image/png" src="../../media/CNX_Stats_C05_RWP_003.png"/>
                 </media>
               </figure>
@@ -926,7 +926,7 @@
             <item>We want to find 0.70 <m:math><m:mrow><m:mo>=</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>T</m:mi><m:mo>&gt;</m:mo><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mrow><m:mo>(</m:mo><m:mrow><m:mn>1</m:mn><m:mo>−</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow></m:msup></m:mrow><m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow></m:msup><m:mo>.</m:mo></m:mrow></m:math>
               <newline/>Solving for <m:math><m:mi>t</m:mi><m:mo>,</m:mo><m:msup><m:mi>e</m:mi><m:mrow><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow></m:mrow></m:msup></m:math> = 0.70, so <m:math><m:mrow><m:mo>−</m:mo><m:mfrac><m:mi>t</m:mi><m:mn>8</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mi>ln</m:mi><m:mo>(</m:mo><m:mn>0.70</m:mn><m:mo>)</m:mo></m:math>, and <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>8</m:mn><m:mi>ln</m:mi><m:mo>(</m:mo><m:mn>0.70</m:mn><m:mo>)</m:mo></m:math> ≈ 2.85 years. <newline/>Or use <m:math><m:mi>t</m:mi><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>ln</m:mi><m:mtext>(area_to_the_right)</m:mtext></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mo>−</m:mo><m:mi>m</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>ln</m:mi><m:mtext>(0</m:mtext><m:mtext>.70)</m:mtext></m:mrow><m:mrow><m:mo>−</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>8</m:mn></m:mfrac></m:mrow></m:mfrac><m:mo>≈</m:mo><m:mn>2.</m:mn><m:mtext>85 years</m:mtext></m:mrow></m:math>.
               <figure class="scaled-down" id="fs-idp80629056">
-                <media id="fs-idp80629312" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at the point (0, 0.12) and approaches the horizontal t-axis at the right edge of the graph. The region under the graph from x = 2.85 to the edge of the graph is shaded. Text notes that the shaded area represents P(t &gt; 2.85) = 0.70.">
+                <media id="fs-idp80629312" alt="Exponential density curve for light bulb lifetime T distributed as Exp(1/8): vertical axis f(x) from 0 to 0.12, horizontal axis t (yrs) marked 2.85, 20 and 40. The curve starts at about 0.125 at t = 0 and decreases toward the axis. The region under the curve to the right of t = 2.85 is shaded, with the note: Shaded area represents probability P(t greater than 2.85) = 0.70.">
                   <image mime-type="image/png" src="../../media/CNX_Stats_C05_RWP_004.png"/>
                 </media>
               </figure>
@@ -1142,7 +1142,7 @@
         <title>Organize the Data</title>
         <item>Construct a histogram of the empirical data. Make eight bars.
           <figure class="scaled-down" id="fs-idm34978704">
-            <media id="fs-idm34978448" alt="Blank graph with relative frequency on the vertical axis and X on the horizontal axis.">
+            <media id="fs-idm34978448" alt="Blank graph template for drawing a histogram of the empirical data with eight bars: a vertical axis and a horizontal axis with no labels, scale or values.">
               <image src="../../media/fig-ch05_06_01.png" mime-type="image/png"/>
             </media>
             <caption>(histogram with 8 bars)</caption>
@@ -1150,7 +1150,7 @@
         </item>
         <item>Construct a histogram of the empirical data. Make five bars.
           <figure class="scaled-down" id="fs-idp120220128">
-            <media id="fs-idp120220384" alt="Blank graph with relative frequency on the vertical axis and X on the horizontal axis.">
+            <media id="fs-idp120220384" alt="Blank graph template for drawing a histogram of the empirical data with five bars: a vertical axis and a horizontal axis with no labels, scale or values.">
               <image src="../../media/fig-ch05_06_01.png" mime-type="image/png"/>
             </media>
             <caption>(histogram with 5 bars)</caption>

@@ -11,8 +11,8 @@
       <title>A Review of Histograms and Continuous Distributions</title>
       <para id="para-00001">In <link document="m46925">Chapter 2</link>, we introduced the concept of histograms and how data are distributed. Recall that histograms are often used for continuous quantitative data. For small values of <m:math><m:mi>n</m:mi></m:math>, we can see that a dataset might look <emphasis effect="italics">approximately</emphasis> like a particular distribution. In general, as <m:math><m:mi>n</m:mi></m:math> gets larger, a dataset begins to resemble a particular distribution more clearly. Below is a reminder of this natural phenomenon, where we see that increasing the number of data points eventually results in a smooth histogram that aligns with the red theoretical distribution:</para>
       <figure id="fig-00001">
-        <media alt="Four-panel illustration showing the relationship between a histogram and a normal distribution curve. Each panel displays the same general bell-shaped distribution with increasing smoothness from top left to bottom right.          Top-left panel: A histogram with a small number of wide bars approximates a bell-shaped distribution. A red normal curve is overlaid on the bars.          Top-right panel: A histogram with more, narrower bars provides a closer approximation to the red normal curve.          Bottom-left panel: A histogram with many thin bars closely follows the shape of the red normal curve, making the distribution appear smoother.          Bottom-right panel: The histogram has effectively become a continuous distribution, shown as a solid blue bell-shaped region with a red normal curve tracing its outline.          The figure illustrates how increasing the number of intervals (bins) in a histogram causes the histogram to more closely approximate a continuous normal distribution.">
-          <image src="../../media/histograms.png" mime-type="image/png"/>
+        <media alt="Four histograms of samples of increasing size, each overlaid with the same bell-shaped theoretical normal curve. n = 50: eight wide bars with an irregular, jagged pattern that only roughly follows the curve. n = 500: about 17 narrower bars that follow the curve more closely, with small gaps and bumps in the tails. n = 5,000: about 35 thin bars that closely trace the curve with only slight irregularities. n = 1,000,000: very many extremely thin bars that fill the curve almost perfectly, forming a smooth bell shape.">
+          <image src="../../media/IS_Figure_05_01_001.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00002">As we have learned, it is rare to have enough data in any sample to create a truly smooth histogram like the <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>1,000,000</m:mn></m:math> case in the figure. Instead, we often note whether a set of data follows a particular distribution and then use the theoretical properties of that distribution to answer various probability questions about the data. </para>
@@ -22,8 +22,8 @@
       <para id="para-00003">The theoretical curve is called the <term id="term-00001">probability density function</term> (abbreviated as <term id="term-00002">PDF</term>). Recall in Chapter 4, we also used the acronym PDF but for discrete distributions this represents a probability <emphasis effect="italics">distribution</emphasis> function whereas with continuous distributions the curve is called a probability density function. We use the symbol <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to represent the curve. <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is the function that corresponds to the graph; we use the density function <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> to draw the graph of the probability distribution.</para>
       <para id="para-00009">In the next few chapters, we will explore three probability density functions: the curve for a uniform distribution, the curve for an exponential distribution, and the curve for a normal or standard normal distribution. Below is a preview of what these distributions typically look like:</para>
       <figure id="fig-00002">
-        <media alt="Figure showing three common probability density functions arranged from left to right. The first graph is a uniform distribution, displayed as a rectangle with constant height one-eighth between x = 1 and x = 9 and zero elsewhere, indicating that all values within the interval are equally likely. The second graph is an exponential distribution, beginning at a high value on the left and decreasing rapidly as x increases, approaching but never reaching the horizontal axis. The third graph is a standard normal distribution, shown as a symmetric bell-shaped curve centered at z = 0, with tails that taper toward zero on both sides. Together, the figure compares the shapes of uniform, exponential, and standard normal probability distributions.">
-          <image src="../../media/distributions.png" mime-type="image/png"/>
+        <media alt="Three probability density function graphs side by side. Uniform: vertical axis f(x) with height 1/8 marked, horizontal axis x from 0 to 10; a flat rectangle of height 1/8 spans x = 1 to x = 9. Exponential: vertical axis f(x) from 0.0 to 1.0, horizontal axis x from 0 to 6; the curve starts at 1.0 at x = 0 and drops quickly, flattening toward 0 by x = 6. Standard Normal: vertical axis f(z) from 0.0 to 0.4, horizontal axis z from −3 to 3; a symmetric bell curve peaks at about 0.4 at z = 0 and tapers toward 0 in both tails.">
+          <image src="../../media/IS_Figure_05_01_002.png" mime-type="image/png"/>
         </media>
       </figure>
     </section>
@@ -41,15 +41,15 @@
       <para id="para-00005">We will find the area that represents probability by using geometry, formulas, technology, or probability tables. Specifically, integral calculus is needed to find the area under the curve for many probability density functions. When we use formulas to find the area in this textbook, the formulas were found by using the techniques of integral calculus. However, since these distributions are so commonly used, a calculator or Excel can be used to find the area more easily than integrating. </para>
       <para id="para-00007"><emphasis>For continuous probability distributions, PROBABILITY = AREA.</emphasis> Below are the three distributions we&#8217;ve previously discussed. The shaded area in each represents a probability, which we will discuss how to find using various CDFs:</para>
       <figure id="fig-00002b">
-        <media alt="Figure showing three probability density functions—uniform, exponential, and normal—arranged from left to right. In each graph, a region under the curve is shaded to represent a probability. The uniform distribution is a rectangle with a shaded interval; the exponential distribution is a decreasing curve with a shaded region; and the normal distribution is a symmetric bell-shaped curve with a shaded region.">
-          <image src="../../media/CNX_Stats_C05_M02_002.png" mime-type="image/png"/>
+        <media alt="Three probability density function graphs side by side, each with a shaded region representing a probability. Uniform: rectangle of height 1/8 from x = 1 to x = 9, shaded from x = 3 to x = 6. Exponential: f(x) curve starting at 1.0 at x = 0 and decreasing toward 0 by x = 6, shaded under the curve from x = 2 to x = 4. Standard Normal: f(z) bell curve centered at z = 0 with peak about 0.4, shaded under the curve from z = 1 to z = 2.">
+          <image src="../../media/IS_Figure_05_01_003.png" mime-type="image/png"/>
         </media>
       </figure>
     </section>
     <example id="element-652">
       <para id="element-630">Consider the function <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>20</m:mn></m:mfrac></m:math> for <m:math><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>20</m:mn></m:math> where <m:math><m:mi>x</m:mi></m:math> is a real number. The graph of <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>20</m:mn></m:mfrac></m:math> is a horizontal line. However, since <m:math><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>20</m:mn><m:mo>,</m:mo><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is restricted to the portion between <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math> and <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>20</m:mn></m:math>, inclusive.</para>
       <figure class="scaled-down" id="fs-idm76319168">
-        <media id="id39758796" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle.">
+        <media id="id39758796" alt="Graph of f(x) = 1/20: vertical axis f(x) with 1/20 marked, horizontal axis x with 0 and 20 marked. A horizontal line at height 1/20 runs from x = 0 to x = 20, where a vertical line drops to the x-axis, forming a rectangle with the axes.">
           <image src="../../media/fig-ch05_02_01.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -64,7 +64,7 @@
         <emphasis>Suppose we want to find the area between <m:math><m:mstyle mathvariant="bold"><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo></m:mstyle></m:math> <m:math><m:mstyle mathvariant="bold"><m:mfrac><m:mn>1</m:mn><m:mn>20</m:mn></m:mfrac></m:mstyle></m:math> and the <m:math><m:mstyle mathvariant="bold"><m:mi>x</m:mi><m:mo>−</m:mo></m:mstyle></m:math>axis where <m:math><m:mstyle mathvariant="bold"><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn></m:mstyle></m:math>.</emphasis>
       </para>
       <figure class="scaled-down" id="fs-idp91224976">
-        <media id="id40073479" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = 2.">
+        <media id="id40073479" alt="Graph of f(x) = 1/20 as a rectangle of height 1/20 from x = 0 to x = 20. The narrow region from x = 0 to x = 2 is shaded.">
           <image src="../../media/fig-ch05_02_02.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -82,7 +82,7 @@
       <para id="element-961">The area corresponds to a probability. The probability that <m:math><m:mi>x</m:mi></m:math> is between zero and two is 0.1, which can be written mathematically as <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>−</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.1</m:mn></m:math>.</para>
       <para id="eip-553"><emphasis>Suppose we want to find the area between</emphasis><m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>20</m:mn></m:mfrac></m:math><emphasis>and the</emphasis><m:math><m:mi>x</m:mi></m:math>-axis <emphasis>where</emphasis><m:math><m:mn>4</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>15</m:mn></m:math><emphasis>.</emphasis></para>
       <figure class="scaled-down" id="fs-idm39582736">
-        <media id="id40137735" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 4 to x = 15.">
+        <media id="id40137735" alt="Graph of f(x) = 1/20 as a rectangle of height 1/20 from x = 0 to x = 20. The region from x = 4 to x = 15 is shaded.">
           <image src="../../media/fig-ch05_02_03.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -95,20 +95,20 @@
       <para id="element-29">The area corresponds to the probability <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>4</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>15</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.55</m:mn></m:math>.</para>
       <para id="element-874">Suppose we want to find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>)</m:mo></m:math>. On an <m:math><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>y</m:mi></m:math> graph, <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math> is a vertical line. A vertical line has no width (or zero width). Therefore, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mtext>base</m:mtext><m:mo>)</m:mo><m:mo>(</m:mo><m:mtext>height</m:mtext><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>)</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mn>0</m:mn></m:math></para>
       <figure class="scaled-down" id="fs-idm37512432">
-        <media id="id40076640" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A vertical line extends from the horizontal axis to the graph at x = 15.">
+        <media id="id40076640" alt="Graph of f(x) = 1/20 as a rectangle of height 1/20 from x = 0 to x = 20. A single vertical line segment, with no shaded width, rises from the x-axis to the top of the rectangle at x = 15.">
           <image src="../../media/fig-ch05_02_04.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="element-71"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>, which can also be written as <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> for continuous distributions, is called the cumulative distribution function or CDF. Notice the "less than or equal to" symbol. We can also use the CDF to calculate <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>. The CDF gives "area to the left" and <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> gives "area to the right." We calculate <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> for continuous distributions as follows: <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>></m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> = 1 − <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>.</para>
       <figure class="scaled-down" id="fs-idp12815264">
-        <media id="id39508301" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. The area to the left of a value, x, is shaded.">
+        <media id="id39508301" alt="Graph of a uniform density f(x) drawn as a rectangle, with an unlabeled value x partway across the horizontal axis. The region to the left of that value, from the start of the rectangle up to x, is shaded blue, representing P(X less than x).">
           <image src="../../media/fig-ch05_02_05.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="element-473"><m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>20</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>,</m:mo><m:mn>0</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>20</m:mn></m:math>, with <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> being shaded in blue</para>
       <para id="fs-idp36326688">To calculate the probability that <m:math><m:mi>x</m:mi></m:math> is between two values, look at the following graph. Shade the region between <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.3</m:mn></m:math> and <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>12.7</m:mn></m:math>. Then calculate the shaded area of a rectangle.</para>
       <figure class="scaled-down" id="fs-idp96750640">
-        <media id="id40140418" alt="This shows the graph of the function f(x) = 1/20. A horizontal line ranges from the point (0, 1/20) to the point (20, 1/20). A vertical line extends from the x-axis to the end of the line at point (20, 1/20) creating a rectangle. A region is shaded inside the rectangle from x = 2.3 to x = 12.7">
+        <media id="id40140418" alt="Graph of f(x) = 1/20 drawn as a rectangle starting at x = 0. The region from x = 2.3 to x = 12.7 is shaded.">
           <image src="../../media/fig-ch05_02_06.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -174,7 +174,7 @@
       <title>Chapter Review</title>
       <para id="fs-idp147305600">The probability density function (pdf) is used to describe probabilities for continuous random variables. The area under the density curve between two points corresponds to the probability that the variable falls between those two values. In other words, the area under the density curve between points <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> is equal to <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:math>. The cumulative distribution function (cdf) gives the probability as an area. If <m:math><m:mi>X</m:mi></m:math> is a continuous random variable, the probability density function (pdf), <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>, is used to draw the graph of the probability distribution. The total area under the graph of <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> is one. The area under the graph of <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math> and between values <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> gives the probability <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:math>.</para>
       <figure class="scaled-down" id="fs-idm60245824">
-        <media id="fs-idp150656848" alt="The graph on the left shows a general density curve, y = f(x). The region under the curve and above the x-axis is shaded. The area of the shaded region is equal to 1. This shows that all possible outcomes are represented by the curve. The graph on the right shows the same density curve. Vertical lines x = a and x = b extend from the axis to the curve, and the area between the lines is shaded. The area of the shaded region represents the probability that a value x falls between a and b.">
+        <media id="fs-idp150656848" alt="Two graphs of the same unlabeled density curve y = f(x), which has two humps (a lower one on the left, a higher one on the right) and meets the x-axis at both ends. (a) The entire region under the curve is shaded, with the note: Shaded area represents probability 1. (b) Vertical lines at x = a and x = b reach up to the curve, and only the region between them is shaded, with the note: Shaded area represents P(a less than x less than b).">
           <image mime-type="image/png" src="../../media/CNX_Stats_C05_M02_001.png"/>
         </media>
       </figure>
@@ -196,7 +196,7 @@
         <problem id="eip-idm97086864">
           <para id="eip-idm97086608">Which type of distribution does the graph illustrate?</para>
           <figure class="scaled-down" id="eip-idm123385824">
-            <media id="eip-idm123385568" alt="The horizontal axis ranges from 0 to 10. The distribution is modeled by a rectangle extending from x = 3 to x =8.">
+            <media id="eip-idm123385568" alt="Graph with vertical axis f(x) and horizontal axis x marked from 0 to 10. A flat-topped rectangle of constant height extends from x = 3 to x = 8, with f(x) equal to 0 elsewhere.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M01_item001.png"/>
             </media>
           </figure>
@@ -209,7 +209,7 @@
         <problem id="eip-idm18256096">
           <para id="eip-idm199212800">Which type of distribution does the graph illustrate?</para>
           <figure class="scaled-down" id="eip-idm199212416">
-            <media id="eip-idm199212160" alt="This graph slopes downward. It begins at a point on the y-axis and approaches the x-axis at the right edge of the graph.">
+            <media id="eip-idm199212160" alt="Graph with vertical axis f(x) and horizontal axis x marked from 0 to 10. The curve starts at its highest point on the vertical axis at x = 0 and decreases, steeply at first and then more gradually, approaching the x-axis toward x = 10.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M01_item002.png"/>
             </media>
           </figure>
@@ -219,7 +219,7 @@
         <problem id="eip-idm143442320">
           <para id="eip-idm143442064">Which type of distribution does the graph illustrate?</para>
           <figure class="scaled-down" id="eip-idm143441680">
-            <media id="eip-idp45343472" alt="This graph shows a bell-shaped graph. The symmetric graph reaches maximum height at x = 0 and slopes downward gradually to the x-axis on each side of the peak.">
+            <media id="eip-idp45343472" alt="Graph of a symmetric, bell-shaped curve over a horizontal x-axis marked from −3 to 3. A vertical line marks the peak at x = 0, and the curve slopes down gradually toward the axis on each side.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M01_item003.png"/>
             </media>
           </figure>
@@ -232,7 +232,7 @@
         <problem id="eip-idm170433008">
           <para id="eip-idm170432752">What does the shaded area represent? <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>___</m:mtext><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mtext>___</m:mtext><m:mo>)</m:mo></m:math></para>
           <figure class="scaled-down" id="eip-idp7874608">
-            <media id="eip-idm79769968" alt="This graph shows a uniform distribution. The horizontal axis ranges from 0 to 10. The distribution is modeled by a rectangle extending from x = 1 to x = 8. A region from x = 2 to x = 5 is shaded inside the rectangle.">
+            <media id="eip-idm79769968" alt="Uniform distribution graph with vertical axis f(x) and horizontal axis x marked from 0 to 10. A rectangle of constant height extends from x = 1 to x = 8, and the region from x = 2 to x = 5 is shaded.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M01_item004.png"/>
             </media>
           </figure>
@@ -242,7 +242,7 @@
         <problem id="eip-idm40131600">
           <para id="eip-idm40131344">What does the shaded area represent? <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mtext>___</m:mtext><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mtext>___</m:mtext><m:mo>)</m:mo></m:math></para>
           <figure class="scaled-down" id="eip-idm126372688">
-            <media id="eip-idm126372432" alt="This graph shows an exponential distribution. The graph slopes downward. It begins at a point on the y-axis and approaches the x-axis at the right edge of the graph. The region under the graph from x = 6 to x = 7 is shaded.">
+            <media id="eip-idm126372432" alt="Exponential distribution graph with vertical axis f(x) and horizontal axis x marked from 0 to 10. The decreasing curve starts high at x = 0 and approaches the x-axis. A narrow region under the curve from x = 6 to x = 7 is shaded.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M01_item005.png"/>
             </media>
           </figure>
@@ -296,7 +296,7 @@
         <problem id="fs-idm126442096">
           <para id="fs-idm79659008">Find the probability that <m:math><m:mi>x</m:mi></m:math> falls in the shaded area.</para>
           <figure class="scaled-down" id="fs-idm29576816">
-            <media id="fs-idm168532640" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (0, 1/9) to the point (9, 1/9). A vertical line extends from the x-axis to the graph at x = 9 creating a rectangle with the coordinate axes on two sides. A region is shaded inside the rectangle from x = 6 to x = 8.">
+            <media id="fs-idm168532640" alt="Uniform distribution graph of f(x) = 1/9: vertical axis f(x) with 1/9 marked, horizontal axis x marked from 0 to 10. A rectangle of height 1/9 spans x = 0 to x = 9, and the region from x = 6 to x = 8 is shaded.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M02_item001.png"/>
             </media>
           </figure>
@@ -306,7 +306,7 @@
         <problem id="fs-idm70564992">
           <para id="fs-idm5797792">Find the probability that <m:math><m:mi>x</m:mi></m:math> falls in the shaded area.</para>
           <figure class="scaled-down" id="fs-idm120132416">
-            <media id="fs-idm17039824" alt="This shows the graph of the function f(x) = 1/8, the pdf for a uniform distribution. A horizontal line ranges from the point (0, 1/8) to the point (8, 1/8). A vertical line extends from the x-axis to the graph at x = 8 creating a rectangle with the coordinate axes on two sides. A region is shaded inside the rectangle from x = 0 to x = 5.">
+            <media id="fs-idm17039824" alt="Uniform distribution graph of f(x) = 1/8: vertical axis f(x) with 1/8 marked, horizontal axis x marked from 0 to 10. A rectangle of height 1/8 spans x = 0 to x = 8, and the region from x = 0 to x = 5 is shaded.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M02_item002.png"/>
             </media>
           </figure>
@@ -319,7 +319,7 @@
         <problem id="fs-idm109804912">
           <para id="fs-idp1777728">Find the probability that <m:math><m:mi>x</m:mi></m:math> falls in the shaded area.</para>
           <figure class="scaled-down" id="fs-idm167436128">
-            <media id="fs-idm163441712" alt="This shows the graph of the function f(x) = 1/10, the pdf for a uniform distribution. A horizontal line ranges from the point (0, 1/10) to the point (10, 1/10). A vertical line extends from the x-axis to the graph at x = 10 creating a rectangle with the coordinate axes on two sides. A region is shaded inside the rectangle from x = 2.5 to x = 5.5.">
+            <media id="fs-idm163441712" alt="Uniform distribution graph of f(x) = 1/10: vertical axis f(x) with 1/10 marked, horizontal axis x marked from 0 to 10. A rectangle of height 1/10 spans x = 0 to x = 10, and the region from x = 2.5 to x = 5.5 is shaded.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M02_item003.png"/>
             </media>
           </figure>

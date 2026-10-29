@@ -127,8 +127,8 @@
 </table>
 <para id="para-00010">Ultimately this test statistic is used to calculate an area called a <emphasis>p-value.</emphasis> The <m:math><m:mi>p</m:mi></m:math>-value is the <emphasis>probability that, if the null hypothesis is true, the results from another randomly selected sample will be as extreme as or more extreme than the results obtained from the given sample.</emphasis> We will go into more detail about the importance of using a p-value to make decisions in hypothesis tests, but in this section we will explore how to calculate p-values. A p-value is effectively a probability associated with the test statistic, as illustrated in the figure.</para>
 <figure id="fig-00001">
-<media alt="A standard normal distribution centered at 0 with the test statistic marked on the horizontal axis and the p-value shown as the shaded tail area beyond the test statistic.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C09_9-3_img1.png"/>
+<media alt="Normal curve centered at 0, with a horizontal axis made of z-scores or t-scores. An arrow marks the test statistic to the right of 0, and the area in the right tail beyond it is shaded and labeled p-value.">
+<image mime-type="image/png" src="../../media/IS_Figure_09_03_001.png"/>
 </media>
 </figure>
 <para id="para-00011">Since a z-score or t-score is calculated in the process of obtaining a test statistic, we can safely use a standardized distribution centered at 0 for these hypothesis tests. We will discuss in greater detail which tail to choose (left or right) in upcoming sections.</para>
@@ -148,8 +148,8 @@
 <para id="para-00014">To find the p-value, we calculate <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mo>−</m:mo><m:mn>7.9057</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>0</m:mn><m:mo>.</m:mo></m:math></para>
 <para id="para-00015">Consider why this p-value makes sense: the test statistic, which is ultimately a z-score, states that our sample mean is 7.9 standard deviations of the sampling distribution away from the mean. Considering that the empirical rule says that over 99% of the data will fall within 3 standard deviations of the mean, 7.9 standard deviations is very far from the mean. As such, it makes sense that the probability associated with this mean is 0.</para>
 <figure id="fig-00002">
-<media alt="A standard normal curve centered at 0 with the test statistic −7.9057 far in the left tail; the p-value is the area to its left, which is approximately 0.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C09_9-3_img2.png"/>
+<media alt="Standard normal curve on a z axis from negative 8 to 4, centered at 0. A dashed line marks the test statistic z = negative 7.9057, far to the left of where the curve meets the axis. A label reads p-value approximately 0 (area to the left of z).">
+<image mime-type="image/png" src="../../media/IS_Figure_09_03_002.png"/>
 </media>
 </figure>
 <para id="para-00016">b. <m:math><m:mover><m:mrow><m:mi>x</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>=</m:mo><m:mn>7</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>6.5</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math></para>
@@ -157,16 +157,16 @@
 <para id="para-00017">In this case, since we are using Student’s t-distribution, we must also note that df = 14.</para>
 <para id="para-00018">p-value: <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mo>></m:mo><m:mn>1.9365</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0366</m:mn></m:math></para>
 <figure id="fig-00003">
-<media alt="A Student’s t-distribution with 14 degrees of freedom centered at 0 with the test statistic 1.9365 in the right tail; the p-value is the shaded area to its right, 0.0366.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C09_9-3_img3.png"/>
+<media alt="Student’s t curve on a t axis from negative 4 to 4, centered at 0. A dashed line marks t = 1.9365, and the right tail beyond it is shaded and labeled p-value = 0.0366.">
+<image mime-type="image/png" src="../../media/IS_Figure_09_03_003.png"/>
 </media>
 </figure>
 <para id="para-00019">c. <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mo>′</m:mo></m:mrow></m:msup><m:mo>=</m:mo><m:mn>0.72</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.68</m:mn><m:mo>,</m:mo><m:mtext> </m:mtext><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>25</m:mn></m:math></para>
 <equation class="unnumbered" id="eq-00003"><m:math><m:mtext>test statistic</m:mtext><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>0.72</m:mn><m:mo>−</m:mo><m:mn>0.68</m:mn></m:mrow><m:mrow><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.68</m:mn><m:mo>·</m:mo><m:mn>0.32</m:mn></m:mrow><m:mrow><m:mn>25</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.4287</m:mn></m:math></equation>
 <para id="para-00020">p-value: <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>></m:mo><m:mn>0.4287</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.3341</m:mn></m:math></para>
 <figure id="fig-00004">
-<media alt="A standard normal curve centered at 0 with the test statistic 0.4287 marked; the p-value is the shaded area to its right, 0.3341.">
-<image mime-type="image/png" src="../../media/CNX_Stats_C09_9-3_img4.png"/>
+<media alt="Standard normal curve on a z axis from negative 4 to 4, centered at 0. A dashed line marks z = 0.4287, and the area to the right of it is shaded and labeled p-value = 0.3341.">
+<image mime-type="image/png" src="../../media/IS_Figure_09_03_004.png"/>
 </media>
 </figure>
 </solution>

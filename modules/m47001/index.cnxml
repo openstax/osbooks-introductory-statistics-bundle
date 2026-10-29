@@ -26,8 +26,8 @@
       </section>
       <para id="para-00006">The figure below shows a comparison of how the degrees of freedom impact Student’s t-distribution, and how this distribution ultimately compares to the standard normal distribution. Notice that as the degrees of freedom get larger, Student’s t-distribution begins to mimic the normal distribution.</para>
       <figure id="fig-00001">
-        <media alt="A graph comparing several Student’s t-distributions with different degrees of freedom against the standard normal distribution. Curves with more degrees of freedom are taller in the center and thinner in the tails, approaching the standard normal curve.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img1.png"/>
+        <media alt="Line graph titled Student’s t-Distribution comparing t curves for df = 5, 10, 30, and 100 with a dashed standard normal curve on a t axis from negative 4 to 4. All curves are bell-shaped and centered at 0. The df = 5 curve is lowest at the center with the heaviest tails; as df increases (10, 30, 100), each curve gets taller and thinner in the tails, and the df = 100 curve nearly overlaps the normal curve.">
+          <image mime-type="image/png" src="../../media/IS_Figure_08_02_001.png"/>
         </media>
       </figure>
       <para id="para-00007">Calculators and computers can easily calculate any Student’s t-probabilities. The TI-83, 83+, and 84+ have a tcdf function to find the probability for given values of <m:math><m:mi>t</m:mi></m:math>. The syntax for the tcdf command is <code>tcdf</code>(lower bound, upper bound, degrees of freedom). However, for confidence intervals, we need to use <emphasis>inverse</emphasis> probability to find the value of <m:math><m:mi>t</m:mi></m:math> when we know the probability.</para>
@@ -97,8 +97,8 @@
             <para id="para-00025">The 95% confidence interval is (7.30, 9.15).</para>
             <para id="para-00026">We estimate with 95% confidence that the true population mean sensory rate is between 7.30 and 9.15. The figure below shows the associated distributions for this situation:</para>
             <figure id="fig-00002">
-              <media alt="A figure showing the associated distributions for the 95% confidence interval: a Student’s t-distribution with the middle 95% area marked and the corresponding sample mean interval from 7.30 to 9.15 centered at 8.2267.">
-                <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-2_img2.png"/>
+              <media alt="Two stacked curves for a 95% confidence interval with x-bar = 8.23, s = 1.672, n = 15, df = 14. Top, the sampling distribution of x-bar: shaded central area 0.95 from 7.30 to 9.15, centered at 8.23, with EBM = 0.926 and each tail area alpha over 2 = 0.025. Bottom, Student’s t with df = 14: central area 0.95 from negative 2.145 to 2.145, centered at 0, with t sub alpha over 2 = 2.145 and each tail area alpha over 2 = 0.025.">
+                <image mime-type="image/png" src="../../media/IS_Figure_08_02_002.png"/>
               </media>
             </figure>
           </solution>
@@ -285,7 +285,7 @@
         <solution id="eip-501">
           <para id="eip-334">CI: (1.3808, 1.6192)</para>
           <figure class="scaled-down" id="fs-idm150372688">
-            <media id="eip-idp2023440" alt="This is a normal distribution curve. The peak of the curve coincides with the point 1.5 on the horizontal axis.  A central region is shaded between points 1.38 and 1.62.">
+            <media id="eip-idp2023440" alt="Normal curve labeled 0.95 on an x-bar axis. The central region from 1.38 to 1.62 is shaded, centered at 1.5.">
               <image src="../../media/CNX_Stats_C08_M03_item001anno.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -352,7 +352,7 @@
         <solution id="eip-35">
           <para id="eip-id1169812910484">CI: (142.92, 159.08)<newline/>
             <figure class="scaled-down" id="fs-idm53713472">
-              <media id="eip-idm24726752" alt="This is a normal distribution curve. The peak of the curve coincides with the point 151 on the horizontal axis.  A central region is shaded between points 142.92 and 159.08.">
+              <media id="eip-idm24726752" alt="Normal curve labeled 0.99 on an x-bar axis. The central region from 142.92 to 159.08 is shaded, centered at 151.">
                 <image src="../../media/CNX_Stats_C08_M03_item002anno.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -492,7 +492,7 @@
         <problem id="id45959778">
           <para id="element-726">Fill in the blanks on the graph with the areas, the upper and lower limits of the confidence interval, and the sample mean.</para>
           <figure class="scaled-down" id="five5">
-            <media id="id45959805" alt="This is a template of a normal distribution curve with the central region shaded to represent a confidence interval. The residual areas are on either side of the shaded region. Blanks indicate that students should label the confidence level, residual areas, and points that define the confidence interval.">
+            <media id="id45959805" alt="Blank template of a normal curve on an x-bar axis for students to fill in. The central region is shaded, with blanks for C.L. = ___ above the curve, alpha over 2 = ___ beside each tail, and three blanks below the axis for the lower limit, the sample mean, and the upper limit.">
               <image src="../../media/fig-ch08_07_01.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -566,7 +566,7 @@
                 <item>CI: (6,244, 11,014)</item>
                 <item>
                   <figure class="scaled-down" id="fs-idp12588848">
-                    <media id="mmm" alt="A normal distribution curve with a peak at 8629, showing the shaded area representing data points between 6244 and 11014.">
+                    <media id="mmm" alt="Normal curve with the central region shaded from 6,244 to 11,014, centered at 8,629.">
                       <image src="../../media/IBS2e_Figure_08_00_019.png" mime-type="image/png"/>
                     </media>
                   </figure>
@@ -933,7 +933,7 @@
                 <item>CI: (7.64, 9.36)</item>
                 <item>
                   <figure class="scaled-down" id="fs-idm59520752">
-                    <media id="mmm3" alt="A normal distribution curve with the area between 7.64 and 9.36 highlighted, centered at 8.5.">
+                    <media id="mmm3" alt="Normal curve with the central region shaded from 7.64 to 9.36, centered at 8.5.">
                       <image src="../../media/IBS2e_Figure_08_00_020.png" mime-type="image/png"/>
                     </media>
                   </figure>

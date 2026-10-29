@@ -34,8 +34,8 @@
       <title>Review: Histograms and Sample Sizes</title>
       <para id="para-00007">Before we can discuss how the Central Limit Theorem for Means works, we review some important aspects about histograms and sample sizes. Recall that histograms can tend to look less meaningful with small sample sizes. When the sample size <m:math><m:mi>n</m:mi></m:math> increases, the shape of the histogram can become prominent. In the example below, we draw samples of different sizes from a normally distributed population. You will note that when <m:math><m:mi>n</m:mi><m:mo>≤</m:mo><m:mn>100</m:mn><m:mo>,</m:mo></m:math> the histogram does not seem to have a clear shape. When <m:math><m:mi>n</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn><m:mrow><m:mo>,</m:mo></m:mrow><m:mn>000</m:mn><m:mo>,</m:mo></m:math> the histogram begins to follow a clear bell-curve shape:</para>
       <figure id="fig-00001">
-        <media alt="Four histograms of samples drawn from a normally distributed population for increasing sample sizes; for small sample sizes the histogram has no clear shape, while for large sample sizes a clear bell-curve shape emerges.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img1.png"/>
+        <media alt="Six histograms of samples of size n = 30, 50, 100, 1,000, 50,000, and 5,000,000 drawn from the same normal population, each with the same normal curve overlaid. All share a horizontal axis from 40 to 160 and a vertical density axis from 0 to 0.030; the curve peaks near 100 at about 0.027. For n = 30, 50, and 100 the histograms have only 4 to 7 wide, uneven bars that fit the curve poorly. For n = 1,000 the many narrow bars roughly follow the bell shape, for n = 50,000 they match it closely, and for n = 5,000,000 the histogram fills the curve as a smooth bell.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_001.png"/>
         </media>
       </figure>
       <para id="para-00008">It’s important to keep this idea in mind as we work to understand the Central Limit Theorem for Means.</para>
@@ -44,8 +44,8 @@
       <title>Understanding the Central Limit Theorem</title>
       <para id="para-00009">We will use an example to see how the Central Limit Theorem works. Suppose ABC College has 50,000 students, and we have obtained the weights of every single student at the college. The histogram for these 50,000 data points can be viewed below:</para>
       <figure id="fig-00002">
-        <media alt="A histogram of the weights of all 50,000 students at ABC College, which is normally distributed with mean 172 and standard deviation 40.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img2.png"/>
+        <media alt="Histogram titled Histogram for a Population of 50,000 Students. The horizontal axis shows weight (lbs) from 0 to 300 and the vertical axis shows Number of Students from 0 to 2500. The bars form a symmetric bell shape with a normal curve overlaid, peaking at about 2,700 students at the dashed line labeled mu = 172. Labels read n = 50,000 and X is distributed as N(172, 40).">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_002.png"/>
         </media>
       </figure>
       <para id="para-00010">Note that <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>172</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>40</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> which means that:</para>
@@ -54,9 +54,148 @@
         <item>The population standard deviation is <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>40</m:mn></m:math></item>
       </list>
       <para id="para-00011">Recall that it is typically very difficult to obtain population-level data in day-to-day research. Suppose three researchers want to take simple random samples from this population data (because they do not have access to the population-level data). The three researchers randomly collect samples each of size <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn><m:mo>.</m:mo></m:math> Below you can see the data set that each researcher collected, the sample mean of each data set, and the histogram for each data set.</para>
+      <table id="researchers-0" summary="Weights, in pounds, of the 30 students in each of three researchers’ samples, shown in three groups of columns for Researchers 1, 2, and 3, with each sample’s mean below its group: 155 pounds for Researcher 1, 172 pounds for Researcher 2, and 169 pounds for Researcher 3. Researchers 1, 2, and 3 are shown in blue, green, and purple.">
+      <title>Three Researchers Each Take a Sample of n = 30 Weights. </title>
+      <tgroup cols="9">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <colspec colnum="4" colname="c4"/>
+        <colspec colnum="5" colname="c5"/>
+        <colspec colnum="6" colname="c6"/>
+        <colspec colnum="7" colname="c7"/>
+        <colspec colnum="8" colname="c8"/>
+        <colspec colnum="9" colname="c9"/>
+        <thead>
+          <row>
+            <entry namest="c1" nameend="c3" align="center">Researcher 1’s Data</entry>
+            <entry namest="c4" nameend="c6" align="center">Researcher 2’s Data</entry>
+            <entry namest="c7" nameend="c9" align="center">Researcher 3’s Data</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>172</entry>
+            <entry>184</entry>
+            <entry>161</entry>
+            <entry>111</entry>
+            <entry>153</entry>
+            <entry>133</entry>
+            <entry>180</entry>
+            <entry>153</entry>
+            <entry>177</entry>
+          </row>
+          <row>
+            <entry>136</entry>
+            <entry>154</entry>
+            <entry>132</entry>
+            <entry>140</entry>
+            <entry>214</entry>
+            <entry>140</entry>
+            <entry>125</entry>
+            <entry>149</entry>
+            <entry>164</entry>
+          </row>
+          <row>
+            <entry>174</entry>
+            <entry>226</entry>
+            <entry>152</entry>
+            <entry>171</entry>
+            <entry>207</entry>
+            <entry>149</entry>
+            <entry>208</entry>
+            <entry>218</entry>
+            <entry>119</entry>
+          </row>
+          <row>
+            <entry>147</entry>
+            <entry>192</entry>
+            <entry>186</entry>
+            <entry>168</entry>
+            <entry>176</entry>
+            <entry>175</entry>
+            <entry>140</entry>
+            <entry>198</entry>
+            <entry>92</entry>
+          </row>
+          <row>
+            <entry>176</entry>
+            <entry>135</entry>
+            <entry>171</entry>
+            <entry>123</entry>
+            <entry>175</entry>
+            <entry>226</entry>
+            <entry>153</entry>
+            <entry>168</entry>
+            <entry>222</entry>
+          </row>
+          <row>
+            <entry>200</entry>
+            <entry>118</entry>
+            <entry>154</entry>
+            <entry>110</entry>
+            <entry>206</entry>
+            <entry>177</entry>
+            <entry>200</entry>
+            <entry>159</entry>
+            <entry>157</entry>
+          </row>
+          <row>
+            <entry>96</entry>
+            <entry>120</entry>
+            <entry>98</entry>
+            <entry>146</entry>
+            <entry>252</entry>
+            <entry>202</entry>
+            <entry>162</entry>
+            <entry>233</entry>
+            <entry>155</entry>
+          </row>
+          <row>
+            <entry>163</entry>
+            <entry>121</entry>
+            <entry>183</entry>
+            <entry>124</entry>
+            <entry>175</entry>
+            <entry>195</entry>
+            <entry>160</entry>
+            <entry>186</entry>
+            <entry>167</entry>
+          </row>
+          <row>
+            <entry>178</entry>
+            <entry>165</entry>
+            <entry>71</entry>
+            <entry>164</entry>
+            <entry>199</entry>
+            <entry>169</entry>
+            <entry>164</entry>
+            <entry>127</entry>
+            <entry>172</entry>
+          </row>
+          <row>
+            <entry>150</entry>
+            <entry>170</entry>
+            <entry>177</entry>
+            <entry>199</entry>
+            <entry>230</entry>
+            <entry>145</entry>
+            <entry>154</entry>
+            <entry>219</entry>
+            <entry>198</entry>
+          </row>
+          <row>
+            <entry namest="c1" nameend="c3" align="center">Sample mean<newline/><m:math><m:mrow><m:msub><m:mover accent="true"><m:mi style="color: #34bdd8;">x</m:mi><m:mo style="color: #34bdd8;">¯</m:mo></m:mover><m:mn style="color: #34bdd8;">1</m:mn></m:msub><m:mo style="color: #34bdd8;">=</m:mo><m:mn style="color: #34bdd8;">155</m:mn></m:mrow></m:math> lbs</entry>
+            <entry namest="c4" nameend="c6" align="center">Sample mean<newline/><m:math><m:mrow><m:msub><m:mover accent="true"><m:mi style="color: #91d891;">x</m:mi><m:mo style="color: #91d891;">¯</m:mo></m:mover><m:mn style="color: #91d891;">2</m:mn></m:msub><m:mo style="color: #91d891;">=</m:mo><m:mn style="color: #91d891;">172</m:mn></m:mrow></m:math> lbs</entry>
+            <entry namest="c7" nameend="c9" align="center">Sample mean<newline/><m:math><m:mrow><m:msub><m:mover accent="true"><m:mi style="color: #5200a0;">x</m:mi><m:mo style="color: #5200a0;">¯</m:mo></m:mover><m:mn style="color: #5200a0;">3</m:mn></m:msub><m:mo style="color: #5200a0;">=</m:mo><m:mn style="color: #5200a0;">169</m:mn></m:mrow></m:math> lbs</entry>
+          </row>
+        </tbody>
+      </tgroup>
+      <caption>Each researcher collects different data and has a different sample mean.</caption>
+    </table>
       <figure id="fig-00003">
-        <media alt="The datasets collected by three researchers, each a sample of size 30, with each sample mean and a histogram for each dataset; the histograms do not look normally distributed.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img3.png"/>
+        <media alt="Three histograms side by side, one per researcher, each with a horizontal axis of weight (lbs) from 0 to 300 and a dashed line at the sample mean. Researcher 1 (light blue) has x-bar sub 1 = 155 lbs, with bars from about 70 to 225 and the tallest bars near 160 to 185. Researcher 2 (green) has x-bar sub 2 = 172 lbs, with bars from about 110 to 250. Researcher 3 (purple) has x-bar sub 3 = 169 lbs, with bars from about 80 to 235 and a tall spike near 150. All three are irregular and none looks bell-shaped.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_003.png"/>
         </media>
       </figure>
       <para id="para-00012">As expected, the histograms do not look normally distributed because they are composed of only 30 data points each. The individual samples are not expected to look normal, and at this point the main concern we have is the mean of each sample. Additionally, each mean is slightly different due to natural variability in sampling.</para>
@@ -280,8 +419,8 @@
 
       <para id="para-00014">This is exactly the process that the Central Limit Theorem requires: repeatedly collecting samples of the same size, and then finding the means. The Central Limit Theorem then requires that we investigate the histogram of these means. In the next figure is the histogram of the 50 means:</para>
       <figure id="fig-00005">
-        <media alt="A histogram of the 50 sample means; it does not yet have a clear distribution because it is made from only 50 means.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img5.png"/>
+        <media alt="Histogram of the 50 sample means. The horizontal axis shows sample mean x-bar (lbs) from 155 to 185 and the vertical axis shows number of researchers from 0 to 8. From left to right, the 13 bar heights are 2, 3, 3, 5, 2, 5, 9, 5, 7, 3, 2, 2, 2, giving an uneven shape with no clear pattern. Colored dashed lines mark Researcher 1’s mean x-bar = 155, Researcher 3’s mean x-bar = 169, and Researcher 2’s mean x-bar = 172.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_005.png"/>
         </media>
       </figure>
       <para id="para-00015">This histogram does not have a clear distribution, which is to be expected because it is made up of only 50 means (which we stated earlier was a small amount of data for a meaningful histogram). The result aligns with what we already noted about histograms: 50 means are typically not enough for a clear distribution to emerge.</para>
@@ -358,16 +497,16 @@
 
       <para id="para-00017">Taking the 5,000 means that each researcher collected, we can create a new histogram:</para>
       <figure id="fig-00007">
-        <media alt="A histogram of the 5,000 sample means in which a clear bell-curve shape emerges, centered at the population mean.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img7.png"/>
+        <media alt="Histogram of 5,000 sample means with a normal curve overlaid. The horizontal axis shows sample mean x-bar (lbs) from 150 to 190. The bars form a roughly symmetric bell shape that peaks at a dashed line labeled population mean, mu sub x-bar = 172.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_007.png"/>
         </media>
       </figure>
       <para id="para-00018">With 5,000 sample means, a clear bell-curve shape emerges. Since this bell-curve is made of means, we call it <emphasis>the sampling distribution of means.</emphasis> The <emphasis>sampling distribution of means</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Means. The theorem tells us that as the sample size grows, the distribution of the sample means approaches a normal distribution. With enough means, the histogram shows this bell-curve shape. Because we have a new set of data made of means, we use a new random variable denoted <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. The bar makes a clear indication that we are using a sampling distribution of means.</para>
       <para id="para-00019">Additionally, note where this sampling distribution of means is centered: it has become naturally centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem means when it states that this sampling distribution of means follows the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough means are repeatedly taken, their histogram will be centered at the population mean. The formula <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> is called the <term id="term-se-mean">standard error of the mean</term>. The different name indicates that it is different from just the population standard deviation <m:math><m:mi>σ</m:mi></m:math>. It specifically tells us how sample means vary, as opposed to how individual data points vary.</para>
       <para id="para-00020">If we continued this process and collected 5,000,000 means, this is how the histogram would look:</para>
       <figure id="fig-00008">
-        <media alt="A histogram of 5,000,000 sample means, showing an even smoother bell-curve shape than before.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img8.png"/>
+        <media alt="Histogram of 5,000,000 sample means with a normal curve overlaid. The horizontal axis shows sample mean x-bar (lbs) from 130 to 210. The many narrow bars form a smooth, symmetric bell shape that matches the curve almost exactly. Most values fall between about 150 and 195, centered at a dashed line labeled population mean, mu sub x-bar = 172.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_008.png"/>
         </media>
       </figure>
       <para id="para-00021">The story with this histogram is consistent with what we’ve observed in other situations: more data points produce a smoother histogram.</para>
@@ -375,10 +514,22 @@
     <section id="sect-00004">
       <title>The Central Limit Theorem Works for Any Population</title>
       <para id="para-00022">In our previous example with our army of researchers, we took data from a population that was normally distributed. However, the Central Limit Theorem can work for <emphasis effect="italics">any</emphasis> type of population. In the figure below, we repeat the previous example but with three populations that have completely different distributions:</para>
-      <figure id="fig-00009">
-        <media alt="Three populations with completely different (non-normal) distributions, each shown with its resulting histogram of sample means, which follows a bell-curve centered at the population mean.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img9.png"/>
-        </media>
+      <figure id="fig-00009" orient="horizontal">
+        <subfigure id="fig-00009-suba">
+          <media alt="Two-part graphic for a uniform population. On the left is a histogram of individual values from 0 to 100 with bars of nearly equal height across the whole range (a flat, uniform shape), labeled mu = 50 and sigma = 29, with a dashed line at 50. An arrow points to a histogram of sample means on the right, with a horizontal axis from 30 to 70. It is bell-shaped, centered at a dashed line at 50, and overlaid with a normal curve labeled N(50, 5.3).">
+            <image mime-type="image/png" src="../../media/IS_Figure_07_01_009a.png"/>
+          </media>
+        </subfigure>
+        <subfigure id="fig-00009-subb">
+          <media alt="Two-part graphic for an exponential population. On the left is a strongly right-skewed histogram of individual values from 0 to 120: bars are tallest at 0 and drop steadily to almost nothing by about 100. It is labeled mu = 20 and sigma = 20, with a dashed line at 20. An arrow points to a histogram of sample means on the right, with a horizontal axis from 5 to 35. It is bell-shaped, centered at a dashed line at 20, and overlaid with a normal curve labeled N(20, 3.6).">
+            <image mime-type="image/png" src="../../media/IS_Figure_07_01_009b.png"/>
+          </media>
+        </subfigure>
+        <subfigure id="fig-00009-subc">
+          <media alt="Two-part graphic for a population of unknown shape. On the left is a histogram of individual values from 0 to 100 with three separate peaks, near 17, 48, and 82 (the right peak is tallest). It is labeled mu = 50 and sigma = 28, with a dashed line at 50. An arrow points to a histogram of sample means on the right, with a horizontal axis from 30 to 70. It is bell-shaped, centered at a dashed line at 50, and overlaid with a normal curve labeled N(50, 5.0).">
+            <image mime-type="image/png" src="../../media/IS_Figure_07_01_009c.png"/>
+          </media>
+        </subfigure>
       </figure>
       <para id="para-00023">In each case, it is clear that the histogram of means follows a bell-curve <emphasis effect="italics">regardless of the original population distribution.</emphasis> Additionally, note that the sampling distribution of means in each example is centered at the population mean. This is the remarkable result of the Central Limit Theorem for Means, and this result will empower us to perform powerful analyses in the next chapters.</para>
     </section>
@@ -386,14 +537,14 @@
       <title>The Size of the Sample Impacts the Spread of the Bell Curve</title>
       <para id="para-00024">We have discussed and shown that the sampling distribution of means is centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> Now we will focus on the standard deviation portion of the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> To understand this, let’s examine several distributions of means utilizing different sample sizes of <m:math><m:mi>n</m:mi></m:math>:</para>
       <figure id="fig-00010">
-        <media alt="Four distributions of means built using different sample sizes; larger sample sizes produce narrower curves.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img10.png"/>
+        <media alt="Four histograms of sample means from the same population, one for each sample size: n = 30, 50, 70, and 90. Each has a normal curve overlaid and a horizontal axis of sample mean x-bar from 0 to 100. All four are centered at 50 and get narrower as n increases. The standard errors, sigma over the square root of n, are 5.3 for n = 30, 4.1 for n = 50, 3.5 for n = 70, and 3.0 for n = 90.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_010.png"/>
         </media>
       </figure>
       <para id="para-00025">To make it easier for comparison, we compare the normal curves for each of these four graphs against one another:</para>
       <figure id="fig-00011">
-        <media alt="The normal curves for the four distributions of means overlaid on the same axis for comparison, showing that larger sample sizes narrow the curve.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img11.png"/>
+        <media alt="Four overlapping normal curves on one axis of sample mean x-bar from about 15 to 80, all centered at a dashed line at 50. A legend gives each curve’s sample size and standard error, sigma over the square root of n: n = 30, 5.3 (darkest navy, widest and lowest curve); n = 50, 4.1 (navy); n = 70, 3.5 (purple); and n = 90, 3.0 (light blue, narrowest and tallest curve). Larger n gives a taller, narrower curve.">
+          <image mime-type="image/png" src="../../media/IS_Figure_07_01_011.png"/>
         </media>
       </figure>
       <para id="para-00026">The size of <m:math><m:mi>n</m:mi></m:math> stretches or squeezes how wide the normal curve is. Smaller values of <m:math><m:mi>n</m:mi></m:math> will widen the curve, while larger values will narrow the curve.</para>
@@ -401,10 +552,17 @@
     <section id="sect-00006">
       <title>Important Notes on Notation and Vocabulary</title>
       <para id="para-00027">We have seen several examples of how the Central Limit Theorem works. It is important to note some new notation and vocabulary for this situation. The distribution created from using the Central Limit Theorem is called the <emphasis>sampling distribution of means</emphasis>. While the shape of the curve is a normal distribution, it has some key differences. The next figure compares the normal distribution versus the sampling distribution of means:</para>
-      <figure id="fig-00012">
-        <media alt="A side-by-side comparison of the normal distribution (built from individual data points) and the sampling distribution of means (built from sample means).">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img12.png"/>
-        </media>
+      <figure id="fig-00012" orient="horizontal">
+        <subfigure id="fig-00012-suba">
+          <media alt="Histogram of individual data values with a normal curve overlaid, labeled X is distributed as N(mu, sigma). The bell-shaped bars are centered at a dashed line marked mu, and the horizontal axis is labeled x – data values.">
+            <image mime-type="image/png" src="../../media/IS_Figure_07_01_012a.png"/>
+          </media>
+        </subfigure>
+        <subfigure id="fig-00012-subb">
+          <media alt="Histogram of sample means with a normal curve overlaid, labeled X-bar is distributed as N(mu sub x-bar, sigma sub x-bar). The bell-shaped bars are centered at a dashed line marked mu sub x-bar, and the horizontal axis is labeled x-bar – sample means.">
+            <image mime-type="image/png" src="../../media/IS_Figure_07_01_012b.png"/>
+          </media>
+        </subfigure>
       </figure>
       <para id="para-00028">We note some of the similarities and differences between these distributions in the table:</para>
       <table summary="Comparison of the normal distribution and the sampling distribution of means." id="table-00001">
@@ -628,7 +786,7 @@
           </para>
           <para id="para-00045">The probability that the sample mean is between 85 and 92 is 0.6997.</para>
           <figure id="fig-00013">
-            <media alt="A normal distribution curve. The peak of the curve coincides with the point 90 on the horizontal axis. The points 85 and 92 are labeled on the axis. Vertical lines are drawn from these points to the curve and the area between the lines is shaded. The shaded region represents the probability that 85 is less than x-bar is less than 92.">
+            <media alt="Normal curve over a horizontal axis labeled x-bar, with 85, 90, and 92 marked and the peak at 90. The area under the curve between vertical lines at 85 and 92 is shaded. A label reads: Shaded area represents probability P(85 less than x-bar less than 92).">
               <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img13.png"/>
             </media>
           </figure>
@@ -801,7 +959,7 @@
         <problem id="prob-00012">
           <para id="para-00079">Find the probability that <emphasis>one</emphasis> review will take Yoonie from 3.5 to 4.25 hours. Sketch the graph, labeling and scaling the horizontal axis. Shade the region corresponding to the probability.</para>
           <figure id="fig-00014">
-            <media alt="This is a frequency curve for a normal distribution. It shows a single peak in the center with the curve tapering down to the horizontal axis on each side. The distribution is symmetrical. The horizontal axis represents the random variable X.">
+            <media alt="Blank normal curve template: a symmetric bell-shaped curve over a horizontal axis labeled x, with no values or shading, for students to label, scale, and shade.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_prac_img1.png"/>
             </media>
           </figure>
@@ -820,7 +978,7 @@
         <problem id="prob-00013">
           <para id="para-00082">Find the probability that the <emphasis>mean</emphasis> of a month’s reviews will take Yoonie from 3.5 to 4.25 hrs. Sketch the graph, labeling and scaling the horizontal axis. Shade the region corresponding to the probability.</para>
           <figure id="fig-00015">
-            <media alt="This is a frequency curve for a normal distribution. It shows a single peak in the center with the curve tapering down to the horizontal axis on each side. The distribution is symmetrical. The horizontal axis represents the random variable X.">
+            <media alt="Blank normal curve template: a symmetric bell-shaped curve over a horizontal axis labeled x, with no values or shading, for students to label, scale, and shade.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_prac_img1.png"/>
             </media>
           </figure>
@@ -843,7 +1001,7 @@
         <problem id="prob-00015">
           <para id="para-00085">Find the 95<sup>th</sup> percentile for the mean time to complete one month’s reviews. Sketch the graph.</para>
           <figure id="fig-00016">
-            <media alt="This is a frequency curve for a normal distribution. It shows a single peak in the center with the curve tapering down to the horizontal axis on each side. The distribution is symmetrical. The horizontal axis represents the random variable X.">
+            <media alt="Blank normal curve template: a symmetric bell-shaped curve over a horizontal axis labeled x, with no values or shading, for students to label, scale, and shade.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_prac_img1.png"/>
             </media>
           </figure>

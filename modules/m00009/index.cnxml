@@ -75,14 +75,14 @@
       <para id="para-00010">Statistics has a variety of theoretical distributions. We have learned that quantitative data can be discrete or continuous. To that end, there are theoretical distributions that align with discrete or continuous data or outcomes.</para>
       <para id="para-00011">Some known discrete theoretical distributions look like this:</para>
       <figure class="scaled-down" id="fig-00001">
-        <media alt="Three examples of discrete theoretical distributions shown as bar graphs with separated bars.">
-          <image src="../../media/CNX_Stats_C02_M10_001.png" mime-type="image/png"/>
+        <media alt="Three bar graphs of discrete theoretical distributions, each with separated bars and no axis labels. Uniform: five bars of equal height. Binomial: eleven bars rising symmetrically to a single tall bar in the middle and falling off to nearly zero at both ends. Geometric: ten bars that start tallest on the left and decrease steadily toward zero on the right.">
+          <image src="../../media/IS_Figure_02_08_012.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00012">Some known continuous theoretical distributions look like this:</para>
       <figure class="scaled-down" id="fig-00002">
-        <media alt="Three examples of continuous theoretical distributions shown as smooth curves.">
-          <image src="../../media/CNX_Stats_C02_M10_002.png" mime-type="image/png"/>
+        <media alt="Three smooth, shaded curves of continuous theoretical distributions, with no axis labels. Uniform: a flat rectangle of constant height. Normal: a symmetric bell-shaped curve. Exponential: a curve that starts at its highest point on the left and decreases quickly, then levels off toward zero on the right.">
+          <image src="../../media/IS_Figure_02_08_013.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00013">Notice that the discrete distribution utilizes bar graphs with separation. This typically represents the fact that outcomes are countable, and therefore there is a clear separation between them. For continuous distributions, since outcomes are measured there is no clear separation between individual outcomes and instead they are smoothed out. We will now take a look at how these distributions can arise from empirical data.</para>
@@ -138,15 +138,15 @@
       </table>
       <para id="para-00015">At only 24 rolls, the relative frequencies do not come anywhere near the theoretical probabilities, but this is to be expected because we understand the Law of Large Numbers. However, if we were to roll the die 1,000,000 times then we would expect the outcomes to begin to match the theoretical probabilities. We can visualize the outcomes against their theoretical probabilities in the figure below:</para>
       <figure class="scaled-down" id="fig-00003">
-        <media alt="A bar graph comparing the empirical relative frequencies of rolling a die many times against the theoretical uniform probability of one-sixth for each face. The empirical bars closely match the theoretical value.">
-          <image src="../../media/CNX_Stats_C02_M10_003.png" mime-type="image/png"/>
+        <media alt="Two bar graphs of Relative Frequency (0% to 30%) by die Face (1 to 6), joined by an arrow labeled repeat experiment. Each has a dashed red line at the theoretical probability = 1/6, about 16.7%. Left, 24 rolls of the die: bars of 16.7%, 20.8%, 29.2%, 8.3%, 4.2%, and 20.8% for faces 1 through 6, scattered well above and below the line. Right, 1,000,000 rolls of the die: bars of 16.68%, 16.62%, 16.65%, 16.68%, 16.75%, and 16.63%, all essentially on the 1/6 line.">
+          <image src="../../media/IS_Figure_02_08_014.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00016">We can see how the Law of Large Numbers is alive and well within this situation: the empirical distribution clearly follows a uniform distribution when the die is rolled enough times.</para>
       <para id="para-00017">What often happens with discrete data is we make slight adjustments in how we think about the outcomes. You will deepen this skill in upcoming chapters, but we will preview how this works now. Suppose that instead of recording the outcomes, we tweak the way we think about outcomes. Instead of merely recording how many times any particular face of a die appears, we are instead interested in the number of times we roll a five within six rolls. Such tweaks in reasoning are common for discrete outcomes. In that case, in six rolls, what is the maximum number of times we could get a five? The maximum is six times. However, what do you think the probability of actually getting a five in every roll is? Such questions will be dissected in a later chapter, but it is interesting to note that outcomes can be modeled with this distribution:</para>
       <figure class="scaled-down" id="fig-00004">
-        <media alt="A bar graph showing the distribution for the number of times a five is rolled within six rolls of a die. The distribution is skewed to the right, with the highest bars at zero and one.">
-          <image src="../../media/CNX_Stats_C02_M10_004.png" mime-type="image/png"/>
+        <media alt="Bar graph titled Number of fives in six rolls of a fair die. The horizontal axis shows Number of fives rolled from 0 to 6, and the vertical axis shows Probability from 0% to 40%. Probabilities: 0 fives, 33.5%; 1 five, 40.2%; 2 fives, 20.1%; 3 fives, 5.4%; 4 fives, 0.8%; 5 fives, about 0.06%; 6 fives, less than 0.01%. The distribution is skewed to the right, with the tallest bars at 0 and 1.">
+          <image src="../../media/IS_Figure_02_08_015.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00018">It is interesting to note that a tweak in how we view a situation can significantly impact the distribution. Pay careful attention to this in upcoming chapters.</para>
@@ -158,21 +158,21 @@
         <title>Empirical Data and the Normal Distribution</title>
         <para id="para-00020">You will learn in upcoming chapters about the normal distribution, which follows a bell-curve shape. This is a theoretical distribution that many types of data naturally follow, but how clearly the bell shape appears in a histogram depends on the amount of data collected. For instance, if we collected the heights of 100 students at a college, this could be a realistic histogram:</para>
         <figure class="scaled-down" id="fig-00005">
-          <media alt="A histogram of the heights of 100 students. The distribution is roughly symmetric but the bell shape is not clearly defined.">
-            <image src="../../media/CNX_Stats_C02_M10_005.png" mime-type="image/png"/>
+          <media alt="Histogram titled Heights of 100 College Students. The horizontal axis shows Height (inches) from 58 to 76 in 2-inch intervals, and the vertical axis shows Number of Students from 0 to 30. Bar counts from left to right: 2, 5, 9, 22, 28, 14, 14, 4, 2. The tallest bar is 66 to 68 inches; the shape is roughly symmetric but uneven.">
+            <image src="../../media/IS_Figure_02_08_016.png" mime-type="image/png"/>
           </media>
         </figure>
         <para id="para-00021">The histogram seems somewhat symmetric, but it’s hard to see a clear bell shape. This is not surprising. We simply do not have enough data to have a clear shape. Now suppose we collect the heights of 10,000 students at a college. The histogram of this data could look like this:</para>
         <figure class="scaled-down" id="fig-00006">
-          <media alt="A histogram of the heights of 10,000 students. The distribution has a much clearer bell shape, though the histogram has rough edges.">
-            <image src="../../media/CNX_Stats_C02_M10_006.png" mime-type="image/png"/>
+          <media alt="Histogram titled Histogram of the same 10,000 heights. The horizontal axis shows Height (inches) from about 55 to 80 with 1-inch bars, and the vertical axis shows Frequency from 0 to 600. The bars rise from near 0 at 55 inches to about 600 at 65 to 66 inches, stay near 550 to 600 through about 70 inches, then fall back toward 0 at 80 inches, forming a clear but slightly jagged bell shape.">
+            <image src="../../media/IS_Figure_02_08_017.png" mime-type="image/png"/>
           </media>
         </figure>
         <para id="para-00022">This data has a much clearer bell shape, but the histogram has rough edges. When data is modeled in this fashion, the distribution is called an empirical distribution and shows how often any data point occurred within a sample.</para>
         <para id="para-00023">In order to create a smoother curve, a statistician will fit a theoretical distribution to the data set. Often this process requires characteristics of the data set (such as the mean or standard deviation) to be used as inputs to a special function called a density function, which you will learn more about in a later chapter. In the case of our height data above, we can apply this process to generate the smooth normal curve associated with it:</para>
         <figure class="scaled-down" id="fig-00007">
-          <media alt="A histogram of the heights of 10,000 students with a smooth red normal distribution curve fitted over it. The theoretical curve aligns closely with the empirical data.">
-            <image src="../../media/CNX_Stats_C02_M10_007.png" mime-type="image/png"/>
+          <media alt="Histogram of the 10,000 heights on a density scale with a fitted normal curve. The horizontal axis shows Height (inches) from about 53 to 82, and the vertical axis shows Density from 0 to 0.10. The legend reads: empirical (histogram, density scale), and fitted normal N(67.3, 4.0 squared), meaning normal with mean 67.3 and standard deviation 4.0. A smooth red bell curve peaking just above 0.10 at a dashed red vertical line at the mean follows the histogram bars closely, with only small differences at individual bars.">
+            <image src="../../media/IS_Figure_02_08_018.png" mime-type="image/png"/>
           </media>
         </figure>
         <para id="para-00024">The red curve is called a normal distribution, and you will learn more about it in upcoming chapters (including an opportunity to use the normal density function!). The red line is a theoretical distribution, but you can see the real-world data aligns very closely with the theoretical distribution.</para>
@@ -181,14 +181,14 @@
         <title>Empirical Data and the Uniform Distribution</title>
         <para id="para-00025">As another example of continuous data, let’s say we use a random number generator to select 20,000 numbers (up to 5 decimal places) between 1 and 8. We can visualize the histogram as:</para>
         <figure class="scaled-down" id="fig-00008">
-          <media alt="A histogram of 20,000 randomly generated numbers between 1 and 8. Most bars are roughly the same height, but some bars deviate, giving the histogram a ragged appearance.">
-            <image src="../../media/CNX_Stats_C02_M10_008.png" mime-type="image/png"/>
+          <media alt="Histogram of 20,000 random numbers between 1 and 8. The horizontal axis shows Value from 1 to 8, divided into 35 narrow bars, and the vertical axis shows Relative Frequency from 0 to about 0.03. Every bar is close to the same height, about 0.029, but the heights vary between roughly 0.026 and 0.031, giving a nearly flat but ragged top.">
+            <image src="../../media/IS_Figure_02_08_019.png" mime-type="image/png"/>
           </media>
         </figure>
         <para id="para-00026">How would you describe this histogram? It seems like most bars are uniform in height, but then some bars deviate, making the histogram look ragged. The theoretical distribution that aligns with this histogram would be the uniform distribution. In the case of our random data above, we can once again apply the special process to fit this empirical data to the theoretical uniform distribution in red:</para>
         <figure class="scaled-down" id="fig-00009">
-          <media alt="A histogram of 20,000 randomly generated numbers between 1 and 8 with a flat red uniform distribution curve fitted over it.">
-            <image src="../../media/CNX_Stats_C02_M10_009.png" mime-type="image/png"/>
+          <media alt="Histogram of 20,000 random numbers between 1 and 8 with a fitted uniform distribution. The horizontal axis shows Value from 1 to 8 with 35 narrow bars, and the vertical axis shows Relative Frequency from 0 to about 0.03. The legend identifies the bars as the empirical distribution and a red line as the theoretical uniform distribution. The red line is flat at about 0.029 across the whole range, and the ragged bar tops sit just above or below it.">
+            <image src="../../media/IS_Figure_02_08_020.png" mime-type="image/png"/>
           </media>
         </figure>
         <para id="para-00027">You will learn more about the uniform distribution in upcoming chapters.</para>
@@ -198,8 +198,8 @@
       <title>Unknown Distributions</title>
       <para id="para-00028">It is also possible that a set of empirical data has no known distribution. Suppose the coffee shop that we discussed in <link document="m46922">Measures of the Spread of the Data</link>, The Divine Cup, has the following distribution of wait times for 1,000 customers:</para>
       <figure class="scaled-down" id="fig-00010">
-        <media alt="A histogram of the wait times for 1,000 customers at The Divine Cup. The histogram has two distinct peaks, one for quiet weekday visits and one for busy Saturdays.">
-          <image src="../../media/CNX_Stats_C02_M10_010.png" mime-type="image/png"/>
+        <media alt="Histogram titled Wait Times for 1,000 Customers at The Divine Cup. The horizontal axis shows Wait time (minutes) from 0 to 18 in 1-minute bars, and the vertical axis shows Relative Frequency from 0 to 0.200. The first cluster spans 0 to 5 minutes with relative frequencies of about 0.105, 0.200, 0.180, 0.082, and 0.016, peaking at 1 to 2 minutes. There are no wait times from 5 to 6 minutes. A second, lower and wider cluster spans 6 to 18 minutes, rising to about 0.077 at 11 to 12 minutes and tapering off on both sides, so the histogram has two distinct peaks.">
+          <image src="../../media/IS_Figure_02_08_021.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00029">In this case, the empirical distribution does not seem to follow any theoretical distribution. Notice that the histogram has two distinct peaks—one from the quiet weekday visits and one from the busy Saturdays—and none of the theoretical distributions we have seen has more than one peak. This can absolutely happen, but we can still conduct meaningful analysis in this situation. Such situations will be discussed in future chapters.</para>
@@ -214,8 +214,8 @@
         <problem id="prob-00001">
           <para id="para-00031">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00011">
-            <media alt="A smooth continuous curve that starts high on the left and decays toward zero as it moves to the right.">
-              <image src="../../media/CNX_Stats_C02_M10_011.png" mime-type="image/png"/>
+            <media alt="Graph of a smooth, shaded curve with no axis labels. The curve starts at its highest point at the left edge of the shaded region, drops steeply, and then levels off, approaching zero toward the right.">
+              <image src="../../media/IS_Figure_02_08_004.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -227,8 +227,8 @@
         <problem id="prob-00002">
           <para id="para-00033">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00012">
-            <media alt="Six separated bars of equal height.">
-              <image src="../../media/CNX_Stats_C02_M10_012.png" mime-type="image/png"/>
+            <media alt="Bar graph with five separated bars of equal height and no axis labels.">
+              <image src="../../media/IS_Figure_02_08_005.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -237,8 +237,8 @@
         <problem id="prob-00003">
           <para id="para-00034">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00013">
-            <media alt="Several separated bars of varying, irregular heights.">
-              <image src="../../media/CNX_Stats_C02_M10_013.png" mime-type="image/png"/>
+            <media alt="Bar graph with eight separated bars of irregular heights and no axis labels. From left to right the bars are short, tall, short, very tall, shortest, medium, tallest, and medium, with no regular pattern.">
+              <image src="../../media/IS_Figure_02_08_006.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -250,8 +250,8 @@
         <problem id="prob-00004">
           <para id="para-00036">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00014">
-            <media alt="A smooth continuous curve with three peaks of decreasing height.">
-              <image src="../../media/CNX_Stats_C02_M10_014.png" mime-type="image/png"/>
+            <media alt="Graph of a smooth, shaded curve with no axis labels and three peaks. The first peak, on the left, is the tallest and narrowest; the curve then drops nearly to the baseline before rising to a lower second peak, dips again, and rises to a broad, low third peak before falling off on the right.">
+              <image src="../../media/IS_Figure_02_08_007.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -260,8 +260,8 @@
         <problem id="prob-00005">
           <para id="para-00037">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00015">
-            <media alt="A flat rectangular region of constant height.">
-              <image src="../../media/CNX_Stats_C02_M10_015.png" mime-type="image/png"/>
+            <media alt="Graph of a shaded rectangle of constant height above a horizontal baseline, with no axis labels.">
+              <image src="../../media/IS_Figure_02_08_008.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -273,8 +273,8 @@
         <problem id="prob-00006">
           <para id="para-00039">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00016">
-            <media alt="Separated bars whose heights decrease steadily from left to right.">
-              <image src="../../media/CNX_Stats_C02_M10_016.png" mime-type="image/png"/>
+            <media alt="Bar graph with ten separated bars and no axis labels. The first bar is the tallest, and each bar after it is shorter, decreasing steadily toward zero on the right.">
+              <image src="../../media/IS_Figure_02_08_009.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -283,8 +283,8 @@
         <problem id="prob-00007">
           <para id="para-00040">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00017">
-            <media alt="A smooth, symmetric bell-shaped curve.">
-              <image src="../../media/CNX_Stats_C02_M10_017.png" mime-type="image/png"/>
+            <media alt="Graph of a smooth, shaded, symmetric bell-shaped curve with no axis labels, peaking in the middle and tapering to the baseline on both sides.">
+              <image src="../../media/IS_Figure_02_08_010.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -296,8 +296,8 @@
         <problem id="prob-00008">
           <para id="para-00042">Determine if the following distribution models a discrete or continuous distribution, and name the type of distribution if possible:</para>
           <figure class="scaled-down" id="fig-00018">
-            <media alt="Separated bars whose heights rise to a peak in the middle and fall off symmetrically.">
-              <image src="../../media/CNX_Stats_C02_M10_018.png" mime-type="image/png"/>
+            <media alt="Bar graph with eleven separated bars and no axis labels. The bars rise to a single tallest bar in the middle and fall off symmetrically, nearly to zero at both ends.">
+              <image src="../../media/IS_Figure_02_08_011.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -309,8 +309,8 @@
         <problem id="prob-00009">
           <para id="para-00043">Jolene collected the heights of 30 basketball players at her school, and got the histogram below. Explain whether this data is enough to mimic a theoretical distribution.</para>
           <figure class="scaled-down" id="fig-00019">
-            <media alt="A histogram titled Heights of 30 Basketball Players. The horizontal axis shows height in inches from 68 to 84 and the vertical axis shows the number of players. The bar heights are 3, 9, 6, 3, 5, 2, and 2, and no clear shape emerges.">
-              <image src="../../media/CNX_Stats_C02_M10_019.png" mime-type="image/png"/>
+            <media alt="Histogram titled Heights of 30 Basketball Players. The horizontal axis shows Height (inches) from 68 to 84 in 2-inch intervals, and the vertical axis shows Number of Players from 0 to 10. Bar counts from left to right: 3 for 68 to 70, 9 for 70 to 72, 6 for 72 to 74, 3 for 74 to 76, 5 for 76 to 78, 2 for 78 to 80, and 2 for 80 to 82; there are no players from 82 to 84. The bars are uneven with no clear shape.">
+              <image src="../../media/IS_Figure_02_08_001.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -322,8 +322,8 @@
         <problem id="prob-00010">
           <para id="para-00045">Ashanti is a school principal going through the attendance records of all of her 500 students. Below is a graph of her data. Is this data discrete or continuous? Do we have enough data to determine if this data mimics a theoretical distribution?</para>
           <figure class="scaled-down" id="fig-00020">
-            <media alt="A bar graph titled Days Absent This Year for All 500 Students. The horizontal axis shows the number of days absent from 0 to 12 in whole-number steps and the vertical axis shows the number of students. The bars decrease from 164 at zero days down to small counts at higher numbers of days.">
-              <image src="../../media/CNX_Stats_C02_M10_020.png" mime-type="image/png"/>
+            <media alt="Bar graph titled Days Absent This Year for All 500 Students. The horizontal axis shows Number of Days Absent from 0 to 12, and the vertical axis shows Number of Students from 0 to 175. Counts from 0 to 12 days: 164, 106, 73, 52, 41, 19, 15, 17, 6, 3, 1, 1, 2. The counts drop quickly from 0 days and trail off to the right.">
+              <image src="../../media/IS_Figure_02_08_002.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -358,8 +358,8 @@
         <problem id="prob-00015">
           <para id="para-00052">A restaurant open from 11 a.m. to 10 p.m. records how many minutes each of 2,000 customers waited for a table. The histogram is below. Does this empirical distribution mimic any theoretical distribution from this section? Explain what feature of the histogram supports your answer.</para>
           <figure class="scaled-down" id="fig-00021">
-            <media alt="A histogram titled Table Wait Times for 2,000 Restaurant Customers. The horizontal axis shows wait time for a table in minutes from 0 to 60 and the vertical axis shows the number of customers. The histogram has two distinct peaks, one near 5 to 10 minutes and another near 35 to 40 minutes.">
-              <image src="../../media/CNX_Stats_C02_M10_021.png" mime-type="image/png"/>
+            <media alt="Histogram titled Table Wait Times for 2,000 Restaurant Customers. The horizontal axis shows Wait time for a table (minutes) from 0 to 60 in 4-minute bars, and the vertical axis shows Number of Customers from 0 to 350. The first peak is at short waits: about 165, 350, and 360 customers for 0 to 4, 4 to 8, and 8 to 12 minutes, then about 140 for 12 to 16. Counts fall to about 20 to 35 between 16 and 28 minutes, then rise to a second peak of about 250 at 36 to 40 minutes before tapering to under 10 by 52 to 56 minutes. The histogram has two distinct peaks.">
+              <image src="../../media/IS_Figure_02_08_003.png" mime-type="image/png"/>
             </media>
           </figure>
         </problem>
@@ -434,7 +434,7 @@
             </table>
           </item>
           <item>Construct a histogram. Make five to six intervals. Sketch the graph using a ruler and pencil and scale the axes. <figure class="scaled-down" id="element-2356">
-              <media id="id7552200" alt="A blank graph template for use with this problem.">
+              <media id="id7552200" alt="Blank graph template for sketching a histogram, with an empty vertical axis labeled Frequency and an empty horizontal axis labeled Number of Pairs of Shoes; no tick marks or values.">
                 <image src="../../media/fig-ch02_14_01.png" mime-type="image/png"/>
               </media>
             </figure>

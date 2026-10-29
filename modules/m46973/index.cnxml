@@ -21,8 +21,8 @@
       <title>Visualizing Probability Calculations</title>
       <para id="para-00004">Always draw a visualization of a probability. For instance, suppose we had set up the following figure:</para>
       <figure id="fig-00001">
-        <media alt="A normal distribution with a value x placed to the right of the mean and the area to the left of x shaded.">
-          <image src="../../media/CNX_Stats_C06_6-3_img1.png" mime-type="image/png"/>
+        <media alt="Normal distribution curve with a dashed line at the mean, mu, and a value x marked to the right of mu. The entire area to the left of x is shaded and labeled P(X less than x), covering more than half of the curve.">
+          <image src="../../media/IS_Figure_06_03_001.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00005">Would you expect the probability in this situation to be greater than 50% or less than 50%? Since we have placed <m:math><m:mi>x</m:mi></m:math> past the mean <m:math><m:mi>μ</m:mi></m:math> and shaded to the left, we would anticipate that <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> will be greater than 50%. Drawing such figures is important for ensuring an answer makes logical sense.</para>
@@ -31,34 +31,34 @@
         <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
       </equation>
       <figure id="fig-00002">
-        <media alt="A normal distribution showing that the area to the right of x equals one minus the area to the left of x.">
-          <image src="../../media/CNX_Stats_C06_6-3_img2.png" mime-type="image/png"/>
+        <media alt="Two normal distribution curves connected by an arrow, each with mu marked and a value x to the right of mu. On the left curve only the right tail beyond x is shaded, representing P(X greater than x). On the right curve, the area to the left of x is shaded light and labeled P(X less than x), and the right tail is shaded dark and labeled 1 minus P(X less than x). A note reads: P(X greater than x) is found by calculating 1 minus P(X less than x).">
+          <image src="../../media/IS_Figure_06_03_002.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00007">To find probabilities such as <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, a graph can illustrate the work required for this calculation. We want to find an area that might look similar to the figure below:</para>
       <figure id="fig-00003">
-        <media alt="A normal distribution with the area between two values A and B shaded.">
-          <image src="../../media/CNX_Stats_C06_6-3_img3.png" mime-type="image/png"/>
+        <media alt="Normal distribution curve with values A and B marked on either side of the mean, mu. The area between A and B is shaded and labeled P(A less than x less than B).">
+          <image src="../../media/IS_Figure_06_03_003.png" mime-type="image/png"/>
         </media>
       </figure>
       <para id="para-00008">In the event of using technology that only computes to the left, we will recognize how two areas overlap on one another and thus must be subtracted from one another: <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>B</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> vs <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>A</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> as shown below:</para>
       <figure id="fig-00004">
-        <media alt="A normal distribution showing the area to the left of B and the area to the left of A, whose difference gives the area between A and B.">
-          <image src="../../media/CNX_Stats_C06_6-3_img4.png" mime-type="image/png"/>
+        <media alt="Three normal distribution curves in a sequence showing how to find P(A less than x less than B). First, titled Start with P(x less than B), the area to the left of B is shaded. Second, titled Overlay P(x less than A), the area to the left of A is hatched and labeled P(X less than A) on top of the shaded P(X less than B) area. A note reads: Subtract the areas: P(x less than B) minus P(x less than A). Third, titled Result: P(A less than x less than B), only the area between A and B is shaded.">
+          <image src="../../media/IS_Figure_06_03_004.png" mime-type="image/png"/>
         </media>
       </figure>
       <section id="sect-00002">
         <title>Visualizing Inverse Normal Probability Calculations</title>
         <para id="para-00009">Sometimes instead of finding a probability, we will want to use the “opposite” idea. We can start with a probability (or percentile) and find what data value would create such a probability. If we were asked to find what data value is the 80th percentile, we would use technology to determine the value of <m:math><m:mi>k</m:mi></m:math> below in the figure:</para>
         <figure id="fig-00005">
-          <media alt="A normal distribution with the area to the left of a value k shaded to represent the 80th percentile.">
-            <image src="../../media/CNX_Stats_C06_6-3_img5.png" mime-type="image/png"/>
+          <media alt="Normal distribution curve with a dashed line at the mean, mu, and a red line at a value k to the right of mu. The area to the left of k is shaded and labeled Area = 0.80, so k is the 80th percentile.">
+            <image src="../../media/IS_Figure_06_03_005.png" mime-type="image/png"/>
           </media>
         </figure>
         <para id="para-00010">Note that a percentile is typically referring to the <emphasis>left side</emphasis> of the normal distribution. Most technology also assumes that inverse normal calculations move to the left. As such, if we were asked to find what data value separates the top 20% of the distribution, we would adjust this language for the technology as explained in the figure below:</para>
         <figure id="fig-00006">
-          <media alt="A normal distribution showing that finding the top 20th percentile is equivalent to finding the value with 80% of the area to its left.">
-            <image src="../../media/CNX_Stats_C06_6-3_img6.png" mime-type="image/png"/>
+          <media alt="Two normal distribution curves connected by an arrow labeled Technology gives areas to the LEFT. On the left curve, the right tail beyond k is shaded and labeled Top 20%, Area = 0.20. On the right curve, the area to the left of the same k is shaded and labeled Bottom 80%, Area = 0.80, so the value that separates the top 20% is found as the 80th percentile.">
+            <image src="../../media/IS_Figure_06_03_006.png" mime-type="image/png"/>
           </media>
         </figure>
       </section>
@@ -91,7 +91,7 @@
             <para id="para-00017">a. Let <m:math><m:mi>X</m:mi></m:math> = a score on the final exam. <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>63</m:mn><m:mo>,</m:mo><m:mn>5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, where <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mn>63</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>.</para>
             <para id="para-00018">Draw a graph.</para>
             <figure id="fig-00007">
-              <media alt="A normal curve with 63 at the center and 65 a short distance to the right; the area to the right of 65 is shaded, representing P(X greater than 65) = 0.3446.">
+              <media alt="Normal distribution curve with 63 at the center and 65 marked a short distance to the right. The area to the right of 65 is shaded. Text reads: Shaded area represents probability P(x greater than 65) = 0.3446.">
                 <image src="../../media/CNX_Stats_C06_6-3_img7.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -106,8 +106,8 @@
             </equation>
             <para id="para-00023">The equivalent probability statement using the standard normal distribution is <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>&gt;</m:mo><m:mn>0.4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and can be visualized:</para>
             <figure id="fig-00008">
-              <media alt="The standard normal distribution with the area to the right of z = 0.4 shaded.">
-                <image src="../../media/CNX_Stats_C06_6-3_img8.png" mime-type="image/png"/>
+              <media alt="Standard normal distribution curve with 0 at the center and 0.4 marked just to the right. The area to the right of 0.4 is shaded, and an arrow points to it from the label P(z greater than 0.4) = 0.3446.">
+                <image src="../../media/IS_Figure_06_03_007.png" mime-type="image/png"/>
               </media>
             </figure>
             <note class="statistics calculator" id="note-00003">
@@ -134,8 +134,8 @@
           <solution id="sol-00002">
             <para id="para-00031">b. <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>85</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> can be graphed:</para>
             <figure id="fig-00009">
-              <media alt="A normal curve centered at 63 with the area to the left of 85 shaded, representing nearly the entire area.">
-                <image src="../../media/CNX_Stats_C06_6-3_img9.png" mime-type="image/png"/>
+              <media alt="Normal distribution curve centered at 63, with 85 marked far out in the right tail. The area to the left of 85, essentially the entire curve, is shaded and labeled P(x less than 85).">
+                <image src="../../media/IS_Figure_06_03_008.png" mime-type="image/png"/>
               </media>
             </figure>
             <para id="para-00032">The equivalent statement in the standard normal distribution requires finding the <m:math><m:mi>z</m:mi></m:math>-score:</para>
@@ -144,8 +144,8 @@
             </equation>
             <para id="para-00033">The equivalent probability statement is <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>z</m:mi><m:mo>&lt;</m:mo><m:mn>4.4</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> and is graphed:</para>
             <figure id="fig-00010">
-              <media alt="The standard normal distribution with essentially all of the area to the left of z = 4.4 shaded.">
-                <image src="../../media/CNX_Stats_C06_6-3_img10.png" mime-type="image/png"/>
+              <media alt="Standard normal distribution curve centered at 0, with 4.4 marked far out in the right tail. The area to the left of 4.4, essentially the entire curve, is shaded and labeled P(z less than 4.4).">
+                <image src="../../media/IS_Figure_06_03_009.png" mime-type="image/png"/>
               </media>
             </figure>
             <para id="para-00034">Using a computer or calculator, find <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>85</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.</para>
@@ -166,7 +166,7 @@
               <m:math><m:mrow><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>69.4</m:mn></m:mrow></m:math>
             </para>
             <figure id="fig-00011">
-              <media alt="A normal curve centered at 63 with a value k to the right of 63; the area to the left of k is shaded, representing P(x less than k) = 0.90.">
+              <media alt="Normal distribution curve on an x-axis with 63 at the center and k marked to the right of 63. The area to the left of k is shaded. Text reads: Shaded area represents probability P(x less than k) = 0.90.">
                 <image src="../../media/CNX_Stats_C06_6-3_img11.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -210,7 +210,7 @@
             <para id="para-00053">Find <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.8</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2.75</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>.</para>
             <para id="para-00054">The probability for which you are looking is the area <emphasis>between</emphasis> <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.8</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2.75</m:mn></m:mrow></m:math>. <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>1.8</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>2.75</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.5886</m:mn></m:mrow></m:math></para>
             <figure id="fig-00012">
-              <media alt="A normal curve centered at 2 with vertical lines at 1.8 and 2.75; the area between the lines is shaded.">
+              <media alt="Normal distribution curve on an x-axis centered at 2, with vertical lines at 1.8 and 2.75. The area between 1.8 and 2.75 is shaded, representing P(1.8 less than x less than 2.75) = 0.5886.">
                 <image src="../../media/CNX_Stats_C06_6-3_img12.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -227,7 +227,7 @@
           <solution id="sol-00006">
             <para id="para-00058">b. To find the maximum number of hours per day that the bottom quartile of households uses a personal computer for entertainment, <emphasis>find the 25<sup>th</sup> percentile,</emphasis> <m:math><m:mi>k</m:mi></m:math>, where <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>k</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.25</m:mn></m:mrow></m:math>.</para>
             <figure id="fig-00013">
-              <media alt="A normal curve with the left tail shaded, showing that the probability that x is less than k is 0.25, so k = 1.66.">
+              <media alt="Normal distribution curve on an x-axis with a vertical line at k in the left tail, where k = 1.66. The area to the left of k is shaded. Text on the left reads: Shaded area represents probability P(x less than k) = 0.25. Text on the right reads: Unshaded area represents probability P(x greater than k) = 0.75.">
                 <image src="../../media/CNX_Stats_C06_6-3_img13.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -340,7 +340,7 @@
           <solution id="sol-00009">
             <para id="para-00072">a. normalcdf(6,10^99,5.85,0.24) = 0.2660</para>
             <figure id="fig-00014">
-              <media alt="A normal curve centered at 5.85 with the area to the right of 6.0 shaded.">
+              <media alt="Normal distribution curve on an x-axis centered at 5.85, with 6.0 marked to the right. The area to the right of 6.0 is shaded. Text reads: Shaded area represents probability P(x greater than 6.0) = 0.2660.">
                 <image src="../../media/CNX_Stats_C06_6-3_img14.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -355,8 +355,8 @@
               <item><m:math><m:msub><m:mi>k</m:mi><m:mn>2</m:mn></m:msub></m:math> = invNorm(0.60,5.85,0.24) = 5.91 cm</item>
             </list>
             <figure id="fig-00015">
-              <media alt="A normal curve centered at 5.85 with the middle region between 5.79 cm and 5.91 cm shaded, representing the middle 20%.">
-                <image src="../../media/CNX_Stats_C06_6-3_img15.png" mime-type="image/png"/>
+              <media alt="Three normal distribution curves with the overall title Middle 20%: k sub 1 = bottom 40% (invNorm 0.40), k sub 2 = bottom 60% (invNorm 0.60). Each axis marks k sub 1, mu, and k sub 2. First, titled Middle 20%, only the narrow band between k sub 1 and k sub 2 is shaded. Second, titled Lower cutoff k sub 1; bottom 40%, the area to the left of k sub 1 is shaded and labeled Bottom 40%, next to the middle 20% band. Third, titled Upper cutoff k sub 2; bottom 60%, the area to the left of k sub 2 is hatched and labeled Bottom 60% (left of k sub 2). Here k sub 1 = 5.79 cm and k sub 2 = 5.91 cm.">
+                <image src="../../media/IS_Figure_06_03_010.png" mime-type="image/png"/>
               </media>
             </figure>
             <para id="para-00074">c. 6.16: Ninety percent of the diameters of the mandarin oranges are at most 6.16 cm.</para>
@@ -393,7 +393,7 @@
         <problem id="prob-00016">
           <para id="para-00080">How would you represent the area to the left of one in a probability statement?</para>
           <figure id="fig-00016">
-            <media alt="A bell-shaped normal distribution with a vertical line at x = 1 on the horizontal axis.">
+            <media alt="Normal distribution curve on an x-axis with a vertical line at 1, to the left of the peak. No area is shaded.">
               <image src="../../media/CNX_Stats_C06_6-pr_img1.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -408,7 +408,7 @@
         <problem id="prob-00017">
           <para id="para-00082">What is the area to the right of one?</para>
           <figure id="fig-00017">
-            <media alt="A bell-shaped normal distribution with a vertical line at x = 1 on the horizontal axis.">
+            <media alt="Normal distribution curve on an x-axis with a vertical line at 1, to the left of the peak. No area is shaded; the area to the right of 1 is the region in question.">
               <image src="../../media/CNX_Stats_C06_6-pr_img1.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -426,7 +426,7 @@
         <problem id="prob-00019">
           <para id="para-00085">How would you represent the area to the left of three in a probability statement?</para>
           <figure id="fig-00018">
-            <media alt="A bell-shaped normal distribution with a vertical line segment marking the value 3 on the x-axis.">
+            <media alt="Normal distribution curve on an x-axis with a vertical line at 3, to the right of the peak. No area is shaded.">
               <image src="../../media/CNX_Stats_C06_6-pr_img2.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -436,7 +436,7 @@
         <problem id="prob-00020">
           <para id="para-00086">What is the area to the right of three?</para>
           <figure id="fig-00019">
-            <media alt="A bell-shaped normal distribution with a vertical line segment marking the value 3 on the x-axis.">
+            <media alt="Normal distribution curve on an x-axis with a vertical line at 3, to the right of the peak. No area is shaded; the area to the right of 3 is the region in question.">
               <image src="../../media/CNX_Stats_C06_6-pr_img2.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -515,7 +515,7 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00012">
             <item>Sketch the situation. Label and scale the axes. Shade the region corresponding to the probability.
               <figure id="fig-00020">
-                <media alt="An empty normal distribution curve for sketching.">
+                <media alt="Blank template for sketching: an unlabeled normal distribution curve on unscaled horizontal and vertical axes, with no values or shading.">
                   <image src="../../media/CNX_Stats_C06_6-pr_img3.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -534,7 +534,7 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00013">
             <item>Sketch the situation. Label and scale the axes. Shade the region corresponding to the probability.
               <figure id="fig-00021">
-                <media alt="An empty normal distribution curve for sketching.">
+                <media alt="Blank template for sketching: an unlabeled normal distribution curve on unscaled horizontal and vertical axes, with no values or shading.">
                   <image src="../../media/CNX_Stats_C06_6-pr_img3.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -549,7 +549,7 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00014">
             <item>Sketch the situation. Label and scale the axes. Shade the region corresponding to the lower 70%.
               <figure id="fig-00022">
-                <media alt="An empty normal distribution curve for sketching.">
+                <media alt="Blank template for sketching: an unlabeled normal distribution curve on unscaled horizontal and vertical axes, with no values or shading.">
                   <image src="../../media/CNX_Stats_C06_6-pr_img3.png" mime-type="image/png"/>
                 </media>
               </figure>

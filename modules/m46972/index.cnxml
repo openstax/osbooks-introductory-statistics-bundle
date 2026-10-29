@@ -19,8 +19,8 @@
     </equation>
     <para id="para-00005">We can visualize this distribution like this:</para>
     <figure class="scaled-down" id="fig-00001">
-      <media alt="Diagram of a continuous uniform probability distribution on the interval from a to b. The graph shows a rectangular region with constant height between x = a and x = b and zero height outside that interval. The shaded rectangle represents the probability density, and the height of the distribution is labeled f(x) = 1/(b − a). The horizontal axis is labeled x, and the vertical axis is labeled f(x). The figure illustrates that every value between a and b is equally likely, with a constant probability density across the interval.">
-        <image mime-type="image/png" src="../../media/ab-distribution.png"/>
+      <media alt="Graph of a continuous uniform distribution: a fully shaded rectangle above the horizontal axis from x = a to x = b, with height 1/(b − a) marked on the vertical axis f(x). The density is 0 outside a to b. Label: f(x) = 1/(b − a).">
+        <image mime-type="image/png" src="../../media/IS_Figure_05_02_001.png"/>
       </media>
     </figure>
     <para id="para-00006">For computing probabilities, we can use the fact that the uniform distribution looks like a rectangle. As a few examples:</para>
@@ -31,8 +31,8 @@
           <row>
             <entry align="center">
               <figure class="scaled-down" id="fig-00002">
-                <media alt="Diagram illustrating cumulative probability for a continuous uniform distribution. A rectangular probability density function extends from a to b with constant height. A dashed vertical line at a value x divides the rectangle into two regions. The region to the left of x is shaded more darkly and labeled P(X &lt; x), representing the cumulative probability that the random variable X is less than x. The region to the right of x is shaded more lightly. The horizontal axis is labeled x, and the figure demonstrates that cumulative probability corresponds to the area under the uniform distribution curve from a up to x.">
-                  <image mime-type="image/png" src="../../media/pxx-distribution.png"/>
+                <media alt="Graph of a continuous uniform distribution on a to b with height 1/(b − a) on the vertical axis f(x). A dashed vertical line at a value x between a and b splits the rectangle; the darker region from a to x is labeled P(X less than x), and the region from x to b is lighter.">
+                  <image mime-type="image/png" src="../../media/IS_Figure_05_02_002.png"/>
                 </media>
               </figure>
             </entry>
@@ -52,8 +52,8 @@
           <row>
             <entry align="center">
               <figure class="scaled-down" id="fig-00003">
-                <media alt="Diagram illustrating the probability of a continuous uniform random variable falling between two values. A rectangular probability density function extends from a to b with constant height. Two dashed vertical lines at c and d divide the rectangle into three regions. The central region between c and d is shaded more darkly and labeled “P(c &lt; X &lt; d),” representing the probability that the random variable X lies between c and d. The regions to the left of c and to the right of d are shaded more lightly. The horizontal axis is labeled x, and the figure demonstrates that probability over an interval is represented by the area under the uniform distribution curve between the specified bounds.">
-                  <image mime-type="image/png" src="../../media/pcxd-distribution.png"/>
+                <media alt="Graph of a continuous uniform distribution on a to b with height 1/(b − a) on the vertical axis f(x). Dashed vertical lines at c and d, between a and b, mark off a darker central region labeled P(c less than x less than d); the regions from a to c and from d to b are lighter.">
+                  <image mime-type="image/png" src="../../media/IS_Figure_05_02_003.png"/>
                 </media>
               </figure>
             </entry>
@@ -141,8 +141,8 @@
       </table>
       <para id="para-00011">Here is the histogram of the given data (using a strategic choice of only 3 bins):</para>
       <figure class="scaled-down" id="fig-00004">
-        <media alt="Histogram showing three adjacent bars representing grouped frequency data. The bars are equal in width but differ in height. The center bar is the tallest, the left bar is slightly shorter, and the right bar is the shortest of the three. The bars are shaded light blue with darker blue outlines and rest on a horizontal baseline. The horizontal axis is labeled smiling times of an 8-week-old baby and has tick values 0, 8, 16, and 24; the vertical axis is labeled frequency. The distribution appears roughly symmetric with a slight peak in the center.">
-          <image mime-type="image/png" src="../../media/smilingtimes.png"/>
+        <media alt="Histogram with 3 bins of the smiling times of an 8-week-old baby, in seconds; horizontal axis marked 0, 8, 16, 24, vertical axis frequency from 0 to 20. Frequencies: 0 to 8 seconds, 18; 8 to 16 seconds, 21; 16 to 24 seconds, 16. The bars are roughly equal in height, consistent with a uniform distribution.">
+          <image mime-type="image/png" src="../../media/IS_Figure_05_02_004.png"/>
         </media>
       </figure>
       <para id="para-00012">Note that the sample mean = <m:math><m:mn>11.65</m:mn></m:math> and the sample standard deviation = <m:math><m:mn>6.08</m:mn></m:math>. The minimum of this dataset is <m:math><m:mn>0.7</m:mn></m:math> and the maximum is <m:math><m:mn>22.8</m:mn></m:math>.</para>
@@ -267,7 +267,7 @@
               <para id="element-178"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>2</m:mn><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>18</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (18 − 2)<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>16</m:mn></m:mrow><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:mrow></m:mrow></m:mrow></m:math>.</para>
               <para id="element-179">
                 <figure class="scaled-down" id="eip-idp133938240">
-                  <media id="id15176560" alt="Graph of f(x) = 1/23 on [0, 23]; region from x = 2 to x = 18 is shaded.">
+                  <media id="id15176560" alt="Uniform distribution graph of f(x) on the horizontal axis x, drawn as a rectangle from x = 0 to x = 23. The region from x = 2 to x = 18 is shaded, representing P(2 less than x less than 18).">
                     <image src="../../media/fig-ch05_03_01.png" mime-type="image/png"/>
                   </media>
                 </figure>
@@ -289,7 +289,7 @@
               </para>
               <para id="element-181">
                 <figure class="scaled-down" id="eip-idp216325248">
-                  <media id="id9694885" alt="This shows the graph of the function f(x) = 1/23. A horizontal line ranges from the point (0, 1/23) to the point (23, 1/23). A vertical line extends from the x-axis to the end of the line at point (23, 1/23) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = k. The shaded area represents P(x &lt; k) = 0.90.">
+                  <media id="id9694885" alt="Uniform distribution graph of f(x) = 1/23: a rectangle of height 1/23 from x = 0 to x = 23. The region from x = 0 to an unknown value k, near the right end, is shaded, with the note: Shaded area represents P(x less than k) = 0.90.">
                     <image src="../../media/fig-ch05_03_02.png" mime-type="image/png"/>
                   </media>
                 </figure>
@@ -299,7 +299,7 @@
               <para id="fs-idp106518000">This probability question is a <emphasis>conditional</emphasis>. You are asked to find the probability that an eight-week-old baby smiles more than 12 seconds when you <emphasis>already know</emphasis> the baby has smiled for more than 8 seconds.</para>
               <para id="element-836">Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>12</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math> There are two ways to do the problem. <emphasis>For the first way</emphasis>, use the fact that this is a <emphasis>conditional</emphasis> and changes the sample space. You know the baby smiled more than eight seconds, so now the sample space is reduced from the interval [0, 23] to [8, 23] as illustrated in the figure below: </para>
               <figure class="scaled-down" id="eip-idm134042368">
-                <media id="id15318622" alt="f(X)=1/15 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/15 on the y-axis, a vertical upward line from points 8 and 23 on the x-axis, and the x-axis. A shaded region from points 12-23 occurs within this area.">
+                <media id="id15318622" alt="Uniform distribution graph of the reduced sample space: a rectangle of height 1/15 from x = 8 to x = 23, with a dashed line extending from the 1/15 mark on the f(x) axis. The region from x = 12 to x = 23 is shaded. The x-axis is marked 0, 8, 12 and 23.">
                   <image src="../../media/fig-ch05_03_03.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -315,7 +315,7 @@
               <para id="element-613">So, <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>12</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>8</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>12</m:mn><m:mtext> AND </m:mtext><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>8</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>15</m:mn></m:mrow><m:mrow><m:mn>23</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>11</m:mn></m:mrow><m:mrow><m:mn>15</m:mn></m:mrow></m:mfrac></m:mrow></m:math></para>
               <para id="element-644">
                 <figure class="scaled-down" id="eip-idm5414416">
-                  <media id="id15928918" alt="This diagram shows a horizontal X axis that intersects a vertical F of x axis at the origin. The X axis runs from 0 to 24 while the Y axis only has the fraction one twenty third located about two thirds of the way to the top. A rectangular box extends horizontally from 0 to 23 on the X axis. The box extends vertically up to the fraction one twenty third on the F of x axis. The area of the box between 8 and 12 on the X axis is lightly shaded. The area of the box between 12 and 23 has darker shading. ">
+                  <media id="id15928918" alt="Uniform distribution graph of f(x) = 1/23 from x = 0 to x = 23, with the x-axis marked from 0 to 24 in steps of 2. The region from x = 8 to x = 12 is lightly shaded and the region from x = 12 to x = 23 is darkly shaded.">
                     <image src="../../media/fig-ch05_03_04.png" mime-type="image/png"/>
                   </media>
                   <caption>Darker shaded area represents <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>12</m:mn><m:mo>)</m:mo></m:math>. Entire shaded area shows <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>8</m:mn><m:mo>)</m:mo></m:math>.</caption>
@@ -361,7 +361,7 @@
               </para>
               <para id="element-748">The probability a person waits less than 12.5 minutes is 0.8333.</para>
               <figure class="scaled-down" id="eip-idp99340768">
-                <media id="id17238530" alt="This shows the graph of the function f(x) = 1/15. A horizontal line ranges from the point (0, 1/15) to the point (15, 1/15). A vertical line extends from the x-axis to the end of the line at point (15, 1/15) creating a rectangle. A region is shaded inside the rectangle from x = 0 to x = 12.5.">
+                <media id="id17238530" alt="Uniform distribution graph of f(x) = 1/15: a rectangle of height 1/15 from x = 0 to x = 15. The region from x = 0 to x = 12.5 is shaded, representing P(x less than 12.5).">
                   <image src="../../media/fig-ch05_03_05.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -383,7 +383,7 @@
                 <newline/>The 90<sup>th</sup> percentile is 13.5 minutes. Ninety percent of the time, a person must wait at most 13.5 minutes.</para>
               <para id="element-545">
                 <figure class="scaled-down" id="eip-idp75195312">
-                  <media id="id16334803" alt="f(X)=1/15 graph displaying a boxed region consisting of a horizontal line extending to the right from point 1/15 on the y-axis, a vertical upward line from an arbitrary point on the x-axis, and the x and y-axes. A shaded region from points 0-k occurs within this area. The area of this probability region is equal to 0.90.">
+                  <media id="id16334803" alt="Uniform distribution graph of f(x) = 1/15: a rectangle of height 1/15 from x = 0 to x = 15. The region from x = 0 to an unknown value k, close to 15, is shaded, with the note: Shaded area represents P(x less than k) = 0.90.">
                     <image src="../../media/fig-ch05_03_06.png" mime-type="image/png"/>
                   </media>
                 </figure>
@@ -426,15 +426,15 @@
           <emphasis>Write a new <m:math><m:mstyle mathvariant="bold"><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mstyle></m:math>:</emphasis><newline/>
           <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>1.5</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math> for <m:math><m:mn>1.5</m:mn><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>4</m:mn></m:math>. <newline/> Find <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo></m:math>. Draw a graph.<newline/>
               <figure class="scaled-down" id="eip-idp101580400">
-                <media id="id13790135" alt="f(X)=2/5 graph displaying a boxed region consisting of a horizontal line extending to the right from point 2/5 on the y-axis, a vertical upward line from points 1.5 and 4 on the x-axis, and the x-axis. A shaded region from points 2-4 occurs within this area.">
+                <media id="id13790135" alt="Uniform distribution graph of the reduced sample space: a rectangle of height 2/5 from x = 1.5 to x = 4, with a dashed line extending from the 2/5 mark on the f(x) axis. The region from x = 2 to x = 4 is shaded. The x-axis is marked 0, 1.5, 2 and 4.">
                   <image src="../../media/fig-ch05_03_07.png" mime-type="image/png"/>
                 </media>
               </figure>
               <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(new height) = (4 − 2)<m:math><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:math><newline/>
             <emphasis>Second way:</emphasis> Draw the original graph for <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mn>0.5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>)</m:mo></m:math>. Use the conditional formula<newline/>
               <figure id="fig-00005">
-                <media alt="Diagram of a continuous uniform probability distribution represented by a rectangle with constant height. The rectangle spans an interval of length 3.5 on the horizontal axis and has a uniform density throughout. Centered inside the shaded rectangle is the label “f(x) = 1/3.5 ≈ 0.2857,” indicating the constant probability density value. Dashed vertical lines mark the left and right endpoints of the interval. The figure illustrates that for a uniform distribution over an interval of length 3.5, the probability density is constant and equal to approximately 0.2857 across the entire interval.">
-                  <image src="../../media/donutprobability.png" mime-type="image/png"/>
+                <media alt="Uniform distribution graph of donut-eating time, X distributed as U(0.5, 4). Horizontal axis x (minutes) from 0 to 4 in steps of 0.5; vertical axis f(x) from 0.0 to 0.3. A shaded rectangle with dashed sides spans a = 0.5 to b = 4 at constant height, labeled f(x) = 1/3.5, approximately 0.2857.">
+                  <image src="../../media/IS_Figure_05_02_005.png" mime-type="image/png"/>
                 </media>
               </figure>
               <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn><m:mtext> AND </m:mtext><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>1.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mtext>1</m:mtext><m:mtext>.5</m:mtext><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>1.5</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mfrac><m:mn>2</m:mn><m:mrow><m:mn>3.5</m:mn></m:mrow></m:mfrac></m:mrow><m:mrow><m:mfrac><m:mrow><m:mn>2.5</m:mn></m:mrow><m:mrow><m:mn>3.5</m:mn></m:mrow></m:mfrac></m:mrow></m:mfrac><m:mo>=</m:mo><m:mtext>0</m:mtext><m:mtext>.8</m:mtext><m:mo>=</m:mo><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:mrow></m:math><newline/> The probability that a nine-year-old child eats a donut in more than two minutes given that the child has already been eating the donut for more than 1.5 minutes is <m:math><m:mfrac><m:mn>4</m:mn><m:mn>5</m:mn></m:mfrac></m:math>. </item>
@@ -468,7 +468,7 @@
           <para id="fs-idm59847232">a. To find <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:math>: <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>4</m:mn><m:mo>−</m:mo><m:mn>1.5</m:mn></m:mrow></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>2.5</m:mn></m:mrow></m:mfrac></m:mrow></m:math> so <m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.4</m:mn></m:math></para>
           <para id="fs-idm19787408"><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&gt;</m:mo><m:mn>2</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (4 − 2)(0.4) = 0.8</para>
               <figure class="scaled-down" id="fs-idp54235200">
-              <media id="fs-idm38845872" alt="This shows the graph of the function f(x) = 0.4. A horizontal line ranges from the point (1.5, 0.4) to the point (4, 0.4). Vertical lines extend from the x-axis to the graph at x = 1.5 and x = 4 creating a rectangle. A region is shaded inside the rectangle from x = 2 to x = 4.">
+              <media id="fs-idm38845872" alt="Uniform distribution graph of f(x) = 0.4: a rectangle of height 0.4 from x = 1.5 to x = 4. The region from x = 2 to x = 4 is shaded, with the note: Shaded area represents P(x greater than 2). The x-axis is marked 0, 1.5, 2, 3 and 4.">
               <image src="../../media/fig-ch05_03_08.png" mime-type="image/png"/>
             </media>
             <caption>Uniform Distribution between 1.5 and four with shaded area between two and four representing the probability that the repair time <m:math><m:mi>x</m:mi></m:math> is greater than two</caption>
@@ -476,14 +476,14 @@
           <para id="fs-idp16376400">b. <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mn>3</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (3 − 1.5)(0.4) = 0.6</para>
           <para id="fs-idm70722128">The graph of the rectangle showing the entire distribution would remain the same. However the graph should be shaded between <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn></m:math> and <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>3</m:mn></m:math>. Note that the shaded area starts at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>1.5</m:mn></m:math> rather than at <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:math>; since <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>U</m:mi><m:mo>(</m:mo><m:mn>1.5</m:mn><m:mo>,</m:mo><m:mn>4</m:mn><m:mo>)</m:mo><m:mo>,</m:mo><m:mi>x</m:mi></m:math> cannot be less than 1.5.</para>
               <figure class="scaled-down" id="fs-idm70679104">
-              <media id="fs-idm6304128" alt="This shows the graph of the function f(x) = 0.4. A horizontal line ranges from the point (1.5, 0.4) to the point (4, 0.4). Vertical lines extend from the x-axis to the graph at x = 1.5 and x = 4 creating a rectangle. A region is shaded inside the rectangle from x = 1.5 to x = 3.">
+              <media id="fs-idm6304128" alt="Uniform distribution graph of f(x) = 0.4: a rectangle of height 0.4 from x = 1.5 to x = 4. The region from x = 1.5 to x = 3 is shaded, with the note: Shaded area represents P(x less than 3). The x-axis is marked 0, 1, 1.5, 2, 3 and 4.">
               <image src="../../media/fig-ch05_03_09.png" mime-type="image/png"/>
             </media>
             <caption>Uniform Distribution between 1.5 and four with shaded area between 1.5 and three representing the probability that the repair time <m:math><m:mi>x</m:mi></m:math> is less than three</caption>
           </figure>
           <para id="fs-idp138350704">c.
             <figure class="scaled-down" id="figure-03">
-              <media id="fs-idp23900752" alt="This shows the graph of the function f(x) = 0.4. A horizontal line ranges from the point (1.5, 0.4) to the point (4, 0.4). Vertical lines extend from the x-axis to the graph at x = 1.5 and x = 4 creating a rectangle. A region is shaded inside the rectangle from x = 1.5 to x = k. The shaded area represents P(x &lt; k) = 0.3.">
+              <media id="fs-idp23900752" alt="Uniform distribution graph of f(x) = 0.4: a rectangle of height 0.4 from x = 1.5 to x = 4. The region from x = 1.5 to an unknown value k is shaded, with the note: Shaded area represents P(x less than k) = 0.3.">
                 <image src="../../media/fig-ch05_03_10.png" mime-type="image/png"/>
               </media>
               <caption>Uniform Distribution between 1.5 and 4 with an area of 0.30 shaded to the left, representing the shortest 30% of repair times.</caption>
@@ -492,7 +492,7 @@
           <para id="fs-idm20420640"><newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>k</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.30</m:mn></m:math><newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>k</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo></m:math>base)(height) = (<m:math><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1.5</m:mn></m:math>)(0.4) <newline/><emphasis><m:math><m:mstyle mathvariant="bold"><m:mn>0.3</m:mn><m:mo>=</m:mo><m:mo>(</m:mo><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1.5</m:mn><m:mo>)</m:mo><m:mo>(</m:mo><m:mn>0.4</m:mn><m:mo>)</m:mo></m:mstyle></m:math></emphasis>; Solve to find <m:math><m:mi>k</m:mi></m:math>: <newline/><m:math><m:mn>0.75</m:mn><m:mo>=</m:mo><m:mi>k</m:mi><m:mo>−</m:mo><m:mn>1.5</m:mn></m:math>, obtained by dividing both sides by 0.4 <newline/><emphasis><m:math><m:mstyle mathvariant="bold"><m:mi>k</m:mi><m:mo>=</m:mo><m:mn>2.25</m:mn></m:mstyle></m:math></emphasis>, obtained by adding 1.5 to both sides <newline/>The 30<sup>th</sup> percentile of repair times is 2.25 hours. Thirty percent of repair times are 2.25 hours or less.</para>
           <para id="fs-idm25221984">d.
             <figure class="scaled-down" id="fs-idm51742384">
-              <media id="fs-idp77501376" alt="This shows the graph of the function f(x) = 0.4, the pdf for a uniform distribution. A horizontal line ranges from the point (1.5, 0.4) to the point (4, 0.4). Vertical lines extend from the x-axis to the graph at x = 1.5 and x = 4 creating a rectangle. A region is shaded inside the rectangle from x = k for 1.5 &lt; k &lt; 4 to x = 4. Text notes that the shaded area represents P(x &gt; k) = 0.25.">
+              <media id="fs-idp77501376" alt="Uniform distribution graph of f(x) = 0.4: a rectangle of height 0.4 from x = 1.5 to x = 4. The narrow region from an unknown value k, near the right end, to x = 4 is shaded, with the note: Shaded area represents P(x greater than k) = 0.25.">
                 <image src="../../media/fig-ch05_03_11.png" mime-type="image/png"/>
               </media>
               <caption>Uniform Distribution between 1.5 and 4 with an area of 0.25 shaded to the right representing the longest 25% of repair times.</caption>
@@ -528,7 +528,7 @@
       <title>Chapter Review</title>
       <para id="fs-idp24264368">If <m:math><m:mi>X</m:mi></m:math> has a uniform distribution where <m:math><m:mi>a</m:mi><m:mo>&lt;</m:mo><m:mi>x</m:mi><m:mo>&lt;</m:mo><m:mi>b</m:mi></m:math> or <m:math><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:math>, then <m:math><m:mi>X</m:mi></m:math> takes on values between <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math> (may include <m:math><m:mi>a</m:mi></m:math> and <m:math><m:mi>b</m:mi></m:math>). All values <m:math><m:mi>x</m:mi></m:math> are equally likely. We write <m:math><m:mi>X</m:mi></m:math> ∼ <m:math><m:mi>U</m:mi><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>,</m:mo><m:mi>b</m:mi><m:mo>)</m:mo></m:math>. The mean of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:mrow></m:math>. The standard deviation of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:msup><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mn>2</m:mn></m:msup></m:mrow><m:mrow><m:mn>12</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt></m:mrow></m:math>. The probability density function of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mrow><m:mi>f</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mrow><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow></m:math> for <m:math><m:mi>a</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mi>b</m:mi></m:math>. The cumulative distribution function of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>≤</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mrow><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow><m:mrow><m:mi>b</m:mi><m:mo>−</m:mo><m:mi>a</m:mi></m:mrow></m:mfrac></m:mrow></m:math>. <m:math><m:mi>X</m:mi></m:math> is continuous.</para>
             <figure class="scaled-down" id="fs-idp30139216">
-            <media id="fs-idp10170496" alt="The graph shows a rectangle with total area equal to 1. The rectangle extends from x = a to x = b on the x-axis and has a height of 1/(b-a)." display="block">
+            <media id="fs-idp10170496" alt="Uniform distribution graph with axes x and y: a rectangle from x = a to x = b with height 1/(b − a), labeled Total area = 1." display="block">
           <image src="../../media/CNX_Stats_C05_M03_001.png" mime-type="image/png"/>
         </media>
       </figure>
@@ -720,7 +720,7 @@
         </problem>
         <solution id="fs-idp67560352">
             <figure class="scaled-down" id="fs-idp140107840">
-            <media id="fs-idp124624384" alt="This graph shows a uniform distribution. The horizontal axis ranges from 0 to 12. The distribution is modeled by a rectangle extending from x = 0 to x = 12. A region from x = 9 to x = 12 is shaded inside the rectangle.">
+            <media id="fs-idp124624384" alt="Uniform distribution graph of f(x) for X distributed as U(0, 12): horizontal axis x marked from 0 to 12, with a rectangle of constant height from x = 0 to x = 12. The region from x = 9 to x = 12 is shaded, representing P(x greater than 9).">
               <image mime-type="image/png" src="../../media/CNX_Stats_C05_M03_item002anno.png"/>
             </media>
           </figure>
@@ -785,7 +785,7 @@
             <list id="element-420" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph of the probability distribution.
               <figure class="scaled-down" id="element-123987">
-                <media id="id7261010" alt="This is a blank graph template. The vertical and horizontal axes are unlabeled.">
+                <media id="id7261010" alt="Blank graph template for sketching the probability distribution: a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_01.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -818,7 +818,7 @@
             <list id="element-42230" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph, and shade the area of interest.
               <figure class="scaled-down" id="element-12987">
-                <media id="id13706334" alt="Blank graph with vertical and horizontal axes.">
+                <media id="id13706334" alt="Blank graph template for sketching the probability distribution: a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_02.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -833,7 +833,7 @@
             <list id="element-40030" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph, shade the area of interest.
               <figure class="scaled-down" id="element-10987">
-                <media id="id15551200" alt="This is a blank graph template. The vertical and horizontal axes are unlabeled.">
+                <media id="id15551200" alt="Blank graph template for sketching the graph and shading the area for P(x less than 4): a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_02.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -861,7 +861,7 @@
             <list id="element-09898" list-type="enumerated" number-style="lower-alpha">
             <item>Sketch the graph, and shade the area of interest.
               <figure class="scaled-down" id="element-101987">
-                <media id="id11206333" alt="Blank graph with vertical and horizontal axes.">
+                <media id="id11206333" alt="Blank graph template for sketching the graph and shading the area for P(x less than 4 given x less than 7.5): a vertical axis and a horizontal axis with no labels, scale or values.">
                   <image src="../../media/fig-ch05_06_02.png" mime-type="image/png"/>
                 </media>
               </figure>
@@ -1084,14 +1084,14 @@
             <list id="fs-idp30733728" list-type="enumerated" number-style="lower-alpha">
             <item>The probability density function of <m:math><m:mi>X</m:mi></m:math> is <m:math><m:mrow><m:mfrac><m:mn>1</m:mn><m:mrow><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>16</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow></m:math>. <newline/><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mn>19</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>25</m:mn><m:mo>−</m:mo><m:mn>19</m:mn><m:mo>)</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>6</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>2</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>.
               <figure class="scaled-down" id="fs-idp56920896">
-                <media id="fs-idp56921152" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (16, 1/9) to the point (25, 1/9). Vertical lines extend from the x-axis to the graph at x = 16 and x = 25 creating a rectangle. A region is shaded inside the rectangle from x = 19 to x = 25. Text notes that the shaded area represents P(x &gt; 19) = 2/3.">
+                <media id="fs-idp56921152" alt="Uniform distribution graph of daily stock value: vertical axis f(x) with 1/9 marked, horizontal axis x ($) marked from 14 to 26 in steps of 2. A rectangle of height 1/9 spans x = 16 to x = 25, and the region from x = 19 to x = 25 is shaded, with the note: Shaded area represents P(x greater than 19) = 2/3.">
                   <image src="../../media/CNX_Stats_C05_RWP_001.png" mime-type="image/png"/>
                 </media>
               </figure>
             </item>
             <item><m:math><m:mi>P</m:mi><m:mo>(</m:mo><m:mn>19</m:mn><m:mo>&lt;</m:mo><m:mi>X</m:mi><m:mo>&lt;</m:mo><m:mn>22</m:mn><m:mo>)</m:mo><m:mo>=</m:mo><m:mo>(</m:mo><m:mn>22</m:mn><m:mo>−</m:mo><m:mn>19</m:mn><m:mo>)</m:mo><m:mrow><m:mrow><m:mo>(</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>)</m:mo></m:mrow></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>3</m:mn><m:mn>9</m:mn></m:mfrac></m:mrow><m:mo>=</m:mo><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>3</m:mn></m:mfrac></m:mrow></m:math>.
               <figure class="scaled-down" id="fs-idp47544128">
-                <media id="fs-idp47544384" alt="This shows the graph of the function f(x) = 1/9, the pdf for a uniform distribution. A horizontal line ranges from the point (16, 1/9) to the point (25, 1/9). Vertical lines extend from the x-axis to the graph at x = 16 and x = 25 creating a rectangle. A region is shaded inside the rectangle from x = 19 to x = 22. Text notes that the shaded area represents P(19&lt; x &lt; 22) = 1/3.">
+                <media id="fs-idp47544384" alt="Uniform distribution graph of daily stock value: vertical axis f(x) with 1/9 marked, horizontal axis x ($) marked from 14 to 26 in steps of 2. A rectangle of height 1/9 spans x = 16 to x = 25, and the region from x = 19 to x = 22 is shaded, with the note: Shaded area represents P(19 less than x less than 22) = 1/3.">
                   <image mime-type="image/png" src="../../media/CNX_Stats_C05_RWP_002.png"/>
                 </media>
               </figure>

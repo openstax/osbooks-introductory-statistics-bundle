@@ -42,7 +42,7 @@
       <para id="element-847">The <m:math><m:mi>IQR</m:mi></m:math> can help to determine potential <emphasis>outliers</emphasis>. <emphasis>A value is suspected to be a potential outlier if it is (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) below the first quartile or (1.5)(<m:math><m:mstyle mathvariant="bold"><m:mi>IQR</m:mi></m:mstyle></m:math>) above the third quartile</emphasis>. We could imagine this visually with a box plot like this:
         <figure id="fig-00001">
           <title>Identifying Outliers with the IQR</title>
-          <media alt="A diagram of a horizontal box plot over a number line showing how the IQR identifies outliers. A box labeled Interquartile Range (middle 50%) spans from Q1 to Q3 with a dashed line at Q2, the median, and brackets above show IQR = Q3 minus Q1. Whiskers extend 1.5 IQR below Q1 to the lower fence, Q1 minus 1.5 IQR, and 1.5 IQR above Q3 to the upper fence, Q3 plus 1.5 IQR. Typical data points appear as dots between the fences, while shaded regions beyond each fence are labeled Outlier Zone and contain outlier data points.">
+          <media alt="Diagram of a horizontal box plot above a number line showing how the IQR identifies outliers. The box, labeled Interquartile Range (middle 50%), spans from Q1 to Q3 with a dashed line at Q2 (median); a bracket above it reads IQR = Q3 minus Q1. Brackets labeled 1.5 IQR extend from Q1 left to the lower fence, Q1 minus 1.5 IQR, and from Q3 right to the upper fence, Q3 plus 1.5 IQR. Typical data points (blue dots) lie between the fences; shaded regions beyond each fence are labeled Outlier Zone and contain outlier data points (red dots).">
             <image src="../../media/fig-ch02_IQR.png" mime-type="image/png"/>
           </media>
           <caption>A value is an outlier if it falls below <m:math><m:mrow><m:mtext>Q</m:mtext><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mtext>IQR</m:mtext></m:mrow></m:math> or above <m:math><m:mrow><m:mtext>Q</m:mtext><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>1.5</m:mn><m:mo>⋅</m:mo><m:mtext>IQR</m:mtext></m:mrow></m:math></caption>
@@ -877,7 +877,7 @@
         <problem id="id3500598">
           <para id="element-209">Given the following box plot:</para>
               <figure class="scaled-down" id="fs-idm476896">
-              <media id="id4775287" alt="This is a horizontal boxplot graphed over a number line from 0 to 13. The first whisker extends from the smallest value, 0, to the first quartile, 2. The box begins at the first quartile and extends to third quartile, 12. A vertical, dashed line is drawn at median, 10. The second whisker extends from the third quartile to largest value, 13.">
+              <media id="id4775287" alt="Horizontal box plot over a number line marked 0, 2, 10, 12, and 13. The left whisker runs from the minimum, 0, to Q1, 2; the box spans from 2 to Q3, 12, with a dashed median line at 10; the right whisker runs from 12 to the maximum, 13.">
               <image src="../../media/fig-ch02_13_02.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -902,7 +902,7 @@
         <problem id="id3912087">
           <para id="element-874">The following box plot shows the U.S. population for a certain year.</para>
               <figure class="scaled-down" id="fs-idm132205520">
-              <media id="id7587202" alt="A box plot with values from 0 to 105, with Q1 at 17, M at 33, and Q3 at 50.">
+              <media id="id7587202" alt="Horizontal box plot of U.S. population ages over a number line marked 0, 17, 33, 50, and approximately 105. The left whisker runs from 0 to Q1, 17; the box spans from 17 to Q3, 50, with a dashed median line at 33; the long right whisker runs from 50 to a maximum of approximately 105.">
               <image src="../../media/fig-ch02_13_08.png" mime-type="image/png"/>
             </media>
           </figure>

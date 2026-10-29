@@ -29,7 +29,7 @@
             <para id="element-129853">Graph the scatterplot with the best-fit line in equation Y1, then enter the two extra lines as Y2 and Y3 in the "Y="equation editor and press ZOOM 9. You will find that the only data point that is not between lines Y2 and Y3 is the point <m:math><m:mi>x</m:mi><m:mo>=</m:mo><m:mn>65</m:mn></m:math>, <m:math><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>175</m:mn></m:math>. On the calculator screen it is just barely outside these lines. The outlier is the student who had a grade of 65 on the third exam and 175 on the final exam; this point is further than two standard deviations away from the best-fit line.</para>
             <para id="element-664">Sometimes a point is so close to the lines used to flag outliers on the graph that it is difficult to tell if the point is between or outside the lines.  On a computer, enlarging the graph may help;  on a small calculator screen, zooming in may make the graph clearer.  Note that when the graph does not give a clear enough picture, you can use the numerical comparisons to identify outliers. </para>
             <figure class="scaled-down" id="eip-idp140675136">
-              <media id="id1170917557779" alt="The scatter plot of exam scores with a line of best fit.Two yellow dashed lines run parallel to the line of best fit. The dashed lines run above and below the best fit line at equal distances. One data point falls outside the boundary created by the dashed lines—it is an outlier.">
+              <media id="id1170917557779" alt="Scatter plot of third exam score (x-axis, 64 to 76) and final exam score (y-axis, 100 to 240) with the line of best fit and two dashed lines parallel to it, one about 2 standard deviations (about 33 points) above and one the same distance below. All points lie between the dashed lines except (65, 175), labeled Outlier, which lies just above the upper dashed line.">
                 <image src="../../media/fig-ch12_09_01.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -43,7 +43,7 @@
           <problem id="eip-801">
             <para id="eip-145">Identify the potential outlier in the scatter plot. The standard deviation of the residuals or errors is approximately 8.6.</para>
             <figure class="scaled-down" id="fs-idp117757200">
-              <media id="eip-idp189014800" alt="Scatter plot with a linear regression line and an outlier." display="block">
+              <media id="eip-idp189014800" alt="Scatter plot with x from 0 to 14 and y from 0 to 100 and an upward-sloping line of best fit from about (0, 70) toward (14, 101). Points at x = 0 through 10 lie close to the line, rising from 68 to 96, except the point (6, 58), which lies far below the line." display="block">
                 <image mime-type="image/png" src="../../media/CNX_Stats_C012_M09_item001.png"/>
               </media>
             </figure>
@@ -340,8 +340,8 @@
           <item><m:math><m:mi>ŷ</m:mi><m:mo>=</m:mo><m:mo>−</m:mo><m:mn>3204</m:mn><m:mo>+</m:mo><m:mn>1.662</m:mn><m:mi>x</m:mi></m:math> is the equation of the line of best fit.</item>
           <item>See figure.
 <figure id="fig-00001">
-<media alt="Scatter plot of the consumer price index data with the least-squares regression line drawn through the data points.">
-<image src="../../media/CNX_Stats_C12_M07_partc.png" mime-type="image/png"/>
+<media alt="Scatter plot of the consumer price index (y-axis) against year (x-axis) for 14 years from 1915 to 1999, with the least-squares line y-hat = −3204 + 1.662x. CPI values stay between about 10 and 37 from 1915 to 1969, then rise steeply to 49.3 in 1975, 82.4 in 1980, 130.7 in 1991, and 166.6 in 1999. The line runs below the points before about 1945, above the points from about 1950 to 1980, and below the points from about 1985 on.">
+<image src="../../media/IS_Figure_12_06_001.png" mime-type="image/png"/>
 </media>
 </figure></item>
           <item><m:math><m:mi>r</m:mi><m:mo>=</m:mo><m:mn>0.8694</m:mn></m:math><newline/>The number of data points is <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>14</m:mn></m:math>. Use the 95% Critical Values of the Sample Correlation Coefficient table at the end of Chapter 12. <m:math><m:mi>n</m:mi><m:mo>−</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:math>. The corresponding critical value is 0.532. Since 0.8694 > 0.532, <m:math><m:mi>r</m:mi></m:math> is significant.</item>
@@ -349,7 +349,7 @@
           <item>Using the calculator LinRegTTest, we find that <m:math><m:mi>s</m:mi><m:mo>=</m:mo><m:mn>25.4</m:mn></m:math> ; graphing the lines Y2 = –3204 + 1.662X – 2(25.4) and Y3 = –3204 + 1.662X + 2(25.4) shows that no data values are outside those lines, identifying no outliers. (Note that the year 1999 was very close to the upper line, but still inside it.)</item>
         </list>
         <figure class="scaled-down" id="eip-idp35936320">
-                <media id="id1171151867848" alt="Scatter plot and line of best fit of the consumer price index data, on the y-axis, and year data, on the x-axis.">
+                <media id="id1171151867848" alt="Scatter plot of the consumer price index (y-axis) against year (x-axis) for 14 years from 1915 to 1999, with the line of best fit y-hat = −3204 + 1.662x. CPI values stay between about 10 and 37 from 1915 to 1969, then rise steeply to 166.6 in 1999. No point lies more than 2s = 50.8 from the line; the 1999 point comes closest to that limit.">
                 <image src="../../media/fig-ch12_09_02.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -618,7 +618,7 @@
     <section id="eip-319" class="practice">
       <para id="eip-idm76852864"><emphasis effect="italics">Use the following information to answer the next four exercises.</emphasis> The scatter plot shows the relationship between hours spent studying and exam scores. The line shown is the calculated line of best fit. The correlation coefficient is 0.69.</para>
                 <figure class="scaled-down" id="fs-idp84808448">
-                <media id="eip-idm82947312" alt="Scatter plot with a linear regression line and an outlier." display="block">
+                <media id="eip-idm82947312" alt="Scatter plot of hours spent studying (x-axis, 0 to 14) and exam score (y-axis, 0 to 100) with an upward-sloping line of best fit from about (0, 70) toward (14, 101). Points at 0 through 10 hours lie close to the line, rising from 68 to 96, except the point (6, 58), which lies far below the line." display="block">
           <image mime-type="image/png" src="../../media/CNX_Stats_C012_M09_item001.png"/>
         </media>
       </figure>
@@ -1805,7 +1805,7 @@
         <item>Graph “distance” vs. “cost.” Plot the points on the graph. Label both axes with
           words. Scale both axes.
           <figure class="scaled-down" id="id6749459">
-            <media id="id6749463" alt="Blank graph with vertical and horizontal axes.">
+            <media id="id6749463" alt="Blank graph template for plotting distance from school and cost of supplies: a vertical axis and a horizontal axis with no labels, scales, or values.">
               <image src="../../media/fig-ch12_12_01.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -1831,7 +1831,7 @@
         </item>
         <item>Obtain the graph on your calculator or computer. Sketch the regression line.
           <figure class="scaled-down" id="id6749694">
-            <media id="id6749698" alt="Blank graph with vertical and horizontal axes.">
+            <media id="id6749698" alt="Blank graph template for plotting distance from campus and cost of supplies with the regression line: a vertical axis and a horizontal axis with no labels, scales, or values.">
               <image src="../../media/fig-ch12_14_02.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -1939,7 +1939,7 @@
         </item>
         <item>Obtain the graph on your calculator or computer. Sketch the regression line.
           <figure class="scaled-down" id="id19863024">
-            <media id="id20268459" alt="Blank graph with vertical and horizontal axes.">
+            <media id="id20268459" alt="Blank graph template for plotting textbook pages and cost: a vertical axis and a horizontal axis with no labels, scales, or values.">
               <image src="../../media/fig-ch12_15_01.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -2071,7 +2071,7 @@
         <item>By hand, do a scatterplot of “weight” vs. “fuel efficiency”. Plot the points on graph paper.
           Label both axes with words. Scale both axes accurately.
           <figure class="scaled-down" id="id21784687">
-            <media id="id21784693" alt="Blank graph with vertical and horizontal axes.">
+            <media id="id21784693" alt="Blank graph template for plotting car weight and fuel efficiency: a vertical axis and a horizontal axis with no labels, scales, or values.">
               <image src="../../media/fig-ch12_16_01.png" mime-type="image/png"/>
             </media>
           </figure>

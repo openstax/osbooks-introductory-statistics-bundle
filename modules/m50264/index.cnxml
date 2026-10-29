@@ -9,32 +9,32 @@
   <content>
     <para id="para-00001">In the previous chapter, we discussed the binomial distribution. Recall that the binomial distribution is used for discrete data and probabilities. Below are a few examples of potential binomial distributions:</para>
     <figure id="fig-00001">
-      <media alt="Several binomial distributions shown as bar graphs of discrete probabilities.">
-        <image src="../../media/CNX_Stats_C06_6-4_img1.png" mime-type="image/png"/>
+      <media alt="Three bar graphs of binomial distributions with n = 40, each with a horizontal axis of number of successes (k) from 0 to 40. The first, titled Symmetric, p = 0.50, is bell-shaped and centered at 20. The second, titled Mostly symmetric, p = 0.25, peaks near 10. The third, titled Right-skewed, p = 0.15, peaks near 6 and has a longer right tail.">
+        <image src="../../media/IS_Figure_06_04_001.png" mime-type="image/png"/>
       </media>
     </figure>
     <para id="para-00002">Recall that these distributions are <emphasis>not histograms</emphasis>, but distributions for discrete probabilities. However, it can be easily seen that these distributions do seem to mimic a bell-curve shape:</para>
     <figure id="fig-00002">
-      <media alt="The same binomial distributions with a bell-shaped curve overlaid, showing their resemblance to the normal distribution.">
-        <image src="../../media/CNX_Stats_C06_6-4_img2.png" mime-type="image/png"/>
+      <media alt="The same three binomial bar graphs with n = 40 (Symmetric, p = 0.50; Mostly symmetric, p = 0.25; Right-skewed, p = 0.15), each with a red bell-shaped curve overlaid. The curves closely trace the tops of the bars, showing that each distribution resembles a normal curve.">
+        <image src="../../media/IS_Figure_06_04_002.png" mime-type="image/png"/>
       </media>
     </figure>
     <para id="para-00003">The normal distribution can indeed be used for estimates of the binomial distribution, where calculations such as <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>&gt;</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math> can be visualized in the figures below:</para>
     <figure id="fig-00003">
-      <media alt="A binomial distribution with a normal curve overlaid and the area for x greater than X shaded.">
-        <image src="../../media/CNX_Stats_C06_6-4_img3.png" mime-type="image/png"/>
+      <media alt="Two histograms of number of successes (k) connected by an arrow labeled Normal distribution approximation. The left histogram, titled Binomial: P(X greater than x), has a dashed line at x just below 25, and the bars to its right are shaded dark and labeled P(X greater than x). The right histogram, titled Normal approximation, shows the same bars with a red normal curve overlaid; the area under the curve to the right of x is labeled normal area approximately equal to P(X greater than x).">
+        <image src="../../media/IS_Figure_06_04_003.png" mime-type="image/png"/>
       </media>
     </figure>
     <para id="para-00004">We find that the normal distribution makes particularly accurate estimates of a binomial process under certain circumstances. <link target-id="eip-3e-fig-6-10"/> is a frequency distribution of a binomial process for the experiment of flipping three coins where the random variable is the number of heads. The sample space is listed below the distribution. The experiment assumed that the probability of a success is 0.5; the probability of a failure, a tail, is thus also 0.5. In observing <link target-id="eip-3e-fig-6-10"/> we are struck by the fact that the distribution is symmetrical. The root of this result is that the probabilities of success and failure are the same, 0.5. If the probability of success were smaller than 0.5, the distribution becomes skewed right. Indeed, as the probability of success diminishes, the degree of skewness increases. If the probability of success increases from 0.5, then the skewness increases in the lower tail, resulting in a left-skewed distribution.</para>
     <figure id="eip-3e-fig-6-10">
-      <media alt="A histogram of the frequency distribution of flipping three coins where x is the number of heads. Bars at 0, 1, 2, 3 have heights 1/8, 3/8, 3/8, 1/8. Below the histogram is the sample space set s = {HHH, HHT, HTH, THH, TTT, TTH, THT, HTT}.">
-        <image src="../../media/CNX_Stats_C06_6-4_img4.png" mime-type="image/png"/>
+      <media alt="Histogram of the probability distribution for flipping three coins, with x = Number of Heads on the horizontal axis and Probability on the vertical axis. Bars at 0, 1, 2, and 3 have heights 1/8, 3/8, 3/8, and 1/8, so the distribution is symmetric.">
+        <image src="../../media/IS_Figure_06_04_004.png" mime-type="image/png"/>
       </media>
     </figure>
     <para id="para-00005">The reason the skewness of the binomial distribution is important is because if it is to be estimated with a normal distribution, then we need to recognize that the normal distribution is symmetrical. The closer the underlying binomial distribution is to being symmetrical, the better the estimate that is produced by the normal distribution. <link target-id="eip-3e-fig-6-11"/> shows a symmetrical normal distribution transposed on a graph of a binomial distribution where <m:math><m:mrow><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>5</m:mn></m:mrow></m:math>. The discrepancy between the estimated probability using a normal distribution and the probability of the original binomial distribution is apparent.</para>
     <figure id="eip-3e-fig-6-11">
-      <media alt="A histogram of a binomial distribution with p = 0.2 and n = 5, with bar heights 0.3277, 0.4096, 0.2048, 0.0512, 0.0064, 0.0003 at 0 through 5, and a normal curve with mean 1 superimposed.">
-        <image src="../../media/CNX_Stats_C06_6-4_img5.png" mime-type="image/png"/>
+      <media alt="Histogram of a binomial distribution with n = 5 and p = 0.2, with Number of Heads (x) on the horizontal axis and P(x) from 0 to 0.5 on the vertical axis. Bar heights at 0 through 5 are 0.3277, 0.4096, 0.2048, 0.0512, 0.0064, and 0.0003, and the mean, mu = 1, is marked. A symmetric normal curve is drawn over the bars; it does not fit the right-skewed bars well, especially at 0 and in the right tail.">
+        <image src="../../media/IBS2e_Figure_04_00_005.png" mime-type="image/png"/>
       </media>
     </figure>
     <section id="sect-00001">
@@ -63,8 +63,8 @@
         <solution id="sol-00001">
           <para id="para-00010">a. Using <m:math><m:mrow><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>100</m:mn><m:mo>,</m:mo><m:mn>0.10</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math>, we find the <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>≥</m:mo><m:mn>16</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.0399</m:mn></m:mrow></m:math></para>
           <figure id="fig-00004">
-            <media alt="A binomial distribution for the Australian Shepherd example with the area for 16 or more successes shaded.">
-              <image src="../../media/CNX_Stats_C06_6-4_img6.png" mime-type="image/png"/>
+            <media alt="Histogram titled Australian Shepherd puppies: X is distributed as B(100, 0.10), with number of puppies with perfect symmetry (k) from 0 to 25 on the horizontal axis. The bars peak near 10. A dashed line just below 16 separates the right-tail bars from 16 to 20, which are shaded dark, and an arrow labels that area P(X greater than or equal to 16) = 0.0399.">
+              <image src="../../media/IS_Figure_06_04_006.png" mime-type="image/png"/>
             </media>
           </figure>
           <para id="para-00011">b. First we check that:</para>
@@ -77,8 +77,8 @@
           <para id="para-00012">The criteria to use the normal distribution have been met.</para>
           <para id="para-00013"><link target-id="eip-3e-fig-6-12"/> below shows the binomial distribution and marks the area we wish to know. The mean of the binomial, 10, is also marked, and the standard deviation is written on the side of the graph: <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>3</m:mn></m:mrow></m:math>. We will use <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>10</m:mn><m:mo>,</m:mo><m:mn>3</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to estimate this situation. The area under the distribution from zero to 16 is the probability requested, and has been shaded in. Below the binomial distribution is a normal distribution to be used to estimate this probability. That probability has also been shaded.</para>
           <figure id="eip-3e-fig-6-12">
-            <media alt="A histogram of a binomial distribution with p = 0.1 and n = 100, with bars greater than 16 shaded; below it a normal curve with mean 10 has the area for x greater than 16 shaded, with the z-score calculation z = (16 − 10)/3 = 2 shown.">
-              <image src="../../media/CNX_Stats_C06_6-4_img7.png" mime-type="image/png"/>
+            <media alt="Two stacked graphs. The top is a histogram of a binomial distribution with n = 100 and p = 0.10, with Number of Successes (x) from 0 to 25 on the horizontal axis, P(x) from 0 to 0.14 on the vertical axis, and the mean marked as mu = 10. The note sigma = square root of npq = 3 appears at right. Bars for 16 and above are shaded dark. Below it, a normal curve on a z-axis has dashed lines that line up with the mean, 10, and with 16, and the area to the right of 16 is shaded, corresponding to z = (16 minus 10) divided by 3 = 2.">
+              <image src="../../media/IS_Figure_06_04_007.png" mime-type="image/png"/>
             </media>
           </figure>
           <para id="para-00014">Standardizing from the binomial to the normal distribution as done in the past shows where we are asking for the probability from 16 to positive infinity, or 100 in this case. We need to calculate the number of standard deviations 16 is away from the mean: 10.</para>
@@ -122,8 +122,8 @@
           </equation>
           <para id="para-00026">Both criteria are met. We see that <m:math><m:mrow><m:mi>μ</m:mi><m:mo>=</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>8.2</m:mn></m:mrow></m:math> and <m:math><m:mrow><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo>=</m:mo><m:msqrt><m:mrow><m:mn>20</m:mn><m:mo>⋅</m:mo><m:mn>0.41</m:mn><m:mo>⋅</m:mo><m:mn>0.59</m:mn></m:mrow></m:msqrt><m:mo>=</m:mo><m:mn>2.2</m:mn></m:mrow></m:math>, so we will use the normal distribution <m:math><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>8.2</m:mn><m:mo>,</m:mo><m:mn>2.2</m:mn><m:mo stretchy="false">)</m:mo></m:mrow></m:math> to estimate this situation.</para>
           <figure id="fig-00005">
-            <media alt="A binomial distribution with n = 20 and p = 0.41 with a normal curve N(8.2, 2.2) overlaid and the area for x at most 12 shaded.">
-              <image src="../../media/CNX_Stats_C06_6-4_img8.png" mime-type="image/png"/>
+            <media alt="Graph titled Normal approximation to X is distributed as B(20, 0.41), N(8.2, 2.2). A histogram of number of workers (k) from 0 to 15 has bars peaking near 8, and a red normal curve is overlaid. The bars and the area under the curve to the left of the cutoff for 12 are shaded, and an arrow labels the shaded area P(X less than or equal to 12) approximately equal to 0.9579.">
+              <image src="../../media/IS_Figure_06_04_008.png" mime-type="image/png"/>
             </media>
           </figure>
           <para id="para-00027">In this case, we find that <m:math><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>≤</m:mo><m:mn>12</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.9579</m:mn></m:mrow></m:math> using the normal distribution. Again, for now we note there is a discrepancy between the probabilities that will be resolved later.</para>
@@ -481,7 +481,7 @@
           </item>
           <item>Construct a histogram. Make five to six intervals. Sketch the graph using a ruler and pencil. Scale the axes.
             <figure class="scaled-down" id="fig045324">
-              <media id="id7826845" alt="Blank graph with relative frequency on the vertical axis and lap time on the horizontal axis.">
+              <media id="id7826845" alt="Blank graph template with Frequency on the vertical axis and Lap time on the horizontal axis, with no scales or data.">
                 <image src="../../media/fig-ch06_10_01.png" mime-type="image/png"/>
               </media>
             </figure>
@@ -584,7 +584,7 @@
           </item>
           <item> Construct a histogram. Make five to six intervals. Sketch the graph using a ruler and pencil. Scale the axes.
             <figure class="scaled-down" id="eip-idp99193136">
-              <media id="id5490004" alt="Blank graph with frequency on the vertical axis and length of finger on the horizontal axis.">
+              <media id="id5490004" alt="Blank graph template with Frequency on the vertical axis and Length of Finger on the horizontal axis, with no scales or data.">
                 <image src="../../media/fig-ch06_11_01.png" mime-type="image/png"/>
               </media>
             </figure>

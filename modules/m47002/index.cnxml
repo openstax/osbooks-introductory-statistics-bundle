@@ -29,8 +29,8 @@
       <para id="para-00008">The margin of error (<m:math><m:mtext>EBM</m:mtext></m:math>) depends on the <term id="term-00002">confidence level</term> (abbreviated <m:math><m:mtext>CL</m:mtext></m:math>) and the probability <emphasis>alpha</emphasis> (<m:math><m:mi>α</m:mi></m:math>). The confidence level is often considered the probability that the calculated confidence interval estimate will contain the true population parameter. However, it is more accurate to state that the confidence level is the percent of confidence intervals that contain the true population parameter when repeated samples are taken. Most often, it is the choice of the person constructing the confidence interval to choose a confidence level of 90% or higher because that person wants to be reasonably certain of their conclusions. Alpha (<m:math><m:mi>α</m:mi></m:math>) is related to the confidence level, <m:math><m:mtext>CL</m:mtext></m:math>. <m:math><m:mi>α</m:mi></m:math> is the probability that the interval does not contain the unknown population parameter.<newline/>Mathematically, <m:math><m:mi>α</m:mi><m:mo>+</m:mo><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>1</m:mn></m:math>.</para>
       <para id="para-00009">A confidence interval includes the central percentage of the confidence level of the normal distribution. For instance, a 90% confidence interval includes the central 90% of the probability of the normal distribution, and relatedly: <m:math><m:mi>α</m:mi><m:mo>=</m:mo><m:mn>1</m:mn><m:mo>−</m:mo><m:mn>0.90</m:mn><m:mo>=</m:mo><m:mn>0.10</m:mn><m:mo>.</m:mo></m:math> Alpha refers to the probability that a confidence interval does not contain the unknown population parameter, and it is split evenly between the tails of the normal distribution. We can visualize this situation with the following figure:</para>
       <figure id="fig-00001">
-        <media alt="A normal distribution in which the central region, equal to the confidence level, is shaded, and each of the two tails has an area equal to alpha divided by 2.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-1_img1.png"/>
+        <media alt="Two stacked normal curves for a 90% confidence interval. Top, the sampling distribution of x-bar: the shaded central area is 0.90, centered at x-bar, with endpoints x-bar minus EBM and x-bar plus EBM; EBM is the distance from x-bar to either endpoint, and each unshaded tail has area alpha over 2 = 0.05. Bottom, the standard normal curve on a z axis: the same central area 0.90 centered at 0, with endpoints labeled ? = negative z sub alpha over 2 and ? = z sub alpha over 2, and each tail area alpha over 2 = 0.05. Dashed lines connect the endpoints of the two curves.">
+          <image mime-type="image/png" src="../../media/IS_Figure_08_01_001b.png"/>
         </media>
       </figure>
       <para id="para-00010">A confidence interval is describing the endpoints of this desired area. The margin of error says how many standard errors of the mean the interval extends above and below the sample mean.</para>
@@ -51,8 +51,8 @@
       <para id="para-00017">If the confidence level (<m:math><m:mtext>CL</m:mtext></m:math>) is 95%, then we say that, “We estimate with 95% confidence that the true value of the population mean is between 4.5 and 9.5.”</para>
       <para id="para-00018">The figure below shows a way to visualize this confidence interval:</para>
       <figure id="fig-00002">
-        <media alt="A normal distribution centered at the point estimate 7, with the confidence interval from 4.5 to 9.5 marked, extending one error bound of 2.5 on each side of the mean.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-1_img2.png"/>
+        <media alt="Normal curve, the sampling distribution of x-bar, with x-bar = 7 and EBM = 2.5. The shaded confidence interval runs from 4.5 (x-bar minus EBM) to 9.5 (x-bar plus EBM), centered at 7 (x-bar), with an arrow of EBM = 2.5 on each side of the center.">
+          <image mime-type="image/png" src="../../media/IS_Figure_08_01_002.png"/>
         </media>
       </figure>
     </example>
@@ -135,8 +135,8 @@
       <para id="para-00038">We interpret this as: We estimate with 90% confidence that the true population mean (include the context of the problem) is between 9.013 and 10.987.</para>
       <para id="para-00039">We can visualize this situation with the figure:</para>
       <figure id="fig-00003">
-        <media alt="A normal distribution centered at the sample mean 10, showing the 90% confidence interval extending from 9.013 to 10.987, one error bound of 0.987 on each side of the mean.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-1_img4.png"/>
+        <media alt="Two stacked normal curves for a 90% confidence interval with x-bar = 10 and sigma sub x-bar = sigma over square root of n = 3 over square root of 25 = 0.6. Top, the sampling distribution of x-bar: shaded central area 0.90 from 9.013 to 10.987, centered at 10, with EBM = 0.987 and each tail area alpha over 2 = 0.05. Bottom, the standard normal curve on a z axis: central area 0.90 from negative 1.645 to 1.645, centered at 0, with z sub alpha over 2 = 1.645 and each tail area alpha over 2 = 0.05.">
+          <image mime-type="image/png" src="../../media/IS_Figure_08_01_003.png"/>
         </media>
       </figure>
     </section>
@@ -160,7 +160,7 @@
             <item>The second solution uses the TI-83, 83+, and 84+ calculators.</item>
           </list>
           <figure id="fs-c8-fig-8-3">
-            <media alt="A figure showing a 90% confidence interval with two normal distributions. The top shows the sample mean x-bar from 67.18 to 68.82 centered at 68. The bottom shows z-scores of plus and minus 1.645 defining the 90% central area, with each tail equal to alpha/2 = 0.05.">
+            <media alt="Two stacked normal curves for the 90% confidence interval of the exam-score example. Top, the x-bar axis is centered at 68 with dashed lines at the interval endpoints 67.18 and 68.82, labeled Confidence Level = 90%. Bottom, the standard normal z axis: shaded central area 0.90 from negative 1.645 to 1.645, centered at 0, with each tail area alpha over 2 = 0.05.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-1_img5.png"/>
             </media>
           </figure>
@@ -275,7 +275,7 @@
           </equation>
           <para id="para-00059">Next, find the <m:math><m:mtext>EBM</m:mtext></m:math>. Because you are creating a 98% confidence interval, <m:math><m:mtext>CL</m:mtext><m:mo>=</m:mo><m:mn>0.98</m:mn></m:math>.</para>
           <figure id="fig-00004">
-            <media alt="A standard normal distribution curve. The point z sub 0.01 is labeled at the right edge of the curve and the region to the right of this point is shaded, with area 0.01. The unshaded area equals 0.99.">
+            <media alt="Normal curve for a 98% confidence level, annotated alpha = 1 minus CL = 1 minus 0.98 = 0.02 and alpha over 2 = 0.01. A small right tail beyond z sub 0.01 is shaded and labeled area = 0.01; the area to the left of z sub 0.01 is labeled area = 0.99.">
               <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-1_img6.png"/>
             </media>
           </figure>
@@ -414,7 +414,7 @@
             <para id="para-00078">Explanation of 95% Confidence Level: Ninety-five percent of all confidence intervals constructed in this way contain the true value of the population mean statistics exam score.</para>
             <para id="para-00079">Comparing the results: The 90% confidence interval is (67.18, 68.82). The 95% confidence interval is (67.02, 68.98). The 95% confidence interval is wider. If you look at the graphs, because the area 0.95 is larger than the area 0.90, it makes sense that the 95% confidence interval is wider. To be more confident that the confidence interval actually does contain the true value of the population mean for all statistics exam scores, the confidence interval necessarily needs to be wider.</para>
             <figure id="fig-00005">
-              <media alt="A normal distribution diagram illustrating a 95% confidence interval. It shows critical z-values of plus and minus 1.96 and corresponding data points from 66.37 to 69.63 around a mean of 68 (x-bar).">
+              <media alt="Two stacked normal curves for the 95% confidence interval of the exam-score example. Top, the x-bar axis has x-bar = 68 at the center and dashed lines at the interval endpoints 67.02 and 68.98. Bottom, the standard normal z axis: shaded central area 0.95 from negative z sub 0.025 = negative 1.96 to z sub 0.025 = 1.96, centered at 0, with each tail area alpha over 2 = 0.025.">
                 <image mime-type="image/png" src="../../media/CNX_Stats_C08_8-1_img7.png"/>
               </media>
             </figure>
@@ -668,7 +668,7 @@
         <solution id="eip-819">
           <para id="eip-16">CI: (7.9441, 8.4559)</para>
           <figure class="scaled-down" id="eip-idm5552576">
-            <media id="eip-idm128260720" alt="This is a normal distribution curve. The peak of the curve coincides with the point 8.2 on the horizontal axis.  A central region is shaded between points 7.94 and 8.46.">
+            <media id="eip-idm128260720" alt="Normal curve labeled CL = 0.90 on an x-bar axis. The central region from 7.94 to 8.46 is shaded, centered at 8.2.">
               <image src="../../media/CNX_Stats_C08_M02_item002anno.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -744,7 +744,7 @@
         <solution id="eip-5">
           <para id="fs-idm25106704"><m:math><m:mtext>EBM</m:mtext><m:mo>=</m:mo><m:mn>0.07</m:mn></m:math><newline/>CI: (2.1264, 2.2736)</para>
           <figure class="scaled-down" id="fs-idp82050400">
-            <media id="eip-idp84209776" alt="This is a normal distribution curve. The peak of the curve coincides with the point 2.2 on the horizontal axis. A central region is shaded between points 2.13 and 2.27.">
+            <media id="eip-idp84209776" alt="Normal curve labeled CL = 0.90 on an x-bar axis. The central region from 2.13 to 2.27 is shaded, centered at 2.2.">
               <image src="../../media/CNX_Stats_C08_M02_item003anno.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -871,7 +871,7 @@
         <problem id="fs-idm6858032">
           <para id="eip-810">Fill in the blanks on the graph with the areas, upper and lower limits of the confidence interval, and the sample mean.</para>
           <figure class="scaled-down" id="five-0">
-            <media id="id27456676" alt="Normal distribution curve with two vertical upward lines from the x-axis to the curve. The confidence interval is between these two lines. The residual areas are on either side.">
+            <media id="id27456676" alt="Blank template of a normal curve on an x-bar axis for students to fill in. The central region is shaded, with blanks for C.L. = ___ above the curve, alpha over 2 = ___ beside each tail, and three blanks below the axis for the lower limit, the sample mean, and the upper limit.">
               <image src="../../media/fig-ch08_06_01.png" mime-type="image/png"/>
             </media>
           </figure>
@@ -943,7 +943,7 @@
                   <item>CI: (70.151, 71.849)</item>
                   <item>
                     <figure class="scaled-down" id="figure1234">
-                      <media id="m1" alt="A normal distribution curve with an area shaded between 70.15 and 71.85 on the x-axis, likely representing a confidence interval for a sample mean.">
+                      <media id="m1" alt="Normal curve on an x-bar axis with the central region shaded from 70.15 to 71.85; a tick marks the center of the interval.">
                         <image src="../../media/IBS2e_Figure_08_00_021.png" mime-type="image/png"/>
                       </media>
                     </figure>
@@ -1019,8 +1019,8 @@
                 <item>(22.449, 24.752)</item>
                 <item>
                   <figure class="scaled-down" id="eip-idp4235472">
-                    <media id="eip-id1706129a" alt="A normal distribution curve showing a shaded region between 22.449 and 24.752 on the x-axis (x-bar), likely representing a confidence interval for the mean.">
-                      <image src="../../media/IBS2e_Figure_08_00_022.png" mime-type="image/png"/>
+                    <media id="eip-id1706129a" alt="Normal curve on an x-bar axis with the central region shaded from 22.449 to 24.752; a tick marks the center of the interval.">
+                      <image src="../../media/IS_Figure_08_01_001.png" mime-type="image/png"/>
                     </media>
                   </figure>
                 </item>
@@ -1115,7 +1115,7 @@
                   <item>CI: (6.98, 8.82)</item>
                   <item>
                     <figure class="scaled-down" id="eip-id1169152005093">
-                      <media id="eip-id1169152053385" alt="A normal distribution curve with a shaded region between 6.98 and 8.82 on the x-axis, illustrating a probability or a confidence interval.">
+                      <media id="eip-id1169152053385" alt="Normal curve on an x-bar axis with the central region shaded from 6.98 to 8.82; a tick marks the center of the interval.">
                         <image src="../../media/CNX_Stats_C08_M01_item001.png" mime-type="image/png"/>
                       </media>
                     </figure>
