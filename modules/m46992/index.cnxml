@@ -33,30 +33,32 @@
         <item>The <m:math><m:mi>n</m:mi></m:math> trials are independent and are repeated using identical conditions.</item>
       </list>
       <para id="para-00008">For any binomial distribution, we can compute the probability of a number of successes within a set of outcomes. For instance, suppose we have a group of 15 voters (<m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math>). In a particular county, there is a 60% chance that any given voter will support Candidate A (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>,</m:mo><m:mtext/><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>0.40</m:mn></m:math>). As a binomial experiment, we would represent the binomial distribution as <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext/><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.6</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> With discrete probabilities, we can represent each probability with either a table or bar graph as shown in the next figure:</para>
-      <table class="unnumbered" summary="Probability distribution of X ~ B(15, 0.60), where X is the number of the 15 voters who support the candidate and p = 0.60. Each value of x from 0 to 15 is listed with its probability, which rises to a peak of 0.2066 at x = 9 and then falls; a bar graph of the same distribution is shown in the third column." id="table-00001">
-      <tgroup cols="3">
+      <table class="unnumbered top-titled" summary="Probability distribution of X ~ B(15, 0.60), where X is the number of the 15 voters who support the candidate and p = 0.60. Each value of x from 0 to 15 is listed with its probability, which rises to a peak of 0.2066 at x = 9 and then falls; a bar graph of the same distribution is shown beside the table. Values of x from 0 to 7 are in the first pair of columns and 8 to 15 in the second." id="table-00001">
+      <tgroup cols="5">
         <colspec colnum="1" colname="c1"/>
         <colspec colnum="2" colname="c2"/>
         <colspec colnum="3" colname="c3"/>
+        <colspec colnum="4" colname="c4"/>
+        <colspec colnum="5" colname="c5"/>
         <thead>
           <row>
-            <entry namest="c1" nameend="c3" align="center">Probability distribution of <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>0.60</m:mn><m:mo stretchy="false">)</m:mo></m:math><newline/><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> number of supporters out of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math> voters; <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn></m:math></entry>
+            <entry namest="c1" nameend="c5" align="center">Probability distribution of <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>0.60</m:mn><m:mo stretchy="false">)</m:mo></m:math><newline/><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> number of supporters out of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math> voters; <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn></m:math></entry>
           </row>
           <row>
-            <entry><m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the potential number of the 15 voters who support the candidate</entry>
-            <entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo></m:math> the probability that those <m:math><m:mi>x</m:mi></m:math> voters support the candidate</entry>
-            <entry morerows="1" align="center" valign="middle">The table can also be represented with a bar graph</entry>
-          </row>
-          <row>
-            <entry><m:math><m:mi>X</m:mi></m:math></entry>
+            <entry><m:math><m:mi>x</m:mi></m:math></entry>
             <entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
+            <entry><m:math><m:mi>x</m:mi></m:math></entry>
+            <entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
+            <entry align="center">The table can also be represented with a bar graph</entry>
           </row>
         </thead>
         <tbody>
           <row>
             <entry>0</entry>
             <entry>0.0000</entry>
-            <entry morerows="15" align="center" valign="middle">
+            <entry>8</entry>
+            <entry>0.1771</entry>
+            <entry morerows="7" align="center" valign="middle">
               <figure class="unnumbered" id="fig-00001">
                 <media alt="Bar graph of the probability distribution of X ~ B(15, 0.60), with x from 0 to 15 on the horizontal axis and P(X = x) on the vertical axis. The bars rise from almost 0 at x = 0 to a peak of about 0.21 at x = 9, then fall back to almost 0 at x = 15.">
                   <image mime-type="image/png" src="../../media/IS_Figure_07_03_001.png"/>
@@ -67,62 +69,47 @@
           <row>
             <entry>1</entry>
             <entry>0.0000</entry>
-          </row>
-          <row>
-            <entry>2</entry>
-            <entry>0.0003</entry>
-          </row>
-          <row>
-            <entry>3</entry>
-            <entry>0.0016</entry>
-          </row>
-          <row>
-            <entry>4</entry>
-            <entry>0.0074</entry>
-          </row>
-          <row>
-            <entry>5</entry>
-            <entry>0.0245</entry>
-          </row>
-          <row>
-            <entry>6</entry>
-            <entry>0.0612</entry>
-          </row>
-          <row>
-            <entry>7</entry>
-            <entry>0.1181</entry>
-          </row>
-          <row>
-            <entry>8</entry>
-            <entry>0.1771</entry>
-          </row>
-          <row>
             <entry>9</entry>
             <entry>0.2066</entry>
           </row>
           <row>
+            <entry>2</entry>
+            <entry>0.0003</entry>
             <entry>10</entry>
             <entry>0.1859</entry>
           </row>
           <row>
+            <entry>3</entry>
+            <entry>0.0016</entry>
             <entry>11</entry>
             <entry>0.1268</entry>
           </row>
           <row>
+            <entry>4</entry>
+            <entry>0.0074</entry>
             <entry>12</entry>
             <entry>0.0634</entry>
           </row>
           <row>
+            <entry>5</entry>
+            <entry>0.0245</entry>
             <entry>13</entry>
             <entry>0.0219</entry>
           </row>
           <row>
+            <entry>6</entry>
+            <entry>0.0612</entry>
             <entry>14</entry>
             <entry>0.0047</entry>
           </row>
           <row>
+            <entry>7</entry>
+            <entry>0.1181</entry>
             <entry>15</entry>
             <entry>0.0005</entry>
+          </row>
+          <row>
+            <entry namest="c1" nameend="c5" align="center"><m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the potential number of the 15 voters who support the candidate<newline/><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo></m:math> the probability that those <m:math><m:mi>x</m:mi></m:math> voters support the candidate</entry>
           </row>
         </tbody>
       </tgroup>
