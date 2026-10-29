@@ -59,7 +59,7 @@
             <entry>8</entry>
             <entry>0.1771</entry>
             <entry morerows="7" align="center" valign="middle">
-              <figure class="unnumbered" id="fig-00001">
+              <figure class="unnumbered scaled-down" id="fig-00001">
                 <media alt="Bar graph of P(X = x) for x from 0 to 15. Bars at 0 through 2 are essentially 0. The other heights are about 0.002 at 3, 0.007 at 4, 0.024 at 5, 0.061 at 6, 0.118 at 7, 0.177 at 8, 0.207 at 9 (the peak), 0.186 at 10, 0.127 at 11, 0.063 at 12, 0.022 at 13, 0.005 at 14, and about 0 at 15. The distribution is single-peaked and slightly skewed left.">
                   <image mime-type="image/png" src="../../media/IS_Figure_07_03_001.png"/>
                 </media>
@@ -115,7 +115,7 @@
       </tgroup>
     </table>
       <para id="para-00009">In Chapter 6, we discussed that when <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:math> the normal distribution can be used to approximate the binomial distribution. In this example, we see that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.6</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.4</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:math> so these criteria are met and we can easily visualize the normal distribution approximation for our bar graph in the next figure. Recall that when the normal distribution is used to approximate the binomial distribution, we can write that <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext/><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When this is used, we are typically doing problems that involve counting a number of successes. In this chapter, we are instead only interested in proportions. We can modify this distribution to solely take interest in proportions by dividing both parts inside the parentheses by <m:math><m:mi>n</m:mi></m:math>. This explains the new distribution used within the Central Limit Theorem for Proportions, namely <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext/><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. It is literally the same distribution divided by <m:math><m:mi>n</m:mi></m:math>.</para>
-      <figure id="fig-00002">
+      <figure class="scaled-down" id="fig-00002">
         <media alt="Graph titled Imposing the Normal curve on the bar graph. The bar graph of X is distributed as B(15, 0.60) shows P(X = x) for x from 0 to 15, peaking at about 0.21 at x = 9. A normal curve, X is distributed as N(9, 1.90), is drawn over the bars with a dashed line at its center, 9. The curve closely follows the tops of the bars.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_03_002.png"/>
         </media>
@@ -141,7 +141,7 @@
       </figure>
       <para id="para-00014">These data are all discrete, so it is not appropriate to represent them with a histogram. It is merely a visual of the yes or no responses.</para>
       <para id="para-00015">We return to our three researchers. From this population, each researcher randomly selects a sample of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>30</m:mn></m:math> students and asks them if they are graduating. Below are the responses that each received and the proportion of students within their survey that said yes, they are graduating:</para>
-      <figure id="fig-00004">
+      <figure class="scaled-down" id="fig-00004">
         <media alt="Graphic titled Step 1, Three researchers each survey 30 students. The subtitle reads: Each draws a sample of n = 30 students and records the proportion who say yes, the sample proportion p-prime. A key shows that colored dots mean yes, graduating and gray dots mean no, not graduating. Each researcher has a 5-by-6 grid of 30 dots. Researcher 1: 11 students said yes, p-prime = 11/30 = 0.37. Researcher 2: 12 students said yes, p-prime = 12/30 = 0.40. Researcher 3: 14 students said yes, p-prime = 14/30 = 0.47.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_03_004.png"/>
         </media>
@@ -441,7 +441,7 @@
 
 
       <para id="para-00020">Taking the 5,000 proportions that each researcher collected, we can create a new histogram:</para>
-      <figure id="fig-00008">
+      <figure class="scaled-down" id="fig-00008">
         <media alt="Histogram titled Histogram of 5,000 Sample Proportions, with a normal curve overlaid. The horizontal axis shows sample proportion p-prime from 0.1 to 0.7. The bars form a bell shape from about 0.15 to 0.70, peaking at a dashed line labeled mu sub p-prime = p = 0.42.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_03_008.png"/>
         </media>
@@ -493,14 +493,14 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00007">
             <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> = the proportion of the 300 surveyed students who say they live on campus.<newline/><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.33</m:mn><m:mo>·</m:mo><m:mn>0.67</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0271</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
             <item>Fewer than 142 students out of 300 translates to a proportion <m:math><m:msup><m:mi>p</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>142</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.4733</m:mn><m:mo>.</m:mo></m:math><newline/>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.33</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0271</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo></m:math> we have that <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&lt;</m:mo><m:mn>0.4733</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>≈</m:mo><m:mn>1</m:mn><m:mo>.</m:mo></m:math> It is almost certain that fewer than 142 of these students out of the 300 will live on campus.<newline/>
-              <figure id="fig-00011">
+              <figure class="scaled-down" id="fig-00011">
                 <media alt="Normal curve over a horizontal axis labeled P-prime (sample proportion who live on campus), with 0.250, 0.300, 0.330, 0.400, and 0.473 marked and the peak at 0.330. The entire area under the curve is shaded and labeled Area approximately 1.0000. An arrow points to 0.473, labeled P-prime = 0.473 (142 students), which lies beyond the right tail of the curve.">
                   <image mime-type="image/png" src="../../media/IS_Figure_07_03_011.png"/>
                 </media>
               </figure>
             </item>
             <item>We must translate 90 and 100 out of 300.<newline/><m:math><m:msubsup><m:mi>p</m:mi><m:mrow><m:mn>1</m:mn></m:mrow><m:mrow><m:mi>′</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>90</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.30</m:mn></m:math><newline/><m:math><m:msubsup><m:mi>p</m:mi><m:mrow><m:mn>2</m:mn></m:mrow><m:mrow><m:mi>′</m:mi></m:mrow></m:msubsup><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>100</m:mn></m:mrow><m:mrow><m:mn>300</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>0.3333</m:mn></m:math><newline/>In this case, we will compute <m:math><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.30</m:mn><m:mo>&lt;</m:mo><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>&lt;</m:mo><m:mn>0.3333</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.5489</m:mn><m:mo>−</m:mo><m:mn>0.1346</m:mn><m:mo>=</m:mo><m:mn>0.4143</m:mn><m:mo>.</m:mo></m:math> There is a 41.43% chance that between 90 and 100 students in the survey live on campus. <newline/>
-              <figure id="fig-00012">
+              <figure class="scaled-down" id="fig-00012">
                 <media alt="Normal curve over a horizontal axis labeled P-prime (sample proportion who live on campus), with 0.276, 0.300, 0.333, and 0.384 marked and the peak near 0.33. The area between vertical lines at 0.300 and 0.333 is shaded and labeled Area = 0.4143. Callouts mark 0.300 (90 students) and 0.333 (100 students).">
                   <image mime-type="image/png" src="../../media/IS_Figure_07_03_012.png"/>
                 </media>
@@ -537,14 +537,14 @@
           <list list-type="enumerated" number-style="lower-alpha" id="list-00010">
             <item><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is the sample proportion of free throws made out of the 40 sampled free throws.<newline/><m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mn>0.841</m:mn><m:mo>·</m:mo><m:mn>0.159</m:mn></m:mrow><m:mrow><m:mn>40</m:mn></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>N</m:mi><m:mo stretchy="false">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0578</m:mn><m:mo stretchy="false">)</m:mo></m:math></item>
             <item>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0578</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>,</m:mo><m:mtext/><m:mi>P</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup><m:mo>></m:mo><m:mn>0.85</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mn>0.4382</m:mn></m:math><newline/>
-              <figure id="fig-00013">
+              <figure class="scaled-down" id="fig-00013">
                 <media alt="Normal curve over a horizontal axis labeled P-prime (sample proportion of free throws made), with 0.725, 0.783, 0.850, 0.899, and 0.957 marked. The area to the right of a vertical line at 0.850 is shaded and labeled Area = 0.4382, and a callout reads P-prime = 0.85.">
                   <image mime-type="image/png" src="../../media/IS_Figure_07_03_013.png"/>
                 </media>
               </figure>
             </item>
             <item>Using <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>0.841</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.0578</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math> and invNorm, the 40<sup>th</sup> percentile of <m:math><m:msup><m:mi>P</m:mi><m:mrow><m:mi>′</m:mi></m:mrow></m:msup></m:math> is 0.826. This means that 40% of all random samples of 40 free throws will have a sample made-proportion of 0.826 (82.6%) or lower. In other words, 33 or fewer free throws are successfully made out of 40. The remaining 60% of samples exceed that proportion.<newline/>
-              <figure id="fig-00014">
+              <figure class="scaled-down" id="fig-00014">
                 <media alt="Normal curve over a horizontal axis labeled P-prime (sample proportion of free throws made), with 0.725, 0.783, 0.826, 0.899, and 0.957 marked. The area to the left of a vertical line at 0.826, just left of the peak, is shaded and labeled Area = 0.40. A callout reads 40th percentile, P-prime = 0.826.">
                   <image mime-type="image/png" src="../../media/IS_Figure_07_03_014.png"/>
                 </media>

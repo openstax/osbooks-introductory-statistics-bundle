@@ -43,7 +43,7 @@
     <section id="sect-00003">
       <title>Understanding the Central Limit Theorem</title>
       <para id="para-00009">We will use an example to see how the Central Limit Theorem works. Suppose ABC College has 50,000 students, and we have obtained the weights of every single student at the college. The histogram for these 50,000 data points can be viewed below:</para>
-      <figure id="fig-00002">
+      <figure class="scaled-down" id="fig-00002">
         <media alt="Histogram titled Histogram for a Population of 50,000 Students. The horizontal axis shows weight (lbs) from 0 to 300 and the vertical axis shows Number of Students from 0 to 2500. The bars form a symmetric bell shape with a normal curve overlaid, peaking at about 2,700 students at the dashed line labeled mu = 172. Labels read n = 50,000 and X is distributed as N(172, 40).">
           <image mime-type="image/png" src="../../media/IS_Figure_07_01_002.png"/>
         </media>
@@ -418,7 +418,7 @@
 
 
       <para id="para-00014">This is exactly the process that the Central Limit Theorem requires: repeatedly collecting samples of the same size, and then finding the means. The Central Limit Theorem then requires that we investigate the histogram of these means. In the next figure is the histogram of the 50 means:</para>
-      <figure id="fig-00005">
+      <figure class="scaled-down" id="fig-00005">
         <media alt="Histogram of the 50 sample means. The horizontal axis shows sample mean x-bar (lbs) from 155 to 185 and the vertical axis shows number of researchers from 0 to 8. From left to right, the 13 bar heights are 2, 3, 3, 5, 2, 5, 9, 5, 7, 3, 2, 2, 2, giving an uneven shape with no clear pattern. Colored dashed lines mark Researcher 1’s mean x-bar = 155, Researcher 3’s mean x-bar = 169, and Researcher 2’s mean x-bar = 172.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_01_005.png"/>
         </media>
@@ -496,7 +496,7 @@
 
 
       <para id="para-00017">Taking the 5,000 means that each researcher collected, we can create a new histogram:</para>
-      <figure id="fig-00007">
+      <figure class="scaled-down" id="fig-00007">
         <media alt="Histogram of 5,000 sample means with a normal curve overlaid. The horizontal axis shows sample mean x-bar (lbs) from 150 to 190. The bars form a roughly symmetric bell shape that peaks at a dashed line labeled population mean, mu sub x-bar = 172.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_01_007.png"/>
         </media>
@@ -504,7 +504,7 @@
       <para id="para-00018">With 5,000 sample means, a clear bell-curve shape emerges. Since this bell-curve is made of means, we call it <emphasis>the sampling distribution of means.</emphasis> The <emphasis>sampling distribution of means</emphasis> is the natural bell-curve that emerges when using the Central Limit Theorem for Means. The theorem tells us that as the sample size grows, the distribution of the sample means approaches a normal distribution. With enough means, the histogram shows this bell-curve shape. Because we have a new set of data made of means, we use a new random variable denoted <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover></m:math>. The bar makes a clear indication that we are using a sampling distribution of means.</para>
       <para id="para-00019">Additionally, note where this sampling distribution of means is centered: it has become naturally centered at the population mean <m:math><m:mi>μ</m:mi><m:mo>.</m:mo></m:math> This is what the Central Limit Theorem means when it states that this sampling distribution of means follows the distribution <m:math><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>μ</m:mi><m:mo>,</m:mo><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When enough means are repeatedly taken, their histogram will be centered at the population mean. The formula <m:math><m:mfrac><m:mrow><m:mi>σ</m:mi></m:mrow><m:mrow><m:msqrt><m:mrow><m:mi>n</m:mi></m:mrow></m:msqrt></m:mrow></m:mfrac></m:math> is called the <term id="term-se-mean">standard error of the mean</term>. The different name indicates that it is different from just the population standard deviation <m:math><m:mi>σ</m:mi></m:math>. It specifically tells us how sample means vary, as opposed to how individual data points vary.</para>
       <para id="para-00020">If we continued this process and collected 5,000,000 means, this is how the histogram would look:</para>
-      <figure id="fig-00008">
+      <figure class="scaled-down" id="fig-00008">
         <media alt="Histogram of 5,000,000 sample means with a normal curve overlaid. The horizontal axis shows sample mean x-bar (lbs) from 130 to 210. The many narrow bars form a smooth, symmetric bell shape that matches the curve almost exactly. Most values fall between about 150 and 195, centered at a dashed line labeled population mean, mu sub x-bar = 172.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_01_008.png"/>
         </media>
@@ -542,7 +542,7 @@
         </media>
       </figure>
       <para id="para-00025">To make it easier for comparison, we compare the normal curves for each of these four graphs against one another:</para>
-      <figure id="fig-00011">
+      <figure class="scaled-down" id="fig-00011">
         <media alt="Four overlapping normal curves on one axis of sample mean x-bar from about 15 to 80, all centered at a dashed line at 50. A legend gives each curve’s sample size and standard error, sigma over the square root of n: n = 30, 5.3 (darkest navy, widest and lowest curve); n = 50, 4.1 (navy); n = 70, 3.5 (purple); and n = 90, 3.0 (light blue, narrowest and tallest curve). Larger n gives a taller, narrower curve.">
           <image mime-type="image/png" src="../../media/IS_Figure_07_01_011.png"/>
         </media>
@@ -552,7 +552,7 @@
     <section id="sect-00006">
       <title>Important Notes on Notation and Vocabulary</title>
       <para id="para-00027">We have seen several examples of how the Central Limit Theorem works. It is important to note some new notation and vocabulary for this situation. The distribution created from using the Central Limit Theorem is called the <emphasis>sampling distribution of means</emphasis>. While the shape of the curve is a normal distribution, it has some key differences. The next figure compares the normal distribution versus the sampling distribution of means:</para>
-      <figure id="fig-00012" orient="horizontal">
+      <figure class="scaled-down" id="fig-00012" orient="horizontal">
         <subfigure id="fig-00012-suba">
           <media alt="Histogram of individual data values with a normal curve overlaid, labeled X is distributed as N(mu, sigma). The bell-shaped bars are centered at a dashed line marked mu, and the horizontal axis is labeled x – data values.">
             <image mime-type="image/png" src="../../media/IS_Figure_07_01_012a.png"/>
@@ -785,7 +785,7 @@
             <m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mn>85</m:mn><m:mo>&lt;</m:mo><m:mover><m:mrow><m:mi>X</m:mi></m:mrow><m:mo accent="true">―</m:mo></m:mover><m:mo>&lt;</m:mo><m:mn>92</m:mn><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo><m:mn>0.6997</m:mn></m:math>
           </para>
           <para id="para-00045">The probability that the sample mean is between 85 and 92 is 0.6997.</para>
-          <figure id="fig-00013">
+          <figure class="scaled-down" id="fig-00013">
             <media alt="Normal curve over a horizontal axis labeled x-bar, with 85, 90, and 92 marked and the peak at 90. The area under the curve between vertical lines at 85 and 92 is shaded. A label reads: Shaded area represents probability P(85 less than x-bar less than 92).">
               <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-1_img13.png"/>
             </media>
