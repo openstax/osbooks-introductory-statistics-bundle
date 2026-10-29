@@ -33,11 +33,100 @@
         <item>The <m:math><m:mi>n</m:mi></m:math> trials are independent and are repeated using identical conditions.</item>
       </list>
       <para id="para-00008">For any binomial distribution, we can compute the probability of a number of successes within a set of outcomes. For instance, suppose we have a group of 15 voters (<m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math>). In a particular county, there is a 60% chance that any given voter will support Candidate A (<m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn><m:mo>,</m:mo><m:mtext/><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>0.40</m:mn></m:math>). As a binomial experiment, we would represent the binomial distribution as <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mo>,</m:mo><m:mtext/><m:mi>p</m:mi><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>=</m:mo><m:mi>B</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mtext/><m:mn>0.6</m:mn><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> With discrete probabilities, we can represent each probability with either a table or bar graph as shown in the next figure:</para>
-      <figure id="fig-00001">
-        <media alt="A table and bar graph showing the binomial distribution B(15, 0.6): the probability of each possible number of voters (out of 15) who support Candidate A.">
-          <image mime-type="image/png" src="../../media/CNX_Stats_C07_7-3_img1.png"/>
-        </media>
-      </figure>
+      <table class="unnumbered" summary="Probability distribution of X ~ B(15, 0.60), where X is the number of the 15 voters who support the candidate and p = 0.60. Each value of x from 0 to 15 is listed with its probability, which rises to a peak of 0.2066 at x = 9 and then falls; a bar graph of the same distribution is shown in the third column." id="table-00001">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <thead>
+          <row>
+            <entry namest="c1" nameend="c3" align="center">Probability distribution of <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>B</m:mi><m:mo stretchy="false">(</m:mo><m:mn>15</m:mn><m:mo>,</m:mo><m:mn>0.60</m:mn><m:mo stretchy="false">)</m:mo></m:math><newline/><m:math><m:mi>X</m:mi><m:mo>=</m:mo></m:math> number of supporters out of <m:math><m:mi>n</m:mi><m:mo>=</m:mo><m:mn>15</m:mn></m:math> voters; <m:math><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>0.60</m:mn></m:math></entry>
+          </row>
+          <row>
+            <entry><m:math><m:mi>x</m:mi><m:mo>=</m:mo></m:math> the potential number of the 15 voters who support the candidate</entry>
+            <entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo><m:mo>=</m:mo></m:math> the probability that those <m:math><m:mi>x</m:mi></m:math> voters support the candidate</entry>
+            <entry morerows="1" align="center" valign="middle">The table can also be represented with a bar graph</entry>
+          </row>
+          <row>
+            <entry><m:math><m:mi>X</m:mi></m:math></entry>
+            <entry><m:math><m:mi>P</m:mi><m:mo stretchy="false">(</m:mo><m:mi>X</m:mi><m:mo>=</m:mo><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:math></entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>0</entry>
+            <entry>0.0000</entry>
+            <entry morerows="15" align="center" valign="middle">
+              <figure class="unnumbered" id="fig-00001">
+                <media alt="Bar graph of the probability distribution of X ~ B(15, 0.60), with x from 0 to 15 on the horizontal axis and P(X = x) on the vertical axis. The bars rise from almost 0 at x = 0 to a peak of about 0.21 at x = 9, then fall back to almost 0 at x = 15.">
+                  <image mime-type="image/png" src="../../media/IS_Figure_07_03_001.png"/>
+                </media>
+              </figure>
+            </entry>
+          </row>
+          <row>
+            <entry>1</entry>
+            <entry>0.0000</entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>0.0003</entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>0.0016</entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>0.0074</entry>
+          </row>
+          <row>
+            <entry>5</entry>
+            <entry>0.0245</entry>
+          </row>
+          <row>
+            <entry>6</entry>
+            <entry>0.0612</entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>0.1181</entry>
+          </row>
+          <row>
+            <entry>8</entry>
+            <entry>0.1771</entry>
+          </row>
+          <row>
+            <entry>9</entry>
+            <entry>0.2066</entry>
+          </row>
+          <row>
+            <entry>10</entry>
+            <entry>0.1859</entry>
+          </row>
+          <row>
+            <entry>11</entry>
+            <entry>0.1268</entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>0.0634</entry>
+          </row>
+          <row>
+            <entry>13</entry>
+            <entry>0.0219</entry>
+          </row>
+          <row>
+            <entry>14</entry>
+            <entry>0.0047</entry>
+          </row>
+          <row>
+            <entry>15</entry>
+            <entry>0.0005</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
       <para id="para-00009">In Chapter 6, we discussed that when <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>≥</m:mo><m:mn>5</m:mn><m:mo>,</m:mo></m:math> the normal distribution can be used to approximate the binomial distribution. In this example, we see that <m:math><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.6</m:mn><m:mo>=</m:mo><m:mn>9</m:mn></m:math> and <m:math><m:mi>n</m:mi><m:mi>q</m:mi><m:mo>=</m:mo><m:mn>15</m:mn><m:mo>·</m:mo><m:mn>0.4</m:mn><m:mo>=</m:mo><m:mn>6</m:mn><m:mo>,</m:mo></m:math> so these criteria are met and we can easily visualize the normal distribution approximation for our bar graph in the next figure. Recall that when the normal distribution is used to approximate the binomial distribution, we can write that <m:math><m:mi>X</m:mi><m:mo>~</m:mo><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>n</m:mi><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext/><m:msqrt><m:mrow><m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow><m:mo>.</m:mo></m:math> When this is used, we are typically doing problems that involve counting a number of successes. In this chapter, we are instead only interested in proportions. We can modify this distribution to solely take interest in proportions by dividing both parts inside the parentheses by <m:math><m:mi>n</m:mi></m:math>. This explains the new distribution used within the Central Limit Theorem for Proportions, namely <m:math><m:mi>N</m:mi><m:mrow><m:mo stretchy="true" fence="true" form="prefix">(</m:mo><m:mi>p</m:mi><m:mo>,</m:mo><m:mtext/><m:msqrt><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mi>q</m:mi></m:mrow><m:mrow><m:mi>n</m:mi></m:mrow></m:mfrac></m:mrow></m:msqrt><m:mo stretchy="true" fence="true" form="postfix">)</m:mo></m:mrow></m:math>. It is literally the same distribution divided by <m:math><m:mi>n</m:mi></m:math>.</para>
       <figure id="fig-00002">
         <media alt="The bar graph of the binomial distribution B(15, 0.6) with the approximating normal curve N(np, √(npq)) overlaid.">
@@ -102,167 +191,167 @@
         <tbody>
           <row>
             <entry align="right"><emphasis effect="bold">1</emphasis></entry>
-            <entry><media alt="Researcher 1 icon, highlighted in blue" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-blue.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 1 icon, highlighted in blue" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-blue.svg"/></media></entry>
             <entry><m:math><m:mn style="color: #34bdd8;">0.37</m:mn></m:math></entry>
             <entry align="right">14</entry>
-            <entry><media alt="Researcher 14 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 14 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
             <entry align="right">27</entry>
-            <entry><media alt="Researcher 27 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 27 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">40</entry>
-            <entry><media alt="Researcher 40 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 40 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.47</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right"><emphasis effect="bold">2</emphasis></entry>
-            <entry><media alt="Researcher 2 icon, highlighted in green" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-green.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 2 icon, highlighted in green" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-green.svg"/></media></entry>
             <entry><m:math><m:mn style="color: #91d891;">0.40</m:mn></m:math></entry>
             <entry align="right">15</entry>
-            <entry><media alt="Researcher 15 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 15 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry align="right">28</entry>
-            <entry><media alt="Researcher 28 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 28 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry align="right">41</entry>
-            <entry><media alt="Researcher 41 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 41 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.37</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right"><emphasis effect="bold">3</emphasis></entry>
-            <entry><media alt="Researcher 3 icon, highlighted in purple" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-purple.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 3 icon, highlighted in purple" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-purple.svg"/></media></entry>
             <entry><m:math><m:mn style="color: #5200a0;">0.47</m:mn></m:math></entry>
             <entry align="right">16</entry>
-            <entry><media alt="Researcher 16 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 16 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">29</entry>
-            <entry><media alt="Researcher 29 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 29 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.57</m:mn></m:math></entry>
             <entry align="right">42</entry>
-            <entry><media alt="Researcher 42 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 42 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.30</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">4</entry>
-            <entry><media alt="Researcher 4 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 4 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.33</m:mn></m:math></entry>
             <entry align="right">17</entry>
-            <entry><media alt="Researcher 17 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 17 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.33</m:mn></m:math></entry>
             <entry align="right">30</entry>
-            <entry><media alt="Researcher 30 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 30 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.33</m:mn></m:math></entry>
             <entry align="right">43</entry>
-            <entry><media alt="Researcher 43 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 43 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.47</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">5</entry>
-            <entry><media alt="Researcher 5 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 5 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry align="right">18</entry>
-            <entry><media alt="Researcher 18 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 18 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.30</m:mn></m:math></entry>
             <entry align="right">31</entry>
-            <entry><media alt="Researcher 31 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 31 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry align="right">44</entry>
-            <entry><media alt="Researcher 44 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 44 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.37</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">6</entry>
-            <entry><media alt="Researcher 6 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 6 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
             <entry align="right">19</entry>
-            <entry><media alt="Researcher 19 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 19 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.27</m:mn></m:math></entry>
             <entry align="right">32</entry>
-            <entry><media alt="Researcher 32 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 32 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.57</m:mn></m:math></entry>
             <entry align="right">45</entry>
-            <entry><media alt="Researcher 45 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 45 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.47</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">7</entry>
-            <entry><media alt="Researcher 7 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 7 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">20</entry>
-            <entry><media alt="Researcher 20 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 20 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">33</entry>
-            <entry><media alt="Researcher 33 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 33 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.60</m:mn></m:math></entry>
             <entry align="right">46</entry>
-            <entry><media alt="Researcher 46 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 46 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">8</entry>
-            <entry><media alt="Researcher 8 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 8 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.33</m:mn></m:math></entry>
             <entry align="right">21</entry>
-            <entry><media alt="Researcher 21 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 21 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
             <entry align="right">34</entry>
-            <entry><media alt="Researcher 34 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 34 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.37</m:mn></m:math></entry>
             <entry align="right">47</entry>
-            <entry><media alt="Researcher 47 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 47 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.27</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">9</entry>
-            <entry><media alt="Researcher 9 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 9 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">22</entry>
-            <entry><media alt="Researcher 22 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 22 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.53</m:mn></m:math></entry>
             <entry align="right">35</entry>
-            <entry><media alt="Researcher 35 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 35 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">48</entry>
-            <entry><media alt="Researcher 48 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 48 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">10</entry>
-            <entry><media alt="Researcher 10 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 10 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
             <entry align="right">23</entry>
-            <entry><media alt="Researcher 23 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 23 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.27</m:mn></m:math></entry>
             <entry align="right">36</entry>
-            <entry><media alt="Researcher 36 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 36 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.47</m:mn></m:math></entry>
             <entry align="right">49</entry>
-            <entry><media alt="Researcher 49 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 49 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">11</entry>
-            <entry><media alt="Researcher 11 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 11 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.37</m:mn></m:math></entry>
             <entry align="right">24</entry>
-            <entry><media alt="Researcher 24 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 24 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.53</m:mn></m:math></entry>
             <entry align="right">37</entry>
-            <entry><media alt="Researcher 37 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 37 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
             <entry align="right">50</entry>
-            <entry><media alt="Researcher 50 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 50 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">12</entry>
-            <entry><media alt="Researcher 12 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 12 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.63</m:mn></m:math></entry>
             <entry align="right">25</entry>
-            <entry><media alt="Researcher 25 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 25 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
             <entry align="right">38</entry>
-            <entry><media alt="Researcher 38 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 38 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry/>
             <entry/>
@@ -270,13 +359,13 @@
           </row>
           <row>
             <entry align="right">13</entry>
-            <entry><media alt="Researcher 13 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 13 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.33</m:mn></m:math></entry>
             <entry align="right">26</entry>
-            <entry><media alt="Researcher 26 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 26 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
             <entry align="right">39</entry>
-            <entry><media alt="Researcher 39 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 39 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.30</m:mn></m:math></entry>
             <entry/>
             <entry/>
@@ -319,43 +408,43 @@
         <tbody>
           <row>
             <entry align="right"><emphasis effect="bold">1</emphasis></entry>
-            <entry><media alt="Researcher 1 icon, highlighted in blue" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-blue.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 1 icon, highlighted in blue" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-blue.svg"/></media></entry>
             <entry><m:math><m:mn style="color: #34bdd8;">0.37</m:mn></m:math></entry>
             <entry morerows="4" align="center">… and so on for all 5,000 researchers …<newline/><emphasis effect="bold">each collects a sample of n = 30</emphasis></entry>
             <entry align="right">4,996</entry>
-            <entry><media alt="Researcher 4,996 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 4,996 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right"><emphasis effect="bold">2</emphasis></entry>
-            <entry><media alt="Researcher 2 icon, highlighted in green" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-green.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 2 icon, highlighted in green" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-green.svg"/></media></entry>
             <entry><m:math><m:mn style="color: #91d891;">0.40</m:mn></m:math></entry>
             <entry align="right">4,997</entry>
-            <entry><media alt="Researcher 4,997 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 4,997 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.40</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right"><emphasis effect="bold">3</emphasis></entry>
-            <entry><media alt="Researcher 3 icon, highlighted in purple" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-purple.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 3 icon, highlighted in purple" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-purple.svg"/></media></entry>
             <entry><m:math><m:mn style="color: #5200a0;">0.47</m:mn></m:math></entry>
             <entry align="right">4,998</entry>
-            <entry><media alt="Researcher 4,998 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 4,998 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.63</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">4</entry>
-            <entry><media alt="Researcher 4 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 4 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry align="right">4,999</entry>
-            <entry><media alt="Researcher 4,999 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 4,999 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.33</m:mn></m:math></entry>
           </row>
           <row>
             <entry align="right">5</entry>
-            <entry><media alt="Researcher 5 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 5 icon" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray.svg"/></media></entry>
             <entry><m:math><m:mn>0.50</m:mn></m:math></entry>
             <entry align="right"><emphasis effect="bold">5,000</emphasis></entry>
-            <entry><media alt="Researcher 5,000 icon, highlighted with an outline" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray-outlined.svg" width="15" height="28"/></media></entry>
+            <entry><media alt="Researcher 5,000 icon, highlighted with an outline" display="inline"><image mime-type="image/svg+xml" src="../../media/researcher-gray-outlined.svg"/></media></entry>
             <entry><m:math><m:mn>0.43</m:mn></m:math></entry>
           </row>
         </tbody>
